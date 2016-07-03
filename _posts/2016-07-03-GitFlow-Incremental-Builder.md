@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GitFlow Incremental Builder"
-date: 2016-06-04
+date: 2016-07-03
 ---
 
 We had issues with our Maven builds taking too long on a project with messaging micro service architecture at Barclays. After we adopted [git feature branch model called GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) and setting up pre-merge testing policy, it dawned on me that by having develop branch stability guarantee, we could speed up our builds.
