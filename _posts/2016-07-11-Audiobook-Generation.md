@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Audiobook Generation"
+date: 2016-07-11
+---
+
+I love audiobook, because they utilize brain-time, which would otherwise be lost e.g. when walking, running or hiking. Problem of audiobooks is their scarcity, which I always struggled with especially in case of technical books.
+
+Guess what? I've finally put together simplistic tool for generating audiobooks from plain text that works! I call it text2gsm as it converts plain text file into GSM WAV compression format optimal for voice.
+
+So next time I want to read book, but have no time to do it, I'll generate myself a audiobook and listen to it during otherwise lost time. Neat!
