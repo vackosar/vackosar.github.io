@@ -16,7 +16,7 @@ you can save space and time using a function. But how to allow flexible use of t
 
 Notice usage of the evil "eval" function. The eval function is important here to allow flexible usage of the variable "l". To stay secure always use parenthesis around the variable reference e.g.:
 
-    cat files.txt | foreach 'mv "$l" "${l/.txt/.md}'
+    cat files.txt | foreach 'mv "$l" "${l/.txt/.md}"';
 
 Above should keep all evils at bay.
 
