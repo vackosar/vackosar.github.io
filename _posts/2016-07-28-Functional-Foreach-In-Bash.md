@@ -8,7 +8,7 @@ Don't you hate verbosity of Bash's while-do statements when writing in-line scri
 
 Instead of writing long-winded
 
-while IFS= read l; do <<<command>>>; done
+    while IFS= read l; do <<<command>>>; done
 
 you can save space and time using a function. But how to allow flexible use of the line that was read? Functional programmers will recognize familiar ```foreach``` command in below:
 
