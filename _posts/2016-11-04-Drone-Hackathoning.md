@@ -17,6 +17,7 @@ Yesterday I attended a hackathon choosing to join up with colleagues to develop 
 I mainly focused on locating white piece of paper on grey carpet floor in a picture. I succeeded in that, but lost lots of time setting up my system and using computer of others to implement my code.
 
 I simply blurred the image my using gausian resizing and then implemented thresh hold for brightness. After that I located the center of white spot averaging over coordinates of white pixels.
+
 * [Revised source in my repo](https://github.com/vackosar/triv-white-spot-locator/blob/master/src/androidTest/java/com/vackosar/trivwhitespotlocator/LocateWhiteSpotTest.java)
 * [Original hackathon source](https://github.com/pechovic/barcode-dji/blob/master/app/src/androidTest/java/barcode/barclays/com/drone/ExampleInstrumentedTest.java)
 
