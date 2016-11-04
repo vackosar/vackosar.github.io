@@ -17,13 +17,13 @@ Yesterday I attended a hackathon choosing to join up with colleagues to develop 
 I mainly focused on locating white piece of paper on grey carpet floor in a picture. I succeeded in that, but lost lots of time setting up my system and using computer of others to implement my code.
 
 I simply blurred the image my using gausian resizing and then implemented thresh hold for brightness. After that I located the center of white spot averaging over coordinates of white pixels.
-- [Revised source in my repo](https://github.com/vackosar/triv-white-spot-locator/blob/master/src/androidTest/java/com/vackosar/trivwhitespotlocator/LocateWhiteSpotTest.java)
-- [Original hackathon source](https://github.com/pechovic/barcode-dji/blob/master/app/src/androidTest/java/barcode/barclays/com/drone/ExampleInstrumentedTest.java)
+* [Revised source in my repo](https://github.com/vackosar/triv-white-spot-locator/blob/master/src/androidTest/java/com/vackosar/trivwhitespotlocator/LocateWhiteSpotTest.java)
+* [Original hackathon source](https://github.com/pechovic/barcode-dji/blob/master/app/src/androidTest/java/barcode/barclays/com/drone/ExampleInstrumentedTest.java)
 
-- ![Source Image](https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/master/src/main/res/drawable/testimg2.jpg)
-- ![Source Image](https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/master/output/androidTest/blured.jpg)
-- ![Treshholded](https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/master/output/androidTest/treshholded.jpg)
-- ![Marked](https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/master/output/androidTest/marked.jpg)
+* Source Image: ![Source Image](https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/master/src/main/res/drawable/testimg2.jpg)
+* Blurred: ![Blurred](https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/master/output/androidTest/blured.jpg)
+* Treshholded: ![Treshholded](https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/master/output/androidTest/treshholded.jpg)
+* Marked: ![Marked](https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/master/output/androidTest/marked.jpg)
 
 ## Lessons Learned
 Lesson for me is that whenever speed is needed addressing potential risk is critical. Single small thing off will result in failure. Periodical reevaluation of risk and possible investment is needed.
