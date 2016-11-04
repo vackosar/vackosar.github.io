@@ -29,7 +29,7 @@ I simply blurred the image my using gausian resizing and then implemented thresh
 - Improved source in my repo: https://github.com/vackosar/triv-white-spot-locator/blob/master/src/androidTest/java/com/vackosar/trivwhitespotlocator/LocateWhiteSpotTest.java
 - Original hackathon source: https://github.com/pechovic/barcode-dji/blob/master/app/src/androidTest/java/barcode/barclays/com/drone/ExampleInstrumentedTest.java
 
-- ![Source Image](https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/blob/master/src/main/res/drawable/testimg2.jpg)
+- ![Source Image](https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/master/src/main/res/drawable/testimg2.jpg)
 - ![Source Image](https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/master/output/androidTest/blured.jpg)
-- ![Treshholded](https://github.com/vackosar/triv-white-spot-locator/blob/master/output/androidTest/treshholded.jpg)
+- ![Treshholded](https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/master/output/androidTest/treshholded.jpg)
 - ![Marked](https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/master/output/androidTest/marked.jpg)
