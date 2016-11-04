@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Drone Hackathoning"
-date: 2016-04-11
+date: 2016-11-04
 ---
 
 ## Summary
