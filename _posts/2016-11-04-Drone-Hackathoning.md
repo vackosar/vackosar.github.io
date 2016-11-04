@@ -16,7 +16,7 @@ Yesterday I attended a hackathon choosing to join up with colleagues to develop 
 
 I mainly focused on locating white piece of paper on grey carpet floor in a picture. I succeeded in that, but lost lots of time setting up my system and using computer of others to implement my code.
 
-I simply blurred the image my using gausian resizing and then implemented thresh hold for brightness. After that I located the center of white spot averaging over coordinates of white pixels.
+I simply blurred the image using gaussian resizing to reduce noise and then implemented threshold for brightness to filter in sufficiently white pixels. After that I located the center of white spot averaging over coordinates of white pixels.
 
 The algorithm suffered from being quite slow as processing took 20 seconds, until I had another look post-hackathon and improved that to 40 miliseconds. Interestingly the algorithm doesn't require any libraries.
 
