@@ -18,6 +18,8 @@ I mainly focused on locating white piece of paper on grey carpet floor in a pict
 
 I simply blurred the image my using gausian resizing and then implemented thresh hold for brightness. After that I located the center of white spot averaging over coordinates of white pixels.
 
+The algorithm suffered from being quite slow as processing took 20 seconds, until I had another look post-hackathon and improved that to 40 miliseconds. Interestingly the algorithm doesn't require any libraries.
+
 ### Source
 
 [Revised source in my repo](https://github.com/vackosar/triv-white-spot-locator/blob/master/src/androidTest/java/com/vackosar/trivwhitespotlocator/LocateWhiteSpotTest.java), [Original hackathon source](https://github.com/pechovic/barcode-dji/blob/master/app/src/androidTest/java/barcode/barclays/com/drone/ExampleInstrumentedTest.java)
