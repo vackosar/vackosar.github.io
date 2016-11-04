@@ -6,8 +6,8 @@ date: 2016-11-04
 
 ## Summary
 
-- On a hackathon I implemented trivial image processing algorithm to locate white piece of paper on grey carpet floor to be used for drone horizontal stabilization.
-- Source: https://github.com/pechovic/barcode-dji
+On a hackathon I implemented trivial image processing algorithm to locate white piece of paper on grey carpet floor to be used for drone horizontal stabilization.
+Source: [Original](https://github.com/pechovic/barcode-dji), [Revised](https://github.com/vackosar/triv-white-spot-locator)
 
 ## Intro
 
@@ -16,10 +16,17 @@ Yesterday I attended a hackathon choosing to join up with colleagues to develop 
 ## Cooperation
 Lesson for me was that whenever speed is needed addressing potential risk is critical. Single small thing off will result to failure. Perioding reevaluation of risk and possible investment is needed.
 
-- Preps: Having a little time evening before, I underestimated important of environmental preparation. Crippled by strange connection provided, I was not able to ultimately set my Android Studio straight and had to used computer stations of others.
-- Morale: Abundance of food is not a good thing as it breaks focus and leads to overeating. As night progresses, sleep deficit will also take its toll on morale and attention.
-- Iterations: Perhaps strictly periodic standups, risk and investment reviews would improve the implementation.
-- Plan singularity: Sticking to single plan until proven completely impossible is better than experimenting around when severely time constrained.
+### Preps
+Having a little time evening before, I underestimated important of environmental preparation. Crippled by strange connection provided, I was not able to ultimately set my Android Studio straight and had to used computer stations of others.
+
+### Morale
+Abundance of food is not a good thing as it breaks focus and leads to overeating. As night progresses, sleep deficit will also take its toll on morale and attention.
+
+### Micro Iterations
+Perhaps strictly periodic standups, risk and investment reviews would improve the implementation.
+
+### Sticking To Plan
+Sticking to single plan until proven completely impossible is better than experimenting around when severely time constrained.
 
 ## White Spot Locator
 
