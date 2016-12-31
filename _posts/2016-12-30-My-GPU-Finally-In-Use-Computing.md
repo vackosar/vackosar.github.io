@@ -8,5 +8,6 @@ I scarcely play any games on my otherwise quite fast desktop. Now, I am finally 
 
 I am not gaming though. I rather started playing with [Tensorflow](https://www.tensorflow.org) - a library for numerical computations.
 I focus now on machine learning using neural networks. So far I played with:
-- https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/mnist/mnist_softmax.py
-- https://github.com/DmitryUlyanov/neural-style-audio-tf
+
+- [MNIST example](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/mnist/mnist_softmax.py)
+- [neural-style-audio-tf](https://github.com/DmitryUlyanov/neural-style-audio-tf)
