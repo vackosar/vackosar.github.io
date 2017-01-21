@@ -12,7 +12,7 @@ date: 2016-12-26
 - designed for embedded devices ([see docs](http://www.festvox.org/flite/) )
 
 
-[pico2wave](http://manpages.ubuntu.com/manpages/xenial/man1/pico2wave.1.html) in comparison to Festival](http://www.festvox.org/festival/) has:
+[pico2wave](http://manpages.ubuntu.com/manpages/xenial/man1/pico2wave.1.html) in comparison to [Festival](http://www.festvox.org/festival/) has:
 
 - similarly pleasant voice
 - less comprehensible voice
