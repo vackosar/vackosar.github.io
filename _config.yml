@@ -2,3 +2,5 @@ name: Vaclav Kosar
 markdown: kramdown
 twitter_username: vackosar
 url: https://vackosar.github.io
+gems:
+  - jekyll-feed
