@@ -61,7 +61,7 @@ This time is directly proportional to
 Usually 4-8 lines and cyclomatic complexity 3-7 is considered a good balance.
 - "A long method is a good example of this - just looking at the code and my nose twitches if I see more than a dozen lines of java."; https://www.martinfowler.com/bliki/CodeSmell.html
 - "Its essence is applying a series of small behavior-preserving transformations, each of which "too small to be worth doing"."; https://www.martinfowler.com/books/refactoring.html
-- "If you have a good name for a method you don't need to look at the body";  Refactoring - Improving the Design of Existing
+- "If you have a good name for a method you don't need to look at the body";  Refactoring: Improving the Design of Existing Code
 
 ### Example
 USD rate below is extracted into a separate Code Container - into a field. Fields are on same level of hierarchy as functions. Replacing exact value with named field increases readability.
