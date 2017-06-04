@@ -4,8 +4,6 @@ title: "Code Structure Principles"
 date: 2017-06-04
 ---
 
-# Code Structure Principles
-
 This is a formalized collection of code structure recommendations and principles. 
 It is focused mainly on generalization of recommendations for writing optimal classes in object oriented languages.
 
