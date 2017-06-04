@@ -63,6 +63,10 @@ class C { }
 
 ```
 
+#### Related Packages
+Related packages which are used by two different modules are can be placed into one common Maven module. This module can be then used as Maven dependency. 
+
+
 ## 2. Distribute Complexity
 Code structure is improved by distributing complexity into multiple Code Containers. Local complexity is prioritized over total complexity. 
 
