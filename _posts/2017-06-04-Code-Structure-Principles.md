@@ -84,7 +84,7 @@ Usually 4-8 lines and cyclomatic complexity 3-7 is considered a good balance.
 - "If you have a good name for a method you don't need to look at the body";  Refactoring: Improving the Design of Existing Code
 
 ### Example
-USD rate below is extracted into a separate Code Container - into a field. Fields are on same level of hierarchy as functions. Replacing exact value with named field increases readability.
+USD rate below is extracted into a separate Code Container - into a field. Replacing magic value with named field increases human readability.
 While method ```transformToUsd``` is simplified, the class itself becomes more complex. This exemplifies prioritizing local complexity over total complexity. 
 ```java
 class CurrencyAmountTransformer {
