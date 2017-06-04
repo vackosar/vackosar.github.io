@@ -48,7 +48,7 @@ Functions ```a``` and ```b``` both call function ```c```, thus they are related.
 ```
 
 ## Distribute Complexity
-Code structure is improved by distributing complexity into multiple Code Containers while balancing with total complexity as secondary priority. 
+Code structure is improved by distributing complexity into multiple Code Containers. Local complexity is prioritized over total complexity. 
 
 Code Container complexity is defined by the time needed by programmer to be able to understand, navigate and modify the Code Container.
 This time is directly proportional to 
@@ -65,7 +65,7 @@ Usually 4-8 lines and cyclomatic complexity 3-7 is considered a good balance.
 
 ### Example
 USD rate below is extracted into a separate Code Container - into a field. Fields are on same level of hierarchy as functions. Replacing exact value with named field increases readability.
-While method ```transformToUsd``` is simplified number of expressions within the class increases. This exemplifies prioritizing local complexity over total complexity. 
+While method ```transformToUsd``` is simplified, the class itself becomes more complex. This exemplifies prioritizing local complexity over total complexity. 
 ```java
 class CurrencyAmountTransformer {
     
