@@ -17,7 +17,7 @@ In Java, code is sorted into following hierarchy:
 - maven module
 - micro-service
 
-## 1. Localize Behaviour:
+## 1. Localize Related:
 
 Code structure is improved by sorting Code Containers which are related into single higher hierarchy Code Container.
 
