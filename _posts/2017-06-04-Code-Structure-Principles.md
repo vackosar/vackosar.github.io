@@ -66,6 +66,8 @@ class C { }
 #### Related Packages
 Related packages which are used by two different modules are can be placed into one common Maven module. This module can be then used as Maven dependency. 
 
+#### Micro-service as a Maven module
+Micro-services in Java are defined by a Maven module. Final micro-service executable jar then usually contains the defining module jar and all its dependencies. 
 
 ## 2. Distribute Complexity
 Code structure is improved by distributing complexity into multiple Code Containers. Local complexity is prioritized over total complexity. 
@@ -77,7 +79,6 @@ This time is directly proportional to
 - on total complexity to a lesser extent.
 
 ### References
-
 Usually 4-8 lines and cyclomatic complexity 3-7 is considered a good balance.
 - "A long method is a good example of this - just looking at the code and my nose twitches if I see more than a dozen lines of java."; https://www.martinfowler.com/bliki/CodeSmell.html
 - "Its essence is applying a series of small behavior-preserving transformations, each of which "too small to be worth doing"."; https://www.martinfowler.com/books/refactoring.html
@@ -123,6 +124,9 @@ class CurrencyAmountTransformer {
 
 #### Class Hiding
 Java allows classes that can be imported only within given package.
+
+#### Maven Modules Don't Allow Hiding
+Unfortunately Maven modules don't provide restriction of visibility of dependency modules only within given Module. All dependencies of a dependency will also become dependencies of a dependent. 
 
 #### Micro-Service API
  
