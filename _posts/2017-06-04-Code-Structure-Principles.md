@@ -25,7 +25,7 @@ Related Code Containers are defined by following:
 - Related Code Containers often use same Code Containers.
 - Programmers are able to learn to often anticipate membership of unfamiliar Code Container in Related Code Containers.
 - Deployment lifecycle, stability and monitoring are often the same for Related Code Containers.
-- Same programmers are often work on the same Related Code Containers.
+- Same programmers often work on the same Related Code Containers.
 
 ### Example
 Functions ```a``` and ```b``` both call function ```c```, thus they are related. Because they are related they are placed into higher container ```A```.
