@@ -69,9 +69,9 @@ While method ```transformToUsd``` is simplified number of expressions within the
 ```java
 class CurrencyAmountTransformer {
     
-    private int USD_RATE = 1.2;
+    private double USD_RATE = 1.2;
     
-    int transformToUsd(int amount) {
+    int transformToUsd(double amount) {
         return USD_RATE * amount;
     }
     
