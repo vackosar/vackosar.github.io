@@ -92,7 +92,7 @@ class CurrencyAmountTransformer {
     
     private double USD_RATE = 1.2;
     
-    int transformToUsd(double amount) {
+    double transformToUsd(double amount) {
         return USD_RATE * amount;
     }
     
@@ -115,7 +115,7 @@ class CurrencyAmountTransformer {
     
     private double USD_RATE = 1.2;
     
-    int transformToUsd(double amount) {
+    double transformToUsd(double amount) {
         return USD_RATE * amount;
     }
     
