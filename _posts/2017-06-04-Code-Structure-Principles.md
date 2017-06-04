@@ -17,7 +17,7 @@ In Java, code is sorted into following hierarchy:
 - maven module
 - micro-service
 
-## Localize Behaviour:
+## 1. Localize Behaviour:
 
 Code structure is improved by sorting Code Containers which are related into single higher hierarchy Code Container.
 
@@ -47,7 +47,7 @@ Functions ```a``` and ```b``` both call function ```c```, thus they are related.
  }
 ```
 
-## Distribute Complexity
+## 2. Distribute Complexity
 Code structure is improved by distributing complexity into multiple Code Containers. Local complexity is prioritized over total complexity. 
 
 Code Container complexity is defined by the time needed by programmer to be able to understand, navigate and modify the Code Container.
@@ -78,7 +78,7 @@ class CurrencyAmountTransformer {
 }
 ```
 
-## Minimize Visibility
+## 3. Minimize Visibility
 Code structure is improved by minimizing visibility of lower level Code Structures across higher level Code Structures boundaries.
 
 ### References
