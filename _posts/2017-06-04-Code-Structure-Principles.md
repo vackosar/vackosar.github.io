@@ -91,9 +91,9 @@ Field ```USD_RATE``` is not visible outside class ```CurrencyAmountTransformer``
 ```java
 class CurrencyAmountTransformer {
     
-    private int USD_RATE = 1.2;
+    private double USD_RATE = 1.2;
     
-    int transformToUsd(int amount) {
+    int transformToUsd(double amount) {
         return USD_RATE * amount;
     }
     
