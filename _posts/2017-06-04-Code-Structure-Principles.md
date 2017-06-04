@@ -27,7 +27,9 @@ Related Code Containers are defined by following:
 - Deployment lifecycle, stability and monitoring are often the same for Related Code Containers.
 - Same programmers often work on the same Related Code Containers.
 
-### Example
+### Examples
+
+#### Related Methods
 Functions ```a``` and ```b``` both call function ```c```, thus they are related. Because they are related they are placed into higher container ```A```.
 
 ```java
@@ -45,6 +47,20 @@ Functions ```a``` and ```b``` both call function ```c```, thus they are related.
      return v + 1;
    }
  }
+```
+
+#### Related Classes
+
+Both classes import same class ```B```. In absence of other restrictions they can be placed within same package as ```B```. 
+```java
+import B;
+class A { }
+```
+
+```java
+import B;
+class C { }
+
 ```
 
 ## 2. Distribute Complexity
@@ -85,8 +101,9 @@ Code structure is improved by minimizing visibility of lower level Code Structur
 
 - "A method is not used by any other class. Make the method private."; https://refactoring.com/catalog/hideMethod.html
 
-### Example
+### Examples
 
+#### Field Hiding
 Field ```USD_RATE``` is not visible outside class ```CurrencyAmountTransformer```.
 ```java
 class CurrencyAmountTransformer {
@@ -99,3 +116,10 @@ class CurrencyAmountTransformer {
     
 }
 ```
+
+#### Class Hiding
+Java allows classes that can be imported only within given package.
+
+#### Micro-Service API
+ 
+Micro-services usually publish only minimal API which can be used to interact with it. 
