@@ -66,7 +66,14 @@ class C { }
 Related packages which are used by two different modules are can be placed into one common Maven module. This module can be then used as Maven dependency. 
 
 #### Micro-service as a Maven module
-Micro-services in Java are defined by a Maven module. Final micro-service executable jar then usually contains the defining module jar and all its dependencies. 
+Micro-services in Java are defined by a Maven module. Final micro-service executable jar then usually contains the defining module jar and all its dependencies.
+ 
+## References
+- Real world objects often fulfill the criteria. Particularly the second one. Real world objects are recommended as first candidates for object creation ("Find Real-World Objects"; Code Complete)
+- "Classes that contain strongly related functionality are described as having strong cohesion, and the heuristic goal is to make cohesion as strong as possible."; Aim for Strong Cohesion; Code Complete
+- "Coupling describes how tightly a class or routine is related to other classes or routines."; Keep Coupling Loose, Code Complete.
+- "Try to create modules that depend little on other modules."; Keep Coupling Loose, Code Complete.
+- "The most insidious kind of coupling occurs when one module makes use not of some syntactic element of another module but of some semantic knowledge of another module's inner workings."; Keep Coupling Loose, Code Complete. 
 
 ## 2. Distribute Complexity
 Code structure is improved by distributing complexity into multiple Code Containers. Local complexity is prioritized over total complexity. 
@@ -79,6 +86,7 @@ This time is directly proportional to
 
 ### References
 Usually 4-8 lines and cyclomatic complexity 3-7 is considered a good balance.
+- "general or abstract representation of concepts is contained at the top of the hierarchy, with increasingly detailed, specialized representations at the hierarchy's lower levels."; Build Hierarchies, Code Complete
 - "A long method is a good example of this - just looking at the code and my nose twitches if I see more than a dozen lines of java."; https://www.martinfowler.com/bliki/CodeSmell.html
 - "Its essence is applying a series of small behavior-preserving transformations, each of which "too small to be worth doing"."; https://www.martinfowler.com/books/refactoring.html
 - "If you have a good name for a method you don't need to look at the body";  Refactoring: Improving the Design of Existing Code
