@@ -4,7 +4,7 @@ title: "Code Structure Principles"
 date: 2017-06-04
 ---
 
-This is a quick intuitive alternative and generalized view on code structure principles based on several years of personal experience, Martin Fowler's online posts, Bloch's Effective Java, McConnell's Code Complete and Adam Bien's online posts.      
+This is a quick short intuitive alternative generalized view on code structure principles based on several years of personal experience, Martin Fowler's online posts, Bloch's Effective Java, McConnell's Code Complete and Adam Bien's online posts.      
 
 ## Code Containers
 Code Containers is a term used in this post to refer to a instance of a level of hierarchy into which code can be sorted.
