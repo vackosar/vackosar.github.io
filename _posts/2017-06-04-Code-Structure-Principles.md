@@ -86,6 +86,7 @@ This time is directly proportional to
 
 ### References
 Usually 4-8 lines and cyclomatic complexity 3-7 is considered a good balance.
+- Divide and Conquer; https://en.wikipedia.org/wiki/Divide_and_conquer
 - "general or abstract representation of concepts is contained at the top of the hierarchy, with increasingly detailed, specialized representations at the hierarchy's lower levels."; Build Hierarchies, Code Complete
 - "A long method is a good example of this - just looking at the code and my nose twitches if I see more than a dozen lines of java."; https://www.martinfowler.com/bliki/CodeSmell.html
 - "Its essence is applying a series of small behavior-preserving transformations, each of which "too small to be worth doing"."; https://www.martinfowler.com/books/refactoring.html
