@@ -17,13 +17,13 @@ Let's see [how Wikipedia defines the term:](https://en.wikipedia.org/wiki/Cohesi
 
 We can see that the definition uses words: **belongs, relationship, related**.
  
-So, how do we give a cohesive class good name? That's easy. Describe **the source of the class' cohesion** in a few specific words and you have it. 
+So, how do we give a cohesive class good name? That's easy. Just describe **the source of the class' cohesion** in a few specific words and you have it. 
 That is, **camel case together relationship, belonging or relation of the class members**.
   
 But what to do if you cannot come up with any short specific description? That is harder as **that means that the class is not cohesive**.
 
 Going back to "Util" suffix, we can see the problem now. Util is as generic as it can be. 
-Util is equivalent to **"class with static methods and no fields that don't do business"**. 
+Util is basically equivalent to **"class with static methods and no fields that don't do business"**. 
 Let's ignore the fact that this already imply [*lack of object orientation*](http://www.yegor256.com/2014/05/05/oop-alternative-to-utility-classes.html).
 Adding class name of class with which common parameter of doesn't make it more specific. **It doesn't describe the source of cohesion** any more.
 
