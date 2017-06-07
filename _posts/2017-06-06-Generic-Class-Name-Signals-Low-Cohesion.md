@@ -34,6 +34,24 @@ We have two possible cases:
 Unfortunately in the first case the momentum is set towards the worse second case.
 Any programmer stumbling upon this class **will see it a mere dumping group for generic methods** vaguely related to the prefix.
 
+## But Apache Commons Use Utils!
+
+Most common dependencies in Java using Utils are Apache Commons.
+Sometimes it is argued that since they contain Utils classes, then util classes are good design.
+However Apache Commons Util classes were created during the reign of Java 1.3. 
+Which was **stone age of software development**.
+They definitely shouldn't be considered a good design. 
+
+Furthermore their utils classes are limited only to **adding methods to classes outside its control** - in Java Core.
+Such a limited use, could perhaps not be so bad.
+
+## But I can find util class easily!
+This is a poor argument for making code quality worse. Somehow all other classes are searchable with non generic names.
+And when is class used often it is even more important for it to have a good design. 
+Also modern IDEs have a very good search functionality. Instead of "FooUtil" we **search "Foo" or "FooConverter"**. 
+Or we look at other places were such functionality may be performed and reuse what we see. 
+
+
 ## Related Articles And Stack Overflow Discussions
 
 - [Is the word “Helper” in a class name a code smell?](https://stackoverflow.com/questions/2446376/is-the-word-helper-in-a-class-name-a-code-smell#2446499)
