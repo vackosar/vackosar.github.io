@@ -40,7 +40,8 @@ Most common dependencies in Java using Utils are Apache Commons.
 Sometimes it is argued that since they contain Utils classes, then util classes are good design.
 However Apache Commons Util classes were created during the reign of Java 1.3. 
 Which was **stone age of software development**.
-They definitely shouldn't be considered a good design. 
+They definitely shouldn't be considered a good design.
+If we are in situation of deciding by authority, I will trust the professionals on voting on Stack Flow than ancient corporate Java code. 
 
 Furthermore their utils classes are limited only to **adding methods to classes outside its control** - in Java Core.
 Such a limited use, could perhaps not be so bad.
