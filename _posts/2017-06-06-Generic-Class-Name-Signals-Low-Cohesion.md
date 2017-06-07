@@ -34,5 +34,13 @@ We have two possible cases:
 Unfortunately in the first case the momentum is set towards the worse second case.
 Any programmer stumbling upon this class **will see it a mere dumping group for generic methods** vaguely related to the prefix.
 
+## Related Articles
 
-*[OOP Alternative to Utility Classes](http://www.yegor256.com/2014/05/05/oop-alternative-to-utility-classes.html) is a good article on Util class problem.*
+- [Is the word “Helper” in a class name a code smell?](https://stackoverflow.com/questions/2446376/is-the-word-helper-in-a-class-name-a-code-smell#2446499)
+- [If a “Utilities” class is evil, where do I put my generic code?](https://stackoverflow.com/questions/3339929/if-a-utilities-class-is-evil-where-do-i-put-my-generic-code)
+- [Utility classes are evil?](https://stackoverflow.com/questions/3340032/utility-classes-are-evil)
+- [OOP Alternative to Utility Classes](http://www.yegor256.com/2014/05/05/oop-alternative-to-utility-classes.html)
+- [Helper Classes Are A Code Smell](https://wayback.archive.org/web/20161205052021/www.robbagby.com/posts/helper-classes-are-a-code-smell/)
+- [Kill That Util Class!](http://www.jroller.com/DhavalDalal/entry/kill_that_util_class)
+- [Are Helper Classes Evil?](https://blogs.msdn.microsoft.com/nickmalik/2005/09/06/are-helper-classes-evil/)
+- [Avoiding Utility Classes](https://github.com/marshallward/marshallward.org/blob/master/content/avoid_util_classes.rst)
