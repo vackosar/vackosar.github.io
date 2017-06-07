@@ -34,7 +34,7 @@ We have two possible cases:
 Unfortunately in the first case the momentum is set towards the worse second case.
 Any programmer stumbling upon this class **will see it a mere dumping group for generic methods** vaguely related to the prefix.
 
-## Related Articles
+## Related Articles And Stack Overflow Discussions
 
 - [Is the word “Helper” in a class name a code smell?](https://stackoverflow.com/questions/2446376/is-the-word-helper-in-a-class-name-a-code-smell#2446499)
 - [If a “Utilities” class is evil, where do I put my generic code?](https://stackoverflow.com/questions/3339929/if-a-utilities-class-is-evil-where-do-i-put-my-generic-code)
