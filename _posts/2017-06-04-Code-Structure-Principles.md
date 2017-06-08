@@ -74,6 +74,7 @@ Micro-services in Java are defined by a Maven module. Final micro-service execut
 - "Coupling describes how tightly a class or routine is related to other classes or routines."; Keep Coupling Loose, Code Complete.
 - "Try to create modules that depend little on other modules."; Keep Coupling Loose, Code Complete.
 - "in reality, they are little more than convenient carrying cases for loosely related collections of data and routines."; Class Foundations: Abstract Data Types (ADTs), Code Complete
+- [Generic Class Name Signals Low Cohesion](https://vackosar.github.io/2017/06/06/Generic-Class-Name-Signals-Low-Cohesion.html)
 
 ## 2. Distribute Complexity
 Code structure is improved by distributing complexity into multiple Code Containers. Local complexity is prioritized over total complexity. 
