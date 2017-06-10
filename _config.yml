@@ -4,3 +4,4 @@ twitter_username: vackosar
 url: https://vackosar.github.io
 gems:
   - jekyll-feed
+future: true
