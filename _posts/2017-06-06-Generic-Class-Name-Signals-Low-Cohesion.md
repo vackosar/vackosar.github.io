@@ -12,8 +12,8 @@ I think the best way to explain why util classes are suboptimal is using concept
 Cohesion is an important concept, which I also used in my previous post [Code Structure Principles](/2017-06-04-Code-Structure-Principles.md).
 
 Let's see [how Wikipedia defines the term:](https://en.wikipedia.org/wiki/Cohesion_(computer_science))
-> 
-    In computer programming, cohesion refers to the degree to which the elements inside a module belong together.[1] Thus, cohesion measures the strength of relationship between pieces of functionality within a given module. For example, in highly cohesive systems functionality is strongly related. 
+
+*In computer programming, cohesion refers to the degree to which the elements inside a module belong together.[1] Thus, cohesion measures the strength of relationship between pieces of functionality within a given module. For example, in highly cohesive systems functionality is strongly related.* 
 
 We can see that the definition uses words: **belongs, relationship, related**.
  
