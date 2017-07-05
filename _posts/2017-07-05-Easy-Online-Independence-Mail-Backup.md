@@ -18,7 +18,7 @@ Fortunatelly there is an easy way to prevent these issues and stand more indepen
 - Copy extracted imapsize into ```mkdir ~/imapsize/```.
 - Make sure you are using home folder encryption to avoid leaking data.
 - Install Wine: ```sudo apt-get install wine ```
-- Start and configure imapsize for your provider ```wine ~/imapsize/imapsize.exe```. Gmail instructions can be found [here](https://support.google.com/mail/answer/7126229?hl=en).
+- Start and configure imapsize for your provider ```wine imapsize.exe```. Gmail instructions can be found [here](https://support.google.com/mail/answer/7126229?hl=en).
 - Start first backup using imapsize gui.
 - Configure periodic incremental backups using cron 
   -  ```crontab -e```
