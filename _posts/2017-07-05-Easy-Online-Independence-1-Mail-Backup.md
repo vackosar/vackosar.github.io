@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Easy Online Independence: Mail Backup"
+title: "Easy Online Independence: 1. Mail Backup"
 date: 2017-07-05
 ---
 
