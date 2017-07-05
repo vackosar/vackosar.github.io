@@ -25,6 +25,7 @@ These steps are based on [Arch Linux Wiki](https://wiki.archlinux.org/index.php/
 - Install mbsync (older name: isync) ```sudo apt-get install isync```.
 - Create mail directories ```mkdir -p ~/mbsync/gmail/```
 - Configure mbsync ```vi ~/.mbsyncrc```
+
 ```
 IMAPAccount gmail
 Host imap.gmail.com
@@ -48,6 +49,7 @@ Create Slave
 Sync PullNew
 SyncState *
 ```
+
 - Run first sync ```mbsync gmail```.
 - Configure incremental backups every 15 mins:
   -  ```crontab -e```
