@@ -20,7 +20,7 @@ These steps are based on [Arch Linux Wiki](https://wiki.archlinux.org/index.php/
 - Create an special password only for mail backup. Google calls these passwords "app passwords".
 - Install GPG2 to use as password manager: ```sudo apt-get install gpg2```
 - Generate key: ```gpg2 --quick-gen-key gmail```
-- Encrypt your password by typing it to console after executing: ```read pass; echo $pass |gpg2 -e -r gmail -o ~/mbsync/gmail.gpg```
+- Encrypt your password by typing it to console followed by enter after executing: ```read pass; echo $pass |gpg2 -e -r gmail -o ~/mbsync/gmail.gpg```
 - Test password manager password-less decryption: ```gpg2 -q --for-your-eyes-only --no-tty -d ~/mbsync/gmail.gpg```
 - Install mbsync (older name: isync) ```sudo apt-get install isync```.
 - Create mail directories ```mkdir -p ~/mbsync/gmail/```
