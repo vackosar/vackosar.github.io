@@ -24,7 +24,7 @@ For comparison, Now Foods Omega-3, 180 EPA/120 DHA, 200 Softgels:
 - Serving of 2 capsules contains EPA grams: 0.36
 - $/g EPA: 0.18
 
-_Thus fish oil EPA is 22 times cheaper per gram._
+_Thus fish oil EPA is 22 times cheaper._
 
 # Perishability
 
