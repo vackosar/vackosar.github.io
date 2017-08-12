@@ -7,7 +7,7 @@ date: 2017-08-12
 
 # Abstract
 
-Fish oil is popular supplement. It's production was optimized for maximum content of popular fatty acids DHA and EPA. Fish roe is food of salty taste produced from egg masses of fish known to be good source of omega-3 fatty acids. With this article I am trying to compare the two in terms of price and quality.   
+Fish oil is popular supplement. It's production was optimized for maximum content of popular fatty acids DHA and EPA. Fish roe is food of salty taste produced from egg masses of fish known to be good source of omega-3 fatty acids. With this article I am trying to compare the two in terms of price and health improvement.   
 
 # EPA Gram Price Comparison
 
@@ -36,7 +36,7 @@ I haven't looked into this, but I suspect that fish roe will contain more divers
 
 # Conclusion
 
-While fish oil EPA is more than 20 times cheaper, I cannot rule out fish roe as potentially superior source of phospholipids and omega-3 acids.
+While fish oil EPA is more than 20 times cheaper, I cannot rule out fish roe as potentially superior in terms of health improvement.
 
 
 # References
