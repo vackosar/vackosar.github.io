@@ -7,7 +7,7 @@ date: 2017-08-12
 
 # Abstract
 
-Fish oil is popular supplement. It's production was optimized for maximum content of popular fatty acids DHA and EPA. Fish roe is food of salty taste produced from egg masses of fish known to be good source of omega-3 fatty acids. With this article I am trying to compare the two in terms of price and health improvement.   
+Fish oil is popular supplement. It's production was optimized for maximum content of popular fatty acids DHA and EPA. Fish roe is food of salty taste produced from egg masses of fish known to be good source of omega-3 fatty acids. With this article I am trying to compare the two in terms of price and health improvement. This article may be updated in future.   
 
 # EPA Gram Price Comparison
 
