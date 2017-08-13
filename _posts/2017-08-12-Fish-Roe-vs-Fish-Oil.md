@@ -62,4 +62,4 @@ Fish oil EPA is more than 20 times cheaper and contains 5 times less oxidized ch
 - [4] [Analyses of lipids and fatty acids in ripe roes of some Northwest European marine fish](https://link.springer.com/article/10.1007/BF02534481?no-access=true)
 - [5] [Cholesterol oxidation in some processed fish products](https://rd.springer.com/article/10.1007/s11746-003-0809-7?no-access=true)
 - [6] [A red meat-derived glycan promotes inflammation and cancer progression](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4299224/)
-- [7] [http://www.jbc.org/content/268/31/23675.full.pdf+html](http://www.jbc.org/content/268/31/23675.full.pdf+html)
+- [7] [Structural diversity in the alpha 2-->8-linked polysialic acid chains in salmonid fish egg glycoproteins. Occurrence of poly(Neu5Ac), poly(Neu5Gc), poly(Neu5Ac, Neu5Gc), poly(KDN), and their partially acetylated forms.](http://www.jbc.org/content/268/31/23675.full.pdf+html)
