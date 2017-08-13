@@ -44,11 +44,14 @@ _Fish roe oxidized cholesterol products content is 5 times higher._
 
 # Other Contents
 
-I haven't looked into this, but I suspect that fish roe will contain more diverse and higher quality content.
+Again a redditor pointed me to content of likely dangerous Neu5Gc reported in roe in [6], also I found study [7] reporting natural occurence of this acid.
+
+_Fish roe contains higher amount of Neu5Gc than even meat while fish oil doesn't contain any._ 
+
 
 # Conclusion
 
-Fish oil EPA is more than 20 times cheaper and contains 5 times less oxidized cholesterol products. 
+Fish oil EPA is more than 20 times cheaper and contains 5 times less oxidized cholesterol products and doesn't contain very high amount of Neu5Gc.  
 
 
 # References
@@ -58,3 +61,5 @@ Fish oil EPA is more than 20 times cheaper and contains 5 times less oxidized ch
 - [3] [Fatty acids in the roe lipids of common food fishes](http://www.sciencedirect.com/science/article/pii/0305049184903845)
 - [4] [Analyses of lipids and fatty acids in ripe roes of some Northwest European marine fish](https://link.springer.com/article/10.1007/BF02534481?no-access=true)
 - [5] [Cholesterol oxidation in some processed fish products](https://rd.springer.com/article/10.1007/s11746-003-0809-7?no-access=true)
+- [6] [A red meat-derived glycan promotes inflammation and cancer progression](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4299224/)
+- [7] [http://www.jbc.org/content/268/31/23675.full.pdf+html](http://www.jbc.org/content/268/31/23675.full.pdf+html)
