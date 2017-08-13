@@ -31,7 +31,7 @@ _Thus fish oil EPA is 22 times cheaper._
 Although I expected that thanks to refrigeration and natural encapsulation of fish roe, it will be heathier than oil there are potential issue.
 
 
-A redditor to pointed me to potential concerns about fish roe - oxidised cholesterol content reported in [5].
+[A redditor](https://www.reddit.com/user/whatsninja) to pointed me to potential concerns about fish roe - oxidised cholesterol content reported in [5].
 
 |Product             |COP content|
 |--------------------|-----------|
@@ -44,7 +44,7 @@ _Fish roe oxidized cholesterol products content is 5 times higher._
 
 # Other Contents
 
-Again a redditor pointed me to content of likely dangerous Neu5Gc reported in roe in [6], also I found study [7] reporting natural occurence of this acid.
+Again [a redditor](https://www.reddit.com/user/whatsninja) pointed me to content of likely dangerous Neu5Gc reported in roe in [6], also I found study [7] reporting natural occurence of this acid.
 
 _Fish roe contains higher amount of Neu5Gc than even meat while fish oil doesn't contain any._ 
 
