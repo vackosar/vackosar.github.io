@@ -28,15 +28,27 @@ _Thus fish oil EPA is 22 times cheaper._
 
 # Perishability
 
-I expect that thanks to refrigeration and natural encapsulation of fish roe, that it will arrive to you in much higher quality than fish oil. Anecdotally, I usually don't feel well after fish oil serving, which may be caused by perished product. 
-  
+Although I expected that thanks to refrigeration and natural encapsulation of fish roe, it will be heathier than oil there are potential issue.
+
+
+A Redditor to pointed me to potential concerns about fish roe - oxidised cholesterol content reported in [5].
+
+|Product             |COP content|
+|--------------------|-----------|
+|oil average         |7.52       |
+|fresh salmon roe    |6.23       |
+|salted lumpfish roe |37.56      |
+|smoked cod roe      |93.06      |
+
+_Fish roe oxidized cholesterol products content is 5 times higher._
+
 # Other Contents
 
 I haven't looked into this, but I suspect that fish roe will contain more diverse and higher quality content.
 
 # Conclusion
 
-While fish oil EPA is more than 20 times cheaper, I cannot rule out fish roe as potentially superior in terms of health improvement.
+Fish oil EPA is more than 20 times cheaper and contains 5 times less oxidized cholesterol products. 
 
 
 # References
@@ -45,3 +57,4 @@ While fish oil EPA is more than 20 times cheaper, I cannot rule out fish roe as 
 - [2] [Chemical Composition of Fresh and Salted Lumpfish (Cyclopterus lumpus) Roe](https://www.researchgate.net/publication/233160153_Chemical_Composition_of_Fresh_and_Salted_Lumpfish_Cyclopterus_lumpus_Roe)
 - [3] [Fatty acids in the roe lipids of common food fishes](http://www.sciencedirect.com/science/article/pii/0305049184903845)
 - [4] [Analyses of lipids and fatty acids in ripe roes of some Northwest European marine fish](https://link.springer.com/article/10.1007/BF02534481?no-access=true)
+- [5] [Cholesterol oxidation in some processed fish products](https://rd.springer.com/article/10.1007/s11746-003-0809-7?no-access=true)
