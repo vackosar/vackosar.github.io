@@ -31,7 +31,7 @@ _Thus fish oil EPA is 22 times cheaper._
 Although I expected that thanks to refrigeration and natural encapsulation of fish roe, it will be heathier than oil there are potential issue.
 
 
-A Redditor to pointed me to potential concerns about fish roe - oxidised cholesterol content reported in [5].
+A redditor to pointed me to potential concerns about fish roe - oxidised cholesterol content reported in [5].
 
 |Product             |COP content|
 |--------------------|-----------|
