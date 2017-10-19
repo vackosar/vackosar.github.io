@@ -1,8 +1,12 @@
 ---
 layout: post
-title: "Geecon 2017 Day 1"
+title: "Geecon 2017 Notes Day 1"
 date: 2017-10-17
 ---
+
+# About
+
+Geecon 2017 took place at cinema CineStar Cerny Most Prague, which was unsual location for conference at least for me personally. Lunch was little bit ackward to be eaten seated in the cinema. 
 
 #  Making It Count: Quality is Not Optional
 
