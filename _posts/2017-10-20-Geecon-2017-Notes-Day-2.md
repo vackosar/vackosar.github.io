@@ -246,3 +246,26 @@ UUIDs.
 ## Demo
 
 Client ->* JobServices
+
+
+```
+@Autowired JobController(DefaultCacheManager)
+
+accept
+  jobCache.putIfAbsent(job.id, job)
+  
+getUsersJobs(user)
+  QueryFactory.create(jobCache)
+    .from(Job.class)
+    .
+```
+
+## Quering
+
+Is posible with Lucene integrated into Hibernate.
+
+## Take Away
+Infinispace is sometimes better fit than Raft.
+Avoid need for coordination as it is problematic in distrib syss
+Distrib is hard to encapsulate
+
