@@ -330,3 +330,14 @@ GraalVM is polyglot VM for interoperability, debugging
 - JVM Compiler Interface
 - Java Hotspot
 
+
+# Enterprise React
+
+- Yarn: package manger
+- Webpack: bundler: puts all modules into single file as not all browsers support modules.
+- Component Arch: Types: Smart with logic and dumb for ui.
+- Depedency Injection: Provider pattern for definition of injection.
+- Redux: For state management. Uses reactive patterns to modify state.
+- Swager for UI contracts
+- Unit Testing Jest
+- TestCafe for e2e
