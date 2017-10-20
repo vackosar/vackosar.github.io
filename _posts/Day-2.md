@@ -75,3 +75,40 @@ low latency: memory access pattern, lock free, asynchronous processing, stateles
 ultra low latency: Trhead affinity, numa, large pages, false sharing, data oriented design.
 
 
+# Adam Bien: No Migrations: Use Webstandard
+
+I lost most of my notes as idea crashed and nothing was autosave to disk. The point that webstandards are suffient.
+Uber-Jar doesnot make sense as u dont need to deploy such a huge file.
+
+## Tools
+bsyncn tool to push file changes to the browser
+Visual Studio Code for js, html, css
+
+## Reactivity
+Possible easily with standard CSS webstandard.
+
+## Query
+document.querySelector("#save")
+
+## Value binding
+saveButton.onclick = (e) => this.header.innerText = e.target.value
+
+## importing
+import KrtekSerivce from "./KrtekService.js";
+
+## Sockets
+```
+new WebSocket("ws://localhost:8080/heroes/heroes")
+  .onmessage = e => console.log(e.data)
+```
+
+## JaxRS Backend
+```
+@Stateless
+@Path
+@GET
+```
+
+## TypeScript Problems
+
+Very good, but architects encourage strange patterns. Refactoring is made easier. Use tsc compiler. Disadvantage is the build step. 
