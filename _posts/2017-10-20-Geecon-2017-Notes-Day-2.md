@@ -305,3 +305,14 @@ Classes are placed into 3d space where imports creates attractive force between 
 ## Results Currently
 Passive viewing of code almost useful. Probably soon useful.
 Edditing is not possible at the moment.
+
+
+# Software Is Detail
+
+Dijkstra: Purpose of abstraction is not to be vague, but to create new semantic level in which one can be absolutely precise.
+
+Software is about all of the details. The software should need all the details. Nothing extra is kept thus everything that is there matters. Proper metafor for writting code is constant zooming in and zooming out. Architecture represents significant desing decisions that shape a sys where significant is measured by cost of change.
+
+## Architecture is costly decisions
+
+Modules hide mostly likely changing costly decisions. Architecture are costly decisions performed at the beginning of the project.
