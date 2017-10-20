@@ -301,6 +301,7 @@ Text input: Various apporaches but very limited. No keyboard.
 
 ## How To Distribute classes in space.
 Classes are placed into 3d space where imports creates attractive force between the classes.
- 
-## Summary
-A-frame
+
+## Results Currently
+Passive viewing of code almost useful. Probably soon useful.
+Edditing is not possible at the moment.
