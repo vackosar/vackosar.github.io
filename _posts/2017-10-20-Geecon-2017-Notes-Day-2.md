@@ -188,4 +188,61 @@ MultiTenantConnectionProvide
 ```
 
 
-In progress...
+# Infinispan
+
+jgroups, lucene, jbossmarshalling. proto buffers, push events, 
+
+## 4 Modes of data distrib
+
+### Local
+Not distrib. 
+### Invalidation mode
+Sending invalidation to other nodes. Infinispan does not hold any data.
+### Replicated
+Holds data in replicated manner.
+### Distributed
+Is AP system. ...missed.
+
+## Raft
+Client writes. Leader is already elected. Leader maintains partially-orderedreplicated log. Raft cluster accepts write when n/2+1 nodes are up. It is thus CP system. Recovery is complicated sometimes not possible.
+
+Raft is great when you have much more reads than writes.
+
+## Split
+
+Split will happen i.e. cluster will split into two at some point. Rebalance has to happen. Data will be accumulated on both sides of the split.
+
+### Merging
+Merge happens when we have two different values for same key. There are auto policies, but they are not enough.
+
+Modes:
+- preferred always
+- preferrendnon null
+- remove all
+- custom
+
+Merging has to happen using our business logic.
+
+### Time
+
+Clocks are never the same cross the cluster. It is very hard to sync clock. Do not use time for coordination.
+
+### Append only approach
+Event:
+- Order can be determined by logic order of event types.
+- Some events trigger idempotent actions thus it does not matter.
+- ?
+
+#### Op requiing coord
+Seq num generator.
+
+#### Transactions
+For order and rollback. Order not needed as mentioned. Rollback is not supported. Readers need to able to recover from inconsistent states.
+
+## Ids
+
+UUIDs.
+
+## Demo
+
+Client ->* JobServices
