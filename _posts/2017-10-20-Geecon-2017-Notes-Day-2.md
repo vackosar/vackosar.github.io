@@ -316,3 +316,17 @@ Software is about all of the details. The software should need all the details. 
 ## Architecture is costly decisions
 
 Modules hide mostly likely changing costly decisions. Architecture are costly decisions performed at the beginning of the project.
+
+
+# GraalVM: JS & co for J devs
+
+GraalVM is polyglot VM for interoperability, debugging
+
+## GraalVM Arch
+
+- Sulong
+- Truffle Framework
+- GraalCompiler
+- JVM Compiler Interface
+- Java Hotspot
+
