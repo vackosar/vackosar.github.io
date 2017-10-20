@@ -269,3 +269,38 @@ Infinispace is sometimes better fit than Raft.
 Avoid need for coordination as it is problematic in distrib syss
 Distrib is hard to encapsulate
 
+
+# VR Coding
+
+Jarek Ratajski: Scala, JS, Java, live in Swiss
+
+Currect PC interaction is limited.
+## Planned Obsolence
+Lot of hardware has designed failure after warranty. Peoples bodies also have warranty. Devs have commonly issues with sitting.
+
+## Dream IDE
+
+- not flat screen
+- walking
+- no keyboard
+
+## VR
+Fits missing parts. Really immersive.
+
+## Conding for VR
+- Unreal
+- Unity: recommended. Little bit complex. Popular. Framework which one needs to learn and configure.
+- A-Frame: Simplistic. Written in JS. WebVR.
+
+WebVR is not very stable for products.
+
+## A-Frame
+Basic environment def in XML. 
+Scene building using JS.
+Text input: Various apporaches but very limited. No keyboard.
+
+## How To Distribute classes in space.
+Classes are placed into 3d space where imports creates attractive force between the classes.
+ 
+## Summary
+A-frame
