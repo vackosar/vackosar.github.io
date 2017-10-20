@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Geecon 2017 Notes Day 2"
+date: 2017-10-20
+---
+
 # Architecting for performance
 
 ## Design Patterns
@@ -112,3 +118,74 @@ new WebSocket("ws://localhost:8080/heroes/heroes")
 ## TypeScript Problems
 
 Very good, but architects encourage strange patterns. Refactoring is made easier. Use tsc compiler. Disadvantage is the build step. 
+
+
+# Java 9 Security
+
+## JSSE blocking mode
+
+SSLSocket class. Usedin the smae manner as regular socket.
+
+## JSSE non blocking mode
+
+SSLEngine. Methods wrap() n unwrap() used to transfer data. Handshake triggered by wrap, unwrap, beginHandshake.
+
+## Java 9 new feature: DTLS
+
+DTLS is TLS over UDP. 
+
+## Skipped rest and left for another.
+
+# Hibernate Tips n Tricks
+
+## Primary Keys
+
+### UUID
+Advantage in distribution of ability to create id. Hibernate can generate UUID for you.
+
+#### Generation Strategies:
+- Random generation
+- Timestamp and IP strategy
+
+## Optionals
+Entities support getters returning optinals.
+
+## Java 8 Date and Time
+JPA 2.2+. 
+Hibernate 5+.
+
+## Conversion
+
+### Attirubte convertor
+```
+@Convertor LocalDateConvertor implements AttributeConvereter<LocalDate, Date>
+  java.sql.Date convertToDatanaseColumn(LocalDate date)
+  LocalDate convertToEntityAtrribute(sql.Date date)
+```
+
+
+### Auto apply
+Allows no need to specify the convertor on all columns.
+```@Convertor(autoApply = true)```
+
+## Multi-Tenancy
+One db serves multiple consumers sharing same app.
+
+Tenant *-> App ->* Db
+
+- Each tenant can have their own db
+- Each tenant can have their own schema
+
+```
+TenantIdResolver implements CurrentTenantIdentifierResolver
+  resolveCjrrentTenantIdentifier
+  validateExistingCurrentSeesions
+  setTenantIdentifier
+
+MultiTenantConnectionProvide
+  getAnyConnectionProvider
+  selectConnectionProvider(tenantIdentifier)
+```
+
+
+In progress...

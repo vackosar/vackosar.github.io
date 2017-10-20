@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Geecon 2017 Notes Day 1"
-date: 2017-10-17
+date: 2017-10-19
 ---
 
 # About
