@@ -4,6 +4,9 @@ title: "Geecon 2017 Notes Day 2"
 date: 2017-10-20
 ---
 
+# About
+Missing breakfast break at the begging of second day may have been suprising to some attendees. The day ended with a announcement of winners of little conference game that was prepared. Video recordings of all presentations were promised to be uploaded soon. 
+
 # Architecting for performance
 
 ## Design Patterns
