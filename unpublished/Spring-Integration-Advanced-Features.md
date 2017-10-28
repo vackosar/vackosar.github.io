@@ -1,18 +1,18 @@
 # Spring Integration Uncommon and Advanced Features
 
-Spring integration Intended for enterprise message-driven architectures and implements patterns descirbed in Enterprise Integration Patterns. This document consists of highlights of interesting parts of Spring Integration documentation.
+Spring integration is intended for enterprise message-driven architectures. It implements patterns described in the Enterprise Integration Patterns book. This document consists of highlights of interesting parts of Spring Integration documentation.
  
 # Comparison with functional programming
 
 
 # Aggregator
-Combines multiple messages from single input channel into a single Message. Is statefull as messages have to wait in message store for each other. Most common usage is for messsages to wait until a matching message (e.g. by correlation id) arrives or timeout. Is in a way opposite or Splitter.
+Combines multiple messages from single input channel into a single Message. Is stateful as messages have to wait in message store for each other. Most common usage is for messages to wait until a matching message (e.g. by correlation id) arrives or timeout. Is in a way opposite or Splitter.
 
 # Resequencer
-Suspends certain message group and sends them out ordered correctly. Default implementation uses groups by header attribute correlation id and sequences by header attribute sequence number. 
+Suspends certain message group and sends them out ordered correctly. Default implementation groups by header attribute correlation_id and sequences by header attribute sequence_number. 
 
 # Scatter-Gather
-Sends a message to multiple recipients and then aggregates the replies. Recipients are registered via channel. Replies are gathered from a single reply channel.
+Sends a message to multiple recipients and then aggregates the replies. Recipients are registered by listing their channels. Replies are gathered from a single reply channel.
 
 # Thread Barrier
 
@@ -31,6 +31,7 @@ Suspends a message flow thread until some other asynchronous event occurs
 
 ## Claim Check
 Hides temporarily part of a message. Hidden data is stored separately and later claimed to be returned.
+
 ```
 <int:claim-check-in id="checkin"
         input-channel="checkinChannel"
@@ -50,9 +51,6 @@ Hides temporarily part of a message. Hidden data is stored separately and later 
 - Point to Point: Default
 - Publish, subscribe
 
-## Channel Datatype 
-Strong typing can be used on channel level as well: ```<int:channel id="numberChannel" datatype="java.lang.Number"/>```
-
 ## Channel Types
 
 - DirectChannel: Default channel type. Single thread executes handler on the receiver side.
@@ -68,7 +66,7 @@ Connects two Message Channels or Channel Adapters usually providing some flow co
 
 # Metrics: Time-Based Average Estimates
 
-Other than expected the framework also offers Time-Based Average Estimates i.e. averages over messages are reflected less into result the further in the past messages arrived.
+Other than usual metrics the framework also offers interesting averaging method Time-Based Average Estimates. Averages corresponding to older messages are reflected less into the result.
 For example ```S(n) = sum(i=0 to n) exp(-i/M) x(i)/ sum(i= 0 to n) exp(-i/M)``` where ```x(i)``` is an average for a time slot ```i```.  
 
 # Monitoring: Integration Graph
@@ -126,6 +124,6 @@ Stop the application in an orderly manner. MBean exporter provides a JMX operati
 - Calls beforeShutdown() on beans implementing OrderlyShutdownCapable. 
 - Stops any active channels, such as JMS- or AMQP-backed channels.
 - Stops all MessageSources.
-- Stops all inbound MessageProducer s (that are not OrderlyShutdownCapable).
+- Stops all inbound MessageProducer's (that are not OrderlyShutdownCapable).
 - Waits for any remaining time left, as defined by the value of the long parameter passed in to the operation.
 - Calls afterShutdown() on all OrderlyShutdownCapable components.
