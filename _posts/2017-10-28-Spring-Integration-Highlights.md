@@ -4,8 +4,6 @@ title: "Spring Integration Highlights"
 date: 2017-10-28
 ---
 
-# Spring Integration Uncommon and Advanced Features
-
 Spring integration is intended for enterprise message-driven architectures. It implements patterns described in the Enterprise Integration Patterns book. This document consists of highlights of interesting parts of Spring Integration documentation.
  
 # Comparison with functional programming
