@@ -4,9 +4,18 @@ title: "Spring Integration Highlights"
 date: 2017-10-28
 ---
 
-Spring integration is intended for enterprise message-driven architectures. It implements patterns described in the Enterprise Integration Patterns book. This document consists of highlights of interesting parts of Spring Integration documentation.
+Spring integration is intended for enterprise message-driven architectures. It implements patterns described in the Enterprise Integration Patterns book. This document consists of highlights of interesting parts of [Spring Integration documentation](https://docs.spring.io/spring-integration/docs/current/reference/html/index.html).
  
 # Comparison with functional programming
+Message driven architectures have many similar abstractions to functional programming. See for example comparison with Java 8 Streams.
+
+|Spring Integration|Java 8 Streams |
+|------------------|---------------|
+|Chain             |Pipeline       |
+|Filter            |filter function|
+|Transformer       |map function   |
+|Splitter          |flatMap        |
+
 
 
 # Aggregator
