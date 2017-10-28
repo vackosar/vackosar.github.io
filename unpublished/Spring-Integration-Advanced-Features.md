@@ -120,6 +120,14 @@ Example:
           "countLong": 0
 ```
 
+## Message History
+
+Stores ids of components that were visited by the message in the message's header.
+```
+[{name=sampleGateway, type=gateway, timestamp=1283281668091},
+ {name=sampleChain, type=chain, timestamp=1283281668094}]
+```
+
 ## Message Store
 Stores messages into configured persistent or in-memory storage including using JDBC and MongoDb.
 
