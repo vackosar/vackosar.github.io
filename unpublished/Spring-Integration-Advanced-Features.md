@@ -41,6 +41,20 @@ Suspends a message flow thread until some other asynchronous event occurs
 <int:outbound-channel-adapter channel="release" ref="barrier1.handler" method="trigger" />
 ```
 
+### Claim Check
+Hides temporarily part of a message. Hidden data is stored separately and later claimed to be returned.
+```
+<int:claim-check-in id="checkin"
+        input-channel="checkinChannel"
+        message-store="testMessageStore"
+        output-channel="output"/>
+        
+<int:claim-check-out id="checkout"
+        input-channel="checkoutChannel"
+        message-store="testMessageStore"
+        output-channel="output"/>
+```
+
 ## Channel Configuration
 
 ### Channel Modes
@@ -60,9 +74,14 @@ Strong typing can be used on channel level as well: ```<int:channel id="numberCh
 - ExecutorChannel: Multithreaded variant of DirectChannel.
 - Scoped Channel: Allows limiting scope the channel.
 
-### Messaging Bridge
+## Messaging Bridge
 
 Connects two Message Channels or Channel Adapters usually providing some flow controlling functionality. For example connecting JMS with Email. 
+
+## Metrics: Time-Based Average Estimates
+
+Other than expected the framework also offers Time-Based Average Estimates i.e. averages over messages are reflected less into result the further in the past messages arrived.
+For example ```S(n) = sum(i=0 to n) exp(-i/M) x(i)/ sum(i= 0 to n) exp(-i/M)``` where ```x(i)``` is an average for a time slot ```i```.  
 
 ## JDBC Message Store
 
