@@ -5,3 +5,8 @@ url: https://vackosar.github.io
 gems:
   - jekyll-feed
 future: true
+title: Vackosar.GitHub.io
+description: 
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
