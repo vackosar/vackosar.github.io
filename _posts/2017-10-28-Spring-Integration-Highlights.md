@@ -70,7 +70,7 @@ Hides temporarily part of a message. Hidden data is stored separately and later 
 - QueueChannel: Sender publishes to queue. Messages are queued until consumers will consume them. Allows multiple consumers.
 - PriorityChannel: QueueChannel with a priority.
 - RendezvousChannel: Blocks sender until receiver consumes.
-- ExecutorChannel: Multithreaded variant of DirectChannel.
+- ExecutorChannel: Multithreaded subscribable variant of DirectChannel.
 - Scoped Channel: Allows limiting scope the channel.
 
 ## Messaging Bridge
