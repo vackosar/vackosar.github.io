@@ -3,6 +3,8 @@ layout: post
 title: "RxJS And Spring Integration Concept Similarities"
 date: 2017-11-05
 ---
+I like to compare similar concepts as it helps me to understand them better. Words are defined by other words. 
+
 RxJS and Spring Integration are similar as former deals with event streams and latter with message streams. Below is a table comparing concepts in both frameworks. 
 
 |RxJS          |Spring Integration |Note|
