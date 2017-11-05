@@ -7,7 +7,7 @@ date: 2017-10-28
 Spring integration is intended for enterprise message-driven architectures. It implements patterns described in the Enterprise Integration Patterns book. This document consists of highlights of interesting parts of [Spring Integration documentation](https://docs.spring.io/spring-integration/docs/current/reference/html/index.html).
  
 ## Comparison with functional programming
-Message driven architectures have many similar abstractions to functional programming. See for example comparison with Java 8 Streams.
+Message driven architectures have many similar abstractions to functional programming. See for example comparison with Java 8 Streams. 
 
 |Spring Integration|Java 8 Streams |
 |------------------|---------------|
@@ -16,7 +16,7 @@ Message driven architectures have many similar abstractions to functional progra
 |Transformer       |map function   |
 |Splitter          |flatMap        |
 
-
+One of main differences between is treatment of time e.g. Java 8 Streams don't have equivalent method to Delayer. Java 8 Streams are not normally integrating with outside systems and are to finish immediately. 
 
 ## Aggregator
 Combines multiple messages from single input channel into a single Message. Is stateful as messages have to wait in message store for each other. Most common usage is for messages to wait until a matching message (e.g. by correlation id) arrives or timeout. Is in a way opposite or Splitter.
