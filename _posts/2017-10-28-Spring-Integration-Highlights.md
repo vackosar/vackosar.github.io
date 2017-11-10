@@ -69,9 +69,9 @@ Hides temporarily part of a message. Hidden data is stored separately and later 
 - DirectChannel: Default channel type. Single thread executes handler on the receiver side.
 - QueueChannel: Sender publishes to queue. Messages are queued until consumers will consume them. Allows multiple consumers.
 - PriorityChannel: QueueChannel with a priority.
-- RendezvousChannel: Blocks sender until receiver consumes.
+- RendezvousChannel: QueueChannel using Blocking Queue for multithreaded submission. Blocks sender until receiver consumes.
 - ExecutorChannel: Multithreaded subscribable variant of DirectChannel.
-- Scoped Channel: Allows limiting scope the channel.
+- Scoped Channel: Allows limiting scope of the channel.
 
 ## Messaging Bridge
 
