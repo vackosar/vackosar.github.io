@@ -29,7 +29,7 @@ Sends a message to multiple recipients and then aggregates the replies. Recipien
 
 ## Thread Barrier
 
-Suspends a message flow thread until some other asynchronous event occurs
+Suspends a message until correlating message arrives on separate channel or times out sending message to discard channel.
 
 ```
 <int:barrier id="barrier1" input-channel="in" output-channel="out"
