@@ -1,6 +1,7 @@
 body {
     width: 95%;
     margin: auto;
+    font-size: 1.5em;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -30,15 +31,6 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
-}
-
-ul {
-    margin: 20px auto 40px;
-    font-size: 1.5em;
-}
-
-ul li {
-    font-size: 1.0em;
 }
 
 .postpreview {
