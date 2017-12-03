@@ -9,6 +9,7 @@ nav ul, footer ul {
 }
 nav ul li, footer ul li {
     display: inline;
+    vertical-align: top;
 }
 a {
     text-decoration: none;
