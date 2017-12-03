@@ -34,7 +34,7 @@ See below Spring Boot and Spring Data example.
   - EventPayload
 
 
-# References
+## References
 - https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html
 - http://www.cs.sjsu.edu/~pearce/modules/patterns/enterprise/ecb/ecb.htm
 - http://epf.eclipse.org/wikis/openuppt/openup_basic/guidances/concepts/entity_control_boundary_pattern,_uF-QYEAhEdq_UJTvM1DM2Q.html
