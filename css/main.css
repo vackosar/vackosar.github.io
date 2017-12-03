@@ -6,10 +6,10 @@ nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     font-weight: bold;
+    vertical-align: top;
 }
 nav ul li, footer ul li {
     display: inline;
-    vertical-align: top;
 }
 a {
     text-decoration: none;
