@@ -4,6 +4,8 @@ title: "Cheap And Tiny Walking Desk"
 date: 2017-12-25
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EnPrXfrZAeo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
 A review of my walking desk setup.
 
 # Treadmill
