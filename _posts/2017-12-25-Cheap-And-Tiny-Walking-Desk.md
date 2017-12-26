@@ -7,10 +7,10 @@ date: 2017-12-25
 A review of my walking desk setup.
 
 # Treadmill
-- I bought a kids magnetic treadmill secondhand for $32. Such low startup cost is great to at least get a taste of the concept.
+- I bought a kids magnetic treadmill secondhand for just $32. Such low startup cost is great to at least get a taste of the concept.
 - Since the treadmill is magnetic it does not encourage you to maintain selected pace. This may allow you to stop unconsciously for long periods.
 - The belt's momentum is maintained by pair of small flywheels at the front, which are however underpowered for adult weight. Thus one can often experience sudden stops especially when walking at low speeds.
-- The treadmill is just about right length for slow paced walk allowing to control a computer. I would just like to do a small modification to be able to use its full length, but it is not high priority.
+- Treadmill's dimensions are 69x37cm. That's just about right length for slow paced walk allowing to control a computer.
 - When not in service the treadmill takes up almost no space in comparison to other furniture.
 
 # Standing Desk
