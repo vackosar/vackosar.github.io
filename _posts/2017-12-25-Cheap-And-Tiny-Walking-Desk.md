@@ -19,4 +19,4 @@ A review of my walking desk setup.
 - When maximally extended, the desk is little bit wobbly, but not as much that it would cause any functional issues.
 
 # Conclusion
-I am happy for the time being with my setup.
+I am happy for the time being with my setup. Long term I will consider buying full size electrical treadmill.
