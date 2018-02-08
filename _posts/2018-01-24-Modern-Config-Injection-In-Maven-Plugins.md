@@ -28,7 +28,7 @@ Then you would implement a provider:
 ```java
 class Property1Provider extends RequiredConfigProvider<String> {
     
-    private String property1;
+    private String value;
     
     ...
 }
@@ -38,8 +38,14 @@ The super class would call a Maven's inner undocumented class ```CompositeBeanHe
 
 ```java
 class RequiredConfigProvider<T> {
-    
+  // Inject the instance to extract values from. 
+  @Inject 
+  public RequiredConfigProvider(MojoExecution mojoExecution)
+  ...  
+  // Filter for a property in plugin configuration.
+  mojoExecution.getPlugin().getConfiguration()
   ...
+  // Set the value to the child e.g. Property1Provider.
   compositeBeanHelper.setProperty(...)
   ... 
 }
