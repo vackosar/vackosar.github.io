@@ -63,9 +63,9 @@ Exec=firefox --class whatsapp -P whatsapp https://web.whatsapp.com
 
 ## Web Link App Creator Script
 
-You can speed up the web link app creation using following script. It takes two arguments: 
-- url (starting with https or http) 
-- name
+You can speed up the web link app creation using following script. It also creates a command into ```$HOME/bin``` such that you can add that app into startup. It takes two arguments: 
+- url: Url of the app starting with https or http.
+- name: Name of the app used for search and commandline.
 
 ```shell
 #!/bin/sh -xue
@@ -80,6 +80,13 @@ else
 	exit 1;
 fi
 
+command="$HOME/bin/$name";
+cat - > "$command" <<END
+#!/bin/sh -ue
+chromium-browser --class "$name" -user-data-dir="$HOME/.config/$name" --app="$url";
+END
+chmod u+x "$command";
+
 desktopFile="$HOME/.local/share/applications/$name.desktop";
 
 cat - > "$desktopFile" <<END
@@ -89,7 +96,7 @@ Type=Application
 Name=$name
 GenericName=$name
 #Icon="$HOME/.local/share/icons/$name.svg"
-Exec=chromium-browser --class "$name" -user-data-dir="$HOME/.config/$name" --app="$url"
+Exec="$command"
 Terminal=false
 END
 ```
