@@ -24,7 +24,7 @@ Type=Application
 Name=WhatsApp
 GenericName=WhatsApp
 Icon=/usr/share/icons/hicolor/scalable/whatsapp.svg
-Exec=chromium-browser --class whatsapp -user-data-dir="~/.config/whatsapp" --app=https://web.whatsapp.com
+Exec=chromium-browser --class whatsapp -user-data-dir=".config/whatsapp" --app=https://web.whatsapp.com
 Terminal=false
 END
 
@@ -33,6 +33,10 @@ sudo desktop-file-install whatsapp.desktop
 ```
 
 Similar approach can be used with Firefox except option "-P" is used instead of "--app" and "-user-data-dir" option is not needed. It involves a manual step on first startup and one cannot easily remove the tab and address bars. On the other hand it handles icon in better way.
+
+# Automation
+
+
 
 # References
 
