@@ -8,44 +8,48 @@ Say you would like to have WhatsApp on Ubuntu as a sandboxed application, but yo
 
 Solution is below uses Chromium Browser:
 
-
+Create a desktop file ```whatsapp.desktop``` containing following:
 ```shell
-# Download PNG or SVG icon somewhere from the web.
-wget https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg
-
-# Copy the icon to proper directory.
-sudo cp WhatsApp.svg /usr/share/icons/hicolor/scalable/whatsapp.svg
-
-# Create a desktop file.
-cat - > whatsapp.desktop <<END
 [Desktop Entry]
 Version=1.0
 Type=Application
 Name=WhatsApp
 GenericName=WhatsApp
-Icon=/usr/share/icons/hicolor/scalable/whatsapp.svg
+#Icon=/usr/share/icons/hicolor/scalable/whatsapp.svg
 Exec=chromium-browser --class whatsapp -user-data-dir=".config/whatsapp" --app=https://web.whatsapp.com
 Terminal=false
-END
+```
 
-# Install the desktop file.
+Install desktop file executing:
+```
 sudo desktop-file-install whatsapp.desktop 
 ```
+
+Download and uncomment the Icon line to have icon displayed in Ubuntu search. However, Chrome will override with downloaded page icon upon start.
 
 Similar approach can be used with Firefox except option "-P" is used instead of "--app" and "-user-data-dir" option is not needed. It involves a manual step on first startup and one cannot easily remove the tab and address bars. On the other hand it handles icon in better way.
 
 ## Desktop File Creator Script
 
 ```shell
-url="$1"
-name="$(echo "$url" |sed -e 's|https://||;s|http://||;s|\.[^.]\+$||;')"
+#!/bin/sh -xue
+
+url="$1";
+if [ "$#" = "1" ]; then
+	name="$(echo "$url" |sed -e 's|https://||;s|http://||;s|\.[^.]\+$||;')";
+elif [ "$#" = "2" ]; then
+	name="$2";
+else
+	echo 'Too many arguments. Usage: url [name]';
+	exit 1;
+fi
 cat - > "$name.desktop" <<END
 [Desktop Entry]
 Version=1.0
 Type=Application
 Name=$name
 GenericName=$name
-Icon=/usr/share/icons/hicolor/scalable/$name.svg
+#Icon=/usr/share/icons/hicolor/scalable/$name.svg
 Exec=chromium-browser --class $name -user-data-dir=".config/$name" --app=$url
 Terminal=false
 END
