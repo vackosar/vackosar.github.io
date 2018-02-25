@@ -4,7 +4,9 @@ title: "Creating Custom Ubuntu Web Link App"
 date: 2018-02-25
 ---
 
-Say you would like to have WhatsApp on Ubuntu as a sandboxed application, but you cannot find any package for that. WhatsApp has a web page, but how to make sure that the page opens as separate application with custom icon and has ability to track you or access your login information? Two step solution below uses Chromium browser.
+Say you would like to have WhatsApp on Ubuntu as a sandboxed application, but you cannot find any package for that. WhatsApp has a web page, but how to make sure that the page opens as separate application and its provider has no ability to track you on other pages or hack access to your login or history? 
+
+Two step solution below uses Chromium browser.
 
 ## Instructions
 
