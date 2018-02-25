@@ -10,6 +10,7 @@ title: Vaclav Kosar's Blog
       <div class="postpreview">
         {{ post.content }}
       </div>
+      <br>
       <div class="subscribe-page">
         Subscribe:
         <a href="https://twitter.com/intent/follow?screen_name=vackosar" rel="nofollow" target="_blank" title="Follow on Twitter">Twitter</a>
