@@ -53,7 +53,7 @@ Exec=firefox --class whatsapp -P whatsapp https://web.whatsapp.com
 - Perform manual step of [creating Firefox profile](https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-firefox-profiles) on first startup.
 - Optional: [Remove the tab and address bar).](https://superuser.com/questions/1261660/firefox-quantum-ver-57-how-can-i-hide-the-horizontal-tab-bar-with-treesty)
 
-## Others Suggested Apps
+## Other Suggested Apps
 
 - Google Calendar
 - Gmail
