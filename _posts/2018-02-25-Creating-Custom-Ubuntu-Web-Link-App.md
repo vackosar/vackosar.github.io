@@ -8,6 +8,8 @@ Say you would like to have WhatsApp on Ubuntu as a sandboxed application, but yo
 
 Two step solution below uses Chromium browser.
 
+Note that if you don't need sandbox protection you can simply click in Chromium: ``` More tools -> Add to desktop```. ([Thanks Hacker News suggestor](https://news.ycombinator.com/item?id=16458165#16458634).)
+
 ## Results
 
 ![Search](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2018-02-25-ubuntu-search-whatsapp.png)
@@ -85,6 +87,7 @@ END
 
 ## References
 
+- [HN discussion of this post](https://news.ycombinator.com/item?id=16458165#16458634)
 - [https://www.reddit.com/r/linux/comments/7ivuit/create_firefoxbased_web_apps_for_gnome_and/](https://www.reddit.com/r/linux/comments/7ivuit/create_firefoxbased_web_apps_for_gnome_and/)
 - [https://superuser.com/questions/1261660/firefox-quantum-ver-57-how-can-i-hide-the-horizontal-tab-bar-with-treesty](https://superuser.com/questions/1261660/firefox-quantum-ver-57-how-can-i-hide-the-horizontal-tab-bar-with-treesty)
 - [https://standards.freedesktop.org/desktop-entry-spec/latest/index.html](https://standards.freedesktop.org/desktop-entry-spec/latest/index.html)
