@@ -4,7 +4,7 @@ title: "Creating Custom Ubuntu Web Link App"
 date: 2018-02-25
 ---
 
-Say you would like to have WhatsApp on Ubuntu as a sandboxed application, but you cannot find any package for that. WhatsApp has a web page, but how to make sure that the page opens as separate application and its provider has no ability to track you on other pages or hack access to your login or history? 
+Say you would like to have WhatsApp on Ubuntu as a **sandboxed application**, but you cannot find any package for that. WhatsApp has a **web page**, but how to make sure that the page opens as separate application and its provider **cannot track you** on other pages or hack access to your login or history? 
 
 Two step solution below uses Chromium browser.
 
@@ -33,6 +33,9 @@ Terminal=false
 ```
 sudo desktop-file-install whatsapp.desktop 
 ```
+
+*Note: You can also install it without admin rights for current user only: 
+```cp whatsapp.desktop ~/.local/share/applications/```.*
 
 ## Custom Icon
 Download and uncomment the Icon line to have icon displayed in Ubuntu search (launcher). However, Chrome will override Taskbar icon with the page icon upon load. This lowers your Taskbar icon resolution, but on the other hand simplifies the process.
