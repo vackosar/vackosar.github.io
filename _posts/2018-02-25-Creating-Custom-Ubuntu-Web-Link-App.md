@@ -7,13 +7,12 @@ date: 2018-02-25
 Say you would like to have WhatsApp on Ubuntu as a sandboxed application, but you cannot find any package for that. WhatsApp has a web page, but how to make sure that the page opens as separate application and its provider has no ability to track you on other pages or hack access to your login or history? 
 
 Two step solution below uses Chromium browser.
- Results are can be overviewed on following pictures:
 
-<img src="_posts/images/2018-02-25-ubuntu-search-whatsapp.png"/>
-<img src="_posts/images/2018-02-25-ubuntu-taskbar-whatsapp.png"/>
+## Results
 
+![Search](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2018-02-25-ubuntu-search-whatsapp.png)
+![Taskbar](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2018-02-25-ubuntu-taskbar-whatsapp.png)
 
-<img src="/foto1_large.png"
 ## Instructions
 
 - Create a desktop file ```whatsapp.desktop``` containing following:
