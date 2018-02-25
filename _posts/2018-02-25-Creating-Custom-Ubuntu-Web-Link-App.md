@@ -29,7 +29,17 @@ Download and uncomment the Icon line to have icon displayed in Ubuntu search. Ho
 
 Similar approach can be used with Firefox except option "-P" is used instead of "--app" and "-user-data-dir" option is not needed. It involves a manual step on first startup and one cannot easily remove the tab and address bars. On the other hand it handles icon in better way.
 
+## Others Suggested Apps
+
+- Google Calendar
+- Gmail
+- Youtube
+- Facebook
+- Google Tasks
+
 ## Desktop File Creator Script
+
+You can speed up the desktop file creation with following script:
 
 ```shell
 #!/bin/sh -xue
@@ -54,8 +64,6 @@ Exec=chromium-browser --class $name -user-data-dir=".config/$name" --app=$url
 Terminal=false
 END
 ```
-
-
 
 ## References
 
