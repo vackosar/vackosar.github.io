@@ -25,7 +25,7 @@ Type=Application
 Name=WhatsApp
 GenericName=WhatsApp
 #Icon=/usr/share/icons/hicolor/scalable/whatsapp.svg
-Exec=chromium-browser --class whatsapp -user-data-dir=".config/whatsapp" --app=https://web.whatsapp.com
+Exec=chromium-browser --class whatsapp -user-data-dir=".config/whatsapp" --app="https://web.whatsapp.com"
 Terminal=false
 ```
 
@@ -61,9 +61,11 @@ Exec=firefox --class whatsapp -P whatsapp https://web.whatsapp.com
 - Facebook
 - Google Tasks
 
-## Desktop File Creator Script
+## Web Link App Creator Script
 
-You can speed up the desktop file creation with following script:
+You can speed up the web link app creation using following script. It takes two arguments: 
+- url (starting with https or http) 
+- name
 
 ```shell
 #!/bin/sh -xue
@@ -77,14 +79,17 @@ else
 	echo 'Too many arguments. Usage: url [name]';
 	exit 1;
 fi
-cat - > "$name.desktop" <<END
+
+desktopFile="$HOME/.local/share/applications/$name.desktop";
+
+cat - > "$desktopFile" <<END
 [Desktop Entry]
 Version=1.0
 Type=Application
 Name=$name
 GenericName=$name
-#Icon=/usr/share/icons/hicolor/scalable/$name.svg
-Exec=chromium-browser --class $name -user-data-dir=".config/$name" --app=$url
+#Icon="$HOME/.local/share/icons/$name.svg"
+Exec=chromium-browser --class "$name" -user-data-dir="$HOME/.config/$name" --app="$url"
 Terminal=false
 END
 ```
