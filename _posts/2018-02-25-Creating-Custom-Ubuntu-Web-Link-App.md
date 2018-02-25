@@ -28,10 +28,17 @@ sudo desktop-file-install whatsapp.desktop
 ```
 
 ## Custom Icon
-Download and uncomment the Icon line to have icon displayed in Ubuntu search. However, Chrome will override Taskbar icon with the page icon upon load.
+Download and uncomment the Icon line to have icon displayed in Ubuntu search (launcher). However, Chrome will override Taskbar icon with the page icon upon load. This lowers your Taskbar icon resolution, but on the other hand simplifies the process.
+
+Custom Taskbar as well as search (launcher) icons are supported on Firefox.
+
 
 ## Firefox Support 
-Similar approach can be used with Firefox except option "-P" is used instead of "--app" and "-user-data-dir" option is not needed. It involves a manual step on first startup and one cannot easily remove the tab and address bars. On the other hand it handles icons in better way.
+Firefox has advantage in that it doesn't override your custom icon in the Taskbar, however requires manual profile creation step and manual removal of address bar.
+- Replace option "-P" with "--app"
+- Remove "-user-data-dir" option.
+- Perform manual step of [creating Firefox profile](https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-firefox-profiles) on first startup.
+- Optional: [Remove the tab bar (address bar).](https://superuser.com/questions/1261660/firefox-quantum-ver-57-how-can-i-hide-the-horizontal-tab-bar-with-treesty)
 
 ## Others Suggested Apps
 
