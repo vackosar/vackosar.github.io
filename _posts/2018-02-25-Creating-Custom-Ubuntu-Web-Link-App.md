@@ -34,8 +34,9 @@ Terminal=false
 sudo desktop-file-install whatsapp.desktop 
 ```
 
-*Note: You can also install the desktop file without admin rights for current user only: 
-```cp whatsapp.desktop ~/.local/share/applications/```.*
+*Note 1: You can also install the desktop file without admin rights for current user only: ```cp whatsapp.desktop ~/.local/share/applications/```.*
+
+*Note 2: Do not use command above unchanged in commandline. It relies on being executed in home directory to store in its files in ```.config```. I found no easy way to add ```$HOME``` reference into a desktop file.*
 
 ## Custom Icon
 Download and uncomment the Icon line to have icon displayed in Ubuntu search (launcher). However, Chrome will override Taskbar icon with the page icon upon load. This lowers your Taskbar icon resolution, but on the other hand simplifies the process.
