@@ -34,7 +34,7 @@ Terminal=false
 sudo desktop-file-install whatsapp.desktop 
 ```
 
-*Note: You can also install desktop file without admin rights for current user only: 
+*Note: You can also install the desktop file without admin rights for current user only: 
 ```cp whatsapp.desktop ~/.local/share/applications/```.*
 
 ## Custom Icon
