@@ -44,7 +44,7 @@ cat - > "$name.desktop" <<END
 Version=1.0
 Type=Application
 Name=$name
-GenericName=WhatsApp
+GenericName=$name
 Icon=/usr/share/icons/hicolor/scalable/$name.svg
 Exec=chromium-browser --class $name -user-data-dir=".config/$name" --app=$url
 Terminal=false
