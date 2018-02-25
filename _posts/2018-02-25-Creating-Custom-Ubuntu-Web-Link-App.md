@@ -8,7 +8,7 @@ Say you would like to have WhatsApp on Ubuntu as a sandboxed application, but yo
 
 Two step solution below uses Chromium browser.
 
-*Note that if you don't need sandbox protection you can simply click in Chromium: ``` More tools -> Add to desktop```. ([Thanks Hacker News suggestor](https://news.ycombinator.com/item?id=16458165#16458634).)*
+*Note: If you don't need sandbox protection you can simply click in Chromium: ``` More tools -> Add to desktop```. ([Thanks Hacker News suggestor](https://news.ycombinator.com/item?id=16458165#16458634).)*
 
 ## Results
 
