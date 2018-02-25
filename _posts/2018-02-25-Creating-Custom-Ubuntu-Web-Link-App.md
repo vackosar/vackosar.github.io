@@ -26,7 +26,7 @@ sudo desktop-file-install whatsapp.desktop
 ```
 
 ## Custom Icon
-Download and uncomment the Icon line to have icon displayed in Ubuntu search. However, Chrome will override it with downloaded page icon upon page load.
+Download and uncomment the Icon line to have icon displayed in Ubuntu search. However, Chrome will override Taskbar icon with the page icon upon load.
 
 ## Firefox Support 
 Similar approach can be used with Firefox except option "-P" is used instead of "--app" and "-user-data-dir" option is not needed. It involves a manual step on first startup and one cannot easily remove the tab and address bars. On the other hand it handles icons in better way.
