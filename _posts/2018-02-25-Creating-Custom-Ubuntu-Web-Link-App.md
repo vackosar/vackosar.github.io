@@ -104,6 +104,8 @@ END
 ## References
 
 - [HN discussion of this post](https://news.ycombinator.com/item?id=16458165#16458634)
+- [Web Link Apps on Android on F-Droid (by someone else)](https://f-droid.org/packages/com.tobykurien.webapps/)
+- [Parallel project partially inspired by this post (by someone else)](https://quang.im/webcatalog)
 - [https://www.reddit.com/r/linux/comments/7ivuit/create_firefoxbased_web_apps_for_gnome_and/](https://www.reddit.com/r/linux/comments/7ivuit/create_firefoxbased_web_apps_for_gnome_and/)
 - [https://superuser.com/questions/1261660/firefox-quantum-ver-57-how-can-i-hide-the-horizontal-tab-bar-with-treesty](https://superuser.com/questions/1261660/firefox-quantum-ver-57-how-can-i-hide-the-horizontal-tab-bar-with-treesty)
 - [https://standards.freedesktop.org/desktop-entry-spec/latest/index.html](https://standards.freedesktop.org/desktop-entry-spec/latest/index.html)
