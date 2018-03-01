@@ -15,8 +15,8 @@ title: Vaclav Kosar's Blog
     <!--.-->
 </div>
 
-<ul class="posts">
+<div class="posts">
   {% for post in site.posts %}
-    <li><a href="{{ post.url }}" title="{{ post.title }}"><h2>{{ post.date | date_to_string }} - {{ post.title }}</h2></a></li>
+    <a href="{{ post.url }}" title="{{ post.title }}"><h2>{{ post.date | date_to_string }} - {{ post.title }}</h2></a>
   {% endfor %}
-</ul>
+</div>
