@@ -2,26 +2,33 @@
 set -xue
 
 title="$1"
-link="$2"
+text="$2"
 now="$(date +%F)"
 file="_posts/$now-$(echo "$title" | sed 's/ /-/g').md"
 
-#if echo "$text" |grep -q "http"; then
-#    link="$text"
-#    text="[$text]($text)"
-#fi
-
 echo "---
-layout: post
-title: \"$title\"
-date: $now
----
-[$link]($link)
-<script language=\"javascript\">
-    window.location.href = \"$link\"
-</script>
-"
-> "$file"
+    layout: post
+    title: \"$title\"
+    date: $now
+    ---
+    " > "$file"
+
+
+if expr match "$text" "^http" && expr match "$title" "^Link:"; then
+    link="$text"
+    echo "---
+    layout: post
+    title: \"$title\"
+    date: $now
+    ---
+    [$link]($link)
+    <script language=\"javascript\">
+        window.location.href = \"$link\"
+    </script>
+    " >> "$file"
+else
+    echo "$text" >> "$file"
+fi
 
 git add "$file"
 git commit -m "$title"
