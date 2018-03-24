@@ -7,11 +7,11 @@ now="$(date +%F)"
 file="_posts/$now-$(echo "$title" | sed 's/ /-/g').md"
 
 echo "---
-    layout: post
-    title: \"$title\"
-    date: $now
-    ---
-    " > "$file"
+layout: post
+title: \"$title\"
+date: $now
+---
+" > "$file"
 
 
 if expr match "$text" "^http" && expr match "$title" "^Link:"; then
