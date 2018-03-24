@@ -34,3 +34,5 @@ broadness of dataasets, select broad metrics
 
 Param Spaces are the new params. Cannot try all possiblities. 
 
+## Ensuring interaction with user during optimizing
+Automation is not enough. We need to also communicatte with the user to provide more data, evaluate, verify, reevaluate contraints or preferences.
