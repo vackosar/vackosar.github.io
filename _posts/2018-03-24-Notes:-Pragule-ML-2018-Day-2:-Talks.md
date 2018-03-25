@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Notes: Prague ML 2018: Day 1: Talks"
-date: 2018-03-23
+title: "Notes: Prague ML 2018: Day 2: Talks"
+date: 2018-03-24
 ---
 
 # Intro to conference
@@ -56,5 +56,22 @@ Use history and make prediction. Decision needs to include: web page, cotext, re
 Users are split into sub groups based on interests and estimation is then performend on them. User split is done using principal component analysis. UsedStreaming pattern discovery in multiple ... paper. 
 
 Collected features, web pages and designeded 1 hour time slot. Based on number of hits in given slots created vectors. Also separated into time series in order to predict distribution across week, and day hour. Predicted then results and performed analysis of the performance. Results were quite acurrate.
+
+# Deep Learning Revolution, Audi
+Overview of deep learning and current performance. Style transfer, face transfer, Long Short Term Memory, Self Normalizing Nets (Selu), Two time scale GAN, Reinforcement network. 
+
+# Alquist Chat bot
+## 2017
+- Recongnize intent.
+- Entity recognition. Gather lists and attempt to match those.
+- Context
+- Dialog manager. Directed graph of topics where driver decides which route to go.
+- Db with API to access general info.
+
+## 2018 upgrades
+Move from topics to entities. Dialog manager decides based on dialogue acts and entities.
+
+# Quantum Computing
+Accelaraates computing for osme tasks e.g. eigenvalues, dialognalization, prime decomposition.
 
 
