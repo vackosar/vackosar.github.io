@@ -51,3 +51,22 @@ Facerecog with DLusing convnet feaature maps to produces  vectors of facial feat
 Modeling overall satifaction based on bayesian networks.
 
 
+# Spaceknow
+
+## Indexes on Bloomberg
+Estiamting gdp of african countries based on light index.
+Estimating china industry based on satelite images.
+
+# O2
+
+Using word2vec on cell ids tracked from opt in customers (cell2vec). Used 100dim.
+
+
+# Data Programming, CEAi
+
+Important is to have proper versioning and tools in data science.
+Example: Snorkel tool is useful notebook based on Zeppelin.
+
+Data Version Control is versioning tool for data used a plugin for Git for reproducibility and sharing.
+
+Private platfrom Sensei is platform for solving common problems with versioning and so on. It aims to link code, output and input data which would be all backed up. Sensei would also like to add automatic hyperparam optimization, annotators, active learning.
