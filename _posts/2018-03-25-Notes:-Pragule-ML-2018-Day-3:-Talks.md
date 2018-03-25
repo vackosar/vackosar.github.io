@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Notes: Prague ML 2018: Day 3: Talks"
-date: 2018-03-23
+date: 2018-03-25
 ---
 
 # Deploying Text ML in a Bank
@@ -45,3 +45,9 @@ Tracking mining in Ghana. Transfer learning as a service. Kubernetes, Redis.
 ## X
 Cognitive Services, FaceNet, Face_recognition.
 Facerecog with DLusing convnet feaature maps to produces  vectors of facial featutres. Comparing featuree vectors using L2.
+
+
+# Optimizing data center, DHL
+Modeling overall satifaction based on bayesian networks.
+
+
