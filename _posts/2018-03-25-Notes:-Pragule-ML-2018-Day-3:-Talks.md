@@ -70,3 +70,6 @@ Example: Snorkel tool is useful notebook based on Zeppelin.
 Data Version Control is versioning tool for data used a plugin for Git for reproducibility and sharing.
 
 Private platfrom Sensei is platform for solving common problems with versioning and so on. It aims to link code, output and input data which would be all backed up. Sensei would also like to add automatic hyperparam optimization, annotators, active learning.
+
+# Panel Discussion
+
