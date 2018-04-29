@@ -52,9 +52,9 @@ These steps are based on [Arch Linux Wiki](https://wiki.archlinux.org/index.php/
 ```
 
 - Run first sync: ```mbsync gmail```.
-- Configure incremental backups every 15 mins:
+- Configure incremental backups every 15 mins with extra logging:
   -  ```crontab -e```
-  -  ```0,15,30,45 * * * * mbsync gmail```
+  -  ```0,15,30,45 * * * * log="/home/vackosar/mbsync/gmail.log" && { echo "$(date) Starting" && mbsync gmail && echo "$(date) Exiting"; } 1>>"$log" 2>>"$log"```
 
 ### Thunderbird
 You can use Thunderbird: 
