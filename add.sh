@@ -13,19 +13,12 @@ date: $now
 ---
 " > "$file";
 
-
 if expr match "$text" "^http" && expr match "$title" "^Link:"; then
     link="$text";
-    echo "---
-    layout: post
-    title: \"$title\"
-    date: $now
-    ---
-    [$link]($link)
-    <script language=\"javascript\">
-        window.location.href = \"$link\"
-    </script>
-    " >> "$file";
+    echo "---\n"\
+        "[$link]($link)\n"\
+        "<script language=\"javascript\">window.location.href = \"$link\"</script>\n"\
+        >> "$file";
 else
     echo "$text" >> "$file";
 fi
