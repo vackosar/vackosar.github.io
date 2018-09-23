@@ -4,7 +4,7 @@ title: "Debounce In Bash Fix Lenovo Touchpad Lost Sync"
 date: 2018-09-23
 ---
 
-# Debounce In Bash
+# Functional Debounce In Bash
 
 Debounce is commonly used name for rate limiting function used in functional programming. For example it exists both in React and JavaScript. In Bash it can be implemented as follows:
 
@@ -59,7 +59,6 @@ Using debounce function above I implemented a script to do just that automagical
     dmesg -w|
       grep "lost sync"|
       debounce 3|
-      foreach 'echo restarting mouse; modprobe -r psmouse; modprobe psmouse;'
-    echo exitting 
+      foreach 'echo restarting mouse; modprobe -r psmouse; modprobe psmouse;' &
 
 
