@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Debounce In Bash Fix Lenovo Touchpad Lost Sync"
+title: "Debounce In Bash To Fix Lenovo Touchpad Lost Sync"
 date: 2018-09-23
 ---
 
