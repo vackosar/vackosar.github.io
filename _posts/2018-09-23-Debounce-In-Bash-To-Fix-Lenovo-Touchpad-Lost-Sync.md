@@ -9,10 +9,17 @@ date: 2018-09-23
 Debounce is commonly used name for rate limiting function used in functional programming. For example it exists both in React and JavaScript. In Bash it can be implemented as follows:
 
     debounce() {
-      seconds="$1";
-      i=$(($(date +%s) + $seconds));
-      while read line; do 
-        if test $i -lt $(date +%s) && i=$(($(date +%s) + $seconds)); then
+      intervalInSeconds="$1";
+      unixtime() {
+        date +%s;
+      }
+      nextTimeLimit() {
+        echo $(($(unixtime) + $intervalInSeconds));
+      }
+      limit=$(nextTimeLimit);
+      while read line; do
+        if test $limit -lt $(unixtime); then
+          limit=$(nextTimeLimit);
           echo "$line";
         fi
       done;
@@ -47,10 +54,17 @@ Using debounce function above I implemented a script to do just that automagical
     }
     
     debounce() {
-      export seconds="$1";
-      export i=$(($(date +%s) + $seconds));
-      while read line; do 
-        if test $i -lt $(date +%s) && i=$(($(date +%s) + $seconds)); then
+      intervalInSeconds="$1";
+      unixtime() {
+        date +%s;
+      }
+      nextTimeLimit() {
+        echo $(($(unixtime) + $intervalInSeconds));
+      }
+      limit=$(nextTimeLimit);
+      while read line; do
+        if test $limit -lt $(unixtime); then
+          limit=$(nextTimeLimit);
           echo "$line";
         fi
       done;
