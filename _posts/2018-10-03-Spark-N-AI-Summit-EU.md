@@ -119,3 +119,16 @@ Blood pH:
 Carbourators:
 - Axle Ratio -> cylinders
 - Carbourators -> cylinders
+
+Recommended book: The Book Of Why:
+- P(Y|X) != P(Y|do(X))
+
+
+Smoking causal module:
+- genes -> cancer; genes -> smoking -> tar -> cancer
+
+
+Conclusion:
+- caucality is critical
+- PGM helps
+- do calculus clarifies
