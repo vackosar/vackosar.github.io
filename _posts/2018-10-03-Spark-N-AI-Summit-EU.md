@@ -79,3 +79,12 @@ revert to older data
 find non normalized data was loaded
 review trasactions and rerun previous job but with normalized job
 
+# Deep Dive Spark SQL
+
+SQL: Structured Query Language
+Schema: name, type, nullability
+Structure importance: storage optimization, calc optimization tungsten
+Basics
+
+
+# Comon Stat Pitfalls In Dsci
