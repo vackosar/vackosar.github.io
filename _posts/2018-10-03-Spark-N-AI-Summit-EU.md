@@ -88,3 +88,34 @@ Basics
 
 
 # Comon Stat Pitfalls In Dsci
+
+Car stopping distance:
+- L-reg regressing on to the other.
+- lin reg speed -> distance or distance -> speed
+
+Treatment A vs B:
+- need to control for hard cases to find overall better treatment.
+- on the other hand sometimes it is not good idea to control for that
+
+Carboraters and axle ratio:
+- non split data has one lin reg
+- split has different correlation
+
+Resolution of both is due to causation:
+- humans reason via causation
+- data may not contain causal info
+- correct data inference requires causal model
+
+Car stopping: speed causes stopping distance
+Kidney stone size
+-> Treatment -> outcome
+-> outcome
+
+Blood pH:
+- treatment:
+  -> pH
+  -> outcome
+
+Carbourators:
+- Axle Ratio -> cylinders
+- Carbourators -> cylinders
