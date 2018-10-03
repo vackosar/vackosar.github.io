@@ -150,3 +150,9 @@ attempting to look at user level prediction was not possible due to large noise
 
 Integrates Spark with Avro.
 Supports structures streaming, schema management, schema retention, Confluent Kafka Avro schemas, 
+
+# OASIS—Collaborative Data Analysis Platform Using Apache Spark
+
+improves over zeppelin: security and scale
+extracted data can be vised and shared wihtin team 
+will be OSSed soon
