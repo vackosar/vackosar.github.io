@@ -144,3 +144,9 @@ PCA or matrix factorization did not work
 selected feature representing a bucket of gender distribution
 projected the problem into that space and was able to resolve the problem
 attempting to look at user level prediction was not possible due to large noise
+
+
+# ABRiS
+
+Integrates Spark with Avro.
+Supports structures streaming, schema management, schema retention, Confluent Kafka Avro schemas, 
