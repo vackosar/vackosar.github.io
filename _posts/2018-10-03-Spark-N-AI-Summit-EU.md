@@ -156,3 +156,50 @@ Supports structures streaming, schema management, schema retention, Confluent Ka
 improves over zeppelin: security and scale
 extracted data can be vised and shared wihtin team 
 will be OSSed soon
+
+
+# Streaming Random Forrest
+
+- streaming has extra challenges
+- output is trained model
+
+Stationary data: data distribution unknown but time static
+Non-stat: unknown and time dynamic => features are dynamic
+
+Labeling can be available early, delayed, categorize concept drift
+
+## StreamingRandomForrest
+
+StreamingDecisionTree: standard, intuitively splits seeing even small amount of data
+Online bagging:
+
+StreamingLogisticRegressionWithSGD has similar API
+Training: 
+
+
+# Indexing and Ranking via Spark
+
+hard to understand for me personally
+
+click through data
+relevance - search term denoting ranking of the search results 
+
+Idea of the method in the talk: 
+
+rank datasets on Elasticsearch using LTR
+extract relevance features
+boostrap on dataset load time the search
+...
+
+
+# Spatio Temporal Modeling
+
+...
+
+factor analysis (looking for latent variables) - prelimirary regresison
+time - auto correlation regression
+spatial correlation
+time - auto correlation regression
+factor analysis (looking for latent variables) - prelimirary regresison
+
+this single iteration across the domains gives good enough results
