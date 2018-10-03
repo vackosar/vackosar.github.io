@@ -4,15 +4,22 @@ title: "Debounce In Bash To Fix Lenovo Touchpad Lost Sync"
 date: 2018-09-23
 ---
 
-# Functional Debounce In Bash
+## Functional Debounce In Bash
 
 Debounce is commonly used name for rate limiting function used in functional programming. For example it exists both in React and JavaScript. In Bash it can be implemented as follows:
 
     debounce() {
-      export seconds="$1";
-      export i=$(($(date +%s) + $seconds));
-      while read line; do 
-        if test $i -lt $(date +%s) && i=$(($(date +%s) + $seconds)); then
+      intervalInSeconds="$1";
+      unixtime() {
+        date +%s;
+      }
+      nextTimeLimit() {
+        echo $(($(unixtime) + $intervalInSeconds));
+      }
+      limit=$(nextTimeLimit);
+      while read line; do
+        if test $limit -lt $(unixtime); then
+          limit=$(nextTimeLimit);
           echo "$line";
         fi
       done;
@@ -21,7 +28,7 @@ Debounce is commonly used name for rate limiting function used in functional pro
 Similarly useful function is foreach which I wrote [post about as well](https://vaclavkosar.com/2016/07/28/Functional-Foreach-In-Bash.html).
 
 
-# Workaround For Lenovo Touchpad Lost Sync
+## Workaround For Lenovo Touchpad Lost Sync
 
 I am having issues on my Lenovo Yoga X260 with freezing trackpoint and touchpad. I failed to find proper solution but at least I have following reasonable workaround which uses above debounce implementation.
 
@@ -47,10 +54,17 @@ Using debounce function above I implemented a script to do just that automagical
     }
     
     debounce() {
-      export seconds="$1";
-      export i=$(($(date +%s) + $seconds));
-      while read line; do 
-        if test $i -lt $(date +%s) && i=$(($(date +%s) + $seconds)); then
+      intervalInSeconds="$1";
+      unixtime() {
+        date +%s;
+      }
+      nextTimeLimit() {
+        echo $(($(unixtime) + $intervalInSeconds));
+      }
+      limit=$(nextTimeLimit);
+      while read line; do
+        if test $limit -lt $(unixtime); then
+          limit=$(nextTimeLimit);
           echo "$line";
         fi
       done;
