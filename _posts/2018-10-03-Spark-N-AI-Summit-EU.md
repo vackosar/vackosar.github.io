@@ -72,3 +72,10 @@ deng deploys
 
 ## Example Dataflicks
 uses mlflow, delta, ml runtime
+
+issues iwth prediction
+mlflow to analyze past perf
+revert to older data
+find non normalized data was loaded
+review trasactions and rerun previous job but with normalized job
+
