@@ -130,5 +130,17 @@ Smoking causal module:
 
 Conclusion:
 - caucality is critical
+- confounding var
 - PGM helps
 - do calculus clarifies
+
+
+# SimilarWeb Interaction-Based Feature Extraction
+
+know unique user traffic 
+have website when we know the user gender and website when we don't know
+due to too many websites and users the problem is large
+PCA or matrix factorization did not work
+selected feature representing a bucket of gender distribution
+projected the problem into that space and was able to resolve the problem
+attempting to look at user level prediction was not possible due to large noise
