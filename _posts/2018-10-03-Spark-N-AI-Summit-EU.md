@@ -203,3 +203,40 @@ time - auto correlation regression
 factor analysis (looking for latent variables) - prelimirary regresison
 
 this single iteration across the domains gives good enough results
+
+
+# Neo4J Morpheus 
+
+Morpheus version of Neo4J.
+
+Graph dbs have growing usage in the industry.
+Nodes have name, properties and releationships. Relationships have type, properties.
+Neo4J on some backend db like Hadoop, Hive, Spark.
+Attempt to create GQL
+
+## Example:
+
+- Load CSV into Hive.
+- Create views per realtionships.
+- Init Cypher via query on relationships.
+- Execute Neo4j graph merge tool.
+- Query "match customer interact customerRep where type in cancel".
+
+- Create new graph with same schema 
+
+## Continuation
+
+Graphs and tables can be loaded to Cypher queried and stored back to graph or table. Thus we can compose queries into other quieries. e.g. match socialNetwork sn match person p where p.email = sn.email
+
+Process:
+- graph matching: returns results
+- graph construction: takes outputs and constructs new querable graph
+
+RDMS vs Graph: nodes may have no props or relationships.
+
+## Conclusion
+
+
+Cypher: sql for graphs and start of gql
+Cypher for spark: runs on spark SQL (dataframe)
+
