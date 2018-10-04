@@ -290,4 +290,48 @@ mlflow.log_tag(".."
 - artifacts: files associated
 - source: git revision id
 
+## MLProject Structure
+
+```bash
+# ls
+conda.yaml
+main.py
+model.py
+dependencies.txt
+MLProject
+```
+
+MLProject is similar to a Dockerfile. Defines a entrypoint and defines which params can be passed to a model.
+
+
+## Reusing models
+
+Thanks to MLProject file MLFlow allows to reload older model with different input params or different data.
+
+## MLFlow Model Packaging Format
+
+Allows using different frameworks to implement model and different target infrastructures like Docker, Spark and others.
+
+
+```bash
+$ ls
+MLmodel
+estimator
+  save_model.pb
+  variables.pb
+```
+
+MLModel can be source for generation of several flavours. Spark, Mleap and pyfunc
+Generic flavours provide decoupling
+...
+
+
+Pyfunc object is saved as a directory were single instance need to implement predict funciton.
+```bash
+mlflow pyfunc serve -m mlruns/0/XXXX/artifacts/keras_model -p 50050
+curl localhost...
+# or directly predict
+mlflow pyfunc predict -m ... -i ./test_data.csv
+```
+
 
