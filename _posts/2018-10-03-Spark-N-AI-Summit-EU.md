@@ -259,3 +259,35 @@ Thanks to bucketing SrotMergeJoin will exchanges as we pre-shuffled.
 Skewing: Will help the same but less.
 Choosing num buckets: based on knowledge of data or experimentation. No easy answers to simple looking questions.
 Known when bucketed: there is a query on that.
+
+
+# ML Flow
+
+Intro similar to keynote explanation.
+
+## Tracking
+
+```python
+mlflow.log_param("layers", layers)
+mlflow.log_metric("standard deviation", std) 
+```
+
+## Example Airbnb Pricing
+
+```python
+model = ElasticNet(...) # linear model
+mlflow.lgon_param("aplhap", alpha)
+model.fit(data, ...)
+mlflow.log_metric("mae", mae)
+mlflow.log_tag(".."
+```
+
+## Review
+
+- params config model
+- metrics model perf
+- tags and notes
+- artifacts: files associated
+- source: git revision id
+
+
