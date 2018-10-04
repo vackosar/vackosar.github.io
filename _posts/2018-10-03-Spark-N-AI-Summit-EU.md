@@ -241,7 +241,7 @@ Cypher: sql for graphs and start of gql
 Cypher for spark: runs on spark SQL (dataframe)
 
 
-# Jaceks Spark SQL Bucketing
+# Jacek's Spark SQL Bucketing
 
 
 Bucketing is similar to partitioning with providing num of buckets. It pre-schuffles the tables for future join. More joins more gains. Enabled by default. For file based data source: DataFrameWriter#bucketBy(numBuckets, colName, colNames). In SQL one can use distributedBy.
@@ -254,6 +254,8 @@ Bucketing is similar to partitioning with providing num of buckets. It pre-schuf
 Thanks to bucketing SrotMergeJoin will exchanges as we pre-shuffled.
 
 
-## Skewing
+## Continuation
 
-Will help the same but less.
+Skewing: Will help the same but less.
+Choosing num buckets: based on knowledge of data or experimentation. No easy answers to simple looking questions.
+Known when bucketed: there is a query on that.
