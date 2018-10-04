@@ -376,5 +376,5 @@ Conclusion
 - deng vs dsci 
 - using %run notebook inclusion
 - AWS athena helps with debugging
-- overloading Mongo - had to start batching
+- overloading Mongo - had to start batching to avoid too many parallel request on the db
 - versioning, CO/CD for notebooks very very needed
