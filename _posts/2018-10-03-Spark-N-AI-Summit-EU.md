@@ -334,4 +334,13 @@ curl localhost...
 mlflow pyfunc predict -m ... -i ./test_data.csv
 ```
 
+Generate Spark UDF
+```python
+mlflow.pyfunc.spark_udf...
+```
 
+
+## References
+
+Github advanced examples:
+- Hyperparm tuning
