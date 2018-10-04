@@ -344,3 +344,36 @@ mlflow.pyfunc.spark_udf...
 
 Github advanced examples:
 - Hyperparm tuning
+
+
+# Social Media Influencers Detection, Analysis and Recommendation (Social Bakers)
+
+- Badly studcutred data.
+- large dataset
+- need to scale
+
+Influencers on Spark developed in around a year on Databricks Spark.
+Search and recommendation engine over datbs of pub profiles providing perf metrics and attributes of influencers.
+Predicting:
+- img rec: age, gender
+- lang
+- interests
+- locations
+
+Predictor example:
+- looking in text for location name.
+- calc confidence
+- calc relevance score, atrribute score 
+
+Arch
+- Stores and 
+- base predictor, ensembling predictions, merging anlayses
+- mongo transform, elastic search transform
+- UI quieries this backend
+
+Conclusion
+- succesfull scaling speedup
+- deng vs dsci 
+
+Pipeline arch
+- using %run notebook inclusion
