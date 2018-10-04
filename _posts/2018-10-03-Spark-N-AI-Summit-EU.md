@@ -374,6 +374,7 @@ Arch
 Conclusion
 - succesfull scaling speedup
 - deng vs dsci 
-
-Pipeline arch
 - using %run notebook inclusion
+- AWS athena helps with debugging
+- overloading Mongo - had to start batching
+- versioning, CO/CD for notebooks very very needed
