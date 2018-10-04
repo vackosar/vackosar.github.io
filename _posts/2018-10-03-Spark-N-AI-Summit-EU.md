@@ -240,3 +240,20 @@ RDMS vs Graph: nodes may have no props or relationships.
 Cypher: sql for graphs and start of gql
 Cypher for spark: runs on spark SQL (dataframe)
 
+
+# Jaceks Spark SQL Bucketing
+
+
+Bucketing is similar to partitioning with providing num of buckets. It pre-schuffles the tables for future join. More joins more gains. Enabled by default. For file based data source: DataFrameWriter#bucketBy(numBuckets, colName, colNames). In SQL one can use distributedBy.
+
+## Example
+
+    bucketed = large.write.bucketBy(4, "id").mode(SaveMode.Overwrite).saveAsTable()
+    bucketed.join(..)
+
+Thanks to bucketing SrotMergeJoin will exchanges as we pre-shuffled.
+
+
+## Skewing
+
+Will help the same but less.
