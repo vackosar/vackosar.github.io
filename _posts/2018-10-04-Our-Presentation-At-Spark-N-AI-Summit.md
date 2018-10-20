@@ -9,8 +9,8 @@ Me and Marek Novotny had opportunity to present your POC and future plans for Sp
 ## Video and Photos:
 The video is available [here](https://youtu.be/953PcioD6tk).
 
-![image1](images/spark-summit-1.jpg)
-![image2](images/spark-summit-2.jpg)
+![image1](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2018-10-04-spark-summit-1.JPG)
+![image2](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2018-10-04-spark-summit-2.JPG)
 
 ## Full description:
 
