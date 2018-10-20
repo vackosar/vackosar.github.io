@@ -3,9 +3,6 @@ layout: post
 title: "Spark and AI Summit"
 date: 2018-10-03
 ---
-# LIVE NOW UPDATED!
-
-
 # ML Hydrogen
 History of Spark origins. Strucutred Streaming is already used extensively. 
 
