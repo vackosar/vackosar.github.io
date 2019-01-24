@@ -4,7 +4,7 @@ title: "Our Presentation At Spark N AI Summit"
 date: 2018-10-04
 ---
 
-Me and Marek Novotny had opportunity to present your POC and future plans for Spark Structured Streaming data lineage. Presentation page can be found [here](https://databricks.com/session/spline-data-lineage-for-spark-structure-streaming).
+Me and Marek Novotny had opportunity to present our POC and future plans for Spark Structured Streaming data lineage. Presentation page can be found [here](https://databricks.com/session/spline-data-lineage-for-spark-structure-streaming).
 
 ## Video and Photos:
 The video is available [here](https://youtu.be/953PcioD6tk).
