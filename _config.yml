@@ -1,12 +1,15 @@
 name: Vaclav Kosar
 markdown: kramdown
 twitter_username: vackosar
-url: https://vackosar.github.io
+url: https://www.vaclavkosar.com
 gems:
   - jekyll-feed
+  - jekyll-sitemap
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
 future: true
-title: Vackosar.GitHub.io
-description: 
-google_analytics: 
+title: Vaclav Kosar's Blog
+description: Personal page and a blog of Vaclav Kosar. Vaclav Kosar is a senior software developer. The blog is focused on interesting technology, tips and Vaclav's personal achievements.
 show_downloads: true
 theme: jekyll-theme-minimal
