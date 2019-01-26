@@ -1,15 +1,19 @@
+url: https://www.vaclavkosar.com
 name: Vaclav Kosar
+title: Vaclav Kosar's Blog
+author: Vaclav Kosar
+description: Personal page and a blog of Vaclav Kosar. Vaclav Kosar is a senior software developer. The blog is focused on interesting technology, tips and Vaclav's personal achievements.
+keywords: blog,personal page,software development,technology,tips,cv
+
 markdown: kramdown
 twitter_username: vackosar
-url: https://www.vaclavkosar.com
+future: true
+show_downloads: true
+theme: jekyll-theme-minimal
+
 gems:
   - jekyll-feed
   - jekyll-sitemap
 plugins:
   - jekyll-sitemap
   - jekyll-feed
-future: true
-title: Vaclav Kosar's Blog
-description: Personal page and a blog of Vaclav Kosar. Vaclav Kosar is a senior software developer. The blog is focused on interesting technology, tips and Vaclav's personal achievements.
-show_downloads: true
-theme: jekyll-theme-minimal
