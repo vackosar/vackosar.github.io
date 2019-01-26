@@ -15,5 +15,5 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
 plugins:
-  - jekyll-sitemap
   - jekyll-feed
+  - jekyll-sitemap
