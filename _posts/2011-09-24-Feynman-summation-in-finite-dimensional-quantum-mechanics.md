@@ -4,6 +4,9 @@ title: "Feynman summation in finite-dimensional quantum mechanics"
 date: 2011-09-24
 ---
 
+### Author
+Vaclav Kosar
+
 ### Introduction
 This paper is summary and enhancement of existing rather scattered literature regarding finite-dimensional quantum mechanics. In the later parts Feynman’s path summation is discussed.
 
