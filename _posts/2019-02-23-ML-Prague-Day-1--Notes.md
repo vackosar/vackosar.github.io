@@ -34,3 +34,31 @@ Problem with param server async learning is that server is bottle neck.
 All reduce model is popular and has variants of inter-learner-node communication: p2p, hierarchical.
 Horovod is faster than old Tensorflow but there comparable performant distributed learning now in new Tensorflow.
 
+
+## Merlon Identity Index
+
+Based on articles give people ratings about articles about them.
+White listed publishers selected.
+The categorization is explainable such that customers can review performance of the rating.
+Part of the data is kept on premise.
+
+
+## Anti-Models and Explainability
+
+Always training two models while the second is attempting to fail as much as possible.
+Somehow helps with getting users trust into the model.
+
+
+## Solving the Text Labeling challenge with EnsembleLDA and Active Learning 
+
+missed
+
+
+## Labeling
+
+amazon turk
+fiverr: Expert Annotation
+
+## Dropbox picture labeling
+
+OCR combination with cnn image recognition.
