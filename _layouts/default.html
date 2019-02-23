@@ -1,19 +1,34 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>{{ page.title }}</title>
+<html lang="en">
+<head profile="http://www.w3.org/2005/10/profile">
+    <title>{{ page.title }} | Vaclav Kosar</title>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ site.keywords }}">
+    <meta name="google-site-verification" content="WApaW1xBRvOpHp4BXNc0O71vxm1k6P09-s_cgdIu84k" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" 
+	  type="image/ico" 
+	  href="/favicon.ico">
     {% feed_meta %}
 </head>
 <body>
+<table>
+  <tr>
+    <td><img src="/foto1_large.png" width="70" alt="Vaclav Kosar's face photo"></td>
+    <td>
+      <h4>Vaclav Kosar</h4>
+      <i>{{ site.description }}</i>
+    </td>
+  </tr>
+</table>
 <nav>
     <ul>
-        <li><img src="/foto1_large.png" width="5%">&nbsp;</li>
-        <li><a href="/">Blog</a></li>
-        <li><a href="https://cz.linkedin.com/in/vaclav-kosar-47755863">CV</a></li>
-        <li><a href="https://github.com/vackosar">Code</a></li>
-        <li><a href="mailto:admin@vaclavkosar.com">Email</a></li>
-        <li><a href="https://www.facebook.com/media/set/?set=a.634961423347049.1073741827.100004995919188&type=3">Foto</a></li>
+      <li><a href="/">Blog</a></li>
+      <li><a href="https://cz.linkedin.com/in/vaclav-kosar-47755863">CV</a></li>
+      <li><a href="https://github.com/vackosar">Code</a></li>
+      <li><a href="mailto:admin@vaclavkosar.com">Email</a></li>
+      <li><a href="https://www.facebook.com/media/set/?set=a.634961423347049.1073741827.100004995919188&type=3">Foto</a></li>
     </ul>
 </nav>
 <div class="container">

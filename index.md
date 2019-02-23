@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Vaclav Kosar's Blog
+title: Blog
 ---
 <h1>{{ page.title }}</h1>
 
