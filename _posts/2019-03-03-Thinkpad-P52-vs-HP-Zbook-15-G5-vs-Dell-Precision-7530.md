@@ -12,7 +12,7 @@ I wanted at least __15inch display__ processor __i7-8750H__, reasonable graphics
 
 - max RAM 128GB
 - best trackpoint
-- worst cooling of all three ([single heatpipe](http://forum.notebookreview.com/attachments/cooling_comparison-png.160125/), [prolonged cinebench performance dropoff](https://www.notebookcheck.net/Lenovo-ThinkPad-P52-i7-P1000-FHD-Workstation-Review.322974.0.html))
+- worst cooling ([single heatpipe](http://forum.notebookreview.com/attachments/cooling_comparison-png.160125/), [prolonged cinebench performance dropoff](https://www.notebookcheck.net/Lenovo-ThinkPad-P52-i7-P1000-FHD-Workstation-Review.322974.0.html))
 - replaceable battery
 - medium physical resilience
 
