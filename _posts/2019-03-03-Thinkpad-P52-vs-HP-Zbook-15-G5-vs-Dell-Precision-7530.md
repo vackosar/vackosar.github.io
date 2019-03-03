@@ -4,7 +4,9 @@ title: "Thinkpad P52 vs ZBook 15 G5 vs Precision 7530"
 date: 2019-03-03
 ---
 
-I wanted at least __15inch display__ processor __i7-8750H__, reasonable graphics __P1000__, at least __max 64GB RAM__, __RJ45__, trackpoint. I decided to buy ZBook 15 G5 over Thinkpad P52 vs Precision 7530 and below are my reasons. I also considered a wild card _14inch Latitude 5491_.
+I wanted at least __15inch display__ processor __i7-8750H__, reasonable graphics __P1000__, at least __max 64GB RAM__, __RJ45__, __trackpoint__, physical __resilience__. I decided to buy ZBook 15 G5 over Thinkpad P52 and Precision 7530 and below are my reasons.
+
+I also shortly considered a wild card _14inch Latitude 5491_ as it had attractive price, but it missed too many of the requirements (poor cooling, low max ram, poor physical resilience, low graphics).
 
 ![ZBook vs P52 cover](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-03-thinkpad-p52-vs-zbook-15-G5.png)
 
