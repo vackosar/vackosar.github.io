@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Thinkpad P52 vs Zbook 15 G5 vs Precision 7530"
+title: "Thinkpad P52 vs ZBook 15 G5 vs Precision 7530"
 date: 2019-03-03
 ---
 
