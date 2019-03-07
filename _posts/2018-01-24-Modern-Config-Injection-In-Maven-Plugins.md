@@ -34,7 +34,7 @@ class Property1Provider extends RequiredConfigProvider<String> {
 }
 ```
 
-The super class would call a Maven's inner undocumented class ```CompositeBeanHelper``` providing injection even for complex objects like maps.
+The super class would call a Maven's inner undocumented class [CompositeBeanHelper](https://github.com/eclipse/sisu.plexus/blob/master/org.eclipse.sisu.plexus/src/org/eclipse/sisu/plexus/CompositeBeanHelper.java) providing injection even for complex objects like maps.
 
 ```java
 class RequiredConfigProvider<T> {
