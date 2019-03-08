@@ -35,7 +35,7 @@ I also shortly considered a wild card _14inch Latitude 5491_ as it had attractiv
 - replaceable battery ([tooless access also to RAM, HDD](https://i.ytimg.com/vi/4jW1loaLgyI/maxresdefault.jpg))
 - best physical resilience (aluminium)
 
-### Update
+### Update on ZBook G5 15
 
 I bought ZBook G5 15:
 
