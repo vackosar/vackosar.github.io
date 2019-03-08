@@ -29,3 +29,15 @@ I wanted at least __15inch display__ processor __i7-8750H__, reasonable graphics
 - very good [cooling](https://f1.media.brightcove.com/8/1160438711001/1160438711001_5763673639001_5763663561001-vs.jpg?pubId=4119874066001&videoId=5763349495001) but [after repaste](http://forum.notebookreview.com/threads/dell-precision-7530-hp-zbook-15-g5-or-lenovo-thinkpad-p52.820474/page-26#post-10817321)
 - replaceable battery ([tooless access also to RAM, HDD](https://i.ytimg.com/vi/4jW1loaLgyI/maxresdefault.jpg))
 
+### Update
+
+I bought ZBook G5 15:
+
+- Charging port is too thin and probably will be damaged soon
+- Page Up, Page Down keys are not as conveniently placed as on Thinkpads
+- Home, End, Insert keys were replaced by useless keys Desktop, Call, Hang Up contrary to Thinkpad
+- Home, End moved to the top right
+- Insert key completely removed!
+- While the notebook should have passed MIL tests it doesnt really seem resilient as Thinkpad
+- Without repaste the performance on Cinebench R15 drops to [1030 the same as on Thinkpad P52](https://www.notebookcheck.net/Lenovo-ThinkPad-P52-i7-P1000-FHD-Workstation-Review.322974.0.html)
+- Overall, I think I will be replacing the notebook with P52
