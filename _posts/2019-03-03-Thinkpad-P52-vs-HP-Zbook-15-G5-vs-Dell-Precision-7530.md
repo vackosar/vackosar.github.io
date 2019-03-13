@@ -35,3 +35,16 @@ I also shortly considered a wild card _14inch Latitude 5491_ as it had attractiv
 - replaceable battery ([tooless access also to RAM, HDD](https://i.ytimg.com/vi/4jW1loaLgyI/maxresdefault.jpg))
 - best physical resilience (aluminium)
 
+### Update on ZBook G5 15
+
+I bought ZBook G5 15:
+
+- Charging port is too thin and probably will be damaged soon
+- Page Up, Page Down keys are not as conveniently placed as on Thinkpads
+- Home, End, Insert keys were replaced by useless keys Desktop, Call, Hang Up contrary to Thinkpad
+- Home, End moved to the top right
+- Insert key completely removed!
+- Up and Down keys are stupidly thin!
+- While the notebook should have passed MIL tests it doesnt really seem resilient as Thinkpad
+- Without repaste the performance on Cinebench R15 drops to [1030 the same as on Thinkpad P52](https://www.notebookcheck.net/Lenovo-ThinkPad-P52-i7-P1000-FHD-Workstation-Review.322974.0.html)
+- Overall, I think I will be replacing the notebook with P52
