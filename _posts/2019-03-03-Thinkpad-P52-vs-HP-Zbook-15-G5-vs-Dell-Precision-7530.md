@@ -48,3 +48,10 @@ I bought ZBook G5 15:
 - While the notebook should have passed MIL tests it doesnt really seem resilient as Thinkpad
 - Without repaste the performance on Cinebench R15 drops to [1030 the same as on Thinkpad P52](https://www.notebookcheck.net/Lenovo-ThinkPad-P52-i7-P1000-FHD-Workstation-Review.322974.0.html)
 - Overall, I think I will be replacing the notebook with P52
+
+### Update on P52 2019-05-07
+So far minor issues 
+
+- Refuses to charge sometimes even with 170W charger. Seems to be getting worse.
+- Display cover seems too easy to bend
+- LTE modem supported but not yet installed in my version
