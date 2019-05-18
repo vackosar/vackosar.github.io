@@ -70,4 +70,4 @@ Thanks to a commenter on HN discussion: While SpeeX can go down to 4kbps, Opus a
 
 ### HN Discussion
 
-https://news.ycombinator.com/item?id=19946711
+[https://news.ycombinator.com/item?id=19946711](https://news.ycombinator.com/item?id=19946711)
