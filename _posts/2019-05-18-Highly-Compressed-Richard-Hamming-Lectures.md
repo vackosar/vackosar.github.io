@@ -68,6 +68,10 @@ Thanks to a commenter on HN discussion: While SpeeX can go down to 4kbps, Opus a
 - [Hamming,--How-Do-We-Know-What-We-Know---June-2,-1995--ZEjt5PerpeY.opus](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/files/Hamming,--How-Do-We-Know-What-We-Know---June-2,-1995--ZEjt5PerpeY.opus)
 
 
+### Compressing More
+
+Thanks to another HN commenter: apparently it is possible to achive even lower bitrates [down to 0.7kbps!!](http://www.rowetel.com/wordpress/?page_id=452)
+
 ### HN Discussion
 
 [https://news.ycombinator.com/item?id=19946711](https://news.ycombinator.com/item?id=19946711)
