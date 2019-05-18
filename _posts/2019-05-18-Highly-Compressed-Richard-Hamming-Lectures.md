@@ -4,7 +4,7 @@ title: "Highly Compressed Richard Hamming's Lectures"
 date: 2019-03-03
 ---
 
-Richard Hamming's Lectures are amazingly inspirational to the point that Sam Altman written about one of them called [You And Your Research](http://blog.samaltman.com/you-and-your-research). While You can play them via [a Youtube playlist](https://www.youtube.com/watch?v=AD4b-52jtos&list=PL2FF649D0C4407B30&index=1), you can save some bandwidth in exchange for recording quality by using high compression of Speex algo. You can find ["Spxfy" script here and similar things in that repo.](https://github.com/vackosar/text2gsm/blob/master/spxfy)
+Richard Hamming's Lectures are amazingly inspirational to the point that [Sam Altman](http://blog.samaltman.com/you-and-your-research) and [Paul Graham](http://www.paulgraham.com/hamming.html) written posts on one of them called You And Your Research. While You can play them via [a Youtube playlist](https://www.youtube.com/watch?v=AD4b-52jtos&list=PL2FF649D0C4407B30&index=1), you can save some bandwidth in exchange for recording quality by using high compression of Speex algo. You can find ["Spxfy" script here and similar things in that repo.](https://github.com/vackosar/text2gsm/blob/master/spxfy)
 
 - [Hamming,--You-and-Your-Research---June-6,-1995--a1zDuOPkMSw.spx](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/files/Hamming,--You-and-Your-Research---June-6,-1995--a1zDuOPkMSw.spx)
 - [Hamming,--Computer-Aided-Instruction---May-16,-1995--zA3-mLhajkk.spx](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/files/Hamming,--Computer-Aided-Instruction---May-16,-1995--zA3-mLhajkk.spx)
