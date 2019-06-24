@@ -55,3 +55,8 @@ So far minor issues
 - Refuses to charge sometimes even with 170W charger. Seems to be getting worse.
 - Display cover seems too easy to bend
 - LTE modem supported but not yet installed in my version
+
+
+### Update on P52 2019-06-24
+- Battery issues were resolved during on-site support from Lenovo. Most probable cause was faulty power source, but the mainboard was fully removed during inspection (for no reason), so I cannot confirm the issue wasn't incorrectly attached connector or needed hard reset.
+- I will be ordering LTE modem and will attempt to install it either with on-site support or manually.
