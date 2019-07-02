@@ -4,8 +4,6 @@ title: "FastText Vector Norm And OOV Words"
 date: 2019-06-30
 ---
 
-![standard_norm-tf](https://raw.githubusercontent.com/vackosar/fasttext-vector-norms-and-oov-words/master/results/standard_norm-tf.png)
-
 I had a look at norms of FastText embeddings and written paper-like formatted post. [Full code is here](https://github.com/vackosar/fasttext-vector-norms-and-oov-words/blob/master/README.md).
 
 # Abstract
