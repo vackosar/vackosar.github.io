@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "FastText Vector Norm And OOV Words"
+title: "FastText Vector Norms And OOV Words"
 date: 2019-06-30
 ---
 
