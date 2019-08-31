@@ -97,7 +97,7 @@ for i in range(count):
     cumulative_avg.append(mean(xs[:i+1]))
 
 
-exponential_avg = pd.Series(xs).ewm(halflife=ps[-1]).mean()
+exponential_avg = pd.Series(xs).ewm(alpha=ks[-1]).mean()
 
 
 plt.plot(ks, label='ks')

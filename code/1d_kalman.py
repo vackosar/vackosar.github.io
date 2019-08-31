@@ -16,10 +16,10 @@ def next_m(m, x, k: float) -> float:
     return m + k * (x - m)
 
 
-r = 2
+r = 5
 q = 2
-p = 1
-m = 1
+p = 5
+m = 0
 ps = []
 ks = []
 xs = []
@@ -44,7 +44,7 @@ for i in range(count):
     cumulative_avg.append(mean(xs[:i+1]))
 
 
-exponential_avg = pd.Series(xs).ewm(halflife=ps[-1]).mean()
+exponential_avg = pd.Series(xs).ewm(alpha=ks[-1]).mean()
 
 
 plt.plot(ks, label='ks')
@@ -52,9 +52,9 @@ plt.plot(ps, label='ps')
 plt.legend()
 plt.show()
 
-plt.plot(ms, label='kalman filter')
-plt.plot(cumulative_avg, label='cumulative avg')
-plt.plot(exponential_avg, label='exponential moving avg')
+plt.plot(ms, label='kalman filter', linewidth=1)
+plt.plot(cumulative_avg, label='cumulative avg', linestyle='dashed')
+plt.plot(exponential_avg, label='exponential moving avg', linewidth=3, linestyle='dashed')
 plt.legend()
 
 plt.savefig('../images/test.png')
