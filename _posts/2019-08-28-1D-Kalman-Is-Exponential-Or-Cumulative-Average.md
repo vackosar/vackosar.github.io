@@ -15,33 +15,6 @@ This blog post proves that Kalman filter in 1D with constant measurement error a
 The proof relies on Kalman filter asymptotically doesn't depend on initial state. In general since Kalman filter equations are differentiable, it is reasonable to expect that above could be generalized to nearly-constant error and process noise.
 
 
-# Implementation
-
-Below is simplistic implementation used to generate plots used below.
-```python
-r = 1
-q = 2
-p = 3
-
-
-def current_k(p: float):
-    return (p + q) / (p + q + r)
-
-
-def next_p(p: float, k: float):
-    return (1 - k) * (p + q)
-
-
-ps = []
-ks = []
-
-for i in range(10):
-    k = current_k(p)
-    ks.append(k)
-    p = next_p(p, k)
-    ps.append(p)
-```
-
 # Proofs
 
 ## Constant Measurement Error, No Process Noise
@@ -49,7 +22,7 @@ for i in range(10):
 Below is the proof relies on good choice of initial value of Kalman variance ```P0``` to simplify recursive equation to match cumulative average equation.
 ![Proof Kalman 1d with constant measurement error and no process noise proof](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-without-process-noise-proof.jpg)
 
-Plot of convergence of ```Pk``` and ```K(k+1)``` to zero.
+Plot of the convergence.
 ![Proof Kalman 1d with constant measurement error and no process noise plot](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-without-process-noise-plot.jpg)
 
 
@@ -58,10 +31,77 @@ Plot of convergence of ```Pk``` and ```K(k+1)``` to zero.
 Below is the proof relies on setting initial value of Kalman variance ```P0``` such that ```Pk``` becomes constant for recursive equation to match exponential moving average equation.
 ![Proof Kalman 1d with constant measurement error and constant process noise](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-with-process-noise-proof.jpg)
 
-Plot of convergence of ```Pk``` and ```K(k+1)``` to non zero constant.
+Plot of the convergence.
 ![Proof Kalman 1d with constant measurement error and constant process noise plot](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-with-process-noise-plot.jpg)
+
 
 # References
 - [R. E. Kalman. 1960.  https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf)
 - [Kalman filter in one dimension](https://www.kalmanfilter.net/kalman1d.html)
 - [A First Look at the Kalman Filter](https://lectures.quantecon.org/py/kalman.html)
+
+
+# Implementation
+
+Below is simplistic implementation used to generate plots used below.
+```python
+import matplotlib.pyplot as plt
+import random
+from statistics import mean
+import pandas as pd
+
+
+def current_k(p: float) -> float:
+    return (p + q) / (p + q + r)
+
+
+def next_p(p: float, k: float) -> float:
+    return (1 - k) * (p + q)
+
+
+def next_m(m, x, k: float) -> float:
+    return m + k * (x - m)
+
+
+r = 1
+q = 0
+p = 1
+m = 1
+ps = []
+ks = []
+xs = []
+ms = []
+cumulative_avg = []
+exponential_avg = []
+count = 50
+
+for i in range(count):
+    xs.append(random.gauss(0, 1))
+
+
+m = xs[0]
+
+for i in range(count):
+    k = current_k(p)
+    ks.append(k)
+    p = next_p(p, k)
+    ps.append(p)
+    m = next_m(m, xs[i], k)
+    ms.append(m)
+    cumulative_avg.append(mean(xs[:i+1]))
+
+
+exponential_avg = pd.Series(xs).ewm(halflife=ps[-1]).mean()
+
+
+plt.plot(ks, label='ks')
+plt.plot(ps, label='ps')
+plt.legend()
+plt.show()
+
+plt.plot(ms, label='kalman filter')
+plt.plot(cumulative_avg, label='cumulative avg')
+plt.plot(exponential_avg, label='exponential moving avg')
+plt.legend()
+plt.show()
+```
