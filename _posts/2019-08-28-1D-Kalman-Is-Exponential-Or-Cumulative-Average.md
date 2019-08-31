@@ -20,19 +20,21 @@ The proof relies on Kalman filter asymptotically doesn't depend on initial state
 ## Constant Measurement Error, No Process Noise
 
 Below is the proof relies on good choice of initial value of Kalman variance ```P0``` to simplify recursive equation to match cumulative average equation.
-![Proof Kalman 1d with constant measurement error and no process noise proof](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-without-process-noise-proof.jpg)
+<img alt="Proof Kalman 1d with constant measurement error and no process noise proof" width="500" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-without-process-noise-proof.jpg">
 
 Plot of the convergence.
-![Proof Kalman 1d with constant measurement error and no process noise plot](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-without-process-noise-plot.jpg)
+
+<img alt="Proof Kalman 1d with constant measurement error and no process noise plot" width="500" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-without-process-noise-plot.png">
 
 
 ## Constant Measurement Error, Constant Process Noise
 
 Below is the proof relies on setting initial value of Kalman variance ```P0``` such that ```Pk``` becomes constant for recursive equation to match exponential moving average equation.
-![Proof Kalman 1d with constant measurement error and constant process noise](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-with-process-noise-proof.jpg)
+<img alt="Proof Kalman 1d with constant measurement error and constant process noise proof" width="500" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-with-process-noise-proof.jpg">
 
 Plot of the convergence.
-![Proof Kalman 1d with constant measurement error and constant process noise plot](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-with-process-noise-plot.jpg)
+
+<img alt="Proof Kalman 1d with constant measurement error and constant process noise plot" width="500" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-with-process-noise-plot.png">
 
 
 # References
