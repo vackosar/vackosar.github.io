@@ -41,9 +41,11 @@ Plot of the convergence.
 - [A First Look at the Kalman Filter](https://lectures.quantecon.org/py/kalman.html)
 
 
-# Implementation
+# Appendix
 
-Below is simplistic implementation used to generate plots used below.
+## Example Implementation
+
+Below is simplistic implementation used to generate plots presented.
 ```python
 import matplotlib.pyplot as plt
 import random
