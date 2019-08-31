@@ -1,9 +1,8 @@
 import matplotlib.pyplot as plt
 
-r = 0.1
-q = 0.00001
-# q = 0
-p = r
+r = 1
+q = 2
+p = 3
 
 
 def current_k(p: float):
@@ -17,7 +16,7 @@ def next_p(p: float, k: float):
 ps = []
 ks = []
 
-for i in range(30):
+for i in range(10):
     k = current_k(p)
     ks.append(k)
     p = next_p(p, k)
@@ -27,5 +26,10 @@ for i in range(30):
 plt.plot(ks, label='ks')
 plt.plot(ps, label='ps')
 plt.legend()
+plt.savefig('../images/test.png')
 plt.show()
 
+# plt.plot(ps, label='ps')
+# plt.legend()
+# plt.show()
+#
