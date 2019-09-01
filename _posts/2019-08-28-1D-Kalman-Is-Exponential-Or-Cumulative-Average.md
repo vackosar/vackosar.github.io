@@ -5,38 +5,38 @@ date: 2019-08-28
 ---
 
 # Abstract
-Kalman filter [(Kalman 1960)](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf) also known as linear quadratic estimation (LQE) is an iterative algorithm that uses noisy measurements to estimate values and variance of unknown variables. The Kalman filter allows incorporation of known state space behaviour (e.g. momentum of physical particle) and outside-the-model estimated variance of sensor measurement and unknown factors.
+Kalman filter [(Kalman 1960)](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf) also known as linear quadratic estimation (LQE) is an iterative algorithm that uses noisy measurements to estimate values and variance of unknown variables. The Kalman filter allows incorporation of known state space behaviour (e.g. momentum of physical particle) and outside-the-model estimated variance of sensor measurement (measurement uncertainty) and unknown factors (process noise).
 
-This blog post proves that Kalman filter in 1D with constant measurement error and process noise asymptotically behaves as:
+This blog post proves that Kalman filter in 1D with constant measurement uncertainty and process noise asymptotically behaves as:
 
  - cumulative average in case of zero process noise
  - exponential average in case of non zero process noise
  
-The proof relies on Kalman filter asymptotically doesn't depend on initial state. In general since Kalman filter equations are differentiable, it is reasonable to expect that above could be generalized to nearly-constant error and process noise.
+The proof relies on Kalman filter asymptotically doesn't depend on initial state. In general since Kalman filter equations are differentiable, it is reasonable to expect that above could be generalized to nearly-constant uncertainty and process noise.
 
 
 # Proofs
 
-## Constant Measurement Error, No Process Noise
+## Constant Measurement Uncertainty, No Process Noise
 
 Below is the proof relies on good choice of initial value of Kalman variance ```P0``` to simplify recursive equation to match cumulative average equation.
 
-<img alt="Proof Kalman 1d with constant measurement error and no process noise proof" width="80%" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-without-process-noise-proof.jpg">
+<img alt="Proof Kalman 1d with constant measurement uncertainty and no process noise proof" width="80%" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-without-process-noise-proof.jpg">
 
 Plot of the convergence.
 
-<img alt="Proof Kalman 1d with constant measurement error and no process noise plot" width="80%" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-without-process-noise-plot.png">
+<img alt="Proof Kalman 1d with constant measurement uncertainty and no process noise plot" width="80%" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-without-process-noise-plot.png">
 
 
-## Constant Measurement Error, Constant Process Noise
+## Constant Measurement Uncertainty, Constant Process Noise
 
 Below is the proof relies on setting initial value of Kalman variance ```P0``` such that ```Pk``` becomes constant for recursive equation to match exponential moving average equation.
 
-<img alt="Proof Kalman 1d with constant measurement error and constant process noise proof" width="80%" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-with-process-noise-proof.jpg">
+<img alt="Proof Kalman 1d with constant measurement uncertainty and constant process noise proof" width="80%" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-with-process-noise-proof.jpg">
 
 Plot of the convergence.
 
-<img alt="Proof Kalman 1d with constant measurement error and constant process noise plot" width="80%" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-with-process-noise-plot.png">
+<img alt="Proof Kalman 1d with constant measurement uncertainty and constant process noise plot" width="80%" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-with-process-noise-plot.png">
 
 
 # References
