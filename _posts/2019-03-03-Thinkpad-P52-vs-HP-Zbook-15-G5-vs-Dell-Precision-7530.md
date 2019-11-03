@@ -60,3 +60,8 @@ So far minor issues
 ### Update on P52 2019-06-24
 - Battery issues were resolved during on-site support from Lenovo. Most probable cause was faulty power source, but the mainboard was fully removed during inspection (for no reason), so I cannot confirm the issue wasn't incorrectly attached connector or needed hard reset.
 - I will be ordering LTE modem and will attempt to install it either with on-site support or manually.
+
+
+### Update on P52 2019-11-02
+- Linux dmesg messages about "temperature above threshold" are gone after repaste. The service guy probably didn't put thermal paste in correctly. On top of that some of the screws are missing. Damned Lenovo service!
+- I posted about thermals in [P53 here](https://vaclavkosar.com/2019/11/02/Thinkpad-P53-vs-P52-Thermals.html).
