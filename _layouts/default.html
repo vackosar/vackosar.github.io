@@ -13,31 +13,37 @@
     {% feed_meta %}
 </head>
 <body>
-<table>
-  <tr>
-    <td><img src="/vaclav_face_circle.png" width="70" alt="Vaclav Kosar's face photo"></td>
-    <td>
-      <h4>Vaclav Kosar</h4>
-      <i>{{ site.description }}</i>
-    </td>
-  </tr>
-</table>
-<nav>
-    <ul>
-      <li><a href="/">Blog</a></li>
-      <li><a href="https://cz.linkedin.com/in/vaclav-kosar-47755863">CV</a></li>
-      <li><a href="https://github.com/vackosar">Code</a></li>
-      <li><a href="mailto:admin@vaclavkosar.com">Email</a></li>
-      <li><a href="https://www.facebook.com/media/set/?set=a.634961423347049.1073741827.100004995919188&type=3">Foto</a></li>
-    </ul>
-</nav>
-<div class="container">
+<div style="display: flex; justify-content: center;">
+    <div style="max-width: 1024px; width: 98.5%;">
+        <table>
+            <tr>
+                <td><img src="/vaclav_face_circle.png" width="70" alt="Vaclav Kosar's face photo"></td>
+                <td>
+                    <h4>Vaclav Kosar</h4>
+                    <i>{{ site.description }}</i>
+                </td>
+            </tr>
+        </table>
+        <nav>
+            <ul>
+                <li><a href="/">Blog</a></li>
+                <li><a href="https://cz.linkedin.com/in/vaclav-kosar-47755863">CV</a></li>
+                <li><a href="https://github.com/vackosar">Code</a></li>
+                <li><a href="mailto:admin@vaclavkosar.com">Email</a></li>
+                <li>
+                    <a href="https://www.facebook.com/media/set/?set=a.634961423347049.1073741827.100004995919188&type=3">Foto</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
 
-    {{ content }}
+            {{ content }}
 
+        </div>
+
+        <br><br>
+        Report any trackers to <a href="mailto:admin@vaclavkosar.com">admin@vaclavkosar.com</a>.
+    </div>
 </div>
-
-<br><br>
-Report any trackers to <a href="mailto:admin@vaclavkosar.com">admin@vaclavkosar.com</a>.
 </body>
 </html>
