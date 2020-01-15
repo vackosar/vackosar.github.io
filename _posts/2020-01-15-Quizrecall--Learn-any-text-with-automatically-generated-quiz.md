@@ -4,7 +4,7 @@ title: "Quizrecall: Learn any text with automatically generated quiz"
 date: 2019-11-02
 ---
 
-I used [Anki](https://apps.ankiweb.net/) to learn various Math, Stats and Software Dev definitions. But I kept having 3 problems with it. I resolved them with developing app [Quizrecall](https://quizrecall.com). Read on and maybe the app may be something for you as well.
+I used [Anki](https://apps.ankiweb.net/) to learn various Math, Stats and Software Dev definitions. But I kept having 3 problems with it. I resolved them with developing a web app [Quizrecall](https://quizrecall.com) - an automated quiz generator with spaced repetition. Read on and maybe the app may be something for you as well.
 
 ### Anki Issues
 
@@ -23,4 +23,6 @@ I solved all of these problems for myself by developing [Quizrecall](https://qui
 
 ### Conclusion
 
-I am happy with finding solution for my issues with Anki. You can try the [Quizrecall](https://quizrecall.com) yourself. I am committed to using and improving the app overtime as it is genuinely reducing time needed for me to memorize and learn. and I think you may very well like it as well. 
+I am happy with finding solution for my issues with Anki. You can try the [Quizrecall](https://quizrecall.com) yourself. I am committed to using and improving the app overtime as it is genuinely reducing time needed for me to memorize and learn.
+
+I think you may very well like it as well. Try it with your favourite Wikipedia article summary.
