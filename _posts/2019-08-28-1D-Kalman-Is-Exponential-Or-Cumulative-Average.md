@@ -25,18 +25,18 @@ Below is the proof relies on good choice of initial value of Kalman variance ```
 
 Plot of the convergence.
 
-<img alt="Proof Kalman 1d with constant measurement uncertainty and no process noise plot" width="80%" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-without-process-noise-plot.png">
+<img alt="Proof Kalman 1d with constant measurement uncertainty and no process noise plot" style="width: 80%; max-width: 900px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-without-process-noise-plot.png">
 
 
 ## Constant Measurement Uncertainty, Constant Process Noise
 
 Below is the proof relies on setting initial value of Kalman variance ```P0``` such that ```Pk``` becomes constant for recursive equation to match exponential moving average equation.
 
-<img alt="Proof Kalman 1d with constant measurement uncertainty and constant process noise proof" width="80%" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-with-process-noise-proof.jpg">
+<img alt="Proof Kalman 1d with constant measurement uncertainty and constant process noise proof" style="width: 80%; max-width: 900px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-with-process-noise-proof.jpg">
 
 Plot of the convergence.
 
-<img alt="Proof Kalman 1d with constant measurement uncertainty and constant process noise plot" width="80%" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-with-process-noise-plot.png">
+<img alt="Proof Kalman 1d with constant measurement uncertainty and constant process noise plot" style="width: 80%; max-width: 900px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-with-process-noise-plot.png">
 
 
 # References
