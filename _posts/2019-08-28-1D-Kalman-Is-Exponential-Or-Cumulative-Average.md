@@ -21,7 +21,7 @@ The proof relies on Kalman filter asymptotically doesn't depend on initial state
 
 Below is the proof relies on good choice of initial value of Kalman variance ```P0``` to simplify recursive equation to match cumulative average equation.
 
-<img alt="Proof Kalman 1d with constant measurement uncertainty and no process noise proof" width="80%" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-without-process-noise-proof.jpg">
+<img alt="Proof Kalman 1d with constant measurement uncertainty and no process noise proof" style="width: 80%; max-width: 900px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-without-process-noise-proof.jpg">
 
 Plot of the convergence.
 
