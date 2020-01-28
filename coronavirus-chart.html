@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://www.chartjs.org/samples/latest/scales/time/line.html -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Coronavirus Chart</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Simple and up to date chart of Coronavirus infected and dead.">
+	<meta name="keywords" content="coronavirus,chart,history,graph,logaritmic scale">
+
+	<!--	<script async="" src="./index_files/analytics.js"></script>-->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+
+<!--	<script src="./index_files/Chart.min.js"></script>-->
+	<script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
+
+
+<!--	<script src="./index_files/utils.js"></script>-->
+	<script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+	<style>
+
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+
+		h1 {
+			font-size: calc(15px + 5vmin);
+			color: #a60004;
+			/*text-shadow: 2px 2px 2px #688200;*/
+		}
+
+		button {
+			font-size: calc(7px + 1vmin);
+            background-color: white;
+			color: #9c4e00;
+			border-radius: 0;
+			border-width: 1px;
+			box-shadow:inset 0px 1px 0px 0px #fff6af;
+			border:1px solid #9c4e00;
+
+		}
+
+	</style>
+<style type="text/css">/* Chart.js */
+@keyframes chartjs-render-animation {
+	from {
+		opacity: .99
+	}
+	to {
+		opacity: 1
+	}
+}
+
+.chartjs-render-monitor {
+	animation: chartjs-render-animation 1ms
+}
+
+.chartjs-size-monitor, .chartjs-size-monitor-expand, .chartjs-size-monitor-shrink {
+	position: absolute;
+	direction: ltr;
+	/*left: 0;*/
+	/*top: 0;*/
+	/*right: 0;*/
+	/*bottom: 0;*/
+	overflow: hidden;
+	pointer-events: none;
+	visibility: hidden;
+	z-index: -1
+}
+
+.chartjs-size-monitor-expand > div {
+	/*position: absolute;*/
+	/*width: 1000000px;*/
+	/*height: 1000000px;*/
+	left: 0;
+	top: 0
+}
+
+.chartjs-size-monitor-shrink > div {
+	/*position: absolute;*/
+	/*width: 200%;*/
+	/*height: 200%;*/
+	/*left: 0;*/
+	/*top: 0*/
+}</style>
+</head>
+
+<body>
+
+	<div style="align-content: center; text-align: center; display: flex; justify-content: center;">
+		<div style="max-width: 1400px; width: 98.5%">
+			<h1>Coronavirus Chart</h1>
+			<i>Simple and up to date chart of Coronavirus infected and dead.</i><br><br>
+<!--				<div class="chartjs-size-monitor">-->
+<!--					<div class="chartjs-size-monitor-expand">-->
+<!--						<div class=""></div>-->
+<!--					</div>-->
+<!--					<div class="chartjs-size-monitor-shrink">-->
+<!--						<div class=""></div>-->
+<!--					</div>-->
+<!--				</div>-->
+				<!--				<canvas id="canvas" style="display: block; width: 674px; height: 337px;" width="674" height="337" class="chartjs-render-monitor"></canvas>-->
+				<canvas id="canvas" style="display: block" class="chartjs-render-monitor"></canvas>
+			<br>
+			<button id="toggleScale" style="border-radius: 0">Toggle Logaritmic / Linear Scale</button>
+			<br>
+			<br>
+			<a class="twitter-timeline" href="https://twitter.com/WHO?ref_src=twsrc%5Etfw">Tweets by WHO</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+			<script>
+				let data = [
+					{ d: '2020-01-16', i: 45, t: 1},
+					{ d: '2020-01-17', i: 62, t: 2},
+					{ d: '2020-01-18', i: 121, t: 3},
+					{ d: '2020-01-19', i: 198, t: 4},
+					{ d: '2020-01-20', i: 291, t: 4},
+					{ d: '2020-01-21', i: 440, t: 6},
+					{ d: '2020-01-22', i: 571, t: 22},
+					{ d: '2020-01-23', i: 830, t: 25},
+					{ d: '2020-01-24', i: 1287, t: 41},
+					{ d: '2020-01-25', i: 1975, t: 55},
+					{ d: '2020-01-26', i: 2744, t: 80},
+					{ d: '2020-01-27', i: 4515, t: 106},
+				];
+
+				var type = 'linear';
+
+				var timeFormat = 'YYYY-MM-DD';
+
+				function newDate(days) {
+					return moment().add(days, 'd').toDate();
+				}
+
+				function newDateString(days) {
+					return moment().add(days, 'd').format(timeFormat);
+				}
+
+				var color = Chart.helpers.color;
+				var config = {
+					type: 'line',
+					data: {
+						labels: data.map(d => new Date(d.d)),
+						datasets: [
+							{
+								label: 'Infected - Click me to toggle!',
+								backgroundColor: color(window.chartColors.yellow).alpha(0.5).rgbString(),
+								borderColor: window.chartColors.yellow,
+								fill: false,
+								data: data.map(d => d.i),
+							},
+							{
+								label: 'Dead - Click me to toggle!',
+								backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+								borderColor: window.chartColors.red,
+								fill: false,
+								data: data.map(d => d.t),
+							},
+						]
+					},
+					options: {
+						title: {
+							text: 'Coronavirus Infected and Dead Chart'
+						},
+						scales: {
+							xAxes: [{
+								type: 'time',
+								time: {
+									parser: timeFormat,
+									round: 'day',
+									tooltipFormat: 'll',
+									unit: 'day'
+								},
+								scaleLabel: {
+									display: true,
+									labelString: 'Date'
+								}
+							}],
+							yAxes: [{
+								scaleLabel: {
+									display: true,
+									labelString: 'value'
+								}
+							}]
+						},
+					}
+				};
+
+				window.onload = function() {
+					var ctx = document.getElementById('canvas').getContext('2d');
+					window.myLine = new Chart(ctx, config);
+
+				};
+
+				document.getElementById('toggleScale').addEventListener('click', function() {
+					type = type === 'linear' ? 'logarithmic' : 'linear';
+					window.myLine.options.title.text = 'Chart.js Line Chart - ' + type;
+					window.myLine.options.scales.yAxes[0] = {
+						display: true,
+						type: type
+					};
+
+					window.myLine.update();
+				});
+
+
+			</script>
+
+		</div>
+	</div>
+
+</body>
+</html>
