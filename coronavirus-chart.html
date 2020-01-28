@@ -28,18 +28,18 @@
 
 		h1 {
 			font-size: calc(15px + 5vmin);
-			color: #a60004;
+			color: #000000;
 			/*text-shadow: 2px 2px 2px #688200;*/
 		}
 
 		button {
 			font-size: calc(7px + 1vmin);
             background-color: white;
-			color: #9c4e00;
+			color: #000000;
 			border-radius: 0;
 			border-width: 1px;
 			box-shadow:inset 0px 1px 0px 0px #fff6af;
-			border:1px solid #9c4e00;
+			border:1px solid #000000;
 
 		}
 
@@ -93,7 +93,10 @@
 	<div style="align-content: center; text-align: center; display: flex; justify-content: center;">
 		<div style="max-width: 1400px; width: 98.5%">
 			<h1>Coronavirus Chart</h1>
-			<i>Updated 2019-01-28 interactive chart of Coronavirus infected and dead history.</i><br><br>
+			<i>
+				Updated 2019-01-28<br><br>
+				an interactive chart of Coronavirus infected and dead history. Click labels to toggle infected or dead. Hover to see data point details. Toggle log scale below.
+			</i><br><br>
 <!--				<div class="chartjs-size-monitor">-->
 <!--					<div class="chartjs-size-monitor-expand">-->
 <!--						<div class=""></div>-->
@@ -146,14 +149,14 @@
 						labels: data.map(d => new Date(d.d)),
 						datasets: [
 							{
-								label: 'Infected - Click me to toggle!',
+								label: 'Infected - Click to toggle',
 								backgroundColor: color(window.chartColors.yellow).alpha(0.5).rgbString(),
 								borderColor: window.chartColors.yellow,
 								fill: false,
 								data: data.map(d => d.i),
 							},
 							{
-								label: 'Dead - Click me to toggle!',
+								label: 'Dead - Click to toggle',
 								backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
 								borderColor: window.chartColors.red,
 								fill: false,
