@@ -185,14 +185,6 @@
 								data: data.map(d => d.i),
 							},
 							{
-								label: 'Infected Prediction',
-								backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
-								borderColor: window.chartColors.blue,
-								fill: false,
-								data: data.map(d => d.pi),
-								// hidden: true,
-							},
-							{
 								label: 'Dead',
 								backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
 								borderColor: window.chartColors.red,
@@ -298,9 +290,11 @@
 				function predict(data) {
 
 					log_infecteds = data.map(d=>Math.log(d.i));
+					log_toll = data.map(d=>Math.log(d.t));
 					days = [...Array(data.length).keys()];
 
 					let [m, b] = findLineByLeastSquares(days, log_infecteds);
+					let [mt, bt] = findLineByLeastSquares(days, log_toll);
 
 					/*
 					 * We then return the x and y data points according to our fit
@@ -310,14 +304,16 @@
 
 					// predict next 3 values
 					let previous_date = undefined;
-					for (let i = log_infecteds.length - 1; i < log_infecteds.length + 3; i++) {
+					for (let i = log_infecteds.length; i < log_infecteds.length + 3; i++) {
 						let y = i * m + b;
+						let yt = i * mt + bt;
 						let datum = data[i];
 						if (!datum) {
 							datum = {};
 							data.push(datum);
 						}
-						datum.pi = Math.exp(y);
+						datum.i = Math.exp(y);
+						datum.t = Math.exp(yt);
 						if (!datum.d) {
 						  datum.d = moment(previous_date).add(1,'days').format('YYYY-MM-DD');
 						}
