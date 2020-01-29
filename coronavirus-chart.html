@@ -78,10 +78,10 @@
 .chartjs-size-monitor, .chartjs-size-monitor-expand, .chartjs-size-monitor-shrink {
 	position: absolute;
 	direction: ltr;
-	/*left: 0;*/
-	/*top: 0;*/
-	/*right: 0;*/
-	/*bottom: 0;*/
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
 	overflow: hidden;
 	pointer-events: none;
 	visibility: hidden;
@@ -89,19 +89,19 @@
 }
 
 .chartjs-size-monitor-expand > div {
-	/*position: absolute;*/
-	/*width: 1000000px;*/
-	/*height: 1000000px;*/
+	position: absolute;
+	width: 1000000px;
+	height: 1000000px;
 	left: 0;
 	top: 0
 }
 
 .chartjs-size-monitor-shrink > div {
-	/*position: absolute;*/
-	/*width: 200%;*/
-	/*height: 200%;*/
-	/*left: 0;*/
-	/*top: 0*/
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	left: 0;
+	top: 0
 }</style>
 </head>
 
@@ -114,22 +114,26 @@
 				Updated 2020-01-29 19:03 UTC<br><br>
 				An interactive chart of 3 day forecast of Coronavirus infected and dead. Click the labels to toggle infected count, 3 day prediction or death toll. Hover to see data point details.
 			</i><br><br>
-<!--				<div class="chartjs-size-monitor">-->
-<!--					<div class="chartjs-size-monitor-expand">-->
-<!--						<div class=""></div>-->
-<!--					</div>-->
-<!--					<div class="chartjs-size-monitor-shrink">-->
-<!--						<div class=""></div>-->
-<!--					</div>-->
-<!--				</div>-->
-				<!--				<canvas id="canvas" style="display: block; width: 674px; height: 337px;" width="674" height="337" class="chartjs-render-monitor"></canvas>-->
+				<div class="chartjs-size-monitor">
+					<div class="chartjs-size-monitor-expand">
+						<div class=""></div>
+					</div>
+					<div class="chartjs-size-monitor-shrink">
+						<div class=""></div>
+					</div>
+				</div>
 				<canvas id="canvas" style="display: block" class="chartjs-render-monitor"></canvas>
 			<br>
-			<button id="toggleScale" style="border-radius: 0">Toggle Logaritmic / Linear Scale</button><br>
+			<button id="toggleScale" style="border-radius: 0"><b>Toggle Logaritmic / Linear Scale</b></button><br>
 			<br>
 			The prediction is based on a very simple assumption that the counts will follow an exponential curve, at least at the beginning of the outbreak. Over time, instead, the s-curve shape will become dominant.<br>
 			The log scale chart of the time-series shows that that doubling time is around 1.7 days.<br>
 			The time-series graph above tracks 2019–20 Wuhan coronavirus 2019-nCoV outbreak originating in Wuhan, Hubei province, China. The basic reproduction number is around 2.62 new infected per one sick. The most frequently reported symptoms are fever, cough, muscle aches, and tiredness. Time from exposure to developing symptoms (incubation) of the virus is 2 - 10 days.<br>
+			<h3>Sources</h3>
+			All available data for today are presented as for today's data and not yesterday's as it is probably more common elsewhere.
+			The data are sourced from various web pages since I found no good single source with both infected and dead historical data. The historical infected were collected from  <a href="https://en.wikipedia.org/wiki/2019%E2%80%9320_Wuhan_coronavirus_outbreak">a wiki</a> based on the expectation that before 2020-01-28, almost all infected and dead were in China.
+			The latest data point for 2020-01-29 comes from the global estimates on the wiki linked. The historical data for the death toll comes from an page I cannot find now and are then combined with the data point from NY Times 2020-01-28 and the wiki one for 2020-01-29.<br>
+			If there will be enough interest in the page, I will revise the sources of the data.
 			<br>
 			<br>
 			<br>
@@ -139,10 +143,11 @@
 			<br>
 
 			<h2>Coronavirus Prevention Quiz</h2>
-            (Auto generated quiz from <a href="https://quizrecall.com">Quizrecall</a>.)
+            (Auto generated quiz from <a href="https://quizrecall.com">Quizrecall</a>.)<br>
+            <a href="https://www.coronaviruschart.com/coronavirus-quiz.pdf">Download a pdf</a>.)
 
 
-			<a style="text-align: left">
+			<div style="text-align: left">
 
 
 
