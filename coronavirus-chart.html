@@ -3,9 +3,9 @@
 <html xml:lang="en" lang="en" xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Coronavirus Chart Live - 2020-01-29 infected and dead</title>
+	<title>Coronavirus 3 Day Prediction Live - 2020-01-29 infected and dead</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="&#x1F4C8; Chart of Coronavirus infected and dead last updated 2020-01-29. Simple interactive historical (time series) chart with optional logarithmic scale.">
+	<meta name="description" content="&#x1F4C8;Chart of 2019-nCoV infected, dead, and 3 day forecast. Updated 2020-01-29. Interactive historical graph with optional logarithmic scale.">
 	<meta name="keywords" content="coronavirus,chart,history,graph,logaritmic scale,log scale,logaritmic">
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -109,10 +109,10 @@
 
 	<div style="align-content: center; text-align: center; display: flex; justify-content: center;">
 		<div style="max-width: 1400px; width: 98.5%">
-			<h1>&#x1F4C8; Coronavirus Chart Live</h1>
+			<h1>&#x1F4C8; Coronavirus 3 Day Prediction Live</h1>
 			<i>
 				Updated 2020-01-28 05:32 UTC<br><br>
-				An interactive chart of Coronavirus infected and dead history. Click labels to toggle infected or dead. Hover to see data point details. Toggle log scale below.
+				An interactive chart of 3 day forecast of Coronavirus infected and dead. Click the labels to toggle infected count, 3 day prediction or death toll. Hover to see data point details. Toggle log scale below.
 			</i><br><br>
 <!--				<div class="chartjs-size-monitor">-->
 <!--					<div class="chartjs-size-monitor-expand">-->
@@ -127,7 +127,7 @@
 			<br>
 			<button id="toggleScale" style="border-radius: 0">Toggle Logaritmic / Linear Scale</button><br>
 			<br>
-			The log scale chart shows that that doubling time is around 1.7 days.<br>
+			The log scale chart of the time series shows that that doubling time is around 1.7 days.<br>
 			The time series graph above tracks 2019–20 Wuhan coronavirus 2019-nCoV outbreak originating in Wuhan, Hubei province, China. Basic reproduction number is around 2.62 new infected per one sick. The most frequently reported symptoms are fever, cough, muscle aches and tiredness. Time from exposure to developing symptoms (incubation) of the virus is 2 - 10 days.<br>
 			<br>
 			<br>
@@ -157,6 +157,8 @@
 					{ d: '2020-01-28', i: 5974, t: 132},
 				];
 
+				data = predict(data);
+
 				var type = 'linear';
 
 				var timeFormat = 'YYYY-MM-DD';
@@ -183,7 +185,15 @@
 								data: data.map(d => d.i),
 							},
 							{
-								label: 'Dead - Click to toggle',
+								label: 'Infected Prediction',
+								backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+								borderColor: window.chartColors.blue,
+								fill: false,
+								data: data.map(d => d.pi),
+								// hidden: true,
+							},
+							{
+								label: 'Dead',
 								backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
 								borderColor: window.chartColors.red,
 								fill: false,
@@ -281,21 +291,44 @@
 					var m = (count*xy_sum - x_sum*y_sum) / (count*xx_sum - x_sum*x_sum);
 					var b = (y_sum/count) - (m*x_sum)/count;
 
+
+					return [m, b]
+				}
+
+				function predict(data) {
+
+					log_infecteds = data.map(d=>Math.log(d.i));
+					days = [...Array(data.length).keys()];
+
+					let [m, b] = findLineByLeastSquares(days, log_infecteds);
+
 					/*
 					 * We then return the x and y data points according to our fit
 					 */
 					var result_values_x = [];
 					var result_values_y = [];
 
-					for (let i = 0; i < values_length; i++) {
-						x = values_x[i];
-						y = x * m + b;
-						result_values_x.push(x);
-						result_values_y.push(y);
+					// predict next 3 values
+					let previous_date = undefined;
+					for (let i = log_infecteds.length - 1; i < log_infecteds.length + 3; i++) {
+						let y = i * m + b;
+						let datum = data[i];
+						if (!datum) {
+							datum = {};
+							data.push(datum);
+						}
+						datum.pi = Math.exp(y);
+						if (!datum.d) {
+						  datum.d = moment(previous_date).add(1,'days').format('YYYY-MM-DD');
+						}
+
+						previous_date = datum.d
 					}
 
-					return [result_values_x, result_values_y];
+					return data;
 				}
+
+
 
 			</script>
 
