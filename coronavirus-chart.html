@@ -489,7 +489,27 @@
 					{ d: '2020-01-29', i: 6171, t: 133},
 				];
 
-				data = predict(data);
+				let ahead = 3;
+				data = predict(data, ahead);
+
+				var color = Chart.helpers.color;
+
+				function pointColors(normalColor) {
+					let bcs = [];
+					for (let i = 0; i < log_infecteds.length + ahead; i++) {
+						if (i < log_infecteds.length) {
+							bcs.push(normalColor);
+						} else {
+							bcs.push(color(window.chartColors.green).alpha(0.5).rgbString());
+						}
+					}
+					return bcs;
+				}
+
+				let bcs = pointColors(color(window.chartColors.yellow).alpha(1).rgbString());
+				let tbcs = pointColors(color(window.chartColors.red).alpha(1).rgbString());
+
+
 
 				var type = 'linear';
 
@@ -503,7 +523,6 @@
 					return moment().add(days, 'd').format(timeFormat);
 				}
 
-				var color = Chart.helpers.color;
 				var config = {
 					type: 'line',
 					data: {
@@ -511,15 +530,19 @@
 						datasets: [
 							{
 								label: 'Infected - Click to toggle',
-								backgroundColor: color(window.chartColors.yellow).alpha(0.5).rgbString(),
+								backgroundColor: color(window.chartColors.yellow).alpha(1).rgbString(),
+								pointBackgroundColor: bcs,
+								pointBorderColor: bcs,
 								borderColor: window.chartColors.yellow,
 								fill: false,
 								data: data.map(d => d.i),
 							},
 							{
 								label: 'Dead - Click to toggle',
-								backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+								backgroundColor: color(window.chartColors.red).alpha(1).rgbString(),
 								borderColor: window.chartColors.red,
+								pointBackgroundColor: tbcs,
+								pointBorderColor: tbcs,
 								fill: false,
 								data: data.map(d => d.t),
 							},
@@ -619,7 +642,7 @@
 					return [m, b]
 				}
 
-				function predict(data) {
+				function predict(data, ahead) {
 
 					log_infecteds = data.map(d=>Math.log(d.i));
 					log_toll = data.map(d=>Math.log(d.t));
@@ -636,7 +659,7 @@
 
 					// predict next 3 values
 					let previous_date = undefined;
-					for (let i = log_infecteds.length; i < log_infecteds.length + 3; i++) {
+					for (let i = log_infecteds.length; i < log_infecteds.length + ahead; i++) {
 						let y = i * m + b;
 						let yt = i * mt + bt;
 						let datum = data[i];
