@@ -113,7 +113,16 @@
 			<i>
 				Updated 2020-01-30 05:31 UTC<br><br>
 				An interactive chart of 3 day forecast of Coronavirus infected and dead. Predictions are <b style="color: blue">blue points</b>. Click the labels to toggle infected count, death toll or log scale below. Hover to see data point details.
-			</i><br><br>
+			</i>
+			<br>
+			<br>
+			<div style="color: deeppink; text-shadow: 1px 1px 0 #688200; width: auto; font-size: xx-large; font-weight: bold; margin: 10px;">
+				~ <span id="infectedCount" >Predicted infected count calculating...</span><span> infected</span>
+			</div>
+			<i style="font-size: small">Above is <b style="color: blue;">real-time prediction</b> based on the model below.</i>
+			<br>
+            <br>
+			<br>
 				<div class="chartjs-size-monitor">
 					<div class="chartjs-size-monitor-expand">
 						<div class=""></div>
@@ -492,6 +501,17 @@
 
 				let ahead = 3;
 				let [data, infectedNow] = predict(sourceData, ahead);
+				document.getElementById('infectedCount').innerText = (infectedNow - 1).toString();
+				function updateIC() {
+					[data, infectedNow] = predict(sourceData, 0);
+					document.getElementById('infectedCount').innerText = infectedNow.toString();
+
+				}
+
+				setTimeout(() => {
+					document.getElementById('infectedCount').innerText = infectedNow.toString();
+					setInterval(updateIC, 15000);
+				}, 1500);
 
 				var color = Chart.helpers.color;
 
@@ -530,7 +550,7 @@
 						labels: data.map(d => new Date(d.d)),
 						datasets: [
 							{
-								label: '☣  Infected - Click to toggle',
+								label: '☣  Infected - toggle',
 								backgroundColor: color(window.chartColors.yellow).alpha(1).rgbString(),
 								borderColor: window.chartColors.yellow,
 								pointBackgroundColor: bcs,
@@ -539,7 +559,7 @@
 								data: data.map(d => d.i),
 							},
 							{
-								label: '✝ Dead - Click to toggle',
+								label: '✝ Dead - toggle',
 								backgroundColor: color(window.chartColors.red).alpha(1).rgbString(),
 								borderColor: window.chartColors.red,
 								pointBackgroundColor: tbcs,
@@ -547,26 +567,26 @@
 								fill: false,
 								data: data.map(d => d.t),
 							},
-							{
-								label: '☣  Infected Model',
-								backgroundColor: color(window.chartColors.blue).alpha(1).rgbString(),
-								borderColor: window.chartColors.blue,
-								// pointBackgroundColor: bcs,
-								// pointBorderColor: bcs,
-								hidden: true,
-								fill: false,
-								data: data.map(d => d.im),
-							},
-							{
-								label: '✝ Dead Model',
-								backgroundColor: color(window.chartColors.blue).alpha(1).rgbString(),
-								borderColor: window.chartColors.blue,
-								// pointBackgroundColor: bcs,
-								// pointBorderColor: bcs,
-								hidden: true,
-								fill: false,
-								data: data.map(d => d.tm),
-							},
+							// {
+							// 	label: '☣  Infected Model',
+							// 	backgroundColor: color(window.chartColors.blue).alpha(1).rgbString(),
+							// 	borderColor: window.chartColors.blue,
+							// 	// pointBackgroundColor: bcs,
+							// 	// pointBorderColor: bcs,
+							// 	hidden: true,
+							// 	fill: false,
+							// 	data: data.map(d => d.im),
+							// },
+							// {
+							// 	label: '✝ Dead Model',
+							// 	backgroundColor: color(window.chartColors.blue).alpha(1).rgbString(),
+							// 	borderColor: window.chartColors.blue,
+							// 	// pointBackgroundColor: bcs,
+							// 	// pointBorderColor: bcs,
+							// 	hidden: true,
+							// 	fill: false,
+							// 	data: data.map(d => d.tm),
+							// },
 						]
 					},
 					options: {
@@ -580,7 +600,10 @@
 									parser: timeFormat,
 									round: 'day',
 									tooltipFormat: 'll',
-									unit: 'day'
+									unit: 'day',
+									displayFormats: {
+										day: 'DD/MM'
+									}
 								},
 								scaleLabel: {
 									display: true,
