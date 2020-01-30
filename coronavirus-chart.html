@@ -547,6 +547,16 @@
 								fill: false,
 								data: data.map(d => d.t),
 							},
+							{
+								label: '☣  Infected Model',
+								backgroundColor: color(window.chartColors.blue).alpha(1).rgbString(),
+								borderColor: window.chartColors.blue,
+								// pointBackgroundColor: bcs,
+								// pointBorderColor: bcs,
+								hidden: true,
+								fill: false,
+								data: data.map(d => d.im),
+							},
 						]
 					},
 					options: {
@@ -659,24 +669,23 @@
 					var result_values_y = [];
 
 					// predict next 3 values
-					let previous_date = data[log_infecteds.length - 1].d;
-					for (let i = log_infecteds.length; i < log_infecteds.length + ahead; i++) {
-						let y = i * m + b;
-						let yt = i * mt + bt;
+					// let previous_date = data[log_infecteds.length - 1].d;
+					let previous_date = undefined;
+					for (let i = 0; i < log_infecteds.length + ahead; i++) {
+						let y = Math.floor(Math.exp(i * m + b));
+						let yt = Math.floor(Math.exp(i * mt + bt));
 						let datum = data[i];
 						if (!datum) {
 							datum = {};
+							datum.i = y;
+							datum.t = yt;
+							datum.d = moment(previous_date).add(1,'days').format('YYYY-MM-DD');
 							data.push(datum);
 						}
-						datum.i = Math.floor(Math.exp(y));
-						datum.t = Math.floor(Math.exp(yt));
-						if (!datum.d) {
-						  datum.d = moment(previous_date).add(1,'days').format('YYYY-MM-DD');
-						}
-
+						datum.im = y;
+						datum.tm = yt;
 						previous_date = datum.d
 					}
-
 					return data;
 				}
 
