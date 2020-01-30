@@ -473,7 +473,7 @@
 
 
 			<script>
-				let data = [
+				let sourceData = [
 					{ d: '2020-01-16', i: 45, t: 1},
 					{ d: '2020-01-17', i: 62, t: 2},
 					{ d: '2020-01-18', i: 121, t: 3},
@@ -491,7 +491,7 @@
 				];
 
 				let ahead = 3;
-				data = predict(data, ahead);
+				let [data, infectedNow] = predict(sourceData, ahead);
 
 				var color = Chart.helpers.color;
 
@@ -672,11 +672,9 @@
 					let [m, b] = findLineByLeastSquares(days, log_infecteds);
 					let [mt, bt] = findLineByLeastSquares(days, log_toll);
 
-					/*
-					 * We then return the x and y data points according to our fit
-					 */
-					var result_values_x = [];
-					var result_values_y = [];
+					let latest = data[log_infecteds.length - 1];
+					let seconds = moment().diff(moment(latest.d).add(1, 'days')) / 1000;
+					let infectedNow = Math.floor(Math.exp((log_infecteds.length - 1 + seconds / (60*60*24)) * m + b));
 
 					// predict next 3 values
 					// let previous_date = data[log_infecteds.length - 1].d;
@@ -696,7 +694,7 @@
 						datum.tm = yt;
 						previous_date = datum.d
 					}
-					return data;
+					return [data, infectedNow];
 				}
 
 
