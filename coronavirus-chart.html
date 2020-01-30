@@ -112,7 +112,7 @@
 			<h1>&#x1F4C8; Coronavirus 3 Day Prediction Live</h1>
 			<i>
 				Updated 2020-01-30 05:31 UTC<br><br>
-				An interactive chart of 3 day forecast of Coronavirus infected and dead. Click the labels to toggle infected count, 3 day prediction or death toll. Hover to see data point details.
+				An interactive chart of 3 day forecast of Coronavirus infected and dead. Predictions are <b style="color: blue">blue points</b>. Click the labels to toggle infected count, death toll or log scale below. Hover to see data point details.
 			</i><br><br>
 				<div class="chartjs-size-monitor">
 					<div class="chartjs-size-monitor-expand">
@@ -124,7 +124,7 @@
 				</div>
 				<canvas id="canvas" style="display: block" class="chartjs-render-monitor"></canvas>
 			<br>
-			<button id="toggleScale" style="border-radius: 0"><b>Toggle Logaritmic / Linear Scale</b></button><br>
+			<button id="toggleScale" style="border-radius: 0"><b>∡ Toggle Logaritmic / Linear Scale</b></button><br>
 			<br>
 			The prediction of the outbreak progression is based on a very simple assumption that the counts will at first follow an exponential curve, at least at the beginning of the outbreak. Over time, instead, the s-curve shape will become dominant.<br>
 			The log scale chart of the time-series shows that that doubling time is around 1.7 days (geometric progression).<br>
@@ -500,7 +500,7 @@
 						if (i < log_infecteds.length) {
 							bcs.push(normalColor);
 						} else {
-							bcs.push(color(window.chartColors.green).alpha(0.5).rgbString());
+							bcs.push(color(window.chartColors.blue).alpha(1).rgbString());
 						}
 					}
 					return bcs;
@@ -658,7 +658,7 @@
 					var result_values_y = [];
 
 					// predict next 3 values
-					let previous_date = undefined;
+					let previous_date = data[log_infecteds.length - 1].d;
 					for (let i = log_infecteds.length; i < log_infecteds.length + ahead; i++) {
 						let y = i * m + b;
 						let yt = i * mt + bt;
