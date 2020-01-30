@@ -557,6 +557,16 @@
 								fill: false,
 								data: data.map(d => d.im),
 							},
+							{
+								label: '✝ Dead Model',
+								backgroundColor: color(window.chartColors.blue).alpha(1).rgbString(),
+								borderColor: window.chartColors.blue,
+								// pointBackgroundColor: bcs,
+								// pointBorderColor: bcs,
+								hidden: true,
+								fill: false,
+								data: data.map(d => d.tm),
+							},
 						]
 					},
 					options: {
