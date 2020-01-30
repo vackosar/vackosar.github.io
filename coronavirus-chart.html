@@ -667,8 +667,8 @@
 							datum = {};
 							data.push(datum);
 						}
-						datum.i = Math.exp(y);
-						datum.t = Math.exp(yt);
+						datum.i = Math.floor(Math.exp(y));
+						datum.t = Math.floor(Math.exp(yt));
 						if (!datum.d) {
 						  datum.d = moment(previous_date).add(1,'days').format('YYYY-MM-DD');
 						}
