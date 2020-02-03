@@ -534,8 +534,9 @@
 
 					/*
 					 * Calculate the sum for each of the parts necessary.
+					 * FIT ONLY last 5!
 					 */
-					for (let i = 0; i< values_length; i++) {
+					for (let i = values_length - 5; i< values_length; i++) {
 						x = values_x[i];
 						y = values_y[i];
 						x_sum+= x;
