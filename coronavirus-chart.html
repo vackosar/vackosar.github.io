@@ -3,9 +3,9 @@
 <html xml:lang="en" lang="en" xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>📈 Coronavirus Prediction Live - real-time counter - infected & dead - 2020-01-30</title>
+	<title>Coronavirus Prediction Live - counter & chart - infected & dead</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="&#x1F4C8;Chart of 2019-nCoV infected, dead, and 3 day forecast with real-time infected prediction counter for intraday simulation. Updated 2020-01-30. Interactive historical graph with optional logarithmic scale.">
+	<meta name="description" content="Chart of 2019-nCoV infected, dead, and forecast with intraday infected prediction counter. Interactive historical graph with optional logarithmic scale.">
 	<meta name="keywords" content="coronavirus,chart,history,graph,logaritmic scale,log scale,logaritmic">
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -21,6 +21,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -109,10 +110,12 @@
 
 	<div style="align-content: center; text-align: center; display: flex; justify-content: center;">
 		<div style="max-width: 1400px; width: 98.5%">
-			<h1>&#x1F4C8; Coronavirus Prediction Live</h1>
+			<h1 style="margin-bottom: 5px">&#x1F4C8; Coronavirus Chart </h1>
+			<h2><span style="color: red">• Live</span> <span style="color: blue">Prediction</span></h2>
+			<br>
 			<i>
-				Updated 2020-01-30 05:31 UTC<br><br>
-				An interactive chart of 3 day forecast of Coronavirus infected and dead. Predictions are <b style="color: blue">blue points</b>. Click the labels to toggle infected count, death toll or log scale below. Hover to see data point details.
+				Updated 2020-02-02 04:06 UTC - <b style="color: blue">last 3 days not exponential! Is 2019-nCoV slowing down or measurement error?</b><br><br>
+				Real-time prediction counter and an interactive chart of 3 day forecast of the novel coronavirus infected and dead. Updated daily. Predictions are <b style="color: blue">blue points</b>. Click the labels to toggle infected count, death toll or log scale below. Hover over a data point for details.
 			</i>
 			<br>
 			<br>
@@ -135,54 +138,37 @@
 			<br>
 			<button id="toggleScale" style="border-radius: 0"><b>∡ Toggle Logaritmic / Linear Scale</b></button><br>
 			<br>
-			The prediction of the outbreak progression is based on a very simple assumption that the counts will at first follow an exponential curve, at least at the beginning of the outbreak. Over time, instead, the s-curve shape will become dominant.<br>
-			The log scale chart of the time-series shows that that doubling time is around 1.7 days (geometric progression).<br>
+			The prediction of the outbreak progression is based on a very simple assumption that the counts will at first follow an exponential curve, at least at the beginning of the outbreak. Over time, instead, the s-curve shape will become dominant. The log scale chart of the time-series shows that that doubling time is around 1.7 days (geometric progression).<br>
 			The time-series graph above tracks 2019–20 Wuhan coronavirus 2019-nCoV outbreak originating in Wuhan, Hubei province, China. The basic reproduction number is around 2.62 new infected per one sick. The most frequently reported symptoms are fever, cough, muscle aches, and tiredness. Time from exposure to developing symptoms (incubation) of the virus is 2 - 10 days.<br>
 
 			<br>
 			<br>
-			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Coronavirus%203%20Day%20Prediction%20Live%20https%3A%2F%2Fwww.CoronavirusChart.com%2F%20with%20log%20scale%20toggle">Tweet</a>
+			<a class="twitter-share-button" style="background: #55ACEE; color: white; padding: 7px; border-radius: 10px; text-decoration: none" href="https://twitter.com/intent/tweet?text=Coronavirus%203%20Day%20Prediction%20Live%20https%3A%2F%2Fwww.CoronavirusChart.com%2F%20with%20log%20scale%20toggle"><i class="fa fa fa-twitter"></i> Tweet</a>
 			<br>
 			<br>
 
 			<h2>👨‍⚕️ Coronavirus Prevention Quiz</h2>
-            (Auto generated quiz from <a href="https://quizrecall.com">Quizrecall</a>.)<br>
-            <a href="https://www.coronaviruschart.com/coronavirus-quiz.pdf">Download a pdf</a>.
+            (Auto generated quiz via <a href="https://quizrecall.com">Quizrecall</a> from <a href="https://www.cdc.gov/coronavirus/2019-ncov/about/prevention-treatment.html">CDC's text</a>.)<br><br>
+            <a href="https://www.coronaviruschart.com/coronavirus-quiz.pdf">⇩ Download a pdf</a>.
 
 
 			<div style="text-align: left">
-
-
-
 
 
 			<h3>Question 1</h3>
 			The best way to prevent infection is to {{ ... }}.<br>
 
 			<ol type="a">
-
-
-
 				<li>
 					avoid being exposed to this virus
 				</li>
-
-
-
 				<li>
 					be concerned about the risk of infection as well
 				</li>
-
-
-
 				<li>
 					keep your hands on the soap
 				</li>
-
-
 			</ol>
-
-
 
 
 
@@ -190,59 +176,32 @@
 			However, as a reminder, CDC always recommends everyday preventive actions to help prevent the spread of respiratory viruses, including: Wash your {{ ... }}.<br>
 
 			<ol type="a">
-
-
-
 				<li>
 					hands, give every bite a chance to keep your nose open
 				</li>
-
-
-
 				<li>
 					hands every day until you get a flu shot, get vaccinated, stay under control for 24
 				</li>
-
-
-
 				<li>
 					hands often with soap and water for at least 20 seconds
 				</li>
-
-
 			</ol>
-
-
-
 
 
 			<h3>Question 3</h3>
 			Use an alcohol-based hand sanitizer that contains {{ ... }}.<br>
 
 			<ol type="a">
-
-
-
 				<li>
 					antifungal immunoprecipients, not salt; run an inflatable swimming pool
 				</li>
-
-
-
 				<li>
 					a soap bottle, scrubbing your hands frequently, washing hands frequently, combing your hands often
 				</li>
-
-
-
 				<li>
-					at least 60 alcohol if soap and water are not available
+					at least 60% alcohol if soap and water are not available
 				</li>
-
-
 			</ol>
-
-
 
 
 
@@ -250,60 +209,33 @@
 			Avoid touching your eyes, nose, and {{ ... }}.<br>
 
 			<ol type="a">
-
-
-
 				<li>
 					mouth with unwashed hands
 				</li>
-
-
-
 				<li>
 					neck, especially when wearing your shoes
 				</li>
-
-
-
 				<li>
 					nose, as the infection can spread
 				</li>
-
-
 			</ol>
-
-
-
 
 
 			<h3>Question 5</h3>
 			Avoid close contact with {{ ... }}.<br>
 
 			<ol type="a">
-
-
-
 				<li>
 					people who are sick
 				</li>
-
-
-
 				<li>
 					your eyes when using soap during
 				</li>
-
-
-
 				<li>
 					washing hands with soap
 				</li>
 
-
 			</ol>
-
-
-
 
 
 			<h3>Question 6</h3>
@@ -311,58 +243,33 @@
 
 			<ol type="a">
 
-
-
 				<li>
 					need to use
 				</li>
 
-
-
 				<li>
 					have to be
 				</li>
-
-
-
 				<li>
 					are sick
 				</li>
-
-
 			</ol>
-
-
-
 
 
 			<h3>Question 7</h3>
 			Cover your cough or sneeze with a tissue, then throw {{ ... }}.<br>
-
 			<ol type="a">
-
-
-
 				<li>
 					your hands up, arms, hands, face
 				</li>
-
-
-
 				<li>
 					the tissue in the trash
 				</li>
-
-
-
 				<li>
 					it on the floor
 				</li>
 
-
 			</ol>
-
-
 
 
 
@@ -370,56 +277,32 @@
 			Clean and disinfect frequently touched {{ ... }}.<br>
 
 			<ol type="a">
-
-
-
 				<li>
 					objects and surfaces
 				</li>
 
-
-
 				<li>
 					surfaces where you cannot
 				</li>
-
-
-
 				<li>
 					tissues with dental iron
 				</li>
-
-
 			</ol>
-
-
-
 
 
 			<h3>Question 9</h3>
 			These are everyday habits that can help prevent {{ ... }}.<br>
 
 			<ol type="a">
-
-
-
 				<li>
 					the spread of several viruses
 				</li>
-
-
-
 				<li>
 					self-harm, destruction, more
 				</li>
-
-
-
 				<li>
 					choking, but are one of the most important
 				</li>
-
-
 			</ol>
 
 
@@ -427,35 +310,15 @@
 			<div>
 				Solution:
 				<div style="transform: rotate(180deg); text-align: right">
-
 					1. a,
-
-
-					2. a,
-
-
+					2. c,
 					3. c,
-
-
 					4. a,
-
-
-					5. b,
-
-
+					5. a,
 					6. c,
-
-
-					7. c,
-
-
-					8. c,
-
-
-					9. b,
-
-
-
+					7. b,
+					8. a,
+					9. a,
 				</div>
 			</div>
 			<br>
@@ -473,11 +336,11 @@
 			<br>
 			<h3>Data Sources</h3>
 			The data are sourced from various web pages since I found no good single source with both infected and dead historical data. The historical infected were collected from  <a href="https://en.wikipedia.org/wiki/2019%E2%80%9320_Wuhan_coronavirus_outbreak">a wiki</a> based on the expectation that before 2020-01-28, almost all infected and dead were in China.
-			The latest data point for 2020-01-29 comes from the global estimates on the wiki linked refered to as "As of 30 January 2020". The historical data for the death toll comes from an page I cannot find now. And are then combined with the data point from NY Times 2020-01-27 and the wiki one for 2020-01-27.<br>
+			The data point for 2020-01-29 comes from the global estimates on the wiki linked refered to as "As of 30 January 2020". The historical data for the death toll comes from an page I cannot find now. And are then combined with the data point from NY Times 2020-01-27 and the wiki one for 2020-01-27.<br>
 			If there will be enough interest in the page, I will revise the sources of the data e.g. <a href="https://news.sina.cn/zt_d/yiqing0121">sina.cn</a>.
 			<br>
 			<br>
-			<a class="twitter-timeline" href="https://twitter.com/WHO?ref_src=twsrc%5Etfw">Tweets by WHO</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<!-- <a class="twitter-timeline" href="https://twitter.com/WHO?ref_src=twsrc%5Etfw">Tweets by WHO</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 
 
 
@@ -497,6 +360,12 @@
 					{ d: '2020-01-27', i: 4515, t: 106},
 					{ d: '2020-01-28', i: 6171, t: 133},
 					{ d: '2020-01-29', i: 7823, t: 170},
+					{ d: '2020-01-30', i: 9822, t: 213},
+					{ d: '2020-01-31', i: 11951, t: 259},
+					{ d: '2020-02-01', i: 14556, t: 305},
+					{ d: '2020-02-02', i: 17390, t: 362},
+
+
 				];
 
 				let ahead = 3;
@@ -511,7 +380,7 @@
 				setTimeout(() => {
 					document.getElementById('infectedCount').innerText = infectedNow.toString();
 					setInterval(updateIC, 15000);
-				}, 1500);
+				}, 2000);
 
 				var color = Chart.helpers.color;
 
@@ -550,7 +419,7 @@
 						labels: data.map(d => new Date(d.d)),
 						datasets: [
 							{
-								label: '☣  Infected - toggle',
+								label: '☣  Infected - click to toggle',
 								backgroundColor: color(window.chartColors.yellow).alpha(1).rgbString(),
 								borderColor: window.chartColors.yellow,
 								pointBackgroundColor: bcs,
@@ -559,7 +428,7 @@
 								data: data.map(d => d.i),
 							},
 							{
-								label: '✝ Dead - toggle',
+								label: '✝ Dead - click to toggle',
 								backgroundColor: color(window.chartColors.red).alpha(1).rgbString(),
 								borderColor: window.chartColors.red,
 								pointBackgroundColor: tbcs,
