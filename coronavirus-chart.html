@@ -114,7 +114,7 @@
 			<h2><span style="color: red">• Live</span> <span style="color: blue">Prediction</span></h2>
 			<br>
 			<i>
-				Updated 2020-02-02 04:06 UTC - <b style="color: blue">last 3 days not exponential! Is 2019-nCoV slowing down or measurement error?</b><br><br>
+				Updated 2020-02-02 04:06 UTC - <b style="color: blue">Is 2019-nCoV slowing down or measurement error?</b><br><br>
 				Real-time prediction counter and an interactive chart of 3 day forecast of the novel coronavirus infected and dead. Updated daily. Predictions are <b style="color: blue">blue points</b>. Click the labels to toggle infected count, death toll or log scale below. Hover over a data point for details.
 			</i>
 			<br>
@@ -371,16 +371,25 @@
 				let ahead = 3;
 				let [data, infectedNow] = predict(sourceData, ahead);
 				document.getElementById('infectedCount').innerText = (infectedNow - 1).toString();
+
+				function infectedNowToString(infectedNow) {
+					let s = infectedNow.toString();
+					if (!s.includes('.')) {
+					    s = s + '.0';
+					}
+					return s;
+				}
+
 				function updateIC() {
 					[data, infectedNow] = predict(sourceData, 0);
-					document.getElementById('infectedCount').innerText = infectedNow.toString();
+					document.getElementById('infectedCount').innerText = infectedNowToString(infectedNow);
 
 				}
 
-				setTimeout(() => {
-					document.getElementById('infectedCount').innerText = infectedNow.toString();
-					setInterval(updateIC, 15000);
-				}, 2000);
+				// setTimeout(() => {
+				// 	document.getElementById('infectedCount').innerText = infectedNow.toString();
+					setInterval(updateIC, 500);
+				// }, 2000);
 
 				var color = Chart.helpers.color;
 
@@ -568,7 +577,7 @@
 
 					let latest = data[log_infecteds.length - 1];
 					let seconds = moment().diff(moment(latest.d).add(1, 'days')) / 1000;
-					let infectedNow = Math.floor(Math.exp((log_infecteds.length - 1 + seconds / (60*60*24)) * m + b));
+					let infectedNow = Math.floor(Math.exp((log_infecteds.length - 1 + seconds / (60*60*24)) * m + b) * 10) / 10;
 
 					// predict next 3 values
 					// let previous_date = data[log_infecteds.length - 1].d;
