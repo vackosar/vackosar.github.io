@@ -61,6 +61,10 @@
 
 		}
 
+		a,a:visited {
+			color:  #000000;
+		}
+
 	</style>
 <style type="text/css">/* Chart.js */
 @keyframes chartjs-render-animation {
@@ -146,6 +150,13 @@
 			<a class="twitter-share-button" style="background: #55ACEE; color: white; padding: 7px; border-radius: 10px; text-decoration: none" href="https://twitter.com/intent/tweet?text=Coronavirus%203%20Day%20Prediction%20Live%20https%3A%2F%2Fwww.CoronavirusChart.com%2F%20with%20log%20scale%20toggle"><i class="fa fa fa-twitter"></i> Tweet</a>
 			<br>
 			<br>
+
+
+			<h2>China News</h2>
+
+			<ul id="news" style="text-align: left;"></ul>
+			<br>
+
 
 			<h2>👨‍⚕️ Coronavirus Prevention Quiz</h2>
             (Auto generated quiz via <a href="https://quizrecall.com">Quizrecall</a> from <a href="https://www.cdc.gov/coronavirus/2019-ncov/about/prevention-treatment.html">CDC's text</a>.)<br><br>
@@ -420,14 +431,6 @@
 
 				var timeFormat = 'YYYY-MM-DD';
 
-				function newDate(days) {
-					return moment().add(days, 'd').toDate();
-				}
-
-				function newDateString(days) {
-					return moment().add(days, 'd').format(timeFormat);
-				}
-
 				var config = {
 					type: 'line',
 					data: {
@@ -606,6 +609,15 @@
 					return [data, infectedNow];
 				}
 
+				window.fetch('https://virus.machinesrental.com/?type=range&from=' + moment().add(-1, 'days').format('YYYY-MM-DD'))
+					.then(r => r.json())
+					.then(news => {
+						document.getElementById('news').innerHTML =
+								'<li>' +
+									news.data.map(n => `<b>${n.date}</b> <a href="${n.url}" rel="nofollow">${n.title}</a>`)
+											.join('</li>\n<li>')
+								+ '</li>';
+					});
 
 
 			</script>
