@@ -28,7 +28,11 @@
 
 	<!--	<script async="" src="./index_files/analytics.js"></script>-->
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.27/moment-timezone-with-data-1970-2030.min.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.27/moment-timezone-with-data.min.js"></script>
+
 
 <!--	<script src="./index_files/Chart.min.js"></script>-->
 	<script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
@@ -120,7 +124,7 @@
 			<h2><span style="color: red">• Live</span> <span style="color: blue">Prediction</span></h2>
 			<br>
 			<i>
-				Updated 2020-02-10 06:42 UTC - <b style="color: blue">Is 2019-nCoV acceleration slowing down further? Death toll surpases SARS with over 800 dead.</b><br><br>
+				Updated 2020-02-11 05:42 UTC - <b style="color: blue">Why the infected count is slowing down while the dead count is still exponential? + Lastest News section added!</b><br><br>
 				 <b style="color: darkorange; text-shadow: 1px 1px 0 #688200;">Real-time prediction counter</b> and an interactive chart of 3 day forecast of the novel coronavirus infected and dead. Updated daily. Predictions are <b style="color: blue">blue points</b>. Click the labels to toggle infected count, death toll or log scale below. Hover over a data point for details.
 			</i>
 			<br>
@@ -285,7 +289,6 @@
 			</ol>
 
 
-
 			<h3>Question 8</h3>
 			Clean and disinfect frequently touched {{ ... }}.<br>
 
@@ -302,7 +305,6 @@
 				</li>
 			</ol>
 
-
 			<h3>Question 9</h3>
 			These are everyday habits that can help prevent {{ ... }}.<br>
 
@@ -317,7 +319,6 @@
 					choking, but are one of the most important
 				</li>
 			</ol>
-
 
 			<br>
 			<div>
@@ -384,6 +385,7 @@
 					{ d: '2020-02-07', i: 34902, t: 724},
 					{ d: '2020-02-08', i: 37567, t: 813},
 					{ d: '2020-02-09', i: 40614, t: 910},
+					{ d: '2020-02-10', i: 43102, t: 1018},
 
 				];
 
@@ -616,8 +618,11 @@
 					.then(news => {
 						document.getElementById('news').innerHTML =
 								'<li>' +
-									news.data.map(n => `<b>${n.date}</b> <a href="${n.source_url}" rel="nofollow" target="_blank">${n.title}</a>`)
-											.join('</li>\n<li>')
+									news.data.map(n => {
+										let localDate = moment.tz(n.date, 'Europe/Berlin').local().format('MM/DD HH:mm');
+										return `<b>${localDate}</b> <a href="${n.source_url}" rel="nofollow" target="_blank">${n.title}</a>`;
+									})
+									.join('</li>\n<li>')
 								+ '</li>';
 					});
 
