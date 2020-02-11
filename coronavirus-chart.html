@@ -622,6 +622,7 @@
 										let localDate = moment.tz(n.date, 'Europe/Berlin').local().format('MM/DD HH:mm');
 										return `<b>${localDate}</b> <a href="${n.source_url}" rel="nofollow" target="_blank">${n.title}</a>`;
 									})
+									.slice(0, Math.min(5, news.data.length))
 									.join('</li>\n<li>')
 								+ '</li>';
 					});
