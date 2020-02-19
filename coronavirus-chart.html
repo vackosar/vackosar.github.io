@@ -3,10 +3,10 @@
 <html xml:lang="en" lang="en" xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Coronavirus Prediction Live - counter & chart - infected & dead</title>
+	<title>Coronavirus Chart - live & prediction - counter & chart & news</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Chart of 2019-nCoV infected, dead, and forecast with intraday infected prediction counter. Interactive historical graph with optional logarithmic scale.">
-	<meta name="keywords" content="coronavirus,chart,history,graph,logaritmic scale,log scale,logaritmic">
+	<meta name="description" content="Chart of 2019-nCoV infected, dead, and forecast with intraday infected prediction counter and latest news. Interactive with optional logarithmic scale.">
+	<meta name="keywords" content="coronavirus,chart,history,graph,logaritmic scale,log scale,logaritmic,news">
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -120,12 +120,12 @@
 
 	<div style="align-content: center; text-align: center; display: flex; justify-content: center;">
 		<div style="max-width: 1400px; width: 98.5%">
-			<h1 style="margin-bottom: 5px">&#x1F4C8; Coronavirus Chart </h1>
+			<h1 style="margin-bottom: 5px">&#x1F4C8; Coronavirus Chart</h1>
 			<h2><span style="color: red">• Live</span> <span style="color: blue">Prediction</span></h2>
 			<br>
 			<i>
-				Updated 2020-02-11 05:42 UTC - <b style="color: blue">Why the infected count is slowing down while the dead count is still exponential? + Lastest News section added!</b><br><br>
-				 <b style="color: darkorange; text-shadow: 1px 1px 0 #688200;">Real-time prediction counter</b> and an interactive chart of 3 day forecast of the novel coronavirus infected and dead. Updated daily. Predictions are <b style="color: blue">blue points</b>. Click the labels to toggle infected count, death toll or log scale below. Hover over a data point for details.
+				Updated 2020-02-18 07:44 UTC - <b style="color: blue">Do you believe the chinese non-exponential stats? + Lastest News section added!</b><br><br>
+				 <b style="color: darkorange; text-shadow: 1px 1px 0 #688200;">Real-time prediction counter</b>, an interactive chart of 3 day forecast and latest news about the novel coronavirus infected and dead. Updated daily. Predictions are <b style="color: blue">blue points</b>. Click the labels to toggle infected count, death toll or log scale below. Hover over a data point for details.
 			</i>
 			<br>
 			<br>
@@ -149,7 +149,7 @@
 			<button id="toggleScale" style="border-radius: 0"><b>∡ Logaritmic / Linear Scale Toggle</b></button><br>
 			<br>
 			The prediction of the outbreak progression is based on a very simple assumption that the counts will at first follow an exponential curve, at least at the beginning of the outbreak. Over time, instead, the s-curve shape will become dominant. The log scale chart of the time-series shows that that doubling time is around 1.7 days (geometric progression). Since the parameters of the geometric progression are changing, the prediction is calculated using only the latest 5 data points.<br>
-			The time-series graph above tracks 2019–20 Wuhan coronavirus 2019-nCoV outbreak originating in Wuhan, Hubei province, China. The basic reproduction number is around 2.62 new infected per one sick. The most frequently reported symptoms are fever, cough, muscle aches, and tiredness. Time from exposure to developing symptoms (incubation) of the virus is 2 - 10 days.<br>
+			The time-series graph above tracks 2019–20 Wuhan coronavirus COVID19 (2019-nCoV, SARS-CoV-2) outbreak originating in Wuhan, Hubei province, China. The basic reproduction number is around 2.62 new infected per one sick. The most frequently reported symptoms are fever, cough, muscle aches, and tiredness. Time from exposure to developing symptoms (incubation) of the virus is 2 - 10 days.<br>
 
 			<br>
 			<br>
@@ -160,7 +160,7 @@
 
 			<h2> &nbsp;📰Latest News</h2>
 
-			<ul id="news" style="text-align: left;"></ul>
+			<ul id="news" style="text-align: left;">Loading...</ul>
 			<br>
 
 
@@ -386,6 +386,16 @@
 					{ d: '2020-02-08', i: 37567, t: 813},
 					{ d: '2020-02-09', i: 40614, t: 910},
 					{ d: '2020-02-10', i: 43102, t: 1018},
+					{ d: '2020-02-11', i: 45171, t: 1115},
+					{ d: '2020-02-12', i: 60374, t: 1369},
+					{ d: '2020-02-13', i: 64451, t: 1383},
+					{ d: '2020-02-14', i: 67102, t: 1526},
+					{ d: '2020-02-15', i: 69270, t: 1669},
+				    { d: '2020-02-16', i: 71330, t: 1775},
+				    { d: '2020-02-17', i: 73424, t: 1874},
+				    { d: '2020-02-18', i: 75200, t: 2010},
+
+
 
 				];
 
@@ -622,7 +632,7 @@
 										let localDate = moment.tz(n.date, 'Europe/Berlin').local().format('MM/DD HH:mm');
 										return `<b>${localDate}</b> <a href="${n.source_url}" rel="nofollow" target="_blank">${n.title}</a>`;
 									})
-									.slice(0, Math.min(5, news.data.length))
+									.slice(0, Math.min(7, news.data.length))
 									.join('</li>\n<li>')
 								+ '</li>';
 					});
