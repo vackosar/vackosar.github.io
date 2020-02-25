@@ -13,7 +13,7 @@ So I finally got to improving my apartment acoustics. Step by step as usual - no
 
 <br>
 <img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2020-02-23-map-side.jpg" alt="a map with acoustic panel behind it" style="width: 80%; max-width: 900px"/><br>
-<img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2020-02-23-map-tape.jpg" alt="acoustic foam, tape and scissors used to build a map with acoustic panel behind it" style="width: 80%; max-width: 900px" />
+<img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2020-02-23-map-tape.jpg" alt="acoustic foam, tape and scissors used to build a map with acoustic panel behind it" style="width: 80%; max-width: 900px" /><br>
 <img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2020-02-23-map-foam.jpg" alt="acoustic foam panel" style="width: 80%; max-width: 900px" />
 
 
