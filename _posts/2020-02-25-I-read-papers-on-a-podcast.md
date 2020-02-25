@@ -13,3 +13,4 @@ My setup is very simplistic at the moment. I just had to buy one of the cheapest
 I also was improved room sound quality by [hiding acoustic panel behind a world map](/2020/02/23/Stealthy-acoustic-panels.html).
 
 
+<img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2020-02-25-my-photo-table-map-cal-rot-fix.jpg" alt="a map with acoustic panel behind it" style="width: 80%; max-width: 900px"/><br>
