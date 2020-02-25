@@ -124,7 +124,7 @@
 			<h2><span style="color: red">• Live</span> <span style="color: blue">Prediction</span></h2>
 			<br>
 			<i>
-				Updated 2020-02-20 05:49 UTC - <b style="color: mediumpurple">Chinese stats not reliable, thus world ex China shown by default!</b><br><br>
+				Updated 2020-02-24 05:33 UTC - <b style="color: mediumpurple">World ex-China shown by default</b><br><br>
 				 <b style="color: mediumpurple; text-shadow: 1px 1px 0 #688200;">Real-time prediction counter</b>, an interactive chart of 3 day forecast and latest news about the novel coronavirus infected and dead. Updated daily. Predictions are <b style="color: blue">blue points</b>. Click the labels to toggle infected count, death toll or log scale below. Hover over a data point for details.
 			</i>
 			<br>
@@ -153,8 +153,10 @@
 
 			<br>
 			<br>
-			<a class="twitter-share-button" style="background: #55ACEE; color: white; padding: 7px; border-radius: 10px; text-decoration: none" href="https://twitter.com/intent/tweet?text=Coronavirus%203%20Day%20Prediction%20Live%20https%3A%2F%2Fwww.CoronavirusChart.com%2F%20with%20log%20scale%20toggle"><i class="fa fa fa-twitter"></i> Tweet</a>
-			<br>
+			<a class="twitter-share-button" style="background: #55ACEE; color: white; padding: 7px; border-radius: 10px; text-decoration: none" href="https://twitter.com/intent/tweet?text=Coronavirus%203%20Day%20Prediction%20Live%20https%3A%2F%2Fwww.CoronavirusChart.com%2F%20with%20log%20scale%20toggle"><i class="fa fa fa-twitter"></i> Inform your friends with a Tweet</a><br>
+			<!--<br>
+			<a class="" style="background: #1877f2; color: white; padding: 7px; border-radius: 10px; text-decoration: none"  href="https://facebook.com/sharer.php?u=https://www.coronaviruschart.com/"><i class="fa fa fa-facebook"></i> Inform your friends with a fb post</a>
+			<br>-->
 			<br>
 
 
@@ -395,6 +397,13 @@
 				    { d: '2020-02-17', i: 73424, t: 1874, w: 896},
 				    { d: '2020-02-18', i: 75200, t: 2010, w: 999},
 					{ d: '2020-02-19', i: 75727, t: 2128, w: 1150},
+					{ d: '2020-02-20', i: 76245, t: 2247, w: 1257},
+					{ d: '2020-02-21', i: 77815, t: 2360, w: 1527},
+					{ d: '2020-02-22', i: 78773, t: 2462, w: 1837},
+                    { d: '2020-02-23', i: 79561, t: 2619, w: 2411},
+                    { d: '2020-02-24', i: 80151, t: 2701, w: 2493},
+
+
 				];
 
 				let sourceDataLength = worldPlusChinaData.length;
@@ -639,7 +648,7 @@
 					return [data, worldNow];
 				}
 
-				window.fetch('https://virus.machinesrental.com/?type=range&from=' + moment().add(-1, 'days').format('YYYY-MM-DD'))
+				window.fetch('https://health.machinesrental.com/?type=range&from=' + moment().add(-1, 'days').format('YYYY-MM-DD'))
 					.then(r => r.json())
 					.then(news => {
 						document.getElementById('news').innerHTML =
