@@ -4,7 +4,7 @@ title: "I read papers on a podcast"
 date: 2020-02-25
 ---
 
-To improve my pronunciation and speech, I daily mostly ML read papers on [a podcast](https://youtu.be/gyBdnNY1WPI).
+To improve my pronunciation and speech, I daily mostly Machine Learning scientific papers on [a podcast](https://youtu.be/gyBdnNY1WPI).
 
 And it does work. I think I am able to speak faster and with more precision than I did before I started. Unfortunately my voice is still not so pleasant to listen and I do still slur words. Furthermore I read much more papers than before. Also, I at least some people like the content, since I got around 19 new subs since.
 
