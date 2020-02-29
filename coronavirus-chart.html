@@ -124,7 +124,7 @@
 			<h2><span style="color: red">• Live</span> <span style="color: blue">Prediction</span></h2>
 			<br>
 			<i>
-				Updated 2020-02-24 05:33 UTC - <b style="color: mediumpurple">World ex-China shown by default</b><br><br>
+				Updated 2020-02-29 05:00 UTC - <b style="color: mediumpurple">World ex-China shown by default as western data is more reliable.</b><br><br>
 				 <b style="color: mediumpurple; text-shadow: 1px 1px 0 #688200;">Real-time prediction counter</b>, an interactive chart of 3 day forecast and latest news about the novel coronavirus infected and dead. Updated daily. Predictions are <b style="color: blue">blue points</b>. Click the labels to toggle infected count, death toll or log scale below. Hover over a data point for details.
 			</i>
 			<br>
@@ -153,16 +153,32 @@
 
 			<br>
 			<br>
-			<a class="twitter-share-button" style="background: #55ACEE; color: white; padding: 7px; border-radius: 10px; text-decoration: none" href="https://twitter.com/intent/tweet?text=Coronavirus%203%20Day%20Prediction%20Live%20https%3A%2F%2Fwww.CoronavirusChart.com%2F%20with%20log%20scale%20toggle"><i class="fa fa fa-twitter"></i> Inform your friends with a Tweet</a><br>
-			<!--<br>
-			<a class="" style="background: #1877f2; color: white; padding: 7px; border-radius: 10px; text-decoration: none"  href="https://facebook.com/sharer.php?u=https://www.coronaviruschart.com/"><i class="fa fa fa-facebook"></i> Inform your friends with a fb post</a>
-			<br>-->
+			<a class="twitter-share-button" style="background: #55ACEE; color: white; padding: 7px; border-radius: 10px; text-decoration: none" href="https://twitter.com/intent/tweet?text=Stay%20away%20from%20crowds%2C%20wash%20hands%2C%20don%27t%20touch%20eyes%20%26%20mouth%2C%20stock%20up%2C%20and%20monitor%20situation%20https%3A%2F%2Fwww.CoronavirusChart.com%2F"><i class="fa fa fa-twitter"></i> Inform your friends with a Tweet</a><br>
+			<br>
+			<a class="" style="background: #1877f2; color: white; padding: 7px; border-radius: 10px; text-decoration: none" href="https://facebook.com/sharer.php?u=https%3A%2F%2Fwww.coronaviruschart.com%2F&quote=Stay%20away%20from%20crowds%2C%20wash%20hands%2C%20don%27t%20touch%20eyes%20%26%20mouth%2C%20stock%20up%2C%20and%20monitor%20situation%20https%3A%2F%2Fwww.CoronavirusChart.com%2F"><i class="fa fa fa-facebook"></i> Inform your friends with a fb post</a>
+			<br>
 			<br>
 
 
 			<h2> &nbsp;📰Latest News</h2>
 
 			<ul id="news" style="text-align: left;">Loading...</ul>
+			<br>
+
+			<h2>🃏 Today's Joke</h2>
+			<img src="https://thumbs.gfycat.com/AdoredHalfHammerheadshark-size_restricted.gif" alt="travolta shopping during coronavirus" />
+			<br>
+
+			<h2>🏥 Advanced Tips</h2>
+			<ul style="text-align: left;">
+			    <li>"coronaviruses have really poor survivability on surfaces", "spread through inanimate objects or contaminated surfaces is low" (Popescu, a senior infection prevention epidemiologist who works at a Phoenix-based healthcare system)</li>
+			    <li>Better than N95 and FFP3 is staying away from crowds. Masks are hard to wear corrently and easily leak. Number of doctors got infected.</li>
+			    <li>Younger people seem to be in less risk of severe impact, but there isn't enough data.</li>
+			    <li>Re-infection was reported and may be more severe!</li>
+			    <li>Large shortages in various good will soon come due low manufacturing, low resupply, and stockpiling. China is reporting lowest manufacturing index since 2008.</li>
+			    <li>Speculation: You can only limit the virus dose and postpone the time, but you will be infected eventually. If you will get sick after the pandemic, you may get better treatment and the docs may be prepared and resupplied.</li>
+			    <li>Please make it through this and let me know if you have any suggestions on email at the end of the page.</li>
+			</ul>
 			<br>
 
 
@@ -343,12 +359,32 @@
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generated with
 			</a>
 
-
-
-
+			<br>
 
 
 			</div>
+
+			<h2>🙋 Disqus</h2>
+			<div id="disqus_thread"></div>
+            <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://coronavirus-chart.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
 			<br>
 			<h3>Data Sources</h3>
 			The data are sourced from various web pages since I found no good single source with both infected and dead historical data. The historical infected were collected from  <a href="https://en.wikipedia.org/wiki/2019%E2%80%9320_Wuhan_coronavirus_outbreak">a wiki</a> based on the expectation that before 2020-01-28, almost all infected and dead were in China.
@@ -402,6 +438,10 @@
 					{ d: '2020-02-22', i: 78773, t: 2462, w: 1837},
                     { d: '2020-02-23', i: 79561, t: 2619, w: 2411},
                     { d: '2020-02-24', i: 80151, t: 2701, w: 2493},
+                    { d: '2020-02-25', i: 81000, t: 2764, w: 2936},
+                    { d: '2020-02-26', i: 82167, t: 2801, w: 3670},
+                    { d: '2020-02-27', i: 83370, t: 2858, w: 4546},
+                    { d: '2020-02-28', i: 85216, t: 2924, w: 5965},
 
 
 				];
@@ -657,7 +697,7 @@
 										let localDate = moment.tz(n.date, 'Europe/Berlin').local().format('MM/DD HH:mm');
 										return `<b>${localDate}</b> <a href="${n.source_url}" rel="nofollow" target="_blank">${n.title}</a>`;
 									})
-									.slice(0, Math.min(7, news.data.length))
+									.slice(0, Math.min(10, news.data.length))
 									.join('</li>\n<li>')
 								+ '</li>';
 					});
@@ -665,8 +705,9 @@
 
 			</script>
 
+
 			<br>
-			<i style="font-size: small">Report issues to: corowrrw [at] server135.web-hosting.com</i>
+			<i style="font-size: small">📬 Report issues to: corowrrw [at] server135.web-hosting.com</i>
 
 		</div>
 	</div>
