@@ -148,7 +148,7 @@
 			<br>
 			<button id="toggleScale" style="border-radius: 0"><b>∡ Logaritmic / Linear Scale Toggle</b></button><br>
 			<br>
-			The prediction of the outbreak progression is based on a very simple assumption that the counts will at first follow an exponential curve, at least at the beginning of the outbreak. Over time, instead, the s-curve shape will become dominant. The log scale chart of the time-series shows that that doubling time is around 1.7 days (geometric progression). Since the parameters of the geometric progression are changing, the prediction is calculated using only the latest 5 data points.<br>
+			The prediction of the outbreak progression is based on a very simple assumption that the counts will at first follow an exponential curve, at least at the beginning of the outbreak. Over time, instead, the s-curve shape will become dominant. The log scale chart of the time-series shows that growth of infected outside China is <span id="wDailyGrowthPercent" style="color: mediumpurple"> loading ... </span> per day (geometric progression). Since the parameters of the geometric progression are changing, the prediction is calculated using only the latest 5 data points.<br>
 			The time-series graph above tracks 2019–20 Wuhan coronavirus COVID19 (2019-nCoV, SARS-CoV-2) outbreak originating in Wuhan, Hubei province, China. The basic reproduction number is around 2.62 new infected per one sick. The most frequently reported symptoms are fever, cough, muscle aches, and tiredness. Time from exposure to developing symptoms (incubation) of the virus is 2 - 10 days.<br>
 
 			<br>
@@ -453,8 +453,9 @@
 				let sourceDataLength = worldPlusChinaData.length;
 
 				let ahead = 3;
-				let [data, infectedNow] = predict(worldPlusChinaData, ahead);
-				document.getElementById('infectedCount').innerText = infectedNow.toString();
+				let [data, infectedNow, wDailyGrowthPercent] = predict(worldPlusChinaData, ahead);
+				updateIC();
+				document.getElementById('wDailyGrowthPercent').innerText = Math.floor(wDailyGrowthPercent).toString() + '%';
 
 				function infectedNowToString(infectedNow) {
 					let s = infectedNow.toString();
@@ -465,7 +466,7 @@
 				}
 
 				function updateIC() {
-					[data, infectedNow] = predict(worldPlusChinaData, 0);
+					[data, infectedNow, wDailyGrowthPercent] = predict(worldPlusChinaData, 0);
 					document.getElementById('infectedCount').innerText = infectedNowToString(infectedNow);
 
 				}
@@ -689,7 +690,8 @@
 						datum.wm = yw;
 						previous_date = datum.d
 					}
-					return [data, worldNow];
+					let wDailyGrowthPercent = (Math.exp(mw) - 1) * 100;
+					return [data, worldNow, wDailyGrowthPercent];
 				}
 
 				window.fetch('https://health.machinesrental.com/?type=range&from=' + moment().add(-1, 'days').format('YYYY-MM-DD'))
