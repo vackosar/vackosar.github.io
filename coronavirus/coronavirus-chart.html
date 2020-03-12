@@ -161,7 +161,7 @@
 
 
 			<h2>Probability of getting infected</h2>
-			This is just a simple estimate. It is calculated by estimating probability of not meeting any of the infected people. The infected people are estimated based on claim that 80% of cases have mild symptoms and are not reported.
+			This is just a simple estimate and there may be a bug in the calculation. It is calculated by estimating probability of not meeting any of the infected people. The infected people are estimated based on claim that 80% of cases have mild symptoms and are not reported.
 
 			<script>
 				function getInt(id) {
@@ -198,7 +198,7 @@
 
 			<div><label for="population">Population: </label><input type="number" id="population" value="1000000"/></div>
 			<div><label for="confirmed-cases">Confirmed cases: </label><input type="number" id="confirmed-cases" value="94"/></div>
-			<label for="population-meet">Random people I meet in day: </label><input type="number" id="population-meet" value="100"/>
+			<div><label for="population-meet">Random people I meet in day: </label><input type="number" id="population-meet" value="100"/></div>
 			<button type="button" onclick="calc()">Calculate</button><br>
 			<div>Total infected estimate: <span id="total-infected"></span></div>
 			<div>Daily probability meeting infected person estimate: <span id="probability"></span></div>
