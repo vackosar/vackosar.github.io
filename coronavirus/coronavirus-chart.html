@@ -160,6 +160,53 @@
 			<br>
 
 
+			<h2>Probability of getting infected</h2>
+			This is just a simple estimate. It is calculated by estimating probability of not meeting any of the infected people. The infected people are estimated based on claim that 80% of cases have mild symptoms and are not reported.
+
+			<script>
+				function getInt(id) {
+					return parseInt(document.getElementById(id).value)
+				}
+
+				function calc() {
+					let pop = getInt('population');
+					let confirmed = getInt('confirmed-cases');
+					let infected = (confirmed / 20) * 100;
+					let meet = getInt('population-meet');
+					document.getElementById('total-infected').innerText = infected.toString();
+					// document.getElementById('probability').innerText = Math.floor((1 - Math.pow((1 - infected / pop), meet)) * 100).toString() + '%';
+
+					if (pop <= infected) {
+						alert('Population less than infected count!');
+						document.getElementById('probability').innerText = '100%';
+
+					} else if (meet >= pop || meet >= infected) {
+						alert('Number of met people is too large!');
+						document.getElementById('probability').innerText = '100%';
+
+					} else {
+						let probOfNot = 1;
+						for (let i = 0; i < meet; i++) {
+							probOfNot = probOfNot * (1 - infected / (pop - i));
+						}
+						document.getElementById('probability').innerText = Math.floor((1 - probOfNot) * 100).toString() + '%';
+
+					}
+
+				}
+			</script>
+
+			<div><label for="population">Population: </label><input type="number" id="population" value="1000000"/></div>
+			<div><label for="confirmed-cases">Confirmed cases: </label><input type="number" id="confirmed-cases" value="94"/></div>
+			<label for="population-meet">Random people I meet in day: </label><input type="number" id="population-meet" value="100"/>
+			<button type="button" onclick="calc()">Calculate</button><br>
+			<div>Total infected estimate: <span id="total-infected"></span></div>
+			<div>Daily probability meeting infected person estimate: <span id="probability"></span></div>
+			<br>
+			<br>
+
+
+
 			<h2> &nbsp;📰Latest News</h2>
 
 			<ul id="news" style="text-align: left;">Loading...</ul>
