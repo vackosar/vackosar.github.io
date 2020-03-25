@@ -797,6 +797,8 @@
 							});
 							addCountryDataset('US');
 							addCountryDataset('Italy');
+							var ctxPerCountry = document.getElementById('canvasPerCountry').getContext('2d');
+							window.myLinePerCountry = new Chart(ctxPerCountry, configPerCountry);
 						});
 
 
