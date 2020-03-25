@@ -683,7 +683,7 @@
 							yAxes: [{
 								scaleLabel: {
 									display: true,
-									labelString: '# people'
+									labelString: '# people (linear scale)'
 								}
 							}]
 						},
@@ -721,7 +721,7 @@
 							yAxes: [{
 								scaleLabel: {
 									display: true,
-									labelString: '# people (linear scale)'
+									labelString: '# people (logarithmic scale)'
 								},
 								type: 'logarithmic'
 							}]
@@ -795,6 +795,8 @@
 								option.text = locationName;
 								x.add(option);
 							});
+							addCountryDataset('US');
+							addCountryDataset('Italy');
 						});
 
 
@@ -831,9 +833,6 @@
 
 					var ctxPerCountry = document.getElementById('canvasPerCountry').getContext('2d');
 					window.myLinePerCountry = new Chart(ctxPerCountry, configPerCountry);
-
-					addCountryDataset('US');
-					addCountryDataset('Italy');
 
 				};
 
