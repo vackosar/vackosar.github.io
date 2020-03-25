@@ -18,8 +18,11 @@ tot = df['latest'].dropna().sum()
 df['country'] = df['Country/Region'].str.lower()
 eu = eu['country'].str.lower()
 
-
-print(df.query("country == 'czech republic'"))
+cz_df = df.query("country == 'czechia'")
+cz_df.drop(columns=['Province/State', 'Country/Region', 'Lat', 'Long', 'latest'], inplace=True)
+cz_df.T.plot(kind='line')
+# cz_df.plot(kind='line')
+print(cz_df)
 
 
 df = pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/03-11-2020.csv')

@@ -124,8 +124,8 @@
 			<h2><span style="color: red">• Live</span> <span style="color: blue">Prediction</span></h2>
 			<br>
 			<i>
-				Updated 2020-03-12 05:00 UTC - <b style="color: mediumpurple">Italian health system is over capacity and collapsing. South Korea successfully fights the deadly virus learning from China. Europe and US still mostly seeing just-a-flu except for Italy and CZ.</b><br><br>
-				 <b style="color: mediumpurple; text-shadow: 1px 1px 0 #688200;">Real-time prediction counter</b>, an interactive chart of 3 day forecast and latest news about the novel coronavirus infected and dead. Updated daily. Predictions are <b style="color: blue">blue points</b>. Click the labels to toggle infected count, death toll or log scale below. Hover over a data point for details.
+				Updated 2020-03-25 05:00 UTC - <b style="color: mediumpurple">Japan reports <a href="https://tradingeconomics.com/japan/composite-pmi">hard drop in composite PMI</a>. Japan's data under suspicion.</b><br><br>
+				 <b style="color: mediumpurple; text-shadow: 1px 1px 0 #688200;">Real-time prediction counter</b>, an interactive chart of 3 day forecast and latest news about the novel coronavirus total confirmed cases and dead. Updated daily. Predictions are <b style="color: blue">blue points</b>. Click the labels to toggle infected count, death toll or log scale below. Hover over a data point for details.
 			</i>
 			<br>
 			<br>
@@ -148,7 +148,7 @@
 			<br>
 			<button id="toggleScale" style="border-radius: 0"><b>∡ Logaritmic / Linear Scale Toggle</b></button><br>
 			<br>
-			The prediction of the outbreak progression is based on a very simple assumption that the counts will at first follow an exponential curve, at least at the beginning of the outbreak. Over time, instead, the s-curve shape will become dominant. The log scale chart of the time-series shows that growth of infected outside China is <span id="wDailyGrowthPercent" style="color: mediumpurple"> loading ... </span> per day (geometric progression). Since the parameters of the geometric progression are changing, the prediction is calculated using only the latest 5 data points.<br>
+			The prediction of the outbreak progression is based on a very simple assumption that the counts will at first follow an exponential curve, at least at the beginning of the outbreak. Over time, instead, the s-curve shape will become dominant. The log scale chart of the time-series shows that growth of infected outside China is <b id="wDailyGrowthPercent" style="color: mediumpurple"> loading ... </b> per day (geometric progression). Since the parameters of the geometric progression are changing, the prediction is calculated using only the latest 5 data points.<br>
 			The time-series graph above tracks 2019–20 Wuhan coronavirus COVID19 (2019-nCoV, SARS-CoV-2) outbreak originating in Wuhan, Hubei province, China. The basic reproduction number is around 2.62 new infected per one sick. The most frequently reported symptoms are fever, cough, muscle aches, and tiredness. Time from exposure to developing symptoms (incubation) of the virus is 2 - 10 days.<br>
 
 			<br>
@@ -160,49 +160,55 @@
 			<br>
 
 
-			<h2>Probability of getting infected</h2>
-			Fill in your local numbers to get an estimate.<br>
-			This is just a simple estimate and there may be a bug in the calculation. It is calculated by estimating probability of not meeting any of the infected people. The infected people are estimated based on claim that 80% of cases have mild symptoms and are not reported.<br>
+			<h2>☣ Probability of meeting the infected</h2>
+			<div style="text-align: left">
+    			Fill in your local numbers and click calculate. This is just a simple estimate and there may be a bug in the calculation. But it is the best I have as of 2020-03-12. It is calculated by estimating probability of not meeting any of the infected, but unconfirmed (not quarantined) people. The infected people are estimated based on claim that 80% of cases have mild symptoms and are not reported.
 
-			<script>
-				function getInt(id) {
-					return parseInt(document.getElementById(id).value)
-				}
+    			<script>
+    				function getInt(id) {
+    					return parseInt(document.getElementById(id).value)
+    				}
 
-				function calc() {
-					let pop = getInt('population');
-					let confirmed = getInt('confirmed-cases');
-					let infected = (confirmed / 20) * 100;
-					let meet = getInt('population-meet');
-					document.getElementById('total-infected').innerText = infected.toString();
-					// document.getElementById('probability').innerText = Math.floor((1 - Math.pow((1 - infected / pop), meet)) * 100).toString() + '%';
+    				function calc() {
+    					let pop = getInt('population');
+    					let confirmed = getInt('confirmed-cases');
+    					let infected = (confirmed / 20) * 80;
+    					let meet = getInt('population-meet');
+    					document.getElementById('total-infected').innerText = infected.toString();
+    					// document.getElementById('probability').innerText = Math.floor((1 - Math.pow((1 - infected / pop), meet)) * 100).toString() + '%';
 
-					if (pop <= infected) {
-						alert('Population less than infected count!');
-						document.getElementById('probability').innerText = '100%';
+    					if (pop <= infected) {
+    						alert('Population less than infected count!');
+    						document.getElementById('probability').innerText = '100%';
 
-					} else if (meet >= pop || meet >= infected) {
-						alert('Number of met people is too large!');
-						document.getElementById('probability').innerText = '100%';
+    					} else if (meet >= pop || meet >= infected) {
+    						alert('Number of met people is too large!');
+    						document.getElementById('probability').innerText = '100%';
 
-					} else {
-						let probOfNot = 1;
-						for (let i = 0; i < meet; i++) {
-							probOfNot = probOfNot * (1 - infected / (pop - i));
-						}
-						document.getElementById('probability').innerText = Math.floor((1 - probOfNot) * 100).toString() + '%';
+    					} else {
+    						let probOfNot = 1;
+    						for (let i = 0; i < meet; i++) {
+    							probOfNot = probOfNot * (1 - infected / (pop - i));
+    						}
+    						document.getElementById('probability').innerText = Math.floor((1 - probOfNot) * 100).toString() + '%';
 
-					}
+    					}
 
-				}
-			</script>
+    				}
 
-			<div><label for="population">Population: </label><input type="number" id="population" value="1000000"/></div>
-			<div><label for="confirmed-cases">Confirmed cases: </label><input type="number" id="confirmed-cases" value="94"/></div>
-			<div><label for="population-meet">Random people I meet in day: </label><input type="number" id="population-meet" value="100"/></div>
-			<button type="button" onclick="calc()">Calculate</button><br>
-			<div>Total infected estimate: <span id="total-infected"></span></div>
-			<div>Daily probability meeting infected person estimate: <span id="probability"></span></div>
+
+    			</script>
+
+    			<table>
+        			<tr><td><label for="population">Population: </label></td><td><input type="number" id="population" value="1000000"/></td></tr>
+        			<tr><td><label for="confirmed-cases">Confirmed active cases: </label></td><td><input type="number" id="confirmed-cases" value="94"/></td></tr>
+        			<tr><td><label for="population-meet">Random people I meet in day: </label></td><td><input type="number" id="population-meet" value="100"/></td></tr>
+        			<tr><td>Total infected not quarantined:</td><td><span id="total-infected">?</span></td></tr>
+        			<tr><td>Daily probability meeting one or more infected person:</td><td><span id="probability">?</span></td></tr>
+        			<tr><td></td><td></td></tr>
+        			<tr><td><button type="button" onclick="calc()">Calculate</button></td><td></td></tr>
+    			</table>
+    		</div>
 			<br>
 			<br>
 
@@ -214,22 +220,25 @@
 			<br>
 
 			<h2>🃏 Today's Joke</h2>
-			<img src="/just-a-flu-gravestone.webp" alt="just-a-flu tombstone" style="width: 90%; max-width: 700px" /><br>
+			<img src="/familyh-shelter.webp" alt="Do you have a shelter?" style="width: 90%; max-width: 700px" /><br>
+			<!--<a href="https://twitter.com/BenjaminEnfield/status/1240405938781278208?s=20"><img src="/corona-party.png" alt="corona party well on its way" style="width: 90%; max-width: 700px"/></a><br>-->
+			<!--<blockquote class="twitter-tweet"><p lang="und" dir="ltr">Day 7 <a href="https://twitter.com/hashtag/CoronaVirusChallenge?src=hash&amp;ref_src=twsrc%5Etfw">#CoronaVirusChallenge</a> <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> <a href="https://twitter.com/hashtag/coronavirus?src=hash&amp;ref_src=twsrc%5Etfw">#coronavirus</a> <a href="https://t.co/qLrdABwcKu">pic.twitter.com/qLrdABwcKu</a></p>&mdash; The Academy Music Business (@BenjaminEnfield) <a href="https://twitter.com/BenjaminEnfield/status/1240405938781278208?ref_src=twsrc%5Etfw">March 18, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
 			<br>
 
 			<h2>🏥 Advanced Tips</h2>
 			<ul style="text-align: left;">
-			    <li>Compilation of many tips - <a href="https://www.reddit.com/r/sydney/comments/fg65kj/psa_regarding_covid19_a_warning/">MUST READ HERE</a></li>
+			    <li><a href="https://twitter.com/DrMattMcCarthy/status/1238939403206221824?s=20">Remdesivir</a> and <a href="https://www.jstage.jst.go.jp/article/bst/advpub/0/advpub_2020.01047/_pdf/-char/en">hydroxychloroquine</a> shows promise in Covid-19 treatment, but deployment to your hospital could take months. Vaccine likely arrives in 2021. Isolation still the best as South Korea and China show.</li>
+			    <li><a href=" https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2440799/">Various kinds of masks do seem to weakly protect (best are FFP3, N95) if worn correctly</a>. But social/crowd distancing is the best - number of doctors got infected despite wearing them.</li>
+			    <li>Compilation of many tips - <a href="https://www.reddit.com/r/sydney/comments/fg65kj/psa_regarding_covid19_a_warning/">on Reddit</a></li>
 			    <li>If 1/n people are infected with a disease, a gathering of .7n people is likely to include at least one infected person. E.g. if 1% of people are infected, n = 100, so any gathering of 70 or more people probably includes an infected person.<a href="https://twitter.com/paulg/status/1236361589927927808?s=20">P. Graham</a></li>
 			    <li><a href="https://www.medrxiv.org/content/10.1101/2020.03.04.20031104v1.full.pdf">2020-03-08 mortality estimates still based on Feb Chinese data</a>: Age 0-9: 0.0094% Age 10-19: 0.022% Age 20-29: 0.091% Age 30-39: 0.18% Age 40-49: 0.4% Age 50-59: 1.3% Age 60-69: 4.6% Age 70-79: 9.8% Age 80+: 18%</li>
 			    <li><a href="https://institutefordiseasemodeling.github.io/nCoV-public/analyses/first_adjusted_mortality_estimates_and_risk_assessment/2019-nCoV-preliminary_age_and_time_adjusted_mortality_rates_and_pandemic_risk_assessment.html">A preliminary analysis estimates Covid-19 as comparable to Spanish flu</a> in transmissibility and severity.</li>
 			    <li>Infected <a href="https://www.journalofhospitalinfection.com/article/S0195-6701(20)30046-3/fulltext">surfaces could be infectious up to two days!</a> Disinfect and wear gloves.</li>
-			    <li>Better than N95 and FFP3 is staying away from crowds. Masks are hard to wear corrently and easily leak. Number of doctors got infected.</li>
 			    <li>Younger people seem to be in less risk of severe impact, but there isn't enough data.</li>
-			    <li>Re-infection was reported and may be more severe! Hypothesis: Original more prevalent <a href="https://academic.oup.com/nsr/advance-article/doi/10.1093/nsr/nwaa036/5775463">S-type, secondary re-infection with L-type mutation</a>.</li>
-			    <li>Large shortages in various goods will soon come due low manufacturing, low resupply, and stockpiling. China is reporting lowest manufacturing index since 2008.</li>
+			    <li>Re-infection <a href="https://t.co/Ezx2P3RpjL?amp=1">probably not possible with the same strain</a>. Though multiple virus mutations may exist: <a href="https://academic.oup.com/nsr/advance-article/doi/10.1093/nsr/nwaa036/5775463">S-type and L-type mutation</a>.</li>
+			    <li>Large shortages in various goods will soon come due low manufacturing, low resupply, and stockpiling. China reported lowest manufacturing index since 2008. But is coming back online now.</li>
 			    <li>Speculation: You can only limit the virus dose and postpone the time, but you will be infected eventually. If you will get sick after the pandemic, you may get better treatment and the docs may be prepared and resupplied.</li>
-			    <li>Please make it through this and let me know if you have any suggestions on email at the end of the page.</li>
+			    <li>Please make it through this and let me know if you have any suggestions.</li>
 			</ul>
 			<br>
 
@@ -506,7 +515,20 @@
                     { d: '2020-03-08', i: 110041, t: 3825, w: 29306},
                     { d: '2020-03-09', i: 113739, t: 4016, w: 32985},
                     { d: '2020-03-10', i: 119217, t: 4299, w: 38439},
-                    { d: '2020-03-11', i: 126000, t: 4634, w: 126000-80796},
+                    { d: '2020-03-11', i: 126000, t: 4634, w: 45204},
+                    { d: '2020-03-12', i: 134769, t: 4983, w: 53955},
+                    { d: '2020-03-13', i: 145632, t: 5436, w: 64808},
+                    { d: '2020-03-14', i: 156948, t: 5839, w: 76099},
+                    { d: '2020-03-15', i: 169605, t: 6518, w: 88745},
+                    { d: '2020-03-16', i: 182609, t: 7171, w: 101728},
+                    { d: '2020-03-17', i: 198513, t: 7988, w: 117619},
+                    { d: '2020-03-18', i: 220313, t: 8983, w: 139385},
+                    { d: '2020-03-19', i: 245641, t: 10051, w: 164674},
+                    { d: '2020-03-20', i: 276587, t: 11415, w: 195579},
+                    { d: '2020-03-21', i: 308257, t: 13068, w: 227203},
+                    { d: '2020-03-22', i: 338448, t: 14691, w: 257394},
+                    { d: '2020-03-23', i: 381653, t: 16558, w: 300482},
+                    { d: '2020-03-24', i: 422829, t: 18909, w: 341611},
 
 				];
 
@@ -578,7 +600,7 @@
 								borderColor: window.chartColors.yellow,
 								pointBackgroundColor: bcs,
 								pointBorderColor: bcs,
-                                hidden: true,
+                                hidden: false,
 								fill: false,
 								data: data.map(d => d.i),
 							},
@@ -588,7 +610,7 @@
 								borderColor: window.chartColors.red,
 								pointBackgroundColor: tbcs,
 								pointBorderColor: tbcs,
-								hidden: true,
+								hidden: false,
 								fill: false,
 								data: data.map(d => d.t),
 							},
@@ -727,7 +749,7 @@
 					let latest = data[log_infecteds.length - 1];
 					let seconds = moment().diff(moment(latest.d).add(1, 'days')) / 1000;
 					let infectedNow = Math.floor(Math.exp((log_infecteds.length - 1 + seconds / (60*60*24)) * m + b) * 10) / 10;
-					let worldNow = Math.floor(Math.exp((log_world.length - 1 + seconds / (60*60*24)) * mw + bw) * 100) / 100;
+					let worldNow = Math.floor(Math.exp((log_world.length - 1 + seconds / (60*60*24)) * mw + bw) * 10) / 10;
 
 					// predict next 3 values
 					// let previous_date = data[log_infecteds.length - 1].d;
