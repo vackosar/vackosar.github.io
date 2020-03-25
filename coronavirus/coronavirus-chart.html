@@ -164,6 +164,7 @@
 			<span>
                 <select id="locationSelect"></select>
 				<button id="addDataset" style="border-radius: 0"><b>Add dataset</b></button>
+				<button id="clearDatasets" style="border-radius: 0"><b>Clear datasets</b></button>
 			</span>
 			<br>
 			The prediction of the outbreak progression is based on a very simple assumption that the counts will at first follow an exponential curve, at least at the beginning of the outbreak. Over time, instead, the s-curve shape will become dominant. The log scale chart of the time-series shows that growth of infected outside China is <b id="wDailyGrowthPercent" style="color: mediumpurple"> loading ... </b> per day (geometric progression). Since the parameters of the geometric progression are changing, the prediction is calculated using only the latest 5 data points.<br>
@@ -475,8 +476,8 @@
 			<!-- <a class="twitter-timeline" href="https://twitter.com/WHO?ref_src=twsrc%5Etfw">Tweets by WHO</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 
 
-			<script src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
-			<script src="https://typeiii.github.io/jquery-csv/src/jquery.csv.js"></script>
+			<script src="/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+			<script src="/jquery.csv.js"></script>
 			<script>
 				let worldPlusChinaData = [
 					{ d: '2020-01-16', i: 45, t: 1, w: 0},
@@ -790,6 +791,11 @@
 					// }
 
 					configPerCountry.data.datasets.push(newDataset);
+					window.myLinePerCountry.update();
+				});
+
+				document.getElementById('clearDatasets').addEventListener('click', function() {
+				   configPerCountry.data.datasets = [];
 					window.myLinePerCountry.update();
 				});
 
