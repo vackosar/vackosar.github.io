@@ -721,27 +721,22 @@
 							yAxes: [{
 								scaleLabel: {
 									display: true,
-									labelString: '# people'
-								}
+									labelString: '# people (linear scale)'
+								},
+								type: 'logarithmic'
 							}]
 						},
 					}
-				};
-
-				window.onload = function() {
-					var ctx = document.getElementById('canvas').getContext('2d');
-					window.myLine = new Chart(ctx, config);
-
-					var ctxPerCountry = document.getElementById('canvasPerCountry').getContext('2d');
-					window.myLinePerCountry = new Chart(ctxPerCountry, configPerCountry);
-
 				};
 
 				document.getElementById('toggleScale').addEventListener('click', function() {
 					type = type === 'linear' ? 'logarithmic' : 'linear';
 					window.myLine.options.title.text = 'Chart.js Line Chart - ' + type;
 					window.myLine.options.scales.yAxes[0] = {
-						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: `# people (${type} scale)`
+						},
 						type: type
 					};
 
@@ -752,7 +747,10 @@
 					type = type === 'linear' ? 'logarithmic' : 'linear';
 					window.myLinePerCountry.options.title.text = 'Chart.js Line Chart - ' + type;
 					window.myLinePerCountry.options.scales.yAxes[0] = {
-						display: true,
+					    scaleLabel: {
+							display: true,
+					    	labelString: `# people (${type} scale)`
+						},
 						type: type
 					};
 
@@ -768,10 +766,6 @@
 							window.perCountry = {};
 							objects.forEach(o => {
 								var locationName = o['Country/Region'];
-								if (o['Province/State'] !== '') {
-								    locationName = locationName + ': ' + o['Province/State'];
-								}
-								locationNames.push(locationName);
 								delete o['Country/Region'];
 								delete o['Province/State'];
 								delete o['Lat'];
@@ -779,9 +773,21 @@
 								if (configPerCountry.data.labels.length === 0) {
 									configPerCountry.data.labels = Object.keys(o)
 								}
-								var dataset = Object.values(o);
+
+								var dataset = Object.values(o).map(v => parseInt(v));
                                 dataset.pop();
-								window.perCountry[locationName] = dataset;
+								if (!locationNames.includes(locationName)) {
+									locationNames.push(locationName);
+									window.perCountry[locationName] = dataset;
+
+								} else {
+								    dataset.forEach((v, i) => {
+								    	window.perCountry[locationName][i] += v;
+
+									});
+
+								}
+
 							});
 							locationNames.sort().forEach(locationName => {
 								var x = document.getElementById("locationSelect");
@@ -793,31 +799,43 @@
 
 
 				var colorNames = Object.keys(window.chartColors);
-				document.getElementById('addDataset').addEventListener('click', function() {
-					var sel = document.getElementById('locationSelect');
-					let option = sel.options[sel.selectedIndex];
+				function addCountryDataset(locationName) {
 					var colorName = colorNames[configPerCountry.data.datasets.length % colorNames.length];
 					var newColor = window.chartColors[colorName];
 					var newDataset = {
-						label: option.value,
+						label: locationName,
 						borderColor: newColor,
 						backgroundColor: color(newColor).alpha(0.5).rgbString(),
 						fill: false,
-						data: window.perCountry[option.value]
+						data: window.perCountry[locationName]
 					};
-
-					// for (var index = 0; index < config.data.labels.length; ++index) {
-					// 	newDataset.data.push(20000);
-					// }
-
 					configPerCountry.data.datasets.push(newDataset);
 					window.myLinePerCountry.update();
+
+				}
+				document.getElementById('addDataset').addEventListener('click', function() {
+					var sel = document.getElementById('locationSelect');
+					let option = sel.options[sel.selectedIndex];
+					var locationName = option.value;
+					addCountryDataset(locationName);
 				});
 
 				document.getElementById('clearDatasets').addEventListener('click', function() {
 				   configPerCountry.data.datasets = [];
 					window.myLinePerCountry.update();
 				});
+
+				window.onload = function() {
+					var ctx = document.getElementById('canvas').getContext('2d');
+					window.myLine = new Chart(ctx, config);
+
+					var ctxPerCountry = document.getElementById('canvasPerCountry').getContext('2d');
+					window.myLinePerCountry = new Chart(ctxPerCountry, configPerCountry);
+
+					addCountryDataset('US');
+					addCountryDataset('Italy');
+
+				};
 
 				function findLineByLeastSquares(values_x, values_y) {
 					var x_sum = 0;
