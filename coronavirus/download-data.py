@@ -20,7 +20,7 @@ eu = eu['country'].str.lower()
 
 cz_df = df.query("country == 'czechia'")
 cz_df.drop(columns=['Province/State', 'Country/Region', 'Lat', 'Long', 'latest'], inplace=True)
-cz_df.T.plot(kind='line')
+# transpose don't work
 # cz_df.plot(kind='line')
 print(cz_df)
 

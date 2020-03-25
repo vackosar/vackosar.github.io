@@ -147,6 +147,24 @@
 				<canvas id="canvas" style="display: block" class="chartjs-render-monitor"></canvas>
 			<br>
 			<button id="toggleScale" style="border-radius: 0"><b>∡ Logaritmic / Linear Scale Toggle</b></button><br>
+
+			<br>
+			<br>
+			<h2>Compare Locations Of Interest</h2>
+			Add your countries of interest via dropdown and button below. The data is thanks to Hopkins.
+			<div class="chartjs-size-monitor">
+				<div class="chartjs-size-monitor-expand">
+					<div class=""></div>
+				</div>
+				<div class="chartjs-size-monitor-shrink">
+					<div class=""></div>
+				</div>
+			</div>
+			<canvas id="canvasPerCountry" style="display: block" class="chartjs-render-monitor"></canvas>
+			<span>
+                <select id="locationSelect"></select>
+				<button id="addDataset" style="border-radius: 0"><b>Add dataset</b></button>
+			</span>
 			<br>
 			The prediction of the outbreak progression is based on a very simple assumption that the counts will at first follow an exponential curve, at least at the beginning of the outbreak. Over time, instead, the s-curve shape will become dominant. The log scale chart of the time-series shows that growth of infected outside China is <b id="wDailyGrowthPercent" style="color: mediumpurple"> loading ... </b> per day (geometric progression). Since the parameters of the geometric progression are changing, the prediction is calculated using only the latest 5 data points.<br>
 			The time-series graph above tracks 2019–20 Wuhan coronavirus COVID19 (2019-nCoV, SARS-CoV-2) outbreak originating in Wuhan, Hubei province, China. The basic reproduction number is around 2.62 new infected per one sick. The most frequently reported symptoms are fever, cough, muscle aches, and tiredness. Time from exposure to developing symptoms (incubation) of the virus is 2 - 10 days.<br>
@@ -457,7 +475,8 @@
 			<!-- <a class="twitter-timeline" href="https://twitter.com/WHO?ref_src=twsrc%5Etfw">Tweets by WHO</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 
 
-
+			<script src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+			<script src="https://typeiii.github.io/jquery-csv/src/jquery.csv.js"></script>
 			<script>
 				let worldPlusChinaData = [
 					{ d: '2020-01-16', i: 45, t: 1, w: 0},
@@ -668,9 +687,50 @@
 					}
 				};
 
+				var configPerCountry = {
+					type: 'line',
+					data: {
+						labels: [],
+						datasets: []
+                    },
+					options: {
+						// maintainAspectRatio: false,
+						title: {
+							text: 'Coronavirus Infected and Dead Chart'
+						},
+						scales: {
+							xAxes: [{
+								// type: 'time',
+								// time: {
+								// 	parser: timeFormat,
+								// 	round: 'day',
+								// 	tooltipFormat: 'll',
+								// 	unit: 'day',
+								// 	displayFormats: {
+								// 		day: 'DD/MM'
+								// 	}
+								// },
+								scaleLabel: {
+									display: true,
+									labelString: 'Date'
+								}
+							}],
+							yAxes: [{
+								scaleLabel: {
+									display: true,
+									labelString: '# people'
+								}
+							}]
+						},
+					}
+				};
+
 				window.onload = function() {
 					var ctx = document.getElementById('canvas').getContext('2d');
 					window.myLine = new Chart(ctx, config);
+
+					var ctxPerCountry = document.getElementById('canvasPerCountry').getContext('2d');
+					window.myLinePerCountry = new Chart(ctxPerCountry, configPerCountry);
 
 				};
 
@@ -683,6 +743,54 @@
 					};
 
 					window.myLine.update();
+				});
+
+
+				window.fetch('/time_series_19-covid-Confirmed.csv')
+						.then(r => r.text())
+						.then(csv => {
+							var objects = $.csv.toObjects(csv);
+							window.perCountry = {};
+							objects.forEach(o => {
+								var locationName = o['Country/Region'] + ':' + o['Province/State'];
+								var x = document.getElementById("locationSelect");
+								var option = document.createElement("option");
+								delete o['Country/Region'];
+								delete o['Province/State'];
+								delete o['Lat'];
+								delete o['Long'];
+								if (configPerCountry.data.labels.length === 0) {
+									configPerCountry.data.labels = Object.keys(o)
+								}
+								var dataset = Object.values(o);
+                                dataset.pop();
+								option.text = locationName;
+								window.perCountry[locationName] = dataset;
+								x.add(option);
+							});
+						});
+
+
+				var colorNames = Object.keys(window.chartColors);
+				document.getElementById('addDataset').addEventListener('click', function() {
+					var sel = document.getElementById('locationSelect');
+					let option = sel.options[sel.selectedIndex];
+					var colorName = colorNames[configPerCountry.data.datasets.length % colorNames.length];
+					var newColor = window.chartColors[colorName];
+					var newDataset = {
+						label: option.value,
+						borderColor: newColor,
+						backgroundColor: color(newColor).alpha(0.5).rgbString(),
+						fill: false,
+						data: window.perCountry[option.value]
+					};
+
+					// for (var index = 0; index < config.data.labels.length; ++index) {
+					// 	newDataset.data.push(20000);
+					// }
+
+					configPerCountry.data.datasets.push(newDataset);
+					window.myLinePerCountry.update();
 				});
 
 				function findLineByLeastSquares(values_x, values_y) {
