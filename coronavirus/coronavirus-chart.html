@@ -769,12 +769,23 @@
 								delete o['Province/State'];
 								delete o['Lat'];
 								delete o['Long'];
-								if (configPerCountry.data.labels.length === 0) {
-									configPerCountry.data.labels = Object.keys(o)
-								}
 
 								var dataset = Object.values(o).map(v => parseInt(v));
-                                dataset.pop();
+								dataset.pop();
+
+								if (configPerCountry.data.labels.length === 0) {
+									configPerCountry.data.labels = Object.keys(o);
+									window.perCountry['World Total'] = dataset;
+									locationNames.push('World Total')
+
+								} else {
+									dataset.forEach((v, i) => {
+										window.perCountry['World Total'][i] += v;
+
+									});
+
+								}
+
 								if (!locationNames.includes(locationName)) {
 									locationNames.push(locationName);
 									window.perCountry[locationName] = dataset;
