@@ -757,7 +757,7 @@
 				});
 
 
-				window.fetch('/time_series_19-covid-Confirmed.csv')
+				var csvParsedPromise = window.fetch('/time_series_19-covid-Confirmed.csv')
 						.then(r => r.text())
 						.then(csv => {
 							var objects = $.csv.toObjects(csv);
@@ -794,10 +794,7 @@
 								option.text = locationName;
 								x.add(option);
 							});
-							addCountryDataset('US');
-							addCountryDataset('Italy');
-							var ctxPerCountry = document.getElementById('canvasPerCountry').getContext('2d');
-							window.myLinePerCountry = new Chart(ctxPerCountry, configPerCountry);
+
 						});
 
 
@@ -832,8 +829,13 @@
 					var ctx = document.getElementById('canvas').getContext('2d');
 					window.myLine = new Chart(ctx, config);
 
-					var ctxPerCountry = document.getElementById('canvasPerCountry').getContext('2d');
-					window.myLinePerCountry = new Chart(ctxPerCountry, configPerCountry);
+					csvParsedPromise.then(r => {
+						var ctxPerCountry = document.getElementById('canvasPerCountry').getContext('2d');
+						window.myLinePerCountry = new Chart(ctxPerCountry, configPerCountry);
+
+						addCountryDataset('US');
+						addCountryDataset('Italy');
+					});
 
 				};
 
