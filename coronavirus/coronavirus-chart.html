@@ -124,13 +124,13 @@
 			<h2><span style="color: red">• Live</span> <span style="color: blue">Prediction</span></h2>
 			<br>
 			<i>
-				Updated 2020-03-26 05:00 UTC - <b style="color: mediumpurple"><a href="/#compareCountriesHead">Compare countries</a> growth of infected count on a log scale.</b><br><br>
+				Updated 2020-03-27 05:00 UTC - <b style="color: mediumpurple"><a href="/#compareCountriesHead">Compare countries</a> growth of infected count on a log scale.</b><br><br>
 				 <b style="color: mediumpurple; text-shadow: 1px 1px 0 #688200;">Real-time prediction counter</b>, an interactive chart of 3 day forecast, comparison of countries, probability of your infection, latest news, quiz, and discussion about the novel coronavirus total confirmed cases and dead. Updated daily. Predictions are <b style="color: blue">blue points</b>. Click the labels to toggle infected count, death toll or log scale below.
 			</i>
 			<br>
 			<br>
 			<div style="color: mediumpurple; text-shadow: 1px 1px 0 #688200; width: auto; font-size: xx-large; font-weight: bold; margin: 10px;">
-				~ <span id="infectedCount" >Predicted infected count calculating...</span><span> infected w/o China</span>
+				~ <span id="infectedCount" >Predicted infected count calculating...</span><span> infected</span>
 			</div>
 			<i style="font-size: small">Above is <b style="color: blue;">real-time intraday prediction</b> based on the model below.</i>
 			<br>
@@ -149,7 +149,7 @@
 			<button id="toggleScale" style="border-radius: 0"><b>∡ Logaritmic / Linear Scale Toggle</b></button><br>
 
 			<br>
-			The prediction of the outbreak progression is based on a very simple assumption that the counts will at first follow an exponential curve, at least at the beginning of the outbreak. Over time, instead, the s-curve shape will become dominant. The log scale chart of the time-series shows that growth of infected outside China is <b id="wDailyGrowthPercent" style="color: mediumpurple"> loading ... </b> per day (geometric progression). Since the parameters of the geometric progression are changing, the prediction is calculated using only the latest 5 data points.<br>
+			The prediction of the outbreak progression is based on a very simple assumption that the counts will at first follow an exponential curve, at least at the beginning of the outbreak. Over time, instead, the s-curve shape will become dominant. The log scale chart of the time-series shows that growth of infected count is <b id="iDailyGrowthPercent" style="color: mediumpurple"> loading ... </b> per day (geometric progression). Since the parameters of the geometric progression are changing, the prediction is calculated using only the latest 5 data points.<br>
 			The time-series graph above tracks 2019–20 Wuhan coronavirus COVID19 (2019-nCoV, SARS-CoV-2) outbreak originating in Wuhan, Hubei province, China. The basic reproduction number is around 2.62 new infected per one sick. The most frequently reported symptoms are fever, cough, muscle aches, and tiredness. Time from exposure to developing symptoms (incubation) of the virus is 2 - 10 days.<br>
 
 			<br>
@@ -559,9 +559,9 @@
 				let sourceDataLength = worldPlusChinaData.length;
 
 				let ahead = 3;
-				let [data, infectedNow, wDailyGrowthPercent] = predict(worldPlusChinaData, ahead);
+				let [data, infectedNow, iDailyGrowthPercent] = predict(worldPlusChinaData, ahead);
 				updateIC();
-				document.getElementById('wDailyGrowthPercent').innerText = Math.floor(wDailyGrowthPercent).toString() + '%';
+				document.getElementById('iDailyGrowthPercent').innerText = Math.floor(iDailyGrowthPercent).toString() + '%';
 
 				function infectedNowToString(infectedNow) {
 					let s = infectedNow.toString();
@@ -572,7 +572,7 @@
 				}
 
 				function updateIC() {
-					[data, infectedNow, wDailyGrowthPercent] = predict(worldPlusChinaData, 0);
+					[data, infectedNow, iDailyGrowthPercent] = predict(worldPlusChinaData, 0);
 					document.getElementById('infectedCount').innerText = infectedNowToString(infectedNow);
 
 				}
@@ -950,8 +950,8 @@
 						datum.wm = yw;
 						previous_date = datum.d
 					}
-					let wDailyGrowthPercent = (Math.exp(mw) - 1) * 100;
-					return [data, worldNow, wDailyGrowthPercent];
+					let iDailyGrowthPercent = (Math.exp(m) - 1) * 100;
+					return [data, worldNow, iDailyGrowthPercent];
 				}
 
 				window.fetch('https://health.machinesrental.com/?type=range&from=' + moment().add(-1, 'days').format('YYYY-MM-DD'))
