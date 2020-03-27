@@ -785,14 +785,17 @@
 									var dataset = Object.values(o).map(v => parseInt(v));
 									dataset.pop();
 
+									if (window.perCountry['World Total' + suffix] === undefined) {
+										window.perCountry['World Total' + suffix] = dataset;
+										locationNames.push('World Total' + suffix);
+
+									}
 									if (configPerCountry.data.labels.length === 0) {
 										configPerCountry.data.labels = Object.keys(o);
-										window.perCountry['World Total'] = dataset;
-										locationNames.push('World Total')
 
 									} else {
 										dataset.forEach((v, i) => {
-											window.perCountry['World Total'][i] += v;
+											window.perCountry['World Total' + suffix][i] += v;
 
 										});
 
