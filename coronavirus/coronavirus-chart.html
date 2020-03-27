@@ -3,9 +3,9 @@
 <html xml:lang="en" lang="en" xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Coronavirus Chart - live & prediction - counter & chart & news</title>
+	<title>Coronavirus Chart - live & prediction - counter & chart & comparison</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Chart of 2019-nCoV infected, dead, and forecast with intraday infected prediction counter and latest news. Interactive with optional logarithmic scale.">
+	<meta name="description" content="Chart of 2019-nCoV infected, dead, and forecast with intraday counter, custom countries comparison, your probability of infection.">
 	<meta name="keywords" content="coronavirus,chart,history,graph,logaritmic scale,log scale,logaritmic,news">
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -124,7 +124,7 @@
 			<h2><span style="color: red">• Live</span> <span style="color: blue">Prediction</span></h2>
 			<br>
 			<i>
-				Updated 2020-03-26 05:00 UTC - <b style="color: mediumpurple">Japan reports <a href="https://tradingeconomics.com/japan/composite-pmi">hard drop in composite PMI</a>. Japan's data under suspicion.</b><br><br>
+				Updated 2020-03-26 05:00 UTC - <b style="color: mediumpurple"><a href="/#compareCountriesHead">Compare countries</a> growth of infected count on a log scale.</b><br><br>
 				 <b style="color: mediumpurple; text-shadow: 1px 1px 0 #688200;">Real-time prediction counter</b>, an interactive chart of 3 day forecast, comparison of countries, probability of your infection, latest news, quiz, and discussion about the novel coronavirus total confirmed cases and dead. Updated daily. Predictions are <b style="color: blue">blue points</b>. Click the labels to toggle infected count, death toll or log scale below.
 			</i>
 			<br>
@@ -153,7 +153,7 @@
 			The time-series graph above tracks 2019–20 Wuhan coronavirus COVID19 (2019-nCoV, SARS-CoV-2) outbreak originating in Wuhan, Hubei province, China. The basic reproduction number is around 2.62 new infected per one sick. The most frequently reported symptoms are fever, cough, muscle aches, and tiredness. Time from exposure to developing symptoms (incubation) of the virus is 2 - 10 days.<br>
 
 			<br>
-			<h2> 	🔍 Compare countries</h2>
+			<h2 id="compareCountriesHead"> 	🔍 Compare countries</h2>
 			Add your countries of interest via dropdown and button below. I recommend to use log-scale to contrast growth acceleration of different countries. The data of the infected is thanks to Hopkins.<br>
 			<span>
                 <select id="locationSelect" style="width: 150px"></select>
@@ -758,7 +758,7 @@
 				});
 
 
-				var csvParsedPromise = window.fetch('/time_series_19-covid-Confirmed.csv')
+				var csvParsedPromise = window.fetch('/time_series_covid19_confirmed_global.csv')
 						.then(r => r.text())
 						.then(csv => {
 							var objects = $.csv.toObjects(csv);
