@@ -477,8 +477,9 @@
 			<!-- <a class="twitter-timeline" href="https://twitter.com/WHO?ref_src=twsrc%5Etfw">Tweets by WHO</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 
 
-			<script src="/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
-			<script src="/jquery.csv.js"></script>
+			<script src="/jquery-3.3.1.slim.min.js"></script>
+			<script src="/jquery.csv.min.js"></script>
+
 			<script>
 				let worldPlusChinaData = [
 					{ d: '2020-01-16', i: 45, t: 1, w: 0},
@@ -551,6 +552,7 @@
                     { d: '2020-03-23', i: 381653, t: 16558, w: 300482},
                     { d: '2020-03-24', i: 422829, t: 18909, w: 341611},
 					{ d: '2020-03-25', i: 471036, t: 21284, w: 389751},
+					{ d: '2020-03-26', i: 532237, t: 24089, w: 532237-81340},
 
 				];
 
@@ -606,18 +608,18 @@
 					data: {
 						labels: data.map(d => new Date(d.d)),
 						datasets: [
+							// {
+							// 	label: '☣  Infected w/o China',
+							// 	backgroundColor: color(window.chartColors.purple).alpha(1).rgbString(),
+							// 	borderColor: window.chartColors.purple,
+							// 	pointBackgroundColor: wbcs,
+							// 	pointBorderColor: wbcs,
+							// 	hidden: false,
+							// 	fill: false,
+							// 	data: data.map(d => d.w),
+							// },
 							{
-								label: '☣  Infected w/o China',
-								backgroundColor: color(window.chartColors.purple).alpha(1).rgbString(),
-								borderColor: window.chartColors.purple,
-								pointBackgroundColor: wbcs,
-								pointBorderColor: wbcs,
-								hidden: false,
-								fill: false,
-								data: data.map(d => d.w),
-							},
-							{
-								label: '☣  Infected w/ China',
+								label: '☣  Infected',
 								backgroundColor: color(window.chartColors.yellow).alpha(1).rgbString(),
 								borderColor: window.chartColors.yellow,
 								pointBackgroundColor: bcs,
@@ -627,7 +629,7 @@
 								data: data.map(d => d.i),
 							},
 							{
-								label: '✝ Dead w/ China',
+								label: '✝ Dead',
 								backgroundColor: color(window.chartColors.red).alpha(1).rgbString(),
 								borderColor: window.chartColors.red,
 								pointBackgroundColor: tbcs,
@@ -758,47 +760,57 @@
 				});
 
 
-				var csvParsedPromise = window.fetch('/time_series_covid19_confirmed_global.csv')
-						.then(r => r.text())
-						.then(csv => {
-							var objects = $.csv.toObjects(csv);
+				var csvParsedPromise = Promise.all([
+						window.fetch('/time_series_covid19_confirmed_global.csv'),
+						window.fetch('/time_series_covid19_deaths_global.csv'),
+				])
+						.then(d => Promise.all([d[0].text(), d[1].text()]))
+						.then(d => {
+							var [confirmedCsv, deadCsv] = d;
 							var locationNames = [];
 							window.perCountry = {};
-							objects.forEach(o => {
-								var locationName = o['Country/Region'];
-								delete o['Country/Region'];
-								delete o['Province/State'];
-								delete o['Lat'];
-								delete o['Long'];
-
-								var dataset = Object.values(o).map(v => parseInt(v));
-								dataset.pop();
-
-								if (configPerCountry.data.labels.length === 0) {
-									configPerCountry.data.labels = Object.keys(o);
-									window.perCountry['World Total'] = dataset;
-									locationNames.push('World Total')
-
-								} else {
-									dataset.forEach((v, i) => {
-										window.perCountry['World Total'][i] += v;
-
-									});
-
+							d.forEach((csv, i) => {
+								var suffix = '';
+							    if (i === 1) {
+							    	suffix = ' deaths'
 								}
+								var objects = $.csv.toObjects(csv);
+								objects.forEach(o => {
+									var locationName = o['Country/Region'] + suffix;
+									delete o['Country/Region'];
+									delete o['Province/State'];
+									delete o['Lat'];
+									delete o['Long'];
 
-								if (!locationNames.includes(locationName)) {
-									locationNames.push(locationName);
-									window.perCountry[locationName] = dataset;
+									var dataset = Object.values(o).map(v => parseInt(v));
+									dataset.pop();
 
-								} else {
-								    dataset.forEach((v, i) => {
-								    	window.perCountry[locationName][i] += v;
+									if (configPerCountry.data.labels.length === 0) {
+										configPerCountry.data.labels = Object.keys(o);
+										window.perCountry['World Total'] = dataset;
+										locationNames.push('World Total')
 
-									});
+									} else {
+										dataset.forEach((v, i) => {
+											window.perCountry['World Total'][i] += v;
 
-								}
+										});
 
+									}
+
+									if (!locationNames.includes(locationName)) {
+										locationNames.push(locationName);
+										window.perCountry[locationName] = dataset;
+
+									} else {
+										dataset.forEach((v, i) => {
+											window.perCountry[locationName][i] += v;
+
+										});
+
+									}
+
+								});
 							});
 							locationNames.sort().forEach(locationName => {
 								var x = document.getElementById("locationSelect");
