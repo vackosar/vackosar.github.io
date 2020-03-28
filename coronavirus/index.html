@@ -566,9 +566,9 @@
 
 				function infectedNowToString(infectedNow) {
 					let s = infectedNow.toString();
-					if (!s.includes('.')) {
-					    s = s + '.0';
-					}
+					// if (!s.includes('.')) {
+					//     s = s + '.0';
+					// }
 					return s;
 				}
 
@@ -930,8 +930,8 @@
 
 					let latest = data[log_infecteds.length - 1];
 					let seconds = moment().diff(moment(latest.d).add(1, 'days')) / 1000;
-					let infectedNow = Math.floor(Math.exp((log_infecteds.length - 1 + seconds / (60*60*24)) * m + b) * 10) / 10;
-					let worldNow = Math.floor(Math.exp((log_world.length - 1 + seconds / (60*60*24)) * mw + bw) * 10) / 10;
+					let infectedNow = Math.floor(Math.exp((log_infecteds.length - 1 + seconds / (60*60*24)) * m + b));
+					let worldNow = Math.floor(Math.exp((log_world.length - 1 + seconds / (60*60*24)) * mw + bw));
 
 					// predict next 3 values
 					// let previous_date = data[log_infecteds.length - 1].d;
@@ -955,7 +955,7 @@
 						previous_date = datum.d
 					}
 					let iDailyGrowthPercent = (Math.exp(m) - 1) * 100;
-					return [data, worldNow, iDailyGrowthPercent];
+					return [data, infectedNow, iDailyGrowthPercent];
 				}
 
 				window.fetch('https://health.machinesrental.com/?type=range&from=' + moment().add(-1, 'days').format('YYYY-MM-DD'))
