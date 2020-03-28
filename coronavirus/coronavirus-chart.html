@@ -124,8 +124,8 @@
 			<h2><span style="color: red">• Live</span> <span style="color: blue">Prediction</span></h2>
 			<br>
 			<i>
-				Updated 2020-03-27 05:00 UTC - <b style="color: darkorange"><a href="/#compareCountriesHead">Compare countries</a> growth of infected count on a log scale.</b><br><br>
-				 <b style="color: darkorange; text-shadow: 1px 1px 0 #688200;">Real-time prediction counter</b>, an interactive chart of 3 day forecast, comparison of countries, probability of your infection, latest news, quiz, and discussion about the novel coronavirus total confirmed cases and dead. Updated daily. Predictions are <b style="color: blue">blue points</b>. Click the labels to toggle infected count, death toll or log scale below.
+				Updated 2020-03-28 05:00 UTC - <b style="color: darkorange"><a href="/#compareCountriesHead">Compare countries</a> growth of infected count on a log scale.</b><br><br>
+				 <b style="color: darkorange; text-shadow: 1px 1px 0 #688200;">Real-time prediction counter</b>, an interactive chart of 3 day forecast, comparison of countries, probability of your infection, latest news, quiz, and discussion about the novel coronavirus. Updated daily. Predictions are <b style="color: blue">blue points</b>.
 			</i>
 			<br>
 			<br>
@@ -150,14 +150,13 @@
 
 			<br>
 			The prediction of the outbreak progression is based on a very simple assumption that the counts will at first follow an exponential curve, at least at the beginning of the outbreak. Over time, instead, the s-curve shape will become dominant. The log scale chart of the time-series shows that growth of infected count currently is <b id="iDailyGrowthPercent" style="color: darkorange"> loading ... </b> per day (geometric progression). Since the parameters of the geometric progression are changing, the prediction is calculated using only the latest 5 data points.<br>
-			The time-series graph above tracks 2019–20 Wuhan coronavirus COVID19 (2019-nCoV, SARS-CoV-2) outbreak originating in Wuhan, Hubei province, China. The basic reproduction number is around 2.62 new infected per one sick. The most frequently reported symptoms are fever, cough, muscle aches, and tiredness. Time from exposure to developing symptoms (incubation) of the virus is 2 - 10 days.<br>
+			The time-series graph above tracks 2019–20 Wuhan coronavirus COVID19 (2019-nCoV, SARS-CoV-2) outbreak. The basic reproduction number is around 2.62 new infected per one sick. Common symptoms include fever, cough, and shortness of breath. Time from exposure to developing symptoms (incubation) of the virus is 2 - 14 days.<br>
 
 			<br>
 			<h2 id="compareCountriesHead"> 	🔍 Compare countries</h2>
-			Add your countries of interest via dropdown and button below. I recommend to use log-scale to contrast growth acceleration of different countries. The data of the infected is thanks to Hopkins.<br>
+			Add your countries of interest via dropdown and button below. I recommend to use log-scale to contrast growth acceleration of different countries. The data is thanks to Hopkins.<br>
 			<span>
                 <select id="locationSelect" style="width: 150px"></select>
-				<button id="addDataset" style="border-radius: 0"><b>Add</b></button>
 				<button id="clearDatasets" style="border-radius: 0"><b>Clear</b></button>
 				<button id="toggleScalePerCountry" style="border-radius: 0"><b>∡ Log Scale Toggle</b></button>
 			</span>
@@ -258,6 +257,7 @@
 			    <li>Re-infection <a href="https://t.co/Ezx2P3RpjL?amp=1">probably not possible with the same strain</a>. Though multiple virus mutations may exist: <a href="https://academic.oup.com/nsr/advance-article/doi/10.1093/nsr/nwaa036/5775463">S-type and L-type mutation</a>.</li>
 			    <li>Large shortages in various goods will soon come due low manufacturing, low resupply, and stockpiling. China reported lowest manufacturing index since 2008. But is coming back online now.</li>
 			    <li>Speculation: You can only limit the virus dose and postpone the time, but you will be infected eventually. If you will get sick after the pandemic, you may get better treatment and the docs may be prepared and resupplied.</li>
+			    <li>The time between exposure and symptom onset is typically around 5 days, ranging 2 - 14 days. The time between symptom onset and death is typically around 14 days, ranging 6 - 41 days</li>
 			    <li>Please make it through this and let me know if you have any suggestions.</li>
 			</ul>
 			<br>
@@ -553,6 +553,7 @@
                     { d: '2020-03-24', i: 422829, t: 18909, w: 341611},
 					{ d: '2020-03-25', i: 471036, t: 21284, w: 389751},
 					{ d: '2020-03-26', i: 532237, t: 24089, w: 532237-81340},
+					{ d: '2020-03-27', i: 597252, t: 27365, w: 597252-81394},
 
 				];
 
@@ -840,7 +841,7 @@
 					window.myLinePerCountry.update();
 
 				}
-				document.getElementById('addDataset').addEventListener('click', function() {
+				document.getElementById('locationSelect').addEventListener('change', function() {
 					var sel = document.getElementById('locationSelect');
 					let option = sel.options[sel.selectedIndex];
 					var locationName = option.value;
