@@ -125,7 +125,7 @@
 			<h2><span style="color: red">• Live</span> <span style="color: blue">Prediction</span></h2>
 			<br>
 			<i>
-				Updated 2020-03-30 05:00 UTC - <b style="color: darkorange"><a href="/#compareCountriesHead">Compare countries</a> growth of infected count on a log scale.</b><br><br>
+				Updated 2020-03-31 05:00 UTC - <b style="color: darkorange"><a href="/#compareCountriesHead">Compare countries</a> growth of infected count on a log scale.</b><br><br>
 				 <b style="color: darkorange; text-shadow: 1px 1px 0 #688200;">Real-time prediction counter</b>, an interactive chart of 3 day forecast, comparison of countries, probability of your infection, latest news, quiz, and discussion about the novel coronavirus. Updated daily. Predictions are <b style="color: blue">blue points</b>.
 			</i>
 			<br>
@@ -185,15 +185,15 @@
     			Fill in your local numbers and click calculate. This is just a simple estimate and there may be a bug in the calculation. But it is the best I have as of 2020-03-12. It is calculated by estimating probability of not meeting any of the infected, but unconfirmed (not quarantined) people. The infected people are estimated based on claim that 80% of cases have mild symptoms and are not reported.
 
     			<script>
-    				function getInt(id) {
+    				function getElementInt(id) {
     					return parseInt(document.getElementById(id).value)
     				}
 
     				function calc() {
-    					let pop = getInt('population');
-    					let confirmed = getInt('confirmed-cases');
+    					let pop = getElementInt('population');
+    					let confirmed = getElementInt('confirmed-cases');
     					let infected = (confirmed / 20) * 80;
-    					let meet = getInt('population-meet');
+    					let meet = getElementInt('population-meet');
     					document.getElementById('total-infected').innerText = infected.toString();
     					// document.getElementById('probability').innerText = Math.floor((1 - Math.pow((1 - infected / pop), meet)) * 100).toString() + '%';
 
@@ -557,6 +557,7 @@
 					{ d: '2020-03-27', i: 597252, t: 27365, w: 597252-81394},
 					{ d: '2020-03-28', i: 663748, t: 30880, w: 663748-81394},
 					{ d: '2020-03-29', i: 723700, t: 34018, w: 723700-81470},
+					{ d: '2020-03-30', i: 785979, t: 37810, w: 785979-87956},
 
 				];
 
@@ -919,6 +920,29 @@
 
 
 					return [m, b]
+				}
+
+				function predictOne(arr, dateStrings, ahead) {
+					let dayIndexes = [...Array(arr.length).keys()];
+					let [m, b] = findLineByLeastSquares(dayIndexes, arr);
+					let latestDateString = dateStrings[dateStrings.length - 1];
+					let seconds = moment().diff(moment(latestDateString).add(1, 'days')) / 1000;
+					let now = Math.floor(Math.exp((arr.length - 1 + seconds / (60*60*24)) * m + b));
+					let previous_date = undefined;
+					for (let i = 0; i < arr.length + ahead; i++) {
+						let y = Math.floor(Math.exp(i * m + b));
+						let datum = arr[i];
+						if (!datum) {
+							let v = y;
+							let d = moment(previous_date).add(1,'days').format('YYYY-MM-DD');
+							arr.push(v);
+							dateStrings.push(d);
+						}
+						previous_date = datum.d
+					}
+					let dailyGrowthPercent = (Math.exp(m) - 1) * 100;
+					return [arr, dateStrings, now, dailyGrowthPercent];
+
 				}
 
 				function predict(data, ahead) {
