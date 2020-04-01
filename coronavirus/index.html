@@ -710,16 +710,16 @@
 						},
 						scales: {
 							xAxes: [{
-								// type: 'time',
-								// time: {
-								// 	parser: timeFormat,
-								// 	round: 'day',
-								// 	tooltipFormat: 'll',
-								// 	unit: 'day',
-								// 	displayFormats: {
-								// 		day: 'DD/MM'
-								// 	}
-								// },
+								type: 'time',
+								time: {
+									parser: timeFormat,
+									round: 'day',
+									tooltipFormat: 'll',
+									unit: 'day',
+									displayFormats: {
+										day: 'DD/MM'
+									}
+								},
 								scaleLabel: {
 									display: true,
 									labelString: 'Date'
@@ -796,7 +796,8 @@
 
 									}
 									if (configPerCountry.data.labels.length === 0) {
-										configPerCountry.data.labels = Object.keys(o);
+										dates = Object.keys(o).map(day => moment(day, "MM-DD-YYYY").format('YYYY-MM-DD')).map(day => new Date(day));
+										configPerCountry.data.labels = dates;
 
 									} else {
 										dataset.forEach((v, i) => {
@@ -806,6 +807,7 @@
 
 									}
 
+									// some countries have multiple regions that we need to add up
 									if (!locationNames.includes(locationName)) {
 										locationNames.push(locationName);
 										window.perCountry[locationName] = dataset;
