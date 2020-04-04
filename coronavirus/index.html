@@ -937,13 +937,17 @@
 
 				function predictOne(arr, dateStrings, ahead) {
 					let dayIndexes = [...Array(arr.length).keys()];
-					let [m, b] = findLineByLeastSquares(dayIndexes, arr);
+					let logArr = arr.map(v => Math.log(v + 0.1));
+					let [m, b] = findLineByLeastSquares(dayIndexes, logArr);
 					let latestDateString = dateStrings[dateStrings.length - 1];
 					let seconds = moment().diff(moment(latestDateString).add(1, 'days')) / 1000;
 					let now = Math.floor(Math.exp((arr.length - 1 + seconds / (60*60*24)) * m + b));
-					let previous_date = undefined;
-					for (let i = 0; i < arr.length + ahead; i++) {
-						let y = Math.floor(Math.exp(i * m + b));
+					let previous_date = dateStrings[arr.length - 1];
+					let range_end = arr.length + ahead;
+					let range_start = arr.length + 1;
+					let last_known_value = arr[arr.length - 1];
+					for (let i = range_start; i < range_end; i++) {
+						let y = Math.floor(last_known_value * Math.exp((i - range_start + 1) * m));
 						let datum = arr[i];
 						if (!datum) {
 							let v = y;
