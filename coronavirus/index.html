@@ -565,6 +565,7 @@
 
 				let sourceDataLength = worldPlusChinaData.length;
 
+				// FIXME move this into loop after csv parsing
 				let ahead = 3;
 				let [data, infectedNow, iDailyGrowthPercent] = predict(worldPlusChinaData, ahead);
 				updateIC();
@@ -837,8 +838,20 @@
 
 
 				var colorNames = Object.keys(window.chartColors);
+
+				function addWorldDataset(locationName) {
+				    // FIXME add prediction
+					addDataset(locationName, config, window.myLine)
+
+				}
+
 				function addCountryDataset(locationName) {
-					var colorName = colorNames[configPerCountry.data.datasets.length % colorNames.length];
+					addDataset(locationName, configPerCountry, window.myLinePerCountry)
+
+				}
+
+				function addDataset(locationName, config, chart) {
+					var colorName = colorNames[config.data.datasets.length % colorNames.length];
 					var newColor = window.chartColors[colorName];
 					// TODO add predictionOne
                   	// var data = window.perCountry[locationName];
@@ -854,10 +867,11 @@
 						fill: false,
 						data: window.perCountry[locationName]
 					};
-					configPerCountry.data.datasets.push(newDataset);
-					window.myLinePerCountry.update();
+					config.data.datasets.push(newDataset);
+					chart.update();
 
 				}
+
 				document.getElementById('locationSelect').addEventListener('change', function() {
 					var sel = document.getElementById('locationSelect');
 					let option = sel.options[sel.selectedIndex];
