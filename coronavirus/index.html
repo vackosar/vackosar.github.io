@@ -125,8 +125,8 @@
 			<h2><span style="color: red">• Live</span> <span style="color: blue">Prediction</span></h2>
 			<br>
 			<i>
-				Updated 2020-04-04 07:00 UTC - <b style="color: darkorange"><a href="/#compareCountriesHead">Compare countries</a> growth of infected count on a log scale.</b><br><br>
-				 <b style="color: darkorange; text-shadow: 1px 1px 0 #688200;">Real-time prediction counter</b>, an interactive chart of 3 day forecast, comparison of countries, probability of your infection, latest news, quiz, and discussion about the novel coronavirus. Updated daily. Predictions are <b style="color: blue">blue points</b>.
+				Updated 2020-04-05 07:00 UTC - <b style="color: darkorange"><a href="/#compareCountriesHead">Compare countries</a> growth of infected count on a log scale.</b><br><br>
+				 <b style="color: darkorange; text-shadow: 1px 1px 0 #688200;">Real-time prediction counter</b>, an interactive chart of 4 day forecast, comparison of countries, probability of your infection, latest news, quiz, and discussion about the novel coronavirus. Updated daily. Predictions are <b style="color: blue">blue points</b>.
 			</i>
 			<br>
 			<br>
@@ -569,25 +569,7 @@
 
 				// FIXME move this into loop after csv parsing
 				let ahead = 4;
-				let [data, infectedNow, iDailyGrowthPercent] = predict(worldPlusChinaData, ahead);
-				updateIC();
-				document.getElementById('iDailyGrowthPercent').innerText = Math.floor(iDailyGrowthPercent).toString() + '%';
-
-				function infectedNowToString(infectedNow) {
-					let s = infectedNow.toString();
-					// if (!s.includes('.')) {
-					//     s = s + '.0';
-					// }
-					return s;
-				}
-
-				function updateIC() {
-					[data, infectedNow, iDailyGrowthPercent] = predict(worldPlusChinaData, 0);
-					document.getElementById('infectedCount').innerText = infectedNowToString(infectedNow);
-
-				}
-
-				setInterval(updateIC, 500);
+				// let [data, infectedNow, iDailyGrowthPercent] = predict(worldPlusChinaData, ahead);
 
 				var color = Chart.helpers.color;
 
@@ -616,7 +598,7 @@
 				var config = {
 					type: 'line',
 					data: {
-						labels: data.map(d => new Date(d.d)),
+						labels: [],
 						datasets: [
 							// {
 							// 	label: '☣  Infected',
@@ -832,6 +814,22 @@
 					};
 					config.data.datasets.push(newDataset);
 					window.myLine.update();
+
+
+					if (locationName === 'World Total') {
+						updateIC();
+						document.getElementById('iDailyGrowthPercent').innerText = Math.floor(dailyGrowth).toString() + '%';
+
+						function updateIC() {
+							var data = [...window.perCountry[locationName]];
+							let dateStrings = [...configPerCountry.data.dateStrings];
+							let [predData, predDateStrings, now, dailyGrowth]  = predictOne(data, dateStrings, 4);
+							document.getElementById('infectedCount').innerText = now.toString();
+
+						}
+
+						setInterval(updateIC, 500);
+					}
 
 				}
 
