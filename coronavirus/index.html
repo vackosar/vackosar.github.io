@@ -560,6 +560,7 @@
 					{ d: '2020-04-01', i: 937567, t: 47256, w: 937567-81589},
 					{ d: '2020-04-02', i: 1016128, t: 53069, w: 1016128-81620},
 					{ d: '2020-04-03', i: 1141190, t: 60960, w: 0},
+					{ d: '2020-04-04', i: 1203099, t: 64774, w: 0},
 
 				];
 
@@ -839,22 +840,33 @@
 
 				var colorNames = Object.keys(window.chartColors);
 
-				function addWorldDataset(locationName) {
-				    // FIXME add prediction
-					addDataset(locationName, config, window.myLine)
+				function addWorldDataset(locationName, dsColor, dsName) {
+					var data = [...window.perCountry[locationName]];
+					let dateStrings = configPerCountry.data.dateStrings;
+					let [predData, predDateStrings, now, dailyGrowth] = predictOne(data, dateStrings, 3);
+					if (dateStrings.length !== config.data.labels.length) {
+						config.data.labels = predDateStrings;
+					}
+					let bcs = pointColors(color(dsColor).alpha(1).rgbString());
+					var newDataset = {
+						label: dsName,
+						borderColor: dsColor,
+						backgroundColor: color(dsColor).alpha(0.5).rgbString(),
+						pointBackgroundColor: bcs,
+						pointBorderColor: bcs,
+						fill: false,
+						data: predData
+					};
+					config.data.datasets.push(newDataset);
+					window.myLine.update();
 
 				}
 
 				function addCountryDataset(locationName) {
-					addDataset(locationName, configPerCountry, window.myLinePerCountry)
-
-				}
-
-				function addDataset(locationName, config, chart) {
-					var colorName = colorNames[config.data.datasets.length % colorNames.length];
+					var colorName = colorNames[configPerCountry.data.datasets.length % colorNames.length];
 					var newColor = window.chartColors[colorName];
 					// TODO add predictionOne
-                  	// var data = window.perCountry[locationName];
+					// var data = [...window.perCountry[locationName]];
 					// let dateStrings = configPerCountry.data.dateStrings;
 					// var [predData, predDateStrings, now, dailyGrowth] = predictOne(data, dateStrings, 3);
 					// TODO colorization:
@@ -867,10 +879,11 @@
 						fill: false,
 						data: window.perCountry[locationName]
 					};
-					config.data.datasets.push(newDataset);
-					chart.update();
+					configPerCountry.data.datasets.push(newDataset);
+					window.myLinePerCountry.update();
 
 				}
+
 
 				document.getElementById('locationSelect').addEventListener('change', function() {
 					var sel = document.getElementById('locationSelect');
@@ -895,6 +908,9 @@
 						addCountryDataset('US');
 						addCountryDataset('Italy');
 						addCountryDataset('China');
+
+
+						// addWorldDataset('World Total', 'yellow', 'Infected')
 					});
 
 				};
@@ -963,10 +979,9 @@
 					for (let i = range_start; i < range_end; i++) {
 						let y = Math.floor(last_known_value * Math.exp((i - range_start + 1) * m));
 						let datum = arr[i];
-						if (!datum) {
-							let v = y;
+						arr.push(y);
+						if (!dateStrings[i]) {
 							let d = moment(previous_date).add(1,'days').format('YYYY-MM-DD');
-							arr.push(v);
 							dateStrings.push(d);
 						}
 						previous_date = dateStrings[i]
