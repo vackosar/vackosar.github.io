@@ -446,6 +446,7 @@
 
 			<br>
 			<h3>📒 Data Sources</h3>
+			Currently all data comes from Hopkins. On days prior 2020-04-05 the data was sourced from Wiki as described below.<br>
 			The data is updated daily from <a href="https://en.wikipedia.org/wiki/2019%E2%80%9320_Wuhan_coronavirus_outbreak">Wuhan coronavirus outbreak wiki page</a>.<br>
 			The very early data till 2020-02-25 are sourced from various web pages since I found no good single source with both infected and dead historical data. The historical infected were collected from  <a href="https://en.wikipedia.org/wiki/2019%E2%80%9320_Wuhan_coronavirus_outbreak">a wiki</a> based on the expectation that before 2020-01-28, almost all infected and dead were in China.
 			The data point for 2020-01-29 comes from the global estimates on the wiki linked refered to as "As of 30 January 2020". The historical data for the death toll comes from an page I cannot find now. And are then combined with the data point from NY Times 2020-01-27 and the wiki one for 2020-01-27.<br>
@@ -567,7 +568,7 @@
 				let sourceDataLength = worldPlusChinaData.length;
 
 				// FIXME move this into loop after csv parsing
-				let ahead = 3;
+				let ahead = 4;
 				let [data, infectedNow, iDailyGrowthPercent] = predict(worldPlusChinaData, ahead);
 				updateIC();
 				document.getElementById('iDailyGrowthPercent').innerText = Math.floor(iDailyGrowthPercent).toString() + '%';
@@ -590,7 +591,7 @@
 
 				var color = Chart.helpers.color;
 
-				function pointColors(normalColor) {
+				function pointColors(normalColor, sourceDataLength, ahead) {
 					let bcs = [];
 					for (let i = 0; i < sourceDataLength + ahead; i++) {
 						if (i < sourceDataLength) {
@@ -602,9 +603,9 @@
 					return bcs;
 				}
 
-				let bcs = pointColors(color(window.chartColors.yellow).alpha(1).rgbString());
-				let tbcs = pointColors(color(window.chartColors.red).alpha(1).rgbString());
-				let wbcs = pointColors(color(window.chartColors.purple).alpha(1).rgbString());
+				let bcs = pointColors(color(window.chartColors.yellow).alpha(1).rgbString(), sourceDataLength, ahead);
+				let tbcs = pointColors(color(window.chartColors.red).alpha(1).rgbString(), sourceDataLength, ahead);
+				let wbcs = pointColors(color(window.chartColors.purple).alpha(1).rgbString(), sourceDataLength, ahead);
 
 
 
@@ -618,54 +619,24 @@
 						labels: data.map(d => new Date(d.d)),
 						datasets: [
 							// {
-							// 	label: '☣  Infected w/o China',
-							// 	backgroundColor: color(window.chartColors.purple).alpha(1).rgbString(),
-							// 	borderColor: window.chartColors.purple,
-							// 	pointBackgroundColor: wbcs,
-							// 	pointBorderColor: wbcs,
+							// 	label: '☣  Infected',
+							// 	backgroundColor: color(window.chartColors.yellow).alpha(1).rgbString(),
+							// 	borderColor: window.chartColors.yellow,
+							// 	pointBackgroundColor: bcs,
+							// 	pointBorderColor: bcs,
+                            //     hidden: false,
+							// 	fill: false,
+							// 	data: data.map(d => d.i),
+							// },
+							// {
+							// 	label: '✝ Dead',
+							// 	backgroundColor: color(window.chartColors.red).alpha(1).rgbString(),
+							// 	borderColor: window.chartColors.red,
+							// 	pointBackgroundColor: tbcs,
+							// 	pointBorderColor: tbcs,
 							// 	hidden: false,
 							// 	fill: false,
-							// 	data: data.map(d => d.w),
-							// },
-							{
-								label: '☣  Infected',
-								backgroundColor: color(window.chartColors.yellow).alpha(1).rgbString(),
-								borderColor: window.chartColors.yellow,
-								pointBackgroundColor: bcs,
-								pointBorderColor: bcs,
-                                hidden: false,
-								fill: false,
-								data: data.map(d => d.i),
-							},
-							{
-								label: '✝ Dead',
-								backgroundColor: color(window.chartColors.red).alpha(1).rgbString(),
-								borderColor: window.chartColors.red,
-								pointBackgroundColor: tbcs,
-								pointBorderColor: tbcs,
-								hidden: false,
-								fill: false,
-								data: data.map(d => d.t),
-							},
-							// {
-							// 	label: '☣  Infected Model',
-							// 	backgroundColor: color(window.chartColors.blue).alpha(1).rgbString(),
-							// 	borderColor: window.chartColors.blue,
-							// 	// pointBackgroundColor: bcs,
-							// 	// pointBorderColor: bcs,
-							// 	hidden: true,
-							// 	fill: false,
-							// 	data: data.map(d => d.im),
-							// },
-							// {
-							// 	label: '✝ Dead Model',
-							// 	backgroundColor: color(window.chartColors.blue).alpha(1).rgbString(),
-							// 	borderColor: window.chartColors.blue,
-							// 	// pointBackgroundColor: bcs,
-							// 	// pointBorderColor: bcs,
-							// 	hidden: true,
-							// 	fill: false,
-							// 	data: data.map(d => d.tm),
+							// 	data: data.map(d => d.t),
 							// },
 						]
 					},
@@ -800,7 +771,9 @@
 
 									}
 									if (configPerCountry.data.labels.length === 0) {
-										let dateStrings = Object.keys(o).map(day => moment(day, "MM-DD-YYYY").format('YYYY-MM-DD'));
+										let dateStrings = Object.keys(o)
+												.map(day => moment(day, "MM-DD-YYYY").format('YYYY-MM-DD'))
+												.slice(0, dataset.length);
 										dates = dateStrings.map(day => new Date(day));
 										configPerCountry.data.labels = dates;
 										configPerCountry.data.dateStrings = dateStrings;
@@ -842,12 +815,12 @@
 
 				function addWorldDataset(locationName, dsColor, dsName) {
 					var data = [...window.perCountry[locationName]];
-					let dateStrings = configPerCountry.data.dateStrings;
-					let [predData, predDateStrings, now, dailyGrowth] = predictOne(data, dateStrings, 3);
-					if (dateStrings.length !== config.data.labels.length) {
-						config.data.labels = predDateStrings;
+					let dateStrings = [...configPerCountry.data.dateStrings];
+					let [predData, predDateStrings, now, dailyGrowth] = predictOne(data, dateStrings, 4);
+					if (predDateStrings.length !== config.data.labels.length) {
+						config.data.labels = predDateStrings.map(d => new Date(d));
 					}
-					let bcs = pointColors(color(dsColor).alpha(1).rgbString());
+					let bcs = pointColors(color(dsColor).alpha(1).rgbString(), window.perCountry[locationName].length, ahead);
 					var newDataset = {
 						label: dsName,
 						borderColor: dsColor,
@@ -909,8 +882,8 @@
 						addCountryDataset('Italy');
 						addCountryDataset('China');
 
-
-						// addWorldDataset('World Total', 'yellow', 'Infected')
+						addWorldDataset('World Total', 'orange', '☣  Infected');
+						addWorldDataset('World Total deaths', 'red', '✝ Dead');
 					});
 
 				};
@@ -974,7 +947,7 @@
 					let now = Math.floor(Math.exp((arr.length - 1 + seconds / (60*60*24)) * m + b));
 					let previous_date = dateStrings[arr.length - 1];
 					let range_end = arr.length + ahead;
-					let range_start = arr.length + 1;
+					let range_start = arr.length;
 					let last_known_value = arr[arr.length - 1];
 					for (let i = range_start; i < range_end; i++) {
 						let y = Math.floor(last_known_value * Math.exp((i - range_start + 1) * m));
