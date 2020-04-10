@@ -1,1 +1,4 @@
 /node_modules
+/time_series_*
+/index.html
+/sitemap.xml
