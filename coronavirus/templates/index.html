@@ -793,7 +793,7 @@
 
 				};
 
-				function findLineByLeastSquares(values_x, values_y) {
+				function findLineByLeastSquares(values_x, values_y, n_vals_to_fit) {
 					var x_sum = 0;
 					var y_sum = 0;
 					var xy_sum = 0;
@@ -820,9 +820,9 @@
 
 					/*
 					 * Calculate the sum for each of the parts necessary.
-					 * FIT ONLY last 5!
+					 * FIT ONLY last n_vals_to_fit!
 					 */
-					for (let i = values_length - 5; i< values_length; i++) {
+					for (let i = values_length - n_vals_to_fit; i< values_length; i++) {
 						x = values_x[i];
 						y = values_y[i];
 						x_sum+= x;
@@ -844,9 +844,10 @@
 				}
 
 				function predictOne(arr, dateStrings, ahead) {
+					let n_vals_to_fit = 5;
 					let dayIndexes = [...Array(arr.length).keys()];
 					let logArr = arr.map(v => Math.log(v + 0.1));
-					let [m, b] = findLineByLeastSquares(dayIndexes, logArr);
+					let [m, b] = findLineByLeastSquares(dayIndexes, logArr, n_vals_to_fit);
 					let latestDateString = dateStrings[dateStrings.length - 1];
 					let seconds = moment().diff(moment(latestDateString).add(1, 'days')) / 1000;
 					let now = Math.floor(Math.exp((arr.length - 1 + seconds / (60*60*24)) * m + b));
@@ -864,50 +865,20 @@
 						}
 						previous_date = dateStrings[i]
 					}
+
+					// residual
+					residual = [];
+					for (let i = logArr.length - n_vals_to_fit; i < logArr.length; i++) {
+						let y = i * m + b;
+						residual.push(logArr[i] - y)
+					}
+					// console.log(logArr.toString().replace(/,/g, '\n'));
+					// console.log();
+					// console.log(residual.toString().replace(/,/g, '\n'));
+
 					let dailyGrowthPercent = (Math.exp(m) - 1) * 100;
 					return [arr, dateStrings, now, dailyGrowthPercent];
 
-				}
-
-				function predict(data, ahead) {
-
-					let log_infecteds = data.map(d=>Math.log(d.i));
-					let log_toll = data.map(d=>Math.log(d.t));
-					let log_world = data.map(d=>Math.log(d.w));
-					let days = [...Array(data.length).keys()];
-
-					let [m, b] = findLineByLeastSquares(days, log_infecteds);
-					let [mt, bt] = findLineByLeastSquares(days, log_toll);
-					let [mw, bw] = findLineByLeastSquares(days, log_world);
-
-					let latest = data[log_infecteds.length - 1];
-					let seconds = moment().diff(moment(latest.d).add(1, 'days')) / 1000;
-					let infectedNow = Math.floor(Math.exp((log_infecteds.length - 1 + seconds / (60*60*24)) * m + b));
-					let worldNow = Math.floor(Math.exp((log_world.length - 1 + seconds / (60*60*24)) * mw + bw));
-
-					// predict next 3 values
-					// let previous_date = data[log_infecteds.length - 1].d;
-					let previous_date = undefined;
-					for (let i = 0; i < log_infecteds.length + ahead; i++) {
-						let y = Math.floor(Math.exp(i * m + b));
-						let yt = Math.floor(Math.exp(i * mt + bt));
-						let yw = Math.floor(Math.exp(i * mw + bw));
-						let datum = data[i];
-						if (!datum) {
-							datum = {};
-							datum.i = y;
-							datum.t = yt;
-							datum.w = yw;
-							datum.d = moment(previous_date).add(1,'days').format('YYYY-MM-DD');
-							data.push(datum);
-						}
-						datum.im = y;
-						datum.tm = yt;
-						datum.wm = yw;
-						previous_date = datum.d
-					}
-					let iDailyGrowthPercent = (Math.exp(m) - 1) * 100;
-					return [data, infectedNow, iDailyGrowthPercent];
 				}
 
 				window.fetch('https://health.machinesrental.com/?type=range&from=' + moment().add(-1, 'days').format('YYYY-MM-DD'))
