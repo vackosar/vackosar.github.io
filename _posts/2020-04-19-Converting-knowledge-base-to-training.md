@@ -25,5 +25,5 @@ Natural language processing progressed so much recently, such that AI-assisted t
 After the training is generated, it is saved into the system, and the period of two weeks starts during which all submitted employees will be repeatedly tested. Retry count each training question is determined by their individual performance.
 
 ## What now?
-Go get your piece of the future at [Quizrecall](https://quizrecall.com).
+Go [convert your knowledge base to training](https://quizrecall.com) for free now at [Quizrecall](https://quizrecall.com).
 
