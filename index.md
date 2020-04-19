@@ -6,9 +6,24 @@ title: Blog
 
 <div class="subscribe-page">
     Subscribe:
-    <a href="httfsaps://twitter.com/intent/follow?screen_name=vackosar" rel="nofollow" target="_blank" title="Follow on Twitter">Twitter</a>
-    , <a href="https://www.facebook.com/vackosar" rel="nofollow" target="_blank" title="Follow on Facebook">Facebook</a>
-    , <a href="https://vackosar.github.io/feed.xml" rel="nofollow" target="_blank" title="Follow on RSS">RSS</a>
+    
+    <!-- Begin Mailchimp Signup Form -->
+    <div id="mc_embed_signup">
+        <form action="https://vaclavkosar.us3.list-manage.com/subscribe/post?u=289873d7958b1bdc1c6dc93b7&amp;id=4b8172df11" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll" style="display: flex">
+<!--                <label for="mce-EMAIL">Subscribe</label>-->
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_289873d7958b1bdc1c6dc93b7_4b8172df11" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+    </div>
+    <!--End mc_embed_signup-->
+    <a href="https://twitter.com/intent/follow?screen_name=vackosar" rel="nofollow" target="_blank" title="Follow on Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.facebook.com/vackosar" rel="nofollow" target="_blank" title="Follow on Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://vackosar.github.io/feed.xml" rel="nofollow" target="_blank" title="Follow on RSS"><i class="fas fa-rss"></i></a>
+    
     <!--, <a href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>-->
     <!--, <a href="https://www.linkedin.com/shareArticle?url={{ site.url }}{{ post.url }}" rel="nofollow" target="_blank" title="Share on LinkedIn">LinkedIn</a>-->
     <!--, <a href="http://www.reddit.com/submit?url={{ site.url }}{{ post.url }}" rel="nofollow" target="_blank" title="Share on Reddit">Reddit</a>-->
