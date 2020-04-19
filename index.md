@@ -16,13 +16,14 @@ title: Blog
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_289873d7958b1bdc1c6dc93b7_4b8172df11" tabindex="-1" value=""></div>
                 <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                
+                <a href="https://twitter.com/intent/follow?screen_name=vackosar" rel="nofollow" target="_blank" title="Follow on Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/vackosar" rel="nofollow" target="_blank" title="Follow on Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://vackosar.github.io/feed.xml" rel="nofollow" target="_blank" title="Follow on RSS"><i class="fas fa-rss"></i></a>
             </div>
         </form>
     </div>
     <!--End mc_embed_signup-->
-    <a href="https://twitter.com/intent/follow?screen_name=vackosar" rel="nofollow" target="_blank" title="Follow on Twitter"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.facebook.com/vackosar" rel="nofollow" target="_blank" title="Follow on Facebook"><i class="fab fa-facebook"></i></a>
-    <a href="https://vackosar.github.io/feed.xml" rel="nofollow" target="_blank" title="Follow on RSS"><i class="fas fa-rss"></i></a>
     
     <!--, <a href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>-->
     <!--, <a href="https://www.linkedin.com/shareArticle?url={{ site.url }}{{ post.url }}" rel="nofollow" target="_blank" title="Share on LinkedIn">LinkedIn</a>-->
