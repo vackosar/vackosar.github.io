@@ -4,7 +4,7 @@ title: "Learn faster with a generated quiz"
 date: 2019-11-02
 ---
 
-I used [Anki](https://apps.ankiweb.net/) to learn various Math, Stats, and Software Dev definitions. But I kept having three problems with it. I resolved them by developing [a web app Quizrecall - an automated quiz generator with spaced repetition](https://quizrecall.com). Read on as the app may be something for you as well.
+I used [Anki](https://apps.ankiweb.net/) to learn various Math, Stats, and Software Dev definitions. But I kept having three problems with it. I resolved them by developing [a web app Quizrecall - an automated quiz generator with spaced repetition](https://quizrecall.com/personal). Read on as the app may be something for you as well.
 
 ### Anki Issues
 
@@ -28,4 +28,4 @@ I solved all of these problems for myself by developing the app, and I switched 
 
 I am happy with finding a solution to my issues with Anki. I am committed to using and improving the app over time, because it is genuinely reducing my effort to memorize and learn.
 
-I think you may very well like it as well. You can [try it with your favorite Wikipedia article summary](https://quizrecall.com).
+I think you may very well like it as well. You can [try it with your favorite Wikipedia article summary](https://quizrecall.com/personal).
