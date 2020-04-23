@@ -29,8 +29,8 @@ Out of the box solution could be Purism they remove parts of Intel management en
 
 Select components:
 - TODO
-- [Intel is only partially exposed](https://www.reuters.com/article/intel-trade/intel-has-paths-around-trumps-china-tariffs-analysts-say-idUSL1N1TL02B)
-- 
+- [Intel is only partially exposed](https://www.reuters.com/article/intel-trade/intel-has-paths-around-trumps-china-tariffs-analysts-say-idUSL1N1TL02B). However their processors have large attack surface of Intel Management Engine
+- [AMD partially exposed](https://www.reddit.com/r/Amd/comments/buj1wp/amd_zen2_manufacturing_locations/)
 
 Select manufacturer:
 - Low exposure: Toshiba, Fujitsu, Samsung, Panasonic, Sharp, System 76
