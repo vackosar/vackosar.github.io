@@ -25,12 +25,15 @@ Instead supporting companies that are not exposed to the risk is better solution
 
 
 ## Solving the problem
+Out of the box solution could be Purism they remove parts of Intel management engine.
 
 Select components:
 - TODO
+- [Intel is only partially exposed](https://www.reuters.com/article/intel-trade/intel-has-paths-around-trumps-china-tariffs-analysts-say-idUSL1N1TL02B)
+- 
 
 Select manufacturer:
-- Low exposure: Toshiba, Fujitsu, Samsung, Panasonic, Sharp
+- Low exposure: Toshiba, Fujitsu, Samsung, Panasonic, Sharp, System 76
 - Exposed: Apple, HP, Dell, Micromax, Vaio
 - Highly exposed: Asus, Acer 
 - Avoid: Lenovo, Huawei, Xiaomi
