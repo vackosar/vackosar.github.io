@@ -12,7 +12,7 @@ China needs the tracking data to implement [Social Credit System](https://en.wik
 A friend of low-credit citizen may be for example prevented from travelling or from admission to a school.
 
 But privacy violation is not just mainland issue.
-Many international chinese apps like [WeChat](https://en.wikipedia.org/wiki/WeChat#Privacy_issues), [Tik Tok](https://rufposten.de/blog/2019/12/05/privacy-analysis-of-tiktoks-app-and-website/), [Vanguard anti-cheat](https://www.reddit.com/r/VALORANT/comments/g35w87/an_individuals_take_on_the_whole_vanguard/) have well known low-to-zero privacy adherance. 
+Many international chinese apps like [WeChat](https://en.wikipedia.org/wiki/WeChat#Privacy_issues), [Tik Tok](https://rufposten.de/blog/2019/12/05/privacy-analysis-of-tiktoks-app-and-website/), [Vanguard anti-cheat](https://www.reddit.com/r/VALORANT/comments/g35w87/an_individuals_take_on_the_whole_vanguard/), [Zoom](https://www.bloomberg.com/news/articles/2020-04-23/zoom-backlash-widens-with-daimler-ericsson-and-bofa-curbs?srnd=premium-europe) have well known low-to-zero privacy adherance. 
 This is caused partially by already having to monitor citizens in china, value of the collected data, but probably also by the government interest in the global data.
 
 Apple apparently to protect its privacy concerned brand is considering [shifting production out of China](https://www.wsj.com/articles/apple-examines-feasibility-of-shifting-some-production-out-of-china-11561030751).
