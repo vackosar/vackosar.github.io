@@ -4,7 +4,7 @@ title: "Buying non chinese notebook"
 date: 2020-04-23
 ---
 
-To minimize [high risk of backdoor in chinese hardware](#backdoor-risk) this post covers recommendation on how to buy a notebook.
+To minimize [high risk of backdoor in chinese hardware](#backdoor-risk) this post covers recommendation on how to buy a notebook not made in China.
  
  
 ## Backdoor Risk
@@ -45,7 +45,7 @@ Select software:
 ## Additional sources:
 - https://www.quora.com/What-is-a-laptop-that-is-not-made-in-China
 - https://www.reddit.com/r/computers/comments/bzc02a/i_need_to_find_a_laptop_that_doesnt_say_made_in/
-
+- http://forum.notebookreview.com/threads/not-made-in-china.79791/
 
 ## Suggestions
 Please comment below or send be a mail.
