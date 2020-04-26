@@ -8,7 +8,7 @@ I wanted at least __15inch display__ processor __i7-8750H__, reasonable graphics
 
 I also shortly considered a wild card _14inch Latitude 5491_ as it had attractive price, but it missed too many of the requirements (poor cooling, low max ram, poor physical resilience, low graphics).
 
-![ZBook vs P52 cover](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-03-thinkpad-p52-vs-zbook-15-G5.png)
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sRnKbLtE21k?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Thinkpad P52
 
@@ -63,5 +63,12 @@ So far minor issues
 
 
 ### Update on P52 2019-11-02
-- Linux dmesg messages about "temperature above threshold" are gone after repaste. The service guy probably didn't put thermal paste in correctly. On top of that some of the screws are missing. Damned Lenovo service!
+- Linux dmesg messages about "temperature above threshold" are gone after repaste. The service guy haven't returned some of the screws.
+- I had to disassemble the whole notebook due to pouring almond butter all over it - faulty jar in my backpack.
 - I posted about thermals in [P53 here](https://vaclavkosar.com/2019/11/02/Thinkpad-P53-vs-P52-Thermals.html).
+
+
+### Update on P52 2020-04-26
+- Message "temperature above threshold" returned into dmesg log, so it seem that the improvement after repaste is only temporary.
+- I posted a video comparison of the notebooks.
+
