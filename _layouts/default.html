@@ -123,15 +123,18 @@
 
     function execute() {
       <!-- Google Analytics -->
-      // $.getScript('https://www.googletagmanager.com/gtag/js?id=UA-155369410-1', function () {
-      //   window.dataLayer = window.dataLayer || [];
-      //   function gtag(){dataLayer.push(arguments);}
-      //   gtag('js', new Date());
-      //   gtag('config', 'UA-155369410-1');
-      //
-      // });
-      <!-- end of Google Analytics-->
+      $.getScript('https://www.googletagmanager.com/gtag/js?id=UA-155369410-1', function () {
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-165114534-1');
+
+      });
+      <!-- end of Google Analytics-->
     }
 
     $("#cookie_accept").click(function(){
