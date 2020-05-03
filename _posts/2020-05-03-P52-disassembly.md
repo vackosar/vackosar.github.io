@@ -9,10 +9,10 @@ To repaste, max RAM or install antenna into on Thinkpad P52 this post provides l
 <p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2020-05-03-p52-disassembly.jpg" alt="P52 Disassembly" width="100%"/></p>
 
 
-The disassembly is fairly as I was able to repaste and install LTE antenna without any previous experience, that is except ability to remove LCD panel, which seems to be just glued in a cheapskate manner.
+The disassembly is fairly easy as I was able to repaste and install LTE antenna without any previous experience, that is except removing LCD panel, which seems to be just glued onto the cover in a cheapskate manner.
 Concern is durability of screws on your machine as they can take only so much use before need for replacement. Some of my screws are at 60% mileage after 8-10 openings.
 
-I recommend using the manual combined with a video linked in the corresponding sections. You can find [P52 vs ZBook G5 comparison](/2019/03/03/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.html) on this site as well.
+I recommend using the maintenance manual combined with a video linked in the corresponding sections below. You can find [P52 vs ZBook G5 comparison](/2019/03/03/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.html) on this site as well.
 
 
 ## Download Manual
