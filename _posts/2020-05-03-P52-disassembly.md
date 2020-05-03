@@ -6,7 +6,7 @@ date: 2020-04-19
 
 To repaste, max RAM or install antenna into on Thinkpad P52 this post provides links and tips for full disassembly.
 
-<p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2020-05-03-p52-disassembly.jpg" alt="P52 Disassembly" /></p>
+<p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2020-05-03-p52-disassembly.jpg" alt="P52 Disassembly" width="100%"/></p>
 
 
 The disassembly is fairly as I was able to repaste and install LTE antenna without any previous experience, that is except ability to remove LCD panel, which seems to be just glued in a cheapskate manner.
