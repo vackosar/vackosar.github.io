@@ -1,13 +1,13 @@
 ---
 layout: default
-title: When is the end of the this quarter?
+title: When is the end of this quarter?
 ---
 <h1>{{ page.title }}</h1>
 
 <h3>Current quarter <b id='quarterName'></b> ends on <b id='quarterEnd'></b> in <b id="daysLeft"></b> days.</h3>
 <br>
 
-How many days are left in this quarter? <b id="daysLeft2"></b> days.<br>
+How many days left in this quarter? <b id="daysLeft2"></b> days.<br>
 Not enough time to train new employees? Try <a href="https://quizrecall.com">Quizrecall training automation</a>.
 
 <script>
