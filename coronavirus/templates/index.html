@@ -675,13 +675,20 @@
 									}
 
 									// some countries have multiple regions that we need to add up
+									let locNew = locationName + ' - new';
 									if (!locationNames.includes(locationName)) {
 										locationNames.push(locationName);
+										locationNames.push(locNew);
 										window.perCountry[locationName] = dataset;
+										window.perCountry[locNew] = datasetDiff(dataset);
 
 									} else {
 										dataset.forEach((v, i) => {
 											window.perCountry[locationName][i] += v;
+
+										});
+										datasetDiff(dataset).forEach((v, i) => {
+											window.perCountry[locNew][i] += v;
 
 										});
 
@@ -697,6 +704,15 @@
 							});
 
 						});
+
+				function datasetDiff(ds) {
+					let prev = 0;
+					return ds.map(v => {
+						let diff_v = v - prev;
+						prev = v;
+						return diff_v;
+					});
+				}
 
 
 				var colorNames = Object.keys(window.chartColors);
