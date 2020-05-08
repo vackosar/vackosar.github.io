@@ -1,7 +1,9 @@
 ---
 layout: default
 title: When is the end of this quarter?
+description: Information about the current quarter, when it will end, and how many days are left.
 ---
+
 <h1>{{ page.title }}</h1>
 
 <h3>Current quarter <b id='quarterName'></b> ends on <b id='quarterEnd'></b> in <b id="daysLeft"></b> days.</h3>
@@ -9,6 +11,8 @@ title: When is the end of this quarter?
 
 How many days left in this quarter? <b id="daysLeft2"></b> days.<br>
 Not enough time to train new employees? Try <a href="https://quizrecall.com">Quizrecall training automation</a>.
+
+<p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/quarters.svg" alt="quarters visualization" width="100%"/></p>
 
 <script>
 
