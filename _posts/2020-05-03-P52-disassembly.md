@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Thinkpad P52 disassembly"
-date: 2020-04-19
+date: 2020-05-03
 ---
 
 To repaste, max RAM or install antenna into on Thinkpad P52 this post provides links and tips for full disassembly.

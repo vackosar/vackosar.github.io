@@ -46,7 +46,7 @@ I bought ZBook 15 G5, but ended up replacing it with Thinkpad P52.
 - worst cooling ([single heatpipe](http://forum.notebookreview.com/attachments/cooling_comparison-png.160125/), [prolonged cinebench performance dropoff](https://www.notebookcheck.net/Lenovo-ThinkPad-P52-i7-P1000-FHD-Workstation-Review.322974.0.html))
 - replaceable battery
 - medium physical resilience
-- [slightly more complicated disassembly](/2020/04/19/P52-disassembly.html).
+- [slightly more complicated disassembly](/2020/05/03/P52-disassembly.html).
 
 #### Experience
 Thinkpad P52 is my main machine now.
