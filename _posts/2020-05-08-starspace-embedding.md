@@ -8,8 +8,7 @@ image: https://github.com/facebookresearch/StarSpace/blob/master/examples/starsp
 ---
 
 ## Summary
-1. Is general-purpose method to embed multi-class entities into single vector space.
-1. For example words, documents, and users can be embedded into single space.
+1. Is general-purpose method to embed multi-class entities into single vector space e.g. words, documents, and users can be embedded into single space.
 1. Requires discrete features e.g. user's features are docs that he liked.
 1. Trains by summing bag-of-features and contrasting with k-negative samples.
 1. In terms of quality the method performs competitively.

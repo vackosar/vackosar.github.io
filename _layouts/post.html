@@ -1,8 +1,15 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<header class="mb-4">
+    <h1>
+        {{ page.title }}
+    </h1>
+    <p class="meta" style="text-align: right">{{ page.date | date_to_string }}</p>
+    {% if page.description %}
+    <blockquote style="font-style: italic">{{ page.description }}</blockquote>
+    {% endif %}
+</header>
 
 <div class="post">
     {{ content }}
