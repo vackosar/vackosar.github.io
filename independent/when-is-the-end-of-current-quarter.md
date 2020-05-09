@@ -12,7 +12,7 @@ description: Information about the current quarter, when it will end, and how ma
 How many days left in this quarter? <b id="daysLeft2"></b> days.<br>
 Not enough time to train new employees? Try <a href="https://quizrecall.com">Quizrecall training automation</a>.
 
-<!-- <p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/quarters.svg" alt="quarters visualization" style="max-width: 300px"/></p> -->
+<p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/quarters.svg" alt="quarters visualization" style="max-width: 300px"/></p>
 
 <script>
 
