@@ -20,10 +20,10 @@ Note, however, that I have much more experience with Cortex.
             Feature
         </th>
         <th scope="col">
-            BentoML.org
+            <a href="https://www.bentoml.org">BentoML.org</a> 
         </th>
         <th scope="col">
-            Cortex.dev
+            <a href="https://www.cortex.dev/">Cortex.dev</a> 
         </th>
     </tr>
 </thead>
@@ -45,13 +45,28 @@ Note, however, that I have much more experience with Cortex.
     </tr>
     <tr>
         <td>Service packaging and distribution</td>
-        <td>packaged and saved via Python command to [management repository with a web dashboard](https://docs.bentoml.org/en/latest/concepts.html#customizing-model-repository)</td>
+        <td>Can be packaged, saved via Python command to <a href="https://docs.bentoml.org/en/latest/concepts.html#customizing-model-repository">management repository with a web dashboard</a> or PyPI</td>
         <td>Packaging only via Docker images without explicit support</td>
     </tr>
     <tr>
         <td>Horizontal scaling</td>
-        <td>configured outside?</td>
-        <td>is part of Cortex configs</td>
+        <td>Configured separately in clustering tools. Working on an opinionated Kubernetes deployment.</td>
+        <td>Is part of Cortex configs. But is thus less flexible.</td>
+    </tr>
+    <tr>
+        <td>User interface</td>
+        <td>CLI, Web UI</td>
+        <td>CLI</td>
+    </tr>
+    <tr>
+        <td>Metrics</td>
+        <td>Prometheus metrics</td>
+        <td>AWS EKS metrics</td>
+    </tr>
+    <tr>
+        <td>API Auto-Docs</td>
+        <td>Swagger/OpenAPI</td>
+        <td>n/a?</td>
     </tr>
     <tr>
         <td>Suggest anything else?</td>
