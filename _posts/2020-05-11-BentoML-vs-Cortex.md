@@ -12,6 +12,7 @@ Note, however, that I have much more experience with Cortex.
 - deploy and serve models via API
 - support major ML frameworks (TensorFlow, Pytorch)
 
+## Comparison
 <table border="1" class="dataframe">
 <thead>
     <tr>
