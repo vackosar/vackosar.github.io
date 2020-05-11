@@ -10,9 +10,52 @@ description: Information about the current quarter, when it will end, and how ma
 <br>
 
 How many days left in this quarter? <b id="daysLeft2"></b> days.<br>
-Not enough time to train new employees? Try <a href="https://quizrecall.com">Quizrecall training automation</a>.
 
 <p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/quarters.svg" alt="quarters visualization" style="max-width: 300px"/></p>
+
+<h3>When the quarters start and end?</h3>
+<table border="1" class="dataframe">
+    <thead>
+        <tr>
+            <th scope="col">
+                Quarter
+            </th>
+            <th scope="col">
+                Start
+            </th>
+            <th scope="col">
+                End
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Q1</td>
+            <td>Jan 1</td>
+            <td>Mar 31</td>
+        </tr>
+        <tr>
+            <td>Q2</td>
+            <td>Apr 1</td>
+            <td>Jun 30</td>
+        </tr>
+        <tr>
+            <td>Q3</td>
+            <td>Jul 01</td>
+            <td>Sep 30</td>
+        </tr>
+        <tr>
+            <td>Q4</td>
+            <td>Oct 1</td>
+            <td>Dec 31</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+<br>
+Not enough time to train new employees? Try <a href="https://quizrecall.com">Quizrecall training automation</a>.
+
 
 <script>
 
@@ -44,7 +87,5 @@ Not enough time to train new employees? Try <a href="https://quizrecall.com">Qui
     }
     
 </script>
-
-
 
 
