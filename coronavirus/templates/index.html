@@ -628,6 +628,7 @@
 				});
 
 
+				var newCasesSuffix = ' new cases'
 				var csvParsedPromise = Promise.all([
 						window.fetch('/time_series_covid19_confirmed_global.csv'),
 						window.fetch('/time_series_covid19_deaths_global.csv'),
@@ -675,7 +676,7 @@
 									}
 
 									// some countries have multiple regions that we need to add up
-									let locNew = locationName + ' - new';
+									let locNew = locationName + newCasesSuffix;
 									if (!locationNames.includes(locationName)) {
 										locationNames.push(locationName);
 										locationNames.push(locNew);
@@ -798,10 +799,10 @@
 						var ctxPerCountry = document.getElementById('canvasPerCountry').getContext('2d');
 						window.myLinePerCountry = new Chart(ctxPerCountry, configPerCountry);
 
-						addCountryDataset('US');
-						addCountryDataset('Italy');
-						addCountryDataset('Sweden');
-						addCountryDataset('Japan');
+						addCountryDataset('US' + newCasesSuffix);
+						addCountryDataset('Italy' + newCasesSuffix);
+						addCountryDataset('Sweden' + newCasesSuffix);
+						addCountryDataset('Japan' + newCasesSuffix);
 
 						addWorldDataset('World Total', 'orange', '☣  Infected');
 						addWorldDataset('World Total deaths', 'red', '✝ Dead');
