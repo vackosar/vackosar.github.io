@@ -50,8 +50,8 @@ Note, however, that I have much more experience with Cortex.
     </tr>
     <tr>
         <td>Horizontal scaling</td>
-        <td>Configured separately in clustering tools. Working on an opinionated Kubernetes deployment.</td>
-        <td>Is part of Cortex configs. But is thus less flexible.</td>
+        <td>Configured separately in other clustering tools. Working on an opinionated Kubernetes deployment.</td>
+        <td>Is part of Cortex configs. But is thus less flexible (private cloud, HTTPS deploy requires custom scripts)</td>
     </tr>
     <tr>
         <td>User interface</td>
@@ -67,6 +67,11 @@ Note, however, that I have much more experience with Cortex.
         <td>API Auto-Docs</td>
         <td>Swagger/OpenAPI</td>
         <td>n/a?</td>
+    </tr>
+    <tr>
+        <td>User support</td>
+        <td>responsive <a href="https://join.slack.com/t/bentoml/shared_invite/enQtNjcyMTY3MjE4NTgzLTU3ZDc1MWM5MzQxMWQxMzJiNTc1MTJmMzYzMTYwMjQ0OGEwNDFmZDkzYWQxNzgxYWNhNjAxZjk4MzI4OGY1Yjg">unpaid Slack Channel</a>, but Slack is not the best tool for support</td>
+        <td>very responsive <a href="https://gitter.im/cortexlabs/cortex">Gitter</a></td>
     </tr>
     <tr>
         <td>Suggest anything else?</td>
