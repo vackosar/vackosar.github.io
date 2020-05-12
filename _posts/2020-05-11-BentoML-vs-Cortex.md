@@ -3,7 +3,7 @@ layout: post
 title: "BentoML vs Cortex"
 categories: ML
 date: 2020-05-11
-description: To serve ML models, this post compares major open source platforms BentoML and Cortex.
+description: To find the best ML model serving tool, this post compares major open-source platforms BentoML and Cortex.
 ---
 
 Note, however, that I have much more experience with Cortex.
