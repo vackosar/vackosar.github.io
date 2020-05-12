@@ -9,8 +9,9 @@ description: To serve ML models, this post compares major open source platforms 
 Note, however, that I have much more experience with Cortex.
 
 ## Common
-- deploy and serve models via API
-- support major ML frameworks (TensorFlow, Pytorch)
+- both deploy and serve models via API
+- both support major ML frameworks (TensorFlow, Pytorch)
+- both have good documentation
 
 ## Comparison
 <table border="1" class="dataframe">
@@ -35,8 +36,8 @@ Note, however, that I have much more experience with Cortex.
     </tr>
     <tr>
         <td>Deployment</td>
-        <td>Abstracted away to Docker, Kubernetes, AWS Lambda, SageMaker, Azule ML and more.</td>
-        <td>Works currently with Docker and AWS EKS</td>
+        <td>done by other tools: Docker, Kubernetes, AWS Lambda, SageMaker, GCP, Azule ML and more.</td>
+        <td>Works currently only with local Docker and AWS EKS (GCP is planned)</td>
     </tr>
     <tr>
         <td>Service configuration</td>
@@ -81,3 +82,5 @@ Note, however, that I have much more experience with Cortex.
 </tbody>
 </table>
 
+## Discussions
+- <a href="https://www.reddit.com/r/MachineLearning/comments/ghikdz/d_is_this_fair_bentoml_vs_cortex_comparison/">Reddit discussion</a>
