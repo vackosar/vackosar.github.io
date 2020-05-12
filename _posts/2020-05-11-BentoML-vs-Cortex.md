@@ -36,7 +36,7 @@ Note, however, that I have much more experience with Cortex.
     </tr>
     <tr>
         <td>Deployment</td>
-        <td>done by other tools: Docker, Kubernetes, AWS Lambda, SageMaker, GCP, Azule ML and more.</td>
+        <td>Delegated to other tools: Docker, Kubernetes, AWS Lambda, SageMaker, GCP, Azule ML and more.</td>
         <td>Works currently only with local Docker and AWS EKS (GCP is planned)</td>
     </tr>
     <tr>
@@ -67,12 +67,12 @@ Note, however, that I have much more experience with Cortex.
     <tr>
         <td>API Auto-Docs</td>
         <td>Swagger/OpenAPI</td>
-        <td>n/a?</td>
+        <td>N/A</td>
     </tr>
     <tr>
         <td>User support</td>
-        <td>responsive <a href="https://join.slack.com/t/bentoml/shared_invite/enQtNjcyMTY3MjE4NTgzLTU3ZDc1MWM5MzQxMWQxMzJiNTc1MTJmMzYzMTYwMjQ0OGEwNDFmZDkzYWQxNzgxYWNhNjAxZjk4MzI4OGY1Yjg">unpaid Slack Channel</a>, but Slack is not the best tool for support</td>
-        <td>very responsive <a href="https://gitter.im/cortexlabs/cortex">Gitter</a></td>
+        <td>Responsive <a href="https://join.slack.com/t/bentoml/shared_invite/enQtNjcyMTY3MjE4NTgzLTU3ZDc1MWM5MzQxMWQxMzJiNTc1MTJmMzYzMTYwMjQ0OGEwNDFmZDkzYWQxNzgxYWNhNjAxZjk4MzI4OGY1Yjg">unpaid Slack Channel</a>, but Slack is not the best tool for support</td>
+        <td>Very responsive <a href="https://gitter.im/cortexlabs/cortex">Gitter</a></td>
     </tr>
     <tr>
         <td>Suggest anything else?</td>
