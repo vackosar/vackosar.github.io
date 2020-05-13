@@ -8,7 +8,7 @@ description: To find the best ML model serving tool, this post compares major op
 ---
 
 
-<p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/bentoml-cortex-logos.webp" alt="BentoML and Cortex logo" width="100%"/></p>
+<p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/bentoml-cortex-logos.webp" alt="BentoML and Cortex logo" style="width: 200px"/></p>
 
 Note, however, that I have much more experience with Cortex.
 
