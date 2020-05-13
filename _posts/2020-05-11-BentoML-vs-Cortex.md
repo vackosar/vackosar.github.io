@@ -3,8 +3,12 @@ layout: post
 title: "BentoML vs Cortex"
 categories: ML
 date: 2020-05-11
+image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/bentoml-cortex-logos.webp
 description: To find the best ML model serving tool, this post compares major open-source platforms BentoML and Cortex.
 ---
+
+
+<p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/bentoml-cortex-logos.webp" alt="BentoML and Cortex logo" width="100%"/></p>
 
 Note, however, that I have much more experience with Cortex.
 
