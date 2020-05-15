@@ -1,10 +1,12 @@
 ---
 layout: post
 title: "Boundary Control Entity Architecture"
+image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/bce.svg
+description: Boundary-Control-Entity is a directory structure for source code files sometimes with additional dependency restrictions.
 date: 2017-12-03
 ---
 
-Boundary-Control-Entity (BCE) architecture or Entity-Control-Boundary (ECB) is a package structure for sorting classes. I think it is very useful and natural way to structure classes, which goes well with modularized architecture. One creates one BCE package structure per a micro-service, feature or module having ideally between 9 to 30 classes.  
+Boundary-Control-Entity (BCE) architecture or Entity-Control-Boundary (ECB) is a package structure for sorting classes. It is an alternative to layered architecture. It is very simple and natural way to structure classes, which goes well with modularized architecture. One creates one BCE package structure per a micro-service, feature or module having ideally between 9 to 30 classes.  
 
 <p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/bce.svg" alt="Boundary Control Entity architecture"/></p>
 
@@ -36,8 +38,7 @@ See below Spring Boot and Spring Data example.
   - EventPayload
 
 
-## References
-- https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html
-- http://www.cs.sjsu.edu/~pearce/modules/patterns/enterprise/ecb/ecb.htm
-- http://epf.eclipse.org/wikis/openuppt/openup_basic/guidances/concepts/entity_control_boundary_pattern,_uF-QYEAhEdq_UJTvM1DM2Q.html
-- http://jeffreypalermo.com/blog/the-onion-architecture-part-1/
+## Other sources
+- [Down to earth Adam Bien's video on BCE](https://www.youtube.com/watch?v=grJC6RFiB58)
+- [Uncle Bob's post - bit more ivory towerish](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html)
+- [Lot's of nice visualizations](http://www.cs.sjsu.edu/~pearce/modules/patterns/enterprise/ecb/ecb.htm)
