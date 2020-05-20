@@ -33,6 +33,7 @@ title: Blog
 
 <div class="posts">
   {% for post in site.posts %}
-    <a href="{{ post.url }}" title="{{ post.title }}"><h4>{{ post.date | date_to_string }} - {{ post.title }}</h4></a>
+    <a href="{{ post.url }}" title="{{ post.title }}"><h4>{{ post.title }}</h4></a>
+     <!-- ({{ post.date | date_to_string }}) -->
   {% endfor %}
 </div>
