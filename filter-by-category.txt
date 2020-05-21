@@ -1,0 +1,5 @@
+{% for post in site.faqs %}
+{% if post.categories contains "mycategory" %}
+ <li>{{ post.title }}</li>
+{% endif %}
+{% endfor %}
