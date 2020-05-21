@@ -41,7 +41,7 @@ See below Spring Boot and Spring Data example.
 ## Quiz
 Retain what you have just read by taking training quiz generated from this article.<br>
 <br>
-<button type="button" class="btn btn-warning" onclick="window.location = 'https://quizrecall.com/study/public-test?store_id=dc985c9e-6812-41d3-a020-33c4a0340c16'">Boundary-Control-Entity Quiz</button>
+<a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=dc985c9e-6812-41d3-a020-33c4a0340c16">Boundary-Control-Entity Quiz</a>
 
 
 ## Other sources

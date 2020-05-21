@@ -50,6 +50,6 @@ Embeddings for classes of entities higher in hierarchy are calculated by summing
 
 Retain what you have just read by taking training quiz generated from this article.<br>
 <br>
-<button type="button" class="btn btn-warning" onclick="window.location = 'https://quizrecall.com/study/public-test?store_id=d0dfd88a-4712-42a6-bec3-68c86133d1ce'">StarSpace quiz</button>
+<a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=d0dfd88a-4712-42a6-bec3-68c86133d1ce">StarSpace Quiz</a>
 
 
