@@ -20,7 +20,7 @@ The package structure is often visualized as tree onion layers, where the most o
 I am very much for structuring, modularization and encapsulation according to end result features. However often after separation per major features on sub 30 classes level, I think it is more practical to structure according to technical behaviour. Thus I suggest to use BCE architecture which represents that.    
 
 ## Dependency Rule
-Sometimes an additional dependency rule is being added to BCE: Classes can depend on other classes only within same layer or in one more inner layers. I personally found that this rule practical mainly thanks to modern tools like annotations e.g. annotation on Entity class can reference a serialization class residing in Control.
+Sometimes an additional dependency rule is being added to BCE: Classes can depend on other classes only within same layer or in one more inner layers. I personally found that this rule impractical mainly thanks to modern tools like annotations e.g. annotation on Entity class can reference a serialization class residing in Control.
 
 ## Repository Placement Dilemma
 It was a dilemma for me where to place a Spring Data repository classes. Repositories do define interaction with database which is outside system placing them into Boundary, but on the other hand they contain application logic, which could be placed as well in Control. Since I gave up on "Dependency Rule" (see above), I think the repository classes belong in Boundary.  
@@ -36,6 +36,12 @@ See below Spring Boot and Spring Data example.
 - entity
   - EventEntity
   - EventPayload
+  
+  
+## Quiz
+Retain what you have just read by taking training quiz generated from this article.<br>
+<br>
+<button type="button" class="btn btn-warning" onclick="window.location = 'https://quizrecall.com/study/public-test?store_id=dc985c9e-6812-41d3-a020-33c4a0340c16'">Boundary-Control-Entity Quiz</button>
 
 
 ## Other sources
