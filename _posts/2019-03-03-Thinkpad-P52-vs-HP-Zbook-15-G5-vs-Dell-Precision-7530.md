@@ -68,7 +68,7 @@ So far minor issues with P52
 - Message "temperature above threshold" returned into dmesg log, so it seem that the improvement after repaste is only temporary.
 - I posted [a video comparison of P52 vs G5](https://youtu.be/sRnKbLtE21k).
 
-## Quiz
+#### Quiz
 
 Retain your memory of basic characteristics of Thinkpad P52 by taking following auto-generated quiz.
 <br>
