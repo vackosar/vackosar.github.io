@@ -14,6 +14,8 @@ Concern is durability of screws on your machine as they can take only so much us
 
 I recommend using the maintenance manual combined with a video linked in the corresponding sections below. You can find [P52 vs ZBook G5 comparison](/2019/03/03/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.html) on this site as well.
 
+I personally did full disassembly due to having to clean up almond butter from all over the fans.
+
 
 ## Download Manual
 The non official download is much faster
@@ -30,3 +32,6 @@ I recommend using the amateur video below, but I am linking to official videos a
 ## LCD Panel Removal - Not achieved
     
 There is a video on Youtube on P51 LCD removal, but it does not apply to P52. P52 has screen glued with double-sided tape, due to which I was not able to remove the screen, forcing me to install LTE antenna in a hacky way.
+
+
+

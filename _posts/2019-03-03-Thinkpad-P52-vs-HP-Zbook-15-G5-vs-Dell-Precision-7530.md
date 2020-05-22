@@ -61,12 +61,18 @@ So far minor issues with P52
 
 ##### Update 2019-11-02
 - Linux dmesg messages about "temperature above threshold" are gone after repaste. The service guy haven't returned some of the screws.
-- I had to disassemble the whole notebook due to pouring almond butter all over it - faulty jar in my backpack.
+- I had to [disassemble](/2020/05/03/P52-disassembly.html) the whole notebook due to pouring almond butter all over it - faulty jar in my backpack.
 - [I posted about thermals P52 vs P53 here](https://vaclavkosar.com/2019/11/02/Thinkpad-P53-vs-P52-Thermals.html).
 
 ##### Update 2020-04-26
 - Message "temperature above threshold" returned into dmesg log, so it seem that the improvement after repaste is only temporary.
 - I posted [a video comparison of P52 vs G5](https://youtu.be/sRnKbLtE21k).
+
+## Quiz
+
+Retain your memory of basic characteristics of Thinkpad P52 by taking following auto-generated quiz.
+<br>
+<a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=71f196f0-b4b7-43aa-87e0-2b8f42a65293">Thinkpad P52 Quiz</a>
 
 
 ### Precision 7530 
@@ -79,4 +85,5 @@ I only evaluated precision, but haven't bought it.
 - no replaceable battery
 - less physical resilience
 - extra M.2 drive slot
+
 
