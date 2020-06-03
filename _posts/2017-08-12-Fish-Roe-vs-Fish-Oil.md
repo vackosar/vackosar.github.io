@@ -2,6 +2,11 @@
 layout: post
 title: "Fish Roe vs Fish Oil"
 date: 2017-08-12
+categories: health
+description: Healthiness and price of a salty delicacy versus oily softgels. EPA, DHA, Neu5Gc.
+permalink: /:categories/:title
+redirect_from:
+  - /2017/08/12/Fish-Roe-vs-Fish-Oil.html
 ---
 
 
@@ -44,7 +49,7 @@ _Fish roe oxidized cholesterol products content is 5 times higher._
 
 # Other Contents
 
-Again [a redditor](https://www.reddit.com/user/whatsninja) pointed me to content of likely dangerous Neu5Gc reported in roe in [6], also I found study [7] reporting natural occurence of this acid.
+Again [a redditor](https://www.reddit.com/user/whatsninja) pointed me to content of potentially dangerous Neu5Gc reported in roe in [6], also I found study [7] reporting natural occurence of this acid.
 
 _Fish roe contains higher amount of Neu5Gc than even meat while fish oil doesn't contain any._ 
 

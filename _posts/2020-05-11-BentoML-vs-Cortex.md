@@ -5,6 +5,9 @@ categories: ML
 date: 2020-05-11
 image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/bentoml-cortex-logos.webp
 description: To find the best ML model serving tool, this post compares major open-source platforms BentoML and Cortex.
+permalink: /:categories/:title
+redirect_from:
+  - /ml/2020/05/11/BentoML-vs-Cortex.html
 ---
 
 

@@ -1,10 +1,13 @@
 ---
 layout: post
 title: "StarSpace Embedding"
-categories: papers
 date: 2020-05-08
+categories: ML
 description: To embed variety of entities into single vector space, this paper describes general-purpose neural embedding model.
 image: https://github.com/facebookresearch/StarSpace/blob/master/examples/starspace.png
+permalink: /:categories/:title
+redirect_from:
+  - /papers/2020/05/08/starspace-embedding.html 
 ---
 
 ## Summary
