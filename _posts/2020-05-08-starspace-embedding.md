@@ -10,6 +10,8 @@ redirect_from:
   - /papers/2020/05/08/starspace-embedding.html 
 ---
 
+<iframe width="400" height="225" src="https://www.youtube-nocookie.com/embed/0bSsAeT-N6w?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Summary
 1. Is general-purpose method to embed multi-class entities into single vector space e.g. words, documents, and users can be embedded into single space.
 1. Requires discrete features e.g. user's features are docs that he liked.
