@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "BentoML vs Cortex"
+title: "BentoML vs Cortex - The ML serving tool showdown"
 categories: ML
 date: 2020-05-11
 image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/bentoml-cortex-logos.webp
