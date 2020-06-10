@@ -7,7 +7,7 @@ description: Boundary-Control-Entity is a directory structure for source code fi
 date: 2017-12-03
 permalink: /:categories/:title
 redirect_from:
-  - /2017/12/03/Boundary-Control-Entity-Architecture.html/
+  - /2017/12/03/Boundary-Control-Entity-Architecture.html
 ---
 
 Boundary-Control-Entity (BCE) architecture or Entity-Control-Boundary (ECB) is a package structure for sorting classes. It is an alternative to layered architecture. It is very simple and natural way to structure classes, which goes well with modularized architecture. One creates one BCE package structure per a micro-service, feature or module having ideally between 9 to 30 classes.  

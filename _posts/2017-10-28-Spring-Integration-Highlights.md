@@ -1,7 +1,12 @@
 ---
 layout: post
-title: "Spring Integration Highlights"
+title: "Spring Integration Highlights - The message driven"
 date: 2017-10-28
+categories: software
+description: Get familiar with Spring Integration implementation of Enterprise Integration Patterns and compare it to Java 8 Streams.
+permalink: /:categories/:title
+redirect_from:
+  -/2017/10/28/Spring-Integration-Highlights.html 
 ---
 
 Spring integration is intended for enterprise message-driven architectures. It implements patterns described in the Enterprise Integration Patterns book. This document consists of highlights of interesting parts of [Spring Integration documentation](https://docs.spring.io/spring-integration/docs/current/reference/html/index.html).
