@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Glow - The representations must flow"
+title: "Glow - The Representations Must Flow"
 date: 2020-06-19
 categories: ML
 description: Compose non-linear invertible functions, maximize exact log-likelihood and get interpretable latent representation.
