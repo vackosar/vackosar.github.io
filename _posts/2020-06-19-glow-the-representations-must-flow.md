@@ -8,6 +8,8 @@ image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/imag
 permalink: /:categories/:title
 ---
 
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-drawing.png" alt="Glow flow model architecture diagram"/></p>
 
@@ -18,20 +20,45 @@ permalink: /:categories/:title
 1. With respect to depth constant memory requirements for gradient calculations thanks to invertibility.
 
 
+## The Likelihood Goal
+
+
+The goal is to find an invertible function \\( F \\), which under assumption of multi-variate normal distribution with isotropic unit variance
+on the latent space gives maximum likelihood. This is equivalent to minimizing 
+\\( -\sum_x( log(P_X(x))) = - \sum_x  \log(p_Z (f(x))) + \log | \det(\frac{\partial F(x)}{\partial x} ) | \\)
+
+where \\( f \\) maps from the data space \\(  X \\) to the latent space \\( Z \\). The requirement of normal distribution on the latent space gives us:
+
+\\(  p_Z(f(x)) = \frac{1}{\sqrt{2\pi}} \exp( - \frac{f(x)^ 2}{2} ) \\).
+
+We choose the function to be made by composition of multiple simpler functions:
+
+\\(  F = f \circ f \circ f ... \circ f \\)
+
+We can look at these as special layers of neural networks since the non-linearity used is convolutional layer.
+
 ## Invertible building block
 
-The goal is to find an invertible function, which under assumption of multi-variate normal distribution with isotropic unit variance on the latent space gives maximum likelihood.
 The invertible function is constructed as composition of K trainable non-linear invertible functions.
 
-<img src="https://render.githubusercontent.com/render/math?math=I_1 \cup I_2 = {1, 2, 3, ..., d}">
+\\( I_1 \cup I_2 = \\{1, 2, 3, ..., d\\} \\)
 and
-<img src="https://render.githubusercontent.com/render/math?math=I_1 \cap I_2 = {}">
-Then transformation to `y` below is can be inverted:
-<img src="https://render.githubusercontent.com/render/math?math=y_{I_1} = x_{I_1}">
-<img src="https://render.githubusercontent.com/render/math?math=y_{I_2} = x_{I_2} * s(x_{I_1}) + t(x_{I_1})">
+\\( I_1 \cap I_2 = \\{\\} \\)
+and usually
+\\( |I_1| = |I_2| = d / 2 \\).
+
+Then transformation from \\( x \\) to \\( y \\) below is can be inverted:
+
+\\( y_{I_1} = x_{I_1} \\)
+
+\\( y_{I_2} = x_{I_2} s(x_{I_1}) + t(x_{I_1}) \\)
+
 
 While determinant of Jacobian of above transformation is:
-<img src="https://render.githubusercontent.com/render/math?math=det \partial y / \partial x = exp[ s(x_{I_1}) ]">
+
+\\( det [\partial y / \partial x] = exp[ \sum_j s_j(x_{I_1}) ] \\)
+
+With above can apply non-linearity to just \\( I_1 \\) dimensions. We perform additional learnable invertible linear operation \\( W \\) to remix them before non-linearity is applied in each layer.
 
 
 # TODO
