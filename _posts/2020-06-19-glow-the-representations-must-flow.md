@@ -61,7 +61,14 @@ While determinant of Jacobian of above transformation is:
 With above can apply non-linearity to just \\( I_1 \\) dimensions. We perform additional learnable invertible linear operation \\( W \\) to remix them before non-linearity is applied in each layer.
 
 
-# TODO
+## The Neural Networks
+
+The non-linear functions \\( s \\) and \\( t \\) in above are convolutional neural networks. They have sufficient number of features, such that input and output channel is equal, which is required in above by \\( \mid I_1 \mid = \mid I_2 \mid \\).
+
+But how do we go from an image to required number of channels for above to make sense? We create 4 new channels by splitting the image into four parallel via skip-one-pixel sub-sampling.
+
+<p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-masking.png" alt="skip-one-pixel - squeezing operation from Real NVP paper"/></p>
+ 
 
 ## Source Paper
 
