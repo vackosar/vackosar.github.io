@@ -70,11 +70,13 @@ But how do we go from an image to required number of channels for above to make 
 <p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-masking.png" alt="skip-one-pixel - squeezing operation from Real NVP paper"/></p>
  
 
-## Source Paper
+## Source Papers
 
-"[Glow: Generative Flow with Invertible 1×1 Convolutions](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf)" with publication date 2017-11-21.
+- "[Glow: Generative Flow with Invertible 1×1 Convolutions](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf)" with publication date 2017-11-21.
 Authors: Diederik P. Kingma, Prafulla Dhariwal
 Organization: OpenAI, San Francisco
+- Real NVP
+- NICE
 
 
 
