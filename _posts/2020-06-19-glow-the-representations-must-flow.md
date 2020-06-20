@@ -37,6 +37,7 @@ Advantages of flow-based models are:
 
 The goal is to find an invertible function \\( F \\), which under assumption of multi-variate normal distribution with isotropic unit variance
 on the latent space gives maximum likelihood. The change of variables of probability density function formula means that above is equivalent to minimizing below.
+
 \\( -\sum_x( \log(P_X(x))) \\) \\( = - \sum_x  \log(p_Z (F(x))) \\) \\( + \log \mid \det(\frac{\partial F(x)}{\partial x} ) \mid \\),
 
 where \\( F \\) maps from the data space \\(  X \\) to the latent space \\( Z \\). The requirement of normal distribution on the latent space gives us:
