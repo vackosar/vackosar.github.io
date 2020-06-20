@@ -25,7 +25,7 @@ permalink: /:categories/:title
 
 The goal is to find an invertible function \\( F \\), which under assumption of multi-variate normal distribution with isotropic unit variance
 on the latent space gives maximum likelihood. This is equivalent to minimizing 
-\\( -\sum_x( log(P_X(x))) = - \sum_x  \log(p_Z (f(x))) + \log | \det(\frac{\partial F(x)}{\partial x} ) | \\)
+\\( -\sum_x( \log(P_X(x))) = - \sum_x  \log(p_Z (f(x))) + \log | \det(\frac{\partial F(x)}{\partial x} ) | \\)
 
 where \\( f \\) maps from the data space \\(  X \\) to the latent space \\( Z \\). The requirement of normal distribution on the latent space gives us:
 
@@ -56,7 +56,7 @@ Then transformation called _affine coupling_ below can be inverted. Additionally
 
 Determinant of Jacobian of above transformation is non zero and cheap to calculate.
 
-\\( det [\partial y / \partial x] = exp[ \sum_{j \in I_2} s_j(x_{I_1}) ] \\)
+\\( \det [\partial y / \partial x] = \exp[ \sum_{j \in I_2} s_j(x_{I_1}) ] \\)
 
 With above can apply non-linearity to just \\( I_1 \\) dimensions. We perform additional learnable invertible linear operation \\( W \\) to remix them before non-linearity is applied in each layer.
 
@@ -67,7 +67,13 @@ The non-linear functions \\( s \\) and \\( t \\) in above are convolutional neur
 
 But how do we go from an image to required number of channels for above to make sense? We create 4 new channels by splitting the image into four parallel images via skip-one-pixel sub-sampling.
 
-<p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-masking.png" alt="skip-one-pixel - squeezing operation from Real NVP paper"/></p>
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-masking.png"
+        alt="Skip-one-pixel - squeezing operation from Real NVP paper"/>
+    <figcaption class="figure-caption">Skip-one-pixel - squeezing operation image from Real NVP paper</figcaption>
+</figure>
  
 
 ## Source Papers
