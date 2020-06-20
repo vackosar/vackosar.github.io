@@ -102,7 +102,7 @@ Download the image, cut up the middle sections, and move them closer together to
         class="figure-img img-fluid rounded"
         src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-illusion.png"
         alt='Visual illusion from paper "A Statistical Story of Visual Illusions".'/>
-    <figcaption class="figure-caption">Cut up the middle sections, and move them closer together to verify that they indeed are of same color. [source](https://arxiv.org/pdf/2005.08772v1.pdf)</figcaption>
+    <figcaption class="figure-caption">Cut up the middle sections, and move them closer together to verify that they indeed are of same color. <a href="https://arxiv.org/pdf/2005.08772v1.pdf)">source</a></figcaption>
 </figure>
 
 
