@@ -25,6 +25,7 @@ Discover their arcane qualities on a representative example of [Glow from OpenAI
 
 
 ## Flow-Based Model vs VAE and GAN
+Advantages of flow-based models are:
 1. Exact latent-variable inference and log-likelihood (invertible) compared to approximate VAE (compressed) and absent GAN representations (discriminated).
 1. Easy to parallelize both synthesis and inference.
 1. Useful latent space similar to VAE, but richer as it is not compressed.
@@ -35,14 +36,14 @@ Discover their arcane qualities on a representative example of [Glow from OpenAI
 
 
 The goal is to find an invertible function \\( F \\), which under assumption of multi-variate normal distribution with isotropic unit variance
-on the latent space gives maximum likelihood. This is equivalent to minimizing 
+on the latent space gives maximum likelihood. The change of variables of probability density function formula means that above is equivalent to minimizing below.
 \\( -\sum_x( \log(P_X(x))) = - \sum_x  \log(p_Z (f(x))) + \log | \det(\frac{\partial F(x)}{\partial x} ) | \\)
 
 where \\( f \\) maps from the data space \\(  X \\) to the latent space \\( Z \\). The requirement of normal distribution on the latent space gives us:
 
 \\(  p_Z(f(x)) = \frac{1}{\sqrt{2\pi}} \exp( - \frac{f(x)^ 2}{2} ) \\).
 
-We choose the function to be made by composition of multiple simpler functions:
+We choose the function to be made by composition of multiple simpler functions.
 
 \\(  F = f \circ f \circ f ... \circ f \\)
 
