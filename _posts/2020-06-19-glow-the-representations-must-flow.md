@@ -3,7 +3,7 @@ layout: post
 title: "Glow - The Representations Must Flow"
 date: 2020-06-19
 categories: ML
-description: Get rich interpretable latent representations by composing non-linear invertible functions and maximize exact log-likelihood.
+description: Get interpretable latent representations by composing non-linear invertible functions and maximizing exact log-likelihood.
 image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-drawing.png
 permalink: /:categories/:title
 ---
