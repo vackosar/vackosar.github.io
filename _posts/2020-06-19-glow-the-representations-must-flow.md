@@ -37,27 +37,23 @@ Advantages of flow-based models are:
 
 The goal is to find an invertible function \\( F \\), which under assumption of multi-variate normal distribution with isotropic unit variance
 on the latent space gives maximum likelihood. The change of variables of probability density function formula means that above is equivalent to minimizing below.
-\\( -\sum_x( \log(P_X(x))) = - \sum_x  \log(p_Z (f(x))) + \log | \det(\frac{\partial F(x)}{\partial x} ) | \\)
+\\( -\sum_x( \log(P_X(x))) \\) \\( = - \sum_x  \log(p_Z (F(x))) \\) \\( + \log \mid \det(\frac{\partial F(x)}{\partial x} ) \mid \\),
 
-where \\( f \\) maps from the data space \\(  X \\) to the latent space \\( Z \\). The requirement of normal distribution on the latent space gives us:
+where \\( F \\) maps from the data space \\(  X \\) to the latent space \\( Z \\). The requirement of normal distribution on the latent space gives us:
 
-\\(  p_Z(f(x)) = \frac{1}{\sqrt{2\pi}} \exp( - \frac{f(x)^ 2}{2} ) \\).
+\\(  p_Z(F(x)) = \frac{1}{\sqrt{2\pi}} \exp( - \frac{F(x)^ 2}{2} ) \\).
 
-We choose the function to be made by composition of multiple simpler functions.
+We choose the function \\( F \\) to be composed of multiple simpler learnable functions \\( f \\).
 
 \\(  F = f \circ f \circ f ... \circ f \\)
 
-We can look at these as special layers of neural networks since the non-linearity used is convolutional layer.
+We can look at these compositions as special layers of neural networks since the non-linearities used are convolutional neural networks.
 
 ## Invertible Building Block
 
-The invertible function is constructed as composition of K trainable non-linear invertible functions.
+The invertible function \\( F \\) composed of \\( K \\) trainable non-linear invertible functions \\( f \\).
 
-\\( I_1 \cup I_2 = \\{1, 2, 3, ..., d\\} \\)
-and
-\\( I_1 \cap I_2 = \\{\\} \\)
-and usually
-\\( |I_1| = |I_2| = d / 2 \\).
+Let \\( I_1 \cup I_2 = \\{1, 2, 3, ..., d\\} \\) and \\( I_1 \cap I_2 = \\{\\} \\) and usually \\( \mid I_1 \mid = \mid I_2 \mid = d / 2 \\).
 
 Then transformation called _affine coupling_ below can be inverted. Additionally inverse calculation costs as much as forward.
 
@@ -107,7 +103,7 @@ Download the image, cut up the middle sections, and move them closer together to
 </figure>
 
 
-## Quiz TODO
+## Quiz
 
 Retain what you have just read by taking training quiz generated from this article.<br>
 <br>
