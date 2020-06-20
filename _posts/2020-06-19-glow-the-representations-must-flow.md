@@ -67,8 +67,8 @@ Determinant of Jacobian of above transformation is non zero and cheap to calcula
 \\( \det [\partial y / \partial x] = \exp[ \sum_{j \in I_2} s_j(x_{I_1}) ] \\)
 
 With above can apply non-linearity to just half of the dimensions. We perform additional learnable invertible linear operation \\( W \\) to remix them before non-linearity is applied in each layer.
-Since \\( W \\) maps only in the channel dimension and not spacial, it can be interpreted as \\( 1 \times 1 \\) convolution.
-This is the origin of the Glow paper subtitle.
+Since \\( W \\) maps only in the channel dimension and not in the spacial, it can be interpreted as 1×1 convolution.
+This gave the Glow paper subtitle "Generative Flow with Invertible 1×1 Convolutions".
 
 
 ## Neural Network Non-linearities
