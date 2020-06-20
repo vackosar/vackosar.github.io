@@ -11,8 +11,8 @@ permalink: /:categories/:title
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-Flow-based models are the odd machines in the corner of the neural network laboratory capable of calculating the exact log-likelihood of any provided sample.
-Discover their arcane qualities on a representative example of [Glow from OpenAI](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf) and its ability to [unveil secrets of human visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf).
+Flow-based models are the odd machines in the corner of the neural network laboratory capable of calculating the exact log-likelihood for every sample.
+Discover their arcane qualities on a representative example of [OpenAI's Glow](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf) and its ability to [unveil secrets of visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf).
 
 
 <figure class="figure">
@@ -71,7 +71,7 @@ Since \\( W \\) maps only in the channel dimension and not spacial, it can be in
 This is the origin of the Glow paper subtitle.
 
 
-## The Neural Network Non-linearities
+## Neural Network Non-linearities
 
 The non-linear functions \\( s \\) and \\( t \\) in above are convolutional neural networks. They are constructed to have sufficient number of features, such that number of input and output channels are equal.
 But how do we go from an image to required number of channels for above to make sense? We create 4 new channels by splitting the image into four parallel images via skip-one-pixel sub-sampling.
@@ -81,7 +81,7 @@ But how do we go from an image to required number of channels for above to make 
         class="figure-img img-fluid rounded"
         src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-masking.png"
         alt="Skip-one-pixel - squeezing operation from Real NVP paper"/>
-    <figcaption class="figure-caption">Skip-one-pixel - squeezing operation image from Real NVP paper</figcaption>
+    <figcaption class="figure-caption">Skip-one-pixel - squeezing operation image from <a href="https://arxiv.org/pdf/1605.08803.pdf">Real NVP paper</a></figcaption>
 </figure>
 
 
@@ -89,17 +89,18 @@ But how do we go from an image to required number of channels for above to make 
 
 Two dimensional images are poor stand-ins for three dimensional world. Infinite 3D scenes collapse into identical picture after projection to 2D, making the reversion problem ill-posed.
 A paper has [a statistical story of visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf) to tell thanks to Glow flow-based model. 
-Illusions seem to raise thanks to visual system perceiving unlikely images as even less probable. For example increasing saturation contrast between patches of images.
-The brain here seems to err on side of contrast here.
+Illusions seem to raise thanks to visual system perceiving unlikely images as even less likely.
+For example on image below most people perceive the two middle patches as having different color.
+The brain here seems to err on side of contrast, giving us an illusion of patch colors being more differentiated compared to their background.
 You shouldn't believe me that two images below contain same image patches in the middle.
-Download the image, cut up the middle sections, and move them closer together to verify that they indeed are of same color.
+Download the image, cut up the middle sections and move them next to each other to verify that they indeed are of the same color. 
 
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
         src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-illusion.png"
         alt='Visual illusion from paper "A Statistical Story of Visual Illusions".'/>
-    <figcaption class="figure-caption">Cut up the middle sections and move them next to each other to verify that they indeed are of the same color. <a href="https://arxiv.org/pdf/2005.08772v1.pdf)">source</a></figcaption>
+    <figcaption class="figure-caption">Cut up the middle sections and move them next to each other to verify that they indeed are of the same color. <a href="https://arxiv.org/pdf/2005.08772v1.pdf)">Img source.</a></figcaption>
 </figure>
 
 
@@ -109,10 +110,3 @@ Retain what you have just read by taking training quiz generated from this artic
 <br>
 <a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=b9a650a9-28c5-41c6-b5d0-cceb2c0988df">Flow-based model Glow micro-training quiz</a>
 
-
-## Source Papers
-
-- [Glow: Generative Flow with Invertible 1×1 Convolutions](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf); 2018; Diederik P. Kingma, Prafulla Dhariwal; OpenAI, San Francisco.
-- [Density Estimation Using Real NVP](https://arxiv.org/pdf/1605.08803.pdf); 2016; Laurent Dinh, Jascha Sohl-Dickstein, Samy Bengio
-- [NICE: Non-linear Independent Components Estimation](https://arxiv.org/pdf/1410.8516.pdf); 2014; Laurent Dinh, David Krueger, Yoshua Bengio
-- [A Statistical Story of Visual Illusions](https://arxiv.org/pdf/2005.08772v1.pdf); 2020; Elad Hirsch, Ayellet Tal
