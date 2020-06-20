@@ -3,7 +3,7 @@ layout: post
 title: "Glow - The Representations Must Flow"
 date: 2020-06-19
 categories: ML
-description: Get interpretable latent representations by composing non-linear invertible functions and maximizing exact log-likelihood.
+description: Get interpretable latent representations by composing non-linear invertible functions and maximizing the exact log-likelihood.
 image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-drawing.png
 permalink: /:categories/:title
 ---
@@ -12,7 +12,7 @@ permalink: /:categories/:title
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 Flow-based models are the odd machines in the corner of the neural network laboratory capable of calculating the exact log-likelihood of any provided sample.
-Discover their arcane qualities on a representative example of [Glow from OpenAI](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf), and it's ability to [unlock secrets of human visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf).
+Discover their arcane qualities on a representative example of [Glow from OpenAI](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf) and its ability to [unlock secrets of human visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf).
 
 
 <figure class="figure">
