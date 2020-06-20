@@ -11,8 +11,8 @@ permalink: /:categories/:title
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-Flow-based models are the odd machines in the corner of the neural network laboratory capable of calculating exact log-likelihood of any provided sample.
-Discover their arcane qualities on representative example of [Glow from OpenAI](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf), and it's ability to [unlock secrets of human visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf).
+Flow-based models are the odd machines in the corner of the neural network laboratory capable of calculating the exact log-likelihood of any provided sample.
+Discover their arcane qualities on a representative example of [Glow from OpenAI](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf), and it's ability to [unlock secrets of human visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf).
 
 
 <figure class="figure">
