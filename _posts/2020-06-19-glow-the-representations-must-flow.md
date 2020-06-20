@@ -47,37 +47,34 @@ and
 and usually
 \\( |I_1| = |I_2| = d / 2 \\).
 
-Then transformation from \\( x \\) to \\( y \\) below is can be inverted:
+Then transformation called _affine coupling_ below can be inverted. Additionally inverse calculation as much as forward.
 
 \\( y_{I_1} = x_{I_1} \\)
 
 \\( y_{I_2} = x_{I_2} s(x_{I_1}) + t(x_{I_1}) \\)
 
 
-While determinant of Jacobian of above transformation is:
+Determinant of Jacobian of above transformation is non zero and cheap to calculate.
 
-\\( det [\partial y / \partial x] = exp[ \sum_j s_j(x_{I_1}) ] \\)
+\\( det [\partial y / \partial x] = exp[ \sum_{j \in I_2} s_j(x_{I_1}) ] \\)
 
 With above can apply non-linearity to just \\( I_1 \\) dimensions. We perform additional learnable invertible linear operation \\( W \\) to remix them before non-linearity is applied in each layer.
 
 
 ## The Neural Networks
 
-The non-linear functions \\( s \\) and \\( t \\) in above are convolutional neural networks. They have sufficient number of features, such that input and output channel is equal, which is required in above by \\( \mid I_1 \mid = \mid I_2 \mid \\).
+The non-linear functions \\( s \\) and \\( t \\) in above are convolutional neural networks. They have sufficient number of features, such that number of input and output channels are equal.
 
-But how do we go from an image to required number of channels for above to make sense? We create 4 new channels by splitting the image into four parallel via skip-one-pixel sub-sampling.
+But how do we go from an image to required number of channels for above to make sense? We create 4 new channels by splitting the image into four parallel images via skip-one-pixel sub-sampling.
 
 <p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-masking.png" alt="skip-one-pixel - squeezing operation from Real NVP paper"/></p>
  
 
 ## Source Papers
 
-- "[Glow: Generative Flow with Invertible 1×1 Convolutions](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf)" with publication date 2017-11-21.
-Authors: Diederik P. Kingma, Prafulla Dhariwal
-Organization: OpenAI, San Francisco
-- Real NVP
-- NICE
-
+- [Glow: Generative Flow with Invertible 1×1 Convolutions](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf); 2018; Diederik P. Kingma, Prafulla Dhariwal; OpenAI, San Francisco.
+- [Density Estimation Using Real NVP](https://arxiv.org/pdf/1605.08803.pdf); 2016; Laurent Dinh, Jascha Sohl-Dickstein, Samy Bengio
+- [NICE: Non-linear Independent Components Estimation](https://arxiv.org/pdf/1410.8516.pdf); 2014; Laurent Dinh, David Krueger, Yoshua Bengio
 
 
 ## Quiz TODO
