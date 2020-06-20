@@ -49,7 +49,7 @@ We choose the function to be made by composition of multiple simpler functions.
 
 We can look at these as special layers of neural networks since the non-linearity used is convolutional layer.
 
-## Invertible building block
+## Invertible Building Block
 
 The invertible function is constructed as composition of K trainable non-linear invertible functions.
 
@@ -111,7 +111,7 @@ Download the image, cut up the middle sections, and move them closer together to
 
 Retain what you have just read by taking training quiz generated from this article.<br>
 <br>
-<!-- <a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=d0dfd88a-4712-42a6-bec3-68c86133d1ce">StarSpace Quiz</a> -->
+<a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=b9a650a9-28c5-41c6-b5d0-cceb2c0988df">Flow-based model Glow micro-training quiz</a>
 
 
 ## Source Papers
