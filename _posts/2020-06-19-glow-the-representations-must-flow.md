@@ -12,7 +12,7 @@ permalink: /:categories/:title
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 Flow-based models are the odd machines in the corner of the neural network laboratory capable of calculating the exact log-likelihood of any provided sample.
-Discover their arcane qualities on a representative example of [Glow from OpenAI](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf) and its ability to [unlock secrets of human visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf).
+Discover their arcane qualities on a representative example of [Glow from OpenAI](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf) and its ability to [unveil secrets of human visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf).
 
 
 <figure class="figure">
@@ -99,7 +99,7 @@ Download the image, cut up the middle sections, and move them closer together to
         class="figure-img img-fluid rounded"
         src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-illusion.png"
         alt='Visual illusion from paper "A Statistical Story of Visual Illusions".'/>
-    <figcaption class="figure-caption">Cut up the middle sections, and move them closer together to verify that they indeed are of same color. <a href="https://arxiv.org/pdf/2005.08772v1.pdf)">source</a></figcaption>
+    <figcaption class="figure-caption">Cut up the middle sections and move them next to each other to verify that they indeed are of the same color. <a href="https://arxiv.org/pdf/2005.08772v1.pdf)">source</a></figcaption>
 </figure>
 
 
