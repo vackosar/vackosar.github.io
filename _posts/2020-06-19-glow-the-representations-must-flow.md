@@ -109,14 +109,14 @@ Download the image, cut out the middle sections, and move them next to each othe
 </figure>
 
 But is percentile rank really the only true measure of human color perception? I did one more experiment, which was missing from the paper.
-I increased saturation on one of the samples by 24%, such that the percentile rank would match on both images, and now I do see the same colors!
+I increased saturation on one of the samples by 24%, such that the percentile rank would match on both images, and now I see the same colors! Do you?
 
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
         src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-contrast-illusion-saturation.png"
         alt='Simultaneous brightness contrast visual illusion: After saturation increase to match percentile ranks, the colors are perceived as the same.'/>
-    <figcaption class="figure-caption">After saturation increase to match percentile ranks, the colors are perceived as the same.</figcaption>
+    <figcaption class="figure-caption">After saturation increase to match percentile ranks, I see the same colors! Do you?</figcaption>
 </figure>
 
 ## Quiz
