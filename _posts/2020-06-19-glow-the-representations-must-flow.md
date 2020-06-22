@@ -108,6 +108,16 @@ Download the image, cut out the middle sections, and move them next to each othe
     <figcaption class="figure-caption">Cut out the middle sections and move them next to each other to verify that they indeed are of the same color. <a href="https://arxiv.org/pdf/2005.08772v1.pdf)">Img source.</a></figcaption>
 </figure>
 
+But is percentile rank really the only true measure of human color perception? I did one more experiment, which was missing from the paper.
+I increased saturation on one of the samples by 24%, such that the percentile rank would match on both images, and now I do see the same colors!
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-contrast-illusion-saturation.png"
+        alt='After saturation increase to match percentile ranks, the simultaneous brightness contrast illusion disappears.'/>
+    <figcaption class="figure-caption">After saturation increase to match percentile ranks, the simultaneous brightness contrast illusion disappears.</figcaption>
+</figure>
 
 ## Quiz
 
