@@ -90,11 +90,12 @@ But how do we go from an image to required number of channels for above to make 
 
 Infinite 3D scenes collapse into the identical picture after projection to 2D, making the reversion problem ill-posed.
 A paper has [a statistical story of visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf) to tell thanks to the Glow model. 
-Illusions seem to arise due to the visual system highlighting unlikely parts of the images.
+The authors change the brightness of a part of a picture and calculate likelihoods of created samples.
+The misperceptions seem to arise due to the visual system highlighting unlikely parts of the images.
 
 For example, in the image below, most people perceive the two middle patches as having a different color.
 This phenomenon is called simultaneous brightness contrast.
-The brain here seems to err on the side of contrast, tricking us into seeing patch colors more differentiated from background.
+The brain here seems to err on the side of contrast, tricking us into seeing patch colors more differentiated from the background.
 You shouldn't believe me that two images below contain the same image patches in the middle.
 Download the image, cut out the middle sections, and move them next to each other to verify that they indeed are of the same color. 
 
