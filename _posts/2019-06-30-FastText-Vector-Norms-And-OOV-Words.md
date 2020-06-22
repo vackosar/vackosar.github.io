@@ -1,15 +1,19 @@
 ---
 layout: post
-title: "FastText Vector Norms And OOV Words"
+title: "FastText Vector Norms And OOV Words Visualizations"
 date: 2019-06-30
+description: Visualize vector norms of FastText embedding and evaluates use of FastText word vector norm multiplied with number of word n-grams for detecting non-english OOV words.
+categories: ML
+permalink: /:categories/:title
+image: https://raw.githubusercontent.com/vackosar/fasttext-vector-norms-and-oov-words/master/results/ng_norm-tf.png
+redirect_from:
+  - /2019/06/30/FastText-Vector-Norms-And-OOV-Words.html
 ---
 
-I had a look at norms of FastText embeddings and written paper-like formatted post. [Full code is here](https://github.com/vackosar/fasttext-vector-norms-and-oov-words/blob/master/README.md).
-
-# Abstract
-
 Word embeddings, trained on large unlabeled corpora are useful for many natural language processing tasks. FastText [(Bojanowski et al., 2016)](https://arxiv.org/abs/1607.04606) in contrast to Word2vec model accounts for sub-word information by also embedding sub-word n-grams. FastText word representation is the word embedding vector plus sum of n-grams contained in it.
-Word2vec vector norms have been shown [(Schakel & Wilson, 2015)](http://arxiv.org/abs/1508.02297) to be correlated to word significance. This blog post visualize vector norms of FastText embedding and evaluates use of FastText word vector norm multiplied with number of word n-grams for detecting non-english OOV words.
+Word2vec vector norms have been shown [(Schakel & Wilson, 2015)](http://arxiv.org/abs/1508.02297) to be correlated to word significance.
+
+[Full code is here](https://github.com/vackosar/fasttext-vector-norms-and-oov-words/blob/master/README.md).
 
 
 # Introduction
