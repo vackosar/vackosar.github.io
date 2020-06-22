@@ -104,7 +104,7 @@ Download the image, cut out the middle sections, and move them next to each othe
     <img
         class="figure-img img-fluid rounded"
         src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-illusion.png"
-        alt='Visual illusion from paper "A Statistical Story of Visual Illusions".'/>
+        alt='Simultaneous brightness contrast visual illusion from paper "A Statistical Story of Visual Illusions".'/>
     <figcaption class="figure-caption">Cut out the middle sections and move them next to each other to verify that they indeed are of the same color. <a href="https://arxiv.org/pdf/2005.08772v1.pdf)">Img source.</a></figcaption>
 </figure>
 
@@ -115,8 +115,8 @@ I increased saturation on one of the samples by 24%, such that the percentile ra
     <img
         class="figure-img img-fluid rounded"
         src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-contrast-illusion-saturation.png"
-        alt='After saturation increase to match percentile ranks, the simultaneous brightness contrast illusion disappears.'/>
-    <figcaption class="figure-caption">After saturation increase to match percentile ranks, the simultaneous brightness contrast illusion disappears.</figcaption>
+        alt='Simultaneous brightness contrast visual illusion: After saturation increase to match percentile ranks, the colors are perceived as the same.'/>
+    <figcaption class="figure-caption">After saturation increase to match percentile ranks, the colors are perceived as the same.</figcaption>
 </figure>
 
 ## Quiz
