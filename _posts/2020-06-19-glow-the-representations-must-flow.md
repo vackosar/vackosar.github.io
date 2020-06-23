@@ -87,6 +87,7 @@ But how do we go from an image to required number of channels for above to make 
 
 
 ## Human Visual Illusions
+Ability to calculate has surprising application in study of human experience.
 
 Infinite 3D scenes collapse into the identical picture after projection to 2D, making the reversion problem ill-posed.
 A paper has [a statistical story of visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf) to tell thanks to the Glow model. 
@@ -108,7 +109,9 @@ Download the image, cut out the middle sections, and move them next to each othe
     <figcaption class="figure-caption">Cut out the middle sections and move them next to each other to verify that they indeed are of the same color. <a href="https://arxiv.org/pdf/2005.08772v1.pdf)">Img source.</a></figcaption>
 </figure>
 
-But is percentile rank really the only true measure of human color perception? I did one more experiment, which was missing from the paper.
+In another example in the paper, they claim that the likelihood of a patch having higher saturation than the actual value is the true measure of human color saturation perception.
+They call this quantity percentile rank.
+I did one more experiment, which I was missing from the paper, testing this hypothesis.
 I increased saturation on one of the samples by 24%, such that the percentile rank would match on both images, and now I see the same colors! Do you?
 
 <figure class="figure">
