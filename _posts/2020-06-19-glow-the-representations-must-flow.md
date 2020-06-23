@@ -109,7 +109,7 @@ Download the image, cut out the middle sections, and move them next to each othe
     <figcaption class="figure-caption">Cut out the middle sections and move them next to each other to verify that they indeed are of the same color. <a href="https://arxiv.org/pdf/2005.08772v1.pdf)">Img source.</a></figcaption>
 </figure>
 
-In another example in the paper, they claim that the likelihood of a patch having higher saturation than the actual value is the true measure of human color saturation perception.
+In another example in the paper, they claim that the likelihood of a patch having lower saturation than the actual value is the true measure of human color saturation perception.
 They call this quantity percentile rank.
 I did one more experiment, which I was missing from the paper, testing this hypothesis.
 I increased saturation on one of the samples by 24%, such that the percentile rank would match on both images, and now I see the same colors! Do you?
