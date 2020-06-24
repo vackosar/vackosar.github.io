@@ -87,7 +87,7 @@ But how do we go from an image to required number of channels for above to make 
 
 
 ## Human Visual Illusions
-Ability to calculate has surprising application in study of human experience.
+Ability to calculate the exact log-likelihood has surprising application in study of human experience.
 
 Infinite 3D scenes collapse into the identical picture after projection to 2D, making the reversion problem ill-posed.
 A paper has [a statistical story of visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf) to tell thanks to the Glow model. 
