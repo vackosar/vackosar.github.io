@@ -16,8 +16,8 @@ Discover their arcane qualities on a representative example of [OpenAI's Glow](h
 
 ## Flow-Based Model vs VAE and GAN
 Advantages of flow-based models are:
-1. Exact latent-variable inference and log-likelihood (invertible) compared to approximate VAE (compressed) and absent GAN representations (discriminated).
-1. Easy to parallelize both synthesis and inference.
+1. Exact latent-variable inference and log-likelihood (invertible) compared to approximate VAE (compressed) and absent GAN representations (discriminated). (Excluding [potential numerical problems](https://arxiv.org/abs/2006.09347)).
+1. Easy to parallelize both synthesis and inference (Exceptions include [autoregressive flow models](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#models-with-autoregressive-flows)).
 1. Useful latent space similar to VAE, but richer as it is not compressed.
 1. With respect to depth constant memory requirements for gradient calculations thanks to invertibility.
 
@@ -126,3 +126,8 @@ Retain what you have just read by taking training quiz generated from this artic
 <br>
 <a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=b9a650a9-28c5-41c6-b5d0-cceb2c0988df">Flow-based model Glow micro-training quiz</a>
 
+
+## Discussions
+
+Insightful comments:
+- [Reddit Machine Learning discussion](https://www.reddit.com/r/MachineLearning/comments/hcprze/d_glow_the_representations_must_flow/)
