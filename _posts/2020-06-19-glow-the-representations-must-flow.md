@@ -87,12 +87,12 @@ But how do we go from an image to required number of channels for above to make 
 
 
 ## Human Visual Illusions
-Ability to calculate the exact log-likelihood has surprising application in study of human experience.
+Ability to calculate the exact likelihood has surprising application in the study of human experience.
 
-Infinite 3D scenes collapse into the identical picture after projection to 2D, making the reversion problem ill-posed.
 A paper has [a statistical story of visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf) to tell thanks to the Glow model. 
-The authors change the brightness of a part of a picture and calculate likelihoods of created samples.
+The paper focuses on a common misjudgment of color brightness of image centers in which background was darkened or lightened, as shown in the image below.
 The misperceptions seem to arise due to the visual system highlighting unlikely parts of the images.
+The authors study this by changing the brightness of a part of a picture and calculating the likelihoods of created samples.
 
 For example, in the image below, most people perceive the two middle patches as having a different color.
 This phenomenon is called simultaneous brightness contrast.
