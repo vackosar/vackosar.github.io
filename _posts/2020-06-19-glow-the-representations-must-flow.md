@@ -14,7 +14,14 @@ permalink: /:categories/:title
 Flow-based models are the odd machines in the corner of the neural network laboratory capable of calculating the exact log-likelihood for every sample.
 Discover their arcane qualities on a representative example of [OpenAI's Glow](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf) and its ability to [unveil secrets of visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf).
 
+## Flow-Based Model vs VAE and GAN
+Advantages of flow-based models are:
+1. Exact latent-variable inference and log-likelihood (invertible) compared to approximate VAE (compressed) and absent GAN representations (discriminated).
+1. Easy to parallelize both synthesis and inference.
+1. Useful latent space similar to VAE, but richer as it is not compressed.
+1. With respect to depth constant memory requirements for gradient calculations thanks to invertibility.
 
+## The Glow Model Architecture
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
@@ -24,16 +31,7 @@ Discover their arcane qualities on a representative example of [OpenAI's Glow](h
 </figure>
 
 
-## Flow-Based Model vs VAE and GAN
-Advantages of flow-based models are:
-1. Exact latent-variable inference and log-likelihood (invertible) compared to approximate VAE (compressed) and absent GAN representations (discriminated).
-1. Easy to parallelize both synthesis and inference.
-1. Useful latent space similar to VAE, but richer as it is not compressed.
-1. With respect to depth constant memory requirements for gradient calculations thanks to invertibility.
-
-
-## The Likelihood Goal
-
+### The Likelihood Goal
 
 The goal is to find an invertible function \\( F \\), which under assumption of multi-variate normal distribution with isotropic unit variance
 on the latent space gives maximum likelihood. The change of variables of probability density function formula means that above is equivalent to minimizing below.
@@ -50,7 +48,7 @@ We choose the function \\( F \\) to be composed of multiple simpler learnable fu
 
 We can look at these compositions as special layers of neural networks since the non-linearities used are convolutional neural networks.
 
-## Invertible Building Block
+### Invertible Building Block
 
 The invertible function \\( F \\) composed of \\( K \\) trainable non-linear invertible functions \\( f \\).
 
@@ -72,7 +70,7 @@ Since \\( W \\) maps only in the channel dimension and not in the spacial, it ca
 This gave the Glow paper subtitle "Generative Flow with Invertible 1×1 Convolutions".
 
 
-## Neural Network Non-linearities
+### Neural Network Non-linearities
 
 The non-linear functions \\( s \\) and \\( t \\) in above are convolutional neural networks. They are constructed to have sufficient number of features, such that number of input and output channels are equal.
 But how do we go from an image to required number of channels for above to make sense? We create 4 new channels by splitting the image into four parallel images via skip-one-pixel sub-sampling.
@@ -92,7 +90,7 @@ Ability to calculate the exact likelihood has surprising application in the stud
 A paper has [a statistical story of visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf) to tell thanks to the Glow model. 
 The paper focuses on a common misjudgment of color brightness of image centers in which background was darkened or lightened, as shown in the image below.
 The misperceptions seem to arise due to the visual system highlighting unlikely parts of the images.
-The authors study this by changing the brightness of a part of a picture and calculating the likelihoods of created samples.
+The authors study this by changing the brightness picture's center and calculating the likelihood of created samples.
 
 For example, in the image below, most people perceive the two middle patches as having a different color.
 This phenomenon is called simultaneous brightness contrast.
