@@ -127,6 +127,11 @@ Retain what you have just read by taking training quiz generated from this artic
 <a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=b9a650a9-28c5-41c6-b5d0-cceb2c0988df">Flow-based model Glow micro-training quiz</a>
 
 
+## Video
+
+[https://youtu.be/oJNUZzXE7n4](https://youtu.be/oJNUZzXE7n4)
+
+
 ## Discussions
 
 Insightful comments:
