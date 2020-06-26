@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Glow - The Representations Must Flow"
+title: "OpenAI's Glow - The Representations Must Flow"
 date: 2020-06-19
 categories: ML
 description: Get interpretable latent representations by composing non-linear invertible functions and maximizing the exact log-likelihood.
 image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-drawing.png
 permalink: /:categories/:title
+redirect_from:
+- /ml/glow-the-representations-must-flow
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
