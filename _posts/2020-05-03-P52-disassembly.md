@@ -2,9 +2,15 @@
 layout: post
 title: "Thinkpad P52 disassembly"
 date: 2020-05-03
+categories: electronics
+description: Repaste, max RAM or install antenna into on Thinkpad P52 with these links and tips for full disassembly.
+permalink: /:categories/:title
+image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2020-05-03-p52-disassembly.jpg
+redirect_from:
+  - /2020/04/19/P52-disassembly.html
+  - /2020/05/03/P52-disassembly.html
 ---
 
-To repaste, max RAM or install antenna into on Thinkpad P52 this post provides links and tips for full disassembly.
 
 <p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2020-05-03-p52-disassembly.jpg" alt="P52 Disassembly" width="100%"/></p>
 
