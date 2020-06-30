@@ -4,7 +4,7 @@ title: "Modern Config Injection In Maven Plugins"
 date: 2018-01-24
 categories: software
 description: Simple constructor injection of config params in Maven Plugins can be done.
-image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-drawing.png
+#image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-drawing.png
 permalink: /:categories/:title
 redirect_from:
   - /2018/01/24/Modern-Config-Injection-In-Maven-Plugins.html
