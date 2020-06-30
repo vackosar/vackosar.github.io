@@ -1,12 +1,16 @@
 ---
 layout: post
-title: "Converting knowledge base to training"
+title: "How to convert your knowledge base to training"
 date: 2020-04-19
+description: There is now a tool that converts enterprise knowledge base (Confluence, Notino, Google Doc) to a onboarding training.
+permalink: /:categories/:title
+image: https://quizrecall.com/static/logo-transparent-shadow-w200px.png 
+redirect_from:
+  - /2020/04/19/Converting-knowledge-base-to-training.html
 ---
 
-There is now a tool that converts enterprise knowledge base (Confluence, Notino, Google Doc) to onboarding training
-[I started by solving my pains with personal training app Anki](/2019/11/02/Quizrecall-Learn-any-text-with-automatically-generated-quiz.html) by building an AI powered tool.
-Now I finished baseline features for its use in the enterprise.
+[It started by solving my pains with personal training app Anki](/2019/11/02/Quizrecall-Learn-any-text-with-automatically-generated-quiz.html) by building an AI powered tool.
+Now I finished baseline features for the applience's use in the enterprise.
 
 
 ## Without Training Automation
