@@ -2,6 +2,7 @@
 layout: post
 title: "How to convert your knowledge base to training"
 date: 2020-04-19
+category: service
 description: There is now a tool that converts enterprise knowledge base (Confluence, Notino, Google Doc) to an onboarding training.
 permalink: /:categories/:title
 image: https://quizrecall.com/static/logo-transparent-shadow-w200px.png 
