@@ -7,7 +7,7 @@ description: Simple constructor injection of config params in Maven Plugins can 
 image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-drawing.png
 permalink: /:categories/:title
 redirect_from:
-- /ml/glow-the-representations-must-flow
+  - /2018/01/24/Modern-Config-Injection-In-Maven-Plugins.html
 ---
 
 Default Maven injection framework based on Plexus is very limited. No constructor injection, all configuration parameters need to be part of a Mojo and supported annotations are very unfamiliar to new comers.
