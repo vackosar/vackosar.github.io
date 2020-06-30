@@ -2,7 +2,7 @@
 layout: post
 title: "How To Create Custom Ubuntu Web Link App"
 date: 2018-02-25
-description: Turn web page into an Ubuntu application and prevent the web owner to track you around the web.
+description: Turn any web page into an Ubuntu application and prevent the web owner from tracking you around the web.
 categories: software
 permalink: /:categories/:title
 image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2018-02-25-ubuntu-search-whatsapp.png 
