@@ -9,7 +9,7 @@ description: Information about the current quarter, when it will end, and how ma
 <h3>Current quarter <b id='quarterName'></b> ends on <b id='quarterEnd'></b> in <b id="daysLeft"></b> days.</h3>
 <br>
 
-How many days left in this quarter? <b id="daysLeft2"></b> days.<br>
+How many days left in this quarter? (How many days till the end of this quarter?) <b id="daysLeft2"></b> days.<br>
 
 <p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/quarters.svg" alt="quarters visualization" style="max-width: 300px"/></p>
 
@@ -83,7 +83,7 @@ Not enough time to train new employees? Try <a href="https://quizrecall.com">Qui
     function daysLeftInQuarter(d) {
       d = d || new Date();
       var qEnd = getQEnd(d);
-      return Math.floor((qEnd - d) / 8.64e7);
+      return Math.floor((qEnd - d) / 8.64e7) + 1;
     }
     
 </script>
