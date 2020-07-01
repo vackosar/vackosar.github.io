@@ -1,15 +1,16 @@
 ---
 layout: post
-title: "Generic Class Name Signals Low Cohesion"
+title: "Generic Class Name Signals Low Cohesion: Why to avoid non-specific class names like util, and utils."
 date: 2017-06-06
+category: software
+description: Even when most classes in project have nice specific name, somehow "Util" suffixed classes seem to be excluded from intuitive naming strategies.
+permalink: /:categories/:title
+redirect_from:
+ - /2017/06/06/Generic-Class-Name-Signals-Low-Cohesion.html
 ---
 
-I find myself often explaining why to avoid generic **non specific class names**. 
-The **most often classes suffixed with "Util"** seem to be harder to perceive as non specific.
-Even when most classes in project have nice specific name, somehow "Util" suffixed classes seem to be excluded from intuitive naming strategies.
-
 I think the best way to explain why util classes are suboptimal is using concept of **cohesion**. 
-Cohesion is an important concept, which I also used in my previous post [Code Structure Principles](/2017-06-04-Code-Structure-Principles.md).
+Cohesion is an important concept, which I also used in my previous post [Code Structure Principles](/2017/06/04/Code-Structure-Principles.html).
 
 Let's see [how Wikipedia defines the term:](https://en.wikipedia.org/wiki/Cohesion_(computer_science))
 
