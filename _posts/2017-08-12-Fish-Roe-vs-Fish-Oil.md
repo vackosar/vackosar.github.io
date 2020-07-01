@@ -10,7 +10,9 @@ redirect_from:
 ---
 
 
-Fish oil is popular supplement. It's production was optimized for maximum content of popular fatty acids DHA and EPA. Fish roe is food of salty taste produced from egg masses of fish known to be good source of omega-3 fatty acids. With this article I am trying to compare the two in terms of price and health improvement.
+Fish oil is popular supplement. It's production was optimized for maximum content of popular fatty acids DHA and EPA.
+Fish roe is food of salty taste produced from egg masses of fish known to be good source of omega-3 fatty acids.
+With this article I am trying to compare the two in terms of price and health improvement.
 
 # EPA Gram Price Comparison
 
@@ -45,16 +47,20 @@ Although I expected that thanks to refrigeration and natural encapsulation of fi
 
 _Fish roe oxidized cholesterol products content is 5 times higher._
 
-# Other Contents
+# Beneficial Phospholipid DHA In Roe
+Salmon Roe [contains DHA in a phospholipid form](https://www.foundmyfitness.com/topics/salmon-roe), which is preferred format for absorbtion.
+
+# Potentially Harmful Neu5Gc In Roe
 
 Again [a redditor](https://www.reddit.com/user/whatsninja) pointed me to content of potentially dangerous Neu5Gc reported in roe in [6], also I found study [7] reporting natural occurence of this acid.
+But it is not clear if Neu5Gc is dangerous as [Rhonda Patrick speculates](https://www.foundmyfitness.com/topics/neu5gc).
 
-_Fish roe contains higher amount of Neu5Gc than even meat while fish oil doesn't contain any._ 
+Fish roe contains higher amount of Neu5Gc than even meat while fish oil doesn't contain any.
 
 
 # Conclusion
 
-Fish oil EPA is more than 20 times cheaper and contains 5 times less oxidized cholesterol products and doesn't contain very high amount of Neu5Gc.  
+Fish oil EPA is more than 20 times cheaper and contains 5 times less oxidized cholesterol products and doesn't contain very high amount of Neu5Gc.
 
 
 # References
