@@ -125,7 +125,7 @@
 			<h2><span style="color: red">• Live</span> <span style="color: blue">Prediction</span></h2>
 			<br>
 			<i>
-				<b style="color: red">OUTDATED</b> - Updated 2020-04-09 07:00 UTC - <b style="color: darkorange">Situation is improving. Lock downs may have been too much for the price. There is enough info out there, so I will shutdown this site on 2020-06-01.</b><br><br>
+				 - Updated <span id="latestDate">Loading...</span> - <b style="color: darkorange">Situation is improving. Lock downs may have been too much for the price. There is enough info out there, so I will shutdown this site on 2020-06-01.</b><br><br>
 				 <b style="color: darkorange; text-shadow: 1px 1px 0 #688200;">Real-time prediction counter</b>, an interactive chart of 4 day forecast, comparison of countries, probability of your infection, latest news, quiz, and discussion about the novel coronavirus. Updated daily. Predictions are <b style="color: blue">blue points</b>.
 			</i>
 			<br>
@@ -629,8 +629,8 @@
 
 				var newCasesSuffix = ' new cases'
 				var csvParsedPromise = Promise.all([
-						window.fetch('/time_series_covid19_confirmed_global.csv'),
-						window.fetch('/time_series_covid19_deaths_global.csv'),
+						window.fetch('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'),
+						window.fetch('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv'),
 				])
 						.then(d => Promise.all([d[0].text(), d[1].text()]))
 						.then(d => {
@@ -665,6 +665,7 @@
 										dates = dateStrings.map(day => new Date(day));
 										configPerCountry.data.labels = dates;
 										configPerCountry.data.dateStrings = dateStrings;
+										document.getElementById('latestDate').innerText = dateStrings[dateStrings.length - 1];
 
 									} else {
 										dataset.forEach((v, i) => {
