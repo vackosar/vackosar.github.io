@@ -1,7 +1,12 @@
 ---
 layout: post
-title: "GitFlow Incremental Builder"
+title: "GitFlow Incremental Builder - Speed up your multi-module Maven build"
 date: 2016-07-03
+categories: software
+description: This open-source Maven plugin allows you to build only those modules that changed compared to a reference Git branch and and all their Maven dependents.
+permalink: /:categories/:title
+redirect_from:
+- /2016/07/03/GitFlow-Incremental-Builder.html 
 ---
 
 We had issues with our Maven builds taking too long on a project with messaging micro service architecture. After we adopted [git feature branch model called GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) and setting up pre-merge testing policy, it dawned on me that by having develop branch stability guarantee, we could speed up our builds.
