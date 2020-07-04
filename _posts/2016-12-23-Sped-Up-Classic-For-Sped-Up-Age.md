@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Try This Sped-Up Classical Music Perfect For Today's Sped-Up Age"
+title: "Try This Sped-Up Classical Music Attuned For Today's Sped-Up Age"
 date: 2016-12-23
 category: music
 description: Are you attracted to complexity and nobility of classical music, but deterred by its slow pace?
