@@ -2,9 +2,17 @@
 layout: post
 title: "Learn faster with a generated quiz"
 date: 2019-11-02
+categories: productivity
+description: Reduce your effort of creating and revising learning material using a free AI-powered tool.
+permalink: /:categories/:title
+redirect_from:
+- /2019/11/02/Quizrecall-Learn-any-text-with-automatically-generated-quiz.html 
 ---
 
-I used [Anki](https://apps.ankiweb.net/) to learn various Math, Stats, and Software Dev definitions. But I kept having three problems with it. I resolved them by developing [a web app Quizrecall - an automated quiz generator with spaced repetition](https://quizrecall.com/personal). Read on as the app may be something for you as well.
+I used [Anki](https://apps.ankiweb.net/) to learn various Math, Stats, and Software Dev definitions.
+But it was time consuming and had broken [testing effect](https://en.wikipedia.org/wiki/Testing_effect).
+I resolved these problems by developing [a web app Quizrecall - an automated quiz generator with spaced repetition](https://quizrecall.com/personal).
+Read on as the app may be something for you as well.
 
 ### Anki Issues
 
