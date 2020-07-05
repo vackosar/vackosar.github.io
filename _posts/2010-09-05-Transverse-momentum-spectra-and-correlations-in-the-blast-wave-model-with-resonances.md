@@ -2,13 +2,19 @@
 layout: post
 title: "Transverse momentum spectra and correlations in the blast wave model with resonances"
 date: 2010-09-05
+categories: physics
+description: This work provides a review of theories of properties of high energy density matter originating in heavy-ion high energy collisions (GeV/nucleus). 
+permalink: /:categories/:title
+redirect_from:
+- /2010/09/05/Transverse-momentum-spectra-and-correlations-in-the-blast-wave-model-with-resonances.html 
 ---
 
 ### Author
 Vaclav Kosar
 
 ### Abstract
-This thesis provides a review about the basics of theories of properties of matter with high energy density, which originates in heavy ion high energy collisions ( GeV/nucleus). Basic information about the extreme state of matter called quark-gluon  plasma,  introduction  to  quantum  statistical  mechanics  and  introduction  to theory of longitudinally boost-invariantly expanding fireball of hot matter are mentioned.
+This work provides a review of theories of properties of high energy density matter originating in heavy-ion high energy collisions (GeV/nucleus). 
+The work contains an introduction to the extreme state of matter called quark-gluon plasma, quantum statistical mechanics, and theory of longitudinally boost-invariantly expanding fireball of a hot matter. 
 
 Particular intention is given to the blast-wave model with resonances, whose basic assumptions are longitudinally boost-invariant expansion, transverse expansion, and the existence of a particular hypersurface in space-time, on which hadronic matter abruptly decouples from fireball.
 
