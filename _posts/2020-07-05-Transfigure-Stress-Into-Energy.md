@@ -1,0 +1,60 @@
+---
+layout: post
+title: "Transfigurate Stress Into Energy: Excited Over Debilitated"
+date: 2020-06-19
+categories: productivity
+description: High cortisol, increased hearth rate will, after reading, be a flashing opportunity instead of a sign of impending doom.
+image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/transfigurate-stress-to-energy-2.jpeg
+permalink: /:categories/:title
+---
+
+### Stress Is Enhancing Mindset
+Based on a study ["The role of stress mindset in shaping cognitive, emotional, and physiological responses to challenging and threatening stress"](https://mbl.stanford.edu/sites/g/files/sbiybj9941/f/crumetal_roleofstressmindset_0.pdf) the book [Upside Of Stress](https://www.goodreads.com/book/show/23281639-the-upside-of-stress) suggests following mindset: 
+
+<blockquote>
+Experiencing stress enhances my performance and productivity.<br>
+Experiencing stress improves my health and vitality.<br>
+Experiencing stress facilitates my learning and growth.<br>
+Experiencing stress improves my health and vitality.<br>
+The effects of stress are positive and should be utilized.
+</blockquote>
+
+Furthermore:
+<blockquote>
+In contrast, people who believe that stress can be helpful are more likely to say that they cope with stress proactively. For example, they are more likely to:
+<br> 
+Accept the fact that the stressful event has occurred and is real.<br>
+Plan a strategy for dealing with the source of stress.<br>
+Seek information, help, or advice.<br>
+Take steps to overcome, remove, or change the source of stress.<br>
+Try to make the best of the situation by viewing it in a more positive way or by using it as an opportunity to grow.<br>
+</blockquote>
+
+### Get Excited 
+Citing [Get Excited: Reappraising Pre-Performance Anxiety as Excitement](https://www.researchgate.net/publication/259454454_Get_Excited_Reappraising_Pre-Performance_Anxiety_as_Excitement):
+<blockquote>
+Individuals can reappraise anxiety as excitement using minimal strategies such as self-talk (e.g., saying "I am excited" out loud) or simple messages (e.g., "get excited"), which lead them to feel more excited, adopt an opportunity mindset (as opposed to a threat mindset), and improve their subsequent performance.
+</blockquote>
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        src="https://www.researchgate.net/profile/Alison_Brooks3/publication/259454454/figure/fig3/AS:392644552347653@1470625164263/Public-speaking-performance-by-reappraisal-condition-Study-2-Error-bars-represent-5.png"
+        alt="Getting excited seems to improve performance"/>
+    <figcaption class="figure-caption"><a href="https://arxiv.org/pdf/1605.08803.pdf">"Get Excited" study</a> seen improvement after participants applied the self-talk.</figcaption>
+</figure>
+
+
+### Cortisol Cures
+[The DHEA-S-cortisol ratios during stress were significantly higher in subjects who reported fewer symptoms of dissociation and exhibited superior military performance.](https://pubmed.ncbi.nlm.nih.gov/15289280/)
+Cortisol is a promising cure for PTSD in [2013](https://pubmed.ncbi.nlm.nih.gov/23557627/) and [2019 studies](https://www.nature.com/articles/s41398-019-0673-5).
+
+<blockquote>
+Hydrocortisone recipients reported fewer PTSD and depression symptoms, and had greater improvements in health-related quality of life during the first 3 months posttrauma than did placebo recipients.
+</blockquote>
+
+### Flow Is Eustress
+[Generating eustress by challenging employees: Helping people savor their work](https://www.sciencedirect.com/science/article/abs/pii/S0090261612000964?via%3Dihub)
+
+Positive stress is called to eustress. Flow state is an representative of an eustress, and it was shown that Flow state is associated with <a href="https://www.researchgate.net/publication/241693102_Psychophysiological_correlates_of_flow_during_daily_activities">increased hearth rate</a>.
+
