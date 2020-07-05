@@ -1,8 +1,8 @@
-{% extends 'base.html' %}
-{% block title %}Privacy Policy | VaclavKosar.Com{% endblock %}
-{% block description %}Privacy Policy | VaclavKosar.Com{% endblock %}
-
-{% block content %}
+---
+layout: default
+title: Privacy Policy
+description: Privacy Policy for VaclavKosar.Com
+---
 
 
 <div style="text-align: left; margin: 3vmin;">
@@ -12,7 +12,7 @@
     <p>Effective date: December 22, 2019</p>
 
 
-    <p>VaclavKosar.Com ("us", "we", or "our") operates the quizrecall.com website (hereinafter referred to as the "Service").</p>
+    <p>VaclavKosar.Com ("us", "we", or "our") operates the vaclavkosar.com website (hereinafter referred to as the "Service").</p>
 
     <p>This page informs you of our policies regarding the collection, use and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
 
@@ -203,10 +203,9 @@
     <h2>Contact Us</h2>
     <p>If you have any questions about this Privacy Policy, please contact us:</p>
     <ul>
-        <li>By email: admin@quizrecall.com</li>
+        <li>By email: admin@vaclavkosar.com</li>
 
     </ul>
 
 </div>
 
-{% endblock content %}
