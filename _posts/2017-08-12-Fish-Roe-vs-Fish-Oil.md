@@ -5,9 +5,13 @@ date: 2017-08-12
 categories: health
 description: Healthiness and price of a salty delicacy versus oily softgels. EPA, DHA, Neu5Gc.
 permalink: /:categories/:title
+image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/fishes-sardines.jpeg
 redirect_from:
   - /2017/08/12/Fish-Roe-vs-Fish-Oil.html
 ---
+
+
+<img alt="fishes" style="width: 80%; max-width: 900px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/fishes-sardines.jpeg">
 
 
 Fish oil is popular supplement. It's production was optimized for maximum content of popular fatty acids DHA and EPA.
