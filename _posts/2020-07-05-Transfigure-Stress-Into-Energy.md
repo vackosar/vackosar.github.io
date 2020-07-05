@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Transfigurate Stress Into Energy: Excited Over Debilitated"
+title: "Transfigure Stress Into Energy: Excited Over Debilitated"
 date: 2020-06-19
 categories: productivity
 description: High cortisol, increased hearth rate will, after reading, be a flashing opportunity instead of a sign of impending doom.
