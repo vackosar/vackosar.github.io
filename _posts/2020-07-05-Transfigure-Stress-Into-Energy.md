@@ -3,12 +3,12 @@ layout: post
 title: "Transfigure Stress Into Energy: Excited Over Debilitated"
 date: 2020-06-19
 categories: productivity
-description: High cortisol, increased heart rate will, after reading, be a flashing opportunity instead of a sign of impending doom. 
+description: After reading this, your pounding heart and blush will announce a flashing opportunity instead of an impending fight or flight.
 image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/transfigurate-stress-to-energy-2.jpeg
 permalink: /:categories/:title
 ---
 
-<img alt="Trasfigure Stres Into Energy" style="width: 80%; max-width: 900px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/transfigurate-stress-to-energy-2.jpeg">
+<img alt="Trasfigure Stress Into Energy" style="width: 90%; max-width: 900px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/transfigurate-stress-to-energy-2.jpeg">
 
 ### Stress-Is-Enhancing Mindset
 Based on a study ["The role of stress mindset in shaping cognitive, emotional, and physiological responses to challenging and threatening stress"](https://mbl.stanford.edu/sites/g/files/sbiybj9941/f/crumetal_roleofstressmindset_0.pdf) the book [Upside Of Stress](https://www.goodreads.com/book/show/23281639-the-upside-of-stress) suggests following mindset: 
@@ -57,7 +57,7 @@ Hydrocortisone recipients reported fewer PTSD and depression symptoms, and had g
 </blockquote>
 
 ### Flow Is Eustress
-[Generating eustress by challenging employees: Helping people savor their work](https://www.sciencedirect.com/science/article/abs/pii/S0090261612000964?via%3Dihub)
+<!-- [Generating eustress by challenging employees: Helping people savor their work](https://www.sciencedirect.com/science/article/abs/pii/S0090261612000964?via%3Dihub) -->
 
-Positive stress is called to eustress. Flow state is an representative of an eustress, and it was shown that Flow state is associated with <a href="https://www.researchgate.net/publication/241693102_Psychophysiological_correlates_of_flow_during_daily_activities">increased hearth rate</a>.
+Positive stress is called eustress. Flow state is an representative of eustress shown to be associated with <a href="https://www.researchgate.net/publication/241693102_Psychophysiological_correlates_of_flow_during_daily_activities">increased hearth rate</a>.
 
