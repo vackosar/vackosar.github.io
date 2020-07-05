@@ -3,7 +3,7 @@ layout: post
 title: "Transfigure Stress Into Energy: Excited Over Debilitated"
 date: 2020-06-19
 categories: productivity
-description: High cortisol, increased hearth rate will, after reading, be a flashing opportunity instead of a sign of impending doom.
+description: High cortisol, increased heart rate will, after reading, be a flashing opportunity instead of a sign of impending doom. 
 image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/transfigurate-stress-to-energy-2.jpeg
 permalink: /:categories/:title
 ---
