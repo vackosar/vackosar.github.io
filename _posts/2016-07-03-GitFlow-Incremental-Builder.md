@@ -10,7 +10,7 @@ redirect_from:
 - /2016/07/03/GitFlow-Incremental-Builder.html 
 ---
 
-<img alt="An example of a multi-module project Eclipse JDT" style="width: 80%; max-width: 900px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/eclipse-modules.png">
+<img title="An example of a multi-module project Eclipse JDT" alt="An example of a multi-module project Eclipse JDT" style="width: 80%; max-width: 900px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/eclipse-modules.png">
 
 We had issues with our Maven builds taking too long on a project with messaging micro service architecture. After we adopted [git feature branch model called GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) and setting up pre-merge testing policy, it dawned on me that by having develop branch stability guarantee, we could speed up our builds.
 
