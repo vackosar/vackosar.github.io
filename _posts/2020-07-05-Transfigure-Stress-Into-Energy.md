@@ -8,10 +8,12 @@ image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/imag
 permalink: /:categories/:title
 ---
 
+<img alt="Trasfigure Stres Into Energy" style="width: 80%; max-width: 900px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/transfigurate-stress-to-energy-2.jpeg">
+
 ### Stress-Is-Enhancing Mindset
 Based on a study ["The role of stress mindset in shaping cognitive, emotional, and physiological responses to challenging and threatening stress"](https://mbl.stanford.edu/sites/g/files/sbiybj9941/f/crumetal_roleofstressmindset_0.pdf) the book [Upside Of Stress](https://www.goodreads.com/book/show/23281639-the-upside-of-stress) suggests following mindset: 
 
-<blockquote class="blockquote">
+<blockquote class="blockquote" style="font-style: italic">
 Experiencing stress enhances my performance and productivity.<br>
 Experiencing stress improves my health and vitality.<br>
 Experiencing stress facilitates my learning and growth.<br>
@@ -20,9 +22,9 @@ The effects of stress are positive and should be utilized.
 </blockquote>
 
 Furthermore:
-<blockquote class="blockquote">
-In contrast, people who believe that stress can be helpful are more likely to say that they cope with stress proactively. For example, they are more likely to:
-<br> 
+<blockquote class="blockquote" style="font-style: italic">
+In contrast, people who believe that stress can be helpful are more likely to say that they cope with stress proactively. For example, they are more likely to:<br>
+<br>
 Accept the fact that the stressful event has occurred and is real.<br>
 Plan a strategy for dealing with the source of stress.<br>
 Seek information, help, or advice.<br>
@@ -33,7 +35,7 @@ Try to make the best of the situation by viewing it in a more positive way or by
 ### Get Excited 
 Citing [Get Excited: Reappraising Pre-Performance Anxiety as Excitement](https://www.researchgate.net/publication/259454454_Get_Excited_Reappraising_Pre-Performance_Anxiety_as_Excitement):
 
-<blockquote class="blockquote">
+<blockquote class="blockquote" style="font-style: italic">
 Individuals can reappraise anxiety as excitement using minimal strategies such as self-talk (e.g., saying "I am excited" out loud) or simple messages (e.g., "get excited"), which lead them to feel more excited, adopt an opportunity mindset (as opposed to a threat mindset), and improve their subsequent performance.
 </blockquote>
 
@@ -50,7 +52,7 @@ Individuals can reappraise anxiety as excitement using minimal strategies such a
 [The DHEA-S-cortisol ratios during stress were significantly higher in subjects who reported fewer symptoms of dissociation and exhibited superior military performance.](https://pubmed.ncbi.nlm.nih.gov/15289280/)
 Cortisol is a promising cure for PTSD in [2013](https://pubmed.ncbi.nlm.nih.gov/23557627/) and [2019 studies](https://www.nature.com/articles/s41398-019-0673-5).
 
-<blockquote class="blockquote">
+<blockquote class="blockquote" style="font-style: italic">
 Hydrocortisone recipients reported fewer PTSD and depression symptoms, and had greater improvements in health-related quality of life during the first 3 months posttrauma than did placebo recipients.
 </blockquote>
 
