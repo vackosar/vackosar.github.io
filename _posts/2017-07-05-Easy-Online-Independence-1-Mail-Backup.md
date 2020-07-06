@@ -2,9 +2,14 @@
 layout: post
 title: "Easy Online Independence: 1. Mail Backup"
 date: 2017-07-05
+description: This is first post of a series called "Easy Online Independence" aiming to provide cheap and easy way to increase your independence from current online service giants like Google and Facebook.
+categories: software
+permalink: /:categories/:title
+redirect_from:
+- /2017/07/05/Easy-Online-Independence-1-Mail-Backup.html
 ---
 
-This is first post of a series called "Easy Online Independence" aiming to provide cheap and easy way to increase your independence from current online service giants like Google and Facebook. By independence I mean ability to at any time to stand alone or migrate to another service without major losses.
+By independence I mean ability to at any time to stand alone or migrate to another service without major losses.
  
 ## Mail Backup
 
