@@ -25,10 +25,6 @@ title: Blog
     </div>
     <!--End mc_embed_signup-->
     
-    <!--, <a href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>-->
-    <!--, <a href="https://www.linkedin.com/shareArticle?url={{ site.url }}{{ post.url }}" rel="nofollow" target="_blank" title="Share on LinkedIn">LinkedIn</a>-->
-    <!--, <a href="http://www.reddit.com/submit?url={{ site.url }}{{ post.url }}" rel="nofollow" target="_blank" title="Share on Reddit">Reddit</a>-->
-    <!--.-->
 </div>
 
 <div class="posts">
