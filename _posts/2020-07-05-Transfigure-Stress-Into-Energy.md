@@ -61,3 +61,5 @@ Hydrocortisone recipients reported fewer PTSD and depression symptoms, and had g
 
 Positive stress is called eustress. Flow state is an representative of eustress shown to be associated with <a href="https://www.researchgate.net/publication/241693102_Psychophysiological_correlates_of_flow_during_daily_activities">increased hearth rate</a>.
 
+### 1-Minute Training
+<a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=d3c70b8d-4d17-49c8-956d-7fc23112c86c">Trasfigure stress micro-training quiz</a>
