@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Obsolete Branch Remover"
+title: "Obsolete Git Branch Remover Maven Plugin"
 date: 2016-07-22
 categories: software
 description: Having many branches left behind, abandoned, never deleted? How do you deal with them? We had same problem and I developed a automated DevOps solution.
