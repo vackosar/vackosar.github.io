@@ -2,9 +2,15 @@
 layout: post
 title: "How To Boost Your Jog Morale Using Military Cadence"
 date: 2016-07-16
+categories: health
 description: If you are like me and run alone you will be able to boost your morale using mind hack used by professionals.
-image: 
+permalink: /:categories/:title
+image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/mil-cadence-pexels.jpg
+redirect_from:
+  - /2016/07/16/Boost-Jog-Morale-Using-Mil-Cadence.html 
 ---
+
+<img alt="fishes" style="width: 80%; max-width: 900px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/mil-cadence-pexels.jpg">
 
 Listening to these chants will make you feel bad slowing down your pace - not being up to speed with virtual others.
 
