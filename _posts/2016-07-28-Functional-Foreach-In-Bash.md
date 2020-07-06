@@ -2,9 +2,8 @@
 layout: post
 title: "Functional ForEach In Bash"
 date: 2016-07-28
+description: Don't you hate verbosity of Bash's while-do statements when writing in-line scripts? No worries, you can improve on that!
 ---
-
-Don't you hate verbosity of Bash's while-do statements when writing in-line scripts? No worries, you can improve on that!
 
 Instead of writing long-winded
 

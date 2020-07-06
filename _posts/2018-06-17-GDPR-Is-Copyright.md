@@ -2,9 +2,10 @@
 layout: post
 title: "GDPR Is Copyright"
 date: 2018-06-17
+description: I like the intention behind GDPR, but in reality GDPR it is similar to copyright, which is often controversial.
 ---
 
-I like the intention behind GDPR, but in reality GDPR it is similar to copyright, which is often controversial. GDPR seems be even stronger version of copyright as I will try to demonstrate.
+GDPR seems be even stronger version of copyright as I will try to demonstrate.
 
 # The Synonym Swap
 
