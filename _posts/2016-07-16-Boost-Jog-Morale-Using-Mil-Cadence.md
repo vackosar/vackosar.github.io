@@ -14,7 +14,7 @@ redirect_from:
 
 Listening to these chants will make you feel bad slowing down your pace - not being up to speed with virtual others.
 
-And the same time, it blanks your mind making and puts you into an active, but also meditative state. It makes you truly love your life.
+And the same time, it blanks your mind, and puts you into an active, but also meditative state. It makes you truly love your life.
 
 ### Update 2020-07-06
 
