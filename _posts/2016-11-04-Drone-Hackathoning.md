@@ -1,14 +1,10 @@
 ---
 layout: post
-title: "The Drone Hackathoning"
+title: "The Drone Hackathoning - Experience From A Hackathon"
 date: 2016-11-04
+description: On a hackathon I implemented trivial image processing algorithm to locate white piece of paper on grey carpet floor to be used for drone horizontal stabilization.
+image: https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/master/output/androidTest/marked.jpg
 ---
-
-## Summary
-
-On a hackathon I implemented trivial image processing algorithm to locate white piece of paper on grey carpet floor to be used for drone horizontal stabilization.
-
-## Intro
 
 Yesterday I attended a hackathon choosing to join up with colleagues to develop an android app for DJI Phantom 3. We aimed to stabilize the drone horizontally to be able to screw a light bulb into a socket mounted on the ceiling. Ultimately we didn't succeed, although the journey was very interesting.
 
