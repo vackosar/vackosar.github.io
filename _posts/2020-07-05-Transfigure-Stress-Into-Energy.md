@@ -66,5 +66,5 @@ Positive stress is called eustress. Flow state is an representative of eustress 
 
 ### Video
 
-Kelly McGonigal wants to make you better at stress.
+Kelly wants to make you better at stress.
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RcGyVTAoXEU?start=301" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
