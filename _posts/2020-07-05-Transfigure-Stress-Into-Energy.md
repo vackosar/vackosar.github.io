@@ -17,7 +17,6 @@ Based on a study ["The role of stress mindset in shaping cognitive, emotional, a
 Experiencing stress enhances my performance and productivity.<br>
 Experiencing stress improves my health and vitality.<br>
 Experiencing stress facilitates my learning and growth.<br>
-Experiencing stress improves my health and vitality.<br>
 The effects of stress are positive and should be utilized.
 </blockquote>
 
