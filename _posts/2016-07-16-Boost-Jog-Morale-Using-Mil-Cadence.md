@@ -12,6 +12,8 @@ redirect_from:
 
 <img alt="Running with military cadence" style="width: 80%; max-width: 900px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/mil-cadence-pexels.jpg">
 
+Military cadence is a call-and-response work song sung by military personnel while running or marching to maintain a united pace.
+
 Listening to these chants will make you feel bad slowing down your pace - not being up to speed with virtual others.
 
 And the same time, it blanks your mind, and puts you into an active, but also meditative state. It makes you truly love your life.
