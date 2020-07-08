@@ -2,8 +2,12 @@
 layout: post
 title: "Constant 1D Kalman Filter Is Exponential Or Cumulative Average"
 date: 2019-08-28
-image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-without-process-noise-proof.jpg
+categories: ML
 description: In one dimension and with constant measurement uncertainty and process noise, the filter converges to cumulative average in case of zero process noise or exponential average in case of non zero process noise.
+permalink: /:categories/:title
+image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-without-process-noise-proof.jpg
+redirect_from:
+  - /2019/08/28/1D-Kalman-Is-Exponential-Or-Cumulative-Average.html 
 ---
 
 Kalman filter [(Kalman 1960)](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf) also known as linear quadratic estimation (LQE) is an iterative algorithm that uses noisy measurements to estimate values and variance of unknown variables.
