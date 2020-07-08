@@ -62,7 +62,8 @@ Positive stress is called eustress. Flow state is an representative of eustress 
 
 ### 1-Minute Training
 Without active recall, you won't remember anything from the above. Take at least one round of the quiz below, and if you can, subscribe to QuizRecall to get revision reminders. You can also generate your own micro-trainings over there.<br>
-<a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=d3c70b8d-4d17-49c8-956d-7fc23112c86c">Trasfigure stress micro-training quiz</a>
+<a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=97bc3d3b-4bc8-4507-9f53-1462a3b6b730">Trasfigure Stress Into Energy 1-Minute Training</a>
+
 
 ### Video
 
