@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Keras Convolutional Text Punctuator Presentation"
+title: "Restore Missing Punctuation with Keras Convolutional Text Punctuator"
 date: 2017-07-15
-description: Simple machine learning project for adding missing punctuation into text.
+description: Simple deep neural network machine learning project for restoring punctuation in a text.
 ---
 
 The project uses GloVe embeddings and has simple convolutional architecture implemented in Keras framework.
