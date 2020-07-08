@@ -22,5 +22,5 @@ My setup is very simplistic at the moment. I just had to buy one of the cheapest
 The microphone CONNECT IT CMI-8000-CH YouMic USB works quite well for the $16 I payed.
 You can verify the mic quality by listening to one of [my videos](https://youtu.be/gyBdnNY1WPI).
 
-I also was improved room sound quality by [hiding acoustic panel behind a world map](/2020/02/23/Stealthy-acoustic-panels.html).
+I also improved room sound quality by [hiding acoustic panel behind a world map](/2020/02/23/Stealthy-acoustic-panels.html).
 
