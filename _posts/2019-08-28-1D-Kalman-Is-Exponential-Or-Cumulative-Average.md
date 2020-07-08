@@ -1,13 +1,15 @@
 ---
 layout: post
-title: "1D Kalman Is Exponential Or Cumulative Average"
+title: "Kalman Filter In 1D Is Exponential Or Cumulative Average"
 date: 2019-08-28
+image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-08-28-kalman-1d-without-process-noise-proof.jpg
+description: In one dimension and with constant measurement uncertainty and process noise, the filter converges to cumulative average in case of zero process noise or exponential average in case of non zero process noise.
 ---
 
-# Abstract
-Kalman filter [(Kalman 1960)](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf) also known as linear quadratic estimation (LQE) is an iterative algorithm that uses noisy measurements to estimate values and variance of unknown variables. The Kalman filter allows incorporation of known state space behaviour (e.g. momentum of physical particle) and outside-the-model estimated variance of sensor measurement (measurement uncertainty) and unknown factors (process noise).
+Kalman filter [(Kalman 1960)](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf) also known as linear quadratic estimation (LQE) is an iterative algorithm that uses noisy measurements to estimate values and variance of unknown variables.
+The Kalman filter allows incorporation of known state space behaviour (e.g. momentum of physical particle) and outside-the-model estimated variance of sensor measurement (measurement uncertainty) and unknown factors (process noise).
 
-This blog post proves that Kalman filter in 1D with constant measurement uncertainty and process noise asymptotically behaves as:
+This blog post proves that [Kalman filter](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf) in 1D with constant measurement uncertainty and process noise asymptotically behaves as:
 
  - cumulative average in case of zero process noise
  - exponential average in case of non zero process noise
