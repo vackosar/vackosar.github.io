@@ -145,3 +145,7 @@ Stop the application in an orderly manner. MBean exporter provides a JMX operati
 - Stops all inbound MessageProducer's (that are not OrderlyShutdownCapable).
 - Waits for any remaining time left, as defined by the value of the long parameter passed in to the operation.
 - Calls afterShutdown() on all OrderlyShutdownCapable components.
+
+## Compare RxJS and Spring Integration
+
+Read comparison of [RxJS and Spring Integration](/2017/11/05/RxJS-And-Spring-Integration-Similarities.html).

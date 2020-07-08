@@ -28,4 +28,7 @@ Below is a table comparing concepts in both frameworks.
 |Subject#onNext|Gateway  |Not directly equivalent but both can be used to publish on a method call.|
 
 
-We can see that for most concepts we are able to find almost direct equivalent in the other framework. For those we cannot, an alternative can be easily introduced.
+We can see that for most concepts we are able to find almost direct equivalent in the other framework.
+For those we cannot, an alternative can be easily introduced.
+
+Read comparison of [Sprint Integration with Java 8 Streams](/software/Spring-Integration-Highlights).
