@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Is $15 USB Microscope Is Enough For You?"
+title: "Is $15 USB Microscope Enough For You?"
 date: 2017-02-26
 description: When I was a kid, I always loved to play with my grand grand father's microscope which used to be used for checking meat for presence of dangerous worms.
 ---
