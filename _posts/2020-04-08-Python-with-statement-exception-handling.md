@@ -6,7 +6,7 @@ categories: software
 description: Handle Python exceptions during execution of the with statement.
 permalink: /:categories/:title
 redirect_from:
-  -/2020/04/08/Python-with-statement-exception-handling.html
+  - /2020/04/08/Python-with-statement-exception-handling.html
 ---
 
 One case use context manager to handle exceptions during execution of the with statement as can be seen in the snippet below. This is useful for example for rolling back database transactions in case of an exception, where the database connections can be retrieved from and returned to a connection pool.
