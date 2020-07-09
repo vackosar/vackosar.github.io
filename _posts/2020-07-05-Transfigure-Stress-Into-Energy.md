@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Transfigure Stress into Energy By Drawing On Research"
+title: "Transfigure Stress into Energy by Drawing on Research"
 date: 2020-06-19
 categories: productivity
-description: After applying research cited in this post, your pounding heart and blush will announce a flashing opportunity instead of an impending fight or flight.
+description: Your pounding heart and blush will announce a flashing opportunity instead of an impending fight or flight after applying research from this post.
 image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/transfigurate-stress-to-energy-2.jpeg
 permalink: /:categories/:title
 ---
