@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "How To Improve Your Acoustics With Stealthy Acoustic Panels"
+title: "How To Improve Your Acoustics With Stealthy Acoustic Wall Panels"
 date: 2020-02-23
 categories: health
-description: To improve my apartment acoustics while not making it ugly, I placed thin acoustic panels behind my wall-mounted world map. 
+description: To improve my apartment acoustics while not making it ugly, I placed cheap thin acoustic wall panels behind my wall-mounted world map. 
 image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2020-02-23-map-side.jpg
 permalink: /:categories/:title
 redirect_from:
 - /2020/02/23/Stealthy-acoustic-panels.html 
 ---
 
-My acoustic world map is a pretty stealthy solution as the panels are only visible from the sides. I used double-sided adhesive tape to attach the light and thin panels. The foam is "acoustic molitan CME3535" from the Hornbach DIY store costing about $20, so it is probably not super high quality.
+My acoustic world map is a pretty stealthy and cheap solution as the panels are only visible from the sides. I used double-sided adhesive tape to attach the light and thin panels. The foam is "acoustic molitan CME3535" from the Hornbach DIY store costing about $20, so it is probably not super high quality.
 
 My goal was to reduce echos, ambient noises, and improve sound quality of my experimental podcast [Reading Papers](https://youtu.be/-khooNLxuII) where I read usually ML related paper a day.
 
