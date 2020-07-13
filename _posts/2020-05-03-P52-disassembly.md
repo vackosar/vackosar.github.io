@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Thinkpad P52 disassembly"
+title: "Thinkpad P52 Disassembly For Repaste, RAM Upgrade, Or Anything Else"
 date: 2020-05-03
 categories: electronics
 description: Repaste, max RAM, or install antenna into Thinkpad P52 with these links and tips for full disassembly.
