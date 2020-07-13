@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "VR Holiday In Nature - Relax In Nature While Trapped In Your City"
+title: "VR Holiday In Nature: Relax In Nature While Trapped In Your City"
 date: 2020-07-12
 description: Escape the cityscape into the wild through your VR headset. Subscribe and download VR180 3D holiday.
 image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/vr-holiday.png
@@ -11,6 +11,7 @@ image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/imag
 
 - Relax in VR Nature
 - Enjoy 3D VR-180 videos
+- Best on Oculus Quest or Valve Index
 
 To get updates subscribe on [Youtube](https://www.youtube.com/channel/UCjf_1x7cTEX1vIB6_Ymav2A), [Facebook](https://www.facebook.com/1st.vr.holiday/) or via email at <a href="mailto:1st.vr.holiday@gmail.com">1st.vr.holiday@gmail.com</a>.
 Request full quality compilation video download for $10 via email at <a href="mailto:1st.vr.holiday@gmail.com">1st.vr.holiday@gmail.com</a>.
