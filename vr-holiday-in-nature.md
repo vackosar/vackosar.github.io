@@ -6,7 +6,7 @@ description: Escape the cityscape into the wild through your VR headset. Subscri
 image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/vr-holiday.png
 ---
 
-<img alt="VR Holiday In Nature" style="width: 90%; max-width: 900px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/vr-holiday.png">
+<img alt="VR Holiday In Nature" style="width: 150px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/vr-holiday.png">
 
 
 - Relax in VR Nature
