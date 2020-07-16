@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Code Structure Principles: "
+title: "How To Structure Your Code: Localize Related, Distribute Complexity, Minimize Visibility"
 date: 2017-06-04
 category: software
 description: A short alternative view on code structure principles based on several years of personal experience, Martin Fowler's online posts, Bloch's Effective Java, McConnell's Code Complete and Adam Bien's online posts.
@@ -10,7 +10,7 @@ redirect_from:
 ---
 
 However, as with all the rules, do not put the horse before the caret.
-Don't optimize it too early, and don't be too stringent.
+Don't optimize code structure too early, and don't be too stringent.
 Focus more on the specifics of your problem than on generics offered by the ivory tower books.
 
 Sections:
