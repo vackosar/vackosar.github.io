@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How To Structure Your Code: Localize Related, Distribute Complexity, Minimize Visibility"
+title: "How To Structure Code: Localize Related, Distribute Complexity, Minimize Visibility"
 date: 2017-06-04
 category: software
 description: A short alternative view on code structure principles based on several years of personal experience, Martin Fowler's online posts, Bloch's Effective Java, McConnell's Code Complete and Adam Bien's online posts.
