@@ -19,7 +19,7 @@ BCE is distinct from Multitier architecture in that it does not see some outside
 
 The package structure is often visualized as tree onion layers, where the most outer layer is Boundary, central is Control and inner is Entity. The Boundary layer contains classes responsible for all communications with systems outside application runtime. Control represents all logic that doesn't fit well into boundary. Entity contains data structures which are allowed to have some behaviour.
 
-## Feature vs Technical structuring
+## Feature Vs Technical Structuring
 
 I am very much for structuring, modularization and encapsulation according to end result features. However often after separation per major features on sub 30 classes level, I think it is more practical to structure according to technical behaviour. Thus I suggest to use BCE architecture which represents that.    
 
@@ -46,6 +46,9 @@ See below Spring Boot and Spring Data example.
 Retain what you have just read by taking training quiz generated from this article.<br>
 <br>
 <a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=dc985c9e-6812-41d3-a020-33c4a0340c16">Boundary-Control-Entity Quiz</a>
+
+## Continue: The Cuts Across The Architecture
+Code structure cuts across the architecture. [Learn about code structure principles here](/software/Code-Structure-Principles).
 
 
 ## Other sources

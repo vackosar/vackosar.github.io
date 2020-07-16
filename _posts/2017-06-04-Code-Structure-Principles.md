@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Code Structure Principles"
+title: "Code Structure Principles: "
 date: 2017-06-04
 category: software
 description: A short alternative view on code structure principles based on several years of personal experience, Martin Fowler's online posts, Bloch's Effective Java, McConnell's Code Complete and Adam Bien's online posts.
@@ -8,6 +8,18 @@ permalink: /:categories/:title
 redirect_from:
   - /2017/06/04/Code-Structure-Principles.html
 ---
+
+However, as with all the rules, do not put the horse before the caret.
+Don't optimize it too early, and don't be too stringent.
+Focus more on the specifics of your problem than on generics offered by the ivory tower books.
+
+Sections:
+- [Code Containers](#code-containers)
+- [1. Localize Related](#1-localize-related)
+- [2. Distribute Complexity](#2-distribute-complexity)
+- [3. Minimize Visibility](#3-minimize-visibility)
+
+Code structure cuts across the architecture. Learn about dead-simple architecture called [Boundary-Control-Entity here](https://vaclavkosar.com/software/Boundary-Control-Entity-Architecture).
 
 ## Code Containers
 Code Containers is a term used in this post to refer to a instance of a level of hierarchy into which code can be sorted.
@@ -18,6 +30,7 @@ In Java, code is sorted into following hierarchy:
 - package
 - maven module
 - micro-service
+
 
 ## 1. Localize Related
 
@@ -143,3 +156,6 @@ Unfortunately Maven modules don't provide restriction of visibility of dependenc
 #### Micro-Service API
  
 Micro-services usually publish only minimal API which can be used to interact with it. 
+
+## Continue: The Dead-Simple Architecture
+Code structure cuts across the architecture. [Learn about a dead-simple architecture called Boundary-Control-Entity here](/software/Boundary-Control-Entity-Architecture).
