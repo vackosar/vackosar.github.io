@@ -2,11 +2,12 @@
 layout: post
 title: "Thinkpad P52 vs ZBook 15 G5 vs Precision 7530"
 date: 2019-03-03
-categories: review
+categories: electronics
 description: This is my experience working on the best mobile workstation of 2019 with specs matching Thinkpad P52 and ZBook 15 G5.
 permalink: /:categories/:title
 redirect_from:
   - /2019/03/03/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.html 
+  - /review/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530
 ---
 
 I wanted at least __15inch display__ processor __i7-8750H__, reasonable graphics __P1000__, at least __max 64GB RAM__, __RJ45__, __trackpoint__, physical __resilience__. I first decided to buy ZBook 15 G5 over Thinkpad P52 and Precision 7530, but ended up using Thinkpad P52.
