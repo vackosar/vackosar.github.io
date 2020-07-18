@@ -2,7 +2,11 @@
 layout: post
 title: "Linux Text To Speech Comparison: Flite Vs Pico2Wave Vs Festival"
 date: 2016-12-26
+categories: software
 description: Comparison of open-source text to speech software in terms of pleasantness, comprehensibility, and modularity.
+permalink: /:categories/:title
+redirect_from:
+- /2016/12/26/Flite-Vs-Festival
 ---
 
 [Flite](http://www.festvox.org/flite/) in comparison to [Festival](http://www.festvox.org/festival/) has:
