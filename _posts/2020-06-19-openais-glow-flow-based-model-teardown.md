@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "OpenAI's Glow - Representations Must Flow"
+title: "OpenAI's Glow - Flow-Based Model Teardown"
 date: 2020-06-19
 categories: ML
 description: Get interpretable latent representations by composing non-linear invertible functions and maximizing the exact log-likelihood.
