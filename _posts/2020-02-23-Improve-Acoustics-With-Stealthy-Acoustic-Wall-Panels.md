@@ -8,6 +8,7 @@ image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/imag
 permalink: /:categories/:title
 redirect_from:
 - /2020/02/23/Stealthy-acoustic-panels.html 
+- /health/Stealthy-acoustic-panels
 ---
 
 An acoustic world map is a pretty stealthy and cheap solution as the panels are only visible from the sides. I used double-sided adhesive tape to attach the light and thin panels. The foam is "acoustic molitan CME3535" from the Hornbach DIY store costing about $20, so it is probably not super high quality.
