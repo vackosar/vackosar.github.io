@@ -24,6 +24,9 @@ So the problem above can be restated as: How to transform the ore from this geog
 
 <img alt="Earth Mover's Distance is amount multiplied by distance." style="width: 90%; max-width: 500px" src="/images/earth-movers-distance.png">
 
+Earth mover distance time complexity is super-cubic as can be found in [this book Network Flows: Theory, Algorithms, and Applications](https://www.amazon.com/Network-Flows-Theory-Algorithms-Applications/dp/013617549X).
+There are papers on approximating EMD with [quadratic complexity](http://proceedings.mlr.press/v37/kusnerb15.pdf) in general case and [linear complexity](http://proceedings.mlr.press/v97/atasu19a/atasu19a.pdf) if pre-computation for a document search problem is allowed.
+
 
 ### What is Word Mover's Distance (WMD)?
 Word Mover's Distance is like Earth Movers Distance between text documents, where
@@ -39,7 +42,7 @@ Words vectors in above can be for example Word2vec embeddings.
 Word Embedding Weighted Average Embedding is a vector calculated as frequency weighted average of word vectors in a document.
 
 - WM Distance uses more detailed information and captures move semantics than WEWA.
-- WM Distance has higher complexity \\( O(L^3 \log(L)) \\) compared to WEWA's \\( O(L) \\).
+- WM Distance has higher complexity \\( O(L^3 \log(L)) \\) compared to WEWA's \\( O(L) \\), where \\( L \\) is document length.
 
 
 ### Word Mover's Embedding
@@ -113,3 +116,7 @@ Full algorithm is following:
 #### Speed up
 
 Complexity is \\( O(NRL \log(L)) \\) when the random documents size (topic count) is constant. That stands in contrast to KNN-WMD variant \\( O(N^2L^3log(L)) \\).
+
+
+### Further reading
+
