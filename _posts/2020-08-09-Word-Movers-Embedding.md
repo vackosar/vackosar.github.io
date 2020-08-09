@@ -11,7 +11,7 @@ permalink: /:categories/:title
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<img alt="Word Mover's Embedding is a document embedding." style="width: 90%; max-width: 900px" src="/images/word-movers-embedding.png">
+<img alt="Word Mover's Embedding is a document embedding." style="width: 90%; max-width: 500px" src="/images/word-movers-embedding.png">
 
 ### What is Earth Mover's Distance?
 
@@ -22,7 +22,7 @@ Cost optimization of transportation of gold ore from mines to refineries, where 
 Earth Movers Distance is also a distance between probability distributions.
 So the problem above can be restated as: How to transform the ore from this geographical distribution to this geographical distribution for the least hauling cost.
 
-<img alt="Earth Mover's Distance is amount multiplied by distance." style="width: 90%; max-width: 900px" src="/images/earth-movers-distance.png">
+<img alt="Earth Mover's Distance is amount multiplied by distance." style="width: 90%; max-width: 500px" src="/images/earth-movers-distance.png">
 
 
 ### What is Word Mover's Distance (WMD)?
@@ -63,6 +63,8 @@ Note that the random document can only be close to the shortest path between the
 \\( \approx \frac{1}{R} exp[ - \gamma (WMD(x, \omega_k) + WMD(x, \omega_k)) ] \\)
 \\( \approx \frac{1}{R} \exp [- \gamma \mathit{WMD}(x, y) ] \\)
 
+<img alt="Word Mover's Distance dominated by single common random document distance." style="width: 90%; max-width: 900px" src="/images/word-movers-distance-vs-embedding.png">
+
 
 ### Rich Random Documents
 
@@ -77,8 +79,9 @@ Perhaps for the purposes of the proof, [the paper](https://arxiv.org/abs/1811.01
 
 The vector generation is used in the paper [cites an observation](https://arxiv.org/pdf/1502.03520.pdf) that Word2vec and GloVe words vector direction is approximately isotropic.
 That is normalized word vectors are uniformly distributed on a unit sphere.
+We can generate these by uniformly sampling a cube and then normalizing the results.
 
-\\( v_j ~ \mathit{Uniform}[v_{min}, v_{max}] \\)
+\\( v_j \approx \mathit{Uniform}[v_{min}, v_{max}] \\)
 
 
 #### Exclusive Document Collection
@@ -105,3 +108,6 @@ Full algorithm is following:
 - Return matrix \\( Z \\) containing the embeddings.
 
 
+#### Speed up
+
+Complexity is \\( O(NRL \log(L)) \\) when the random documents size (topic count) is constant. That stands in contrast to KNN-WMD variant \\( O(N^2L^3log(L)) \\).
