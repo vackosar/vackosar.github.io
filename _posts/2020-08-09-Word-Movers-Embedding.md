@@ -39,7 +39,7 @@ Words vectors in above can be for example Word2vec embeddings.
 Word Embedding Weighted Average Embedding is a vector calculated as frequency weighted average of word vectors in a document.
 
 - WM Distance uses more detailed information and captures move semantics than WEWA.
-- WM Distance has higher complexity O(L^3 log(L)) compared to WEWA's O(L).
+- WM Distance has higher complexity \\( O(L^3 \log(L)) \\) compared to WEWA's \\( O(L) \\).
 
 
 ### Word Mover's Embedding
@@ -82,6 +82,8 @@ That is normalized word vectors are uniformly distributed on a unit sphere.
 We can generate these by uniformly sampling a cube and then normalizing the results.
 
 \\( v_j \approx \mathit{Uniform}[v_{min}, v_{max}] \\)
+
+Read more about [distribution of norms of Word2vec and FastText words vectors in another post of mine](/ml/FastText-Vector-Norms-And-OOV-Words).
 
 
 #### Exclusive Document Collection
