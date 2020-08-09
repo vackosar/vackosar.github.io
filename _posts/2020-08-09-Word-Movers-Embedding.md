@@ -78,7 +78,7 @@ And how do we generate documents anyway?
 
 #### Random Words
 To generate documents we only need to generate enough random word vectors to represent words.
-Perhaps for the purposes of the proof, [the paper](https://arxiv.org/abs/1811.01713) generate random vectors instead of random words from a dictionary and then drawing words for them.
+Perhaps for the purposes of the proof, [the WME paper](https://arxiv.org/abs/1811.01713) generate random vectors instead of random words from a dictionary and then drawing words for them.
 
 The vector generation is used in the paper [cites an observation](https://arxiv.org/pdf/1502.03520.pdf) that Word2vec and GloVe words vector direction is approximately isotropic.
 That is normalized word vectors are uniformly distributed on a unit sphere.
@@ -113,10 +113,9 @@ Full algorithm is following:
 - Return matrix \\( Z \\) containing the embeddings.
 
 
-#### Speed up
+#### WME vs KNN-WMD
 
-Complexity is \\( O(NRL \log(L)) \\) when the random documents size (topic count) is constant. That stands in contrast to KNN-WMD variant \\( O(N^2L^3log(L)) \\).
+The method complexity is \\( O(NRL \log(L)) \\) when the random documents size (topic count) is constant. That stands in contrast to KNN-WMD variant \\( O(N^2L^3log(L)) \\).
+Additionally, [WME slightly outperformed KNN-WMD in classification accuracy](https://arxiv.org/abs/1811.01713).
 
-
-### Further reading
 
