@@ -1,0 +1,107 @@
+---
+layout: post
+title: "Word Mover's vs Weighted Average Document Embedding"
+date: 2020-06-19
+categories: ml
+description: What is Word Mover's Embedding and how it approximates Word Mover's Distance between documents.
+image: /images/word-movers-embedding.png
+permalink: /:categories/:title
+---
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<img alt="Word Mover's Embedding is a document embedding." style="width: 90%; max-width: 900px" src="/images/word-movers-embedding.png">
+
+### What is Earth Mover's Distance?
+
+It is minimum amount of dirt multiplied by distance (flow cost) needed to transform one pile of dirt into another pile of dirt.
+Despite the name, superior analogy is that of a transportation problem.
+Cost optimization of transportation of gold ore from mines to refineries, where each refinery can accept only certain percentage of the ore.
+
+Earth Movers Distance is also a distance between probability distributions.
+So the problem above can be restated as: How to transform the ore from this geographical distribution to this geographical distribution for the least hauling cost.
+
+<img alt="Earth Mover's Distance is amount multiplied by distance." style="width: 90%; max-width: 900px" src="/images/earth-movers-distance.png">
+
+
+### What is Word Mover's Distance (WMD)?
+Word Mover's Distance is like Earth Movers Distance between text documents, where
+
+- The probability distribution is over word vectors of the document's words.
+- The probability is normalized frequency of given words in the document.
+- The distance between word vectors can be a cosine similarity or euclidean distance.
+
+Words vectors in above can be for example Word2vec embeddings.
+
+### Word Mover's vs Word Embedding Weighted Average Distance
+
+Word Embedding Weighted Average Embedding is a vector calculated as frequency weighted average of word vectors in a document.
+
+- WM Distance uses more detailed information and captures move semantics than WEWA.
+- WM Distance has higher complexity O(L^3 log(L)) compared to WEWA's O(L).
+
+
+### Word Mover's Embedding
+
+[Word Mover's Embedding](https://arxiv.org/abs/1811.01713) is a vector embedding of a document such that its dot product
+with vector of other document approximates exponential of Word Mover's Distance between the documents.
+
+#### The Random Encounter
+The j-th dimension value of an embedding is defined using a WMD distance to a "randomly generated document" denoted by \\( \omega_j \\). 
+
+\\( \mathit{WME}(x)_j = \\) 
+\\( \frac{1}{\sqrt{R}} \exp[ - \gamma \mathit{WMD}(x, \omega_j) ] \\)
+
+Let's for a moment assume we know how to randomly generate documents. Why would above make sense?
+
+As teased above, the dot product of the embeddings is dominated by a random document that lies on the shortest path between the documents.
+Note that the random document can only be close to the shortest path between the documents if it is "rich enough".
+
+\\( \mathit{WME}(x) \cdot \mathit{WME}(y) = \\)
+\\( \frac{1}{R} \sum_j \exp[ - \gamma (\mathit{WMD}(x, \omega_j) + \mathit{WMD}(x, \omega_j) ] \\)
+\\( \approx \frac{1}{R} exp[ - \gamma (WMD(x, \omega_k) + WMD(x, \omega_k)) ] \\)
+\\( \approx \frac{1}{R} \exp [- \gamma \mathit{WMD}(x, y) ] \\)
+
+
+### Rich Random Documents
+
+You are rightly skeptical about generating random documents. 
+Don't we need to generate too many, which would defeat our attempt to speed up the calculation?
+And how do we generate documents anyway?
+
+
+#### Random Words
+To generate documents we only need to generate enough random word vectors to represent words.
+Perhaps for the purposes of the proof, [the paper](https://arxiv.org/abs/1811.01713) generate random vectors instead of random words from a dictionary and then drawing words for them.
+
+The vector generation is used in the paper [cites an observation](https://arxiv.org/pdf/1502.03520.pdf) that Word2vec and GloVe words vector direction is approximately isotropic.
+That is normalized word vectors are uniformly distributed on a unit sphere.
+
+\\( v_j ~ \mathit{Uniform}[v_{min}, v_{max}] \\)
+
+
+#### Exclusive Document Collection
+
+But how many words is enough in the generated documents?
+If we generate large documents, we will not obtain any speed up!
+So far, I haven't mentioned any restrictions on the document collection we would like to compare. Here it comes.
+
+Fortunately the paper observed that number of words is enough to be on the order of number of topics in the collection of the documents to compare.
+So if we have document collection with small enough topic number, we should obtain good accuracy if we use maximum generated document size on that order.
+
+#### How Many Rando-Docs?
+
+Thanks to fast convergence the paper found that the count on the order of thousands is enough, which was also on the order of number of documents they had in their testing datasets.
+I am not sure, how many would be needed in the document count in the collection would be bigger than that.
+
+#### The Algo
+Full algorithm is following:
+
+- Generate R random docs:
+    - Generate random document size.
+    - Generate that number of words. 
+    - For all input documents calculate Word Mover's Embedding projection to just generated document as store it to matrix \\( Z \\).
+- Return matrix \\( Z \\) containing the embeddings.
+
+
