@@ -52,6 +52,8 @@ It would be interesting to compare BERT transformer model sentence embedding com
 If I understand correctly, BERT is of linear complexity in the length of the document, although total running time may be still longer for BERT.
 There is [a sentence similarity model from Google called Bleurt](https://github.com/google-research/bleurt).
 
+In terms of classification accuracy the BERT should definitely win, but I wonder by how much margin.
+
 
 ### Word Mover's Embedding
 
