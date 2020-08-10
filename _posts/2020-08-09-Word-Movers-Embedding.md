@@ -52,7 +52,7 @@ The similarity measure used for WEWA is cosine similarity.
 ### Word Mover's Distance vs BERT Similarity
 
 It would be interesting to compare BERT transformer model sentence embedding computational complexity to WMD.
-If I understand correctly, BERT is of linear complexity in the length of the document, although total running time may be still longer for BERT.
+If I understand correctly, BERT is of linear complexity in the length of the document, although total running time may be still in many cases be longer for BERT.
 There is [a sentence similarity model from Google called Bleurt](https://github.com/google-research/bleurt).
 
 In terms of classification accuracy the BERT should definitely win, but I wonder by how much margin.
@@ -64,7 +64,7 @@ In terms of classification accuracy the BERT should definitely win, but I wonder
 with vector of other document approximates exponential of Word Mover's Distance between the documents.
 
 
-#### The Random Encounter
+#### Random Encounters
 The j-th dimension value of an embedding is defined using a WMD distance to a "randomly generated document" denoted by \\( \omega_j \\). 
 
 \\( \mathit{WME}(x)_j = \\) 
@@ -109,7 +109,7 @@ But how many words per random document is enough?
 If we generate too large documents, we will not obtain any speed up!
 So far, I haven't mentioned any restrictions on the document collection we would like to embed. Here it comes.
 
-The paper observed that the number of random words on the order of _number of topics_ in the collection of the documents is enough.
+The paper observed that the number of random words on the order of _the number of topics_ in the collection of the documents is enough.
 So if we have document collection with small enough topic count, we should obtain good accuracy, while reducing time complexity.
 
 
@@ -119,7 +119,7 @@ Thanks to fast convergence the paper found that the count on the order of thousa
 I am not sure, how many would be needed in the document count in the collection would be bigger than that.
 
 
-#### The Algo
+#### Algo
 Full algorithm is following:
 
 - Generate \\( R \\) random docs:
@@ -127,6 +127,18 @@ Full algorithm is following:
     - Generate \\( D \\) random words. 
     - For all input documents calculate Word Mover's Embedding projection to just generated document as store it to matrix \\( Z \\).
 - Return matrix \\( Z \\) containing the embeddings.
+
+
+#### Kernel Of Approximate Truth
+
+The approximation is motivated by analytical proof of convergence of _Word Mover's Kernel_ defined below to the WMD.
+The proof utilizes theory of Random Features to show convergence of the inner product between WMEs to a positive-definite kernel that can interpreted as a soft version of WMD.
+
+\\( k(x, y) = \\)
+\\( \int p(\omega) \phi_{\omega}(x) \phi_{\omega}(y) \mathbf{d}\omega \\),
+
+where \\( \phi_{\omega}(x) := \exp [- \gamma \mathit{WMD}(x, \omega) ] \\)
+
 
 
 #### WME vs KNN-WMD
