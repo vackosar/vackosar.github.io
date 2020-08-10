@@ -15,17 +15,18 @@ permalink: /:categories/:title
 
 ### What is Earth Mover's Distance?
 
-It is minimum amount of dirt multiplied by distance (flow cost) needed to transform one pile of dirt into another pile of dirt.
-Despite the name, superior analogy is that of a transportation problem.
-Cost optimization of transportation of gold ore from mines to refineries, where each refinery can accept only certain percentage of the ore.
-
-Earth Movers Distance is also a distance between probability distributions.
-So the problem above can be restated as: How to transform the ore from this geographical distribution to this geographical distribution for the least hauling cost.
+It is minimum amount of dirt multiplied by distance needed to transform one pile of dirt into another pile of dirt.
 
 <img alt="Earth Mover's Distance is amount multiplied by distance." style="width: 90%; max-width: 500px" src="/images/earth-movers-distance.png">
 
-Earth mover distance time complexity is super-cubic as can be found in [this book Network Flows: Theory, Algorithms, and Applications](https://www.amazon.com/Network-Flows-Theory-Algorithms-Applications/dp/013617549X).
-There are papers on approximating EMD with [quadratic complexity](http://proceedings.mlr.press/v37/kusnerb15.pdf) in general case and [linear complexity](http://proceedings.mlr.press/v97/atasu19a/atasu19a.pdf) if pre-computation for a document search problem is allowed.
+Despite the earth in the name, better analogy is that of a transportation problem. 
+For example, cost optimization of transportation of gold ore from mines to refineries, where each refinery can accept only certain percentage of the ore.
+
+Earth Movers Distance is also a distance metric between probability distributions.
+So the problem above can be restated: How to transform the this geographical distribution of gold ore to this geographical distribution for the least hauling cost.
+
+Earth mover distance computational complexity is super-cubic as can be found in [Network Flows: Theory, Algorithms, and Applications](https://www.amazon.com/Network-Flows-Theory-Algorithms-Applications/dp/013617549X).
+There are papers on approximating EMD with [quadratic complexity](http://proceedings.mlr.press/v37/kusnerb15.pdf) in general case and [linear complexity](http://proceedings.mlr.press/v97/atasu19a/atasu19a.pdf) in document search if pre-computation is allowed.
 
 
 ### What is Word Mover's Distance (WMD)?
@@ -37,12 +38,19 @@ Word Mover's Distance is like Earth Movers Distance between text documents, wher
 
 Words vectors in above can be for example Word2vec embeddings.
 
-### Word Mover's vs Word Embedding Weighted Average Distance
+### Word Mover's Distance vs Word Embedding Weighted Average Similarity
 
 Word Embedding Weighted Average Embedding is a vector calculated as frequency weighted average of word vectors in a document.
+The similarity measure used for WEWA is cosine similarity.
 
-- WM Distance uses more detailed information and captures move semantics than WEWA.
-- WM Distance has higher complexity \\( O(L^3 \log(L)) \\) compared to WEWA's \\( O(L) \\), where \\( L \\) is document length.
+- WMD uses more detailed information and captures move semantics than WEWA.
+- WMD has much higher complexity of \\( O(L^3 \log(L)) \\) compared to WEWA's \\( O(L) \\), where \\( L \\) is document length.
+
+### Word Mover's Distance vs BERT Similarity
+
+It would be interesting to compare BERT transformer model sentence embedding computational complexity to WMD.
+If I understand correctly, BERT is of linear complexity in the length of the document, although total running time may be still longer for BERT.
+There is [a sentence similarity model from Google called Bleurt](https://github.com/google-research/bleurt).
 
 
 ### Word Mover's Embedding
@@ -78,11 +86,11 @@ And how do we generate documents anyway?
 
 #### Random Words
 To generate documents we only need to generate enough random word vectors to represent words.
-Perhaps for the purposes of the proof, [the WME paper](https://arxiv.org/abs/1811.01713) generate random vectors instead of random words from a dictionary and then drawing words for them.
+Perhaps for the purposes of the proof or to have ability to an average of generate words, [the WME paper](https://arxiv.org/abs/1811.01713) generate random vectors instead of random words from a dictionary and then drawing words for them.
 
-The vector generation is used in the paper [cites an observation](https://arxiv.org/pdf/1502.03520.pdf) that Word2vec and GloVe words vector direction is approximately isotropic.
+The paper [cites an observation](https://arxiv.org/pdf/1502.03520.pdf) that Word2vec and GloVe words vector direction is approximately isotropic.
 That is normalized word vectors are uniformly distributed on a unit sphere.
-We can generate these by uniformly sampling a cube and then normalizing the results.
+We can generate these by uniformly sampling from a hyper-cube and then normalizing the results.
 
 \\( v_j \approx \mathit{Uniform}[v_{min}, v_{max}] \\)
 
@@ -91,12 +99,12 @@ Read more about [distribution of norms of Word2vec and FastText words vectors in
 
 #### Exclusive Document Collection
 
-But how many words is enough in the generated documents?
-If we generate large documents, we will not obtain any speed up!
-So far, I haven't mentioned any restrictions on the document collection we would like to compare. Here it comes.
+But how many words per random document is enough?
+If we generate too large documents, we will not obtain any speed up!
+So far, I haven't mentioned any restrictions on the document collection we would like to embed. Here it comes.
 
-Fortunately the paper observed that number of words is enough to be on the order of number of topics in the collection of the documents to compare.
-So if we have document collection with small enough topic number, we should obtain good accuracy if we use maximum generated document size on that order.
+The paper observed that the number of random words on the order of _number of topics_ in the collection of the documents is enough.
+So if we have document collection with small enough topic count, we should obtain good accuracy, while reducing time complexity.
 
 #### How Many Rando-Docs?
 
@@ -106,9 +114,9 @@ I am not sure, how many would be needed in the document count in the collection 
 #### The Algo
 Full algorithm is following:
 
-- Generate R random docs:
-    - Generate random document size.
-    - Generate that number of words. 
+- Generate \\( R \\) random docs:
+    - Generate random document size \\( D \\).
+    - Generate \\( D \\) random words. 
     - For all input documents calculate Word Mover's Embedding projection to just generated document as store it to matrix \\( Z \\).
 - Return matrix \\( Z \\) containing the embeddings.
 
