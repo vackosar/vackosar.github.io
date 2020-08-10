@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Word Mover's Embedding vs Weighted Average"
+title: "Word Mover's Embedding: Cheap WMD for Document Vectors"
 date: 2020-06-19
 categories: ml
-description: What is Word Mover's Embedding and how it approximates Word Mover's Distance between documents.
+description: What is Word Mover's Embedding for documents and how it approximates Word Mover's Distance between documents.
 image: /images/word-movers-embedding.png
 permalink: /:categories/:title
 ---
