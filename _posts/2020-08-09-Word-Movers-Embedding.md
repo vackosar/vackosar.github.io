@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Word Mover's vs Weighted Average Document Embedding"
+title: "Word Mover's Embedding vs Weighted Average"
 date: 2020-06-19
 categories: ml
 description: What is Word Mover's Embedding and how it approximates Word Mover's Distance between documents.
