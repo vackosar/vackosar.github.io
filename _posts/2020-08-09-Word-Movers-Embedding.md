@@ -13,6 +13,7 @@ permalink: /:categories/:title
 
 <img alt="Word Mover's Embedding is a document embedding." style="width: 90%; max-width: 500px" src="/images/word-movers-embedding.png">
 
+
 ### What is Earth Mover's Distance?
 
 It is minimum amount of dirt multiplied by distance needed to transform one pile of dirt into another pile of dirt.
@@ -38,6 +39,7 @@ Word Mover's Distance is like Earth Movers Distance between text documents, wher
 
 Words vectors in above can be for example Word2vec embeddings.
 
+
 ### Word Mover's Distance vs Word Embedding Weighted Average Similarity
 
 Word Embedding Weighted Average Embedding is a vector calculated as frequency weighted average of word vectors in a document.
@@ -45,6 +47,7 @@ The similarity measure used for WEWA is cosine similarity.
 
 - WMD uses more detailed information and captures move semantics than WEWA.
 - WMD has much higher complexity of \\( O(L^3 \log(L)) \\) compared to WEWA's \\( O(L) \\), where \\( L \\) is document length.
+
 
 ### Word Mover's Distance vs BERT Similarity
 
@@ -59,6 +62,7 @@ In terms of classification accuracy the BERT should definitely win, but I wonder
 
 [Word Mover's Embedding](https://arxiv.org/abs/1811.01713) is a vector embedding of a document such that its dot product
 with vector of other document approximates exponential of Word Mover's Distance between the documents.
+
 
 #### The Random Encounter
 The j-th dimension value of an embedding is defined using a WMD distance to a "randomly generated document" denoted by \\( \omega_j \\). 
@@ -90,8 +94,8 @@ And how do we generate documents anyway?
 To generate documents we only need to generate enough random word vectors to represent words.
 Perhaps for the purposes of the proof or to have ability to an average of generate words, [the WME paper](https://arxiv.org/abs/1811.01713) generate random vectors instead of random words from a dictionary and then drawing words for them.
 
-The paper [cites an observation](https://arxiv.org/pdf/1502.03520.pdf) that Word2vec and GloVe words vector direction is approximately isotropic.
-That is normalized word vectors are uniformly distributed on a unit sphere.
+The paper [cites an observation](https://arxiv.org/pdf/1502.03520.pdf) that Word2vec and GloVe words vector direction distribution is approximately isotropic.
+That means that normalized word vectors are uniformly distributed on a unit sphere.
 We can generate these by uniformly sampling from a hyper-cube and then normalizing the results.
 
 \\( v_j \approx \mathit{Uniform}[v_{min}, v_{max}] \\)
@@ -108,10 +112,12 @@ So far, I haven't mentioned any restrictions on the document collection we would
 The paper observed that the number of random words on the order of _number of topics_ in the collection of the documents is enough.
 So if we have document collection with small enough topic count, we should obtain good accuracy, while reducing time complexity.
 
+
 #### How Many Rando-Docs?
 
 Thanks to fast convergence the paper found that the count on the order of thousands is enough, which was also on the order of number of documents they had in their testing datasets.
 I am not sure, how many would be needed in the document count in the collection would be bigger than that.
+
 
 #### The Algo
 Full algorithm is following:
