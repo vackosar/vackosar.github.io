@@ -92,7 +92,7 @@ And how do we generate documents anyway?
 
 #### Random Words
 To generate documents we only need to generate enough random word vectors to represent words.
-Perhaps for the purposes of the proof or to have ability to an average of generate words, [the WME paper](https://arxiv.org/abs/1811.01713) generate random vectors instead of random words from a dictionary and then drawing words for them.
+Perhaps for the purposes of the proof or to have an ability to generate "mixed-words", [the WME paper](https://arxiv.org/abs/1811.01713) generate random vectors instead of random words from a dictionary and then drawing words for them.
 
 The paper [cites an observation](https://arxiv.org/pdf/1502.03520.pdf) that Word2vec and GloVe words vector direction distribution is approximately isotropic.
 That means that normalized word vectors are uniformly distributed on a unit sphere.
