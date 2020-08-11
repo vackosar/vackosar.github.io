@@ -33,7 +33,7 @@ There are papers on approximating EMD with [quadratic complexity](http://proceed
 
 
 ### What is Word Mover's Distance (WMD)?
-Word Mover's Distance is like Earth Movers Distance between text documents, where
+Word Mover's Distance is like Earth Movers Distance but between text documents.
 
 - The probability distribution is over word vectors of the document's words.
 - The probability is normalized frequency of unique words in the document.
@@ -155,3 +155,7 @@ The method complexity is \\( O(NRL \log(L)) \\) when the random documents size (
 Additionally, [WME slightly outperformed KNN-WMD in classification accuracy](https://arxiv.org/abs/1811.01713).
 
 
+
+### Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uuNLz6eT_tg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
