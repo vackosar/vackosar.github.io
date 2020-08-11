@@ -62,8 +62,8 @@ In terms of classification accuracy the BERT should definitely win, but I wonder
 
 ### Word Mover's Embedding
 
-[Word Mover's Embedding](https://arxiv.org/abs/1811.01713) is a vector embedding of a document such that its dot product
-with vector of other document approximates exponential of Word Mover's Distance between the documents.
+In oversimplified terms, [Word Mover's Embedding](https://arxiv.org/abs/1811.01713) is a vector embedding of a document such that its dot product
+with documents in a collection approximates Word Mover's Distance between the documents for less computational cost.
 
 
 #### Random Encounters
