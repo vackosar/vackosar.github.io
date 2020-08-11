@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Word Mover's Embedding: Cheap WMD-Classification Of Documents"
+title: "Word Mover's Embedding: Cheap WMD For Documents"
 date: 2020-06-19
 categories: ml
 description: What is Word Mover's Embedding for documents and how it approximates Word Mover's Distance between documents.
 image: /images/word-movers-embedding.png
 permalink: /:categories/:title
+redirect_from:
+  - /ml/Word-Movers-Embedding 
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
