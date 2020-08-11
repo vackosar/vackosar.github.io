@@ -65,6 +65,10 @@ In terms of classification accuracy the BERT should definitely win, but I wonder
 In oversimplified terms, [Word Mover's Embedding](https://arxiv.org/abs/1811.01713) is a vector embedding of a document such that its dot product
 with documents in a collection approximates Word Mover's Distance between the documents for less computational cost.
 
+To address the main computational complexity, we need to cut cost of WMD calculation.
+Could we make one of the documents in each side of WMD calculation smaller?
+For small constant size \\( D \\) document \\( \omega \\), the complexity of WMD would be nearly linear \\( O(L \log(L)) \\) instead of \\( O(L^3 \log(L)) \\)!
+So if we could compare all documents not against each other but rather against \\(R \\) much smaller documents, we could get complexity down to \\( O(NRL \log(L)) \\) from \\( O(N^2 L^3 \log(L)) \\)!
 
 #### Random Encounters
 The j-th dimension value of an embedding is defined using a WMD distance to a "randomly generated document" denoted by \\( \omega_j \\). 
