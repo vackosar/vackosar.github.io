@@ -78,8 +78,8 @@ As teased above, the dot product of the embeddings is dominated by a random docu
 Note that the random document can only be close to the shortest path between the documents if it is "rich enough".
 
 \\( \mathit{WME}(x) \cdot \mathit{WME}(y) = \\)
-\\( \frac{1}{R} \sum_j \exp[ - \gamma (\mathit{WMD}(x, \omega_j) + \mathit{WMD}(x, \omega_j) ] \\)
-\\( \approx \frac{1}{R} exp[ - \gamma (WMD(x, \omega_k) + WMD(x, \omega_k)) ] \\)
+\\( \frac{1}{R} \sum_j \exp[ - \gamma (\mathit{WMD}(x, \omega_j) + \mathit{WMD}(y, \omega_j) ] \\)
+\\( \approx \frac{1}{R} exp[ - \gamma (WMD(x, \omega_k) + WMD(y, \omega_k)) ] \\)
 \\( \approx \frac{1}{R} \exp [- \gamma \mathit{WMD}(x, y) ] \\)
 
 <img alt="Word Mover's Distance dominated by single common random document distance." style="width: 90%; max-width: 900px" src="/images/word-movers-distance-vs-embedding.png">
