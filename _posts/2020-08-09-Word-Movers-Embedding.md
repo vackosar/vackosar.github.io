@@ -45,7 +45,7 @@ Words vectors in above can be for example Word2vec embeddings.
 Word Embedding Weighted Average Embedding is a vector calculated as frequency weighted average of word vectors in a document.
 The similarity measure used for WEWA is cosine similarity.
 
-<img alt="Average of two vectors." style="width: 90%; max-width: 500px" src="/images/vector-average.png">
+<img alt="Average of two vectors." style="width: 90%; max-width: 300px" src="/images/vector-average.png">
 
 - WMD uses more detailed information and captures move semantics than WEWA.
 - WMD has much higher complexity of \\( O(L^3 \log(L)) \\) compared to WEWA's \\( O(L) \\), where \\( L \\) is document length.
