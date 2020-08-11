@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Word Mover's Embedding: Cheap WMD for Document Vectors"
+title: "Word Mover's Embedding: Cheap WMD-Classification Of Documents"
 date: 2020-06-19
 categories: ml
 description: What is Word Mover's Embedding for documents and how it approximates Word Mover's Distance between documents.
