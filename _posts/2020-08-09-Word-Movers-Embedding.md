@@ -21,10 +21,10 @@ It is minimum amount of dirt multiplied by distance needed to transform one pile
 <img alt="Earth Mover's Distance is amount multiplied by distance." style="width: 90%; max-width: 500px" src="/images/earth-movers-distance.png">
 
 Despite the earth in the name, better analogy is that of a transportation problem. 
-For example, cost optimization of transportation of gold ore from mines to refineries, where each refinery can accept only certain percentage of the ore.
+Good example of transportation problem is cost optimization of transportation of gold ore from mines to refineries, where each refinery can accept only certain percentage of the ore.
 
 Earth Movers Distance is also a distance metric between probability distributions.
-So the problem above can be restated: How to transform the this geographical distribution of gold ore to this geographical distribution for the least hauling cost.
+So the problem above can be restated into following question. How to transform the this geographical distribution of gold ore to this geographical distribution for the least hauling cost?
 
 Earth mover distance computational complexity is super-cubic as can be found in [Network Flows: Theory, Algorithms, and Applications](https://www.amazon.com/Network-Flows-Theory-Algorithms-Applications/dp/013617549X).
 There are papers on approximating EMD with [quadratic complexity](http://proceedings.mlr.press/v37/kusnerb15.pdf) in general case and [linear complexity](http://proceedings.mlr.press/v97/atasu19a/atasu19a.pdf) in document search if pre-computation is allowed.
@@ -34,7 +34,7 @@ There are papers on approximating EMD with [quadratic complexity](http://proceed
 Word Mover's Distance is like Earth Movers Distance between text documents, where
 
 - The probability distribution is over word vectors of the document's words.
-- The probability is normalized frequency of given words in the document.
+- The probability is normalized frequency of unique words in the document.
 - The distance between word vectors can be a cosine similarity or euclidean distance.
 
 Words vectors in above can be for example Word2vec embeddings.
@@ -44,6 +44,8 @@ Words vectors in above can be for example Word2vec embeddings.
 
 Word Embedding Weighted Average Embedding is a vector calculated as frequency weighted average of word vectors in a document.
 The similarity measure used for WEWA is cosine similarity.
+
+<img alt="Average of two vectors." style="width: 90%; max-width: 500px" src="/images/vector-average.png">
 
 - WMD uses more detailed information and captures move semantics than WEWA.
 - WMD has much higher complexity of \\( O(L^3 \log(L)) \\) compared to WEWA's \\( O(L) \\), where \\( L \\) is document length.
