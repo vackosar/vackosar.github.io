@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Thinkpad P53 vs P52 Thermals"
+title: "Thinkpad P53 vs P52 Thermals: Any Improvement?"
 date: 2019-11-02
 categories: review
-description: Thinkpad P53 is not cooler brother of P52.
+description: Is Thinkpad P53 the cooler brother of P52?
 permalink: /:categories/:title
 image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-11-02-p52-vs-p53-thermals-p53.png
 redirect_from:
   - /2019/11/02/Thinkpad-P53-vs-P52-Thermals.html
 ---
 
-I have been having minor thermal issues with my Thinkpad P53 that I decided to buy and share infomartion about in [previous post](https://vaclavkosar.com/2019/03/03/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.html). Specifically I had "dmesg" command print messages about "package temperature above threshold" indicating that CPU is being throttled.
+I have been having minor thermal issues with my Thinkpad P53 that I decided to buy and share information about in [my post on P52](https://vaclavkosar.com/2019/03/03/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.html). Specifically I had "dmesg" command print messages about "package temperature above threshold" indicating that CPU is being throttled.
 
 In general people complain about bad thermal design on latest Thinkpad including P52 e.g. [single heatpipe](http://forum.notebookreview.com/attachments/cooling_comparison-png.160125/), [prolonged cinebench performance dropoff](https://www.notebookcheck.net/Lenovo-ThinkPad-P52-i7-P1000-FHD-Workstation-Review.322974.0.html).
 
