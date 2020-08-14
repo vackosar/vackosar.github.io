@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Boundary Control Entity Architecture: Pattern to Structure Your Classes"
+title: "Boundary Control Entity Architecture: The Pattern to Structure Your Classes"
 image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/bce.svg
 categories: software
 description: BCE is a file structure for source code files sometimes with additional dependency restrictions. Example included!
