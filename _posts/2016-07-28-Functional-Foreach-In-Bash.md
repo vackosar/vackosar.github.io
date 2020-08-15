@@ -3,6 +3,10 @@ layout: post
 title: "Functional ForEach In Bash"
 date: 2016-07-28
 description: Don't you hate verbosity of Bash's while-do statements when writing in-line scripts? No worries, you can improve on that!
+categories: software
+permalink: /:categories/:title
+redirect_from:
+- /2016/07/28/Functional-Foreach-In-Bash.html 
 ---
 
 Instead of writing long-winded
