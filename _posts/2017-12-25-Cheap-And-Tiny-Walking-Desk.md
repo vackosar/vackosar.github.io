@@ -1,8 +1,13 @@
 ---
 layout: post
-title: "Cheap And Tiny Walking Desk"
+title: "Walking Desk: Cheap And Tiny "
 date: 2017-12-25
-description: A review of my walking desk setup.
+categories: health
+description: A review of my motor-less walking desk setup.
+date: 2017-12-03
+permalink: /:categories/:title
+redirect_from:
+  - /2017/12/25/Cheap-And-Tiny-Walking-Desk.html 
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EnPrXfrZAeo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
