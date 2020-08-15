@@ -2,7 +2,11 @@
 layout: post
 title: "Debounce In Bash To Fix Lenovo Touchpad And Trackpoint Lost Sync"
 date: 2018-09-23
+categories: software
 description: Another functional programming tip for Bash.
+permalink: /:categories/:title
+redirect_from:
+  - /2018/09/23/Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.html
 ---
 
 ## Functional Debounce In Bash
