@@ -158,6 +158,10 @@ The method complexity is \\( O(NRL \log(L)) \\) when the random documents size (
 Additionally, [WME slightly outperformed KNN-WMD in classification accuracy](https://arxiv.org/abs/1811.01713).
 
 
+### 1-Minute Quiz
+
+Without active recall, you won't remember anything from the above. Take at least one round of the quiz below. You can also subscribe to get revision reminders or generate your own quizzes there.<br>
+<a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=83f9d7dd-0cbf-461d-a835-cbfc2024940a">1-Minute Word Mover's Distance Quiz</a>
 
 ### Video
 

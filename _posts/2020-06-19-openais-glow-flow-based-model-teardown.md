@@ -122,7 +122,7 @@ I increased saturation on one of the samples by 24%, such that the percentile ra
     <figcaption class="figure-caption">After saturation increase to match percentile ranks, I see the same colors! Do you?</figcaption>
 </figure>
 
-## Quiz
+## 1-Minute Quiz
 
 Retain what you have just read by taking training quiz generated from this article.<br>
 <br>
