@@ -16,6 +16,9 @@ redirect_from:
 <img alt="Word Mover's Embedding is a document embedding." style="width: 90%; max-width: 500px" src="/images/word-movers-embedding.png">
 
 
+Word Mover's Distance captures the semantic similarity between documents more accurately than the cosine similarity between word vector averages. 
+However, vanilla WMD has cubic computational complexity, which makes it impractical in many applications. How WMD works? Why is it so good? Is there any low complexity approximation of WMD?
+
 ### What is Earth Mover's Distance?
 
 It is minimum amount of dirt multiplied by distance needed to transform one pile of dirt into another pile of dirt.
