@@ -66,13 +66,13 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_080047.jpg"
         alt="A space ship just landed on a brutalist rooftop?"/>
-    <figcaption class="figure-caption">Did a space ship just landed on a brutalist rooftop?</figcaption>
+    <figcaption class="figure-caption">A space ship just landed on a brutalist rooftop?</figcaption>
 </figure>
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_080116.jpg"
-        alt="A polyclinic next to the town hall."/>
+        alt="A polyclinic next to the shiny town hall."/>
     <figcaption class="figure-caption">A polyclinic next to the shiny town hall.</figcaption>
 </figure>
 <figure class="figure">
