@@ -38,7 +38,7 @@ Enjoy photo gallery documenting the current state of the synthesis the stringent
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_075145.jpg"
+        src="/images/sunshine-plaza/IMG_20200821_075156.jpg"
         alt="Slunecni namesti in Prague"/>
     <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
 </figure>
