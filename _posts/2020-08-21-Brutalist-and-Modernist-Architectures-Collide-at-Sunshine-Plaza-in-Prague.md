@@ -21,7 +21,8 @@ Advertisement posts of a variety of local enterprises went up.
 The dominating spirit of achieving more with less using technology so far stayed in this europolis.
 You will see that for yourself during the tour around a magnetic resonance clinic south of the communal church center,
 a palm tree living inside of tiny glass bio-dome,
-telecommunication towers grabbing the rooftops like just landed space ships, sub-way tube over a pond,
+telecommunication towers grabbing the rooftops like just landed space ships,
+sub-way tube skylining over a pond,
 and a weird robotic art piece next to the future experimental automated restaurant.
 
 Enjoy the journey documenting the current state of the synthesis of the stringent with the liberated.
@@ -143,8 +144,8 @@ Enjoy the journey documenting the current state of the synthesis of the stringen
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_083215.jpg"
-        alt="A subway tube over a pond."/>
-    <figcaption class="figure-caption">A subway tube over a pond.</figcaption>
+        alt="A subway tube skylining over a pond."/>
+    <figcaption class="figure-caption">A subway tube skylining over a pond.</figcaption>
 </figure>
 <figure class="figure">
     <img
