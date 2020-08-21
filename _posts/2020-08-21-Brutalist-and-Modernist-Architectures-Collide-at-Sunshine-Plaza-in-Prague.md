@@ -18,31 +18,20 @@ Advertisement posts of a variety of small local enterprises went up.
 
 Fortunately, the dominating spirit of achieving more for the people with the new technology so far stayed.
 The magnetic resonance clinic south of the communal church center, palm tree living inside of tiny glass bio-dome,
-telecommunication towers grabbing the rooftops like just landed space ships, and sub-way tube over a pond.
+telecommunication towers grabbing the rooftops like just landed space ships, sub-way tube over a pond,
+and a weird robotic art piece next to the future experimental automated restaurant.
 
 Enjoy the photo gallery documenting the current state of the synthesis the stringent with the liberate below.
 
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200820_083517.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
-</figure>
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_074942.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
-</figure>
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_075156.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
+        alt="Sunshine Plaza from a hill top"/>
+    <figcaption class="figure-caption">Sunshine Plaza from a hill top</figcaption>
 </figure>
+
+
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
@@ -55,125 +44,139 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_075753.jpg"
         alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
+    <figcaption class="figure-caption">Little hill subway station in front of a new town hall.</figcaption>
 </figure>
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_080047.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
-</figure>
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_080116.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
-</figure>
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_080339.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
-</figure>
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_080603.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
-</figure>
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_080724.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
-</figure>
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_080842.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
-</figure>
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_081140.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
-</figure>
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_081409.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
-</figure>
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_081505.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
+        src="/images/sunshine-plaza/IMG_20200820_083517.jpg"
+        alt="A palm tree living in a glass bio-dome."/>
+    <figcaption class="figure-caption">A palm tree living in a glass bio-dome (Lužiny station).</figcaption>
 </figure>
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_082241.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
+        alt="Masked woman entering the subway station behind a glass dome."/>
+    <figcaption class="figure-caption">Masked woman entering the subway station designed almost like a artdeco greenhouse.</figcaption>
 </figure>
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_082243.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
+        src="/images/sunshine-plaza/IMG_20200821_080047.jpg"
+        alt="A space ship just landed on a brutalist rooftop?"/>
+    <figcaption class="figure-caption">A space ship just landed on a brutalist rooftop?</figcaption>
+</figure>
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        src="/images/sunshine-plaza/IMG_20200821_080116.jpg"
+        alt="A polyclinic next to the town hall."/>
+    <figcaption class="figure-caption">A polyclinic next to the town hall.</figcaption>
+</figure>
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        src="/images/sunshine-plaza/IMG_20200821_080339.jpg"
+        alt="Sunshine Plaza (Slunecni namesti) has a church and a magnetic resonance clinic."/>
+    <figcaption class="figure-caption">Sunshine Plaza (Slunecni namesti) has a church and a magnetic resonance clinic.</figcaption>
+</figure>
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        src="/images/sunshine-plaza/IMG_20200821_080603.jpg"
+        alt="A modern communal church building."/>
+    <figcaption class="figure-caption">A modern communal church building.</figcaption>
+</figure>
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        src="/images/sunshine-plaza/IMG_20200821_080724.jpg"
+        alt="There is an angel body-builder on an ad on the right."/>
+    <figcaption class="figure-caption">There is an angel body-builder on an ad on the right.</figcaption>
+</figure>
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        src="/images/sunshine-plaza/IMG_20200821_080842.jpg"
+        alt="A subway ventilation reminiscent of an ocean liner's exhaust."/>
+    <figcaption class="figure-caption">A subway ventilation reminiscent of an ocean liner's exhaust.</figcaption>
+</figure>
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        src="/images/sunshine-plaza/IMG_20200821_081140.jpg"
+        alt="A weird robotic art piece next to the future experimental automated restaurant."/>
+    <figcaption class="figure-caption">A weird robotic art piece next to the future experimental automated restaurant.</figcaption>
+</figure>
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        src="/images/sunshine-plaza/IMG_20200821_081409.jpg"
+        alt="A subway ventilation reminiscent of an ocean liner's exhaust."/>
+    <figcaption class="figure-caption">A subway ventilation reminiscent of an ocean liner's exhaust.</figcaption>
+</figure>
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        src="/images/sunshine-plaza/IMG_20200821_081505.jpg"
+        alt="The church next to a plattenbau building."/>
+    <figcaption class="figure-caption">The church next to a plattenbau building.</figcaption>
+</figure>
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        src="/images/sunshine-plaza/IMG_20200821_081630.jpg"
+        alt="A soviet era mosaic next to 'Donate your plazma for 3500 czech crowns' advertisement."/>
+    <figcaption class="figure-caption">A soviet era mosaic next to 'Donate your plazma for 3500 czech crowns' advertisement.</figcaption>
 </figure>
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_082532.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
+        alt="Colourful graffiti on a wooden gazebo."/>
+    <figcaption class="figure-caption">Colourful graffiti on a wooden gazebo.</figcaption>
 </figure>
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_083215.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
+        alt="A subway tube over a pond."/>
+    <figcaption class="figure-caption">A subway tube over a pond.</figcaption>
 </figure>
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_083337.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
+        alt="A Sunshine Plaza view from Central Park."/>
+    <figcaption class="figure-caption">A Sunshine Plaza view from Central Park.</figcaption>
 </figure>
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_083540.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
+        alt="The subway tube connects to the next station Lužiny."/>
+    <figcaption class="figure-caption">The subway tube connects to the next station Lužiny.</figcaption>
 </figure>
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_084136.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
+        alt="A solar clock on a facade of a plattenbau building."/>
+    <figcaption class="figure-caption">A solar clock on a facade of a plattenbau building.</figcaption>
+</figure>
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        src="/images/sunshine-plaza/IMG_20200821_074942.jpg"
+        alt="Plattenbau buildings painted with pastel colours."/>
+    <figcaption class="figure-caption">Plattenbau buildings painted with pastel colours.</figcaption>
 </figure>
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_084158.jpg"
-        alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Slunecni namesti in Prague</figcaption>
+        alt="Colourful statues next to children playground."/>
+    <figcaption class="figure-caption">Colourful statues next to children playground.</figcaption>
 </figure>
-  
