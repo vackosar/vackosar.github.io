@@ -38,7 +38,7 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_075608.jpg"
         alt="Concrete wall, metro station, and the construction."/>
-    <figcaption class="figure-caption">Concrete wall, metro station, and the construction.</figcaption>
+    <figcaption class="figure-caption">A path on the concrete wall leads up to the rapid transit.</figcaption>
 </figure>
 <figure class="figure">
     <img
