@@ -157,8 +157,8 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_084136.jpg"
-        alt="Can you tell the time from a solar clock on a facade of a plattenbau building."/>
-    <figcaption class="figure-caption">Can you tell the time from a solar clock on a facade of a plattenbau building.</figcaption>
+        alt="Can you tell the time from a solar clock on a facade of a plattenbau building?"/>
+    <figcaption class="figure-caption">Can you tell the time from a solar clock on a facade of a plattenbau building?</figcaption>
 </figure>
 <figure class="figure">
     <img
