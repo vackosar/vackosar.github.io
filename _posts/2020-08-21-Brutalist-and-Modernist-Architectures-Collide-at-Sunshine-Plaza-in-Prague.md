@@ -122,8 +122,8 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_081630.jpg"
-        alt="A soviet era mosaic next to 'Donate your plazma for 3500 czech crowns' advertisement."/>
-    <figcaption class="figure-caption">A soviet era mosaic next to 'Donate your plazma for 3500 czech crowns' advertisement.</figcaption>
+        alt="A soviet era mosaic next to 'Donate your plazma for 3500 crowns' advertisement."/>
+    <figcaption class="figure-caption">A soviet era mosaic next to 'Donate your plazma for 3500 crowns' advertisement.</figcaption>
 </figure>
 <figure class="figure">
     <img
