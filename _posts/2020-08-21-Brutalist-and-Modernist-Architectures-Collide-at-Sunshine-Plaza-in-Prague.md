@@ -135,6 +135,13 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
+        src="/images/sunshine-plaza/IMG_20200821_074942.jpg"
+        alt="Plattenbau buildings painted with pastel colours."/>
+    <figcaption class="figure-caption">Plattenbau buildings painted with pastel colours.</figcaption>
+</figure>
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_083215.jpg"
         alt="A subway tube over a pond."/>
     <figcaption class="figure-caption">A subway tube over a pond.</figcaption>
@@ -159,13 +166,6 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
         src="/images/sunshine-plaza/IMG_20200821_084136.jpg"
         alt="Can you tell the time from a solar clock on a facade of a plattenbau building?"/>
     <figcaption class="figure-caption">Can you tell the time from a solar clock on a facade of a plattenbau building?</figcaption>
-</figure>
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_074942.jpg"
-        alt="Plattenbau buildings painted with pastel colours."/>
-    <figcaption class="figure-caption">Plattenbau buildings painted with pastel colours.</figcaption>
 </figure>
 <figure class="figure">
     <img
