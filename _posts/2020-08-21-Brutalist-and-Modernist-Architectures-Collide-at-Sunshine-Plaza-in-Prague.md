@@ -182,7 +182,7 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
     <figcaption class="figure-caption">Colourful statues next to children playground.</figcaption>
 </figure>
 
-The current generation hopefully will not allow the resource pie to stop growing by exploring, inovating, building, and enterprising.
-And thus the next gallery will be from a new colony on Mars or an O'Neill cylinder in space.
+Hopefully, the current generation won't allow the resource pie to stop growing by exploring, innovating, building, and enterprising.
+And thus, the next gallery will be from a new colony on Mars or an O'Neill cylinder in space.
 
 If you have a VR headset, try <a href="https://www.youtube.com/watch?v=cZWvjvv-3zw&list=PLmCqVhOYDc5yXFMzhj0wtxmoeyGO7yzwl">my VR180 channel "VR Holiday in Nature"</a>.
