@@ -14,7 +14,7 @@ Sunshine Plaza (Slunecni namesti) in Prague was revitalized extensively since 20
 LPS, sometimes also called Plattenbau, is a housing constructed of prefabricated concrete slabs.
 Prefabrication allowed for lower-cost public housing, but residents resented it for its poor aesthetics.
 
-After the fall, this monotone but technology-loving design common in Eastern Bloc was gradually submerged into freer modern architecture.
+After the collapse, this monotone but technology-loving design common in Eastern Bloc was gradually submerged into freer modern architecture.
 Inhabitants painted more upbeat colors on the dull facades lifting the gloom of the plain concrete.
 Advertisement posts of a variety of local enterprises went up.
 
