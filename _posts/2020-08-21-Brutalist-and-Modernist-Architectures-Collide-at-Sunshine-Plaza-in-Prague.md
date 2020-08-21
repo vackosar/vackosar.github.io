@@ -33,8 +33,6 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
         alt="Sunshine Plaza from a hill top"/>
     <figcaption class="figure-caption">Sunshine Plaza from a hill top</figcaption>
 </figure>
-
-
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
@@ -47,21 +45,21 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_075753.jpg"
         alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Little Hill subway station in front of a new Sunshine Town Hall.</figcaption>
+    <figcaption class="figure-caption">Little Hill subway station in front of new Sunshine Town Hall.</figcaption>
 </figure>
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200820_083517.jpg"
         alt="A palm tree living in a glass bio-dome."/>
-    <figcaption class="figure-caption">A palm tree living in a glass bio-dome (Lužiny station).</figcaption>
+    <figcaption class="figure-caption">A palm tree living in a glass bio-dome at Lužiny station.</figcaption>
 </figure>
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_082241.jpg"
         alt="Masked woman entering the subway station behind a glass dome."/>
-    <figcaption class="figure-caption">Masked woman entering the subway station designed almost like a artdeco greenhouse.</figcaption>
+    <figcaption class="figure-caption">Masked woman entering the subway station designed as artdeco greenhouse.</figcaption>
 </figure>
 <figure class="figure">
     <img
@@ -88,8 +86,8 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_080603.jpg"
-        alt="A modern communal church building."/>
-    <figcaption class="figure-caption">A modern communal church building.</figcaption>
+        alt="Modern communal church construction would be prohibited during the communism."/>
+    <figcaption class="figure-caption">Modern communal church construction would be prohibited during the communism.</figcaption>
 </figure>
 <figure class="figure">
     <img
@@ -191,5 +189,5 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
     <figcaption class="figure-caption">Colourful statues next to children playground.</figcaption>
 </figure>
 
-The current generation hopefully not allow the resource pie to stop growing by being explorative, inovative, and enterprising.
-And thus next gallery will be from a new colony on Mars or an O'Neill cylinder in space.
+The current generation hopefully will not allow the resource pie to stop growing by being explorative, inovative, and enterprising.
+And thus the next gallery will be from a new colony on Mars or an O'Neill cylinder in space.
