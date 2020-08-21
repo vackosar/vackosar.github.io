@@ -4,7 +4,7 @@ title: "Brutalist and Modernist Architectures Collide at Sunshine Plaza in Pragu
 date: 2020-06-19
 categories: ml
 description: Take a tour of the surprising merge of a modern and soviet era design on a Prague's public square with this photo album.
-image: /images/sunshine-plaza/IMG_20200821_083337.jpg 
+image: /images/sunshine-plaza/IMG_20200821_081140.jpg 
 permalink: /:categories/:title
 ---
 
