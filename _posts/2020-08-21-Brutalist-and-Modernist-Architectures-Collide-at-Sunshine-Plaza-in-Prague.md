@@ -16,8 +16,9 @@ After the fall, this monotone but technology-loving design common in Eastern Blo
 Inhabitants painted more upbeat colors on the dull facades lifting the gloom of the plain concrete.
 Advertisement posts of a variety of small local enterprises went up.
 
-Fortunately, the dominating spirit of achieving more for the people with the new technology so far stayed.
-The magnetic resonance clinic south of the communal church center, palm tree living inside of tiny glass bio-dome,
+Fortunately, the dominating spirit of achieving more with less using technology so far stayed.
+You will see that for yourself during the tour around a magnetic resonance clinic south of the communal church center,
+a palm tree living inside of tiny glass bio-dome,
 telecommunication towers grabbing the rooftops like just landed space ships, sub-way tube over a pond,
 and a weird robotic art piece next to the future experimental automated restaurant.
 
@@ -180,3 +181,6 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
         alt="Colourful statues next to children playground."/>
     <figcaption class="figure-caption">Colourful statues next to children playground.</figcaption>
 </figure>
+
+The current generation hopefully not allow the resource pie to stop growing by being explorative, inovative, and enterprising.
+And thus next gallery will be from a new colony on Mars or an O'Neill cylinder in space.
