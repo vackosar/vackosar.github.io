@@ -10,7 +10,15 @@ permalink: /:categories/:title
 
 Sunshine plaza (Slunecni namesti) in Prague was revitalized extensively since 2000 from formerly large panel system-building (LPS) residential area.
 LPS, sometimes also called Plattenbau, is a housing constructed of large, prefabricated concrete slabs.
-This monotone but technology loving design common in Eastern Bloc was gradually submerged into freer modern architecture at this public square.
+Prefabrication allowed for lower cost public housing, although was resented for its poor aesthetics.
+
+This monotone but technology loving design common in Eastern Bloc was gradually submerged into freer modern architecture after the fall.
+More up-beat colours where painted on the boring facades lifting the gloom of the plain concrete.
+Advertisement posts of variety of small local enterprises went up.
+
+Fortunately though, the dominating spirit of achieving more for the people with the new technology so far stayed.
+The magnetic resonance clinic south of the church communal center, palm tree living inside of tiny glass bio-dome,
+telecommunication towers grabbing the roof tops like just landed space ships, and sub-way tubes over a pond.
 
 Enjoy photo gallery documenting the current state of the synthesis the stringent with the liberate below.
 
