@@ -31,7 +31,7 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_075156.jpg"
         alt="Sunshine Plaza from a hill top"/>
-    <figcaption class="figure-caption">Sunshine Plaza from a hill top</figcaption>
+    <figcaption class="figure-caption">Sunshine Plaza from a little hill top.</figcaption>
 </figure>
 <figure class="figure">
     <img
@@ -45,7 +45,7 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_075753.jpg"
         alt="Slunecni namesti in Prague"/>
-    <figcaption class="figure-caption">Little Hill subway station in front of new Sunshine Town Hall.</figcaption>
+    <figcaption class="figure-caption">Little Hill (Hůrka) subway station in front of new Sunshine Town Hall.</figcaption>
 </figure>
 <figure class="figure">
     <img
@@ -66,14 +66,14 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_080047.jpg"
         alt="A space ship just landed on a brutalist rooftop?"/>
-    <figcaption class="figure-caption">A space ship just landed on a brutalist rooftop?</figcaption>
+    <figcaption class="figure-caption">Did a space ship just landed on a brutalist rooftop?</figcaption>
 </figure>
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_080116.jpg"
         alt="A polyclinic next to the town hall."/>
-    <figcaption class="figure-caption">A polyclinic next to the town hall.</figcaption>
+    <figcaption class="figure-caption">A polyclinic next to the shiny town hall.</figcaption>
 </figure>
 <figure class="figure">
     <img
@@ -189,5 +189,7 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
     <figcaption class="figure-caption">Colourful statues next to children playground.</figcaption>
 </figure>
 
-The current generation hopefully will not allow the resource pie to stop growing by being explorative, inovative, and enterprising.
+The current generation hopefully will not allow the resource pie to stop growing by exploring, inovating, building, and enterprising.
 And thus the next gallery will be from a new colony on Mars or an O'Neill cylinder in space.
+
+If have a VR headset, try relaxing my <a href="https://www.youtube.com/watch?v=cZWvjvv-3zw&list=PLmCqVhOYDc5yXFMzhj0wtxmoeyGO7yzwl">VR180 channel VR Holiday in Nature</a>.
