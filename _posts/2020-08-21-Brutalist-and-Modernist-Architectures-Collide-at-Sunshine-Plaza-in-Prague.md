@@ -179,6 +179,13 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
+        src="/images/sunshine-plaza/00100lrPORTRAIT_00100_BURST20200703081140700_COVER.jpg"
+        alt="Sometimes the symmetry is broken by multi-colour facades."/>
+    <figcaption class="figure-caption">Sometimes the symmetry is broken by multi-colour facades.</figcaption>
+</figure>
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_084158.jpg"
         alt="Colourful statues next to children playground."/>
     <figcaption class="figure-caption">Colourful statues next to children playground.</figcaption>
