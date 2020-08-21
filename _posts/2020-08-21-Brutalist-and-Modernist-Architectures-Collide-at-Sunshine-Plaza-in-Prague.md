@@ -51,8 +51,8 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200820_083517.jpg"
-        alt="A palm tree living in a glass bio-dome."/>
-    <figcaption class="figure-caption">A palm tree living in a glass bio-dome at Lužiny station.</figcaption>
+        alt="A palm tree lives inside a glass bio-dome at Lužiny station."/>
+    <figcaption class="figure-caption">A palm tree lives inside a glass bio-dome at Lužiny station.</figcaption>
 </figure>
 <figure class="figure">
     <img
@@ -185,4 +185,4 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
 The current generation hopefully will not allow the resource pie to stop growing by exploring, inovating, building, and enterprising.
 And thus the next gallery will be from a new colony on Mars or an O'Neill cylinder in space.
 
-If have a VR headset, try relaxing my <a href="https://www.youtube.com/watch?v=cZWvjvv-3zw&list=PLmCqVhOYDc5yXFMzhj0wtxmoeyGO7yzwl">VR180 channel VR Holiday in Nature</a>.
+If you have a VR headset, try <a href="https://www.youtube.com/watch?v=cZWvjvv-3zw&list=PLmCqVhOYDc5yXFMzhj0wtxmoeyGO7yzwl">my VR180 channel "VR Holiday in Nature"</a>.
