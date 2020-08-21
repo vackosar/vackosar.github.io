@@ -95,7 +95,7 @@ Enjoy the journey documenting the current state of the synthesis of the stringen
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_080724.jpg"
         alt="There is an angel body-builder on an ad on the right."/>
-    <figcaption class="figure-caption">There is an angel body-builder on an ad on the right.</figcaption>
+    <figcaption class="figure-caption">There is an angel body-builder in an ad on the right. It sells light art for events and parties.</figcaption>
 </figure>
 <figure class="figure">
     <img
