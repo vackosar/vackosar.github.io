@@ -16,15 +16,15 @@ Prefabrication allowed for lower-cost public housing, but residents resented it 
 
 After the fall, this monotone but technology-loving design common in Eastern Bloc was gradually submerged into freer modern architecture.
 Inhabitants painted more upbeat colors on the dull facades lifting the gloom of the plain concrete.
-Advertisement posts of a variety of small local enterprises went up.
+Advertisement posts of a variety of local enterprises went up.
 
-Fortunately, the dominating spirit of achieving more with less using technology so far stayed.
+The dominating spirit of achieving more with less using technology so far stayed in this europolis.
 You will see that for yourself during the tour around a magnetic resonance clinic south of the communal church center,
 a palm tree living inside of tiny glass bio-dome,
 telecommunication towers grabbing the rooftops like just landed space ships, sub-way tube over a pond,
 and a weird robotic art piece next to the future experimental automated restaurant.
 
-Enjoy the photo gallery documenting the current state of the synthesis of the stringent with the liberated below.
+Enjoy the journey documenting the current state of the synthesis of the stringent with the liberated.
 
 <figure class="figure">
     <img
