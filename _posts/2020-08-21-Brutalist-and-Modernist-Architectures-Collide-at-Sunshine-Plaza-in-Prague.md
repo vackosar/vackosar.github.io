@@ -24,7 +24,7 @@ a palm tree living inside of tiny glass bio-dome,
 telecommunication towers grabbing the rooftops like just landed space ships, sub-way tube over a pond,
 and a weird robotic art piece next to the future experimental automated restaurant.
 
-Enjoy the photo gallery documenting the current state of the synthesis the stringent with the liberate below.
+Enjoy the photo gallery documenting the current state of the synthesis of the stringent with the liberate below.
 
 <figure class="figure">
     <img
