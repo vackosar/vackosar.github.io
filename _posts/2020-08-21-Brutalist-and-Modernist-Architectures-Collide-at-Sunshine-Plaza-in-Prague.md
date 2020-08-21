@@ -164,8 +164,8 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_084136.jpg"
-        alt="A solar clock on a facade of a plattenbau building."/>
-    <figcaption class="figure-caption">A solar clock on a facade of a plattenbau building.</figcaption>
+        alt="A solar clock on a facade of a plattenbau building. Call you tell the time?"/>
+    <figcaption class="figure-caption">A solar clock on a facade of a plattenbau building. Call you tell the time?</figcaption>
 </figure>
 <figure class="figure">
     <img
