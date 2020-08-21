@@ -10,11 +10,11 @@ redirect_from:
 - /ml/Brutalist-and-Modernist-Architectures-Collide-at-Sunshine-Plaza-in-Prague 
 ---
 
-Sunshine plaza (Slunecni namesti) in Prague was revitalized extensively since 2000 from a formerly large panel system-building (LPS) residential area.
+Sunshine Plaza (Slunecni namesti) in Prague was revitalized extensively since 2000 from a formerly large panel system-building (LPS) residential area.
 LPS, sometimes also called Plattenbau, is a housing constructed of prefabricated concrete slabs.
 Prefabrication allowed for lower-cost public housing, but residents resented it for its poor aesthetics.
 
-After the fall, this monotone but technology-loving design common in Eastern Bloc gradually submerged into freer modern architecture.
+After the fall, this monotone but technology-loving design common in Eastern Bloc was gradually submerged into freer modern architecture.
 Inhabitants painted more upbeat colors on the dull facades lifting the gloom of the plain concrete.
 Advertisement posts of a variety of small local enterprises went up.
 
