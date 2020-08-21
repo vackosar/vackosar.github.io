@@ -113,13 +113,6 @@ Enjoy the photo gallery documenting the current state of the synthesis the strin
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_081409.jpg"
-        alt="A subway ventilation reminiscent of an ocean liner's exhaust."/>
-    <figcaption class="figure-caption">A subway ventilation reminiscent of an ocean liner's exhaust.</figcaption>
-</figure>
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_081505.jpg"
         alt="The church next to a plattenbau building."/>
     <figcaption class="figure-caption">The church next to a plattenbau building.</figcaption>
