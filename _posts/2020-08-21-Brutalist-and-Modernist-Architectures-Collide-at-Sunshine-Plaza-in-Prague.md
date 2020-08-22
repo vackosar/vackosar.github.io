@@ -109,7 +109,7 @@ Enjoy the journey documenting the current state of the synthesis of the stringen
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_081140.jpg"
         alt="A weird robotic art piece next to the future experimental automated restaurant."/>
-    <figcaption class="figure-caption">A weird robotic art piece next to [the future experimental automated restaurant](https://www.cyber-dog.cz/en).</figcaption>
+    <figcaption class="figure-caption">A weird robotic art piece next to <a href="https://www.cyber-dog.cz/en">the future experimental automated restaurant</a></figcaption>
 </figure>
 <figure class="figure">
     <img
