@@ -13,7 +13,8 @@ redirect_from:
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<img alt="Word Mover's Embedding is a document embedding." style="width: 90%; max-width: 500px" src="/images/word-movers-embedding.png">
+<!-- <img alt="Word Mover's Embedding is a document embedding." style="width: 90%; max-width: 500px" src="/images/word-movers-embedding.png"> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uuNLz6eT_tg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 Word Mover's Distance captures the semantic similarity between documents more accurately than the cosine similarity between word vector averages. 
@@ -163,6 +164,3 @@ Additionally, [WME slightly outperformed KNN-WMD in classification accuracy](htt
 Without active recall, you won't remember anything from the above. Take at least one round of the quiz below. You can also subscribe to get revision reminders or generate your own quizzes there.<br>
 <a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=83f9d7dd-0cbf-461d-a835-cbfc2024940a">1-Minute Word Mover's Distance Quiz</a>
 
-### Video
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uuNLz6eT_tg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
