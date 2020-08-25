@@ -15,7 +15,9 @@ permalink: /:categories/:title
 > JSON is agnostic about the semantics of numbers. In any programming language, there can be a variety of number types of various capacities and complements, fixed or floating, binary or decimal. That can make interchange between different programming languages difficult. JSON instead offers only the representation of numbers that humans use: a sequence of digits. All programming languages know how to make sense of digit sequences even if they disagree on internal representations. That is enough to allow interchange.
 
 
-# How json.loads parses numbers?
+# How json.loads selects number types?
+
+Here is a code snippet with its standard output below it:
 ```
 import json
 for v in json.loads("[2000, 20.0, 20.1, 1e6, NaN, Infinity, -Infinity]"):
@@ -30,9 +32,9 @@ inf: <class 'float'>
 -inf: <class 'float'>
 ```
 
-[Python documentation](https://docs.python.org/3.4/library/json.html#encoders-and-decoders) also explains that `NaN, Infinity, -Infinity` are not actually part of JSON standard, but that they are parsed anyway.
+[Python documentation](https://docs.python.org/3.4/library/json.html#encoders-and-decoders) also explains that `NaN, Infinity, -Infinity` are not actually part of JSON standard, but that they are interpreted anyway.
 > It also understands NaN, Infinity, and -Infinity as their corresponding float values, which is outside the JSON spec.
 
-The conversion is similar to conversion from a Python source code. The number becomes `int` only in case of non-scientific format without a dot.
+The conversion is similar to conversion from a Python source code. The number becomes `int` only in case of non-scientific format without a dot. Otherwise you'll get a `float`.
 
 Read also on this blog how to [wrap you resource creation and closure into context manager with-statement and catch exceptions there](https://vaclavkosar.com/software/Python-Context-Manager-With-Statement-Exception-Handling).
