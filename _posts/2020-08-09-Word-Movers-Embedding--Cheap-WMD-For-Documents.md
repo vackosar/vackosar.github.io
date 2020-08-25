@@ -13,7 +13,13 @@ redirect_from:
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<!-- <img alt="Word Mover's Embedding is a document embedding." style="width: 90%; max-width: 500px" src="/images/word-movers-embedding.png"> -->
+<!--
+<div class="image-container">
+    <img alt="Word Mover's Embedding is a document embedding." style="width: 90%; max-width: 500px" src="/images/word-movers-embedding.png">
+    <div class="centered"><i class="fab fa-youtube"></i>Play on Youtube</div>
+</div>
+-->
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uuNLz6eT_tg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
