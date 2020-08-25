@@ -1,23 +1,26 @@
 ---
 layout: post
-title: "What Python number types does json.loads parses into?"
+title: "To What Python Number Types Does json.loads Parse?"
 date: 2020-08-25
 categories: software
-description: JSON specifies only a number type, so how to infer the correct type?
+description: JSON specifies only a number type, so how to infer the correct between int and float?
 #image: /images/sunshine-plaza/IMG_20200821_081140.jpg 
 permalink: /:categories/:title
 #redirect_from:
 #- /ml/Brutalist-and-Modernist-Architectures-Collide-at-Sunshine-Plaza-in-Prague 
 ---
 
+# How JSON handles numbers?
 [JSON ECMA](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) leaves mapping of the human-readable format to correct language type to the programming language.
 > JSON is agnostic about the semantics of numbers. In any programming language, there can be a variety of number types of various capacities and complements, fixed or floating, binary or decimal. That can make interchange between different programming languages difficult. JSON instead offers only the representation of numbers that humans use: a sequence of digits. All programming languages know how to make sense of digit sequences even if they disagree on internal representations. That is enough to allow interchange.
 
+
+# How json.loads parses numbers?
 ```
 import json
 for v in json.loads("[2000, 20.0, 20.1, 1e6, NaN, Infinity, -Infinity]"):
-  ...:     print(f"{v}: {type(v)}")
-  ...: 
+    print(f"{v}: {type(v)}")
+ 
 2000: <class 'int'>
 20.0: <class 'float'>
 20.1: <class 'float'>
