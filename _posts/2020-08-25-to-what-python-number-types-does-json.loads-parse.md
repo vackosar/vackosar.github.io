@@ -12,7 +12,9 @@ permalink: /:categories/:title
 
 # How JSON handles numbers?
 [JSON ECMA](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) leaves mapping of the human-readable format to correct language type to the programming language.
-> JSON is agnostic about the semantics of numbers. In any programming language, there can be a variety of number types of various capacities and complements, fixed or floating, binary or decimal. That can make interchange between different programming languages difficult. JSON instead offers only the representation of numbers that humans use: a sequence of digits. All programming languages know how to make sense of digit sequences even if they disagree on internal representations. That is enough to allow interchange.
+<blockquote style="font-style: italic">
+JSON is agnostic about the semantics of numbers. In any programming language, there can be a variety of number types of various capacities and complements, fixed or floating, binary or decimal. That can make interchange between different programming languages difficult. JSON instead offers only the representation of numbers that humans use: a sequence of digits. All programming languages know how to make sense of digit sequences even if they disagree on internal representations. That is enough to allow interchange.
+</blockquote>
 
 
 # How json.loads selects number types?
@@ -33,7 +35,9 @@ inf: <class 'float'>
 ```
 
 [Python documentation](https://docs.python.org/3.4/library/json.html#encoders-and-decoders) also explains that `NaN, Infinity, -Infinity` are not actually part of JSON standard, but that they are interpreted anyway.
-> It also understands NaN, Infinity, and -Infinity as their corresponding float values, which is outside the JSON spec.
+<blockquote style="font-style: italic">
+It also understands NaN, Infinity, and -Infinity as their corresponding float values, which is outside the JSON spec.
+</blockquote>
 
 The conversion is similar to conversion from a Python source code. The number becomes `int` only in case of non-scientific format without a dot. Otherwise you'll get a `float`.
 
