@@ -24,6 +24,7 @@ Here is a code snippet with its standard output below it:
 import json
 for v in json.loads("[2000, 20.0, 20.1, 1e6, NaN, Infinity, -Infinity]"):
     print(f"{v}: {type(v)}")
+
  
 2000: <class 'int'>
 20.0: <class 'float'>
