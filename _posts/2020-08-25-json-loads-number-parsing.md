@@ -1,0 +1,35 @@
+---
+layout: post
+title: "What Python number types does json.loads parses into?"
+date: 2020-08-25
+categories: software
+description: JSON specifies only a number type, so how to infer the correct type?
+#image: /images/sunshine-plaza/IMG_20200821_081140.jpg 
+permalink: /:categories/:title
+#redirect_from:
+#- /ml/Brutalist-and-Modernist-Architectures-Collide-at-Sunshine-Plaza-in-Prague 
+---
+
+[JSON ECMA](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) leaves mapping of the human-readable format to correct language type to the programming language.
+> JSON is agnostic about the semantics of numbers. In any programming language, there can be a variety of number types of various capacities and complements, fixed or floating, binary or decimal. That can make interchange between different programming languages difficult. JSON instead offers only the representation of numbers that humans use: a sequence of digits. All programming languages know how to make sense of digit sequences even if they disagree on internal representations. That is enough to allow interchange.
+
+```
+import json
+for v in json.loads("[2000, 20.0, 20.1, 1e6, NaN, Infinity, -Infinity]"):
+  ...:     print(f"{v}: {type(v)}")
+  ...: 
+2000: <class 'int'>
+20.0: <class 'float'>
+20.1: <class 'float'>
+1000000.0: <class 'float'>
+nan: <class 'float'>
+inf: <class 'float'>
+-inf: <class 'float'>
+```
+
+[Python documentation](https://docs.python.org/3.4/library/json.html#encoders-and-decoders) also explains that `NaN, Infinity, -Infinity` are not actually part of JSON standard, but that they are parsed anyway.
+> It also understands NaN, Infinity, and -Infinity as their corresponding float values, which is outside the JSON spec.
+
+The conversion is similar to conversion from a Python source code. The number becomes `int` only in case of non-scientific format without a dot.
+
+Read also on this blog how to [wrap you resource creation and closure into context manager with-statement and catch exceptions there](https://vaclavkosar.com/software/Python-Context-Manager-With-Statement-Exception-Handling).
