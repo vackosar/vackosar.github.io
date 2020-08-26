@@ -21,11 +21,11 @@ Advertisement posts of a variety of local enterprises went up.
 The dominating spirit of achieving more with less using technology so far stayed in this europolis.
 You will see that for yourself during the tour around a magnetic resonance clinic south of the communal church center,
 a palm tree living inside of tiny glass bio-dome,
-telecommunication towers grabbing the rooftops like just landed space ships,
+telecommunication towers grabbing the rooftops like landed space ships,
 sub-way tube skylining over a pond,
-and a weird robotic art piece next to the future experimental automated restaurant.
+and a weird robotic art piece next to a automated wine bar.
 
-Enjoy the journey documenting the current state of the synthesis of the stringent with the liberated.
+Enjoy the journey documenting the current state of the synthesis of the stark with the liberated.
 
 <figure class="figure">
     <img
@@ -173,7 +173,7 @@ Enjoy the journey documenting the current state of the synthesis of the stringen
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/00100lrPORTRAIT_00100_BURST20200703081140700_COVER.jpg"
         alt="Sometimes the symmetry is broken by multi-colour facades."/>
-    <figcaption class="figure-caption">Sometimes the symmetry is broken by multi-colour facades.</figcaption>
+    <figcaption class="figure-caption">Sometimes the symmetry of totally equal blocks is broken by multi-colour facades.</figcaption>
 </figure>
 <figure class="figure">
     <img
