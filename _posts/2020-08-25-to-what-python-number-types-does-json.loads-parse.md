@@ -4,7 +4,7 @@ title: "To What Python Number Types Does json.loads Parse?"
 date: 2020-08-25
 categories: software
 description: JSON specifies only a number value, so how to infer the correct type between int and float?
-#image: /images/sunshine-plaza/IMG_20200821_081140.jpg 
+image: /images/json.loads-and-numbers.png
 permalink: /:categories/:title
 #redirect_from:
 #- /ml/Brutalist-and-Modernist-Architectures-Collide-at-Sunshine-Plaza-in-Prague 
