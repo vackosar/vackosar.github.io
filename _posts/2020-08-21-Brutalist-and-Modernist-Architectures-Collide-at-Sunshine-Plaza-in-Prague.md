@@ -178,6 +178,13 @@ Enjoy the journey documenting the current state of the synthesis of the stark wi
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
+        src="/images/sunshine-plaza/IMG_20200830_094127.jpg"
+        alt="Original on the left, the insulated and painted plattenbau on the right."/>
+    <figcaption class="figure-caption">Original on the left, the insulated and painted plattenbau on the right.</figcaption>
+</figure>
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_084158.jpg"
         alt="Colourful statues next to children playground."/>
     <figcaption class="figure-caption">Colourful statues next to children playground.</figcaption>
@@ -187,3 +194,4 @@ Hopefully, the current generation won't allow the resource pie to stop growing b
 And thus, the next gallery will be from a new colony on Mars or an O'Neill cylinder in space.
 
 If you have a VR headset, try <a href="https://www.youtube.com/watch?v=cZWvjvv-3zw&list=PLmCqVhOYDc5yXFMzhj0wtxmoeyGO7yzwl">my VR180 channel "VR Holiday in Nature"</a>.
+
