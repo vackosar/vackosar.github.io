@@ -49,8 +49,8 @@ Note, however, that I have much more experience with Cortex.
     </tr>
     <tr>
         <td>Service configuration</td>
-        <td>via decorators directly in Python code.</td>
-        <td>via YAML files, or <a href="https://github.com/glami/cortex-serving-client">Cortex Serving Client</a></td>
+        <td>via decorators directly in Python code</td>
+        <td>via YAML files, or <a href="https://github.com/glami/cortex-serving-client">Cortex Serving Client for Python</a></td>
     </tr>
     <tr>
         <td>Service packaging and distribution</td>
