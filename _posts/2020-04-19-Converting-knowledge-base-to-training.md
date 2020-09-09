@@ -6,7 +6,6 @@ category: service
 description: There is now a tool that converts enterprise knowledge base (Confluence, Notino, Google Doc) to an onboarding training.
 image: https://quizrecall.com/static/quiz-recall-logo.webp
 permalink: /:categories/:title
-image: https://quizrecall.com/static/logo-transparent-shadow-w200px.png 
 redirect_from:
   - /2020/04/19/Converting-knowledge-base-to-training.html
 ---
