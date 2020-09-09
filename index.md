@@ -27,23 +27,21 @@ title: Blog
     
 </div>
 
-<div class="posts">
-  <table>
+<div class="container posts">
   {% for post in site.posts %}
-      <tr>
-        <td>
+      <div class="row">
+        <div class="">
             <a href="{{ post.url }}" title="{{ post.title }}" style="text-decoration: none">
                 <div style="width: 150px; height: 100px; background-image: url('{{ post.image | default: '/images/white-noise.jpeg' }}'); background-size: cover; margin: 15px; border-radius: 10px"></div>
             </a>
-        </td>
-        <td>
+        </div>
+        <div style="width: calc(100% - 200px); min-width: 300px">
             <a href="{{ post.url }}" title="{{ post.title }}" style="text-decoration: none">
                 <div class="lead">{{ post.title }}</div>
                 <small>{{ post.description }}</small>
             </a>
-        </td>
-    </tr>
+        </div>
+      </div>
      <!-- ({{ post.date | date_to_string }}) -->
   {% endfor %}
-  </table>
 </div>
