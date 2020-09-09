@@ -92,8 +92,8 @@ Note, however, that I have much more experience with Cortex.
 
 ## My Experience with Cortex
 
-I have written [a blog post on Cortex use at GLAMI](https://medium.com/@aiteamglami/serve-your-ml-models-in-aws-using-python-9908a4127a13).
-I developed large part of [the Cortex client for Python](https://github.com/glami/cortex-serving-client), which is a Python wrapper around Cortex CLI that we use at GLAMI for MLOps.
+Here is [a blog post on Cortex use at GLAMI](https://medium.com/@aiteamglami/serve-your-ml-models-in-aws-using-python-9908a4127a13).
+Consider using this [Cortex client for Python](https://github.com/glami/cortex-serving-client), which is a Python wrapper around Cortex CLI that we use at GLAMI for MLOps.
 
 ## Discussions
 - <a href="https://www.reddit.com/r/MachineLearning/comments/ghikdz/d_is_this_fair_bentoml_vs_cortex_comparison/">Reddit discussion</a>
