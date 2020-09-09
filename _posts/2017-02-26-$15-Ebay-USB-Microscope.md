@@ -4,6 +4,7 @@ title: "Is $15 USB Microscope Enough For You?"
 date: 2017-02-26
 categories: electronics 
 description: See yeast cells and pond water critters paying just $15 for an USB microscope.
+image: https://i.ytimg.com/vi/eDrts252LsA/sddefault.jpg
 permalink: /:categories/:title
 redirect_from:
 - /2017/02/26/15$-Ebay-USB-Microscope.html

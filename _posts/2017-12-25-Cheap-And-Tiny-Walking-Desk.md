@@ -4,6 +4,7 @@ title: "Walking Desk: Cheap And Tiny "
 date: 2017-12-25
 categories: health
 description: A review of my motor-less walking desk setup.
+image: https://i.ytimg.com/vi/EnPrXfrZAeo/sddefault.jpg
 date: 2017-12-03
 permalink: /:categories/:title
 redirect_from:

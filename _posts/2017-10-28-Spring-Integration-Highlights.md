@@ -4,6 +4,7 @@ title: "Spring Integration Highlights - The message driven"
 date: 2017-10-28
 categories: software
 description: Get familiar with Spring Integration implementation of Enterprise Integration Patterns and compare it to Java 8 Streams.
+image: https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg
 permalink: /:categories/:title
 redirect_from:
   -/2017/10/28/Spring-Integration-Highlights.html 
