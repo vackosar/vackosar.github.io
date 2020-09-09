@@ -30,15 +30,15 @@ title: Blog
 <div class="container posts">
   {% for post in site.posts %}
       <div class="row">
-        <div class="">
-            <a href="{{ post.url }}" title="{{ post.title }}" style="text-decoration: none">
-                <div style="width: 150px; height: 100px; background-image: url('{{ post.image | default: '/images/white-noise.jpeg' }}'); background-size: cover; margin: 15px; border-radius: 10px"></div>
-            </a>
-        </div>
-        <div style="width: calc(100% - 200px); min-width: 300px">
+        <div style="width: 80%; min-width: 300px; margin-top: 15px;">
             <a href="{{ post.url }}" title="{{ post.title }}" style="text-decoration: none">
                 <div class="lead">{{ post.title }}</div>
                 <small>{{ post.description }}</small>
+            </a>
+        </div>
+        <div class="">
+            <a href="{{ post.url }}" title="{{ post.title }}" style="text-decoration: none">
+                <div style="width: 150px; height: 100px; background-image: url('{{ post.image | default: '/images/white-noise.jpeg' }}'); background-size: cover; margin-bottom: 10px; border-radius: 10px"></div>
             </a>
         </div>
       </div>
