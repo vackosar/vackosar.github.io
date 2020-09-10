@@ -38,7 +38,7 @@ title: Blog
         </div>
         <div class="">
             <a href="{{ post.url }}" title="{{ post.title }}" style="text-decoration: none">
-                <div style="width: 150px; height: 100px; background-image: url('{{ post.image | default: '/images/white-noise.jpeg' }}'); background-size: cover; margin-bottom: 10px; border-radius: 10px"></div>
+                <div style="background-image: url('{{ post.image | default: '/images/white-noise.jpeg' }}');" class="index-post-image"></div>
             </a>
         </div>
       </div>
