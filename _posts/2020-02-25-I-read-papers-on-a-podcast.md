@@ -5,7 +5,7 @@ date: 2020-02-25
 categories: productivity
 description: To improve my pronunciation and speech, I read mostly Machine Learning scientific papers on a podcast.
 permalink: /:categories/:title
-image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2020-02-25-my-photo-table-map-cal-rot-fix.jpg
+image: /images/2020-02-25-my-photo-table-map-cal-rot-fix.jpg
 redirect_from:
   - /2020/02/25/I-read-papers-on-a-podcast.html
 ---

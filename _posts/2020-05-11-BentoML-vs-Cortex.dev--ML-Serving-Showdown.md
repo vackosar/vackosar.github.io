@@ -3,7 +3,7 @@ layout: post
 title: "BentoML vs Cortex - ML Serving Showdown"
 categories: ML
 date: 2020-05-11
-image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/bentoml-cortex-logos.webp
+image: /images/bentoml-cortex-logos.webp
 description: To find the best model serving tool, compare open-source MLOps platforms BentoML and Cortex.
 permalink: /:categories/:title
 redirect_from:

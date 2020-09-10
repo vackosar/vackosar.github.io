@@ -4,7 +4,7 @@ title: "OpenAI's Glow - Flow-Based Model Teardown"
 date: 2020-06-19
 categories: ML
 description: Get interpretable latent representations by composing non-linear invertible functions and maximizing the exact log-likelihood.
-image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-drawing.png
+image: /images/glow-drawing.png
 permalink: /:categories/:title
 redirect_from:
 - /ml/glow-the-representations-must-flow

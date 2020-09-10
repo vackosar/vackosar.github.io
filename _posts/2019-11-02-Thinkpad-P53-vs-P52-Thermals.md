@@ -5,7 +5,7 @@ date: 2019-11-02
 categories: review
 description: Is Thinkpad P53 the cooler brother of P52?
 permalink: /:categories/:title
-image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2019-11-02-p52-vs-p53-thermals-p53.png
+image: /images/2019-11-02-p52-vs-p53-thermals-p53.png
 redirect_from:
   - /2019/11/02/Thinkpad-P53-vs-P52-Thermals.html
 ---

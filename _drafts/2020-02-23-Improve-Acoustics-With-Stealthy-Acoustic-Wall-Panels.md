@@ -4,7 +4,7 @@ title: "How To Improve Your Acoustics With Stealthy Acoustic Wall Panels"
 date: 2020-02-23
 categories: health
 description: To improve your apartment acoustics while not making it too ugly, place cheap thin acoustic wall panels behind an art, such as wall-mounted world map. 
-image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2020-02-23-map-side.jpg
+image: /images/2020-02-23-map-side.jpg
 permalink: /:categories/:title
 redirect_from:
 - /2020/02/23/Stealthy-acoustic-panels.html 

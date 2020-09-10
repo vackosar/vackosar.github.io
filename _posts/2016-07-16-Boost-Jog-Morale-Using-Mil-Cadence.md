@@ -5,7 +5,7 @@ date: 2016-07-16
 categories: health
 description: Run beyond your max with this professional mind hack.
 permalink: /:categories/:title
-image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/mil-cadence-pexels.jpg
+image: /images/mil-cadence-pexels.jpg
 redirect_from:
   - /2016/07/16/Boost-Jog-Morale-Using-Mil-Cadence.html 
 ---
