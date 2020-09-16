@@ -26,8 +26,8 @@ In case of a [linear regression, bias-variance tradeoff](http://www.dam.brown.ed
 Where first element represents the bias and second the variance.
 
 
-For example any kind of regularization of the optimizer, which is part of the model, will force model to look for "simple" solution, despite having capacity to fully fit the training data.
-In general, behaviour of the optimiser can have big impact on the resulting generalization error.
+But in general, bias-variance trade-off is not applicable.
+Any kind of regularization of the optimizer, which is part of the model, will force model to look for "simple" solution, despite having capacity to fully fit the training data.
+Behaviour of the optimiser can have big impact on the resulting test loss (generalization error).
 
-But in general bias-variance trade-off is not applicable. The test loss 
 
