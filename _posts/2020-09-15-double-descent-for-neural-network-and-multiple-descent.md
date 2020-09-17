@@ -34,22 +34,58 @@ Behaviour of the optimiser can have big impact on the resulting test loss (gener
 In case of L2 norm, the train loss can be rewritten as a sum of bias term and variance term.
 
 - A prediction function \\( f \\) was fitted on the training data \\( D = \lbrace (x_1, y_1), (x_2, y_2), ..., (x_n, y_n) \rbrace \\).
-- A single the test sample \\( (x, y) \\) has a noisy label \\( y = Ey + \epsilon \\), but the mean label \\( Ey \\) is the true value.
-- Because the test label noise is independent of the training data, the fitted function has zero covariance with the test label noise: \\( E \epsilon f = 0 \\).
+- A single the test sample \\( (x, y) \\) has a noisy label \\( y = Ey + \varepsilon \\), but the mean label \\( Ey \\) is the true value.
+- Because the test label noise is independent of the training data, the fitted function has zero covariance with the test label noise: \\( E \varepsilon f = 0 \\).
 
-Then the expected L2 test loss \\( E(y-f)^2 \\) below is conditioned on a test sample \\( x \\). The expectation is calculated over all draws of train samples \\( D \\) and label noise \\( \epsilon \\).
+Then the expected L2 test loss \\( E(y-f)^2 \\) below is conditioned on a test sample \\( x \\). The expectation is calculated over all draws of train samples \\( D \\) and label noise \\( \varepsilon \\).
 
 \\( E(y-f)^2 \\)
+
 \\( = E(y - Ey + Ey - f)^2 \\)
-\\( = E (Ey - f)^2 + 2 E \epsilon (Ey - f) + \sigma^2\\)
+
+\\( = E (Ey - f)^2 + 2 E \varepsilon (Ey - f) + \sigma^2\\)
+
 \\( = E (Ey - f)^2 + \sigma^2 \\)
+
 \\( = (Ey - Ef)^2 + E(Ef - f)^2 + \sigma^2 \\).
 
 Terms in above equation in given order represent:
-1. the function ability to fit the training data. It is called bias term.
-2. the function ability to resist the training label noise, predict mostly the same outputs on same inputs, and thus generalize. It is called variance term.
-3. the test label noise. It is called irreducible error.
 
+<table border="1" class="dataframe">
+<thead>
+    <tr>
+        <th scope="col">
+            Term
+        </th>
+        <th scope="col">
+            Description
+        </th>
+        <th scope="col">
+            Name
+        </th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>
+            $$ (Ey - Ef)^2 $$
+        </td>
+        <td>The model's ability to fit the true training data.</td>
+        <td>bias</td>
+    </tr>
+    <tr>
+        <td>$$ E(Ef - f)^2 $$</td>
+        <td>the model's ability to resist the training label noise, predict mostly the same outputs on same inputs, and thus generalize</td>
+        <td>variance</td>
+    </tr>
+    <tr>
+        <td>$$ \sigma^2 $$</td>
+        <td>the test label noise</td>
+        <td>irreducible error</td>
+    </tr>
+</tbody>
+</table>
+        
 However, above decomposition does not explicitly prove how the individual components behave.
 So, it is no prove of the proposed dilemma.
 
@@ -69,14 +105,14 @@ So, it is no prove of the proposed dilemma.
 
 In the [Multiple Descent paper](https://arxiv.org/abs/2008.01036), the test loss as a function of number of parameters of special case of linear regression is highly controlled for in both under-parametrized and over-parametrized regimes.
 
-### Authors rigorously prove:
+### Authors prove:
 - Existence of multiple descent in the generalization curve.
 - That the number of descents can be designed.
 
 ### How it works?
 
 The problem is linear regression without regularization with true linear model of zero.
-Where all labels contain an error \\( y_i = 0 + \epsilon_i \\), which is normally distributed around zero.
+Where all labels contain an error \\( y_i = 0 + \varepsilon_i \\), which is normally distributed around zero.
 
 However the features have all different distribution.
 The authors select them, such that they can control the generalization curve.
@@ -92,7 +128,7 @@ Authors then draw generalization curve as average test-loss normalized by the fe
         class="figure-img img-fluid rounded"
         src="/images/double-descent-generalization-curve.webp"
         alt="Double Descent for fully connected NN on MNIST."/>
-    <figcaption class="figure-caption">Bugged image - N_mix should be first, then N_0. Multiple Descent generalization curve (dimension normalized test loss as a function of number of parameters). [Source](https://arxiv.org/abs/2008.01036)</figcaption>
+    <figcaption class="figure-caption">This image is wrong: \\( N_mix \\) should be first, then \\( N_0 \\). Multiple Descent generalization curve (dimension normalized test loss as a function of number of parameters). [Source](https://arxiv.org/abs/2008.01036)</figcaption>
 </figure>
 
 There is an bug in the generalization curve image above.
