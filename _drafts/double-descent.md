@@ -22,4 +22,5 @@ Then the expected L2 test error \\ (E(y-f)^2 \\) below conditioned on a test sam
 
 \\( E(y-f)^2 = E(y - Ey + Ey - f)^2 \\)
 \\( = \sigma^2 + E (Ey - f)^2 + 2 E \epsilon (Ey - f) \\)
-\\( = \sigma^2 + E (Ey - f)^2 = (Ey - Ef)^2 + E(Ef - f)^2 \\).
+\\( = \sigma^2 + E (Ey - f)^2 \\)
+\\( = (Ey - Ef)^2 + E(Ef - f)^2 \\).
