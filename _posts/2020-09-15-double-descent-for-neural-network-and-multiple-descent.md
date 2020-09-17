@@ -8,8 +8,8 @@ image: /images/double-descent-nn-mnist.webp
 permalink: /:categories/:title
 ---
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/js/polyfill.min.js"></script>
+<script id="MathJax-script" async src="/js/tex-mml-chtml.js"></script>
 
 
 <figure class="figure">
@@ -28,12 +28,37 @@ But in general, bias-variance trade-off is not applicable.
 Any kind of regularization of the optimizer, which is part of the model, will force model to look for "simple" solution, despite having capacity to fully fit the training data.
 Behaviour of the optimiser can have big impact on the resulting test loss (generalization error).
 
+
+# Bias-Variance Trade-off for L2 Norm
+
+In case of L2 norm, the train loss can be rewritten as a sum of bias term and variance term.
+
+- A prediction function \\( f \\) was fitted on the training data \\( D = \lbrace (x_1, y_1), (x_2, y_2), ..., (x_n, y_n) \rbrace \\).
+- A single the test sample \\( (x, y) \\) has a noisy label \\( y = Ey + \epsilon \\), but the mean label \\( Ey \\) is the true value.
+- Because the test label noise is independent of the training data, the fitted function has zero covariance with the test label noise: \\( E \epsilon f = 0 \\).
+
+Then the expected L2 test loss \\( E(y-f)^2 \\) below is conditioned on a test sample \\( x \\). The expectation is calculated over all draws of train samples \\( D \\) and label noise \\( \epsilon \\).
+
+\\( E(y-f)^2 \\)
+\\( = E(y - Ey + Ey - f)^2 \\)
+\\( = E (Ey - f)^2 + 2 E \epsilon (Ey - f) + \sigma^2\\)
+\\( = E (Ey - f)^2 + \sigma^2 \\)
+\\( = (Ey - Ef)^2 + E(Ef - f)^2 + \sigma^2 \\).
+
+Terms in above equation in given order represent:
+1. the function ability to fit the training data. It is called bias term.
+2. the function ability to resist the training label noise, predict mostly the same outputs on same inputs, and thus generalize. It is called variance term.
+3. the test label noise. It is called irreducible error.
+
+However, above decomposition does not explicitly prove how the individual components behave.
+So, it is no prove of the proposed dilemma.
+
 ## Over-parameterized
 
 - no precise definition
 - it can mean test loss zero
 - usually means #params > #samples
-- most modern machine learning works in over parametrized regime and uses various regularization methods
+- modern ML models are over-parametrized and use various regularization methods
 
 ## Generalization Curve
 
@@ -42,7 +67,7 @@ Behaviour of the optimiser can have big impact on the resulting test loss (gener
 
 ##  Multiple Descent: Design Your Own Generalization Curve
 
-In the Multiple Descent paper, the test loss as a function of number of parameters of special case of linear regression is highly controlled for in both under-parametrized and over-parametrized regimes.
+In the [Multiple Descent paper](https://arxiv.org/abs/2008.01036), the test loss as a function of number of parameters of special case of linear regression is highly controlled for in both under-parametrized and over-parametrized regimes.
 
 ### Authors rigorously prove:
 - Existence of multiple descent in the generalization curve.
@@ -67,7 +92,11 @@ Authors then draw generalization curve as average test-loss normalized by the fe
         class="figure-img img-fluid rounded"
         src="/images/double-descent-generalization-curve.webp"
         alt="Double Descent for fully connected NN on MNIST."/>
-    <figcaption class="figure-caption">Bugged image - N_mix should be first, then N_0. Multiple Descent generalization curve (dimension normalized test loss as a function of number of parameters). Source TODO</figcaption>
+    <figcaption class="figure-caption">Bugged image - N_mix should be first, then N_0. Multiple Descent generalization curve (dimension normalized test loss as a function of number of parameters). [Source](https://arxiv.org/abs/2008.01036)</figcaption>
 </figure>
 
+There is an bug in the generalization curve image above.
+The paper proves that the generalization curve can be pushed up if we introduce a gaussian mixture feature right after a standard gaussian.
+That makes sense, as gaussian mixture is easier to "mis-learn" than standard gaussian.
 
+While this is completely artificial model, it still interesting that we can have arbitrary number of descents contrary to the bias-variance dilemma.
