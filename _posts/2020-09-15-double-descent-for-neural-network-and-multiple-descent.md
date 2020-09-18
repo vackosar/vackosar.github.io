@@ -128,7 +128,7 @@ Authors then draw generalization curve as average test-loss normalized by the fe
         class="figure-img img-fluid rounded"
         src="/images/double-descent-generalization-curve.webp"
         alt="Double Descent for fully connected NN on MNIST."/>
-    <figcaption class="figure-caption">This image is wrong: \\( N_mix \\) should be first, then \\( N_0 \\). Multiple Descent generalization curve (dimension normalized test loss as a function of number of parameters). [Source](https://arxiv.org/abs/2008.01036)</figcaption>
+    <figcaption class="figure-caption">This image is wrong: \( N_{mix} \) should be first, then \( N_0 \). Multiple Descent generalization curve (dimension normalized test loss as a function of number of parameters). <a href="https://arxiv.org/abs/2008.01036">Source</a>.</figcaption>
 </figure>
 
 There is an bug in the generalization curve image above.
