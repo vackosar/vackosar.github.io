@@ -89,6 +89,11 @@ Terms in above equation in given order represent:
 However, above decomposition does not explicitly prove how the individual components behave.
 So, it is no prove of the proposed dilemma.
 
+There is a ["Deriving the final identity" section in "Linear Regression and the  Bias Variance Tradeoff"](https://people.eecs.berkeley.edu/~jegonzal/assets/slides/linear_regression.pdf),
+which attempts an estimate of the variance term,
+but I think they made an mistake in the calculation.
+
+
 ## Over-parameterized
 
 - no precise definition
