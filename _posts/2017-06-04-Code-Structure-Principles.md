@@ -3,7 +3,7 @@ layout: post
 title: "How To Structure Code: Localize Related, Inline Over Extract, Minimize Visibility"
 date: 2017-06-04
 category: software
-description: A short alternative view on code structure principles based on several years of personal experience, Martin Fowler's online posts, Bloch's Effective Java, McConnell's Code Complete and Adam Bien's online posts.
+description: A short alternative view on code structure principles based on several years of personal experience, Carmack, Jonathan Blow, and Adam Bien's posts.
 permalink: /:categories/:title
 redirect_from:
   - /2017/06/04/Code-Structure-Principles.html
@@ -17,7 +17,7 @@ Sections:
 - [Code Containers](#code-containers)
 - [1. Localize Related](#1-localize-related)
 - [2. Inline over Extract](#2-inline-over-extract)
-- [3. Minimize Visibility](#3-minimize-visibility)
+- [3. Specific over Generic](#3-specific-over-generic)
 
 Code structure cuts across the architecture. Learn about dead-simple architecture called [Boundary-Control-Entity here](https://vaclavkosar.com/software/Boundary-Control-Entity-Architecture).
 
@@ -34,7 +34,8 @@ In Java, code is sorted into following hierarchy:
 
 ## 1. Localize Related
 
-Code structure is improved by sorting Code Containers which are related into single higher hierarchy Code Container.
+The code structure is improved by sorting Code Containers which are related into single higher hierarchy Code Container.
+
 
 Related Code Containers are defined by following:
 - Related Code Containers often use same Code Containers.
@@ -119,37 +120,11 @@ class CurrencyAmountTransformer {
 }
 ```
 
-## 3. Minimize Visibility
-The code structure can improved by minimizing visibility of lower level Code Structures across higher level Code Structures boundaries.
-But it becomes critical only when your will have many users and you want to make it clear what is part of the API, and what may be changed in the future.
-Within your project code it doesn't matter much, what methods are explicitly hidden.
+## 3. Specific over Generic
+Do not generalize too early.
+Do waste time trying to write general solution to broad classes of problems, which you'll never face.
+Try to finish on time and make it work robustly for the specific case you are solving.
 
-
-### Examples
-
-#### Field Hiding
-Field ```USD_RATE``` is not visible outside class ```CurrencyAmountTransformer```.
-```java
-class CurrencyAmountTransformer {
-    
-    private double USD_RATE = 1.2;
-    
-    double transformToUsd(double amount) {
-        return USD_RATE * amount;
-    }
-    
-}
-```
-
-#### Class Hiding
-Java allows classes that can be imported only within given package.
-
-#### Maven Modules Don't Allow Hiding
-Unfortunately Maven modules don't provide restriction of visibility of dependency modules only within given Module. All dependencies of a dependency will also become dependencies of a dependent. 
-
-#### Micro-Service API
- 
-Micro-services usually publish only minimal API which can be used to interact with it. 
 
 ## Continue: The Dead-Simple Architecture
 Code structure cuts across the architecture. [Learn about a dead-simple architecture called Boundary-Control-Entity here](/software/Boundary-Control-Entity-Architecture).
