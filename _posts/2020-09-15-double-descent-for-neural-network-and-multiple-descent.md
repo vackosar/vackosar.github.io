@@ -19,7 +19,9 @@ Empirically this can be observed for example in case of decision tree, which bey
 But in general, bias-variance trade-off is not applicable.
 Any kind of regularization of the optimizer, which is part of the model, will force model to look for "simple" solution, despite having capacity to fully fit the training data.
 Behaviour of the optimiser can have big impact on the resulting test loss (generalization error), such as early stopping.
-[Belkin 2019 paper](https://arxiv.org/abs/1812.11118) shows on image below that bias-variance trade-off is not applicable to fully connected NN on MNIST even without regularization and early stopping.
+
+Even not having any explicit regularization, doesn't imply that bias-variance tradeoff will be applicable.
+[Belkin 2019 paper](https://arxiv.org/abs/1812.11118) has an image, displayed also below, which shows that bias-variance trade-off is not applicable to fully connected NN on MNIST without regularization and early stopping.
 
 <figure class="figure">
     <img
