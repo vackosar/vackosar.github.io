@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Double Descend Contrary to Bias-Variance Trade-Off"
+title: "Double Descent Contrary to Bias-Variance Trade-Off"
 date: 2020-09-15
 categories: ml
 description: The test loss as a function of number of parameters in can show more than one descent.
