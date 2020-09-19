@@ -13,6 +13,8 @@ redirect_from:
 <script src="/js/polyfill.min.js"></script>
 <script id="MathJax-script" async src="/js/tex-mml-chtml.js"></script>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4Qgt4nXgJ10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 The bias-variance trade-off hypothesis implies that lowering train loss by increasing model size will lead to higher test loss.
 Empirically this can be observed for example in case of decision tree, which beyond some size will achieve zero train loss, while test loss (generalization error) will rise.
