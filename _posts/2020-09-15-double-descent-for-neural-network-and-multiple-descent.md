@@ -12,21 +12,22 @@ permalink: /:categories/:title
 <script id="MathJax-script" async src="/js/tex-mml-chtml.js"></script>
 
 
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
-        src="/images/double-descent-nn-mnist.webp"
-        alt="Double Descent for fully connected NN on MNIST."/>
-    <figcaption class="figure-caption">Double Descent for fully connected NN on MNIST. <a href="https://arxiv.org/abs/1812.11118">Source: Belkin 2019</a></figcaption>
-</figure>
-
 
 Bias-variance trade-off hypothesis implies that lowering train loss by increasing model size will lead to higher test loss.
 Empirically this can be observed for example in case of decision tree, which beyond some size will achieve zero train loss, while test loss will rise.
 
 But in general, bias-variance trade-off is not applicable.
 Any kind of regularization of the optimizer, which is part of the model, will force model to look for "simple" solution, despite having capacity to fully fit the training data.
-Behaviour of the optimiser can have big impact on the resulting test loss (generalization error).
+Behaviour of the optimiser can have big impact on the resulting test loss (generalization error), such as early stopping.
+[Belkin 2019 paper](https://arxiv.org/abs/1812.11118) shows on image below that bias-variance trade-off is not applicable to fully connected NN on MNIST without regularization and early stopping.
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        src="/images/double-descent-nn-mnist.webp"
+        alt="Double Descent for fully connected NN on MNIST."/>
+    <figcaption class="figure-caption">Double Descent for fully connected NN on MNIST without regularization and early stopping. <a href="https://arxiv.org/abs/1812.11118">Source: Belkin 2019</a></figcaption>
+</figure>
 
 
 # Bias-Variance Trade-off for L2 Norm
@@ -94,17 +95,16 @@ which attempts an estimate of the variance term,
 but I think they made an mistake in the calculation.
 
 
-## Over-parameterized
+## What is an overparameterized model?
 
-- no precise definition
-- it can mean test loss zero
-- usually means #params > #samples
-- modern ML models are over-parametrized and use various regularization methods
+There is no precise definition. It can mean test loss zero. But usually means that number of params is greater than number of samples.
+Modern ML models are over-parametrized, but use various regularization methods.
+Even without regularization methods 
 
-## Generalization Curve
+## What is a generalization curve?
 
-- Defined as the test loss as a function of number of parameters of the model family.
-- The test loss is usually normalized by the number of parameters.
+It is defined as the test loss as a function of number of parameters of the model.
+The test loss is usually normalized by the number of parameters to remove irrelevant influence of increasing the dimension to loss function value.
 
 ##  Multiple Descent: Design Your Own Generalization Curve
 
