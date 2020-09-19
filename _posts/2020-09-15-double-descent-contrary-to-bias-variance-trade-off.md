@@ -3,7 +3,7 @@ layout: post
 title: "Double Descent Contrary to Bias-Variance Trade-Off"
 date: 2020-09-15
 categories: ml
-description: The test loss as a function of number of parameters in can show more than one descent.
+description: Increasing model's parameter count leads to multiple test loss peaks and achieving global minima in the overparameterized regime.
 image: /images/double-descent-nn-mnist.webp
 permalink: /:categories/:title
 redirect_from:
