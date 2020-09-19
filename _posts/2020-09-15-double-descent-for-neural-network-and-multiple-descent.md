@@ -92,7 +92,24 @@ So, it is no prove of the proposed dilemma.
 
 There is a ["Deriving the final identity" section in "Linear Regression and the  Bias Variance Tradeoff"](https://people.eecs.berkeley.edu/~jegonzal/assets/slides/linear_regression.pdf),
 which attempts an estimate of the variance term,
-but I think they made an mistake in the calculation.
+but I think it contains a mistake in the calculation.
+
+The estimate is done for a linear regression problem with following simplifications:
+- training data \\( D = \lbrace (x_1, y_1), ..., (x_n, y_n) \rbrace \\),
+- an dimension of the training data: \\( p \\),
+- identity matrix of dimension \\( p \\): \\( I_p \\),
+- train set \\( x \\) is normally distributed without covariance: \\( x \in N(0, I_p \sigma_{x-train}}) \\),
+- train set \\( y \\) is normally distributed, single dimensional: \\( y(x) \in N(Ey, \sigma_y) \\).
+- test set \\( x_t \in N(0, I_p \sigma_{x-test}) \\)
+
+I expect that variance for above simplified linear regression problem will increase if we:
+- increase the problem dimension \\( p \\)
+- decrease the training sample count \\( n \\)
+- increase the training label variance \\( \sigma_y \\) (this is proved in above pdf)
+- decrease the training sample variance \\( \sigma_{x_{train}} \\) = poor training sample
+- increase the test sample variance \\( \sigma_{x_{test}} \\) = unfamiliar test data
+
+Unfortunately, I don't have the direct proof.
 
 
 ## What is an overparameterized model?

@@ -29,14 +29,14 @@ Let's assume
 - training data \\( D = \lbrace (x_1, y_1), ..., (x_n, y_n) \rbrace \\),
 - an dimension of the training data: \\( p \\),
 - identity matrix of dimension \\( p \\): \\( I_p \\),
-- train set \\( x \\) is normally distributed without covariance: \\( x \in N(0, I_p \sigma_{x_{train}}) \\),
+- train set \\( x \\) is normally distributed without covariance: \\( x \in N(0, I_p \sigma_{x-train}}) \\),
 - train set \\( y \\) is normally distributed, single dimensional: \\( y(x) \in N(Ey, \sigma_y) \\).
-- test set \\( x_t \in N(0, I_p \sigma_{x_{test}}) \\),\\)
+- test set \\( x_t \in N(0, I_p \sigma_{x-test}) \\),\\)
 
 Then if, one follows ["Deriving the final identity" in "Linear Regression and the  Bias Variance Tradeoff"](https://people.eecs.berkeley.edu/~jegonzal/assets/slides/linear_regression.pdf), without making an mistake at the end, I hope, one gets variance term:
 
 \\(
-E(Ef - f)^2 \approx \frac{\sigma_y^2 \sigma_{x_{test}} p}{\sigma_{x_{train}} n}
+E(Ef - f)^2 \approx \frac{ \sigma_y^2 (1 + p \sigma_{x-test}^2) }{ \sigma_{x-train} n}
 \\).
 
 So, we increase variance if we:
