@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How To Structure Code: Localize Related, Inline Over Extract, Minimize Visibility"
+title: "How to Structure Code: Localize Related, Inline over Extract, Specific over Generic"
 date: 2017-06-04
 category: software
 description: A short alternative view on code structure principles based on several years of personal experience, Carmack, Jonathan Blow, and Adam Bien's posts.
