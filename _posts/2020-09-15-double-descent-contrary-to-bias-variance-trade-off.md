@@ -18,7 +18,7 @@ The bias-variance trade-off hypothesis implies that lowering train loss by incre
 Empirically this can be observed for example in case of decision tree, which beyond some size will achieve zero train loss, while test loss (generalization error) will rise.
 
 But in general, bias-variance trade-off is not applicable.
-Any kind of regularization of the optimizer, which is part of the model, will force model to look for "simple" solution, despite having capacity to fully fit the training data.
+Any kind of regularization of the optimizer, which is part of the model, will force model to look for "simple" solution (Occam's razor), despite having capacity to fully fit the training data.
 Behaviour of the optimiser can have an impact on the resulting test loss (generalization error). For example early stopping is a regularization.
 Not having any explicit regularization, doesn't imply that bias-variance tradeoff will be applicable.
 [Belkin 2019 paper](https://arxiv.org/abs/1812.11118) has an image, displayed also below, which shows that bias-variance trade-off is not applicable to fully connected NN on MNIST without regularization and early stopping.
@@ -33,7 +33,7 @@ The paper refers to empirical evidence that an implicit regularization is repres
 </figure>
 
 
-# Bias-Variance Trade-off for L2 Norm
+# L2 Norm Rewritten as a Sum of a Bias and a Variance 
 
 In case of L2 norm, the train loss can be rewritten as a sum of bias term and variance term.
 
@@ -128,16 +128,16 @@ It is defined as the test loss as a function of number of parameters of the mode
 The test loss is usually normalized by the number of parameters to remove irrelevant influence of increasing the dimension to loss function value.
 
 
-##  Multiple Descent: Design Your Own Generalization Curve
+##  Multiple Descent Proof for Linear Regression
 
 In the [Multiple Descent paper](https://arxiv.org/abs/2008.01036), the test loss as a function of number of parameters of special case of linear regression is highly controlled for in both under-parametrized and over-parametrized regimes.
 
-### Authors prove:
+Authors prove:
 - Existence of multiple descent in the generalization curve.
 - That the number of descents can be designed.
 
 
-### How it works?
+### How is the multiple descent achieved?
 
 The problem is linear regression without regularization with true linear model of zero.
 Where all labels contain an error \\( y_i = 0 + \varepsilon_i \\), which is normally distributed around zero.
