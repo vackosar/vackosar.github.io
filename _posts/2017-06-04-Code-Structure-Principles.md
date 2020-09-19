@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How To Structure Code: Localize Related, Distribute Complexity, Minimize Visibility"
+title: "How To Structure Code: Localize Related, Inline Over Extract, Minimize Visibility"
 date: 2017-06-04
 category: software
 description: A short alternative view on code structure principles based on several years of personal experience, Martin Fowler's online posts, Bloch's Effective Java, McConnell's Code Complete and Adam Bien's online posts.
@@ -16,7 +16,7 @@ Focus more on the specifics of your problem than on generics offered by the ivor
 Sections:
 - [Code Containers](#code-containers)
 - [1. Localize Related](#1-localize-related)
-- [2. Distribute Complexity](#2-distribute-complexity)
+- [2. Inline over extract](#2-inline-over-extract)
 - [3. Minimize Visibility](#3-minimize-visibility)
 
 Code structure cuts across the architecture. Learn about dead-simple architecture called [Boundary-Control-Entity here](https://vaclavkosar.com/software/Boundary-Control-Entity-Architecture).
@@ -92,22 +92,15 @@ Micro-services in Java are defined by a Maven module. Final micro-service execut
 - "in reality, they are little more than convenient carrying cases for loosely related collections of data and routines."; Class Foundations: Abstract Data Types (ADTs), Code Complete
 - [Generic Class Name Signals Low Cohesion](https://vackosar.github.io/2017/06/06/Generic-Class-Name-Signals-Low-Cohesion.html)
 
-## 2. Distribute Complexity
-Code structure is improved by distributing complexity into multiple Code Containers. Local complexity is prioritized over total complexity. 
+## 2. Inline over Extract
 
-Code Container complexity is defined by the time needed by programmer to be able to understand, navigate and modify the Code Container.
-This time is directly proportional to 
-- the number or expressions used to express a Code Container.
-- the number of unnamed or badly named Code Container references.
-- on total complexity to a lesser extent.
+I used to have a section referencing Martin Fowler and divide and conquer strategy about keeping methods short and low complexity.
+But since then I came around to view of the productive programmers like [Carmack](http://number-none.com/blow/john_carmack_on_inlined_code.html) and [Jonathan Blow](https://youtu.be/JjDsP5n2kSM). 
+After testing the idea myself, I do think that longer methods are more productive than lots of small methods.
+Extracting small methods makes the code less transparent, harder to refactor, and harder to write.
+A complexity is better exposed attempted to be hidden.
 
-### References
-Usually 4-8 lines and cyclomatic complexity 3-7 is considered a good balance.
-- Divide and Conquer; https://en.wikipedia.org/wiki/Divide_and_conquer
-- "general or abstract representation of concepts is contained at the top of the hierarchy, with increasingly detailed, specialized representations at the hierarchy's lower levels."; Build Hierarchies, Code Complete
-- "A long method is a good example of this - just looking at the code and my nose twitches if I see more than a dozen lines of java."; https://www.martinfowler.com/bliki/CodeSmell.html
-- "Its essence is applying a series of small behavior-preserving transformations, each of which "too small to be worth doing"."; https://www.martinfowler.com/books/refactoring.html
-- "If you have a good name for a method you don't need to look at the body";  Refactoring: Improving the Design of Existing Code
+>  The function that is least likely to cause a problem is one that doesn't exist, which is the benefit of inlining it.
 
 ### Example
 USD rate below is extracted into a separate Code Container - into a field. Replacing magic value with named field increases human readability.
