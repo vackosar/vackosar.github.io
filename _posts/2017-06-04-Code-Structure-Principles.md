@@ -16,7 +16,7 @@ Focus more on the specifics of your problem than on generics offered by the ivor
 Sections:
 - [Code Containers](#code-containers)
 - [1. Localize Related](#1-localize-related)
-- [2. Inline over extract](#2-inline-over-extract)
+- [2. Inline over Extract](#2-inline-over-extract)
 - [3. Minimize Visibility](#3-minimize-visibility)
 
 Code structure cuts across the architecture. Learn about dead-simple architecture called [Boundary-Control-Entity here](https://vaclavkosar.com/software/Boundary-Control-Entity-Architecture).
@@ -100,7 +100,9 @@ After testing the idea myself, I do think that longer methods are more productiv
 Extracting small methods makes the code less transparent, harder to refactor, and harder to write.
 A complexity is better exposed attempted to be hidden.
 
->  The function that is least likely to cause a problem is one that doesn't exist, which is the benefit of inlining it.
+<blockquote class="blockquote" style="font-style: italic">
+The function that is least likely to cause a problem is one that doesn't exist, which is the benefit of inlining it.
+</blockquote>
 
 ### Example
 USD rate below is extracted into a separate Code Container - into a field. Replacing magic value with named field increases human readability.
@@ -118,11 +120,10 @@ class CurrencyAmountTransformer {
 ```
 
 ## 3. Minimize Visibility
-Code structure is improved by minimizing visibility of lower level Code Structures across higher level Code Structures boundaries.
+The code structure can improved by minimizing visibility of lower level Code Structures across higher level Code Structures boundaries.
+But it becomes critical only when your will have many users and you want to make it clear what is part of the API, and what may be changed in the future.
+Within your project code it doesn't matter much, what methods are explicitly hidden.
 
-### References
-
-- "A method is not used by any other class. Make the method private."; https://refactoring.com/catalog/hideMethod.html
 
 ### Examples
 
