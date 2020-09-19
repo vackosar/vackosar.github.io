@@ -114,14 +114,16 @@ Unfortunately, I don't have the direct proof.
 
 ## What is an overparameterized model?
 
-There is no precise definition. It can mean test loss zero. But usually means that number of params is greater than number of samples.
+But usually means that number of params is greater than number of samples.
+It can also mean that model has capacity to achieve the test loss zero, that is to interpolate the train data.
 Modern ML models are over-parametrized, but use various regularization methods.
-Even without regularization methods 
+
 
 ## What is a generalization curve?
 
 It is defined as the test loss as a function of number of parameters of the model.
 The test loss is usually normalized by the number of parameters to remove irrelevant influence of increasing the dimension to loss function value.
+
 
 ##  Multiple Descent: Design Your Own Generalization Curve
 
@@ -130,6 +132,7 @@ In the [Multiple Descent paper](https://arxiv.org/abs/2008.01036), the test loss
 ### Authors prove:
 - Existence of multiple descent in the generalization curve.
 - That the number of descents can be designed.
+
 
 ### How it works?
 
