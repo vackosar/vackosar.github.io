@@ -118,7 +118,7 @@ Unfortunately, I don't have the direct proof.
 
 ## What is an overparameterized model?
 
-But usually means that number of params is greater than number of samples.
+Usually model is called overparametrized when the number of parameters is greater than the number of training samples.
 It can also mean that model has capacity to achieve the test loss zero, that is to interpolate the train data.
 Modern ML models are over-parametrized, but use various regularization methods.
 
