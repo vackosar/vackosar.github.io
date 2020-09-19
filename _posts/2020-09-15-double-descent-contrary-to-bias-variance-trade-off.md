@@ -1,16 +1,17 @@
 ---
 layout: post
-title: "Double Descent for Neural Network and Multiple Descent for Linear Regression"
+title: "Double Descend Contrary to Bias-Variance Trade-Off"
 date: 2020-09-15
 categories: ml
-description: The test loss as a function of number of parameters in a special case of linear regression can show arbitrary multiple-descent.
+description: The test loss as a function of number of parameters in can show more than one descent.
 image: /images/double-descent-nn-mnist.webp
 permalink: /:categories/:title
+redirect_from:
+  - /ml/double-descent-for-neural-network-and-multiple-descent
 ---
 
 <script src="/js/polyfill.min.js"></script>
 <script id="MathJax-script" async src="/js/tex-mml-chtml.js"></script>
-
 
 
 The bias-variance trade-off hypothesis implies that lowering train loss by increasing model size will lead to higher test loss.
@@ -18,10 +19,10 @@ Empirically this can be observed for example in case of decision tree, which bey
 
 But in general, bias-variance trade-off is not applicable.
 Any kind of regularization of the optimizer, which is part of the model, will force model to look for "simple" solution, despite having capacity to fully fit the training data.
-Behaviour of the optimiser can have big impact on the resulting test loss (generalization error), such as early stopping.
-
-Even not having any explicit regularization, doesn't imply that bias-variance tradeoff will be applicable.
+Behaviour of the optimiser can have an impact on the resulting test loss (generalization error). For example early stopping is a regularization.
+Not having any explicit regularization, doesn't imply that bias-variance tradeoff will be applicable.
 [Belkin 2019 paper](https://arxiv.org/abs/1812.11118) has an image, displayed also below, which shows that bias-variance trade-off is not applicable to fully connected NN on MNIST without regularization and early stopping.
+The paper refers to empirical evidence that an implicit regularization is represent in the SGD algorithm.
 
 <figure class="figure">
     <img
