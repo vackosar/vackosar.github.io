@@ -126,7 +126,6 @@ Modern ML models are over-parametrized, but use various regularization methods.
 ## What is a generalization curve?
 
 It is defined as the test loss as a function of number of parameters of the model.
-The test loss is usually normalized by the number of parameters to remove irrelevant influence of increasing the dimension to loss function value.
 
 
 ##  Multiple Descent Proof for Linear Regression
