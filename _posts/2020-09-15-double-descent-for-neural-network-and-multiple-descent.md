@@ -98,7 +98,7 @@ The estimate is done for a linear regression problem with following simplificati
 - training data \\( D = \lbrace (x_1, y_1), ..., (x_n, y_n) \rbrace \\),
 - an dimension of the training data: \\( p \\),
 - identity matrix of dimension \\( p \\): \\( I_p \\),
-- train set \\( x \\) is normally distributed without covariance: \\( x \in N(0, I_p \sigma_{x-train}}) \\),
+- train set \\( x \\) is normally distributed without covariance: \\( x \in N(0, I_p \sigma_{x-train}) \\),
 - train set \\( y \\) is normally distributed, single dimensional: \\( y(x) \in N(Ey, \sigma_y) \\).
 - test set \\( x_t \in N(0, I_p \sigma_{x-test}) \\)
 
