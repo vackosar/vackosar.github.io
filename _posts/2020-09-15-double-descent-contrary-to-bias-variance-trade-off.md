@@ -33,9 +33,9 @@ The paper refers to empirical evidence that an implicit regularization is repres
 </figure>
 
 
-# L2 Norm Rewritten as a Sum of a Bias and a Variance 
+# Bias–variance decomposition of mean squared error 
 
-In case of L2 norm, the train loss can be rewritten as a sum of bias term and variance term.
+In case of L2 norm, the train loss can be rewritten as a sum of bias term and variance term. However that doesn't prove presence of any dilemma.
 
 - A prediction function \\( f \\) was fitted on the training data \\( D = \lbrace (x_1, y_1), (x_2, y_2), ..., (x_n, y_n) \rbrace \\).
 - A single the test sample \\( (x, y) \\) has a noisy label \\( y = Ey + \varepsilon \\), but the mean label \\( Ey \\) is the true value.
@@ -93,6 +93,7 @@ Terms in above equation in given order represent:
 However, above decomposition does not explicitly prove how the individual components behave.
 So, it is no prove of the proposed dilemma.
 
+## What is bias variance decomposition in case of linear regression? 
 There is a ["Deriving the final identity" section in "Linear Regression and the  Bias Variance Tradeoff"](https://people.eecs.berkeley.edu/~jegonzal/assets/slides/linear_regression.pdf),
 which attempts an estimate of the variance term,
 but I think it contains a mistake in the calculation.
