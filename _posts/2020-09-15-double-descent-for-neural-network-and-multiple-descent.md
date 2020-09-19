@@ -13,7 +13,7 @@ permalink: /:categories/:title
 
 
 
-Bias-variance trade-off hypothesis implies that lowering train loss by increasing model size will lead to higher test loss.
+The bias-variance trade-off hypothesis implies that lowering train loss by increasing model size will lead to higher test loss.
 Empirically this can be observed for example in case of decision tree, which beyond some size will achieve zero train loss, while test loss will rise.
 
 But in general, bias-variance trade-off is not applicable.
