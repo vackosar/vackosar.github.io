@@ -87,8 +87,8 @@ Enjoy the journey documenting the current state of the synthesis of the stark wi
     <img
         class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/PXL_20201019_053735021.NIGHT_fountain.jpg"
-        alt="Little prince fountain"/>
-    <figcaption class="figure-caption">Little prince fountain</figcaption>
+        alt="The little prince fountain"/>
+    <figcaption class="figure-caption">The little prince fountain</figcaption>
 </figure>
 <figure class="figure">
     <img
