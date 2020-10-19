@@ -86,6 +86,20 @@ Enjoy the journey documenting the current state of the synthesis of the stark wi
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
+        src="/images/sunshine-plaza/PXL_20201019_053735021.NIGHT_fountain.jpg"
+        alt="Little prince fountain"/>
+    <figcaption class="figure-caption">Little prince fountain</figcaption>
+</figure>
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        src="/images/sunshine-plaza/sunshine-satelite.png"
+        alt="A satelite image of the sun-shaped garden at Slunecni namesti"/>
+    <figcaption class="figure-caption">A satelite image of the sun-shaped garden at Slunecni namesti</figcaption>
+</figure>
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_080603.jpg"
         alt="Modern communal church construction would be prohibited during the communism."/>
     <figcaption class="figure-caption">Modern communal church construction would be prohibited during the communism.</figcaption>
