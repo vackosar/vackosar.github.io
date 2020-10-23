@@ -93,13 +93,6 @@ Enjoy the journey documenting the current state of the synthesis of the stark wi
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_080724.jpg"
-        alt="There is an angel body-builder on an ad on the right."/>
-    <figcaption class="figure-caption">There is an angel body-builder in an ad on the right. It sells light art for events and parties.</figcaption>
-</figure>
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_080842.jpg"
         alt="A subway ventilation reminiscent of an ocean liner's exhaust."/>
     <figcaption class="figure-caption">A subway ventilation reminiscent of an ocean liner's exhaust.</figcaption>
