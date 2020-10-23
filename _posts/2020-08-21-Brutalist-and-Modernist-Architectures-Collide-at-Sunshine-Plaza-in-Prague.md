@@ -37,13 +37,6 @@ Enjoy the journey documenting the current state of the synthesis of the stark wi
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_075608.jpg"
-        alt="Concrete wall, metro station, and the construction."/>
-    <figcaption class="figure-caption">A path on the concrete wall leads up to the rapid transit.</figcaption>
-</figure>
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
         src="/images/sunshine-plaza/IMG_20200821_075753.jpg"
         alt="Slunecni namesti in Prague"/>
     <figcaption class="figure-caption">Little Hill (Hůrka) subway station in front of new Sunshine Town Hall.</figcaption>
@@ -54,13 +47,6 @@ Enjoy the journey documenting the current state of the synthesis of the stark wi
         src="/images/sunshine-plaza/IMG_20200820_083517.jpg"
         alt="A palm tree lives inside a glass bio-dome at Lužiny station."/>
     <figcaption class="figure-caption">A palm tree lives inside a glass bio-dome at Lužiny station.</figcaption>
-</figure>
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_082241.jpg"
-        alt="Masked woman entering the subway station behind a glass dome."/>
-    <figcaption class="figure-caption">Masked woman entering the subway station designed as artdeco greenhouse.</figcaption>
 </figure>
 <figure class="figure">
     <img
