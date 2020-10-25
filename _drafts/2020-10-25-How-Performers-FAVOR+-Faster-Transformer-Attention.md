@@ -30,6 +30,9 @@ How was that done? Read on, traveller! I will tell you a great story.
 # Original Attention
 
 \\( softmax(QK^\intercal)V \\)
+where softmax is
+TODO
+\\( softmax = exp() \\)
 
 # Not Paying for the Attention
 
