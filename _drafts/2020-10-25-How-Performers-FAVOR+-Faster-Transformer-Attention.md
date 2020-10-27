@@ -27,15 +27,18 @@ But only recently published [Performer](https://ai.googleblog.com/2020/10/rethin
 
 How was that done? Read on, traveller! I will tell you a great story. 
 
-# Original Attention
 
-\\( softmax(QK^\intercal)V \\)
-where softmax is
-TODO
-\\( softmax = exp() \\)
+### Not Paying for the Attention
 
-# Not Paying for the Attention
+Original attention is a value vector weighted by softmax applied to dot product of key and query.
+
+\\( a_{\mathbf{orig}} = \mathbf{softmax}(\frac{QK^\intercal}{\sqrt{d}})V \\)
+
+The expensive part is the matrix multiplication of key and query with softmax. Can we get a cheap estimate of that operation?
 
 I described [a speed up using random features kernel approximation for word-movers distance](/ml/Word-Movers-Embedding-Cheap-WMD-For-Documents) in a previous post.
-The Performer approximates Transformer attention by kernelizing the softmax using positive orthogonal random features.
+In this case, the Performer approximates Transformer attention by kernelizing the softmax using positive orthogonal random features.
+The kernel here is a resulting elements of the softmax result also called attention matrix values as a function of corresponding query and key vectors.
+
+\\( (\mathbf{softmax}(\frac{QK^\intercal}{\sqrt{d}}))_{i, j} = \mathbf{softmax}(Q_{i, \dot}K_{j, \dot}^\intercal) \\)
 
