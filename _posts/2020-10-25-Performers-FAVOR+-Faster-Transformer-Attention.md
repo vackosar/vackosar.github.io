@@ -26,7 +26,8 @@ permalink: /:categories/:title
 The attention mechanism is the kingpin of the Tranformer model. It drives the results, but runs the memory and time racket of \\( O(L^2d) \\), where \\( L \\) is input token count and \\( d \\) is the latent representation dimension.
 
 [The Reformer](https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html), [Longformer](https://arxiv.org/abs/2004.05150) and others attempted to topple it with \\( O(L \log L ) \\).
-But only recently published [Performer](https://ai.googleblog.com/2020/10/rethinking-attention-with-performers.html) done the job with \\( O(L d^2 \log d ) \\).
+Then there was this model - Linformer they called him, and he had linear complexity. But he didn't make it.
+Only recently published [Performer](https://ai.googleblog.com/2020/10/rethinking-attention-with-performers.html) done the job with \\( O(L d^2 \log d ) \\).
 
 How was that done? Read on, traveller! I will tell you a great story. 
 
@@ -90,6 +91,10 @@ and then normalize the vectors to make their squared norms match standard normal
 
 Doing this, the authors arrived at stronger guarantees of fast convergence and unbiasedness of the softmax estimate.
 The whole mechanism was then called FAVOR+.
+
+Fast convergence implies that we need much less random features.
+In the Performer paper, they show very good performermance on \\( L = 4096, d = 16\\) with feature count starting from 100. 
+Their default setup was **256** features (Section A.3).
 
 
 #### TODO - post under construction!
