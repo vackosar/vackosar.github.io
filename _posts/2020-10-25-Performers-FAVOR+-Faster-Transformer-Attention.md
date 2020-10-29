@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How Performers FAVOR+ Faster Transformer Attention"
+title: "Performers FAVOR+ Faster Transformer Attention"
 date: 2020-10-25
 categories: ml
 description: The Performer model attention approximation has linear time & space complexity of input token count in contrast to vanilla Transformer's square complexity.
@@ -92,3 +92,4 @@ Doing this, the authors arrived at stronger guarantees of fast convergence and u
 The whole mechanism was then called FAVOR+.
 
 
+#### TODO - post under construction!
