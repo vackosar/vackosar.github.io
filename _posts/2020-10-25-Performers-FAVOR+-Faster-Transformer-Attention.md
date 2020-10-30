@@ -3,7 +3,7 @@ layout: post
 title: "Performers FAVOR+ Faster Transformer Attention"
 date: 2020-10-25
 categories: ml
-description: The Performer model attention approximation has linear time & space complexity of input token count in contrast to vanilla Transformer's square complexity.
+description: The Performer model attention approximation has linear time & space complexity in input token count in contrast to vanilla Transformer's square complexity.
 image: /images/performer-attention-complexity.jpg
 permalink: /:categories/:title
 ---
@@ -26,7 +26,7 @@ permalink: /:categories/:title
 The attention mechanism is the kingpin of the Tranformer model. It drives the results, but runs the memory and time racket of \\( O(L^2d) \\), where \\( L \\) is input token count and \\( d \\) is the latent representation dimension.
 
 [The Reformer](https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html), [Longformer](https://arxiv.org/abs/2004.05150) and others attempted to topple it with \\( O(L \log L ) \\).
-Then there was this model - Linformer they called him, and he had linear complexity. But he didn't make it.
+Then there was this one model - [Linformer they called him](https://arxiv.org/abs/2006.04768), and he had linear complexity. But he didn't make it.
 Only recently published [Performer](https://ai.googleblog.com/2020/10/rethinking-attention-with-performers.html) done the job with \\( O(L d^2 \log d ) \\).
 
 How was that done? Read on, traveller! I will tell you a great story. 
@@ -41,7 +41,7 @@ Original attention is a value vector weighted by softmax applied to dot product 
 The expensive part is the matrix multiplication of key and query with softmax. Can we get a cheap estimate of that operation?
 
 
-#### Kernel Approximation
+#### This Kernel Performs
 I described [a speed up using random features kernel approximation for word-movers distance](/ml/Word-Movers-Embedding-Cheap-WMD-For-Documents) in a previous post.
 In this case, the Performer approximates Transformer attention by kernelizing the softmax using positive orthogonal random features.
 Let's define the kernel as a resulting elements of the softmax result also called attention matrix values as a function of corresponding query and key vectors - rows of query and key matricies.
@@ -96,5 +96,16 @@ Fast convergence implies that we need much less random features.
 In the Performer paper, they show very good performermance on \\( L = 4096, d = 16\\) with feature count starting from 100. 
 Their default setup was **256** features (Section A.3).
 
+
+#### The story of Linformer
+
+[Linformer](https://arxiv.org/abs/2006.04768) approximates attention with a low-rank matrix to achieve linear complexity.
+Its strategy is to project key, value, and query matrices through into a low-dimensional space.
+
+Linformer approximates the matrix multiplications in contrast to Performer which approximates the Q and K multiplication and softmax at the same time.
+This difference gives Performer accuracy advantage over Linformer.
+
+
+#### The story of Reformer
 
 #### TODO - post under construction!
