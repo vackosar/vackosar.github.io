@@ -41,7 +41,7 @@ Original attention is a value vector weighted by softmax applied to dot product 
 The expensive part is the matrix multiplication of key and query with softmax. Can we get a cheap estimate of that operation?
 
 
-#### 
+#### Performer Time
 
 To prove that Performer is linear time with input token length increasing, forward and backward pass was measured. 
 
