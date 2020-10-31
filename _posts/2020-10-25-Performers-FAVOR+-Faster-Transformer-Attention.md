@@ -97,9 +97,12 @@ In the Performer paper, they show very good performermance on \\( L = 4096, d = 
 Their default setup was **256** features (Section A.3).
 
 
+### Out-performing
+
+
 #### The story of Linformer
 
-[Linformer](https://arxiv.org/abs/2006.04768) approximates attention with a low-rank matrix to achieve linear complexity.
+[Linformer](https://arxiv.org/abs/2006.04768) approximates attention with a low-rank matrix to achieve linear complexity \\( O(L) \\).
 Its strategy is to project key, value, and query matrices through into a low-dimensional space.
 
 Linformer approximates the matrix multiplications in contrast to Performer which approximates the Q and K multiplication and softmax at the same time.
@@ -107,5 +110,38 @@ This difference gives Performer accuracy advantage over Linformer.
 
 
 #### The story of Reformer
+[Reformer](https://openreview.net/pdf?id=rkgNKkHtvB) approximates attention with locality-sensitive hashing.
+It achieves complexity of \\( O(L\logL) \\).
+The hashing speeds up the calculation by only multiplying close angle keys and queries, which have high dot product.
+
+
+#### Perplex Me Not
+
+Both Linformer and Performer estimate attention using probabilistically drawn vectors (features).
+Apparently **redrawing** these helps training accuracy.
+I think this is a type of regularization method.
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        alt="The Performer outperforms Linformer and matches Transformer if we redraw the random features on PG-19."
+        src="/images/performer-linformer-transformer.png">
+    <figcaption class="figure-caption">The Performer outperforms Linformer and matches Transformer if we redraw the random features on PG-19. (<a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a>).</figcaption>
+</figure>
+
+
+#### Performer over Reformer
+
+Performer may have lower complexity, but does it is more powerful?
+The Perfomer's authors provide comparison on image generation task, which requires a very large \\( L \\) in terms of [bits-per-dimension (BPD)](https://arxiv.org/pdf/1511.01844.pdf).
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        alt="The Performer outperforms Linformer and matches Transformer if we redraw the random features on PG-19."
+        src="/images/performer-vs-reformer-imagenet.png">
+    <figcaption class="figure-caption">The Performer outperforms Reformer on ImageNet64 - an image generation task. (<a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a>).</figcaption>
+</figure>
+
 
 #### TODO - post under construction!
