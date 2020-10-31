@@ -48,7 +48,7 @@ To prove that Performer is linear time with input token length increasing, forwa
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
-        alt="The Performer FAVOR+ attention on the right has linear complexity. The Transformer attention on the left has square complexity."
+        alt="The log-length vs log-time of Transformer, Performer, No-attention (OPT)."
         src="/images/performer-time.png">
     <figcaption class="figure-caption">The log-length vs log-time of Transformer, Performer, No-attention (OPT). (<a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a>).</figcaption>
 </figure>
