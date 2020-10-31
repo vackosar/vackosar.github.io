@@ -128,7 +128,7 @@ I think this is a type of regularization method.
         src="/images/performer-linformer-transformer.png">
     <figcaption class="figure-caption">
         The Performer outperforms Linformer and matches Transformer if we redraw the random features on PG-19.
-        (<a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a>).
+        (<a href="https://arxiv.org/pdf/2009.14794.pdf">source</a>).
     </figcaption>
 </figure>
 
@@ -145,7 +145,7 @@ The Perfomer's authors provide comparison on image generation task, which requir
         src="/images/performer-vs-reformer-imagenet.png">
     <figcaption class="figure-caption">
         The Performer outperforms Reformer on ImageNet64 - an image generation task.
-        (<a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a>).
+        (<a href="https://arxiv.org/pdf/2009.14794.pdf">source</a>).
     </figcaption>
 </figure>
 
