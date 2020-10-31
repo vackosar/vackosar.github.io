@@ -111,7 +111,7 @@ This difference gives Performer accuracy advantage over Linformer.
 
 #### The story of Reformer
 [Reformer](https://openreview.net/pdf?id=rkgNKkHtvB) approximates attention with locality-sensitive hashing.
-It achieves complexity of \\( O(L\logL) \\).
+It achieves complexity of \\( O(L\log L) \\).
 The hashing speeds up the calculation by only multiplying close angle keys and queries, which have high dot product.
 
 
@@ -126,21 +126,27 @@ I think this is a type of regularization method.
         class="figure-img img-fluid rounded"
         alt="The Performer outperforms Linformer and matches Transformer if we redraw the random features on PG-19."
         src="/images/performer-linformer-transformer.png">
-    <figcaption class="figure-caption">The Performer outperforms Linformer and matches Transformer if we redraw the random features on PG-19. (<a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a>).</figcaption>
+    <figcaption class="figure-caption">
+        The Performer outperforms Linformer and matches Transformer if we redraw the random features on PG-19.
+        (<a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a>).
+    </figcaption>
 </figure>
 
 
 #### Performer over Reformer
 
 Performer may have lower complexity, but does it is more powerful?
-The Perfomer's authors provide comparison on image generation task, which requires a very large \\( L \\) in terms of [bits-per-dimension (BPD)](https://arxiv.org/pdf/1511.01844.pdf).
+The Perfomer's authors provide comparison on image generation task, which requires a very large \\( L \\) in terms of [bits-per-dimension (BPD ~ Log-likelihood)](https://arxiv.org/pdf/1511.01844.pdf).
 
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
         alt="The Performer outperforms Linformer and matches Transformer if we redraw the random features on PG-19."
         src="/images/performer-vs-reformer-imagenet.png">
-    <figcaption class="figure-caption">The Performer outperforms Reformer on ImageNet64 - an image generation task. (<a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a>).</figcaption>
+    <figcaption class="figure-caption">
+        The Performer outperforms Reformer on ImageNet64 - an image generation task.
+        (<a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a>).
+    </figcaption>
 </figure>
 
 
