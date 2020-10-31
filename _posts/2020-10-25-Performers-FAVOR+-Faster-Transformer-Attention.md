@@ -151,3 +151,4 @@ The Perfomer's authors provide comparison on image generation task, which requir
 
 
 #### TODO - post under construction!
+- TODO computation time
