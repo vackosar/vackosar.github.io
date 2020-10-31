@@ -41,6 +41,19 @@ Original attention is a value vector weighted by softmax applied to dot product 
 The expensive part is the matrix multiplication of key and query with softmax. Can we get a cheap estimate of that operation?
 
 
+#### 
+
+To prove that Performer is linear time with input token length increasing, forward and backward pass was measured. 
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        alt="The Performer FAVOR+ attention on the right has linear complexity. The Transformer attention on the left has square complexity."
+        src="/images/performer-time.png">
+    <figcaption class="figure-caption">The log-length vs log-time of Transformer, Performer, No-attention (OPT). (<a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a>).</figcaption>
+</figure>
+
+
 #### This Kernel Performs
 I described [a speed up using random features kernel approximation for word-movers distance](/ml/Word-Movers-Embedding-Cheap-WMD-For-Documents) in a previous post.
 In this case, the Performer approximates Transformer attention by kernelizing the softmax using positive orthogonal random features.
