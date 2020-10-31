@@ -133,7 +133,7 @@ I think this is a type of regularization method.
 </figure>
 
 
-#### Performer over Reformer
+#### Perform over Reform
 
 Performer may have lower complexity, but does it is more powerful?
 The Perfomer's authors provide comparison on image generation task, which requires a very large \\( L \\) in terms of [bits-per-dimension (BPD ~ Log-likelihood)](https://arxiv.org/pdf/1511.01844.pdf).
