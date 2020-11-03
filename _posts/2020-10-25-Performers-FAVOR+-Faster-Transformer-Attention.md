@@ -45,7 +45,7 @@ How was that done? Read on, traveller! I will tell you a great story.
 
 
 
-### Not Paying for the Attention
+### Not Paying for The Attention
 
 Original attention is a value vector weighted by softmax applied to dot product of key and query.
 
@@ -84,6 +84,8 @@ How to draw random vectors in order to estimate the exponential of the dot produ
 
 where \\( \mathbb{E} \\) is an expected over random vectors from a standard normal distribution.
 
+Now we can see that we can decompose the softmax into multiplication.
+
 Next, the proof uses isotropy of the standard normal distribution to invert sign of \\( \omega \\) on one half of the exponential,
 which results into hyperbolic cosine.
 
@@ -94,7 +96,8 @@ which results into hyperbolic cosine.
 #### How Many Random \\( \omega \\) to FAVOR+?
 
 So do we just start sampling of the distro and hope for the best? No!
-If we make sure our [random vectors (features) are orthogonal, while still being drawn from standard normal distribution](https://arxiv.org/pdf/1703.00864.pdf).
+If we make sure our [random vectors (features) are orthogonal, while still being drawn from standard normal distribution](https://arxiv.org/pdf/1703.00864.pdf),
+we can reduce how many we need them.
 The paper does this by drawing uniformly random orthogonal basis and then normalizing each row properly.
 
 I am not clear however on the specifics here.
@@ -106,29 +109,21 @@ Doing this, the authors arrived at stronger guarantees of fast convergence and u
 The whole mechanism was then called FAVOR+.
 
 Fast convergence implies that we need much less random features.
-In the Performer paper, they show very good performermance on \\( L = 4096, d = 16\\) with feature count starting from 100. 
+In the Performer paper, they show very good performance on \\( L = 4096, d = 16\\) with feature count starting from 100. 
 Their default setup was **256** features (Section A.3).
 
 
 ### Out-performing
 
-
-#### The story of Linformer
+#### Perform over Linform
 
 [Linformer](https://arxiv.org/abs/2006.04768) approximates attention with a low-rank matrix to achieve linear complexity \\( O(L) \\).
 Its strategy is to project key, value, and query matrices through into a low-dimensional space.
+It is unclear to me, in what way these projections are created.
+If randomly, then it is no surprise that Performer out-performs Linformer below.
 
 Linformer approximates the matrix multiplications in contrast to Performer which approximates the Q and K multiplication and softmax at the same time.
 This difference gives Performer accuracy advantage over Linformer.
-
-
-#### The story of Reformer
-[Reformer](https://openreview.net/pdf?id=rkgNKkHtvB) approximates attention with locality-sensitive hashing.
-It achieves complexity of \\( O(L\log L) \\).
-The hashing speeds up the calculation by only multiplying close angle keys and queries, which have high dot product.
-
-
-#### Perplex Me Not
 
 Both Linformer and Performer estimate attention using probabilistically drawn vectors (features).
 Apparently **redrawing** these helps training accuracy.
@@ -147,6 +142,10 @@ I think this is a type of regularization method.
 
 
 #### Perform over Reform
+
+[Reformer](https://openreview.net/pdf?id=rkgNKkHtvB) approximates attention with locality-sensitive hashing.
+It achieves complexity of \\( O(L\log L) \\).
+The hashing speeds up the calculation by only multiplying close angle keys and queries, which have high dot product.
 
 Performer may have lower complexity, but does it is more powerful?
 The Perfomer's authors provide comparison on image generation task, which requires a very large \\( L \\) in terms of [bits-per-dimension (BPD ~ Log-likelihood)](https://arxiv.org/pdf/1511.01844.pdf).
