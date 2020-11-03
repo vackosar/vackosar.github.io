@@ -30,8 +30,19 @@ Only recently published [Performer](https://ai.googleblog.com/2020/10/rethinking
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uuNLz6eT_tg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 -->
 
+To prove that Performer is linear time with input token length increasing, forward and backward pass was measured. 
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        alt="The log-length vs log-time of Transformer, Performer, No-attention (OPT)."
+        src="/images/performer-time.png">
+    <figcaption class="figure-caption">The log-length vs log-time of Transformer, Performer, No-attention (OPT). (<a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a>).</figcaption>
+</figure>
+
 
 How was that done? Read on, traveller! I will tell you a great story. 
+
 
 
 ### Not Paying for the Attention
@@ -43,17 +54,6 @@ Original attention is a value vector weighted by softmax applied to dot product 
 The expensive part is the matrix multiplication of key and query with softmax. Can we get a cheap estimate of that operation?
 
 
-#### Performer Time
-
-To prove that Performer is linear time with input token length increasing, forward and backward pass was measured. 
-
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
-        alt="The log-length vs log-time of Transformer, Performer, No-attention (OPT)."
-        src="/images/performer-time.png">
-    <figcaption class="figure-caption">The log-length vs log-time of Transformer, Performer, No-attention (OPT). (<a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a>).</figcaption>
-</figure>
 
 
 #### This Kernel Performs
