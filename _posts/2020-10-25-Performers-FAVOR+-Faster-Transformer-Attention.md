@@ -51,9 +51,7 @@ Original attention is a value vector weighted by softmax applied to dot product 
 
 \\( a_{\mathbf{orig}} = \mathbf{softmax}(\frac{QK^\intercal}{\sqrt{d}})V \\)
 
-The expensive part is the matrix multiplication of key and query with softmax. Can we get a cheap estimate of that operation?
-
-
+The expensive the fact that I cannot decompose the softmax into a matrix multiplication to first multiply with the value matrix. Can we get a cheap estimate of that operation?
 
 
 #### This Kernel Performs
