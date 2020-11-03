@@ -11,6 +11,13 @@ permalink: /:categories/:title
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+
+The attention mechanism is the kingpin of the Tranformer model. It drives the results, but runs the memory and time racket of \\( O(L^2d) \\), where \\( L \\) is input token count and \\( d \\) is the latent representation dimension.
+
+[The Reformer](https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html), [Longformer](https://arxiv.org/abs/2004.05150) and others attempted to topple it with \\( O(L \log L ) \\).
+Then there was this one model - [Linformer they called him](https://arxiv.org/abs/2006.04768), and he had linear complexity. But he didn't make it.
+Only recently published [Performer](https://ai.googleblog.com/2020/10/rethinking-attention-with-performers.html) done the job with \\( O(L d^2 \log d ) \\).
+
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
@@ -23,11 +30,6 @@ permalink: /:categories/:title
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uuNLz6eT_tg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 -->
 
-The attention mechanism is the kingpin of the Tranformer model. It drives the results, but runs the memory and time racket of \\( O(L^2d) \\), where \\( L \\) is input token count and \\( d \\) is the latent representation dimension.
-
-[The Reformer](https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html), [Longformer](https://arxiv.org/abs/2004.05150) and others attempted to topple it with \\( O(L \log L ) \\).
-Then there was this one model - [Linformer they called him](https://arxiv.org/abs/2006.04768), and he had linear complexity. But he didn't make it.
-Only recently published [Performer](https://ai.googleblog.com/2020/10/rethinking-attention-with-performers.html) done the job with \\( O(L d^2 \log d ) \\).
 
 How was that done? Read on, traveller! I will tell you a great story. 
 
@@ -162,6 +164,3 @@ The Perfomer's authors provide comparison on image generation task, which requir
     </figcaption>
 </figure>
 
-
-#### TODO - post under construction!
-- TODO computation time
