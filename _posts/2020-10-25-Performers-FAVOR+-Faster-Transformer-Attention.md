@@ -84,7 +84,7 @@ How to draw random vectors in order to estimate the exponential of the dot produ
 
 where \\( \mathbb{E} \\) is an expected over random vectors from a standard normal distribution.
 
-Now we can see that we can decompose the softmax into multiplication.
+Now we can see that we can decompose the softmax into a matrix multiplication.
 
 Next, the proof uses isotropy of the standard normal distribution to invert sign of \\( \omega \\) on one half of the exponential,
 which results into hyperbolic cosine.
