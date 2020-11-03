@@ -77,14 +77,19 @@ I give below a taste of derivation of the approximation.
 
 How to draw random vectors in order to estimate the exponential of the dot product above?
 
-\\( \exp(\frac{\lVert x+y \rVert^2}{2}) = \\)
-\\( \exp(\frac{\lVert x+y \rVert^2}{2}) \int \exp(- \lVert \omega - (x+y) \rVert^2 / 2 ) \mathbf{d} \omega (2\pi)^{-d/2} = \\)
-\\( \int \exp(\omega^\intercal (x + y)) \exp(- \lVert \omega \rVert^2 /2) \mathbf{d} \omega (2\pi)^{-d/2} = \\)
-\\( \mathbb{E}_{\omega \~ N(0, 1)} \exp(\omega^\intercal (x+y)) \\),
+\\[ \exp(\frac{\lVert x+y \rVert^2}{2}) = \\]
+\\[ \exp(\frac{\lVert x+y \rVert^2}{2}) \int \exp(- \lVert \omega - (x+y) \rVert^2 / 2 ) \, \mathbf{d} \omega (2\pi)^{-d/2} = \\]
+\\[ \int \exp(\omega^\intercal (x + y)) \exp(- \lVert \omega \rVert^2 /2) \, \mathbf{d} \omega (2\pi)^{-d/2} = \\]
+\\[ \mathbb{E}_{\omega \~ N(0, 1)} \exp(\omega^\intercal (x+y)) \\],
 
 where \\( \mathbb{E} \\) is an expected over random vectors from a standard normal distribution.
+If we denote \\( r \\) as number of random vectors and expect the average to be close to an average,
+we intuit from below the softmax dot-product estimate.
 
-Now we can see that we can decompose the softmax into a matrix multiplication.
+\\( k(x, y) \approx \\)
+\\( \sum_{i = 0}^r e^{\omega_i^\intercal x} e^{\omega_i^\intercal y} \\)
+
+In the full dimensionality, the dot-product would be replaced by matrix multiplication as teased in the intro.
 
 Next, the proof uses isotropy of the standard normal distribution to invert sign of \\( \omega \\) on one half of the exponential,
 which results into hyperbolic cosine.
