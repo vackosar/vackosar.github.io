@@ -16,7 +16,7 @@ permalink: /:categories/:title
         class="figure-img img-fluid rounded"
         alt="The Performer FAVOR+ attention on the right has linear complexity. The Transformer attention on the left has square complexity."
         src="/images/performer-attention-complexity.jpg">
-    <figcaption class="figure-caption">The Performer FAVOR+ attention on the right has linear complexity. The Transformer attention on the left has square complexity (<a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a>).</figcaption>
+    <figcaption class="figure-caption">The Performer FAVOR+ attention on the right has linear complexity. The Transformer attention on the left has square complexity, because without an approximation we cannot decompose the attention matrix into a matrix multiplication. (<a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a>).</figcaption>
 </figure>
 
 <!--
