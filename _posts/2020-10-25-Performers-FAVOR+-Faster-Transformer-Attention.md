@@ -3,7 +3,7 @@ layout: post
 title: "Performers FAVOR+ Faster Transformer Attention"
 date: 2020-10-25
 categories: ml
-description: The Performer model attention approximation has linear time & space complexity in input token count in contrast to vanilla Transformer's square complexity.
+description: The Performer model attention approximation has linear time & space complexity in input token count in contrast to vanilla Transformer's square complexity and outperforms Linformer.
 image: /images/performer-attention-complexity.jpg
 permalink: /:categories/:title
 ---
@@ -72,7 +72,7 @@ If we rescale the variables, we are looking to estimate exponential value of a d
 The common way to estimate above function is using trigonometrical functions of random projection into vectors around zero.
 That runs into issues as the approximation has high variance around zero and can lead to negative values.
 
-The authors of the paper instead propose alternative approximation using hyperbolical function, which are non-negative and don't suffer from high variance.
+The authors of the paper instead propose alternative approximation using hyperbolical function, which are non-negative and don't suffer from high variance. 
 I give below a taste of derivation of the approximation.
 
 How to draw random vectors in order to estimate the exponential of the dot product above?
