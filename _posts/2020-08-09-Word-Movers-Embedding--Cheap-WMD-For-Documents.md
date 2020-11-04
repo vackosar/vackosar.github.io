@@ -157,6 +157,7 @@ The proof utilizes theory of Random Features to show convergence of the inner pr
 
 where \\( \phi_{\omega}(x) := \exp [- \gamma \mathit{WMD}(x, \omega) ] \\)
 
+Transformer language model's [attention matrix was approximated random features kernels (FAVOR+) in the paper introducing Performers](https://vaclavkosar.com/ml/Performers-FAVOR+-Faster-Transformer-Attention). Read the linked post to get more context on this method.
 
 
 #### WME vs KNN-WMD
