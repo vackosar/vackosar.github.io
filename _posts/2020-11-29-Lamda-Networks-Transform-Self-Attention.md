@@ -23,7 +23,7 @@ permalink: /:categories/:title
 [Lambda Network](https://openreview.net/forum?id=xTJEN-ggl1b) head achieved SoTA, when sewed on decapitated Resnet50, outperforming EfficientNet and vanilla Transformer self-attention heads.
 LambdaResNet also achive ~4.5x speed over EfficientNet at same performance.
 
-It however suffers from time-space complexity of sequence size squared and [Relu-Performer](/ml/Performers-FAVOR+-Faster-Transformer-Attention) variant could become its overtaker in the future.
+It however suffers from time-space complexity of sequence size squared and [Relu-Performer](/ml/Performers-FAVOR+-Faster-Transformer-Attention) variant could overtake it future.
 
 The majority of model's performance comes from translation-invariant positional embeddings.
 The positional embeddings are trained, but don't depend on the inputs.
@@ -63,7 +63,7 @@ The lambda layer is defined as following:
 
 \\( \lambda_l Q_l = (\sigma(K) + E_l ) \odot_k Q_l \odot_n V^\intercal \\)
 
-Where the matrix multiplication subscript declares which dimension it operates across.
+Where the matrix multiplication subscript declares which dimension it operates along.
 Note that here we focus on case, where the context is entire input sequence and intra-dimension is 1.
 
 I think if we rearrange the equation and change the definition of the indexes suitably,
@@ -106,13 +106,13 @@ It needs for each batch item it requires \\( n^2 \\) time and space,
 because it materializes attention matrix for each batch input.
 
 The second place takes the Lambda Layer.
-For entire batch it requires \\( n^2 \\).
+For entire batch it requires only \\( n^2 \\) time and space.
 The savings come from positional embeddings having \\( n^2 \\) time and space size,
 but being the same for entire batch.
 
 The first places takes the Performer.
 The Performer is time and space is linear both in batch size and sequence length \\( n \\).
-Additional time speed up in performer may come from adoption of relu replacing the exponential in the kernel softmax approximation.
+Additional time speed up in performer may come from replacing the exponential with Relu in the kernel softmax approximation.
 
 
 ## How Lambda Layer Performs Compared to Self-Attention and Performer?
