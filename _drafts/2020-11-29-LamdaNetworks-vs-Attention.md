@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "LambdaNetwork Transforms the Attention"
+title: "LambdaNetwork Transforms the Self-Attention"
 date: 2020-10-25
 categories: ml
-description: LambdaResNets beats EfficientNets but does it loose to Performer?
+description: LambdaResNet beats EfficientNet but does it loose to Performer?
 image: /images/performer-thumb.png
 permalink: /:categories/:title
 ---
@@ -14,7 +14,12 @@ permalink: /:categories/:title
 [//]: # <iframe width="560" height="315" src="https://www.youtube.com/embed/xpys_xqB6qY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-https://openreview.net/forum?id=xTJEN-ggl1b
+[Lambda Network layer](https://openreview.net/forum?id=xTJEN-ggl1b) achieved SoTA, when sewed on top of Resnet50, outperforming EfficientNet and vanilla Transformer self-attention heads.
+It however suffers from time-space complexity of sequence size squared and [Relu-Performer](/ml/Performers-FAVOR+-Faster-Transformer-Attention) variant could become its overtaker in the future.
+
+The majority of model's performance comes from translation-invariant positional embeddings.
+The positional embeddings are trained, but don't depend on the inputs.
+The embeddings are used as a key matrix in a self-attention variant without softmax function.
 
 
 ## Comparison with Attention and Performer Attention
