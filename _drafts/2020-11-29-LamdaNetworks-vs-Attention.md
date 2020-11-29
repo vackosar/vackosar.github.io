@@ -94,6 +94,8 @@ Additional time speed up in performer may come from adoption of relu replacing t
 ## Performance
 
 Comparison of the Relu-Performer and Lambda Network is not available. So we have to compare only Lambda layer and self-attention.
+While Lambda layer out-performs self-attention, it is by a small margin.
+The Performer will likely be able to outperform Lambda layer, although it needs to be tested first.
 
 <figure class="figure">
     <img
@@ -102,6 +104,20 @@ Comparison of the Relu-Performer and Lambda Network is not available. So we have
         src="/images/lambda-layer-vs-self-attention.png">
     <figcaption class="figure-caption">
         Lambda layer vs self-attention on ImageNet with a Resnet50 architecture
+        (<a href="https://openreview.net/forum?id=xTJEN-ggl1b">source</a>).
+    </figcaption>
+</figure>
+
+Could we possibly get rid of the positional embeddings, if they consume so much?
+No, they drive most of the performance at least in case of the image classification task.
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        alt="Lambda layer with and without positional embeddings on ImageNet"
+        src="/images/lambda-layer-w-and-wo-positional-interactions.png">
+    <figcaption class="figure-caption">
+        Lambda layer with and without positional embeddings on ImageNet
         (<a href="https://openreview.net/forum?id=xTJEN-ggl1b">source</a>).
     </figcaption>
 </figure>
