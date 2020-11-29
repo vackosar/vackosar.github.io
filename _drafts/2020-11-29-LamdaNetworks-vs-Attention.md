@@ -26,28 +26,31 @@ The interaction and attention context is the entire input sequence \\( X \\) for
 
 ### Lambda Networks Interaction
 
-Given \\( Q_n =  Q_{\cdot, n}  = (W_Q X)_{\cdot, n} \\),
+Given \\( Q_l =  Q_{l, \cdot} \\),
+
+\\( Q = (W_Q X) \in \mathbb{R}^{n \times k} \\),
 
 \\( K =  (W_K X) \in \mathbb{R}^{n \times k} \\),
 
-and \\( V =  (W_V X) \in \mathbb{R}^{n \times k} \\).
+and \\( V =  (W_V X) \in \mathbb{R}^{n \times d} \\).
 
 Positional embeddings is denoted by \\( E \in \mathbf{R}^{n \times n \times k} \\).
 Softmax in the dimension \\( k \\) is denoted by \\( \sigma \\).
 
 Then single lambda interaction (lambda head) is defined as following:
 
-\\( \lambda_n Q_n = (\sigma(K) + E_n ) \odot_k Q_n \odot_n V^\intercal \\)
+\\( \lambda_l Q_l = (\sigma(K) + E_l ) \odot_k Q_l \odot_n V^\intercal \\)
 
 Where the matrix multiplication subscript declares which dimension it operates across.
 Note that here we focus on case, where the context is entire input sequence and intra-dimension is 1.
 
-If we reindex, we can rewrite this into more akin to transformer head with attention:
+If we rearrange the equation and change the definition of the indexes suitably,
+I think we can rewrite this into more akin to transformer head with attention:
 
-\\( \mathrm{head} = Q (\sigma(K) + E)^\intercal V \\).
+\\( \mathrm{lambdaLayer} = Q (\sigma(K) + E)^\intercal V \\).
 
 
-### Transformer Head
+### Transformer Self-Attention
 
 Transformer positional encoding is denoted by \\( P \in \mathbf{R}^{n \times d} \\).
 Normalized softmax in the dimension \\( d \\) is denoted by \\( \sigma \\).
@@ -59,21 +62,19 @@ Given
 
 and \\( V = W_V (X + P) \in \mathbb{R}^{n \times d}\\)
 
-then transformer head with attention is defined as:
+then self-attention is defined as:
 
-\\( \mathrm{head} = \sigma(QK^\intercal) V \\)
+\\( \mathrm{transformerHead} = \sigma(QK^\intercal) V \\)
+
 
 #### Performer Head
 
 Kernel function approximating softmax via a feature function \\( \phi \in \mathbb{R}^{n \times d} \rightarrow \mathbb{R}^{k \times d} \\),
 which maps to the smaller dimension \\( k \\).
 
-Performer transformer head with attention is then defined as:
+then Peformer self-attention approximation is defined as:
 
-\\( \mathrm{head} = \phi(Q) \phi(K)^\intercal V \\)
-
-- Positional encodings drive the results
-- LambdaNetworks vs Performers on ImageNet
+\\( \mathrm{performerHead} = \phi(Q) \phi(K)^\intercal V \\)
 
 
 ## Complexity
@@ -108,6 +109,9 @@ The Performer will likely be able to outperform Lambda layer, although it needs 
     </figcaption>
 </figure>
 
+
+## Lambda's Positional Encodings Are Crucial
+
 Could we possibly get rid of the positional embeddings, if they consume so much?
 No, they drive most of the performance at least in case of the image classification task.
 
@@ -122,3 +126,5 @@ No, they drive most of the performance at least in case of the image classificat
     </figcaption>
 </figure>
 
+If you remove the "content" part \\( \sigma(K) \\), that does not contribute much accuracy,
+the lambda layer becomes: \\( Q E^\intercal V \\).
