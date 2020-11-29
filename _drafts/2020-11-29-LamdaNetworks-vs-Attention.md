@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "LambdaNetwork Transforms the Self-Attention"
-date: 2020-10-25
+date: 2020-11-29
 categories: ml
 description: LambdaResNet beats EfficientNet but does it loose to Performer?
-image: /images/performer-thumb.png
+image: /images/lambda-layer-thumb.png
 permalink: /:categories/:title
 ---
 
