@@ -34,18 +34,25 @@ Given \\( Q_l =  Q_{l, \cdot} \\),
 
 and \\( V =  (W_V X) \in \mathbb{R}^{n \times d} \\).
 
-Positional embeddings is denoted by \\( E \in \mathbf{R}^{n \times n \times k} \\).
-Softmax in the dimension \\( k \\) is denoted by \\( \sigma \\).
+Positional embeddings are denoted by \\( E \in \mathbf{R}^{n \times n \times k} \\).
+For each two positions in the input sequence there is an embedding vector.
+Translational invariance \\( E_{i, j} = E_{t(i), t(j)}\\) is enforced during training
 
-Then single lambda interaction (lambda head) is defined as following:
+Softmax applied along the dimension \\( n \\) is denoted by \\( \sigma \\).
+The softmax serves here to strongly prefer select few of the value vectors indexed by \\( n \\).
+However the selection factor (the logit) here is not the query-key match (dot product).
+But rather to the key value itself.
+That may be the reason, why presence of \\( \sigma(K) \\) does not provide much performance gain (See the performance section).
+
+Then a lambda layer is defined as following:
 
 \\( \lambda_l Q_l = (\sigma(K) + E_l ) \odot_k Q_l \odot_n V^\intercal \\)
 
 Where the matrix multiplication subscript declares which dimension it operates across.
 Note that here we focus on case, where the context is entire input sequence and intra-dimension is 1.
 
-If we rearrange the equation and change the definition of the indexes suitably,
-I think we can rewrite this into more akin to transformer head with attention:
+I think if we rearrange the equation and change the definition of the indexes suitably,
+we can rewrite this into a format more akin to self-attention.
 
 \\( \mathrm{lambdaLayer} = Q (\sigma(K) + E)^\intercal V \\).
 
@@ -64,20 +71,20 @@ and \\( V = W_V (X + P) \in \mathbb{R}^{n \times d}\\)
 
 then self-attention is defined as:
 
-\\( \mathrm{transformerHead} = \sigma(QK^\intercal) V \\)
+\\( \mathrm{selfAttention} = \sigma(QK^\intercal) V \\)
 
 
-#### Performer Head
+#### Performer Self-Attention Approximation
 
 Kernel function approximating softmax via a feature function \\( \phi \in \mathbb{R}^{n \times d} \rightarrow \mathbb{R}^{k \times d} \\),
 which maps to the smaller dimension \\( k \\).
 
 then Peformer self-attention approximation is defined as:
 
-\\( \mathrm{performerHead} = \phi(Q) \phi(K)^\intercal V \\)
+\\( \mathrm{performerAttention} = \phi(Q) \phi(K)^\intercal V \\)
 
 
-## Complexity
+## How Is Lambda Doing in Space and Time Complexity?
 
 The worst in terms of complexity is vanilla transformer head.
 It needs for each batch item it requires \\( n^2 \\) time and space,
@@ -92,11 +99,15 @@ The first places takes the Performer.
 The Performer is time and space is linear both in batch size and sequence length \\( n \\).
 Additional time speed up in performer may come from adoption of relu replacing the exponential in the kernel softmax approximation.
 
-## Performance
+
+## How Lambda Layer Performs Compared to Self-Attention and Performer?
 
 Comparison of the Relu-Performer and Lambda Network is not available. So we have to compare only Lambda layer and self-attention.
 While Lambda layer out-performs self-attention, it is by a small margin.
 The Performer will likely be able to outperform Lambda layer, although it needs to be tested first.
+For experimental specifics, please see the paper.
+Note that in this experiment the lambda layer is not applied to the entire picture,
+but rather to a small neighborhood of each pixel.
 
 <figure class="figure">
     <img
@@ -110,7 +121,7 @@ The Performer will likely be able to outperform Lambda layer, although it needs 
 </figure>
 
 
-## Lambda's Positional Encodings Are Crucial
+## Are Lambda's Positional Embeddings Required?
 
 Could we possibly get rid of the positional embeddings, if they consume so much?
 No, they drive most of the performance at least in case of the image classification task.
@@ -128,3 +139,5 @@ No, they drive most of the performance at least in case of the image classificat
 
 If you remove the "content" part \\( \sigma(K) \\), that does not contribute much accuracy,
 the lambda layer becomes: \\( Q E^\intercal V \\).
+
+
