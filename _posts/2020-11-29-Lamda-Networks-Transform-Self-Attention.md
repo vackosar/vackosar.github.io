@@ -21,34 +21,36 @@ permalink: /:categories/:title
 
 
 [Lambda Network](https://openreview.net/forum?id=xTJEN-ggl1b) head achieved SoTA, when sewed on decapitated Resnet50, outperforming EfficientNet and vanilla Transformer self-attention heads.
-LambdaResNet also achieves ~4.5x speed over EfficientNet at same performance.
+LambdaResNet also achieves ~4.5x speedup over EfficientNet at same accuracy.
 
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
-        alt="LambdaResNet also achieves ~4.5x speed over EfficientNet at same performance"
+        alt="LambdaResNet also achieves ~4.5x speedup over EfficientNet at same performance"
         src="/images/lambda-layer-faster-than-efficientNet.png">
     <figcaption class="figure-caption">
-        LambdaResNet also achieves ~4.5x speed over EfficientNet at same performance
+        LambdaResNet also achieves ~4.5x speedup over EfficientNet at same performance
         (<a href="https://openreview.net/forum?id=xTJEN-ggl1b">source</a>).
     </figcaption>
 </figure>
 
 
-It however suffers from time-space complexity of sequence size squared and [Relu-Performer](/ml/Performers-FAVOR+-Faster-Transformer-Attention) variant could overtake it future.
+It however suffers from time-space complexity of sequence size squared and [Relu-Performer](/ml/Performers-FAVOR+-Faster-Transformer-Attention) could overtake it future.
 
 The majority of model's performance comes from translation-invariant positional embeddings.
-The positional embeddings are trained, but don't depend on the inputs (static).
-The embeddings are used similarly to a key matrix in a self-attention, but without any softmax function.
+The positional embeddings are used similarly to a key matrix in a self-attention, but without any softmax function.
+The embeddings are trained, but don't depend on the inputs (static).
 
 
-## Comparison with Self-Attention and Performer Attention
+
+## How similar are Lambda Interactions to Self-Attention?
 
 Are there any similarities between Lambda Networks Interactions and Transformer or Performer attention?
 Your thirst for knowledge will be satisfied here, friend!
 
-In following \\( X \\) will denote input sequence of dimension \\( n \times d \\), where \\( d \\) is the embedding dimension and \\( n \\) is the sequence length.
+In following \\( X \\) will denote input sequence of dimension \\( n \times d \\), where \\( d \\) is the token embedding dimension and \\( n \\) is the sequence length.
 The interaction and attention context is the entire input sequence \\( X \\) for simplicity.
+But for experiments with images the authors needed to limit the attention to image patches.
 
 
 ### Lambda Networks Interaction
@@ -68,26 +70,28 @@ Translational invariance \\( E_{i, j} = E_{t(i), t(j)}\\) is enforced by storing
 Softmax applied along the dimension \\( n \\) is denoted by \\( \sigma \\).
 The softmax serves here to strongly prefer select few of the value vectors indexed by \\( n \\).
 However the selection factor (the logit) here is not the query-key match (dot product).
-But rather to the key value itself.
+But rather to the key vector itself.
 That may be the reason, why presence of \\( \sigma(K) \\) does not provide much performance gain (See the performance section).
 
-The lambda layer is defined as following:
+In the paper the lambda layer is defined in a very unfamiliar form.
+The left side of the equation below serves as a reference to the original paper.
+On the left you can see a linear function \\( \lambda \\) parametrized by \\( l \\) projecting a query vector.
+The resulting vector is transposed, such that the right side reminds you an self-attention vector.
 
-\\( \lambda_l Q_l = (\sigma(K) + E_l ) \odot_k Q_l \odot_n V^\intercal \\)
+\\( (\lambda_l Q_l)^\intercal = Q_l \odot_k (\sigma(K) + E_l )^{\intercal} \odot_n V \\)
 
-Where the matrix multiplication subscript declares which dimension it operates along.
-Note that here we focus on case, where the context is entire input sequence and intra-dimension is 1.
-
-I think if we rearrange the equation and change the definition of the indexes suitably,
-we can rewrite this into a format more akin to self-attention.
+The matrix multiplication subscript in above declares along which dimension it operates.
+We omit the index \\( l\\) we obtain a format akin to self-attention.
 
 \\( \mathrm{lambdaLayer} = Q (\sigma(K) + E)^\intercal V \\).
 
+Note that the paper also mentions additional dimension called "intra-dimension" \\( u \\), which is set to 1 as it is not important.
 
 ### Transformer Self-Attention
 
+Normalized softmax along dimension \\( n \\) is denoted by \\( \sigma \\).
 Transformer positional encoding is denoted by \\( P \in \mathbf{R}^{n \times d} \\).
-Normalized softmax in the dimension \\( d \\) is denoted by \\( \sigma \\).
+The positional embeddings are learned e.g. in case of BERT model.
 
 Given
 \\( Q = W_Q (X + P) \in \mathbb{R}^{n \times d}\\),
@@ -129,7 +133,7 @@ Additional time speed up in Performer comes from replacing the exponential with 
 
 ## How Lambda Layer Performs Compared to Self-Attention and Performer?
 
-THe paper compares Lambda layer to Transformer self-attention.
+The paper compares Lambda layer to Transformer self-attention.
 While Lambda layer out-performs self-attention, it does so by only a small margin.
 For experimental specifics, please see the paper.
 Note that in the experiment the lambda layer is not applied to the entire picture,
