@@ -26,8 +26,8 @@ LambdaResNet also achive ~4.5x speed over EfficientNet at same performance.
 It however suffers from time-space complexity of sequence size squared and [Relu-Performer](/ml/Performers-FAVOR+-Faster-Transformer-Attention) variant could overtake it future.
 
 The majority of model's performance comes from translation-invariant positional embeddings.
-The positional embeddings are trained, but don't depend on the inputs.
-The embeddings are used as a key matrix in a self-attention variant without softmax function.
+The positional embeddings are trained, but don't depend on the inputs (static).
+The embeddings are used similarly to a key matrix in a self-attention, but without any softmax function.
 
 
 ## Comparison with Self-Attention and Performer Attention
@@ -51,7 +51,7 @@ and \\( V =  (W_V X) \in \mathbb{R}^{n \times d} \\).
 
 Positional embeddings are denoted by \\( E \in \mathbf{R}^{n \times n \times k} \\).
 For each two positions in the input sequence there is an embedding vector.
-Translational invariance \\( E_{i, j} = E_{t(i), t(j)}\\) is enforced by storing the embeddings in translation-invariant format (relative).
+Translational invariance \\( E_{i, j} = E_{t(i), t(j)}\\) is enforced by storing the embeddings in translation-invariant (relative) format.
 
 Softmax applied along the dimension \\( n \\) is denoted by \\( \sigma \\).
 The softmax serves here to strongly prefer select few of the value vectors indexed by \\( n \\).
@@ -102,7 +102,7 @@ The [Peformer](http://localhost:4000/ml/Performers-FAVOR+-Faster-Transformer-Att
 ## How Is Lambda Doing in Space and Time Complexity?
 
 The worst in terms of complexity is vanilla transformer self-attention.
-It needs for each batch item it requires \\( n^2 \\) time and space,
+For each batch item it requires \\( n^2 \\) time and space,
 because it materializes attention matrix for each batch input.
 
 The second place takes the Lambda Layer.
@@ -111,18 +111,17 @@ The savings come from positional embeddings having \\( n^2 \\) time and space si
 but being the same for entire batch.
 
 The first places takes the Performer.
-The Performer is time and space is linear both in batch size and sequence length \\( n \\).
-Additional time speed up in performer may come from replacing the exponential with Relu in the kernel softmax approximation.
+The Performer's time and space complexity is linear in both batch size and sequence length \\( n \\).
+Additional time speed up in Performer comes from replacing the exponential with Relu in the kernel softmax approximation.
 
 
 ## How Lambda Layer Performs Compared to Self-Attention and Performer?
 
-Comparison of the Relu-Performer and Lambda Network is not available. So we have to compare only Lambda layer and self-attention.
-While Lambda layer out-performs self-attention, it is by a small margin.
-The [Peformer](http://localhost:4000/ml/Performers-FAVOR+-Faster-Transformer-Attention) will likely be able to outperform Lambda layer, although it needs to be tested first.
+THe paper compares Lambda layer to Transformer self-attention.
+While Lambda layer out-performs self-attention, it does so by only a small margin.
 For experimental specifics, please see the paper.
-Note that in this experiment the lambda layer is not applied to the entire picture,
-but rather to a small neighborhood of each pixel.
+Note that in the experiment the lambda layer is not applied to the entire picture,
+but rather to a small neighborhood of each pixel due to time and space complexity.
 
 <figure class="figure">
     <img
@@ -135,11 +134,14 @@ but rather to a small neighborhood of each pixel.
     </figcaption>
 </figure>
 
+Comparison of the Relu-Performer and Lambda Network is not available as of 2020-11-30.
+I think [Relu-Peformer](http://localhost:4000/ml/Performers-FAVOR+-Faster-Transformer-Attention) will likely outperform Lambda layer, although it needs to be tested first.
+
 
 ## Are Lambda's Positional Embeddings Required?
 
 Could we possibly get rid of the positional embeddings, if they consume so much?
-No, they drive most of the performance at least in case of the image classification task.
+No, they drive most of the performance. That is at least in case of the image classification task.
 
 <figure class="figure">
     <img
