@@ -21,7 +21,19 @@ permalink: /:categories/:title
 
 
 [Lambda Network](https://openreview.net/forum?id=xTJEN-ggl1b) head achieved SoTA, when sewed on decapitated Resnet50, outperforming EfficientNet and vanilla Transformer self-attention heads.
-LambdaResNet also achive ~4.5x speed over EfficientNet at same performance.
+LambdaResNet also achieves ~4.5x speed over EfficientNet at same performance.
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        alt="LambdaResNet also achieves ~4.5x speed over EfficientNet at same performance"
+        src="/images/lambda-layer-faster-than-efficientNet.png">
+    <figcaption class="figure-caption">
+        LambdaResNet also achieves ~4.5x speed over EfficientNet at same performance
+        (<a href="https://openreview.net/forum?id=xTJEN-ggl1b">source</a>).
+    </figcaption>
+</figure>
+
 
 It however suffers from time-space complexity of sequence size squared and [Relu-Performer](/ml/Performers-FAVOR+-Faster-Transformer-Attention) variant could overtake it future.
 
