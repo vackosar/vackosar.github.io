@@ -177,10 +177,8 @@ the lambda layer becomes: \\( Q E^\intercal V \\).
 ## Meet Other ML Enthusiasts One-on-One Online
 
 Video-call each week an interesting person and break out of your remote isolation.
-Network One-on-One Around Your Online Village.
+Network One-on-One Around Your Online Village with RandomMeets.
 
-
-<button class="btn btn-info" onclick="window.location='https://randommeets.com/invite/eyJncm91cF9pZCI6IjZhMzNkMTVjLTc0NjItNGFhMS1hNTc0LWM1NTUwMWQ4NWNkZiJ9.X76oug.2563ghpMTzbST9KPHerGeDqhXRY'" >
-Join Machine Learning @ RandomMeets
-</button>
-
+<a class="btn btn-info" style="text-decoration: none;" href="https://randommeets.com/invite/eyJncm91cF9pZCI6IjZhMzNkMTVjLTc0NjItNGFhMS1hNTc0LWM1NTUwMWQ4NWNkZiJ9.X76oug.2563ghpMTzbST9KPHerGeDqhXRY">
+    Join Machine Learning @ RandomMeets
+</a>
