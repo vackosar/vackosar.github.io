@@ -89,7 +89,8 @@ We omit the index \\( l\\) we obtain a format akin to self-attention.
 
 Here you need to remember, that \\( E \\) is 3 dimensional (a cubic matrix),
 while all matrices in self-attention mechanism are two dimensional.
-Note that the paper also mentions additional dimension called "intra-dimension" \\( u \\), which is set to 1 as it is not important.
+Note that the paper also mentions additional dimension called "intra-dimension" \\( u \\), which I set to 1 as it is not important.
+LambdaNet's authors apparently just love multi-dimensionality.
 
 ### Transformer Self-Attention
 
