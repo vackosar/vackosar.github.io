@@ -38,8 +38,10 @@ LambdaResNet also achieves ~4.5x speedup over EfficientNet at same accuracy.
 It however suffers from time-space complexity of sequence size squared and [Relu-Performer](/ml/Performers-FAVOR+-Faster-Transformer-Attention) could overtake it future.
 
 The majority of model's performance comes from translation-invariant positional embeddings.
-The positional embeddings are used similarly to a key matrix in a self-attention, but without any softmax function.
-The embeddings are trained, but don't depend on the inputs (static).
+The positional embeddings are used similarly to a key matrix in a self-attention.
+But there is no softmax function used.
+Then the embeddings are trained, but are independ of the inputs (static).
+And every output position has a separate key.
 
 
 
@@ -83,6 +85,8 @@ The resulting vector is transposed, such that the right side reminds you an self
 \\( (\lambda_l Q_l)^\intercal = Q_l \odot_k (\sigma(K) + E_l )^{\intercal} \odot_n V \\)
 
 The matrix multiplication subscript in above declares along which dimension it operates.
+Notice that in contrast to self-attention each output position \\( l \\) has a different key \\( \sigma(K) + E_l \\) applied to the query,
+because positional encodings matrix is 3 dimensional.
 We omit the index \\( l\\) we obtain a format akin to self-attention.
 
 \\( \mathrm{lambdaLayer} = Q (\sigma(K) + E)^\intercal V \\).
