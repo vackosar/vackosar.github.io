@@ -50,7 +50,7 @@ Your thirst for knowledge will be satisfied here, friend!
 
 In following \\( X \\) will denote input sequence of dimension \\( n \times d \\), where \\( d \\) is the token embedding dimension and \\( n \\) is the sequence length.
 The interaction and attention context is the entire input sequence \\( X \\) for simplicity.
-But for experiments with images the authors needed to limit the attention to image patches.
+But for experiments with images the authors needed to limit the attention to image patches of 23x23 pixels.
 
 
 ### Lambda Networks Interaction
