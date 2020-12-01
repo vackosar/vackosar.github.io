@@ -116,7 +116,7 @@ Self-attention is defined as:
 
 #### Performer Self-Attention Approximation
 
-Kernel function approximating softmax via a feature function \\( \phi \in \mathbb{R}^{n \times d} \rightarrow \mathbb{R}^{k \times d} \\),
+Kernel function approximating softmax via a feature function \\( \phi \in \mathbb{R}^{n \times d} \rightarrow \mathbb{R}^{n \times k} \\),
 which maps to the smaller dimension \\( k \\).
 
 The [Peformer](http://localhost:4000/ml/Performers-FAVOR+-Faster-Transformer-Attention) self-attention approximation is defined as:
