@@ -78,6 +78,8 @@ The left side of the equation below serves as a reference to the original paper.
 On the left you can see a linear function \\( \lambda \\) parametrized by \\( l \\) projecting a query vector.
 The resulting vector is transposed, such that the right side reminds you an self-attention vector.
 
+\\( \forall l \in \lbrace 1, ..., n \rbrace\\),
+
 \\( (\lambda_l Q_l)^\intercal = Q_l \odot_k (\sigma(K) + E_l )^{\intercal} \odot_n V \\)
 
 The matrix multiplication subscript in above declares along which dimension it operates.
@@ -85,6 +87,8 @@ We omit the index \\( l\\) we obtain a format akin to self-attention.
 
 \\( \mathrm{lambdaLayer} = Q (\sigma(K) + E)^\intercal V \\).
 
+Here you need to remember, that \\( E \\) is 3 dimensional (a cubic matrix),
+while all matrices in self-attention mechanism are two dimensional.
 Note that the paper also mentions additional dimension called "intra-dimension" \\( u \\), which is set to 1 as it is not important.
 
 ### Transformer Self-Attention
@@ -115,7 +119,7 @@ The [Peformer](http://localhost:4000/ml/Performers-FAVOR+-Faster-Transformer-Att
 \\( \mathrm{performerAttention} = \phi(Q) \phi(K)^\intercal V \\)
 
 
-## How Is Lambda Doing in Space and Time Complexity?
+## How Is LambdaNet Doing in Space and Time Complexity?
 
 The worst in terms of complexity is vanilla transformer self-attention.
 For each batch item it requires \\( n^2 \\) time and space,
