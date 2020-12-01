@@ -55,13 +55,13 @@ But for experiments with images the authors needed to limit the attention to ima
 
 ### Lambda Networks Interaction
 
-Given \\( Q_l =  Q_{l, \cdot} \\),
+Given a query \\( Q = (W_Q X) \in \mathbb{R}^{n \times k} \\),
 
-\\( Q = (W_Q X) \in \mathbb{R}^{n \times k} \\),
+a query vector \\( Q_l =  Q_{l, \cdot} \\),
 
-\\( K =  (W_K X) \in \mathbb{R}^{n \times k} \\),
+a key \\( K =  (W_K X) \in \mathbb{R}^{n \times k} \\),
 
-and \\( V =  (W_V X) \in \mathbb{R}^{n \times d} \\).
+and a value \\( V =  (W_V X) \in \mathbb{R}^{n \times d} \\).
 
 Positional embeddings are denoted by \\( E \in \mathbf{R}^{n \times n \times k} \\).
 For each two positions in the input sequence there is an embedding vector.
@@ -93,12 +93,12 @@ Normalized softmax along dimension \\( n \\) is denoted by \\( \sigma \\).
 Transformer positional encoding is denoted by \\( P \in \mathbf{R}^{n \times d} \\).
 The positional embeddings are learned e.g. in case of BERT model.
 
-Given
+Given a query
 \\( Q = W_Q (X + P) \in \mathbb{R}^{n \times d}\\),
 
-\\( K = W_K (X + P) \in \mathbb{R}^{n \times d}\\),
+a key \\( K = W_K (X + P) \in \mathbb{R}^{n \times d}\\),
 
-and \\( V = W_V (X + P) \in \mathbb{R}^{n \times d}\\).
+and a value \\( V = W_V (X + P) \in \mathbb{R}^{n \times d}\\).
 
 Self-attention is defined as:
 
