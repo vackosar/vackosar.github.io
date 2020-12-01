@@ -43,7 +43,9 @@ But there is no softmax function used.
 Then the embeddings are trained, but are independ of the inputs (static).
 And every output position has a separate key.
 
-
+If self-attention is differentiable key-value querying,
+then LambdaNet is differentiable pattern-value querying,
+where the patterns are positional embeddings.
 
 ## How similar are Lambda Interactions to Self-Attention?
 
