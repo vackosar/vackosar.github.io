@@ -86,13 +86,13 @@ The resulting vector is transposed, such that the right side reminds you an self
 
 The matrix multiplication subscript in above declares along which dimension it operates.
 Notice that in contrast to self-attention each output position \\( l \\) has a different key \\( \sigma(K) + E_l \\) applied to the query,
-because positional encodings matrix is 3 dimensional.
-We omit the index \\( l\\) we obtain a format akin to self-attention.
+because positional encodings matrix is 3 dimensional (a cubic matrix).
+Each query vector \\( Q_l \in \mathbb{R}^{k} \\) gets its own special key \\( E_l^\intercal \in \mathbb{R}^{k \times n} \\).
+
+I will omit the index \\( l\\) to obtain a format akin to self-attention.
 
 \\( \mathrm{lambdaLayer} = Q (\sigma(K) + E)^\intercal V \\).
 
-Here you need to remember, that \\( E \\) is 3 dimensional (a cubic matrix),
-while all matrices in self-attention mechanism are two dimensional.
 Note that the paper also mentions additional dimension called "intra-dimension" \\( u \\), which I set to 1 as it is not important.
 LambdaNet's authors apparently just love multi-dimensionality.
 
