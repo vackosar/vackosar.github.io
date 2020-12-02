@@ -3,7 +3,7 @@ layout: post
 title: "Lambda Networks Transform Self-Attention"
 date: 2020-11-29
 categories: ml
-description: Are they similar to self-attention in Transformer? Are their positional embeddings needed? LambdaResNet beats EfficientNet but does it loose to Performer?
+description: Is Lambda Layer similar to self-attention in a Transformer? What gives LambdaNet its power? LambdaResNet beats EfficientNet but does it loose to Performer?
 image: /images/lambda-layer-thumb.png
 permalink: /:categories/:title
 ---
