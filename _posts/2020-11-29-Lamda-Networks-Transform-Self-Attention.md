@@ -92,6 +92,16 @@ because positional encodings matrix is 3 dimensional (a cubic matrix).
 Each query vector \\( Q_l \in \mathbb{R}^{k} \\) gets its own special key \\( E_l^\intercal \in \mathbb{R}^{k \times n} \\).
 
 
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        alt="Lambda layer vs self-attention matrix multiplication"
+        src="/images/lambda-layer-mult.png">
+    <figcaption class="figure-caption">
+        Lambda layer vs self-attention matrix multiplication
+    </figcaption>
+</figure>
+
 
 I will omit the index \\( l\\) to obtain a format akin to self-attention.
 
