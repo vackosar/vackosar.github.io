@@ -20,7 +20,7 @@ permalink: /:categories/:title
     src="/images/lambda-layer-thumb.png">
 
 
-[Lambda Network](https://openreview.net/forum?id=xTJEN-ggl1b) head achieved SoTA, when sewed on decapitated Resnet50, outperforming EfficientNet and vanilla Transformer self-attention heads.
+[Lambda Network](https://openreview.net/forum?id=xTJEN-ggl1b) head achieved SoTA, when sewed on decapitated Resnet50, outperforming EfficientNet on ImageNet.
 LambdaResNet also achieves ~4.5x speedup over EfficientNet at same accuracy.
 
 <figure class="figure">
@@ -40,7 +40,7 @@ It however suffers from time-space complexity of sequence size squared and [Relu
 The majority of model's performance comes from translation-invariant positional embeddings.
 The positional embeddings are used similarly to a key matrix in a self-attention.
 But there is no softmax function used.
-Then the embeddings are trained, but are independ of the inputs (static).
+Then the embeddings are trained, but are independent of the inputs (static).
 And every output position has a separate key.
 
 If self-attention is differentiable querying of a key-value store,
