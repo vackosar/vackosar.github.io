@@ -11,14 +11,7 @@ permalink: /:categories/:title
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-[//]: # <iframe width="560" height="315" src="https://www.youtube.com/embed/xpys_xqB6qY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<img
-    class="figure-img img-fluid rounded"
-    style="width: 90%; max-width: 400px"
-    alt="The Performer FAVOR+ attention on the right has linear complexity. The Transformer attention on the left has square complexity."
-    src="/images/lambda-layer-thumb.png">
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SYxm3R5VAsw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Lambda Network](https://openreview.net/forum?id=xTJEN-ggl1b) head achieved SoTA, when sewed on decapitated Resnet50, outperforming EfficientNet on ImageNet.
 LambdaResNet also achieves ~4.5x speedup over EfficientNet at same accuracy.
