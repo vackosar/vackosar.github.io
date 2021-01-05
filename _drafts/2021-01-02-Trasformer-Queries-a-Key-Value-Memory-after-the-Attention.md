@@ -32,6 +32,21 @@ FF layer is like self-attention with static keys and values.
 It is like differentiable key-value memory!
 
 ## Feed-Forward Layer vs Key-Value Memory
+
+Where is Feed-Forward layer within the architecture? See the figure below.
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        alt="Transformer encoder layers. Feed-forward is after the self-attention."
+        src="/images/transformer-layers-encoder.jpg"
+    >
+    <figcaption class="figure-caption">
+        Transformer encoder layers. Feed-forward is after the self-attention.
+    </figcaption>
+</figure>
+
+
 [A 2019 Facebook paper Augmenting Self-attention with Persistent Memory](https://arxiv.org/pdf/1907.01470.pdf) noticed this and suggested an architecture simplification.
 They squashed feed-forward layer into the key-value memory pressed it into the attention layer and even slightly outperformed the vanilla model on next token prediction.
 Note that FF are quite like key-value stores except for non-linearity is RELU and bias-terms \\( b, c \\) are non-zero.
