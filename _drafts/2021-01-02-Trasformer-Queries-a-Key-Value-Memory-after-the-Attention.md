@@ -3,6 +3,7 @@ layout: post
 title: "Transformer Queries a Key-Value Memory After the Attention"
 date: 2021-01-02
 categories: ml
+image: /images/transformer-feed-forward.png
 description: Transformer model looks up not only in the input sequence via an self-attention, but also in a static memory via a feed-forward layer.
 permalink: /:categories/:title
 ---
@@ -12,6 +13,16 @@ permalink: /:categories/:title
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 [comment]: <> (<iframe width="560" height="315" src="https://www.youtube.com/embed/SYxm3R5VAsw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        alt="Transformer Feed-Forward Layer"
+        src="/images/transformer-feed-forward.png">
+    <figcaption class="figure-caption">
+        Transformer Feed-Forward Layer 
+    </figcaption>
+</figure>
 
 Have you forgotten about Transformer's feed-forward layer? It eats 2/3 of the model params!
 
