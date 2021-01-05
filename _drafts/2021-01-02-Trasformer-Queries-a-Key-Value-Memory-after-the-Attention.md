@@ -31,7 +31,7 @@ The Transformer's feed-forward layer is similar to the LambaNet's positional emb
 FF layer is like self-attention with static keys and values.
 It is like differentiable key-value memory!
 
-## Feed-Forward Layer vs Key-Value Memory
+## Where is Feed-Forward?
 
 Where is Feed-Forward layer within the architecture? See the figure below.
 
@@ -47,13 +47,15 @@ Where is Feed-Forward layer within the architecture? See the figure below.
 </figure>
 
 
+## Feed-Forward Layer vs Key-Value Memory
+
 [A 2019 Facebook paper Augmenting Self-attention with Persistent Memory](https://arxiv.org/pdf/1907.01470.pdf) noticed this and suggested an architecture simplification.
 They squashed feed-forward layer into the key-value memory pressed it into the attention layer and even slightly outperformed the vanilla model on next token prediction.
 Note that FF are quite like key-value stores except for non-linearity is RELU and bias-terms \\( b, c \\) are non-zero.
 
 \\( \mathrm{keyValMemory} = \sum_i \mathrm{softmax}(q_i k_i^\intercal) v \\)
 
-\\( \mathrm{ffLayer} = \sum_i \mathrm{relu}(q k_i^\intercal + b_i) v_i + c\\)
+\\( \mathrm{ffLayer} = \sum_i \mathrm{relu}(q_i k_i^\intercal + b_i) v_i + c\\)
 
 But does the feed-forward layer really behave like key-value memory not only talk a talk?
 In [Transformer Feed-Forward Layers Are Key-Value Memories](https://arxiv.org/pdf/2012.14913v1.pdf)
