@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Feed-Forward, Self-Attention, Key-Value Memory"
+title: "Feed-Forward, Self-Attention & Key-Value"
 date: 2021-01-02
 categories: ml
 image: /images/transformer-feed-forward.png
@@ -70,19 +70,18 @@ But does the feed-forward sublayer really behave like key-value memory not only 
 
 In [Transformer Feed-Forward Layers Are Key-Value Memories](https://arxiv.org/pdf/2012.14913v1.pdf) authors show that FF does walk the walk of a key-value store.
 
-For most of the keys in the feed-forward sublayers the author were able to find one or more human-interpretable input text patterns for which the key was being activated.
+For most of the keys in the feed-forward sublayers the author were able to find one or more human-interpretable input text patterns for which the key in FF was being activated.
+They studied activation for the last position of the input sequence.
 Text patterns ranged from simple exact word matches (e.g. last word is "substitutes") to more complex topics (e.g. "one of", "part of", "among").
-The activation was studied for the "channel" of the last provided token of the input sequence.
-Thanks to self-attention the other tokens influenced the last vector via self-attention providing context.
-That is also why the last token had the biggest impact on the memory change in the first encoder layers, but not the later once.
 Authors also observed that the upper layers memorize more abstract patterns.
 
 Unfortunately not all samples are provided in the pre-print.
-Also, they mention there were several patterns per key. Where those on a single topic or disparate topics?
+Furthermore, they report they found more than one pattern per key.
+Where those on a single topic or disparate topics?
 If single key was associated with multiple topics, can we still look at it as a memory cell?
 
 Individual activated values predicted next output tokens in higher layers only, but not in lower layers.
-Typical example activated tens of memories which are then aggregated (non-zero coef mems).
+Typical example activated tens of memories which were then aggregated (non-zero coef mems).
 The model output vector differed from all single memory predictions (single value vectors) 68% of the time.
 Remaining 32% are perhaps stop words and a like.
 
