@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Transformer Queries a Key-Value Memory After the Attention"
+title: "Transformer Queries a Key-Value Memory After Self-Attending"
 date: 2021-01-02
 categories: ml
 image: /images/transformer-feed-forward.png
-description: Transformer model looks up not only in the input sequence via an self-attention, but also in a static memory via a feed-forward layer.
+description: Transformer model looks up not only in the input sequence via the self-attention, but also in a static memory via a feed-forward sublayer.
 permalink: /:categories/:title
 ---
 [comment]: <> (image: /images/lambda-layer-thumb.png)
@@ -27,8 +27,10 @@ permalink: /:categories/:title
 Have you forgotten about Transformer's feed-forward layer? It eats 2/3 of the model params!
 
 In the post on LambdaNet, [I described self-attention as a differentiable query of a key-value store](https://vaclavkosar.com/ml/Lamda-Networks-Transform-Self-Attention).
-The Transformer's feed-forward layer is similar to the self-attention except values and keys are independent of the input.
+The Transformer's feed-forward sublayer is similar to the self-attention except values and keys are independent of the input.
 It is like differentiable key-value memory!
+
+Can we gain more understanding of Transformer model operation by looking at the FF?
 
 ## Where and what is Feed-Forward?
 
