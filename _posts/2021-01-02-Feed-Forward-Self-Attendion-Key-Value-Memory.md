@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Transformer Queries a Key-Value Memory After Self-Attending"
+title: "Feed-Forward, Self-Attention, Key-Value Memory"
 date: 2021-01-02
 categories: ml
 image: /images/transformer-feed-forward.png
@@ -24,9 +24,9 @@ permalink: /:categories/:title
     </figcaption>
 </figure>
 
-Have you forgotten about Transformer's feed-forward layer? It eats 2/3 of the model params!
+Have you forgotten about Transformer's feed-forward layer? [It eats 2/3 of the model params](https://arxiv.org/pdf/2012.14913v1.pdf)!
 
-In the post on LambdaNet, [I described self-attention as a differentiable query of a key-value store](https://vaclavkosar.com/ml/Lamda-Networks-Transform-Self-Attention).
+[The last post on LambdaNetwork sketches self-attention as a differentiable query of a key-value store](https://vaclavkosar.com/ml/Lamda-Networks-Transform-Self-Attention).
 The Transformer's feed-forward sublayer is similar to the self-attention except values and keys are independent of the input.
 It is like differentiable key-value memory!
 
@@ -44,7 +44,7 @@ FF camps within encoder and decoder layers as a sublayer just behind the self-at
         src="/images/transformer-layers-encoder.jpg"
     >
     <figcaption class="figure-caption">
-        Transformer encoder layers. Feed-forward is a sub-layer after the self-attention.
+        Transformer encoder layers. Feed-forward is a sub-layer after the self-attention (<a href="https://papers.nips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf">source</a>)
     </figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ But does the feed-forward sublayer really behave like key-value memory not only 
 
 ## The Memory of The Feed-Forward
 
-In [Transformer Feed-Forward Sublayers Are Key-Value Memories](https://arxiv.org/pdf/2012.14913v1.pdf) authors show that FF does walk the walk of a key-value store.
+In [Transformer Feed-Forward Layers Are Key-Value Memories](https://arxiv.org/pdf/2012.14913v1.pdf) authors show that FF does walk the walk of a key-value store.
 
 For most of the keys in the feed-forward sublayers the author were able to find one or more human-interpretable input text patterns for which the key was being activated.
 Text patterns ranged from simple exact word matches (e.g. last word is "substitutes") to more complex topics (e.g. "one of", "part of", "among").
