@@ -27,61 +27,72 @@ permalink: /:categories/:title
 Have you forgotten about Transformer's feed-forward layer? It eats 2/3 of the model params!
 
 In the post on LambdaNet, [I described self-attention as a differentiable query of a key-value store](https://vaclavkosar.com/ml/Lamda-Networks-Transform-Self-Attention).
-The Transformer's feed-forward layer is similar to the LambaNet's positional embeddings except values are independent of the input as well!
-FF layer is like self-attention with static keys and values.
+The Transformer's feed-forward layer is similar to the self-attention except values and keys are independent of the input.
 It is like differentiable key-value memory!
 
-## Where is Feed-Forward?
+## Where and what is Feed-Forward?
 
-Where is Feed-Forward layer within the architecture? See the figure below.
+Where is Feed-Forward layer within the architecture exactly?
+FF camps within encoder and decoder layers as a sublayer just behind the self-attention sub-layer.
 
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded"
-        alt="Transformer encoder layers. Feed-forward is after the self-attention."
+        alt="Transformer encoder layers. Feed-forward is a sub-layer after the self-attention."
         src="/images/transformer-layers-encoder.jpg"
     >
     <figcaption class="figure-caption">
-        Transformer encoder layers. Feed-forward is after the self-attention.
+        Transformer encoder layers. Feed-forward is a sub-layer after the self-attention.
     </figcaption>
 </figure>
 
-
-## Feed-Forward Layer vs Key-Value Memory
-
-[A 2019 Facebook paper Augmenting Self-attention with Persistent Memory](https://arxiv.org/pdf/1907.01470.pdf) noticed this and suggested an architecture simplification.
-They squashed feed-forward layer into the key-value memory pressed it into the attention layer and even slightly outperformed the vanilla model on next token prediction.
-Note that FF are quite like key-value stores except for non-linearity is RELU and bias-terms \\( b, c \\) are non-zero.
-
-\\( \mathrm{keyValMemory} = \sum_i \mathrm{softmax}(q_i k_i^\intercal) v \\)
+And what is FF layer precisely?
+It is a position-wise transformation that consists of linear transformation, ReLU, and another linear transformation.
 
 \\( \mathrm{ffLayer} = \sum_i \mathrm{relu}(q_i k_i^\intercal + b_i) v_i + c\\)
 
-But does the feed-forward layer really behave like key-value memory not only talk a talk?
-In [Transformer Feed-Forward Layers Are Key-Value Memories](https://arxiv.org/pdf/2012.14913v1.pdf)
-authors show that FF does walk the walk of a key-value store
 
-## Feed-Forward Layer Memories
+## Key-Value Memory vs Feed-Forward Layer
 
-For most of the keys in the feed-forward layers the author were able to find one or more human-interpretable input text patterns for which the key was being activated.
+Have you noticed that the FF sublayer is akin to key-value memory except for non-linearity is ReLU and bias-terms \\( b, c \\)?
+
+\\( \mathrm{keyValMemory} = \sum_i \mathrm{softmax}(q_i k_i^\intercal) v \\)
+
+[Augmenting Self-attention with Persistent Memory paper](https://arxiv.org/pdf/1907.01470.pdf) saw the similarity of feed-forward sublayer and self-attention and suggested an architecture simplification.
+They restated the FF as key-value memory and incorporated it into the self-attention sublayer. And they reportedly slightly outperformed the vanilla model on the next token prediction task.
+
+But does the feed-forward sublayer really behave like key-value memory not only talk a talk?
+
+
+## The Memory of The Feed-Forward
+
+In [Transformer Feed-Forward Sublayers Are Key-Value Memories](https://arxiv.org/pdf/2012.14913v1.pdf) authors show that FF does walk the walk of a key-value store.
+
+For most of the keys in the feed-forward sublayers the author were able to find one or more human-interpretable input text patterns for which the key was being activated.
 Text patterns ranged from simple exact word matches (e.g. last word is "substitutes") to more complex topics (e.g. "one of", "part of", "among").
 The activation was studied for the "channel" of the last provided token of the input sequence.
 Thanks to self-attention the other tokens influenced the last vector via self-attention providing context.
-That is also why the last token had the biggest impact on the memory change in the first layers, but not the later once.
+That is also why the last token had the biggest impact on the memory change in the first encoder layers, but not the later once.
 Authors also observed that the upper layers memorize more abstract patterns.
-Unfortunately not all samples are provided in the pre-print. :(
 
-Individual activated values predicted next tokens in higher layers only, but not in lower layers.
+Unfortunately not all samples are provided in the pre-print.
+Also, they mention there were several patterns per key. Where those on a single topic or disparate topics?
+If single key was associated with multiple topics, can we still look at it as a memory cell?
+
+Individual activated values predicted next output tokens in higher layers only, but not in lower layers.
 Typical example activated tens of memories which are then aggregated (non-zero coef mems).
 The model output vector differed from all single memory predictions (single value vectors) 68% of the time.
 Remaining 32% are perhaps stop words and a like.
 
-Probability of the next token based on residual outputs increased in higher layers.
+Probability of the next output token based on the inter-layer residual outputs increased in higher layers.
 Could be that the internal embedding space is different?
 Is the model refining its prediction from layer to layer?
-- Residuals and FF top-1 predictions mostly do not match. Their output seem to rather compose and not agree.
-- FF seems to after dampen or "veto" residual vector towards other candidates.
-- In 66% adding FF to residuals changed prediction is to a semantically unrelated word. Is this for sequence re-arrangement?
+
+They additionally observed that sublayer residual outputs and FF top-1 predictions mostly do not match.
+Their output seem to rather compose and not agree.
+FF seems to after dampen or "veto" residual vector towards other candidates?
+In 66% adding FF to residuals changed prediction is to a semantically unrelated word.
+Is this used by the model for predicted sequence re-arrangements?
 
 ## LambdaNet Positional Embeddings vs Transformer FF
 
