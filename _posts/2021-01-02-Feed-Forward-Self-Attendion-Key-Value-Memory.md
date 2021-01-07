@@ -4,7 +4,7 @@ title: "Feed-Forward, Self-Attention, Key-Value Memory"
 date: 2021-01-02
 categories: ml
 image: /images/transformer-feed-forward.png
-description: Transformer model looks up not only in the input sequence via the self-attention, but also in a static memory via a feed-forward sublayer.
+description: Transformer model queries values of keys in the self-attention and in the feed-forward memories.
 permalink: /:categories/:title
 ---
 [comment]: <> (image: /images/lambda-layer-thumb.png)
