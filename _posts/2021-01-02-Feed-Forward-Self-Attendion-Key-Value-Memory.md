@@ -78,7 +78,7 @@ Authors also observed that the upper layers memorize more abstract patterns.
 
 Unfortunately not all samples are provided in the pre-print.
 Furthermore, they report they found more than one pattern per key.
-Where those on a single topic or disparate topics?
+Where those patterns on a single topic or disparate topics?
 If single key was associated with multiple topics, can we still look at it as a memory cell?
 
 Individual activated values predicted next output tokens in higher layers only, but not in lower layers.
@@ -86,7 +86,7 @@ Typical example activated tens of memories which were then aggregated (non-zero 
 The model output vector differed from all single memory predictions (single value vectors) 68% of the time.
 Remaining 32% are perhaps stop words and a like.
 
-Probability of the next output token based on the inter-layer residual outputs increased in higher layers.
+The probability of the next output token based on the inter-layer residual outputs increased in higher layers.
 Could be that the internal embedding space is different?
 Is the model refining its prediction from layer to layer?
 
