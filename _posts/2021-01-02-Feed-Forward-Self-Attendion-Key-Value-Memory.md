@@ -70,8 +70,8 @@ But does the feed-forward sublayer really behave like key-value memory not only 
 
 In [Transformer Feed-Forward Layers Are Key-Value Memories](https://arxiv.org/pdf/2012.14913v1.pdf) authors show that FF does walk the walk of a key-value store.
 
-The paper studies activation of FF keys for the last position of the input sequence was studied.
-The activated keys are the keys with top-n ReLU outputs for given FF sublayer and the last position.
+The paper studies activation of FF keys for the last position of the input sequence.
+The activated keys are  keys with top-n ReLU outputs for given FF sublayer.
 For most of the keys in the feed-forward sublayers the authors found one or more human-interpretable input text patterns for which the key in FF was being activated.
 Text patterns ranged from simple exact word matches (e.g. last word is "substitutes") to more complex topics (e.g. "one of", "part of", "among").
 Authors also observed that the upper layers memorize more abstract patterns.
