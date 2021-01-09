@@ -12,17 +12,9 @@ permalink: /:categories/:title
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-[comment]: <> (<iframe width="560" height="315" src="https://www.youtube.com/embed/SYxm3R5VAsw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NI7vFV_iOOA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
-        alt="Transformer Feed-Forward Layer"
-        src="/images/transformer-feed-forward.png">
-    <figcaption class="figure-caption">
-        Transformer Feed-Forward Layer 
-    </figcaption>
-</figure>
+
 
 Have you forgotten about Transformer's feed-forward layer? [It eats 2/3 of the model params](https://arxiv.org/pdf/2012.14913v1.pdf)!
 
@@ -52,6 +44,17 @@ And what is FF layer precisely?
 It is a position-wise transformation that consists of linear transformation, ReLU, and another linear transformation.
 
 \\( \mathrm{ffLayer} = \sum_i \mathrm{relu}(q_i k_i^\intercal + b_i) v_i + c\\)
+
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        alt="Transformer Feed-Forward Layer"
+        src="/images/transformer-feed-forward.png">
+    <figcaption class="figure-caption">
+        Transformer Feed-Forward Layer 
+    </figcaption>
+</figure>
 
 Don't forget the residual connections and their addition and normalization to outputs of both FF and self-attention.
 
