@@ -50,7 +50,9 @@ It is a position-wise transformation that consists of linear transformation, ReL
     <img
         class="figure-img img-fluid rounded"
         alt="Transformer Feed-Forward Layer"
-        src="/images/transformer-feed-forward.png">
+        src="/images/transformer-feed-forward.png"
+        style="max-width: 400px"
+>
     <figcaption class="figure-caption">
         Transformer Feed-Forward Layer 
     </figcaption>
