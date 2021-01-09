@@ -81,18 +81,17 @@ Furthermore, they report they found more than one pattern per key.
 Where those patterns on a single topic or disparate topics?
 If single key was associated with multiple topics, can we still look at it as a memory cell?
 
-Individual activated values predicted next output tokens in higher layers only, but not in lower layers.
+Activated FF-values predicted model's next output tokens in higher layers only, but not in lower layers.
 Typical example activated tens of memories which were then aggregated (non-zero coef mems).
 The model output vector differed from all single memory predictions (single value vectors) 68% of the time.
 Remaining 32% are perhaps stop words and a like.
-
-The probability of the next output token based on the inter-layer residual outputs increased in higher layers.
-Could be that the internal embedding space is different?
+The FF-residual connections predicted next output token increasingly in the higher layers.
+Could be that the internal embedding space is changes between layers?
 Is the model refining its prediction from layer to layer?
 
-They additionally observed that sublayer residual outputs and FF top-1 predictions mostly do not match.
-Their output seem to rather compose and not agree.
-FF seems to after dampen or "veto" residual vector towards other candidates?
+They additionally observed that top-1 predictions of sublayer residuals mostly not match FF.
+These sublayer-outputs seem to not agree but rather compose.
+Does FF dampen or "veto" residual vectors towards other candidates?
 In 66% adding FF to residuals changed prediction is to a semantically unrelated word.
 Is this used by the model for predicted sequence re-arrangements?
 
