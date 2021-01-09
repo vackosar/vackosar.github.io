@@ -53,6 +53,8 @@ It is a position-wise transformation that consists of linear transformation, ReL
 
 \\( \mathrm{ffLayer} = \sum_i \mathrm{relu}(q_i k_i^\intercal + b_i) v_i + c\\)
 
+Don't forget the residual connections and their addition and normalization to outputs of both FF and self-attention.
+
 
 ## Key-Value Memory vs Feed-Forward Layer
 
