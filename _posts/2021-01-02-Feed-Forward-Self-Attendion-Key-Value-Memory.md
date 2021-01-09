@@ -102,7 +102,7 @@ Is this used by the model for predicted sequence re-arrangements?
 
 ## LambdaNet Positional Embeddings vs Transformer FF
 
-LambdaNet layer positional embeddings are something between self-attention and FF, but neither.
+[LambdaNet layer positional embeddings](https://vaclavkosar.com/ml/Lamda-Networks-Transform-Self-Attention) are something between self-attention and FF, but neither.
 They are about querying pattern-values store.
 The keys are constants like in FF, but queries and values are derived from the input.
 Whereas in the FF the values are constants as well.
