@@ -137,6 +137,7 @@ then diminishing attention is defined as:
 
 This relatively increases attention to part not used for decoding in previous steps.
 
+Slighly improved approach call Dynamic Dimishing Attention then achived SoTA when used in models Pointer-Generator and BART models.
 
 
 <figure class="figure">
