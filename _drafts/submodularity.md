@@ -83,7 +83,7 @@ The cost \\( c_k \\), can then be added back to rescale according to the sentenc
 
 Above setup with idf-modified-cosine similarity matrix achieved SoTA outperforming PageRank based centrality summarization algorithms like [LexRank](https://arxiv.org/pdf/1109.2128.pdf).
 LexRank applies PageRank to the idf-modified-cosine similarity matrix to get the centrality scores for the sentences.
-The LexRank paper mentions use MMR as a reranker, making the comparison with the submodularity solution fair.
+The LexRank paper mentions use MMR as a re-ranker, making the comparison with the submodularity solution fair.
 
 
 ### Wiki-Topic Hierarchies Notes TODO
@@ -122,5 +122,30 @@ The paper [Resurrecting Submodularity for Neural Text Generation](https://arxiv.
 
 The neural encoder-decoder summarizers trained end-to-end suffer from repetition and insufficient information coverage.
 Mechanism to improve coverage by adding coverage requirements into the loss.
-The paper introduces instead modifies the attentions using the priciple of diminishing returns using submodular function.
+The paper introduces instead modifies to the attentions using the priciple of diminishing returns using submodular function.
+No additional modification to the loss function or extra params are needed.
 
+[comment]: <> (At each decoding step for one self-attention head there is single attention vector which is used for the next token prediction.)
+Given decoder step (position) \\( t \\),
+encoder sequence position \\( i \\),
+attention matrix \\( a_{i, t} \\),
+concave non-decreasing function \\( F \\) with \\( F(0) = 0 \\) e.g. ,
+then diminishing attention is defined as:
+
+\\( DimAtt_{i,t} = F(\sum_{\tau = 0}^{t} a_{i, \tau}) - F(\sum_{\tau = 0}^{t} a_{i, \tau}) \\)
+
+
+This relatively increases attention to part not used for decoding in previous steps.
+
+
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        alt="Results of diminishing attention"
+        src="/images/diminishing-attention.png"
+        style="max-width: 900px">
+    <figcaption class="figure-caption">
+        Results of diminishing attention (<a href="https://arxiv.org/abs/1911.03014">source</a>) 
+    </figcaption>
+</figure>
