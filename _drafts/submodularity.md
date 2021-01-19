@@ -18,7 +18,8 @@ permalink: /:categories/:title
 A submodular function is a set function whose value, has the property that the difference in the incremental value of the function that a single element makes when added to an input set decreases as the size of the input set increases.
 
 <div>
-\( x \notin A \subset B \), 
+\( A \subset B \), 
+\(x \notin B \),
 \( F(\lbrace x \rbrace \cup A) - F(A) \geq F(\lbrace x \rbrace \cup B) - F(B) \)
 </div>
 <br>
@@ -33,37 +34,35 @@ but avoid topic repetition at the same time as repeating a fact has a diminishin
 
 [Submodular functions can be seen as discrete convexity](https://web.cs.elte.hu/~lovasz/scans/submodular.pdf) e.g.
 - polynomial time algo for finding minimum-set.
-- for non-negative submodular function with budget contraint maximum-set is approximable with polynomial time greedy algorithm
-
+- for non-negative submodular function with budget (each element has a cost) maximum-set is approximable with polynomial time greedy algorithm
+- Submodular functions can be combined, and the resulting function is still submodular.
 
 
 ### Maximum-Marginal-Relevance
-[Maximum-Marginal-Relevance for re-ranking (1998)](https://www.cs.cmu.edu/~jgc/publication/The_Use_MMR_Diversity_Based_LTMIR_1998.pdf) reduces the redundancy of results while at the same time maintaining query relevance of results for already ranked documents or phrases.
+[Maximum-Marginal-Relevance for re-ranking (1998)](https://www.cs.cmu.edu/~jgc/publication/The_Use_MMR_Diversity_Based_LTMIR_1998.pdf)
+reduces the redundancy of query results while at the same time maintaining query relevance of results for already ranked documents or phrases.
+Greedy algoritm which makes trade-off between relevance and diversity.
+
+- V = set of documents
+- S = Subset of documents in V already selected
+- \\( \lambda \\) = Constant in range [ 0–1 ], for diversification of results
 
 <div>
 \( \mathrm{nextDoc} = \)
-\( \mathrm{argmax}_{i \in R \setminus S } ( \lambda \mathrm{sim}_1 (i, Q) - (1 - \lambda) \mathrm{max}_{j \in S} \mathrm{sim}_2 (i, j)) \),
+\( \mathrm{argmax}_{i \in V \setminus S } ( \lambda \mathrm{sim}_1 (i, Q) - (1 - \lambda) \mathrm{max}_{j \in S} \mathrm{sim}_2 (i, j)) \),
 </div>
+<br>
 
-where \\( R \setminus S \\) are unselected documents
-- D = Set of documents related to Query Q 
-- S = Subset of documents in R already selected 
-- R\S = set of unselected documents in R 
-- \\( \lambda \\) = Constant in range [0–1], for diversification of results
-
-Submodular functions can be efficiently combined together, and the resulting function is still submodular.
-
-Very efficient algorithms for optimization. For example, a simple greedy algorithm admits a constant factor guarantee
 
 
 ### Summarization as Submodularity Maximization
 
 [Multi-document Summarization via Budgeted Maximization of Submodular Functions](https://www.aclweb.org/anthology/N10-1134.pdf)
-the problem of maximizing a submodular function under budget constraint:
+formulates summarization as the problem of maximizing a submodular function under budget constraint,
+where \\( V \\) is set of all sentences, \\( S \\) are selected sentences, \\( c_i \\) is word count, \\( f \\) is submodular function, \\( K \\) is the word budget, then:
 
 \\( \max_{S \subset V} f(S) : \sum_{i \in S} c_i \leq K \\)
 
-where \\( V \\) is set of all sentences, \\( S \\) are selected sentences, \\( c_i \\) is word count, \\( f \\) is submodular function, \\( K \\) is the word budget.
 
 The paper proposes MMR alternative that is submodular if the similarity is non-negative:
 
@@ -139,7 +138,7 @@ attention matrix \\( a_{i, t} \\),
 concave non-decreasing function \\( F \\) with \\( F(0) = 0 \\) e.g. ,
 then diminishing attention is defined as:
 
-\\( DimAtt_{i,t} = F(\sum_{\tau = 0}^{t} a_{i, \tau}) - F(\sum_{\tau = 0}^{t} a_{i, \tau}) \\)
+\\( DimAtt_{i,t} = F(\sum_{\tau = 0}^{t} a_{i, \tau}) - F(\sum_{\tau = 0}^{t - 1} a_{i, \tau}) \\)
 
 
 This relatively increases attention to part not used for decoding in previous steps.
