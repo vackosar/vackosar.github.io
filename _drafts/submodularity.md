@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Submodularity TODO"
-date: 2021-01-02
+date: 2021-01-19
 categories: ml
 description: TODO
 permalink: /:categories/:title
@@ -16,18 +16,25 @@ permalink: /:categories/:title
 ### Submodular function
 
 A submodular function is a set function whose value, has the property that the difference in the incremental value of the function that a single element makes when added to an input set decreases as the size of the input set increases.
-Submodular functions model diminishing returns like costs of items.
-There is often a larger discount, with an increase in the items one buys.
-In maximization problems, they model notions of diversity, information and coverage.
 
 <div>
 \( x \notin A \subset B \), 
 \( F(\lbrace x \rbrace \cup A) - F(A) \geq F(\lbrace x \rbrace \cup B) - F(B) \)
 </div>
+<br>
 
-For example, in document summarization, one would like the summary to cover all important and relevant concepts in the document.
+We encounter this property during shopping in form of quantity discount.
+The discount of addition of on more item to the purchase cart, decreases with the size of the cart.
+This priciple is called diminishing returns.
 
-[Submodular functions can be seen as discrete convexity](https://web.cs.elte.hu/~lovasz/scans/submodular.pdf) e.g. they also have polynomial time algo for finding minimum.
+Submodular functions appear also in maximization problems where they model notions of diversity, information and coverage.
+For example one would like a document summary to cover all important and relevant concepts in the document,
+but avoid topic repetition at the same time as repeating a fact has a diminishing return.
+
+[Submodular functions can be seen as discrete convexity](https://web.cs.elte.hu/~lovasz/scans/submodular.pdf) e.g.
+- polynomial time algo for finding minimum-set.
+- for non-negative submodular function with budget contraint maximum-set is approximable with polynomial time greedy algorithm
+
 
 
 ### Maximum-Marginal-Relevance
