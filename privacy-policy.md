@@ -168,6 +168,11 @@ description: Privacy Policy for VaclavKosar.Com
     <h2>Service Providers</h2>
     <p>We may employ third party companies and individuals to facilitate our Service ("Service Providers"), provide the Service on our behalf, perform Service-related services or assist us in analysing how our Service is used.</p>
     <p>These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
+    <li>
+        <p><strong>MailChimp.com</strong></p>
+        <p>MailChimp keeps the subscription email list and is used send emails to the email subscribers.</p>
+        <p>More information at <a href="https://mailchimp.com/legal/">MailChimp Legal</a></p>
+    </li>
 
     <h3>Analytics</h3>
     <p>We may use third-party Service Providers to monitor and analyse the use of our Service.</p>
