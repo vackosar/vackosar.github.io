@@ -80,6 +80,7 @@ How is this related exactly to the MMR? If the costs for each item is the same e
 \(  f(S \cup \lbrace k \rbrace ) - f(S) = \)
 \(  \sum_{i \in V \setminus \lbrace k \rbrace} \mathrm{sim} (i, k) - 2 \lambda \sum_{i \in S} \mathrm{sim}(i, k) \).
 </div>
+TODO double check above.
 
 Where the first element corresponds to the sentence's centrality,
 and the second element to the sentence dissimilarity to the already selected sentences.

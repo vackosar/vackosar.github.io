@@ -48,10 +48,6 @@
 <script type="application/javascript">
 
   jQuery(function($) {
-    var triggered = false;
-    var initYOffset = window.pageYOffset;
-    var scrollTriggerDelta = 150;   // set to whatever you want it to be
-
     checkCookie_eu();
 
     function checkCookie_eu() {
@@ -62,18 +58,6 @@
       } else {
         // show notification bar
         $('#cookie_directive_container').show();
-        $(window).on('scroll', function() {
-          if (!triggered) {
-            var delta = Math.abs(initYOffset - window.pageYOffset);
-
-            if (delta > scrollTriggerDelta) {
-              triggered = true;
-              accept()
-
-            }
-          }
-
-        });
       }
 
     }
@@ -130,11 +114,11 @@
 </script>
 
 <div id="cookie_directive_container" class="fixed-bottom" style="display: none; background-color: grey; width: 100%">
-    <nav class="d-flex align-items-center m-2 justify-content-center" style="width: auto">
+    <nav class="d-flex align-items-center m-2 justify-content-center pt-5 pb-5" style="width: auto">
         <span class="credit text-white">
-            <i class="fa fa-cookie-bite"></i> By <strong class="text-warning">scrolling</strong> and using our website you are consenting to our use of cookies in accordance with our <a href="/privacy-policy" target="_blank" class="text-warning" style="text-decoration: underline">cookie policy</a>.
+            <i class="fa fa-cookie-bite"></i> By using our website you are consenting to our use of cookies in accordance with our <a href="/privacy-policy" target="_blank" class="text-warning" style="text-decoration: underline">cookie policy</a>.
         </span>
-        <button class="btn btn-success ml-2" id="cookie_accept" type="button" style="width: auto">Ok!</button>
+        <button class="btn btn-success ml-2" id="cookie_accept" type="button" class="m-1">Ok!</button>
     </nav>
 </div>
 
