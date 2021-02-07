@@ -3,7 +3,7 @@ layout: post
 title: "Submodularity TODO"
 date: 2021-01-19
 categories: ml
-description: TODO
+description: TODO Diminishing returns, summarization and submodularity.
 permalink: /:categories/:title
 ---
 
@@ -48,10 +48,12 @@ It make the trade off using the following greedy algorithm.
 - \\( \lambda \\) = a constant in range of \\( ( 0, 1 ) \\) 
 
 <div>
-\( \mathrm{nextDoc} = \)
+\( \mathrm{nextDoc}(S) = \)
 \( \mathrm{argmax}_{i \in V \setminus S } ( \lambda \mathrm{sim}_1 (i, Q) - (1 - \lambda) \mathrm{max}_{j \in S} \mathrm{sim}_2 (i, j)) \),
 </div>
-<br>
+
+- The first part of equation growths with document similarity with the query.
+- The second part decreases with the document similarity with already selected documents.
 
 
 
@@ -61,16 +63,19 @@ It make the trade off using the following greedy algorithm.
 formulates summarization as the problem of maximizing a submodular function under a budget constraint,
 where \\( V \\) is set of all sentences, \\( S \\) are selected sentences, \\( c_i \\) is word count, \\( f \\) is submodular function, \\( B \\) is the word budget, then:
 
-\\( \max_{S \subset V} f(S) : \sum_{i \in S} c_i \leq B \\)
+\\( S_{max} = \max_{S \subset V} f(S) : \sum_{i \in S} c_i \leq B \\)
 
 
 The paper proposes MMR alternative that is submodular if the similarity is non-negative:
 
 \\( f = \sum_{i \in V \setminus S} \sum_{j \in S} \mathrm{sim}(i,j) - \lambda \sum_{i,j \in S: i \neq j} \mathrm{sim}(i,j) \\)
 
+- The first part grows as the selected sentences \\( S \\) become more similar to all sentences \\( V \\).
+- The second part decreases as the selected sentences become more similar between each other.
+
 For which they present greedy algorithm with near-optimality guarantee. The algo repeatedely finds documents maximizing:
 
-\\( \mathrm{nextDoc} = \mathrm{argmax_i} \frac{f(G \cup \lbrace i \rbrace) - f(G)}{c_i^r} \\)
+\\( \mathrm{nextDoc}(S) = \mathrm{argmax_i} \frac{f(S \cup \lbrace i \rbrace) - f(S)}{c_i^r} \\)
 
 until the budget is reached. The algo Details are presented in [the paper](https://www.aclweb.org/anthology/N10-1134.pdf).
 
@@ -78,22 +83,43 @@ How is this related exactly to the MMR? If the costs for each item is the same e
 
 <div>
 \(  f(S \cup \lbrace k \rbrace ) - f(S) = \)
-\(  \sum_{i \in V \setminus \lbrace k \rbrace} \mathrm{sim} (i, k) - 2 \lambda \sum_{i \in S} \mathrm{sim}(i, k) \).
+\(  \sum_{i \in V \setminus \lbrace k \rbrace} \mathrm{sim} (i, k) - 2 (1 + \lambda) \sum_{i \in S} \mathrm{sim}(i, k) \).
 </div>
-TODO double check above.
+<br>
 
-Where the first element corresponds to the sentence's centrality,
-and the second element to the sentence dissimilarity to the already selected sentences.
-Above equation is very much like the Maximum-Marginal-Relevance equation.
+<div style="font-size: 10px">
+  <b>Proof:</b>
 
+  <div>
+  \( f_1 := \sum_{i \in V \setminus S, j \in S } \mathrm{sim} (i, j) \),<br>
+
+  \( f_1(S \cup \lbrace k \rbrace ) - f_1(S) = - \sum_{j \in S} \mathrm{sim}(k, j) + \sum_{i \in V \setminus (S \cup \lbrace k \rbrace )} \mathrm{sim}(i, k) = \)
+  \( \sum_{j \in V \setminus \lbrace k \rbrace} \mathrm{sim}(k, j) - 2 \sum_{j \in S} \mathrm{sim}(k, j) \)
+  <br>
+
+  \( f_2 := \sum_{i,j \in S : i \neq j } \mathrm{sim} (i, j) \),<br>
+
+  \( f_2(S \cup \lbrace k \rbrace )  - f_2(S) = 2 \sum_{j \in S} sim(k, j) \),<br>
+
+  \( f = f_1 - \lambda f_2 \)
+
+  </div>
+
+</div>
+<br>
+
+The equation is very much like the Maximum-Marginal-Relevance equation, except \\( \lambda \\) the diversity term has always non-zero weight.
 The cost \\( c_k \\), can then be added back to rescale according to the sentence length.
 
-Above setup with idf-modified-cosine similarity matrix achieved SoTA outperforming PageRank based centrality summarization algorithms like [LexRank](https://arxiv.org/pdf/1109.2128.pdf).
+- The first part grows with the sentence \\(k \\) similarity to all sentences in \\( V \\) i.e. with sentence centrality in the whole document.
+- The second part decreases with sentence similarity to the already selected sentences.
+
+This setup with idf-modified-cosine similarity matrix achieved SoTA outperforming PageRank based centrality summarization algorithms like [LexRank](https://arxiv.org/pdf/1109.2128.pdf).
 LexRank applies PageRank to the idf-modified-cosine similarity matrix to get the centrality scores for the sentences.
 The LexRank paper mentions use MMR as a re-ranker, making the comparison with the submodularity solution fair.
 
 
-### Wiki-Topic Hierarchies Notes TODO
+### Wiki-Topic Hierarchies Notes
 
 [Summarization of Multi-Document Topic Hierarchies using Submodular Mixtures (2015)](https://www.aclweb.org/anthology/P15-1054.pdf)
 suggested generating Wikipedia disambiguation pages using custom crafted submodularity function maximizing disambiguation topics specificity, clarity, relevance, and more.
