@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Submodularity TODO"
+title: "Submodularity in ranking, summarization, and self-attention"
 date: 2021-01-19
 categories: ml
-description: TODO Diminishing returns, summarization and submodularity.
+description: Using diminishing returns to optimize results under a budget constraint in problems of coverage and results diversification.
 permalink: /:categories/:title
 ---
 
@@ -27,6 +27,21 @@ A submodular function is a set function whose value, has the property that the d
 We encounter this property during shopping in form of quantity discount.
 The discount of addition of on more item to the purchase cart, decreases with the size of the cart.
 This priciple is called diminishing returns.
+
+For example the price per product price as a function of set of purchased products \\( S \\) could be dependent on the product count \\( \| S \| \\). 
+From following we then observe diminishing discount of adding an extra product into the cart.
+
+<div>
+  \( \mathrm{price}(S) = \exp(-|S|) \)<br>
+
+  \( S_1 \subset S_2 \implies | S_1 | \leq | S_2 | \)<br>
+
+  \( \mathrm{price}(S_1 + \lbrace x \rbrace) - \mathrm{price}(S_1) \geq \)
+  \( \mathrm{price}(S_2 + \lbrace x \rbrace) - \mathrm{price}(S_2) \),<br>
+  because
+  \( \exp(- | S_1 | )(e^{-1} - 1) \geq \exp(- | S_2 | )(e^{-1} - 1) \)
+</div>
+<br>
 
 Submodular functions appear also in maximization problems where they model notions of diversity, information and coverage.
 For example one would like a document summary to cover all important and relevant concepts in the document,
@@ -119,7 +134,7 @@ LexRank applies PageRank to the idf-modified-cosine similarity matrix to get the
 The LexRank paper mentions use MMR as a re-ranker, making the comparison with the submodularity solution fair.
 
 
-### Wiki-Topic Hierarchies Notes
+### Wiki term disambiguation for wiki using topic hierarchy coverage
 
 [Summarization of Multi-Document Topic Hierarchies using Submodular Mixtures (2015)](https://www.aclweb.org/anthology/P15-1054.pdf)
 suggested generating Wikipedia disambiguation pages using custom crafted submodularity function maximizing disambiguation topics specificity, clarity, relevance, and more.
