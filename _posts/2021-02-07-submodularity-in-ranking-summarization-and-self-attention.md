@@ -29,7 +29,7 @@ The discount of addition of on more item to the purchase cart, decreases with th
 This priciple is called diminishing returns.
 
 For example the price per product price as a function of set of purchased products \\( S \\) could be dependent on the product count \\( \| S \| \\). 
-From following we then observe diminishing discount of adding an extra product into the cart.
+From following, we then observe diminishing discount of adding an extra product into the cart.
 
 <div>
   \( \mathrm{price}(S) = \exp(-|S|) \)<br>
