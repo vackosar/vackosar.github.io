@@ -128,17 +128,16 @@ We solve:
 <div>
 \( S_{best} = \mathrm{argmax}_{S \subset V : |S| \leq B} \sum_i \omega_i f_i(S) \)
 </div>
+<br>
 
 
-
-### Submodularity and Self-Attention
+### Diminishing self-attention improves summarization coverage
 
 The paper [Resurrecting Submodularity for Neural Text Generation](https://arxiv.org/abs/1911.03014) optimizes summarization and translation coverage with diminishing attentions with submodular functions.
 
-The neural encoder-decoder summarizers trained end-to-end suffer from repetition and insufficient information coverage.
-Mechanism to improve coverage by adding coverage requirements into the loss.
-The paper introduces instead modifies to the attentions using the priciple of diminishing returns using submodular function.
-No additional modification to the loss function or extra params are needed.
+End-to-end trained neural encoder-decoder summarizers suffer from repetition and insufficient information coverage.
+Previous papers added coverage requirements into the loss.
+This paper instead modifies the attention weights using the principle of diminishing returns using a submodular function.
 
 [comment]: <> (At each decoding step for one self-attention head there is single attention vector which is used for the next token prediction.)
 Given decoder step (position) \\( t \\),
@@ -150,9 +149,21 @@ then diminishing attention is defined as:
 \\( DimAtt_{i,t} = F(\sum_{\tau = 0}^{t} a_{i, \tau}) - F(\sum_{\tau = 0}^{t - 1} a_{i, \tau}) \\)
 
 
-This relatively increases attention to part not used for decoding in previous steps.
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        alt="Diminishing attention via submodularity"
+        src="/images/submodularity-diminishing-attention.png"
+        style="max-width: 900px">
+    <figcaption class="figure-caption">
+        Diminishing attention via submodularity (<a href="https://arxiv.org/abs/1911.03014">source</a>) 
+    </figcaption>
+</figure>
 
-Slighly improved approach call Dynamic Dimishing Attention then achived SoTA when used in models Pointer-Generator and BART models.
+
+This relatively increases attention to the parts of input text that were not yet used for decoding.
+With a slightly more sofisticated approach they call "Dynamic Dimishing Attention" they then achive SoTA
+with underlying summarization models Pointer-Generator and BART.
 
 
 <figure class="figure">
