@@ -13,14 +13,14 @@ permalink: /:categories/:title
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
-### Submodular function
+### Submodular function models diminishing returns
 
 A submodular function is a set function whose value, has the property that the difference in the incremental value of the function that a single element makes when added to an input set decreases as the size of the input set increases.
 
 <div>
-\( A \subset B \), 
-\(x \notin B \),
-\( F(\lbrace x \rbrace \cup A) - F(A) \geq F(\lbrace x \rbrace \cup B) - F(B) \)
+\( S_1 \subset S_2 \), 
+\(i \notin S_2 \),
+\( F(\lbrace i \rbrace \cup S_2) - F(S_1) \geq F(\lbrace i \rbrace \cup S_2) - F(S_2) \)
 </div>
 <br>
 
@@ -34,18 +34,18 @@ but avoid topic repetition at the same time as repeating a fact has a diminishin
 
 [Submodular functions can be seen as discrete convexity](https://web.cs.elte.hu/~lovasz/scans/submodular.pdf) e.g.
 - polynomial time algo for finding minimum-set.
-- for non-negative submodular function with budget (each element has a cost) maximum-set is approximable with polynomial time greedy algorithm
+- for non-negative submodular function maximum-set under a budget constraint is approximable with polynomial time greedy algorithm 
 - Submodular functions can be combined, and the resulting function is still submodular.
 
 
-### Maximum-Marginal-Relevance
+### Maximum-Marginal-Relevance re-ranks for diversity of results
 [Maximum-Marginal-Relevance for re-ranking (1998)](https://www.cs.cmu.edu/~jgc/publication/The_Use_MMR_Diversity_Based_LTMIR_1998.pdf)
-reduces the redundancy of query results while at the same time maintaining query relevance of results for already ranked documents or phrases.
-Greedy algoritm which makes trade-off between relevance and diversity.
+trades off redundancy of query results for small decrease relevance of results for already ranked documents or phrases.
+It make the trade off using the following greedy algorithm.
 
-- V = set of documents
-- S = Subset of documents in V already selected
-- \\( \lambda \\) = Constant in range [ 0–1 ], for diversification of results
+- \\( V \\) = a set of documents
+- \\( S \\) = a subset of documents in V already selected
+- \\( \lambda \\) = a constant in range of \\( ( 0, 1 ) \\) 
 
 <div>
 \( \mathrm{nextDoc} = \)
@@ -55,13 +55,13 @@ Greedy algoritm which makes trade-off between relevance and diversity.
 
 
 
-### Summarization as Submodularity Maximization
+### Summarization as budgeted submodularity maximization
 
 [Multi-document Summarization via Budgeted Maximization of Submodular Functions](https://www.aclweb.org/anthology/N10-1134.pdf)
-formulates summarization as the problem of maximizing a submodular function under budget constraint,
-where \\( V \\) is set of all sentences, \\( S \\) are selected sentences, \\( c_i \\) is word count, \\( f \\) is submodular function, \\( K \\) is the word budget, then:
+formulates summarization as the problem of maximizing a submodular function under a budget constraint,
+where \\( V \\) is set of all sentences, \\( S \\) are selected sentences, \\( c_i \\) is word count, \\( f \\) is submodular function, \\( B \\) is the word budget, then:
 
-\\( \max_{S \subset V} f(S) : \sum_{i \in S} c_i \leq K \\)
+\\( \max_{S \subset V} f(S) : \sum_{i \in S} c_i \leq B \\)
 
 
 The paper proposes MMR alternative that is submodular if the similarity is non-negative:
@@ -104,14 +104,14 @@ finding the most representa-tive subset of topic nodes from a DAG-Structuredtopi
 
 - Given a (ground set) collection V of topics organized into DAG
 - Collection of D documents associated with one or more topics
-- K topics
+- B topics
 - Transitive cover \\( C(t) \\) = all subtopics of t, truncated \\( C^\alpha \\) where path cannot be longer than \\( \alpha \\)
 - Set of categories \\( S \\)
 
 We solve:
 
 <div>
-\( \mathrm{argmax}_{S \subset V : |S| \leq K} \sum_i \omega_i f_i(S) \)
+\( \mathrm{argmax}_{S \subset V : |S| \leq B} \sum_i \omega_i f_i(S) \)
 </div>
 where \\( f_i \\) are monotone submodule mixture components, \\( \omega_i \geq 0 \\) are associated weights.
 
