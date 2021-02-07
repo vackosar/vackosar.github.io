@@ -85,8 +85,8 @@ The paper proposes MMR alternative that is submodular if the similarity is non-n
 
 \\( f = \sum_{i \in V \setminus S} \sum_{j \in S} \mathrm{sim}(i,j) - \lambda \sum_{i,j \in S: i \neq j} \mathrm{sim}(i,j) \\)
 
-- The first part grows as the selected sentences \\( S \\) become more similar to all sentences \\( V \\).
-- The second part decreases as the selected sentences become more similar between each other.
+- The first part grows as selected sentences \\( S \\) become more similar to all sentences \\( V \\).
+- The second part decreases as selected sentences become more similar between each other.
 
 For which they present greedy algorithm with near-optimality guarantee. The algo repeatedely finds documents maximizing:
 
