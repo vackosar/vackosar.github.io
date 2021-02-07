@@ -96,31 +96,39 @@ The LexRank paper mentions use MMR as a re-ranker, making the comparison with th
 ### Wiki-Topic Hierarchies Notes TODO
 
 [Summarization of Multi-Document Topic Hierarchies using Submodular Mixtures (2015)](https://www.aclweb.org/anthology/P15-1054.pdf)
-suggested generating Wikipedia disambiguation pages using combination of search and summarization.
+suggested generating Wikipedia disambiguation pages using custom crafted submodularity function maximizing disambiguation topics specificity, clarity, relevance, and more.
 
-Given a DAG-structured topic hierarchy and asubset of objects, we investigate the problem offinding a subset of DAG-structured topics that areinduced by that subset (of objects).
-summarize such large sets of labels into a smaller and more meaningful label sets usinga DAG-structured topic hierarchy
-finding the most representa-tive subset of topic nodes from a DAG-Structuredtopic hierarchy. We argue that many formulationsof this problem are natural instances of submodularmaximization, and provide a learning frameworkto create submodular mixtures to solve this prob-lem.
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded"
+        alt="Wiki disambiguation problem and submodularity"
+        src="/images/submodularity-wiki-disambiguation.png"
+        style="max-width: 900px">
+    <figcaption class="figure-caption">
+        Wiki disambiguation problem and submodularity (<a href="https://www.aclweb.org/anthology/P15-1054.pdf">source</a>) 
+    </figcaption>
+</figure>
 
-- Given a (ground set) collection V of topics organized into DAG
+Wiki articleas are organized into a topic hierarchy. The article looks for the best small subset of topics for an informative disambiguation page.
+The submodular function is constructed as optimal linear combination of multiple hand-constructed submodular functions.
+
+- \\( V \\) all topics organized into a hierarchy
 - Collection of D documents associated with one or more topics
-- B topics
-- Transitive cover \\( C(t) \\) = all subtopics of t, truncated \\( C^\alpha \\) where path cannot be longer than \\( \alpha \\)
-- Set of categories \\( S \\)
+- \\( S \\) selected topics 
+- \\( B \\) topic count budget
+- \\( f_i \\) custom monotone submodular functions for selection of the best topics. For example:
+    - Weighted set cover function \\( f(S) = \sum_d \omega_d  \\) with weights based on relative importance.
+    - topic specificity - distance from root
+    - topic clarity: fraction of descendats that cover one or more docs
+    - topic relevance: min number of hops needed
+- \\( \omega_i \geq 0 \\) the best linear combination of the custom functions
 
 We solve:
 
 <div>
-\( \mathrm{argmax}_{S \subset V : |S| \leq B} \sum_i \omega_i f_i(S) \)
+\( S_{best} = \mathrm{argmax}_{S \subset V : |S| \leq B} \sum_i \omega_i f_i(S) \)
 </div>
-where \\( f_i \\) are monotone submodule mixture components, \\( \omega_i \geq 0 \\) are associated weights.
 
-- Weighted set cover function \\( f(S) = \sum_d \omega_d  \\) with weights based on relative importance.
-- topic specificity - distance from root
-- topic clarity: fraction of descendats that cover one or more docs
-- topic relevance: min number of hops needed
-
-They do small modifications and combine these losses into single submodularity optimizing loss function?
 
 
 ### Submodularity and Self-Attention
