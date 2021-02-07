@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Submodularity in ranking, summarization, and self-attention"
-date: 2021-01-19
+date: 2021-02-07
 categories: ml
 description: Using diminishing returns to optimize results under a budget constraint in problems of coverage and results diversification.
 permalink: /:categories/:title
