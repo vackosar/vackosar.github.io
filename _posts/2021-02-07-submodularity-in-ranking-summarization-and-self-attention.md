@@ -5,12 +5,13 @@ date: 2021-02-07
 categories: ml
 description: Using diminishing returns to optimize results under a budget constraint in problems of coverage and results diversification.
 permalink: /:categories/:title
+image: /images/submodularity-main.png
 ---
-
-[comment]: <> (image: /images/transformer-feed-forward.png)
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<img src="/images/submodularity-main.png" alt="Submodularity in graph summarization visualization" style="width: 90%; max-width: 700px" /><br>
 
 
 ### Submodular function models diminishing returns
