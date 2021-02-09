@@ -21,7 +21,7 @@ A submodular function is a set function whose value, has the property that the d
 <div>
 \( S_1 \subset S_2 \), 
 \(i \notin S_2 \),
-\( F(\lbrace i \rbrace \cup S_2) - F(S_1) \geq F(\lbrace i \rbrace \cup S_2) - F(S_2) \)
+\( F(\lbrace i \rbrace \cup S_1) - F(S_1) \geq F(\lbrace i \rbrace \cup S_2) - F(S_2) \)
 </div>
 <br>
 
