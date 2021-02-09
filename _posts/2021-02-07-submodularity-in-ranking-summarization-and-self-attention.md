@@ -218,3 +218,13 @@ with underlying summarization models Pointer-Generator and BART.
         Results of diminishing attention (<a href="https://arxiv.org/abs/1911.03014">source</a>) 
     </figcaption>
 </figure>
+
+
+## Meet Other ML Enthusiasts One-on-One Online
+
+Video-call each week an interesting person in the machine learning field and break out of your remote isolation.
+Network One-on-One Around Your Online Village with RandomMeets.
+
+<a class="btn btn-info" style="text-decoration: none;" href="https://randommeets.com/invite/eyJncm91cF9pZCI6IjZhMzNkMTVjLTc0NjItNGFhMS1hNTc0LWM1NTUwMWQ4NWNkZiJ9.X76oug.2563ghpMTzbST9KPHerGeDqhXRY">
+    Join Machine Learning @ RandomMeets
+</a>
