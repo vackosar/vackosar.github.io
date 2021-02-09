@@ -11,7 +11,7 @@ image: /images/submodularity-main.png
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<img src="/images/submodularity-main.png" alt="Submodularity in graph summarization visualization" style="width: 90%; max-width: 700px" /><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fLAYeDYqhag" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### Submodular function models diminishing returns
