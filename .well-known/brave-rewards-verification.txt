@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: vaclavkosar.com
+Token: cc2ad93b308668b25a7cee36e782ad3e09e4214991246d3e32c92feff13b7b57
