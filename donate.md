@@ -1,0 +1,44 @@
+---
+layout: default
+title: Donate
+---
+<h2>{{ page.title }}</h2>
+
+<div class="subscribe-page">
+    
+    <!-- Begin Mailchimp Signup Form -->
+    <div id="mc_embed_signup" class="m-2">
+        <form action="https://vaclavkosar.us3.list-manage.com/subscribe/post?u=289873d7958b1bdc1c6dc93b7&amp;id=4b8172df11" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll" class="d-flex flex-column flex-md-row ">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" style="width: 200px" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_289873d7958b1bdc1c6dc93b7_4b8172df11" tabindex="-1" value=""></div>
+                <div>
+                    <div class="clear">
+                        <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary">Subscribe</button>
+                    </div>
+                </div>
+                
+                <span>
+                    <a href="https://twitter.com/intent/follow?screen_name=vackosar" rel="nofollow" target="_blank" title="Follow on Twitter" class="m-1"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/vackosar" rel="nofollow" target="_blank" title="Follow on Facebook" class="m-1"><i class="fab fa-facebook"></i></a>
+                    <a href="https://vackosar.github.io/feed.xml" rel="nofollow" target="_blank" title="Follow on RSS" class="m-1"><i class="fas fa-rss"></i></a>
+                </span>
+            </div>
+        </form>
+    </div>
+    <!--End mc_embed_signup-->
+    
+</div>
+
+<br>
+For now, you can donate via:
+
+- Brave Browser tips (DAO tokens).
+- Request other methods by mailing me.
+
+
+<br>
+<small>
+    <a href="/privacy-policy">Privacy Policy</a>
+</small>
