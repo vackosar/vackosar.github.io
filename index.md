@@ -17,13 +17,23 @@ title: Blog
         </div>
         <div class="">
             <a href="{{ post.url }}" title="{{ post.title }}" style="text-decoration: none">
-                <div style="background-image: url('{{ post.image | default: '/images/white-noise.jpeg' }}');" class="index-post-image"></div>
+                <div class="index-post-image lazyload" data-bg="{{ post.image | default: '/images/white-noise.jpeg' }}"></div>
             </a>
         </div>
       </div>
      <!-- ({{ post.date | date_to_string }}) -->
   {% endfor %}
 </div>
+
+<script src="/js/lazysizes.min.js" async></script>
+<script defer>
+    document.addEventListener('lazybeforeunveil', function(e){
+        var bg = e.target.getAttribute('data-bg');
+        if(bg){
+            e.target.style.backgroundImage = 'url(' + bg + ')';
+        }
+    });
+</script>
 
 <br>
 <small>
