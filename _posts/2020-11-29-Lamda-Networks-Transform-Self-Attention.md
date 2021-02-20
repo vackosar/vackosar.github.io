@@ -5,13 +5,14 @@ date: 2020-11-29
 categories: ml
 description: Is Lambda Layer similar to self-attention in a Transformer? What gives LambdaNet its power? LambdaResNet beats EfficientNet but does it loose to Performer?
 image: /images/lambda-layer-thumb.png
+video: SYxm3R5VAsw
 permalink: /:categories/:title
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SYxm3R5VAsw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include load_video.html %}
 
 [Lambda Network](https://openreview.net/forum?id=xTJEN-ggl1b) head achieved SoTA, when sewed on decapitated Resnet50, outperforming EfficientNet on ImageNet.
 LambdaResNet also achieves ~4.5x speedup over EfficientNet at same accuracy.

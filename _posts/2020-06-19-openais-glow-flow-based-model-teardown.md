@@ -5,6 +5,7 @@ date: 2020-06-19
 categories: ML
 description: Get interpretable latent representations by composing non-linear invertible functions and maximizing the exact log-likelihood.
 image: /images/glow-drawing.png
+video: oJNUZzXE7n4
 permalink: /:categories/:title
 redirect_from:
 - /ml/glow-the-representations-must-flow
@@ -12,6 +13,8 @@ redirect_from:
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+{% include load_video.html %}
 
 Flow-based models are the odd machines in the corner of the neural network laboratory capable of calculating the exact log-likelihood for every sample.
 Discover their arcane qualities on a representative example of [OpenAI's Glow](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf) and its ability to [unveil secrets of visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf).

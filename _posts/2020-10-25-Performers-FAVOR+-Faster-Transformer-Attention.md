@@ -5,13 +5,14 @@ date: 2020-10-25
 categories: ml
 description: The Performer model attention approximation has linear time & space complexity in input token count in contrast to vanilla Transformer's square complexity and outperforms Linformer.
 image: /images/performer-thumb.png
+video: xpys_xqB6qY
 permalink: /:categories/:title
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xpys_xqB6qY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include load_video.html %}
 
 The attention mechanism is the kingpin of the Transformer model. It drives the results, but runs the memory and time racket of \\( O(L^2d) \\), where \\( L \\) is input token count and \\( d \\) is the latent representation dimension.
 
@@ -26,10 +27,6 @@ Only recently published [Performer](https://ai.googleblog.com/2020/10/rethinking
         src="/images/performer-attention-complexity.jpg">
     <figcaption class="figure-caption">The Performer FAVOR+ attention on the right has linear complexity. The Transformer attention on the left has square complexity, because without an approximation we cannot decompose the attention matrix into a matrix multiplication. (<a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a>).</figcaption>
 </figure>
-
-<!--
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uuNLz6eT_tg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
--->
 
 To prove that Performer is linear time with input token length increasing, forward and backward pass was measured. 
 

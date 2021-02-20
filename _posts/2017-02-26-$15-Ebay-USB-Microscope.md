@@ -5,12 +5,13 @@ date: 2017-02-26
 categories: electronics 
 description: See yeast cells and pond water critters paying just $15 for an USB microscope.
 image: https://i.ytimg.com/vi/eDrts252LsA/sddefault.jpg
+video: eDrts252LsA
 permalink: /:categories/:title
 redirect_from:
 - /2017/02/26/15$-Ebay-USB-Microscope.html
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eDrts252LsA" frameborder="0" allowfullscreen></iframe>
+{% include load_video.html %}
 
 When I was a kid, I always loved to play with my grand grand father's microscope which used to be used for checking meat for presence of dangerous worms.
 I was unhappy that I could never get back to things I saw. I couldn't take pictures or videos.

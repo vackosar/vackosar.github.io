@@ -4,6 +4,7 @@ title: "Feed-Forward, Self-Attention & Key-Value"
 date: 2021-01-02
 categories: ml
 image: /images/transformer-feed-forward.png
+video: NI7vFV_iOOA
 description: Transformer model queries values of keys in the self-attention and in the feed-forward memories.
 permalink: /:categories/:title
 ---
@@ -11,8 +12,7 @@ permalink: /:categories/:title
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NI7vFV_iOOA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+{% include load_video.html %}
 
 
 Have you forgotten about Transformer's feed-forward layer? [It eats 2/3 of the model params](https://arxiv.org/pdf/2012.14913v1.pdf)!

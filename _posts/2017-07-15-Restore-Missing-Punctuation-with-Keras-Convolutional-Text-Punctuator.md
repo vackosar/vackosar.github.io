@@ -7,6 +7,9 @@ categories: software
 permalink: /:categories/:title
 redirect_from:
 - /2017/07/15/Keras-Convolutional-Text-Punctuator-Presentation.html
+video: w-w3QamQIKY
+image: http://i3.ytimg.com/vi/w-w3QamQIKY/hqdefault.jpg
+  
 ---
 
 The project uses GloVe embeddings and has simple convolutional architecture implemented in Keras framework.
@@ -16,4 +19,5 @@ It achieved reasonable performance, such that I could use it in [an Android appl
 The source code in on Github: https://github.com/vackosar/keras-punctuator
 
 ### Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w-w3QamQIKY" frameborder="0" allowfullscreen></iframe>
+
+{% include load_video.html %}

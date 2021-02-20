@@ -5,6 +5,7 @@ date: 2020-09-15
 categories: ml
 description: Increasing model's parameter count leads to multiple test loss peaks and achieving global minima in the overparameterized regime.
 image: /images/double-descent-nn-mnist.webp
+video: 4Qgt4nXgJ10
 permalink: /:categories/:title
 redirect_from:
   - /ml/double-descent-for-neural-network-and-multiple-descent
@@ -13,7 +14,7 @@ redirect_from:
 <script src="/js/polyfill.min.js"></script>
 <script id="MathJax-script" async src="/js/tex-mml-chtml.js"></script>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4Qgt4nXgJ10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include load_video.html %}
 
 
 The bias-variance trade-off hypothesis implies that lowering train loss by increasing model size will lead to higher test loss.

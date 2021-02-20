@@ -6,12 +6,13 @@ categories: ml
 description: Diminishing returns with a budget constraint in problems of coverage and results diversification.
 permalink: /:categories/:title
 image: /images/submodularity-main.png
+video: fLAYeDYqhag
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fLAYeDYqhag" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include load_video.html %}
 
 
 ### Submodular function models diminishing returns

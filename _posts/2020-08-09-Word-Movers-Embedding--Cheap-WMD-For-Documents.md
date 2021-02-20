@@ -5,6 +5,7 @@ date: 2020-06-19
 categories: ml
 description: What is Word Mover's Embedding for documents and how it approximates Word Mover's Distance between documents.
 image: /images/word-movers-embedding.png
+video: uuNLz6eT_tg
 permalink: /:categories/:title
 redirect_from:
   - /ml/Word-Movers-Embedding 
@@ -13,8 +14,7 @@ redirect_from:
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uuNLz6eT_tg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include load_video.html %}
 
 
 Word Mover's Distance captures the semantic similarity between documents more accurately than the cosine similarity between word vector averages. 

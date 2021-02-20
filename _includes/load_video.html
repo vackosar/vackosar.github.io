@@ -1,0 +1,31 @@
+<style>
+    #youtube {
+        position: absolute;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+        width: 60px;
+        fill: red;
+        background: white;
+    }
+</style>
+<div style="position: relative; cursor: pointer" onclick="loadVid(this)">
+  <!--  <img width="560" src="http://i3.ytimg.com/vi/{{ page.video }}/hqdefault.jpg" alt="{{ page.title }}" />-->
+  <img width="560" src="{{ page.image }}" alt="{{ page.title }}" />
+  {% include youtube.svg %}
+</div>
+
+<script type="application/javascript" defer>
+  function loadVid(e) {
+    let iframe = document.createElement( "iframe" );
+    iframe.setAttribute("frameborder", "0" );
+    iframe.setAttribute("allowfullscreen", "" );
+    iframe.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
+    // iframe.setAttribute("src", "https://www.youtube.com/embed/{{ page.video }}?rel=0&showinfo=0&autoplay=1" );
+    iframe.setAttribute("src", "https://www.youtube-nocookie.com/embed/{{ page.video }}?rel=0&showinfo=0&autoplay=1" );
+
+    iframe.setAttribute("style", "width: 560px; height: 315px;");
+
+    e.innerHTML = "";
+    e.appendChild(iframe);
+  }
+</script>

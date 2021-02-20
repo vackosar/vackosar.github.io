@@ -5,12 +5,13 @@ date: 2020-05-08
 categories: ML
 description: To embed variety of entities into single vector space, this paper describes general-purpose neural embedding model.
 image: https://raw.githubusercontent.com/facebookresearch/StarSpace/master/examples/starspace.png 
+video: 0bSsAeT-N6w
 permalink: /:categories/:title
 redirect_from:
   - /papers/2020/05/08/starspace-embedding.html 
 ---
 
-<iframe width="400" height="225" src="https://www.youtube-nocookie.com/embed/0bSsAeT-N6w?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include load_video.html %}
 
 ## Summary
 1. Is general-purpose method to embed multi-class entities into single vector space e.g. words, documents, and users can be embedded into single space.

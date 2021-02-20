@@ -5,6 +5,7 @@ date: 2019-03-03
 categories: electronics
 description: This is my experience working on the best mobile workstation of 2019 with specs matching Thinkpad P52 and ZBook 15 G5.
 image: /images/2019-03-thinkpad-p52-vs-zbook-15-G5.png
+video: sRnKbLtE21k
 permalink: /:categories/:title
 redirect_from:
   - /2019/03/03/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.html 
@@ -16,6 +17,8 @@ I wanted at least __15inch display__ processor __i7-8750H__, reasonable graphics
 I also shortly considered a wild card _14inch Latitude 5491_ as it had attractive price, but it missed too many of the requirements (poor cooling, low max ram, poor physical resilience, low graphics).
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sRnKbLtE21k?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% include load_video.html %}
 
 
 ### ZBook 15 G5
