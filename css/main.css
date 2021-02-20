@@ -66,3 +66,7 @@ img {
     width: 150px;
     height: 100px;
 }
+
+svg {
+    width: 20px;
+}

@@ -5,7 +5,6 @@
     <meta name="google-site-verification" content="WApaW1xBRvOpHp4BXNc0O71vxm1k6P09-s_cgdIu84k" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/ico" href="/favicon.ico">
-    <link href="/css/font-awesome/fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     {% feed_meta %}
@@ -46,82 +45,7 @@
     </div>
 </div>
 
-<script type="application/javascript">
-
-  jQuery(function($) {
-    checkCookie_eu();
-
-    function checkCookie_eu() {
-      var consent = getCookie_eu("cookies_consent");
-      if (consent) {
-        accept()
-
-      } else {
-        // show notification bar
-        $('#cookie_directive_container').show();
-      }
-
-    }
-
-    function setCookie_eu(c_name, value, exdays) {
-      var exdate = new Date();
-      exdate.setDate(exdate.getDate() + exdays);
-      var c_value = escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
-      document.cookie = c_name + "=" + c_value+"; path=/";
-      $('#cookie_directive_container').hide();
-
-    }
-
-    function getCookie_eu(c_name) {
-      var i,x,y,ARRcookies=document.cookie.split(";");
-      for (i=0;i<ARRcookies.length;i++) {
-        x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
-        y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
-        x=x.replace(/^\s+|\s+$/g,"");
-        if (x === c_name) {
-          return unescape(y);
-        }
-      }
-    }
-
-    function accept() {
-      setCookie_eu("cookies_consent", 1, 30);
-      execute();
-
-    }
-
-    function execute() {
-      <!-- Google Analytics -->
-      $.getScript('https://www.googletagmanager.com/gtag/js?id=UA-155369410-1', function () {
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-        gtag('config', 'UA-165114534-1');
-
-      });
-      <!-- end of Google Analytics-->
-    }
-
-    $("#cookie_accept").click(function(){
-      accept();
-
-    });
-
-  });
-</script>
-
-<div id="cookie_directive_container" class="fixed-bottom" style="display: none; background-color: grey; width: 100%">
-    <nav class="d-flex align-items-center m-2 justify-content-center pt-5 pb-5" style="width: auto">
-        <span class="credit text-white">
-            <i class="fa fa-cookie-bite"></i> By using our website you are consenting to our use of cookies in accordance with our <a href="/privacy-policy" target="_blank" class="text-warning" style="text-decoration: underline">cookie policy</a>.
-        </span>
-        <button class="btn btn-success ml-2" id="cookie_accept" type="button" class="m-1">Ok!</button>
-    </nav>
-</div>
+{% include cookie-consent.html %}
 
 </body>
 </html>
