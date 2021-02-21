@@ -29,156 +29,156 @@ Enjoy the journey documenting the current state of the synthesis of the stark wi
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_075156.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200821_075156.jpg"
         alt="Sunshine Plaza from a hill top"/>
     <figcaption class="figure-caption">Sunshine Plaza from a little hill top.</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_075753.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200821_075753.jpg"
         alt="Slunecni namesti in Prague"/>
     <figcaption class="figure-caption">Little Hill (Hůrka) subway station in front of new Sunshine Town Hall.</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200820_083517.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200820_083517.jpg"
         alt="A palm tree lives inside a glass bio-dome at Lužiny station."/>
     <figcaption class="figure-caption">A palm tree lives inside a glass bio-dome at Lužiny station.</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_080047.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200821_080047.jpg"
         alt="A space ship just landed on a brutalist rooftop?"/>
     <figcaption class="figure-caption">A space ship just landed on a brutalist rooftop?</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_080116.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200821_080116.jpg"
         alt="A polyclinic next to the shiny town hall."/>
     <figcaption class="figure-caption">A polyclinic next to the shiny town hall.</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_080339.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200821_080339.jpg"
         alt="Sunshine Plaza (Slunecni namesti) has a church and a magnetic resonance clinic."/>
     <figcaption class="figure-caption">Sunshine Plaza (Slunecni namesti) has a church and a magnetic resonance clinic.</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/PXL_20201019_053735021.NIGHT_fountain.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/PXL_20201019_053735021.NIGHT_fountain.jpg"
         alt="The little prince fountain"/>
     <figcaption class="figure-caption">The little prince fountain</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/sunshine-satelite.png"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/sunshine-satelite.png"
         alt="A satelite image of the sun-shaped garden at Slunecni namesti"/>
     <figcaption class="figure-caption">A satelite image of the sun-shaped garden at Slunecni namesti</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_080603.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200821_080603.jpg"
         alt="Modern communal church construction would be prohibited during the communism."/>
     <figcaption class="figure-caption">Modern communal church construction would be prohibited during the communism.</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_080842.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200821_080842.jpg"
         alt="A subway ventilation reminiscent of an ocean liner's exhaust."/>
     <figcaption class="figure-caption">A subway ventilation reminiscent of an ocean liner's exhaust.</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_081140.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200821_081140.jpg"
         alt="A weird robotic art piece next to a automated wine bar."/>
     <figcaption class="figure-caption">A weird robotic art piece next to <a href="https://www.cyber-dog.cz/en">a automated wine bar</a></figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_081505.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200821_081505.jpg"
         alt="The church next to a plattenbau building."/>
     <figcaption class="figure-caption">The church next to a plattenbau building.</figcaption>
 </figure>
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_081630.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200821_081630.jpg"
         alt="A soviet era mosaic next to 'Donate your plazma for 3500 crowns' advertisement."/>
     <figcaption class="figure-caption">A soviet era mosaic next to 'Donate your plazma for 3500 crowns' advertisement.</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_082532.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200821_082532.jpg"
         alt="Colourful graffiti on a wooden gazebo."/>
     <figcaption class="figure-caption">Colourful graffiti on a wooden gazebo.</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_074942.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200821_074942.jpg"
         alt="Plattenbau buildings painted with pastel colours."/>
     <figcaption class="figure-caption">Plattenbau buildings painted with pastel colours.</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_083215.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200821_083215.jpg"
         alt="A subway tube skylining over a pond."/>
     <figcaption class="figure-caption">A subway tube skylining over a pond.</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_083337.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200821_083337.jpg"
         alt="A Sunshine Plaza view from Central Park."/>
     <figcaption class="figure-caption">A Sunshine Plaza view from Central Park.</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_083540.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200821_083540.jpg"
         alt="The subway tube connects to the next station Lužiny."/>
     <figcaption class="figure-caption">The subway tube connects to the next station Lužiny.</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_084136.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200821_084136.jpg"
         alt="Can you tell the time from a solar clock on a facade of a plattenbau building?"/>
     <figcaption class="figure-caption">Can you tell the time from a solar clock on a facade of a plattenbau building?</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/00100lrPORTRAIT_00100_BURST20200703081140700_COVER.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/00100lrPORTRAIT_00100_BURST20200703081140700_COVER.jpg"
         alt="Sometimes the symmetry is broken by multi-colour facades."/>
     <figcaption class="figure-caption">Sometimes the symmetry of totally equal blocks is broken by multi-colour facades.</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200830_094127.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200830_094127.jpg"
         alt="Original on the left, the insulated and painted plattenbau on the right."/>
     <figcaption class="figure-caption">Original on the left, the insulated and painted plattenbau on the right.</figcaption>
 </figure>
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/sunshine-plaza/IMG_20200821_084158.jpg"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/sunshine-plaza/IMG_20200821_084158.jpg"
         alt="Colourful statues next to children playground."/>
     <figcaption class="figure-caption">Colourful statues next to children playground.</figcaption>
 </figure>

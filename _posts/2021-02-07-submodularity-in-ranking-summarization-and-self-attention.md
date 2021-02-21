@@ -141,9 +141,9 @@ suggested generating Wikipedia disambiguation pages using custom crafted submodu
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
+        class="figure-img img-fluid rounded lazyload"
         alt="Wiki disambiguation problem and submodularity"
-        src="/images/submodularity-wiki-disambiguation.png"
+        data-src="/images/submodularity-wiki-disambiguation.png"
         style="max-width: 900px">
     <figcaption class="figure-caption">
         Wiki disambiguation problem and submodularity (<a href="https://www.aclweb.org/anthology/P15-1054.pdf">source</a>) 
@@ -192,9 +192,9 @@ then diminishing attention is defined as:
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
+        class="figure-img img-fluid rounded lazyload"
         alt="Diminishing attention via submodularity"
-        src="/images/submodularity-diminishing-attention.png"
+        data-src="/images/submodularity-diminishing-attention.png"
         style="max-width: 900px">
     <figcaption class="figure-caption">
         Diminishing attention via submodularity (<a href="https://arxiv.org/abs/1911.03014">source</a>) 
@@ -209,9 +209,9 @@ with underlying summarization models Pointer-Generator and BART.
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
+        class="figure-img img-fluid rounded lazyload"
         alt="Results of diminishing attention"
-        src="/images/diminishing-attention.png"
+        data-src="/images/diminishing-attention.png"
         style="max-width: 900px">
     <figcaption class="figure-caption">
         Results of diminishing attention (<a href="https://arxiv.org/abs/1911.03014">source</a>) 

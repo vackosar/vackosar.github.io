@@ -40,8 +40,8 @@ Individuals can reappraise anxiety as excitement using minimal strategies such a
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="https://www.researchgate.net/profile/Alison_Brooks3/publication/259454454/figure/fig3/AS:392644552347653@1470625164263/Public-speaking-performance-by-reappraisal-condition-Study-2-Error-bars-represent-5.png"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="https://www.researchgate.net/profile/Alison_Brooks3/publication/259454454/figure/fig3/AS:392644552347653@1470625164263/Public-speaking-performance-by-reappraisal-condition-Study-2-Error-bars-represent-5.png"
         alt="Getting excited seems to improve performance"/>
     <figcaption class="figure-caption"><a href="https://arxiv.org/pdf/1605.08803.pdf">"Get Excited" study</a> seen improvement after participants applied the self-talk.</figcaption>
 </figure>

@@ -21,9 +21,9 @@ Only recently published [Performer](https://ai.googleblog.com/2020/10/rethinking
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
+        class="figure-img img-fluid rounded lazyload"
         alt="The Performer FAVOR+ attention on the right has linear complexity. The Transformer attention on the left has square complexity."
-        src="/images/performer-attention-complexity.jpg">
+        data-src="/images/performer-attention-complexity.jpg">
     <figcaption class="figure-caption">The Performer FAVOR+ attention on the right has linear complexity. The Transformer attention on the left has square complexity, because without an approximation we cannot decompose the attention matrix into a matrix multiplication. (<a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a>).</figcaption>
 </figure>
 
@@ -31,9 +31,9 @@ To prove that Performer is linear time with input token length increasing, forwa
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
+        class="figure-img img-fluid rounded lazyload"
         alt="The log-length vs log-time of Transformer, Performer, No-attention (OPT)."
-        src="/images/performer-time.png">
+        data-src="/images/performer-time.png">
     <figcaption class="figure-caption">The log-length vs log-time of Transformer, Performer, No-attention (OPT). (<a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a>).</figcaption>
 </figure>
 
@@ -133,9 +133,9 @@ I think this is a type of regularization method.
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
+        class="figure-img img-fluid rounded lazyload"
         alt="The Performer outperforms Linformer and matches Transformer if we redraw the random features on PG-19."
-        src="/images/performer-linformer-transformer.png">
+        data-src="/images/performer-linformer-transformer.png">
     <figcaption class="figure-caption">
         The Performer outperforms Linformer and matches Transformer if we redraw the random features on PG-19.
         (<a href="https://arxiv.org/pdf/2009.14794.pdf">source</a>).
@@ -154,9 +154,9 @@ The Perfomer's authors provide comparison on image generation task, which requir
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
+        class="figure-img img-fluid rounded lazyload"
         alt="The Performer outperforms Linformer and matches Transformer if we redraw the random features on PG-19."
-        src="/images/performer-vs-reformer-imagenet.png">
+        data-src="/images/performer-vs-reformer-imagenet.png">
     <figcaption class="figure-caption">
         The Performer outperforms Reformer on ImageNet64 - an image generation task.
         (<a href="https://arxiv.org/pdf/2009.14794.pdf">source</a>).

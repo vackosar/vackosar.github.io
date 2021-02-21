@@ -28,8 +28,8 @@ Advantages of flow-based models are:
 ## The Glow Model Architecture
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-drawing.png"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-drawing.png"
         alt="Glow flow-based model architecture diagram" />
     <figcaption class="figure-caption">Glow flow-based model architecture diagram</figcaption>
 </figure>
@@ -81,8 +81,8 @@ But how do we go from an image to required number of channels for above to make 
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-masking.png"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-masking.png"
         alt="Skip-one-pixel - squeezing operation from Real NVP paper"/>
     <figcaption class="figure-caption">Skip-one-pixel - squeezing operation image from <a href="https://arxiv.org/pdf/1605.08803.pdf">Real NVP paper</a></figcaption>
 </figure>
@@ -105,8 +105,8 @@ Download the image, cut out the middle sections, and move them next to each othe
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-illusion.png"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-illusion.png"
         alt='Simultaneous brightness contrast visual illusion from paper "A Statistical Story of Visual Illusions".'/>
     <figcaption class="figure-caption">Cut out the middle sections and move them next to each other to verify that they indeed are of the same color. <a href="https://arxiv.org/pdf/2005.08772v1.pdf)">Img source.</a></figcaption>
 </figure>
@@ -118,8 +118,8 @@ I increased saturation on one of the samples by 24%, such that the percentile ra
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-contrast-illusion-saturation.png"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/glow-contrast-illusion-saturation.png"
         alt='Simultaneous brightness contrast visual illusion: After saturation increase to match percentile ranks, the colors are perceived as the same.'/>
     <figcaption class="figure-caption">After saturation increase to match percentile ranks, I see the same colors! Do you?</figcaption>
 </figure>

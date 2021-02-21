@@ -17,9 +17,9 @@ LambdaResNet also achieves ~4.5x speedup over EfficientNet at same accuracy.
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
+        class="figure-img img-fluid rounded lazyload"
         alt="LambdaResNet also achieves ~4.5x speedup over EfficientNet at same performance"
-        src="/images/lambda-layer-faster-than-efficientNet.png">
+        data-src="/images/lambda-layer-faster-than-efficientNet.png">
     <figcaption class="figure-caption">
         LambdaResNet also achieves ~4.5x speedup over EfficientNet at same performance
         (<a href="https://openreview.net/forum?id=xTJEN-ggl1b">source</a>).
@@ -86,9 +86,9 @@ Each query vector \\( Q_l \in \mathbb{R}^{k} \\) gets its own special key \\( E_
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
+        class="figure-img img-fluid rounded lazyload"
         alt="Lambda layer vs self-attention matrix multiplication"
-        src="/images/lambda-layer-mult.png">
+        data-src="/images/lambda-layer-mult.png">
     <figcaption class="figure-caption">
         Lambda layer vs self-attention matrix multiplication
     </figcaption>
@@ -156,9 +156,9 @@ but rather to a small neighborhood of each pixel due to time and space complexit
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
+        class="figure-img img-fluid rounded lazyload"
         alt="Lambda layer vs self-attention on ImageNet with a Resnet50 architecture"
-        src="/images/lambda-layer-vs-self-attention.png">
+        data-src="/images/lambda-layer-vs-self-attention.png">
     <figcaption class="figure-caption">
         Lambda layer vs self-attention on ImageNet with a Resnet50 architecture
         (<a href="https://openreview.net/forum?id=xTJEN-ggl1b">source</a>).
@@ -176,9 +176,9 @@ No, they drive most of the performance. That is at least in case of the image cl
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
+        class="figure-img img-fluid rounded lazyload"
         alt="Lambda layer with and without positional embeddings on ImageNet"
-        src="/images/lambda-layer-w-and-wo-positional-interactions.png">
+        data-src="/images/lambda-layer-w-and-wo-positional-interactions.png">
     <figcaption class="figure-caption">
         Lambda layer with and without positional embeddings on ImageNet
         (<a href="https://openreview.net/forum?id=xTJEN-ggl1b">source</a>).

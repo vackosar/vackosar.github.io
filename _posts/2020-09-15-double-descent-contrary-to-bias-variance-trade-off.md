@@ -27,8 +27,8 @@ The paper refers to empirical evidence that an implicit regularization is repres
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/double-descent-nn-mnist.webp"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/double-descent-nn-mnist.webp"
         alt="Double Descent for fully connected NN on MNIST."/>
     <figcaption class="figure-caption">Double Descent for fully connected NN on MNIST without regularization and early stopping. <a href="https://arxiv.org/abs/1812.11118">Source: Belkin 2019</a></figcaption>
 </figure>
@@ -154,8 +154,8 @@ Authors then draw generalization curve as average test-loss normalized by the fe
 
 <figure class="figure">
     <img
-        class="figure-img img-fluid rounded"
-        src="/images/double-descent-generalization-curve.webp"
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/double-descent-generalization-curve.webp"
         alt="Double Descent for fully connected NN on MNIST."/>
     <figcaption class="figure-caption">This image is wrong: \( N_{mix} \) should be first, then \( N_0 \). Multiple Descent generalization curve (dimension normalized test loss as a function of number of parameters). <a href="https://arxiv.org/abs/2008.01036">Source</a>.</figcaption>
 </figure>
