@@ -5,6 +5,7 @@ date: 2019-11-02
 categories: productivity
 description: Reduce your effort of creating and revising learning material using a free AI-powered tool.
 image: https://quizrecall.com/static/quiz-recall-logo.webp
+video: LaJqH0GE_cQ
 permalink: /:categories/:title
 redirect_from:
 - /2019/11/02/Quizrecall-Learn-any-text-with-automatically-generated-quiz.html 
@@ -31,7 +32,7 @@ I solved all of these problems for myself by developing the app, and I switched 
 3. Pushes me to select the correct answer from 3 options
 3. The answer correctness also decreases with the elapsed time needed to answer
 
-<iframe style="width: calc(200px + 30vw); max-width: 500px; height: calc((200px + 30vw)* 9/16); max-height: 273px"  src="https://www.youtube.com/embed/LaJqH0GE_cQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include load_video.html %}
 
 ### Conclusion
 

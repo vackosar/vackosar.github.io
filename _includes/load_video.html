@@ -8,7 +8,7 @@
         background: white;
     }
 </style>
-<div style="position: relative; cursor: pointer; text-align: center;" onclick="loadVid(this)">
+<div id="video-img" style="position: relative; cursor: pointer; text-align: center;" onclick="loadVid(this)">
   <!--  <img width="560" src="http://i3.ytimg.com/vi/{{ page.video }}/hqdefault.jpg" alt="{{ page.title }}" />-->
   <img style="max-width: 560px; width: 100%" src="{{ page.image }}" alt="{{ page.title }}" />
   {% include youtube.svg %}
@@ -22,8 +22,7 @@
     iframe.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
     // iframe.setAttribute("src", "https://www.youtube.com/embed/{{ page.video }}?rel=0&showinfo=0&autoplay=1" );
     iframe.setAttribute("src", "https://www.youtube-nocookie.com/embed/{{ page.video }}?rel=0&showinfo=0&autoplay=1" );
-
-    iframe.setAttribute("style", "max-width: 560px; width: 100%;");
+    iframe.setAttribute("style", `width: ${e.offsetWidth}px; height: ${e.offsetHeight}px;`);
 
     e.innerHTML = "";
     e.appendChild(iframe);

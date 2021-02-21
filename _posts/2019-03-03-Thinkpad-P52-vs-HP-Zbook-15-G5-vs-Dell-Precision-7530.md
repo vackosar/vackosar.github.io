@@ -16,8 +16,6 @@ I wanted at least __15inch display__ processor __i7-8750H__, reasonable graphics
 
 I also shortly considered a wild card _14inch Latitude 5491_ as it had attractive price, but it missed too many of the requirements (poor cooling, low max ram, poor physical resilience, low graphics).
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sRnKbLtE21k?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 {% include load_video.html %}
 
 
