@@ -10,7 +10,7 @@ redirect_from:
   - /2020/02/25/I-read-papers-on-a-podcast.html
 ---
 
-<img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2020-02-25-my-photo-table-map-cal-rot-fix.jpg" alt="microphone, map, and Vaclav" style="width: 80%; max-width: 900px"/><br>
+<img class="lazyload" data-src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2020-02-25-my-photo-table-map-cal-rot-fix.jpg" alt="microphone, map, and Vaclav" style="width: 80%; max-width: 900px"/><br>
 
 And it does work.
 I think I am able to speak faster and with more precision than I did before I started.
