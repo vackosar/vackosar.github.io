@@ -14,7 +14,7 @@ redirect_from:
 
 <p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/bentoml-cortex-logos.webp" alt="BentoML and Cortex logo" style="width: 200px"/></p>
 
-Note, however, that I have much more experience with Cortex.
+Updated 2021-02-21. Note, that I have mainly experience with Cortex and BentoML view is based on cursory overview of their documentation.
 
 ## Common
 - both deploy and serve models via API
@@ -39,18 +39,18 @@ Note, however, that I have much more experience with Cortex.
 <tbody>
     <tr>
         <td>Language</td>
-        <td>Python - easier to modify, integrate?</td>
-        <td>Go</td>
+        <td>fully Python - easier to modify?</td>
+        <td>Go & Python wrapper (Updated)</td>
     </tr>
     <tr>
         <td>Deployment</td>
         <td>Delegated to other tools: Docker, Kubernetes, AWS Lambda, SageMaker, GCP, Azule ML and more.</td>
-        <td>Works currently only with local Docker and AWS EKS (GCP is planned)</td>
+        <td>Works currently only with local Docker and AWS EKS, GCP (Updated)</td>
     </tr>
     <tr>
         <td>Service configuration</td>
-        <td>via decorators directly in Python code</td>
-        <td>via YAML files, or <a href="https://github.com/glami/cortex-serving-client">Cortex Serving Client for Python</a></td>
+        <td>from Python</td>
+        <td>from <a href="https://pypi.org/project/cortex/">Python</a> (Updated)</td>
     </tr>
     <tr>
         <td>Service packaging and distribution</td>
@@ -60,7 +60,7 @@ Note, however, that I have much more experience with Cortex.
     <tr>
         <td>Horizontal scaling</td>
         <td>Configured separately in other clustering tools. Working on an opinionated Kubernetes deployment.</td>
-        <td>Is part of Cortex configs. But is thus less flexible (private cloud, HTTPS deploy requires custom scripts)</td>
+        <td>Configurable in Cortex. May be less flexible (private cloud deploy may require custom scripts)</td>
     </tr>
     <tr>
         <td>User interface</td>
@@ -70,7 +70,7 @@ Note, however, that I have much more experience with Cortex.
     <tr>
         <td>Metrics</td>
         <td>Prometheus metrics</td>
-        <td>AWS EKS metrics</td>
+        <td>Prometheus metrics (Updated)</td>
     </tr>
     <tr>
         <td>API Auto-Docs</td>
@@ -80,7 +80,7 @@ Note, however, that I have much more experience with Cortex.
     <tr>
         <td>User support</td>
         <td>Responsive <a href="https://join.slack.com/t/bentoml/shared_invite/enQtNjcyMTY3MjE4NTgzLTU3ZDc1MWM5MzQxMWQxMzJiNTc1MTJmMzYzMTYwMjQ0OGEwNDFmZDkzYWQxNzgxYWNhNjAxZjk4MzI4OGY1Yjg">unpaid Slack Channel</a>, but Slack is not the best tool for support</td>
-        <td>Very responsive <a href="https://gitter.im/cortexlabs/cortex">Gitter</a></td>
+        <td>Very responsive <a href="https://gitter.im/cortexlabs/cortex">Gitter</a> and now <a href="https://join.slack.com/t/cortex-dot-dev/shared_invite/zt-lf58axgy-0QkLZzFSSku5_Jybd9yiZQ">Slack</a></td>
     </tr>
     <tr>
         <td>Suggest anything else?</td>
@@ -93,7 +93,9 @@ Note, however, that I have much more experience with Cortex.
 ## My Experience with Cortex
 
 Here is [a blog post on Cortex use at GLAMI](https://medium.com/@aiteamglami/serve-your-ml-models-in-aws-using-python-9908a4127a13).
+It is a bit outdated take as Cortex now has its own wrapper.
 Consider using this [Cortex client for Python](https://github.com/glami/cortex-serving-client), which is a Python wrapper around Cortex CLI that we use at GLAMI for MLOps.
+It has couple of extra features, that keep us using it for now.
 
 ## Discussions
 - <a href="https://www.reddit.com/r/MachineLearning/comments/ghikdz/d_is_this_fair_bentoml_vs_cortex_comparison/">Reddit discussion</a>
