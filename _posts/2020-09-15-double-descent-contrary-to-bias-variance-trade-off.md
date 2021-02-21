@@ -11,9 +11,7 @@ redirect_from:
   - /ml/double-descent-for-neural-network-and-multiple-descent
 ---
 
-<script src="/js/polyfill.min.js"></script>
-<script id="MathJax-script" async src="/js/tex-mml-chtml.js"></script>
-
+{% include mathjax.html %}
 {% include load_video.html %}
 
 

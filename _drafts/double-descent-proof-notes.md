@@ -1,5 +1,4 @@
-<script src="/javascript/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="/javascript/tex-mml-chtml.js"></script>
+{% include mathjax.html %}
 
 
 In case of a [linear regression, bias-variance tradeoff](http://www.dam.brown.edu/people/geman/Homepage/Essays%20and%20ideas%20about%20neurobiology/bias-variance.pdf) can be expressed via an equation.
