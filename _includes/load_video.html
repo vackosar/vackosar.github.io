@@ -8,9 +8,9 @@
         background: white;
     }
 </style>
-<div style="position: relative; cursor: pointer" onclick="loadVid(this)">
+<div style="position: relative; cursor: pointer; text-align: center;" onclick="loadVid(this)">
   <!--  <img width="560" src="http://i3.ytimg.com/vi/{{ page.video }}/hqdefault.jpg" alt="{{ page.title }}" />-->
-  <img width="560" src="{{ page.image }}" alt="{{ page.title }}" />
+  <img style="max-width: 560px; width: 100%"  src="{{ page.image }}" alt="{{ page.title }}" />
   {% include youtube.svg %}
 </div>
 
@@ -23,7 +23,7 @@
     // iframe.setAttribute("src", "https://www.youtube.com/embed/{{ page.video }}?rel=0&showinfo=0&autoplay=1" );
     iframe.setAttribute("src", "https://www.youtube-nocookie.com/embed/{{ page.video }}?rel=0&showinfo=0&autoplay=1" );
 
-    iframe.setAttribute("style", "width: 560px; height: 315px;");
+    iframe.setAttribute("style", "max-width: 560px; width: 100%;");
 
     e.innerHTML = "";
     e.appendChild(iframe);
