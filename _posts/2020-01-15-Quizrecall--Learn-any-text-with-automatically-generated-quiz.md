@@ -45,13 +45,13 @@ I solved all of these problems for myself by developing the app, and I switched 
 I am happy with finding a solution to my issues with Anki. I am committed to using and improving the app over time, because it is genuinely reducing my effort to memorize and learn.
 
 
-### Follow up
+## Enterprise Follow Up
 
 It started by solving my pains with personal training app Anki by building an AI powered tool.
 Now I finished baseline features for the applience's use in the enterprise.
 
 
-## Without Training Automation
+### Without Training Automation
 
 The problem of creating training is that it takes so much effort to rewrite the source text into a training system, that it ends up not being done at all. Companies usually end up reverting to "learning on-the-go" which means learning inefficiently or not at all.
 
@@ -60,7 +60,7 @@ Training also becomes outdated fast, so even if somebody does amount the effort,
 The companies end up with employees having only a patchy understanding of the core business and domain knowledge leading to a loss in revenue.
 
 
-## The AI solution
+### The AI solution
 
 Natural language processing progressed so much recently, such that AI-assisted training generation is now possible. Quizrecall can now help you extract essential sentences from your textual resource, hide suitable parts, and generate alternative answers.
 
