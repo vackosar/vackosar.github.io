@@ -11,6 +11,12 @@ redirect_from:
 - /2019/11/02/Quizrecall-Learn-any-text-with-automatically-generated-quiz.html 
 ---
 
+### Update 2021-03-07
+
+The service is deprecated and is not accepting new users at the moment.
+
+### Anki
+
 I used [Anki](https://apps.ankiweb.net/) to learn various Math, Stats, and Software Dev definitions.
 But it was time consuming and had broken [testing effect](https://en.wikipedia.org/wiki/Testing_effect).
 I resolved these problems by developing [a web app Quizrecall - an automated quiz generator with spaced repetition](https://quizrecall.com/personal).
@@ -38,4 +44,25 @@ I solved all of these problems for myself by developing the app, and I switched 
 
 I am happy with finding a solution to my issues with Anki. I am committed to using and improving the app over time, because it is genuinely reducing my effort to memorize and learn.
 
-I think you may very well like it as well. You can [try it with your favorite Wikipedia article summary](https://quizrecall.com/personal).
+
+### Follow up
+
+It started by solving my pains with personal training app Anki by building an AI powered tool.
+Now I finished baseline features for the applience's use in the enterprise.
+
+
+## Without Training Automation
+
+The problem of creating training is that it takes so much effort to rewrite the source text into a training system, that it ends up not being done at all. Companies usually end up reverting to "learning on-the-go" which means learning inefficiently or not at all.
+
+Training also becomes outdated fast, so even if somebody does amount the effort, it ends up being misleading after year or two.
+
+The companies end up with employees having only a patchy understanding of the core business and domain knowledge leading to a loss in revenue.
+
+
+## The AI solution
+
+Natural language processing progressed so much recently, such that AI-assisted training generation is now possible. Quizrecall can now help you extract essential sentences from your textual resource, hide suitable parts, and generate alternative answers.
+
+After the training is generated, it is saved into the system, and the period of two weeks starts during which all submitted employees will be repeatedly tested. Retry count each training question is determined by their individual performance.
+
