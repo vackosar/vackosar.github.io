@@ -9,6 +9,8 @@ video: LaJqH0GE_cQ
 permalink: /:categories/:title
 redirect_from:
 - /2019/11/02/Quizrecall-Learn-any-text-with-automatically-generated-quiz.html 
+- /2020/04/19/Converting-knowledge-base-to-training.html
+- /service/Converting-knowledge-base-to-training
 ---
 
 ### Update 2021-03-07
