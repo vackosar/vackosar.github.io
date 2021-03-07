@@ -14,7 +14,7 @@ redirect_from:
 
 ### Update 2021-03-07
 
-The service is deprecated and is not accepting new users at the moment.
+__The service is deprecated and is not accepting new users at the moment.__
 
 ### Anki
 
