@@ -39,6 +39,7 @@ Examples:
   - 100% expert curated
 - Examples:
   - Food & Drink > Drinks > Wines
+- Use custom software for curation
 - Pins and Pinners are categorized into the taxonomy to allow recommendation.
   - together called Taste Graph
 
@@ -83,6 +84,23 @@ Setup
 
 ## Training
 
+Loss
+- similar to triplet loss
+- we want \\( s(child, parent) > s(child, nonparent) + \gamma \\)
+- loss \\( \sum max(0, s(child, nonparent) + \gamma -  s(child, parent) ) \\)
+- How to choose margin \\( \gamma \\) and scalable sum?
+
+Margin
+- set \\( \gamma \\) to shortest path to the true parent
+- minimizing leads to upper-bounding of the path from predicted to parents
+- curator needs to only move node in the neighborhood
+
+Negative sampling
+- cannot sum over all
+- easy samples slow convergence
+- use embedding-similarity-weighted negative-sampling
+
+\\( \mathrm{Pr}(v', (u, v)) \propto e_u^\intercal e_{v'} \\)
 
 
 ### Sources
