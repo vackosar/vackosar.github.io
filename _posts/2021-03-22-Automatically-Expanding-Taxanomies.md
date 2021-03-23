@@ -39,7 +39,8 @@ Examples:
   - 11000 nodes/edges
   - 7 levels deep
   - 100% expert curated
-  - [nodes have 300dim StarSpace-like-trained feature embeddings](https://labs.pinterest.com/user/themes/pin_labs/assets/paper/pintext-kdd2019.pdf)
+  - [nodes have 300dim feature embedding](https://labs.pinterest.com/user/themes/pin_labs/assets/paper/pintext-kdd2019.pdf)
+    - [StarSpace-like-trained](/ml/starspace-embedding)
 - Examples:
   - Food & Drink > Drinks > Wines
 - Use custom software for curation
@@ -60,6 +61,10 @@ Examples:
 
 ## Pininterest's automatic taxonomy expansion
 
+- Pinterest motivation:
+  - 8 curators added 6000 new taxonomy nodes in a month
+  - Interests = textual phrases describing concepts (architecture, mid-century)
+  - textual embeddings available
 - automatically find new node parent
 - handles multiple relationships: is-type-of, is-in
 - construct embeddings for unseen nodes
@@ -68,10 +73,6 @@ Examples:
 - Code: available
 - Data: no new published
 - Name: Arborist
-- Pinterest motivation:
-  - 8 curators added 6000 new taxonomy nodes in a month
-  - Interests = textual phrases describing concepts (architecture, mid-century)
-  - textual embeddings available
 
 ## Problem
 Problem = parent retrieval
@@ -124,7 +125,7 @@ Datasets:
 - Mammal
 - SemEval
 - Pinterest
-  - [nodes have 300dim StarSpace-like-trained feature embeddings](https://labs.pinterest.com/user/themes/pin_labs/assets/paper/pintext-kdd2019.pdf)
+  - [300dim text embedding](https://labs.pinterest.com/user/themes/pin_labs/assets/paper/pintext-kdd2019.pdf) - [StarSpace-like-trained](/ml/starspace-embedding)
 
 Metrics:
 - mean reciprocal rank (MRR)
