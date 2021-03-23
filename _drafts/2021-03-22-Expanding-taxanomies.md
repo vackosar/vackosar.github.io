@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Expanding Taxonomies"
+title: "Automatically Expanding Taxonomies"
 date: 2021-03-22
 categories: ml
-description: TODO
+description: Arborist model finds parents for unseen textual nodes using triplet-loss, StarSpace embeddings, & shortest path.
 permalink: /:categories/:title
 ---
 
