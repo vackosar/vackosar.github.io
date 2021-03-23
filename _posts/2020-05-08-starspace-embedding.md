@@ -29,8 +29,9 @@ Funding comes from Facebook AI Research.
 
 ## Method
 
+We train only the vectors directly without any other parameters.
+In contrast to Word2vec and FastText there is no word (input) vector concept, but only context (output) vector concept.
 The method is highly influenced by FastText, in comparison to which it is much more general, although slightly slower.
-If I understand correctly, in contrast to Word2vec and FastText there is no word (input) vector concept, but only context (output) vector concept.
 
 For each discrete feature, an embedding vector is fitted such that SGD minimizes the loss function below.
 Embeddings of the composite entities are then constructed as a sum of their sub-entities (bag-of-features).
