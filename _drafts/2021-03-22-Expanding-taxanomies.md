@@ -15,11 +15,13 @@ permalink: /:categories/:title
 
 ### Why taxanomies?
 
-Concepts into hierarchy where parents are:
+Concepts into a hierarchy where parents are:
 - related to
 - more general
 
-Usually a tree
+Properties
+- Usually a tree
+- multiple relation types possible
 
 #### [Google Shopping Taxanomy](http://google.com/basepages/producttype/taxonomy.en-US.txt)
 Examples:
