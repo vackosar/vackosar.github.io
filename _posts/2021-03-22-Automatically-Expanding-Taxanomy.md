@@ -40,7 +40,7 @@ Examples:
   - 7 levels deep
   - 100% expert curated
   - [nodes have 300dim feature embedding](https://labs.pinterest.com/user/themes/pin_labs/assets/paper/pintext-kdd2019.pdf)
-    - [StarSpace-like-trained](/ml/starspace-embedding)
+    - trained [StarSpace]((/ml/starspace-embedding))-like
 - Examples:
   - Food & Drink > Drinks > Wines
 - Use custom software for curation
@@ -63,7 +63,8 @@ Examples:
 
 - Pinterest motivation:
   - 8 curators added 6000 new taxonomy nodes in a month
-  - Interests = textual phrases describing concepts (architecture, mid-century)
+  - compared to 100M of new pins every month
+  - Interests = textual phrases describing concepts (mid-century architecture)
   - textual embeddings available
 - automatically find new node parent
 - handles multiple relationships: is-type-of, is-in
@@ -90,11 +91,11 @@ Examples
 ## Modeling
 
 Setup
-- each node \\( u \\) of the dataset has a feature vector \\( e_u \\)
-- choose natural number for hyper-param \\( k \\)
-- \\( k \\) linear relatedness matricies \\( M_i \\)
-- to each node \\( u \\) assign \\( k \\) learnable weights \\( w_{i, u} \\) 
-- define relatedness score:
+- each node \\( u \\) of the dataset has a feature vector \\( e_u \in \mathbb{R}^{d} \\)
+- choose natural number for hyper-param \\( k \in \mathbb{N} \\)
+- \\( k \\) linear relatedness matricies \\( M_i \in \mathbb{R}^{d \times d} \\)
+- to each node \\( u \\) assign \\( k \\) learnable weights \\( w_{i, u} \in \mathbb{R} \\) 
+- define relatedness score from child \\( u \\) to candidate parent \\( v \\):
 
 \\( s(u, v) = e_u^\intercal \sum_{i = 0}^{k} w_{i, v} M_i e_v \\)
 
@@ -122,10 +123,10 @@ Negative sampling
 ## Evaluation
 
 Datasets:
-- Mammal
-- SemEval
+- Public: Mammal & SemEval
+  - FastText embeddings
 - Pinterest
-  - [300dim text embedding](https://labs.pinterest.com/user/themes/pin_labs/assets/paper/pintext-kdd2019.pdf) - [StarSpace-like-trained](/ml/starspace-embedding)
+  - Custom [300dim text embedding](https://labs.pinterest.com/user/themes/pin_labs/assets/paper/pintext-kdd2019.pdf) - [StarSpace]((/ml/starspace-embedding))-like
 
 Metrics:
 - mean reciprocal rank (MRR)
