@@ -73,13 +73,16 @@ Problem = parent retrieval
 - Rank short-path to true high as well
 
 ## Modeling
+
+Setup
 - each node \\( u \\) of the dataset has a feature vector \\( e_u \\)
 - choose natural number for hyper-param \\( k \\)
 - \\( k \\) linear relatedness matricies \\( M_i \\)
-- to each node \\( u \\) assign \\( k \\) weights \\( w_{i, u} \\) 
+- to each node \\( u \\) assign \\( k \\) learnable weights \\( w_{i, u} \\) 
 - define relatedness score:
 
-\\( s(u, v) = e_u^\intercal \sum_{i = 0}^{k} M_i w_{i, v} e_v \\)
+\\( s(u, v) = e_u^\intercal \sum_{i = 0}^{k} w_{i, v} M_i e_v \\)
+
 
 
 ### Sources
