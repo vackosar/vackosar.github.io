@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Automatically Expanding Taxonomies"
+title: "Automatically Expanding Taxonomy"
 date: 2021-03-22
 categories: ml
 description: Arborist model finds parents for unseen textual nodes using triplet-loss, StarSpace embeddings, & shortest path.
@@ -237,4 +237,4 @@ Metrics:
      </div>
 
 ### Sources
-- [https://cmuarborist.github.io/](Arborist - Expanding Taxonomies with Implicit Edge Semantics)
+- [Arborist - Expanding Taxonomies with Implicit Edge Semantics](https://cmuarborist.github.io/)
