@@ -37,6 +37,7 @@ Examples:
   - 11000 nodes/edges
   - 7 levels deep
   - 100% expert curated
+  - [nodes have 300dim StarSpace-like-trained feature embeddings](https://labs.pinterest.com/user/themes/pin_labs/assets/paper/pintext-kdd2019.pdf)
 - Examples:
   - Food & Drink > Drinks > Wines
 - Use custom software for curation
@@ -57,7 +58,6 @@ Examples:
 
 ## Pininterest's automatic taxonomy expansion
 
-Basics
 - automatically find new node parent
 - handles multiple relationships: is-type-of, is-in
 - construct embeddings for unseen nodes
@@ -66,10 +66,18 @@ Basics
 - Code: available
 - Data: no new published
 
+## Problem
 Problem = parent retrieval
 - Given taxanomy & query node 
 - Rank true parents high
 - Rank short-path to true high as well
+
+Examples
+- luxor: **africa travel**, european travel, asia travel, greece
+- 2nd month baby: **baby stage**, baby, baby names, preparing for baby
+- depression: mental illness, **stress**, mental wellbeing, disease
+- ramadan: hosting occasions, **holiday**, sukkot, middle east and african cuisine
+- minion humor: humor, people humor, **character humor**, funny
 
 ## Modeling
 
@@ -102,6 +110,22 @@ Negative sampling
 
 \\( \mathrm{Pr}(v', (u, v)) \propto e_u^\intercal e_{v'} \\)
 
+
+## Evaluation
+
+
+Datasets:
+- Mammal
+- SemEval
+- Pinterest
+  - [nodes have 300dim StarSpace-like-trained feature embeddings](https://labs.pinterest.com/user/themes/pin_labs/assets/paper/pintext-kdd2019.pdf)
+
+Metrics:
+- mean reciprocal rank (MRR)
+  - = the multiplicative inverse of its rank in the predicted parents list
+  - if multiple parents => the reciprocal of the highest ranked true parent
+- Recall@15
+- SPDist = shortest-path distance in the taxonomy
 
 ### Sources
 - [Expanding Taxonomies with Implicit Edge Semantics - Paper](https://dl.acm.org/doi/fullHtml/10.1145/3366423.3380271#BibPLXBIB0014)
