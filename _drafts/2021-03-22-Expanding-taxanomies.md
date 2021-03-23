@@ -5,13 +5,12 @@ date: 2021-03-22
 categories: ml
 description: TODO
 permalink: /:categories/:title
-image: /images/submodularity-main.png
-video: fLAYeDYqhag
 ---
 
-{% include mathjax.html %}
+[comment]: <> (image: /images/submodularity-main.png)
+[comment]: <> (video: fLAYeDYqhag)
 
-[comment]: <> ({% include load_video.html %})
+{% include mathjax.html %}
 
 
 ### Why taxanomies?
@@ -21,7 +20,6 @@ Concepts into hierarchy where parents are:
 - more general
 
 Usually a tree
-Usually 
 
 #### [Google Shopping Taxanomy](http://google.com/basepages/producttype/taxonomy.en-US.txt)
 Examples:
@@ -44,7 +42,7 @@ Examples:
 - Pins and Pinners are categorized into the taxonomy to allow recommendation.
   - together called Taste Graph
 
-## Uses of Taxonomies
+## Other papers on use of taxonomies
 
 #### [Sherlock recommender](https://cseweb.ucsd.edu/~csjgwang/pubs/IJCAI16_Sherlock.pdf)
 - "Casualness" of skirts has different visuals to casualness of "flip-flops"
@@ -56,10 +54,10 @@ Examples:
 - learn a unique preference representation corresponding to each level in the taxonomy based on her/his overall sequential preference
 
 
-## Pininterest's Arborist
+## Pininterest's automatic taxonomy expansion
 
 Basics
-- automatic taxonomy expansion
+- automatically find new node parent
 - handles multiple relationships: is-type-of, is-in
 - construct embeddings for unseen nodes
 - minimizes an upper-bound on the shortest-path distances between the predicted and actual taxonomy parents
@@ -82,6 +80,8 @@ Setup
 - define relatedness score:
 
 \\( s(u, v) = e_u^\intercal \sum_{i = 0}^{k} w_{i, v} M_i e_v \\)
+
+## Training
 
 
 
