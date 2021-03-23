@@ -44,10 +44,12 @@ Examples:
 - Pins and Pinners are categorized into the taxonomy to allow recommendation.
   - together called Taste Graph
 
+## Uses of Taxonomies
 
 #### [Sherlock recommender](https://cseweb.ucsd.edu/~csjgwang/pubs/IJCAI16_Sherlock.pdf)
- - uses categorization tree for using different visual embedding projections. Casualness of skirts has different visuals to casualness of flip-flops.
- - Visual projections are shared from parents to children via stacking.
+- "Casualness" of skirts has different visuals to casualness of "flip-flops"
+- taxonomy sub-trees use different projections of visual embeddings
+- Visual projections are shared from parents to children via stacking
 
 #### [Taxonomy-Aware Multi-Hop Reasoning Networks for Sequential RecommendatioTaxonomy-Aware Multi-Hop Reasoning Networks for Sequential Recommendation](https://dl.acm.org/doi/10.1145/3289600.3290972)
 - taxonomy data as structural knowledge to instruct the learning of our model
@@ -63,15 +65,21 @@ Basics
 - minimizes an upper-bound on the shortest-path distances between the predicted and actual taxonomy parents
 - SoTA and ablation study
 - Code: available
-- Data: no new published (Wordnet)
+- Data: no new published
 
-Problem = retrieval
+Problem = parent retrieval
 - Given taxanomy & query node 
 - Rank true parents high
 - Rank short-path to true high as well
 
+## Modeling
+- each node \\( u \\) of the dataset has a feature vector \\( e_u \\)
+- choose natural number for hyper-param \\( k \\)
+- \\( k \\) linear relatedness matricies \\( M_i \\)
+- to each node \\( u \\) assign \\( k \\) weights \\( w_{i, u} \\) 
+- define relatedness score:
 
-- learn node vectors 
+\\( s(u, v) = e_u^\intercal \sum_{i = 0}^{k} M_i w_{i, v} e_v \\)
 
 
 ### Sources
