@@ -108,7 +108,8 @@ Loss
 - How to choose margin \\( \gamma \\) and scalable sum?
 
 Dynamic Margin
-- set \\( \gamma \\) to shortest path to the true parent
+- set \\( \gamma \\) to [shortest path to the true parent](https://github.com/cmuarborist/cmuarborist-core/blob/aff80ff85121d4f6a758e1e386bcffc6d03ccb7f/large_margin_taxonomic_role_model/model.py#L212)
+  - [the distance is normalized to fit between 0 and 1 (see code)](https://github.com/cmuarborist/cmuarborist-core/blob/aff80ff85121d4f6a758e1e386bcffc6d03ccb7f/large_margin_taxonomic_role_model/model.py#L111)
 - minimizing leads to upper-bounding of the path from predicted to parents
 - curator needs to only move node in the neighborhood
 
