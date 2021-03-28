@@ -69,7 +69,7 @@ Click on the green nodes below to Google Shopping Taxonomy interactively. The se
 - taxonomy sub-trees use different projections of visual embeddings
 - Visual projections are shared from parents to children via stacking
 
-#### [Taxonomy-Aware Multi-Hop Reasoning Networks for Sequential RecommendatioTaxonomy-Aware Multi-Hop Reasoning Networks for Sequential Recommendation](https://dl.acm.org/doi/10.1145/3289600.3290972)
+#### [Taxonomy-Aware Multi-Hop Reasoning Networks for Sequential Recommendation](https://dl.acm.org/doi/10.1145/3289600.3290972)
 - taxonomy data as structural knowledge to instruct the learning of our model
 - learn a unique preference representation corresponding to each level in the taxonomy based on her/his overall sequential preference
 
