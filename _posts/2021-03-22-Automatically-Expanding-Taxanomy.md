@@ -24,11 +24,26 @@ Properties
 - multiple relation types possible
 
 #### [Google Shopping Taxanomy](http://google.com/basepages/producttype/taxonomy.en-US.txt)
-Examples:
+
+##### Interactive Viewer
+Click on the green nodes below to Google Shopping Taxonomy interactively. The second click collapses the children.
+
+<script src="/js/d3.v6.min.js" type="text/javascript"></script>
+<script src="/js/google-taxanomy.js" type="text/javascript"></script>
+
+<figure class="figure" id="d3noScript">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/google-shopping-taxonomy-viewer.png"
+        alt="Interactive Google Shopping Taxonomy Viewer" />
+    <figcaption class="figure-caption">Loading Javascript...</figcaption>
+</figure>
+<svg id="d3view" style="width: 90%; height: auto; overflow: scroll;"></svg>
+
+##### Examples:
 - Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Cage Accessories > Bird Cage Bird Baths
 - Home & Garden > Kitchen & Dining > Tableware > Serveware Accessories > Punch Bowl Stands
 - Sporting Goods > Outdoor Recreation > Outdoor Games > Platform & Paddle Tennis > Platform & Paddle Tennis Paddles
-
 
 #### [Mozilla Web Dmoztools](http://dmoztools.net/)
 
