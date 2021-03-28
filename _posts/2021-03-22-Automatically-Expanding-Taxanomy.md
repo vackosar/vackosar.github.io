@@ -62,7 +62,7 @@ Examples:
   - 7 levels deep
   - 100% expert curated
   - [nodes have 300dim feature embedding](https://labs.pinterest.com/user/themes/pin_labs/assets/paper/pintext-kdd2019.pdf)
-    - trained [StarSpace]((/ml/starspace-embedding))-like
+    - trained [StarSpace](/ml/starspace-embedding)-like
 - Examples:
   - Food & Drink > Drinks > Wines
 - Use custom software for curation
@@ -149,7 +149,7 @@ Datasets:
 - Public: Mammal & SemEval
   - FastText embeddings
 - Pinterest
-  - Custom [300dim text embedding](https://labs.pinterest.com/user/themes/pin_labs/assets/paper/pintext-kdd2019.pdf) - [StarSpace]((/ml/starspace-embedding))-like
+  - Custom [300dim text embedding](https://labs.pinterest.com/user/themes/pin_labs/assets/paper/pintext-kdd2019.pdf) - [StarSpace](/ml/starspace-embedding)-like
 
 Metrics:
 - mean reciprocal rank (MRR)
