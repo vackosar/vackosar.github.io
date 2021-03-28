@@ -6,20 +6,11 @@ categories: ml
 description: Arborist model finds parents for unseen textual nodes using triplet-loss, StarSpace embeddings, & shortest path.
 permalink: /:categories/:title
 image: /images/automatic-taxonomy.png
+video: jve806iUHVo
 ---
 
-[comment]: <> (video: fLAYeDYqhag)
-
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded lazyload"
-        data-src="/images/automatic-taxonomy.png"
-        alt="Automatic Taxonomy" />
-    <figcaption class="figure-caption">Automatic Taxonomy</figcaption>
-</figure>
-
+{% include load_video.html %}
 {% include mathjax.html %}
-
 
 ### Why Taxonomies?
 
@@ -38,13 +29,9 @@ Click on the green nodes below to Google Shopping Taxonomy interactively. The se
 <script src="/js/d3.v6.min.js" type="text/javascript"></script>
 <script src="/js/google-shopping-taxonomy.js" type="text/javascript"></script>
 
-<figure class="figure" id="d3noScript">
-    <img
-        class="figure-img img-fluid rounded lazyload"
-        data-src="/images/google-shopping-taxonomy-viewer.png"
-        alt="Interactive Google Shopping Taxonomy Viewer" />
-    <figcaption class="figure-caption">Loading Javascript...</figcaption>
-</figure>
+<small id="d3noScript">
+    Loading taxonomy viewer...
+</small>
 <svg id="d3view" style="width: 90%; height: auto; overflow: scroll;"></svg>
 
 Examples:
