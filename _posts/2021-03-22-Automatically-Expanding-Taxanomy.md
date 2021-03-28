@@ -24,7 +24,7 @@ Properties
 
 #### [Google Shopping Taxonomy](http://google.com/basepages/producttype/taxonomy.en-US.txt) (Interactive Viewer)
 
-Click on the green nodes below to Google Shopping Taxonomy interactively. The second click collapses the children.
+Click on the __green nodes__ below to Google Shopping Taxonomy interactively. The second click collapses the children.
 
 <script src="/js/d3.v6.min.js" type="text/javascript"></script>
 <script src="/js/google-shopping-taxonomy.js" type="text/javascript"></script>
