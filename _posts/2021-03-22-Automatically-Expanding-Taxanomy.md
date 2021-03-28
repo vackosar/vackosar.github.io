@@ -23,9 +23,8 @@ Properties
 - Usually a tree
 - multiple relation types possible
 
-#### [Google Shopping Taxanomy](http://google.com/basepages/producttype/taxonomy.en-US.txt)
+#### [Google Shopping Taxanomy](http://google.com/basepages/producttype/taxonomy.en-US.txt) (Interactive Viewer)
 
-##### Interactive Viewer
 Click on the green nodes below to Google Shopping Taxonomy interactively. The second click collapses the children.
 
 <script src="/js/d3.v6.min.js" type="text/javascript"></script>
@@ -40,7 +39,7 @@ Click on the green nodes below to Google Shopping Taxonomy interactively. The se
 </figure>
 <svg id="d3view" style="width: 90%; height: auto; overflow: scroll;"></svg>
 
-##### Examples:
+Examples:
 - Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Cage Accessories > Bird Cage Bird Baths
 - Home & Garden > Kitchen & Dining > Tableware > Serveware Accessories > Punch Bowl Stands
 - Sporting Goods > Outdoor Recreation > Outdoor Games > Platform & Paddle Tennis > Platform & Paddle Tennis Paddles
