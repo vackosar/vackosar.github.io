@@ -263,3 +263,14 @@ Metrics:
 
 ### Sources
 - [Arborist - Expanding Taxonomies with Implicit Edge Semantics](https://cmuarborist.github.io/)
+
+
+## Meet Other ML Enthusiasts One-on-One Online
+
+Video-call each week an interesting person in the machine learning field and break out of your remote isolation.
+Network One-on-One Around Your Online Village with RandomMeets.<br>
+Or create a room of your own for you company or friend group and invite them to meet each other!
+
+<a class="btn btn-info" style="text-decoration: none;" href="https://randommeets.com/invite/eyJncm91cF9pZCI6IjZhMzNkMTVjLTc0NjItNGFhMS1hNTc0LWM1NTUwMWQ4NWNkZiJ9.X76oug.2563ghpMTzbST9KPHerGeDqhXRY">
+    Join Machine Learning @ RandomMeets
+</a>
