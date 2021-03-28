@@ -13,7 +13,7 @@ permalink: /:categories/:title
 {% include mathjax.html %}
 
 
-### Why taxanomies?
+### Why Taxonomies?
 
 Concepts into a hierarchy where parents are:
 - related to
@@ -23,12 +23,12 @@ Properties
 - Usually a tree
 - multiple relation types possible
 
-#### [Google Shopping Taxanomy](http://google.com/basepages/producttype/taxonomy.en-US.txt) (Interactive Viewer)
+#### [Google Shopping Taxonomy](http://google.com/basepages/producttype/taxonomy.en-US.txt) (Interactive Viewer)
 
 Click on the green nodes below to Google Shopping Taxonomy interactively. The second click collapses the children.
 
 <script src="/js/d3.v6.min.js" type="text/javascript"></script>
-<script src="/js/google-taxanomy.js" type="text/javascript"></script>
+<script src="/js/google-shopping-taxonomy.js" type="text/javascript"></script>
 
 <figure class="figure" id="d3noScript">
     <img
@@ -47,7 +47,7 @@ Examples:
 #### [Mozilla Web Dmoztools](http://dmoztools.net/)
 
 #### [Pinterest Taxonomy](https://arxiv.org/pdf/1907.02106.pdf)
-- Interests are organized into Pinterest taxanomy
+- Interests are organized into Pinterest taxonomy
 - Advertizeres use taxonomy to target ad campaigns
 - In 2020:
   - 11000 nodes/edges
