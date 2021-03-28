@@ -5,10 +5,18 @@ date: 2021-03-22
 categories: ml
 description: Arborist model finds parents for unseen textual nodes using triplet-loss, StarSpace embeddings, & shortest path.
 permalink: /:categories/:title
+image: /images/automatic-taxonomy.png
 ---
 
-[comment]: <> (image: /images/submodularity-main.png)
 [comment]: <> (video: fLAYeDYqhag)
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/automatic-taxonomy.png"
+        alt="Automatic Taxonomy" />
+    <figcaption class="figure-caption">Automatic Taxonomy</figcaption>
+</figure>
 
 {% include mathjax.html %}
 
