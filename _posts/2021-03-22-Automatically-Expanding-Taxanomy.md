@@ -118,7 +118,7 @@ Setup
 Loss
 - similar to triplet loss
 - we want \\( s(child, parent) > s(child, nonparent) + \gamma \\)
-- loss \\( \sum max(0, s(child, nonparent) + \gamma -  s(child, parent) ) \\)
+- loss \\( \sum max(0, s(child, nonparent) + \gamma \\) \\( -  s(child, parent) ) \\)
 - How to choose margin \\( \gamma \\) and scalable sum?
 
 Dynamic Margin

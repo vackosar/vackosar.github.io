@@ -1,7 +1,7 @@
-let treeData = [];
 fetch('/data/google.taxonomy.en-US.2021-03-28.txt')
   .then(response => response.text())
   .then(data => {
+    let treeData = [];
     data.split('\n').slice(1).map(s => s.split(' > ')).forEach(pathArr => {
       let parent = 'All';
       let currentChildren = treeData;
