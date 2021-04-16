@@ -4,10 +4,10 @@ title: "Google Product Taxonomy Viewer"
 date: 2021-04-16
 description: Interactive viewer for Google Product categorization tree. 
 image: /images/automatic-taxonomy.png
-redirect_from:
-- /google-product-taxonomy-viewer.html
 ---
 
+[comment]: <> (redirect_from:)
+[comment]: <> (- /google-product-taxonomy-viewer.html)
 [comment]: <> (permalink: /google-product-taxonomy)
 
 Google Product Taxonomy is a product categorization tree into which merchants products are automatically categorized.
