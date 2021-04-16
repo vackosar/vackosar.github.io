@@ -5,7 +5,7 @@ date: 2021-04-16
 description: Interactive viewer for Google Product categorization tree. 
 image: /images/automatic-taxonomy.png
 redirect_from:
-- permalink: /google-product-taxonomy-viewer.html
+- /google-product-taxonomy-viewer.html
 ---
 
 [comment]: <> (permalink: /google-product-taxonomy)
