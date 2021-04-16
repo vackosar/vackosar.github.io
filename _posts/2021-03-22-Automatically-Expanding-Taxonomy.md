@@ -7,6 +7,8 @@ description: Arborist model finds parents for unseen textual nodes using triplet
 permalink: /:categories/:title
 image: /images/automatic-taxonomy.png
 video: jve806iUHVo
+redirect_from:
+- /ml/Automatically-Expanding-Taxanomy
 ---
 
 {% include load_video.html %}
