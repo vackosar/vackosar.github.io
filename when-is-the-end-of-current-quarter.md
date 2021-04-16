@@ -6,6 +6,8 @@ redirect_from:
   - independent/when-is-the-end-of-current-quarter.html
 ---
 
+[comment]: <> (permalink: /when-is-the-end-of-current-quarter)
+
 <h1>{{ page.title }}</h1>
 
 Current quarter <b id='quarterName'></b> ends on <b id='quarterEnd'>Q1</b> in <b id="daysLeft">45</b> days.
