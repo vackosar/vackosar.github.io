@@ -49,7 +49,7 @@ function buildTree(data) {
 
   const svg = d3.select('#d3view')
     .attr("viewBox", [-margin.left, -margin.top, width, dx])
-    .style("font", "6px sans-serif")
+    .style("font", "7px sans-serif")
     .style("user-select", "none");
 
   const gLink = svg.append("g")
