@@ -23,7 +23,8 @@ Click on the __green nodes__ below to Google Product Taxonomy interactively. The
 <small id="d3noScript">
     Loading taxonomy viewer...
 </small>
-<svg id="d3view" style="width: 90%; height: auto; overflow: auto;"></svg>
+
+<svg id="d3view" style="width: 90%; height: auto; overflow: auto !important;"></svg>
 
 
 [Full taxonomy](http://google.com/basepages/producttype/taxonomy.en-US.txt)
