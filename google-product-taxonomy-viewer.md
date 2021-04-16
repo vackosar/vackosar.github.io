@@ -2,9 +2,14 @@
 layout: default
 title: "Google Product Taxonomy Viewer"
 date: 2021-04-16
-description: Interactive viewer for Google Product categorization tree. 
+description: Explore with a handy viewer the categorization tree structure.
 image: /images/automatic-taxonomy.png
 ---
+
+# {{ page.title }}
+
+<i>{{ page.description }}</i>
+
 
 Google Product Taxonomy is a product categorization tree into which merchants products are automatically categorized.
 The automatic categorization is performed [automaticaly based on product input fields](https://support.google.com/merchants/answer/6324436?hl=en) provided by the merchant.
@@ -18,7 +23,7 @@ Click on the __green nodes__ below to Google Product Taxonomy interactively. The
 <small id="d3noScript">
     Loading taxonomy viewer...
 </small>
-<svg id="d3view" style="width: 90%; height: auto; overflow: scroll;"></svg>
+<svg id="d3view" style="width: 90%; height: auto; overflow: auto;"></svg>
 
 
 [Full taxonomy](http://google.com/basepages/producttype/taxonomy.en-US.txt)
