@@ -9,6 +9,7 @@ redirect_from:
 [comment]: <> (permalink: /when-is-the-end-of-current-quarter)
 
 <h1>{{ page.title }}</h1>
+<small>When this quarter ends?</small>
 
 Current quarter <b id='quarterName'></b> ends on <b id='quarterEnd'>Q1</b> in <b id="daysLeft">45</b> days.
 <br>
@@ -17,8 +18,11 @@ How many days left in this quarter? There are <b id="daysLeft2">45</b> days left
 How many days till the end of this quarter? There are <b id="daysLeft3">45</b> days till the end of current quarter.<br>
 
 <p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/quarters.svg" alt="quarters visualization circular" style="max-width: 300px"/></p>
+<small>A year is divided into 4 quarters. Each has 3 months.</small>
 
 <h3>When the quarters start and end?</h3>
+<small>See a handy table of quarter start and end dates below.</small>
+
 <table border="1" class="dataframe">
     <thead>
         <tr>
@@ -57,6 +61,7 @@ How many days till the end of this quarter? There are <b id="daysLeft3">45</b> d
     </tbody>
 </table>
 
+<br>
 <br>
 <br>
 Not enough time to train new employees? Try <a href="https://quizrecall.com">Quizrecall training automation</a>.
