@@ -41,7 +41,9 @@ Examples:
 - Home & Garden > Kitchen & Dining > Tableware > Serveware Accessories > Punch Bowl Stands
 - Sporting Goods > Outdoor Recreation > Outdoor Games > Platform & Paddle Tennis > Platform & Paddle Tennis Paddles
 
-#### [Mozilla Web Dmoztools](http://dmoztools.net/)
+#### Shopify Taxonomy
+- [used Google Product Taxonomy](https://shopify.engineering/categorizing-products-at-scale)
+- published scalable product categorization
 
 #### [Pinterest Taxonomy](https://arxiv.org/pdf/1907.02106.pdf)
 - Interests are organized into Pinterest taxonomy
