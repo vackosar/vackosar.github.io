@@ -24,7 +24,7 @@ Missing System 2:
     class="figure-img img-fluid rounded lazyload"
     alt="Wiki disambiguation problem and submodularity"
     data-src="https://upload.wikimedia.org/wikipedia/en/c/c1/Thinking%2C_Fast_and_Slow.jpg"
-    style="max-width: 100px">
+    style="max-width: 200px">
 
 
 ### How DreamCoder works?
@@ -54,7 +54,7 @@ Example solved tasks:
         data-src="/images/dreamcoder-tasks.png"
         style="max-width: 500px">
     <figcaption class="figure-caption">
-        Solved domains from the DreamCoder paper 
+        Solved domains (sourced from the paper)
     </figcaption>
 </figure>
 
@@ -82,7 +82,7 @@ Training:
         data-src="/images/dreamcoder-phases.png"
         style="max-width: 900px">
     <figcaption class="figure-caption">
-        Training phases 
+        Training phases (sourced from the paper)
     </figcaption>
 </figure>
 
@@ -112,6 +112,18 @@ Training:
 - 50/50 mixing generated and replay programs
 - to augment data but stay representative
 - train Q function for search
+
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        alt="DreamCoder logo task"
+        data-src="/images/dreamcoder-logo-task.png"
+        style="max-width: 900px">
+    <figcaption class="figure-caption">
+         DreamCoder LOGO task (A: tasks, B & C: learned functions, D & E: dreams. (sourced from the paper)
+    </figcaption>
+</figure>
 
 ### Results
 - list processing
