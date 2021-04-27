@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "DreamCoder AI: TODO"
+title: "DreamCoder AI: Wake & Sleep Program Learning"
 date: 2021-04-27
 categories: ml
-description: Learning to code by growing library and training neural search.
+description: Learning to code by growing library, training neural search, and fantasising code.
 permalink: /:categories/:title
 ---
 
