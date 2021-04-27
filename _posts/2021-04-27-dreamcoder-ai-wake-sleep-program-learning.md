@@ -29,7 +29,7 @@ Missing System 2:
 
 ### How DreamCoder works?
 
-- DreamCoder uses:
+- [DreamCoder](https://arxiv.org/pdf/2006.08381.pdf) uses:
   - learned library of functions
   - learned neural search on program space
 - To:
@@ -156,3 +156,8 @@ Training:
     \\( P(x | \rho) \in \lbrace 0, 1 \rbrace \\)
 - search: approximate posterior of recognition model
     \\( Q( \rho | x) \\)
+
+#### Sources
+
+- [DreamCoder Paper](https://arxiv.org/pdf/2006.08381.pdf)
+- [DreamCoder Video](https://youtu.be/NYIeP1hns6A)
