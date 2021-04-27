@@ -7,6 +7,7 @@ description: Learning to code by growing library and training neural search.
 permalink: /:categories/:title
 ---
 
+{% include mathjax.html %}
 
 ### Why coding?
 
@@ -64,14 +65,28 @@ Training:
 1. provide program primitives (map, fold, if, cons, >)
 1. iterate
     1. wake phase:
-        1. try to solve problems
+        1. search for the best solution with the library
         1. store successful solutions
     1. sleep phase
         1. abstract
-            1. reply successful solutions
-            1. rewrite functions library to compress available solutions 
+            1. replay successful solutions
+            1. rewrite and grow library to compress
         1. dream:
-            1. generate programs
-            1. generate inputs and outputs
-            1. try to solve
+            1. generate & replay programs
             1. train neural search
+
+The best solution:
+- many programs solve
+- select 5 smallest programs
+- use for next sleep
+
+Notation in the paper:
+- library: \\( L \\)
+- program:
+    \\( \rho \\)  
+- length:
+    \\( P( \rho | L) \\)
+- is solution:
+    \\( P(x | \rho) \in \lbrace 0, 1 \rbrace \\)
+
+  
