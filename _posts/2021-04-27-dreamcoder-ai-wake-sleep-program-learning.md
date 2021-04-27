@@ -11,10 +11,10 @@ permalink: /:categories/:title
 
 ### Why coding?
 
-Missing System 2:
-- interpolation not enough
-- humans can
-  - think algorithmically ([system 2](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow))
+Missing [System 2](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)):
+- regression is not enough
+- humans can also:
+  - think algorithmically (
   - accumulate "knowledge"
   - from small amount of samples
 - symbolic + neural?
@@ -29,15 +29,15 @@ Missing System 2:
 
 ### How DreamCoder works?
 
-- [DreamCoder](https://arxiv.org/pdf/2006.08381.pdf) uses:
+- [DreamCoder](https://web.mit.edu/ellisk/www/documents/dreamcoder_with_supplement.pdf) uses:
   - learned library of functions
   - learned neural search on program space
 - To:
   - given inputs-output examples
-  - produce a "reasonable" solution  
+  - produce a the best solution  
     
     
-Reasonable program:
+The best program:
 - in based on experience
 - too large program search space
 - DreamCoder  
@@ -95,6 +95,7 @@ Training:
     - many programs solve
     - select 5 smallest programs
     - use for next sleep
+    
 
 ##### Abstraction phase:
 - propose new library functions 
@@ -106,6 +107,7 @@ Training:
         - equivalence graphs
     - plus limit to small programs
     - lead to improvement \\( \sim 10^6 \\)
+    
     
 #### Dream phase:
 - replay programs ~100s
@@ -124,6 +126,7 @@ Training:
          DreamCoder LOGO task (A: tasks, B & C: learned functions, D & E: dreams. (sourced from the paper)
     </figcaption>
 </figure>
+
 
 ### Results
 - list processing
@@ -144,20 +147,31 @@ Training:
         - but is that really better?
 - Ablations:
     - abstraction & dreaming are important
+    
+    
+### Why DreamCoder?
+- builds on RobustFill and DeepCoder
+- DeepCoder does not predict the probability of a program
+- DeepCoder predicts DSL primitive will be used in the program at least once
+- DeepCoder & DreamCoder libraries are 
+  - modestly-sized set
+  - generally useful routines
+  - interpretable routines  
 
 
-#### Paper Notation
+#### Sources & Details
+- [DreamCoder Paper with Supplement](https://web.mit.edu/ellisk/www/documents/dreamcoder_with_supplement.pdf)
+- [DreamCoder Video](https://youtu.be/NYIeP1hns6A)
+
+Paper Notation
 - library: \\( L \\)
 - program:
-    \\( \rho \\)  
+  \\( \rho \\)
 - length:
-    \\( P( \rho | L) \\)
+  \\( P( \rho | L) \\)
 - is solution:
-    \\( P(x | \rho) \in \lbrace 0, 1 \rbrace \\)
+  \\( P(x | \rho) \in \lbrace 0, 1 \rbrace \\)
 - search: approximate posterior of recognition model
-    \\( Q( \rho | x) \\)
+  \\( Q( \rho | x) \\)
 
-#### Sources
 
-- [DreamCoder Paper](https://arxiv.org/pdf/2006.08381.pdf)
-- [DreamCoder Video](https://youtu.be/NYIeP1hns6A)
