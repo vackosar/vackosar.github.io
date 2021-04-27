@@ -88,7 +88,9 @@ Training:
 
 
 #### Wake Phase
-- the trained neural network function
+- neural network ranks potential solutions
+  - given input-outputs and programs returns probability
+  - called recognition model
 - the best solution:
     - many programs solve
     - select 5 smallest programs
