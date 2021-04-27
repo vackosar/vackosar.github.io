@@ -8,7 +8,6 @@ permalink: /:categories/:title
 ---
 
 
-
 ### Why coding?
 
 Missing System 2:
@@ -27,7 +26,7 @@ Missing System 2:
     style="max-width: 100px">
 
 
-### DreamCoder
+### How DreamCoder works?
 
 - DreamCoder uses:
   - learned library of functions
@@ -58,3 +57,21 @@ Example solved tasks:
     </figcaption>
 </figure>
 
+
+### How DreamCoder learns?
+
+Training:
+1. provide program primitives (map, fold, if, cons, >)
+1. iterate
+    1. wake phase:
+        1. try to solve problems
+        1. store successful solutions
+    1. sleep phase
+        1. abstract
+            1. reply successful solutions
+            1. rewrite functions library to compress available solutions 
+        1. dream:
+            1. generate programs
+            1. generate inputs and outputs
+            1. try to solve
+            1. train neural search
