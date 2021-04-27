@@ -11,13 +11,14 @@ permalink: /:categories/:title
 
 ### Why coding?
 
-Missing [System 2](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)):
+Neural Networks are missing [System 2](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow):
 - regression is not enough
 - humans can also:
-  - think algorithmically (
+  - think algorithmically
   - accumulate "knowledge"
   - from small amount of samples
 - symbolic + neural?
+- more in [Francois Chollet - Intelligence and Generalisation](https://youtu.be/J0p_thJJnoo)
 
 
 <img
