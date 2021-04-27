@@ -63,9 +63,9 @@ Example solved tasks:
 
 Training:
 1. provide program primitives (map, fold, if, cons, >)
-1. iterate
+1. loop
     1. wake phase:
-        1. search for the best solution with the library
+        1. search for the best solution given the library
         1. store successful solutions
     1. sleep phase
         1. abstract
@@ -75,12 +75,26 @@ Training:
             1. generate & replay programs
             1. train neural search
 
-The best solution:
-- many programs solve
-- select 5 smallest programs
-- use for next sleep
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        alt="Training phases"
+        data-src="/images/dreamcoder-phases.png"
+        style="max-width: 900px">
+    <figcaption class="figure-caption">
+        Training phases 
+    </figcaption>
+</figure>
 
-Abstraction phase:
+
+#### Wake Phase
+- the trained neural network function
+- the best solution:
+    - many programs solve
+    - select 5 smallest programs
+    - use for next sleep
+
+##### Abstraction phase:
 - propose new library functions 
 - minizing the new functions
 - minimizing the length of solutions
@@ -91,7 +105,7 @@ Abstraction phase:
     - plus limit to small programs
     - lead to improvement \\( \sim 10^6 \\)
     
-Dream phase:
+#### Dream phase:
 - replay programs ~100s
 - 50/50 mixing generated and replay programs
 - to augment data but stay representative
@@ -106,4 +120,5 @@ Notation in the paper:
     \\( P( \rho | L) \\)
 - is solution:
     \\( P(x | \rho) \in \lbrace 0, 1 \rbrace \\)
-- search: approximate posterior of recognition model \\( Q( \rho | x) \\)
+- search: approximate posterior of recognition model
+    \\( Q( \rho | x) \\)
