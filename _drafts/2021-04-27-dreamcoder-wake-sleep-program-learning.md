@@ -70,7 +70,7 @@ Training:
     1. sleep phase
         1. abstract
             1. replay successful solutions
-            1. rewrite and grow library to compress
+            1. compress them by adding to library
         1. dream:
             1. generate & replay programs
             1. train neural search
@@ -80,6 +80,24 @@ The best solution:
 - select 5 smallest programs
 - use for next sleep
 
+Abstraction phase:
+- propose new library functions 
+- minizing the new functions
+- minimizing the length of solutions
+- reduce number of refactorings \\( \sim 10^{14} \\)
+    - ideas from:
+        - version space algebras
+        - equivalence graphs
+    - plus limit to small programs
+    - lead to improvement \\( \sim 10^6 \\)
+    
+Dream phase:
+- replay programs ~100s
+- 50/50 mixing generated and replay programs
+- to augment data but stay representative
+- train Q function for search
+
+
 Notation in the paper:
 - library: \\( L \\)
 - program:
@@ -88,5 +106,4 @@ Notation in the paper:
     \\( P( \rho | L) \\)
 - is solution:
     \\( P(x | \rho) \in \lbrace 0, 1 \rbrace \\)
-
-  
+- search: approximate posterior of recognition model \\( Q( \rho | x) \\)
