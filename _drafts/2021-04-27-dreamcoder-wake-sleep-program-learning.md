@@ -88,7 +88,7 @@ Training:
 
 
 #### Wake Phase
-- neural network ranks potential solutions
+- neural network \\( Q \\) ranks potential solutions
   - given input-outputs and programs returns probability
   - called recognition model
 - the best solution:
@@ -113,8 +113,28 @@ Training:
 - to augment data but stay representative
 - train Q function for search
 
+### Results
+- list processing
+    - primitives: map, fold, cons (pre-pend), ...
+    - 109 training tasks
+    - created library of 20 routines
+        - filter, max, n-th largest
+    - learned to sort
+- text editing
+    - e.g. "Alan Turing" -> "A.T."
+    - train set: 128 auto-generated text editing task  
+    - test set: 2017 SyGuS program synth  
+    - prior-train solved 3.7%
+    - post-training solved 84.3% vs 82.4% prior art
+        - CVC4 competition
+        - others used handpicked library from SysGuS
+        - DreamCoder used only primitives + training samples
+        - but is that really better?
+- Ablations:
+    - abstraction & dreaming are important
 
-Notation in the paper:
+
+#### Paper Notation
 - library: \\( L \\)
 - program:
     \\( \rho \\)  
