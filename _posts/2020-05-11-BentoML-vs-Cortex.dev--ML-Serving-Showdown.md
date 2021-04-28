@@ -6,6 +6,7 @@ date: 2020-05-11
 image: /images/bentoml-cortex-logos.webp
 description: To find the best model serving tool, compare open-source MLOps platforms BentoML and Cortex.
 permalink: /:categories/:title
+video: aU95dBAspr0
 redirect_from:
   - /ml/2020/05/11/BentoML-vs-Cortex.html
   - /ml/BentoML-vs-Cortex
@@ -96,6 +97,9 @@ Here is [a blog post on Cortex use at GLAMI](https://medium.com/@aiteamglami/ser
 It is a bit outdated take as Cortex now has its own wrapper.
 Consider using this [Cortex client for Python](https://github.com/glami/cortex-serving-client), which is a Python wrapper around Cortex CLI that we use at GLAMI for MLOps.
 It has couple of extra features, that keep us using it for now.
+
+Video:
+{% include load_video.html %}
 
 ## Discussions
 - <a href="https://www.reddit.com/r/MachineLearning/comments/ghikdz/d_is_this_fair_bentoml_vs_cortex_comparison/">Reddit discussion</a>
