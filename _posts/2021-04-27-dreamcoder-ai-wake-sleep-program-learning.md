@@ -3,7 +3,7 @@ layout: post
 title: "DreamCoder AI: Wake & Sleep Program Learning"
 date: 2021-04-27
 categories: ml
-description: Learning to code by growing library, training neural search, and fantasising code.
+description: Learning to code by growing function library, fantasising coding tasks, and training neural search.
 permalink: /:categories/:title
 ---
 
@@ -44,7 +44,11 @@ The best program:
 - DreamCoder  
   - learn functions that _compress_ solved examples
   - learn neural guided search
-    
+
+
+Similarities to AlphaZero:
+- also trains a neural search
+- also does "self-play" (Dream phase)
 
 Example solved tasks:
 
