@@ -1,12 +1,15 @@
 ---
 layout: post
-title: "DreamCoder AI: Wake & Sleep Program Learning"
+title: "DreamCoder: Wake & Sleep Program Learning"
 date: 2021-04-27
 categories: ml
+video: I7e6vR6-yiQ
+image: /images/dreamcoder-thumb.png
 description: Learning to code by growing function library, fantasising coding tasks, and training neural search.
 permalink: /:categories/:title
 ---
 
+{% include load_video.html %}
 {% include mathjax.html %}
 
 ### Why coding?
