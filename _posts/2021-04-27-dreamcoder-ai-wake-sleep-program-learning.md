@@ -42,6 +42,7 @@ Neural Networks are missing [System 2](https://en.wikipedia.org/wiki/Thinking,_F
     
     
 The best program:
+- short
 - in based on experience
 - too large program search space
 - DreamCoder  
