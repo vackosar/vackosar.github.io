@@ -7,10 +7,24 @@
         fill: red;
         background: white;
     }
+
+    #video-img {
+        position: relative;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    #video-img-img {
+        /*border-top: 10px solid #0b2e13;*/
+        /*border-bottom: 10px solid #0b2e13;*/
+        border-left: 10px solid #0b2e13;
+        border-right: 10px solid #0b2e13;
+    }
+
 </style>
-<div id="video-img" style="position: relative; cursor: pointer; text-align: center;" onclick="loadVid(this)">
+<div id="video-img" onclick="loadVid(this)">
   <!--  <img width="560" src="http://i3.ytimg.com/vi/{{ page.video }}/hqdefault.jpg" alt="{{ page.title }}" />-->
-  <img style="max-width: 560px; width: 100%" src="{{ page.image }}" alt="{{ page.title }}" />
+  <img id="video-img-img" style="max-width: 560px; width: 100%" src="{{ page.image }}" alt="{{ page.title }}" />
   {% include youtube.svg %}
 </div>
 
