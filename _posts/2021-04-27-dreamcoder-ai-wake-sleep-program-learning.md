@@ -165,8 +165,8 @@ Training:
 - DeepCoder & DreamCoder libraries are 
   - modestly-sized set
   - generally useful routines
-  - interpretable routines  
-
+  - interpretable routines
+  - 
 
 #### Sources & Details
 - [DreamCoder Paper with Supplement](https://web.mit.edu/ellisk/www/documents/dreamcoder_with_supplement.pdf)
@@ -184,3 +184,30 @@ Paper Notation
   \\( Q( \rho | x) \\)
 
 
+
+### Bonus Paper: Inference of Regular Expressions
+- [2016 Paper for Text Extraction from Examples](https://www.human-competitive.org/sites/default/files/bartoli-delorenzo-medvet-tarlao-tkde-paper.pdf)
+- given texts and extractions
+- Genetic Programming search for regular expressions
+- based on fitness
+- [try demo](http://regex.inginf.units.it/)
+
+Solution search
+- regex is represented by a tree
+- nodes are
+  - sub-node placeholder `*`
+  - primitives (`\d`, `\w`, `[*]`, `[^*]`, look-around, ...)
+- tree structure presentents DNA of the candidates
+- keep only performing candidates
+  - (~ library in DreamCoder)
+- crossover swaps candidates' sub-trees
+- mutation replaces a subtree with random subtree
+- fitness is:
+  - "Character Precision"
+  - "Character Accuracy"
+  - length of the expression
+    - ~ DreamCoder's code length
+
+Comparison
+- the method outperforms, but not on all datasets
+- time is human comparable ~10mins
