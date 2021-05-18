@@ -4,7 +4,7 @@ title: "BentoML vs Cortex - ML Serving Showdown"
 categories: ML
 date: 2020-05-11
 image: /images/bentoml-cortex-logos.webp
-description: To find the best model serving tool, compare open-source MLOps platforms BentoML and Cortex.
+description: To find the best model serving tool, compare open-source MLOps / AIOps platforms BentoML and Cortex.
 permalink: /:categories/:title
 video: aU95dBAspr0
 redirect_from:
@@ -15,7 +15,7 @@ redirect_from:
 
 <p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/bentoml-cortex-logos.webp" alt="BentoML and Cortex logo" style="width: 200px"/></p>
 
-Updated 2021-02-21. Note, that I have mainly experience with Cortex and BentoML view is based on cursory overview of their documentation.
+Updated 2021-02-21. I have mainly experience with Cortex Labs's Cortex. My view on BentoML is based on cursory overview of their documentation.
 
 ## Common
 - both deploy and serve models via API
