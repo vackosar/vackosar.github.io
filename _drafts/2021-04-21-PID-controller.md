@@ -112,7 +112,7 @@ document.getElementById('pidOn').addEventListener('change', e => {
 document.getElementById('func').addEventListener('change', e => {
   if (e.srcElement.checked) {
     config.func = steps;
-    config.period = 100;
+    config.period = 200;
   } else {
     config.period = 60;
     config.func = sin;
