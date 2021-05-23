@@ -6,6 +6,8 @@ categories: ml
 image: /images/pid-controller.webp
 description: Proportional–integral–derivative controller produces feedback to reduce measured error in the next step.
 permalink: /:categories/:title
+redirect_from:
+- /ml/PID-controller
 ---
 
 {% include mathjax.html %}
