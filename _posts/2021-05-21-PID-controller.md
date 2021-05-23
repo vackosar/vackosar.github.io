@@ -39,12 +39,15 @@ permalink: /:categories/:title
 - defined as sum of 3 terms:
   - proportional term
     - current error
+    - corrects for error in the previous step
   - integral term
     - sum of errors till now
+    - corrects for error in the same direction in the past
   - derivative
     - current derivative of the error
     - can cause instability and not used often
     - or low pass filtering
+    - corrects for sudden change in error
 - mathematical form:
   - error: \\( e(t) \\)
   - proportional coefficient: \\( K_p \\)
