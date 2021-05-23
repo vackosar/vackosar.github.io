@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "PID Controller"
+title: "PID Controller: A Simple Control Loop Mechanism"
 date: 2021-05-21
 categories: ml
 image: /images/pid-controller.webp
