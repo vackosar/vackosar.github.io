@@ -27,7 +27,7 @@ permalink: /:categories/:title
 - example: cruise control
   - process variable = speed
   - setpoint = ideal speed
-  - error = speed minus ideal speed
+  - error = ideal speed - actual speed
   - feedback = gas pedal
 
 
@@ -36,8 +36,8 @@ permalink: /:categories/:title
 - tool to stay close to the ideal (__control loop mechanism__)
 - uses distance from setpoint (__error__) to produce feedback
   - error = setpoint - process variable
-- sum of 3 terms with respect to an error:
-  - proportiona term
+- defined as sum of 3 terms:
+  - proportional term
     - current error
   - integral term
     - sum of errors till now
