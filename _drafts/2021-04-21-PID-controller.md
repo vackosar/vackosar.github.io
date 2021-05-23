@@ -18,41 +18,63 @@ permalink: /:categories/:title
 </figure>
 
 ### When to use PID controller?
-- measured value (process variable) is a time series
-- ideal value (setpoint) is known
-- can correct via a feedback
+- measured value (__process variable__) is a time series
+- ideal value (__setpoint__) is known
+- can correct via a __feedback__ in the next steps
+- tuning (training) data is available
+- cannot model of the process
+- in non-linear systems may not work
 - example: cruise control
   - process variable = speed
   - setpoint = ideal speed
   - error = speed minus ideal speed
   - feedback = gas pedal
-- is sometimes called three-term controller
 
 
 ### What is PID controller?
-- tool to stay close to the ideal (control loop mechanism)
-- uses distance from setpoint (error value) to produce feedback
+- is sometimes called three-term controller
+- tool to stay close to the ideal (__control loop mechanism__)
+- uses distance from setpoint (__error__) to produce feedback
+  - error = setpoint - process variable
 - sum of 3 terms with respect to an error:
-  - proportional
-  - integral
+  - proportiona term
+    - current error
+  - integral term
+    - sum of errors till now
   - derivative
+    - current derivative of the error
+    - can cause instability and not used often
+    - or low pass filtering
 - mathematical form:
   - error: \\( e(t) \\)
   - proportional coefficient: \\( K_p \\)
   - integral coefficient: \\( K_i \\)
-  - derivative coefficient: \\( K_p \\)
+  - derivative coefficient: \\( K_d \\)
   - time: \\( t \\)
-  - feedback value: \\( u(t) \\)
+  - feedback value (__control function__): \\( u(t) \\)
   - equation: \\( u(t) = K_p e(t) + K_i \int_0^t e(t) dt + K_d \frac{de(t)}{dt} \\)
 
 ### Demo
 - grey dots represent setpoint
-- blue represents unchanged output
-- red represents controlled output
+  - here: constantly zero
+- blue represents original process variable
+  - uncontrolled process variable
+- red represents process variable after corrective feedback
+  - here: process variable minus feedback
 - try changing the input function
 
 <input type="checkbox" id="func" />&nbsp; sine input function<br>
 <canvas id="canvas" width="500" height="150"></canvas>
+
+### Extension
+- [Self-tuning PID using Kalman filter](https://www.sciencedirect.com/science/article/pii/S2405896318304282)
+  - [Kalman filter](/ml/1D-Kalman-Is-Exponential-Or-Cumulative-Average) uses linear relationship between measured values
+  - to estimate true values and uncertainty
+  - in the paper relationship between the PID parameters defines the Kalman filter tuning
+
+### Related Posts
+[Constant 1D Kalman Filter Is Exponential Or Cumulative Average](/ml/1D-Kalman-Is-Exponential-Or-Cumulative-Average)
+
 
 <script type="application/javascript">
 let config = {amplitude: 5, period: 60, pid: false, kp: 0.2, kd: 0, ki: 0.5, func: steps};
@@ -74,12 +96,12 @@ function draw() {
       values.shift();
       values.push(new_value);
 
-      let prev_error = correctedValues[correctedValues.length - 1];
-      let second_prev_error = correctedValues[correctedValues.length - 2];
+      let prev_error = - correctedValues[correctedValues.length - 1];
+      let second_prev_error = - correctedValues[correctedValues.length - 2];
       let derivative = prev_error - second_prev_error;
       integral = integral + prev_error;
       let correction = prev_error * config.kp + derivative * config.kd + integral * config.ki;
-      let correctedValue = new_value - correction;
+      let correctedValue = new_value + correction;
       correctedValues.shift();
       correctedValues.push(correctedValue)
 
