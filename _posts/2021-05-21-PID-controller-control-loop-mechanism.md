@@ -5,7 +5,7 @@ date: 2021-05-21
 categories: ml
 video: x6sxKHrPA2A
 image: /images/pid-controller.webp
-description: Proportional–integral–derivative controller produces feedback to reduce measured error in the next step.
+description: Proportional–integral–derivative controller calculates feedback to reduce the error in the next step.
 permalink: /:categories/:title
 redirect_from:
 - /ml/PID-controller
