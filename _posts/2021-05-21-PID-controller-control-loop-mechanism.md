@@ -3,6 +3,7 @@ layout: post
 title: "PID Controller: A Simple Control Loop Mechanism"
 date: 2021-05-21
 categories: ml
+video: x6sxKHrPA2A
 image: /images/pid-controller.webp
 description: Proportional–integral–derivative controller produces feedback to reduce measured error in the next step.
 permalink: /:categories/:title
@@ -10,14 +11,9 @@ redirect_from:
 - /ml/PID-controller
 ---
 
+{% include load_video.html %}
 {% include mathjax.html %}
 
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded"
-        src="/images/pid-controller.webp"
-        alt="PID controller" />
-</figure>
 
 ### When to use PID controller?
 - measured value (__process variable__) is a time series
@@ -67,6 +63,7 @@ redirect_from:
 - red represents process variable after corrective feedback
   - here: process variable minus feedback
 - try changing the input function
+- Find the demo source below
 
 <input type="checkbox" id="func" />&nbsp; sine input function<br>
 <canvas id="canvas" width="500" height="150"></canvas>
@@ -80,8 +77,10 @@ redirect_from:
 ### Related Posts
 [Constant 1D Kalman Filter Is Exponential Or Cumulative Average](/ml/1D-Kalman-Is-Exponential-Or-Cumulative-Average)
 
+### Demo Source Code
+<textarea id="codeBlock" style="font-size: 10px;" rows="20" cols="80"></textarea>
 
-<script type="application/javascript">
+<script type="application/javascript" id="jsCode">
 let config = {amplitude: 5, period: 60, pid: false, kp: 0.2, kd: 0, ki: 0.5, func: steps};
 
 function draw() {
@@ -97,7 +96,7 @@ function draw() {
     let integral = correctedValues.reduce((a, b) => a + b, 0)
     let t = 0;
     function tick() {
-      let new_value = config.func(t++)
+      let new_value = config.func(t++);
       values.shift();
       values.push(new_value);
 
@@ -108,7 +107,7 @@ function draw() {
       let correction = prev_error * config.kp + derivative * config.kd + integral * config.ki;
       let correctedValue = new_value + correction;
       correctedValues.shift();
-      correctedValues.push(correctedValue)
+      correctedValues.push(correctedValue);
 
 
 
@@ -116,12 +115,12 @@ function draw() {
       ctx.fillStyle = 'grey';
       values.forEach((value, i) => {
         ctx.fillRect(i * pix_size, y_middle + 0 * pix_size, pix_size / 2, pix_size / 2);
-      })
+      });
 
       ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
       values.forEach((value, i) => {
         ctx.fillRect(i * pix_size, y_middle + value * pix_size, pix_size, pix_size);
-      })
+      });
 
       ctx.fillStyle = 'rgb(200, 0, 0)';
       correctedValues.forEach((value, i) => {
@@ -156,5 +155,8 @@ document.getElementById('func').addEventListener('change', e => {
     config.func = steps;
   }
 });
+
+let jsCode = document.createTextNode(document.getElementById('jsCode').innerText);
+document.getElementById('codeBlock').appendChild(jsCode);
 
 </script>
