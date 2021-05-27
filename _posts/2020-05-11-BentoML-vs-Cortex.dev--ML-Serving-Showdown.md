@@ -4,7 +4,7 @@ title: "BentoML vs Cortex - ML Serving Showdown"
 categories: ML
 date: 2020-05-11
 image: /images/bentoml-cortex-logos.webp
-description: To find the best model serving tool, compare open-source MLOps / AIOps platforms BentoML and Cortex.
+description: To find the best model serving tool, compare open-source MLOps platforms BentoML and Cortex.
 permalink: /:categories/:title
 video: aU95dBAspr0
 redirect_from:
