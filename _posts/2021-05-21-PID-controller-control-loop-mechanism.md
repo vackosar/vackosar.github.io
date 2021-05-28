@@ -65,7 +65,10 @@ redirect_from:
 - try changing the input function
 - Find the demo source below
 
-<input type="checkbox" id="func" />&nbsp; sine input function<br>
+<input type="checkbox" id="configFunc" />&nbsp; sine input function<br>
+Kp: <input type="number" id="configKp" /><br>
+Kd: <input type="number" id="configKd" /><br>
+Ki: <input type="number" id="configKi" /><br>
 <canvas id="canvas" width="500" height="150"></canvas>
 
 ### Extension
@@ -109,8 +112,6 @@ function draw() {
       correctedValues.shift();
       correctedValues.push(correctedValue);
 
-
-
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.fillStyle = 'grey';
       values.forEach((value, i) => {
@@ -148,12 +149,20 @@ function steps(t) {
 
 window.addEventListener("load", draw);
 
-document.getElementById('func').addEventListener('change', e => {
+document.getElementById('configFunc').addEventListener('change', e => {
   if (e.srcElement.checked) {
     config.func = sin;
   } else {
     config.func = steps;
   }
+});
+
+
+['p', 'i', 'd'].forEach(varname => {
+  document.getElementById('configK' + varname).value = config['k' + varname];
+  document.getElementById('configK' + varname).addEventListener('change', e => {
+    config['k' + varname] = e.srcElement.value;
+  });
 });
 
 let jsCode = document.createTextNode(document.getElementById('jsCode').innerText);
