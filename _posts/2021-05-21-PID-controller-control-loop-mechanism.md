@@ -160,8 +160,11 @@ document.getElementById('configFunc').addEventListener('change', e => {
 
 ['p', 'i', 'd'].forEach(varname => {
   document.getElementById('configK' + varname).value = config['k' + varname];
-  document.getElementById('configK' + varname).addEventListener('change', e => {
-    config['k' + varname] = e.srcElement.value;
+  document.getElementById('configK' + varname).addEventListener('keyup', e => {
+    let v = +e.srcElement.value;
+    if (typeof(v) === 'number') {
+      config['k' + varname] = e.srcElement.value;
+    }
   });
 });
 
