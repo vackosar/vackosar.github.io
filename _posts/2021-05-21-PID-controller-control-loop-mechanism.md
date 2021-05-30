@@ -71,14 +71,14 @@ Kd: <input type="number" id="configKd" /><br>
 Ki: <input type="number" id="configKi" /><br>
 <canvas id="canvas" width="500" height="150"></canvas>
 
-### Extension
-- [Self-tuning PID using Kalman filter](https://www.sciencedirect.com/science/article/pii/S2405896318304282)
+### [Self-tuning PID using Kalman filter](https://www.sciencedirect.com/science/article/pii/S2405896318304282)
   - [Kalman filter](/ml/1D-Kalman-Is-Exponential-Or-Cumulative-Average) uses linear relationship between measured values
   - to estimate true values and uncertainty
   - in the paper relationship between the PID parameters defines the Kalman filter tuning
 
-### Related Posts
-[Constant 1D Kalman Filter Is Exponential Or Cumulative Average](/ml/1D-Kalman-Is-Exponential-Or-Cumulative-Average)
+### Links to Related Sites
+- [HN Discussion](https://news.ycombinator.com/item?id=27318942) of this post
+- [PID Without a PhD](https://www.wescottdesign.com/articles/pid/pidWithoutAPhd.pdf) for more details on PID
 
 ### Demo Source Code
 <textarea id="codeBlock" style="font-size: 10px;" rows="20" cols="80"></textarea>
