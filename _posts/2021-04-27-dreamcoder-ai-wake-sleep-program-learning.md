@@ -38,7 +38,7 @@ Neural Networks are missing [System 2](https://en.wikipedia.org/wiki/Thinking,_F
   - learned neural search on program space
 - To:
   - given inputs-output examples
-  - produce a the best solution  
+  - produce the best solution  
     
     
 The best program:
