@@ -15,7 +15,11 @@ redirect_from:
 
 <p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/bentoml-cortex-logos.webp" alt="BentoML and Cortex logo" style="width: 200px"/></p>
 
-Updated 2021-02-21. I have mainly experience with Cortex Labs's Cortex. My view on BentoML is based on cursory overview of their documentation.
+Updated 2021-02-21.
+Do you need a simple way to train and host your machine learning AI models in the cloud?
+Here is my experience with Cortex Labs's Cortex.
+My view on BentoML is based on cursory overview of their documentation.
+Checkout also AWS App Runner option at the end.
 
 ## Common
 - both deploy and serve models via API
@@ -101,6 +105,10 @@ It has couple of extra features, that keep us using it for now.
 Video:
 {% include load_video.html %}
 
-## Discussions
+## AWS App Runner
+If you need super simple deployment of CPU only applications with auto-scaling you can consider using [AWS App Runner](https://aws.amazon.com/apprunner/).
+You just fill in your source code repository and you app gets hosted in the selected region on your domain with auto certificate renewal.
+
+## External Discussions
 - <a href="https://www.reddit.com/r/MachineLearning/comments/ghikdz/d_is_this_fair_bentoml_vs_cortex_comparison/">Reddit discussion</a>
 
