@@ -94,6 +94,7 @@ Checkout also AWS App Runner option at the end.
     </tr>
 </tbody>
 </table>
+<br>
 
 ## My Experience with Cortex
 
