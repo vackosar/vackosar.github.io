@@ -42,7 +42,7 @@ redirect_from:
 - pretrain on ~800h unlabeled data
 - fine-tune ~100h labeled data
 - SoTa in low-resource setting Libri-light
-  - by a lot: WER others ~4 vs theirs ~2.5
+  - by a lot on WER clean test 100h labeled: others ~4 vs theirs ~2.5
 - SoTa on large-resource noisy data (3.3 vs 3.4)
   - close to SoTa on clean data
 - codewords = product of 2 codebooks of 320 gives 100k
