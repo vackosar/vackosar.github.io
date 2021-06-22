@@ -34,12 +34,12 @@ redirect_from:
 - Facebook AI
 - 22 Oct 2020
 - Dataset Librispeech without labels
-- ~800h unlabeled data 
-- ~100h labeled data  
+- pretrain on ~800h unlabeled data
+- fine-tune ~100h labeled data
 - SoTa in low-resource setting Libri-light
 
 
-# Wav2vec 2.0 Architecture
+## Wav2vec 2.0 Architecture
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded lazyload"
@@ -51,19 +51,32 @@ redirect_from:
     </figcaption>
 </figure>
 
-# Wav2vec 2.0 Implementation
+## Wav2vec 2.0 Implementation
 - multi-layer convolve to raw audio
 - mask spans of the latents
 - contextualize via transformer  
 - transformed token predicts quantized input
-- contrastive learning on quantized targets
+- [contrastive learning on quantized targets](#wav2vec-20-vs-previous-version)
 - ablations showed quantization helps
 - unsupervised, and then fine-tuned on supervised
-- source code
+- fine-tuning uses [CTC loss](#connectionist-temporal-classification-ctc-loss)
+- [original source](https://github.com/pytorch/fairseq/tree/master/examples/wav2vec),
+- [HuggingFace (pretraining not possible as of 2021-06)](https://huggingface.co/transformers/model_doc/wav2vec2.html#overview)
 
-# Wav2vec 2.0 vs previous version
+## Connectionist Temporal Classification (CTC) Loss
+- between a unsegmented time series and a target sequence
+- CTCLoss sums probability of all possible alignments of input to target
+- differentiable with respect to each input node
+- [pytorch docs](https://pytorch.org/docs/master/generated/torch.nn.CTCLoss.html#torch.nn.CTCLoss)
+- Original Paper Graves https://www.cs.toronto.edu/~graves/icml_2006.pdf
+	- network predicts phonemes, blank (null prediction / silence)
+	- We do this by simply **removing all blanks** and **repeated labels** from the paths (e.g. B(a − ab−) = B(−aa − −abb) = aab). Intuitively, this corresponds to outputting a new label when the network switches from predicting no label to predicting a label, or from predicting one label to another.
+	- We use B to define condiitonal probabilty of given labelling l as the sum of the probabilities of all the paths corresponding to it:
+  - \\( p(l  \| x) = \sum_{\pi \in B^{-1}(l)} p(\pi \| x) \\)
+
+## Wav2vec 2.0 vs previous version
 - previous version vq-wav2vec
-- jointly learn quantizations
+- jointly learn quantizations instead of separately
 - contrastive loss:
   - from transformer output to the codebook
   - uses similarity
@@ -74,34 +87,8 @@ redirect_from:
   - entropy of average softmax for the batch over the codebook
 - reduced WER ~33% compared to vq-wav2vec
 
-## Connectionist Temporal Classification Loss
-What is Connectionist Temporal Classification (CTC)?
-- Calculates loss between a continuous (unsegmented) time series and a target sequence.
-- CTCLoss sums over the probability of possible alignments of input to target, producing a loss value which is differentiable with respect to each input node. https://pytorch.org/docs/master/generated/torch.nn.CTCLoss.html#torch.nn.CTCLoss
-- Original Paper Graves https://www.cs.toronto.edu/~graves/icml_2006.pdf
-	- network predicts phonemes, blank (null prediction / silence)
-	- We do this by simply **removing all blanks** and **repeated labels** from the paths (e.g. B(a − ab−) = B(−aa − −abb) = aab). Intuitively, this corresponds to outputting a new label when the network switches from predicting no label to predicting a label, or from predicting one label to another.
-	- We use B to define condiitonal probabilty of given labelling l as the sum of the probabilities of all the paths corresponding to it:
-  - \\( p(l  \| x) = \sum_{\pi \in B^{-1}(l)} p(\pi \| x) \\)
-
-# Wav2vec Results
+## Wav2vec Results - REMOVE?
 - wav2vec 2.0 is SoTa on 100 hour subset of Librispeech
 - fine-tuned on labeled data
 
 	
-## Hugging Face Wav2Vec without quantization
-- https://huggingface.co/transformers/model_doc/wav2vec2.html#overview
-- class Wav2Vec2ForCTC
-	- class Wav2Vec2Model
-		- feature_extractor
-			- conv layers applied to the audio input
-		- feature_projection - projects conv_dim into hidden_dim
-		- encoder: Wav2Vec2Encoder
-			- positional embeddings, layer norm, dropout
-			- attention layers Wav2Vec2EncoderLayer
-			- no-loss is implemeneted here
-		- no-loss is implemeneted here
-	- linear lm_head maps  to vocabulary
-	- ctc_loss for fine tuning
-- [original source](https://github.com/pytorch/fairseq/tree/master/examples/wav2vec)
-
