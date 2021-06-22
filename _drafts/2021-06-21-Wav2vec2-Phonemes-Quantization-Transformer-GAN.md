@@ -1,17 +1,14 @@
 ---
 layout: post
 title: "Wav2vec: Phonemes, Quantization, Transformer, GAN"
-date: 2021-05-21
+date: 2021-06-21
 categories: ml
-video: x6sxKHrPA2A
-image: /images/pid-controller.webp
-description: Proportional–integral–derivative controller calculates feedback to reduce the error in the next step.
+description: Unsupervised speech
 permalink: /:categories/:title
 redirect_from:
 - /ml/PID-controller
 ---
 
-{% include load_video.html %}
 {% include mathjax.html %}
 
 # There are many languages
@@ -22,6 +19,16 @@ redirect_from:
 - humans learn without labels
 - traditionally Hidden Markov Models
 
+# Quantization
+- replaces with vector from a finite set
+- the set of vectors is "codebook"
+- forward pass selects single quantization vector
+- backward pass uses Gumbal softmax over the codebook
+- product quantization:
+	- concatenation of several quantizations
+  	- then linear transformation
+
+
 # Wav2vec 2.0
 - [A Framework for Self-Supervised Learning of Speech Representations](https://arxiv.org/pdf/2006.11477.pdf)
 - Facebook AI
@@ -31,9 +38,6 @@ redirect_from:
 - ~100h labeled data  
 - SoTa in low-resource setting Libri-light
 
-# Wav2vec 2.0 vs previous version
-- learn quantizations together
-- reduce WER ~33%
 
 # Wav2vec 2.0 Architecture
 <figure class="figure">
@@ -48,16 +52,27 @@ redirect_from:
 </figure>
 
 # Wav2vec 2.0 Implementation
-- mask the speech input
+- convolve to raw audio
+- mask the latents
 - contextualize via transformer  
-- transformer output of the masked predicts its quantization vector
-- contrastive learning used
+- transformed token predicts quantized input
+- contrastive learning
+
+# Wav2vec 2.0 vs previous version
 - jointly learn quantizations
+- contrastive loss:
+  	- from transformer output to the codebook
+  	- uses similarity
+  	- distractors are other masked time steps
+  
+\\( - \log \frac{exp(sim(c_t, q_t) / \kappa }{ \sum_{q \in Q_t } \exp (sim(c_t, q) / \kappa) } \\)
+  
 - diversity loss
+  	- 
+- reduce WER ~33%
 
 # Wav2vec Results
   
-# 
 - wav2vec 2.0 outperforms the previous state of the art on the 100 hour subset while using 100 times less labeled data
 - follow up to Wav2Vec1 https://arxiv.org/abs/1904.05862
 - intro
@@ -70,7 +85,6 @@ redirect_from:
 	-  jointly learning discrete speech units with contextualized representations
 	- more effective than non-quantized targets
 	- fine-tuned on labeled data
-![[Pasted image 20210621080353.png]]
       
 ## Connectionist Temporal Classification Loss
 What is Connectionist Temporal Classification (CTC)?
