@@ -105,4 +105,3 @@ What is Connectionist Temporal Classification (CTC)?
 	- ctc_loss for fine tuning
 - [original source](https://github.com/pytorch/fairseq/tree/master/examples/wav2vec)
 
-## Original Source Code
