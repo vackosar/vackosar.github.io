@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Wav2vec: Phonemes, Quantization, Transformer, GAN"
+title: "Wav2vec: Semi and Unsupervised Speech Recognition"
 date: 2021-06-21
 categories: ml
-description: Unsupervised speech recognition
+description: Quantize phonemes from audio, transform, GAN the text.
 permalink: /:categories/:title
 redirect_from:
 - /ml/PID-controller
@@ -152,5 +152,5 @@ redirect_from:
   - ~90k params
   - kernel size 4
   - 512 dimension
-  - GAN training involves only the CNN
+  - Generative adversarial (GAN) training involves only the CNN
 - discriminator is also an CNN
