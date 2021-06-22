@@ -18,7 +18,6 @@ redirect_from:
   - ~150 language groups
 - lack labelled data
 - humans learn without labels
-- traditionally Hidden Markov Models
 
 
 # Wav2vec 2.0
@@ -30,7 +29,7 @@ redirect_from:
 - SoTa in low-resource setting Libri-light
   - by a lot on WER clean test 100h labeled: others ~4 vs theirs ~2.5
   - WER = word-level, word-count normalized edit distance
-- SoTa on large-resource noisy data (3.3 vs 3.4)
+- SoTa on high-resource noisy data (3.3 vs 3.4)
   - close to SoTa on clean data
 - uses [quantization](#quantization) as inductive bias for [phonemes](#phoneme)
 
@@ -53,7 +52,18 @@ redirect_from:
 # Wav2vec Quantization works
 - codewords = product of 2 codebooks of 320 gives 100k
 - codewords dimension of 256 (128 for both sub-codebooks)
-- TODO image of co-occurrence
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        alt="Co-occurrence between phonemes on y-axis and quantizations on x-axis"
+        data-src="/images/wav2vec-phonemes-quantization-co-occurence.png"
+        style="max-width: 500px">
+    <figcaption class="figure-caption">
+        Co-occurrence between phonemes on y-axis and quantizations on x-axis (<a href="https://arxiv.org/pdf/2006.11477.pdf">source</a>).
+        Discrete representation is coded in presence of one phoneme most of the time.
+    </figcaption>
+</figure>
 
 
 
@@ -61,11 +71,11 @@ redirect_from:
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded lazyload"
-        alt="Wav2vec 2.0 architecture"
+        alt="Wav2vec-U architecture: GAN CNN phonemes segment representations"
         data-src="/images/wav2vec-quantization.png"
         style="max-width: 500px">
     <figcaption class="figure-caption">
-        Wav2vec 2.0 architecture (<a href="https://arxiv.org/pdf/2006.11477.pdf">source</a>)
+        Wav2vec-U architecture (<a href="https://arxiv.org/pdf/2105.11084.pdf">source</a>)
     </figcaption>
 </figure>
 
@@ -97,6 +107,7 @@ redirect_from:
   - this maps many paths to one output sequence \\( \pi \in B^{-1}(l) \\)
   - probability of label \\( l \\) is sum of matching the sequences \\( \pi \in B \\)
   - \\( p(l  \| x) = \sum_{\pi \in B^{-1}(l)} p(\pi \| x) \\)
+  - efficiently calculated with dynamic programming
 
 
 ## Wav2vec 2.0 vs previous version
