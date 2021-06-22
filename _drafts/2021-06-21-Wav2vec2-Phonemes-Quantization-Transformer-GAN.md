@@ -19,6 +19,11 @@ redirect_from:
 - humans learn without labels
 - traditionally Hidden Markov Models
 
+# Phoneme
+- a unit of sound in spoken languages
+- English ~40 phonemes
+- for example in IPA: /sɪn/ (sin) and /sɪŋ/ (sing)
+
 # Quantization
 - replaces with vector from a finite set
 - the set of vectors is "codebook"
@@ -37,6 +42,7 @@ redirect_from:
 - pretrain on ~800h unlabeled data
 - fine-tune ~100h labeled data
 - SoTa in low-resource setting Libri-light
+- codewords = product of 2 codebooks of 320 gives 100k
 
 
 ## Wav2vec 2.0 Architecture
