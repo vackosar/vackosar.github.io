@@ -3,7 +3,7 @@ layout: post
 title: "Wav2vec: Phonemes, Quantization, Transformer, GAN"
 date: 2021-06-21
 categories: ml
-description: Unsupervised speech
+description: Unsupervised speech recognition
 permalink: /:categories/:title
 redirect_from:
 - /ml/PID-controller
@@ -12,28 +12,13 @@ redirect_from:
 {% include mathjax.html %}
 
 # There are many languages
+- want to convert audio to text
 - 7000 languages spoken today
   - 195 sovereign states
   - ~150 language groups
 - lack labelled data
 - humans learn without labels
 - traditionally Hidden Markov Models
-- 
-
-# Phoneme
-- a unit of sound in spoken languages
-- for example in IPA: /sɪn/ (sin) and /sɪŋ/ (sing)
-- English ~40 phonemes
-- 
-
-# Quantization
-- replaces with vector from a finite set
-- the set of vectors is "codebook"
-- forward pass selects single quantization vector
-- backward pass uses Gumbal softmax over the codebook
-- product quantization:
-  - concatenation of several quantizations
-  - then linear transformation
 
 
 # Wav2vec 2.0
@@ -44,11 +29,32 @@ redirect_from:
 - fine-tune ~100h labeled data
 - SoTa in low-resource setting Libri-light
   - by a lot on WER clean test 100h labeled: others ~4 vs theirs ~2.5
-  - WER == word level, word-count normalized edit distance
+  - WER = word-level, word-count normalized edit distance
 - SoTa on large-resource noisy data (3.3 vs 3.4)
   - close to SoTa on clean data
+- uses [quantization](#quantization) as inductive bias for [phonemes](#phoneme)
+
+
+# Phoneme
+- a unit of sound in spoken languages
+- for example in IPA: /sɪn/ (sin) and /sɪŋ/ (sing)
+- English ~40 phonemes
+
+
+# Quantization
+- replaces with vector from a finite set
+- the set of vectors is "codebook"
+- forward pass selects single quantization vector
+- backward pass uses Gumbal softmax over the codebook
+- product quantization:
+  - concatenation of several quantizations
+  - then linear transformation
+
+# Wav2vec Quantization works
 - codewords = product of 2 codebooks of 320 gives 100k
-- inner dimension of 256 (128 for both sub-codebooks)
+- codewords dimension of 256 (128 for both sub-codebooks)
+- TODO image of co-occurrence
+
 
 
 ## Wav2vec 2.0 Architecture
@@ -65,9 +71,9 @@ redirect_from:
 
 
 ## Wav2vec 2.0 Implementation
-- multi-layer convolve to raw audio
+- 7-layer convolution to raw audio
 - mask spans of the latents
-- contextualize via transformer  
+- contextualize via 12-block transformer
 - transformed token predicts quantized input
 - [contrastive learning on quantized targets](#wav2vec-20-vs-previous-version)
 - ablations showed quantization helps
@@ -113,6 +119,8 @@ redirect_from:
 - trains without any labeled data
 - inspired by other adversarial approaches
 - SoTa in unsupervised setting
+- not competitive with current supervised models
+  - perhaps with models from 2018
 
 
 ## Wav2vec-U Architecture
@@ -134,5 +142,4 @@ redirect_from:
   - kernel size 4
   - 512 dimension
   - GAN training involves only the CNN
-- Distriminator is also an CNN
-
+- discriminator is also an CNN
