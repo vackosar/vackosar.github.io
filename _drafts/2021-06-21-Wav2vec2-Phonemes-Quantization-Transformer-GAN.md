@@ -42,7 +42,8 @@ redirect_from:
 - pretrain on ~800h unlabeled data
 - fine-tune ~100h labeled data
 - SoTa in low-resource setting Libri-light
-- SoTa on large-resource noisy data (non-clean Librispeech)
+  - by a lot: WER others ~4 vs theirs ~2.5
+- SoTa on large-resource noisy data (3.3 vs 3.4)
   - close to SoTa on clean data
 - codewords = product of 2 codebooks of 320 gives 100k
 - inner dimension of 256 (128 for both sub-codebooks)
@@ -108,7 +109,7 @@ redirect_from:
 - inspired by other adversarial approaches
 - SoTa in unsupervised setting
 
-# Wav2vec-U Architecture
+## Wav2vec-U Architecture
 
 <figure class="figure">
     <img
