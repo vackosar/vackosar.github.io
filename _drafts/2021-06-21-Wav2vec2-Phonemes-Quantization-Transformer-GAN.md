@@ -59,17 +59,19 @@ redirect_from:
 - contrastive learning
 
 # Wav2vec 2.0 vs previous version
+- previous version vq-wav2vec
 - jointly learn quantizations
-- contrastive loss:
-  	- from transformer output to the codebook
-  	- uses similarity
-  	- distractors are other masked time steps
+  - contrastive loss:
+  - from transformer output to the codebook
+  - uses similarity
+  - distractors are other masked time steps
   
-\\( - \log \frac{exp(sim(c_t, q_t) / \kappa }{ \sum_{q \in Q_t } \exp (sim(c_t, q) / \kappa) } \\)
+  \\( - \log \frac{exp(sim(c_t, q_t) / \kappa }{ \sum_{q \in Q_t } \exp (sim(c_t, q) / \kappa) } \\)
   
-- diversity loss
-  	- 
-- reduce WER ~33%
+- diversity loss:
+  - encourage even use of the codebook
+  - entropy of average softmax for the batch over the codebook
+- reduced WER ~33% compared to vq-wav2vec
 
 # Wav2vec Results
   
