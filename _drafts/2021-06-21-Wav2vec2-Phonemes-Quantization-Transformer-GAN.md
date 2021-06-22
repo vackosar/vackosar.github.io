@@ -42,7 +42,10 @@ redirect_from:
 - pretrain on ~800h unlabeled data
 - fine-tune ~100h labeled data
 - SoTa in low-resource setting Libri-light
+- SoTa on large-resource noisy data (non-clean Librispeech)
+  - close to SoTa on clean data
 - codewords = product of 2 codebooks of 320 gives 100k
+- inner dimension of 256 (128 for both sub-codebooks)
 
 
 ## Wav2vec 2.0 Architecture
@@ -65,7 +68,9 @@ redirect_from:
 - [contrastive learning on quantized targets](#wav2vec-20-vs-previous-version)
 - ablations showed quantization helps
 - unsupervised, and then fine-tuned on supervised
-- fine-tuning uses [CTC loss](#connectionist-temporal-classification-ctc-loss)
+- fine-tuning
+  - add output layer to predict characters
+  - uses [CTC loss](#connectionist-temporal-classification-ctc-loss)
 - [original source](https://github.com/pytorch/fairseq/tree/master/examples/wav2vec),
 - [HuggingFace (pretraining not possible as of 2021-06)](https://huggingface.co/transformers/model_doc/wav2vec2.html#overview)
 
@@ -95,8 +100,4 @@ redirect_from:
   - entropy of average softmax for the batch over the codebook
 - reduced WER ~33% compared to vq-wav2vec
 
-## Wav2vec Results - REMOVE?
-- wav2vec 2.0 is SoTa on 100 hour subset of Librispeech
-- fine-tuned on labeled data
 
-	
