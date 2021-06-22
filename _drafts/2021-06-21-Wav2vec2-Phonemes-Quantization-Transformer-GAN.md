@@ -52,42 +52,28 @@ redirect_from:
 </figure>
 
 # Wav2vec 2.0 Implementation
-- convolve to raw audio
-- mask the latents
+- multi-layer convolve to raw audio
+- mask spans of the latents
 - contextualize via transformer  
 - transformed token predicts quantized input
-- contrastive learning
+- contrastive learning on quantized targets
+- ablations showed quantization helps
+- unsupervised, and then fine-tuned on supervised
+- source code
 
 # Wav2vec 2.0 vs previous version
 - previous version vq-wav2vec
 - jointly learn quantizations
-  - contrastive loss:
+- contrastive loss:
   - from transformer output to the codebook
   - uses similarity
   - distractors are other masked time steps
-  
-  \\( - \log \frac{exp(sim(c_t, q_t) / \kappa }{ \sum_{q \in Q_t } \exp (sim(c_t, q) / \kappa) } \\)
-  
+  - \\( - \log \frac{exp(sim(c_t, q_t) / \kappa }{ \sum_{q \in Q_t } \exp (sim(c_t, q) / \kappa) } \\)
 - diversity loss:
   - encourage even use of the codebook
   - entropy of average softmax for the batch over the codebook
 - reduced WER ~33% compared to vq-wav2vec
 
-# Wav2vec Results
-  
-- wav2vec 2.0 outperforms the previous state of the art on the 100 hour subset while using 100 times less labeled data
-- follow up to Wav2Vec1 https://arxiv.org/abs/1904.05862
-- intro
-	- raw audio
-	- multi-layer convolutional neural network
-	- masks spans of the resulting latent speech representations
-	- Transformer network to build contextualized representations
-	-  trained via a contrastive task to predict masked quantized latent
-	-  learn discrete speech units via a gumbel softmax
-	-  jointly learning discrete speech units with contextualized representations
-	- more effective than non-quantized targets
-	- fine-tuned on labeled data
-      
 ## Connectionist Temporal Classification Loss
 What is Connectionist Temporal Classification (CTC)?
 - Calculates loss between a continuous (unsegmented) time series and a target sequence.
@@ -96,9 +82,14 @@ What is Connectionist Temporal Classification (CTC)?
 	- network predicts phonemes, blank (null prediction / silence)
 	- We do this by simply **removing all blanks** and **repeated labels** from the paths (e.g. B(a − ab−) = B(−aa − −abb) = aab). Intuitively, this corresponds to outputting a new label when the network switches from predicting no label to predicting a label, or from predicting one label to another.
 	- We use B to define condiitonal probabilty of given labelling l as the sum of the probabilities of all the paths corresponding to it:
-	- p(l|x) = \sum_{\pi \in B^{-1}(l)} p(\pi|x)
+  - \\( p(l  \| x) = \sum_{\pi \in B^{-1}(l)} p(\pi \| x) \\)
+
+# Wav2vec Results
+- wav2vec 2.0 is SoTa on 100 hour subset of Librispeech
+- fine-tuned on labeled data
+
 	
-## Hugging Face model without quantization
+## Hugging Face Wav2Vec without quantization
 - https://huggingface.co/transformers/model_doc/wav2vec2.html#overview
 - class Wav2Vec2ForCTC
 	- class Wav2Vec2Model
@@ -112,6 +103,6 @@ What is Connectionist Temporal Classification (CTC)?
 		- no-loss is implemeneted here
 	- linear lm_head maps  to vocabulary
 	- ctc_loss for fine tuning
+- [original source](https://github.com/pytorch/fairseq/tree/master/examples/wav2vec)
 
 ## Original Source Code
-https://github.com/pytorch/fairseq/tree/master/examples/wav2vec
