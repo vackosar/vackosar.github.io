@@ -5,11 +5,14 @@ date: 2021-06-21
 categories: ml
 description: Quantize phonemes from audio, transform, GAN the text.
 permalink: /:categories/:title
+video: PHIKbgMJq4c
+image: /images/wav2vec-thumb.png
 redirect_from:
 - /ml/PID-controller
 ---
 
 {% include mathjax.html %}
+{% include load_video.html %}
 
 # There are many languages
 - want to convert audio to text
