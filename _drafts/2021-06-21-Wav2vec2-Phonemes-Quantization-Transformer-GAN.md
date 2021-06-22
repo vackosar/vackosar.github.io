@@ -68,10 +68,12 @@ redirect_from:
 - CTCLoss sums probability of all possible alignments of input to target
 - differentiable with respect to each input node
 - [pytorch docs](https://pytorch.org/docs/master/generated/torch.nn.CTCLoss.html#torch.nn.CTCLoss)
-- Original Paper Graves https://www.cs.toronto.edu/~graves/icml_2006.pdf
-	- network predicts phonemes, blank (null prediction / silence)
-	- We do this by simply **removing all blanks** and **repeated labels** from the paths (e.g. B(a − ab−) = B(−aa − −abb) = aab). Intuitively, this corresponds to outputting a new label when the network switches from predicting no label to predicting a label, or from predicting one label to another.
-	- We use B to define condiitonal probabilty of given labelling l as the sum of the probabilities of all the paths corresponding to it:
+- [Original CTC paper (Graves 2016)](https://www.cs.toronto.edu/~graves/icml_2006.pdf)
+  - network returns probabilities of phonemes and blanks for each position
+  - **remove all blanks** and **repeated labels** from the possible sequences
+  - for example \\( B(a − ab−) = B(−aa − −abb) = aab \\)
+  - this maps many paths to one output sequence \\( \pi \in B^{-1}(l) \\)
+  - probability of label \\( l \\) is sum of matching the sequences \\( \pi \in B \\)
   - \\( p(l  \| x) = \sum_{\pi \in B^{-1}(l)} p(\pi \| x) \\)
 
 ## Wav2vec 2.0 vs previous version
