@@ -37,7 +37,7 @@ redirect_from:
 # Wav2vec 2.0
 - [A Framework for Self-Supervised Learning of Speech Representations](https://arxiv.org/pdf/2006.11477.pdf)
 - Facebook AI
-- 22 Oct 2020
+- On Arxiv 22 Oct 2020
 - Dataset Librispeech without labels
 - pretrain on ~800h unlabeled data
 - fine-tune ~100h labeled data
@@ -100,4 +100,32 @@ redirect_from:
   - entropy of average softmax for the batch over the codebook
 - reduced WER ~33% compared to vq-wav2vec
 
+
+# Wav2vec-U
+- [Unsupervised Speech Recognition](https://arxiv.org/pdf/2105.11084.pdf)
+- On Arxiv on 24 May 2021
+- trains without any labeled data
+- inspired by other adversarial approaches
+- SoTa in unsupervised setting
+
+# Wav2vec-U Architecture
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        alt="Wav2vec-U architecture: GAN CNN phonemes segment representations"
+        data-src="/images/wav2vec-gan.png"
+        style="max-width: 500px">
+    <figcaption class="figure-caption">
+        Wav2vec-U architecture (<a href="https://arxiv.org/pdf/2105.11084.pdf">source</a>)
+    </figcaption>
+</figure>
+
+- segment representations mean pooled clusters
+- Generator is single layer CNN
+  - ~90k params
+  - kernel size 4
+  - 512 dimension
+  - GAN training involves only the CNN
+- Distriminator is also an CNN
 
