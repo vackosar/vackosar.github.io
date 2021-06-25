@@ -128,7 +128,7 @@ redirect_from:
 
 
 # Wav2vec-U
-- [Unsupervised Speech Recognition](https://arxiv.org/pdf/2105.11084.pdf)
+- ["Unsupervised Speech Recognition"](https://arxiv.org/pdf/2105.11084.pdf)
 - On Arxiv on 24 May 2021
 - trains without any labeled data
 - inspired by other adversarial approaches
