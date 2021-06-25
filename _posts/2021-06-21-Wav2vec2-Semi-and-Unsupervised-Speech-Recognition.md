@@ -24,7 +24,7 @@ redirect_from:
 
 
 # Wav2vec 2.0
-- [A Framework for Self-Supervised Learning of Speech Representations](https://arxiv.org/pdf/2006.11477.pdf)
+- ["A Framework for Self-Supervised Learning of Speech Representations"](https://arxiv.org/pdf/2006.11477.pdf)
 - Facebook AI
 - On Arxiv 22 Oct 2020
 - pretrain on ~800h unlabeled data
@@ -110,7 +110,7 @@ redirect_from:
   - this maps many paths to one output sequence \\( \pi \in B^{-1}(l) \\)
   - probability of label \\( l \\) is sum of matching the sequences \\( \pi \in B \\)
   - \\( p(l  \| x) = \sum_{\pi \in B^{-1}(l)} p(\pi \| x) \\)
-  - efficiently calculated with dynamic programming
+  - efficiently calculated with [dynamic programming (Forward–backward algorithm)](https://en.wikipedia.org/wiki/Forward%E2%80%93backward_algorithm)
 
 
 ## Wav2vec 2.0 vs previous version
@@ -124,7 +124,7 @@ redirect_from:
 - diversity loss:
   - encourage even use of the codebook
   - entropy of average softmax for the batch over the codebook
-- reduced WER ~33% compared to vq-wav2vec
+- reduced [word error rate (WER)](https://en.wikipedia.org/wiki/Word_error_rate) ~33% compared to vq-wav2vec
 
 
 # Wav2vec-U
