@@ -3,7 +3,7 @@ layout: post
 title: "Wav2vec: Semi and Unsupervised Speech Recognition"
 date: 2021-06-21
 categories: ml
-description: Quantize phonemes from audio, transform, GAN the text.
+description: Audio Word2vec - Quantize phonemes, transform, GAN the text.
 permalink: /:categories/:title
 video: PHIKbgMJq4c
 image: /images/wav2vec-thumb.png
