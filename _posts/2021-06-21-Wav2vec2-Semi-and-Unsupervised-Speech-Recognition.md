@@ -157,3 +157,17 @@ redirect_from:
   - 512 dimension
   - Generative adversarial (GAN) training involves only the CNN
 - discriminator is also an CNN
+
+
+## Wav2vec-U Training
+- amazing! no-labels needed
+- discriminator
+  - fed phonemized natural text and generator output
+  - tries to recognize which input is which
+  - generator wins over-time
+  - easier to generate correct transcription
+  - compared to hallucinating incorrect transcription
+
+
+<a href='/when-is-the-end-of-current-quarter.html'>Do you know how many days until the current quarter ends?</a>
+

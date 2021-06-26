@@ -1,7 +1,7 @@
 ---
 layout: default
 title: When is the end of this quarter?
-description: Information about the current quarter, when it will end, and how many days are left.
+description: Standard calendar quarter end date, and how many days left.
 redirect_from: 
   - independent/when-is-the-end-of-current-quarter.html
 ---
