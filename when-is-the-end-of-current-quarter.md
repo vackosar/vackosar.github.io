@@ -64,7 +64,8 @@ How many days till the end of this quarter? There are <b id="daysLeft3">45</b> d
 <br>
 <br>
 <br>
-Not enough time to train new employees? Try <a href="https://quizrecall.com">Quizrecall training automation</a>.
+Are your employees isolated and not belonging? Automate weekly video-calls for your group to: increase belonging, support idea cross-pollination, & reduce isolation!
+Try <a href="https://quizrecall.com">RandomMeets now</a>!
 
 
 <script>
