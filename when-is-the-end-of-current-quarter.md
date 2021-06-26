@@ -64,7 +64,8 @@ How many days till the end of this quarter? There are <b id="daysLeft3">45</b> d
 <br>
 <br>
 <br>
-Are your employees isolated and not belonging? Automate weekly video-calls for your group to: increase belonging, support idea cross-pollination, & reduce isolation!
+Are your colleagues and friends isolated and not belonging?
+Automate weekly one-on-one video-calls for your group to: increase belonging, support idea cross-pollination, & reduce isolation!
 Try <a href="https://quizrecall.com">RandomMeets now</a>!
 
 
