@@ -67,13 +67,13 @@ quilt3.Package.install(PKG_NAME, registry=S3_BUCKET, top_hash=HASH, dest=LOCAL_F
 
 If you already have the same version on local machine,
 Quilt doesn't seem to download the files again.
-It doesn't tell you that directly, in default logging setup.
-Only the download speed is unrealistically fast.
+It doesn't tell you that directly in default logging setup,
+but the download speed is unrealistically fast.
 
 
 ## Quilt Uses S3 Versioning
 
-When didn't have [S3 versioning enabled my bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html), Quilt versioning silently failed.
+Quilt versioning silently failed me, when I didn't have [S3 versioning enabled my bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html).
 It was downloading the latest versions of all files regardless of the hash without warning.
 I also haven't found any good documentation on this on Quilt website.
 To enable S3 versioning later, I had to clear my local cache like so:
@@ -82,6 +82,8 @@ To enable S3 versioning later, I had to clear my local cache like so:
   rm -r ~/.cache/Quilt
   rm -r ~/.local/share/Quilt/packages/.quilt 
 ```
+
+I recommend to make sure you have your S3 versioning on.
 
 ## Verdict
 
