@@ -1,16 +1,12 @@
 ---
 layout: post
-title: "Quilt - data versioning tips TODO"
+title: "Quilt Data Review & How-to"
 date: 2021-07-01
 categories: ml
-description: TODO
+description: How to version data using Quilt data for Python on AWS S3.
 permalink: /:categories/:title
-redirect_from:
-- /ml/PID-controller
 ---
 
-{% include mathjax.html %}
-{% include load_video.html %}
 
 ## Versioning Data from Python
 [Quilt](https://quiltdata.com/) allows you to version individual files as well as entire folders inside "packages" using Python methods and AWS S3 storage.
@@ -82,5 +78,5 @@ To enable S3 versioning later, I had to clear my local cache like so:
 
 ## Verdict
 
-Apart from the initial versioning hick-up, Quilt data works pretty well.
+Apart from the initial versioning hick-up, Quilt data works so far very well for me.
 Good luck and see you next time!
