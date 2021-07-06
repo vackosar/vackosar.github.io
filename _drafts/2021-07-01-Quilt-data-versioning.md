@@ -56,21 +56,31 @@ p.push(PKG_NAME)
 HASH = p.top_hash
 ```
 
-Now we can download the data referring to their specific hash version.
+Now we can download the data referring to their specific hash version via `top_hash`.
 
 ```
-quilt3.Package.install(PKG_NAME, registry=quilt_s3_bucket, top_hash=HASH, dest=result_path)
+quilt3.Package.install(PKG_NAME, registry=S3_BUCKET, top_hash=HASH, dest=LOCAL_FOLDER)
 ```
 
-# Quilt Uses S3 Versioning
+If you already have the same version on local machine,
+Quilt doesn't seem to download the files again.
+It doesn't tell you that directly, in default logging setup.
+Only the download speed is unrealistically fast.
 
-When didn't have [S3 versioning enabled my bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html), Quilt versioning silently failed for mw.
+
+## Quilt Uses S3 Versioning
+
+When didn't have [S3 versioning enabled my bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html), Quilt versioning silently failed.
 It was downloading the latest versions of all files regardless of the hash without warning.
-To enable S3 versioning later, I had clear my local cache like so:
+I also haven't found any good documentation on this on Quilt website.
+To enable S3 versioning later, I had to clear my local cache like so:
 
 ```bash
   rm -r ~/.cache/Quilt
   rm -r ~/.local/share/Quilt/packages/.quilt 
 ```
 
+## Verdict
+
+Apart from the initial versioning hick-up, Quilt data works pretty well.
 Good luck and see you next time!
