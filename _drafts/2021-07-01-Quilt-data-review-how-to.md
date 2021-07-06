@@ -8,8 +8,15 @@ permalink: /:categories/:title
 ---
 
 
+## Why Version Data
+For the same reason as we version code:
+- collaborate within team
+- be able to revert to previous state
+- review changes for e.g., debugging reasons
+
+
 ## Versioning Data from Python
-[Quilt](https://quiltdata.com/) allows you to version individual files as well as entire folders inside "packages" using Python methods and AWS S3 storage.
+[Quilt](https://quiltdata.com/) allows you to version individual files as well as entire folders as "packages" using Python methods in AWS S3 storage.
 For example, you can use it to version a single CSV dataset file, or a folder containing model files.
 The files and their versioning information lives in AWS's cloud storage S3.
 Specific package versions are references via `top_hash` parameter which represents hash of all files that are part of the package.
