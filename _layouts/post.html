@@ -13,13 +13,12 @@ layout: default
 <div class="post">
     {{ content }}
 </div>
-<p class="meta" style="text-align: right">{{ page.date | date_to_string }}</p>
-<br>
+<p class="meta" style="text-align: right"><small>{{ page.date | date_to_string }}</small></p>
 
 
 
 {% include subscribe.html %}
-<br><br><br>
+<br><br><br><br>
 
 <!--<div id="disqus_thread"></div>-->
 <!--<script defer>-->
