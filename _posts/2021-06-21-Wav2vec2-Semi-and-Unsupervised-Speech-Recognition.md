@@ -32,9 +32,21 @@ redirect_from:
 - SoTa in low-resource setting Libri-light
   - by a lot on WER clean test 100h labeled: others ~4 vs theirs ~2.5
   - WER = word-level, word-count normalized edit distance
+  - (all SoTa info is as of the preprint time)
 - SoTa on high-resource noisy data (3.3 vs 3.4)
   - close to SoTa on clean data
 - uses [quantization](#quantization) as inductive bias for [phonemes](#phoneme)
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        alt="Wav2vec 2.0 results on 100h-labels Libri-Light"
+        data-src="/images/wav2vec-results.png"
+        style="max-width: 500px">
+    <figcaption class="figure-caption">
+        Wav2vec 2.0 results on 100h-labels Libri-Light (<a href="https://arxiv.org/pdf/2006.11477.pdf">source</a>).
+    </figcaption>
+</figure>
 
 
 # Phoneme
