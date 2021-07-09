@@ -180,6 +180,10 @@ redirect_from:
   - easier to generate correct transcription
   - compared to hallucinating incorrect transcription
 
+# Discussions
+- [Hackernews](https://news.ycombinator.com/item?id=27722333)
+
 
 <a href='/when-is-the-end-of-current-quarter.html'>Do you know how many days until the current quarter ends?</a>
+
 
