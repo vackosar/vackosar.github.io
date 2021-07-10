@@ -11,6 +11,7 @@ redirect_from:
   - /ml/Quilt-data-review-how-to
 ---
 
+{% include load_video.html %}
 
 ## Why To Version Data
 For the same reason as we version code:
