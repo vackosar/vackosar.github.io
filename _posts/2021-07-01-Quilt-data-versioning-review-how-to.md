@@ -1,15 +1,18 @@
 ---
 layout: post
-title: "Quilt Data Review & How-to"
+title: "Quilt Data Versioning Review & How-to"
 date: 2021-07-01
 categories: ml
 description: How to version data using Quilt data for Python on AWS S3.
 image: /images/quilt-data-versioning.png
+video: RZxnSBw2xR0
 permalink: /:categories/:title
+redirect_from:
+  - /ml/Quilt-data-review-how-to
 ---
 
 
-## Why Version Data
+## Why To Version Data
 For the same reason as we version code:
 - collaborate within team
 - be able to revert to previous state
@@ -20,7 +23,7 @@ For the same reason as we version code:
 [Quilt](https://quiltdata.com/) allows you to version individual files as well as entire folders as "packages" using Python methods in AWS S3 storage.
 For example, you can use it to version a single CSV dataset file, or a folder containing model files.
 The files and their versioning information lives in AWS's cloud storage S3.
-Specific package versions are references via `top_hash` parameter which represents hash of all files that are part of the package.
+You then reference specific package versions by the package name and `top_hash` parameter which represents hash of all files that are part of the package.
 
 
 ## Example
