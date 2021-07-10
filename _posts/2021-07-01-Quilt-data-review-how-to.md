@@ -4,6 +4,7 @@ title: "Quilt Data Review & How-to"
 date: 2021-07-01
 categories: ml
 description: How to version data using Quilt data for Python on AWS S3.
+image: /images/quilt-data-versioning.png
 permalink: /:categories/:title
 ---
 
