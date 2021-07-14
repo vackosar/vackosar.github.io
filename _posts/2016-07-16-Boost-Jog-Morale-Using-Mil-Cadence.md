@@ -27,3 +27,7 @@ And the same time, it blanks your mind, and puts you into an active, but also me
 ### Update 2020-07-06
 
 After finding that I am not motivated enough for high-intensity interval training, which is superior after a certain fitness point, I returned to the above method today. And it works as perfect as ever.
+
+
+### Example
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IxA-_MWT_24?start=662" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
