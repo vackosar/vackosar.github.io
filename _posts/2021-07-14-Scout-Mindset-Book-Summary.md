@@ -11,11 +11,11 @@ permalink: /:categories/:title
 
 ##  The Case for Scout Mindset
 - Soldier mindset reasoning is a combat. Soldier Mindset is adopted for emotional benefits, social benefits, but it achives that only in a short term due to ripple effects of deception.
-- Scout Mindset reasoning is like a map making. Scount Mindset is used for good judgments. Scount mindset is a long term better strategy most of the time. World is also becoming more Scout mindset oriented.
+- Scout Mindset (Scm) reasoning is like a map making. Scount Mindset is used for good judgments. Scount mindset is a long term better strategy most of the time. World is also becoming more Scout mindset oriented.
 
 ##  Developing Self-Awareness
-- SM is not about intelligence. On certain questions, higher the IQ leads to higher divergence in opinions between groups on the same topic.
-- SM is about updating probability of believes, understanding counter hypotheses, and  valueing new information.
+- ScM is not about intelligence. On certain questions, higher the IQ leads to higher divergence in opinions between groups on the same topic.
+- ScM is about updating probability of believes, understanding counter hypotheses, and  valueing new information.
 
 ##  Thriving Without Illusions
 - Avoid desperation by doing the best.
@@ -26,7 +26,7 @@ permalink: /:categories/:title
 
 ## Changing Your Mind
 - Make confusion a puzzle and not a dismissal.
-- Seek people that disagree, but have more SM (non-tribal and can share common ground).
+- Seek people that disagree, but have more ScM (non-tribal and can share common ground).
 
 ## Rethinking Identity
 - Beliefs should not become identities.
