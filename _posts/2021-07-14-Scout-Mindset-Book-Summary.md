@@ -7,7 +7,9 @@ description: Short summary of a book from Julia Galef on clear thinking.
 permalink: /:categories/:title
 ---
 
-[The Scout Mindset](https://www.goodreads.com/book/show/42041926-the-scout-mindset) is book from [Julia Galef](https://juliagalef.com/).
+[The Scout Mindset](https://www.goodreads.com/book/show/42041926-the-scout-mindset) is book from [Julia Galef](https://juliagalef.com/) on topic of rationality and decision-making.
+
+
 
 ##  The Case for Scout Mindset
 - Soldier mindset reasoning is a combat. Soldier Mindset is adopted for emotional benefits, social benefits, but it achives that only in a short term due to ripple effects of deception.
@@ -34,4 +36,5 @@ permalink: /:categories/:title
 - Build Scout identity. I listen to other arguments. I don't take cheap shots. I don't make excuses.
 
 ## Continue Reading:
-- [Transfigure Stress into Energy by Drawing on Research](/productivity/Transfigure-Stress-Into-Energy)
+- [Superstition Doesn’t Count](https://commoncog.com/blog/chinese-businessmen-superstition-doesnt-count/#rationality-communities-on-the-web) on Commonplace blog criticises usefulness of epistemic rationality. I would say that this book tries to be more on the side instrumental over epistemic rationality.
+- [Transfigure Stress into Energy by Drawing on Research](/productivity/Transfigure-Stress-Into-Energy) helps me with using stress as an energy source.
