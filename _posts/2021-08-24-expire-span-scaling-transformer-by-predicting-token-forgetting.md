@@ -116,7 +116,7 @@ permalink: /:categories/:title
 
 ## Results on Enwik8
 - better performance, less memory, faster
-- LM metric bits per byte (or character) = average negative log probability of the target label in bits
+- LM metric bits per byte (or character) = average negative log base-2 probability of the target label
 
 <figure class="figure">
     <img
