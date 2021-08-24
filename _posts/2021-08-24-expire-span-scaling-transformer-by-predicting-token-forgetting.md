@@ -25,8 +25,9 @@ permalink: /:categories/:title
   - compressed tokens are appended into the span
   - fixed compression window
 - adaptively increase span e.g. [Adaptive-Span]
+  - learns to increase span when needed
   - similar to this paper
-  - except predicts span length instead of token forgetting
+  - except predicts span length instead of memory forgetting
 
 <figure class="figure">
     <img
@@ -48,7 +49,7 @@ permalink: /:categories/:title
 - rather memorize previous token results
 - because previous results saw context not available in the next step
 - this effectively increases context
-
+- positional embeddings must be relative
 
 <figure class="figure">
     <img
@@ -62,8 +63,10 @@ permalink: /:categories/:title
     </figcaption>
 </figure>
 
+
 ## Expire-Span Attention
 - Paper: [Not All Memories are Created Equal: Learning to Forget by Expiring](https://arxiv.org/abs/2105.06548)
+- Also uses memory ala Transformer-XL
 - \\( L \\) is maximum span
 - for each input (memory) \\( h_i \\) into each layer compute once scalar \\( e_i \in [0, L] \\)
 - \\( e_i \\) is called expire-span (expiration time span)
