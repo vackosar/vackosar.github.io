@@ -70,7 +70,7 @@ permalink: /:categories/:title
 - \\( L \\) is maximum span
 - for each input (memory) \\( h_i \\) into each layer compute once scalar \\( e_i \in [0, L] \\)
 - \\( e_i \\) is called expire-span (expiration time span)
-- \\( e_i = L \mathbf{softmax}(w^\intercal h_i + b) \\)
+- \\( e_i = L \mathbf{\sigma}(w^\intercal h_i + b) \\)
 - The model slides over the text with time steps.
 - \\( t \\) denotes time-step.
 - if \\( r_{ti} := e_i - (t-i) < 0 \\) then memory input is forgotten
@@ -90,5 +90,7 @@ permalink: /:categories/:title
     </figcaption>
 </figure>
 
-
-## How To
+## Expire-Span Loss
+- Penalize higher memory usage with auxiliary term
+- \\( \alpha > 0 \\) is a compression parameter
+- \\( L_{total} = L_{task} + \alpha \sum_{i \in \lbrace 1, 2, ..., L \rbrace} e_i / T \\)
