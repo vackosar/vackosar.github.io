@@ -19,15 +19,7 @@ permalink: /:categories/:title
 - approximate softmax e.g. [Performer](/ml/Performers-FAVOR+-Faster-Transformer-Attention)
 - sparsify attention e.g. [BigBird](https://arxiv.org/pdf/2007.14062.pdf)
 - sliding span (window attention) e.g. [Multi-passage BERT](https://aclanthology.org/D19-1599.pdf)
-- a combination of above e.g. [Longformer](https://arxiv.org/pdf/2004.05150.pdf)
-- [compressive transformer](https://arxiv.org/pdf/1911.05507.pdf)
-  - maps several past tokens into one
-  - compressed tokens are appended into the span
-  - fixed compression window
-- adaptively increase span e.g. [Adaptive-Span]
-  - learns to increase span when needed
-  - similar to this paper
-  - except predicts span length instead of memory forgetting
+- a combination of above + global attention e.g. [Longformer](https://arxiv.org/pdf/2004.05150.pdf)
 
 <figure class="figure">
     <img
@@ -39,7 +31,6 @@ permalink: /:categories/:title
         Longformer self-attention patterns comparison (<a href="https://arxiv.org/pdf/2004.05150.pdf">source</a>).
     </figcaption>
 </figure>
-
 
 ## Transformer-XL
 - [Transformer-XL (Extra Long): Attentive Language Models Beyond a Fixed-Length Context](https://aclanthology.org/P19-1285.pdf)
@@ -62,6 +53,30 @@ permalink: /:categories/:title
         (<a href="https://aclanthology.org/P19-1285.pdf">source</a>)
     </figcaption>
 </figure>
+
+
+## Compressive Transformer
+- [Compressive Transformers for Long-Range Sequence Modelling](https://arxiv.org/pdf/1911.05507.pdf)
+- maps several past tokens into one
+- compressed tokens are appended into the context
+- less flexibility due to fixed compression window size
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        alt="Compressive transformer"
+        data-src="/images/expire-span-compressive-transformer.png"
+        style="max-width: 500px">
+    <figcaption class="figure-caption">
+        Compressive transformer (<a href="https://arxiv.org/pdf/1911.05507.pdf">source</a>).
+    </figcaption>
+</figure>
+
+
+## Adaptive Span
+- learns to increase context length when needed
+- similar to [Expire-Span](#expire-span-attention)
+- except predicts span length instead of memory forgetting
 
 
 ## Expire-Span Attention
@@ -101,6 +116,7 @@ permalink: /:categories/:title
 
 ## Results on Enwik8
 - better performance, less memory, faster
+- LM metric bits per byte (or character) = negative log probability of the target label in bits
 
 <figure class="figure">
     <img
