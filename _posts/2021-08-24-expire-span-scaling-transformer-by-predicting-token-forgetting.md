@@ -40,6 +40,28 @@ permalink: /:categories/:title
 </figure>
 
 
+## Transformer-XL
+- [Transformer-XL (Extra Long): Attentive Language Models Beyond a Fixed-Length Context](https://aclanthology.org/P19-1285.pdf)
+- first self-attention model better than RNN on both char & word level LM
+- auto-regressive: attention is backward only not bi-directional like BERT
+- instead of recalculating tokens for each fixed span
+- rather memorize previous token results
+- because previous results saw context not available in the next step
+- this effectively increases context
+
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        alt="Transformer-XL uses memory of previously calculated results to increase span"
+        data-src="/images/transformer-xl-memory-attention.png"
+        style="max-width: 500px">
+    <figcaption class="figure-caption">
+        Transformer-XL uses memory of previously calculated results to increase span
+        (<a href="https://aclanthology.org/P19-1285.pdf">source</a>)
+    </figcaption>
+</figure>
+
 ## Expire-Span Attention
 - Paper: [Not All Memories are Created Equal: Learning to Forget by Expiring](https://arxiv.org/abs/2105.06548)
 - \\( L \\) is maximum span
@@ -66,3 +88,4 @@ permalink: /:categories/:title
 </figure>
 
 
+## How To
