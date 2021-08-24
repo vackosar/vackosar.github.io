@@ -31,6 +31,7 @@ FF camps within encoder and decoder layers as a sublayer just behind the self-at
         class="figure-img img-fluid rounded lazyload"
         alt="Transformer encoder layers. Feed-forward is a sub-layer after the self-attention."
         data-src="/images/transformer-layers-encoder.jpg"
+        style="width: 300px"
     >
     <figcaption class="figure-caption">
         Transformer encoder layers. Feed-forward is a sub-layer after the self-attention (<a href="https://papers.nips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf">source</a>)
@@ -48,7 +49,7 @@ It is a position-wise transformation that consists of linear transformation, ReL
         class="figure-img img-fluid rounded lazyload"
         alt="Transformer Feed-Forward Layer"
         data-src="/images/transformer-feed-forward.png"
-        style="max-width: 400px"
+        style="width: 400px"
 >
     <figcaption class="figure-caption">
         Transformer Feed-Forward Layer 
