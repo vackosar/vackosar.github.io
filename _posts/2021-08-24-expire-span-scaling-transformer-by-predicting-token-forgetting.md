@@ -40,19 +40,29 @@ permalink: /:categories/:title
 </figure>
 
 
-## Expire-Span
+## Expire-Span Attention
+- Paper: [Not All Memories are Created Equal: Learning to Forget by Expiring](https://arxiv.org/abs/2105.06548)
 - \\( L \\) is maximum span
-- for each input \\( h_i \\) into each layer compute once scalar \\( e_i \in [0, L] \\)
+- for each input (memory) \\( h_i \\) into each layer compute once scalar \\( e_i \in [0, L] \\)
 - \\( e_i \\) is called expire-span (expiration time span)
 - \\( e_i = L \mathbf{softmax}(w^\intercal h_i + b) \\)
+- The model slides over the text with time steps.
+- \\( t \\) denotes time-step.
+- if \\( r_{ti} := e_i - (t-i) < 0 \\) then memory input is forgotten
+- For differentiability linearly phase-out attention output:
+  - \\( m_{ti} := \max(0, \min(1, 1 + \frac{r_{ti}}{R})) \\)
+  - \\( a^\prime_{ti} := \frac{ m_{ti} a_{ti} }{ \sum_j m_{tj} a_{tj} } \\)
 
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded lazyload"
-        alt="Expire-span attention"
+        alt="Expire-span attention: For every sequence input h_i it calculates expiration time span e_i."
         data-src="/images/expire-span-attention.png"
         style="max-width: 500px">
     <figcaption class="figure-caption">
-        Expire-span attention (<a href="/TODO">source</a>).
+        Expire-span attention: For every sequence input h_i it calculates expiration time span e_i.
+        (<a href="https://arxiv.org/abs/2105.06548">source</a>)
     </figcaption>
 </figure>
+
+
