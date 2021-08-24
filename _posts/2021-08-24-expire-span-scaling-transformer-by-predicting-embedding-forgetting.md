@@ -1,17 +1,18 @@
 ---
 layout: post
-title: "Expire-Span: Scaling Transformer by Predicting Token Forgetting"
+title: "Expire-Span: Scaling Transformer by Predicting Embeddindg Forgetting"
 date: 2021-08-24
 categories: ml
-description: Reducing computational costs by differentiably dropping tokens from self-attention context.
+description: Reducing computational costs by differentiably dropping memorized embeddings from self-attention context.
 permalink: /:categories/:title
 ---
 
 {% include mathjax.html %}
 
 ## Self-Attention Complexity
-- \\( \mathbf{softmax}(\frac{QK^\intercal}{\sqrt{d}})V \\)
-- quadratic in sequence length \\( O(L^2) \\)
+- [self-attention](https://arxiv.org/abs/1706.03762) is calculated as \\( \mathbf{softmax}(\frac{QK^\intercal}{\sqrt{d}})V \\)
+- complexity is quadratic in sequence length \\( O(L^2) \\)
+- because we need to calculate L x L attention matrix
 - but context size is crucial for some tasks e.g. character-level models
 - multiple approaches already exits
 
@@ -32,12 +33,16 @@ permalink: /:categories/:title
     </figcaption>
 </figure>
 
+## Auto-Regressive
+- one-directional attention works best on LM tasks
+- all models below are auto-regressive
+
 ## Transformer-XL
 - [Transformer-XL (Extra Long): Attentive Language Models Beyond a Fixed-Length Context](https://aclanthology.org/P19-1285.pdf)
 - first self-attention model better than RNN on both char & word level LM
 - auto-regressive: attention is backward only not bi-directional like BERT
-- instead of recalculating tokens for each fixed span
-- rather memorize previous token results
+- instead of recalculating embeddings for each fixed span
+- rather memorize previous results
 - because previous results saw context not available in the next step
 - this effectively increases context
 - positional embeddings must be relative
@@ -57,8 +62,9 @@ permalink: /:categories/:title
 
 ## Compressive Transformer
 - [Compressive Transformers for Long-Range Sequence Modelling](https://arxiv.org/pdf/1911.05507.pdf)
-- maps several past tokens into one
-- compressed tokens are appended into the context
+- Modifies Transformer-XL memory by additional compression function
+- maps several past embeddings into one
+- compressed embeddings are appended into the context
 - less flexibility due to fixed compression window size
 
 <figure class="figure">
@@ -142,8 +148,6 @@ permalink: /:categories/:title
         (<a href="https://arxiv.org/abs/2105.06548">source</a>)
     </figcaption>
 </figure>
-
-
 
 
 <figure class="figure">
