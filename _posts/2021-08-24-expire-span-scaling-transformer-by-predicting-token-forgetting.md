@@ -2,7 +2,7 @@
 layout: post
 title: "Expire-Span: Scaling Transformer by Predicting Token Forgetting"
 date: 2021-08-24
-categories: book
+categories: ml
 description: Reducing computational costs by differentiably dropping tokens from self-attention context.
 permalink: /:categories/:title
 ---
