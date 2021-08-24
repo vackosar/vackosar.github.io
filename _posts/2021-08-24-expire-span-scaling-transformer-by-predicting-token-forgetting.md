@@ -16,18 +16,6 @@ permalink: /:categories/:title
 - multiple approaches already exits
 
 ## Previous Approaches
-
-<figure class="figure">
-    <img
-        class="figure-img img-fluid rounded lazyload"
-        alt="Longformer self-attention patterns comparison"
-        data-src="/images/longformer-attention-patterns.png"
-        style="max-width: 500px">
-    <figcaption class="figure-caption">
-        Longformer self-attention patterns comparison (<a href="https://arxiv.org/pdf/2004.05150.pdf">source</a>).
-    </figcaption>
-</figure>
-
 - approximate softmax e.g. [Performer](/ml/Performers-FAVOR+-Faster-Transformer-Attention)
 - sparsify attention e.g. [BigBird](https://arxiv.org/pdf/2007.14062.pdf)
 - sliding span (window attention) e.g. [Multi-passage BERT](https://aclanthology.org/D19-1599.pdf)
@@ -40,7 +28,31 @@ permalink: /:categories/:title
   - similar to this paper
   - except predicts span length instead of token forgetting
 
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        alt="Longformer self-attention patterns comparison"
+        data-src="/images/longformer-attention-patterns.png"
+        style="max-width: 500px">
+    <figcaption class="figure-caption">
+        Longformer self-attention patterns comparison (<a href="https://arxiv.org/pdf/2004.05150.pdf">source</a>).
+    </figcaption>
+</figure>
+
 
 ## Expire-Span
-![expire-span-attention](/images/expire-span-attention.png)
+- \\( L \\) is maximum span
+- for each input \\( h_i \\) into each layer compute once scalar \\( e_i \in [0, L] \\)
+- \\( e_i \\) is called expire-span (expiration time span)
+- \\( e_i = L \mathbf{softmax}(w^\intercal h_i + b) \\)
 
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        alt="Expire-span attention"
+        data-src="/images/expire-span-attention.png"
+        style="max-width: 500px">
+    <figcaption class="figure-caption">
+        Expire-span attention (<a href="/TODO">source</a>).
+    </figcaption>
+</figure>
