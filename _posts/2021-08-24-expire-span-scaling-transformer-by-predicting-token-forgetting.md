@@ -65,7 +65,8 @@ permalink: /:categories/:title
 
 
 ## Expire-Span Attention
-- Paper: [Not All Memories are Created Equal: Learning to Forget by Expiring](https://arxiv.org/abs/2105.06548)
+- Facebook AI Paper: [Not All Memories are Created Equal: Learning to Forget by Expiring](https://arxiv.org/abs/2105.06548)
+- [Source](https://github.com/facebookresearch/transformer-sequential/blob/main/models/expire_span.py)
 - uses memory ala Transformer-XL
 - has default minimal span of size \\( K \\)
 - \\( L \\) is maximum span
@@ -99,8 +100,20 @@ permalink: /:categories/:title
 
 
 ## Results on Enwik8
+- better performance, less memory, faster
 
-![expire-span-results-enwik8](../images/expire-span-results-enwik8.png)
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        alt="Expire-span, Trans-XL, Adapt-Span, Compressive transformer parameters count and bits-per-byte on Enwik8"
+        data-src="/images/expire-span-results-enwik8-summary.png"
+        style="max-width: 500px">
+    <figcaption class="figure-caption">
+        Expire-span, Trans-XL, Adapt-Span, Compressive transformer bpb, memory, speed on Enwik8
+        (<a href="https://arxiv.org/abs/2105.06548">source</a>)
+    </figcaption>
+</figure>
+
 
 <figure class="figure">
     <img
@@ -115,14 +128,17 @@ permalink: /:categories/:title
 </figure>
 
 
+
+
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded lazyload"
         alt="Expire-span, Trans-XL, Adapt-Span, Compressive transformer parameters count and bits-per-byte on Enwik8"
-        data-src="/images/expire-span-enwik8-results-2.png"
+        data-src="/images/expire-span-results-enwik8-2.png"
         style="max-width: 500px">
     <figcaption class="figure-caption">
-        Expire-span, Trans-XL, Adapt-Span, Compressive transformer parameters count and bits-per-byte on Enwik8
+        Expire-span, Trans-XL, Adapt-Span, Compressive transformer parameters count and bpb on Enwik8
         (<a href="https://arxiv.org/abs/2105.06548">source</a>)
     </figcaption>
 </figure>
+
