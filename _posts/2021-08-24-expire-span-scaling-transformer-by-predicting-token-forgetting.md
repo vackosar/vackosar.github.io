@@ -39,3 +39,8 @@ permalink: /:categories/:title
 - adaptively increase span e.g. [Adaptive-Span]
   - similar to this paper
   - except predicts span length instead of token forgetting
+
+
+## Expire-Span
+![expire-span-attention](/images/expire-span-attention.png)
+
