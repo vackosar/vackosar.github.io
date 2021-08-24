@@ -66,7 +66,8 @@ permalink: /:categories/:title
 
 ## Expire-Span Attention
 - Paper: [Not All Memories are Created Equal: Learning to Forget by Expiring](https://arxiv.org/abs/2105.06548)
-- Also uses memory ala Transformer-XL
+- uses memory ala Transformer-XL
+- has default minimal span of size \\( K \\)
 - \\( L \\) is maximum span
 - for each input (memory) \\( h_i \\) into each layer compute once scalar \\( e_i \in [0, L] \\)
 - \\( e_i \\) is called expire-span (expiration time span)
@@ -94,3 +95,34 @@ permalink: /:categories/:title
 - Penalize higher memory usage with auxiliary term
 - \\( \alpha > 0 \\) is a compression parameter
 - \\( L_{total} = L_{task} + \alpha \sum_{i \in \lbrace 1, 2, ..., L \rbrace} e_i / T \\)
+- randomly shorten memory for regularization
+
+
+## Results on Enwik8
+
+![expire-span-results-enwik8](../images/expire-span-results-enwik8.png)
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        alt="Expire-span, Trans-XL, Adapt-Span, Compressive transformer performance in bits-per-byte (bps) vs memory size on Enwik8"
+        data-src="/images/expire-span-results-enwik8.png"
+        style="max-width: 500px">
+    <figcaption class="figure-caption">
+        Expire-span, Trans-XL, Adapt-Span, Compressive transformer performance in bits-per-byte (bps) vs memory size on Enwik8
+        (<a href="https://arxiv.org/abs/2105.06548">source</a>)
+    </figcaption>
+</figure>
+
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        alt="Expire-span, Trans-XL, Adapt-Span, Compressive transformer parameters count and bits-per-byte on Enwik8"
+        data-src="/images/expire-span-enwik8-results-2.png"
+        style="max-width: 500px">
+    <figcaption class="figure-caption">
+        Expire-span, Trans-XL, Adapt-Span, Compressive transformer parameters count and bits-per-byte on Enwik8
+        (<a href="https://arxiv.org/abs/2105.06548">source</a>)
+    </figcaption>
+</figure>
