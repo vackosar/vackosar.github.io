@@ -1,18 +1,33 @@
 ---
 layout: post
-title: "Expire-Span: Scaling Transformer by Predicting Embeddindg Forgetting"
+title: "Expire-Span: Scaling Transformer by Forgetting"
 date: 2021-08-24
 categories: ml
 description: Reducing computational costs by differentiably dropping memorized embeddings from self-attention context.
 permalink: /:categories/:title
+image: /images/expire-span-thumb.png
 ---
 
 {% include mathjax.html %}
 
+## Self-Attention Simplified Recap
+- input \\( X \in \mathbf{R}^{L \times d} \\) is a sequence of embeddings of dimension \\( d \\) of length \\( L \\)
+- output \\( Y \in \mathbf{R}^{L \times d} \\) has the same shape as input
+- project \\( X \\) into 3 matrices of the same shape
+  - query \\( X^Q := W^Q X \\),
+  - key \\( X^K := W^K X \\)
+  - value \\( X^V := W^V X \\)
+- calculate "soft sequence-wise nearest neighbor search"
+  - "search" all \\( L \times L \\) combinations of sequence elements of \\( X^K \\) and \\( X^Q \\)
+  - for each sequence position \\( m \\): output more \\( X^V_{o} \\) when \\( X^K_o \\) is more similar to \\( X^Q_{m} \\)
+  - in pseudo-code: \\( Y = \mathrm{matmul}_L(\mathrm{softmax}_L(\mathrm{matmul_d}(X_q, X_k^\intercal)), X_v) \\)
+  - in equation: \\( Y = \mathbf{softmax}(QK^\intercal)V \\)
+- More details in [Attention Is All You Need paper](https://arxiv.org/abs/1706.03762)
+
+
 ## Self-Attention Complexity
-- [self-attention](https://arxiv.org/abs/1706.03762) is calculated as \\( \mathbf{softmax}(\frac{QK^\intercal}{\sqrt{d}})V \\)
 - complexity is quadratic in sequence length \\( O(L^2) \\)
-- because we need to calculate L x L attention matrix
+- because we need to calculate \\( L \times L \\) attention matrix \\( \mathbf{softmax}(\frac{QK^\intercal}{\sqrt{d}}) \\)
 - but context size is crucial for some tasks e.g. character-level models
 - multiple approaches already exits
 
