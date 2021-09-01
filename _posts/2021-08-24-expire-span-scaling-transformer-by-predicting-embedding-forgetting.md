@@ -6,8 +6,10 @@ categories: ml
 description: Reducing computational costs by differentiably dropping memorized embeddings from self-attention context.
 permalink: /:categories/:title
 image: /images/expire-span-thumb.png
+video: PybwOAL-GkI
 ---
 
+{% include load_video.html %}
 {% include mathjax.html %}
 
 ## Self-Attention Simplified Recap
