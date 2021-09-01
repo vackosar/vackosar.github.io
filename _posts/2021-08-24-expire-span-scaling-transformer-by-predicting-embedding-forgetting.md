@@ -24,12 +24,36 @@ image: /images/expire-span-thumb.png
   - in equation: \\( Y = \mathbf{softmax}(QK^\intercal)V \\)
 - More details in [Attention Is All You Need paper](https://arxiv.org/abs/1706.03762)
 
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        alt="Scaled Dot-Product Attention"
+        data-src="/images/expire-span-attention-recap.png"
+        style="max-width: 500px">
+    <figcaption class="figure-caption">
+        Scaled Dot-Product Attention (<a href="https://arxiv.org/pdf/1706.03762.pdf">source</a>).
+    </figcaption>
+</figure>
+
 
 ## Self-Attention Complexity
 - complexity is quadratic in sequence length \\( O(L^2) \\)
 - because we need to calculate \\( L \times L \\) attention matrix \\( \mathbf{softmax}(\frac{QK^\intercal}{\sqrt{d}}) \\)
 - but context size is crucial for some tasks e.g. character-level models
 - multiple approaches already exits
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        alt="Attention Complexity"
+        data-src="/images/expire-span-attention-complexity.png"
+        style="max-width: 500px">
+    <figcaption class="figure-caption">
+        Attention Complexity (<a href="https://arxiv.org/pdf/2009.14794.pdf">source</a>).
+    </figcaption>
+</figure>
+
+
 
 ## Previous Approaches
 - approximate softmax e.g. [Performer](/ml/Performers-FAVOR+-Faster-Transformer-Attention)
@@ -48,7 +72,8 @@ image: /images/expire-span-thumb.png
     </figcaption>
 </figure>
 
-## Auto-Regressive
+## Auto-Regressive Transformers
+- based on previous predict the next
 - one-directional attention works best on LM tasks
 - all models below are auto-regressive
 
