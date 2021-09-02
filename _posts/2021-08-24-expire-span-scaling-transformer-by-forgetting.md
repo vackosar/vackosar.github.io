@@ -7,6 +7,8 @@ description: Reducing computational costs by differentiably dropping memorized e
 permalink: /:categories/:title
 image: /images/expire-span-thumb.png
 video: PybwOAL-GkI
+redirect_from:
+- /ml/expire-span-scaling-transformer-by-predicting-embedding-forgetting
 ---
 
 {% include load_video.html %}
