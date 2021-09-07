@@ -11,6 +11,7 @@ redirect_from:
 <h1>{{ page.title }}</h1>
 <small>When is end of the quarter?</small>
 <small>When this quarter ends?</small>
+<small>When is quarter-end?</small>
 
 Current quarter <b id='quarterName'></b> ends on <b id='quarterEnd'>Q1</b> in <b id="daysLeft">45</b> days.
 <br>
@@ -24,7 +25,7 @@ How many days till the end of this quarter? There are <b id="daysLeft3">45</b> d
 <h3>When the quarters start and end?</h3>
 <small>See a handy table of quarter start and end dates below.</small>
 
-<table border="1" class="dataframe">
+<table class="table table-striped">
     <thead>
         <tr>
             <th scope="col">
