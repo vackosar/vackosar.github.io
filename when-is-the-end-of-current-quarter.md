@@ -9,6 +9,7 @@ redirect_from:
 [comment]: <> (permalink: /when-is-the-end-of-current-quarter)
 
 <h1>{{ page.title }}</h1>
+<small>When is end of the quarter?</small>
 <small>When this quarter ends?</small>
 
 Current quarter <b id='quarterName'></b> ends on <b id='quarterEnd'>Q1</b> in <b id="daysLeft">45</b> days.
@@ -17,7 +18,7 @@ Current quarter <b id='quarterName'></b> ends on <b id='quarterEnd'>Q1</b> in <b
 How many days left in this quarter? There are <b id="daysLeft2">45</b> days left in this quarter.<br>
 How many days till the end of this quarter? There are <b id="daysLeft3">45</b> days till the end of current quarter.<br>
 
-<p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/quarters.svg" alt="quarters visualization circular" style="max-width: 300px"/></p>
+<p><img src="/images/quarters.svg" alt="quarters visualization circular" style="max-width: 300px"/></p>
 <small>A year is divided into 4 quarters. Each has 3 months.</small>
 
 <h3>When the quarters start and end?</h3>
@@ -66,7 +67,7 @@ How many days till the end of this quarter? There are <b id="daysLeft3">45</b> d
 <br>
 Are your colleagues and friends isolated and not belonging?
 Automate weekly one-on-one video-calls for your group to: increase belonging, support idea cross-pollination, & reduce isolation!
-Try <a href="https://quizrecall.com">RandomMeets now</a>!
+Try <a href="https://RandomMeets.com">RandomMeets now</a>!
 
 
 <script>
