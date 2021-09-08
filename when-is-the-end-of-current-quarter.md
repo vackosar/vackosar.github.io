@@ -9,8 +9,8 @@ redirect_from:
 [comment]: <> (permalink: /when-is-the-end-of-current-quarter)
 
 <h1>{{ page.title }}</h1>
-<small>When is end of the quarter?</small>
-<small>When this quarter ends?</small>
+<small>When is the end of the quarter?</small>
+<small>When does this quarter ends?</small>
 <small>When is quarter-end?</small>
 
 Current quarter <b id='quarterName'>Q1</b> ends on <b id='quarterEnd'>Mar 31</b> in <b id="daysLeft">45</b> days.
@@ -23,7 +23,7 @@ What quarter are we in now? Current quarter is <b id='quarterName2'>Q1</b>.
 <p><img src="/images/quarters.svg" alt="quarters visualization circular" style="max-width: 300px"/></p>
 <small>A year is divided into 4 quarters. Each has 3 months.</small>
 
-<h3>When do quarters start and end?</h3>
+<h3>When do calendar quarters start and end?</h3>
 <small>See a handy table of quarter start and end dates below. The dates are the same for each year. Each quarter has approximately 91 days.</small>
 
 <table class="table table-striped">
