@@ -9,6 +9,7 @@ redirect_from:
 [comment]: <> (permalink: /when-is-the-end-of-current-quarter)
 
 <h1>{{ page.title }}</h1>
+<small><i>{{ page.description }}</i></small>
 <small>When is the end of the quarter?</small>
 <small>When does this quarter ends?</small>
 <small>When is quarter-end?</small>
