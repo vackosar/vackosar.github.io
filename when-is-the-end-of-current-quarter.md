@@ -13,17 +13,18 @@ redirect_from:
 <small>When this quarter ends?</small>
 <small>When is quarter-end?</small>
 
-Current quarter <b id='quarterName'></b> ends on <b id='quarterEnd'>Q1</b> in <b id="daysLeft">45</b> days.
+Current quarter <b id='quarterName'>Q1</b> ends on <b id='quarterEnd'>Mar 31</b> in <b id="daysLeft">45</b> days.
 <br>
 
 How many days left in this quarter? There are <b id="daysLeft2">45</b> days left in this quarter.<br>
 How many days till the end of this quarter? There are <b id="daysLeft3">45</b> days till the end of current quarter.<br>
+What quarter are we in now? Current quarter is <b id='quarterName2'>Q1</b>.
 
 <p><img src="/images/quarters.svg" alt="quarters visualization circular" style="max-width: 300px"/></p>
 <small>A year is divided into 4 quarters. Each has 3 months.</small>
 
-<h3>When the quarters start and end?</h3>
-<small>See a handy table of quarter start and end dates below.</small>
+<h3>When do quarters start and end?</h3>
+<small>See a handy table of quarter start and end dates below. The dates are the same for each year. Each quarter has approximately 91 days.</small>
 
 <table class="table table-striped">
     <thead>
@@ -74,6 +75,7 @@ Try <a href="https://RandomMeets.com">RandomMeets now</a>!
 <script>
 
     document.getElementById('quarterName').innerText = 'Q' + getQuarter().toString();
+    document.getElementById('quarterName2').innerText = 'Q' + getQuarter().toString();
     document.getElementById('quarterEnd').innerText = getQEnd().toLocaleDateString();
     document.getElementById('daysLeft').innerText = daysLeftInQuarter().toString();
     document.getElementById('daysLeft2').innerText = daysLeftInQuarter().toString();
