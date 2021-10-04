@@ -7,6 +7,18 @@ description: Increase efficiency training by GAN-like contrastive
 permalink: /:categories/:title
 ---
 
+
+# Why Is BERT Training Inefficient?
+- vanilla BERT training masks some inputs
+- then predicts them based on context
+- but only a few tokens can be masked this way!
+ 
+![img.png](/images/electra-masking.png)
+
+# How To Improve?
+- We 
+
+
 Increases efficiency of training BERT-like model via GAN-like discriminator task.
 - But major efficiency gain is in that the discriminator model has a task across entire sequence and not few masked tokens - corrupt or not corrupt.
 - Trains small MLM generator on maximum likelihood jointly with big BERT discriminator.
