@@ -3,7 +3,7 @@ layout: post
 title: "Electra - Cheaper BERT Training"
 date: 2021-10-04
 categories: ml
-description: Increase efficiency training by GAN-like contrastive
+description: Reducing training flops 4x by GAN-like discriminative task
 permalink: /:categories/:title
 ---
 
@@ -16,19 +16,25 @@ permalink: /:categories/:title
 ![img.png](/images/electra-masking.png)
 
 # How To Improve?
-- We 
+- [Electra paper from Stanford & Google Brain](https://openreview.net/pdf?id=r1xMH1BtvB)
+- smaller generator and big discriminator
+- train big model
+- smaller generator is jointly trained
+- the generator is trained with masked language modeling (MLM) 
+- for masked positions generator samples tokens
+- these corrupted tokens are detected by the big model
+- true or fake token?
+![img.png](/images/electra-generator-discriminator.png) 
+ 
 
-
-Increases efficiency of training BERT-like model via GAN-like discriminator task.
-- But major efficiency gain is in that the discriminator model has a task across entire sequence and not few masked tokens - corrupt or not corrupt.
 - Trains small MLM generator on maximum likelihood jointly with big BERT discriminator.
 - Weight sharing only embeddings or tokens and positional.
 - Generator has to be 2x - 4x smaller and  to gain efficiency.
 - learn ML electra https://openreview.net/pdf?id=r1xMH1BtvB
 - Follow up paper improves on this with contrastive https://scholarphi.semanticscholar.org/?file=https://arxiv.org/pdf/2106.00139v1.pdf 
-	- they report time comparison and not compute comparison with electra
+    - they report time comparison and not compute comparison with electra
 - also MC-BERT multi-choice cloze
-	- https://arxiv.org/pdf/2006.05744.pdf
+    - https://arxiv.org/pdf/2006.05744.pdf
 
 
 # TODO Ideals
