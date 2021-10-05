@@ -10,12 +10,12 @@ permalink: /:categories/:title
 
 # Why Is BERT Training Inefficient?
 - [BERT = Bidirectional Encoder Representations from Transformers](https://arxiv.org/pdf/1810.04805.pdf)
-- uses unsupervised pre-training
-- encodes text into WordPiece tokens 
-- pre-training replaces 15% inputs with "[MASK]" token,
-- then predicts original token ids based on context
-- every step costs me,
-- but only a few tokens can be masked this way!
+- Uses unsupervised pre-training
+- Encodes text into WordPiece tokens 
+- Pre-training replaces 15% inputs with "[MASK]" token,
+- Then predicts original token ids based on context
+- Every step costs me,
+- But only a few tokens can be masked this way!
 
 ![img_1.png](/images/electra-bert.png)
 
@@ -23,28 +23,25 @@ permalink: /:categories/:title
 # How To Improve?
 - How to get difficult enough task for all tokens?
 - [Electra paper @ Stanford & Google Brain @ ICRL 2020, Not SoTA](https://openreview.net/pdf?id=r1xMH1BtvB)
-- smaller generator and big discriminator
-- train big model
-- smaller generator is jointly trained
-- the generator is trained with masked language modeling (MLM) 
-- for masked positions generator samples tokens
-- these corrupted tokens are detected by the big model
-- true or fake token?
+- Smaller generator and big discriminator
+- Jointly train the generator and discriminator
+- The generator is trained with masked language modeling (MLM) 
+- For each masked position generator samples one token
+- The big model discriminates true or fake token
  
 ![img.png](/images/electra-generator-discriminator.png) 
 
 
-# Specifics
-- generator and discriminator same architecture
-- only embeddings are shared
+# The Architecture and Methods
+- Generator and discriminator same architecture
+  - only embeddings or tokens and positional are shared
   - sharing more was not helping
-- generator has 4x - 2x less layers
-- trained jointly otherwise discriminator fails to learn
-- Weight sharing only embeddings or tokens and positional.
 - Generator 2x - 4x smaller
   - bigger are not helping
   - compute more expensive
-  - perhaps otherwise too difficult task
+  - perhaps bigger too difficult task
+- Trained jointly otherwise discriminator fails to learn
+  - otherwise, the discriminator fails to learn
   
 ![img.png](../images/electra-loss.png)
 
@@ -95,7 +92,6 @@ permalink: /:categories/:title
 # Follow up - MC-BERT
 - [MC-BERT Paper](https://arxiv.org/pdf/2006.05744.pdf)
 - Contrastive instead of discriminative
-- shares
  
 ![img.png](../images/electra-mcbert.png)
 
