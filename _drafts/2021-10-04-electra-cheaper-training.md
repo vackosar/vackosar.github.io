@@ -33,10 +33,13 @@ permalink: /:categories/:title
   - sharing more was not helping
 - generator has 4x - 2x less layers
 - trained jointly otherwise discriminator fails to learn
- 
-
 - Weight sharing only embeddings or tokens and positional.
 - Generator 2x - 4x smaller
+  - bigger are not helping
+  - compute more expensive
+  - perhaps otherwise too difficult task
+
+![img.png](/images/electra-generator-size.png)
 
 
 # Results
@@ -71,13 +74,14 @@ permalink: /:categories/:title
   </tbody>
 </table>
 
-- loss over all inputs is important
-- masking causes pre-train to fine-tune mismatch
+- Speculations:
+  - loss over all inputs is important
+  - masking causes pre-train to fine-tune mismatch
 
 
-# TODO Ideals
+# TODO Ideas
+- loss
 - bit like gradient boosting
-- main idea image 
 - Follow up paper improves on this with contrastive https://scholarphi.semanticscholar.org/?file=https://arxiv.org/pdf/2106.00139v1.pdf
   - they report time comparison and not compute comparison with electra
 - also MC-BERT multi-choice cloze
