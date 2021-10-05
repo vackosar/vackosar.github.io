@@ -21,7 +21,7 @@ permalink: /:categories/:title
 
 
 # How To Improve?
-- hard targets for all tokens?
+- How to get difficult enough task for all tokens?
 - [Electra paper @ Stanford & Google Brain @ ICRL 2020, Not SoTA](https://openreview.net/pdf?id=r1xMH1BtvB)
 - smaller generator and big discriminator
 - train big model
