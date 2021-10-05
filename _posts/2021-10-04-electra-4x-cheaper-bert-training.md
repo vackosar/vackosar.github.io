@@ -10,7 +10,6 @@ image: /images/electra-thumb.png
 
 Can you afford to train and retrain your BERT? How much your BERT trainings costs? 
 Training costs is important part of machine learning production as the models get bigger.
-ELECTRA seems to be adopted in the industry for cases where pre-trained models are not available and training is very expensive.
 ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/model_doc/electra.html) including a model for pre-training.
 
 
