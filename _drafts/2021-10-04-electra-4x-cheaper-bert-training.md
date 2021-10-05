@@ -47,6 +47,8 @@ ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/m
   - perhaps bigger too difficult task
 - Trained jointly otherwise discriminator fails to learn
   - otherwise, the discriminator fails to learn
+  - generator selects harder cases
+  - but must not be too much better than discriminator
   
 ![ELECTRA model loss is sum of generator masked language modeling and discriminator loss](../images/electra-loss.png)
 
@@ -92,9 +94,9 @@ ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/m
 
 
 # Personal Speculations:
-- similar to [gradient boosting](https://en.wikipedia.org/wiki/Gradient_boosting)
-  - shared lower layers 
-
+- ELECTRA could be suitable for low-resource settings
+- Since ELECTRA converges faster
+- perhaps [less data is needed](https://arxiv.org/pdf/2010.08127.pdf)
 
 # Follow up - MC-BERT
 - [MC-BERT Paper](https://arxiv.org/pdf/2006.05744.pdf)
