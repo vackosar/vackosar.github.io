@@ -3,7 +3,7 @@ layout: post
 title: "ELECTRA - Train BERT 4x Cheaper"
 date: 2021-10-04
 categories: ml
-description: Reducing training flops 4x by GAN-like discriminative task compared to RoBERTa
+description: Reducing training flops 4x by GAN-like discriminative task compared to RoBERTa-500K
 permalink: /:categories/:title
 image: /images/electra-thumb.png
 ---
@@ -72,7 +72,7 @@ ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/m
   - maximizes likelihood of the original sequence
   - compared to all other permutations
   - next-token prediction task
-- ELECTRA-400K on par with RoBERTa with 4x less FLOPs
+- ELECTRA-400K on par with RoBERTa-500K with 4x less FLOPs
 
 ![ELECTRA model performance on GLUE benchmark](/images/electra-results-glue.png)
 
