@@ -84,8 +84,9 @@ ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/m
 
 # Source of The Improvement
 - compared alternative tasks on GLUE score
-- loss over all inputs is important
-- masking causes pre-train to fine-tune mismatch
+- results:
+  - loss over all inputs is important
+  - masking is worse than replacing tokens
 
 <table class="table">
   <thead>
