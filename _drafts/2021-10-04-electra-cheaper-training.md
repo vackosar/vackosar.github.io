@@ -60,19 +60,19 @@ permalink: /:categories/:title
 
 <table class="table">
   <thead>
-    <tr><th>Task</th><th>Description</th><th>GLUE score</th><tr>
+    <tr><th>Task</th><th>Description</th><th>GLUE score</th></tr>
+  </thead>
   <tbody>
-    <tr><td>Electra</td><td>Discriminator over all tokens</td><td>85.0</td></tr>
-    <tr><td>All-Tokens MLM</td><td>Replace MLM on all tokens + copy mechanism</td><td>84.3</td></tr>
-    <tr><td>Electra 15%</td><td>Discriminator over 15% of the tokens</td><td>82.4</td></tr>
-    <tr><td>Replace MLM</td><td>Replace masked with generated and LM</td><td>82.4</td></tr>
     <tr><td>BERT</td><td>MLM with [MASK] token</td><td>82.2</td></tr>
+    <tr><td>Replace MLM</td><td>masked tokens replaced with generated + LM</td><td>82.4</td></tr>
+    <tr><td>Electra 15%</td><td>Discriminator over 15% of the tokens</td><td>82.4</td></tr>
+    <tr><td>All-Tokens MLM</td><td>Replace MLM on all tokens + copy mechanism</td><td>84.3</td></tr>
+    <tr><td>Electra</td><td>Discriminator over all tokens</td><td>85.0</td></tr>
   </tbody>
 </table>
 
 - loss over all inputs is important
 - masking causes pre-train to fine-tune mismatch
-
 
 
 # TODO Ideals
