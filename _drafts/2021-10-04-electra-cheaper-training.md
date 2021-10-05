@@ -16,7 +16,7 @@ permalink: /:categories/:title
 ![img.png](/images/electra-masking.png)
 
 # How To Improve?
-- [Electra paper from Stanford & Google Brain](https://openreview.net/pdf?id=r1xMH1BtvB)
+- [Electra paper @ Stanford & Google Brain @ ICRL 2020](https://openreview.net/pdf?id=r1xMH1BtvB)
 - smaller generator and big discriminator
 - train big model
 - smaller generator is jointly trained
@@ -24,13 +24,26 @@ permalink: /:categories/:title
 - for masked positions generator samples tokens
 - these corrupted tokens are detected by the big model
 - true or fake token?
+ 
 ![img.png](/images/electra-generator-discriminator.png) 
+
+# Specifics
+- generator and discriminator same architecture
+- only embeddings are shared
+- generator has 4x - 2x less layers
+- trained jointly otherwise discriminator fails to learn
  
 
-- Trains small MLM generator on maximum likelihood jointly with big BERT discriminator.
 - Weight sharing only embeddings or tokens and positional.
-- Generator has to be 2x - 4x smaller and  to gain efficiency.
-- learn ML electra https://openreview.net/pdf?id=r1xMH1BtvB
+- Generator 2x - 4x smaller
+
+
+# Results
+
+![img_1.png](/images/electra-results-glue.png)
+
+![img.png](/images/electra-results-squad.png)
+
 - Follow up paper improves on this with contrastive https://scholarphi.semanticscholar.org/?file=https://arxiv.org/pdf/2106.00139v1.pdf 
     - they report time comparison and not compute comparison with electra
 - also MC-BERT multi-choice cloze
@@ -40,5 +53,4 @@ permalink: /:categories/:title
 # TODO Ideals
 - bit like gradient boosting
 - main idea image 
-
 
