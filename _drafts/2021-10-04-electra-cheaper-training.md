@@ -9,10 +9,11 @@ permalink: /:categories/:title
 
 
 # Why Is BERT Training Inefficient?
-- BERT = Bidirectional Encoder Representations from Transformers
+- [BERT = Bidirectional Encoder Representations from Transformers](https://arxiv.org/pdf/1810.04805.pdf)
 - uses unsupervised pre-training
-- vanilla BERT training masks some inputs,
-- then predicts them based on context
+- encodes text into WordPiece tokens 
+- pre-training replaces 15% inputs with "[MASK]" token,
+- then predicts original token ids based on context
 - every step costs me,
 - but only a few tokens can be masked this way!
 
