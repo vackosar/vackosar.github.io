@@ -6,7 +6,10 @@ categories: ml
 description: Reducing training flops 4x by GAN-like discriminative task compared to RoBERTa-500K
 permalink: /:categories/:title
 image: /images/electra-thumb.png
+video: svDvV97wuiE
 ---
+
+{% include load_video.html %}
 
 Can you afford to fully train and retrain your own BERT language model?
 Training costs is important part of machine learning production as the models get bigger.
