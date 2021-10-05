@@ -3,7 +3,7 @@ layout: post
 title: "Electra - Cheaper BERT Training"
 date: 2021-10-04
 categories: ml
-description: Reducing training flops 4x by GAN-like discriminative task
+description: Reducing training flops 4x by GAN-like discriminative task compared to RoBERTa
 permalink: /:categories/:title
 ---
 
@@ -30,6 +30,7 @@ permalink: /:categories/:title
 # Specifics
 - generator and discriminator same architecture
 - only embeddings are shared
+  - sharing more was not helping
 - generator has 4x - 2x less layers
 - trained jointly otherwise discriminator fails to learn
  
@@ -39,18 +40,47 @@ permalink: /:categories/:title
 
 
 # Results
+- RoBERTa = BERT with better training and dataset
+  - longer training, bigger batches, more data
+  - remove next sentence objective
+  - train on longer sequences
+  - dynamically changing masking pattern
+- XLNet = BERT with permutation language modelling
+  - maximizes likelihood of the original sequence
+  - compared to all other permutations
+  - next-token prediction task
 
 ![img_1.png](/images/electra-results-glue.png)
 
 ![img.png](/images/electra-results-squad.png)
 
-- Follow up paper improves on this with contrastive https://scholarphi.semanticscholar.org/?file=https://arxiv.org/pdf/2106.00139v1.pdf 
-    - they report time comparison and not compute comparison with electra
-- also MC-BERT multi-choice cloze
-    - https://arxiv.org/pdf/2006.05744.pdf
+
+# Source of The Improvement
+- compared alternative tasks on GLUE score
+
+<table class="table">
+  <thead>
+    <tr><th>Task</th><th>Description</th><th>GLUE score</th><tr>
+  <tbody>
+    <tr><td>Electra</td><td>Discriminator over all tokens</td><td>85.0</td></tr>
+    <tr><td>All-Tokens MLM</td><td>Replace MLM on all tokens + copy mechanism</td><td>84.3</td></tr>
+    <tr><td>Electra 15%</td><td>Discriminator over 15% of the tokens</td><td>82.4</td></tr>
+    <tr><td>Replace MLM</td><td>Replace masked with generated and LM</td><td>82.4</td></tr>
+    <tr><td>BERT</td><td>MLM with [MASK] token</td><td>82.2</td></tr>
+  </tbody>
+</table>
+
+- loss over all inputs is important
+- masking causes pre-train to fine-tune mismatch
+
 
 
 # TODO Ideals
 - bit like gradient boosting
 - main idea image 
+- Follow up paper improves on this with contrastive https://scholarphi.semanticscholar.org/?file=https://arxiv.org/pdf/2106.00139v1.pdf
+  - they report time comparison and not compute comparison with electra
+- also MC-BERT multi-choice cloze
+  - https://arxiv.org/pdf/2006.05744.pdf
+
 
