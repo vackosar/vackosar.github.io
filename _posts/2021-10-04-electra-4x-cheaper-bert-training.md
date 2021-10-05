@@ -3,7 +3,7 @@ layout: post
 title: "ELECTRA - How to Train BERT 4x Cheaper"
 date: 2021-10-04
 categories: ml
-description: Reducing training flops 4x by GAN-like discriminative task compared to RoBERTa-500K
+description: Reducing training flops 4x by GAN-like discriminative task compared to RoBERTa-500K transformer model.
 permalink: /:categories/:title
 image: /images/electra-thumb.png
 video: svDvV97wuiE
@@ -12,7 +12,7 @@ video: svDvV97wuiE
 {% include load_video.html %}
 
 Can you afford to fully train and retrain your own BERT language model?
-Training costs is important part of machine learning production as the models get bigger.
+Training costs is important part of machine learning production as transformer language models get bigger.
 ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/model_doc/electra.html) including a model for pre-training.
 
 
