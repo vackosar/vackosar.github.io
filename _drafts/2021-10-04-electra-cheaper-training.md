@@ -11,14 +11,16 @@ permalink: /:categories/:title
 # Why Is BERT Training Inefficient?
 - BERT = Bidirectional Encoder Representations from Transformers
 - uses unsupervised pre-training
-- vanilla BERT training masks some inputs
+- vanilla BERT training masks some inputs,
 - then predicts them based on context
+- every step costs me,
 - but only a few tokens can be masked this way!
 
-![img_1.png](../images/electra-bert.png)
+![img_1.png](/images/electra-bert.png)
 
 
 # How To Improve?
+- hard targets for all tokens?
 - [Electra paper @ Stanford & Google Brain @ ICRL 2020, Not SoTA](https://openreview.net/pdf?id=r1xMH1BtvB)
 - smaller generator and big discriminator
 - train big model
@@ -29,6 +31,7 @@ permalink: /:categories/:title
 - true or fake token?
  
 ![img.png](/images/electra-generator-discriminator.png) 
+
 
 # Specifics
 - generator and discriminator same architecture
@@ -41,11 +44,16 @@ permalink: /:categories/:title
   - bigger are not helping
   - compute more expensive
   - perhaps otherwise too difficult task
+  
+![img.png](../images/electra-loss.png)
 
 ![img.png](/images/electra-generator-size.png)
 
 
 # Results
+- Datasets:
+  - GLUE: natural understanding benchmark
+  - SQuAD: questions answering benchmark
 - RoBERTa = BERT with better training and dataset
   - longer training, bigger batches, more data
   - remove next sentence objective
@@ -80,14 +88,21 @@ permalink: /:categories/:title
 - Speculations:
   - loss over all inputs is important
   - masking causes pre-train to fine-tune mismatch
+  - personally: some similarity to gradient boosting
 
 
-# TODO Ideas
-- loss
-- bit like gradient boosting
-- Follow up paper improves on this with contrastive https://scholarphi.semanticscholar.org/?file=https://arxiv.org/pdf/2106.00139v1.pdf
-  - they report time comparison and not compute comparison with electra
-- also MC-BERT multi-choice cloze
-  - https://arxiv.org/pdf/2006.05744.pdf
+# Follow up - MC-BERT
+- [MC-BERT Paper](https://arxiv.org/pdf/2006.05744.pdf)
+- Contrastive instead of discriminative
+- shares
+ 
+![img.png](../images/electra-mcbert.png)
+
+
+# Follow Up - TEAMS
+- also contrastive
+- shares more weights
+
+![img.png](../images/electra-teams.png)
 
 
