@@ -9,11 +9,14 @@ permalink: /:categories/:title
 
 
 # Why Is BERT Training Inefficient?
+- BERT = Bidirectional Encoder Representations from Transformers
+- uses unsupervised pre-training
 - vanilla BERT training masks some inputs
 - then predicts them based on context
 - but only a few tokens can be masked this way!
- 
-![img.png](/images/electra-masking.png)
+
+![img_1.png](../images/electra-bert.png)
+
 
 # How To Improve?
 - [Electra paper @ Stanford & Google Brain @ ICRL 2020, Not SoTA](https://openreview.net/pdf?id=r1xMH1BtvB)
