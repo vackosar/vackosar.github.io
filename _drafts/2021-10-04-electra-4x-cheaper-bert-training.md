@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Electra - Cheaper BERT Training"
+title: "Electra - 4x Cheaper BERT Training"
 date: 2021-10-04
 categories: ml
 description: Reducing training flops 4x by GAN-like discriminative task compared to RoBERTa
