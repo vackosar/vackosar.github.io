@@ -1,11 +1,15 @@
 ---
 layout: post
-title: "Electra - 4x Cheaper BERT Training"
+title: "ELECTRA - Train BERT 4x Cheaper"
 date: 2021-10-04
 categories: ml
 description: Reducing training flops 4x by GAN-like discriminative task compared to RoBERTa
 permalink: /:categories/:title
 ---
+
+Training costs is important part of machine learning production as the models get bigger.
+ELECTRA was adopted in the industry for cases where pre-trained models are not available.
+ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/model_doc/electra.html) including model for pre-training.
 
 
 # Why Is BERT Training Inefficient?
@@ -17,7 +21,7 @@ permalink: /:categories/:title
 - Every step costs me,
 - But only a few tokens can be masked this way!
 
-![img_1.png](/images/electra-bert.png)
+![BERT model pre-training and fine-tuning](/images/electra-bert.png)
 
 
 # How To Improve?
@@ -28,8 +32,9 @@ permalink: /:categories/:title
 - The generator is trained with masked language modeling (MLM) 
 - For each masked position generator samples one token
 - The big model discriminates true or fake token
+- Not exactly GAN setup: Generator is trained for MLM
  
-![img.png](/images/electra-generator-discriminator.png) 
+![ELECTRA model generator discriminator pre-training diagram](/images/electra-generator-discriminator.png) 
 
 
 # The Architecture and Methods
@@ -43,9 +48,9 @@ permalink: /:categories/:title
 - Trained jointly otherwise discriminator fails to learn
   - otherwise, the discriminator fails to learn
   
-![img.png](../images/electra-loss.png)
+![ELECTRA model loss is sum of generator masked language modeling and discriminator loss](../images/electra-loss.png)
 
-![img.png](/images/electra-generator-size.png)
+![ELECTRA model generator size and GLUE benchmark performance](/images/electra-generator-size.png)
 
 
 # Results
@@ -62,13 +67,15 @@ permalink: /:categories/:title
   - compared to all other permutations
   - next-token prediction task
 
-![img_1.png](/images/electra-results-glue.png)
+![ELECTRA model performance on GLUE benchmark](/images/electra-results-glue.png)
 
-![img.png](/images/electra-results-squad.png)
+![ELECTRA model performance on SQuAD benchmark](/images/electra-results-squad.png)
 
 
 # Source of The Improvement
 - compared alternative tasks on GLUE score
+- loss over all inputs is important
+- masking causes pre-train to fine-tune mismatch
 
 <table class="table">
   <thead>
@@ -83,23 +90,23 @@ permalink: /:categories/:title
   </tbody>
 </table>
 
-- Speculations:
-  - loss over all inputs is important
-  - masking causes pre-train to fine-tune mismatch
-  - personally: some similarity to gradient boosting
+
+# Personal Speculations:
+- similar to [gradient boosting](https://en.wikipedia.org/wiki/Gradient_boosting)
+  - shared lower layers 
 
 
 # Follow up - MC-BERT
 - [MC-BERT Paper](https://arxiv.org/pdf/2006.05744.pdf)
 - Contrastive instead of discriminative
  
-![img.png](../images/electra-mcbert.png)
+![MC-BERT model extension of ELECTRA diagram](../images/electra-mcbert.png)
 
 
 # Follow Up - TEAMS
 - also contrastive
 - shares more weights
 
-![img.png](../images/electra-teams.png)
+![TEAMS model extension of ELECTRA diagram](../images/electra-teams.png)
 
 
