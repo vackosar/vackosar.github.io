@@ -16,7 +16,7 @@ permalink: /:categories/:title
 ![img.png](/images/electra-masking.png)
 
 # How To Improve?
-- [Electra paper @ Stanford & Google Brain @ ICRL 2020](https://openreview.net/pdf?id=r1xMH1BtvB)
+- [Electra paper @ Stanford & Google Brain @ ICRL 2020, Not SoTA](https://openreview.net/pdf?id=r1xMH1BtvB)
 - smaller generator and big discriminator
 - train big model
 - smaller generator is jointly trained
