@@ -7,9 +7,10 @@ description: Reducing training flops 4x by GAN-like discriminative task compared
 permalink: /:categories/:title
 ---
 
+Can you afford to train and retrain your BERT? How much your BERT trainings costs? 
 Training costs is important part of machine learning production as the models get bigger.
-ELECTRA was adopted in the industry for cases where pre-trained models are not available.
-ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/model_doc/electra.html) including model for pre-training.
+ELECTRA seems to be adopted in the industry for cases where pre-trained models are not available and training is very expensive.
+ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/model_doc/electra.html) including a model for pre-training.
 
 
 # Why Is BERT Training Inefficient?
@@ -26,7 +27,10 @@ ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/m
 
 # How To Improve?
 - How to get difficult enough task for all tokens?
-- [Electra paper @ Stanford & Google Brain @ ICRL 2020, Not SoTA](https://openreview.net/pdf?id=r1xMH1BtvB)
+- [ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators ](https://openreview.net/pdf?id=r1xMH1BtvB)
+  - ELECTRA = Efficiently Learning an Encoder that Classifies Token Replacements Accurately
+  - Stanford & Google Brain
+  - ICRL 2020, Not SoTA
 - Smaller generator and big discriminator
 - Jointly train the generator and discriminator
 - The generator is trained with masked language modeling (MLM) 
