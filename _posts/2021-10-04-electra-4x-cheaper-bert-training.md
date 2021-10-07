@@ -104,8 +104,10 @@ ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/m
 
 # Personal Speculations:
 - ELECTRA could be suitable for low-resource settings
-- Since ELECTRA converges faster
-- perhaps [less data is needed](https://arxiv.org/pdf/2010.08127.pdf)
+  - Since ELECTRA converges faster
+  - perhaps [less data is needed](https://arxiv.org/pdf/2010.08127.pdf)
+- ELECTRA training is like augmentation:
+  - samples again from generator on each epoch
 
 # Follow up - MC-BERT
 - [MC-BERT Paper](https://arxiv.org/pdf/2006.05744.pdf)
