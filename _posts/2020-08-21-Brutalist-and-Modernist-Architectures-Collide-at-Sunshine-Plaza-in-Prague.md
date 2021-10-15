@@ -187,5 +187,8 @@ Enjoy the journey documenting the current state of the synthesis of the stark wi
 Hopefully, the current generation won't allow the resource pie to stop growing by exploring, innovating, building, and enterprising.
 And thus, the next gallery will be from a new colony on Mars or an O'Neill cylinder in space.
 
+PS: Does anything here remind you game The Longest Journey Dreamfall Chapters by any chance?
+
 If you have a VR headset, try <a href="https://www.youtube.com/watch?v=cZWvjvv-3zw&list=PLmCqVhOYDc5yXFMzhj0wtxmoeyGO7yzwl">my VR180 channel "VR Holiday in Nature"</a>.
 
+<small>(Note that this place was likely an inspiration for game The Longest Journey Dreamfall Chapters).</small>
