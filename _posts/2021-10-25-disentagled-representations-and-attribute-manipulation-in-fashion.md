@@ -5,10 +5,11 @@ date: 2021-10-25
 categories: ml
 description: Attribute-specific subspaces for image manipulation retrieval, outfit completion, conditional similarity retrieval.
 permalink: /:categories/:title
-image: /images/disentangle-representation.png
+image: /images/disentangled-representation-thumb.png
 redirect_from:
 - /ml/disentagled-representations
 ---
+
 
 - Tasks:
   - give me the same but with different color
