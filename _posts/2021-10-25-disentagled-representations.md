@@ -10,7 +10,7 @@ image: /images/disentangle-representation.png
 
 - Tasks:
   - give me the same but with different color
-  - complementary item e.g. complete fashion outfit
+  - related tasks: complete fashion outfit may also benefit
 - What is disentangled:
   - Entangled representation = hard to preserve some attributes and change others
   - Disentangled: Attributes have separate dimensions applied to them of there is known orthogonality
