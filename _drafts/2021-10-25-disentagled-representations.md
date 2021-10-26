@@ -69,6 +69,8 @@ permalink: /:categories/:title
   - trained via triplet loss
   - Why we cannot extract these from the classifier - not the same dimension or reprez?
 
+![Attribute-Driven Disentangled Encoder (ADDE)](../images/disentangle-architecture.png)
+
 ## Loss
 - Label triplet loss
   - representations with same labels to have same vectors
@@ -104,5 +106,6 @@ permalink: /:categories/:title
 
 ### Complete Outfit
 - backbone network Resnet18
+- ranking loss
 
 ![ADDE outfit complementary retrieval](../images/disentangle-outfit-retrieval.png)
