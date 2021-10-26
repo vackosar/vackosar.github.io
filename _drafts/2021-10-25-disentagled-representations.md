@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Disentangled Representations"
+title: "Disentangled Representations and Attribute Manipulation in Fashion"
 date: 2021-10-25
 categories: ml
-description: TDO
+description: Image manipulation retrieval, outfit recommendation
 permalink: /:categories/:title
 ---
 
-# Disentangled Representations
 - Tasks:
   - give me the same but with different color
   - complementary item e.g. complete fashion outfit
@@ -69,7 +68,7 @@ permalink: /:categories/:title
   - e.g. each color has one prototype embeddings
   - stored in a matrix that forces small non-block diagonal elements
   - trained via triplet loss
-  - Why we cannot extract these from the classifier - not the same dimension or reprez?
+  - ? Why we cannot extract these from the classifier - not the same dimension or reprez?
 
 ![Attribute-Driven Disentangled Encoder (ADDE)](../images/disentangle-architecture.png)
 
@@ -113,7 +112,7 @@ permalink: /:categories/:title
 ![Attribute manipulation top-k retrival on Shopping100k and DeepFashion](../images/disentangle-retrival-results.png)
 
 
-### Complete Outfit
+### Outfit Completion
 - backbone network Resnet18
 - previous Amazon paper 2020 [Fashion Outfit Complementary Item Retrieval](https://openaccess.thecvf.com/content_CVPR_2020/papers/Lin_Fashion_Outfit_Complementary_Item_Retrieval_CVPR_2020_paper.pdf)
   - introduced CSA-Net with similar architecture without disentanglement
