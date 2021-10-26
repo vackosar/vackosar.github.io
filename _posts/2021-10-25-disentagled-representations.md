@@ -42,6 +42,13 @@ image: /images/disentangle-representation.png
  
 ![Shape3D dataset for disentagling factors: floor color, wall color, object color, object size, camera angle](../images/disentangled-shape3d.png)
 
+# Multi-Task Learning
+- [In general sometimes multi-task learning leads to better performance](https://ai.googleblog.com/2021/10/deciding-which-tasks-should-train.html)
+  - Google paper suggest a method for grouping tasks
+  - usually the tasks have to be related
+  - in this case outfit recommendation results improved
+  - but not sure if comparable
+
 # Supervised-Disentangling: Attribute-driven Disentangled Representations
 
 - Amazon 2021 paper [Learning Attribute-driven Disentangled Representations for Interactive Fashion Retrieval](https://openaccess.thecvf.com/content/ICCV2021/papers/Hou_Learning_Attribute-Driven_Disentangled_Representations_for_Interactive_Fashion_Retrieval_ICCV_2021_paper.pdf)
@@ -52,11 +59,6 @@ image: /images/disentangle-representation.png
   - multi-task training
   - store prototype embeddings of each attribute value in memory module
   - prototypes can then be swapped for items attribute vector
-- [In general sometimes multi-task learning leads to better performance](https://ai.googleblog.com/2021/10/deciding-which-tasks-should-train.html)
-  - Google paper suggest a method for grouping tasks
-  - usually the tasks have to be related
-  - in this case outfit recommendation results improved
-  - but not sure if comparable
 
 ![disentangled representation using attribute-specific encoder](../images/disentangled-encoder.png)
 
