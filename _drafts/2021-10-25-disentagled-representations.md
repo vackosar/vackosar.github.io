@@ -36,8 +36,38 @@ permalink: /:categories/:title
 - Amazon 2021 paper [Learning Attribute-driven Disentangled Representations for Interactive Fashion Retrieval](https://openaccess.thecvf.com/content/ICCV2021/papers/Hou_Learning_Attribute-Driven_Disentangled_Representations_for_Interactive_Fashion_Retrieval_ICCV_2021_paper.pdf)
 - SoTA on the fashion tasks
 - supervised disentangled represantions learning
+  - all attribute values are of fixed count
   - multi-task training
   - store prototype embeddings of each attribute value in memory module
   - prototypes can then be swapped for items attribute vector
 
 ![disentangled representation using attribute-specific encoder](../images/disentangled-encoder.png)
+
+
+## Architecture
+
+- image representation (?which)
+- per attribute:
+  - fully-connected two-layer network
+  - map into attributed-specific subspace
+  - producing image's attribute embedding
+- together it is disentangled representation
+- called Attribute-Driven Disentangled Encoder (ADDE)
+- memory block
+  - stores prototype embeddings for all values of the attributes
+  - e.g. each color has one prototype embeddings
+  - stored in a matrix that forces small non-block diagonal elements
+  - trained via triplet loss
+    - randomly generate manipulation vectors to other attribute values
+  - Why we cannot extract these from the classifier - not the same dimension or reprez?
+
+## Loss
+- Memory block loss
+- Compositional triplet loss
+- Consistency loss
+- Label triplet loss
+
+
+## Experiments and Results
+- 
+
