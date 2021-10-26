@@ -8,11 +8,10 @@ permalink: /:categories/:title
 ---
 
 # Why Disentangled
-- attribute manipulation, conditional similirity e.g. the same with different change color
+- give me the same but with different color
 - complementary item e.g. complete fashion outfit
 
 # What is disentangled
-- Goal change 
 - Entangled representation = hard to to preserve some attributes and change others
 - Disentangled: Attibutes have separate dimensions applied to them of there is known orthogonality
 
@@ -28,6 +27,8 @@ permalink: /:categories/:title
 - Flow-Based models e.g. [Glow](/ml/openais-glow-flow-based-model-teardown)
   - ~VAE where decoder = reverse of encoder
   - reversibly encodes into independent gaussian factors
+
+![img.png](../images/disentangle-smiling.png)
 
 # Unsupervised Disentangled Representations
 - Google 2019 paper [Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations](https://ai.googleblog.com/2019/04/evaluating-unsupervised-learning-of.html)
