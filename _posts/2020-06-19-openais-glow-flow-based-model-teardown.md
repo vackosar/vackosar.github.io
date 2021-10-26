@@ -37,7 +37,7 @@ Advantages of flow-based models are:
 
 ### The Likelihood Goal
 
-The goal is to find an invertible function \\( F \\), which under assumption of multi-variate normal distribution with isotropic unit variance
+The goal is to find an invertible function \\( F \\), which under assumption of multi-variate normal (gaussian) distribution with isotropic unit variance (Independent and Identically Distributed)
 on the latent space gives maximum likelihood. The change of variables of probability density function formula means that above is equivalent to minimizing below.
 
 \\( -\sum_x( \log(P_X(x))) \\) \\( = - \sum_x  \log(p_Z (F(x))) \\) \\( + \log \mid \det(\frac{\partial F(x)}{\partial x} ) \mid \\),
@@ -58,7 +58,7 @@ The invertible function \\( F \\) composed of \\( K \\) trainable non-linear inv
 
 Let \\( I_1 \cup I_2 = \\{1, 2, 3, ..., d\\} \\) and \\( I_1 \cap I_2 = \\{\\} \\) and usually \\( \mid I_1 \mid = \mid I_2 \mid = d / 2 \\).
 
-Then transformation called _affine coupling_ below can be inverted. Additionally inverse calculation costs as much as forward.
+Then transformation called _affine coupling_ below can be inverted. Additionally, inverse calculation costs as much as forward.
 
 \\( y_{I_1} = x_{I_1} \\)
 
