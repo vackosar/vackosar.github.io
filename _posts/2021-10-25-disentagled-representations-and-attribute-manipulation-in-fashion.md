@@ -3,9 +3,11 @@ layout: post
 title: "Disentangled Representations and Attribute Manipulation in Fashion"
 date: 2021-10-25
 categories: ml
-description: Image manipulation retrieval, outfit recommendation
+description: Attribute-specific subspaces for image manipulation retrieval, outfit completion, conditional similarity retrieval.
 permalink: /:categories/:title
 image: /images/disentangle-representation.png
+redirect_from:
+- /ml/disentagled-representations
 ---
 
 - Tasks:
