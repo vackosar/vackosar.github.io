@@ -7,13 +7,15 @@ description: TDO
 permalink: /:categories/:title
 ---
 
-# Why Disentangled
-- give me the same but with different color
-- complementary item e.g. complete fashion outfit
+# Disentangled Representations
+- Tasks:
+  - give me the same but with different color
+  - complementary item e.g. complete fashion outfit
+- What is disentangled:
+  - Entangled representation = hard to preserve some attributes and change others
+  - Disentangled: Attributes have separate dimensions applied to them of there is known orthogonality
 
-# What is disentangled
-- Entangled representation = hard to to preserve some attributes and change others
-- Disentangled: Attibutes have separate dimensions applied to them of there is known orthogonality
+![img.png](../images/disentangle-representation.png)
 
 # Unsupervised Disentangling Methods
 - Variational Auto-encoders
