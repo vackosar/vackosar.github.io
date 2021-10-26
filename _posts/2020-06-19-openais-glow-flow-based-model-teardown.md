@@ -88,8 +88,8 @@ But how do we go from an image to required number of channels for above to make 
 </figure>
 
 ## Attribute Manipulation
-On the latent space it is possible to identify directions correpoding to change of certain attributes.
-For example there is a direction into which face could be modified to be more smiling.
+On the latent space it is possible to identify directions correspoding to change of certain semantic attributes.
+For example there is a direction into which face could be modified to smile more.
 This is an example of [a disentangled representation](/ml/disentagled-representations).
 
 <figure class="figure">
