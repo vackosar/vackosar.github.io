@@ -86,4 +86,7 @@ permalink: /:categories/:title
 
 ### Attribute Manipulation Retrieval
 
+
 ![Attribute manipulation top-k retrival on Shopping100k and DeepFashion](../images/disentangle-retrival-results.png)
+
+![Attribute manipulation retrieval examples on Shopping100k and DeepFashion](../images/disentangle-retrival-examples.png)
