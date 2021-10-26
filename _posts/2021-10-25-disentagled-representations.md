@@ -45,9 +45,10 @@ image: /images/disentangle-representation.png
 # Supervised-Disentangling: Attribute-driven Disentangled Representations
 
 - Amazon 2021 paper [Learning Attribute-driven Disentangled Representations for Interactive Fashion Retrieval](https://openaccess.thecvf.com/content/ICCV2021/papers/Hou_Learning_Attribute-Driven_Disentangled_Representations_for_Interactive_Fashion_Retrieval_ICCV_2021_paper.pdf)
-- SoTA on the fashion tasks
+- SoTA on the fashion tasks (Attribute manipulation retrieval, Conditional similarity retrieval, Outfit completion)
 - supervised disentangled represantions learning
   - all attribute values are of fixed count
+  - split embedding into sections corresponding to attributes
   - multi-task training
   - store prototype embeddings of each attribute value in memory module
   - prototypes can then be swapped for items attribute vector
