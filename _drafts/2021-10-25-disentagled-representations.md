@@ -115,6 +115,14 @@ permalink: /:categories/:title
 
 ### Complete Outfit
 - backbone network Resnet18
-- ranking loss
+- previous Amazon paper 2020 [Fashion Outfit Complementary Item Retrieval](https://openaccess.thecvf.com/content_CVPR_2020/papers/Lin_Fashion_Outfit_Complementary_Item_Retrieval_CVPR_2020_paper.pdf)
+  - introduced CSA-Net with similar architecture without disentanglement
 
 ![ADDE outfit complementary retrieval](../images/disentangle-outfit-retrieval.png)
+
+#### Outfit Ranking Loss
+  - operates on entire outfit
+  - calculates average distance from all members in the outfit to the proposed addition
+  - input these distances into a triplet loss
+
+![Outfit Ranking Loss](../images/disentange-outfit-ranking-loss.png)
