@@ -26,7 +26,7 @@ image: /images/disentangle-representation.png
     - similar in high level factors are encoded close to each other
   - methods: mutual information between latents, total correlation e.g. unsupervised [Relevance factors VAE](https://arxiv.org/pdf/1902.01568v1.pdf)
 - GANs (has encoder and decoder) e.g. [DNA-GAN: Learning Disentangled Representations from Multi-Attribute Images](https://arxiv.org/pdf/1711.05415.pdf),
-- Flow-Based models e.g. [Glow](/ml/openais-glow-flow-based-model-teardown)
+- Flow-Based models e.g. [OpenAI's Glow - Flow-Based Model Teardown](/ml/openais-glow-flow-based-model-teardown)
   - ~VAE where decoder = reverse of encoder
   - reversibly encodes into independent gaussian factors
 
