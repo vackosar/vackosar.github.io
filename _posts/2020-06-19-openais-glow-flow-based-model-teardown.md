@@ -87,6 +87,18 @@ But how do we go from an image to required number of channels for above to make 
     <figcaption class="figure-caption">Skip-one-pixel - squeezing operation image from <a href="https://arxiv.org/pdf/1605.08803.pdf">Real NVP paper</a></figcaption>
 </figure>
 
+## Attribute Manipulation
+On the latent space it is possible to identify directions correpoding to change of certain attributes.
+For example there is a direction into which face could be modified to be more smiling.
+This is an example of [a disentangled representation](/ml/disentagled-representations).
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/disentangle-smiling.png"
+        alt="Glow model smiling vector"/>
+    <figcaption class="figure-caption">Glow model smiling vector (<a href="https://arxiv.org/pdf/1605.08803.pdf">source</a>)</figcaption>
+</figure>
 
 ## Human Visual Illusions
 Ability to calculate the exact likelihood has surprising application in the study of human experience.

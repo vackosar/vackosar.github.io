@@ -30,7 +30,7 @@ image: /images/disentangle-representation.png
   - ~VAE where decoder = reverse of encoder
   - reversibly encodes into independent gaussian factors
 
-![img.png](../images/disentangle-smiling.png)
+![Glow model smiling vector](../images/disentangle-smiling.png)
 
 # Unsupervised Disentangled Representations
 - Google 2019 paper [Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations](https://ai.googleblog.com/2019/04/evaluating-unsupervised-learning-of.html)
