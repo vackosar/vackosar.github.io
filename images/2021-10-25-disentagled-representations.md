@@ -53,6 +53,7 @@ image: /images/disentangle-representation.png
   - prototypes can then be swapped for items attribute vector
 - [In general sometimes multi-task learning leads to better performance](https://ai.googleblog.com/2021/10/deciding-which-tasks-should-train.html)
   - Google paper suggest a method for grouping tasks
+  - usually the tasks have to be related
   - in this case outfit recommendation results improved
   - but not sure if comparable
 
