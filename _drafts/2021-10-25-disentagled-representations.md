@@ -85,8 +85,23 @@ permalink: /:categories/:title
 ## Experiments and Results
 
 ### Attribute Manipulation Retrieval
-
+- Previous approaches
+  - AMNet: [Memory-Augmented Attribute Manipulation Networks for Interactive Fashion Search](https://openaccess.thecvf.com/content_cvpr_2017/papers/Zhao_Memory-Augmented_Attribute_Manipulation_CVPR_2017_paper.pdf)
+    - no disentangling
+    - target attribute value is represented by a prototype vector 
+    - specialized NN layer fuses the prototype vector attribute into the representation
+  - FSN: [Learning attribute representations with localization for flexible fashion search](https://openaccess.thecvf.com/content_cvpr_2018/papers/Ak_Learning_Attribute_Representations_CVPR_2018_paper.pdf)
+    - localizes regions of attributes within the image
+    - using attribute activation maps
+    - then weighted-pooling on earlier convolution layer (5 instead of 7)
+- AlexNet backbone network for comparable results
+- Loss function ablations included
 
 ![Attribute manipulation top-k retrival on Shopping100k and DeepFashion](../images/disentangle-retrival-results.png)
 
 ![Attribute manipulation retrieval examples on Shopping100k and DeepFashion](../images/disentangle-retrival-examples.png)
+
+### Complete Outfit
+- backbone network Resnet18
+
+![ADDE outfit complementary retrieval](../images/disentangle-outfit-retrieval.png)
