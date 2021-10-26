@@ -17,9 +17,17 @@ permalink: /:categories/:title
 - Disentangled: Attibutes have separate dimensions applied to them of there is known orthogonality
 
 # Unsupervised Disentangling Methods
+- Variational Auto-encoders
+  - speculation:
+    - some disentanglement thanks to the architecture
+    - compressing into low-dimension and small-space
+    - high-level factors only
+    - similar in high level factors are encoded close to each other
+  - methods: mutual information between latents, total correlation e.g. unsupervised [Relevance factors VAE](https://arxiv.org/pdf/1902.01568v1.pdf)
 - GANs (has encoder and decoder) e.g. [DNA-GAN: Learning Disentangled Representations from Multi-Attribute Images](https://arxiv.org/pdf/1711.05415.pdf),
-- Auto-encoders (mutual information between latents, total correlation) e.g. unsupervised [Relevance factors VAE](https://arxiv.org/pdf/1902.01568v1.pdf)
-- Flow-Based models e.g. [Glow](/ml/openais-glow-flow-based-model-teardown) (1-1 encodes into independent gaussian factors)
+- Flow-Based models e.g. [Glow](/ml/openais-glow-flow-based-model-teardown)
+  - ~VAE where decoder = reverse of encoder
+  - reversibly encodes into independent gaussian factors
 
 # Unsupervised Disentangled Representations
 - Google 2019 paper [Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations](https://ai.googleblog.com/2019/04/evaluating-unsupervised-learning-of.html)
@@ -58,16 +66,24 @@ permalink: /:categories/:title
   - e.g. each color has one prototype embeddings
   - stored in a matrix that forces small non-block diagonal elements
   - trained via triplet loss
-    - randomly generate manipulation vectors to other attribute values
   - Why we cannot extract these from the classifier - not the same dimension or reprez?
 
 ## Loss
-- Memory block loss
-- Compositional triplet loss
-- Consistency loss
 - Label triplet loss
+  - representations with same labels to have same vectors
+- Consistency triplet loss
+  - attribute representations of an image close to corresponding memory vectors
+  - align prototype embeddings with representations
+- Compositional triplet loss
+  - generate change in attributes
+  - create manipulation vector using prototype vectors
+  - sample positive and negative samples based on labels
+- Memory block loss
+  - off-block-diagonal to zero
 
 
 ## Experiments and Results
-- 
 
+### Attribute Manipulation Retrieval
+
+![Attribute manipulation top-k retrival on Shopping100k and DeepFashion](../images/disentangle-retrival-results.png)
