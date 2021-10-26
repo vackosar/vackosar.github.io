@@ -57,7 +57,7 @@ permalink: /:categories/:title
 
 ## Architecture
 
-- image representation (?which)
+- image representation (AlexNet, Resnet18)
 - per attribute:
   - fully-connected two-layer network
   - map into attributed-specific subspace
@@ -89,7 +89,15 @@ permalink: /:categories/:title
 
 ## Experiments and Results
 
+### Datasets
+- Shopping100k: 100k samples, 12 attributes
+- DeepFashion: 100k samples, 3 attributes: category, texture, shape
+
+![Attribute manipulation retrieval examples on Shopping100k and DeepFashion](../images/disentangle-retrival-examples.png)
+
+
 ### Attribute Manipulation Retrieval
+
 - Previous approaches
   - AMNet: [Memory-Augmented Attribute Manipulation Networks for Interactive Fashion Search](https://openaccess.thecvf.com/content_cvpr_2017/papers/Zhao_Memory-Augmented_Attribute_Manipulation_CVPR_2017_paper.pdf)
     - no disentangling
@@ -104,7 +112,6 @@ permalink: /:categories/:title
 
 ![Attribute manipulation top-k retrival on Shopping100k and DeepFashion](../images/disentangle-retrival-results.png)
 
-![Attribute manipulation retrieval examples on Shopping100k and DeepFashion](../images/disentangle-retrival-examples.png)
 
 ### Complete Outfit
 - backbone network Resnet18
