@@ -5,6 +5,7 @@ date: 2021-10-25
 categories: ml
 description: Image manipulation retrieval, outfit recommendation
 permalink: /:categories/:title
+image: /images/disentangle-representation.png
 ---
 
 - Tasks:
@@ -14,7 +15,7 @@ permalink: /:categories/:title
   - Entangled representation = hard to preserve some attributes and change others
   - Disentangled: Attributes have separate dimensions applied to them of there is known orthogonality
 
-![img.png](../images/disentangle-representation.png)
+![img.png](disentangle-representation.png)
 
 # Unsupervised Disentangling Methods
 - Variational Auto-encoders
@@ -29,7 +30,7 @@ permalink: /:categories/:title
   - ~VAE where decoder = reverse of encoder
   - reversibly encodes into independent gaussian factors
 
-![img.png](../images/disentangle-smiling.png)
+![img.png](disentangle-smiling.png)
 
 # Unsupervised Disentangled Representations
 - Google 2019 paper [Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations](https://ai.googleblog.com/2019/04/evaluating-unsupervised-learning-of.html)
@@ -39,7 +40,7 @@ permalink: /:categories/:title
 - theorem assumptions about the data have to be incorporated into the model (inductive bias)
 - so each unsupervised model needs to be at least specialized to some type of data
  
-![Shape3D dataset for disentagling factors: floor color, wall color, object color, object size, camera angle](../images/disentangled-shape3d.png)
+![Shape3D dataset for disentagling factors: floor color, wall color, object color, object size, camera angle](disentangled-shape3d.png)
 
 # Attribute-driven Disentangled Representations
 
@@ -51,7 +52,7 @@ permalink: /:categories/:title
   - store prototype embeddings of each attribute value in memory module
   - prototypes can then be swapped for items attribute vector
 
-![disentangled representation using attribute-specific encoder](../images/disentangled-encoder.png)
+![disentangled representation using attribute-specific encoder](disentangled-encoder.png)
 
 
 ## Architecture
@@ -70,7 +71,7 @@ permalink: /:categories/:title
   - trained via triplet loss
   - ? Why we cannot extract these from the classifier - not the same dimension or reprez?
 
-![Attribute-Driven Disentangled Encoder (ADDE)](../images/disentangle-architecture.png)
+![Attribute-Driven Disentangled Encoder (ADDE)](disentangle-architecture.png)
 
 ## Loss
 - Label triplet loss
@@ -92,7 +93,7 @@ permalink: /:categories/:title
 - Shopping100k: 100k samples, 12 attributes
 - DeepFashion: 100k samples, 3 attributes: category, texture, shape
 
-![Attribute manipulation retrieval examples on Shopping100k and DeepFashion](../images/disentangle-retrival-examples.png)
+![Attribute manipulation retrieval examples on Shopping100k and DeepFashion](disentangle-retrival-examples.png)
 
 
 ### Attribute Manipulation Retrieval
@@ -109,7 +110,7 @@ permalink: /:categories/:title
 - AlexNet backbone network for comparable results
 - Loss function ablations included
 
-![Attribute manipulation top-k retrival on Shopping100k and DeepFashion](../images/disentangle-retrival-results.png)
+![Attribute manipulation top-k retrival on Shopping100k and DeepFashion](disentangle-retrival-results.png)
 
 
 ### Outfit Completion
@@ -117,11 +118,11 @@ permalink: /:categories/:title
 - previous Amazon paper 2020 [Fashion Outfit Complementary Item Retrieval](https://openaccess.thecvf.com/content_CVPR_2020/papers/Lin_Fashion_Outfit_Complementary_Item_Retrieval_CVPR_2020_paper.pdf)
   - introduced CSA-Net with similar architecture without disentanglement
 
-![ADDE outfit complementary retrieval](../images/disentangle-outfit-retrieval.png)
+![ADDE outfit complementary retrieval](disentangle-outfit-retrieval.png)
 
 #### Outfit Ranking Loss
   - operates on entire outfit
   - calculates average distance from all members in the outfit to the proposed addition
   - input these distances into a triplet loss
 
-![Outfit Ranking Loss](../images/disentange-outfit-ranking-loss.png)
+![Outfit Ranking Loss](disentange-outfit-ranking-loss.png)
