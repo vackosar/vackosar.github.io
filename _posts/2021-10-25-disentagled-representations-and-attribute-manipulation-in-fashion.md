@@ -12,11 +12,11 @@ redirect_from:
 
 
 - Tasks:
-  - give me the same but with different color
-  - related tasks: complete fashion outfit may also benefit
-- What is disentangled:
+  - For an image give me find the same but with different color from the dataset.
+  - Related tasks: complete fashion outfit may also benefit
+- What is disentangled representation?
   - Entangled representation = hard to preserve some attributes and change others
-  - Disentangled: Attributes have separate dimensions applied to them of there is known orthogonality
+  - Disentangled = Attributes have separate dimensions applied to them of there is known orthogonality
 
 ![img.png](../images/disentangle-representation.png)
 
@@ -24,7 +24,7 @@ redirect_from:
 - Variational Auto-encoders
   - speculation:
     - some disentanglement thanks to the architecture
-    - compressing into low-dimension and small-space
+    - compressing into low-dimension and small-space (reg. term)
     - high-level factors only
     - similar in high level factors are encoded close to each other
   - methods: mutual information between latents, total correlation e.g. unsupervised [Relevance factors VAE](https://arxiv.org/pdf/1902.01568v1.pdf)
