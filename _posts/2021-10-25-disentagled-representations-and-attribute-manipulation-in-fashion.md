@@ -6,19 +6,19 @@ categories: ml
 description: Attribute-specific subspaces for image manipulation retrieval, outfit completion, conditional similarity retrieval.
 permalink: /:categories/:title
 image: /images/disentangled-representation-thumb.png
+video: _cOhvtcSY4w
 redirect_from:
 - /ml/disentagled-representations
 ---
 
+{% include load_video.html %}
 
 - Tasks:
   - For an image give me find the same but with different color from the dataset.
-  - Related tasks: complete fashion outfit may also benefit
+  - Downstream task: complete fashion outfit
 - What is disentangled representation?
   - Entangled representation = hard to preserve some attributes and change others
   - Disentangled = Attributes have separate dimensions
-
-![img.png](../images/disentangle-representation.png)
 
 # Unsupervised Disentangling Methods
 - Variational Auto-encoders
@@ -56,7 +56,7 @@ redirect_from:
   - inter-task affinity:
     - measure one task's gradient affects the other tasks loss
     - correlates overall model performance
-  - in below outfit recommendation improved on disentangled
+- in below outfit recommendation improved on disentangled
 
 ![inter-task affinity for multi-task learning task grouping](/images/disentangle-multi-task.png)
 
