@@ -22,26 +22,29 @@ redirect_from:
 
 # Unsupervised Disentangling Methods
 - Variational Auto-encoders
-  - speculation:
-    - some disentanglement thanks to the architecture
+  - speculation: some disentanglement thanks to the architecture
     - compressing into low-dimension and small-space (reg. term)
     - high-level factors only
     - similar in high level factors are encoded close to each other
   - methods: mutual information between latents, total correlation e.g. unsupervised [Relevance factors VAE](https://arxiv.org/pdf/1902.01568v1.pdf)
 - GANs (has encoder and decoder) e.g. [DNA-GAN: Learning Disentangled Representations from Multi-Attribute Images](https://arxiv.org/pdf/1711.05415.pdf),
 - Flow-Based models e.g. [OpenAI's Glow - Flow-Based Model Teardown](/ml/openais-glow-flow-based-model-teardown)
-  - ~VAE where decoder = reverse of encoder
+  - like VAE but the decoder is reverse of the encoder
   - reversibly encodes into independent gaussian factors
 
 ![Glow model smiling vector](../images/disentangle-smiling.png)
 
 # Unsupervised Disentangled Representations
-- Google 2019 paper [Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations](https://ai.googleblog.com/2019/04/evaluating-unsupervised-learning-of.html)
-- a large-scale evaluation of various unsupervised methods (12k models)
-- On dataset [Shape3D](https://github.com/deepmind/3d-shapes) try to separate all attributes of the scene into 10 dimensions 
-- No model disentangled reliably
-- theorem assumptions about the data have to be incorporated into the model (inductive bias)
-- so each unsupervised model needs to be at least specialized to some type of data
+- Google ICML 2019 [Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations](https://ai.googleblog.com/2019/04/evaluating-unsupervised-learning-of.html)
+- A large-scale evaluation of various unsupervised methods (12k models)
+- On dataset [Shape3D](https://github.com/deepmind/3d-shapes) try to separate all attributes of the scene  
+  - into 10 dimensions: object shape, object size, camera rotation, colors
+- No model disentangled reliably into above
+- Theorem: infinite transformations of the true distribution
+  - cannot ever find true dimensions without a guide
+  - but could find with additional data?
+- Assumptions about the data have to be incorporated into the model (inductive bias)
+- Each unsupervised model has to be specialized
  
 ![Shape3D dataset for disentagling factors: floor color, wall color, object color, object size, camera angle](../images/disentangle-3dshapes.gif)
 
