@@ -49,10 +49,10 @@ redirect_from:
 ![Shape3D dataset for disentagling factors: floor color, wall color, object color, object size, camera angle](../images/disentangle-3dshapes.gif)
 
 # Multi-Task Learning
-- [In general sometimes multi-task learning leads to better performance](https://ai.googleblog.com/2021/10/deciding-which-tasks-should-train.html)
-  - Google paper suggest a method for grouping tasks
-  - usually the tasks have to be related
+- [Multi-task learning may improve performance](https://ai.googleblog.com/2021/10/deciding-which-tasks-should-train.html)
+  - Google NeurIPS 2021 paper on a method for grouping tasks
   - meta-learning
+  - usually the tasks have to be related
   - inter-task affinity:
     - measure one task's gradient affects the other tasks loss
     - correlates overall model performance
@@ -63,8 +63,8 @@ redirect_from:
 
 - Amazon 2021 paper [Learning Attribute-driven Disentangled Representations for Interactive Fashion Retrieval](https://openaccess.thecvf.com/content/ICCV2021/papers/Hou_Learning_Attribute-Driven_Disentangled_Representations_for_Interactive_Fashion_Retrieval_ICCV_2021_paper.pdf)
 - SoTA on the fashion tasks (Attribute manipulation retrieval, Conditional similarity retrieval, Outfit completion)
-- supervised disentangled represantions learning
-  - all attribute values are of fixed count
+- supervised disentangled representation learning
+  - all attribute multiple values
   - split embedding into sections corresponding to attributes
   - multi-task training
   - store prototype embeddings of each attribute value in memory module
@@ -80,18 +80,17 @@ redirect_from:
   - fully-connected two-layer network
   - map into attributed-specific subspace
   - producing image's attribute embedding
-- together it is disentangled representation
+- disentangled representation
 - called Attribute-Driven Disentangled Encoder (ADDE)
 - memory block
   - stores prototype embeddings for all values of the attributes
   - e.g. each color has one prototype embeddings
   - stored in a matrix that forces small non-block diagonal elements
   - trained via triplet loss
-  - ? Why we cannot extract these from the classifier - not the same dimension or reprez?
 
 ![Attribute-Driven Disentangled Encoder (ADDE)](../images/disentangle-architecture.png)
 
-## Loss
+## Loss Function
 - Label triplet loss
   - representations with same labels to have same vectors
 - Consistency triplet loss
