@@ -56,8 +56,9 @@ redirect_from:
   - inter-task affinity:
     - measure one task's gradient affects the other tasks loss
     - correlates overall model performance
-  - in this case outfit recommendation results improved
-  - but not sure if comparable
+  - in below outfit recommendation improved on disentangled
+
+![inter-task affinity for multi-task learning task grouping](/images/disentangle-multi-task.png)
 
 # Supervised-Disentangling: Attribute-driven Disentangled Representations
 
