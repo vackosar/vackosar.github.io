@@ -52,6 +52,10 @@ redirect_from:
 - [In general sometimes multi-task learning leads to better performance](https://ai.googleblog.com/2021/10/deciding-which-tasks-should-train.html)
   - Google paper suggest a method for grouping tasks
   - usually the tasks have to be related
+  - meta-learning
+  - inter-task affinity:
+    - measure one task's gradient affects the other tasks loss
+    - correlates overall model performance
   - in this case outfit recommendation results improved
   - but not sure if comparable
 
