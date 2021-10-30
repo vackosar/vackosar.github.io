@@ -16,7 +16,7 @@ redirect_from:
   - Related tasks: complete fashion outfit may also benefit
 - What is disentangled representation?
   - Entangled representation = hard to preserve some attributes and change others
-  - Disentangled = Attributes have separate dimensions applied to them of there is known orthogonality
+  - Disentangled = Attributes have separate dimensions
 
 ![img.png](../images/disentangle-representation.png)
 
@@ -38,12 +38,12 @@ redirect_from:
 # Unsupervised Disentangled Representations
 - Google 2019 paper [Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations](https://ai.googleblog.com/2019/04/evaluating-unsupervised-learning-of.html)
 - a large-scale evaluation of various unsupervised methods (12k models)
-- On dataset Shape3D try to separate all attributes of the scene into 10 dimensions 
+- On dataset [Shape3D](https://github.com/deepmind/3d-shapes) try to separate all attributes of the scene into 10 dimensions 
 - No model disentangled reliably
 - theorem assumptions about the data have to be incorporated into the model (inductive bias)
 - so each unsupervised model needs to be at least specialized to some type of data
  
-![Shape3D dataset for disentagling factors: floor color, wall color, object color, object size, camera angle](../images/disentangled-shape3d.png)
+![Shape3D dataset for disentagling factors: floor color, wall color, object color, object size, camera angle](../images/disentangle-3dshapes.gif)
 
 # Multi-Task Learning
 - [In general sometimes multi-task learning leads to better performance](https://ai.googleblog.com/2021/10/deciding-which-tasks-should-train.html)
