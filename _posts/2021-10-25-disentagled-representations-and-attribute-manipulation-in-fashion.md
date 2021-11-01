@@ -15,12 +15,15 @@ redirect_from:
 
 - Tasks:
   - For an image give me find the same but with different color from the dataset.
-  - Downstream task: complete fashion outfit
+  - Generate a image of the item but with this attribute modified
+  - Downstream task: complete fashion outfit can benefit from better representation
 - What is disentangled representation?
   - Entangled representation = hard to preserve some attributes and change others
   - Disentangled = Attributes have separate dimensions
 
 # Unsupervised Disentangling Methods
+- Below methods are generative
+  - so instead of search, can manipulate the image
 - Variational Auto-encoders
   - speculation: some disentanglement thanks to the architecture
     - compressing into low-dimension and small-space (reg. term)
@@ -31,6 +34,7 @@ redirect_from:
 - Flow-Based models e.g. [OpenAI's Glow - Flow-Based Model Teardown](/ml/openais-glow-flow-based-model-teardown)
   - like VAE but the decoder is reverse of the encoder
   - reversibly encodes into independent gaussian factors
+  - the attribute vectors are found using labeled data
 
 ![Glow model smiling vector](../images/disentangle-smiling.png)
 
