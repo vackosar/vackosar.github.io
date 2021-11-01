@@ -9,6 +9,7 @@ image: /images/disentangled-representation-thumb.png
 video: _cOhvtcSY4w
 redirect_from:
 - /ml/disentagled-representations
+- /ml/disentagled-representations-and-attribute-manipulation-in-fashion
 ---
 
 {% include load_video.html %}
