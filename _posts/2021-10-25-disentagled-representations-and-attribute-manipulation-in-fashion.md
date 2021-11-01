@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Disentangled Representations and Attribute Manipulation in Fashion"
+title: "Manipulate Item Attributes via Disentangled Representations"
 date: 2021-10-25
 categories: ml
-description: Attribute-specific subspaces for image manipulation retrieval, outfit completion, conditional similarity retrieval.
+description: Using attribute-specific subspaces for image manipulation retrieval, outfit completion, conditional similarity retrieval.
 permalink: /:categories/:title
 image: /images/disentangled-representation-thumb.png
 video: _cOhvtcSY4w
