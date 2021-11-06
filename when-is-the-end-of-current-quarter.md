@@ -67,10 +67,8 @@ What quarter are we in now? Current quarter is <b id='quarterName2'>Q1</b>.
 
 <br>
 <br>
-<br>
-Are your colleagues and friends isolated and not belonging?
-Automate weekly one-on-one video-calls for your group to: increase belonging, support idea cross-pollination, & reduce isolation!
-Try <a href="https://RandomMeets.com">RandomMeets now</a>!
+<h4>Tickerverse - Event-Driven Market Intelligence</h4>
+Find new opportunities with <a href="https://tickerverse.com/">event-driven investing on Tickerverse</a>.
 
 
 <script>
