@@ -34,8 +34,3 @@ title: Blog
         }
     });
 </script>
-
-<br>
-<small>
-    <a href="/privacy-policy">Privacy Policy</a>
-</small>
