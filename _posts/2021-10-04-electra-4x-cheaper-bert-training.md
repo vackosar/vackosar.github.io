@@ -13,7 +13,7 @@ video: svDvV97wuiE
 
 Can you afford to fully train and retrain your own BERT language model?
 Training costs is important part of machine learning production as transformer language models get bigger.
-ELECTRA model is being adopted by the industry. For example [reportedly used in a web search engine Seznam](https://www.root.cz/clanky/rychla-oprava-dotazu-ve-vyhledavaci-pomoci-neuronovych-siti/),
+ELECTRA model is being adopted by the industry. For example [reportedly used in a web search engine Seznam](https://www-root-cz.translate.goog/clanky/rychla-oprava-dotazu-ve-vyhledavaci-pomoci-neuronovych-siti/?_x_tr_sl=cs&_x_tr_tl=en&_x_tr_hl=cs&_x_tr_pto=nui),
 which capable to locally compete with Google in the Czech Republic.
 ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/model_doc/electra.html) including a model for pre-training.
 
