@@ -16,7 +16,7 @@ Boundary-Control-Entity (BCE), or Entity-Control-Boundary (ECB), or Entity-Bound
 <p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/bce.svg" alt="Boundary Control Entity architecture"/></p>
 
 ## Overview
-BCE is distinct from Multitier architecture in that it does not see some outside systems as backend and some as frontend. It has single category of outside systems. Sometimes BCE is being compared to MVC architecture where Model ~ Entity and View ~ Boundary. 
+BCE is distinct from the multi-tier architecture in that it does not see some outside systems as backend and some as frontend. It has single category of outside systems. Sometimes BCE is being compared to MVC architecture where Model ~ Entity and View ~ Boundary. 
 
 The package structure is often visualized as tree onion layers, where the most outer layer is Boundary, central is Control and inner is Entity. The Boundary layer contains classes responsible for all communications with systems outside application runtime. Control represents all logic that doesn't fit well into boundary. Entity contains data structures which are allowed to have some behaviour.
 
@@ -31,14 +31,14 @@ Sometimes an additional dependency rule is being added to BCE: Classes can depen
 It was a dilemma for me where to place a Spring Data repository classes. Repositories do define interaction with database which is outside system placing them into Boundary, but on the other hand they contain application logic, which could be placed as well in Control. Since I gave up on "Dependency Rule" (see above), I think the repository classes belong in Boundary.  
 
 ## Example
-See below Spring Boot and Spring Data example.
+See below an example of boundary control entity architecture folder structure.
 
-- boundary
+- boundary/
   - EventController: REST definition.
   - EventRepository: DB query definition.
-- control
+- control/
   - EventTransformer: Transformation between Entity and Payload.
-- entity
+- entity/
   - EventEntity
   - EventPayload
   
