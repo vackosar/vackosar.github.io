@@ -21,11 +21,12 @@ How many days left in this quarter? There are <b id="daysLeft2">45</b> days left
 How many days till the end of this quarter? There are <b id="daysLeft3">45</b> days till the end of current quarter.<br>
 What quarter are we in now? Current quarter is <b id='quarterName2'>Q1</b>.
 
-<p><img src="/images/quarters.svg" alt="quarters visualization circular" style="max-width: 300px"/></p>
-<small>A year is divided into 4 quarters. Each has 3 months.</small>
-
 <h3>When do calendar quarters start and end?</h3>
-<small>See a handy table of quarter start and end dates below. The dates are the same for each year. Each quarter has approximately 91 days.</small>
+<p>A year is divided into 4 quarters. Each quarter has 3 months. Each quarter has approximately 91 days.</p>
+
+<p><img src="/images/quarters.svg" alt="calendar year quarters visualization circular" style="max-width: 300px"/></p>
+
+<p>See a handy table of quarter start and end dates below. The dates are the same for each year.</p>
 
 <table class="table table-striped">
     <thead>
@@ -65,10 +66,58 @@ What quarter are we in now? Current quarter is <b id='quarterName2'>Q1</b>.
     </tbody>
 </table>
 
+<h3>Fiscal Year</h3>
+<p>
+  Each company or government institution can choose their own fiscal year, a twelve month period, that is the most suitable to their yearly revenue cycle.
+  Fiscal year can differ from calendar year.
+  Companies use their fiscal years to submit financial reports, external audits, federal tax filings.
+  For example Apple's fiscal year ends its fiscal year on the last Saturday of September. What is the fiscal year end for Microsoft, Amazon, Google, or NVIDIA.
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">
+                Company
+            </th>
+            <th scope="col">
+                Fiscal Year End
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Apple</td>
+            <td>the last Saturday of September</td>
+        </tr>
+        <tr>
+            <td>Microsoft</td>
+            <td>the fifth Saturday of the new calendar year</td>
+        </tr>
+        <tr>
+            <td>Amazon</td>
+            <td>December 31</td>
+        </tr>
+        <tr>
+            <td>Alphabet (Google)</td>
+            <td>December 31</td>
+        </tr>
+        <tr>
+            <td>NVIDIA</td>
+            <td>January 31</td>
+        </tr>
+    </tbody>
+</table>
+
 <br>
 <br>
 <h4>Tickerverse - Event-Driven Market Intelligence</h4>
 Find new opportunities with <a href="https://tickerverse.com/">event-driven investing on Tickerverse</a>.
+<div>
+  <a href="https://tickerverse.com/">
+    <img style="width: 200px" src="/images/tickerverse-title.svg" alt="Stay on top of important company events">
+  </a>
+</div>
 
 
 <script>
