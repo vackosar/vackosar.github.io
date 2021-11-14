@@ -2,7 +2,7 @@
 layout: default
 title: "Google Product Taxonomy Viewer"
 date: 2021-04-16
-description: Explore with a handy viewer the categorization tree structure.
+description: Explore with an interactive visualization of the shopping categorization tree structure.
 image: /images/automatic-taxonomy.png
 ---
 
@@ -11,7 +11,7 @@ image: /images/automatic-taxonomy.png
 <i>{{ page.description }}</i>
 
 
-Google Product Taxonomy is a product categorization tree into which merchants products are categorized by Google.
+Google Product Taxonomy is a product categorization tree for e-commerce. Google classifies e-shop articles into this structure.
 The goal is to departmentalize products from the merchant feed into 5583 sections.
 This partitioning improves article discovery for customers.
 The automatic categorization is performed [based on product input fields](https://support.google.com/merchants/answer/6324436?hl=en) provided by the merchant.
@@ -32,7 +32,7 @@ Click on the __green nodes__ below to Google Product Taxonomy interactively. The
 
 [Full taxonomy](http://google.com/basepages/producttype/taxonomy.en-US.txt)
 
-Examples:
+## Examples
 - Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Cage Accessories > Bird Cage Bird Baths
 - Home & Garden > Kitchen & Dining > Tableware > Serveware Accessories > Punch Bowl Stands
 - Sporting Goods > Outdoor Recreation > Outdoor Games > Platform & Paddle Tennis > Platform & Paddle Tennis Paddles
