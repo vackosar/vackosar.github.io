@@ -109,6 +109,8 @@ What quarter are we in now? Current quarter is <b id='quarterName2'>Q1</b>.
     </tbody>
 </table>
 
+<p>A company fiscal year outlines its quarters dates. That means that fiscal quarters may be different for each company. But usually they fall at the end of the months and don't cut through them.</p>
+
 <br>
 <br>
 <h4>Tickerverse - Event-Driven Market Intelligence</h4>
