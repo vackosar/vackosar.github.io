@@ -7,7 +7,7 @@ description: With a foreword from Warren Buffett, this short book is worthy of s
 permalink: /:categories/:title
 ---
 
-You likely read all the [Ten Commandments for Business Failure](https://www.goodreads.com/book/show/3828278-the-ten-commandments-for-business-failure) lessons likely elsewhere, yet you may still gain new perspective and even laugh a bit.
+You already read all the [Ten Commandments for Business Failure](https://www.goodreads.com/book/show/3828278-the-ten-commandments-for-business-failure) lessons elsewhere, yet you may still gain new perspective and even laugh a bit.
 
 ### The Commandments
 
