@@ -1,4 +1,4 @@
-`---
+---
 layout: post
 title: "Ten Commandments for Business Failure Summary"
 date: 2020-12-12
