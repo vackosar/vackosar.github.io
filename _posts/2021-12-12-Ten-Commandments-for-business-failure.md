@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ten Commandments for Business Failure Summary"
-date: 2020-12-12
+date: 2021-12-12
 categories: book
 description: With a foreword from Warren Buffett, this short book is worthy of skimming.
 permalink: /:categories/:title
