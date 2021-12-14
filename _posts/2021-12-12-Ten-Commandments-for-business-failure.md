@@ -23,4 +23,4 @@ You already read all the [Ten Commandments for Business Failure](https://www.goo
 10. Be Afraid of the Future (avoid pessimism)
 11. Lose Your Passion for Work - for Life (connect emotionally with customers, employees, dreams)
 
-Yes, there are 11 of them :).
+Yes, there are 11 of them, I was surprised as well :).
