@@ -14,18 +14,27 @@ permalink: /:categories/:title
 - same perf GPT-3 with 25x less params
 
 
+# General Cross Attention
+- Let us have sequence A and sequence B
+- Attention matrix from sequence A is used to highlight in sequence B
+- Queries from sequence A
+- Keys and Values from another sequence B
+- Similar [the feed forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory)
+- sequences A and B lengths can differ
+
+
 # Training Dataset
 - multilingual MassiveText
 - SentencePiece tokenizer vocabulary of 128k tokens
 - Retrieval database 1.75T tokens of text
 - Chucks are consecutive 64 token sequences
 - not retrieval from the same document during training
-- 
+
  
 # Architecture
 - Frozen BERT retriever on chunk level
 - differentiable encoder conditioned on query
-- chunked cross-attention
+- chunked cross-attention with previous chunk retrieval set 
 
 
 # Retriever
@@ -35,7 +44,7 @@ permalink: /:categories/:title
 - keys are the first chunk
 - 2T db queried in 10ms
 - retrieval is part of the input dataset pipeline
-- 
+
 
 # Encoding Retrieved Neighbours
 - all retrieved values
@@ -45,14 +54,11 @@ permalink: /:categories/:title
   - at the last layer before first cross-attention
 - output is called retrieval set
 
-# Chunked Cross Attention
-- attends previous chunk encoded neighbors
-- thus is causal or autoregressive
 
-# General Cross Attention
-- Let us have sequence A and sequence B
-- Attention matrix from sequence A is used to highlight in sequence B
-- Queries from sequence A
-- Keys and Values from another sequence B
-- Similar [the feed forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory)
-- sequences A and B lengths can differ
+# Chunked Cross Attention
+- take previous chunk retrieval set to be autoregressive
+- add relative positional encodings to each retrieved 
+- concatenate into time dimension
+- use hidden representation at the layer as query
+- cross-attend 
+
