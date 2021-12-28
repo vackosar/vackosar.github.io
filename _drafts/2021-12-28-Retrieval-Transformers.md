@@ -8,10 +8,15 @@ permalink: /:categories/:title
 ---
 
 # DeepMind's Retrieval Transformer
-- LM
-- condition on document chunks
-- retried based on similarity with preceding tokens
-- same perf GPT-3 with 25x less params
+- Autoregressive language modeled
+- conditions on document chunks
+- retrieved based on similarity with preceding tokens
+- SoTA on Wikitext103 and the Pile 
+- Competitive on QA same perf GPT-3 with 25x less params
+- model performs even when low train-test overlap
+- ablations show retrieval helps
+- retrieval reduces hallucinations and increases interpretability
+- [Paper](https://arxiv.org/pdf/2112.04426v1.pdf), [Deep Mind Blog](https://deepmind.com/research/publications/2021/improving-language-models-by-retrieving-from-trillions-of-tokens)
 
 
 # General Cross Attention
