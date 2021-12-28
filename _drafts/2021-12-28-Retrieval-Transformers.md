@@ -20,6 +20,7 @@ permalink: /:categories/:title
 - Retrieval database 1.75T tokens of text
 - Chucks are consecutive 64 token sequences
 - not retrieval from the same document during training
+- 
  
 # Architecture
 - Frozen BERT retriever on chunk level
@@ -34,12 +35,21 @@ permalink: /:categories/:title
 - keys are the first chunk
 - 2T db queried in 10ms
 - retrieval is part of the input dataset pipeline
-
-# Encoding Retrieved Neighbours
 - 
 
+# Encoding Retrieved Neighbours
+- all retrieved values
+- are first passed through an encoder
+- differentiably modulates retrieved chunks
+- using cross attention to query chunks hidden representation
+  - at the last layer before first cross-attention
+- output is called retrieval set
 
-# Cross Attention
+# Chunked Cross Attention
+- attends previous chunk encoded neighbors
+- thus is causal or autoregressive
+
+# General Cross Attention
 - Let us have sequence A and sequence B
 - Attention matrix from sequence A is used to highlight in sequence B
 - Queries from sequence A
