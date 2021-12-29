@@ -4,7 +4,7 @@ description: "Retrieval-Enhanced Language Model cross-attends trillions of token
 image: /images/retrieval-transformer-thumb.png 
 layout: post
 categories: ml
-date: 2021-12-28
+date: 2021-12-29
 permalink: /:categories/:title
 ---
 
