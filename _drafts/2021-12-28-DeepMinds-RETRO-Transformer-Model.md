@@ -3,7 +3,7 @@ layout: post
 title: "DeepMind's RETRO Transformer Model"
 date: 2021-12-28
 categories: ml
-description: "Retrieval-Enhanced Language Model cross-attends trillions of tokens for Wikitext103 SoTA."
+description: "Retrieval-Enhanced Language Model cross-attends trillions of tokens for Wikitext103 and Pile SoTA."
 permalink: /:categories/:title
 ---
 
