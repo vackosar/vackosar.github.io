@@ -1,6 +1,6 @@
 ---
 title: "DeepMind's RETRO Transformer Model"
-description: "Retrieval-Enhanced Language Model cross-attends trillions of tokens for Wikitext103 and The Pile SoTA."
+description: "Retrieval-Enhanced Language Model cross-attends trillions of tokens for SoTA on Wikitext103 and The Pile."
 image: /images/retrieval-transformer-thumb.png 
 layout: post
 categories: ml
