@@ -8,15 +8,14 @@ permalink: /:categories/:title
 ---
 
 # DeepMind's Retrieval Transformer
-- Autoregressive language modeled
-- conditions on document chunks
-- retrieved based on similarity with preceding tokens
+- Retrieval-Enhanced Transformer (RETRO) is autoregressive language model
+- it conditions on document 128-token chunks
+- retrieved based on Bert-similarity with preceding tokens
 - SoTA on Wikitext103 and the Pile 
 - Competitive on QA same perf GPT-3 with 25x less params
 - model performs even when low train-test overlap
-- ablations show retrieval helps
 - retrieval reduces hallucinations and increases interpretability
-- [Paper](https://arxiv.org/pdf/2112.04426v1.pdf), [Deep Mind Blog](https://deepmind.com/research/publications/2021/improving-language-models-by-retrieving-from-trillions-of-tokens)
+- [Improving Language Models by Retrieving from Trillions of Tokens](https://arxiv.org/pdf/2112.04426v1.pdf), [Deep Mind Blog](https://deepmind.com/research/publications/2021/improving-language-models-by-retrieving-from-trillions-of-tokens)
 
 
 # Other Retrieval Architectures
@@ -32,9 +31,10 @@ permalink: /:categories/:title
 - Retro in contrast uses
   - longer sequences
   - cross-attention allowing for multiple retrievals
-  - bigger memory
+  - bigger database
 
 ![retrieval transformer comparison](../images/retrieval-transformer-comparison.png)
+
 
 # General Cross Attention
 - Let us have sequence A and sequence B
@@ -57,21 +57,23 @@ permalink: /:categories/:title
 - Frozen BERT retriever on chunk level
 - differentiable encoder conditioned on query
 - chunked cross-attention with previous chunk retrieval set 
+- ablations show retrieval helps
 
 ![retriever transformer achitecture](../images/retriever-transformer-architecture.png)
 
 
 # Retriever
 - database is key-value memory
-- frozen BERT vectorizes the chunks
 - values are two consecutive chunks
 - keys are the first chunk
-- 2T db queried in 10ms
+- frozen BERT vectorizes the key chunks
+- key-vectors stored in [ScaNN similarity search](https://github.com/google-research/google-research/tree/master/scann)
+- 2T token database queried in 10ms
 - retrieval is part of the input dataset pipeline
 
 
 # Encoding Retrieved Neighbours
-- all retrieved values
+- all retrieved values: 128 consecutive tokens
 - are first passed through an encoder
 - differentiably modulates retrieved chunks
 - using cross attention to query chunks hidden representation
@@ -85,4 +87,7 @@ permalink: /:categories/:title
 - concatenate into time dimension
 - use hidden representation at the layer as query
 - cross-attend 
+
+![retrieval transformer](../images/retrieval-transformer-cross-attention.png)
+
 
