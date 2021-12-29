@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Transformers and Retrieval"
+title: "DeepMind's RETRO Transformer Model"
 date: 2021-12-28
 categories: ml
-description: "-"
+description: "Retrieval-Enhanced Language Model cross-attends trillions of tokens for Wikitext103 SoTA"
 permalink: /:categories/:title
 ---
 
@@ -13,7 +13,7 @@ permalink: /:categories/:title
 - it conditions on retrieved chunks
 - retrieved based on Bert-similarity of preceding chunks
 - SoTA on Wikitext103 and the Pile 
-- Competitive on QA same perf GPT-3 with 25x less params
+- Competitive on QA same perf [GPT-3](https://arxiv.org/pdf/2005.14165.pdf) with 25x less params
 - model performs even when low train-test overlap
 - retrieval reduces hallucinations and increases interpretability
 
@@ -26,9 +26,9 @@ permalink: /:categories/:title
   - search context LM embedding in database
   - linearly interpolate with LM predictions
 - [DPR (2020)](https://aclanthology.org/2020.emnlp-main.550.pdf)
-  - trains one [Bert](https://arxiv.org/pdf/1706.03762.pdf) for keys and one for values
+  - trains one [Bert (2017)](https://arxiv.org/pdf/1706.03762.pdf) for keys and one for values
   - uses contrastive loss
-- Retro in contrast uses
+- RETRO in contrast uses
   - longer sequences
   - cross-attention allowing for multiple retrievals
   - bigger database
@@ -46,10 +46,11 @@ permalink: /:categories/:title
 
 
 # Training Dataset
-- multilingual MassiveText
+- 10-lingual [MassiveText dataset](https://storage.googleapis.com/deepmind-media/research/language-research/Training%20Gopher.pdf)
 - SentencePiece tokenizer vocabulary of 128k tokens
-- Retrieval database 1.75T tokens of text
-- Chucks are consecutive 64 token sequences
+- Retrieval database 1.75T tokens (~words) of text
+- Chucks are 64 token sequences
+- database ~13B records? 
 - not retrieval from the same document during training
 
  
@@ -91,3 +92,4 @@ permalink: /:categories/:title
 ![retrieval transformer](/images/retrieval-transformer-cross-attention.png)
 
 
+# Results
