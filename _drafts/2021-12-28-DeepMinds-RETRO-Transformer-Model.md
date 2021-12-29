@@ -3,7 +3,7 @@ layout: post
 title: "DeepMind's RETRO Transformer Model"
 date: 2021-12-28
 categories: ml
-description: "Retrieval-Enhanced Language Model cross-attends trillions of tokens for Wikitext103 SoTA"
+description: "Retrieval-Enhanced Language Model cross-attends trillions of tokens for Wikitext103 SoTA."
 permalink: /:categories/:title
 ---
 
@@ -52,6 +52,8 @@ permalink: /:categories/:title
 - Chucks are 64 token sequences
 - database ~13B records? 
 - not retrieval from the same document during training
+
+![MassiveText dataset 10 languages](retrieval-transformer-massive-text.png)
 
  
 # Architecture
