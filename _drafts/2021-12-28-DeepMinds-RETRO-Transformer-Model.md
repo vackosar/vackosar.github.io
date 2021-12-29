@@ -7,18 +7,17 @@ description: "Retrieval-Enhanced Language Model cross-attends trillions of token
 permalink: /:categories/:title
 ---
 
-#  Retrieval Transformer
 - Retrieval-Enhanced Transformer (RETRO) is autoregressive language model
 - from DeepMind's [Improving Language Models by Retrieving from Trillions of Tokens (2021)](https://arxiv.org/pdf/2112.04426v1.pdf), [Deep Mind Blog](https://deepmind.com/research/publications/2021/improving-language-models-by-retrieving-from-trillions-of-tokens)
-- it conditions on retrieved chunks
-- retrieved based on Bert-similarity of preceding chunks
+- conditions on retrieved 2-chunks
+- retrieves based on Bert-similarity with preceding chunk
 - SoTA on Wikitext103 and the Pile 
 - Competitive on QA same perf [GPT-3](https://arxiv.org/pdf/2005.14165.pdf) with 25x less params
 - model performs even when low train-test overlap
 - retrieval reduces hallucinations and increases interpretability
 
 
-# Other Retrieval Architectures
+## Other Retrieval Architectures
 - historically inverted index matching [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) and BM25
 - latent topic modelling e.g. [LDA (2003)](https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf)
 - [edit-distance search for translation (2018)](https://arxiv.org/pdf/1705.07267.pdf)
@@ -36,7 +35,7 @@ permalink: /:categories/:title
 ![retrieval transformer comparison](/images/retrieval-transformer-comparison.png)
 
 
-# General Cross Attention
+## General Cross Attention
 - Let us have sequence A and sequence B
 - Attention matrix from sequence A is used to highlight in sequence B
 - Queries from sequence A
@@ -45,7 +44,7 @@ permalink: /:categories/:title
 - sequences A and B lengths can differ
 
 
-# Training Dataset
+## Training Dataset
 - 10-lingual [MassiveText dataset](https://storage.googleapis.com/deepmind-media/research/language-research/Training%20Gopher.pdf)
 - SentencePiece tokenizer vocabulary of 128k tokens
 - Retrieval database 1.75T tokens (~words) of text
@@ -56,7 +55,7 @@ permalink: /:categories/:title
 ![MassiveText dataset 10 languages](/images/retrieval-transformer-massive-text.png)
 
  
-# Architecture
+## Architecture
 - Frozen BERT retriever on chunk level
 - differentiable encoder conditioned on query
 - chunked cross-attention with previous chunk retrieval set 
@@ -65,7 +64,7 @@ permalink: /:categories/:title
 ![retriever transformer achitecture](/images/retriever-transformer-architecture.png)
 
 
-# Retriever
+## Retriever
 - database is key-value memory
 - values are two consecutive chunks (128 tokens)
 - keys are the first chunk (first 64 tokens)
@@ -75,7 +74,7 @@ permalink: /:categories/:title
 - retrieval is part of the input dataset pipeline
 
 
-# Encoding Retrieved Neighbours
+## Encoding Retrieved Neighbours
 - all retrieved values: 128 consecutive tokens
 - are first passed through an encoder
 - differentiably modulates retrieved chunks
@@ -84,7 +83,7 @@ permalink: /:categories/:title
 - output is called retrieval set
 
 
-# Chunked Cross Attention
+## Chunked Cross Attention
 - take previous chunk retrieval set to be autoregressive
 - add relative positional encodings to each retrieved 
 - concatenate into time dimension
@@ -94,7 +93,7 @@ permalink: /:categories/:title
 ![retrieval transformer](/images/retrieval-transformer-cross-attention.png)
 
 
-# RETRO Results
+## RETRO Results
 - Outperforms on Wikitext103 and Pile
 - Generates on-topic and coherent text likely thanks to long memories
 - Underperforms specialized QA models 
