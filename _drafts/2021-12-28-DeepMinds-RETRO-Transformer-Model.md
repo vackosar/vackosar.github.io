@@ -65,10 +65,10 @@ permalink: /:categories/:title
 
 
 ## Retriever
-- database is key-value memory
-- values are two consecutive chunks (128 tokens)
-- keys are the first chunk (first 64 tokens)
-- frozen BERT vectorizes the key chunks
+- database is key-value memory of chunks
+- each value is two consecutive chunks (128 tokens)
+- each key is the first chunk from its value (first 64 tokens)
+- each key is time-averaged BERT embedding of the first chunk
 - key-vectors stored in [ScaNN similarity search](https://github.com/google-research/google-research/tree/master/scann)
 - 2T token database queried in 10ms
 - retrieval is part of the input dataset pipeline
