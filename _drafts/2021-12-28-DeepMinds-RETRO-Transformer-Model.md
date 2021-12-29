@@ -103,3 +103,11 @@ permalink: /:categories/:title
 ![RETRO question answering results](/images/retrieval-transformer-qa-results.png)
 
 ![RETRO Wikitext103](/images/retrieval-transformer-wikitext103-results.png)
+
+
+## How to Use RETRO Ideas
+- freeze any pre-trained transformer
+- add and train chunked cross-attention and the encoder
+- results should get close to training whole from scratch
+- see "Retro-fitting baseline models" section
+- Retro source code not published yet
