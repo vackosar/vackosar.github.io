@@ -7,25 +7,25 @@ description: "-"
 permalink: /:categories/:title
 ---
 
-# DeepMind's Retrieval Transformer
+#  Retrieval Transformer
 - Retrieval-Enhanced Transformer (RETRO) is autoregressive language model
-- it conditions on document 128-token chunks
-- retrieved based on Bert-similarity with preceding tokens
+- from DeepMind's [Improving Language Models by Retrieving from Trillions of Tokens (2021)](https://arxiv.org/pdf/2112.04426v1.pdf), [Deep Mind Blog](https://deepmind.com/research/publications/2021/improving-language-models-by-retrieving-from-trillions-of-tokens)
+- it conditions on retrieved chunks
+- retrieved based on Bert-similarity of preceding chunks
 - SoTA on Wikitext103 and the Pile 
 - Competitive on QA same perf GPT-3 with 25x less params
 - model performs even when low train-test overlap
 - retrieval reduces hallucinations and increases interpretability
-- [Improving Language Models by Retrieving from Trillions of Tokens](https://arxiv.org/pdf/2112.04426v1.pdf), [Deep Mind Blog](https://deepmind.com/research/publications/2021/improving-language-models-by-retrieving-from-trillions-of-tokens)
 
 
 # Other Retrieval Architectures
 - historically inverted index matching [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) and BM25
 - latent topic modelling e.g. [LDA (2003)](https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf)
-- [edit-distance search for translation](https://arxiv.org/pdf/1705.07267.pdf)
-- [kNN-LM](https://openreview.net/forum?id=HklBjCEKvH)
+- [edit-distance search for translation (2018)](https://arxiv.org/pdf/1705.07267.pdf)
+- [kNN-LM (2020)](https://openreview.net/forum?id=HklBjCEKvH)
   - search context LM embedding in database
   - linearly interpolate with LM predictions
-- [DPR](https://aclanthology.org/2020.emnlp-main.550.pdf)
+- [DPR (2020)](https://aclanthology.org/2020.emnlp-main.550.pdf)
   - trains one [Bert](https://arxiv.org/pdf/1706.03762.pdf) for keys and one for values
   - uses contrastive loss
 - Retro in contrast uses
@@ -33,7 +33,7 @@ permalink: /:categories/:title
   - cross-attention allowing for multiple retrievals
   - bigger database
 
-![retrieval transformer comparison](../images/retrieval-transformer-comparison.png)
+![retrieval transformer comparison](/images/retrieval-transformer-comparison.png)
 
 
 # General Cross Attention
@@ -59,13 +59,13 @@ permalink: /:categories/:title
 - chunked cross-attention with previous chunk retrieval set 
 - ablations show retrieval helps
 
-![retriever transformer achitecture](../images/retriever-transformer-architecture.png)
+![retriever transformer achitecture](/images/retriever-transformer-architecture.png)
 
 
 # Retriever
 - database is key-value memory
-- values are two consecutive chunks
-- keys are the first chunk
+- values are two consecutive chunks (128 tokens)
+- keys are the first chunk (first 64 tokens)
 - frozen BERT vectorizes the key chunks
 - key-vectors stored in [ScaNN similarity search](https://github.com/google-research/google-research/tree/master/scann)
 - 2T token database queried in 10ms
@@ -88,6 +88,6 @@ permalink: /:categories/:title
 - use hidden representation at the layer as query
 - cross-attend 
 
-![retrieval transformer](../images/retrieval-transformer-cross-attention.png)
+![retrieval transformer](/images/retrieval-transformer-cross-attention.png)
 
 
