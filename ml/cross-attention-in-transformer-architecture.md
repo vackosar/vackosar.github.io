@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cross-Attention in Transformer Architecture
-description: Cross-attention is a way add activations from another sequence into transformer layers.
+description: Cross-attention is a way add activations from another embedding sequence into transformer layers.
 ---
 
 ![Cross-Attention in Transformer Architecture](cross-attention-in-transformer-architecture.png)

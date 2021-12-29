@@ -31,7 +31,7 @@ permalink: /:categories/:title
   - uses contrastive loss
 - RETRO in contrast uses
   - longer sequences
-  - cross-attention allowing for multiple retrievals
+  - [cross-attention](/ml/cross-attention-in-transformer-architecture) allowing for multiple retrievals
   - bigger database
 
 ![retrieval transformer comparison](/images/retrieval-transformer-comparison.png)
@@ -55,7 +55,7 @@ permalink: /:categories/:title
 ## Architecture
 - Frozen BERT retriever on chunk level
 - differentiable encoder conditioned on query
-- chunked [cross-attention]() with previous chunk retrieval set 
+- chunked [cross-attention](/ml/cross-attention-in-transformer-architecture) with previous chunk retrieval set 
 - ablations show retrieval helps
 
 ![retriever transformer achitecture](/images/retriever-transformer-architecture.png)
