@@ -37,13 +37,7 @@ permalink: /:categories/:title
 ![retrieval transformer comparison](/images/retrieval-transformer-comparison.png)
 
 
-## General Cross Attention
-- Let us have sequence A and sequence B
-- Attention matrix from sequence A is used to highlight in sequence B
-- Queries from sequence A
-- Keys and Values from another sequence B
-- Similar [the feed forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory)
-- sequences A and B lengths can differ
+
 
 
 ## Training Dataset
@@ -61,7 +55,7 @@ permalink: /:categories/:title
 ## Architecture
 - Frozen BERT retriever on chunk level
 - differentiable encoder conditioned on query
-- chunked cross-attention with previous chunk retrieval set 
+- chunked [cross-attention]() with previous chunk retrieval set 
 - ablations show retrieval helps
 
 ![retriever transformer achitecture](/images/retriever-transformer-architecture.png)
