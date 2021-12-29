@@ -53,7 +53,7 @@ permalink: /:categories/:title
 - database ~13B records? 
 - not retrieval from the same document during training
 
-![MassiveText dataset 10 languages](retrieval-transformer-massive-text.png)
+![MassiveText dataset 10 languages](/images/retrieval-transformer-massive-text.png)
 
  
 # Architecture
@@ -94,4 +94,13 @@ permalink: /:categories/:title
 ![retrieval transformer](/images/retrieval-transformer-cross-attention.png)
 
 
-# Results
+# RETRO Results
+- Outperforms on Wikitext103 and Pile
+- Generates on-topic and coherent text likely thanks to long memories
+- Underperforms specialized QA models 
+
+![RETRO generated text keeps on topic thanks to longer sequences](/images/retrieval-transformer-generated-text.png)
+
+![RETRO question answering results](/images/retrieval-transformer-qa-results.png)
+
+![RETRO Wikitext103](/images/retrieval-transformer-wikitext103-results.png)
