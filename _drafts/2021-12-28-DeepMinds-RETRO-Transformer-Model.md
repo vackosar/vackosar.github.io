@@ -9,8 +9,6 @@ permalink: /:categories/:title
 
 ![Vaclav Kosar's Post on Retrieval Transformer Thumbnail](/images/retrieval-transformer-thumb.png)
 
-![img.png](../images/retrieval-transformer-thumb.png)
-
 - Retrieval-Enhanced Transformer (RETRO) is autoregressive language model
 - from DeepMind's [Improving Language Models by Retrieving from Trillions of Tokens (2021)](https://arxiv.org/pdf/2112.04426v1.pdf), [Deep Mind Blog](https://deepmind.com/research/publications/2021/improving-language-models-by-retrieving-from-trillions-of-tokens)
 - conditions on retrieved 2-chunks
