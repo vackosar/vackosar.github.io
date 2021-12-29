@@ -47,12 +47,13 @@ permalink: /:categories/:title
 ## Training Dataset
 - 10-lingual [MassiveText dataset](https://storage.googleapis.com/deepmind-media/research/language-research/Training%20Gopher.pdf)
 - SentencePiece tokenizer vocabulary of 128k tokens
-- Retrieval database 1.75T tokens (~words) of text
+- Retrieval database 1.75T tokens
+- 1 token ~ 4 characters ~ 1 word
 - Chucks are 64 token sequences
 - database ~13B records? 
 - not retrieval from the same document during training
 
-![MassiveText dataset 10 languages](/images/retrieval-transformer-massive-text.png)
+![MassiveText dataset composition table](/images/retrieval-transformer-massive-text.png)
 
  
 ## Architecture
@@ -95,9 +96,16 @@ permalink: /:categories/:title
 
 
 ## RETRO Results
-- Outperforms on Wikitext103 and Pile
-- Generates on-topic and coherent text likely thanks to long memories
-- Underperforms specialized QA models 
+- SoTA on Wikitext103 and Pile
+- on Pile with 7B params outperforms Jurassic-1 and Gopher
+  - strongly outperforms on Github - repetitive dataset?
+  - weakly outperforms on [HackerNews](https://news.ycombinator.com/)
+  - underperforms on Math - not in MassiveText, poor search?
+- comparable with GPT-3 when 25x less params
+- generates on-topic and coherent text likely thanks to long memories
+- underperforms specialized QA models
+
+![RETRO on Pile](../images/retrieval-transformer-results-on-pile.png)
 
 ![RETRO generated text keeps on topic thanks to longer sequences](/images/retrieval-transformer-generated-text.png)
 
