@@ -72,6 +72,7 @@ permalink: /:categories/:title
 - key-vectors stored in [ScaNN similarity search](https://github.com/google-research/google-research/tree/master/scann)
 - 2T token database queried in 10ms
 - retrieval is part of the input dataset pipeline
+- optimum number of neighbors between 2 and 40 
 
 
 ## Encoding Retrieved Neighbours
@@ -108,6 +109,7 @@ permalink: /:categories/:title
 ## How to Use RETRO Ideas
 - freeze any pre-trained transformer
 - add and train chunked cross-attention and the encoder
+- tune number of neighbours between 2 and 40 to your model size
 - results should get close to training whole from scratch
 - see "Retro-fitting baseline models" section
 - Retro source code not published yet
