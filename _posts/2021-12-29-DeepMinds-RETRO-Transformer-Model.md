@@ -2,13 +2,14 @@
 title: "DeepMind's RETRO Transformer Model"
 description: "Retrieval-Enhanced Language Model cross-attends trillions of tokens for SoTA on Wikitext103 and The Pile with 25x fewer parameters."
 image: /images/retrieval-transformer-thumb.png 
+video: -93KBOg77Sg
 layout: post
 categories: ml
 date: 2021-12-29
 permalink: /:categories/:title
 ---
 
-![Vaclav Kosar's Post on Retrieval Transformer Thumbnail](/images/retrieval-transformer-thumb.png)
+{% include load_video.html %}
 
 - Retrieval-Enhanced Transformer (RETRO) is autoregressive language model
 - from DeepMind's [Improving Language Models by Retrieving from Trillions of Tokens (2021)](https://arxiv.org/pdf/2112.04426v1.pdf), [Deep Mind Blog](https://deepmind.com/research/publications/2021/improving-language-models-by-retrieving-from-trillions-of-tokens)

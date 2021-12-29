@@ -22,11 +22,13 @@
     }
 
 </style>
+
 <div id="video-img" onclick="loadVid(this)">
   <!--  <img width="560" src="http://i3.ytimg.com/vi/{{ page.video }}/hqdefault.jpg" alt="{{ page.title }}" />-->
   <img id="video-img-img" style="max-width: 560px; width: 100%" src="{{ page.image }}" alt="{{ page.title }}" />
   {% include youtube.svg %}
 </div>
+<br>
 
 <script type="application/javascript" defer>
   function loadVid(e) {
