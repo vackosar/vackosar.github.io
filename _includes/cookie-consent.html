@@ -14,6 +14,7 @@
 <script type="application/javascript" defer>
     window.addEventListener('load', (event) => {
         var ga_id = 'UA-165114534-1';
+        var userLoggedIn = false;
         // var userLoggedIn = {{ 'true' if session.get('_user_id') else 'false' }};
 
         checkCookie_eu();
@@ -28,7 +29,7 @@
 
         function checkCookie_eu() {
             let consent = getCookie_eu("cookies_consent");
-            if (consent === '1') {
+            if (consent === '1' || userLoggedIn) {
                 accept()
 
             } else if (consent === undefined) {
