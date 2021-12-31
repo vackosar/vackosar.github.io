@@ -24,7 +24,35 @@ What quarter are we in now? Current quarter is <b id='quarterName2'>Q1</b>.
 <h3>When do calendar quarters start and end?</h3>
 <p>A year is divided into 4 quarters: Q1, Q2, Q3, Q4. Each quarter has 3 months. Each quarter has approximately 91 days.</p>
 
-<p><img src="/images/quarters.svg" alt="calendar year quarters visualization circular" style="max-width: 300px"/></p>
+<style>
+
+#clockContainer {
+    position: relative;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    background: url(/images/quarters.svg) no-repeat;
+    background-size: 100%;
+}
+  
+#clockArrow {
+    position: absolute;
+    background: red;
+    border-radius: 10px;
+    transform-origin: bottom;
+    width: 1.8%;
+    opacity: 0.8;
+    height: 40%;
+    top: 9%;
+    left: 48.85%;
+}
+</style>
+<figure class="figure">
+    <div id="clockContainer" class="figure-img img-fluid rounded">
+        <div id="clockArrow"></div>
+    </div>
+    <figcaption class="figure-caption">Calendar year quarters and their months. Red line shows where we are now.</figcaption>
+</figure>
 
 <p>See a handy table of quarter start and end dates below. The dates are the same for each year.</p>
 
@@ -134,7 +162,7 @@ Find new opportunities with <a href="https://tickerverse.com/">event-driven inve
 
 
 <script>
-
+    // set values
     document.getElementById('quarterName').innerText = 'Q' + getQuarter().toString();
     document.getElementById('quarterName2').innerText = 'Q' + getQuarter().toString();
     document.getElementById('quarterEnd').innerText = getQEnd().toLocaleDateString();
@@ -142,6 +170,16 @@ Find new opportunities with <a href="https://tickerverse.com/">event-driven inve
     document.getElementById('daysLeft2').innerText = daysLeftInQuarter().toString();
     document.getElementById('daysLeft3').innerText = daysLeftInQuarter().toString();
 
+
+    // set clock
+    var dt = new Date();
+    var current = new Date(dt.getTime());
+    var previous = new Date(dt.getFullYear(), 0, 1);
+    var full = new Date(dt.getFullYear() + 1, 0, 1) - previous;
+    var arrow_rotation = (current - previous) / full * 360;
+    document.getElementById('clockArrow').style.transform = `rotate(${arrow_rotation}deg)`;
+
+    
     function getQuarter(d) {
       d = d || new Date();
       var m = Math.floor(d.getMonth()/3) + 1;
@@ -163,7 +201,7 @@ Find new opportunities with <a href="https://tickerverse.com/">event-driven inve
       var qEnd = getQEnd(d);
       return Math.floor((qEnd - d) / 8.64e7) + 1;
     }
-    
+
 </script>
 
 
