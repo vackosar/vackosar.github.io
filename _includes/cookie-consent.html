@@ -3,9 +3,93 @@
 <div id="cookie_directive_container" class="fixed-bottom" style="display: none; background-color: grey; width: 100%">
     <nav class="d-flex align-items-center m-2 justify-content-center pt-4 pb-4" style="width: auto">
         <span class="credit text-white">
-            <i class="fa fa-cookie-bite"></i> By using our website you are consenting to our use of cookies in accordance with our <a href="/privacy-policy" target="_blank" class="text-warning" style="text-decoration: underline">cookie policy</a>.
+            <i class="fa fa-cookie-bite"></i> We and selected third parties use cookies or similar technologies as specified in our <a href="/privacy-policy" target="_blank" class="text-warning" style="text-decoration: underline">cookie policy</a>.
         </span>
-        <button class="btn btn-success ml-2" id="cookie_reject" type="button" style="width: auto">Only required</button>
+        <button class="btn btn-info ml-2" id="cookie_reject" type="button" style="width: auto">Only required</button>
         <button class="btn btn-success ml-2" id="cookie_accept" type="button" style="width: auto">Accept all</button>
     </nav>
 </div>
+
+
+<script type="application/javascript" defer>
+    window.addEventListener('load', (event) => {
+        var ga_id = 'UA-165114534-1';
+        // var userLoggedIn = {{ 'true' if session.get('_user_id') else 'false' }};
+
+        checkCookie_eu();
+
+        function getScript(scriptUrl, callback) {
+            const script = document.createElement('script');
+            script.src = scriptUrl;
+            script.onload = callback;
+
+            document.body.appendChild(script);
+        }
+
+        function checkCookie_eu() {
+            let consent = getCookie_eu("cookies_consent");
+            if (consent === '1') {
+                accept()
+
+            } else if (consent === undefined) {
+                // show notification bar
+                document.getElementById('cookie_directive_container').style.display = 'block';
+
+            } else {
+                // rejected
+            }
+
+        }
+
+        function setCookie_eu(c_name, value, exdays) {
+            var exdate = new Date();
+            exdate.setDate(exdate.getDate() + exdays);
+            var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+            document.cookie = c_name + "=" + c_value + "; path=/; Secure; SameSite=Strict";
+            document.getElementById('cookie_directive_container').style.display = 'none';
+        }
+
+        function getCookie_eu(c_name) {
+            var i, x, y, ARRcookies = document.cookie.split(";");
+            for (i = 0; i < ARRcookies.length; i++) {
+                x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+                y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+                x = x.replace(/^\s+|\s+$/g, "");
+                if (x === c_name) {
+                    return unescape(y);
+                }
+            }
+        }
+
+        function accept() {
+            setCookie_eu("cookies_consent", '1', 12 * 30);
+            execute();
+
+        }
+
+        function reject() {
+            setCookie_eu("cookies_consent", '0', 12 * 30);
+
+        }
+
+        function execute() {
+            <!-- Google Analytics -->
+            getScript('https://www.googletagmanager.com/gtag/js?id=' + ga_id, function () {
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+
+                gtag('js', new Date());
+                gtag('config', ga_id);
+
+            });
+            <!-- end of Google Analytics-->
+
+        }
+
+        document.getElementById('cookie_accept').onclick = accept;
+        document.getElementById('cookie_reject').onclick = reject;
+    });
+</script>
