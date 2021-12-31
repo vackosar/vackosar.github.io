@@ -21,9 +21,6 @@ How many days left in this quarter? There are <b id="daysLeft2">45</b> days left
 How many days till the end of this quarter? There are <b id="daysLeft3">45</b> days till the end of current quarter.<br>
 What quarter are we in now? Current quarter is <b id='quarterName2'>Q1</b>.
 
-<h3>When do calendar quarters start and end?</h3>
-<p>A year is divided into 4 quarters: Q1, Q2, Q3, Q4. Each quarter has 3 months. Each quarter has approximately 91 days.</p>
-
 <style>
 
 #clockContainer {
@@ -53,6 +50,9 @@ What quarter are we in now? Current quarter is <b id='quarterName2'>Q1</b>.
     </div>
     <figcaption class="figure-caption">Calendar year quarters and their months. Red line shows where we are now.</figcaption>
 </figure>
+
+<h3>When do calendar quarters start and end?</h3>
+<p>A year is divided into 4 quarters: Q1, Q2, Q3, Q4. Each quarter has 3 months. Each quarter has approximately 91 days.</p>
 
 <p>See a handy table of quarter start and end dates below. The dates are the same for each year.</p>
 
