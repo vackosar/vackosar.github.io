@@ -22,7 +22,7 @@ How many days till the end of this quarter? There are <b id="daysLeft3">45</b> d
 What quarter are we in now? Current quarter is <b id='quarterName2'>Q1</b>.
 
 <h3>When do calendar quarters start and end?</h3>
-<p>A year is divided into 4 quarters. Each quarter has 3 months. Each quarter has approximately 91 days.</p>
+<p>A year is divided into 4 quarters: Q1, Q2, Q3, Q4. Each quarter has 3 months. Each quarter has approximately 91 days.</p>
 
 <p><img src="/images/quarters.svg" alt="calendar year quarters visualization circular" style="max-width: 300px"/></p>
 
@@ -66,12 +66,13 @@ What quarter are we in now? Current quarter is <b id='quarterName2'>Q1</b>.
     </tbody>
 </table>
 
-<h3>Fiscal Year</h3>
+<h3>Fiscal Year and Fiscal Quarters</h3>
 <p>
-  Each company or government institution can choose their own fiscal year, a twelve month period, that is the most suitable to their yearly revenue cycle.
+  Each company or government institution can choose their own fiscal year, a twelve-month period, that is the most suitable to their yearly revenue cycle.
   Fiscal year can differ from calendar year.
   Companies use their fiscal years to submit financial reports, external audits, federal tax filings.
-  For example Apple's fiscal year ends its fiscal year on the last Saturday of September. What is the fiscal year end for Microsoft, Amazon, Google, or NVIDIA.
+  For example Apple's fiscal year ends its fiscal year on the last Saturday of September.
+  What is the fiscal year-end for Microsoft, Amazon, Google, or NVIDIA.
 </p>
 
 <table class="table table-striped">
@@ -109,7 +110,17 @@ What quarter are we in now? Current quarter is <b id='quarterName2'>Q1</b>.
     </tbody>
 </table>
 
-<p>A company fiscal year outlines its quarters dates. That means that fiscal quarters may be different for each company. But usually they fall at the end of the months and don't cut through them.</p>
+<p>
+A company fiscal year outlines its quarters dates.
+That means that fiscal quarters and quarter reporting dates may be different for each company.
+But usually they fall at the end of the months and don't cut through them.
+</p>
+
+<h3>Historical Origin of Calendar Quarters</h3>
+<p>
+Calendar quarters approximately match 4 seasons.
+Calendar quarters divides approximately match 2 equinox and 2 solstice days, when the plane of Earth's equator maximally aligns or excurses with the center of the Sun's disk (ecliptic).
+</p>
 
 <br>
 <br>
