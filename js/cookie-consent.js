@@ -48,6 +48,11 @@ window.addEventListener('load', (event) => {
 
   }
 
+   function reject() {
+     setCookie_eu("cookies_consent", 0, 30);
+
+   }
+
   function execute() {
     <!-- Google Analytics -->
     getScript('https://www.googletagmanager.com/gtag/js?id=UA-165114534-1', function () {
@@ -66,4 +71,5 @@ window.addEventListener('load', (event) => {
   }
 
   document.getElementById('cookie_accept').onclick = accept;
+  document.getElementById('cookie_reject').onclick = reject;
 });

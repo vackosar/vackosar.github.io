@@ -78,9 +78,10 @@ description: Privacy Policy for VaclavKosar.Com
     <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.</p>
     <p>Examples of Cookies we use:</p>
     <ul>
-        <li><strong>Session Cookies.</strong> We use Session Cookies to operate our Service.</li>
-        <li><strong>Preference Cookies.</strong> We use Preference Cookies to remember your preferences and various settings.</li>
+        <li><strong>Session Cookies (id: session).</strong> We use Session Cookies to operate our Service.</li>
+        <li><strong>Preference Cookies (id: cookies_consent).</strong> We use Preference Cookies to remember your preferences and various settings.</li>
         <li><strong>Security Cookies.</strong> We use Security Cookies for security purposes.</li>
+        <li><strong>Analytical Cookies (id: ga_*).</strong> We use Analytical Cookies to improve the service.</li>
     </ul>
 
     <h2>Use of Data</h2>
@@ -168,11 +169,13 @@ description: Privacy Policy for VaclavKosar.Com
     <h2>Service Providers</h2>
     <p>We may employ third party companies and individuals to facilitate our Service ("Service Providers"), provide the Service on our behalf, perform Service-related services or assist us in analysing how our Service is used.</p>
     <p>These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
-    <li>
-        <p><strong>MailChimp.com</strong></p>
-        <p>MailChimp keeps the subscription email list and is used send emails to the email subscribers.</p>
-        <p>More information at <a href="https://mailchimp.com/legal/">MailChimp Legal</a></p>
-    </li>
+    <ul>
+      <li>
+          <p><strong>MailChimp.com</strong></p>
+          <p>MailChimp keeps the subscription email list and is used send emails to the email subscribers.</p>
+          <p>More information at <a href="https://mailchimp.com/legal/">MailChimp Legal</a></p>
+      </li>
+    </ul>
 
     <h3>Analytics</h3>
     <p>We may use third-party Service Providers to monitor and analyse the use of our Service.</p>
