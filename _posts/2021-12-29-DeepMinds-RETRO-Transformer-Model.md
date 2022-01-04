@@ -11,11 +11,13 @@ permalink: /:categories/:title
 
 {% include load_video.html %}
 
-- Retrieval-Enhanced Transformer (RETRO) is autoregressive language model
-- from DeepMind's [Improving Language Models by Retrieving from Trillions of Tokens (2021)](https://arxiv.org/pdf/2112.04426v1.pdf), [Deep Mind Blog](https://deepmind.com/research/publications/2021/improving-language-models-by-retrieving-from-trillions-of-tokens)
-- conditions on retrieved 2-chunks
-- retrieves based on Bert-similarity with preceding chunk
-- SoTA on Wikitext103 and the Pile 
+- next token (~word) prediction = autoregressive language model
+- full name = Retrieval-Enhanced Transformer (RETRO) 
+- paper = DeepMind's [Improving Language Models by Retrieving from Trillions of Tokens (2021)](https://arxiv.org/pdf/2112.04426v1.pdf), [Deep Mind Blog](https://deepmind.com/research/publications/2021/improving-language-models-by-retrieving-from-trillions-of-tokens)
+- retrieves from database [Bert](https://arxiv.org/pdf/1706.03762.pdf)-similar text-chunks with the current text-chunk
+- conditions on retrieved chunk and its continuation chunk
+- so takes into account previously encountered "future text"
+- SoTA on Wikitext103 and the Pile datasets
 - Competitive on QA same perf [GPT-3](https://arxiv.org/pdf/2005.14165.pdf) with 25x less params
 - model performs even when low train-test overlap
 - retrieval reduces hallucinations and increases interpretability
