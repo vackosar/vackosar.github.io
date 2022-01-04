@@ -69,16 +69,21 @@ permalink: /:categories/:title
 - each key is the first chunk from its value (first 64 tokens)
 - each key is time-averaged BERT embedding of the first chunk
 - key-vectors stored in [ScaNN similarity search](https://github.com/google-research/google-research/tree/master/scann)
-- 2T token database queried in 10ms
+- db stores entire MassiveText during evaluation
+  - test set leakage is controlled via a 13-gram Jaccard similarity
+  - during training only smaller trains set
+- 1.7T token database queried in 10ms
 - retrieval is part of the input dataset pipeline
 - optimum number of neighbors between 2 and 40 
 
 
 ## Encoding Retrieved Neighbours
 - all retrieved values: 128 consecutive tokens
-- are first passed through an encoder
+- are first passed through a bi-directional transformer encoder
 - differentiably modulates retrieved chunks
-- using cross attention to query chunks hidden representation
+- conditioning on query-chunks via cross attention
+  - query-chunks hidden representations serves as key and value
+  - encoded representations serve as queries
   - at the last layer before first cross-attention
 - output is called retrieval set
 
