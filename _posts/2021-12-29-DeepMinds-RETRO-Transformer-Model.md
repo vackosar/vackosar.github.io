@@ -71,9 +71,9 @@ permalink: /:categories/:title
 - each key is the first chunk from its value (first 64 tokens)
 - each key is time-averaged BERT embedding of the first chunk
 - key-vectors stored in [ScaNN similarity search](https://github.com/google-research/google-research/tree/master/scann)
-- db stores entire MassiveText during evaluation
-  - test set leakage is controlled via a 13-gram Jaccard similarity
-  - during training only smaller trains set
+- db stores entire MassiveText train set during evaluation
+  - training on 600B train subset
+  - test set leakage into train set is controlled via a 13-gram Jaccard similarity
 - 1.7T token database queried in 10ms
 - retrieval is part of the input dataset pipeline
 - optimum number of neighbors between 2 and 40 
