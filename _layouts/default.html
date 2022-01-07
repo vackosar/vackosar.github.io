@@ -22,22 +22,30 @@
     <div style="max-width: 1336px; width: 98.5%;">
         <table>
             <tr>
-                <td><img src="/face-map-ai-portrait-square-70-76.webp" alt="Vaclav Kosar's face photo" style="border-radius: 50%; width: 70px; height: 76px;"></td>
+                <td>
+                    <a href="{{ site.url }}">
+                        <img src="/face-map-ai-portrait-square-70-76.webp" alt="Vaclav Kosar's face photo" style="border-radius: 50%; width: 70px; height: 76px;">
+                    </a>
+                </td>
 <!--                <td><img src="/face-map-ai-portrait-square.webp" alt="Vaclav Kosar's face photo" style="border-radius: 50%; width: 70px; height: 76px;"></td>-->
                 <td>
-                    <h5>Vaclav Kosar</h5>
-                    <i>{{ site.description }}</i>
+                    <a href="{{ site.url }}" style="text-decoration: none">
+                        <h5>Vaclav Kosar</h5>
+                        <i>{{ site.description }}</i>
+                    </a>
                 </td>
             </tr>
         </table>
         <nav>
-            <ul>
-                <li><a href="/">Blog</a></li>
-                <li><a href="https://www.youtube.com/user/MrVkosar/videos">Youtube</a></li>
-                <li><a href="https://github.com/vackosar">Github</a></li>
-                <li><a href="mailto:admin@vaclavkosar.com">Email</a></li>
-                <li><a href="https://cz.linkedin.com/in/vaclav-kosar-47755863">LinkedIn</a></li>
-                <li><a href="/donate">Donate</a></li>
+            <ul style="text-decoration: none">
+<!--                <li><a href="/">{% include home.svg %}</a></li>-->
+                <li><a href="mailto:admin@vaclavkosar.com">{% include envelope.svg %}</a></li>
+                <li><a href="/donate">{% include donate.svg %}</a></li>
+                <li><a href="https://twitter.com/vackosar/">{% include twitter.svg %}</a></li>
+                <li><a href="https://www.youtube.com/user/MrVkosar/videos">{% include youtube.svg %}</a></li>
+                <li><a href="https://cz.linkedin.com/in/vaclav-kosar-47755863">{% include linkedin.svg %}</a></li>
+                <li><a href="https://github.com/vackosar">{% include github.svg %}</a></li>
+                <a href="https://vackosar.github.io/feed.xml" target="_blank" title="Follow on RSS" class="m-1">{% include rss.svg %}</a>
             </ul>
         </nav>
         <div class="container">
