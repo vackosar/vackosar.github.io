@@ -20,7 +20,7 @@ BCE is distinct from the multi-tier architecture in that it does not see some ou
 
 The package structure is often visualized as tree onion layers, where the most outer layer is Boundary, central is Control and inner is Entity. The Boundary layer contains classes responsible for all communications with systems outside application runtime. Control represents all logic that doesn't fit well into boundary. Entity contains data structures which are allowed to have some behaviour.
 
-## Feature Vs Technical Structuring
+## Functionality Folders vs BCE Structure
 
 I am very much for structuring, modularization and encapsulation according to end result features. However, often after separation per major features on sub 30 classes level, I think it is more practical to structure according to technical behaviour. Thus I suggest to use BCE architecture which represents that.
 
