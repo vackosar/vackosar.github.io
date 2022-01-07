@@ -22,7 +22,9 @@ The package structure is often visualized as tree onion layers, where the most o
 
 ## Feature Vs Technical Structuring
 
-I am very much for structuring, modularization and encapsulation according to end result features. However, often after separation per major features on sub 30 classes level, I think it is more practical to structure according to technical behaviour. Thus I suggest to use BCE architecture which represents that.    
+I am very much for structuring, modularization and encapsulation according to end result features. However, often after separation per major features on sub 30 classes level, I think it is more practical to structure according to technical behaviour. Thus I suggest to use BCE architecture which represents that.
+
+At the same time, don't be dogmatic and if there are good reasons do what works in the specific case. The BCE could even exist in the sub-folders of the service-oriented parent folder. Or some of the folder could have to have different names e.g. boundary may have to called "mojo" for example. If BCE doesn't work for you, let me know!
 
 ## Dependency Rule
 Sometimes an additional dependency rule is being added to BCE: Classes can depend on other classes only within same layer or in one more inner layers. I personally found that this rule impractical mainly thanks to modern tools like annotations e.g. annotation on Entity class can reference a serialization class residing in Control.
@@ -31,7 +33,7 @@ Sometimes an additional dependency rule is being added to BCE: Classes can depen
 It was a dilemma for me where to place a classes used to access database (Spring Data repository classes in Java). Repositories do define interaction with database which is outside system placing them into Boundary, but on the other hand they contain application logic, which could be placed as well in Control. Since I gave up on "Dependency Rule" (see above), I think the repository classes belong in Boundary.  
 
 ## Example
-For real world example you can have a look at [Gitflow Incremental Builder](https://github.com/gitflow-incremental-builder/gitflow-incremental-builder/tree/master/src/main/java/com/vackosar/gitflowincrementalbuild), which I founded, but which was developed beyond by phenomenal dev [Falko](https://github.com/famod).
+For real world example you can have a look at [Gitflow Incremental Builder](https://github.com/gitflow-incremental-builder/gitflow-incremental-builder/tree/a5b310bad88da1ee12f887b77ac153ab20a7699e/src/main/java/com/vackosar/gitflowincrementalbuild), which I founded, but which was developed beyond by phenomenal dev [Falko](https://github.com/famod).
 For an overview of boundary control entity architecture folder structure:
 
 - boundary/
