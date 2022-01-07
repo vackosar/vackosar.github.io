@@ -11,7 +11,7 @@ redirect_from:
   - /software/Boundary-Control-Entity-Architecture
 ---
 
-Boundary-Control-Entity (BCE), or Entity-Control-Boundary (ECB), or Entity-Boundary-Control (EBC) architecture is a directory (package) structure pattern for sorting classes. It is an alternative to layered architecture. It is very simple and natural way to structure classes, which goes well with modularized architecture. One creates one BCE package structure per a micro-service, feature or module having ideally between 9 to 30 classes.  
+Boundary-Control-Entity (BCE), or Entity-Control-Boundary (ECB), or Entity-Boundary-Control (EBC) architecture is a directory (package) structure pattern for sorting classes. It is an alternative to layered architecture. It is very simple and natural way to structure classes, which goes well with modularized architecture. One creates one BCE package structure per a microservice, feature or module having ideally between 9 to 30 classes.  
 
 <p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/bce.svg" alt="Boundary Control Entity architecture"/></p>
 
@@ -24,7 +24,7 @@ The package structure is often visualized as tree onion layers, where the most o
 
 I am very much for structuring, modularization and encapsulation according to end result features. However, often after separation per major features on sub 30 classes level, I think it is more practical to structure according to technical behaviour. Thus I suggest to use BCE architecture which represents that.
 
-At the same time, don't be dogmatic and if there are good reasons do what works in the specific case. The BCE could even exist in the sub-folders of the service-oriented parent folder. Or some of the folder could have to have different names e.g. boundary may have to called "mojo" for example. If BCE doesn't work for you, let me know!
+At the same time, don't be dogmatic and if there are good reasons do what works in the specific case. The BCE could even exist in the sub-folders of a parent folder. The parent folder than can follow service-oriented architecture, where each microservice has its own folder and runtime. Or some of the folder could have to have different names e.g. boundary may have to called "mojo" for example. If BCE doesn't work for you, let me know!
 
 ## Dependency Rule
 Sometimes an additional dependency rule is being added to BCE: Classes can depend on other classes only within same layer or in one more inner layers. I personally found that this rule impractical mainly thanks to modern tools like annotations e.g. annotation on Entity class can reference a serialization class residing in Control.
