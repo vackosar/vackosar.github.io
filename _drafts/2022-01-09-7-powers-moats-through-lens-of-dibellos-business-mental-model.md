@@ -22,12 +22,15 @@ DiBello's research suggests that there is a triad of crucial aspects of a busine
 Here I restate modified DiBello's dimensions of mental model of business, adding units, agents, and related terms.
 For details, I recommend reading [Mental Model of Business](https://commoncog.com/blog/business-mental-model/)
 
+Note that many terms in business cannot fall on the single dimension listed below.
+The point of a business is in fact to function across the dimensions to create value.
+
 - Demand (market, market trends, competitive analysis, positioning, "strategy")
-	- unit = deal, sale, brand assets
+	- unit = deal, sale, brand asset
 	- agents = customers, marketing agencies, marketers, CMO, Business Development, ...
 	- terms: competition, prospect, cost of goods sold, return on ads spend, ...
 - Supply (manufacturing, production, product development, operations, "leadership")
-	- unit = product, service, productive assets
+	- unit = product, service, productive asset (machine)
 	- agents = suppliers, builders, CTO, procurement
 	- terms: cost of production, design, ...
 - Capital (finance, economic climate)
@@ -37,8 +40,6 @@ For details, I recommend reading [Mental Model of Business](https://commoncog.co
 
 Certain terms are sometimes assigned by DiBello into other dimensions than as in above e.g. cost of goods sold is instead listed under the Capital dimension.
 In those cases, I differ as it seemed more useful to assign elsewhere.
-Many topics cannot fall within on the single dimension of the business.
-The point of a business is in fact to connect all the dimensions to create value.
 Dimension agnostic (cross-cutting) terms and agents are: CEO, technology, operations, human resources, management, security, software development, R&D, execution, planning.
 
 ## 7 Powers From Perspective of DiBello's 
@@ -52,7 +53,7 @@ I split them according to company stage to which they become accessible.
 ### Startup Stage Powers
 - Counter-positioning - Where big players cannot follow?
 	- benefited dimensions: supply, demand, capital
-	- barrier: big players in local maximum and cannot follow 
+	- barrier: big players optimized in local maximum with lots of trust cannot follow 
 	- examples: specialized production, niche market, business model
 - Cornered-Resource - What can you own exclusively almost all of?
 	- benefited dimensions: supply, demand, capital
@@ -73,24 +74,24 @@ I split them according to company stage to which they become accessible.
 	- Demand-side Scale Economy (Network) - Demand fixed costs or networking customers
 		- benefited dimensions: demand (demand-side economy of scale)
 		- barrier: market share
-		- examples: social networks (Facebook), marketing fixed costs ([Red Bull](https://en.wikipedia.org/wiki/Red_Bull)), recommender systems, google ranking
+		- examples: social networks (Facebook), marketing fixed costs ([Red Bull](https://en.wikipedia.org/wiki/Red_Bull)), recommender systems, Google ranking
 	- Capital Economies - Capital fixed costs or networking investors
 		- benefit: fixed costs of increased reporting requirements access to cheaper capital
 		- barrier: market share
 		- examples: IPO has fixed costs of regulatory reporting, investor network effects
 		
 ### Corp-up Stage Powers
-- Hysteresis (optimization, trust, stability):
-	- Process Power - What creates non-replicable or tacit organizational capability?
+- Hysteresis (optimization, trust, stability)
+	- Process Power - What creates non-replicable and stable organizational capability?
 		- benefited dimensions: supply
 		- lower costs per unit of supply due to optimization and trust of suppliers
 		- barrier: time in production
 	- Branding
-		- What accrues trust, safety, and nostalgia with users optimally?
+		- What accrues trust and nostalgia with users and markets optimally?
 		- benefited dimension: demand
 		- lower costs per unit of demand due to optimization and trust of customers
 		- barrier: time in market
-	- Lindy Effect - What will make 
+	- Lindy Effect - What accrues trust and optimizes capital operations?
 		- benefited dimension: capital
 		- low cost of capital thanks to optimization and trust of investors
 		- example: Blue chip stocks
