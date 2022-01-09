@@ -62,17 +62,16 @@ I split them according to company stage to which they become accessible.
 	
 ### Scaleup Stage Powers
 - Switching costs - Why customers, suppliers, investors cannot switch to competition cheaply?
-	- benefited dimensions: supply, demand, capital
-	- barrier: competitor has to pay switching costs
-	- examples: data and configuration stored in the systems, habits
-	- inverse: cheap migration
+    - benefited dimensions: supply, demand, capital
+    - barrier: competitor has to pay switching costs
+    - examples: deep integration with systems, data and configuration stored in the systems, habits
 - Scale - How to pay fixed cost or network the agents?
 	- Scale Economies (Supply side-scale) - production fixed costs or networking suppliers
 		- benefited dimensions: supply
 		- barrier: market share
 		- examples: shooting movies to distribute across subscribers ([Netflix](https://en.wikipedia.org/wiki/Netflix))
 	- Demand-side Scale Economy (Network) - Demand fixed costs or networking customers
-		- benefited dimensions: demand (demand-side economy of scale)
+		- benefited dimensions: demand
 		- barrier: market share
 		- examples: social networks (Facebook), marketing fixed costs ([Red Bull](https://en.wikipedia.org/wiki/Red_Bull)), recommender systems, Google ranking
 	- Capital Economies - Capital fixed costs or networking investors
