@@ -75,9 +75,9 @@ I split them according to company stage to which they become accessible.
 		- barrier: market share
 		- examples: social networks (Facebook), marketing fixed costs ([Red Bull](https://en.wikipedia.org/wiki/Red_Bull)), recommender systems, Google ranking
 	- Capital Economies - Capital fixed costs or networking investors
-		- benefit: fixed costs of increased reporting requirements access to cheaper capital
+		- benefited dimensions: capital
 		- barrier: market share
-		- examples: IPO has fixed costs of regulatory reporting, investor network effects
+		- examples: IPO has high fixed costs of regulatory reporting, investor network effects
 		
 ### Corp-up Stage Powers
 - Hysteresis (optimization, trust, stability)
@@ -85,8 +85,7 @@ I split them according to company stage to which they become accessible.
 		- benefited dimensions: supply
 		- lower costs per unit of supply due to optimization and trust of suppliers
 		- barrier: time in production
-	- Branding
-		- What accrues trust and nostalgia with users and markets optimally?
+	- Branding - What accrues trust and nostalgia with users and markets optimally?
 		- benefited dimension: demand
 		- lower costs per unit of demand due to optimization and trust of customers
 		- barrier: time in market
