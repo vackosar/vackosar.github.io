@@ -11,8 +11,8 @@ permalink: /:categories/:title
 ---
 
 The [Helmer's 7 Powers book](https://www.goodreads.com/book/show/32816087-7-powers) lists 7 barriers that protect margins of businesses and how to attain them.
-[DiBello's research](https://wtri.com/wp-content/uploads/2015/06/Informed-By-Knowledge-Chapter-12.pdf) suggests that great business people understand all three partially independent aspects or dimensions of business: demand, supply, capital.
-The text below may provide you additional insights into both through combination of the ideas above.
+[DiBello's research](https://wtri.com/wp-content/uploads/2015/06/Informed-By-Knowledge-Chapter-12.pdf) suggests that great business people understand interaction between following three aspects (dimensions) of a business: demand, supply, capital.
+The text below provides additional insights into both through combination of the ideas above.
 For example, Helmer's book seems to miss capital side of the described moats and networks effects between suppliers and investors, that the perspective below naturally brings out.
 
 I have partially restated and aligned some of the concepts in contrast to the references to offer interesting view, so be aware. Additionally, this is my initial version of the post on this topic.
@@ -28,20 +28,26 @@ For details, I recommend reading [Mental Model of Business](https://commoncog.co
 	- terms: competition, prospect, cost of goods sold, return on ads spend, ...
 - Supply (manufacturing, production, product development, operations, "leadership")
 	- unit = product, service, productive assets
-	- agents = suppliers, employees, CTO, procurement
+	- agents = suppliers, builders, CTO, procurement
 	- terms: cost of production, design, ...
 - Capital (finance, economic climate)
 	- unit = money, financial assets
 	- agents = investors, bondholders, accountants, CFO, ...
 	- terms: cashflow, debt, equity receivables, cost of capital ...
-	
-Dimension agnostic (cross-cutting) terms and agents:
-- CEO, technology, operations, human resources, management, security, software development, R&D, execution, planning
-- In some cases these terms are sometimes assigned by DiBello into one of the dimensions above.
+
+Certain terms are sometimes assigned by DiBello into other dimensions than as in above e.g. cost of goods sold is instead listed under the Capital dimension.
+In those cases, I differ as it seemed more useful to assign elsewhere.
+Many topics cannot fall within on the single dimension of the business.
+The point of a business is in fact to connect all the dimensions to create value.
+Dimension agnostic (cross-cutting) terms and agents are: CEO, technology, operations, human resources, management, security, software development, R&D, execution, planning.
 
 ## 7 Powers From Perspective of DiBello's 
-Helmer's book defines Power as "the set of conditions creating the potential for persistent differential returns".  It is about building defensive moat, or a barrier to protect margins from competitive arbitrage. For a summary I recommend reading [7 Powers summary](https://commoncog.com/blog/7-powers-summary/).
+Helmer's book defines Power as "the set of conditions creating the potential for persistent differential returns".
+It is about building defensive moat, or a barrier to protect margins from competitive arbitrage.
+For a summary I recommend reading [7 Powers summary](https://commoncog.com/blog/7-powers-summary/).
 Below I offer a view of the powers through the lens of DiBello's model.
+I split them according to company stage to which they become accessible.
+
 
 ### Startup Stage Powers
 - Counter-positioning - Where big players cannot follow?
@@ -51,7 +57,7 @@ Below I offer a view of the powers through the lens of DiBello's model.
 - Cornered-Resource - What can you own exclusively almost all of?
 	- benefited dimensions: supply, demand, capital
 	- barrier: external force of contracts, laws
-	- examples: exclusive contract, patent, regulation, property laws, employees, exclusive funding
+	- examples: exclusive contract, patent, regulation, property, employee, exclusive funding
 	
 ### Scaleup Stage Powers
 - Switching costs - Why customers, suppliers, investors cannot switch to competition cheaply?
