@@ -13,9 +13,10 @@ permalink: /:categories/:title
 The [Helmer's 7 Powers book](https://www.goodreads.com/book/show/32816087-7-powers) lists 7 barriers that protect margins of businesses and how to attain them.
 [DiBello's research](https://wtri.com/wp-content/uploads/2015/06/Informed-By-Knowledge-Chapter-12.pdf) suggests that great business people understand interaction between following three aspects (dimensions) of a business: demand, supply, capital.
 The text below provides additional insights into both through combination of the ideas above.
-For example, Helmer's book seems to miss capital side of the described moats and networks effects between suppliers and investors, that the perspective below naturally brings out.
+For example, Helmer's book does not list capital side of the described moats and network effects between suppliers and investors, which the perspective below naturally brings out.
 
-I have partially restated and aligned some of the concepts in contrast to the references to offer interesting view, so be aware. Additionally, this is my initial version of the post on this topic.
+I have partially restated and aligned some of the concepts in contrast to the references to offer interesting view, so be aware.
+Additionally, this is my initial version of the post on this topic.
 
 ## DiBello Mental Model Dimensions
 DiBello's research suggests that there is a triad of crucial aspects of a business that great business people understand.
@@ -78,9 +79,11 @@ I split them according to company stage to which they become accessible.
 		- barrier: market share
 		- examples: social networks (Facebook), marketing fixed costs ([Red Bull](https://en.wikipedia.org/wiki/Red_Bull)), recommender systems, Google ranking
 	- Capital Economies - Capital fixed costs or networking investors
-		- benefited dimensions: capital
-		- barrier: market share
-		- examples: IPO has high fixed costs of regulatory reporting, investor network effects
+        - benefited dimensions: capital
+        - barrier: market share
+        - examples:
+          - IPO has high fixed costs of regulatory reporting
+          - Investor network effects perhaps exist as [reflexivity](https://en.wikipedia.org/wiki/Reflexivity_(social_theory)#In_economics) (the more people want the NFT higher it is priced)
 		
 ### Corp-up Stage Powers
 - Hysteresis (optimization, trust, stability)
