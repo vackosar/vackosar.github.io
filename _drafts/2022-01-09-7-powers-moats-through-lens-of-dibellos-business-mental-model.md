@@ -39,8 +39,11 @@ The point of a business is in fact to function across the dimensions to create v
 	- terms: cashflow, debt, equity receivables, cost of capital ...
 
 Certain terms are sometimes assigned by DiBello into other dimensions than as in above e.g. cost of goods sold is instead listed under the Capital dimension.
-In those cases, I differ as it seemed more useful to assign elsewhere.
-Dimension agnostic (cross-cutting) terms and agents are: CEO, technology, operations, human resources, management, security, software development, R&D, execution, planning.
+In those cases, I differ as it seems more useful to assign elsewhere.
+For example, DiBello would probably place suppliers into the Demand, while I list them in Supply.
+There may be no suppliers, or they may be indistinguishable from customers in some cases.
+Dimension agnostic (cross-cutting) terms and agents are: CEO, technology, operations, human resources, management, security, software, R&D, execution, planning.
+These exist or take action in two or more dimensions.
 
 ## 7 Powers From Perspective of DiBello's 
 Helmer's book defines Power as "the set of conditions creating the potential for persistent differential returns".
