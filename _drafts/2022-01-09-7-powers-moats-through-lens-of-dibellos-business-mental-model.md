@@ -70,20 +70,21 @@ I split them according to company stage to which they become accessible.
     - barrier: competitor has to pay switching costs
     - examples: deep integration with systems, data and configuration stored in the systems, habits
 - Scale - How to pay fixed-cost or network the agents?
-	- Scale Economies (Supply side-scale) - production fixed-costs or networking suppliers
-		- benefited dimensions: supply
-		- barrier: market share
-		- examples: shooting movies to distribute across subscribers ([Netflix](https://en.wikipedia.org/wiki/Netflix))
-	- Demand-side Scale Economy (Network) - Demand fixed-costs or networking customers
-		- benefited dimensions: demand
-		- barrier: market share
-		- examples: social networks (Facebook), marketing fixed-costs ([Red Bull](https://en.wikipedia.org/wiki/Red_Bull)), recommender systems, Google ranking
-	- Capital Economies - Capital fixed-costs or networking investors
+    - Scale Economies (Supply side-scale) - production fixed-costs or networking suppliers
+        - benefited dimensions: supply
+        - barrier: market share
+        - examples: shooting movies to distribute across subscribers ([Netflix](https://en.wikipedia.org/wiki/Netflix))
+    - Demand-side Scale Economy (Network) - Demand fixed-costs or networking customers
+        - benefited dimensions: demand
+        - barrier: market share
+        - examples: social networks (Facebook), marketing fixed-costs ([Red Bull](https://en.wikipedia.org/wiki/Red_Bull)), recommender systems, Google ranking
+    - "Capital Scale Economies" - Capital fixed-costs or networking investors
         - benefited dimensions: capital
         - barrier: market share
         - examples:
           - IPO has high fixed-costs of regulatory reporting
-          - Investor network effects perhaps exist as [reflexivity](https://en.wikipedia.org/wiki/Reflexivity_(social_theory)#In_economics) (the more people want the Mona Lisa the higher it is priced)
+		  - Investor network effects perhaps exist as [reflexivity](https://en.wikipedia.org/wiki/Reflexivity_(social_theory)#In_economics) (the more people want the Mona Lisa the higher it is priced)
+		  - [Web3](https://en.wikipedia.org/wiki/Web3) brings in new possibilities, perhaps we see more in future? 
 		
 ### Corp-up Stage Powers
 - Hysteresis (optimization, trust, stability)
@@ -95,7 +96,7 @@ I split them according to company stage to which they become accessible.
 		- benefited dimension: demand
 		- lower costs per unit of demand due to optimization and trust of customers
 		- barrier: time in market
-	- Lindy Effect - What accrues trust and optimizes capital operations?
+	- "Lindy Effect" - What accrues trust and optimizes capital operations?
 		- benefited dimension: capital
 		- low cost of capital thanks to optimization and trust of investors
 		- example: Blue chip stocks
