@@ -15,7 +15,7 @@ The [Helmer's 7 Powers book](https://www.goodreads.com/book/show/32816087-7-powe
 The text below may provide you additional insights into both through combination of the ideas above.
 For example, Helmer's book seems to miss capital side of the described moats and networks effects between suppliers and investors, that the perspective below naturally brings out.
 
-I have partially restated and aligned some of the concepts in contrast to the references to offer interesting view, so be aware. Additionaly, this is my initial version of the post on this topic.
+I have partially restated and aligned some of the concepts in contrast to the references to offer interesting view, so be aware. Additionally, this is my initial version of the post on this topic.
 
 ## DiBello Mental Model Dimensions
 DiBello's research suggests that there is a triad of crucial aspects of a business that great business people understand.
