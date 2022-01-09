@@ -87,4 +87,5 @@ Below I offer a view of the powers through the lens of DiBello's model.
 		
 # Acknowledgments
 I only found about topics above thanks to Cedric's blog posts over at [Common Place Blog](https://commoncog.com/blog/).
+I am personally a paying subscriber of the Commonplace blog to have access to member's only posts and the community.
 
