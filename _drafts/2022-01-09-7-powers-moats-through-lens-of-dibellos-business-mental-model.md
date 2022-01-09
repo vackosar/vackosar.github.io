@@ -10,13 +10,13 @@ date: 2022-01-09
 permalink: /:categories/:title
 ---
 
-The [Helmer's 7 Powers book](https://www.goodreads.com/book/show/32816087-7-powers) lists 7 barriers that protect margins of businesses and how to attain them.
+The [Helmer's 7 Powers book](https://www.goodreads.com/book/show/32816087-7-powers) lists 7 barriers that protect margins of businesses long term and how to attain them.
 [DiBello's research](https://wtri.com/wp-content/uploads/2015/06/Informed-By-Knowledge-Chapter-12.pdf) suggests that great business people understand interaction between following three aspects (dimensions) of a business: demand, supply, capital.
-The text below provides additional insights into both through combination of the ideas above.
-For example, Helmer's book does not list capital side of the described moats and network effects between suppliers and investors, which the perspective below naturally brings out.
+The text below may provide additional insights into both through partial modification, followed by combination of the ideas above.
+For example, Helmer's book does not list capital side of the described moats and network effects between suppliers and investors, but idea-fusion hints that they may exist.
 
-I have partially restated and aligned some of the concepts in contrast to the references to offer interesting view, so be aware.
-Additionally, this is my initial version of the post on this topic.
+_I have partially restated and aligned some of the concepts from the references to offer interesting view, so be aware._
+_Additionally, this is my initial version of the post on this topic._
 
 ## DiBello Mental Model Dimensions
 DiBello's research suggests that there is a triad of crucial aspects of a business that great business people understand.
@@ -69,21 +69,21 @@ I split them according to company stage to which they become accessible.
     - benefited dimensions: supply, demand, capital
     - barrier: competitor has to pay switching costs
     - examples: deep integration with systems, data and configuration stored in the systems, habits
-- Scale - How to pay fixed cost or network the agents?
-	- Scale Economies (Supply side-scale) - production fixed costs or networking suppliers
+- Scale - How to pay fixed-cost or network the agents?
+	- Scale Economies (Supply side-scale) - production fixed-costs or networking suppliers
 		- benefited dimensions: supply
 		- barrier: market share
 		- examples: shooting movies to distribute across subscribers ([Netflix](https://en.wikipedia.org/wiki/Netflix))
-	- Demand-side Scale Economy (Network) - Demand fixed costs or networking customers
+	- Demand-side Scale Economy (Network) - Demand fixed-costs or networking customers
 		- benefited dimensions: demand
 		- barrier: market share
-		- examples: social networks (Facebook), marketing fixed costs ([Red Bull](https://en.wikipedia.org/wiki/Red_Bull)), recommender systems, Google ranking
-	- Capital Economies - Capital fixed costs or networking investors
+		- examples: social networks (Facebook), marketing fixed-costs ([Red Bull](https://en.wikipedia.org/wiki/Red_Bull)), recommender systems, Google ranking
+	- Capital Economies - Capital fixed-costs or networking investors
         - benefited dimensions: capital
         - barrier: market share
         - examples:
-          - IPO has high fixed costs of regulatory reporting
-          - Investor network effects perhaps exist as [reflexivity](https://en.wikipedia.org/wiki/Reflexivity_(social_theory)#In_economics) (the more people want the NFT higher it is priced)
+          - IPO has high fixed-costs of regulatory reporting
+          - Investor network effects perhaps exist as [reflexivity](https://en.wikipedia.org/wiki/Reflexivity_(social_theory)#In_economics) (the more people want the Mona Lisa the higher it is priced)
 		
 ### Corp-up Stage Powers
 - Hysteresis (optimization, trust, stability)
