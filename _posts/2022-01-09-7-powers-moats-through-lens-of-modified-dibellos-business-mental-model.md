@@ -33,8 +33,8 @@ The three core areas are:
 
 
 ### Modified DiBello Dimensions
-Below modified dimensions are changed such that each of them involve interaction with the world outside the company,
-involve specific roles and operations, and can operate with specialized monetary metrics like COS.
+Below dimensions are changed such that each of them involves interaction with the world outside the company,
+includes specific roles and operations, and contain specialized monetary metrics like COS.
 
 Many terms in business cannot fall on the single dimension listed below.
 The point of a business is in fact to function across the dimensions to create value.
