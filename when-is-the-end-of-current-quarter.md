@@ -34,19 +34,32 @@ What quarter are we in now? Current quarter is <b id='quarterName2'>Q1</b>.
   
 #clockArrow {
     position: absolute;
-    background: red;
+    /*background: red;*/
+    color: red;
     border-radius: 10px;
-    transform-origin: bottom;
-    width: 1.8%;
+    transform-origin: left;
+    /*width: 1.8%;*/
     opacity: 0.8;
-    height: 40%;
-    top: 9%;
-    left: 48.85%;
+    width: 40%;
+    left: 50%;
+    top: 45%;
 }
 </style>
+
 <figure class="figure">
     <div id="clockContainer" class="figure-img img-fluid rounded">
-        <div id="clockArrow"></div>
+
+<svg id="clockArrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 100">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+      refX="0" refY="3.5" orient="auto" stroke="red" fill="red">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+  <line x1="0" y1="50" x2="250" y2="50" stroke="red" 
+  stroke-width="8" marker-end="url(#arrowhead)" />
+</svg>
+
     </div>
     <figcaption class="figure-caption">Calendar year quarters and their months. Red line shows where we are now.</figcaption>
 </figure>
@@ -176,7 +189,7 @@ Find new opportunities with <a href="https://tickerverse.com/">event-driven inve
     var current = new Date(dt.getTime());
     var previous = new Date(dt.getFullYear(), 0, 1);
     var full = new Date(dt.getFullYear() + 1, 0, 1) - previous;
-    var arrow_rotation = (current - previous) / full * 360;
+    var arrow_rotation = (current - previous) / full * 360 - 90;
     document.getElementById('clockArrow').style.transform = `rotate(${arrow_rotation}deg)`;
 
     
