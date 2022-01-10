@@ -1,6 +1,6 @@
 ---
-title: "7 Powers' Moats Through the Lens of DiBello's Business Mental Model"
-description: "An insight into Helmer's enterprise moats via dimensions of demand, supply, and capital."
+title: "7 Powers' Moats Through the Lens of Modified DiBello's Business Mental Model"
+description: "An insight into Helmer's enterprise moats via modified dimensions of demand, supply, and capital."
 # image: /images/retrieval-transformer-thumb.png 
 # video: -93KBOg77Sg
 layout: post
@@ -20,13 +20,26 @@ _Additionally, this is my initial version of the post on this topic._
 
 ## DiBello Mental Model Dimensions
 DiBello's research suggests that there is a triad of crucial aspects of a business that great business people understand.
-Here I restate modified DiBello's dimensions of mental model of business, adding units, agents, and related terms.
-For details, I recommend reading [Mental Model of Business](https://commoncog.com/blog/business-mental-model/)
+Here I state the original and modified DiBello's dimensions of mental model of business, adding units, agents, and related terms.
 
-Note that many terms in business cannot fall on the single dimension listed below.
+### Original DiBello Dimensions
+For details, I recommend reading [Mental Model of Business](https://commoncog.com/blog/business-mental-model/) or the [original paper](https://wtri.com/wp-content/uploads/2015/06/Informed-By-Knowledge-Chapter-12.pdf).
+
+The three core areas are:
+- Supply, or leadership: factors involved in effective operations
+- Demand, or strategy: forces influencing the market
+- Capital, or finance: those driving business finance and economic climates
+  - financial performance, cost of goods sold, fixed assets, receivables, or R&D.
+
+
+### Modified DiBello Dimensions
+Below modified dimensions are changed such that each of them involve interaction with the world outside the company,
+involve specific roles and operations, and can operate with specialized monetary metrics like COS.
+
+Many terms in business cannot fall on the single dimension listed below.
 The point of a business is in fact to function across the dimensions to create value.
 
-- Demand (market, market trends, competitive analysis, positioning, "strategy")
+- Demand (marketing, market trends, competitive analysis, positioning, "strategy")
 	- unit = deal, sale, brand asset, ...
 	- agents = customers, marketing agencies, marketers, CMO, Business Development, users, ...
 	- terms: competition, prospect, cost of goods sold, return on ads spend, ...
@@ -34,15 +47,15 @@ The point of a business is in fact to function across the dimensions to create v
 	- unit = product, service, productive asset (machine), ...
 	- agents = suppliers, builders, CTO, procurement, cloud providers, ...
 	- terms: design, blueprints, cost of production, ...
-- Capital (finance, economic climate)
+- Capital (financing, economic climate)
 	- unit = money, financial assets, ...
 	- agents = investors, bondholders, accountants, CFO, ...
 	- terms: cashflow, debt, equity receivables, cost of capital ...
 
 Certain terms are sometimes assigned by DiBello into other dimensions than as in above e.g. cost of goods sold is instead listed under the Capital dimension.
-In those cases, I differ as it seems more useful to assign elsewhere.
 For example, DiBello would probably place suppliers into the Demand, while I list them in Supply.
 There may be no suppliers, or they may be indistinguishable from customers in some cases.
+
 Dimension agnostic (cross-cutting) terms and agents are: CEO, technology, operations, human resources, management, security, software, R&D, execution, planning.
 These exist or take action in two or more dimensions.
 
@@ -84,7 +97,7 @@ I split them according to company stage to which they become accessible.
         - examples:
           - IPO has high fixed-costs of regulatory reporting
 		  - Investor network effects perhaps exist as [reflexivity](https://en.wikipedia.org/wiki/Reflexivity_(social_theory)#In_economics) (the more people want the Mona Lisa the higher it is priced)
-		  - [Web3](https://en.wikipedia.org/wiki/Web3) brings in new possibilities, perhaps we see more in future? 
+		  - [Web3](https://en.wikipedia.org/wiki/Web3) brings in new possibilities, so perhaps we see more in future? 
 		
 ### Corp-up Stage Powers
 - Hysteresis (optimization, trust, stability)
@@ -104,4 +117,4 @@ I split them according to company stage to which they become accessible.
 # Acknowledgments
 I only found about topics above thanks to Cedric's blog posts over at [Common Place Blog](https://commoncog.com/blog/).
 I am personally a paying subscriber of the Commonplace blog to have access to member's only posts and the community.
-
+Also thanks to Cedric explaining that I modified the definition of the DiBello's model and a lots of other good comments.
