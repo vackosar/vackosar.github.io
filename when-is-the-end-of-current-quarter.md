@@ -1,7 +1,7 @@
 ---
 layout: default
 title: When is the end of this quarter?
-description: Current calendar quarter-end date, and how many days left.
+description: How many days left, current calendar quarter-end date, and quarter clock.
 redirect_from: 
   - independent/when-is-the-end-of-current-quarter.html
 ---
@@ -34,11 +34,9 @@ What quarter are we in now? Current quarter is <b id='quarterName2'>Q1</b>.
   
 #clockArrow {
     position: absolute;
-    /*background: red;*/
     color: red;
     border-radius: 10px;
     transform-origin: left;
-    /*width: 1.8%;*/
     opacity: 0.8;
     width: 40%;
     left: 50%;
@@ -48,20 +46,19 @@ What quarter are we in now? Current quarter is <b id='quarterName2'>Q1</b>.
 
 <figure class="figure">
     <div id="clockContainer" class="figure-img img-fluid rounded">
-
-<svg id="clockArrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 100">
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
-      refX="0" refY="3.5" orient="auto" stroke="red" fill="red">
-      <polygon points="0 0, 10 3.5, 0 7" />
-    </marker>
-  </defs>
-  <line x1="0" y1="50" x2="250" y2="50" stroke="red" 
-  stroke-width="8" marker-end="url(#arrowhead)" />
-</svg>
-
+      <svg id="clockArrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 100" alt>
+        <title>Clock arrow</title>
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="0" refY="3.5" orient="auto" stroke="red" fill="red">
+            <polygon points="0 0, 10 3.5, 0 7" />
+          </marker>
+        </defs>
+        <line x1="0" y1="50" x2="250" y2="50" stroke="red" 
+        stroke-width="8" marker-end="url(#arrowhead)" />
+      </svg>
     </div>
-    <figcaption class="figure-caption">Calendar year quarters and their months. Red line shows where we are now.</figcaption>
+    <figcaption class="figure-caption">Quarter clock: Calendar year quarters and their months. Red line shows where we are now.</figcaption>
 </figure>
 
 <h3>When do calendar quarters start and end?</h3>
