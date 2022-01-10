@@ -13,7 +13,7 @@ permalink: /:categories/:title
 The [Helmer's 7 Powers book](https://www.goodreads.com/book/show/32816087-7-powers) lists 7 barriers that protect margins of businesses long term and how to attain them.
 [DiBello's research](https://wtri.com/wp-content/uploads/2015/06/Informed-By-Knowledge-Chapter-12.pdf) suggests that great business people understand interaction between following three aspects (dimensions) of a business: demand, supply, capital.
 The text below may provide additional insights into both through partial modification, followed by combination of the ideas above.
-For example, Helmer's book does not list capital side of the described moats and network effects between suppliers and investors, but idea-fusion hints that they may exist.
+For example, Helmer's book does not list capital side of the described moats and network effects between suppliers and investors, while below hints that they may exist.
 
 _I have partially restated and aligned some of the concepts from the references to offer interesting view, so be aware._
 _Additionally, this is my initial version of the post on this topic._
