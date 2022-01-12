@@ -27,7 +27,7 @@ For details, I recommend reading [Mental Model of Business](https://commoncog.co
 
 The three core areas are:
 - Supply, or leadership: factors involved in effective operations
-  - employees, management, incentives
+  - employees, management, incentives, systems
 - Demand, or strategy: forces influencing the market
   - customers, competition, government
 - Capital, or finance: those driving business finance and economic climates
