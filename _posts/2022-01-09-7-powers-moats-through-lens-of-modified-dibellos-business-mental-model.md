@@ -27,10 +27,13 @@ For details, I recommend reading [Mental Model of Business](https://commoncog.co
 
 The three core areas are:
 - Supply, or leadership: factors involved in effective operations
+  - employees, management, incentives
 - Demand, or strategy: forces influencing the market
+  - customers, competition, government
 - Capital, or finance: those driving business finance and economic climates
   - financial performance, cost of goods sold, fixed assets, receivables, or R&D.
 
+Note: Nick Huber of Sweaty Startup seems to be thinking along the two of the main dimensions describes "[Every company has a customer or a employee problem](https://www.youtube.com/watch?v=OJmT9n0XbIU)".
 
 ### Modified DiBello Dimensions
 Below dimensions are changed such that each of them involves interaction with the world outside the company,
@@ -39,11 +42,11 @@ includes specific roles and operations, and contain specialized monetary metrics
 Many terms in business cannot fall on the single dimension listed below.
 The point of a business is in fact to function across the dimensions to create value.
 
-- Demand (marketing, market trends, competitive analysis, positioning, "strategy")
+- Demand (marketing, market trends, competitive analysis, positioning)
 	- unit = deal, sale, brand asset, ...
 	- agents = customers, marketing agencies, marketers, CMO, Business Development, users, ...
 	- terms: competition, prospect, cost of goods sold, return on ads spend, ...
-- Supply (manufacturing, production, product development, operations, "leadership")
+- Supply (manufacturing, production, product development)
 	- unit = product, service, productive asset (machine), ...
 	- agents = suppliers, builders, CTO, procurement, cloud providers, ...
 	- terms: design, blueprints, cost of production, ...
