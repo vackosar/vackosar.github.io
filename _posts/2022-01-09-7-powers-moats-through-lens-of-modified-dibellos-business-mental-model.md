@@ -36,7 +36,11 @@ The three core areas are:
   - related terms: financial performance, cost of goods sold, fixed assets, receivables, R&D, cashflow, debt, equity receivables, cost of capital ...
   - agents: investors, bondholders
 
-Note: Nick Huber of Sweaty Startup seems to be thinking along the two of the main dimensions describes "[Every company has a customer or a employee problem](https://www.youtube.com/watch?v=OJmT9n0XbIU)".
+Note 1: Nick Huber of Sweaty Startup seems to be thinking along the two of the main dimensions describes "[Every company has a customer or a employee problem](https://www.youtube.com/watch?v=OJmT9n0XbIU)".
+
+Note 2: Every company seems have to involve some transformation between two types of goods (input, output or bi-directional) and exchange of them in the market.
+Even annuity is transformation of a lump sum into time-distributed payments (capital over time).
+Finance above plays a role of monitoring of quantitative attributes of the exchanges, the Demand is the exchange itself, the Supply is involved with the processes and algorithms used to achieve the transformation.
 
 ### Modified DiBello Dimensions
 Below dimensions are changed such that each of them involves interaction with the world outside the company,
