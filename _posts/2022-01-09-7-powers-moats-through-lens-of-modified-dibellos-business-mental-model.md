@@ -29,12 +29,15 @@ The three core areas are:
 - Supply, or leadership: factors involved in effective operations
   - related terms: incentives, systems
   - agents: employees, management
+  - comment: This dimension deals with company-internal matters. Here the company transforms the inputs into outputs.
 - Demand, or strategy: forces influencing the market
   - units: deal, sale, brand asset, ...
   - agents: customers, suppliers, competition, government
+  - comment: This dimension represents exchange with the outside. Here the company inputs and outputs are connected. I think each company trades at least 2 different types of goods e.g. in leading of the goods is a contract.
 - Capital, or finance: driving business finance and economic climates
   - related terms: financial performance, cost of goods sold, fixed assets, receivables, R&D, cashflow, debt, equity receivables, cost of capital ...
   - agents: investors, bondholders
+  - comment: I see this dimension as a mainly quantitative or performance measuring, because various inputs and outputs are already part of the demand. Capital is different, but not sure if enough different.
 
 Note 1: Nick Huber of Sweaty Startup seems to be thinking along the two of the main dimensions describes "[Every company has a customer or a employee problem](https://www.youtube.com/watch?v=OJmT9n0XbIU)".
 
