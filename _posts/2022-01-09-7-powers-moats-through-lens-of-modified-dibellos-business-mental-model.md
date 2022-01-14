@@ -45,7 +45,6 @@ Note 2: Every company seems have to involve some transformation between two type
 Even annuity is transformation of a lump sum into time-distributed payments (capital over time).
 Finance above plays a role of monitoring of quantitative attributes of the exchanges, the Demand is the exchange itself, the Supply is involved with the processes and algorithms used to achieve the transformation.
 
-Note 3: There may be no suppliers, or they may be indistinguishable from customers in some cases.
 
 [//]: # (Note 4: Certain terms may be cross-cutting or agnostic e.g. CEO, which operates across all of the dimensions.)
 
@@ -71,6 +70,8 @@ The point of a business is in fact to function across the dimensions to create v
 
 Certain terms are sometimes assigned by DiBello into other dimensions than as in above e.g. cost of goods sold is instead listed under the Capital dimension.
 For example, DiBello would probably place suppliers into the Demand, while I list them in Supply.
+
+Suppliers are distinguished from customers by the direction of flow of money. In case of Google users and webpage owners are suppliers and advertisers are customers. If the flow is bidirectional suppliers may be indistinguishable from customers, which seems rare.
 
 Dimension agnostic (cross-cutting) terms and agents are: CEO, technology, operations, human resources, management, security, software, R&D, execution, planning.
 These exist or take action in two or more dimensions.
