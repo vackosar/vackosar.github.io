@@ -13,7 +13,7 @@ permalink: /:categories/:title
 The [Helmer's 7 Powers book](https://www.goodreads.com/book/show/32816087-7-powers) lists 7 barriers that protect margins of businesses long term and how to attain them.
 [DiBello's research](https://wtri.com/wp-content/uploads/2015/06/Informed-By-Knowledge-Chapter-12.pdf) suggests that great business people understand interaction between following three aspects (dimensions) of a business: demand, supply, capital.
 The text below may provide additional insights into both through partial modification, followed by combination of the ideas above.
-For example, Helmer's book does not list capital side of the described moats and network effects between suppliers and investors, while below hints that they may exist.
+For example, Helmer's book does not list capital side of the described moats and network effects between suppliers and between investors, while below hints that they may exist.
 
 _I have partially restated and aligned some of the concepts from the references to offer interesting view, so be aware._
 _Additionally, this is my initial version of the post on this topic._
@@ -27,23 +27,27 @@ For details, I recommend reading [Mental Model of Business](https://commoncog.co
 
 The three core areas are:
 - Supply, or leadership: factors involved in effective operations
-  - related terms: incentives, systems
+  - related terms: incentives, systems, design blueprints, manufacturing, production, product development
   - agents: employees, management
   - comment: This dimension deals with company-internal matters. Here the company transforms the inputs into outputs.
 - Demand, or strategy: forces influencing the market
-  - units: deal, sale, brand asset, ...
-  - agents: customers, suppliers, competition, government
-  - comment: This dimension represents exchange with the outside. Here the company inputs and outputs are connected. I think each company trades at least 2 different types of goods e.g. in leading of the goods is a contract.
+  - related terms: deal, sale, brand asset, positioning, marketing ...
+  - agents: customers, suppliers, competition, government, prospect
+  - comment: This dimension represents exchange with the outside. Here the company inputs and outputs are connected. I think each company trades at least 2 different types of goods e.g. in leading one of the goods is a contract.
 - Capital, or finance: driving business finance and economic climates
   - related terms: financial performance, cost of goods sold, fixed assets, receivables, R&D, cashflow, debt, equity receivables, cost of capital ...
-  - agents: investors, bondholders
-  - comment: I see this dimension as a mainly quantitative or performance measuring, because various inputs and outputs are already part of the demand. Capital is different, but not sure if enough different.
+  - agents: investors, bondholders, CFO
+  - comment: I see this dimension as a mainly quantitative or performance measuring, because various inputs and outputs are already part of the demand. Capital is different (more liquidity, services), but not sure if enough different.
 
 Note 1: Nick Huber of Sweaty Startup seems to be thinking along the two of the main dimensions describes "[Every company has a customer or a employee problem](https://www.youtube.com/watch?v=OJmT9n0XbIU)".
 
 Note 2: Every company seems have to involve some transformation between two types of goods (input, output or bi-directional) and exchange of them in the market.
 Even annuity is transformation of a lump sum into time-distributed payments (capital over time).
 Finance above plays a role of monitoring of quantitative attributes of the exchanges, the Demand is the exchange itself, the Supply is involved with the processes and algorithms used to achieve the transformation.
+
+Note 3: There may be no suppliers, or they may be indistinguishable from customers in some cases.
+
+[//]: # (Note 4: Certain terms may be cross-cutting or agnostic e.g. CEO, which operates across all of the dimensions.)
 
 ### Modified DiBello Dimensions
 Below dimensions are changed such that each of them involves interaction with the world outside the company,
@@ -67,7 +71,6 @@ The point of a business is in fact to function across the dimensions to create v
 
 Certain terms are sometimes assigned by DiBello into other dimensions than as in above e.g. cost of goods sold is instead listed under the Capital dimension.
 For example, DiBello would probably place suppliers into the Demand, while I list them in Supply.
-There may be no suppliers, or they may be indistinguishable from customers in some cases.
 
 Dimension agnostic (cross-cutting) terms and agents are: CEO, technology, operations, human resources, management, security, software, R&D, execution, planning.
 These exist or take action in two or more dimensions.
