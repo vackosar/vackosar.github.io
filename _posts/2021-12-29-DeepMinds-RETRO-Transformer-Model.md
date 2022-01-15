@@ -14,10 +14,10 @@ permalink: /:categories/:title
 - next token (~word) prediction = autoregressive language model
 - full name = Retrieval-Enhanced Transformer (RETRO) 
 - paper = DeepMind's [Improving Language Models by Retrieving from Trillions of Tokens (2021)](https://arxiv.org/pdf/2112.04426v1.pdf), [Deep Mind Blog](https://deepmind.com/research/publications/2021/improving-language-models-by-retrieving-from-trillions-of-tokens)
-- retrieves from kNN database [Bert](https://arxiv.org/pdf/1706.03762.pdf)-similar to the current text-chunk
+- retrieves from [kNN](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) database [Bert](https://arxiv.org/pdf/1706.03762.pdf)-similar to the current text-chunk
 - conditions on retrieved chunk and its continuation chunk
 - so attends to previously encountered "future texts"
-- SoTA on Wikitext103 and the Pile datasets
+- SoTA on [Wikitext103](https://www.salesforce.com/products/einstein/ai-research/the-wikitext-dependency-language-modeling-dataset/) and [the Pile](https://pile.eleuther.ai/) datasets
 - Competitive on QA same perf [GPT-3](https://arxiv.org/pdf/2005.14165.pdf) with 25x less params
 - model performs even when low train-test overlap
 - retrieval reduces hallucinations and increases interpretability
@@ -68,7 +68,7 @@ permalink: /:categories/:title
 - each value is two consecutive chunks (128 tokens)
 - each key is the first chunk from its value (first 64 tokens)
 - each key is time-averaged BERT embedding of the first chunk
-- key-vectors stored in [ScaNN similarity search](https://github.com/google-research/google-research/tree/master/scann)
+- key-vectors stored in k-nearest neighbors (similarity) [ScaNN db](https://github.com/google-research/google-research/tree/master/scann)
 - db stores entire MassiveText train set during evaluation
   - training on 600B train subset
   - test set leakage into train set is controlled via a 13-gram Jaccard similarity
