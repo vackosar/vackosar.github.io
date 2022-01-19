@@ -13,7 +13,7 @@ redirect_from:
 
 Boundary-Control-Entity (BCE), or Entity-Control-Boundary (ECB), or Entity-Boundary-Control (EBC) architecture is a directory (package) structure pattern for sorting classes. It is an alternative to layered architecture. It is very simple and natural way to structure classes, which goes well with modularized architecture. One creates one BCE package structure per a microservice, feature or module having ideally between 9 to 30 classes.  
 
-<p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/bce.svg" alt="Boundary Control Entity architecture"/></p>
+<p><img src="/images/bce.svg" alt="Boundary Control Entity architecture"/></p>
 
 ## Overview
 BCE is distinct from the multi-tier architecture in that it does not see some outside systems as backend and some as frontend. It has single category of outside systems. Sometimes BCE is being compared to MVC architecture where Model ~ Entity and View ~ Boundary. 

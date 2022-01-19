@@ -1,8 +1,7 @@
 ---
 title: "7 Powers' Moats Through the Lens of DiBello's Business Mental Model"
 description: "An insight into Helmer's enterprise moats via dimensions of demand, supply, and capital."
-# image: /images/retrieval-transformer-thumb.png 
-# video: -93KBOg77Sg
+image: /images/7-powers-dibello-mental-model.png
 layout: post
 categories: book
 tag: business
@@ -11,6 +10,8 @@ permalink: /:categories/:title
 redirect_from:
 - /book/7-powers-moats-through-lens-of-modified-dibellos-business-mental-model
 ---
+
+<img id="video-img-img" style="max-width: 560px; width: 100%" src="{{ page.image }}" alt="{{ page.title }}" />
 
 The [Helmer's 7 Powers book](https://www.goodreads.com/book/show/32816087-7-powers) lists 7 barriers that protect margins of businesses long term and how to attain them.
 [DiBello's research](https://wtri.com/wp-content/uploads/2015/06/Informed-By-Knowledge-Chapter-12.pdf) suggests that great business people understand interaction between following three aspects (dimensions) of a business: demand, supply, capital.
