@@ -33,7 +33,7 @@ The three core areas are:
   - agents: employees, management, execution, human resources
   - comment: This dimension deals with company-internal matters. Here the company transforms the inputs into outputs.
 - Demand, or strategy: forces influencing the market
-  - related terms: deal, sale, brand asset, positioning, marketing ...
+  - related terms: deal, sale, brand asset, positioning, marketing, exchange, trade, inputs, outputs ...
   - agents: customers, suppliers, competition, government, prospect
   - comment: This dimension represents exchange with the outside. Here the company inputs and outputs are connected.
 - Capital, or finance: driving business finance and economic climates
@@ -45,12 +45,12 @@ The three core areas are:
 
 Note 0: I am not 100% clear on the definition. For example can we really include CFO role in to the capital leg or does it go to the supply?
 
-Note 1: Finance above plays a role of monitoring of quantitative attributes of the exchanges, the Demand is the exchange itself, the Supply is involved with the processes and algorithms used to achieve the transformation.
+Note 1: Finance above plays a role of monitoring of quantitative attributes of the exchanges, the Demand is the exchange itself, the Supply is involved with the processes and algorithms used to achieve the value transformation.
 
 Note 2: Nick Huber of Sweaty Startup seems to be thinking along the two of the main dimensions describes "[Every company has a customer or a employee problem](https://www.youtube.com/watch?v=OJmT9n0XbIU)".
 
 Note 3: Every company seems have to involve some transformation between two types of goods (input, output or bi-directional) and exchange of them in the market.
-Even annuity is transformation of a lump sum into a contract of time-distributed payments (capital over time).
+Even annuity is transformation of a lump sum into a contract of time-distributed payments (capital over time). It may be useful to separate inputs and outputs into two dimensions, but in general they are part of the Demand.
 
 Note 4: Suppliers are distinguished from customers by the direction of flow of money. In case of Google users and webpage owners are suppliers and advertisers are customers. If the flow is bidirectional suppliers may be indistinguishable from customers, which seems rare.
 
