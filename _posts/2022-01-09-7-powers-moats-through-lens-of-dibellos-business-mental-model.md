@@ -33,7 +33,7 @@ The three core areas are:
   - agents: employees, management, execution, human resources
   - comment: This dimension deals with company-internal matters. Here the company transforms the inputs into outputs.
 - Demand, or strategy: forces influencing the market
-  - related terms: deal, sale, brand asset, positioning, marketing, exchange, trade, inputs, outputs ...
+  - related terms: deal, sale, marketing, purchase, brand asset, positioning, exchange, trade, inputs, outputs ...
   - agents: customers, suppliers, competition, government, prospect
   - comment: This dimension represents exchange with the outside. Here the company inputs and outputs are connected.
 - Capital, or finance: driving business finance and economic climates
