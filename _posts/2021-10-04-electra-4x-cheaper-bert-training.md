@@ -58,6 +58,7 @@ ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/m
   - otherwise, the discriminator fails to learn
   - generator selects harder cases
   - but must not be too much better than discriminator
+- mildly resembles [DINO's momentum teacher-student](https://ai.facebook.com/blog/dino-paws-computer-vision-with-self-supervised-transformers-and-10x-more-efficient-training)
   
 ![ELECTRA model loss is sum of generator masked language modeling and discriminator loss](../images/electra-loss.png)
 
