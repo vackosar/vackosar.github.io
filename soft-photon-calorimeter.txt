@@ -1,0 +1,43 @@
+JINR, DUBNA Student Practice 2011
+
+
+- Vaclav Kosar Czech Technical University in Prague
+- Viktor Burian Czech Technical University in Prague
+- Andra-Georgia Ibanescu University of Bucharest
+
+- Igor Rufanov
+- Elena Kokoulina
+- Vladimir Nikitin
+
+To understand photon production and it’s importance for collective phenomena explanations.
+To get familiar with GEANT, PYTHIA, PAW
+To simulate the spectra of photons produced in high energy collisions
+To understand how a electromagnetic calorimeter works.
+To simulate the energy deposition spectra of photons in a calorimeter.
+
+Isotropical with energy distribution:
+- capability to measure low energy deposit E < 5 MeV
+- the dimension of one cell 4 x 4 x 120 cm 3
+- localization of photon σ < 2 cm.
+
+
+Red - BGO crystals
+Blue - organic scintillator - cutting the charged particles
+Green - Veto - energy leakages
+
+From GEANT 50 GeV
+
+In spite of small dimension of detector it allows one to detect low energy photons with small background contribution from high energy particles.
+
+This is achieved due to VETO detector and measurement of location of incoming photons.
+
+Signal of soft photons is detectable for cross section of several mb, according to the simulation.
+
+Generate total momentum of photons in CMS
+Generate the direction of photons in CMS
+Calculate the photons momentum in LS
+Calculate energy of photons in LS
+
+
+
+
