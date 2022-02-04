@@ -3,6 +3,7 @@ layout: post
 title: "Feynman summation in finite-dimensional quantum mechanics"
 date: 2011-09-24
 description: A summary and enhancement of existing literature regarding finite-dimensional quantum mechanics. In the later parts Feynman’s path summation is discussed.
+image: /images/feynman-summation-in-finite-dim.png
 ---
 
 ### Author
