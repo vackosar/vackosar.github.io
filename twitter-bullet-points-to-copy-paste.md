@@ -7,7 +7,7 @@ description: Get nice bullet point character to copy and paste in a second.
 
 Twitter posting requires summarization and lists are often used in that. 
 Bullet points are crucial to create graphically appealing lists.
-You can make your list stand out with non-standard bullet points, that you can copy-paste from below.
+You can make your list stand out with non-standard bullet points. Copy-paste from below.
 
 
 ### Standard, White, Middle Bullet Points
