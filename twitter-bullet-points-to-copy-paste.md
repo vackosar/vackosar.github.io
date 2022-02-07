@@ -10,23 +10,25 @@ Bullet points are crucial to create graphically appealing lists.
 You can make your list stand out with non-standard bullet points, that you can copy-paste from below.
 
 
-### Standard Bullet Point
+### Standard, White, Middle Bullet Points
 
-• classic 1
+• classic bullet
 
-• classic 2
+• classic bullet
 
+◦ white bullet
 
-### White Bullet Point
-◦ white bullet 1
+◦ white bullet
 
-◦ white bullet 2
+∙ middle dot bullet
+
+∙ middle dot bullet
 
 
 ### Triangular Bullet
-‣ triangular 1
+‣ triangular
 
-‣ triangular 2
+‣ triangular
 
 
 ### Dash Bullet
@@ -35,11 +37,12 @@ You can make your list stand out with non-standard bullet points, that you can c
 ⁃ dash 2
 
 
-### Middle Dot Bullet
 
-∙ middle dot 1
+### Square
 
-∙ middle dot 2
+▪ Square bullet
+
+▪ Square bullet
 
 
 ### Diamonds
