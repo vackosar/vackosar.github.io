@@ -5,6 +5,8 @@ date: 2022-02-06
 description: Get nice bullet point character to copy and paste in a second.
 ---
 
+![Twitter Bullet Points How To](/images/twitter-bullet-points.png)
+
 Twitter posting requires summarization and lists are often used in that. 
 Bullet points are crucial to create graphically appealing lists.
 You can make your list stand out with non-standard bullet points. Copy-paste your favorite symbol from below.
@@ -47,20 +49,21 @@ You can make your list stand out with non-standard bullet points. Copy-paste you
 
 ### Diamonds
 
-♦ diamond 1
+♦ diamond
 
-♦ diamond 2
+♦ diamond
+
+⬨ white diamond
 
 ⬩ small diamond 
 
-⬨ white diamond
 
 
 ### Upper Triangle 
 
-◥ upper triangle 1
+◥ upper triangle
 
-◥ upper triangle 2
+◥ upper triangle
 
 
 ### Keyboard Tips
