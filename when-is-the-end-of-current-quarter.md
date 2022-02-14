@@ -1,7 +1,7 @@
 ---
 layout: default
 title: When is the end of this quarter?
-description: How many days left, current calendar quarter-end date, and quarter clock.
+description: How many days left in the quarter, the current calendar quarter-end date, and live quarter clock.
 redirect_from: 
   - independent/when-is-the-end-of-current-quarter.html
 ---
@@ -12,14 +12,14 @@ redirect_from:
 <small><i>{{ page.description }}</i></small>
 <small>When is the end of the quarter?</small>
 <small>When does this quarter ends?</small>
-<small>When is quarter-end?</small>
+<small>When is quarter-end?</small>3
 
-Current quarter <b id='quarterName'>Q1</b> ends on <b id='quarterEnd'>Mar 31</b> in <b id="daysLeft">45</b> days.
+The current quarter <b id='quarterName'>Q1</b> ends on <b id='quarterEnd'>Mar 31</b> in <b id="daysLeft">45</b> days.
 <br>
 
 How many days left in this quarter? There are <b id="daysLeft2">45</b> days left in this quarter.<br>
 How many days till the end of this quarter? There are <b id="daysLeft3">45</b> days till the end of current quarter.<br>
-What quarter are we in now? Current quarter is <b id='quarterName2'>Q1</b>.
+What is the current quarter? The current quarter is <b id='quarterName2'>Q1</b>.
 
 <style>
 
