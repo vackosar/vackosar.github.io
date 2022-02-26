@@ -25,9 +25,7 @@ Here are my notes on SRU, and thanks to the paper authors and Yannic's Discord m
   
 # How SRU helps parallelization?
 - while the state computation of SRU is time-dependent, each state dimension is independent
-- time step: \\( t \\)
-- input vector: \\( x_t \\)
-- (inner) forget gate \\( f_t \\)
+- time step: \\( t \\), input vector: \\( x_t \\), (inner) forget gate \\( f_t \\)
 - typically: \\( f_t := \sigma(W_f x_t + V_f c_{t-1} + b_f) \\)
   - problem: both \\( c_t, f_t \\) depend on all dimensions \\( c_{t-1} \\) 
   - due to matrix-multiplication: \\( V_f c_{t-1} \\)
@@ -49,7 +47,8 @@ Here are my notes on SRU, and thanks to the paper authors and Yannic's Discord m
 # All Equations
 Using two primitives:
 - \\( Way(a, b, g, W) := g \odot a + (1 - g) \odot (W b) \\)
-- \\( Gate(a, b, W, v, w) := \sigma(W b + v \odot a + w \\)
+- \\( Gate(a, b, W, v, w) := \sigma(W b + v \odot a + w) \\)
+ 
 We can rewrite:
 - \\( f_t := Gate(x_t, c_{t-1}, W_f, v_f, b_f) \\)
 - \\( c_t : = Way(x_t, c_{t-1}, f_t, W) \\)
@@ -57,4 +56,27 @@ We can rewrite:
 - \\( h_t : = Way(x_t, c_t, r_t, 1) \\)
 
 
+# CUDA kernels
+- [CUDA kernels](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html) = C++ functions executed N times by N CUDA threads
+ 
+```
+// Kernel definition
+__global__ void VecAdd(float* A, float* B, float* C)
+{
+    int i = threadIdx.x;
+    C[i] = A[i] + B[i];
+}
+
+int main()
+{
+    ...
+    // Kernel invocation with N threads
+    VecAdd<<<1, N>>>(A, B, C);
+    ...
+}
+```
+
 # Parallel Implementation
+- point-wise operations are in [a single fused CUDA kernel](https://github.com/taolei87/sru/blob/master/sru/csrc/sru_cuda_kernel.cu)
+- and parallelize across each hidden state dimension
+- complexity O(L · B · d)
