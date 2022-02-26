@@ -10,7 +10,6 @@ permalink: /:categories/:title
 
 {% include mathjax.html %}
 
-<img src="/images/sru++-bits-per-character-on-enwik8.png" alt="SRU++ Simple Recurrent Unit on Enwik8 bits per character" />
 
 Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord meetup discussions](https://discord.com/channels/714501525455634453/780793106496880650/941342791349440514).
 
@@ -112,5 +111,17 @@ int main()
 
 # SRU++ 
 - [When Attention Meets Fast Recurrence: Training Language Models with Reduced Compute](https://arxiv.org/abs/2102.12459)
+- combines Self-Attention and SRU
+- 3x - 10x faster training than Transformer-XL
+- competitive on enwik8, wiki-103
 
-TODO
+<img src="/images/sru++-bits-per-character-on-enwik8.png" alt="SRU++ Simple Recurrent Unit on Enwik8 bits per character" />
+
+## Operation
+- basically self-attention
+  - with residual connection
+  - and layer normalization
+  - and "projection trick"
+- attention layers help significantly
+  - but not in every layer
+ 
