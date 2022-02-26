@@ -27,20 +27,34 @@ Here are my notes on SRU, and thanks to the paper authors and Yannic's Discord m
 - while the state computation of SRU is time-dependent, each state dimension is independent
 - time step: \\( t \\)
 - input vector: \\( x_t \\)
-- (inner) state vectors: \\( c_t \\)
 - (inner) forget gate \\( f_t \\)
-- typically: \\( f_t = \sigma(W_f x_t + V_f c_{t-1} + b_f) \\)
+- typically: \\( f_t := \sigma(W_f x_t + V_f c_{t-1} + b_f) \\)
   - problem: both \\( c_t, f_t \\) depend on all dimensions \\( c_{t-1} \\) 
   - due to matrix-multiplication: \\( V_f c_{t-1} \\)
   - solution: point-wise multiplication \\( v_f \odot c_{t-1} \\)
   - gives parallel computation \\( c_t, f_t \\)
+- state \\( c_t := f_t \odot c_{t-1} + (1 - f_t) \odot W x_t \\)
 
 
 # Highway Network Component
 - [highway network](https://arxiv.org/pdf/1507.06228.pdf) more dynamic than a skip connection 
   - provides regulated gradient flow
 - reset gate weights output skip connection
-  - defined as \\( r_t = \sigma( W_r x_t + v_r \odot c_{t-1} + b_r ) \\)
+  - defined as \\( r_t := \sigma( W_r x_t + v_r \odot c_{t-1} + b_r ) \\)
   - combines the state with the input
   - then used for output \\( h_t \\) that allows gradient flow
-- output (hidden) vector: \\( h_t = r_t \odot c_t + (1 - r_t) \odot x_t \\)
+- output (hidden) vector: \\( h_t := r_t \odot c_t + (1 - r_t) \odot x_t \\)
+
+
+# All Equations
+Using two primitives:
+- \\( Way(a, b, g, W) := g \odot a + (1 - g) \odot (W b) \\)
+- \\( Gate(a, b, W, v, w) := \sigma(W b + v \odot a + w \\)
+We can rewrite:
+- \\( f_t := Gate(x_t, c_{t-1}, W_f, v_f, b_f) \\)
+- \\( c_t : = Way(x_t, c_{t-1}, f_t, W) \\)
+- \\( r_t := Gate(x_t, c_{t-1}, W_r, v_r, b_r) \\)
+- \\( h_t : = Way(x_t, c_t, r_t, 1) \\)
+
+
+# Parallel Implementation
