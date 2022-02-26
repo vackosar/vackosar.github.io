@@ -18,10 +18,12 @@ Here are my notes on SRU, and thanks to the paper authors and Yannic's Discord m
 - [Simple Recurrent Units for Highly Parallelizable Recurrence](https://arxiv.org/abs/1709.02755)
 - [Sparse is Enough in Scaling Transformers](https://arxiv.org/pdf/2111.12763.pdf)
 
+
 # Attention and Recurrence
 - attention vs recurrence = graph vs sequence
 - [original recurrent LSTM](https://www.bioinf.jku.at/publications/older/2604.pdf) is less parallelizable than [Transformer](https://arxiv.org/pdf/1706.03762v5.pdf)
   - because future steps in LSTM depend on the past?
+ 
   
 # How SRU helps parallelization?
 - while the state computation of SRU is time-dependent, each state dimension is independent
@@ -76,7 +78,19 @@ int main()
 }
 ```
 
+![From Nvidia: GPU vs CPU in CUDA documentation](/images/sru-cpu-vs-gpu.png)
+
+
 # Parallel Implementation
 - point-wise operations are in [a single fused CUDA kernel](https://github.com/taolei87/sru/blob/master/sru/csrc/sru_cuda_kernel.cu)
 - and parallelize across each hidden state dimension
 - complexity O(L · B · d)
+
+# Results
+- On its own SRU slightly outperforms to QRNN
+- both SRU and QRNN similar speed
+- both ~10x faster than LSTM
+![img.png](../images/sru_sru_results.png)
+
+- Transformer + SRU outperfroms vanilla
+![img_1.png](../images/sru_sru_and_transformer_results.png)
