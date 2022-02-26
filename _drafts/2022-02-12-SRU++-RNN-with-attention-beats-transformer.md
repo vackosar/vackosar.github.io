@@ -12,20 +12,31 @@ permalink: /:categories/:title
 
 <img src="/images/sru++-bits-per-character-on-enwik8.png" alt="SRU++ Simple Recurrent Unit on Enwik8 bits per character" />
 
-Here are my notes on SRU, and thanks to the paper authors and Yannic's Discord meetup discussions.
+Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord meetup discussions](https://discord.com/channels/714501525455634453/780793106496880650/941342791349440514).
 
-- https://discord.com/channels/714501525455634453/780793106496880650/941342791349440514
+# Summary:
+- SRU = RNN, 10x faster than LSTM
+- SRU++ =
+  - combines Self-Attention and SRU
+  - 3x - 10x faster training
+  - enwik8, wiki-103
+- Terraformer =
+  - SRU + sparcity + many tricks
+  - 37x faster decoding speed
+
+# Simple Recurrent Unit (SRU) 
 - [Simple Recurrent Units for Highly Parallelizable Recurrence](https://arxiv.org/abs/1709.02755)
+  - [OpenReview (Training RNNs as Fast as CNNs)](https://openreview.net/forum?id=rJBiunlAW)
 - [Sparse is Enough in Scaling Transformers](https://arxiv.org/pdf/2111.12763.pdf)
 
 
-# Attention and Recurrence
+## Attention and Recurrence
 - attention vs recurrence = graph vs sequence
 - [original recurrent LSTM](https://www.bioinf.jku.at/publications/older/2604.pdf) is less parallelizable than [Transformer](https://arxiv.org/pdf/1706.03762v5.pdf)
   - because future steps in LSTM depend on the past?
  
   
-# How SRU helps parallelization?
+## How SRU helps parallelization?
 - while the state computation of SRU is time-dependent, each state dimension is independent
 - time step: \\( t \\), input vector: \\( x_t \\), (inner) forget gate \\( f_t \\)
 - typically: \\( f_t := \sigma(W_f x_t + V_f c_{t-1} + b_f) \\)
@@ -89,8 +100,17 @@ int main()
 # Results
 - On its own SRU slightly outperforms to QRNN
 - both SRU and QRNN similar speed
+- 5--9x speed-up over cuDNN-optimized LSTM on classification and question answering datasets
 - both ~10x faster than LSTM
+
 ![img.png](../images/sru_sru_results.png)
 
 - Transformer + SRU outperfroms vanilla
+
 ![img_1.png](../images/sru_sru_and_transformer_results.png)
+
+
+# SRU++ 
+- [When Attention Meets Fast Recurrence: Training Language Models with Reduced Compute](https://arxiv.org/abs/2102.12459)
+
+TODO
