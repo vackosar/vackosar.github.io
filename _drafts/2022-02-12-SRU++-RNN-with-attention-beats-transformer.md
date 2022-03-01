@@ -13,7 +13,7 @@ permalink: /:categories/:title
 
 Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord meetup discussions](https://discord.com/channels/714501525455634453/780793106496880650/941342791349440514).
 
-# Summary:
+## Summary:
 - SRU = RNN, 10x faster than LSTM
 - SRU++ =
   - combines Self-Attention and SRU
@@ -23,19 +23,21 @@ Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord 
   - SRU + sparcity + many tricks
   - 37x faster decoding speed
 
-# Simple Recurrent Unit (SRU) 
+## Simple Recurrent Unit (SRU) 
 - [Simple Recurrent Units for Highly Parallelizable Recurrence](https://arxiv.org/abs/1709.02755)
   - [OpenReview (Training RNNs as Fast as CNNs)](https://openreview.net/forum?id=rJBiunlAW)
 - [Sparse is Enough in Scaling Transformers](https://arxiv.org/pdf/2111.12763.pdf)
 
 
-## Attention and Recurrence
+### Attention and Recurrence
 - attention vs recurrence = graph vs sequence
+- ? more description
 - [original recurrent LSTM](https://www.bioinf.jku.at/publications/older/2604.pdf) is less parallelizable than [Transformer](https://arxiv.org/pdf/1706.03762v5.pdf)
-  - because future steps in LSTM depend on the past?
+  - ? because future steps in LSTM depend on the past?
+- ? vizualization
  
   
-## How SRU helps parallelization?
+### How SRU helps parallelization?
 - while the state computation of SRU is time-dependent, each state dimension is independent
 - time step: \\( t \\), input vector: \\( x_t \\), (inner) forget gate \\( f_t \\)
 - typically: \\( f_t := \sigma(W_f x_t + V_f c_{t-1} + b_f) \\)
@@ -44,9 +46,10 @@ Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord 
   - solution: point-wise multiplication \\( v_f \odot c_{t-1} \\)
   - gives parallel computation \\( c_t, f_t \\)
 - state \\( c_t := f_t \odot c_{t-1} + (1 - f_t) \odot W x_t \\)
+- all \\( W, V, b \\) are trained 
 
 
-# Highway Network Component
+### Highway Network Component
 - [highway network](https://arxiv.org/pdf/1507.06228.pdf) more dynamic than a skip connection 
   - provides regulated gradient flow
 - reset gate weights output skip connection
@@ -56,7 +59,7 @@ Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord 
 - output (hidden) vector: \\( h_t := r_t \odot c_t + (1 - r_t) \odot x_t \\)
 
 
-# All Equations
+### All Equations
 Using two primitives:
 - \\( Way(a, b, g, W) := g \odot a + (1 - g) \odot (W b) \\)
 - \\( Gate(a, b, W, v, w) := \sigma(W b + v \odot a + w) \\)
@@ -68,7 +71,7 @@ We can rewrite:
 - \\( h_t : = Way(x_t, c_t, r_t, 1) \\)
 
 
-# CUDA kernels
+### CUDA kernels
 - [CUDA kernels](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html) = C++ functions executed N times by N CUDA threads
  
 ```
@@ -91,12 +94,13 @@ int main()
 ![From Nvidia: GPU vs CPU in CUDA documentation](/images/sru-cpu-vs-gpu.png)
 
 
-# Parallel Implementation
+### Parallel Implementation
+- single matrix multiplication \\( U = (W, W_f, W_r) x_t \\)
 - point-wise operations are in [a single fused CUDA kernel](https://github.com/taolei87/sru/blob/master/sru/csrc/sru_cuda_kernel.cu)
 - and parallelize across each hidden state dimension
 - complexity O(L · B · d)
 
-# Results
+### SRU Results
 - On its own SRU slightly outperforms to QRNN
 - both SRU and QRNN similar speed
 - 5--9x speed-up over cuDNN-optimized LSTM on classification and question answering datasets
@@ -104,24 +108,35 @@ int main()
 
 ![img.png](../images/sru_sru_results.png)
 
-- Transformer + SRU outperfroms vanilla
+
+### SRU and Transformer results
+
+- Transformer + SRU outperforms vanilla
 
 ![img_1.png](../images/sru_sru_and_transformer_results.png)
 
 
-# SRU++ 
+## SRU++: Attention with SRU
 - [When Attention Meets Fast Recurrence: Training Language Models with Reduced Compute](https://arxiv.org/abs/2102.12459)
 - combines Self-Attention and SRU
+- competitive on enwik8, wiki-103, Billion Word datasets
+- much less attention blocks needed
 - 3x - 10x faster training than Transformer-XL
-- competitive on enwik8, wiki-103
+  - 1.6 days on 8-GPU machine
 
 <img src="/images/sru++-bits-per-character-on-enwik8.png" alt="SRU++ Simple Recurrent Unit on Enwik8 bits per character" />
 
-## Operation
-- basically self-attention
-  - with residual connection
-  - and layer normalization
-  - and "projection trick"
-- attention layers help significantly
-  - but not in every layer
+
+### SRU++ Layer
+- SRU++ is SRU replacing \\( W \\) with self-attention
+- Attention
+  - operates on dim 512 instead of 2048 "projection trick"
+  - residual connection both on atttention and SRU
+  - layer normalization after attention block
+- attention help significantly
+  - but not needed in every layer
  
+![SRU++ diagram - Simple Reccurent Unit with attention](/images/sru-layer-diagram.png)
+
+
+### Results
