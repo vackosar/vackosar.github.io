@@ -60,15 +60,19 @@ Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord 
 
 ### All Equations
 Using two primitives:
-- \\( Way(a, b, g, W) := g \odot a + (1 - g) \odot (W b) \\)
-- \\( Gate(a, b, W, v, w) := \sigma(W b + v \odot a + w) \\)
+- \\( \mathrm{Way}(a, b, g, W) := g \odot a + (1 - g) \odot (W b) \\)
+- \\( \mathrm{Gate}(a, b, W, v, w) := \sigma(W b + v \odot a + w) \\)
  
 We can rewrite:
-- \\( f_t := Gate(x_t, c_{t-1}, W_f, v_f, b_f) \\)
-- \\( c_t : = Way(x_t, c_{t-1}, f_t, W) \\)
-- \\( r_t := Gate(x_t, c_{t-1}, W_r, v_r, b_r) \\)
-- \\( h_t : = Way(x_t, c_t, r_t, 1) \\)
+- \\( f_t := \mathrm{Gate}(x_t, c_{t-1}, W_f, v_f, b_f) \\)
+- \\( c_t : = \mathrm{Way}(x_t, c_{t-1}, f_t, W) \\)
+- \\( r_t := \mathrm{Gate}(x_t, c_{t-1}, W_r, v_r, b_r) \\)
+- \\( h_t : = \mathrm{Way}(x_t, c_t, r_t, 1) \\)
 
+
+### GPU vs CPU
+Comparison of GPU and CPU from Nvidia documentation.
+![From Nvidia: GPU vs CPU in CUDA documentation](/images/sru-cpu-vs-gpu.png)
 
 ### CUDA kernels
 - [CUDA kernels](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html) = C++ functions executed N times by N CUDA threads
@@ -89,8 +93,6 @@ int main()
     ...
 }
 ```
-
-![From Nvidia: GPU vs CPU in CUDA documentation](/images/sru-cpu-vs-gpu.png)
 
 
 ### Parallel Implementation
