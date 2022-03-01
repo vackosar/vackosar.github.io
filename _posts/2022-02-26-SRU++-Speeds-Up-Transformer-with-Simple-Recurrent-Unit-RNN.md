@@ -98,7 +98,10 @@ Can also decompose into primitives:
 
 
 ### GPU vs CPU
-Comparison of GPU and CPU from Nvidia documentation.
+- [Tesla T4 has 2,560 CUDA cores](https://www.nvidia.com/en-us/data-center/tesla-t4/)
+- [NVIDIA V100 Tensor Core has 640 tensor cores (specialize AI cores)](https://www.nvidia.com/en-us/data-center/v100/)
+- Comparison of GPU and CPU from Nvidia documentation.
+
 ![From Nvidia: GPU vs CPU in CUDA documentation](/images/sru-cpu-vs-gpu.png)
 
 ### CUDA kernels
