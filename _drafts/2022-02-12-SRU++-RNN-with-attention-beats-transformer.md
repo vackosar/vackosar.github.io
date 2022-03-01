@@ -13,9 +13,12 @@ permalink: /:categories/:title
 
 Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord meetup discussions](https://discord.com/channels/714501525455634453/780793106496880650/941342791349440514).
 
+
 ## Summary:
+- Language modelling:
+  - input: text, output masked token or next token
 - SRU
-  - [Simple Recurrent Units for Highly Parallelizable Recurrence](https://arxiv.org/abs/1709.02755), [OpenReview](https://openreview.net/forum?id=rJBiunlAW)
+  - [Simple Recurrent Units for Highly Parallelizable Recurrence](https://arxiv.org/pdf/1709.02755.pdf), [OpenReview](https://openreview.net/forum?id=rJBiunlAW)
   - is RNN, 10x faster than LSTM
   - simple and parallelizable
 - SRU++
@@ -30,25 +33,23 @@ Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord 
 
 ### Attention and Recurrence
 - attention vs recurrence = graph vs sequence
-- attention connects across entire sequence
+- attention connects across entire sequence as fully connected graph
 - recurrence keeps information from previous states in a state vector 
-- ? more description
 - [original recurrent LSTM](https://www.bioinf.jku.at/publications/older/2604.pdf) is less parallelizable than [Transformer](https://arxiv.org/pdf/1706.03762v5.pdf)
-  - ? because future steps in LSTM depend on the past?
+  - future steps in LSTM depend on the past and is not parallelizable
 - ? vizualization
- 
+
   
 ### How SRU helps parallelization?
 - while the state computation of SRU is time-dependent, each state dimension is independent
-- time step: \\( t \\), input vector: \\( x_t \\), (inner) forget gate \\( f_t \\)
-- typically: \\( f_t := \sigma(W_f x_t + V_f c_{t-1} + b_f) \\)
+- time step: \\( t \\), input vector: \\( x_t \\), (inner) state \\( c_t \\)
+- (inner) forget gate \\( f_t := \sigma(W_f x_t + V_f c_{t-1} + b_f) \\)
   - problem: both \\( c_t, f_t \\) depend on all dimensions \\( c_{t-1} \\) 
   - due to matrix-multiplication: \\( V_f c_{t-1} \\)
-  - solution: point-wise multiplication \\( v_f \odot c_{t-1} \\)
+  - solution: pointwise (Hadamard) multiplication \\( v_f \odot c_{t-1} \\)
   - gives parallel computation \\( c_t, f_t \\)
 - state \\( c_t := f_t \odot c_{t-1} + (1 - f_t) \odot W x_t \\)
-- all \\( W, V, b \\) are trained 
-
+- all \\( W, V, b \\) are trained
 
 ### Highway Network Component
 - [highway network](https://arxiv.org/pdf/1507.06228.pdf) more dynamic than a skip connection 
@@ -61,17 +62,35 @@ Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord 
 
 
 ### All Equations
-Using two primitives:
+- \\( f_t := \sigma( W_f x_t + v_f \odot c_{t-1} + b_f) \\)
+- \\( r_t : = \sigma( W_r x_t + v_r \odot c_{t-1} + b_r ) \\)
+- \\( c_t := f_t \odot c_{t-1} + (1-f_t) \odot (W x_t) \\)
+- \\( h_t : = r_t \odot c_t + (1-r_t) \odot x_t \\)
+ 
+Can also decompose into primitives:
 - \\( \mathrm{Way}(a, b, g, W) := g \odot a + (1 - g) \odot (W b) \\)
 - \\( \mathrm{Gate}(a, b, W, v, w) := \sigma(W b + v \odot a + w) \\)
- 
-We can rewrite:
-- \\( f_t := \mathrm{Gate}(x_t, c_{t-1}, W_f, v_f, b_f) \\)
-- \\( c_t : = \mathrm{Way}(x_t, c_{t-1}, f_t, W) \\)
-- \\( r_t := \mathrm{Gate}(x_t, c_{t-1}, W_r, v_r, b_r) \\)
-- \\( h_t : = \mathrm{Way}(x_t, c_t, r_t, 1) \\)
 
 ![Simple Recurrent Unit diagram](/images/sru-op-diagram.png)
+
+
+### Similarity to LSTM
+- equations are similar to LSTM
+- but output gate, input gate are replaced with reset gate
+  - highway network
+- SRU equations:
+  - \\( f_t := \sigma( W_f x_t + v_f \odot c_{t-1} + b_f) \\)
+  - \\( r_t : = \sigma( W_r x_t + v_r \odot c_{t-1} + b_r ) \\)
+  - \\( c_t := f_t \odot c_{t-1} + (1-f_t) \odot (W x_t) \\)
+  - \\( h_t : = r_t \odot c_t + (1-r_t) \odot x_t \\)
+ 
+- LSTM equations:
+  - \\( f_t = \sigma_g (W_f x_t + U_f c_{t-1} + b_f ) \\)
+  - \\( i_t = \sigma_g (W_i x_t + U_i c_{t-1} + b_i ) \\)
+  - \\( o_t = \sigma_g (W_o x_t + U_o c_{t-1} + b_o ) \\)
+  - \\( c_t = f_t \odot c_{t-1} + i_t \odot \sigma_c (W_c x_t + b_c) \\)
+  - \\( h_t = o_t \odot \sigma_h(c_t) \\)
+
 
 
 ### GPU vs CPU
@@ -109,7 +128,7 @@ int main()
 ### SRU Results
 - On its own SRU slightly outperforms to QRNN
 - both SRU and QRNN similar speed
-- 5--9x speed-up over cuDNN-optimized LSTM on classification and question answering datasets
+- 5 - 9x speed-up over cuDNN-optimized LSTM on classification and question answering datasets
 - both ~10x faster than LSTM
 
 ![img.png](/images/sru_sru_results.png)
@@ -152,6 +171,11 @@ int main()
 - is a character-level language modeling dataset consisting of 100M tokens taken from Wikipedia.
 - The vocabulary size of this dataset about 200k.
 - BPC is bits per character
+
+#### WIKI-103 (Merity et al., 2017)
+- is a wordlevel language modeling dataset.
+- 100M tokens extracted from Wikipedia
+- vocabulary of 260K tokens
 
 ### Results
 - attention helps the most in the last layers
