@@ -17,7 +17,8 @@ Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord 
 ## Summary:
 - Language modelling:
   - input: text, output masked token or next token
-- authors:
+- Contribution: Increased speed makes the model more accessible
+- Authors:
   - Tao Lei: ASAPP Inc.
   - Google Brain, Princeton, Cornell
 - SRU
@@ -135,7 +136,7 @@ int main()
 - 5 - 9x speed-up over cuDNN-optimized LSTM on classification and question answering datasets
 - both ~10x faster than LSTM
 
-![img.png](/images/sru_sru_results.png)
+![SRU results on enwik8](/images/sru_sru_results.png)
 
 
 ### SRU and Transformer results
@@ -144,7 +145,7 @@ int main()
 - not looked into detail how was this done
   - ? architecture - how does it look
 
-![img_1.png](/images/sru_sru_and_transformer_results.png)
+![SRU results with Transformer on German English translations](/images/sru_sru_and_transformer_results.png)
 
 
 ## SRU++: Attention with SRU
@@ -208,7 +209,7 @@ int main()
 ![SRU++ WIKI-103 results Routing Transformer](/images/sru++-results-wiki103.png)
 
 
-![SRU++ inference speed](../images/sru++-inference-speed.png)
+![SRU++ inference speed](/images/sru++-inference-speed.png)
 
 
 ## Terraformer
