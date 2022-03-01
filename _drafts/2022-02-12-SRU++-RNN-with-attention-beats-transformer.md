@@ -30,6 +30,8 @@ Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord 
 
 ### Attention and Recurrence
 - attention vs recurrence = graph vs sequence
+- attention connects across entire sequence
+- recurrence keeps information from previous states in a state vector 
 - ? more description
 - [original recurrent LSTM](https://www.bioinf.jku.at/publications/older/2604.pdf) is less parallelizable than [Transformer](https://arxiv.org/pdf/1706.03762v5.pdf)
   - ? because future steps in LSTM depend on the past?
@@ -69,7 +71,7 @@ We can rewrite:
 - \\( r_t := \mathrm{Gate}(x_t, c_{t-1}, W_r, v_r, b_r) \\)
 - \\( h_t : = \mathrm{Way}(x_t, c_t, r_t, 1) \\)
 
-![Simple Recurrent Unit diagram](../images/sru-op-diagram.png)
+![Simple Recurrent Unit diagram](/images/sru-op-diagram.png)
 
 
 ### GPU vs CPU
@@ -101,6 +103,7 @@ int main()
 - single matrix multiplication \\( U = (W, W_f, W_r) x_t \\)
 - point-wise operations are in [a single fused CUDA kernel](https://github.com/taolei87/sru/blob/master/sru/csrc/sru_cuda_kernel.cu)
 - and parallelize across each hidden state dimension
+- computation still sequential in time dimension
 - complexity O(L · B · d)
 
 ### SRU Results
@@ -109,7 +112,7 @@ int main()
 - 5--9x speed-up over cuDNN-optimized LSTM on classification and question answering datasets
 - both ~10x faster than LSTM
 
-![img.png](../images/sru_sru_results.png)
+![img.png](/images/sru_sru_results.png)
 
 
 ### SRU and Transformer results
@@ -117,7 +120,7 @@ int main()
 - Transformer + SRU outperforms vanilla
 - ? architecture - how does it look
 
-![img_1.png](../images/sru_sru_and_transformer_results.png)
+![img_1.png](/images/sru_sru_and_transformer_results.png)
 
 
 ## SRU++: Attention with SRU
@@ -136,15 +139,30 @@ int main()
 - Attention
   - no positional encodings
   - operates on dim 512 instead of 2048 "projection trick"
-  - residual connection both on atttention and SRU
+  - residual connection both on attention and SRU
   - layer normalization after attention block
 - attention help significantly
   - but needed only in every k-th layer e.g. every 5th
- 
-![SRU++ diagram - Simple Reccurent Unit with attention](/images/sru-layer-diagram.png)
 
+![SRU++ diagram - Simple Recurrent Unit with attention](/images/sru++-layer-diagram.png)
+ 
+
+### Datasets
+#### ENWIK8 (Hutter, 2006)
+- is a character-level language modeling dataset consisting of 100M tokens taken from Wikipedia.
+- The vocabulary size of this dataset about 200k.
+- BPC is bits per character
 
 ### Results
-- attention most helps in the last layers
-  - first layers learn local features
-  - attention then efficiently uses them
+- attention helps the most in the last layers
+  - maybe first layers learn local features
+  - which attention then uses
+
+- outperforms Transformer-XL baseline
+- if larger context, then even lower BPC
+![SRU++ comparison to Trans-XL](/images/sru++-trasformer-xl-enwik8-dataset.png)
+
+- 
+![SRU++ attention every k layers](/images/sru++-attention-every-k-layers.png)
+
+![Comparison with top-performing modesl on enwik8 dataset](/images/sru++-results.png)
