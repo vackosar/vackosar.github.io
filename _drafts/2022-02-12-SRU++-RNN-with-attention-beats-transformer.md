@@ -25,7 +25,7 @@ Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord 
   - is RNN, 10x faster than LSTM
   - simple and parallelizable
 - SRU++
-  - combines Self-Attention and SRU
+  - [combines Self-Attention and SRU](https://arxiv.org/abs/2102.12459)
   - 3x - 10x faster training
   - competitive with Transformer on enwik8
 - [Terraformer](https://arxiv.org/pdf/2111.12763.pdf) =
