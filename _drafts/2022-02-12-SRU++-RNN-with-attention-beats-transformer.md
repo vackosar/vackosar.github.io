@@ -14,19 +14,18 @@ permalink: /:categories/:title
 Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord meetup discussions](https://discord.com/channels/714501525455634453/780793106496880650/941342791349440514).
 
 ## Summary:
-- SRU = RNN, 10x faster than LSTM
-- SRU++ =
+- SRU
+  - [Simple Recurrent Units for Highly Parallelizable Recurrence](https://arxiv.org/abs/1709.02755), [OpenReview](https://openreview.net/forum?id=rJBiunlAW)
+  - is RNN, 10x faster than LSTM
+  - similar to QNN
+- SRU++
   - combines Self-Attention and SRU
   - 3x - 10x faster training
-  - enwik8, wiki-103
-- Terraformer =
-  - SRU + sparcity + many tricks
-  - 37x faster decoding speed
-
-## Simple Recurrent Unit (SRU) 
-- [Simple Recurrent Units for Highly Parallelizable Recurrence](https://arxiv.org/abs/1709.02755)
-  - [OpenReview (Training RNNs as Fast as CNNs)](https://openreview.net/forum?id=rJBiunlAW)
-- [Sparse is Enough in Scaling Transformers](https://arxiv.org/pdf/2111.12763.pdf)
+  - competitive with Transformer on enwik8
+- [Terraformer](https://arxiv.org/pdf/2111.12763.pdf) =
+  - [Sparse is Enough in Scaling Transformers](https://arxiv.org/pdf/2111.12763.pdf)
+  - is SRU + sparcity + many tricks
+  - 37x faster decoding speed than Transformer
 
 
 ### Attention and Recurrence
@@ -112,6 +111,7 @@ int main()
 ### SRU and Transformer results
 
 - Transformer + SRU outperforms vanilla
+- ? architecture - how does it look
 
 ![img_1.png](../images/sru_sru_and_transformer_results.png)
 
@@ -128,13 +128,13 @@ int main()
 
 
 ### SRU++ Layer
-- SRU++ is SRU replacing \\( W \\) with self-attention
+- SRU++ is SRU replacing initial lin. transformation \\( W \\) with self-attention
 - Attention
   - operates on dim 512 instead of 2048 "projection trick"
   - residual connection both on atttention and SRU
   - layer normalization after attention block
 - attention help significantly
-  - but not needed in every layer
+  - but needed only in every k-th layer e.g. every 5th
  
 ![SRU++ diagram - Simple Reccurent Unit with attention](/images/sru-layer-diagram.png)
 
