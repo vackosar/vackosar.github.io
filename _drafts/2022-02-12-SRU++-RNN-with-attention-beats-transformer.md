@@ -1,6 +1,6 @@
 ---
 title: "SRU++ Model Speedup Transformer with the Simple Recurrent Unit"
-description: "Scaling Transformer with SRU, Terraformer, and "
+description: "Reducing compute by combining reccurence with self-attention from Transformer"
 layout: post
 categories: book
 tag: ml
@@ -17,6 +17,9 @@ Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord 
 ## Summary:
 - Language modelling:
   - input: text, output masked token or next token
+- authors:
+  - Tao Lei: ASAPP Inc.
+  - Google Brain, Princeton, Cornell
 - SRU
   - [Simple Recurrent Units for Highly Parallelizable Recurrence](https://arxiv.org/pdf/1709.02755.pdf), [OpenReview](https://openreview.net/forum?id=rJBiunlAW)
   - is RNN, 10x faster than LSTM
@@ -126,7 +129,8 @@ int main()
 - complexity O(L · B · d)
 
 ### SRU Results
-- On its own SRU slightly outperforms to QRNN
+- On its own SRU slightly outperforms to QRNN (Quasi-RNN)
+  - SRU "replaces convolutions" in QRNN and KNN with more recurrent connections
 - both SRU and QRNN similar speed
 - 5 - 9x speed-up over cuDNN-optimized LSTM on classification and question answering datasets
 - both ~10x faster than LSTM
@@ -137,7 +141,8 @@ int main()
 ### SRU and Transformer results
 
 - Transformer + SRU outperforms vanilla
-- ? architecture - how does it look
+- not looked into detail how was this done
+  - ? architecture - how does it look
 
 ![img_1.png](/images/sru_sru_and_transformer_results.png)
 
@@ -206,4 +211,5 @@ int main()
 ![SRU++ inference speed](../images/sru++-inference-speed.png)
 
 
-
+## Terraformer
+- Uses SRU, but not covered here
