@@ -17,7 +17,7 @@ Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord 
 - SRU
   - [Simple Recurrent Units for Highly Parallelizable Recurrence](https://arxiv.org/abs/1709.02755), [OpenReview](https://openreview.net/forum?id=rJBiunlAW)
   - is RNN, 10x faster than LSTM
-  - similar to QNN
+  - simple and parallelizable
 - SRU++
   - combines Self-Attention and SRU
   - 3x - 10x faster training
@@ -158,11 +158,28 @@ int main()
   - maybe first layers learn local features
   - which attention then uses
 
-- outperforms Transformer-XL baseline
+- outperforms Transformer-XL baseline by -3% BPC
 - if larger context, then even lower BPC
+
 ![SRU++ comparison to Trans-XL](/images/sru++-trasformer-xl-enwik8-dataset.png)
 
-- 
+- 1 attention-SRU every 10 layers
+
 ![SRU++ attention every k layers](/images/sru++-attention-every-k-layers.png)
 
+- maximum perfromance comparison
+- larger model d = 3072, base model 4096
+- context length train = 1024, eval 3072 
+- SoTA enwik8, but not 
+
 ![Comparison with top-performing modesl on enwik8 dataset](/images/sru++-results.png)
+
+- On par with Compressive memory, worse than kNN-LM, Routing Transformer
+
+![SRU++ WIKI-103 results Routing Transformer](/images/sru++-results-wiki103.png)
+
+
+![SRU++ inference speed](../images/sru++-inference-speed.png)
+
+
+
