@@ -130,6 +130,7 @@ int main()
 ### SRU++ Layer
 - SRU++ is SRU replacing initial lin. transformation \\( W \\) with self-attention
 - Attention
+  - no positional encodings
   - operates on dim 512 instead of 2048 "projection trick"
   - residual connection both on atttention and SRU
   - layer normalization after attention block
@@ -140,3 +141,6 @@ int main()
 
 
 ### Results
+- attention most helps in the last layers
+  - first layers learn local features
+  - attention then efficiently uses them
