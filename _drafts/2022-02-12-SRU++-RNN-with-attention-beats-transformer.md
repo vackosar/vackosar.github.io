@@ -1,5 +1,5 @@
 ---
-title: "SRU++ Model Speedup Transformer with the Simple Recurrent Unit"
+title: "SRU++ Model Speeds Up Transformer with Simple Recurrent Unit"
 description: "Reducing compute by combining reccurence with self-attention from Transformer"
 layout: post
 categories: book
