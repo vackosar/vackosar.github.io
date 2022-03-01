@@ -69,13 +69,15 @@ We can rewrite:
 - \\( r_t := \mathrm{Gate}(x_t, c_{t-1}, W_r, v_r, b_r) \\)
 - \\( h_t : = \mathrm{Way}(x_t, c_t, r_t, 1) \\)
 
+![Simple Recurrent Unit diagram](../images/sru-op-diagram.png)
+
 
 ### GPU vs CPU
 Comparison of GPU and CPU from Nvidia documentation.
 ![From Nvidia: GPU vs CPU in CUDA documentation](/images/sru-cpu-vs-gpu.png)
 
 ### CUDA kernels
-- [CUDA kernels](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html) = C++ functions executed N times by N CUDA threads
+- [CUDA kernels](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html) are C++ functions executed N times by N CUDA threads
  
 ```
 // Kernel definition
@@ -130,7 +132,7 @@ int main()
 
 
 ### SRU++ Layer
-- SRU++ is SRU replacing initial lin. transformation \\( W \\) with self-attention
+- SRU++ is SRU with self-attention instead of \\( (W, W_f, W_r) x \\)
 - Attention
   - no positional encodings
   - operates on dim 512 instead of 2048 "projection trick"
