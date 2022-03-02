@@ -17,7 +17,7 @@ Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord 
 ## Summary:
 - Language modelling:
   - input: text, output masked token or next token
-- Contribution: Increased speed makes the model more accessible
+- Contribution: Increased speed makes the model more accessible to low-resource use-cases
 - Authors:
   - Tao Lei: ASAPP Inc.
   - Google Brain, Princeton, Cornell
