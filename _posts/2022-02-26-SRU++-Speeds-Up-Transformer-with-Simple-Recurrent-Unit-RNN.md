@@ -41,7 +41,8 @@ Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord 
 - recurrence keeps information from previous states in a state vector 
 - [original recurrent LSTM](https://www.bioinf.jku.at/publications/older/2604.pdf) is less parallelizable than [Transformer](https://arxiv.org/pdf/1706.03762v5.pdf)
   - future steps in LSTM depend on the past and is not parallelizable
-- ? TODO vizualization of text as a word sequence vs text as a parse tree
+
+![Dependency parsing and sequence from Pseudo-Projective Dependency Parsing paper](../images/sru-dependency-parse-tree.png)
 
   
 ### How SRU helps parallelization?
@@ -146,7 +147,7 @@ int main()
 
 - Transformer + SRU outperforms vanilla
 - not looked into detail how was this done
-  - ? TODO architecture viz
+- SRU++ below is better
 
 ![SRU results with Transformer on German English translations](/images/sru_sru_and_transformer_results.png)
 
