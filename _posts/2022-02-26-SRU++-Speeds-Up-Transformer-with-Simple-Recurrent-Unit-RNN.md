@@ -143,15 +143,6 @@ int main()
 ![SRU results on enwik8](/images/sru_sru_results.png)
 
 
-### SRU and Transformer results
-
-- Transformer + SRU outperforms vanilla
-- not looked into detail how was this done
-- SRU++ below is better
-
-![SRU results with Transformer on German English translations](/images/sru_sru_and_transformer_results.png)
-
-
 ## SRU++: Attention with SRU
 - [When Attention Meets Fast Recurrence: Training Language Models with Reduced Compute](https://arxiv.org/abs/2102.12459)
 - combines Self-Attention and SRU
