@@ -1,12 +1,12 @@
 ---
-title: "SRU++ Model Speeds Up Transformer with Simple Recurrent Unit RNN"
-description: "Reducing compute by combining recurrence with self-attention from Transformer."
+title: "SRU++ Model Speeds Up Transformer with Simple Recurrent Unit"
+description: "Reducing compute by combining RNN with self-attention from Transformer architecture."
 layout: post
 image: /images/sru++-thumb.png
-categories: book
-tag: ml
+categories: ml
 date: 2022-02-26
 permalink: /:categories/:title
+permalink: /book/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN
 ---
 
 {% include mathjax.html %}
