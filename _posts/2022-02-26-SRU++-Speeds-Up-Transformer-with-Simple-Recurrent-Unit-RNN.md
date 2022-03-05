@@ -6,7 +6,8 @@ image: /images/sru++-thumb.png
 categories: ml
 date: 2022-02-26
 permalink: /:categories/:title
-permalink: /book/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN
+redirect_from:
+  - /book/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN
 ---
 
 {% include mathjax.html %}
