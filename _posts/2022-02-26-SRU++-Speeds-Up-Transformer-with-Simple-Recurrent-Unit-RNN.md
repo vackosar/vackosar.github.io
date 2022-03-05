@@ -29,7 +29,7 @@ Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord 
   - is RNN, 10x faster than LSTM
   - simple and parallelizable
 - SRU++
-  - [combines Self-Attention and SRU](https://arxiv.org/abs/2102.12459)
+  - [combines Self-Attention and SRU](https://arxiv.org/pdf/2102.12459.pdf)
   - 3x - 10x faster training
   - competitive with Transformer on enwik8
 - [Terraformer](https://arxiv.org/pdf/2111.12763.pdf) =
@@ -144,7 +144,6 @@ int main()
   - SRU "replaces convolutions" in QRNN and KNN with more recurrent connections
 - both SRU and QRNN similar speed
 - 5 - 9x speed-up over cuDNN-optimized LSTM on classification and question answering datasets
-- both ~10x faster than LSTM
 
 ![SRU results on enwik8](/images/sru_sru_results.png)
 
@@ -185,6 +184,7 @@ int main()
 - vocabulary of 260K tokens
 
 ### Results
+- PPL = perplexity
 - attention helps the most in the last layers
   - maybe first layers learn local features
   - which attention then uses
@@ -192,24 +192,29 @@ int main()
 - outperforms Transformer-XL baseline by -3% BPC
 - if larger context, then even lower BPC
 
+#### Fair Comparison to Transformer-XL
 ![SRU++ comparison to Trans-XL](/images/sru++-trasformer-xl-enwik8-dataset.png)
 
+#### How Often To Include Attention?
 - 1 attention-SRU every 10 layers
 
 ![SRU++ attention every k layers](/images/sru++-attention-every-k-layers.png)
 
-- maximum perfromance comparison
+#### Max Performance Enwik8
+- maximum performance comparison
 - larger model d = 3072, base model 4096
 - context length train = 1024, eval 3072 
-- SoTA enwik8, but not 
+- SoTA enwik8, but not on Wiki-103
 
 ![Comparison with top-performing modesl on enwik8 dataset](/images/sru++-results.png)
 
+#### Max Performance Wiki-103
 - On par with Compressive memory, worse than kNN-LM, Routing Transformer
 
 ![SRU++ WIKI-103 results Routing Transformer](/images/sru++-results-wiki103.png)
 
 
+#### Speed Comparison
 ![SRU++ inference speed](/images/sru++-inference-speed.png)
 
 
