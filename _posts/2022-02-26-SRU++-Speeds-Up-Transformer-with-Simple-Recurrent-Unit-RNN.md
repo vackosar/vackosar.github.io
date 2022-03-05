@@ -28,14 +28,14 @@ Here are my notes on SRU, and thanks to the paper authors and [Yannic's Discord 
   - [Simple Recurrent Units for Highly Parallelizable Recurrence](https://arxiv.org/pdf/1709.02755.pdf), [OpenReview](https://openreview.net/forum?id=rJBiunlAW)
   - is RNN, 10x faster than LSTM
   - simple and parallelizable
-- SRU++
-  - [combines Self-Attention and SRU](https://arxiv.org/pdf/2102.12459.pdf)
+- [SRU++](https://arxiv.org/pdf/2102.12459.pdf)
+  - combines [Self-Attention](/ml/transformers-self-attention-mechanism-simplified) and SRU
   - 3x - 10x faster training
   - competitive with Transformer on enwik8
 - [Terraformer](https://arxiv.org/pdf/2111.12763.pdf) =
   - [Sparse is Enough in Scaling Transformers](https://arxiv.org/pdf/2111.12763.pdf)
   - is SRU + sparcity + many tricks
-  - 37x faster decoding speed than Transformer
+  - 37x faster decoding speed than [Transformer](/ml/transformers-self-attention-mechanism-simplified)
 
 
 ### Attention and Recurrence

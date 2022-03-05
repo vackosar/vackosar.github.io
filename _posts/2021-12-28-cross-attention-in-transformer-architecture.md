@@ -10,7 +10,7 @@ permalink: /:categories/:title
 
 ![Cross-Attention in Transformer Architecture](/images/cross-attention-in-transformer-architecture.png)
 
-- an [attention mechanism](https://vaclavkosar.com/ml/expire-span-scaling-transformer-by-forgetting#self-attention-simplified-recap) that mixes usually different modalities
+- an [attention mechanism](/ml/transformers-self-attention-mechanism-simplified) that mixes usually different modalities
 - one of the modalities defines the output dimensions and length by playing a role of a query
 - This is similar [the feed forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) where the other sequence is static
 
