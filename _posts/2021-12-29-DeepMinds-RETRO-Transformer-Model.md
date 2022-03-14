@@ -81,10 +81,10 @@ permalink: /:categories/:title
 - all retrieved values: 128 consecutive tokens
 - are first passed through a bi-directional transformer encoder
 - differentiably modulates retrieved chunks
-- conditioning on query-chunks via cross attention
+- conditioning on query-chunks via [cross-attention](/ml/cross-attention-in-transformer-architecture) 
   - query-chunks hidden representations serves as key and value
   - encoded representations serve as queries
-  - at the last layer before first cross-attention
+  - at the last layer before first [cross-attention](/ml/cross-attention-in-transformer-architecture)
 - output is called retrieval set
 
 
@@ -93,7 +93,7 @@ permalink: /:categories/:title
 - add relative positional encodings to each retrieved 
 - concatenate into time dimension
 - use hidden representation at the layer as query
-- cross-attend 
+- [cross-attend](/ml/cross-attention-in-transformer-architecture)
 
 ![retrieval transformer](/images/retrieval-transformer-cross-attention.png)
 

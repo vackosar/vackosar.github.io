@@ -12,6 +12,7 @@ permalink: /:categories/:title
 
 ![self-attention calculation visualization](/images/self-attention-calculation-visualisation.png)
 
+Transfomer's self-attention computes differentiable key-value search and summation on the input sequence and [feed forward layer matrix](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory).
 
 - input \\( X \in \mathbf{R}^{L \times d} \\) is a sequence of embeddings of dimension \\( d \\) of length \\( L \\)
 - output \\( Y \in \mathbf{R}^{L \times d} \\) has the same shape as input
@@ -38,6 +39,24 @@ permalink: /:categories/:title
 </figure>
 
 
+## Self-Attention Complexity
+- complexity is quadratic in sequence length \\( O(L^2) \\)
+- because we need to calculate \\( L \times L \\) attention matrix \\( \mathbf{softmax}(\frac{QK^\intercal}{\sqrt{d}}) \\)
+- but context size is crucial for some tasks e.g. character-level models
+- multiple speedup approaches already exits
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        alt="Attention Complexity"
+        data-src="/images/expire-span-attention-complexity.png"
+        style="max-width: 500px">
+    <figcaption class="figure-caption">
+        Attention Complexity (<a href="https://arxiv.org/pdf/2009.14794.pdf">source</a>).
+    </figcaption>
+</figure>
+
+
 ## Cross-Attention
 
-Cross-attention is used layer to combine different sequences. [Read more here](/ml/cross-attention-in-transformer-architecture).
+[Cross-attention](/ml/cross-attention-in-transformer-architecture) is used layer to combine different sequences. [Read more here](/ml/cross-attention-in-transformer-architecture).

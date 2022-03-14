@@ -13,7 +13,7 @@ permalink: /:categories/:title
 
 {% include load_video.html %}
 
-The attention mechanism is the kingpin of the Transformer model. It drives the results, but runs the memory and time racket of \\( O(L^2d) \\), where \\( L \\) is input token count and \\( d \\) is the latent representation dimension.
+The [attention mechanism](/ml/transformers-self-attention-mechanism-simplified) is the kingpin of the Transformer model. It drives the results, but runs the memory and time racket of \\( O(L^2d) \\), where \\( L \\) is input token count and \\( d \\) is the latent representation dimension.
 
 [The Reformer](https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html), [Longformer](https://arxiv.org/abs/2004.05150) and others attempted to topple it with \\( O(L \log L ) \\).
 Then there was this one model - [Linformer they called him](https://arxiv.org/abs/2006.04768), and he had linear complexity. But he didn't make it.
@@ -44,7 +44,7 @@ How was that done? Read on, traveller! I will tell you a great story.
 
 ### Not Paying for The Attention
 
-Original attention is a value vector weighted by softmax applied to dot product of key and query.
+[Original attention](/ml/transformers-self-attention-mechanism-simplified) is a value vector weighted by softmax applied to dot product of key and query.
 
 \\( a_{\mathbf{orig}} = \mathbf{softmax}(\frac{QK^\intercal}{\sqrt{d}})V \\)
 
