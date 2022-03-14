@@ -10,9 +10,14 @@ permalink: /:categories/:title
 
 ![Cross-Attention in Transformer Architecture](/images/cross-attention-in-transformer-architecture.png)
 
+
+
 - an [attention mechanism](/ml/transformers-self-attention-mechanism-simplified) that mixes usually different modalities
 - one of the modalities defines the output dimensions and length by playing a role of a query
 - This is similar [the feed forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) where the other sequence is static
+- described in the [Attention is All You Need (BERT)](https://arxiv.org/pdf/1706.03762.pdf), but named yet
+ 
+![Cross-Attention in the decoder of Attention is All You Need (BERT) paper](/images/cross-attention-in-bert-decoder.png)
 
 ## Description
 - Let us have sequence A and sequence B
@@ -23,5 +28,6 @@ permalink: /:categories/:title
 
 
 ## Examples
+- [HuggingFace BERT code (key, value are from the encoder, while query is from the decoder)](https://github.com/huggingface/transformers/blob/198c335d219a5eb4d3f124fdd1ce1a9cd9f78a9b/src/transformers/models/bert/modeling_bert.py#L268)
 - [DeepMind's RETRO Transformer](/ml/DeepMinds-RETRO-Transformer-Model)
-- [CrossVit](https://arxiv.org/pdf/2103.14899.pdf)
+- [CrossVit - here only simplified cross-attention is used](https://arxiv.org/pdf/2103.14899.pdf)
