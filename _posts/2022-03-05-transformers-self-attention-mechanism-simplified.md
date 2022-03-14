@@ -10,7 +10,13 @@ permalink: /:categories/:title
 
 {% include mathjax.html %}
 
-![self-attention calculation visualization](/images/self-attention-calculation-visualisation.png)
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/self-attention-calculation-visualisation.png"
+        alt="self-attention calculation visualization"/>
+    <figcaption class="figure-caption">Each query is multiplied with each key. Then we sum up over corresponding values. So on the output, we get the same sequence length and dimension.</figcaption>
+</figure>
 
 Transfomer's self-attention computes differentiable key-value search and summation on the input sequence and [feed forward layer matrix](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory).
 
