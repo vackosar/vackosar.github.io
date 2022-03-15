@@ -11,11 +11,11 @@ permalink: /:categories/:title
 ![Cross-Attention in Transformer Architecture](/images/cross-attention-in-transformer-architecture.png)
 Cross-attention is a very similar to self-attention, except we are putting together two sequences asymetricaly. One of the sequences serves as a query, while the other as a key and value.
 
-- an [attention mechanism in Transformer architecture](/ml/transformers-self-attention-mechanism-simplified) that mixes different embedding sequences
-- the two sequnces can be of different modalities
+- an [attention mechanism in Transformer architecture](/ml/transformers-self-attention-mechanism-simplified) that mixes two different embedding sequences
+- the two sequences can be of different modalities (e.g. text, image, sound)
 - one of the modalities defines the output dimensions and length by playing a role of a query
-- This is similar [the feed forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) where the other sequence is static
-- described in the [Attention is All You Need (BERT)](https://arxiv.org/pdf/1706.03762.pdf), but named yet
+- similar to [the feed forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) where the other sequence is static
+- described in the [Attention is All You Need (BERT) decoder](https://arxiv.org/pdf/1706.03762.pdf), but named yet
  
 ![Cross-Attention in the decoder of Attention is All You Need (BERT) paper](/images/cross-attention-in-bert-decoder.png)
 
