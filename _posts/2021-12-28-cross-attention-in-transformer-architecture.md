@@ -1,6 +1,6 @@
 ---
 title: Cross-Attention in Transformer Architecture
-description: Cross-attention is a way to merge activations from another embedding sequence into transformer layers.
+description: Cross-attention is a way to merge activations two embedding sequence in transformer architecture.
 layout: post
 categories: ml
 image: /images/cross-attention-in-transformer-architecture.png
@@ -9,8 +9,7 @@ permalink: /:categories/:title
 ---
 
 ![Cross-Attention in Transformer Architecture](/images/cross-attention-in-transformer-architecture.png)
-
-
+Cross-attention is a very similar to self-attention, except we are putting together two sequences asymetricaly. One of the sequences serves as a query, while the other as a key and value.
 
 - an [attention mechanism in Transformer architecture](/ml/transformers-self-attention-mechanism-simplified) that mixes different embedding sequences
 - the two sequnces can be of different modalities
