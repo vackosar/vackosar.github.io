@@ -19,6 +19,7 @@ permalink: /:categories/:title
  
 ![Cross-Attention in the decoder of Attention is All You Need (BERT) paper](/images/cross-attention-in-bert-decoder.png)
 
+
 ## Description
 - Let us have sequence A and sequence B
 - Attention matrix from sequence A is used to highlight in sequence B
@@ -31,3 +32,9 @@ permalink: /:categories/:title
 - [HuggingFace BERT code (key, value are from the encoder, while query is from the decoder)](https://github.com/huggingface/transformers/blob/198c335d219a5eb4d3f124fdd1ce1a9cd9f78a9b/src/transformers/models/bert/modeling_bert.py#L268)
 - [DeepMind's RETRO Transformer](/ml/DeepMinds-RETRO-Transformer-Model)
 - [CrossVit - here only simplified cross-attention is used](https://arxiv.org/pdf/2103.14899.pdf)
+
+
+### Perceiver IO
+[Perceiver IO](https://arxiv.org/pdf/2107.14795.pdf) uses extensively cross-attention:
+
+![Perceiver IO architecture](/images/cross-attention-perceiver-io.png)
