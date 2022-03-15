@@ -12,7 +12,8 @@ permalink: /:categories/:title
 
 
 
-- an [attention mechanism](/ml/transformers-self-attention-mechanism-simplified) that mixes usually different modalities
+- an [attention mechanism in Transformer architecture](/ml/transformers-self-attention-mechanism-simplified) that mixes different embedding sequences
+- the two sequnces can be of different modalities
 - one of the modalities defines the output dimensions and length by playing a role of a query
 - This is similar [the feed forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) where the other sequence is static
 - described in the [Attention is All You Need (BERT)](https://arxiv.org/pdf/1706.03762.pdf), but named yet
