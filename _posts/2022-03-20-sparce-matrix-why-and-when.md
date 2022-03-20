@@ -7,10 +7,12 @@ date: 2022-03-20
 permalink: /:categories/:title
 ---
 
+Hi, this is a draft of a post, but it could be already useful.
+
 Sparse matrix format compresses matrices with more than half zero values and speeds up certain operations on them.
 There are two main groups of the sparce matrix representations: 
 - efficient for construction and modification DOK, LIL, COO
-- efficient for access and operations CSR, CSC e.g. 
+- efficient for access and operations CSR, CSC
 
 There are several types of sparse matrix representations, where each has an advantage in different situations.
 - DOK: Dictionary of Keys format:
@@ -19,7 +21,9 @@ There are several types of sparse matrix representations, where each has an adva
 - LOL: List of Lists format:
   - each row has one list of tuples of column and value
   - example `[[(j, matrix[i,j]) for j in range(matrix.shape[1])] for i in range(matrix.shape[0])]`
-- COO: COOrdinate format (aka IJV, triplet format): sorted list of row, column, value tuples `[(i, j, val) for i, j in ...]`
+- COO: COOrdinate format (aka IJV, triplet format):
+  - sorted list of row, column, value tuples
+  - `[(i, j, matrix[i, j]) for i in range(matrix.shape[0]) for j in range(matrix.shape[1])]`
 - CSC: Compressed Sparse Row format: Combination of LOL and COO
     - stores matrix in 3 lists
     - "row list" for each row contains a number that is references a position in the value and column lists, where the row's column and values start
