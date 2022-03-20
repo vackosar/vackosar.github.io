@@ -12,7 +12,7 @@ redirect_from:
 <small><i>{{ page.description }}</i></small>
 <small>When is the end of the quarter?</small>
 <small>When does this quarter ends?</small>
-<small>When is quarter-end?</small>3
+<small>When is quarter-end?</small>
 
 The current quarter <b id='quarterName'>Q1</b> ends on <b id='quarterEnd'>Mar 31</b> in <b id="daysLeft">45</b> days.
 <br>
@@ -160,15 +160,12 @@ Calendar quarters approximately match 4 seasons.
 Calendar quarters divides approximately match 2 equinox and 2 solstice days, when the plane of Earth's equator maximally aligns or excurses with the center of the Sun's disk (ecliptic).
 </p>
 
-<br>
-<br>
-<h4>Tickerverse - Event-Driven Market Intelligence</h4>
-Find new opportunities with <a href="https://tickerverse.com/">event-driven investing on Tickerverse</a>.
-<div>
-  <a href="https://tickerverse.com/">
-    <img style="width: 200px" src="/images/tickerverse-title.svg" alt="Stay on top of important company events">
-  </a>
-</div>
+<h3>Request Notifications or Other Features</h3>
+Would you like to receive notifications or other features?
+Or do you need to consult on topic of software developement or machine learning?
+Contact me with button below.
+
+<a class="btn btn-success m-1" style="text-decoration: none;" href="https://us3.list-manage.com/contact-form?u=289873d7958b1bdc1c6dc93b7&form_id=3b80462ee1d82c5a36e447efbfdbe72a">Consult with Vaclav</a>
 
 
 <script>
