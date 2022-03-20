@@ -50,6 +50,7 @@ Transfomer's self-attention computes differentiable key-value search and summati
 - because we need to calculate \\( L \times L \\) attention matrix \\( \mathbf{softmax}(\frac{QK^\intercal}{\sqrt{d}}) \\)
 - but context size is crucial for some tasks e.g. character-level models
 - multiple speedup approaches already exits
+- for example [Performer](/ml/Performers-FAVOR+-Faster-Transformer-Attention), [Expire-Span](/ml/expire-span-scaling-transformer-by-forgetting), [SRU++](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) are architectures reducing transformer computational complexity.
 
 <figure class="figure">
     <img
