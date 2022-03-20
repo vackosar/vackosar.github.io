@@ -22,7 +22,6 @@ permalink: /:categories/:title
 - Document count is 2.32B with average 2k tokens per document.
 - Similar dataset [The Pile (diverse 800GB text dataset)](https://pile.eleuther.ai/)
 - Google SafeSearch filter
-- Licence is private.
 - Dataset is composed of subsets: web, Github, news, Wikipedia, Books, [C4 (web-text)](https://arxiv.org/abs/1910.10683)
 - Dataset language composition: 99% English, then 10 other languages.
 - Dataset is **private** - not open-source licenced as of 2022-03-20.
