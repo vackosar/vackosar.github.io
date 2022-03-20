@@ -1,6 +1,6 @@
 ---
 title: "Sparce Matrix Why and When?"
-description: "Sparce matrices like CSR, LOL, COO are extremely useful for matrices with more than half zero values"
+description: "Sparce matrix formats like CSR, LOL, COO compress and speed up certain operations on mostly zero matrices"
 layout: post
 categories: ml
 date: 2022-03-20
