@@ -44,7 +44,7 @@ Word Mover's Distance is like Earth Movers Distance but between text documents.
 Words vectors in above can be for example Word2vec embeddings.
 
 
-### Word Mover's Distance vs Word Embedding Weighted Average Consine Similarity
+### Word Mover's Distance vs Word Embedding Weighted Average Cosine Similarity
 
 Cosine similarity is a way how to compare two vectors, which is especially useful in high dimensions, where euclidean distance does not give useful results.
 Cosine similarity measures cosine of the angle between the two vectors, so maximum value is 1 and minimum is -1.
