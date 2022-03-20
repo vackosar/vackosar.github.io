@@ -25,7 +25,7 @@ permalink: /:categories/:title
 - Licence is private.
 - Dataset is composed of subsets: web, Github, news, Wikipedia, Books, [C4 (web-text)](https://arxiv.org/abs/1910.10683)
 - Dataset language composition: 99% English, then 10 other languages.
-- Dataset is as of 2022-03-20 *private*.
+- Dataset is **private** - not open-source licenced as of 2022-03-20.
 
 ![MassiveText non-english composition](/images/massivetext-non-english-composition.png)
 
