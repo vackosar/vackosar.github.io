@@ -15,7 +15,7 @@ redirect_from:
 {% include load_video.html %}
 
 
-Word Mover's Distance captures the semantic similarity between documents more accurately than the cosine similarity between word vector averages. 
+Word Mover's Distance captures the semantic similarity between documents [more accurately than the cosine similarity between word vector averages](#word-movers-distance-vs-word-embedding-weighted-average-similarity). 
 However, vanilla WMD has cubic computational complexity, which makes it impractical in many applications. How WMD works? Why is it so good? Is there any low complexity approximation of WMD?
 
 ### What is Earth Mover's Distance?
@@ -44,13 +44,19 @@ Word Mover's Distance is like Earth Movers Distance but between text documents.
 Words vectors in above can be for example Word2vec embeddings.
 
 
-### Word Mover's Distance vs Word Embedding Weighted Average Similarity
+### Word Mover's Distance vs Word Embedding Weighted Average Consine Similarity
 
-Word Embedding Weighted Average Embedding is a vector calculated as frequency weighted average of word vectors in a document.
-The similarity measure used for WEWA is cosine similarity.
+Cosine similarity is a way how to compare two vectors, which is especially useful in high dimensions, where euclidean distance does not give useful results.
+Cosine similarity measures cosine of the angle between the two vectors, so maximum value is 1 and minimum is -1.
+Cosine similarity is calculated as a dot-product of two normalized vectors.
+In natural language processing, the cosine similarity can we used to compare embedding of two distinct words.
+
+Word Embedding Weighted Average Embedding is a document vector calculated as frequency weighted average of word vectors (embeddings) in the document.
+Using the resulting WEWA document vectors can be compared using cosine similarity.
 
 <img alt="Average of two vectors." style="width: 90%; max-width: 300px" src="/images/vector-average.png">
 
+We can compare Word Mover's Distance vs Cosine similarity of WEWA vectors 
 - WMD uses more detailed information and captures move semantics than WEWA.
 - WMD has much higher complexity of \\( O(L^3 \log(L)) \\) compared to WEWA's \\( O(L) \\), where \\( L \\) is document length.
 
