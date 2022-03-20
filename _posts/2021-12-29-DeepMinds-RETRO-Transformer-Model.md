@@ -117,10 +117,14 @@ permalink: /:categories/:title
 ![RETRO Wikitext103](/images/retrieval-transformer-wikitext103-results.png)
 
 
-## How to Use RETRO Ideas
+## How You can Use RETRO Ideas?
 - freeze any pre-trained transformer
 - add and train chunked cross-attention and the encoder
 - tune number of neighbours between 2 and 40 to your model size
 - results should get close to training whole from scratch
 - see "Retro-fitting baseline models" section
 - Retro source code not published yet
+
+# Read Next: Melting the Recurrence with Attention
+
+[SRU++ Model Speeds Up Transformer with Simple Recurrent Unit](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN)
