@@ -15,7 +15,7 @@ redirect_from:
 {% include load_video.html %}
 
 
-Word Mover's Distance captures the semantic similarity between documents [more accurately than the cosine similarity between word vector averages](#word-movers-distance-vs-word-embedding-weighted-average-similarity). 
+Word Mover's Distance captures the semantic similarity between documents [more accurately than the cosine similarity between word vector averages](#word-movers-distance-vs-word-embedding-weighted-average-cosine-similarity). 
 However, vanilla WMD has cubic computational complexity, which makes it impractical in many applications. How WMD works? Why is it so good? Is there any low complexity approximation of WMD?
 
 ### What is Earth Mover's Distance?
