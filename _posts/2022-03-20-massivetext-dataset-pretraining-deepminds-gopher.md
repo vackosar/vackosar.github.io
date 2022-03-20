@@ -1,6 +1,6 @@
 ---
-title: "MassiveText Dataset introduced for pre-training of DeepMind's Gopher"
-description: "Private diverse 10-lingual textual dataset composed of web, Github, news, Wikipedia, Books, C4.
+title: "MassiveText Dataset introduced for pre-training of DeepMinds Gopher"
+description: "Private diverse 10-lingual textual dataset composed of web, Github, news, Wikipedia, Books, C4."
 layout: post
 image: /images/retrieval-transformer-massive-text.png
 categories: ml

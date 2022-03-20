@@ -43,7 +43,7 @@ permalink: /:categories/:title
 
 
 ## Training Dataset
-- 10-lingual [MassiveText dataset](https://storage.googleapis.com/deepmind-media/research/language-research/Training%20Gopher.pdf)
+- 10-lingual [MassiveText dataset](/ml/massivetext-dataset-pretraining-deepminds-gopher)
 - SentencePiece tokenizer vocabulary of 128k tokens
 - Retrieval database 1.75T tokens
 - 1 token ~ 4 characters ~ 1 word
