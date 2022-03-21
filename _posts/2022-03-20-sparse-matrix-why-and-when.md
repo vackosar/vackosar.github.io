@@ -3,14 +3,26 @@ title: "Sparse Matrix Why and When?"
 description: "Sparce matrix formats like CSR, LOL, COO compress and speed up certain operations on mostly zero matrices"
 layout: post
 categories: ml
+image: /images/sparse-matrix-csr.png
 date: 2022-03-20
 permalink: /:categories/:title
 ---
 
 Hi, this is a draft of a post, but it could be already useful.
 
-![Compressed Sparce Row sparse matrix format comparison with dense matrix multiplication](../images/sparce-matrix-csr.png)
+## Dense Matrix Multiplication Example
+The simplest the most common formats used.
 
+![Dense matrix multiplication example](../images/sparse-matrix-dense-example.png)
+
+
+## CSR Sparse Matrix Multiplication Example
+A very common sparse format that is useful in situations described in below.
+
+![Compressed Sparce Row sparse matrix matrix multiplication](/images/sparse-matrix-csr.png)
+
+
+## Sparse Matrix Formats
 Sparse matrix format compresses matrices with more than half zero values and speeds up certain operations on them.
 There are two main groups of the sparce matrix representations: 
 - efficient for incremental construction and modification DOK, LIL, COO
