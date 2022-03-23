@@ -22,15 +22,14 @@ Cross-attention is a very similar to self-attention, except we are putting toget
  
 ## Cross-attention Algorithm
 - Let us have embeddings (token) sequences S1 and S2
-- sequences A and B lengths can differ
 - Calculate Key and Value from sequence S1
 - Calculate Queries from sequence S2
-- Calculate [attention matrix A](/ml/transformers-self-attention-mechanism-simplified) from Keys and Queries
-- Apply queries to the attention matrix A
+- Calculate [attention matrix](/ml/transformers-self-attention-mechanism-simplified) from Keys and Queries
+- Apply queries to the attention matrix
 - Output sequence has dimension and length of sequence S2
 
 In an equation: \\( \mathbf{softmax}((W_Q S_2) (W_K S_1)^\intercal) W_V S_1 \\)
-- where the softmax output is the [attention matrix A](/ml/transformers-self-attention-mechanism-simplified) 
+- where the softmax output is the [attention matrix](/ml/transformers-self-attention-mechanism-simplified) 
 
 ## Cross-Attention in BERT Decoder
 Cross-attention was described in the [Attention is All You Need (BERT) decoder](https://arxiv.org/pdf/1706.03762.pdf), but not named yet. It merges information from the input sequence to the decoding sequence of different length.
@@ -39,8 +38,12 @@ Cross-attention was described in the [Attention is All You Need (BERT) decoder](
 
 ### Cross-Attention in Perceiver IO
 [Perceiver IO](https://arxiv.org/pdf/2107.14795.pdf) is a general-purpose crossdomain architecture that can handle variety of inputs and outputs uses extensively cross-attention for:
-- merging input into the low dimensional latent transformer sequence
-- merging output "query" or "command" to decode the output value
+- merging very long input sequences (e.g. images) into the low dimensional latent transformer sequence
+- merging "output query" or "command" to decode the output value e.g. we can the model ask about a masked word
+
+Advantage of this is that in general you can work with very high long sequences.
+Architecture [Hierarchical Perceiver](https://arxiv.org/pdf/2202.10890.pdf) has ability to process even longer sequences by splitting into subsequences and then merging them.
+Hierarchical Perceiver also learns the positional encodings with a separate training step with a reconstruction loss.
  
 ![Perceiver IO architecture](/images/cross-attention-perceiver-io.png)
 
