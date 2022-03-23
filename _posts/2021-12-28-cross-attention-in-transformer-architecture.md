@@ -31,13 +31,17 @@ In an equation: \\( \mathbf{softmax}((W_Q S_2) (W_K S_1)^\intercal) W_V S_1 \\)
 - where the softmax output is the [attention matrix](/ml/transformers-self-attention-mechanism-simplified) 
 
 ## Cross-Attention in BERT Decoder
-Cross-attention was described in the [Attention is All You Need (BERT) decoder](https://arxiv.org/pdf/1706.03762.pdf), but not named yet. It merges information from the input sequence to the decoding sequence of different length.
+Cross-attention was described in the [Attention is All You Need (BERT) decoder](https://arxiv.org/pdf/1706.03762.pdf), but not named yet.
+BERT decoding starts with full sized input sequence, but empty decoding sequence.
+Cross-attention introduces information from the input sequence to the decoding layers,
+such that the decoder can predict the next sequence token.
+The next token is added to the output sequence and we repeat the decoding process.
  
 ![Cross-Attention in the decoder of Attention is All You Need (BERT) paper](/images/cross-attention-in-bert-decoder.png)
 
 ### Cross-Attention in Perceiver IO
 [Perceiver IO](https://arxiv.org/pdf/2107.14795.pdf) is a general-purpose crossdomain architecture that can handle variety of inputs and outputs uses extensively cross-attention for:
-- merging very long input sequences (e.g. images) into the low dimensional latent transformer sequence
+- merging very long input sequences (e.g. images, audio) into the low dimensional latent embeddings sequence
 - merging "output query" or "command" to decode the output value e.g. we can the model ask about a masked word
 
 Advantage of this is that in general you can work with very high long sequences.
