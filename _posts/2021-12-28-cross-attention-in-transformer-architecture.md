@@ -4,14 +4,13 @@ description: Cross-attention is a way to merge two embedding sequences e.g. imag
 layout: post
 categories: ml
 image: /images/cross-attention-in-transformer-architecture.png
+video: NXjvcNVkX9o
 date: 2021-12-28
 permalink: /:categories/:title
 ---
 
 {% include mathjax.html %}
-
-![Cross-Attention in Transformer Architecture](/images/cross-attention-in-transformer-architecture.png)
-
+{% include load_video.html %}
 
 Cross-attention is a very similar to self-attention, except we are putting together two sequences asymmetrically. One of the sequences serves as a query, while the other as a key and value.
 
