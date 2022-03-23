@@ -66,4 +66,5 @@ Transfomer's self-attention computes differentiable key-value search and summati
 
 ## Cross-Attention
 
-[Cross-attention](/ml/cross-attention-in-transformer-architecture) is used layer to combine different sequences. [Read more here](/ml/cross-attention-in-transformer-architecture).
+[Cross-attention is used layer to combine different sequences](/ml/cross-attention-in-transformer-architecture) of different inputs and modalities.
+Read more about [what Cross-Attention is and where it is used](/ml/cross-attention-in-transformer-architecture).
