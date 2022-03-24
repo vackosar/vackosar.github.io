@@ -57,6 +57,6 @@ Hierarchical Perceiver also learns the positional encodings with a separate trai
 - [DeepMind's RETRO Transformer uses cross-attention to incorporate the database retrived sequences](/ml/DeepMinds-RETRO-Transformer-Model)
 - [Code example: HuggingFace BERT (key, value are from the encoder, while query is from the decoder)](https://github.com/huggingface/transformers/blob/198c335d219a5eb4d3f124fdd1ce1a9cd9f78a9b/src/transformers/models/bert/modeling_bert.py#L268)
 - [CrossVit - here only simplified cross-attention is used](https://arxiv.org/pdf/2103.14899.pdf)
-
+- [On the Strengths of Cross-Attention in Pretrained Transformers for Machine Translation](https://arxiv.org/pdf/2104.08771v1.pdf)
 
 
