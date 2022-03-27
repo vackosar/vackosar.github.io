@@ -63,11 +63,11 @@ Content based document recommendation, each user is described by the bag-of-docu
 
 
 ## Applications
-- text classification
-- ranking entities
+- text classification 
+- ranking entities e.g. [Automatically Expanding Taxonomy](/ml/Automatically-Expanding-Taxonomy)
 - collaborative filtering-based recommendation
 - content-based recommendation
-- word, sentence, dcoument, graph embedding
+- word, sentence, document, graph embedding
 
 ## Quiz
 
