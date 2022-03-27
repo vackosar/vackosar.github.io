@@ -69,9 +69,12 @@ In [SRU++](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) the p
 ## Transformer Training
 Transformers are usually pre-trained with self-supervised tasks like masked language modelling or next-token prediction on large datasets.
 Pre-trained models are usually very general and publicly distributed e.g. on HuggingFace.
-Then fine-tuning training is used to specialize the model for a specific task on using a small labelled dataset.
 Multiple-GPUs are often used. While there are various approaches to speedup transformer itself, there are also approches to improve its training:
 - [ELECTRA training scheme speeds up training](/ml/electra-4x-cheaper-bert-training) with GAN-like setting using a loss over entire sequence.
+
+Then fine-tuning training is used to specialize the model for a specific task on using a small labelled dataset.
+For example model like BART are fine-tuned for summarization tasks.
+Sometimes we fine-tune twice, as authors did with [BART model equipped with diminishing self-attention to increase summarization coverage](/ml/submodularity-in-ranking-summarization-and-self-attention).
 
 
 ## Self-Attention Computational Complexity
