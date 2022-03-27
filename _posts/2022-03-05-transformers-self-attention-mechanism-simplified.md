@@ -68,3 +68,12 @@ Transformer's self-attention computes differentiable key-value search and summat
 
 [Cross-attention is used layer to combine different sequences](/ml/cross-attention-in-transformer-architecture) of different inputs and modalities.
 Read more about [what Cross-Attention is and where it is used](/ml/cross-attention-in-transformer-architecture).
+
+
+## Transformer vs Word2vec Continuous Bag-of-Words
+
+![Word2vec CBOW](/images/transformer-and-word2vec-cbow.png)
+
+Word2vec Continuous Bag-of-Words model is very similar to a single layer transformer with \\( W_K, W_Q, W_K = 1 \\) and fourier positional encodings.
+In this special case, the Transformer output for a masked word is close to summation of the surrounding word vectors.
+This matches the summation in the Word2vec CBOW model used to predict the middle word.
