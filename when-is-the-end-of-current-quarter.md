@@ -19,7 +19,7 @@ The current quarter <b id='quarterName'>Q1</b> ends on <b id='quarterEnd'>Mar 31
 
 How many days left in this quarter? There are <b id="daysLeft2">45</b> days left in this quarter.<br>
 How many days till the end of this quarter? There are <b id="daysLeft3">45</b> days till the end of current quarter.<br>
-What is the current quarter? The current quarter is <b id='quarterName2'>Q1</b>.
+What quarter are we in? The current quarter is <b id='quarterName2'>Q1</b>.
 
 <style>
 
@@ -62,7 +62,9 @@ What is the current quarter? The current quarter is <b id='quarterName2'>Q1</b>.
 </figure>
 
 <h3>When do calendar quarters start and end?</h3>
-<p>A year is divided into 4 quarters: Q1, Q2, Q3, Q4. Each quarter has 3 months. Each quarter has approximately 91 days.</p>
+<p>What calendar quarter means? A year is divided into 4 quarters: Q1, Q2, Q3, Q4. Each quarter has 3 months.
+Each quarter is approximately 91 days long.
+Quarterly means once every quarter, which is approximately each 91 days.</p>
 
 <p>See a handy table of quarter start and end dates below. The dates are the same for each year.</p>
 
@@ -104,9 +106,9 @@ What is the current quarter? The current quarter is <b id='quarterName2'>Q1</b>.
     </tbody>
 </table>
 
-<h3>Fiscal Year and Fiscal Quarters</h3>
+<h3>Fiscal Year</h3>
 <p>
-  Each company or government institution can choose their own fiscal year, a twelve-month period, that is the most suitable to their yearly revenue cycle.
+  Each company or government institution can choose their own fiscal (financial) year, a twelve-month period, that is the most suitable to their yearly revenue cycle.
   Fiscal year can differ from calendar year.
   Companies use their fiscal years to submit financial reports, external audits, federal tax filings.
   For example Apple's fiscal year ends its fiscal year on the last Saturday of September.
@@ -147,11 +149,13 @@ What is the current quarter? The current quarter is <b id='quarterName2'>Q1</b>.
         </tr>
     </tbody>
 </table>
+<h3>Fiscal Quarters</h3>
 
 <p>
-A company fiscal year outlines its quarters dates.
+A company fiscal year outlines its fiscal (financial) quarters dates.
 That means that fiscal quarters and quarter reporting dates may be different for each company.
 But usually they fall at the end of the months and don't cut through them.
+Fiscal or financial quarter takes 3 months, so is approximately 91 days long.
 </p>
 
 <h3>Historical Origin of Calendar Quarters</h3>
