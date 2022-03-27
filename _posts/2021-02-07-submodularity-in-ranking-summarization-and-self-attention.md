@@ -204,7 +204,7 @@ then diminishing attention is defined as:
 
 This relatively increases attention to the parts of input text that were not yet used for decoding.
 With a slightly more sofisticated approach they call "Dynamic Dimishing Attention" they then achive SoTA
-with underlying summarization models Pointer-Generator and BART.
+with underlying summarization models Pointer-Generator and BART ([BERT](/ml/transformers-self-attention-mechanism-simplified)-based model).
 
 
 <figure class="figure">

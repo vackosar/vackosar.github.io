@@ -48,7 +48,7 @@ Transformer's self-attention layer computes differentiable key-value search and 
 
 ## Positional Embeddings
 
-![positional embeddings in BERT architecture](../images/transformer-positional-embeddings.png)
+![positional embeddings in BERT architecture](/images/transformer-positional-embeddings.png)
 
 In BERT, positional embeddings give first few tens of dimensions of the token embeddings meaning of relative positional closeness within the input sequence.
 In [Perceiver IO](/ml/cross-attention-in-transformer-architecture#cross-attention-in-perceiver-io) positional embeddings are concatenated to the input embedding sequence instead.
