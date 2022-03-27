@@ -99,5 +99,7 @@ Word2vec Continuous Bag-of-Words predicts word in the middle of the surrounding 
 Word2vec CBOW model is very similar to a special single layer transformer.
 If masked word embedding is denoted \\( v_{\mathrm{mask}} \\) and it has approximately the same cosine similarity to all word vectors.
 And if \\( W_K = W_Q = W_V = 1 \\). 
-And fourier positional encodings \\( P \\).
-In this special case, the Transformer output for a masked word is close to summation of the surrounding word vectors like in CBOW Word2vec up to the masked vector.
+And [fourier positional encodings](#fourier-positional-encodings-in-bert) \\( P \\).
+In this special case, the Transformer output for a masked word is close to summation of the surrounding word vectors like in CBOW Word2vec.
+The result would also contain [word-absolute-positional terms](https://www.reddit.com/r/MachineLearning/comments/cttefo/d_positional_encoding_in_transformer/exs7d08/),
+which are not present in Word2vec.
