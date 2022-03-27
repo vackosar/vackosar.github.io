@@ -45,6 +45,17 @@ Similarity function used was either dot product performing better in lower numbe
 Embeddings for classes of entities higher in hierarchy are calculated by summing bag-of-words representations of its children.
 
 
+## Results
+
+
+Text classification comparison with FastText:
+
+![StarSpace text classification results comparison with fastText](/images/starspace-text-classification-results.png)
+
+Content based document recommendation, each user is described by the bag-of-documents they like, while each document is described by its bag-of-words.
+
+![StarSpace content-based recommendation results comparison with TF-IDF, word2vec, fastText](/images/starspace-content-based-recommendation-results.png)
+
 
 ## Applications
 - text classification
