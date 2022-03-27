@@ -14,7 +14,7 @@ permalink: /:categories/:title
 - next token (~word) prediction = autoregressive language model
 - full name = Retrieval-Enhanced Transformer (RETRO) 
 - paper = DeepMind's [Improving Language Models by Retrieving from Trillions of Tokens (2021)](https://arxiv.org/pdf/2112.04426v1.pdf), [Deep Mind Blog](https://deepmind.com/research/publications/2021/improving-language-models-by-retrieving-from-trillions-of-tokens)
-- retrieves from [kNN](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) database [Bert](https://arxiv.org/pdf/1706.03762.pdf)-similar to the current text-chunk
+- retrieves from [kNN](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) database [BERT](/ml/transformers-self-attention-mechanism-simplified)-similar to the current text-chunk
 - conditions on retrieved chunk and its continuation chunk
 - so attends to previously encountered "future texts"
 - SoTA on [Wikitext103](https://www.salesforce.com/products/einstein/ai-research/the-wikitext-dependency-language-modeling-dataset/) and [the Pile](https://pile.eleuther.ai/) datasets
@@ -32,7 +32,7 @@ permalink: /:categories/:title
   - search context LM embedding in database
   - linearly interpolate with LM predictions
 - [DPR (2020)](https://aclanthology.org/2020.emnlp-main.550.pdf)
-  - trains one [Bert (2017)](https://arxiv.org/pdf/1706.03762.pdf) for keys and one for values
+  - trains one [BERT (2017)](/ml/transformers-self-attention-mechanism-simplified) for keys and one for values
   - uses contrastive loss
 - RETRO in contrast uses
   - longer sequences

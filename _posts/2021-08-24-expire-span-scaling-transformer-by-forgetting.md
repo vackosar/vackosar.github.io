@@ -61,7 +61,7 @@ If you need to recap transformer read: [Transformer's Self-Attention Mechanism S
 ## Transformer-XL
 - [Transformer-XL (Extra Long): Attentive Language Models Beyond a Fixed-Length Context](https://aclanthology.org/P19-1285.pdf)
 - first self-attention model better than RNN on both char & word level LM
-- auto-regressive: attention is backward only not bi-directional like BERT
+- auto-regressive: attention is backward only not bi-directional like [BERT transformer model](/ml/transformers-self-attention-mechanism-simplified)
 - instead of recalculating embeddings for each fixed span
 - rather memorize previous results
 - because previous results saw context not available in the next step

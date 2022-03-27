@@ -31,7 +31,7 @@ In an equation: \\( \mathbf{softmax}((W_Q S_2) (W_K S_1)^\intercal) W_V S_1 \\)
 - where the softmax output is the [attention matrix](/ml/transformers-self-attention-mechanism-simplified) 
 
 ## Cross-Attention in BERT Decoder
-Cross-attention was described in the [Attention is All You Need (BERT) decoder](https://arxiv.org/pdf/1706.03762.pdf), but not named yet.
+Cross-attention was described in the [Attention is All You Need (BERT) decoder](/ml/transformers-self-attention-mechanism-simplified), but not named yet.
 BERT decoding starts with full sized input sequence, but empty decoding sequence.
 Cross-attention introduces information from the input sequence to the decoding layers,
 such that the decoder can predict the next sequence token.
@@ -51,9 +51,7 @@ Hierarchical Perceiver also learns the positional encodings with a separate trai
 ![Perceiver IO architecture](/images/cross-attention-perceiver-io.png)
 
 
-
-
-## Other Examples
+## Other Examples of Cross-Attention Usage
 - [DeepMind's RETRO Transformer uses cross-attention to incorporate the database retrived sequences](/ml/DeepMinds-RETRO-Transformer-Model)
 - [Code example: HuggingFace BERT (key, value are from the encoder, while query is from the decoder)](https://github.com/huggingface/transformers/blob/198c335d219a5eb4d3f124fdd1ce1a9cd9f78a9b/src/transformers/models/bert/modeling_bert.py#L268)
 - [CrossVit - here only simplified cross-attention is used](https://arxiv.org/pdf/2103.14899.pdf)

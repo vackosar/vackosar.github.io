@@ -18,7 +18,8 @@ permalink: /:categories/:title
     <figcaption class="figure-caption">Each query is multiplied with each key. Then we sum up over corresponding values. So on the output, we get the same sequence length and dimension.</figcaption>
 </figure>
 
-Transformer's self-attention computes differentiable key-value search and summation on the input sequence and [feed forward layer matrix](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory).
+The prototypical example of the Transformer architecture is the Bidirectional Encoder Representations from Transformers (BERT) model. The BERT Transformer model was introduced in a [Attention Is All You Need paper](https://arxiv.org/abs/1706.03762).
+Transformer's self-attention layer computes differentiable key-value search and summation on the input sequence and [feed forward layer matrix](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory).
 
 - input \\( X \in \mathbf{R}^{L \times d} \\) is a sequence of embeddings of dimension \\( d \\) of length \\( L \\)
 - output \\( Y \in \mathbf{R}^{L \times d} \\) has the same shape as input
@@ -66,17 +67,20 @@ In [SRU++](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) the p
 
 
 ## Transformer Training
-Transformers are usually pre-trained on self-supervised tasks like masked language modelling or next-token prediction.
+Transformers are usually pre-trained with self-supervised tasks like masked language modelling or next-token prediction on large datasets.
+Pre-trained models are usually very general and publicly distributed e.g. on HuggingFace.
+Then fine-tuning training is used to specialize the model for a specific task on using a small labelled dataset.
 Multiple-GPUs are often used. While there are various approaches to speedup transformer itself, there are also approches to improve its training:
 - [ELECTRA training scheme speeds up training](/ml/electra-4x-cheaper-bert-training) with GAN-like setting using a loss over entire sequence.
 
 
-## Self-Attention Complexity
+## Self-Attention Computational Complexity
 - complexity is quadratic in sequence length \\( O(L^2) \\)
 - because we need to calculate \\( L \times L \\) attention matrix \\( \mathbf{softmax}(\frac{QK^\intercal}{\sqrt{d}}) \\)
 - but context size is crucial for some tasks e.g. character-level models
 - multiple speedup approaches already exits
 - for example [Performer](/ml/Performers-FAVOR+-Faster-Transformer-Attention), [Expire-Span](/ml/expire-span-scaling-transformer-by-forgetting), [SRU++](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) are architectures reducing transformer computational complexity.
+  - In [Perceiver IO, cross-attention](/ml/cross-attention-in-transformer-architecture#cross-attention-in-perceiver-io) is used to reduce dimensionality and thus the complexity.
 
 <figure class="figure">
     <img
@@ -92,7 +96,7 @@ Multiple-GPUs are often used. While there are various approaches to speedup tran
 
 ## Cross-Attention
 
-[Cross-attention is used layer to combine different sequences](/ml/cross-attention-in-transformer-architecture) of different inputs and modalities.
+[Cross-attention is used to combine different sequences](/ml/cross-attention-in-transformer-architecture) of different inputs and modalities.
 Read more about [what Cross-Attention is and where it is used](/ml/cross-attention-in-transformer-architecture).
 
 

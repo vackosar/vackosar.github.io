@@ -63,7 +63,7 @@ We can compare Word Mover's Distance vs Cosine similarity of WEWA vectors
 
 ### Word Mover's Distance vs BERT Similarity
 
-It would be interesting to compare BERT transformer model sentence embedding computational complexity to WMD.
+It would be interesting to compare [BERT transformer model](/ml/transformers-self-attention-mechanism-simplified) sentence embedding computational complexity to WMD.
 If I understand correctly, BERT is of linear complexity in the length of the document, although total running time may be still in many cases be longer for BERT.
 There is [a sentence similarity model from Google called Bleurt](https://github.com/google-research/bleurt).
 

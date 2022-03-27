@@ -106,7 +106,7 @@ LambdaNet's authors apparently just love multi-dimensionality.
 
 Normalized softmax along dimension \\( n \\) is denoted by \\( \sigma \\).
 Transformer positional encoding is denoted by \\( P \in \mathbf{R}^{n \times d} \\).
-The positional embeddings are learned e.g. in case of BERT model.
+The positional embeddings are learned e.g. in case of [BERT transformer model](/ml/transformers-self-attention-mechanism-simplified).
 
 Given a query
 \\( Q = W_Q (X + P) \in \mathbb{R}^{n \times d}\\),
