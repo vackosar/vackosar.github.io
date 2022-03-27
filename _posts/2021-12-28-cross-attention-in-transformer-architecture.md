@@ -28,7 +28,6 @@ Cross-attention is a very similar to self-attention, except we are putting toget
 - Output sequence has dimension and length of sequence S2
 
 In an equation: \\( \mathbf{softmax}((W_Q S_2) (W_K S_1)^\intercal) W_V S_1 \\)
-- where the softmax output is the [attention matrix](/ml/transformers-self-attention-mechanism-simplified) 
 
 ## Cross-Attention in BERT Decoder
 Cross-attention was described in the [Attention is All You Need (BERT) decoder](/ml/transformers-self-attention-mechanism-simplified), but not named yet.
@@ -44,7 +43,7 @@ The next token is added to the output sequence and we repeat the decoding proces
 - merging very long input sequences (e.g. images, audio) into the low dimensional latent embeddings sequence
 - merging "output query" or "command" to decode the output value e.g. we can the model ask about a masked word
 
-Advantage of this is that in general you can work with very high long sequences.
+Advantage of this is that in general you can work with very long sequences.
 Architecture [Hierarchical Perceiver](https://arxiv.org/pdf/2202.10890.pdf) has ability to process even longer sequences by splitting into subsequences and then merging them.
 Hierarchical Perceiver also learns the positional encodings with a separate training step with a reconstruction loss.
  
