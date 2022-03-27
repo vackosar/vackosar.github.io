@@ -45,6 +45,25 @@ Transformer's self-attention computes differentiable key-value search and summat
 </figure>
 
 
+## Positional Embeddings
+
+![positional embeddings in BERT architecture](../images/transformer-positional-embeddings.png)
+
+In BERT, positional embeddings give first few tens of dimensions of the token embeddings meaning of relative positional closeness within the input sequence.
+In [Perceiver IO](/ml/cross-attention-in-transformer-architecture#cross-attention-in-perceiver-io) positional embeddings are concatenated to the input embedding sequence instead.
+In [SRU++](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) the positional embeddings are learned feature of the RNN.
+
+### Fourier Positional Encodings in BERT
+- Positional embeddings are added to the word embeddings once before the first layer.
+- Each position \\( t \\) within the sequence gets different embedding
+  - if \\( t = 2i \\) is even then \\( P_{t, j} := \sin (p / 10^{\frac{8i}{d}})  \\)
+  - if \\( t = 2i + 1 \\) is odd then \\( P_{t, j} := \cos (p / 10^{\frac{8i}{d}})  \\)
+- This is similar to fourier expansion of Diracs delta
+- dot product of any two positional encodings decays fast after first 2 nearby words
+- most sentences are relatively short ~10 words, thus only first dimensions of positional encodings carry information
+- the rest of the embeddings can thus function as word embeddings
+
+
 ## Self-Attention Complexity
 - complexity is quadratic in sequence length \\( O(L^2) \\)
 - because we need to calculate \\( L \times L \\) attention matrix \\( \mathbf{softmax}(\frac{QK^\intercal}{\sqrt{d}}) \\)
@@ -74,6 +93,11 @@ Read more about [what Cross-Attention is and where it is used](/ml/cross-attenti
 
 ![Word2vec CBOW](/images/transformer-and-word2vec-cbow.png)
 
-Word2vec Continuous Bag-of-Words model is very similar to a single layer transformer with \\( W_K, W_Q, W_K = 1 \\) and fourier positional encodings.
-In this special case, the Transformer output for a masked word is close to summation of the surrounding word vectors.
-This matches the summation in the Word2vec CBOW model used to predict the middle word.
+
+This matches the 
+Word2vec Continuous Bag-of-Words predicts word in the middle of the surrounding 2-word context with sum of the context vectors.
+Word2vec CBOW model is very similar to a special single layer transformer.
+If masked word embedding is denoted \\( v_{\mathrm{mask}} \\) and it has approximately the same cosine similarity to all word vectors.
+And if \\( W_K = W_Q = W_V = 1 \\). 
+And fourier positional encodings \\( P \\).
+In this special case, the Transformer output for a masked word is close to summation of the surrounding word vectors like in CBOW Word2vec up to the masked vector.
