@@ -24,7 +24,7 @@ FastText embeds words by adding word's n-grams to the word embedding and then no
 
 \\( \mathrm{fastText}(\mathrm{word}) = v_{\mathrm{word}} + \sum_{g \in \mathrm{ngrams}(\mathrm{word})} \frac{v_g}{\| \mathrm{ngrams} \| } \\)
 
-If the word is not present in the dictionary, is out of vocabulary (OOV), then \\( v_{\mathrm{word}} = 0 \\) only n-grams summed up:
+If the word is not present in the dictionary, is out of vocabulary (OOV), then \\( v_{\mathrm{word}} = 0 \\) and only n-grams summed up:
 
 \\( \mathrm{fastText}(\mathrm{word}) = \sum_{g \in \mathrm{ngrams}(\mathrm{word})} \frac{v_g}{\| \mathrm{ngrams} \| } \\)
 
