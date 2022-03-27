@@ -29,6 +29,8 @@ Funding comes from Facebook AI Research.
 
 ## Method
 
+![starspace model method - sum](/images/starspace-sum.svg)
+
 We train only the vectors directly without any other parameters.
 In contrast to Word2vec and FastText there is no word (input) vector concept, but only context (output) vector concept.
 The method is highly influenced by FastText, in comparison to which it is much more general, although slightly slower.
