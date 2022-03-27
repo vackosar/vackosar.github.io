@@ -28,6 +28,9 @@ If the word is not present in the dictionary, is out of vocabulary (OOV), then \
 
 \\( \mathrm{fastText}(\mathrm{word}) = \sum_{g \in \mathrm{ngrams}(\mathrm{word})} \frac{v_g}{\| \mathrm{ngrams} \| } \\)
 
+FastText embedding vectors can then be used for word analogy tasks, text classification, or ranking.
+
+![fasttext classification results comparison glove](../images/fasttext-classification-results-comparison-glove.png)
 
 [StarSpace a general-purpose embeddings inspired by FastText can be also used for content recommendation.](https://vaclavkosar.com/ml/starspace-embedding)
 
