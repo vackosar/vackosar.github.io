@@ -98,7 +98,7 @@ redirect_from:
 ## Wav2vec 2.0 Implementation
 - 7-layer convolution to raw audio
 - mask spans of the latents
-- contextualize via 12-block transformer
+- contextualize via 12-block [transformer](/ml/transformers-self-attention-mechanism-simplified)
 - transformed token predicts quantized input
 - [contrastive learning on quantized targets](#wav2vec-20-vs-previous-version)
 - ablations showed quantization helps
@@ -129,7 +129,7 @@ redirect_from:
 - previous version vq-wav2vec
 - jointly learn quantizations instead of separately
 - contrastive loss:
-  - from transformer output to the codebook
+  - from [transformer](/ml/transformers-self-attention-mechanism-simplified) output to the codebook
   - uses similarity
   - distractors are other masked time steps
   - \\( - \log \frac{exp(sim(c_t, q_t) / \kappa }{ \sum_{q \in Q_t } \exp (sim(c_t, q) / \kappa) } \\)
@@ -184,6 +184,6 @@ redirect_from:
 - [Hackernews](https://news.ycombinator.com/item?id=27722333)
 
 
-<a href='/when-is-the-end-of-current-quarter.html'>Do you know how many days until the current quarter ends?</a>
-
-
+# Not sure how [the transformer model](/ml/transformers-self-attention-mechanism-simplified) really works?
+The [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) stormed the ML world including computer vision thanks to its generality and GPU parallizability on shorter sequences.
+[Finally understand it over here](/ml/transformers-self-attention-mechanism-simplified), and if you still don't get it, ask me a question!
