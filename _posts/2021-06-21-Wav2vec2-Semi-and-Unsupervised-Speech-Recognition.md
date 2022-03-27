@@ -184,6 +184,6 @@ redirect_from:
 - [Hackernews](https://news.ycombinator.com/item?id=27722333)
 
 
-# Not sure how [the transformer model](/ml/transformers-self-attention-mechanism-simplified) really works?
+# Still not sure how [the transformer model](/ml/transformers-self-attention-mechanism-simplified) really works?
 The [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) stormed the ML world including computer vision thanks to its generality and GPU parallizability on shorter sequences.
 [Finally understand it over here](/ml/transformers-self-attention-mechanism-simplified), and if you still don't get it, ask me a question!

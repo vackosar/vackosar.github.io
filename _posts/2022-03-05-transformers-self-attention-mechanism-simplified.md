@@ -1,6 +1,6 @@
 ---
 title: "Transformer's Self-Attention Mechanism Simplified"
-description: "Understand quickly successful architecture used in GPT, BERT, and other famous models."
+description: "Understand quickly successful architecture used in GPT, BERT, and other famous transformer models."
 layout: post
 image: /images/self-attention-calculation-visualisation.png
 categories: ml
