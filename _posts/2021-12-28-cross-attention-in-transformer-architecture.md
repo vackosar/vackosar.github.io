@@ -39,7 +39,7 @@ The next token is added to the output sequence and we repeat the decoding proces
 ![Cross-Attention in the decoder of Attention is All You Need (BERT) paper](/images/cross-attention-in-bert-decoder.png)
 
 ### Cross-Attention in Perceiver IO
-[Perceiver IO](https://arxiv.org/pdf/2107.14795.pdf) is a general-purpose crossdomain architecture that can handle variety of inputs and outputs uses extensively cross-attention for:
+[Perceiver IO](https://arxiv.org/pdf/2107.14795.pdf) is a general-purpose cross-domain architecture that can handle variety of inputs and outputs uses extensively cross-attention for:
 - merging very long input sequences (e.g. images, audio) into the low dimensional latent embeddings sequence
 - merging "output query" or "command" to decode the output value e.g. we can the model ask about a masked word
 
