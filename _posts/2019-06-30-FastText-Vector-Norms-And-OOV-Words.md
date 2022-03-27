@@ -32,7 +32,7 @@ FastText embedding vectors can then be used for word analogy tasks, text classif
 
 ![fasttext classification results comparison glove](../images/fasttext-classification-results-comparison-glove.png)
 
-[StarSpace a general-purpose embeddings](https://vaclavkosar.com/ml/starspace-embedding) inspired by FastText can be also used for content recommendation.]
+[StarSpace a general-purpose embeddings](https://vaclavkosar.com/ml/starspace-embedding) inspired by FastText can be also used for content recommendation.
 
 
 ## Experimenting with FastText Norms
