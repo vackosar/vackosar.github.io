@@ -19,7 +19,7 @@ redirect_from:
 1. Requires discrete features e.g. user's features are docs that he liked.
 1. Trains by summing bag-of-features and contrasting with k-negative samples.
 1. In terms of quality the method performs competitively.
-1. In terms of speed the method is on par with FastText.
+1. In terms of speed the method is on par with [FastText](/ml/FastText-Vector-Norms-And-OOV-Words).
 
 
 ## Source
@@ -33,7 +33,7 @@ Funding comes from Facebook AI Research.
 ![starspace model method - sum](/images/starspace-sum.svg)
 
 We train only the vectors directly without any other parameters.
-In contrast to Word2vec and FastText there is no word (input) vector concept, but only context (output) vector concept.
+In contrast to Word2vec and [FastText](/ml/FastText-Vector-Norms-And-OOV-Words) there is no word (input) vector concept, but only context (output) vector concept.
 The method is highly influenced by FastText, in comparison to which it is much more general, although slightly slower.
 
 For each discrete feature, an embedding vector is fitted such that SGD minimizes the loss function below.
@@ -53,7 +53,7 @@ Embeddings for classes of entities higher in hierarchy are calculated by summing
 ## Results
 
 
-Text classification comparison with FastText:
+Text classification comparison with [FastText](/ml/FastText-Vector-Norms-And-OOV-Words):
 
 ![StarSpace text classification results comparison with fastText](/images/starspace-text-classification-results.png)
 
