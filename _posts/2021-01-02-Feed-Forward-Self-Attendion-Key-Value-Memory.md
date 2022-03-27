@@ -16,10 +16,10 @@ permalink: /:categories/:title
 Have you forgotten about Transformer's feed-forward layer? [It eats 2/3 of the model params](https://arxiv.org/pdf/2012.14913v1.pdf)!
 
 [The last post on LambdaNetwork sketches self-attention as a differentiable query of a key-value store](https://vaclavkosar.com/ml/Lamda-Networks-Transform-Self-Attention).
-The Transformer's feed-forward sublayer is similar to the [self-attention](/ml/transformers-self-attention-mechanism-simplified) except values and keys are independent of the input.
+The [Transformer](/ml/transformers-self-attention-mechanism-simplified)'s feed-forward sublayer is similar to the [self-attention](/ml/transformers-self-attention-mechanism-simplified) except values and keys are independent of the input.
 It is like differentiable key-value memory!
 
-Can we gain more understanding of Transformer model operation by looking at the FF?
+Can we gain more understanding of [Transformer model](/ml/transformers-self-attention-mechanism-simplified) operation by looking at the FF?
 
 ## Where and what is Feed-Forward?
 
