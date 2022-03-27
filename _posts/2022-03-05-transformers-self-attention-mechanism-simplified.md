@@ -53,6 +53,7 @@ In BERT, positional embeddings give first few tens of dimensions of the token em
 In [Perceiver IO](/ml/cross-attention-in-transformer-architecture#cross-attention-in-perceiver-io) positional embeddings are concatenated to the input embedding sequence instead.
 In [SRU++](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) the positional embeddings are learned feature of the RNN.
 
+
 ### Fourier Positional Encodings in BERT
 - Positional embeddings are added to the word embeddings once before the first layer.
 - Each position \\( t \\) within the sequence gets different embedding
@@ -62,6 +63,12 @@ In [SRU++](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) the p
 - dot product of any two positional encodings decays fast after first 2 nearby words
 - most sentences are relatively short ~10 words, thus only first dimensions of positional encodings carry information
 - the rest of the embeddings can thus function as word embeddings
+
+
+## Transformer Training
+Transformers are usually pre-trained on self-supervised tasks like masked language modelling or next-token prediction.
+Multiple-GPUs are often used. While there are various approaches to speedup transformer itself, there are also approches to improve its training:
+- [ELECTRA training scheme speeds up training](/ml/electra-4x-cheaper-bert-training) with GAN-like setting using a loss over entire sequence.
 
 
 ## Self-Attention Complexity
