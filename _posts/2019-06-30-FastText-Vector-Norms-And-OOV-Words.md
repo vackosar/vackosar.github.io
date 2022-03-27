@@ -13,8 +13,8 @@ redirect_from:
 Word embeddings, trained on large unlabeled corpora are useful for many natural language processing tasks. FastText [(Bojanowski et al., 2016)](https://arxiv.org/abs/1607.04606) in contrast to Word2vec model accounts for sub-word information by also embedding sub-word n-grams. FastText word representation is the word embedding vector plus sum of n-grams contained in it.
 Word2vec vector norms have been shown [(Schakel & Wilson, 2015)](http://arxiv.org/abs/1508.02297) to be correlated to word significance.
 
-[Full code is here](https://github.com/vackosar/fasttext-vector-norms-and-oov-words/blob/master/README.md).
-
+- [Full code is here](https://github.com/vackosar/fasttext-vector-norms-and-oov-words/blob/master/README.md).
+- [Continue: StarSpace - a general-purpose embeddings inspired by FastText](https://vaclavkosar.com/ml/starspace-embedding)
 
 # Introduction
 
@@ -181,6 +181,8 @@ No-N-Gram Norm has very similar Norm-TF distribution as Word2Vec shown in [(Scha
 
 NG_Norm shows that n-gram count could be potentially useful feature and that simple averaging over n-gram vectors may not be optimal. Perhaps some approach akin to [(Zhelezniak et al., 2019)](https://arxiv.org/abs/1904.13264) could be used.
 
+- [Full code is here](https://github.com/vackosar/fasttext-vector-norms-and-oov-words/blob/master/README.md).
+- [Continue: StarSpace - a general-purpose embeddings inspired by FastText](https://vaclavkosar.com/ml/starspace-embedding)
 
 # References
 
