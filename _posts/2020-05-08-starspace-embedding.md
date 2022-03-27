@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "StarSpace Embedding - United and universal spaces of vectors"
+title: "StarSpace - Embeddings For Documents, Users, and Words"
 date: 2020-05-08
 categories: ML
-description: To embed variety of entities into single vector space, this paper describes general-purpose neural embedding model.
+description: Create vectors of various entities in a single space with this general-purpose embedding model.
 image: https://raw.githubusercontent.com/facebookresearch/StarSpace/master/examples/starspace.png 
 video: 0bSsAeT-N6w
 permalink: /:categories/:title
