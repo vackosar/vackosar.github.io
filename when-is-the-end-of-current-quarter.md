@@ -14,11 +14,11 @@ redirect_from:
 <small>When does this quarter ends?</small>
 <small>When is quarter-end?</small>
 
-The current quarter <b id='quarterName'>Q1</b> ends on <b id='quarterEnd'>Mar 31</b> in <b id="daysLeft">45</b> days.
+The current quarter <b id='quarterName'>Q1</b> ends on <b id='quarterEnd'>Mar 31</b> in <b id="daysLeft">45</b> days (<b id="bizDaysLeft">20</b> business days).
 <br>
 
 How many days left in this quarter? There are <b id="daysLeft2">45</b> days left in this quarter.<br>
-How many days till the end of this quarter? There are <b id="daysLeft3">45</b> days till the end of current quarter.<br>
+How many business days till the end of this quarter? There are <b id="bizDaysLeft2">45</b> business days till the end of current quarter.<br>
 What quarter are we in? The current quarter is <b id='quarterName2'>Q1</b>.
 
 <style>
@@ -179,7 +179,9 @@ Contact me with button below.
     document.getElementById('quarterEnd').innerText = getQEnd().toLocaleDateString();
     document.getElementById('daysLeft').innerText = daysLeftInQuarter().toString();
     document.getElementById('daysLeft2').innerText = daysLeftInQuarter().toString();
-    document.getElementById('daysLeft3').innerText = daysLeftInQuarter().toString();
+    // document.getElementById('daysLeft3').innerText = daysLeftInQuarter().toString();
+    document.getElementById('bizDaysLeft').innerText = getBizDaysLeftInQuarter().toString();
+    document.getElementById('bizDaysLeft2').innerText = getBizDaysLeftInQuarter().toString();
 
 
     // set clock
@@ -211,6 +213,23 @@ Contact me with button below.
       d = d || new Date();
       var qEnd = getQEnd(d);
       return Math.floor((qEnd - d) / 8.64e7) + 1;
+    }
+
+    function getBizDaysLeftInQuarter(d) {
+      d = d || new Date();
+      var qEnd = getQEnd(d);
+      return getBusinessDatesCount(d, qEnd);
+    }
+
+    function getBusinessDatesCount(startDate, endDate) {
+        let count = 0;
+        const curDate = new Date(startDate.getTime());
+        while (curDate <= endDate) {
+            const dayOfWeek = curDate.getDay();
+            if(dayOfWeek !== 0 && dayOfWeek !== 6) count++;
+            curDate.setDate(curDate.getDate() + 1);
+        }
+        return count;
     }
 
 </script>
