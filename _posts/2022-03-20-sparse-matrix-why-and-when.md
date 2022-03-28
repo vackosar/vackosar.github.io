@@ -45,6 +45,8 @@ There are several types of sparse matrix representations, where each has an adva
     - "value list" contains values and is indexed by the row list
     - to access a row `i` retrieve `indexes = range(row_list[i], row_list[i+1])`, then build row's list of list representation `row_lol = [(i, column_list[j], value_list[j]) for j in indexes]`
     - fast matrix to vector multiplication (product) thus useful for [KNN](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
+      - fast CSR + CSR, CSR * CSR, CSR * Dense
+      - row slicing
     - [converting to Scipy's CSR](https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csr_matrix.html) with `tocsr` method
 - and more: Compressed Sparse Row, Block Sparse Row format, Diagonal, ...
 
