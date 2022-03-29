@@ -12,7 +12,7 @@ permalink: /:categories/:title
 {% include mathjax.html %}
 {% include load_video.html %}
 
-Cross-attention is a very similar to self-attention, except we are putting together two sequences asymmetrically. One of the sequences serves as a query, while the other as a key and value.
+Cross-attention is a very similar to [self-attention](/ml/transformers-self-attention-mechanism-simplified), except we are putting together two sequences asymmetrically. One of the sequences serves as a query input, while the other as a key and value inputs.
 
 - an [attention mechanism in Transformer architecture](/ml/transformers-self-attention-mechanism-simplified) that mixes two different embedding sequences
 - the two sequences can be of different modalities (e.g. text, image, sound)
