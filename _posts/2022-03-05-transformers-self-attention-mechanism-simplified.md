@@ -113,7 +113,6 @@ Sometimes we fine-tune twice, as authors did with [BART model equipped with dimi
 ![Word2vec CBOW](/images/transformer-and-word2vec-cbow.png)
 
 
-This matches the 
 Word2vec Continuous Bag-of-Words predicts word in the middle of the surrounding 2-word context with sum of the context vectors.
 Word2vec CBOW model is very similar to a special single layer transformer.
 If masked word embedding is denoted \\( v_{\mathrm{mask}} \\) and it has approximately the same cosine similarity to all word vectors.
