@@ -15,10 +15,10 @@ permalink: /:categories/:title
 The prototypical example of the Transformer architecture is the Bidirectional Encoder Representations from Transformers (BERT) model. The BERT Transformer model was introduced in a [Attention Is All You Need paper](https://arxiv.org/abs/1706.03762).
 
 While self-attention is the central part of the Transformer architecture, it is not the whole picture.
-It has following parts:
-- [positional encodings inject input word-position information](#positional-embeddings)
-- [self-attention contextually encodes the input sequence information](#self-attention-in-transformer)
-- [feed forward layer which operates bit like a static key-value memory](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory)
+Transformer architecture is a composite of following parts:
+- [Positional encodings inject input word-position information](#positional-embeddings)
+- [Self-attention contextually encodes the input sequence information](#self-attention-in-transformer)
+- [Feed forward layer which operates bit like a static key-value memory](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory). FF layer is similar to self-attention except it does not use softmax and one of the input sequences is a constant.
 - [Cross-attention is used to combine different sequences](/ml/cross-attention-in-transformer-architecture) of different inputs and modalities.
 
 ## Self-Attention in Transformer

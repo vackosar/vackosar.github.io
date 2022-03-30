@@ -12,13 +12,19 @@ permalink: /:categories/:title
 {% include mathjax.html %}
 {% include load_video.html %}
 
-Cross-attention is a very similar to [self-attention](/ml/transformers-self-attention-mechanism-simplified), except we are putting together two sequences asymmetrically. One of the sequences serves as a query input, while the other as a key and value inputs.
-
+Cross attention is:
 - an [attention mechanism in Transformer architecture](/ml/transformers-self-attention-mechanism-simplified) that mixes two different embedding sequences
+- the two sequences must have the same dimension
 - the two sequences can be of different modalities (e.g. text, image, sound)
-- one of the modalities defines the output dimensions and length by playing a role of a query
-- similar to [the feed forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) where the other sequence is static
- 
+- one of the sequences defines the output length as it plays a role of a query
+
+## Cross-attention vs Self-attention
+Except for inputs, cross-attention calculation is the same as [self-attention](/ml/transformers-self-attention-mechanism-simplified).
+Cross-attention combines asymmetrically two separate embedding sequences of same dimension, in contrast self-attention input is a single embedding sequence.
+One of the sequences serves as a query input, while the other as a key and value inputs.
+
+[The feed forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) is related to cross-attention, except the feed forward layer does use softmax and one of the input sequences is static.
+
 ## Cross-attention Algorithm
 - Let us have embeddings (token) sequences S1 and S2
 - Calculate Key and Value from sequence S1
