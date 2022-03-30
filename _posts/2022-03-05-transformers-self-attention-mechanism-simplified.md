@@ -130,6 +130,7 @@ If we would instead not use positional encodings, and use sliding context size m
 
 - [Wav2vec uses Transformer with quantization to predict phonemes](/ml/Wav2vec2-Semi-and-Unsupervised-Speech-Recognition)
 - [Diminishing self-attention improves summarization coverage](/ml/submodularity-in-ranking-summarization-and-self-attention)
+- [DeepMind's RETRO Transformer uses cross-attention to incorporate the database retrived sequences](/ml/DeepMinds-RETRO-Transformer-Model)
 - [Expire-Span uses attention with forgetting](/ml/expire-span-scaling-transformer-by-forgetting)
 - [SRU++ fuses of RNN and Self-attention](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN)
 - [Performer uses random kernel features to speedup attention](/ml/Performers-FAVOR+-Faster-Transformer-Attention)
