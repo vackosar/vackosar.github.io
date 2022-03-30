@@ -97,11 +97,11 @@ In [SRU++](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) the p
 - the rest of the embeddings can thus function as word embeddings
 
 
-## Transformer Training
+## Training a Transformer
 Transformers are usually pre-trained with self-supervised tasks like masked language modelling or next-token prediction on large datasets.
-Pre-trained models are usually very general and publicly distributed e.g. on HuggingFace.
-Multiple-GPUs are often used. While there are various approaches to speedup transformer itself, there are also approches to improve its training:
-- [ELECTRA training scheme speeds up training](/ml/electra-4x-cheaper-bert-training) with GAN-like setting using a loss over entire sequence.
+Pre-trained models are often very general and publicly distributed e.g. on HuggingFace.
+Multiple-GPUs are often used. While there are various approaches to speedup transformer itself, there are also ways to improve its training.
+For example [ELECTRA training scheme speeds up training](/ml/electra-4x-cheaper-bert-training) by using GAN-like setting using a loss over entire sequence.
 
 Then fine-tuning training is used to specialize the model for a specific task on using a small labelled dataset.
 For example model like BART are fine-tuned for summarization tasks.
