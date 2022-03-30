@@ -19,11 +19,12 @@ Cross attention is:
 - one of the sequences defines the output length as it plays a role of a query
 
 ## Cross-attention vs Self-attention
-Except for inputs, cross-attention calculation is the same as [self-attention](/ml/transformers-self-attention-mechanism-simplified).
+Except for inputs, cross-attention calculation is the same as [self-attention](/ml/transformers-self-attention-mechanism-simplified) but the calculation inputs are different.
 Cross-attention combines asymmetrically two separate embedding sequences of same dimension, in contrast self-attention input is a single embedding sequence.
 One of the sequences serves as a query input, while the other as a key and value inputs.
 
 [The feed forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) is related to cross-attention, except the feed forward layer does use softmax and one of the input sequences is static.
+[Augmenting Self-attention with Persistent Memory paper](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) shows that Feed Forward layer calculation made the same as self-attention.
 
 ## Cross-attention Algorithm
 - Let us have embeddings (token) sequences S1 and S2
