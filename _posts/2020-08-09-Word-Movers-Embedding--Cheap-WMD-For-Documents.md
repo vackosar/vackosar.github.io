@@ -81,13 +81,13 @@ For small constant size \\( D \\) document \\( \omega \\), the complexity of WMD
 So if we could compare all documents not against each other but rather against \\(R \\) much smaller documents, we could get complexity down to \\( O(NRL \log(L)) \\) from \\( O(N^2 L^3 \log(L)) \\)!
 
 #### Random Encounters
-So how to continue? Could we borrow a principle from method of [Random Projections for LSH](https://www.cs.princeton.edu/courses/archive/spr04/cos598B/bib/CharikarEstim.pdf) to save ourselves some computation?
-The j-th dimension value of an embedding is defined using a WMD distance to a "randomly generated document" denoted by \\( \omega_j \\). 
+Let's borrow the spirit of [Random Projections method for LSH](https://www.cs.princeton.edu/courses/archive/spr04/cos598B/bib/CharikarEstim.pdf) to save ourselves computation.
+Let's define j-th dimension of an embedding as WMD distance to a "randomly generated document" \\( \omega_j \\). 
 
 \\( \mathit{WME}(x)_j = \\) 
 \\( \frac{1}{\sqrt{R}} \exp[ - \gamma \mathit{WMD}(x, \omega_j) ] \\)
 
-Let's for a moment assume we know how to randomly generate documents. Why would above make sense?
+And let's for a moment assume we know how to randomly generate documents. Why would above make sense?
 
 As teased above, the dot product of the embeddings is dominated by a random document that lies on the shortest path between the documents.
 Note that the random document can only be close to the shortest path between the documents if it is "rich enough".
