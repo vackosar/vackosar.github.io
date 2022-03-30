@@ -124,3 +124,12 @@ The result would however be still more expressive, as it would contain [relative
 which are not present in Word2vec.
 
 If we would instead not use positional encodings, and use sliding context size matching Word2vec's, then the results would be even closer to the Word2vec.
+
+
+## Example Transformer Models
+
+- [Wav2vec uses Transformer with quantization to predict phonemes](/ml/Wav2vec2-Semi-and-Unsupervised-Speech-Recognition)
+- [Diminishing self-attention improves summarization coverage](/ml/submodularity-in-ranking-summarization-and-self-attention)
+- [Expire-Span uses attention with forgetting](/ml/expire-span-scaling-transformer-by-forgetting)
+- [SRU++ fuses of RNN and Self-attention](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN)
+- [Performer uses random kernel features to speedup attention](/ml/Performers-FAVOR+-Faster-Transformer-Attention)
