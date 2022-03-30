@@ -52,7 +52,6 @@ Embeddings for classes of entities higher in hierarchy are calculated by summing
 
 ## Results
 
-
 Text classification comparison with [FastText](/ml/FastText-Vector-Norms-And-OOV-Words):
 
 ![StarSpace text classification results comparison with fastText](/images/starspace-text-classification-results.png)
@@ -75,4 +74,7 @@ Retain what you have just read by taking training quiz generated from this artic
 <br>
 <a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=d0dfd88a-4712-42a6-bec3-68c86133d1ce">StarSpace Quiz</a>
 
+## Beyond StarSpace
+While StarSpace is computationally and memory-wise cheap, post 2017 the state of the art usually involves [Transfomer models](/ml/transformers-self-attention-mechanism-simplified).
+If you don't understand [transformer or self-attention](/ml/transformers-self-attention-mechanism-simplified) yet, then [read more about it here](/ml/transformers-self-attention-mechanism-simplified).
 
