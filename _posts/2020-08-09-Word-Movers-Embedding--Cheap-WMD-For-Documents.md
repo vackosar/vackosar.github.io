@@ -81,6 +81,7 @@ For small constant size \\( D \\) document \\( \omega \\), the complexity of WMD
 So if we could compare all documents not against each other but rather against \\(R \\) much smaller documents, we could get complexity down to \\( O(NRL \log(L)) \\) from \\( O(N^2 L^3 \log(L)) \\)!
 
 #### Random Encounters
+So how to continue? Could we borrow a principle from method of [Random Projections for LSH](https://www.cs.princeton.edu/courses/archive/spr04/cos598B/bib/CharikarEstim.pdf) to save ourselves some computation?
 The j-th dimension value of an embedding is defined using a WMD distance to a "randomly generated document" denoted by \\( \omega_j \\). 
 
 \\( \mathit{WME}(x)_j = \\) 
