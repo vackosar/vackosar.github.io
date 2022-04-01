@@ -166,23 +166,6 @@ Training:
   - modestly-sized set
   - generally useful routines
   - interpretable routines
-  - 
-
-#### Sources & Details
-- [DreamCoder Paper with Supplement](https://www.cs.cornell.edu/~ellisk/documents/dreamcoder_with_supplement.pdf)
-- [DreamCoder Video](https://youtu.be/NYIeP1hns6A)
-
-Paper Notation
-- library: \\( L \\)
-- program:
-  \\( \rho \\)
-- length:
-  \\( P( \rho | L) \\)
-- is solution:
-  \\( P(x | \rho) \in \lbrace 0, 1 \rbrace \\)
-- search: approximate posterior of recognition model
-  \\( Q( \rho | x) \\)
-
 
 
 ### Bonus Paper: Inference of Regular Expressions
@@ -211,3 +194,8 @@ Solution search
 Comparison
 - the method outperforms, but not on all datasets
 - time is human comparable ~10mins
+
+
+### Continue
+- [DreamCoder's author video](https://youtu.be/NYIeP1hns6A)
+- [Expire-Span solves reinforcement-learning-like problems with a transformer memory](/ml/expire-span-scaling-transformer-by-forgetting)
