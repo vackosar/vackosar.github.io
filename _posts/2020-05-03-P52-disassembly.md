@@ -24,7 +24,7 @@ I personally did full disassembly due to having to clean up almond butter from a
 
 
 ## Download Manual
-The non official download is much faster
+The non-official download is much faster
 - [Fast download](https://ok1.de/media/ThinkPad/HMM/tp_p52_hmm_en.pdf)
 - [Official download](https://download.lenovo.com/pccbbs/mobiles_pdf/tp_p52_hmm_en.pdf)
 
@@ -40,4 +40,4 @@ I recommend using the amateur video below, but I am linking to official videos a
 There is a video on Youtube on P51 LCD removal, but it does not apply to P52. P52 has screen glued with double-sided tape, due to which I was not able to remove the screen, forcing me to install LTE antenna in a hacky way.
 
 
-What I also love about P52 is graphics card, I can [train neural networks like DistilBERT](/ml/transformers-self-attention-mechanism-simplified) on my local machine.
+What I also love about P52 is graphics card, I can [train neural networks like 2-layer DistilBERT](/ml/transformers-self-attention-mechanism-simplified) on my local machine.

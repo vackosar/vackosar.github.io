@@ -107,9 +107,14 @@ Then fine-tuning training is used to specialize the model for a specific task on
 For example model like BART are fine-tuned for summarization tasks.
 Sometimes we fine-tune twice, as authors did with [BART model equipped with diminishing self-attention to increase summarization coverage](/ml/submodularity-in-ranking-summarization-and-self-attention).
 
+Beware of possibility of the [double descent of test accuracy contrary to bias-variance trade-off hypothesis](/ml/double-descent-contrary-to-bias-variance-trade-off).
+
+[]()
+
 ## Running Transformer in Kubernetes Cluster in Cloud
 
-To get your models to production, you will need to:
+While you can train and predict with small transformers on for example [Thinkpad P52 graphics card (see my review)](/electronics/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530),
+to run bigger models, or deploy your models to production, you will need to:
 - [store your trained models e.g. using Quilt Data in S3 (read more here)](/ml/Quilt-data-versioning-review-how-to)
 - [deploy to Kubernetes (read more here on Cortex, BentoML, and Helm)](/ml/BentoML-vs-Cortex.dev-ML-Serving-Showdown)
 
