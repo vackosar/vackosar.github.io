@@ -14,7 +14,10 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: underline;
-    color: #999;
+    color: #1a627a;
+}
+.social-icon {
+    color: #207994;
 }
 a:hover {
     text-decoration: underline;
@@ -69,7 +72,9 @@ img {
 }
 
 svg {
-    width: 20px;
+    width: 22px;
+    color: #207994;
+    margin: 2px;
 }
 
 .MathJax { font-size: 0.9em !important; }

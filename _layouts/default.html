@@ -11,11 +11,6 @@
     {% feed_meta %}
     {% seo %}
     <!-- redundant, but faster then refresh of css -->
-    <style>
-        svg {
-            width: 20px;
-        }
-    </style>
 </head>
 <body>
 <div style="display: flex; justify-content: center;">
@@ -36,18 +31,8 @@
                 </td>
             </tr>
         </table>
-        <nav>
-            <ul style="text-decoration: none">
-<!--                <li><a href="/">{% include home.svg %}</a></li>-->
-                <li><a href="mailto:admin@vaclavkosar.com">{% include envelope.svg %}</a></li>
-                <li><a href="/donate">{% include donate.svg %}</a></li>
-                <li><a href="https://twitter.com/vackosar/">{% include twitter.svg %}</a></li>
-                <li><a href="https://www.youtube.com/user/MrVkosar/videos">{% include youtube.svg %}</a></li>
-                <li><a href="https://cz.linkedin.com/in/vaclav-kosar-47755863">{% include linkedin.svg %}</a></li>
-                <li><a href="https://github.com/vackosar">{% include github.svg %}</a></li>
-                <a href="https://vackosar.github.io/feed.xml" target="_blank" title="Follow on RSS" class="m-1">{% include rss.svg %}</a>
-            </ul>
-        </nav>
+        {% include social.html %}
+
         <div class="container">
 
             {{ content }}
