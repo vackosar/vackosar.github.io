@@ -50,5 +50,39 @@ What happens when we try to use `managed_resource` without `with`?
 Nothing. Returned object is only holds a reference to a generator and has `__enter__()` and `__exit__()` methods. The context object will only return a value from the generator upon `__enter__()` call, and will run the rest of the code after `yield` during `__exit__()` call.
 
 
+# Retries using Context Manager
+
+Do you need to retry when for example storage is momentarily not available?
+However, You cannot implement retries of the code wrapped in `with`.
+You simply cannot execute `yield` multiple times.
+Instead, you can pass a callback to retry method containing a exponential backoff for loop below. 
+
+```python
+def retry_on_exception(
+    fun: Callable,
+    args=(),
+    kwargs: Optional[dict] = None,
+    retry_exceptions: Tuple = (Exception,),
+    max_retries: int = 3,
+    base_sleep_secs: float = 3.0,
+):
+    if kwargs is None:
+        kwargs = dict()
+
+    ex = None
+    for retry in range(max_retries + 1):
+        try:
+            val = fun(*args, **kwargs)
+            return val
+
+        except retry_exceptions as e:
+            ex = e
+            sleep_secs = base_sleep_secs * 2 ** retry
+            sleep(sleep_secs)
+
+    raise RuntimeError(f"Too many retries ({max_retries}) of {fun.__name__}") from ex
+```
+
+
 # Continue to Boundary Control Entity Architecture
 BCE architecture is [the simplest way to structure your source code files](/software/Boundary-Control-Entity-Architecture-The-Pattern-to-Structure-Your-Classes), read all about it in [my post on BCE](/software/Boundary-Control-Entity-Architecture-The-Pattern-to-Structure-Your-Classes).
