@@ -33,7 +33,7 @@ Neural Networks are missing [System 2](https://en.wikipedia.org/wiki/Thinking,_F
 
 ### How DreamCoder works?
 
-- [DreamCoder](https://web.mit.edu/ellisk/www/documents/dreamcoder_with_supplement.pdf) uses:
+- [DreamCoder](https://www.cs.cornell.edu/~ellisk/documents/dreamcoder_with_supplement.pdf) uses:
   - learned library of functions
   - learned neural search on program space
 - To:
@@ -50,7 +50,7 @@ The best program:
   - learn neural guided search
 
 
-Similarities to AlphaZero:
+Similarities to [AlphaZero](https://arxiv.org/pdf/1712.01815.pdf):
 - also trains a neural search
 - also does "self-play" (Dream phase)
 
@@ -108,7 +108,7 @@ Training:
 
 ##### Abstraction phase:
 - propose new library functions 
-- minizing the new functions
+- minimizing the new functions
 - minimizing the length of solutions
 - reduce number of refactorings \\( \sim 10^{14} \\)
     - ideas from:
@@ -169,7 +169,7 @@ Training:
   - 
 
 #### Sources & Details
-- [DreamCoder Paper with Supplement](https://web.mit.edu/ellisk/www/documents/dreamcoder_with_supplement.pdf)
+- [DreamCoder Paper with Supplement](https://www.cs.cornell.edu/~ellisk/documents/dreamcoder_with_supplement.pdf)
 - [DreamCoder Video](https://youtu.be/NYIeP1hns6A)
 
 Paper Notation
