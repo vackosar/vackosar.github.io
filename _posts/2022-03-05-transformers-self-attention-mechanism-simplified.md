@@ -111,7 +111,7 @@ Sometimes we fine-tune twice, as authors did with [BART model equipped with dimi
 
 To get your models to production, you will need to:
 - [store your trained models e.g. using Quilt Data in S3 (read more here)](/ml/Quilt-data-versioning-review-how-to)
-- [deploy to Kubernetes (read more here on Cortex, BentoML, and Helm](/ml/BentoML-vs-Cortex.dev-ML-Serving-Showdown)
+- [deploy to Kubernetes (read more here on Cortex, BentoML, and Helm)](/ml/BentoML-vs-Cortex.dev-ML-Serving-Showdown)
 
 
 ## Transformer vs Word2vec Continuous Bag-of-Words
