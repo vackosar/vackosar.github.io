@@ -93,3 +93,5 @@ I only evaluated precision, but haven't bought it.
 - extra M.2 drive slot
 
 
+### My Previous Thinkpad Yoga X260 Fix
+I fixed [Touchpad Lost Sync on Lenovo Yoga X260 using a bash script](/software/Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync).

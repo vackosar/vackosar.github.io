@@ -24,3 +24,5 @@ Notice usage of the evil "eval" function. The eval function is important here to
 Above should keep all evils at bay.
 
 Try it out and let me know below!
+
+I used above foreach method together with [functional debounce method in Bash to fix my Lenovo Yoga X260](/software/Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync).

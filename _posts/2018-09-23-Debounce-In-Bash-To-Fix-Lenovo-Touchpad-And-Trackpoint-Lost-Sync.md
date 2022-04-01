@@ -81,3 +81,4 @@ Using debounce function above I implemented a script to do just that automagical
       foreach 'echo restarting mouse; modprobe -r psmouse; modprobe psmouse;' &
 
 
+Learn more [about the foreach method above in this post](/software/Functional-Foreach-In-Bash).
