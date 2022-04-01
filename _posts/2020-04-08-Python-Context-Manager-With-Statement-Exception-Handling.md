@@ -50,7 +50,7 @@ What happens when we try to use `managed_resource` without `with`?
 Nothing. Returned object is only holds a reference to a generator and has `__enter__()` and `__exit__()` methods. The context object will only return a value from the generator upon `__enter__()` call, and will run the rest of the code after `yield` during `__exit__()` call.
 
 
-# Retries using Context Manager
+# Retries Using Context Manager Are Not Possible - Here Is An Alternative
 
 Do you need to retry when for example storage is momentarily not available?
 However, You cannot implement retries of the code wrapped in `with`.
