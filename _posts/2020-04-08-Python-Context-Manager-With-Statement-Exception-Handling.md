@@ -87,4 +87,4 @@ def retry_on_exception(
 # Other Useful Posts
 BCE architecture is [the simplest way to structure your source code files](/software/Boundary-Control-Entity-Architecture-The-Pattern-to-Structure-Your-Classes), read all about it in [my post on BCE](/software/Boundary-Control-Entity-Architecture-The-Pattern-to-Structure-Your-Classes).
 
-Did you know that you can implement [ForEach in Bash](/software/Functional-Foreach-In-Bash)?
+Did you know that you can implement [functional ForEach in Bash](/software/Functional-Foreach-In-Bash)?
