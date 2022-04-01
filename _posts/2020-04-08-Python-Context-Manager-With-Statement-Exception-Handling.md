@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Handle Exception And Close Resource Using Python Context Manager With-Statement"
+title: "Handle Exception and Close Resource Using Python Context Manager With-Statement"
 date: 2020-04-08
 categories: software
 description: Wrap you resource creation and closure into context manager with-statement and catch exceptions there.
