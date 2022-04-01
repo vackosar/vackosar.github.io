@@ -18,7 +18,7 @@ redirect_from:
 The disassembly is fairly easy as I was able to repaste and install LTE antenna without any previous experience, that is except removing LCD panel, which seems to be just glued onto the cover in a cheapskate manner.
 Concern is durability of screws on your machine as they can take only so much use before need for replacement. Some of my screws are at 60% mileage after 8-10 openings.
 
-I recommend using the maintenance manual combined with a video linked in the corresponding sections below. You can find [P52 vs ZBook G5 comparison](/2019/03/03/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.html) on this site as well.
+I recommend using the maintenance manual combined with a video linked in the corresponding sections below. Read my [review of P52 based on personal experience, P52 vs ZBook G5 comparison](/2019/03/03/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.html).
 
 I personally did full disassembly due to having to clean up almond butter from all over the fans.
 
@@ -40,4 +40,4 @@ I recommend using the amateur video below, but I am linking to official videos a
 There is a video on Youtube on P51 LCD removal, but it does not apply to P52. P52 has screen glued with double-sided tape, due to which I was not able to remove the screen, forcing me to install LTE antenna in a hacky way.
 
 
-
+What I also love about P52 is graphics card, I can [train neural networks like DistilBERT](/ml/transformers-self-attention-mechanism-simplified) on my local machine.

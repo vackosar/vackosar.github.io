@@ -110,6 +110,10 @@ Video:
 If you need super simple deployment of CPU only applications with auto-scaling you can consider using [AWS App Runner](https://aws.amazon.com/apprunner/).
 You just fill in your source code repository and you app gets hosted in the selected region on your domain with auto certificate renewal.
 
+## Helm
+If you need more flexibility and you have dedicated DevOps person, consider using [Heml](https://helm.sh/).
+Heml is more complex to use, but is still simpler than using Kubernetes directly and has some similarities with Cortex.
+
 ## External Discussions
 - <a href="https://www.reddit.com/r/MachineLearning/comments/ghikdz/d_is_this_fair_bentoml_vs_cortex_comparison/">Reddit discussion</a>
 
