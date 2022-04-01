@@ -23,15 +23,21 @@
 
 </style>
 
-<div id="video-img" onclick="loadVid(this)">
-  <!--  <img width="560" src="http://i3.ytimg.com/vi/{{ page.video }}/hqdefault.jpg" alt="{{ page.title }}" />-->
-  <img id="video-img-img" style="max-width: 560px; width: 100%" src="{{ page.image }}" alt="{{ page.title }}" />
-  {% include youtube-play.svg %}
+<div id="video-img">
+  <div onclick="loadVid(this)">
+    <!--  <img width="560" src="http://i3.ytimg.com/vi/{{ page.video }}/hqdefault.jpg" alt="{{ page.title }}" />-->
+    <img id="video-img-img" style="max-width: 560px; width: 100%" src="{{ page.image }}" alt="{{ page.title }}" />
+    {% include youtube-play.svg %}
+  </div>
+  <a id="no-js-link" class="small" href="https://www.youtube.com/{{ page.video }}" target="_blank">Watch {{ page.title }} on Youtube</a>
 </div>
-<br>
 
 <script type="application/javascript" defer>
+  // removes no-js element
+  document.getElementById('no-js-link').remove();
+
   function loadVid(e) {
+
     let iframe = document.createElement( "iframe" );
     iframe.setAttribute("frameborder", "0" );
     iframe.setAttribute("allowfullscreen", "" );
