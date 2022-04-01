@@ -4,7 +4,9 @@ title: Blog
 ---
 <h2>{{ page.title }}</h2>
 
+<br>
 {% include subscribe.html %}
+<br>
 
 
 <div class="container posts">
