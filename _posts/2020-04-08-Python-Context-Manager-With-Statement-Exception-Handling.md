@@ -5,10 +5,13 @@ date: 2020-04-08
 categories: software
 description: Wrap you resource creation and closure into context manager with-statement and catch exceptions there.
 permalink: /:categories/:title
+image: /images/python-context-manager-close-resource-on-exception.png
 redirect_from:
   - /2020/04/08/Python-with-statement-exception-handling.html
   - /software/Python-with-statement-exception-handling
 ---
+  
+![python close resource with context manager on exception](/images/python-context-manager-close-resource-on-exception.png)
 
 One case use context manager to handle exceptions during execution of the with statement as can be seen in the snippet below. This is useful for example for rolling back database transactions in case of an exception, where the database connections can be retrieved from and returned to a connection pool.
 
