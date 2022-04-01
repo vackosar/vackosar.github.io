@@ -6,6 +6,7 @@ title: Blog
 
 {% include subscribe.html %}
 
+
 <div class="container posts">
   {% for post in site.posts %}
       <div class="row">
