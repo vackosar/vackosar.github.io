@@ -105,9 +105,9 @@ For example [ELECTRA training scheme speeds up training](/ml/electra-4x-cheaper-
 
 Then fine-tuning training is used to specialize the model for a specific task on using a small labelled dataset.
 For example model like BART are fine-tuned for summarization tasks.
-Sometimes we fine-tune twice, as authors did with [BART model equipped with diminishing self-attention to increase summarization coverage](/ml/submodularity-in-ranking-summarization-and-self-attention).
+Sometimes we fine-tune twice, as authors did with [BART model equipped with diminishing self-attention to increase summarization coverage (read my summary)](/ml/submodularity-in-ranking-summarization-and-self-attention).
 
-Beware of possibility of the [double descent of test accuracy contrary to bias-variance trade-off hypothesis](/ml/double-descent-contrary-to-bias-variance-trade-off).
+Beware of possibility of the [double descent of test accuracy contrary to bias-variance trade-off hypothesis (read my summary)](/ml/double-descent-contrary-to-bias-variance-trade-off).
 
 []()
 
