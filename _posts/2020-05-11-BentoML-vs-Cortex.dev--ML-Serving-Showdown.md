@@ -101,7 +101,8 @@ Checkout also AWS App Runner option at the end.
 Here is [a blog post on Cortex use at GLAMI](https://medium.com/@aiteamglami/serve-your-ml-models-in-aws-using-python-9908a4127a13).
 It is a bit outdated take as Cortex now has its own wrapper.
 Consider using this [Cortex client for Python](https://github.com/glami/cortex-serving-client), which is a Python wrapper around Cortex CLI that we use at GLAMI for MLOps.
-It has couple of extra features, that keep us using it for now.
+It has a couple of extra features, that keep us using it for now.
+I used Cortex to deploy [small multi-modal transformer models](/ml/transformers-self-attention-mechanism-simplified) but we used it for other deployments as well.
 
 Video:
 {% include load_video.html %}
@@ -110,7 +111,7 @@ Video:
 If you need super simple deployment of CPU only applications with auto-scaling you can consider using [AWS App Runner](https://aws.amazon.com/apprunner/).
 You just fill in your source code repository and you app gets hosted in the selected region on your domain with auto certificate renewal.
 
-## Helm
+## Need More Flexibility? Helm Could Help
 If you need more flexibility and you have dedicated DevOps person, consider using [Heml](https://helm.sh/).
 Heml is more complex to use, but is still simpler than using Kubernetes directly and has some similarities with Cortex.
 

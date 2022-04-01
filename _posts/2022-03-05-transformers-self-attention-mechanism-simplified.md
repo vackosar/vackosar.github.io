@@ -107,6 +107,12 @@ Then fine-tuning training is used to specialize the model for a specific task on
 For example model like BART are fine-tuned for summarization tasks.
 Sometimes we fine-tune twice, as authors did with [BART model equipped with diminishing self-attention to increase summarization coverage](/ml/submodularity-in-ranking-summarization-and-self-attention).
 
+## Running Transformer in Kubernetes Cluster in Cloud
+
+To get your models to production, you will need to:
+- [store your trained models e.g. using Quilt Data in S3 (read more here)](/ml/Quilt-data-versioning-review-how-to)
+- [deploy to Kubernetes (read more here on Cortex, BentoML, and Helm](/ml/BentoML-vs-Cortex.dev-ML-Serving-Showdown)
+
 
 ## Transformer vs Word2vec Continuous Bag-of-Words
 
