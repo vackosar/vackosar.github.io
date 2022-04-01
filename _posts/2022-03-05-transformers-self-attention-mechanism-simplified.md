@@ -134,3 +134,4 @@ If we would instead not use positional encodings, and use sliding context size m
 - [Expire-Span uses attention with forgetting](/ml/expire-span-scaling-transformer-by-forgetting)
 - [SRU++ fuses of RNN and Self-attention](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN)
 - [Performer uses random kernel features to speedup attention](/ml/Performers-FAVOR+-Faster-Transformer-Attention)
+- [Lambda Networks introduce self-attention modification](/ml/Lamda-Networks-Transform-Self-Attention)

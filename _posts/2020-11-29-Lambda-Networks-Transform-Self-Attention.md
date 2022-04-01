@@ -27,15 +27,15 @@ LambdaResNet also achieves ~4.5x speedup over EfficientNet at same accuracy.
 </figure>
 
 
-It however suffers from time-space complexity of sequence size squared and [Relu-Performer](/ml/Performers-FAVOR+-Faster-Transformer-Attention) could overtake it future.
+LambdaResNet however suffers from time-space complexity of sequence size squared and [Relu-Performer](/ml/Performers-FAVOR+-Faster-Transformer-Attention) could overtake it future.
 
-The majority of model's performance comes from translation-invariant positional embeddings.
-The positional embeddings are used similarly to a key matrix in a self-attention.
+The majority of model's performance comes from translation-invariant [positional embeddings](/ml/transformers-self-attention-mechanism-simplified).
+The positional embeddings are used similarly to a key matrix in a [self-attention](/ml/transformers-self-attention-mechanism-simplified).
 But there is no softmax function used.
 Then the embeddings are trained, but are independent of the inputs (static).
 And every output position has a separate key.
 
-If self-attention is differentiable querying of a key-value store,
+If [self-attention](/ml/transformers-self-attention-mechanism-simplified) is differentiable querying of a key-value store,
 then LambdaNet is differentiable querying of a pattern-value store,
 where the patterns are positional embeddings.
 
@@ -148,7 +148,7 @@ Additional time speed up in Performer comes from replacing the exponential with 
 
 ## How Lambda Layer Performs Compared to Self-Attention and Performer?
 
-The paper compares Lambda layer to Transformer self-attention.
+The paper compares Lambda layer to [Transformer self-attention](/ml/transformers-self-attention-mechanism-simplified).
 While Lambda layer out-performs self-attention, it does so by only a small margin.
 For experimental specifics, please see the paper.
 Note that in the experiment the lambda layer is not applied to the entire picture,
