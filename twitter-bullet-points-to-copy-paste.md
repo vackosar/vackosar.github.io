@@ -72,3 +72,5 @@ Apart from copy-pasting, you can also produce standard bullet points using below
 - Mac: hold option key & press 8
 - Windows: hold alt key & press Numpad 7
 
+### Other Super Helpful Tools
+[When is the end of this quarter? Get overview and look at the "Quarter Clock"](/when-is-the-end-of-current-quarter.html)
