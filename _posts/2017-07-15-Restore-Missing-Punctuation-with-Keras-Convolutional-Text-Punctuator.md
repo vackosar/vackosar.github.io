@@ -18,15 +18,15 @@ The project uses GloVe embeddings and has simple convolutional architecture impl
 It achieved reasonable performance, such that I could use it in [an Android application for downloading and punctuating Youtube subtitles](http://vaclavkosar.com/2017/05/28/Youtube-Reader-Neural-Network-Android-App.html).
 
 ### Code
-The source code in on Github: https://github.com/vackosar/keras-punctuator
+The [source code](https://github.com/vackosar/keras-punctuator) in on Github: 
 
 
-# YouTube Reader: Save Data Using Only Punctuated Captions
+## YouTube Reader
 ![Youtube reader](https://raw.githubusercontent.com/vackosar/youtube-reader/master/store/featured.png)
 
-Using the punctuator above I build this little Android app.
+Using the punctuator above I build this little Android app to save data downloading captions.
 Android app that uses neural network to punctuate YouTube video captions to be used with any text to speech software.
 
-I am publishing my Android app called Youtube Reader. It saves your mobile data, when you are interested only in what is being said in a YouTube video.
+I am publishing my Android app called YouTube Reader. It saves your mobile data, when you are interested only in what is being said in a YouTube video.
 [Source code](https://github.com/vackosar/youtube-reader)
 
