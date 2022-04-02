@@ -14,14 +14,28 @@ Data lineage tracking is one of the significant problems that companies in highl
 
 Additionally, Spline offers a modern user interface that allows non-technical users to understand the logic of Apache Spark applications. In this presentation we cover the support of Spline for Structured Streaming and we demonstrate how data lineage can be captured for streaming applications.
 
+Session hashtag: #SAISExp18
+
 ## Presentation:
 [Spline presentation PDF download is here](/files/spline-data-lineage-for-spark-structured-streaming-saiseu2018.pdf) and [the conference page is here](https://databricks.com/session/spline-data-lineage-for-spark-structure-streaming).
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/31FGNIgkML7hdk" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/VaclavKosar/spline-data-lineage-for-spark-structure-streaming" title="Spline: Data Lineage For Spark Structured Streaming" target="_blank">Spline: Data Lineage For Spark Structured Streaming</a> </strong> from <strong><a href="//www.slideshare.net/VaclavKosar" target="_blank">Vaclav Kosar</a></strong> </div>
 
-![image1](/images/2018-10-04-spark-summit-1.JPG)
 ![image2](/images/2018-10-04-spark-summit-2.JPG)
 
+
+## About Authors
+
+### About Vaclav Kosar
+![Vaclav Kosar](/images/vaclav-kosar-spark-ai-summit.png)
+
+Vaclav is a programming and analytics enthusiast. He currently forges big data software for ABSA R&D focusing on cruicial data lineage project Spline. He studied electronics, physics and mathematics.
+
+
+### About Marek Novotny
+Marek obtained bachelor and master degree in computer science at Charles University in Prague. His master studies were mainly focused on development of distributed and dependable systems. In 2013, Marek joined ABSA Capital in Prague to develop a scalable data integration platform and a framework for calculating regulatory reports. During the work on those two projects, he gained experience with many NoSQL and distributed technologies (e.g. Kafka, Zookeper, Spark). Nowadays, he is a member of Big Data Engineering team and primarily focused on development of the Spline project.
+
+![Marek Novotny](/images/marek-novotny-spark-ai-summit.png)
 
 ## Presentation Text
 
@@ -36,15 +50,15 @@ SAISExp18
 About Us
 
 - ABSA is a Pan-African financial services provider
-– With Apache Spark at the core of its data engineering
+- With Apache Spark at the core of its data engineering
 - We try to fill gaps in the Hadoop eco-system
 - Contributions to Apache Spark
 - Spark-related open-source projects (github.com/AbsaOSS)
-– ABRiS – Avro SerDe for structured APIs (#SAISDev5)
-– Cobrix – Cobol data source
-– Atum
-– Completeness and accuracy library
-– Spline – Data lineage tracking and visualization tool (#EUent3)
+- ABRiS - Avro SerDe for structured APIs (#SAISDev5)
+- Cobrix - Cobol data source
+- Atum
+- Completeness and accuracy library
+- Spline - Data lineage tracking and visualization tool (#EUent3)
 
 - How data is calculated?
 - What is the schema and format of streamed data?
@@ -52,9 +66,9 @@ About Us
 (Clarity) compliant
 - To communicate with business people
 - Online documentation of
-– Job dependencies
-– Spark SQL job details
-– Attributes occurring in the logic
+- Job dependencies
+- Spark SQL job details
+- Attributes occurring in the logic
 
 
 Lineage Tracking of Batch Jobs
@@ -62,8 +76,8 @@ Lineage Tracking of Batch Jobs
 - Job
 Leverages execution plans
 - Structured APIs only
-– SQL
-– Dataframes
+- SQL
+- Dataframes
 Dataset A
 Lineage A
 Datasets
@@ -78,9 +92,9 @@ Source-oriented (topic)
 
 Structured Streaming Support
 - StreamingQueryManager Spark structured streaming job
-– Information about start
-– Can provide execution Spark libraries
-– Information about progress Session
+- Information about start
+- Can provide execution Spark libraries
+- Information about progress Session
 
 StreamingQueryManager
 - MicroBatch
@@ -102,32 +116,29 @@ Interval View
 - Displays data flow in fixed interval Job W1
 
 
-Demo – Use Case
+Demo - Use Case
 
 What is temperature per hour in Prague?
-
-
-
-Demo – Use Case Output 2018-09-24
-Demo – Select Interval View
-Demo – Select Interval
-Demo – Select Sink
-Demo – Find Highlighted Sink
-Demo – Review The Lineage
-Demo – Change The Interval
-Demo – Observe New Lineage
-Demo – Select A Job
-Demo – Drill Down
-Demo – Review Job Details
-Demo – Select An Operation
-Demo – See Operation Attributes
+- Use Case Output 2018-09-24
+- Select Interval View
+- Select Interval
+- Select Sink
+- Find Highlighted Sink
+- Review The Lineage
+- Change The Interval
+- Observe New Lineage
+- Select A Job
+- Drill Down
+- Review Job Details
+- Select An Operation
+- See Operation Attributes
 
 
 Interval View Limitations
 
 - Edge case (delayed read, early write)
-– Job W1 should be linked
-– Job W2 should not be linked Interval View
+- Job W1 should be linked
+- Job W2 should not be linked Interval View
 
 Lineage
 
@@ -157,8 +168,8 @@ Future Plans
 
 - Release Interval View in Spline
 - After changes to Spark:
-– Offset based linking for micro-batch streaming
-– Continuous streaming support
+- Offset based linking for micro-batch streaming
+- Continuous streaming support
 - Support for dataset checkpoints
 
 
@@ -169,9 +180,9 @@ Questions
 
 - Now is a good time
 - Or feel free to contact us
-– Marek Novotny
+- Marek Novotny
 - mn.mikke@gmail.com
-– Vaclav Kosar
+- Vaclav Kosar
 - admin@vaclavkosar.com
 - github.com/AbsaOSS/spline
 
