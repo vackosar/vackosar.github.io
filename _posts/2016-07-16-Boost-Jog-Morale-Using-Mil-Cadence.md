@@ -10,7 +10,7 @@ redirect_from:
   - /2016/07/16/Boost-Jog-Morale-Using-Mil-Cadence.html 
 ---
 
-<img alt="Running with military cadence" style="width: 80%; max-width: 900px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/mil-cadence-pexels.jpg">
+<img alt="Running with military cadence" style="width: 80%; max-width: 900px" src="/images/mil-cadence-pexels.jpg">
 
 <br>
 

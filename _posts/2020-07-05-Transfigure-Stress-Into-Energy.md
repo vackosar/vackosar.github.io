@@ -8,7 +8,7 @@ image: /images/transfigurate-stress-to-energy-2.jpeg
 permalink: /:categories/:title
 ---
 
-<img alt="Trasfigure Stress Into Energy" style="width: 90%; max-width: 900px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/transfigurate-stress-to-energy-2.jpeg">
+<img alt="Trasfigure Stress Into Energy" style="width: 90%; max-width: 900px" src="/images/transfigurate-stress-to-energy-2.jpeg">
 
 ### Stress-Is-Enhancing Mindset
 Based on a study ["The role of stress mindset in shaping cognitive, emotional, and physiological responses to challenging and threatening stress"](https://mbl.stanford.edu/sites/g/files/sbiybj9941/f/crumetal_roleofstressmindset_0.pdf) the book [Upside Of Stress](https://www.goodreads.com/book/show/23281639-the-upside-of-stress) suggests following mindset: 

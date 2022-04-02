@@ -13,7 +13,7 @@ redirect_from:
 ---
 
 
-<p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/bentoml-cortex-logos.webp" alt="BentoML and Cortex logo" style="width: 200px"/></p>
+<p><img src="/images/bentoml-cortex-logos.webp" alt="BentoML and Cortex logo" style="width: 200px"/></p>
 
 Updated 2021-02-21.
 Do you need a simple way to train and host your machine learning AI models in the cloud?

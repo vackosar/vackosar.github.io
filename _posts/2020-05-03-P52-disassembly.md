@@ -12,7 +12,7 @@ redirect_from:
 ---
 
 
-<p><img src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2020-05-03-p52-disassembly.jpg" alt="P52 Disassembly" width="100%"/></p>
+<p><img src="/images/2020-05-03-p52-disassembly.jpg" alt="P52 Disassembly" width="100%"/></p>
 
 
 The disassembly is fairly easy as I was able to repaste and install LTE antenna without any previous experience, that is except removing LCD panel, which seems to be just glued onto the cover in a cheapskate manner.

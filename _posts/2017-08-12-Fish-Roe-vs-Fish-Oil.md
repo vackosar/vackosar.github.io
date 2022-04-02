@@ -11,7 +11,7 @@ redirect_from:
 ---
 
 
-<img alt="fishes" style="width: 80%; max-width: 900px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/fishes-sardines.jpeg">
+<img alt="fishes" style="width: 80%; max-width: 900px" src="/images/fishes-sardines.jpeg">
 
 
 Fish oil is popular supplement. It's production was optimized for maximum content of popular fatty acids DHA and EPA.

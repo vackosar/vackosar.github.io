@@ -3,10 +3,10 @@ layout: post
 title: "VR Holiday In Nature: Relax In Nature While Trapped In Your City"
 date: 2020-07-12
 description: Escape the cityscape into the wild through your VR headset. Subscribe and download VR180 3D holiday.
-image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/vr-holiday.png
+image: /images/vr-holiday.png
 ---
 
-<img alt="VR Holiday In Nature" style="width: 150px" src="https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/vr-holiday.png">
+<img alt="VR Holiday In Nature" style="width: 150px" src="/images/vr-holiday.png">
 
 
 - Relax in VR Nature

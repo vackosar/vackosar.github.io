@@ -5,7 +5,7 @@ date: 2018-02-25
 description: Turn any web page into an Ubuntu application and prevent the web owner from tracking you around the web.
 categories: software
 permalink: /:categories/:title
-image: https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2018-02-25-ubuntu-search-whatsapp.png 
+image: /images/2018-02-25-ubuntu-search-whatsapp.png 
 redirect_from:
   - /2018/02/25/Creating-Custom-Ubuntu-Web-Link-App.html 
 ---
@@ -19,8 +19,8 @@ Two step solution below uses Chromium browser.
 
 ## Results
 
-![Search](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2018-02-25-ubuntu-search-whatsapp.png)
-![Taskbar](https://raw.githubusercontent.com/vackosar/vackosar.github.io/master/images/2018-02-25-ubuntu-taskbar-whatsapp.png)
+![Search](/images/2018-02-25-ubuntu-search-whatsapp.png)
+![Taskbar](/images/2018-02-25-ubuntu-taskbar-whatsapp.png)
 
 ## Instructions
 
