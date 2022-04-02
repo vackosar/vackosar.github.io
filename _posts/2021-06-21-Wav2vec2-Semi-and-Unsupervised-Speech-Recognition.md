@@ -3,7 +3,7 @@ layout: post
 title: "Wav2vec: Semi and Unsupervised Speech Recognition"
 date: 2021-06-21
 categories: ml
-description: Audio Word2vec - Quantize phonemes, transform, GAN the text.
+description: Audio Word2vec Guide - Quantizes phonemes, transforms, GAN trains on text and audio.
 permalink: /:categories/:title
 video: PHIKbgMJq4c
 image: /images/wav2vec-thumb.png
@@ -13,6 +13,12 @@ redirect_from:
 
 {% include mathjax.html %}
 {% include load_video.html %}
+
+Wav2vec is fascinating in that it combines several neural network architectures and methods:
+CNN, [transformer](/ml/transformers-self-attention-mechanism-simplified),
+quantization, and GAN training.
+I bet you'll enjoy this guide through Wav2vec papers solving the problem of speech to text.
+
 
 # There are many languages
 - want to convert audio to text
