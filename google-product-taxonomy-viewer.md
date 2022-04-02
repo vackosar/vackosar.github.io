@@ -27,8 +27,8 @@ Explore Google Product Taxonomy below.
 
 Google Product Taxonomy is a product categorization tree for e-commerce.
 Google classifies e-shop articles into this structure.
-The goal is to departmentalize products from the merchant feed into 5583 sections.
-This partitioning improves article discovery for customers.
+The taxonomy purpose to departmentalize products from the merchant feed into 5583 sections.
+This partitioning of the shopping feed improves article discovery for customers.
 The automatic categorization is performed [based on product input fields](https://support.google.com/merchants/answer/6324436?hl=en) provided by the merchant.
 The merchants have an option to override categorization using _google_product_category_ attribute.
 Only one category per product is allowed.

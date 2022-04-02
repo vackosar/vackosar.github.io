@@ -16,11 +16,11 @@ redirect_from:
 
 Fish oil is popular supplement. It's production was optimized for maximum content of popular fatty acids DHA and EPA.
 Fish roe is food of salty taste produced from egg masses of fish known to be good source of omega-3 fatty acids.
-With this article I am trying to compare the two in terms of price and health improvement.
+This is a comparison of fish oil vs fish roe in terms of price and health improvement.
 
-# EPA Gram Price Comparison
+# Fish ROE EPA Gram Price
 
-EPA estimates are based on fatty acid composition and referenced studies and package fat contents. Content estimates are per common container size of 50g.
+Fish ROE EPA estimates are based on fatty acid composition in referenced studies [1], [2], [3], [4] below and package fat contents. Content estimates are per common container size of 50g.
 
 |Fish    |Fat Content (g)|Estimated EPA Content (g)|Price ($)|$/g EPA|
 |--------|---------------|-------------------------|---------|-------|
@@ -29,16 +29,16 @@ EPA estimates are based on fatty acid composition and referenced studies and pac
 |Capelin |1.95           |0.37                     |1.5      |4.05   |
 |Herring |0.75 ?         |0.08 ?                   |1.5      |18.75 ?|
 
+## Fish Oil EPA per Gram Price
 For comparison, Now Foods Omega-3, 180 EPA/120 DHA, 200 Softgels:
 - Serving of 2 capsules contains EPA grams: 0.36
 - $/g EPA: 0.18
 
 _Thus fish oil EPA is 22 times cheaper._
 
-# Perishability
+## Fish Roe Perishability 
 
-Although I expected that thanks to refrigeration and natural encapsulation of fish roe, it will be heathier than oil there are potential issue.
-
+Although I expected that thanks to refrigeration and natural encapsulation of fish roe, it will be healthier than oil there is a potential issue.
 
 [A redditor](https://www.reddit.com/user/whatsninja) to pointed me to potential concerns about fish roe - oxidised cholesterol content reported in [5].
 
@@ -51,23 +51,23 @@ Although I expected that thanks to refrigeration and natural encapsulation of fi
 
 _Fish roe oxidized cholesterol products content is 5 times higher._
 
-# Beneficial Phospholipid DHA In Roe
-Salmon Roe [contains DHA in a phospholipid form](https://www.foundmyfitness.com/topics/salmon-roe), which is preferred format for absorbtion.
+## Beneficial Phospholipid DHA In Roe
+Salmon Roe [contains DHA in a phospholipid form](https://www.foundmyfitness.com/topics/salmon-roe), which is preferred format for absorption.
 
-# Potentially Harmful Neu5Gc In Roe
+## Potentially Harmful Neu5Gc In Roe
 
-Again [a redditor](https://www.reddit.com/user/whatsninja) pointed me to content of potentially dangerous Neu5Gc reported in roe in [6], also I found study [7] reporting natural occurence of this acid.
+Again [a redditor](https://www.reddit.com/user/whatsninja) pointed me to content of potentially dangerous Neu5Gc reported in roe in [6], also I found study [7] reporting natural occurrence of this acid.
 But it is not clear if Neu5Gc is dangerous as [Rhonda Patrick speculates](https://www.foundmyfitness.com/topics/neu5gc).
 
 Fish roe contains higher amount of Neu5Gc than even meat while fish oil doesn't contain any.
 
 
-# Conclusion
+## Conclusion: Fish Oil EPA is Cheaper
 
 Fish oil EPA is more than 20 times cheaper and contains 5 times less oxidized cholesterol products and doesn't contain very high amount of Neu5Gc.
 
 
-# References
+## References
 
 - [1] [Comparison of Proximate, Fatty Acid and Amino Acid Compositions of Various Types of Fish Roes](http://www.tandfonline.com/doi/abs/10.1080/10942910701611170?journalCode=ljfp20)
 - [2] [Chemical Composition of Fresh and Salted Lumpfish (Cyclopterus lumpus) Roe](https://www.researchgate.net/publication/233160153_Chemical_Composition_of_Fresh_and_Salted_Lumpfish_Cyclopterus_lumpus_Roe)

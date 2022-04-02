@@ -49,7 +49,7 @@ How to get difficult enough task for all tokens instead of just the tokens maske
 ![ELECTRA model generator discriminator pre-training diagram](/images/electra-generator-discriminator.png) 
 
 
-# ELECTRA Architecture and Methods
+# ELECTRA Model Architecture and Methods
 - Generator and discriminator same architecture
   - only embeddings or tokens and positional are shared
   - sharing more was not helping
