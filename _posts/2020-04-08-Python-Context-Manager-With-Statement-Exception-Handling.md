@@ -46,14 +46,14 @@ rolling back due to ex hello
 returning db connection to a pool
 ```
 
-# Without The With
+## Without The With
 
 What happens when we try to use `managed_resource` without `with`?
 
 Nothing. Returned object is only holds a reference to a generator and has `__enter__()` and `__exit__()` methods. The context object will only return a value from the generator upon `__enter__()` call, and will run the rest of the code after `yield` during `__exit__()` call.
 
 
-# Retries Using Context Manager Are Not Possible - Here Is An Alternative
+## Retries Using Context Manager Are Not Possible - Here Is An Alternative
 
 Do you need to retry when for example storage is momentarily not available?
 However, You cannot implement retries of the code wrapped in `with`.
@@ -87,7 +87,7 @@ def retry_on_exception(
 ```
 
 
-# Other Useful Posts
+## Other Useful Posts
 BCE architecture is [the simplest way to structure your source code files](/software/Boundary-Control-Entity-Architecture-The-Pattern-to-Structure-Your-Classes), read all about it in [my post on BCE](/software/Boundary-Control-Entity-Architecture-The-Pattern-to-Structure-Your-Classes).
 
 Did you know that you can implement [functional ForEach in Bash](/software/Functional-Foreach-In-Bash)?

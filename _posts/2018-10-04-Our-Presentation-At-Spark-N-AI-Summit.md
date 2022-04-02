@@ -40,6 +40,8 @@ Marek obtained bachelor and master degree in computer science at Charles Univers
 
 ![Marek Novotny](/images/marek-novotny-spark-ai-summit.png)
 
+{% include subscribe.html %}
+
 ## Presentation Text
 
 Spline: Data Lineage for Spark Structured Streaming
