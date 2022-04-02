@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Our Presentation At Spark N AI Summit"
+title: "Spline: Data Lineage For Spark Structure Streaming At Spark N AI Summit 2018"
 date: 2018-10-04
 description: Vaclav Kosar and Marek Novotny had opportunity to present a POC and future plans for Spark Structured Streaming data lineage.
 image: /images/2018-10-04-spark-summit-1.JPG
 category: software
+permalink: /:categories/:title
 video: 953PcioD6tk
 redirect_from:
 - /2018/10/04/Our-Presentation-At-Spark-N-AI-Summit.html
