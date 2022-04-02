@@ -9,6 +9,7 @@ image: /images/2019-08-28-kalman-1d-without-process-noise-proof.jpg
 redirect_from:
   - /2019/08/28/1D-Kalman-Is-Exponential-Or-Cumulative-Average.html
 todo: "example implementation"
+note: https://www.kalmanfilter.net/kalman1d.html
 ---
 
 Kalman filter [(Kalman 1960 paper)](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf) also known as linear quadratic estimation (LQE) is an iterative algorithm that uses noisy measurements to estimate values and variance of unknown variables.
@@ -45,12 +46,6 @@ Below is the proof relies on setting initial value of Kalman variance ```P0``` s
 Plot of the convergence.
 
 <img alt="Proof Kalman 1d with constant measurement uncertainty and constant process noise plot" style="width: 80%; max-width: 900px" src="/images/2019-08-28-kalman-1d-with-process-noise-plot.png">
-
-
-# References
-- [R. E. Kalman. 1960.  https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf)
-- [Kalman filter in one dimension](https://www.kalmanfilter.net/kalman1d.html)
-- [A First Look at the Kalman Filter](https://lectures.quantecon.org/py/kalman.html)
 
 
 # Appendix
