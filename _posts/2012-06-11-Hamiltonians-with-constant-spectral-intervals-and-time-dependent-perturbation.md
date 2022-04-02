@@ -3,6 +3,10 @@ layout: post
 title: "Hamiltonians with constant spectral intervals and time-dependent perturbation"
 date: 2012-06-11
 description: On quantum systems determined by time-dependent Hamilton operators. Family of quantum systems, whose Hamilton operators take form H(t) = H 0 + V (t), where V (t) is perturbation and H 0 is self-adjoint with pure-point spectrum and constant gaps between eigenvalues in spectrum σ(H 0 ).
+categories: physics
+permalink: /:categories/:title
+redirect_from:
+- /2012/06/11/Hamiltonians-with-constant-spectral-intervals-and-time-dependent-perturbation.html
 ---
 
 ### Author
