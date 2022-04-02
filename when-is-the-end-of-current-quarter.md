@@ -18,7 +18,9 @@ The current quarter <b id='quarterName'>Q1</b> ends on <b id='quarterEnd'>Mar 31
 <br>
 
 How many days left in this quarter? There are <b id="daysLeft2">45</b> days left in this quarter.<br>
-How many business days till the end of this quarter? There are <b id="bizDaysLeft2">45</b> business days till the end of current quarter.<br>
+How many business days till the end of this quarter? There are <b id="bizDaysLeft2">45</b> business days till the end of current quarter.
+There are <b id="daysYearLeft">183</b> days left in this year.
+
 What quarter are we in? The current quarter is <b id='quarterName2'>Q1</b>.
 
 <style>
@@ -66,7 +68,7 @@ What quarter are we in? The current quarter is <b id='quarterName2'>Q1</b>.
 Each quarter is approximately 91 days long.
 Quarterly means once every quarter, which is approximately each 91 days.</p>
 
-<p>See a handy table of quarter start and end dates below. The dates are the same for each year.</p>
+<p>See a handy table of calendar quarter start dates (first days) and end dates (last days) below. The dates are the same for each year (2021, 2022, 2023, ...).</p>
 
 <table class="table table-striped">
     <thead>
@@ -189,6 +191,8 @@ Do you need [copy and paste bullet points to your Tweets or other places? Grab s
     // document.getElementById('daysLeft3').innerText = daysLeftInQuarter().toString();
     document.getElementById('bizDaysLeft').innerText = getBizDaysLeftInQuarter().toString();
     document.getElementById('bizDaysLeft2').innerText = getBizDaysLeftInQuarter().toString();
+    document.getElementById('daysYearLeft').innerText = daysLeftInYear().toString();
+daysLeftInYear();
 
 
     // set clock
@@ -237,6 +241,19 @@ Do you need [copy and paste bullet points to your Tweets or other places? Grab s
             curDate.setDate(curDate.getDate() + 1);
         }
         return count;
+    }
+
+    function daysLeftInYear(d) {
+
+      d = d || new Date();
+      var yEnd = new Date(d);
+      yEnd.setMonth(0, 1);
+      yEnd.setFullYear(yEnd.getFullYear() + 1)
+      yEnd.setHours(0);
+      yEnd.setMinutes(0);
+      yEnd.setSeconds(0);
+
+      return Math.floor((yEnd - d) / 8.64e7) + 1;
     }
 
 </script>
