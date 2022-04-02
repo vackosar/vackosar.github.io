@@ -22,31 +22,34 @@ ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/m
 - [BERT is transformer model](/ml/transformers-self-attention-mechanism-simplified)
 - Uses unsupervised pre-training
 - Encodes text into WordPiece tokens 
-- Pre-training replaces 15% inputs with "[MASK]" token,
-- Then predicts original token ids based on context
-- Every step costs me,
-- But only a few tokens can be masked this way!
+- pre-training task is masked language modeling (MLM) 
+  - Pre-training replaces 15% inputs with "[MASK]" token,
+  - Then predicts original token ids based on context
+- __Every step costs me__,
+- But __only a few tokens are masked in each step__!
 
 ![BERT model pre-training and fine-tuning](/images/electra-bert.png)
 
 
-# How To Improve?
-- How to get difficult enough task for all tokens?
-- [ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators ](https://openreview.net/pdf?id=r1xMH1BtvB)
+# BERT vs ELECTRA Training
+How to get difficult enough task for all tokens instead of just the tokens masked?
+- enter [ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators ](https://openreview.net/pdf?id=r1xMH1BtvB)
   - ELECTRA = Efficiently Learning an Encoder that Classifies Token Replacements Accurately
   - Stanford & Google Brain
   - ICRL 2020, Not SoTA
-- Smaller generator and big discriminator
-- Jointly train the generator and discriminator
-- The generator is trained with masked language modeling (MLM) 
-- For each masked position generator samples one token
+- ELECTRA trains in GAN-like setting:
+- trained BERT model is the discriminator
+- smaller generator has [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) also
+  - Jointly train the generator and discriminator
+  - The generator is trained with masked language modeling (MLM) 
+  - For each masked position generator samples one token
 - The big model discriminates true or fake token
 - Not exactly GAN setup: Generator is trained for MLM
  
 ![ELECTRA model generator discriminator pre-training diagram](/images/electra-generator-discriminator.png) 
 
 
-# The Architecture and Methods
+# ELECTRA Architecture and Methods
 - Generator and discriminator same architecture
   - only embeddings or tokens and positional are shared
   - sharing more was not helping
@@ -54,7 +57,7 @@ ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/m
   - bigger are not helping
   - compute more expensive
   - perhaps bigger too difficult task
-- Trained jointly otherwise discriminator fails to learn
+- Both trained jointly otherwise discriminator fails to learn
   - otherwise, the discriminator fails to learn
   - generator selects harder cases
   - but must not be too much better than discriminator
@@ -65,7 +68,7 @@ ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/m
 ![ELECTRA model generator size and GLUE benchmark performance](/images/electra-generator-size.png)
 
 
-# Results
+# ELECTRA vs BERT vs RoBERTA vs XLNext Performance Results
 - Datasets:
   - GLUE: natural understanding benchmark
   - SQuAD: questions answering benchmark
@@ -85,7 +88,7 @@ ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/m
 ![ELECTRA model performance on SQuAD benchmark](/images/electra-results-squad.png)
 
 
-# Source of The Improvement
+# ELECTRA Source of The Improvement
 - compared alternative tasks on GLUE score
 - results:
   - loss over all inputs is important
@@ -126,3 +129,5 @@ ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/m
 ![TEAMS model extension of ELECTRA diagram](../images/electra-teams.png)
 
 
+# Read More About BERT
+Read more about [BERT, transformer architecture, self-attention, training, and deployment](/ml/transformers-self-attention-mechanism-simplified)
