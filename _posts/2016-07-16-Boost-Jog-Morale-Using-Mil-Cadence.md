@@ -8,6 +8,7 @@ permalink: /:categories/:title
 image: /images/mil-cadence-pexels.jpg
 redirect_from:
   - /2016/07/16/Boost-Jog-Morale-Using-Mil-Cadence.html 
+  - /2017/05/01/Running-Triples-Speed-For-Extra-One-Third-Of-Calories.html
 ---
 
 <img alt="Running with military cadence" style="width: 80%; max-width: 900px" src="/images/mil-cadence-pexels.jpg">
@@ -23,6 +24,11 @@ If you are like my past self, you are having problems running as far as you woul
 
 Listening to these chants will make you feel bad slowing down your pace - not being up to speed with virtual others.
 And the same time, it blanks your mind, and puts you into an active, but also meditative state. It makes you truly love your life.
+
+## Running Triples Your Speed For Extra One Third Of Calories
+Based on [1](https://www.researchgate.net/publication/221975400_Energy_Expenditure_Comparison_Between_Walking_and_Running_in_Average_Fitness_Individuals) and [2](https://www.verywell.com/does-running-burn-more-calories-than-walking-3435132)
+normal walking speed of 2.5 mph on average consumes around 87 calories per mile while running at speed of 7 mph will consume only 32 extra calories, which is 37% per mile extra.
+
 
 ### Update 2020-07-06
 
