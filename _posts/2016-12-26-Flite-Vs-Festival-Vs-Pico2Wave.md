@@ -34,7 +34,7 @@ Guess what? I've finally put together [a simplistic tool for generating audioboo
 So next time I want to read book, but have no time to do it, I'll generate myself a audiobook and listen to it during otherwise lost time. Neat!
 
 
-## Text 2 Speach on Android (Update)
+## Text 2 Speech on Android (Update)
 
 While I used to use above software now, I mostly play text I need either via:
 - [Voice Aloud Android app can read any text shared to it even emails](https://play.google.com/store/apps/details?id=com.hyperionics.avar&hl=en&gl=US)
