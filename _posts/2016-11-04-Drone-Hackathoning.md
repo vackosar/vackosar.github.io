@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "The Drone Hackathoning - Experience From A Hackathon"
+title: "Drone Detecting White Marker for Stabilization"
 date: 2016-11-04
 description: On a hackathon I implemented trivial image processing algorithm to locate white piece of paper on grey carpet floor to be used for drone horizontal stabilization.
 image: https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/master/output/androidTest/marked.jpg
+categories: ml
+permalink: /:categories/:title
+redirect_from:
+- /2016/11/04/Drone-Hackathoning.html
 ---
 
 Yesterday I attended a hackathon choosing to join up with colleagues to develop an android app for DJI Phantom 3. We aimed to stabilize the drone horizontally to be able to screw a light bulb into a socket mounted on the ceiling. Ultimately we didn't succeed, although the journey was very interesting.
@@ -42,7 +46,7 @@ Marked:
 Lesson for me is that whenever speed is needed addressing potential risk is critical. Single small thing off will result in failure. Periodical reevaluation of risk and possible investment is needed.
 
 ### Preps
-Having a little time evening before, I underestimated importantace of environmental preparation. Crippled by strange internet connection provided, I was ultimately not able to  set my Android Studio straight and had to use computer stations of others.
+Having a little time evening before, I underestimated importance of environmental preparation. Crippled by strange internet connection provided, I was ultimately not able to  set my Android Studio straight and had to use computer stations of others.
 
 ### Morale
 Abundance of food is not a good thing as it breaks focus and leads to overeating. As night progresses, sleep deficit will also take its toll on morale and attention.
