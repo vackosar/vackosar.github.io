@@ -28,6 +28,8 @@ title: Software, Machine Learning, & Business Blog
   {% endfor %}
 </div>
 
+<a class="small" href="/categories">Sort by category</a>
+
 <script src="/js/lazysizes.min.js" async></script>
 <script defer>
     document.addEventListener('lazybeforeunveil', function(e){
