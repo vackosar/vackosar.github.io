@@ -17,7 +17,7 @@ redirect_from:
 
 Flow-based models are the odd machines in the corner of the neural network laboratory capable of calculating the exact log-likelihood for every sample.
 Discover their arcane qualities on a representative example of [OpenAI's Glow](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf) and its ability to [unveil secrets of visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf).
-Note that [interpretable latent representation](/ml/manipulate-item-attributes-via-disentangled-representation) are 
+Note that you can create [interpretable latent representations also using disentangled representation training](/ml/manipulate-item-attributes-via-disentangled-representation).
 
 ## Flow-Based Model vs VAE and GAN
 Advantages of flow-based models are:
