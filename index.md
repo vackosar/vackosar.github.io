@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog
+title: Software, Machine Learning, & Business Blog
 ---
 <h2>{{ page.title }}</h2>
 
