@@ -3,7 +3,7 @@ layout: post
 title: "FastText Vector Norms And OOV Words Visualizations"
 date: 2019-06-30
 description: Understand how FastText works, OOV words, and visualize FastText embedding norms.
-categories: ML
+categories: ml
 permalink: /:categories/:title
 image: https://raw.githubusercontent.com/vackosar/fasttext-vector-norms-and-oov-words/master/results/ng_norm-tf.png
 redirect_from:

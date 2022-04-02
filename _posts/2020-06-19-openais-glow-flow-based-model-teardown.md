@@ -2,7 +2,7 @@
 layout: post
 title: "OpenAI's Glow - Flow-Based Model Teardown"
 date: 2020-06-19
-categories: ML
+categories: ml
 description: Get interpretable latent representations by composing non-linear invertible functions and maximizing the exact log-likelihood.
 image: /images/glow-drawing.png
 video: oJNUZzXE7n4
@@ -17,6 +17,7 @@ redirect_from:
 
 Flow-based models are the odd machines in the corner of the neural network laboratory capable of calculating the exact log-likelihood for every sample.
 Discover their arcane qualities on a representative example of [OpenAI's Glow](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf) and its ability to [unveil secrets of visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf).
+Note that [interpretable latent representation](/ml/manipulate-item-attributes-via-disentangled-representation) are 
 
 ## Flow-Based Model vs VAE and GAN
 Advantages of flow-based models are:
@@ -90,7 +91,7 @@ But how do we go from an image to required number of channels for above to make 
 ## Attribute Manipulation
 On the latent space it is possible to identify directions correspoding to change of certain semantic attributes.
 For example there is a direction into which face could be modified to smile more.
-This is an example of [a disentangled representation](/ml/disentagled-representations).
+This is an example of [a disentangled representation](/ml/manipulate-item-attributes-via-disentangled-representation).
 
 <figure class="figure">
     <img
@@ -152,3 +153,6 @@ Retain what you have just read by taking training quiz generated from this artic
 
 Insightful comments:
 - [Reddit Machine Learning discussion](https://www.reddit.com/r/MachineLearning/comments/hcprze/d_glow_the_representations_must_flow/)
+
+## Read Next
+[Manipulate Item Attributes via Disentangled Representation](/ml/manipulate-item-attributes-via-disentangled-representation)
