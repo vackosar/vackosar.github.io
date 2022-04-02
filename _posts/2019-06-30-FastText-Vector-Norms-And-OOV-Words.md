@@ -2,7 +2,7 @@
 layout: post
 title: "FastText Vector Norms And OOV Words Visualizations"
 date: 2019-06-30
-description: Visualize vector norms of FastText embedding and evaluate use of FastText word vector norm multiplied with number of word n-grams for detecting non-english OOV words.
+description: Understand how FastText works, OOV words, and visualize FastText embedding norms.
 categories: ML
 permalink: /:categories/:title
 image: https://raw.githubusercontent.com/vackosar/fasttext-vector-norms-and-oov-words/master/results/ng_norm-tf.png

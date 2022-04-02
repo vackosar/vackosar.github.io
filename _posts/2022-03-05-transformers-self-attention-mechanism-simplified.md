@@ -109,32 +109,13 @@ Sometimes we fine-tune twice, as authors did with [BART model equipped with dimi
 
 Beware of possibility of the [double descent of test accuracy contrary to bias-variance trade-off hypothesis (read my summary)](/ml/double-descent-contrary-to-bias-variance-trade-off).
 
-[]()
 
-## Running Transformer in Kubernetes Cluster in Cloud
+## Serving Transformer in Kubernetes Cluster in Cloud
 
 While you can train and predict with small transformers on for example [Thinkpad P52 graphics card (see my review)](/electronics/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530),
-to run bigger models, or deploy your models to production, you will need to:
+to run bigger models, or deploy your models to production, you will need to a bit of MLOps and DevOps, so read:
 - [store your trained models e.g. using Quilt Data in S3 (read more here)](/ml/Quilt-data-versioning-review-how-to)
 - [deploy to Kubernetes (read more here on Cortex, BentoML, and Helm)](/ml/BentoML-vs-Cortex.dev-ML-Serving-Showdown)
-
-
-## Transformer vs Word2vec Continuous Bag-of-Words
-
-![Word2vec CBOW](/images/transformer-and-word2vec-cbow.png)
-
-
-Word2vec Continuous Bag-of-Words predicts word in the middle of the surrounding 2-word context with sum of the context vectors.
-Word2vec CBOW model is very similar to a special single layer transformer.
-If masked word embedding is denoted \\( v_{\mathrm{mask}} \\) and it has approximately the same cosine similarity to all word vectors.
-And if \\( W_K = W_Q = W_V = 1 \\). 
-
-If we use [fourier positional encodings](#fourier-positional-encodings-in-bert) \\( P \\).
-Since the positional encodings would select mostly the nearby words, then the Transformer output for a masked word is close to summation of the surrounding word vectors like in CBOW Word2vec.
-The result would however be still more expressive, as it would contain [relative and absolute positional terms](https://www.reddit.com/r/MachineLearning/comments/cttefo/d_positional_encoding_in_transformer/exs7d08/),
-which are not present in Word2vec.
-
-If we would instead not use positional encodings, and use sliding context size matching Word2vec's, then the results would be even closer to the Word2vec.
 
 
 ## Example Transformer Models
@@ -147,3 +128,28 @@ If we would instead not use positional encodings, and use sliding context size m
 - [Performer uses random kernel features to speedup attention](/ml/Performers-FAVOR+-Faster-Transformer-Attention)
 - [Lambda Networks introduce self-attention modification](/ml/Lamda-Networks-Transform-Self-Attention)
 - For similarity task, you may also consider [lightweight approximation of word movers distance - WM embedding](/ml/Word-Movers-Embedding-Cheap-WMD-For-Documents)
+
+
+## Transformer vs Word2vec Continuous Bag-of-Words
+
+![Word2vec CBOW](/images/transformer-and-word2vec-cbow.png)
+
+
+Word2vec Continuous Bag-of-Words predicts word in the middle of the surrounding 2-word context with sum of the context vectors.
+Word2vec CBOW model is very similar to a special single layer transformer.
+If masked word embedding is denoted \\( v_{\mathrm{mask}} \\) and it has approximately the same cosine similarity to all word vectors.
+And if \\( W_K = W_Q = W_V = 1 \\).
+
+If we use [fourier positional encodings](#fourier-positional-encodings-in-bert) \\( P \\).
+Since the positional encodings would select mostly the nearby words, then the Transformer output for a masked word is close to summation of the surrounding word vectors like in CBOW Word2vec.
+The result would however be still more expressive, as it would contain [relative and absolute positional terms](https://www.reddit.com/r/MachineLearning/comments/cttefo/d_positional_encoding_in_transformer/exs7d08/),
+which are not present in Word2vec.
+
+If we would instead not use positional encodings, and use sliding context size matching Word2vec's, then the results would be even closer to the Word2vec.
+
+
+## Transformer vs FastText
+
+Transformer architecture cannot really be compared to [FastText](/ml/FastText-Vector-Norms-And-OOV-Words) well in other things than performance.
+That is because apart from whole words [FastText trains also on sub-words or n-grams](/ml/FastText-Vector-Norms-And-OOV-Words),
+while Transformer always trains only on the word tokens.
