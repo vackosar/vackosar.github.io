@@ -58,7 +58,7 @@ What quarter are we in? The current quarter is <b id='quarterName2'>Q1</b>.
         stroke-width="8" marker-end="url(#arrowhead)" />
       </svg>
     </div>
-    <figcaption class="figure-caption">Quarter clock: Calendar year quarters and their months. Red line shows where we are now.</figcaption>
+    <figcaption class="figure-caption">Quarter clock shows calendar year broken into quarters and their months. Red arrow shows current day.</figcaption>
 </figure>
 
 <h3>When do calendar quarters start and end?</h3>
@@ -80,6 +80,7 @@ Quarterly means once every quarter, which is approximately each 91 days.</p>
             <th scope="col">
                 End
             </th>
+            <th>Description</th>
         </tr>
     </thead>
     <tbody>
@@ -87,21 +88,25 @@ Quarterly means once every quarter, which is approximately each 91 days.</p>
             <td>Q1</td>
             <td>Jan 1</td>
             <td>Mar 31</td>
+            <td>Q1 starts on Jan 1 and ends on Mar 31.</td>
         </tr>
         <tr>
             <td>Q2</td>
             <td>Apr 1</td>
             <td>Jun 30</td>
+            <td>Q2 starts on April 1st and ends on June 30th.</td>
         </tr>
         <tr>
             <td>Q3</td>
             <td>Jul 01</td>
             <td>Sep 30</td>
+            <td>Q3 starts on July 1st and ends on September 30th.</td>
         </tr>
         <tr>
             <td>Q4</td>
             <td>Oct 1</td>
             <td>Dec 31</td>
+            <td>Q4 starts on October 1st and ends on December 31th.</td>
         </tr>
     </tbody>
 </table>
