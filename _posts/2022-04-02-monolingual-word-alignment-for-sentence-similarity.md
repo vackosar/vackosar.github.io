@@ -24,6 +24,9 @@ This post is about a word aligner based solely on dependency parsing and a word 
 
 ## Word Alignment
 In word alignment we have two similar sentences and look for a correspondence mapping between the words that correspond to the same meaning within the context.
+To evaluate this task we need to have labelled corpus.
+Word alignment task is related to [word movers distance (read more)](/ml/Word-Movers-Embedding-Cheap-WMD-For-Documents),
+in that both first map between the words, but alignment has to be zero-or-one while in case of WMD we can distribute the word weights in a fuzzy way.
 
 ![word alignment example](/images/dataset-MSR-Brockett-2007.png)
  

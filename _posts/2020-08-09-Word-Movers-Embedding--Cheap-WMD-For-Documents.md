@@ -35,14 +35,15 @@ There are papers on approximating EMD with [quadratic complexity](http://proceed
 
 
 ### What is Word Mover's Distance (WMD)?
-Word Mover's Distance is like Earth Movers Distance but between text documents.
+Word Mover's Distance is like [Earth Movers Distance](#what-is-earth-movers-distance) but between text documents.
+We use word vectors like for example Word2vec, [FastText](/ml/FastText-Vector-Norms-And-OOV-Words), or [StarSpace](/ml/starspace-embedding) embeddings.
 
-- The probability distribution is over word vectors of the document's words.
-- The probability is normalized frequency of unique words in the document.
-- The distance between word vectors can be a cosine similarity or euclidean distance.
+- The probability distribution's
+  - support is over word vectors of the document's words
+  - value is normalized frequency of unique words in the document or TF-IDF
+- The distance between word vectors can be [a cosine similarity (this paper argues for cosine similarity)](https://arxiv.org/pdf/2004.15003.pdf) or euclidean distance.
 
-Words vectors in above can be for example Word2vec embeddings.
-
+Word movers distance solves similar task to [word alignment](/ml/monolingual-word-alignment-for-sentence-similarity#word-alignment), but in word alignment the mapping is one-to-one.
 
 ### Word Mover's Distance vs Word Embedding Weighted Average Cosine Similarity
 
