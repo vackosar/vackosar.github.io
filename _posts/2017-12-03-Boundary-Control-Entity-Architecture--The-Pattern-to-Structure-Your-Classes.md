@@ -33,7 +33,8 @@ Sometimes an additional dependency rule is being added to BCE: Classes can depen
 It was a dilemma for me where to place a classes used to access database (Spring Data repository classes in Java). Repositories do define interaction with database which is outside system placing them into Boundary, but on the other hand they contain application logic, which could be placed as well in Control. Since I gave up on "Dependency Rule" (see above), I think the repository classes belong in Boundary.  
 
 ## Example
-For real world example you can have a look at [Gitflow Incremental Builder](https://github.com/gitflow-incremental-builder/gitflow-incremental-builder/tree/a5b310bad88da1ee12f887b77ac153ab20a7699e/src/main/java/com/vackosar/gitflowincrementalbuild), which I founded, but which was developed beyond by phenomenal dev [Falko](https://github.com/famod).
+For real world example you can have a look at [this version of Gitflow Incremental Builder](https://github.com/gitflow-incremental-builder/gitflow-incremental-builder/tree/a5b310bad88da1ee12f887b77ac153ab20a7699e/src/main/java/com/vackosar/gitflowincrementalbuild), which I founded, but which was developed beyond by phenomenal dev [Falko](https://github.com/famod).
+Read more about [Gitflow Incremental Builder here](/software/GitFlow-Incremental-Builder).
 For an overview of boundary control entity architecture folder structure:
 
 - boundary/

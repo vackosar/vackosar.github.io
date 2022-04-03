@@ -3,7 +3,7 @@ layout: post
 title: "Modern Config Injection In Maven Plugins"
 date: 2018-01-24
 categories: software
-description: Simple constructor injection of config params in Maven Plugins can be done.
+description: Maven Mojo constructor injection of config parameters via Guice JSR-330 support.
 #image: /images/glow-drawing.png
 permalink: /:categories/:title
 redirect_from:
@@ -12,7 +12,7 @@ redirect_from:
 
 Default Maven injection framework based on Plexus is very limited. No constructor injection, all configuration parameters need to be part of a Mojo and supported annotations are very unfamiliar to new comers.
 
-Thankfully there has been [effort in Maven to towards modern and mainstream injection - JSR-330 support](https://maven.apache.org/maven-jsr330.html). Lastest Maven versions support usage of annotations like @Inject thanks to running Guice injection framework under the hood replacing original Plexus.
+Thankfully there has been [effort in Maven to towards modern and mainstream injection - JSR-330 support](https://maven.apache.org/maven-jsr330.html). Latest Maven versions support usage of annotations like @Inject thanks to running Guice injection framework under the hood replacing original Plexus.
 
 However there are still many problems remaining unaddressed. Most painful for me was lack of configuration injection. That is lack of replacement for @Parameter annotation. Without it I could not inject properties into separate components encapsulating their parsing, transformation or composition.
 
@@ -59,3 +59,6 @@ class RequiredConfigProvider<T> {
 ```
 
 Using above resolves most of the issues with full usage of JSR-330 i.e. Guice injection in Maven plugins.
+
+## Example Project: GitFlow Incremental Builder
+[GitFlow Incremental Builder for Maven, that speeds up you builds by building only git-changed parts](/software/GitFlow-Incremental-Builder), uses a Guice dependency injection for its Maven Plugin.
