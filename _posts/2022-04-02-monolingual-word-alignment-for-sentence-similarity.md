@@ -13,7 +13,9 @@ permalink: /:categories/:title
 
 In 2015, top positions in sentence similarity task were occupied by corpus-based word-alignment models that used simple algorithms together with word databases or word embeddings e.g. word2vec.
 This is probably, because LSTM wasn't widely used yet and [Transformer](/ml/transformers-self-attention-mechanism-simplified) haven't existed yet.
-This post is about relationship of word alignment and similarity and about a word aligner based solely on dependency parsing and a word database that achieved 1st place in 2014 and 5th in 2015 in SemEval STS.
+How did people even did their sentence similarity back then?
+This post is about application of word alignment to semantic similarity.
+It is about a super simple word aligner based solely on dependency parsing and a word database that achieved 1st place in 2014 and 5th in 2015 in SemEval STS.
 
 
 - The monolingual aligner paper: [Back to Basics for Monolingual Alignment (2014)](https://aclanthology.org/Q14-1018.pdf)
