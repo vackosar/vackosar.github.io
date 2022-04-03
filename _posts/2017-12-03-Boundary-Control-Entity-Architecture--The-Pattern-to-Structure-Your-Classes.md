@@ -18,7 +18,11 @@ Boundary-Control-Entity (BCE), or Entity-Control-Boundary (ECB), or Entity-Bound
 ## Overview
 BCE is distinct from the multi-tier architecture in that it does not see some outside systems as backend and some as frontend. It has single category of outside systems. Sometimes BCE is being compared to MVC architecture where Model ~ Entity and View ~ Boundary. 
 
+![actor entity boundary control example](/images/actor-boundary-control-entity.svg)
+
 The package structure is often visualized as tree onion layers, where the most outer layer is Boundary, central is Control and inner is Entity. The Boundary layer contains classes responsible for all communications with systems outside application runtime. Control represents all logic that doesn't fit well into boundary. Entity contains data structures which are allowed to have some behaviour.
+
+![Onion of Actors, Boundary, Control, Entity](/images/onion-actors-boundary-control-entity.svg)
 
 ## Functionality Folders vs BCE Structure
 
@@ -60,4 +64,3 @@ Code structure cuts across the architecture. [Learn about code structure princip
 - [Gitflow Incremental Builder has BCE pattern](https://github.com/gitflow-incremental-builder/gitflow-incremental-builder/tree/master/src/main/java/com/vackosar/gitflowincrementalbuild)
 - [Down to earth Adam Bien's video on BCE](https://www.youtube.com/watch?v=grJC6RFiB58)
 - [Uncle Bob's post - bit more ivory towerish](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html)
-- [Lot's of nice visualizations](http://www.cs.sjsu.edu/~pearce/modules/patterns/enterprise/ecb/ecb.htm)
