@@ -135,7 +135,7 @@ to run bigger models, or deploy your models to production, you will need to a bi
 ![Word2vec CBOW](/images/transformer-and-word2vec-cbow.png)
 
 
-[Word2vec Continuous Bag-of-Words](https://arxiv.org/pdf/1301.3781.pdf) predicts word in the middle of the surrounding 5-word context with sum of the context vectors.
+[Word2vec Continuous Bag-of-Words](https://arxiv.org/pdf/1301.3781.pdf) predicts word in the middle of the surrounding 10-word context with sum of the context vectors.
 Word2vec CBOW model is very similar to a special single layer transformer.
 If masked word embedding is denoted \\( v_{\mathrm{mask}} \\) and it has approximately the same cosine similarity to all word vectors.
 And if \\( W_K = W_Q = W_V = 1 \\).
