@@ -74,7 +74,7 @@ img {
 svg {
     width: 22px;
     color: #207994;
-    margin: 2px;
+    margin-right: 10px;
 }
 
 .MathJax { font-size: 0.9em !important; }
