@@ -11,8 +11,8 @@ permalink: /:categories/:title
 
 {% include load_video.html %}
 
-One would expect that in 2015, all sentence similarity task would be dominated by deep machine learning models.
-Instead, top scores were occupied by corpus-based word-alignment models that used  simple algorithms together with word databases or word embeddings e.g. word2vec.
+In 2015, top positions in sentence similarity task were occupied by corpus-based word-alignment models that used simple algorithms together with word databases or word embeddings e.g. word2vec.
+This is probably, because LSTM wasn't widely used yet and [Transformer](/ml/transformers-self-attention-mechanism-simplified) haven't existed yet.
 This post is about relationship of word alignment and similarity and about a word aligner based solely on dependency parsing and a word database that achieved 1st place in 2014 and 5th in 2015 in SemEval STS.
 
 
@@ -71,14 +71,17 @@ The algorithm uses GNU licenced [Stanford Named Entity Recognizer (Finkel et al.
   - a tuned parameter `0 <= ppdbSim <= 1`
 
 ### Dependency-based Alignment Process
+
+![Dependency-based Alignment Process](/images/syntactic-dependencies-for-similarity.png)
+
+Dependency context alignment is limited by accuracy of the dependency parser.
+Without the dependency alignment the model performed almost the same (see ablations).
+To align the dependency context, the dependency types were aligned custom lists to only find similar syntactic patterns.
+
+Operation:
 - for each potentially alignable pair, the dependency-based context is extracted, and context similarity is calculated as the sum of the word similarities of the context word pairs
 - alignment score a weighted sum of word similarity and contextual similarity
 - then aligns pairs with non-zero evidence in decreasing order of this score (greedy)
-
-Dependency matching is limited by accuracy of the dependency parser.
-Custom dependency equivalence lists are used to find similar syntactic patterns.
-
-![Dependency-based Alignment Process](/images/syntactic-dependencies-for-similarity.png)
 
 
 ### Alignment Based on Similarities in The Textual Neighborhood
