@@ -12,8 +12,8 @@ redirect_from:
 
 {% include mathjax.html %}
 
-Word embeddings, trained on large unlabeled corpora are useful for many natural language processing tasks. [FastText (Bojanowski et al., 2016)](https://arxiv.org/abs/1607.04606) in contrast to Word2vec model accounts for sub-word information by also embedding sub-word n-grams. FastText word representation is the word embedding vector plus sum of n-grams contained in it.
-Word2vec vector norms have been shown [(Schakel & Wilson, 2015)](http://arxiv.org/abs/1508.02297) to be correlated to word significance.
+Word embeddings, trained on large unlabeled corpora are useful for many natural language processing tasks. [FastText (Bojanowski et al., 2016)](https://arxiv.org/abs/1607.04606) in contrast to Word2vec model accounts for sub-word information by also embedding sub-word n-grams.
+FastText word representation is the word embedding vector plus sum of n-grams contained in it.
 
 
 ## How FastText Works
@@ -34,9 +34,19 @@ FastText embedding vectors can then be used for word analogy tasks, text classif
 
 [StarSpace a general-purpose embeddings](https://vaclavkosar.com/ml/starspace-embedding) inspired by FastText can be also used for content recommendation.
 
+## Word2vec Vector Norms
+
+Word2vec vector norms have been shown [(Schakel & Wilson, 2015)](http://arxiv.org/abs/1508.02297) to be correlated to word significance.
+Speculation:
+If we look on the chart below, then the "middle frequency" words seem to contributing the most, thanks to their large norm, to predict other context words.
+The very frequent words cannot add much as their appear in too ambiguous contexts. And we don't have much data about the context of very infrequent words.
+
+![word2vec norm vs frequency](/images/word2vec-norm-vs-tf.png)
+
 
 ## Experimenting with FastText Norms
 
+How this chart looks in case of Fast text?
 For purpose of studying OOV words this asymmetry between vocabulary and out of vocabulary words is removed by only utilizing word's n-grams regardless if the word is OOV or not.
 
 
