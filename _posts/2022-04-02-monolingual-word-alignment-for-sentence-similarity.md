@@ -4,9 +4,12 @@ description: "Semantic similarity increases with similar semantic units of simil
 layout: post
 categories: ml
 image: /images/word-alignment-for-sentence-similarity-thumb.png 
+video: aDGmCkBGPPE
 date: 2022-04-02
 permalink: /:categories/:title
 ---
+
+{% include load_video.html %}
 
 One would expect that in 2015, all sentence similarity task would be dominated by deep machine learning models.
 Instead, top scores were occupied by corpus-based word-alignment models that used  simple algorithms together with word databases or word embeddings e.g. word2vec.
