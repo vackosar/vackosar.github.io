@@ -1,9 +1,9 @@
 ---
 title: "Word Alignment for Sentence Similarity"
-description: "Semantic similarity increases with similar semantic units of similar semantic contexts in the word alignment."
+description: "Semantic similarity increases with similar semantic units of similar semantic contexts in the monolingual word alignment."
 layout: post
 categories: ml
-image: /images/word-alignment.png 
+image: /images/word-alignment-for-sentence-similarity-thumb.png 
 date: 2022-04-02
 permalink: /:categories/:title
 ---
@@ -12,7 +12,6 @@ One would expect that in 2015, all sentence similarity task would be dominated b
 Instead, top scores were occupied by corpus-based word-alignment models that used  simple algorithms together with word databases or word embeddings e.g. word2vec.
 This post is about relationship of word alignment and similarity and about a word aligner based solely on dependency parsing and a word database that achieved 1st place in 2014 and 5th in 2015 in SemEval STS.
 
-![alignment pipeline diagram](/images/word-alignment.png)
 
 - The monolingual aligner paper: [Back to Basics for Monolingual Alignment (2014)](https://aclanthology.org/Q14-1018.pdf)
 - The aligner-based sentence similarity paper: [DLS@CU](https://aclanthology.org/S14-2039.pdf)
@@ -23,6 +22,8 @@ This post is about relationship of word alignment and similarity and about a wor
 
 
 ## Word Alignment
+
+
 In word alignment we have two similar sentences and look for a correspondence mapping between the words that correspond to the same meaning within the context.
 To evaluate this task we need to have labelled corpus.
 Word alignment task is related to [word movers distance (read more)](/ml/Word-Movers-Embedding-Cheap-WMD-For-Documents),
@@ -43,6 +44,8 @@ So, how to align the words?
 
  
 ## The Sultan 2014 Aligner Algorithm
+![alignment pipeline diagram](/images/word-alignment.png)
+
 In each step below we increasingly align more words: 
 1. align identical word sequences (high precision)
 1. align named entities before other content words to enable alignment of entity mentions of different lengths
