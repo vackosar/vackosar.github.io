@@ -14,14 +14,15 @@ redirect_from:
 <small>When does this quarter ends?</small>
 <small>When is quarter-end?</small>
 
-The current quarter <b id='quarterName'>Q1</b> ends on <b id='quarterEnd'>Mar 31</b> in <b id="daysLeft">45</b> days (<b id="bizDaysLeft">20</b> business days).
+The current quarter <b class='quarterName'>Q1</b> ends on <b id='quarterEnd'>Mar 31</b> in <b class="daysLeft">45</b> days (<b id="bizDaysLeft">20</b> business days).
 <br>
 
-How many days left in this quarter? There are <b id="daysLeft2">45</b> days left in this quarter.<br>
-How many business days till the end of this quarter? There are <b id="bizDaysLeft2">45</b> business days till the end of current quarter.
+How many days left in this quarter? There are <b class="daysLeft2">45</b> days left in this quarter.<br>
+How many business days till the end of this quarter? There are <b id="bizDaysLeft2">45</b> business days till the end of current quarter <b class='quarterName'>Q1</b>.
 There are <b id="daysYearLeft">183</b> days left in this year.
 
-What quarter are we in? The current quarter is <b id='quarterName2'>Q1</b>.
+What quarter are we in? The current quarter is <b class='quarterName'>Q1</b>.
+The new quarter <b id="nextQuarter">Q2</b> starts in <b class="daysLeft">45</b> days.
 
 <style>
 
@@ -48,7 +49,7 @@ What quarter are we in? The current quarter is <b id='quarterName2'>Q1</b>.
 
 <figure class="figure">
     <div id="clockContainer" class="figure-img img-fluid rounded">
-      <svg id="clockArrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 100" alt>
+      <svg id="clockArrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 100" alt="quarter clock">
         <title>Clock arrow</title>
         <defs>
           <marker id="arrowhead" markerWidth="10" markerHeight="7" 
@@ -183,12 +184,15 @@ Do you need [copy and paste bullet points to your Tweets or other places? Grab s
 
 <script>
     // set values
-    document.getElementById('quarterName').innerText = 'Q' + getQuarter().toString();
-    document.getElementById('quarterName2').innerText = 'Q' + getQuarter().toString();
+    Array.from(document.querySelectorAll(".quarterName")).forEach((e) => {
+      e.innerText = 'Q' + getQuarter().toString();
+    });
+    Array.from(document.querySelectorAll(".daysLeft")).forEach((e) => {
+      e.innerText = daysLeftInQuarter().toString();
+    })
+
     document.getElementById('quarterEnd').innerText = getQEnd().toLocaleDateString();
-    document.getElementById('daysLeft').innerText = daysLeftInQuarter().toString();
-    document.getElementById('daysLeft2').innerText = daysLeftInQuarter().toString();
-    // document.getElementById('daysLeft3').innerText = daysLeftInQuarter().toString();
+    document.getElementById('nextQuarter').innerText = 'Q' + (((getQuarter() + 1) - 1) % 4 + 1).toString();
     document.getElementById('bizDaysLeft').innerText = getBizDaysLeftInQuarter().toString();
     document.getElementById('bizDaysLeft2').innerText = getBizDaysLeftInQuarter().toString();
     document.getElementById('daysYearLeft').innerText = daysLeftInYear().toString();
