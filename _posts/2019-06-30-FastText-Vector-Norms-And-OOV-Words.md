@@ -47,7 +47,7 @@ We can think about the word norms a bit like analogous to TF-IDF, where the IDF 
 
 ## Experimenting with FastText Norms
 
-How this chart looks in case of Fast text?
+How above chart looks in case of [FastText](#how-fasttext-works)?
 For purpose of studying OOV words this asymmetry between vocabulary and out of vocabulary words is removed by only utilizing word's n-grams regardless if the word is OOV or not.
 
 
