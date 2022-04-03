@@ -36,10 +36,11 @@ FastText embedding vectors can then be used for word analogy tasks, text classif
 
 ## Word2vec Vector Norms
 
-Word2vec vector norms have been shown [(Schakel & Wilson, 2015)](http://arxiv.org/abs/1508.02297) to be correlated to word significance.
+[Word2vec](https://arxiv.org/pdf/1301.3781.pdf) vector norms have been shown [(Schakel & Wilson, 2015)](http://arxiv.org/abs/1508.02297) to be correlated to word significance.
 Speculation:
 If we look on the chart below, then the "middle frequency" words seem to contributing the most, thanks to their large norm, to predict other context words.
 The very frequent words cannot add much as their appear in too ambiguous contexts. And we don't have much data about the context of very infrequent words.
+We can think about the word norms a bit like analogous to TF-IDF, where the IDF is defined on the word2vec window of size 5 to 10 words.
 
 ![word2vec norm vs frequency](/images/word2vec-norm-vs-tf.png)
 
