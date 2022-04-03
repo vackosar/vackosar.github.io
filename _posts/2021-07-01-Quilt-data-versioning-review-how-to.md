@@ -3,7 +3,7 @@ layout: post
 title: "Quilt Data Versioning Review & How-to"
 date: 2021-07-01
 categories: ml
-description: How to version data using Quilt data for Python on AWS S3.
+description: How to version data using Quilt data for Python on AWS S3 for machine learning.
 image: /images/quilt-data-versioning.png
 video: RZxnSBw2xR0
 permalink: /:categories/:title
@@ -13,21 +13,32 @@ redirect_from:
 
 {% include load_video.html %}
 
+Same as You are used to versioning your source code, you can now version data.
+The adoption of machine learning and AI is boosting data versioning trend.
+Because in machine learning, outputs are not defined only by the code but also by the training data.
+Also, the resulting models are comparatively much larger than the source code of their architecture, and training loop
+
+
 ## Why To Version Data
 For the same reason as we version code:
 - collaborate within team
 - be able to revert to previous state
 - review changes for e.g., debugging reasons
 
+## What Data To Version?
+- training data in machine learning
+- trained models in machine learning
+- assets - in some industries large file assets are needed
 
-## Versioning Data from Python
+
+## Versioning Data from Python Using Quilt
 [Quilt](https://quiltdata.com/) allows you to version individual files as well as entire folders as "packages" using Python methods in AWS S3 storage.
 For example, you can use it to version a single CSV dataset file, or a folder containing model files.
 The files and their versioning information lives in AWS's cloud storage S3.
 You then reference specific package versions by the package name and `top_hash` parameter which represents hash of all files that are part of the package.
 
 
-## Example
+## Example Usage of Quilt
 You can try Quilt for yourself following instructions in this section.
 
 1. Install Quilt: ``` pip install quilt3 ```
@@ -90,7 +101,7 @@ To enable S3 versioning later, I had to clear my local cache like so:
 
 I recommend to make sure you have your S3 versioning on.
 
-## Verdict
+## Review Verdict
 
 Apart from the initial versioning hick-up, Quilt data works so far very well for me.
 Good luck and see you next time!

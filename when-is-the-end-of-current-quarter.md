@@ -68,7 +68,7 @@ What quarter are we in? The current quarter is <b id='quarterName2'>Q1</b>.
 Each quarter is approximately 91 days long.
 Quarterly means once every quarter, which is approximately each 91 days.</p>
 
-<p>See a handy table of calendar quarter start dates (first days) and end dates (last days) below. The dates are the same for each year (2021, 2022, 2023, ...).</p>
+<p>See a handy table of calendar of every quarter start date (first day) and end date (last day) below. The dates are the same for each year (2021, 2022, 2023, ...).</p>
 
 <table class="table table-striped">
     <thead>
