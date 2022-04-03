@@ -36,16 +36,15 @@ in that both first map between the words, but alignment has to be zero-or-one wh
 
 ## Word Alignment vs Semantic Similarity
 In 2015, top positions in sentence similarity task were occupied by corpus-based word-alignment models that used simple algorithms together with word databases or word embeddings e.g. word2vec.
-
 How word alignment relates to semantic similarity?
 Semantic similarity increases with similar semantic units of similar semantic contexts in the word alignment.
 
-Now, to say how similar word-aligned sentences are, we need to calculate some score.
+Now, to say how similar word-aligned sentences are, we need to calculate the similarity score.
 The score for similarity of sentence A to sentence B is a fraction of aligned words divided by number of words in sentence A.
 This measure is made symmetric by taking harmonic mean of both directions.
 Stop word alignment is not used for sentence similarity task.
 
-So, how to align the words?
+But, how to align the words?
 
  
 ## The Sultan 2014 Aligner Algorithm
