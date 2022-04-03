@@ -14,14 +14,21 @@ This post is about a word aligner based solely on dependency parsing and a word 
 
 ![alignment pipeline diagram](/images/word-alignment.png)
 
-- The aligner paper: [Back to Basics for Monolingual Alignment: Exploiting Word Similarity and Contextual Evidence (2014)](https://aclanthology.org/Q14-1018.pdf)
-- The sentence similarity paper: [DLS@CU: Sentence Similarity from Word Alignment](https://aclanthology.org/S14-2039.pdf)
-- [Sultan et al. 2014 aligner source code](https://github.com/ma-sultan/monolingual-word-aligner)
+- The monolingual aligner paper: [Back to Basics for Monolingual Alignment (2014)](https://aclanthology.org/Q14-1018.pdf)
+- The aligner-based sentence similarity paper: [DLS@CU](https://aclanthology.org/S14-2039.pdf)
+- The aligner source: [Sultan et al. 2014 aligner source code](https://github.com/ma-sultan/monolingual-word-aligner)
 - State-of-the-art 2014 on sentence word alignment task
 - Winner (DSL-CU) of [SemEval 2014 STS (sentence similarity)](https://aclanthology.org/S14-2010.pdf), [results only](https://alt.qcri.org/semeval2014/task10/index.php?id=results)
 - Fifth place in SemEval 2015 STS - [2020 overview of the sentence similarity evolution](https://arxiv.org/pdf/2004.13820.pdf)
+
+
+## Word Alignment
+In word alignment we have two similar sentences and look for a correspondence mapping between the words that correspond to the same meaning within the context.
+
+![word alignment example](/images/dataset-MSR-Brockett-2007.png)
  
 ## The Sultan 2014 Aligner Algorithm
+In each step below we increasingly align more words: 
 1. align identical word sequences (high precision)
 1. align named entities before other content words to enable alignment of entity mentions of different lengths
 1. align similar words with similar dependency-tree context (higher precision then the next step)
