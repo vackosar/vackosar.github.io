@@ -11,12 +11,10 @@ permalink: /:categories/:title
 
 {% include load_video.html %}
 
-In 2015, top positions in sentence similarity task were occupied by corpus-based word-alignment models that used simple algorithms together with word databases or word embeddings e.g. word2vec.
-This is probably, because LSTM wasn't widely used yet and [Transformer](/ml/transformers-self-attention-mechanism-simplified) haven't existed yet.
+In 2015, LSTM wasn't widely used and [Transformer](/ml/transformers-self-attention-mechanism-simplified) haven't existed yet.
 How did people even did their sentence similarity back then?
 This post is about application of word alignment to semantic similarity.
-It is about a super simple word aligner based solely on dependency parsing and a word database that achieved 1st place in 2014 and 5th in 2015 in SemEval STS.
-
+It is about a super simple word aligner based solely on dependency parsing and a word database that achieved 1st place in 2014 and 5th in 2015 in SemEval STS:.
 
 - The monolingual aligner paper: [Back to Basics for Monolingual Alignment (2014)](https://aclanthology.org/Q14-1018.pdf)
 - The aligner-based sentence similarity paper: [DLS@CU](https://aclanthology.org/S14-2039.pdf)
@@ -37,6 +35,8 @@ in that both first map between the words, but alignment has to be zero-or-one wh
 ![word alignment example](/images/dataset-MSR-Brockett-2007.png)
 
 ## Word Alignment vs Semantic Similarity
+In 2015, top positions in sentence similarity task were occupied by corpus-based word-alignment models that used simple algorithms together with word databases or word embeddings e.g. word2vec.
+
 How word alignment relates to semantic similarity?
 Semantic similarity increases with similar semantic units of similar semantic contexts in the word alignment.
 
