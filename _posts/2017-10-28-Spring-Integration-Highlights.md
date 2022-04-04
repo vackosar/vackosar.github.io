@@ -19,11 +19,11 @@ Spring integration is intended for enterprise message-driven architectures. It i
 ### Spring Integration vs Java 8 Streams
 Message driven architectures have many similar abstractions to functional programming. See for example comparison with Java 8 Streams. 
 
-<table>
+<table class="table table-striped">
     <thead>
         <tr>
-            <td>Spring Integration</td>
-            <td>Java 8 Streams</td>
+            <th>Spring Integration</th>
+            <th>Java 8 Streams</th>
         </tr>
     </thead>
     <tbody>
