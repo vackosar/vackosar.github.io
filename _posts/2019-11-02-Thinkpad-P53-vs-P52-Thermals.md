@@ -28,5 +28,6 @@ Had this improved with Thinkpad P53?
 
 I am no expert, but no significant change appears to have occurred. On top of that P53 also newly has no removable battery. Unfortunately I will likely have to find another brand.
 Read or watch [my review of Lenovo P52 compared to Dell Precision 7530 from personal experience](https://vaclavkosar.com/2019/03/03/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.html).
+Here read [my experince with disassembling a repasting my P52](/electronics/P52-disassembly).
 What I also love about P52 is graphics card, I can [train neural networks like DistilBERT](/ml/transformers-self-attention-mechanism-simplified) on my local machine.
 But for anything bigger use cloud and for that you can use [Kubernetes wrappers like BentoML, Cortex, or Helm](/ml/BentoML-vs-Cortex.dev-ML-Serving-Showdown)

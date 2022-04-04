@@ -54,7 +54,7 @@ I bought ZBook 15 G5, but ended up replacing it with Thinkpad P52.
 - worst cooling ([single heatpipe](http://forum.notebookreview.com/attachments/cooling_comparison-png.160125/), [prolonged cinebench performance dropoff](https://www.notebookcheck.net/Lenovo-ThinkPad-P52-i7-P1000-FHD-Workstation-Review.322974.0.html))
 - replaceable battery
 - medium physical resilience
-- [slightly more complicated disassembly](/2020/05/03/P52-disassembly.html).
+- [slightly more complicated disassembly](/electronics/P52-disassembly).
 
 #### Experience
 Thinkpad P52 is my main machine now.
@@ -69,8 +69,8 @@ So far minor issues with P52
 
 ##### Update 2019-11-02
 - Linux dmesg messages about "temperature above threshold" are gone after repaste. The service guy haven't returned some of the screws.
-- I had to [disassemble](/2020/05/03/P52-disassembly.html) the whole notebook due to pouring almond butter all over it - faulty jar in my backpack.
-- [I posted about thermals P52 vs P53 here](https://vaclavkosar.com/2019/11/02/Thinkpad-P53-vs-P52-Thermals.html).
+- I had to [disassemble the whole notebook](/electronics/P52-disassembly) due to pouring almond butter all over it - faulty jar in my backpack.
+- [I posted about thermals P52 vs P53 here](/electronics/Thinkpad-P53-vs-P52-Thermals).
 
 ##### Update 2020-04-26
 - Message "temperature above threshold" returned into dmesg log, so it seem that the improvement after repaste is only temporary.

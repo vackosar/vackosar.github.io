@@ -10,7 +10,7 @@ redirect_from:
 ---
 
 I think the best way to explain why util classes are suboptimal is using concept of **cohesion**. 
-Cohesion is an important concept, which I also used in my previous post [Code Structure Principles](/2017/06/04/Code-Structure-Principles.html).
+Cohesion is an important concept, which I also used in my previous post [Code Structure Principles](/software/Code-Structure-Principles).
 
 Let's see [how Wikipedia defines the term:](https://en.wikipedia.org/wiki/Cohesion_(computer_science))
 
