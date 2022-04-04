@@ -8,11 +8,13 @@ image: /images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg
 permalink: /:categories/:title
 redirect_from:
   -/2017/10/28/Spring-Integration-Highlights.html 
+- /2017/11/05/RxJS-And-Spring-Integration-Similarities.html
 ---
 
 Spring integration is intended for enterprise message-driven architectures. It implements patterns described in the Enterprise Integration Patterns book. This document consists of highlights of interesting parts of [Spring Integration documentation](https://docs.spring.io/spring-integration/docs/current/reference/html/index.html).
  
-## Comparison with functional programming
+## Spring Integration Comparison
+### Spring Integration vs Java 8 Streams
 Message driven architectures have many similar abstractions to functional programming. See for example comparison with Java 8 Streams. 
 
 <table>
@@ -44,6 +46,110 @@ Message driven architectures have many similar abstractions to functional progra
 
 One of main differences between is treatment of time e.g. Java 8 Streams don't have equivalent method to Delayer. Java 8 Streams are not normally integrating with outside systems and are to finish immediately. 
 Read comparison of [RxJS vs Spring Integration here](/2017/11/05/RxJS-And-Spring-Integration-Similarities.html).
+
+### Spring Integration vs RxJS
+
+RxJS and Spring Integration are similar as former deals with event streams and latter with message streams.
+Concepts are defined by other concepts and thus knowing more relations between them can improve ability to work with them.
+Below is a table comparing concepts in both frameworks. We can see that for most concepts we are able to find almost direct equivalent in the other framework.
+For those we cannot, an alternative can be easily introduced.
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>RxJS</th>
+            <th>Spring Integration</th>
+            <th>Note</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Observable</td>
+            <td>IntegrationFlowDefinition</td>
+            <td>Part of Spring Integration DSL. Alternatively could be compared to MessageHandlerChain.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Subject</td>
+            <td>SubscribableChannel (PublishSubscribeChannel)</td>
+            <td>Both frameworks allow publishing to multiple subscribers</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Operator</td>
+            <td>GenericTransformer</td>
+            <td>Operator is more general than transformer e.g. Router cannot be expressed as transformer.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>filter</td>
+            <td>filter</td>
+            <td>Both filter elements.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>map</td>
+            <td>transform</td>
+            <td>Both map elements.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>MessageChannel</td>
+            <td>MessageChannels are named connections with additional abilities like queuing.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>~ Stream</td>
+            <td>DirectChannel</td>
+            <td>Single threaded - push strategy.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>Router</td>
+            <td>RxJS can do it with Subject and subscribed filtered streams.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ReplaySubject</td>
+            <td>-</td>
+            <td>Similar concept to durable topic</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>flatMap</td>
+            <td>splitter</td>
+            <td>Both split incoming elements into multiple.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>delay</td>
+            <td>delay</td>
+            <td>Both delay elements.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>take</td>
+            <td>-</td>
+            <td>Not found probably because Spring Integration is intended mainly for channels living throughout the app.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>buffer</td>
+            <td>ReleaseStrategy Aggregator</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Subject#onNext</td>
+            <td>Gateway</td>
+            <td>Not directly equivalent but both can be used to publish on a method call.</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
 
 ## Aggregator
 Combines multiple messages from single input channel into a single Message. Is stateful as messages have to wait in message store for each other. Most common usage is for messages to wait until a matching message (e.g. by correlation id) arrives or timeout. Is in a way opposite or Splitter.
