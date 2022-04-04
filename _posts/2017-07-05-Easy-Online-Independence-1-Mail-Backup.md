@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Easy Online Independence: 1. Mail Backup"
+title: "Easy Online Independence: Mail Backup, Syncthing"
 date: 2017-07-05
-description: This is first post of a series called "Easy Online Independence" aiming to provide cheap and easy way to increase your independence from current online service giants like Google and Facebook.
+description: Cheap way to increase your independence from current online service giants like Google and Facebook.
 categories: software
 permalink: /:categories/:title
 redirect_from:
 - /2017/07/05/Easy-Online-Independence-1-Mail-Backup.html
 ---
 
-By independence I mean ability to at any time to stand alone or migrate to another service without major losses.
+By independence, I mean ability to at any time to stand alone or migrate to another service without major losses.
  
 ## Mail Backup
 
@@ -81,3 +81,32 @@ This alternative uses a program running also on Windows. It however uses worse f
 - Configure periodic incremental backups using cron:
   -  ```crontab -e```
   -  ```0 21 * * * cd ~/imapsize && wine imapsize -backup -account=gmail```
+
+
+### File Sync That Supports Android!
+[Syncthing](https://syncthing.net/) is a easy to set up self-hosted file synchronization tool similar to Dropbox, but with more options and distributed in its nature.
+
+#### Syncthing On Linux
+On a Linux e.g. debian Raspberry Pi or Ubuntu the installation process is: 
+1. install the package `sudo apt install syncthing`
+2. set up the automatic startup
+3. connect or create a new synced folder
+4. configure your sync preferences
+
+#### Syncthing via the App
+You definitely should sync a folder to your phone. You don't need to sync huge files, but some small once you definitely should.
+Syncthing is now available also [for Android on F-Droid](https://syncthing.net/downloads/), which seems to be very simple to install.
+I need to try, so far I use Syncthing via Termux package below.
+
+##### Syncthing on Android with Termux
+This options doesn't have options to download only on Wifi.
+In Termux the setup is almost the same as in general Linxu,
+except you will miss your glorious keyboard from your Desktop.
+
+Steps:
+1. install [Termux Android app from F-Droid](https://f-droid.org/en/packages/com.termux/). Do not install from Google Play the package there is not maintained anymore.
+2. configure connection to your SD card storage so that you can access your files from there
+3. connect your keyboard or install [Hacker Keyboard from F-Droid](https://f-droid.org/en/packages/org.pocketworkstation.pckeyboard/)
+4. `pkg install syncthing` 
+5. setup startup into the background on the Termux app open 
+6. link the folders to the SD card where you can access them on demand in the other apps
