@@ -12,9 +12,10 @@ permalink: /:categories/:title
 {% include load_video.html %}
 
 In 2015, LSTM wasn't widely used and [Transformer](/ml/transformers-self-attention-mechanism-simplified) haven't existed yet.
-How did people even did their sentence similarity back then?
+How people even did their sentence similarity back then?
 This post is about application of word alignment to semantic similarity.
-It is about a super simple word aligner based solely on dependency parsing and a word database that achieved 1st place in 2014 and 5th in 2015 in SemEval STS:.
+It is about a super simple word aligner based solely on dependency parsing and a word database that achieved 1st place in 2014, 5th in 2015, in SemEval STS
+In 2017, the aligner itself dropped to 10th place, but it still lived on as a subsystem in the winning system in an autoencoder system and other spots are taken by LSTM models.
 
 - The monolingual aligner paper: [Back to Basics for Monolingual Alignment (2014)](https://aclanthology.org/Q14-1018.pdf)
 - The aligner-based sentence similarity paper: [DLS@CU](https://aclanthology.org/S14-2039.pdf)
@@ -94,7 +95,7 @@ Operation:
 
 - [MSR Brockett 2007 Corpus (aligned sentences)](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2007-77.pdf):
  
-![MSR Brockett 2007 Corpus example](/images/dataset-MSR-Brockett-2007.png)
+![MSR Brockett 2007 Corpus example](/images/dataset-MSR-Brockett-2007-2.png)
 
 - SemEval 2014 STS [SemEval 2014 STS (sentence similarity)](https://aclanthology.org/S14-2010.pdf):
  
