@@ -45,7 +45,6 @@ Message driven architectures have many similar abstractions to functional progra
 </table>
 
 One of main differences between is treatment of time e.g. Java 8 Streams don't have equivalent method to Delayer. Java 8 Streams are not normally integrating with outside systems and are to finish immediately. 
-Read comparison of [RxJS vs Spring Integration here](/2017/11/05/RxJS-And-Spring-Integration-Similarities.html).
 
 ### Spring Integration vs RxJS
 
@@ -273,7 +272,3 @@ Stop the application in an orderly manner. MBean exporter provides a JMX operati
 - Stops all inbound MessageProducer's (that are not OrderlyShutdownCapable).
 - Waits for any remaining time left, as defined by the value of the long parameter passed in to the operation.
 - Calls afterShutdown() on all OrderlyShutdownCapable components.
-
-## Compare RxJS and Spring Integration
-
-Read comparison of [RxJS and Spring Integration](/software/RxJS-And-Spring-Integration-Similarities).
