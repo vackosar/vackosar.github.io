@@ -24,7 +24,7 @@ Properties
 - Usually a tree
 - multiple relation types possible
 
-#### [Google Product Taxonomy (Viewer)](/google-product-taxonomy-viewer.html)
+#### [Google Product Taxonomy (Viewer)](/software/google-product-taxonomy-viewer)
 
 Click on the __green nodes__ below to Google Product Taxonomy interactively. The second click collapses the children.
 

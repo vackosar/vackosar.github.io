@@ -3,7 +3,11 @@ layout: default
 title: "Google Product Taxonomy Viewer"
 date: 2021-04-16
 description: Explore with an interactively Google's shopping category structure.
-image: /images/automatic-taxonomy.png
+image: /images/google-shopping-taxonomy-viewer-graphic.png
+permalink: /:categories/:title
+categories: software
+redirect_from:
+- /google-product-taxonomy-viewer.html
 ---
 
 # {{ page.title }}
