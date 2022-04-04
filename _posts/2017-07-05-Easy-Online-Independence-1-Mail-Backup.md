@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Easy Online Independence: Mail Backup, Syncthing"
+title: "Easy Online Independence: Mail Backup, File Synchronization"
 date: 2017-07-05
-description: Cheap way to increase your independence from current online service giants like Google and Facebook.
+description: Cheap way to increase your independence from the online giants with Syncthing, mbsync, Thunderbird.
 categories: software
 permalink: /:categories/:title
 redirect_from:
@@ -62,10 +62,11 @@ These steps are based on [Arch Linux Wiki](https://wiki.archlinux.org/index.php/
   -  ```0,15,30,45 * * * * log="/home/vackosar/mbsync/gmail.log" && { echo "$(date) Starting" && mbsync gmail && echo "$(date) Exiting"; } 1>>"$log" 2>>"$log"```
 
 ### Thunderbird
-You can use Thunderbird: 
-- To Avoid having to be logged into your service in your browser, which makes giant's tracking easier.  
-- For ability to use offline mail. 
-- For provider agnostic gui
+You can use [Thunderbird](https://www.thunderbird.net/) to: 
+- avoid being logged in making the giant's tracking easier
+- offline mail - read you mail without a connection!
+- provider agnostic gui
+- backup via manual export to a ZIP file with [ImportExportTools NG addon](https://addons.thunderbird.net/en-us/thunderbird/addon/importexporttools-ng/)
 
 
 ### Win Alternative: IMAPSize Backup (Original Post)
@@ -85,6 +86,7 @@ This alternative uses a program running also on Windows. It however uses worse f
 
 ### File Sync That Supports Android!
 [Syncthing](https://syncthing.net/) is a easy to set up self-hosted file synchronization tool similar to Dropbox, but with more options and distributed in its nature.
+Syncthing does not do you backups for you. Have your servers distributed geographically or keep a cold backup somewhere else to avoid loss of data. 
 
 #### Syncthing On Linux
 On a Linux e.g. debian Raspberry Pi or Ubuntu the installation process is: 
@@ -94,13 +96,16 @@ On a Linux e.g. debian Raspberry Pi or Ubuntu the installation process is:
 4. configure your sync preferences
 
 #### Syncthing via the App
-You definitely should sync a folder to your phone. You don't need to sync huge files, but some small once you definitely should.
+You definitely should sync a folder to your phone.
+ICloud can do this apparently, but to keep your files yours you can use Syncthing.
+You don't need to sync huge files, but some small once you definitely should.
 Syncthing is now available also [for Android on F-Droid](https://syncthing.net/downloads/), which seems to be very simple to install.
 I need to try, so far I use Syncthing via Termux package below.
 
+
 ##### Syncthing on Android with Termux
-This options doesn't have options to download only on Wifi.
-In Termux the setup is almost the same as in general Linxu,
+This options doesn't have options to download only on Wi-Fi.
+In Termux the setup is almost the same as in general Linux,
 except you will miss your glorious keyboard from your Desktop.
 
 Steps:
