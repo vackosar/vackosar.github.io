@@ -4,7 +4,7 @@ title: "Spring Integration Highlights - The message driven"
 date: 2017-10-28
 categories: software
 description: Get familiar with Spring Integration implementation of Enterprise Integration Patterns and compare it to Java 8 Streams.
-image: https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg
+image: /images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg
 permalink: /:categories/:title
 redirect_from:
   -/2017/10/28/Spring-Integration-Highlights.html 
@@ -15,14 +15,35 @@ Spring integration is intended for enterprise message-driven architectures. It i
 ## Comparison with functional programming
 Message driven architectures have many similar abstractions to functional programming. See for example comparison with Java 8 Streams. 
 
-|Spring Integration|Java 8 Streams |
-|------------------|---------------|
-|Chain             |Pipeline       |
-|Filter            |filter function|
-|Transformer       |map function   |
-|Splitter          |flatMap        |
+<table>
+    <thead>
+        <tr>
+            <td>Spring Integration</td>
+            <td>Java 8 Streams</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Chain</td>
+            <td>Pipeline</td>
+        </tr>
+        <tr>
+            <td>Filter</td>
+            <td>filter function</td>
+        </tr>
+        <tr>
+            <td>Transformer</td>
+            <td>map function</td>
+        </tr>
+        <tr>
+            <td>Splitter</td>
+            <td>flatMap</td>
+        </tr>
+    </tbody>
+</table>
 
 One of main differences between is treatment of time e.g. Java 8 Streams don't have equivalent method to Delayer. Java 8 Streams are not normally integrating with outside systems and are to finish immediately. 
+Read comparison of [RxJS vs Spring Integration here](/2017/11/05/RxJS-And-Spring-Integration-Similarities.html).
 
 ## Aggregator
 Combines multiple messages from single input channel into a single Message. Is stateful as messages have to wait in message store for each other. Most common usage is for messages to wait until a matching message (e.g. by correlation id) arrives or timeout. Is in a way opposite or Splitter.
@@ -149,4 +170,4 @@ Stop the application in an orderly manner. MBean exporter provides a JMX operati
 
 ## Compare RxJS and Spring Integration
 
-Read comparison of [RxJS and Spring Integration](/2017/11/05/RxJS-And-Spring-Integration-Similarities.html).
+Read comparison of [RxJS and Spring Integration](/software/RxJS-And-Spring-Integration-Similarities).
