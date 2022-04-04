@@ -7,13 +7,15 @@ description: Get familiar with Spring Integration implementation of Enterprise I
 image: /images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg
 permalink: /:categories/:title
 redirect_from:
-  -/2017/10/28/Spring-Integration-Highlights.html 
+- /2017/10/28/Spring-Integration-Highlights.html 
 - /2017/11/05/RxJS-And-Spring-Integration-Similarities.html
 ---
 
 Spring integration is intended for enterprise message-driven architectures. It implements patterns described in the Enterprise Integration Patterns book. This document consists of highlights of interesting parts of [Spring Integration documentation](https://docs.spring.io/spring-integration/docs/current/reference/html/index.html).
  
-## Spring Integration Comparison
+## Spring Integration Comparison to Other Frameworks
+
+
 ### Spring Integration vs Java 8 Streams
 Message driven architectures have many similar abstractions to functional programming. See for example comparison with Java 8 Streams. 
 
