@@ -4,7 +4,7 @@ description: "Semantic similarity increases with similar semantic units of simil
 layout: post
 categories: ml
 image: /images/word-alignment-for-sentence-similarity-thumb.png 
-video: aDGmCkBGPPE
+video: sb8qJ5XVGP4
 date: 2022-04-02
 permalink: /:categories/:title
 ---
