@@ -47,6 +47,9 @@ The next token is added to the output sequence and we repeat the decoding proces
  
 ![Cross-Attention in the decoder of Attention is All You Need (BERT) paper](/images/cross-attention-in-bert-decoder.png)
 
+
+## Cross-Attention Examples
+
 ### Cross-Attention in Perceiver IO
 [Perceiver IO](https://arxiv.org/pdf/2107.14795.pdf) is a general-purpose cross-domain architecture that can handle variety of inputs and outputs uses extensively cross-attention for:
 - merging very long input sequences (e.g. images, audio) into the low dimensional latent embeddings sequence
@@ -55,7 +58,7 @@ The next token is added to the output sequence and we repeat the decoding proces
 Advantage of this is that in general you can work with very long sequences.
 Architecture [Hierarchical Perceiver](https://arxiv.org/pdf/2202.10890.pdf) has ability to process even longer sequences by splitting into subsequences and then merging them.
 Hierarchical Perceiver also learns the positional encodings with a separate training step with a reconstruction loss.
- 
+
 ![Perceiver IO architecture](/images/cross-attention-perceiver-io.png)
 
 
@@ -66,8 +69,7 @@ Hierarchical Perceiver also learns the positional encodings with a separate trai
 In [Selfdoc](https://arxiv.org/pdf/2106.03331.pdf), cross-attention is integrated in a special way.
 First step of their Cross-Modality Encoder, instead uses value and query from sequence A and then key from the sequence B.
 
-
-## Other Examples of Cross-Attention Usage
+### Other Cross-Attention Examples
 - [DeepMind's RETRO Transformer uses cross-attention to incorporate the database retrived sequences](/ml/DeepMinds-RETRO-Transformer-Model)
 - [Code example: HuggingFace BERT (key, value are from the encoder, while query is from the decoder)](https://github.com/huggingface/transformers/blob/198c335d219a5eb4d3f124fdd1ce1a9cd9f78a9b/src/transformers/models/bert/modeling_bert.py#L268)
 - [CrossVit - here only simplified cross-attention is used](https://arxiv.org/pdf/2103.14899.pdf)
