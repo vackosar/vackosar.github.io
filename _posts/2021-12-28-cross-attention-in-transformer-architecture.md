@@ -16,12 +16,14 @@ Cross attention is:
 - an [attention mechanism in Transformer architecture](/ml/transformers-self-attention-mechanism-simplified) that mixes two different embedding sequences
 - the two sequences must have the same dimension
 - the two sequences can be of different modalities (e.g. text, image, sound)
-- one of the sequences defines the output length as it plays a role of a query
+- one of the sequences defines the output length as it plays a role of a query input
+- the other sequence then produces key and value input
 
 ## Cross-attention vs Self-attention
 Except for inputs, cross-attention calculation is the same as [self-attention](/ml/transformers-self-attention-mechanism-simplified) but the calculation inputs are different.
 Cross-attention combines asymmetrically two separate embedding sequences of same dimension, in contrast self-attention input is a single embedding sequence.
 One of the sequences serves as a query input, while the other as a key and value inputs.
+Alternative [cross-attention in SelfDoc](#cross-attention-in-selfdoc), uses query and value from one sequence, and key from the other.
 
 [The feed forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) is related to cross-attention, except the feed forward layer does use softmax and one of the input sequences is static.
 [Augmenting Self-attention with Persistent Memory paper](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) shows that Feed Forward layer calculation made the same as self-attention.
@@ -55,6 +57,14 @@ Architecture [Hierarchical Perceiver](https://arxiv.org/pdf/2202.10890.pdf) has 
 Hierarchical Perceiver also learns the positional encodings with a separate training step with a reconstruction loss.
  
 ![Perceiver IO architecture](/images/cross-attention-perceiver-io.png)
+
+
+### Cross-Attention in SelfDoc
+
+![selfdoc cross-attention](/images/selfdoc-cross-attention.png)
+
+In [Selfdoc](https://arxiv.org/pdf/2106.03331.pdf), cross-attention is integrated in a special way.
+First step of their Cross-Modality Encoder, instead uses value and query from sequence A and then key from the sequence B.
 
 
 ## Other Examples of Cross-Attention Usage
