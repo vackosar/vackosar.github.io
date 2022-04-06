@@ -22,7 +22,7 @@ In 2017, the aligner itself dropped to 10th place, but it still lived on as a su
 - The aligner source: [Sultan et al. 2014 aligner source code](https://github.com/ma-sultan/monolingual-word-aligner)
 - State-of-the-art 2014 on sentence word alignment task
 - Winner (DSL-CU) of [SemEval 2014 STS (sentence similarity)](https://aclanthology.org/S14-2010.pdf), [results only](https://alt.qcri.org/semeval2014/task10/index.php?id=results)
-- Fifth place in SemEval 2015 STS - [2020 overview of the sentence similarity evolution](https://arxiv.org/pdf/2004.13820.pdf)
+- Fifth place in [SemEval 2015 STS](https://aclanthology.org/S15-2045.pdf) - [2020 overview of the sentence similarity evolution](https://arxiv.org/pdf/2004.13820.pdf)
 
 
 ## Word Alignment
@@ -111,3 +111,8 @@ Winner of SemEval 2014 STS [SemEval 2014 STS (sentence similarity)](https://acla
 
 ![SemEval 2014 STS (sentence similarity) results](../images/semeval-2014-sts-results.png)
 
+Winner of [SemEval 2015 STS](https://aclanthology.org/S15-2045.pdf) (DLS@CU-S1) with pearson mean result of 0.8015.
+While Word Mover's Embeddings paper gets 64.2. 
+
+Unfortunately for the other papers spearman correlation is used. So they are not directly comparable.
+[SentenceBert achieved 0.8099](https://arxiv.org/pdf/1908.10084.pdf). Top score as of writing is [0.8863 from Trans-Encoder-RoBERTa-large-cross](https://arxiv.org/pdf/2109.13059v4.pdf).

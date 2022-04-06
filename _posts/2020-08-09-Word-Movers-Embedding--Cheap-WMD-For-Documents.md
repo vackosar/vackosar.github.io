@@ -61,15 +61,15 @@ We can compare Word Mover's Distance vs Cosine similarity of WEWA vectors
 - WMD uses more detailed information and captures move semantics than WEWA.
 - WMD has much higher complexity of \\( O(L^3 \log(L)) \\) compared to WEWA's \\( O(L) \\), where \\( L \\) is document length.
 
-
 ### Word Mover's Distance vs BERT Similarity
 
 It would be interesting to compare [BERT transformer model](/ml/transformers-self-attention-mechanism-simplified) sentence embedding computational complexity to WMD.
 If I understand correctly, BERT is of linear complexity in the length of the document, although total running time may be still in many cases be longer for BERT.
-There is [a sentence similarity model from Google called Bleurt](https://github.com/google-research/bleurt).
+[SentenceBert](https://arxiv.org/pdf/1908.10084.pdf) is simple model that is fine-tuned for sentence similarity task.
+Its main embedding is created by averaging output sequence embeddings.
 
-In terms of classification accuracy the BERT should definitely win, but I wonder by how much margin.
-
+While direct comparison is not possible, results on [STS 15 for WMD](https://arxiv.org/pdf/2004.15003.pdf) of Pearson score 0.7161 indicate that SentenceBert with Spearman 0.8185 likely strongly outperforms.
+Specially modified version of the [WME paper below called WRD](https://arxiv.org/pdf/2004.15003.pdf) achieves 0.7785, which seems quite close to SentenceBert.
 
 ### Word Mover's Embedding
 
