@@ -20,6 +20,8 @@ Cross attention is:
 - the other sequence then produces key and value input
 
 ## Cross-attention vs Self-attention
+![cross-attention perceiver io detail](/images/cross-attention-detail-perceiver-io.png)
+
 Except for inputs, cross-attention calculation is the same as [self-attention](/ml/transformers-self-attention-mechanism-simplified) but the calculation inputs are different.
 Cross-attention combines asymmetrically two separate embedding sequences of same dimension, in contrast self-attention input is a single embedding sequence.
 One of the sequences serves as a query input, while the other as a key and value inputs.
@@ -51,6 +53,9 @@ The next token is added to the output sequence and we repeat the decoding proces
 ## Cross-Attention Examples
 
 ### Cross-Attention in Perceiver IO
+
+![Perceiver IO architecture](/images/cross-attention-perceiver-io.png)
+
 [Perceiver IO](https://arxiv.org/pdf/2107.14795.pdf) is a general-purpose cross-domain architecture that can handle variety of inputs and outputs uses extensively cross-attention for:
 - merging very long input sequences (e.g. images, audio) into the low dimensional latent embeddings sequence
 - merging "output query" or "command" to decode the output value e.g. we can the model ask about a masked word
@@ -58,8 +63,6 @@ The next token is added to the output sequence and we repeat the decoding proces
 Advantage of this is that in general you can work with very long sequences.
 Architecture [Hierarchical Perceiver](https://arxiv.org/pdf/2202.10890.pdf) has ability to process even longer sequences by splitting into subsequences and then merging them.
 Hierarchical Perceiver also learns the positional encodings with a separate training step with a reconstruction loss.
-
-![Perceiver IO architecture](/images/cross-attention-perceiver-io.png)
 
 
 ### Cross-Attention in SelfDoc
