@@ -41,6 +41,7 @@ Speculation:
 If we look on the chart below, then the "middle frequency" words seem to contributing the most, thanks to their large norm, to predict other context words.
 The very frequent words cannot add much as their appear in too ambiguous contexts. And we don't have much data about the context of very infrequent words.
 We can think about the word norms a bit like analogous to TF-IDF, where the IDF is defined on the word2vec window of size 10 words.
+For this reason when using [Word Movers Distance with TF-IDF weights, Word Rotator paper suggests to use consine instead of euclidean distance](https://vaclavkosar.com/ml/Word-Movers-Embedding-Cheap-WMD-For-Documents#word-movers-distance-vs-bert-similarity).
 
 ![word2vec norm vs frequency](/images/word2vec-norm-vs-tf.png)
 
