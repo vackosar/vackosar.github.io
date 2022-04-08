@@ -1,0 +1,36 @@
+<style>
+    .feedback-button {
+        border: solid 0;
+        background: #28a745;
+        height: 40px;
+        width: 40px;
+        color: white;
+        fill: white;
+        line-height: 32px;
+        font-weight: 600;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 18px;
+        position: fixed;
+        right: 10px;
+        top: calc(100% - 50px);
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    .feedback-button :focus:not(.focus-visible) {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .feedback-button :hover {
+        /*background: #fabb57;*/
+        color: #fffbc0;
+        fill: #fffbc0;
+    }
+</style>
+<button id="feedback" class="feedback-button" onclick="window.open('{{ site.feedback_url }}', '_blank');">
+  <div style="width: 30px; margin-left:3px; margin-bottom: 1px; fill: white">
+    {% include feedback-comment-dots.svg %}
+  </div>
+</button>
