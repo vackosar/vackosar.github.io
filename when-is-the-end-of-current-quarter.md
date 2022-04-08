@@ -181,6 +181,8 @@ Contact me with button below.
 
 Do you need [copy and paste bullet points to your Tweets or other places? Grab some here.](twitter-bullet-points-to-copy-paste.md)
 
+Learn about [defense of margins in my insights from Helmer's 7 Powers' book](/book/7-powers-moats-through-lens-of-dibellos-business-mental-model).
+
 
 <script>
     // set values
