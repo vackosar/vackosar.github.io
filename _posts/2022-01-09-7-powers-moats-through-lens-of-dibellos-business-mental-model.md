@@ -19,7 +19,7 @@ The [Helmer's 7 Powers book](https://www.goodreads.com/book/show/32816087-7-powe
 The text below may provide additional insights into both through partial modification, followed by combination of the ideas above.
 For example, Helmer's book does not list capital side of the described moats and network effects between employees and between investors, while below hints that they may exist.
 Additionally, since moats are so crucial to the business value, we should have tools to understand and talk about them.
-DiBello's dimensions help with that.
+DiBello's dimensions can give us axis where to pain effects of our moats.
 
 
 _I may have slightly modified some concepts to offer an interesting view._
