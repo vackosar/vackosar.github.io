@@ -41,9 +41,11 @@ We use word vectors like for example Word2vec, [FastText](/ml/FastText-Vector-No
 - The probability distribution's
   - support is over word vectors of the document's words
   - value is normalized frequency of unique words in the document or TF-IDF
-- The distance between word vectors can be [a cosine similarity (this paper argues for cosine similarity)](https://arxiv.org/pdf/2004.15003.pdf) or euclidean distance.
+- The distance between word vectors can be [a cosine similarity ("Word Rotators Distance" argues for cosine similarity)](https://arxiv.org/pdf/2004.15003.pdf) or euclidean distance.
 
 Word movers distance solves similar task to [word alignment](/ml/monolingual-word-alignment-for-sentence-similarity#word-alignment), but in word alignment the mapping is one-to-one.
+Speculative reason for cosine similarity seems to be that [Word2vec (or FastText) vector norm behaves a bit like TF-IDF](/ml/FastText-Vector-Norms-And-OOV-Words#word2vec-vector-norms), but with document size of 10 words.
+Since we want to use our TF-IDF and not the word2vec's, then we use cosine similarity.
 
 ### Word Mover's Distance vs Word Embedding Weighted Average Cosine Similarity
 
