@@ -117,7 +117,7 @@ Quarterly means once every quarter, which is approximately each 91 days.</p>
 <h3>Fiscal Year</h3>
 <p>
   Each company or government institution can choose their own fiscal (financial) year, a twelve-month period, that is the most suitable to their yearly revenue cycle.
-  Fiscal year can differ from calendar year.
+  Company's fiscal year can differ from calendar year.
   Companies use their fiscal years to submit financial reports, external audits, federal tax filings.
   For example Apple's fiscal year ends its fiscal year on the last Saturday of September.
   What is the fiscal year-end for Microsoft, Amazon, Google, or NVIDIA.
@@ -163,7 +163,7 @@ Quarterly means once every quarter, which is approximately each 91 days.</p>
 A company fiscal year outlines its fiscal (financial) quarters dates.
 That means that fiscal quarters and quarter reporting dates may be different for each company.
 But usually they fall at the end of the months and don't cut through them.
-Fiscal or financial quarter takes 3 months, so is approximately 91 days long.
+Fiscal or financial quarter takes 3 months, so is approximately 91 days long, the same as the calendar quarter.
 </p>
 
 <h3>Historical Origin of Calendar Quarters</h3>
