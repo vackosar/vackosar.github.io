@@ -13,12 +13,16 @@ redirect_from:
 
 <img id="video-img-img" style="max-width: 560px; width: 100%" src="{{ page.image }}" alt="{{ page.title }}" />
 
+Most of the excess profits come from delivering more from less compared to the next best alternative including competition.
 The [Helmer's 7 Powers book](https://www.goodreads.com/book/show/32816087-7-powers) lists 7 barriers that protect margins of businesses long term and how to attain them.
 [DiBello's research](https://wtri.com/wp-content/uploads/2015/06/Informed-By-Knowledge-Chapter-12.pdf) suggests that great business people understand interaction between following three aspects (dimensions) of a business: demand, supply, capital.
 The text below may provide additional insights into both through partial modification, followed by combination of the ideas above.
 For example, Helmer's book does not list capital side of the described moats and network effects between employees and between investors, while below hints that they may exist.
+Additionally, since moats are so crucial to the business value, we should have tools to understand and talk about them.
+DiBello's dimensions help with that.
 
-_Not all the concepts are entirely clear to me, and may be used slightly modified to offer interesting view._
+
+_I may have slightly modified some concepts to offer an interesting view._
 _For example for Cedric all the concepts fall into "Demand" dimension of DiBello's model._
 _This is my initial version of the post on this topic._
 
