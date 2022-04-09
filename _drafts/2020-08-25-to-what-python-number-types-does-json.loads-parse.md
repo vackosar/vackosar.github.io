@@ -42,4 +42,4 @@ It also understands NaN, Infinity, and -Infinity as their corresponding float va
 
 The conversion is similar to conversion from a Python source code. The number becomes `int` only in case of non-scientific format without a dot. Otherwise you'll get a `float`.
 
-Read also on this blog how to [wrap you resource creation and closure into context manager with-statement and catch exceptions there](https://vaclavkosar.com/software/Python-Context-Manager-With-Statement-Exception-Handling).
+Read also on this blog how to [wrap you resource creation and closure into context manager with-statement and catch exceptions there](/software/Python-Context-Manager-With-Statement-Exception-Handling).

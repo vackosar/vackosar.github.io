@@ -32,7 +32,7 @@ FastText embedding vectors can then be used for word analogy tasks, text classif
 
 ![fasttext classification results comparison glove](../images/fasttext-classification-results-comparison-glove.png)
 
-[StarSpace a general-purpose embeddings](https://vaclavkosar.com/ml/starspace-embedding) inspired by FastText can be also used for content recommendation.
+[StarSpace a general-purpose embeddings](/ml/starspace-embedding) inspired by FastText can be also used for content recommendation.
 
 ## Word2vec Vector Norms
 
@@ -41,7 +41,7 @@ Speculation:
 If we look on the chart below, then the "middle frequency" words seem to contributing the most, thanks to their large norm, to predict other context words.
 The very frequent words cannot add much as their appear in too ambiguous contexts. And we don't have much data about the context of very infrequent words.
 We can think about the word norms a bit like analogous to TF-IDF, where the IDF is defined on the word2vec window of size 10 words.
-For this reason when using [Word Movers Distance with TF-IDF weights, Word Rotator paper suggests to use consine instead of euclidean distance](https://vaclavkosar.com/ml/Word-Movers-Embedding-Cheap-WMD-For-Documents#word-movers-distance-vs-bert-similarity).
+For this reason when using [Word Movers Distance with TF-IDF weights, Word Rotator paper suggests to use consine instead of euclidean distance](/ml/Word-Movers-Embedding-Cheap-WMD-For-Documents#word-movers-distance-vs-bert-similarity).
 
 ![word2vec norm vs frequency](/images/word2vec-norm-vs-tf.png)
 
@@ -214,4 +214,4 @@ No-N-Gram Norm has very similar Norm-TF distribution as Word2Vec shown in [(Scha
 NG_Norm shows that n-gram count could be potentially useful feature and that simple averaging over n-gram vectors may not be optimal. Perhaps some approach akin to [(Zhelezniak et al., 2019)](https://arxiv.org/abs/1904.13264) could be used.
 
 - [Full code is here](https://github.com/vackosar/fasttext-vector-norms-and-oov-words/blob/master/README.md).
-- [Continue: StarSpace - a general-purpose embeddings inspired by FastText](https://vaclavkosar.com/ml/starspace-embedding)
+- [Continue: StarSpace - a general-purpose embeddings inspired by FastText](/ml/starspace-embedding)

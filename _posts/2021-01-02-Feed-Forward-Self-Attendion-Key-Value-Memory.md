@@ -15,7 +15,7 @@ permalink: /:categories/:title
 
 Have you forgotten about Transformer's feed-forward layer? [It eats 2/3 of the model params](https://arxiv.org/pdf/2012.14913v1.pdf)!
 
-[The last post on LambdaNetwork sketches self-attention as a differentiable query of a key-value store](https://vaclavkosar.com/ml/Lamda-Networks-Transform-Self-Attention).
+[The last post on LambdaNetwork sketches self-attention as a differentiable query of a key-value store](/ml/Lamda-Networks-Transform-Self-Attention).
 The [Transformer](/ml/transformers-self-attention-mechanism-simplified)'s feed-forward sublayer is similar to the [self-attention](/ml/transformers-self-attention-mechanism-simplified) except values and keys are independent of the input.
 It is like differentiable key-value memory!
 
@@ -102,7 +102,7 @@ Is this used by the model for predicted sequence re-arrangements?
 
 ## LambdaNet Positional Embeddings vs Transformer FF
 
-[LambdaNet layer positional embeddings](https://vaclavkosar.com/ml/Lamda-Networks-Transform-Self-Attention) are something between self-attention and FF, but neither.
+[LambdaNet layer positional embeddings](/ml/Lamda-Networks-Transform-Self-Attention) are something between self-attention and FF, but neither.
 They are about querying pattern-values store.
 The keys are constants like in FF, but queries and values are derived from the input.
 Whereas in the FF the values are constants as well.

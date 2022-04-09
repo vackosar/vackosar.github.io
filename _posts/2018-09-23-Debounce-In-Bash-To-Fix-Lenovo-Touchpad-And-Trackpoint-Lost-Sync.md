@@ -30,7 +30,7 @@ Debounce is commonly used name for rate limiting function used in functional pro
       done;
     }
 
-Similarly useful function is foreach which I wrote [post about as well](https://vaclavkosar.com/2016/07/28/Functional-Foreach-In-Bash.html).
+Similarly useful function is foreach which I wrote [post about as well](/2016/07/28/Functional-Foreach-In-Bash.html).
 
 
 ## Workaround For Lenovo Touchpad Lost Sync

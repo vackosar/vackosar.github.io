@@ -11,7 +11,7 @@ redirect_from:
   - /review/Thinkpad-P53-vs-P52-Thermals
 ---
 
-I have been having minor thermal issues with my Thinkpad P53 that I decided to buy and share information about in [my review of Lenovo P52 compared to Dell Precision 7530](https://vaclavkosar.com/2019/03/03/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.html). Specifically I had "dmesg" command print messages about "package temperature above threshold" indicating that CPU is being throttled.
+I have been having minor thermal issues with my Thinkpad P53 that I decided to buy and share information about in [my review of Lenovo P52 compared to Dell Precision 7530](/2019/03/03/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.html). Specifically I had "dmesg" command print messages about "package temperature above threshold" indicating that CPU is being throttled.
 
 In general people complain about bad thermal design on latest Thinkpad including P52 e.g. [single heatpipe](http://forum.notebookreview.com/attachments/cooling_comparison-png.160125/), [prolonged cinebench performance dropoff](https://www.notebookcheck.net/Lenovo-ThinkPad-P52-i7-P1000-FHD-Workstation-Review.322974.0.html).
 
