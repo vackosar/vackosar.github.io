@@ -45,13 +45,25 @@ Transformer's self-attention layer computes differentiable key-value search and 
   - in pseudo-code: \\( Y = \mathrm{matmul}_L(\mathrm{softmax}_L(\mathrm{matmul_d}(X_q, X_k^\intercal)), X_v) \\)
   - in equation: \\( Y = \mathbf{softmax}(QK^\intercal)V \\)
 - More details in [Attention Is All You Need paper](https://arxiv.org/abs/1706.03762) e.g.: dot-product is "scaled", residual connection, layer normalization
+
+## Word Embeddings
+
+Input text is split into character chunks called tokens.
+Tokens are mostly words around 4 characters long with prepended whitespace, but can represent special characters.
+Embeddings layers map tokens to vectors in other words to sequence of numbers.
+Input and output embeddings layer share the same mapping.
   
 ### Multi-Head Attention
-Instead of basic self-attention above, BERT splits each embedding into 8 equal sized vectors,
-applies separate attention mechanism to each of them, and concatenates the result.
+Instead of basic self-attention above, BERT implements special more complicated layer:
+1. for each key, value, and query multiplies by additional projection weight matrix
+2. then splits each resulting embedding into 8 equal sized vectors,
+3. applies separate 1/8th dimensional self-attention mechanism to each of them,
+4. concatenates the result.
+ 
 Each separate self-attention in above is called self-attention head.
 As a whole this layer is called multi-head attention.
-Experiments show that each head performs different task.
+Multi-head attention allows each head to focus on a subspace, with different meaning.
+Experiments show that each head attends to tokens of different semantic or syntactic meaning.
 
 <small>
 Most heads don't [attend to the same sequence position](https://aclanthology.org/W19-4828.pdf),
@@ -88,11 +100,6 @@ Special tokens are used by some heads to "attend" to nothing.
         Attention Complexity (<a href="https://arxiv.org/pdf/2009.14794.pdf">source</a>).
     </figcaption>
 </figure>
-
-
-## Word Embeddings
-
-Input and output embeddings map tokenized text to sequence of vectors.
 
 ## Positional Embeddings
 
