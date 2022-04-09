@@ -100,19 +100,20 @@ I split them according to company stage to which they become accessible.
 	- examples: deep integration with systems, data and configuration stored in the systems, habits, [Non-compete clause](https://en.wikipedia.org/wiki/Non-compete_clause)
 		
 ### Corp-up Stage Powers
-- Hysteresis (optimization, trust, stability)
-	- Process Power - What creates non-replicable and stable organizational capability?
-		- benefited dimensions: supply
-		- lower costs per unit of supply due to optimization and trust of employees
-		- barrier: time in production
-	- Branding - What accrues trust and nostalgia with users and markets optimally?
-		- benefited dimension: demand
-		- lower costs per unit of demand due to optimization and trust of customers
-		- barrier: time in market
-	- "Lindy Effect" - What accrues trust and optimizes capital operations?
-		- benefited dimension: capital
-		- low cost of capital thanks to optimization and trust of investors
-		- example: [Blue chip stocks](https://en.wikipedia.org/wiki/Blue_chip_(stock_market))
+Hysteresis: (optimization, trust, stability):
+
+- Process Power - What creates non-replicable and stable organizational capability?
+	- benefited dimensions: supply
+	- lower costs per unit of supply due to optimization and trust of employees
+	- barrier: time in production
+- Branding - What accrues trust and nostalgia with users and markets optimally?
+	- benefited dimension: demand
+	- lower costs per unit of demand due to optimization and trust of customers
+	- barrier: time in market
+- "Lindy Effect" - What accrues trust and optimizes capital operations?
+	- benefited dimension: capital
+	- low cost of capital thanks to optimization and trust of investors
+	- example: [Blue chip stocks](https://en.wikipedia.org/wiki/Blue_chip_(stock_market))
 		
 # Acknowledgments
 I only found about topics above thanks to Cedric's blog posts over at [Common Place Blog](https://commoncog.com/blog/).
