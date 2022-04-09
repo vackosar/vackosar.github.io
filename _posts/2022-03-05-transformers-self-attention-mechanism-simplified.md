@@ -64,6 +64,8 @@ Each separate self-attention in above is called self-attention head.
 As a whole this layer is called multi-head attention.
 Multi-head attention allows each head to focus on a subspace, with different meaning.
 Experiments show that each head attends to tokens of different semantic or syntactic meaning.
+Splitting vector representation into subspaces is related to [disentangled representation training](/ml/manipulate-item-attributes-via-disentangled-representation),
+where we train model to give selected subspaces specific meaning.
 
 <small>
 Most heads don't [attend to the same sequence position](https://aclanthology.org/W19-4828.pdf),
