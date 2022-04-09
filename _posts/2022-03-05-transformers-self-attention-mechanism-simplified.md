@@ -50,7 +50,7 @@ Transformer's self-attention layer computes differentiable key-value search and 
 
 Input text is split into character chunks called tokens.
 Tokens are mostly words around 4 characters long with prepended whitespace, but can represent special characters.
-Embeddings layers map tokens to vectors in other words to sequence of numbers.
+Embedding layers map tokens to vectors in other words to sequence of numbers.
 Input and output embeddings layer share the same mapping.
   
 ### Multi-Head Attention
@@ -62,15 +62,16 @@ Instead of basic self-attention above, BERT implements special more complicated 
  
 Each separate self-attention in above is called self-attention head.
 As a whole this layer is called multi-head attention.
-Multi-head attention allows each head to focus on a subspace, with different meaning.
-Experiments show that each head attends to tokens of different semantic or syntactic meaning.
+Multi-head attention allows each head to focus on a different subspace, with a different semantic or syntactic meaning.
 Splitting vector representation into subspaces is related to [disentangled representation training](/ml/manipulate-item-attributes-via-disentangled-representation),
 where we train model to give selected subspaces specific meaning.
 
 <small>
-Most heads don't [attend to the same sequence position](https://aclanthology.org/W19-4828.pdf),
-probably because residual connection always adds current position embedding to the result.
+Most heads don't [attend to the identical sequence position](https://aclanthology.org/W19-4828.pdf),
+probably because residual connection always adds the embedding at each position to the positions result.
 Special tokens are used by some heads to "attend" to nothing.
+
+Addition of multiple heads serves [more as a computation parallelization trick rather than power expansion trick](https://arxiv.org/abs/2106.09650).
 </small>
 
 <figure class="figure">
