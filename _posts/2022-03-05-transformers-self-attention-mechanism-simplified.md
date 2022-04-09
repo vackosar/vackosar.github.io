@@ -53,6 +53,12 @@ Each separate self-attention in above is called self-attention head.
 As a whole this layer is called multi-head attention.
 Experiments show that each head performs different task.
 
+<small>
+Most heads don't [attend to the same sequence position](https://aclanthology.org/W19-4828.pdf),
+probably because residual connection always adds current position embedding to the result.
+Special tokens are used by some heads to "attend" to nothing.
+</small>
+
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded lazyload"
