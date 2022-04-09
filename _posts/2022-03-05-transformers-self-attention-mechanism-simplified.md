@@ -134,22 +134,39 @@ to run bigger models, or deploy your models to production, you will need to a bi
 
 ![Word2vec CBOW](/images/transformer-and-word2vec-cbow.png)
 
-
-[Word2vec Continuous Bag-of-Words](https://arxiv.org/pdf/1301.3781.pdf) predicts word in the middle of the surrounding 10-word context with sum of the context vectors.
-Note that a sentence in 1950 has average 15 words.
-Word2vec CBOW (w2v CBOW) model is similar to a extremely simplified case of a single layer transformer trained with masked language modeling task. 
+Word2vec was used in many state-of-the-art models between 2013-2015.
+It was gradually replaced by more advanced variants like [FastText](/ml/FastText-Vector-Norms-And-OOV-Words), and [StarSpace a general-purpose embeddings](/ml/starspace-embedding), and more sophisticated models like LSTM and transformers. 
+[Word2vec Continuous Bag-of-Words](https://arxiv.org/pdf/1301.3781.pdf) predicts word using its surrounding 10-word context by:
+1. summing the input embeddings corresponding to the input context words
+2. finding maximum a dot-product with all output embeddings
+ 
+Note average sentence length is about 15 words.
+Word2vec uses 2 sets of embeddings: input and output (context) embeddings.
+Word2vec CBOW (w2v CBOW) model is similar to an extremely simplified a single layer transformer.
 
 If we use:
 - a single self-attention (remove the feed forward layer and layer normalization)
 - single attention head
-- [fourier positional encodings](#fourier-positional-encodings-in-bert) 
-- trivial key, value, query linear transformations  \\( W_K = W_Q = W_V = 1 \\).
- 
-Since the positional encodings would select mostly the nearby words, then the Transformer output for a masked word is close to summation of the surrounding word vectors like in CBOW Word2vec.
-The calculation result would still be more expressive, as it would contain [relative and absolute positional terms](https://www.reddit.com/r/MachineLearning/comments/cttefo/d_positional_encoding_in_transformer/exs7d08/),
-which are not present in Word2vec.
+- [fourier positional encodings \\( p_j \\)](#fourier-positional-encodings-in-bert) 
+  - that behave as if concatenated: for all embeddings and positional encodings \\( p_j^\intercal e_w \approx 0 \\)
+  - decay fast after relative distance of 4: \\( p_j^\intercal p_i \approx \delta_{ |i-j| <= 4 } \\)
+- identity key, query linear transformations  \\( W_K = W_Q = 1 \\).
+- masked word vector has the same dot-product with all embeddings \\( e_{mask}^\intercal e_w \approx C \\)
 
-If we would additionally not use positional encodings, and use sliding context window of size matching Word2vec's context size, then the results would be even closer to the Word2vec.
+Then we approximately:
+\\( (e_w + p_w)^\intercal (e_{mask} + p_{mask}) \approx \\)
+\\( e_w^\intercal e_{mask} + p_w^\intercal p_{mask} = \\)
+\\(  C + \delta_{|i-j| <= 4} \\) 
+
+And if we define output embeddings via the value projection matrix multiplied with embeddings:
+\\( W_V E \\)
+
+Then the Transformer output for a masked word is close to summation of the surrounding word vectors like in CBOW Word2vec.
+The positional embeddings probably do not behave as concatenated.
+The term above would contain relative and absolute positional terms, which are not present in Word2vec.
+So the transformer result would still be more expressive.
+
+But if we would additionally not use positional encodings, and use sliding context window of size matching Word2vec's context size, then the results would be even closer to the Word2vec.
 
 ## Transformer vs FastText
 
