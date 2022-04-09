@@ -27,7 +27,7 @@ Transformer architecture is a composite of following parts:
         class="figure-img img-fluid rounded lazyload"
         data-src="/images/self-attention-calculation-visualisation.png"
         alt="self-attention calculation visualization"/>
-    <figcaption class="figure-caption">Each query is multiplied with each key. Then we sum up over corresponding values. So on the output, we get the same sequence length and dimension.</figcaption>
+    <figcaption class="figure-caption">Output and input have the same sequence length and dimension. Weight each value by similarity of the corresponding query and key. For each sequence position output sum up the weighted values.</figcaption>
 </figure>
 
 Transformer's self-attention layer computes differentiable key-value search and summation on the input sequence.
@@ -40,10 +40,18 @@ Transformer's self-attention layer computes differentiable key-value search and 
   - value \\( X^V := W^V X \\)
 - calculate "soft sequence-wise nearest neighbor search"
   - "search" all \\( L \times L \\) combinations of sequence elements of \\( X^K \\) and \\( X^Q \\)
-  - for each sequence position \\( m \\): output more \\( X^V_{o} \\) when \\( X^K_o \\) is more similar to \\( X^Q_{m} \\)
+  - for each sequence position \\( m \\): output more of \\( X^V_{o} \\) the more is \\( X^K_o \\) similar to \\( X^Q_{m} \\)
+  - this is done by weighting the value with a softmax of a dot-product and summing the values
   - in pseudo-code: \\( Y = \mathrm{matmul}_L(\mathrm{softmax}_L(\mathrm{matmul_d}(X_q, X_k^\intercal)), X_v) \\)
   - in equation: \\( Y = \mathbf{softmax}(QK^\intercal)V \\)
-- More details in [Attention Is All You Need paper](https://arxiv.org/abs/1706.03762)
+- More details in [Attention Is All You Need paper](https://arxiv.org/abs/1706.03762) e.g.: dot-product is "scaled", residual connection, layer normalization
+  
+### Multi-Head Attention
+Instead of basic self-attention above, BERT splits each embedding into 8 equal sized vectors,
+applies separate attention mechanism to each of them, and concatenates the result.
+Each separate self-attention in above is called self-attention head.
+As a whole this layer is called multi-head attention.
+Experiments show that each head performs different task.
 
 <figure class="figure">
     <img
