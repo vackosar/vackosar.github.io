@@ -76,6 +76,10 @@ Transformer's self-attention layer computes differentiable key-value search and 
 </figure>
 
 
+## Word Embeddings
+
+Input and output embeddings map tokenized text to sequence of vectors.
+
 ## Positional Embeddings
 
 ![positional embeddings in BERT architecture](/images/transformer-positional-embeddings.png)
