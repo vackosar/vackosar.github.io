@@ -92,7 +92,7 @@ In [SRU++](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) the p
   - if \\( t = 2i + 1 \\) is odd then \\( P_{t, j} := \cos (p / 10^{\frac{8i}{d}})  \\)
 - This is similar to fourier expansion of Diracs delta
 - dot product of any two positional encodings decays fast after first 2 nearby words
-- most sentences are relatively short ~10 words, thus only first dimensions of positional encodings carry information
+- average sentence has around 15 words, thus only first dimensions carry information
 - the rest of the embeddings can thus function as word embeddings
 
 
@@ -135,16 +135,17 @@ to run bigger models, or deploy your models to production, you will need to a bi
 
 
 [Word2vec Continuous Bag-of-Words](https://arxiv.org/pdf/1301.3781.pdf) predicts word in the middle of the surrounding 10-word context with sum of the context vectors.
+Note that a sentence in 1950 has average 15 words. 
 Word2vec CBOW model is very similar to a special single layer transformer.
 If masked word embedding is denoted \\( v_{\mathrm{mask}} \\) and it has approximately the same cosine similarity to all word vectors.
 And if \\( W_K = W_Q = W_V = 1 \\).
 
-If we use [fourier positional encodings](#fourier-positional-encodings-in-bert) \\( P \\).
-Since the positional encodings would select mostly the nearby words, then the Transformer output for a masked word is close to summation of the surrounding word vectors like in CBOW Word2vec.
-The result would however be still more expressive, as it would contain [relative and absolute positional terms](https://www.reddit.com/r/MachineLearning/comments/cttefo/d_positional_encoding_in_transformer/exs7d08/),
+If we use [fourier positional encodings](#fourier-positional-encodings-in-bert), remove the feed forward layer and layer normalization.
+And since the positional encodings would select mostly the nearby words, then the Transformer output for a masked word is close to summation of the surrounding word vectors like in CBOW Word2vec.
+The calculation result would still be more expressive, as it would contain [relative and absolute positional terms](https://www.reddit.com/r/MachineLearning/comments/cttefo/d_positional_encoding_in_transformer/exs7d08/),
 which are not present in Word2vec.
 
-If we would instead not use positional encodings, and use sliding context size matching Word2vec's, then the results would be even closer to the Word2vec.
+If we would additionally not use positional encodings, and use sliding context window of size matching Word2vec's context size, then the results would be even closer to the Word2vec.
 
 
 ## Transformer vs FastText
