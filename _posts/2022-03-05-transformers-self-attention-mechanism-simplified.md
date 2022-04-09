@@ -99,7 +99,8 @@ In [SRU++](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) the p
 ## Training a Transformer
 Transformers are usually pre-trained with self-supervised tasks like masked language modelling or next-token prediction on large datasets.
 Pre-trained models are often very general and publicly distributed e.g. on HuggingFace.
-Multiple-GPUs are often used. While there are various approaches to speedup transformer itself, there are also ways to improve its training.
+Big transformer models are usually trained on multiple GPUs.
+While there are various approaches to speedup transformer itself, there are also ways to improve its training.
 For example [ELECTRA training scheme speeds up training](/ml/electra-4x-cheaper-bert-training) by using GAN-like setting using a loss over entire sequence.
 
 Then fine-tuning training is used to specialize the model for a specific task on using a small labelled dataset.
@@ -135,18 +136,20 @@ to run bigger models, or deploy your models to production, you will need to a bi
 
 
 [Word2vec Continuous Bag-of-Words](https://arxiv.org/pdf/1301.3781.pdf) predicts word in the middle of the surrounding 10-word context with sum of the context vectors.
-Note that a sentence in 1950 has average 15 words. 
-Word2vec CBOW model is very similar to a special single layer transformer.
-If masked word embedding is denoted \\( v_{\mathrm{mask}} \\) and it has approximately the same cosine similarity to all word vectors.
-And if \\( W_K = W_Q = W_V = 1 \\).
+Note that a sentence in 1950 has average 15 words.
+Word2vec CBOW (w2v CBOW) model is similar to a extremely simplified case of a single layer transformer trained with masked language modeling task. 
 
-If we use [fourier positional encodings](#fourier-positional-encodings-in-bert), remove the feed forward layer and layer normalization.
-And since the positional encodings would select mostly the nearby words, then the Transformer output for a masked word is close to summation of the surrounding word vectors like in CBOW Word2vec.
+If we use:
+- a single self-attention (remove the feed forward layer and layer normalization)
+- single attention head
+- [fourier positional encodings](#fourier-positional-encodings-in-bert) 
+- trivial key, value, query linear transformations  \\( W_K = W_Q = W_V = 1 \\).
+ 
+Since the positional encodings would select mostly the nearby words, then the Transformer output for a masked word is close to summation of the surrounding word vectors like in CBOW Word2vec.
 The calculation result would still be more expressive, as it would contain [relative and absolute positional terms](https://www.reddit.com/r/MachineLearning/comments/cttefo/d_positional_encoding_in_transformer/exs7d08/),
 which are not present in Word2vec.
 
 If we would additionally not use positional encodings, and use sliding context window of size matching Word2vec's context size, then the results would be even closer to the Word2vec.
-
 
 ## Transformer vs FastText
 
