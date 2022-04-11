@@ -34,7 +34,13 @@ The paper refers to empirical evidence that an implicit regularization is repres
 </figure>
 
 
-# Bias–variance decomposition of mean squared error 
+Apart from paper above [Open AI also observed double descent](https://mathai-iclr.github.io/papers/papers/MATHAI_29_paper.pdf?utm_campaign=The%20Batch&utm_medium=email&_hsmi=209230924&utm_content=209231304&utm_source=hs_email) in [Transformers](/ml/transformers-self-attention-mechanism-simplified),
+which they called "grokking". In the grokking setup, OpenAi trained on a binary operations datasets, and observed sudden jumps in accuracy far in the overfitting regime.
+
+![OpenAI grokking](/images/opean-ai-grokking.png)
+
+
+## Bias–variance decomposition of mean squared error 
 
 In case of L2 norm, the train loss can be rewritten as a sum of bias term and variance term. However that doesn't prove presence of any dilemma.
 
@@ -94,7 +100,7 @@ Terms in above equation in given order represent:
 However, above decomposition does not explicitly prove how the individual components behave.
 So, it is no prove of the proposed dilemma.
 
-## What is bias variance decomposition in case of linear regression? 
+### What is bias variance decomposition in case of linear regression? 
 There is a ["Deriving the final identity" section in "Linear Regression and the  Bias Variance Tradeoff"](https://people.eecs.berkeley.edu/~jegonzal/assets/slides/linear_regression.pdf),
 which attempts an estimate of the variance term,
 but I think it contains a mistake in the calculation.
@@ -117,19 +123,19 @@ I expect that variance for above simplified linear regression problem will incre
 Unfortunately, I don't have the direct proof.
 
 
-## What is an overparameterized model?
+### What is an overparameterized model?
 
 Usually model is called overparametrized when the number of parameters is greater than the number of training samples.
 It can also mean that model has capacity to achieve the test loss zero, that is to interpolate the train data.
 Modern ML models are over-parametrized, but use various regularization methods.
 
 
-## What is a generalization curve?
+### What is a generalization curve?
 
 It is defined as the test loss as a function of number of parameters of the model.
 
 
-##  Multiple Descent Proof for Linear Regression
+###  Multiple Descent Proof for Linear Regression
 
 In the [Multiple Descent paper](https://arxiv.org/abs/2008.01036), the test loss as a function of number of parameters of special case of linear regression is highly controlled for in both under-parametrized and over-parametrized regimes.
 
@@ -138,7 +144,7 @@ Authors prove:
 - That the number of descents can be designed.
 
 
-### How is the multiple descent achieved?
+#### How is the multiple descent achieved?
 
 The problem is linear regression without regularization with true linear model of zero.
 Where all labels contain an error \\( y_i = 0 + \varepsilon_i \\), which is normally distributed around zero.
