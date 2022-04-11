@@ -40,6 +40,9 @@ which they called "grokking". In the grokking setup, OpenAi trained on a binary 
 ![OpenAI grokking](/images/opean-ai-grokking.png)
 
 
+More general work on double descent and large datasets from [OpenAI here](https://arxiv.org/pdf/1912.02292.pdf).
+
+
 ## Bias–variance decomposition of mean squared error 
 
 In case of L2 norm, the train loss can be rewritten as a sum of bias term and variance term. However that doesn't prove presence of any dilemma.
