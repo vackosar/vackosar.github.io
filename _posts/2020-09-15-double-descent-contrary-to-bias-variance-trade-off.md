@@ -34,7 +34,7 @@ The paper refers to empirical evidence that an implicit regularization is repres
 </figure>
 
 
-Apart from paper above [Open AI also observed double descent](https://mathai-iclr.github.io/papers/papers/MATHAI_29_paper.pdf?utm_campaign=The%20Batch&utm_medium=email&_hsmi=209230924&utm_content=209231304&utm_source=hs_email) in [Transformers](/ml/transformers-self-attention-mechanism-simplified),
+[Open AI also observed double descent](https://mathai-iclr.github.io/papers/papers/MATHAI_29_paper.pdf?utm_campaign=The%20Batch&utm_medium=email&_hsmi=209230924&utm_content=209231304&utm_source=hs_email) in [Transformers](/ml/transformers-self-attention-mechanism-simplified),
 which they called "grokking". In the grokking setup, OpenAi trained on a binary operations datasets, and observed sudden jumps in accuracy far in the overfitting regime.
 
 ![OpenAI grokking](/images/opean-ai-grokking.png)
