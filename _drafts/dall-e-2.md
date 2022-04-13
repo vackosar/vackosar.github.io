@@ -1,0 +1,52 @@
+Both Dall-e version use CLIP model, but in different ways.
+
+## CLIP
+- trained on a wide variety of images with and text from the internet
+- robust to distribution shift
+- separate text and image encoder,
+- contrastive training for representations to correspond
+- trained on 256 GPUs for 2 weeks
+- resulting image representations contain both style and semantics
+- zero-shot capabilities
+- [OpenAI blog](https://openai.com/blog/clip/)
+
+![CLIP contrastive pretraining](../images/clip-contrastive-pretraining.png)
+
+## DALL-E 
+
+blog: https://openai.com/blog/dall-e/
+code: https://github.com/openai/DALL-E/blob/5be4b236bc3ade6943662354117a0e83752cc322/dall_e/decoder.py#L13
+
+	
+### Learn visual codebook:
+- train discrete variational autoencoder (dVAE) to "compress" images
+	- explicit goal of VAE is no to really compress, but 
+	- VAEs goal is to create model that estimates maximum likelihood and not compress
+	- so it may collapse into single gaussian distribution
+	- re-parametrization trick \\( z = \sigma * r + \mu \\)
+	- tune the decoder with a weight on the KL divergence term
+- trains encoder and decoder
+- compress into 32x32 grid of 8k code words
+- decoder is conv2d, decoder block (4x relu + conv), upsample (tile bigger array), repeat
+- start with uniform prior over the codebook
+- maximize evidence lower bound (ELB)
+
+### Learning the prior
+- only decoder is used 
+- learn distribution over text + image tokens
+- use autoregressive transformer (guess next token)
+	- "the text and image tokens are concatenated and modeled autoregressively as a single stream of data."
+	
+### Sample generation
+- re-rank samples drawn from the transformer
+
+## DALL-E-2
+Operation
+1. generates a CLIP embedding from text
+2. decoder generates image the image embedding
+
+- Can vary images while preserving style and semantics in the embeddings
+- Authors found diffusion models more efficient and higher quality compared to autoregressive
+
+### Diffusion models
+- generative modelling framework
