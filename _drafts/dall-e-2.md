@@ -1,19 +1,41 @@
+---
+title: "OpenAI DALL-E 2 vs DALL-E 1, and CLIP"
+description: "Understand quickly successful architecture used in GPT, BERT, and other famous transformer models."
+layout: post
+image: /images/transformer-full-model.png
+categories: ml
+date: 2022-03-05
+permalink: /:categories/:title
+---
+
+
 DALL-E 1 uses quantization and next token predition while DALL-E 2 uses CLIP model and diffusion.
 
 ## DALL-E 1
 
-- [blog](https://openai.com/blog/dall-e/) [code](https://github.com/openai/DALL-E/blob/5be4b236bc3ade6943662354117a0e83752cc322/dall_e/decoder.py#L13)
-1. encode image into a 32x32 grid of 8192 possible image tokens
-2. concatenate text tokens to image tokens and 
+OpenAI DALL-E introduced in [blog](https://openai.com/blog/dall-e/) and [code](https://github.com/openai/DALL-E/blob/5be4b236bc3ade6943662354117a0e83752cc322/dall_e/decoder.py#L13).
+
+Training:
+1. train encoder and decoder image of image into 32x32 grid of 8k possible code word tokens
+2. concatenate encoded text tokens to image tokens and train to predict next token
+3. discard the image encoder
+
+Prediction:
+1. encode input text
+2. predict following image tokens
+3. decode the image tokens
+4. select the best results using [CLIP model](#clip) ranker
+
 	
 ### Learn visual codebook:
-- train discrete variational autoencoder (dVAE) to "compress" images
-	- explicit goal of VAE is no to really compress, but 
-	- VAEs goal is to create model that estimates maximum likelihood and not compress
+- similar to [VQ-VAE-2](https://proceedings.neurips.cc/paper/2019/file/5f8e2fa1718d1bbcadf1cd9c7a54fb8c-Paper.pdf)
+- trains image encoder to a 32x32 grid of 8k code words  and decoder back to image
+	- discrete variational autoencoder (dVAE) to "compress" 
+	- explicit goal of VAE is not to really compress, but 
+	- VAEs goal is to create model that estimates maximum likelihood
 	- so it may collapse into single gaussian distribution
 	- re-parametrization trick \\( z = \sigma * r + \mu \\)
 	- tune the decoder with a weight on the KL divergence term
-- trains encoder and decoder
 - compress into 32x32 grid of 8k code words
 - decoder is conv2d, decoder block (4x relu + conv), upsample (tile bigger array), repeat
 - start with uniform prior over the codebook
@@ -28,9 +50,9 @@ DALL-E 1 uses quantization and next token predition while DALL-E 2 uses CLIP mod
 	
 ### Sample generation
 - re-rank samples drawn from the transformer
-- similar to [VQ-VAE-2](https://proceedings.neurips.cc/paper/2019/file/5f8e2fa1718d1bbcadf1cd9c7a54fb8c-Paper.pdf)
-- candidate text and image, the contrastive transformer model assigns a score how well they match
-- language-guided search
+- use the decoder from dVAE to generate an image
+- candidate text and image are ranked by [CLIP model](#clip) to select the best
+	- language-guided search
 
 ![VQ-VAE-2 generation](/images/vq-vae-generation.png)
 
@@ -46,7 +68,6 @@ DALL-E 1 uses quantization and next token predition while DALL-E 2 uses CLIP mod
 - trained on 256 GPUs for 2 weeks
 - resulting image representations contain both style and semantics
 - zero-shot classification, but fails on abstract or systematic tasks like counting
-- TODO finish
 
 ![CLIP contrastive pretraining](/images/clip-contrastive-pretraining.png)
 
