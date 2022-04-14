@@ -4,7 +4,7 @@ Both Dall-e version use CLIP model, but in different ways.
 - [OpenAI blog](https://openai.com/blog/clip/)
 - trained on a 400M images with and text from the internet
 - robust to distribution shift
-- separate text and image encoder,
+- separate text and image [transformer](/ml/transformers-self-attention-mechanism-simplified) encoder 
 - contrastive training for representations to correspond
 - maximize cosine similarity 
 - generative methods not worked so well - too much text variety
@@ -13,12 +13,16 @@ Both Dall-e version use CLIP model, but in different ways.
 - zero-shot classification, but fails on abstract or systematic tasks like counting
 - TODO finish
 
-![CLIP contrastive pretraining](../images/clip-contrastive-pretraining.png)
+![CLIP contrastive pretraining](/images/clip-contrastive-pretraining.png)
+
+## CLIP Architecture
+- visual encoder [ViT](https://arxiv.org/pdf/2010.11929.pdf) image [transformer](/ml/transformers-self-attention-mechanism-simplified)
+- text encoder [GPT-2](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) [transformer](/ml/transformers-self-attention-mechanism-simplified)
 
 ## DALL-E 
 
-blog: https://openai.com/blog/dall-e/
-code: https://github.com/openai/DALL-E/blob/5be4b236bc3ade6943662354117a0e83752cc322/dall_e/decoder.py#L13
+[blog](https://openai.com/blog/dall-e/)
+[code](https://github.com/openai/DALL-E/blob/5be4b236bc3ade6943662354117a0e83752cc322/dall_e/decoder.py#L13)
 
 	
 ### Learn visual codebook:
