@@ -1,26 +1,6 @@
-Both Dall-e version use CLIP model, but in different ways.
+DALL-E 1 uses quantization and next token predition while DALL-E 2 uses CLIP model and diffusion.
 
-## CLIP
-- [OpenAI blog](https://openai.com/blog/clip/)
-- trained on a 400M images with and text from the internet
-- robust to distribution shift
-- separate text and image [transformer](/ml/transformers-self-attention-mechanism-simplified) encoder 
-- contrastive training for representations to correspond
-- maximize cosine similarity 
-- generative methods not worked so well - too much text variety
-- trained on 256 GPUs for 2 weeks
-- resulting image representations contain both style and semantics
-- zero-shot classification, but fails on abstract or systematic tasks like counting
-- TODO finish
-
-![CLIP contrastive pretraining](/images/clip-contrastive-pretraining.png)
-
-### CLIP Architecture
-- visual encoder is [Vision Transformer](https://arxiv.org/pdf/2010.11929.pdf) image [transformer](/ml/transformers-self-attention-mechanism-simplified)
-- text encoder is [GPT-2](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) [transformer](/ml/transformers-self-attention-mechanism-simplified)
-  - embeddings is extracted from \[EOS\] token position
-
-## DALL-E 
+## DALL-E 1
 
 - [blog](https://openai.com/blog/dall-e/) [code](https://github.com/openai/DALL-E/blob/5be4b236bc3ade6943662354117a0e83752cc322/dall_e/decoder.py#L13)
 1. encode image into a 32x32 grid of 8192 possible image tokens
@@ -53,6 +33,28 @@ Both Dall-e version use CLIP model, but in different ways.
 - language-guided search
 
 ![VQ-VAE-2 generation](/images/vq-vae-generation.png)
+
+
+## CLIP
+- [OpenAI blog](https://openai.com/blog/clip/)
+- trained on a 400M images with and text from the internet
+- robust to distribution shift
+- separate text and image [transformer](/ml/transformers-self-attention-mechanism-simplified) encoder
+- contrastive training for representations to correspond
+- maximize cosine similarity
+- generative methods not worked so well - too much text variety
+- trained on 256 GPUs for 2 weeks
+- resulting image representations contain both style and semantics
+- zero-shot classification, but fails on abstract or systematic tasks like counting
+- TODO finish
+
+![CLIP contrastive pretraining](/images/clip-contrastive-pretraining.png)
+
+### CLIP Architecture
+- visual encoder is [Vision Transformer](https://arxiv.org/pdf/2010.11929.pdf) image [transformer](/ml/transformers-self-attention-mechanism-simplified)
+- text encoder is [GPT-2](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) [transformer](/ml/transformers-self-attention-mechanism-simplified)
+	- embeddings is extracted from \[EOS\] token position
+
 
 ## DALL-E 2
 Operation
