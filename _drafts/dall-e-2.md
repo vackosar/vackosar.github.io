@@ -15,15 +15,16 @@ Both Dall-e version use CLIP model, but in different ways.
 
 ![CLIP contrastive pretraining](/images/clip-contrastive-pretraining.png)
 
-## CLIP Architecture
-- visual encoder [ViT](https://arxiv.org/pdf/2010.11929.pdf) image [transformer](/ml/transformers-self-attention-mechanism-simplified)
-- text encoder [GPT-2](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) [transformer](/ml/transformers-self-attention-mechanism-simplified)
+### CLIP Architecture
+- visual encoder is [Vision Transformer](https://arxiv.org/pdf/2010.11929.pdf) image [transformer](/ml/transformers-self-attention-mechanism-simplified)
+- text encoder is [GPT-2](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) [transformer](/ml/transformers-self-attention-mechanism-simplified)
+  - embeddings is extracted from \[EOS\] token position
 
 ## DALL-E 
 
-[blog](https://openai.com/blog/dall-e/)
-[code](https://github.com/openai/DALL-E/blob/5be4b236bc3ade6943662354117a0e83752cc322/dall_e/decoder.py#L13)
-
+- [blog](https://openai.com/blog/dall-e/) [code](https://github.com/openai/DALL-E/blob/5be4b236bc3ade6943662354117a0e83752cc322/dall_e/decoder.py#L13)
+1. encode image into a 32x32 grid of 8192 possible image tokens
+2. concatenate text tokens to image tokens and 
 	
 ### Learn visual codebook:
 - train discrete variational autoencoder (dVAE) to "compress" images
@@ -39,15 +40,21 @@ Both Dall-e version use CLIP model, but in different ways.
 - maximize evidence lower bound (ELB)
 
 ### Learning the prior
-- only decoder is used 
-- learn distribution over text + image tokens
-- use autoregressive transformer (guess next token)
-	- "the text and image tokens are concatenated and modeled autoregressively as a single stream of data."
+- train transformer to predict next token of the concatenated text and image
+  - text and image tokens as a single stream
+  - (decoder only autoregressive model)
+- learns how well text and image tokens match together
+    - the prior distribution
 	
 ### Sample generation
 - re-rank samples drawn from the transformer
+- similar to [VQ-VAE-2](https://proceedings.neurips.cc/paper/2019/file/5f8e2fa1718d1bbcadf1cd9c7a54fb8c-Paper.pdf)
+- candidate text and image, the contrastive transformer model assigns a score how well they match
+- language-guided search
 
-## DALL-E-2
+![VQ-VAE-2 generation](/images/vq-vae-generation.png)
+
+## DALL-E 2
 Operation
 1. generates a CLIP embedding from text
 2. decoder generates image the image embedding
