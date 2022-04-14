@@ -1,10 +1,9 @@
 ---
 title: "OpenAI DALL-E 2 vs DALL-E 1, and CLIP"
-description: "Understand quickly successful architecture used in GPT, BERT, and other famous transformer models."
+description: "TODO"
 layout: post
-image: /images/transformer-full-model.png
 categories: ml
-date: 2022-03-05
+date: 2022-04-13
 permalink: /:categories/:title
 ---
 
