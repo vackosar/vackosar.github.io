@@ -2,10 +2,12 @@ Both Dall-e version use CLIP model, but in different ways.
 
 ## CLIP
 - [OpenAI blog](https://openai.com/blog/clip/)
-- trained on a wide variety of images with and text from the internet
+- trained on a 400M images with and text from the internet
 - robust to distribution shift
 - separate text and image encoder,
 - contrastive training for representations to correspond
+- maximize cosine similarity 
+- generative methods not worked so well - too much text variety
 - trained on 256 GPUs for 2 weeks
 - resulting image representations contain both style and semantics
 - zero-shot classification, but fails on abstract or systematic tasks like counting
