@@ -79,7 +79,7 @@ Photo-like image generator introduced  in [paper](https://arxiv.org/pdf/2112.107
   - an image arises from iterative denoising
   - training task is to predict the added noise with mean-squared error loss
   - similar to [normalizing flow models like OpenAI's Glow](/ml/openais-glow-flow-based-model-teardown) which are additionally single step and invertible
-- [CLIP]((#openais-clip-model) guided diffusion
+- [CLIP](#openais-clip-model) guided diffusion
   - task: "predict the added noise given that the image has this caption" 
   - training task is prediction of the noise and guidance towards the CLIP text embedding
   - training loss has additional term of gradient of dot-product with the CLIP text embedding
@@ -105,7 +105,7 @@ Introduced in [the paper](https://arxiv.org/pdf/2204.06125.pdf). Generates 1024 
 
 ### Image Generation
 
-![DALL-E 2 decoder](/image/dall-e-2-decoder.png)
+![DALL-E 2 decoder](/images/dall-e-2-decoder.png)
 
 #### Prior
 - Prior decoder is to generate CLIP image embedding from text
@@ -129,4 +129,4 @@ Comparison:
 
 Sample ("A teddybear on a skateboard in Times Square."):
 
-![samples from DALL-E “A teddybear on a skateboard in Times Square.”](dall-e-2-random-images.png)
+![samples from DALL-E “A teddybear on a skateboard in Times Square.”](/images/dall-e-2-random-images.png)
