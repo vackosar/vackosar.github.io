@@ -69,6 +69,7 @@ The Yerkes-Dodson law (1908) is traditionally interpreted (e.g., Hebb, 1955) as 
 </blockquote>
 
 I wonder if changing stress levels are also healthy similarly to a workout or a sauna session.
+Speaking of exercise, here is a tip to [boost your running morale](/health/Boost-Jog-Morale-Using-Mil-Cadence).
 
 
 ### 1-Minute Training
