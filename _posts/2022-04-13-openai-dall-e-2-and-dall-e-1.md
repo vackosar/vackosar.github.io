@@ -46,7 +46,7 @@ DALL-E 1 generates images via variational autoencoder inspired by VA-VAE-2 and f
 1. encode input text
 2. predict following image tokens
 3. decode the image tokens using dVAE
-4. select the best results using [CLIP model](#openais-clip-model) ranker
+4. select the best results using [CLIP model](#openais-clip) ranker
 
 	
 ### Learning Visual Codebook
@@ -98,7 +98,7 @@ Photo-like image generator introduced  in [paper](https://arxiv.org/pdf/2112.107
 Introduced in [the paper](https://arxiv.org/pdf/2204.06125.pdf). Generates 1024 x 1024.
 
 ### Training
-1. generate a [CLIP model](#openais-clip-model) embedding for text caption
+1. generate a [CLIP model](#openais-clip) embedding for text caption
 2. prior generates CLIP image embedding from text embedding
 3. diffusion decoder generates image from the image embedding
 
@@ -118,7 +118,7 @@ Introduced in [the paper](https://arxiv.org/pdf/2204.06125.pdf). Generates 1024 
   - Gaussian diffusion model conditioned on the caption text
   
 #### Decoder 
-- diffusion decoder similar to [GLIDE](#openais-glide-model)
+- diffusion decoder similar to [GLIDE](#openais-glide)
 - additionally condition also on CLIP image embedding
   - projected as 4 extra tokens
   - in addition to the text present in the original GLIDE
