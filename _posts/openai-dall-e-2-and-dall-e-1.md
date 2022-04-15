@@ -1,5 +1,5 @@
 ---
-title: "OpenAI's DALL-E 2, DALL-E 1"
+title: "OpenAI's DALL-E 2 And DALL-E 1"
 description: "Quick overview of DALL-E 2 background and related models CLIP, and GLIDE"
 layout: post
 categories: ml
