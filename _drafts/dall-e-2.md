@@ -9,7 +9,7 @@ permalink: /:categories/:title
 
 {% include mathjax.html %}
 
-DALL-E 1 uses quantization and next token predition while DALL-E 2 uses CLIP model and diffusion.
+DALL-E 1 uses quantization, next token prediction, and CLIP model re-ranking, while DALL-E 2 uses CLIP embedding directly, and decodes it via diffusion.
 
 
 ## OpenAI's CLIP Model
@@ -24,7 +24,7 @@ DALL-E 1 uses quantization and next token predition while DALL-E 2 uses CLIP mod
 
 ![CLIP contrastive pretraining](/images/clip-contrastive-pretraining.png)
 
-### OpenAI's CLIP Model Architecture
+### CLIP Model Architecture
 - visual encoder is [Vision Transformer](https://arxiv.org/pdf/2010.11929.pdf) image [transformer](/ml/transformers-self-attention-mechanism-simplified)
 - text encoder is [GPT-2](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) [transformer](/ml/transformers-self-attention-mechanism-simplified)
 - the fix length text embedding is extracted from \[EOS\] token position
@@ -44,7 +44,7 @@ DALL-E 1 generates images via variational autoencoder inspired by VA-VAE-2 and f
 1. encode input text
 2. predict following image tokens
 3. decode the image tokens using dVAE
-4. select the best results using [CLIP model](#clip) ranker
+4. select the best results using [CLIP model](#openais-clip-model) ranker
 
 	
 ### Learning visual codebook
@@ -72,13 +72,32 @@ DALL-E 1 generates images via variational autoencoder inspired by VA-VAE-2 and f
 
 
 
-## DALL-E 2
-Operation
-1. generates a CLIP embedding from text
-2. decoder generates image the image embedding
+## GLIDE model
+Photo-like image generator introduced  in [paper](https://arxiv.org/pdf/2112.10741.pdf).
+- a diffusion model
+  - diffusion models reverse addition of gaussian noise to an image
+  - an image arises from iterative denoising
+  - training task is to predict the added noise with mean-squared error loss
+- [CLIP]((#openais-clip-model) guided diffusion
+  - task: "predict the added noise given that the image has this caption" 
+  - training task is prediction of the noise and guidance towards the CLIP text embedding
+  - training loss has additional term of gradient of dot-product with the CLIP text embedding
+  - CLIP encoders are trained on noised images to stay in distribution
+
+
+## OpenAI's DALL-E 2
+
+Introduced in [the paper](https://arxiv.org/pdf/2204.06125.pdf) 
+
+
+### DALL-E 2 Training
+1. generate a [CLIP model](#openais-clip-model) embedding for text caption
+2. prior generates CLIP image embedding from text embedding
+3. diffusion decoder generates image from the image embedding
 
 - Can vary images while preserving style and semantics in the embeddings
 - Authors found diffusion models more efficient and higher quality compared to autoregressive
 
-### Diffusion models
+
+### Decoder model
 - generative modelling framework
