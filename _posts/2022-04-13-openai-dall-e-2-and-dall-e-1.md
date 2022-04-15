@@ -9,7 +9,8 @@ permalink: /:categories/:title
 
 {% include mathjax.html %}
 
-DALL-E 1 uses quantization, next token prediction, and CLIP model re-ranking, while DALL-E 2 uses CLIP embedding directly, and decodes it via diffusion.
+DALL-E 1 uses discrete variational autoencoder, next token prediction, and CLIP model re-ranking,
+while DALL-E 2 uses CLIP embedding directly, and decodes it via diffusion.
 
 
 ## OpenAI's CLIP Model
