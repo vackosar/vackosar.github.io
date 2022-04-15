@@ -15,7 +15,7 @@ redirect_from:
 
 {% include load_video.html %}
 
-Flow-based models are the odd machines in the corner of the neural network laboratory capable of calculating the exact log-likelihood for every sample.
+Flow-based (normalizing flow) models are the odd machines in the corner of the neural network laboratory capable of calculating the exact log-likelihood for every sample.
 Discover their arcane qualities on a representative example of [OpenAI's Glow](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf) and its ability to [unveil secrets of visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf).
 Note that you can create [interpretable latent representations also using disentangled representation training](/ml/manipulate-item-attributes-via-disentangled-representation).
 

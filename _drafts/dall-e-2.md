@@ -1,5 +1,5 @@
 ---
-title: "OpenAI DALL-E 2 vs DALL-E 1, and CLIP"
+title: "OpenAI's DALL-E 2, DALL-E 1, and CLIP"
 description: "TODO"
 layout: post
 categories: ml
@@ -72,23 +72,27 @@ DALL-E 1 generates images via variational autoencoder inspired by VA-VAE-2 and f
 
 
 
-## GLIDE model
+## OpenAI's GLIDE model
 Photo-like image generator introduced  in [paper](https://arxiv.org/pdf/2112.10741.pdf).
 - a diffusion model
   - diffusion models reverse addition of gaussian noise to an image
   - an image arises from iterative denoising
   - training task is to predict the added noise with mean-squared error loss
+  - similar to [normalizing flow models like OpenAI's Glow](/ml/openais-glow-flow-based-model-teardown) which are additionally single step and invertible
 - [CLIP]((#openais-clip-model) guided diffusion
   - task: "predict the added noise given that the image has this caption" 
   - training task is prediction of the noise and guidance towards the CLIP text embedding
   - training loss has additional term of gradient of dot-product with the CLIP text embedding
   - CLIP encoders are trained on noised images to stay in distribution
+- text-conditional diffusion model
+  - GLIDE diffusion model is a transformer ([ADM model](https://arxiv.org/pdf/2105.05233.pdf)))
+  - text is embedded via another transformer
+  - text embeddings are appended to the diffusion model sequence in each layer
 
 
 ## OpenAI's DALL-E 2
 
 Introduced in [the paper](https://arxiv.org/pdf/2204.06125.pdf) 
-
 
 ### DALL-E 2 Training
 1. generate a [CLIP model](#openais-clip-model) embedding for text caption
