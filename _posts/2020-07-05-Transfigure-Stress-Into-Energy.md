@@ -60,6 +60,17 @@ Hydrocortisone recipients reported fewer PTSD and depression symptoms, and had g
 
 Positive stress is called eustress. Flow state is an representative of eustress shown to be associated with <a href="https://www.researchgate.net/publication/241693102_Psychophysiological_correlates_of_flow_during_daily_activities">increased hearth rate</a>.
 
+### Optimal Stress Level
+
+Yerkes–Dodson "law" is an empirical relationship between stress level and performance. [Caffeine, impulsivity, and memory scanning (1989)](https://link.springer.com/article/10.1007/BF00995541) says:
+
+<blockquote class="blockquote" style="font-style: italic">
+The Yerkes-Dodson law (1908) is traditionally interpreted (e.g., Hebb, 1955) as a summary of a complex empirical relationship between arousal and performance: (a) Performance efficiency is an inverted-U function of arousalthat is, as arousal increases, performance first improves and then deteriorates, and (b) the level of arousal associated with optimal performance is a negative monotonic function of task difficulty-that is, the easier the task, the higher the optimal arousal level. Substantial evidence supports this law (e.g., Anderson, 1988; Broadhurst, 1959; Duffy, 1962; Hebb, 1955; Humphreys & Revelle, 1984), but its causes are not yet clear.
+</blockquote>
+
+I wonder if changing stress levels are also healthy similarly to a workout or a sauna session.
+
+
 ### 1-Minute Training
 Without active recall, you won't remember anything from the above. Take at least one round of the quiz below, and if you can, subscribe to QuizRecall to get revision reminders. You can also generate your own micro-trainings over there.<br>
 <a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=97bc3d3b-4bc8-4507-9f53-1462a3b6b730">Trasfigure Stress Into Energy 1-Minute Training</a>
