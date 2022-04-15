@@ -41,6 +41,3 @@ After finding that I am not motivated enough for high-intensity interval trainin
 
 ### Update 2022-04-15
 Restarting again :)
-
-
-[//]: # (todo video_start)

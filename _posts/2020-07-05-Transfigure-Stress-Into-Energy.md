@@ -84,8 +84,4 @@ Without active recall, you won't remember anything from the above. Take at least
 
 ### Video
 
-Kelly wants to make you better at stress.
-
-[//]: # TODO ?start=301
-
-{% include load_video.html %}
+In this Youtube video Kelly wants to make you [better at stress](https://youtu.be/RcGyVTAoXEU?t=301).
