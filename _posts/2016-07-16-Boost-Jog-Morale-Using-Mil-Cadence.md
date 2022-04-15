@@ -6,6 +6,8 @@ categories: health
 description: Run beyond your max with this professional mind hack.
 permalink: /:categories/:title
 image: /images/mil-cadence-pexels.jpg
+video: IxA-_MWT_24 
+video_start: 662
 redirect_from:
   - /2016/07/16/Boost-Jog-Morale-Using-Mil-Cadence.html 
   - /2017/05/01/Running-Triples-Speed-For-Extra-One-Third-Of-Calories.html
@@ -29,11 +31,20 @@ And the same time, it blanks your mind, and puts you into an active, but also me
 Based on [1](https://www.researchgate.net/publication/221975400_Energy_Expenditure_Comparison_Between_Walking_and_Running_in_Average_Fitness_Individuals) and [2](https://www.verywell.com/does-running-burn-more-calories-than-walking-3435132)
 normal walking speed of 2.5 mph on average consumes around 87 calories per mile while running at speed of 7 mph will consume only 32 extra calories, which is 37% per mile extra.
 
+## Positive Stress
+Why to run anyway? Well, "good" temporarily incresed stress or optimal stress in general seems to be good for live.
+You can read about [psychologically positive stress and optimal stress level here](/productivity/Transfigure-Stress-Into-Energy)
 
 ### Update 2020-07-06
 
 After finding that I am not motivated enough for high-intensity interval training, which is superior after a certain fitness point, I returned to the above method today. And it works as perfect as ever.
 
+### Update 2022-04-15
+Restarting again :)
+
 
 ### Example
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IxA-_MWT_24?start=662" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Try also below:
+
+[//]: # (todo video_start)
+{% include load_video.html %}

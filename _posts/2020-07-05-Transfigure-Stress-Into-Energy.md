@@ -6,6 +6,8 @@ categories: productivity
 description: Your pounding heart and blush will announce a flashing opportunity instead of an impending fight or flight after applying research from this post.
 image: /images/transfigurate-stress-to-energy-2.jpeg
 permalink: /:categories/:title
+video: RcGyVTAoXEU
+video_start: 301
 ---
 
 <img alt="Trasfigure Stress Into Energy" style="width: 90%; max-width: 900px" src="/images/transfigurate-stress-to-energy-2.jpeg">
@@ -35,6 +37,7 @@ Try to make the best of the situation by viewing it in a more positive way or by
 Citing [Get Excited: Reappraising Pre-Performance Anxiety as Excitement](https://www.researchgate.net/publication/259454454_Get_Excited_Reappraising_Pre-Performance_Anxiety_as_Excitement):
 
 <blockquote class="blockquote" style="font-style: italic">
+
 Individuals can reappraise anxiety as excitement using minimal strategies such as self-talk (e.g., saying "I am excited" out loud) or simple messages (e.g., "get excited"), which lead them to feel more excited, adopt an opportunity mindset (as opposed to a threat mindset), and improve their subsequent performance.
 </blockquote>
 
@@ -71,7 +74,7 @@ The Yerkes-Dodson law (1908) is traditionally interpreted (e.g., Hebb, 1955) as 
 I wonder if changing stress levels are also healthy similarly to a workout or a sauna session.
 Speaking of exercise, here is a tip to [boost your running morale](/health/Boost-Jog-Morale-Using-Mil-Cadence).
 
-[from Deep Physiological Arousal Detection in a Driving Simulator Using Wearable Sensors](/images/stress-yerkes-dodson-law.png)
+![from Deep Physiological Arousal Detection in a Driving Simulator Using Wearable Sensors](/images/stress-yerkes-dodson-law.png)
 
 
 ### 1-Minute Training
@@ -82,4 +85,7 @@ Without active recall, you won't remember anything from the above. Take at least
 ### Video
 
 Kelly wants to make you better at stress.
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RcGyVTAoXEU?start=301" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[//]: # TODO ?start=301
+
+{% include load_video.html %}
