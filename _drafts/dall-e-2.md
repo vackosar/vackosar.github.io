@@ -1,6 +1,6 @@
 ---
-title: "OpenAI's DALL-E 2, DALL-E 1, and CLIP"
-description: "TODO"
+title: "OpenAI's DALL-E 2, DALL-E 1"
+description: "Quick overview of DALL-E 2 background and related models CLIP, and GLIDE"
 layout: post
 categories: ml
 date: 2022-04-13
@@ -92,7 +92,7 @@ Photo-like image generator introduced  in [paper](https://arxiv.org/pdf/2112.107
 
 ## OpenAI's DALL-E 2
 
-Introduced in [the paper](https://arxiv.org/pdf/2204.06125.pdf) 
+Introduced in [the paper](https://arxiv.org/pdf/2204.06125.pdf). Generates 1024 x 1024.
 
 ### DALL-E 2 Training
 1. generate a [CLIP model](#openais-clip-model) embedding for text caption
@@ -103,5 +103,30 @@ Introduced in [the paper](https://arxiv.org/pdf/2204.06125.pdf)
 - Authors found diffusion models more efficient and higher quality compared to autoregressive
 
 
-### Decoder model
-- generative modelling framework
+### Image Generation
+
+![DALL-E 2 decoder](/image/dall-e-2-decoder.png)
+
+#### Prior
+- Prior decoder is to generate CLIP image embedding from text
+- tested autoregressive and diffusion prior generation with similar results
+- autoregressive prior uses quantization to discrete codes
+- diffusion prior is more compute efficient
+  - Gaussian diffusion model conditioned on the caption text
+  
+#### Decoder 
+- diffusion decoder similar to [GLIDE](#openais-glide-model)
+- additionally condition also on CLIP image embedding
+  - projected as 4 extra tokens
+  - in addition to the text present in the original GLIDE
+
+
+## Results
+
+Comparison:
+
+![DALL-E 2 vs DALL-E 1 vs GLIDE](/images/dall-e-2-vs-dall-e-1-vs-GLIDE.png)
+
+Sample ("A teddybear on a skateboard in Times Square."):
+
+![samples from DALL-E “A teddybear on a skateboard in Times Square.”](dall-e-2-random-images.png)
