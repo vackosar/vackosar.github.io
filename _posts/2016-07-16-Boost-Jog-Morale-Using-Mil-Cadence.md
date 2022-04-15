@@ -13,7 +13,7 @@ redirect_from:
   - /2017/05/01/Running-Triples-Speed-For-Extra-One-Third-Of-Calories.html
 ---
 
-{% include load_video.html %}
+<img alt="Running with military cadence" style="width: 80%; max-width: 900px" src="/images/mil-cadence-pexels.jpg">
 
 <br>
 
@@ -26,6 +26,10 @@ If you are like my past self, you are having problems running as far as you woul
 
 Listening to these chants will make you feel bad slowing down your pace - not being up to speed with virtual others.
 And the same time, it blanks your mind, and puts you into an active, but also meditative state.
+
+## Try Now
+You can try this [YouTube video](https://www.youtube.com/watch?v=IxA-_MWT_24&start=662), or download couple [cadence calls here](/files/cadence.zip).
+
 
 ## Positive Stress
 Any other reason to run? Well, temporarily increased stress or optimal level stress in general seems to be good for health.
