@@ -71,6 +71,8 @@ The Yerkes-Dodson law (1908) is traditionally interpreted (e.g., Hebb, 1955) as 
 I wonder if changing stress levels are also healthy similarly to a workout or a sauna session.
 Speaking of exercise, here is a tip to [boost your running morale](/health/Boost-Jog-Morale-Using-Mil-Cadence).
 
+[from Deep Physiological Arousal Detection in a Driving Simulator Using Wearable Sensors](/images/stress-yerkes-dodson-law.png)
+
 
 ### 1-Minute Training
 Without active recall, you won't remember anything from the above. Take at least one round of the quiz below, and if you can, subscribe to QuizRecall to get revision reminders. You can also generate your own micro-trainings over there.<br>
