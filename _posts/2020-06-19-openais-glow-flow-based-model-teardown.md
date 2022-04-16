@@ -7,6 +7,7 @@ description: Get interpretable latent representations by composing non-linear in
 image: /images/glow-drawing.png
 video: oJNUZzXE7n4
 permalink: /:categories/:title
+last_modified_at: 2022-04-16
 redirect_from:
 - /ml/glow-the-representations-must-flow
 ---
@@ -22,9 +23,11 @@ Note that you can create [interpretable latent representations also using disent
 ## Flow-Based Model vs VAE and GAN
 Advantages of flow-based models are:
 1. Exact latent-variable inference and log-likelihood (invertible) compared to approximate VAE (compressed) and absent GAN representations (discriminated). (Excluding [potential numerical problems](https://arxiv.org/abs/2006.09347)).
-1. Easy to parallelize both synthesis and inference (Exceptions include [autoregressive flow models](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#models-with-autoregressive-flows)).
-1. Useful latent space similar to VAE, but richer as it is not compressed.
-1. With respect to depth constant memory requirements for gradient calculations thanks to invertibility.
+2. Easy to parallelize both synthesis and inference (Exceptions include [autoregressive flow models](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#models-with-autoregressive-flows)).
+3. Useful latent space similar to VAE, but richer as it is not compressed.
+4. With respect to depth constant memory requirements for gradient calculations thanks to invertibility.
+
+Flow based models have similarities to diffusion models like [DALL-E 2 or GLIDE](/ml/openai-dall-e-2-and-dall-e-1).
 
 ## The Glow Model Architecture
 <figure class="figure">

@@ -8,6 +8,7 @@ permalink: /:categories/:title
 image: /images/mil-cadence-pexels.jpg
 video: IxA-_MWT_24 
 video_start: 662
+last_modified_at: 2022-04-16
 redirect_from:
   - /2016/07/16/Boost-Jog-Morale-Using-Mil-Cadence.html 
   - /2017/05/01/Running-Triples-Speed-For-Extra-One-Third-Of-Calories.html

@@ -8,6 +8,7 @@ image: /images/transfigurate-stress-to-energy-2.jpeg
 permalink: /:categories/:title
 video: RcGyVTAoXEU
 video_start: 301
+last_modified_at: 2022-04-15
 ---
 
 <img alt="Trasfigure Stress Into Energy" style="width: 90%; max-width: 900px" src="/images/transfigurate-stress-to-energy-2.jpeg">
