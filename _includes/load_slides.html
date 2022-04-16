@@ -1,0 +1,50 @@
+<style>
+    #slideshare-play {
+        position: absolute;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+        width: 60px;
+        fill: #f16c00;
+        background: white;
+    }
+
+    #video-img {
+        position: relative;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    #video-img-img {
+        /*border-top: 10px solid #0b2e13;*/
+        /*border-bottom: 10px solid #0b2e13;*/
+        border-left: 10px solid #0b2e13;
+        border-right: 10px solid #0b2e13;
+    }
+
+</style>
+
+<div id="video-img">
+  <div onclick="loadIFrame(this)">
+    <!--  <img width="560" src="http://i3.ytimg.com/vi/{{ page.video }}/hqdefault.jpg" alt="{{ page.title }}" />-->
+    <img id="video-img-img" style="max-width: 560px; width: 100%" src="{{ page.image }}" alt="{{ page.title }}" />
+    {% include slideshare-play.svg %}
+  </div>
+  <a id="no-js-link" class="small" href="//www.slideshare.net/slideshow/embed_code/key/{{ page.slides }}" target="_blank">Watch {{ page.title }} on Youtube</a>
+</div>
+
+<script type="application/javascript" defer>
+  // removes no-js element
+  document.getElementById('no-js-link').remove();
+
+  function loadIFrame(e) {
+
+    let iframe = document.createElement( "iframe" );
+    iframe.setAttribute("frameborder", "0" );
+    iframe.setAttribute("allowfullscreen", "" );
+    iframe.setAttribute("src", "//www.slideshare.net/slideshow/embed_code/key/{{ page.slides }}" );
+    iframe.setAttribute("style", `width: ${e.offsetWidth}px; height: ${e.offsetHeight}px;`);
+
+    e.innerHTML = "";
+    e.appendChild(iframe);
+  }
+</script>
