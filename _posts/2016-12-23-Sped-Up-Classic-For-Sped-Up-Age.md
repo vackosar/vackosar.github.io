@@ -8,7 +8,11 @@ permalink: /:categories/:title
 redirect_from:
   - /2016/12/23/Sped-Up-Classic-For-Sped-Up-Age.html 
   - /music/Sped-Up-Classic-For-Sped-Up-Age
+video: WCmY6H8s4e8
+image: https://img.youtube.com/vi/WCmY6H8s4e8/0.jpg
 ---
+
+{% include load_video.html %}
 
 In that case, you may want to try to listen to sped-up classical music.
 It partially brings historical music to the current age.
@@ -18,9 +22,6 @@ You can try both below.
 
 Speeding up music by power of two does not affect position of notes on musical scale. For example C is transformed to C again only higher pitched one.
 
-Try one my uploads:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WCmY6H8s4e8" frameborder="0" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ENeqCgdxo3Q" frameborder="0" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/D2NtxXCpad4" frameborder="0" allowfullscreen></iframe>
-
+Try other uploads apart from the above:
+- [The Toccata and Fugue in D minor](https://www.youtube.com/watch?v=ENeqCgdxo3Q)
+- [Carmina Burana](https://www.youtube.com/watch?v=D2NtxXCpad4)

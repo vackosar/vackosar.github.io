@@ -9,9 +9,10 @@ date: 2017-12-03
 permalink: /:categories/:title
 redirect_from:
   - /2017/12/25/Cheap-And-Tiny-Walking-Desk.html 
+video: EnPrXfrZAeo
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EnPrXfrZAeo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+{% include load_video.html %}
 
 ## Treadmill
 - I bought this kids magnetic treadmill secondhand for just $32. Such low startup cost is great to at least get a taste of the concept.
