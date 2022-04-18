@@ -13,7 +13,8 @@ permalink: /:categories/:title
 
 ![palm thumbnail](/images/palm-thumb.png)
 
-- the biggest dense model (540B) and likely the most expensive (~$10B) as of early 2022 
+- training task: Given this text, predict the next word (token).
+- the biggest dense [transformer](/ml/transformers-self-attention-mechanism-simplified) (540B) and likely the most expensive (~$10B) as of early 2022 
 - highly efficient training on 6k chips (TPU v4) across 2 clusters (Pods)
 - improvements from scaling continue in language understanding (few-shot)
 - disproportionate gains from certain scale e.g. reasoning: 62B to 540B vs 8B to 62B
@@ -21,9 +22,8 @@ permalink: /:categories/:title
   - outperforming average human on a grade school logic and math (BIG-bench)
   - outperforms specialized and fine-tuned models on multistep reasoning
   - chain-of-thought prompting simulates inner monologue
-- model pre-training task: Given this text, predict the next word (token).
 
-## PaLM Size
+## PaLM's Size
 - [transformer](/ml/transformers-self-attention-mechanism-simplified) architecture similar to [GPT-3](https://arxiv.org/pdf/2005.14165.pdf)
 - PaLM has 540B parameters
 - 3x bigger than GPT-3 175B parameters
@@ -45,7 +45,7 @@ permalink: /:categories/:title
 ![zero-shot vs one-shot vs fine-tuning (GPT-3 paper)](/images/gpt-3-zero-shot-one-shot-fine-tuning.png)
 
 
-## Breakthrough Capabilities on BIG-bench
+## PaLM's Breakthrough Capabilities on BIG-bench
 - BIG-bench: 150+ tasks (a task contains samples) like reasoning, math, QA, translation, programming
 - 58 tasks available results on other models, often multiple choice questions
 - PaLM is SOTA: outperforming human average and other models GPT-3, Gopher, Chinchilla
@@ -70,7 +70,7 @@ permalink: /:categories/:title
 ![Chain of Thought Prompting](/images/palm-chain-of-though-prompting.png)
  
 
-## Chain-of-Thought Prompting Results
+## PaLM Chain-of-Thought Prompting Results
 - reasoning tasks datasets: GSM8K, SVAMP, MAWPS, AQuA, CommonsenseQA, StrategyQA
 - humans allowed calculators and search engines too
 - the model triggers [a calculator by generating special annotation text](https://arxiv.org/pdf/2110.14168.pdf) (+~5% acc)
@@ -108,7 +108,7 @@ GPT-3: __No, because an airplane typically travels around 500-600 miles per hour
 ![PaLM and PaLM-Coder models scales 8B, 62B and 540B](/images/palm-coding-tasks-results.png)
 
 
-## Other Tasks
+## PaLM on Other Tasks
 - generally SOTA on a few-shot competitions
 - few-shot is not competitive with fine-tuned model
 - fine-tuned only competitive with specialized fine-tuned variants
@@ -119,7 +119,7 @@ GPT-3: __No, because an airplane typically travels around 500-600 miles per hour
 ![palm multilingual question answering results](/images/palm-multilingual-question-answering-results.png)
 
 
-## Architecture:
+## PaLM Architecture:
 - decoder-only transformer (attending only to the past) like GPT-3
 - modified Feed-forward layer (MLP):
   - instead of RELU \\( max(0, xW_1 + b_1)W_2 + b_2 \\) use [SwiGLU feed-foward](https://arxiv.org/pdf/2002.05202.pdf)
@@ -139,20 +139,19 @@ GPT-3: __No, because an airplane typically travels around 500-600 miles per hour
   - use multiplicative rotational matrix mixing pairwise neighboring dimensions
   - improves performance on long sequences
 
-## Training Dataset
-- 780B tokens of high-quality text, ([5T token MassiveText](/ml/massivetext-dataset-pretraining-deepminds-gopher), GPT-3 300B tokens)
+## PaLM Training Dataset
+- 780B tokens of high-quality text, ([5T token MassiveText](/ml/massivetext-dataset-pretraining-deepminds-gopher), GPT-3 300B tokens, MT-NLG 339B)
 - social media 50%, webpages 27%, books 13%, wikipedia 4%, code 5%, news 1%
 - based on dataset used for LaMBDA, GLaM
-- private non-reproducible dataset
-- MT-NLG used 339B tokens reproducible dataset non-hosted
+- private non-reproducible dataset, while MT-NLG 339B is reproducible but non-hosted
 
 ![PaLM dataset hierarchical topics](/images/PaLM-dataset-hierarchical-topics.png)
 
 
 ## PaLM Training Requirements
-- mind of PalM is shattered across many chips (replaceable, cooling)
 - ~17 TB of RAM, 2.5 yottaFLOPS (\\( 10^{24} \\)) needed for training
 - 2 TPU v4 Pod clusters connected via data center network
+- mind of PalM is shattered across many chips (cheaper, replaceable, cooling)
 - each Pod ~1 exaflop/s: 768 hosts, 3072 TPU v4 chips
 - but how to split the work and communicate?
 
@@ -185,11 +184,20 @@ GPT-3: __No, because an airplane typically travels around 500-600 miles per hour
 
 
 ## Training Efficiency
-- observed throughput relative to the theoretical maximum throughput of a system
+- observed throughput relative to the theoretical maximum of a system
 - price for parallelization of PaLM is 50%
 - in case of PaLM throughput is tokens-per-second
 
 ![Model FLOPs utilization of PaLM vs Megatron-Turing NLG vs Gopher vs GPT-3](/images/PaLM-model-flop-utilization-vs-megatron-vs-gopher-gpt-3.png)
+
+
+## More Posts Like This 
+- [SRU++ Model Speeds Up Transformer with Simple Recurrent Unit](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN)
+- [DeepMind's RETRO Transformer Model](/ml/DeepMinds-RETRO-Transformer-Model)
+
+<br>
+{% include subscribe.html %}
+<br>
 
 
 ## Appendix
