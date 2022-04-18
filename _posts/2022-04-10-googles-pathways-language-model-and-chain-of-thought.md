@@ -22,7 +22,7 @@ permalink: /:categories/:title
 - model pre-training task: Given this text, predict the next word (token).
 
 ## PaLM Size
-- architecture similar to [GPT-3](https://arxiv.org/pdf/2005.14165.pdf)
+- [transformer](/ml/transformers-self-attention-mechanism-simplified) architecture similar to [GPT-3](https://arxiv.org/pdf/2005.14165.pdf)
 - PaLM has 540B parameters
 - 3x bigger than GPT-3 175B parameters
 - 2x smaller than sparse [Switch Transformer](https://arxiv.org/pdf/2101.03961.pdf) 1T
@@ -70,9 +70,11 @@ permalink: /:categories/:title
 
 ## Chain-of-Thought Prompting Results
 - reasoning tasks datasets: GSM8K, SVAMP, MAWPS, AQuA, CommonsenseQA, StrategyQA
-- on GSM8K: PaLM+chain-of-thought competitive with GPT-3+finetuning+calculator+verifier 
+- humans allowed calculators and search engines too
+- the model triggers [a calculator by generating special annotation text](https://arxiv.org/pdf/2110.14168.pdf) (+~5% acc)
+- on GSM8K: PaLM+chain-of-thought competitive with GPT-3+finetuning+calculator+verifier,
+  - outperforms with a calculator, but GPT-3+chain-of-thought?
 - generating explicit inference chains drastically increase the quality of the predictions
-- TODO how added calculator?
 
 ![PaLM chain of thought prompting new SOTA on GSM8K, MAWPS, SVAMP, and StrategyQA](/images/palm-chain-of-though-prompting-results.png)
 
@@ -136,7 +138,7 @@ GPT-3: __No, because an airplane typically travels around 500-600 miles per hour
   - improves performance on long sequences
 
 ## Training Dataset
-- 780 billion tokens of high-quality text but private
+- 780B tokens of high-quality text, ([5T token MassiveText](/ml/massivetext-dataset-pretraining-deepminds-gopher), GPT-3 300B tokens)
 - social media 50%, webpages 27%, books 13%, wikipedia 4%, code 5%, news 1%
 - based on dataset used for LaMBDA, GLaM
 - private non-reproducible dataset
