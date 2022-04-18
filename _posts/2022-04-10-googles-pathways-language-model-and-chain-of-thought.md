@@ -6,12 +6,12 @@ categories: ml
 date: 2022-04-10
 last_modified_at: 2022-04-18
 image: /images/palm-thumb.png
+video: oi86r-2Bh64
 permalink: /:categories/:title
 ---
 
 {% include mathjax.html %}
-
-![palm thumbnail](/images/palm-thumb.png)
+{% include load_video.html %}
 
 - training task: Given this text, predict the next word (token).
 - the biggest dense [transformer](/ml/transformers-self-attention-mechanism-simplified) (540B) and likely the most expensive (~$10B) as of early 2022 
