@@ -14,7 +14,7 @@ permalink: /:categories/:title
 {% include load_video.html %}
 
 - training task: Given this text, predict the next word (token).
-- the biggest dense [transformer](/ml/transformers-self-attention-mechanism-simplified) (540B) and likely the most expensive (~$10B) as of early 2022 
+- the biggest dense [transformer](/ml/transformers-self-attention-mechanism-simplified) (540B) and likely the most expensive (~$10M) as of early 2022 
 - highly efficient training on 6k chips (TPU v4) across 2 clusters (Pods)
 - improvements from scaling continue in language understanding (few-shot)
 - disproportionate gains from certain scale e.g. reasoning: 62B to 540B vs 8B to 62B
@@ -22,6 +22,7 @@ permalink: /:categories/:title
   - outperforming average human on a grade school logic and math (BIG-bench)
   - outperforms specialized and fine-tuned models on multistep reasoning
   - chain-of-thought prompting simulates inner monologue
+ 
 
 ## PaLM's Size
 - [transformer](/ml/transformers-self-attention-mechanism-simplified) architecture similar to [GPT-3](https://arxiv.org/pdf/2005.14165.pdf)
@@ -89,15 +90,15 @@ permalink: /:categories/:title
 - average airplane speed 460 – 575 mph
 
 <i style="color: blue">
-Input: _Jennifer looked out her window and sees a really cool cloud below her. She unbuckles her seatbelt and heads to the bathroom. Is Jennifer probably traveling more than 300 miles per hour relative to the earth?_
+Input: Jennifer looked out her window and sees a really cool cloud below her. She unbuckles her seatbelt and heads to the bathroom. Is Jennifer probably traveling more than 300 miles per hour relative to the earth?
 </i>
 
 <b style="color: orange">
-PaLM: __300 miles per hour is about 480 km/h. This is about the speed of a commercial airplane. Clouds are usually below airplanes, so Jennifer is probably on an airplane. The answer is "yes"__
+PaLM: 300 miles per hour is about 480 km/h. This is about the speed of a commercial airplane. Clouds are usually below airplanes, so Jennifer is probably on an airplane. The answer is "yes"
 </b>
 
 <b style="color: purple">
-GPT-3: __No, because an airplane typically travels around 500-600 miles per hour, and the bathroom is usually located in the back of the plane.__
+GPT-3: No, because an airplane typically travels around 500-600 miles per hour, and the bathroom is usually located in the back of the plane.
 </b>
 
 
@@ -139,6 +140,7 @@ GPT-3: __No, because an airplane typically travels around 500-600 miles per hour
   - use multiplicative rotational matrix mixing pairwise neighboring dimensions
   - improves performance on long sequences
 
+
 ## PaLM Training Dataset
 - 780B tokens of high-quality text, ([5T token MassiveText](/ml/massivetext-dataset-pretraining-deepminds-gopher), GPT-3 300B tokens, MT-NLG 339B)
 - social media 50%, webpages 27%, books 13%, wikipedia 4%, code 5%, news 1%
@@ -169,6 +171,7 @@ GPT-3: __No, because an airplane typically travels around 500-600 miles per hour
   - step by step passing causes "bubbles" - idling
 
 ![NVIDIA data center DGX AI](/images/nvidia-data-center-dgx-ai.jpg)
+
 
 ## PaLM Training Infrastructure
 - PaLM uses pipeline-free 2D parallelism
