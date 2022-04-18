@@ -1,6 +1,6 @@
 ---
 title: "Google's Pathways Language Model and Chain-of-Thought"
-description: "Pathways Language Model (PaLM), a 540-billion parameter model with architecture akin to GPT-3, outperforms average human on grade school logic and math (BIG-bench)."
+description: "Pathways Language Model (PaLM), the largest model of early 2022, outperforms average human on grade school logic and math (BIG-bench) by simulating inner monologue."
 layout: post
 categories: ml
 date: 2022-04-10
@@ -11,20 +11,21 @@ permalink: /:categories/:title
 
 {% include mathjax.html %}
 
-- the biggest dense model (540B) and likely the most expensive (~$10B) in early 2022 
-- highly efficient training on 6144 TPU v4 chips across multiple cluster TPU Pods
-- improvements from scaling continue for few-shot language understanding
-- disproportionate gains from certain scale e.g. reasoning: 62B to 540 vs 8B to 62B
+- the biggest dense model (540B) and likely the most expensive (~$10B) as of early 2022 
+- highly efficient training on 6k chips (TPU v4) across 2 clusters (Pods)
+- improvements from scaling continue in language understanding (few-shot)
+- disproportionate gains from certain scale e.g. reasoning: 62B to 540B vs 8B to 62B
 - breakthrough performance:
   - outperforming average human on a grade school logic and math (BIG-bench)
   - outperforms specialized and fine-tuned models on multistep reasoning
   - chain-of-thought prompting simulates inner monologue
+- model pre-training task: Given this text, predict the next word (token).
 
 ## PaLM Size
 - architecture similar to [GPT-3](https://arxiv.org/pdf/2005.14165.pdf)
 - PaLM has 540B parameters
-- 2x bigger than GPT-3 175B
-- 2x smaller than [Switch Transformer](https://arxiv.org/pdf/2101.03961.pdf) 1T
+- 3x bigger than GPT-3 175B parameters
+- 2x smaller than sparse [Switch Transformer](https://arxiv.org/pdf/2101.03961.pdf) 1T
   - only parts of the model is activated at each time.
 - human brain 100T connections
 - likely the most expensive model [~$10M](https://blog.heim.xyz/palm-training-cost/) vs GPT-3 [~$5M](https://lambdalabs.com/blog/demystifying-gpt-3/#1)
@@ -41,23 +42,22 @@ permalink: /:categories/:title
 
 ![zero-shot vs one-shot vs fine-tuning (GPT-3 paper)](/images/gpt-3-zero-shot-one-shot-fine-tuning.png)
 
-## Breakthrough Capabilities
-- when combined with chain-of-thought prompting
-- few-shot evaluation outperforms fine-tuned previous SOTA
-- BIG-bench is 150+ tasks
-- 58 tasks comparable to other models
-- many are multiple choice questions
-- PaLM is SOTA outperforming GPT-3 and human average
+
+## Breakthrough Capabilities on BIG-bench
+- BIG-bench: 150+ tasks, many are multiple choice questions
+- 58 tasks have results on other models
+- PaLM is SOTA outperforming human average (and GPT-3)
 - still underperforms average human on many tasks
 - funny footnote: the dataset is scanned for in the training set using GUID
-- certain capabilities of the model only emerge once a certain scale is reached
+- certain capabilities emerge when a scale is reached
+  - english proverbs and logical sequence at 62B to 540B vs 8B to 62B
 
 ![discontinuous improvements with scale](/images/palm-discontinuous-improvement-with-scale.png)
 
 
 ## Chain of Thought Prompting
 - chain of thought prompting teaches reasoning steps
-- akin to execution 
+- akin to execution
 - multi-step arithmetic
   - grade-school level math problems
   - difficult is to convert to equations
@@ -67,7 +67,7 @@ permalink: /:categories/:title
 - thoughts are useful for interpretation
 
 ![Chain of Thought Prompting](/images/palm-chain-of-though-prompting.png)
-
+ 
 
 ## Chain of Thought Prompting Results
 - reasoning tasks datasets: GSM8K, SVAMP, MAWPS, AQuA, CommonsenseQA, StrategyQA
