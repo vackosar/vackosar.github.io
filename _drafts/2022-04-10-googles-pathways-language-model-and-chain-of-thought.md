@@ -28,7 +28,7 @@ permalink: /:categories/:title
 - 2x smaller than sparse [Switch Transformer](https://arxiv.org/pdf/2101.03961.pdf) 1T
   - only parts of the model is activated at each time.
 - human brain 100T connections
-- likely the most expensive model [~$10M](https://blog.heim.xyz/palm-training-cost/) vs GPT-3 [~$5M](https://lambdalabs.com/blog/demystifying-gpt-3/#1)
+- likely the most expensive model [~$10M](https://blog.heim.xyz/palm-training-cost/) (2.5 yottaFLOPS) vs GPT-3 [~$5M](https://lambdalabs.com/blog/demystifying-gpt-3/#1)
 - PaLM and GPT-3 fascinating, but likely not economical now
 
 ![PaLM vs GPT vs MT-NLG computation cost FLOPs AI training](/images/palm-chart-computation-used-in-training.png)
@@ -44,20 +44,19 @@ permalink: /:categories/:title
 
 
 ## Breakthrough Capabilities on BIG-bench
-- BIG-bench: 150+ tasks, many are multiple choice questions
-- 58 tasks have results on other models
-- PaLM is SOTA outperforming human average (and GPT-3)
-- still underperforms average human on many tasks
-- funny footnote: the dataset is scanned for in the training set using GUID
-- certain capabilities emerge when a scale is reached
+- BIG-bench: 150+ tasks (a task contains samples) like reasoning, math, QA, translation, programming
+- 58 tasks available results on other models, often multiple choice questions
+- PaLM is SOTA: outperforming human average and other models GPT-3, Gopher, Chinchilla
+  - still underperforms average human on many tasks
+- funny footnote: they scan for the dataset in the training set using GUID
+- certain capabilities emerge when a scale is reached (not log-linear)
   - english proverbs and logical sequence at 62B to 540B vs 8B to 62B
 
-![discontinuous improvements with scale](/images/palm-discontinuous-improvement-with-scale.png)
+![PaLM discontinuous improvements with scale](/images/palm-discontinuous-improvement-with-scale.png)
 
 
-## Chain of Thought Prompting
-- chain of thought prompting teaches reasoning steps
-- akin to execution
+## Chain-of-Thought Prompting
+- inserts reasoning steps between for each demonstration in the prompt
 - multi-step arithmetic
   - grade-school level math problems
   - difficult is to convert to equations
@@ -69,7 +68,7 @@ permalink: /:categories/:title
 ![Chain of Thought Prompting](/images/palm-chain-of-though-prompting.png)
  
 
-## Chain of Thought Prompting Results
+## Chain-of-Thought Prompting Results
 - reasoning tasks datasets: GSM8K, SVAMP, MAWPS, AQuA, CommonsenseQA, StrategyQA
 - on GSM8K: PaLM+chain-of-thought competitive with GPT-3+finetuning+calculator+verifier 
 - generating explicit inference chains drastically increase the quality of the predictions
@@ -78,10 +77,10 @@ permalink: /:categories/:title
 ![PaLM chain of thought prompting new SOTA on GSM8K, MAWPS, SVAMP, and StrategyQA](/images/palm-chain-of-though-prompting-results.png)
 
 
-## Explanations
-- Right reasons for the answer?
-- even desired output
-- 2-shot prompting with greedy decoding
+## Explanation Using Chain-of-Thought Prompting
+- right reasons for the answer?
+- interpretability may be desired output
+- 2-shot prompting with greedy decoding (deterministic)
 - not in paper: I added GPT-3, results with zero-temperature
 - average airplane speed 460 – 575 mph
 
@@ -99,18 +98,18 @@ GPT-3: __No, because an airplane typically travels around 500-600 miles per hour
 
 
 ## PaLM on Code Tasks
-- achieves similar results to specialized model Codex 12B with 3% of the code training data
-- after fine-tuning outperforms Davinci Codex
+- achieves similar results to specialized OpenAI's Codex 12B with 3% of the code training data
+- after fine-tuning outperforms OpenAI's Davinci Codex
 
 ![PaLM and PaLM-Coder models scales 8B, 62B and 540B](/images/palm-coding-tasks-results.png)
 
 
 ## Other Tasks
-- but also too expensive to be practical 
-- generally SOTA on few-shot variants but few-shot not competitive with specialized fine-tuned variants
+- generally SOTA on a few-shot competitions
+- few-shot is not competitive with fine-tuned model
 - fine-tuned only competitive with specialized fine-tuned variants
 - translation: without fine-tuning outperforms GPT-3, outperforms some supervised baselines de-en, ro-en
-- natural language generation summarization: fine-tuned results competitive, few-shot largely underperformed of fine-tuned
+- summarization: fine-tuned results competitive, few-shot largely underperforms the fine-tuned
 - multilingual question answering: fine-tuned results competitive, few-shot largely underperformed of fine-tuned 
 
 ![palm multilingual question answering results](/images/palm-multilingual-question-answering-results.png)
@@ -119,13 +118,13 @@ GPT-3: __No, because an airplane typically travels around 500-600 miles per hour
 ## Architecture:
 - decoder-only transformer (attending only to the past) like GPT-3
 - modified Feed-forward layer (MLP):
-  - original: \\( max(0, xW_1 + b_1)W_2 + b_2 \\) 
-  - instead: [SwiGLU feed-foward](https://arxiv.org/pdf/2002.05202.pdf)
-  - better in compute equivalent setup
+  - instead of RELU \\( max(0, xW_1 + b_1)W_2 + b_2 \\) use [SwiGLU feed-foward](https://arxiv.org/pdf/2002.05202.pdf)
+  - ~1% better in compute equivalent setup
   - uses GLU: gated linear unit - a sigmoid controlled output
   - SwiGLU: \\( \mathrm{FFN}_{\mathrm{SwiGLU}} := (\mathrm{Swish}(xW_1) \otimes xV ) W_2 \\)
   - uses [swish activation](https://arxiv.org/pdf/1710.05941v1.pdf?source=post_page): \\( x (1 + exp(−x))^{−1} \\)
 - parallel Attention and Feed-forward layer (MLP) from [GPT-J](https://github.com/kingoflolz/mesh-transformer-jax):
+  - instead of sequential is additive:
   - \\( y = x + MLP(LayerNorm(x)) + Attention(LayerNorm(x)) \\)
   - 15% speedup for small degradation
 - [multi-query attention](https://arxiv.org/pdf/1911.02150.pdf):
@@ -134,7 +133,7 @@ GPT-3: __No, because an airplane typically travels around 500-600 miles per hour
 - [RoPE Embeddings](https://arxiv.org/pdf/2104.09864.pdf):
   - want relative position info in query-value dot-product
   - use multiplicative rotational matrix mixing pairwise neighboring dimensions
-  - improves performance on long sequence lengths
+  - improves performance on long sequences
 
 ## Training Dataset
 - 780 billion tokens of high-quality text but private
@@ -146,37 +145,31 @@ GPT-3: __No, because an airplane typically travels around 500-600 miles per hour
 ![PaLM dataset hierarchical topics](/images/PaLM-dataset-hierarchical-topics.png)
 
 
-## Efficient Scaling
-- mind of PalM is shattered across many chips
-- ~17 TB of RAM needed for training
-- 2 TPU v4 Pod clusters connected data center network
-- each Pod 
-  - 768 hosts, 3072 TPU v4 chips
-  - 1 exaflop/s 
-- gives overview of the parallelism methods
- 
+## Efficient Scaling of Training
+- mind of PalM is shattered across many chips (replaceable, cooling)
+- ~17 TB of RAM, 2.5 yottaFLOPS (\\( 10^{24} \\)) needed for training
+- 2 TPU v4 Pod clusters connected via data center network
+- each Pod ~1 exaflop/s: 768 hosts, 3072 TPU v4 chips
+- but how to split the work and communicate?
+
+![Pathways system datacenter network, tpu ](/images/palm-pathways-system-datacenter-pods-hosts-TPU-chips.png)
+
 
 ## Training Large Scale Models
-No worker has enough compute or memory to host large scale model.
-Mainly because it is cheaper to buy many smaller machines: replaceable, easier to cool down.
-But that requires us to split the computation to multiple processors, memories with limited communication.
-In parallel computing we trade off 3 resources: compute ("time"), memory ("space"), communication throughput (no cool name).
-Following strategies are used in large scale model training e.g. [Megatrong-Turing (Microsoft and NVidia)](https://arxiv.org/pdf/2201.11990.pdf): 
-
-- data parallelism
-  - batches are divided between works
-- pipeline mechanism
-  - splits model computation DAG into stages e.g. into layers
-  - stages exchange forward and backward propagation information into micro-batches
-  - step by step passing causes "bubble" of idle devices
+- parallel computing trades off compute ("time"), memory ("space"), communication throughput (no cool name)
+- data parallelism - batches are divided between workers
+- pipeline mechanism ([Megatron-Turing (MT-LNG) Microsoft and NVidia](https://arxiv.org/pdf/2201.11990.pdf))
+  - computation DAG into stages e.g. layers
+  - stages exchange forward and backward propagation information (micro-batches)
+  - step by step passing causes "bubbles" - idling
 - tensor model parallelism
   - splits model layers i.e. transformer block into attention heads and feedforward
 
 ![NVIDIA data center DGX AI](/images/nvidia-data-center-dgx-ai.jpg)
 
-## Training Infrastructure
+## PaLM Training Infrastructure
 - PaLM uses pipeline-free 2D parallelism
-- data parallel across clusters "Pods"
+- data parallel across 2 clusters (2 TPU v4 Pods)
 - each cluster has full model copy
   - model partitioned into 12 parts
   - data partitioned into 256 parts
