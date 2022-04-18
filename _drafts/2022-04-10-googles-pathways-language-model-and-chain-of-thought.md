@@ -145,7 +145,7 @@ GPT-3: __No, because an airplane typically travels around 500-600 miles per hour
 ![PaLM dataset hierarchical topics](/images/PaLM-dataset-hierarchical-topics.png)
 
 
-## Efficient Scaling of Training
+## PaLM Training Requirements
 - mind of PalM is shattered across many chips (replaceable, cooling)
 - ~17 TB of RAM, 2.5 yottaFLOPS (\\( 10^{24} \\)) needed for training
 - 2 TPU v4 Pod clusters connected via data center network
@@ -155,27 +155,27 @@ GPT-3: __No, because an airplane typically travels around 500-600 miles per hour
 ![Pathways system datacenter network, tpu ](/images/palm-pathways-system-datacenter-pods-hosts-TPU-chips.png)
 
 
-## Training Large Scale Models
+## Parallel Training of Large Scale Models
 - parallel computing trades off compute ("time"), memory ("space"), communication throughput (no cool name)
 - data parallelism - batches are divided between workers
+- tensor model parallelism
+  - splits model layers i.e. transformer block into attention heads and feedforward
 - pipeline mechanism ([Megatron-Turing (MT-LNG) Microsoft and NVidia](https://arxiv.org/pdf/2201.11990.pdf))
   - computation DAG into stages e.g. layers
   - stages exchange forward and backward propagation information (micro-batches)
   - step by step passing causes "bubbles" - idling
-- tensor model parallelism
-  - splits model layers i.e. transformer block into attention heads and feedforward
 
 ![NVIDIA data center DGX AI](/images/nvidia-data-center-dgx-ai.jpg)
 
 ## PaLM Training Infrastructure
 - PaLM uses pipeline-free 2D parallelism
 - data parallel across 2 clusters (2 TPU v4 Pods)
-- each cluster has full model copy
+- each cluster (Pod) has full model copy
   - model partitioned into 12 parts
   - data partitioned into 256 parts
-  - 1.5k hosts connected to 3k chips which are interconnected
-- update to identical models after each batch
-- each host exchanges 1.3GB with its counterpart
+  - 768 hosts connected to 3k chips which are interconnected
+- each batch triggers update between clusters to identical models
+  - each host exchanges 1.3GB with its counterpart
 
 ![Pathways system datacenter network, tpu ](/images/palm-pathways-system-datacenter-pods-hosts-TPU-chips.png)
 
