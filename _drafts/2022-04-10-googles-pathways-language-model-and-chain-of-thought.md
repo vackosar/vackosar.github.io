@@ -5,6 +5,7 @@ layout: post
 categories: ml
 date: 2022-04-10
 last_modified_at: 2022-04-18
+image: /images/palm-thumb.png
 permalink: /:categories/:title
 ---
 
