@@ -18,7 +18,7 @@ for file in prez_files:
     for line in header_str.split('\n'):
         if len(line.strip()) > 0:
             key, value = line.split(': ')
-            header_dict[key] = value
+            header_dict[key] = value.strip('"')
 
     contents = template.format(**header_dict) + contents
 

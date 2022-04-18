@@ -1,5 +1,5 @@
-# "Google's Pathways Language Model and Chain-of-Thought"
-- training task: Given this text, predict the next word (token).
+# Google's Pathways Language Model and Chain-of-Thought
+- [PaLM](https://arxiv.org/pdf/2204.02311.pdf) training task: Given this text, predict the next word (token).
 - the biggest dense [transformer](/ml/transformers-self-attention-mechanism-simplified) (540B) and likely the most expensive (~$10M) as of early 2022 
 - highly efficient training on 6k chips (TPU v4) across 2 clusters (Pods)
 - improvements from scaling continue in language understanding (few-shot)
@@ -12,8 +12,7 @@
 
 ## PaLM's Size
 - [transformer](/ml/transformers-self-attention-mechanism-simplified) architecture similar to [GPT-3](https://arxiv.org/pdf/2005.14165.pdf)
-- PaLM has 540B parameters
-- 3x bigger than GPT-3 175B parameters
+- PaLM has 540B parameters = 3x bigger than GPT-3 175B parameters
 - 2x smaller than sparse [Switch Transformer](https://arxiv.org/pdf/2101.03961.pdf) 1T
   - only parts of the model is activated at each time.
 - human brain 100T connections
@@ -37,7 +36,6 @@
 - 58 tasks available results on other models, often multiple choice questions
 - PaLM is SOTA: outperforming human average and other models GPT-3, Gopher, Chinchilla
   - still underperforms average human on many tasks
-- funny footnote: they scan for the dataset in the training set using GUID
 - certain capabilities emerge when a scale is reached (not log-linear)
   - english proverbs and logical sequence at 62B to 540B vs 8B to 62B
 
@@ -56,7 +54,8 @@
 - thoughts are useful for interpretation
 
 ![Chain of Thought Prompting](/images/palm-chain-of-though-prompting.png)
- 
+
+
 
 ## PaLM Chain-of-Thought Prompting Results
 - reasoning tasks datasets: GSM8K, SVAMP, MAWPS, AQuA, CommonsenseQA, StrategyQA
@@ -69,6 +68,7 @@
 ![PaLM chain of thought prompting new SOTA on GSM8K, MAWPS, SVAMP, and StrategyQA](/images/palm-chain-of-though-prompting-results.png)
 
 
+
 ## Explanation Using Chain-of-Thought Prompting
 - right reasons for the right answer?
 - interpretability may be desired output
@@ -76,17 +76,17 @@
 - not in paper: I added GPT-3, results with zero-temperature
 - average airplane speed 460 – 575 mph
 
-<i style="color: blue">
+<p style="color: blue">
 Input: Jennifer looked out her window and sees a really cool cloud below her. She unbuckles her seatbelt and heads to the bathroom. Is Jennifer probably traveling more than 300 miles per hour relative to the earth?
-</i>
+</p>
 
-<b style="color: orange">
+<p style="color: darkorange">
 PaLM: 300 miles per hour is about 480 km/h. This is about the speed of a commercial airplane. Clouds are usually below airplanes, so Jennifer is probably on an airplane. The answer is "yes"
-</b>
+</p>
 
-<b style="color: purple">
+<p style="color: purple">
 GPT-3: No, because an airplane typically travels around 500-600 miles per hour, and the bathroom is usually located in the back of the plane.
-</b>
+</p>
 
 
 ## PaLM on Code Tasks
