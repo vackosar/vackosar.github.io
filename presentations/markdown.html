@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Markdown Example</title>
+
+		<link rel="stylesheet" href="/presentations/reveal.css">
+		<link rel="stylesheet" href="/presentations/simple.css" id="theme">
+
+<!--        <link rel="stylesheet" href="../plugin/highlight/monokai.css">-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+                <!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines -->
+                <section id="my-markdown" data-markdown="2022-04-10-googles-pathways-language-model-and-chain-of-thought.md.gen" data-separator="^\n\n" data-separator-vertical="^\n\n"></section>
+
+				</div>
+		</div>
+
+		<script src="/presentations/reveal.js"></script>
+		<script src="/presentations/markdown.js"></script>
+<!--        <script src="highlight.js"></script>-->
+<!--        <script src="notes.js"></script>-->
+		<script src="/presentations/math.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				plugins: [ RevealMarkdown,
+					// RevealHighlight, RevealNotes,
+					RevealMath.KaTeX ]
+			});
+
+				let md = document.getElementById('my-markdown')
+				md.innerText = md.innerText.replace(/{%.*%}/, '')
+		</script>
+
+	</body>
+</html>
