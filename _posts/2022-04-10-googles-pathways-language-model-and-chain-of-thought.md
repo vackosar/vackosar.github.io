@@ -78,7 +78,7 @@ permalink: /:categories/:title
 
 
 ## Explanation Using Chain-of-Thought Prompting
-- right reasons for the answer?
+- right reasons for the right answer?
 - interpretability may be desired output
 - 2-shot prompting with greedy decoding (deterministic)
 - not in paper: I added GPT-3, results with zero-temperature
