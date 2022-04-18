@@ -11,6 +11,8 @@ permalink: /:categories/:title
 
 {% include mathjax.html %}
 
+![palm thumbnail](/images/palm-thumb.png)
+
 - the biggest dense model (540B) and likely the most expensive (~$10B) as of early 2022 
 - highly efficient training on 6k chips (TPU v4) across 2 clusters (Pods)
 - improvements from scaling continue in language understanding (few-shot)
