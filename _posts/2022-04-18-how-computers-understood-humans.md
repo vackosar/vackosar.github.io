@@ -8,6 +8,8 @@ date: 2022-04-18
 permalink: /:categories/:title
 last_modified_at: 2022-04-19
 ---
+- ideas existed at least since 1700s
+- but not enough compute and computer science
 - How to instruct computer to perform tasks?
 - How represent knowledge in computers?
 - How to generate the answers?
@@ -20,33 +22,36 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 
 
 ## Prompt as an Interface
-- input textual instructions
-- computer generates output text based on its knowledge
+- 2001: A Space Odyssey HAL 9000
+- input textual instructions e.g. explain a riddle
+- based on its knowledge computer generates the answer text 
 
 ![2001 A Space Odyssey HAL-9000 Interface](/images/2001-A-Space-Odyssey-HAL-9000-Interface-3.png)
 
 
 ## How To Represent Knowledge
-- textual documents in a database
+- library ~> textual documents in a database
+- search by list of words (query) ~1970s, find topics ~1980
 - counting word occurrences on documents level into [sparce matrices](/ml/sparse-matrix-why-and-when)
 - methods: TF*IDF, Latent semantic analysis
-- search by list of words (query) ~1970s
 
 ![Latent semantic analysis - CC BY-SA 4.0 Christoph Carl Kling](/images/latent-semantic-analysis-wiki.png)
 
 
 ## Non-Contextual Words Vectors
-- each of 10k words gets one general vector
 - vector is point in a multidimensional space - an array of numbers
+- each of 10k words gets one general vector in 300 dimensional space
+- each vector has to fit in "only" 300 dimensions - much less than 10k words
 - global (non) contextual word vectors - no disambiguation (flowering) vs fruit (food)
 
 ![word2vec](/images/word2vec-10k-tensorflow-projector.png)
 
 
 ## Word2vec: Word To a Global Vector
-- count (GloVe) or train (word2vec - two vectors per word)
-- word2vec (Mikolov 2013), or counting co-occurrence (GloVe)
-- word strings should be just name not an id!
+- count co-occurrence in a 10 word window [GloVe (Pennington 2014)](https://nlp.stanford.edu/pubs/glove.pdf)
+- [word2vec (Mikolov 2013)](https://arxiv.org/pdf/1301.3781.pdf): train sum of 10 surrounding words to be close to the middle word vector
+- words appearing in similar context are close in the 300 dimensional space
+- disambiguation - word strings should be just name not an id!
 
 ![word2vec operation](/images/word2vec.jpg)
 
