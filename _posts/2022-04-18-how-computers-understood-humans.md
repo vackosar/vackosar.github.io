@@ -77,7 +77,7 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 
 ## Big Transformer Models
 - generate by predicting input text continuation
-- $10B transformers trained on large amount of text from the internet in 2022
+- $10M transformers trained on large amount of text from the internet in 2022
 - solve wide variety naturally described problems sometimes with human level performance
 - examples: [PaLM (2022)](/ml/googles-pathways-language-model-and-chain-of-thought), [RETRO (2021)](/ml/DeepMinds-RETRO-Transformer-Model), [GPT-3](https://arxiv.org/pdf/2005.14165.pdf), ...
 
