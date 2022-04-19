@@ -31,15 +31,14 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 - counting word occurrences on documents level into [sparce matrices](/ml/sparse-matrix-why-and-when)
 - methods: TF*IDF, Latent semantic analysis
 - search by list of words (query) ~1970s
-- in ~1995 page rank counting links between documents
 
 ![Latent semantic analysis Wikipeadia](/images/latent-semantic-analysis-wiki.png)
 
 
 ## Non-Contextual Words Vectors
-- each of 10k words gets one vector
-- global (non) contextual word vectors
+- each of 10k words gets one general vector
 - vector is point in a multidimensional space - an array of numbers
+- global (non) contextual word vectors - no disabiguation
 
 ![word2vec](/images/word2vec-10k-tensorflow-projector.png)
 
@@ -47,7 +46,6 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 ## Word2vec
 - count (GloVe) or train (word2vec - two vectors per word)
 - word2vec (Mikolov 2013), or counting co-occurrence (GloVe)
-- softmax forces to make a decision, a collapse
 
 ![word2vec operation](/images/word2vec.jpg)
 
@@ -55,18 +53,15 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 ## Contextual Word Vectors
 - word meaning based on context
 - recurrent neural networks (LSTM, GRU)
-- transformer architecture
+- [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) (Vaswani 2017)
 
 ![transformer from word2vec](/images/transformer-from-word2vec.jpg)
 
 
 ## Knowledge Graph
-- knowledge graph - what is knowledge
-  - wikipedia is knowledge graph
-  - knowledge graph is between database and training data samples
-- projection and subspaces
-- last 230 iq person
+- knowledge graph e.g. Wikidata: each node is specific fruit (flowering) vs fruit (food)
+- knowledge graph is between database and training data samples
+- Wikipedia and internet is between knowledge graph and set of documents
+- random walk ~ valid "sentences", link prediction ~ generating text
 
-- few shot vs zero shot?
-
-![knowledge graph visualization from wikipedia](/images/wikipedia-Conceptual_Diagram_-_Example.svg.png)
+![knowledge graph visualization from wikipedia](/images/knowledge-graph.jpg)
