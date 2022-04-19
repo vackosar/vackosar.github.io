@@ -12,7 +12,7 @@ permalink: /:categories/:title
 {% include mathjax.html %}
 {% include load_video.html %}
 
-- [PaLM](https://arxiv.org/pdf/2204.02311.pdf) training task: Given this text, predict the next word (token).
+- [PaLM's](https://arxiv.org/pdf/2204.02311.pdf) training task: Given this text, predict the next word (token).
 - the biggest dense [transformer](/ml/transformers-self-attention-mechanism-simplified) (540B) and likely the most expensive (~$10M) as of early 2022 
 - highly efficient training on 6k chips (TPU v4) across 2 clusters (Pods)
 - improvements from scaling continue in language understanding (few-shot)
@@ -24,7 +24,6 @@ permalink: /:categories/:title
 
 
 ## PaLM's Size
-- [transformer](/ml/transformers-self-attention-mechanism-simplified) architecture similar to [GPT-3](https://arxiv.org/pdf/2005.14165.pdf)
 - PaLM has 540B parameters = 3x bigger than GPT-3 175B parameters
 - 2x smaller than sparse [Switch Transformer](https://arxiv.org/pdf/2101.03961.pdf) 1T
   - only parts of the model is activated at each time.
@@ -121,7 +120,7 @@ GPT-3: No, because an airplane typically travels around 500-600 miles per hour, 
 
 
 ## PaLM Architecture:
-- decoder-only transformer (attending only to the past) like GPT-3
+- standard decoder-only [transformer](/ml/transformers-self-attention-mechanism-simplified) (attending only to the past, similar to [GPT-3](https://arxiv.org/pdf/2005.14165.pdf)) 
 - modified Feed-forward layer (MLP):
   - instead of RELU \\( max(0, xW_1 + b_1)W_2 + b_2 \\) use [SwiGLU feed-foward](https://arxiv.org/pdf/2002.05202.pdf)
   - ~1% better in compute equivalent setup
