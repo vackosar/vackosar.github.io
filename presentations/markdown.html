@@ -19,7 +19,8 @@
 			<div class="slides">
 
                 <!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines -->
-                <section id="my-markdown" data-markdown="2022-04-10-googles-pathways-language-model-and-chain-of-thought.md.gen" data-separator="^\n\n" data-separator-vertical="^\n\n"></section>
+					<section id="part1" data-markdown="2022-04-18-how-computers-understood-humans.md.gen" data-separator="^\n\n" data-separator-vertical="^\n\n"></section>
+					<section id="part2" data-markdown="2022-04-10-googles-pathways-language-model-and-chain-of-thought.md.gen" data-separator="^\n\n" data-separator-vertical="^\n\n"></section>
 
 				</div>
 		</div>
@@ -43,8 +44,6 @@
 					RevealMath.KaTeX ]
 			});
 
-				let md = document.getElementById('my-markdown')
-				md.innerText = md.innerText.replace(/{%.*%}/, '')
 		</script>
 
 	</body>

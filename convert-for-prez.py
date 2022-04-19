@@ -1,6 +1,7 @@
 import re
 
-prez_files = ['2022-04-10-googles-pathways-language-model-and-chain-of-thought.md']
+prez_files = ['2022-04-18-how-computers-understood-humans.md',
+              '2022-04-10-googles-pathways-language-model-and-chain-of-thought.md']
 
 
 template = """# {title}
