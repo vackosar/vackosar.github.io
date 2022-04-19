@@ -37,15 +37,19 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 
 
 ## Non-Contextual Words Vectors
-- non-contextual word vectors
+- vector is point in a multidimensional space
+  - an array of numbers
+- non-contextual word vectors:
+- vocabulary 10k words
+- count or train gradient based methods two vectors per word
 
 ![word2vec](/images/word2vec-10k-tensorflow-projector.png)
 
 
-## 
-
-- contextual word vectors
+## Contextual Word Vectors
+- word meaning based on context
 - knowledge graph
+- transformer architecture
 
 ![stars cosmos Hubble (NASA, ESA, Anton M. Koekemoer (STScI), Nick Scoville (Caltech))](/images/stars-cosmos.png)
 
