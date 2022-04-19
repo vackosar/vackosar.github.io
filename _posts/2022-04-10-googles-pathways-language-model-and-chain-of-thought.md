@@ -138,6 +138,8 @@ GPT-3: No, because an airplane typically travels around 500-600 miles per hour, 
   - want relative position info in query-value dot-product
   - use multiplicative rotational matrix mixing pairwise neighboring dimensions
   - improves performance on long sequences
+- reversible lossless tokenization: 256k tokens vocabulary
+  - whitespace also preserved, OOV UTF-8 split into bytes, digits of numbers tokenized separately
 
 
 ## PaLM Training Dataset

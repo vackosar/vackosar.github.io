@@ -57,15 +57,6 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 ![word2vec operation](/images/word2vec.jpg)
 
 
-## Transformer: Contextual Word Vectors
-- word meaning based on context of 100s of words.
-- [recurrent neural networks (LSTM, GRU)](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) - sequential with memory
-- [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) (Vaswani 2017)
-  - calculates on entire input sequence
-
-![transformer from word2vec](/images/transformer-from-word2vec.jpg)
-
-
 ## Knowledge Graph's Nodes Are Disambiguated
 - knowledge graph e.g. Wikidata: each node is specific fruit (flowering) vs fruit (food)
 - imperfect tradeoff between database and training data samples
@@ -73,6 +64,15 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 - random walk ~ valid "sentences", link prediction ~ generating text
 
 ![knowledge graph visualization from wikipedia](/images/knowledge-graph.jpg)
+
+
+## Transformer: Contextual Word Vectors
+- word meaning based on context of 100s of words.
+- [recurrent neural networks (LSTM, GRU)](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) - sequential with memory
+- [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) (Vaswani 2017)
+  - calculates on entire input sequence
+
+![transformer from word2vec](/images/transformer-from-word2vec.jpg)
 
 
 ## Big Transformer Models
