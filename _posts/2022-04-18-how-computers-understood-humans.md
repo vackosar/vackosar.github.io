@@ -23,7 +23,7 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 - input textual instructions
 - computer generates output text based on its knowledge
 
-![2001 A Space Odyssey HAL-9000 Interface](/images/2001-A-Space-Odyssey-HAL-9000-Interface-3.jpg)
+![2001 A Space Odyssey HAL-9000 Interface](/images/2001-A-Space-Odyssey-HAL-9000-Interface-3.png)
 
 
 ## How To Represent Knowledge
