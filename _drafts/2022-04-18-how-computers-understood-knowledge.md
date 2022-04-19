@@ -1,6 +1,6 @@
 ---
 title: "How Computers Understood Humans"
-description: "Introduction into deep natural language processing of 2022"
+description: "Introduction into deep natural language processing of 2022."
 layout: post
 categories: ml
 image: /images/gullivers-travels-swift.png
