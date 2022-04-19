@@ -6,7 +6,7 @@
 
 <p style="color: blue">
 by his contrivance, the most ignorant person, at a reasonable charge, and with a little bodily labour, <b>might write books</b> in philosophy, poetry, politics, laws, mathematics, and theology, without the least assistance from genius or study.
-... He then commanded six-and-thirty of the lads, to read the several lines softly, as they appeared upon the frame; and where they found three or four <b>words together that might make part of a sentence</b>
+... He then commanded six-and-thirty of the lads, to read <b>the several lines softly, as they appeared upon the frame</b>
 (Gulliver's Travels, by Jonathan Swift 1726, making fun of <a href="https://www.researchgate.net/publication/221502602_Llull_as_Computer_Scientist_or_Why_Llull_Was_One_of_Us">Ramon Llull 1232</a>)
 </p>
 
@@ -45,10 +45,10 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 
 ## Transformer: Contextual Word Vectors
 - word meaning based on context
-- recurrent neural networks (LSTM, GRU) - sequential with memory
+- [recurrent neural networks (LSTM, GRU)](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) - sequential with memory
 - [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) (Vaswani 2017)
   - calculates on entire input sequence
-   
+
 ![transformer from word2vec](/images/transformer-from-word2vec.jpg)
 
 
@@ -62,9 +62,9 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 
 
 ## Big Transformer Models
-- generate via given a text predict continuation
-- very large transformers on trained on large amount of text from the internet
+- generate by predicting input text continuation
+- $10B transformers trained on large amount of text from the internet in 2022
 - solve wide variety naturally described problems sometimes with human level performance
 - examples: [PaLM (2022)](/ml/googles-pathways-language-model-and-chain-of-thought), [RETRO (2021)](/ml/DeepMinds-RETRO-Transformer-Model), [GPT-3](https://arxiv.org/pdf/2005.14165.pdf), ...
 
-![transformer from word2vec](/images/transformer-from-word2vec.jpg)
+![transformer next token prediction](/images/transformer-from-word2vec-next-token.jpg)
