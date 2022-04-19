@@ -39,6 +39,7 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 
 
 ## Non-Contextual Words Vectors
+- document -> sentence or small running window of 10 words
 - vector is point in a multidimensional space - an array of numbers
 - each of 10k words gets one general vector in 300 dimensional space
 - each vector has to fit in "only" 300 dimensions - much less than 10k words
@@ -49,7 +50,7 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 
 ## Word2vec: Word To a Global Vector
 - count co-occurrence in a 10 word window [GloVe (Pennington 2014)](https://nlp.stanford.edu/pubs/glove.pdf)
-- [word2vec (Mikolov 2013)](https://arxiv.org/pdf/1301.3781.pdf): train sum of 10 surrounding words to be close to the middle word vector
+- [word2vec (Mikolov 2013)](https://arxiv.org/pdf/1301.3781.pdf): 10 surrounding words sum close to the middle word vector
 - words appearing in similar context are close in the 300 dimensional space
 - disambiguation - word strings should be just name not an id!
 
@@ -57,7 +58,7 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 
 
 ## Transformer: Contextual Word Vectors
-- word meaning based on context
+- word meaning based on context of 100s of words.
 - [recurrent neural networks (LSTM, GRU)](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) - sequential with memory
 - [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) (Vaswani 2017)
   - calculates on entire input sequence
