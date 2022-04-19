@@ -5,6 +5,7 @@ layout: post
 image: /images/transformer-full-model.png
 categories: ml
 date: 2022-03-05
+last_modified_at: 2022-04-19
 permalink: /:categories/:title
 ---
 
@@ -127,11 +128,12 @@ In [SRU++](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) the p
 ## Training a Transformer
 Transformers are usually pre-trained with self-supervised tasks like masked language modelling or next-token prediction on large datasets.
 Pre-trained models are often very general and publicly distributed e.g. on HuggingFace.
-Big transformer models are usually trained on multiple GPUs.
+Big transformer models are typically pre-trained on multiple GPUs.
 While there are various approaches to speedup transformer itself, there are also ways to improve its training.
 For example [ELECTRA training scheme speeds up training](/ml/electra-4x-cheaper-bert-training) by using GAN-like setting using a loss over entire sequence.
 
 Then fine-tuning training is used to specialize the model for a specific task on using a small labelled dataset.
+A single GPU is often enough for fine-tuning.
 For example model like BART are fine-tuned for summarization tasks.
 Sometimes we fine-tune twice, as authors did with [BART model equipped with diminishing self-attention to increase summarization coverage (read my summary)](/ml/submodularity-in-ranking-summarization-and-self-attention).
 
@@ -148,6 +150,7 @@ to run bigger models, or deploy your models to production, you will need to a bi
 
 ## Example Transformer Models
 
+- [Google Pathways Language Model outperforms GPT-3 and humans on more tasks](/ml/googles-pathways-language-model-and-chain-of-thought)
 - [Wav2vec uses Transformer with quantization to predict phonemes](/ml/Wav2vec2-Semi-and-Unsupervised-Speech-Recognition)
 - [Diminishing self-attention improves summarization coverage](/ml/submodularity-in-ranking-summarization-and-self-attention)
 - [DeepMind's RETRO Transformer uses cross-attention to incorporate the database retrived sequences](/ml/DeepMinds-RETRO-Transformer-Model)

@@ -99,7 +99,7 @@ Operation:
 
 - SemEval 2014 STS [SemEval 2014 STS (sentence similarity)](https://aclanthology.org/S14-2010.pdf):
  
-![semeval 2014 sts task 10 dataset examples](../images/semeval-2014-sts-task-10-dataset-examples.png)
+![semeval 2014 sts task 10 dataset examples](/images/semeval-2014-sts-task-10-dataset-examples.png)
 
 ## Results
 - state-of-the-art 2014 on word alignment
@@ -109,7 +109,7 @@ Operation:
 
 Winner of SemEval 2014 STS [SemEval 2014 STS (sentence similarity)](https://aclanthology.org/S14-2010.pdf):
 
-![SemEval 2014 STS (sentence similarity) results](../images/semeval-2014-sts-results.png)
+![SemEval 2014 STS (sentence similarity) results](/images/semeval-2014-sts-results.png)
 
 Winner of [SemEval 2015 STS](https://aclanthology.org/S15-2045.pdf) (DLS@CU-S1) with pearson mean result of 0.8015.
 While Word Mover's Embeddings paper gets 64.2. 
