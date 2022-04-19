@@ -37,35 +37,36 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 
 
 ## Non-Contextual Words Vectors
-- vector is point in a multidimensional space
-  - an array of numbers
-- non-contextual word vectors:
-- vocabulary 10k words
-- count or train gradient based methods two vectors per word
+- each of 10k words gets one vector
+- global (non) contextual word vectors
+- vector is point in a multidimensional space - an array of numbers
 
 ![word2vec](/images/word2vec-10k-tensorflow-projector.png)
 
 
+## Word2vec
+- count (GloVe) or train (word2vec - two vectors per word)
+- word2vec (Mikolov 2013), or counting co-occurrence (GloVe)
+- softmax forces to make a decision, a collapse
+
+![word2vec operation](/images/word2vec.jpg)
+
+
 ## Contextual Word Vectors
 - word meaning based on context
-- knowledge graph
+- recurrent neural networks (LSTM, GRU)
 - transformer architecture
 
-![stars cosmos Hubble (NASA, ESA, Anton M. Koekemoer (STScI), Nick Scoville (Caltech))](/images/stars-cosmos.png)
+![transformer from word2vec](/images/transformer-from-word2vec.jpg)
 
 
-- in a vocabulary
-- counting methods
-- gradient methods
-- vector methods
-  - Tao te Ching - every positive thought negative - direction and anti direction
-- RNNs
-- Transformers
+## Knowledge Graph
 - knowledge graph - what is knowledge
   - wikipedia is knowledge graph
   - knowledge graph is between database and training data samples
-- softmax forces to make a decision, a collapse
 - projection and subspaces
 - last 230 iq person
 
 - few shot vs zero shot?
+
+![knowledge graph visualization from wikipedia](/images/wikipedia-Conceptual_Diagram_-_Example.svg.png)
