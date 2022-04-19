@@ -226,6 +226,8 @@ Best of 2 temperature 0.7 otherwise defaults:
 Greedy:
 - No, because an airplane typically travels around 500-600 miles per hour, and the bathroom is usually located in the back of the plane.
 
+PaLM: Model Output: 300 miles per hour is about 480 km/h. This is about the speed of a commercial airplane. Clouds are usually below airplanes, so Jennifer is probably on an airplane. The answer is "yes".
+
 
 #### Logical Inference 2
 ```
@@ -246,6 +248,7 @@ Best of 2, temperature 0.7 otherwise defaults:
 Greedy:
 - It is not likely that Shelley will be near the Pacific Ocean this weekend. Shelley is from Virginia, which is on the East Coast of the United States. The city with the famous fish market is most likely Seattle, which is also on the West Coast. Shelley is visiting, so she is not from there. She is going home next Tuesday, so she will likely be going back to Virginia this weekend.
 
+PaLM: The city with the famous market where they throw the fish is Seattle, Washington. Seattle is on the Pacific Ocean. Shelley is visiting Seattle, so she will be near the Pacific Ocean this weekend. The answer is "yes", it is likely that Shelley will be near the Pacific Ocean this weekend.
 
 #### Jokes
 ```
@@ -266,3 +269,5 @@ Best of 2 temperature 0.7 otherwise defaults:
 
 Greedy:
 - This joke is about how annoying and intrusive in-laws can be. The person is trying to visit their family, but their mother says that their step-dad's poetry reading is that night. So the person is now flying in the next day to avoid it.
+
+PaLM: The joke is that the speaker's mother is trying to get them to go to their step dad's poetry reading, but the speaker doesn't want to go, so they are changing their flight to the day after the poetry reading.
