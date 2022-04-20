@@ -81,11 +81,11 @@ permalink: /:categories/:title
 
 
 
-## Explanation Using Chain-of-Thought Prompting
+## Explanation Using Chain-of-Thought Prompting: PaLM vs GPT-3
 - right reasons for the right answer?
 - interpretability may be desired output
 - 2-shot prompting with greedy decoding (deterministic)
-- not in paper: I added GPT-3, results with zero-temperature
+- not in paper: I added GPT-3, results with zero-temperature (PaLM vs GPT-3)
 - average airplane speed 460 – 575 mph
 
 <p style="color: blue">
