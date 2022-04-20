@@ -4,7 +4,7 @@ description: "Pathways Language Model (PaLM), the largest model of early 2022, o
 layout: post
 categories: ml
 date: 2022-04-10
-last_modified_at: 2022-04-18
+last_modified_at: 2022-04-20
 image: /images/palm-thumb.png
 video: oi86r-2Bh64
 permalink: /:categories/:title
