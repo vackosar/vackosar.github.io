@@ -44,25 +44,27 @@ DALL-E 1 generates images via variational autoencoder inspired by VA-VAE-2 and f
 3. discard the image encoder
 
 ### Prediction:
-1. encode input text
-2. predict following image tokens
-3. decode the image tokens using dVAE
-4. select the best results using [CLIP model](#openais-clip) ranker
+1. encode input text to tokens
+2. iteratively predict next image token from the learned codebook
+3. decode the resulting image tokens using dVAE
+4. select the best image using [CLIP model](#openais-clip) ranker
 
+![DALL-E-1 generates tokens](/images/dall-e-1-generate.drawio.svg)
 	
 ### Learning Visual Codebook
-- similar to [VQ-VAE-2](https://proceedings.neurips.cc/paper/2019/file/5f8e2fa1718d1bbcadf1cd9c7a54fb8c-Paper.pdf)
+- similar to [VQ-VAE-2](https://proceedings.neurips.cc/paper/2019/file/5f8e2fa1718d1bbcadf1cd9c7a54fb8c-Paper.pdf) (dVAE, up-scaling)
 - train discrete variational autoencoder (dVAE)
-	- train image encoder to a latent 32x32 grid of 8k code words
-	- train a decoder back to image
-- VAE model the image distribution via lower bound on maximum likelihood
+    - train image encoder to a latent 32x32 grid of 8k code words
+    - train a decoder back to image
+- in general, VAEs model the image distribution via lower bound on maximum likelihood
     - encodes to a simple latent space of gaussian distributions
     - re-parametrization trick \\( z = \sigma * r + \mu \\)
-    - how dVAE does this?
-- tune the decoder with a weight on the KL divergence term
+- dVAE in DALL-E 1
+  - start with uniform prior over the codebook
+  - promotes codebook utilization using KL
+  - re-parametrization trick -> online cluster assignment with the straight-through estimator
+  - maximize evidence lower bound (ELB)
 - decoder is conv2d, decoder block (4x relu + conv), upsample (tile bigger array), repeat
-- start with uniform prior over the codebook
-- maximize evidence lower bound (ELB)
 
 ### Learning The Prior
 - train transformer to predict next token of the concatenated text and image
