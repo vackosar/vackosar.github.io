@@ -6,7 +6,7 @@ categories: ml
 image: /images/dall-e-2-decoder.png
 date: 2022-04-13
 permalink: /:categories/:title
-last_modified_at: 2022-04-15
+last_modified_at: 2022-04-21
 ---
 
 {% include mathjax.html %}
