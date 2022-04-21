@@ -39,10 +39,12 @@ while DALL-E 2 uses CLIP embedding directly, and decodes it via diffusion.
 OpenAI DALL-E 1 introduced in [paper](https://arxiv.org/pdf/2102.12092.pdf) and [code](https://github.com/openai/DALL-E/blob/5be4b236bc3ade6943662354117a0e83752cc322/dall_e/decoder.py#L13).
 DALL-E 1 generates images via variational autoencoder inspired by VA-VAE-2 and from textual input autoregressive on a discrete latent space.
 
+
 ### Training:
 1. train encoder and decoder image of image into 32x32 grid of 8k possible code word tokens
 2. concatenate encoded text tokens to image tokens and train to predict next image token
 3. discard the image encoder
+
 
 ### Prediction:
 1. encode input text to tokens
@@ -58,19 +60,21 @@ DALL-E 1 generates images via variational autoencoder inspired by VA-VAE-2 and f
 - encodes to a simple latent space of gaussian distributions
 - re-parametrization trick \\( z = \sigma * r + \mu \\)
 
+
 ### Discreet Variational Auto-Encoder
 - introduced in [VQ-VAE 1](https://arxiv.org/pdf/1711.00937.pdf) and [VQ-VAE-2](https://proceedings.neurips.cc/paper/2019/file/5f8e2fa1718d1bbcadf1cd9c7a54fb8c-Paper.pdf) (dVAE, up-scaling)
 - train discrete variational autoencoder (dVAE):
-  - train image encoder to a latent 32x32 grid of 8k code words (vectors)
+  - train image encoder to a latent 32x32 grid of 8k code words (visual codebook)
   - train a decoder back to image
+- re-parametrization trick -> online cluster assignment with the straight-through estimator
 
 ![Discreet Variational Auto-Encoder VQ-VAE 1](/images/vq-vae-encoding-decoding.png)
+
 	
-### Learning Visual Codebook in dVAE
+### dVAE in DALL-E 1
 - dVAE in DALL-E 1
   - start with uniform prior over the codebook
   - promotes codebook utilization using KL
-  - re-parametrization trick -> online cluster assignment with the straight-through estimator
   - maximize evidence lower bound (ELB)
 - decoder is conv2d, decoder block (4x relu + conv), upsample (tile bigger array), repeat
 
