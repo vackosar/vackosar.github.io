@@ -3,6 +3,7 @@ title: "OpenAI's DALL-E 2 And DALL-E 1"
 description: "Quick overview of DALL-E 2 background and related models CLIP, and GLIDE"
 layout: post
 categories: ml
+image: /images/dall-e-2-decoder.png
 date: 2022-04-13
 permalink: /:categories/:title
 last_modified_at: 2022-04-15
@@ -50,15 +51,22 @@ DALL-E 1 generates images via variational autoencoder inspired by VA-VAE-2 and f
 4. select the best image using [CLIP model](#openais-clip) ranker
 
 ![DALL-E-1 generates tokens](/images/dall-e-1-generate.drawio.svg)
+
+
+### Variational Auto-encoder (VAE) Models
+- VAEs model the image distribution via lower bound on maximum likelihood
+- encodes to a simple latent space of gaussian distributions
+- re-parametrization trick \\( z = \sigma * r + \mu \\)
+
+### Discreet Variational Auto-Encoder
+- introduced in [VQ-VAE 1](https://arxiv.org/pdf/1711.00937.pdf) and [VQ-VAE-2](https://proceedings.neurips.cc/paper/2019/file/5f8e2fa1718d1bbcadf1cd9c7a54fb8c-Paper.pdf) (dVAE, up-scaling)
+- train discrete variational autoencoder (dVAE):
+  - train image encoder to a latent 32x32 grid of 8k code words (vectors)
+  - train a decoder back to image
+
+![Discreet Variational Auto-Encoder VQ-VAE 1](/images/vq-vae-encoding-decoding.png)
 	
-### Learning Visual Codebook
-- similar to [VQ-VAE-2](https://proceedings.neurips.cc/paper/2019/file/5f8e2fa1718d1bbcadf1cd9c7a54fb8c-Paper.pdf) (dVAE, up-scaling)
-- train discrete variational autoencoder (dVAE)
-    - train image encoder to a latent 32x32 grid of 8k code words
-    - train a decoder back to image
-- in general, VAEs model the image distribution via lower bound on maximum likelihood
-    - encodes to a simple latent space of gaussian distributions
-    - re-parametrization trick \\( z = \sigma * r + \mu \\)
+### Learning Visual Codebook in dVAE
 - dVAE in DALL-E 1
   - start with uniform prior over the codebook
   - promotes codebook utilization using KL
