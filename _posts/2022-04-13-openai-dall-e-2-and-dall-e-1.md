@@ -60,8 +60,9 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes it
 
 ## OpenAI's DALL-E 1
 
-OpenAI DALL-E 1 introduced in [paper](https://arxiv.org/pdf/2102.12092.pdf) and [code](https://github.com/openai/DALL-E/blob/5be4b236bc3ade6943662354117a0e83752cc322/dall_e/decoder.py#L13).
-DALL-E 1 generates images via [dVAE](#discreet-variational-auto-encoder-dvae) inspired by VA-VAE-2 and from textual input autoregressive on a discrete latent space.
+OpenAI DALL-E 1 text-to-image generator was introduced in [paper](https://arxiv.org/pdf/2102.12092.pdf) and [code](https://github.com/openai/DALL-E/blob/5be4b236bc3ade6943662354117a0e83752cc322/dall_e/decoder.py#L13).
+DALL-E 1 generates 256×256 images from text via [dVAE](#discreet-variational-auto-encoder-dvae) inspired by VA-VAE-2.
+It autoregressive-ly generates image tokens from textual tokens on a discrete latent space.
 
 
 ### DALL-E 1 Training:
@@ -87,7 +88,8 @@ DALL-E 1 generates images via [dVAE](#discreet-variational-auto-encoder-dvae) in
 
 
 ### DALL-E 1 Results
-- Human evaluation vs DF-GAN, zero-shot
+- competitive in zero-shot fashion, preferred 90% time by humans
+- Human evaluation which is preferred DALL-E vs DF-GAN, zero-shot
  
 ![DALL-E 1 results](/images/dall-e-1-results.png)
 
@@ -107,7 +109,7 @@ DALL-E 1 generates images via [dVAE](#discreet-variational-auto-encoder-dvae) in
 ![diffusion model - progressive denoising examples steps (Denoising Diffusion Probabilistic Models)](/images/diffusion-model-example-steps.png)
 
 ## OpenAI's GLIDE
-[Diffusion](#diffusion-models) image generator introduced  in [paper](https://arxiv.org/pdf/2112.10741.pdf).
+[Diffusion](#diffusion-models) text-to-image (256 × 256) generator introduced  in [paper](https://arxiv.org/pdf/2112.10741.pdf).
 - [CLIP](#openais-clip-model) guided diffusion
   - task: "predict the added noise given that the image has this caption" 
   - training task is prediction of the noise and guidance towards the CLIP text embedding
@@ -122,7 +124,8 @@ DALL-E 1 generates images via [dVAE](#discreet-variational-auto-encoder-dvae) in
 
 ## OpenAI's DALL-E 2
 
-Introduced in [the paper](https://arxiv.org/pdf/2204.06125.pdf). Generates 1024 x 1024. Diffusion based.
+OpenAI introduced DaLL-E-2 in [the paper](https://arxiv.org/pdf/2204.06125.pdf).
+It generates 1024 x 1024 images from text using diffusion models.
 
 ### DALL-E 2 Training
 1. generate a [CLIP model](#openais-clip) text embedding for text caption
@@ -152,7 +155,7 @@ Introduced in [the paper](https://arxiv.org/pdf/2204.06125.pdf). Generates 1024 
 
 ## DALL-E 2 Evaluation Results 
 
-[dall-e 2 human eval results preference](/images/dall-e-2-results.png)
+![dall-e 2 human eval results preference](/images/dall-e-2-results.png)
 
 ### DALL-E 2 Examples
 
