@@ -11,8 +11,8 @@ last_modified_at: 2022-04-22
 
 {% include mathjax.html %}
 
-DALL-E 1 uses discrete variational autoencoder, next token prediction, and CLIP model re-ranking,
-while DALL-E 2 uses CLIP embedding directly, and decodes it via diffusion.
+[DALL-E 1](#openais-dall-e-1) uses [discrete variational autoencoder (dVAE)](#discreet-variational-auto-encoder-dvae), next token prediction, and [CLIP model](#openais-clip) re-ranking,
+while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes it via diffusion similar to [GLIDE](#openais-glide).
 
 
 ## OpenAI's CLIP
@@ -108,7 +108,7 @@ DALL-E 1 generates images via variational autoencoder inspired by VA-VAE-2 and f
 
 ## OpenAI's DALL-E 2
 
-Introduced in [the paper](https://arxiv.org/pdf/2204.06125.pdf). Generates 1024 x 1024.
+Introduced in [the paper](https://arxiv.org/pdf/2204.06125.pdf). Generates 1024 x 1024. Diffusion based.
 
 ### Training
 1. generate a [CLIP model](#openais-clip) text embedding for text caption
