@@ -60,7 +60,7 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes it
 ## OpenAI's DALL-E 1
 
 OpenAI DALL-E 1 introduced in [paper](https://arxiv.org/pdf/2102.12092.pdf) and [code](https://github.com/openai/DALL-E/blob/5be4b236bc3ade6943662354117a0e83752cc322/dall_e/decoder.py#L13).
-DALL-E 1 generates images via variational autoencoder inspired by VA-VAE-2 and from textual input autoregressive on a discrete latent space.
+DALL-E 1 generates images via [dVAE](#discreet-variational-auto-encoder-dvae) inspired by VA-VAE-2 and from textual input autoregressive on a discrete latent space.
 
 
 ### Training:
