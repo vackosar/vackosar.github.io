@@ -60,9 +60,9 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes it
 
 ## OpenAI's DALL-E 1
 
-OpenAI DALL-E 1 text-to-image generator was introduced in [paper](https://arxiv.org/pdf/2102.12092.pdf) and [code](https://github.com/openai/DALL-E/blob/5be4b236bc3ade6943662354117a0e83752cc322/dall_e/decoder.py#L13).
-DALL-E 1 generates 256×256 images from text via [dVAE](#discreet-variational-auto-encoder-dvae) inspired by VA-VAE-2.
-It autoregressive-ly generates image tokens from textual tokens on a discrete latent space.
+- OpenAI introduced DALL-E 1 text-to-image generator in introduced in [paper](https://arxiv.org/pdf/2102.12092.pdf) and [code](https://github.com/openai/DALL-E/blob/5be4b236bc3ade6943662354117a0e83752cc322/dall_e/decoder.py#L13).
+- generates 256×256 images from text via [dVAE](#discreet-variational-auto-encoder-dvae) inspired by VA-VAE-2.
+- autoregressive-ly generates image tokens from textual tokens on a discrete latent space.
 
 
 ### DALL-E 1 Training:
@@ -109,8 +109,8 @@ It autoregressive-ly generates image tokens from textual tokens on a discrete la
 ![diffusion model - progressive denoising examples steps (Denoising Diffusion Probabilistic Models)](/images/diffusion-model-example-steps.png)
 
 ## OpenAI's GLIDE
-[Diffusion](#diffusion-models) text-to-image (256 × 256) generator introduced  in [paper](https://arxiv.org/pdf/2112.10741.pdf).
-GLIDE outperforms on human preference DALL-E 1.
+- [Diffusion](#diffusion-models) text-to-image (256 × 256) generator introduced  in [paper](https://arxiv.org/pdf/2112.10741.pdf).
+- GLIDE outperforms on human preference DALL-E 1.
 - [CLIP](#openais-clip-model) guided diffusion
   - task: "predict the added noise given that the image has this caption" 
   - training task is prediction of the noise and guidance towards the CLIP text embedding
@@ -125,8 +125,9 @@ GLIDE outperforms on human preference DALL-E 1.
 
 ## OpenAI's DALL-E 2
 
-OpenAI introduced DaLL-E-2 in [the paper](https://arxiv.org/pdf/2204.06125.pdf).
-It generates 1024 x 1024 images from text using diffusion models.
+- OpenAI introduced DaLL-E-2 in [the paper](https://arxiv.org/pdf/2204.06125.pdf).
+- generates 1024 x 1024 images from text using diffusion models.
+- generates more diverse and higher resolution images than [GLIDE](#openais-glide).
 
 ### DALL-E 2 Training
 1. generate a [CLIP model](#openais-clip) text embedding for text caption
@@ -155,7 +156,7 @@ It generates 1024 x 1024 images from text using diffusion models.
   - in addition to the text present in the original GLIDE
 
 ## DALL-E 2 Evaluation Results 
-- DALL-E 2 competitive photo-realism while more diverse images than GLIDE
+DALL-E 2 competitive photo-realism while more diverse images than GLIDE
 
 ![dall-e 2 human eval results preference](/images/dall-e-2-results.png)
 
