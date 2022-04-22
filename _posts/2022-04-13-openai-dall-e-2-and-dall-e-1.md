@@ -1,6 +1,6 @@
 ---
-title: "OpenAI's DALL-E 2 and DALL-E 1"
-description: "Quick explanation of DALL-E 2 and DALL-E 1, background and related models CLIP, and GLIDE"
+title: "OpenAI's DALL-E 2 and DALL-E 1 Explained"
+description: "Compare of text-to-image generation models DALL-E 1, 2, and understand related models VQ-VAE, CLIP, and GLIDE"
 layout: post
 categories: ml
 image: /images/dall-e-2-decoder.png
