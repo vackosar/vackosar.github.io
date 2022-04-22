@@ -9,6 +9,7 @@ image: /images/python-context-manager-close-resource-on-exception.png
 redirect_from:
   - /2020/04/08/Python-with-statement-exception-handling.html
   - /software/Python-with-statement-exception-handling
+last_modified_at: 2022-04-22
 ---
 
 {% include highlight-rouge-friendly.css.html %}
