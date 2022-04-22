@@ -61,7 +61,7 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes im
 ## OpenAI's DALL-E 1
 
 - OpenAI introduced DALL-E 1 text-to-image generator in introduced in [paper](https://arxiv.org/pdf/2102.12092.pdf) and [code](https://github.com/openai/DALL-E/blob/5be4b236bc3ade6943662354117a0e83752cc322/dall_e/decoder.py#L13).
-- generates 256×256 images from text via [dVAE](#discreet-variational-auto-encoder-dvae) inspired by VA-VAE-2.
+- generates 256×256 images from text via [dVAE](#discreet-variational-auto-encoder-dvae) inspired by [VQ-VAE-2](https://proceedings.neurips.cc/paper/2019/file/5f8e2fa1718d1bbcadf1cd9c7a54fb8c-Paper.pdf).
 - autoregressive-ly generates image tokens from textual tokens on a discrete latent space.
 
 
