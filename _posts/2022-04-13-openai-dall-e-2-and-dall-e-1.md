@@ -1,6 +1,6 @@
 ---
 title: "OpenAI's DALL-E 2 And DALL-E 1"
-description: "Quick overview of DALL-E 2 background and related models CLIP, and GLIDE"
+description: "Quick explanation of DALL-E 2 and DALL-E 1, background and related models CLIP, and GLIDE"
 layout: post
 categories: ml
 image: /images/dall-e-2-decoder.png
@@ -64,14 +64,14 @@ OpenAI DALL-E 1 introduced in [paper](https://arxiv.org/pdf/2102.12092.pdf) and 
 DALL-E 1 generates images via [dVAE](#discreet-variational-auto-encoder-dvae) inspired by VA-VAE-2 and from textual input autoregressive on a discrete latent space.
 
 
-### Training:
+### DALL-E 1 Training:
 1. train encoder and decoder image of image into 32x32 grid of 8k possible code word tokens ([dVAE](#discreet-variational-auto-encoder-dvae))
 2. concatenate encoded text tokens with image tokens into single array
 3. train to predict next image token from the preceding tokens (autoregressive transformer)
 4. discard the image encoder, keep only image decoder and next token predictor
 
 
-### Prediction:
+### DALL-E 1 Prediction:
 1. encode input text to tokens
 2. iteratively predict next image token from the learned codebook
 3. decode the resulting image tokens using [dVAE](#discreet-variational-auto-encoder-dvae)
@@ -80,7 +80,7 @@ DALL-E 1 generates images via [dVAE](#discreet-variational-auto-encoder-dvae) in
 ![DALL-E-1 generates tokens](/images/dall-e-1-generate.drawio.svg)
 
 	
-### Discreet Variational Auto-Encoder (dVAE) in DALL-E 1
+### DALL-E 1 Discreet Variational Auto-Encoder (dVAE)
 - instead of copying gradients annealing ([categorical reparameterization with gumbel-softmax](https://arxiv.org/pdf/1611.01144.pdf))
 - promote codebook utilization using higher KL-divergence weight
 - decoder is conv2d, decoder block (4x relu + conv), upsample (tile bigger array), repeat
