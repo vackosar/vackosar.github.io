@@ -32,11 +32,12 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes it
 - the fix length text embedding is extracted from \[EOS\] token position
 - trained on 256 GPUs for 2 weeks
 
+![CLIP architecture](/images/clip-architecture.png)
 
 <br>
 
 ## Variational Auto-encoder (VAE) Models
-- model the image distribution via lower bound on maximum likelihood
+- model the image distribution via lower bound on [maximum likelihood](http://paulrubenstein.co.uk/variational-autoencoders-are-not-autoencoders/)
 - encode each image as a gaussian distribution on the latent space
 - random sampling from latents not differentiable
   - => re-parametrization trick \\( z = \sigma * r + \mu \\) where \\( r \\) is random vector
@@ -84,13 +85,26 @@ DALL-E 1 generates images via [dVAE](#discreet-variational-auto-encoder-dvae) in
 - promote codebook utilization using higher KL-divergence weight
 - decoder is conv2d, decoder block (4x relu + conv), upsample (tile bigger array), repeat
 
+
+### DALL-E 1 Results
+- Human evaluation vs DF-GAN, zero-shot
+ 
+![DALL-E 1 results](/images/dall-e-1-results.png)
+
+
+### DALL-E 1 Examples
+
+![dall-e 1 examples](/images/dall-e-1-examples.png)
+
 <br>
 
 ## Diffusion Models
-  - diffusion models reverse addition of gaussian noise to an image
-  - an image arises from iterative denoising
+  - [diffusion models](https://arxiv.org/pdf/2006.11239.pdf) reverse addition of gaussian noise to an image
+  - an image arises from iterative denoising e.g. after 100 steps
   - training task is to predict the added noise with mean-squared error loss
   - similar to [normalizing flow models like OpenAI's Glow](/ml/openais-glow-flow-based-model-teardown) which are additionally single step and invertible
+
+![diffusion model - progressive denoising examples steps (Denoising Diffusion Probabilistic Models)](/images/diffusion-model-example-steps.png)
 
 ## OpenAI's GLIDE
 [Diffusion](#diffusion-models) image generator introduced  in [paper](https://arxiv.org/pdf/2112.10741.pdf).
@@ -110,7 +124,7 @@ DALL-E 1 generates images via [dVAE](#discreet-variational-auto-encoder-dvae) in
 
 Introduced in [the paper](https://arxiv.org/pdf/2204.06125.pdf). Generates 1024 x 1024. Diffusion based.
 
-### Training
+### DALL-E 2 Training
 1. generate a [CLIP model](#openais-clip) text embedding for text caption
 2. "prior" network generates CLIP image embedding from text embedding
 3. diffusion decoder generates image from the image embedding
@@ -119,25 +133,28 @@ Introduced in [the paper](https://arxiv.org/pdf/2204.06125.pdf). Generates 1024 
 - Authors found diffusion models more efficient and higher quality compared to autoregressive
 
 
-### Image Generation
+### DALL-E 2 Image Generation
 
 ![DALL-E 2 decoder](/images/dall-e-2-decoder.png)
 
-#### Prior
+#### DALL-E 2 "Prior" Network
 - Prior decoder generates CLIP image embedding from text
 - tested autoregressive and diffusion prior generation with similar results
 - autoregressive prior uses quantization to discrete codes
 - diffusion prior is more compute efficient
   - Gaussian diffusion model conditioned on the caption text
   
-#### Decoder 
+#### DALL-E 2 Decoder 
 - diffusion decoder similar to [GLIDE](#openais-glide)
 - additionally condition also on CLIP image embedding
   - projected as 4 extra tokens
   - in addition to the text present in the original GLIDE
 
+## DALL-E 2 Evaluation Results 
 
-## Results
+[dall-e 2 human eval results preference](/images/dall-e-2-results.png)
+
+### DALL-E 2 Examples
 
 Comparison:
 
