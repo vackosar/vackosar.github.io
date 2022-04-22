@@ -7,9 +7,11 @@ image: /images/dalle-2-1-thumb.png
 date: 2022-04-13
 permalink: /:categories/:title
 last_modified_at: 2022-04-22
+video: cYeH45VOI3w
 ---
 
 {% include mathjax.html %}
+{% include load_video.html %}
 
 [DALL-E 1](#openais-dall-e-1) uses [discrete variational autoencoder (dVAE)](#discreet-variational-auto-encoder-dvae), next token prediction, and [CLIP model](#openais-clip) re-ranking,
 while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes images via diffusion similar to [GLIDE](#openais-glide).
@@ -42,6 +44,7 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes im
 - random sampling from latents not differentiable
   - => re-parametrization trick \\( z = \sigma * r + \mu \\) where \\( r \\) is random vector
 - loss is to reconstruct (L2) the image and latents to have normal distribution (KL)
+- sample, or interpolate from the latent normal distribution and generate images - may find [disentangled representations](/ml/manipulate-item-attributes-via-disentangled-representation)
 
 ![variational autoencoder](/images/variational-autoencoder.drawio.svg)
 
@@ -73,9 +76,9 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes im
 
 
 ### DALL-E 1 Prediction:
-1. encode input text to tokens
+1. encode input text to text tokens
 2. iteratively predict next image token from the learned codebook
-3. decode the resulting image tokens using [dVAE](#discreet-variational-auto-encoder-dvae)
+3. decode the image tokens using [dVAE](#discreet-variational-auto-encoder-dvae) decoder
 4. select the best image using [CLIP model](#openais-clip) ranker
 
 ![DALL-E-1 generates tokens](/images/dall-e-1-generate.drawio.svg)
@@ -117,7 +120,7 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes im
   - training loss has additional term of gradient of dot-product with the CLIP text embedding
   - CLIP encoders are trained on noised images to stay in distribution
 - text-conditional diffusion model
-  - GLIDE diffusion model is a transformer ([ADM model](https://arxiv.org/pdf/2105.05233.pdf))
+  - GLIDE diffusion model is a [transformer](/ml/transformers-self-attention-mechanism-simplified) ([ADM model](https://arxiv.org/pdf/2105.05233.pdf))
   - text is embedded via another transformer
   - text embeddings are appended to the diffusion model sequence in each layer
 
