@@ -3,7 +3,7 @@ title: "OpenAI's DALL-E 2 and DALL-E 1 Explained"
 description: "Compare of text-to-image generation models DALL-E 1, 2, and understand related models VQ-VAE, CLIP, and GLIDE"
 layout: post
 categories: ml
-image: /images/dall-e-2-decoder.png
+image: /images/dalle-2-1-thumb.png
 date: 2022-04-13
 permalink: /:categories/:title
 last_modified_at: 2022-04-22
@@ -12,7 +12,7 @@ last_modified_at: 2022-04-22
 {% include mathjax.html %}
 
 [DALL-E 1](#openais-dall-e-1) uses [discrete variational autoencoder (dVAE)](#discreet-variational-auto-encoder-dvae), next token prediction, and [CLIP model](#openais-clip) re-ranking,
-while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes it via diffusion similar to [GLIDE](#openais-glide).
+while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes images via diffusion similar to [GLIDE](#openais-glide).
 
 
 ## OpenAI's CLIP
