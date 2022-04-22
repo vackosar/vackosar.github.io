@@ -10,6 +10,8 @@ redirect_from:
   - /2018/01/24/Modern-Config-Injection-In-Maven-Plugins.html
 ---
 
+{% include highlight-rouge-friendly.css.html %}
+
 Default Maven injection framework based on Plexus is very limited. No constructor injection, all configuration parameters need to be part of a Mojo and supported annotations are very unfamiliar to new comers.
 
 Thankfully there has been [effort in Maven to towards modern and mainstream injection - JSR-330 support](https://maven.apache.org/maven-jsr330.html). Latest Maven versions support usage of annotations like @Inject thanks to running Guice injection framework under the hood replacing original Plexus.

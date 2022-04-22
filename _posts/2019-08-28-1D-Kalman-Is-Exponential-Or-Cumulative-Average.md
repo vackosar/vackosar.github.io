@@ -12,6 +12,8 @@ todo: "example implementation"
 note: https://www.kalmanfilter.net/kalman1d.html
 ---
 
+{% include highlight-rouge-friendly.css.html %}
+
 Kalman filter [(Kalman 1960 paper)](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf) also known as linear quadratic estimation (LQE) is an iterative algorithm that uses noisy measurements to estimate values and variance of unknown variables.
 The Kalman filter allows incorporation of known state space behaviour (e.g. momentum of physical particle) and outside-the-model estimated variance of sensor measurement (measurement uncertainty) and unknown factors (process noise).
 
@@ -28,7 +30,7 @@ The proof relies on Kalman filter asymptotically doesn't depend on initial state
 
 ## Constant Measurement Uncertainty, No Process Noise
 
-Below is the proof relies on good choice of initial value of Kalman variance ```P0``` to simplify recursive equation to match cumulative average equation.
+Below is the proof relies on good choice of initial value of Kalman variance `P0` to simplify recursive equation to match cumulative average equation.
 
 <img alt="Proof Kalman 1d with constant measurement uncertainty and no process noise proof" style="width: 80%; max-width: 900px" src="/images/2019-08-28-kalman-1d-without-process-noise-proof.jpg">
 
@@ -39,7 +41,7 @@ Plot of the convergence.
 
 ## Constant Measurement Uncertainty, Constant Process Noise
 
-Below is the proof relies on setting initial value of Kalman variance ```P0``` such that ```Pk``` becomes constant for recursive equation to match exponential moving average equation.
+Below is the proof relies on setting initial value of Kalman variance `P0` such that `Pk` becomes constant for recursive equation to match exponential moving average equation.
 
 <img alt="Proof Kalman 1d with constant measurement uncertainty and constant process noise proof" style="width: 80%; max-width: 900px" src="/images/2019-08-28-kalman-1d-with-process-noise-proof.jpg">
 

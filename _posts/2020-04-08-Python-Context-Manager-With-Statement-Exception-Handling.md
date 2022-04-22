@@ -10,13 +10,14 @@ redirect_from:
   - /2020/04/08/Python-with-statement-exception-handling.html
   - /software/Python-with-statement-exception-handling
 ---
+
+{% include highlight-rouge-friendly.css.html %}
   
 ![python close resource with context manager on exception](/images/python-context-manager-close-resource-on-exception.png)
 
 One case use context manager to handle exceptions during execution of the with statement as can be seen in the snippet below. This is useful for example for rolling back database transactions in case of an exception, where the database connections can be retrieved from and returned to a connection pool.
 
 ```python
-
 from contextlib import contextmanager
 
 
@@ -28,6 +29,7 @@ def managed_resource(param):
 
     except Exception as e:
         print(f"rolling back due to ex {e}")
+        raise
 
     finally:
         print("returning db connection to a pool")
@@ -44,6 +46,10 @@ db connection acquired this is param value
 this is the connection
 rolling back due to ex hello
 returning db connection to a pool
+Traceback (most recent call last):
+  File ".../test/test.py", line 36, in <module>
+    raise ValueError("hello")
+ValueError: hello
 ```
 
 ## Without The With
@@ -51,6 +57,47 @@ returning db connection to a pool
 What happens when we try to use `managed_resource` without `with`?
 
 Nothing. Returned object is only holds a reference to a generator and has `__enter__()` and `__exit__()` methods. The context object will only return a value from the generator upon `__enter__()` call, and will run the rest of the code after `yield` during `__exit__()` call.
+
+
+## Alternative Error Handling In Exit Method
+Instead of the `contextmanager` wrapper you can implement `__enter__` and `__exit__` methods on our custom object like below:
+
+```python
+class ManagedResource:
+
+    def __init__(self, param):
+        self.param = param
+
+    def __enter__(self):
+        print(f"db connection acquired {self.param}")
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        if exc_type is not None:
+            print(f"rolling back due to ex {exc_val}")
+
+        print("returning db connection to a pool")
+
+
+with ManagedResource("this is param value") as connection:
+    print(connection)
+    raise ValueError("hello")
+```
+
+Execution of above prints below.
+
+```
+
+db connection acquired this is param value
+<__main__.ManagedResource object at 0x7f0dc9b1af70>
+rolling back due to ex hello
+returning db connection to a pool
+Traceback (most recent call last):
+  File "/home/vackosar/src/vackosar.github.io/test/test.py", line 42, in <module>
+    raise ValueError("hello")
+ValueError: hello
+```
+
 
 
 ## Retries Using Context Manager Are Not Possible - Here Is An Alternative

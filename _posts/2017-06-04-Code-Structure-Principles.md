@@ -9,6 +9,8 @@ redirect_from:
   - /2017/06/04/Code-Structure-Principles.html
 ---
 
+{% include highlight-rouge-friendly.css.html %}
+
 However, as with all the rules, do not put the horse before the caret.
 Don't optimize code structure too early, and don't be too stringent.
 Focus more on the specifics of your problem than on generics offered by the ivory tower books.

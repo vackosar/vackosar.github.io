@@ -12,6 +12,8 @@ redirect_from:
 ---
 
 {% include load_video.html %}
+{% include highlight-rouge-friendly.css.html %}
+
 
 Same as You are used to versioning your source code, you can now version data.
 The adoption of machine learning and AI is boosting data versioning trend.
