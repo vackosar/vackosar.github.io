@@ -110,6 +110,7 @@ It autoregressive-ly generates image tokens from textual tokens on a discrete la
 
 ## OpenAI's GLIDE
 [Diffusion](#diffusion-models) text-to-image (256 × 256) generator introduced  in [paper](https://arxiv.org/pdf/2112.10741.pdf).
+GLIDE outperforms on human preference DALL-E 1.
 - [CLIP](#openais-clip-model) guided diffusion
   - task: "predict the added noise given that the image has this caption" 
   - training task is prediction of the noise and guidance towards the CLIP text embedding
@@ -154,6 +155,7 @@ It generates 1024 x 1024 images from text using diffusion models.
   - in addition to the text present in the original GLIDE
 
 ## DALL-E 2 Evaluation Results 
+- DALL-E 2 competitive photo-realism while more diverse images than GLIDE
 
 ![dall-e 2 human eval results preference](/images/dall-e-2-results.png)
 
