@@ -20,12 +20,13 @@ JSON is agnostic about the semantics of numbers. In any programming language, th
 # How json.loads selects number types?
 
 Here is a code snippet with its standard output below it:
-```
+```python
 import json
 for v in json.loads("[2000, 20.0, 20.1, 1e6, NaN, Infinity, -Infinity]"):
     print(f"{v}: {type(v)}")
+```
 
- 
+``` text 
 2000: <class 'int'>
 20.0: <class 'float'>
 20.1: <class 'float'>
