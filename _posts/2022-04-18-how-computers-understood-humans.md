@@ -1,6 +1,6 @@
 ---
 title: "How Computers Understood Humans"
-description: "7-slide introduction into deep natural language processing of 2022 featuring TF-IDF, Word2vec, knowledge graphs, transformers"
+description: "7-slide introduction into deep natural language processing of 2022 featuring TF-IDF, Word2vec, knowledge graphs, and transformers."
 layout: post
 categories: ml
 image: /images/how-computers-understood-humans-thumb.png
