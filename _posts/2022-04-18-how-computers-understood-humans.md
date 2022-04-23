@@ -24,10 +24,6 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 (Gulliver's Travels, by Jonathan Swift 1726, making fun of <a href="https://www.researchgate.net/publication/221502602_Llull_as_Computer_Scientist_or_Why_Llull_Was_One_of_Us">Ramon Llull 1232</a>)
 </p>
 
-## Ideas and State of The Art 2022
-
-
-
 
 ## Prompt as an Interface
 - 2001: A Space Odyssey HAL 9000
