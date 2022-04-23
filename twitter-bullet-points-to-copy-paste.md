@@ -17,31 +17,31 @@ Copy-paste your favorite symbol from below and get bullet points onto you Twitte
 
 ### Standard Bullet Points
 
-• classic bullet
+• Classic bullet
 
-◦ white bullet
+◦ White bullet
 
-∙ middle dot bullet
+∙ Middle dot bullet
 
 
 ### Special Bullet Points
-‣ triangular bullet
+‣ Triangular bullet
 
 ⁃ Dash bullet
 
 ▪ Square bullet
 
-▫️White Small Square
+▫ White Small Square
 
-♦ diamond bullet
+♦ Diamond bullet
 
-♦ diamond bullet
+♦ Diamond bullet
 
-⬨ white diamond bullet
+⬨ White diamond bullet
 
-⬩ small diamond bullet
+⬩ Small diamond bullet
 
-💎 gem stone bullet
+💎 Gem stone bullet
 
 
 ### Keyboard Tips
