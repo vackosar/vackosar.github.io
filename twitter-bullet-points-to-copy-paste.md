@@ -3,6 +3,8 @@ layout: post
 title: "Twitter Bullet Points to Copy & Paste"
 date: 2022-02-06
 description: Get nice bullet point character to copy and paste in a second.
+image: /images/twitter-bullet-points.png
+last_modified_at: 2022-04-23
 ---
 
 ![Twitter Bullet Points How To](/images/twitter-bullet-points.png)
@@ -13,53 +15,33 @@ You can make your list stand out with non-standard bullet points.
 Copy-paste your favorite symbol from below and get bullet points onto you Twitter as well.
 
 
-### Standard, White, Middle Bullet Points
-
-• classic bullet
+### Standard Bullet Points
 
 • classic bullet
 
 ◦ white bullet
 
-◦ white bullet
-
-∙ middle dot bullet
-
 ∙ middle dot bullet
 
 
-### Triangular Bullet
-‣ triangular
+### Special Bullet Points
+‣ triangular bullet
 
-‣ triangular
-
-
-### Dash Bullet
-⁃ dash 1
-
-⁃ dash 2
-
-
-
-### Square
+⁃ Dash bullet
 
 ▪ Square bullet
 
-▪ Square bullet
+▫️White Small Square
 
-▫️ White Small Square
+♦ diamond bullet
 
-### Diamonds
+♦ diamond bullet
 
-♦ diamond
+⬨ white diamond bullet
 
-♦ diamond
+⬩ small diamond bullet
 
-⬨ white diamond
-
-⬩ small diamond 
-
-💎 Gem Stone
+💎 gem stone bullet
 
 
 ### Keyboard Tips
@@ -67,7 +49,7 @@ Apart from copy-pasting, you can also produce standard bullet points using below
 - Mac: hold option key & press 8
 - Windows: hold alt key & press Numpad 7
 
-### Other Useful Symbols
+### Eye Catching Emoji Symbols
 Other symbols are useful to emphasize call to action or emotion of your tweet.
 
 - 🧵 Thread
@@ -79,6 +61,7 @@ Other symbols are useful to emphasize call to action or emotion of your tweet.
 - ✨  Sparkles
 - 🔥 Fire
 - 💪 Flexed Biceps
+- 🙏 Folded Hands (Thank you or pray)
 - 🤝 Handshake
 
 ### Successful Tweet Templates
