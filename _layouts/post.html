@@ -13,8 +13,12 @@ layout: default
 <div class="post">
     {{ content }}
 </div>
-<p class="meta" style="text-align: right"><small>{{ page.date | date_to_string }}</small></p>
-
+<p class="meta" style="text-align: right">
+    <small>Created on {{ page.date | date_to_string }}.</small>
+{% if page.last_modified_at %}
+    <small>Updated on: {{ page.last_modified_at | date_to_string }}.</small>
+{% endif %}
+</p>
 
 
 {% include subscribe.html %}
