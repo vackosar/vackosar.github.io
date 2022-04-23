@@ -1,13 +1,17 @@
 ---
 title: "How Computers Understood Humans"
-description: "10-slide introduction into deep natural language processing of 2022."
+description: "7-slide introduction into deep natural language processing of 2022 featuring TF-IDF, Word2vec, knowledge graphs, transformers"
 layout: post
 categories: ml
 image: /images/how-computers-understood-humans-thumb.png
 date: 2022-04-18
 permalink: /:categories/:title
 last_modified_at: 2022-04-23
+video: Jo-IQjdFfnw
 ---
+
+{% include load_video.html %}
+
 - ideas existed at least since 1700s, but not enough compute and computer science
 - Current computers do almost what was predicted, but how?
 - How to instruct computer to perform tasks?
@@ -16,9 +20,13 @@ last_modified_at: 2022-04-23
 
 <p style="color: blue">
 by his contrivance, the most ignorant person, at a reasonable charge, and with a little bodily labour, <b>might write books</b> in philosophy, poetry, politics, laws, mathematics, and theology, without the least assistance from genius or study.
-... He then commanded six-and-thirty of the lads, to read <b>the several lines softly, as they appeared upon the frame</b>
+... <b>to read the several lines softly, as they appeared upon the frame</b>
 (Gulliver's Travels, by Jonathan Swift 1726, making fun of <a href="https://www.researchgate.net/publication/221502602_Llull_as_Computer_Scientist_or_Why_Llull_Was_One_of_Us">Ramon Llull 1232</a>)
 </p>
+
+## Ideas and State of The Art 2022
+
+
 
 
 ## Prompt as an Interface
