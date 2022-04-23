@@ -2,7 +2,7 @@
 layout: post
 title: "Twitter Bullet Points to Copy & Paste"
 date: 2022-02-06
-description: Get nice bullet point character to copy and paste in a second.
+description: Get a nice bullet point character to copy and paste in a second, and other Twitter tips.
 image: /images/twitter-bullet-points.png
 last_modified_at: 2022-04-23
 ---
@@ -10,7 +10,7 @@ last_modified_at: 2022-04-23
 ![Twitter Bullet Points How To](/images/twitter-bullet-points.png)
 
 Twitter posting requires summarization and lists are often used in that. 
-Bullet points are crucial to create graphically appealing lists.
+Bullet points are crucial to create visually appealing lists.
 You can make your list stand out with non-standard bullet points.
 Copy-paste your favorite symbol from below and get bullet points onto you Twitter as well.
 
@@ -50,7 +50,7 @@ Apart from copy-pasting, you can also produce standard bullet points using below
 - Windows: hold alt key & press Numpad 7
 
 ### Eye Catching Emoji Symbols
-Other symbols are useful to emphasize call to action or emotion of your tweet.
+Other symbols are useful to emphasize call to action and add a spark of emotion to your tweet.
 
 - 🧵 Thread
 - 👆 👇 👈 👉 Pointing hands
@@ -65,6 +65,7 @@ Other symbols are useful to emphasize call to action or emotion of your tweet.
 - 🤝 Handshake
 
 ### Successful Tweet Templates
+Use templates below to cut through the noise.
 - The problem, hint of solution, call to action.
 - Agreeable fact, surprising or contrarian fact, explain the why.
 - Exclamation or emotion, hint of information, call to action.
