@@ -67,14 +67,19 @@ Apart from copy-pasting, you can also produce standard bullet points using below
 
 ### Other Useful Symbols
 - 🧵 Thread
-- Subscribe below 👇 👉 👈
+- 👆 👇 👈 👉 Pointing hands
 - ⚠️ Warning
 - 🚫 Prohibited
 - 🏆 Trophy
 - ❤️ Red Heart
-- ✨ Sparkles
+- ✨  Sparkles
 - 🔥 Fire
 - 💪 Flexed Biceps
+
+### Successful Tweet Templates
+- The problem, hint of solution, call to action
+- Agreeable fact, surprising or contrarian fact, explain the case
+- Exclamation or emotion, hint of information, call to action 
 
 ### Other Super Helpful Tools
 [When is the end of this quarter? Get overview and look at the "Quarter Clock"](/when-is-the-end-of-current-quarter.html)
