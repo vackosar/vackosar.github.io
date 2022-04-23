@@ -2,7 +2,8 @@
 layout: post
 title: "Spline: Data Lineage For Spark Structure Streaming At Spark N AI Summit 2018"
 date: 2018-10-04
-description: Vaclav Kosar and Marek Novotny had opportunity to present a POC and future plans for Spark Structured Streaming data lineage.
+last_modified_at: 2022-04-23
+description: Vaclav Kosar and Marek Novotny had opportunity to present a POC of Spark Structured Streaming data lineage visualization tool.
 image: /images/2018-10-04-spark-summit-1.JPG
 category: software
 permalink: /:categories/:title
@@ -16,7 +17,12 @@ redirect_from:
 
 
 
-Data lineage tracking is one of the significant problems that companies in highly regulated industries face. These companies are forced to have a good understanding of how data flows through their systems to comply with strict regulatory frameworks. Many of these organizations also utilize big and fast data technologies such as Hadoop, Apache Spark and Kafka. Spark has become one of the most popular engines for big data computing. In recent releases, Spark also provides the Structured Streaming component, which allows for real-time analysis and processing of streamed data from many sources. [Spline](https://github.com/AbsaOSS/spline) is a data lineage tracking and visualization tool for Apache Spark. Spline captures and stores lineage information from internal Spark execution plans in a lightweight, unobtrusive and easy to use manner.
+Data lineage tracking is one of the significant problems that companies in highly regulated industries face.
+These companies are required to have a good understanding of how data flows through their systems to comply with strict regulatory frameworks.
+Many of these organizations also utilize big and fast data technologies such as Hadoop, Apache Spark and Kafka. Spark has become one of the most popular engines for big data computing.
+In recent releases, Spark also provides the Structured Streaming component, which allows for real-time analysis and processing of streamed data from many sources.
+[Spline](https://github.com/AbsaOSS/spline) is a data lineage tracking and visualization tool for Apache Spark.
+Spline captures and stores lineage information from internal Spark execution plans in a lightweight, unobtrusive and easy to use manner.
 
 Additionally, Spline offers a modern user interface that allows non-technical users to understand the logic of Apache Spark applications. In this presentation we cover the support of Spline for Structured Streaming and we demonstrate how data lineage can be captured for streaming applications.
 
