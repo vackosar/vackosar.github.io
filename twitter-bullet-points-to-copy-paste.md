@@ -47,6 +47,7 @@ Copy-paste your favorite symbol from below and get bullet points onto you Twitte
 
 ▪ Square bullet
 
+▫️ White Small Square
 
 ### Diamonds
 
@@ -58,14 +59,17 @@ Copy-paste your favorite symbol from below and get bullet points onto you Twitte
 
 ⬩ small diamond 
 
+💎 Gem Stone
+
 
 ### Keyboard Tips
-
 Apart from copy-pasting, you can also produce standard bullet points using below:
 - Mac: hold option key & press 8
 - Windows: hold alt key & press Numpad 7
 
 ### Other Useful Symbols
+Other symbols are useful to emphasize call to action or emotion of your tweet.
+
 - 🧵 Thread
 - 👆 👇 👈 👉 Pointing hands
 - ⚠️ Warning
@@ -75,11 +79,12 @@ Apart from copy-pasting, you can also produce standard bullet points using below
 - ✨  Sparkles
 - 🔥 Fire
 - 💪 Flexed Biceps
+- 🤝 Handshake
 
 ### Successful Tweet Templates
-- The problem, hint of solution, call to action
-- Agreeable fact, surprising or contrarian fact, explain the case
-- Exclamation or emotion, hint of information, call to action 
+- The problem, hint of solution, call to action.
+- Agreeable fact, surprising or contrarian fact, explain the why.
+- Exclamation or emotion, hint of information, call to action.
 
 ### Other Super Helpful Tools
 [When is the end of this quarter? Get overview and look at the "Quarter Clock"](/when-is-the-end-of-current-quarter.html)
