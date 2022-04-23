@@ -104,12 +104,13 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes im
 <br>
 
 ## Diffusion Models
-  - [diffusion models](https://arxiv.org/pdf/2006.11239.pdf) reverse addition of gaussian noise to an image
-  - an image arises from iterative denoising e.g. after 100 steps
-  - training task is to predict the added noise with mean-squared error loss
-  - similar to [normalizing flow models like OpenAI's Glow](/ml/openais-glow-flow-based-model-teardown) which are additionally single step and invertible
+- [diffusion models](https://arxiv.org/pdf/2006.11239.pdf) reverse addition of gaussian noise to an image
+- an image arises from iterative denoising e.g. after 100 steps
+- training task is to predict the added noise with mean-squared error loss
+- similar to [normalizing flow models like OpenAI's Glow](/ml/openais-glow-flow-based-model-teardown) which are additionally single step and invertible
 
 ![diffusion model - progressive denoising examples steps (Denoising Diffusion Probabilistic Models)](/images/diffusion-model-example-steps.png)
+
 
 ## OpenAI's GLIDE
 - [Diffusion](#diffusion-models) text-to-image (256 × 256) generator introduced  in [paper](https://arxiv.org/pdf/2112.10741.pdf).
@@ -126,9 +127,11 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes im
 
 <br>
 
+
 ## OpenAI's DALL-E 2
 
-- OpenAI introduced DaLL-E-2 in [the paper](https://arxiv.org/pdf/2204.06125.pdf).
+- OpenAI introduced DaLL-E-2 in [the paper](https://arxiv.org/pdf/2204.06125.pdf)
+- model name is unCLIP while DALL-E 2 is seems to be a marketing name
 - generates 1024 x 1024 images from text using diffusion models.
 - generates more diverse and higher resolution images than [GLIDE](#openais-glide).
 
@@ -158,10 +161,12 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes im
   - projected as 4 extra tokens
   - in addition to the text present in the original GLIDE
 
+
 ## DALL-E 2 Evaluation Results 
 DALL-E 2 competitive photo-realism while more diverse images than GLIDE
 
 ![dall-e 2 human eval results preference](/images/dall-e-2-results.png)
+
 
 ### DALL-E 2 Examples
 
