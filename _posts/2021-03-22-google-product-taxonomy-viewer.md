@@ -2,12 +2,13 @@
 layout: default
 title: "Google Product Taxonomy Viewer"
 date: 2021-04-16
-description: Explore with an interactively Google's shopping category structure.
+description: Interactively explore Google's shopping categories to configure products in your feed.
 image: /images/google-shopping-taxonomy-viewer-graphic.png
 permalink: /:categories/:title
 categories: software
 redirect_from:
 - /google-product-taxonomy-viewer.html
+last_modified_at: 2022-04-23
 ---
 
 # {{ page.title }}
@@ -16,7 +17,7 @@ redirect_from:
 
 ![Google Product Taxonomy Interactive Viewer ](/images/google-shopping-taxonomy-viewer-graphic.png)
 
-Explore Google Product Taxonomy below.
+Explore Google Product Taxonomy below to understand where to place products in your feed.
 <span style="color: green">Click on the green nodes</span> to expand product category tree. The second click collapses the children in the diagram.
 
 <script src="/js/d3.v6.min.js" type="text/javascript"></script>
