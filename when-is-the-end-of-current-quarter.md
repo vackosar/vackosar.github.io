@@ -1,9 +1,11 @@
 ---
 layout: default
 title: When is the end of this quarter?
-description: How many days left in the quarter? What is the current calendar quarter-end date? What is the current quarter?
+description: How many days are left in the quarter? What is the current calendar quarter-end date? What is the current quarter?
 redirect_from: 
   - independent/when-is-the-end-of-current-quarter.html
+image: /images/quarters.svg
+last_modified_at: 2022-04-23
 ---
 
 [comment]: <> (permalink: /when-is-the-end-of-current-quarter)
@@ -11,14 +13,14 @@ redirect_from:
 <h1>{{ page.title }}</h1>
 <small><i>{{ page.description }}</i></small>
 <small>When is the end of the quarter?</small>
-<small>When does this quarter ends?</small>
+<small>When does this quarter end?</small>
 <small>When is quarter-end?</small>
 
-The current quarter <b class='quarterName'>Q1</b> ends on <b id='quarterEnd'>Mar 31</b> in <b class="daysLeft">45</b> days (<b id="bizDaysLeft">20</b> business days).
+The current quarter <b class='quarterName'>Q1</b>, ends on <b id='quarterEnd'>Mar 31</b> in <b class="daysLeft">45</b> days (<b id="bizDaysLeft">20</b> business days).
 <br>
 
-How many days left in this quarter? There are <b class="daysLeft2">45</b> days left in this quarter.<br>
-How many business days till the end of this quarter? There are <b id="bizDaysLeft2">45</b> business days till the end of current quarter <b class='quarterName'>Q1</b>.
+How many days are left in this quarter? There are <b class="daysLeft2">45</b> days left in this quarter.<br>
+How many business days till the end of this quarter? There are <b id="bizDaysLeft2">45</b> business days till the end of the current quarter <b class='quarterName'>Q1</b>.
 There are <b id="daysYearLeft">183</b> days left in this year.
 
 What quarter are we in? The current quarter is <b class='quarterName'>Q1</b>.
@@ -61,15 +63,16 @@ The new quarter <b id="nextQuarter">Q2</b> starts in <b class="daysLeft">45</b> 
         stroke-width="8" marker-end="url(#arrowhead)" />
       </svg>
     </div>
-    <figcaption class="figure-caption">Quarter clock shows calendar year broken into quarters and their months. Red arrow shows current day.</figcaption>
+    <figcaption class="figure-caption">Quarter Clock shows the calendar year broken into quarters and their months. The red arrow shows the current day.</figcaption>
 </figure>
 
 <h3>When do calendar quarters start and end?</h3>
-<p>What calendar quarter means? A year is divided into 4 quarters: Q1, Q2, Q3, Q4. Each quarter has 3 months.
+<p>What does a calendar quarter mean? A year is divided into 4 quarters: Q1, Q2, Q3, and Q4.
+Each quarter has 3 months.
 Each quarter is approximately 91 days long.
-Quarterly means once every quarter, which is approximately each 91 days.</p>
+Quarterly means once every quarter, which is roughly every 91 days.</p>
 
-<p>See a handy table of calendar of every quarter start date (first day) and end date (last day) below. The dates are the same for each year (2021, 2022, 2023, ...).</p>
+<p>See a handy table of the calendar of every quarter's start date (first day) and end date (last day) below. The dates are the same for each year (2021, 2022, 2023, ...).</p>
 
 <table class="table table-striped">
     <thead>
@@ -116,10 +119,10 @@ Quarterly means once every quarter, which is approximately each 91 days.</p>
 
 <h3>Fiscal Year</h3>
 <p>
-  Each company or government institution can choose their own fiscal (financial) year, a twelve-month period, that is the most suitable to their yearly revenue cycle.
-  Company's fiscal year can differ from calendar year.
-  Companies use their fiscal years to submit financial reports, external audits, federal tax filings.
-  For example Apple's fiscal year ends its fiscal year on the last Saturday of September.
+  Each company or government institution can choose its own fiscal (financial) year twelve-month period that is the most suitable for its yearly revenue cycle.
+  A company's fiscal year can differ from the calendar year.
+  Companies use their fiscal years to submit financial reports, external audits, and federal tax filings.
+  For example, Apple's fiscal year ends on the last Saturday of September.
   What is the fiscal year-end for Microsoft, Amazon, Google, or NVIDIA.
 </p>
 
@@ -157,25 +160,26 @@ Quarterly means once every quarter, which is approximately each 91 days.</p>
         </tr>
     </tbody>
 </table>
+
 <h3>Fiscal Quarters</h3>
 
 <p>
-A company fiscal year outlines its fiscal (financial) quarters dates.
-That means that fiscal quarters and quarter reporting dates may be different for each company.
-But usually they fall at the end of the months and don't cut through them.
-Fiscal or financial quarter takes 3 months, so is approximately 91 days long, the same as the calendar quarter.
+A company's fiscal year outlines its fiscal (financial) quarters dates.
+That means that fiscal quarters and quarter reporting dates may differ for each company.
+But usually, financial quarters end on the last day of a calendar month and start on the first day of a calendar month.
+A fiscal or financial quarter takes 3 months, so it is approximately 91 days long, the same as the calendar quarter, dividing calendar months into 4 equal sets.
 </p>
 
 <h3>Historical Origin of Calendar Quarters</h3>
 <p>
 Calendar quarters approximately match 4 seasons.
-Calendar quarters divides approximately match 2 equinox and 2 solstice days, when the plane of Earth's equator maximally aligns or excurses with the center of the Sun's disk (ecliptic).
+The starts of calendar quarters roughly correspond to 2 equinox and 2 solstice days, when the plane of Earth's equator maximally aligns or excurses with the center of the Sun's disk (ecliptic).
 </p>
 
 <h3>Request Notifications or Other Features</h3>
 Would you like to receive notifications or other features?
-Or do you need to consult on topic of software developement or machine learning?
-Contact me with button below.
+Or do you need to consult on the software development or machine learning?
+Contact me with the button below.
 
 <a class="btn btn-success m-1" style="text-decoration: none;" href="https://us3.list-manage.com/contact-form?u=289873d7958b1bdc1c6dc93b7&form_id=3b80462ee1d82c5a36e447efbfdbe72a">Consult with Vaclav</a>
 
