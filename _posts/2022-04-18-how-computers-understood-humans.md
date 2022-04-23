@@ -3,13 +3,13 @@ title: "How Computers Understood Humans"
 description: "10-slide introduction into deep natural language processing of 2022."
 layout: post
 categories: ml
-image: /images/gullivers-travels-swift.png
+image: /images/how-computers-understood-humans-thumb.png
 date: 2022-04-18
 permalink: /:categories/:title
-last_modified_at: 2022-04-19
+last_modified_at: 2022-04-23
 ---
-- ideas existed at least since 1700s
-- but not enough compute and computer science
+- ideas existed at least since 1700s, but not enough compute and computer science
+- Current computers do almost what was predicted, but how?
 - How to instruct computer to perform tasks?
 - How represent knowledge in computers?
 - How to generate the answers?
@@ -78,7 +78,7 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 ## Big Transformer Models
 - generate by predicting input text continuation
 - $10M transformers trained on large amount of text from the internet in 2022
-- solve wide variety naturally described problems sometimes with human level performance
+- can solve wide variety of problems like explaining jokes, sometimes with human level performance
 - examples: [PaLM (2022)](/ml/googles-pathways-language-model-and-chain-of-thought), [RETRO (2021)](/ml/DeepMinds-RETRO-Transformer-Model), [GPT-3](https://arxiv.org/pdf/2005.14165.pdf), ...
 
 ![transformer next token prediction](/images/transformer-from-word2vec-next-token.jpg)
