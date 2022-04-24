@@ -121,12 +121,12 @@ GPT-3: No, because an airplane typically travels around 500-600 miles per hour, 
 
 ## PaLM Architecture:
 - standard decoder-only [transformer](/ml/transformers-self-attention-mechanism-simplified) (attending only to the past, similar to [GPT-3](https://arxiv.org/pdf/2005.14165.pdf)) 
-- modified Feed-forward layer (MLP):
+- modified [Feed-forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) (MLP):
   - instead of RELU \\( max(0, xW_1 + b_1)W_2 + b_2 \\) use [SwiGLU feed-foward](https://arxiv.org/pdf/2002.05202.pdf)
   - ~1% better in compute equivalent setup
   - uses gated linear unit (GLU) - a sigmoid controlled output
   - SwiGLU: \\( \mathrm{FFN}_{\mathrm{SwiGLU}} := (\mathrm{Swish}(xW_1) \otimes xV ) W_2 \\)
-  - similar to [all-attention which incorporates feed-forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory)
+  - seems similar to [cross-attention with a trained sequence](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory)
   - uses [swish activation](https://arxiv.org/pdf/1710.05941v1.pdf?source=post_page): \\( x (1 + exp(−x))^{−1} \\)
 - parallel Attention and Feed-forward layer (MLP) from [GPT-J](https://github.com/kingoflolz/mesh-transformer-jax):
   - instead of sequential is additive:
