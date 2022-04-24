@@ -75,15 +75,7 @@ And they reportedly slightly outperformed the vanilla model on the next token pr
 
 Something mildly similar was also done in the [Google's PaLM model](/ml/googles-pathways-language-model-and-chain-of-thought):
 
-
-## Modified Feed-Forward in PaLM: SwiGLU
-- [PaLM model](/ml/googles-pathways-language-model-and-chain-of-thought) modified Feed-forward layer (MLP):
-- instead of RELU \\( max(0, xW_1 + b_1)W_2 + b_2 \\) uses [SwiGLU](https://arxiv.org/pdf/2002.05202.pdf) \\( (\mathrm{Swish}(xW_1) \otimes xV ) W_2 \\)
-- gated linear unit (GLU) is a sigmoid controlled output
-- midly similar to [cross-attention with a static sequence](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory)
-- ~1% higher accuracy in compute equivalent setup
-- [swish activation](https://arxiv.org/pdf/1710.05941v1.pdf?source=post_page): \\( \mathrm{Swish}(x) := x (1 + exp(−x))^{−1} \\)
-
+{% include shared_slides/swiglu-modified-feed-forward-layer.md %}
 
 But does the feed-forward sublayer really behave like key-value memory not only talk a talk?
 

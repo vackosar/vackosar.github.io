@@ -121,13 +121,6 @@ GPT-3: No, because an airplane typically travels around 500-600 miles per hour, 
 
 ## PaLM Architecture:
 - standard decoder-only [transformer](/ml/transformers-self-attention-mechanism-simplified) (attending only to the past, similar to [GPT-3](https://arxiv.org/pdf/2005.14165.pdf)) 
-- modified [Feed-forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) (MLP):
-  - instead of RELU \\( max(0, xW_1 + b_1)W_2 + b_2 \\) uses [SwiGLU](https://arxiv.org/pdf/2002.05202.pdf) \\( (\mathrm{Swish}(xW_1) \otimes xV ) W_2 \\)
-  - ~1% better in compute equivalent setup
-  - uses gated linear unit (GLU) - a sigmoid controlled output
-  - SwiGLU: \\( \mathrm{FFN}_{\mathrm{SwiGLU}} := (\mathrm{Swish}(xW_1) \otimes xV ) W_2 \\)
-  - midly similar to [cross-attention with a static sequence](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory)
-  - [swish activation](https://arxiv.org/pdf/1710.05941v1.pdf?source=post_page): \\( \mathrm{Swish}(x) := x (1 + exp(−x))^{−1} \\)
 - parallel Attention and Feed-forward layer (MLP) from [GPT-J](https://github.com/kingoflolz/mesh-transformer-jax):
   - instead of sequential is additive:
   - \\( y = x + MLP(LayerNorm(x)) + Attention(LayerNorm(x)) \\)
@@ -141,6 +134,9 @@ GPT-3: No, because an airplane typically travels around 500-600 miles per hour, 
   - improves performance on long sequences
 - reversible lossless tokenization: 256k tokens vocabulary
   - whitespace also preserved, OOV UTF-8 split into bytes, digits of numbers tokenized separately
+- [modified feedforward layer SwiGLU](#swiglu-modified-feed-forward-layer)
+
+{% include shared_slides/swiglu-modified-feed-forward-layer.md %}
 
 
 ## PaLM Training Dataset
