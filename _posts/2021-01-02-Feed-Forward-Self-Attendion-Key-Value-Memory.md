@@ -60,7 +60,7 @@ It is a position-wise transformation that consists of linear transformation, ReL
 Don't forget the residual connections and their addition and normalization to outputs of both FF and self-attention.
 
 
-## Self-attention vs Feed-Forward Layer
+## Self-attention vs Feed-Forward Layer and All-Attention
 
 Have you noticed that the FF sublayer is akin to key-value memory of the self-attention except for non-linearity is ReLU and bias-terms \\( b, c \\)?
 
