@@ -4,7 +4,7 @@ description: "Pathways Language Model (PaLM), the largest model as of early 2022
 layout: post
 categories: ml
 date: 2022-04-10
-last_modified_at: 2022-04-20
+last_modified_at: 2022-04-24
 image: /images/palm-thumb.png
 video: oi86r-2Bh64
 permalink: /:categories/:title
@@ -124,8 +124,9 @@ GPT-3: No, because an airplane typically travels around 500-600 miles per hour, 
 - modified Feed-forward layer (MLP):
   - instead of RELU \\( max(0, xW_1 + b_1)W_2 + b_2 \\) use [SwiGLU feed-foward](https://arxiv.org/pdf/2002.05202.pdf)
   - ~1% better in compute equivalent setup
-  - uses GLU: gated linear unit - a sigmoid controlled output
+  - uses gated linear unit (GLU) - a sigmoid controlled output
   - SwiGLU: \\( \mathrm{FFN}_{\mathrm{SwiGLU}} := (\mathrm{Swish}(xW_1) \otimes xV ) W_2 \\)
+  - similar to [all-attention which incorporates feed-forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory)
   - uses [swish activation](https://arxiv.org/pdf/1710.05941v1.pdf?source=post_page): \\( x (1 + exp(−x))^{−1} \\)
 - parallel Attention and Feed-forward layer (MLP) from [GPT-J](https://github.com/kingoflolz/mesh-transformer-jax):
   - instead of sequential is additive:

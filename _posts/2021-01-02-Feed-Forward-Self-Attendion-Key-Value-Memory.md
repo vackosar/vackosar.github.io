@@ -5,8 +5,9 @@ date: 2021-01-02
 categories: ml
 image: /images/transformer-feed-forward.png
 video: NI7vFV_iOOA
-description: Transformer model queries values of keys in the self-attention and in the feed-forward memories.
+description: "Feed-forward layer behaves like a key-value memory allowing modification to all-attention: a self-attention inspired modification similar to SwiGLU."
 permalink: /:categories/:title
+last_modified_at: 2022-04-24
 ---
 
 {% include mathjax.html %}
@@ -17,7 +18,7 @@ Have you forgotten about Transformer's feed-forward layer? [It eats 2/3 of the m
 
 [The last post on LambdaNetwork sketches self-attention as a differentiable query of a key-value store](/ml/Lamda-Networks-Transform-Self-Attention).
 The [Transformer](/ml/transformers-self-attention-mechanism-simplified)'s feed-forward sublayer is similar to the [self-attention](/ml/transformers-self-attention-mechanism-simplified) except values and keys are independent of the input.
-It is like differentiable key-value memory!
+It is similar to [self-attention](/ml/transformers-self-attention-mechanism-simplified) - like differentiable key-value memory!
 
 Can we gain more understanding of [Transformer model](/ml/transformers-self-attention-mechanism-simplified) operation by looking at the FF?
 
@@ -59,14 +60,29 @@ It is a position-wise transformation that consists of linear transformation, ReL
 Don't forget the residual connections and their addition and normalization to outputs of both FF and self-attention.
 
 
-## Key-Value Memory vs Feed-Forward Layer
+## Self-attention vs Feed-Forward Layer
 
-Have you noticed that the FF sublayer is akin to key-value memory except for non-linearity is ReLU and bias-terms \\( b, c \\)?
+Have you noticed that the FF sublayer is akin to key-value memory of the self-attention except for non-linearity is ReLU and bias-terms \\( b, c \\)?
 
 \\( \mathrm{keyValMemory} = \sum_i \mathrm{softmax}(q_i k_i^\intercal) v \\)
 
 [Augmenting Self-attention with Persistent Memory paper](https://arxiv.org/pdf/1907.01470.pdf) saw the similarity of feed-forward sublayer and self-attention and suggested an architecture simplification.
-They restated the FF as key-value memory and incorporated it into the self-attention sublayer. And they reportedly slightly outperformed the vanilla model on the next token prediction task.
+They restated the feed-forward layer as a self-attention modification, as a key-value memory, and incorporated it into the self-attention sublayer calling the new block "All-attention".
+And they reportedly slightly outperformed the vanilla model on the next token prediction task.
+
+![All-attention: feed-forward layer restated as self-attention](/images/all-attention-feed-forward-as-self-attention.png)
+
+Something similar was also done in the [Google's PaLM model](/ml/googles-pathways-language-model-and-chain-of-thought).
+
+
+## SwiGLU in PaLM
+- [PaLM model](/ml/googles-pathways-language-model-and-chain-of-thought) modified Feed-forward layer (MLP)
+- instead of RELU \\( max(0, xW_1 + b_1)W_2 + b_2 \\) uses [SwiGLU](https://arxiv.org/pdf/2002.05202.pdf) \\( (\mathrm{Swish}(xW_1) \otimes xV ) W_2 \\)
+- gated linear unit (GLU) is a sigmoid controlled output
+- ~1% higher accuracy in compute equivalent setup
+- similar to self-attention feed-forward
+- uses [swish activation](https://arxiv.org/pdf/1710.05941v1.pdf?source=post_page): \\( x (1 + exp(−x))^{−1} \\)
+
 
 But does the feed-forward sublayer really behave like key-value memory not only talk a talk?
 
