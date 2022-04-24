@@ -5,7 +5,7 @@ date: 2021-01-02
 categories: ml
 image: /images/transformer-feed-forward.png
 video: NI7vFV_iOOA
-description: "Feed-forward layer behaves like a key-value memory allowing modification to all-attention: a self-attention inspired modification similar to SwiGLU."
+description: "Feed-forward layer similar to cross-attention allowing self-attention modification to all-attention: a self-attention inspired modification similar to SwiGLU."
 permalink: /:categories/:title
 last_modified_at: 2022-04-24
 ---
@@ -60,14 +60,15 @@ It is a position-wise transformation that consists of linear transformation, ReL
 Don't forget the residual connections and their addition and normalization to outputs of both FF and self-attention.
 
 
-## Self-attention vs Feed-Forward Layer and All-Attention
+## Feed-Forward Layer vs Cross-Attention
 
 Have you noticed that the FF sublayer is akin to key-value memory of the self-attention except for non-linearity is ReLU and bias-terms \\( b, c \\)?
 
 \\( \mathrm{keyValMemory} = \sum_i \mathrm{softmax}(q_i k_i^\intercal) v \\)
 
+More specifically feed-forward layer is a bit like a [cross-attention](/ml/cross-attention-in-transformer-architecture) with a trainable embedding sequence.
 [Augmenting Self-attention with Persistent Memory paper](https://arxiv.org/pdf/1907.01470.pdf) saw the similarity of feed-forward sublayer and self-attention and suggested an architecture simplification.
-They restated the feed-forward layer as a self-attention modification, as a key-value memory, and incorporated it into the self-attention sublayer calling the new block "All-attention".
+They restated the feed-forward layer, incorporated it into the self-attention sublayer, and named the new block "All-attention".
 And they reportedly slightly outperformed the vanilla model on the next token prediction task.
 
 ![All-attention: feed-forward layer restated as self-attention](/images/all-attention-feed-forward-as-self-attention.png)
