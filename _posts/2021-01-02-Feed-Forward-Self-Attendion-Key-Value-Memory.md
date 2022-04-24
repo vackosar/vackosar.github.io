@@ -5,7 +5,7 @@ date: 2021-01-02
 categories: ml
 image: /images/transformer-feed-forward.png
 video: NI7vFV_iOOA
-description: "Feed-forward layer similar to cross-attention allowing self-attention modification to all-attention: a self-attention inspired modification similar to SwiGLU."
+description: "Feed-forward layer is similar to cross-attention as observed in SwiGLU and All-attention."
 permalink: /:categories/:title
 last_modified_at: 2022-04-24
 ---
@@ -17,12 +17,12 @@ last_modified_at: 2022-04-24
 Have you forgotten about Transformer's feed-forward layer? [It eats 2/3 of the model params](https://arxiv.org/pdf/2012.14913v1.pdf)!
 
 [The last post on LambdaNetwork sketches self-attention as a differentiable query of a key-value store](/ml/Lamda-Networks-Transform-Self-Attention).
-The [Transformer](/ml/transformers-self-attention-mechanism-simplified)'s feed-forward sublayer is similar to the [self-attention](/ml/transformers-self-attention-mechanism-simplified) except values and keys are independent of the input.
-It is similar to [self-attention](/ml/transformers-self-attention-mechanism-simplified) - like differentiable key-value memory!
+The [Transformer](/ml/transformers-self-attention-mechanism-simplified)'s feed-forward sublayer is similar to the  [cross-attention](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) attending to a separate sequence via key and value input.
+So, it is a bit like differentiable key-value memory.
 
 Can we gain more understanding of [Transformer model](/ml/transformers-self-attention-mechanism-simplified) operation by looking at the FF?
 
-## Where and what is Feed-Forward?
+## Where is Feed-Forward Layer?
 
 Where is Feed-Forward layer within the architecture exactly?
 FF camps within encoder and decoder layers as a sublayer just behind the self-attention sub-layer.
@@ -31,7 +31,7 @@ FF camps within encoder and decoder layers as a sublayer just behind the self-at
     <img
         class="figure-img img-fluid rounded lazyload"
         alt="Transformer encoder layers. Feed-forward is a sub-layer after the self-attention."
-        data-src="/images/transformer-layers-encoder.jpg"
+        data-src="/images/feed-forward-sublayer-in-transformer.png"
         style="width: 300px"
     >
     <figcaption class="figure-caption">
@@ -39,11 +39,12 @@ FF camps within encoder and decoder layers as a sublayer just behind the self-at
     </figcaption>
 </figure>
 
-And what is FF layer precisely?
-It is a position-wise transformation that consists of linear transformation, ReLU, and another linear transformation.
+## What is Feed-Forward Layer?
+- It is a position-wise transformation that consists of linear transformation, ReLU, and another linear transformation.
 
-\\( \mathrm{ffLayer} = \sum_i \mathrm{relu}(q_i k_i^\intercal + b_i) v_i + c\\)
+- formula: \\( \mathrm{ffLayer} = \sum_i \mathrm{relu}(q_i k_i^\intercal + b_i) v_i + c\\)
 
+- Don't forget the residual connections and their addition and normalization to outputs of both FF and self-attention.
 
 <figure class="figure">
     <img
@@ -57,7 +58,6 @@ It is a position-wise transformation that consists of linear transformation, ReL
     </figcaption>
 </figure>
 
-Don't forget the residual connections and their addition and normalization to outputs of both FF and self-attention.
 
 
 ## Feed-Forward Layer vs Cross-Attention
@@ -73,16 +73,16 @@ And they reportedly slightly outperformed the vanilla model on the next token pr
 
 ![All-attention: feed-forward layer restated as self-attention](/images/all-attention-feed-forward-as-self-attention.png)
 
-Something similar was also done in the [Google's PaLM model](/ml/googles-pathways-language-model-and-chain-of-thought).
+Something mildly similar was also done in the [Google's PaLM model](/ml/googles-pathways-language-model-and-chain-of-thought):
 
 
-## SwiGLU in PaLM
-- [PaLM model](/ml/googles-pathways-language-model-and-chain-of-thought) modified Feed-forward layer (MLP)
+## Modified Feed-Forward in PaLM: SwiGLU
+- [PaLM model](/ml/googles-pathways-language-model-and-chain-of-thought) modified Feed-forward layer (MLP):
 - instead of RELU \\( max(0, xW_1 + b_1)W_2 + b_2 \\) uses [SwiGLU](https://arxiv.org/pdf/2002.05202.pdf) \\( (\mathrm{Swish}(xW_1) \otimes xV ) W_2 \\)
 - gated linear unit (GLU) is a sigmoid controlled output
+- midly similar to [cross-attention with a static sequence](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory)
 - ~1% higher accuracy in compute equivalent setup
-- similar to self-attention feed-forward
-- uses [swish activation](https://arxiv.org/pdf/1710.05941v1.pdf?source=post_page): \\( x (1 + exp(−x))^{−1} \\)
+- [swish activation](https://arxiv.org/pdf/1710.05941v1.pdf?source=post_page): \\( \mathrm{Swish}(x) := x (1 + exp(−x))^{−1} \\)
 
 
 But does the feed-forward sublayer really behave like key-value memory not only talk a talk?
@@ -100,7 +100,7 @@ Authors also observed that the upper layers memorize more abstract patterns.
 
 Unfortunately not all samples are provided in the pre-print.
 Furthermore, they report they found more than one pattern per key.
-Where those patterns on a single topic or disparate topics?
+Were those patterns referencing a single topic or disparate topics?
 If single key was associated with multiple topics, can we still look at it as a memory cell?
 
 Activated FF-values predicted model's next output tokens in higher layers only, but not in lower layers.
@@ -119,7 +119,7 @@ Is this used by the model for predicted sequence re-arrangements?
 
 ## LambdaNet Positional Embeddings vs Feed-Forward Layer
 
-[LambdaNet layer positional embeddings](/ml/Lamda-Networks-Transform-Self-Attention) are something between self-attention and feed-forward layer in transformer, but neither.
+[LambdaNet layer positional embeddings](/ml/Lambda-Networks-Transform-Self-Attention) are something between self-attention and feed-forward layer in transformer, but neither.
 They are about querying pattern-values store.
 The keys are constants like in FF, but queries and values are derived from the input.
 Whereas in the FF the values are constants as well.
