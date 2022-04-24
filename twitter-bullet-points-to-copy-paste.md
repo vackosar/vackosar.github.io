@@ -35,8 +35,6 @@ Copy-paste your favorite symbol from below and get bullet points onto you Twitte
 
 ♦ Diamond bullet
 
-♦ Diamond bullet
-
 ⬨ White diamond bullet
 
 ⬩ Small diamond bullet
