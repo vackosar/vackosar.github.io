@@ -1,5 +1,5 @@
 ---
-title: "DeepMind's RETRO Transformer Model"
+title: "DeepMind's RETRO Retrieval-Enhanced Transformer"
 description: "Retrieval-Enhanced Language Model cross-attends trillions of tokens for SoTA on Wikitext103 and The Pile with 25x fewer parameters."
 image: /images/retrieval-transformer-thumb.png 
 video: -93KBOg77Sg
@@ -7,13 +7,14 @@ layout: post
 categories: ml
 date: 2021-12-29
 permalink: /:categories/:title
+last_modified_at: 2022-04-25
 ---
 
 {% include load_video.html %}
 
 - next token (~word) prediction = autoregressive language model
-- full name = Retrieval-Enhanced Transformer (RETRO) 
-- paper = DeepMind's [Improving Language Models by Retrieving from Trillions of Tokens (2021)](https://arxiv.org/pdf/2112.04426v1.pdf), [Deep Mind Blog](https://deepmind.com/research/publications/2021/improving-language-models-by-retrieving-from-trillions-of-tokens)
+- full name = Retrieval-Enhanced [Transformer](/ml/transformers-self-attention-mechanism-simplified) (RETRO) 
+- introduced in DeepMind's [Improving Language Models by Retrieving from Trillions of Tokens (2021)](https://arxiv.org/pdf/2112.04426v1.pdf), [Deep Mind Blog](https://deepmind.com/research/publications/2021/improving-language-models-by-retrieving-from-trillions-of-tokens)
 - retrieves from [kNN](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) database [BERT](/ml/transformers-self-attention-mechanism-simplified)-similar to the current text-chunk
 - conditions on retrieved chunk and its continuation chunk
 - so attends to previously encountered "future texts"
@@ -34,7 +35,7 @@ permalink: /:categories/:title
 - [DPR (2020)](https://aclanthology.org/2020.emnlp-main.550.pdf)
   - trains one [BERT (2017)](/ml/transformers-self-attention-mechanism-simplified) for keys and one for values
   - uses contrastive loss
-- RETRO in contrast uses
+- DeepMind's RETRO in contrast uses
   - longer sequences
   - [cross-attention](/ml/cross-attention-in-transformer-architecture) allowing for multiple retrievals
   - bigger database
@@ -42,7 +43,7 @@ permalink: /:categories/:title
 ![retrieval transformer comparison](/images/retrieval-transformer-comparison.png)
 
 
-## Training Dataset
+## RETRO's Training Dataset
 - 10-lingual [MassiveText dataset](/ml/massivetext-dataset-pretraining-deepminds-gopher)
 - SentencePiece tokenizer vocabulary of 128k tokens
 - Retrieval database 1.75T tokens
@@ -54,7 +55,7 @@ permalink: /:categories/:title
 ![MassiveText dataset composition table](/images/retrieval-transformer-massive-text.png)
 
  
-## Architecture
+## RETRO's Architecture
 - Frozen BERT retriever on chunk level
 - differentiable encoder conditioned on query
 - chunked [cross-attention](/ml/cross-attention-in-transformer-architecture) with previous chunk retrieval set 
@@ -63,7 +64,7 @@ permalink: /:categories/:title
 ![retriever transformer achitecture](/images/retriever-transformer-architecture.png)
 
 
-## Retriever
+## RETRO's Retriever
 - database is key-value memory of chunks
 - each value is two consecutive chunks (128 tokens)
 - each key is the first chunk from its value (first 64 tokens)
@@ -77,7 +78,7 @@ permalink: /:categories/:title
 - optimum number of neighbors between 2 and 40 
 
 
-## Encoding Retrieved Neighbours
+## RETRO's Encoding Retrieved Neighbours
 - all retrieved values: 128 consecutive tokens
 - are first passed through a bi-directional transformer encoder
 - differentiably modulates retrieved chunks
@@ -88,7 +89,7 @@ permalink: /:categories/:title
 - output is called retrieval set
 
 
-## Chunked Cross Attention
+## RETRO's Chunked Cross-Attention
 - take previous chunk retrieval set to be autoregressive
 - add relative positional encodings to each retrieved 
 - concatenate into time dimension
@@ -98,7 +99,7 @@ permalink: /:categories/:title
 ![retrieval transformer](/images/retrieval-transformer-cross-attention.png)
 
 
-## RETRO Results
+## RETRO's Results
 - SoTA on Wikitext103 and Pile
 - on Pile with 7B params outperforms Jurassic-1 and Gopher
   - strongly outperforms on Github - repetitive dataset?
