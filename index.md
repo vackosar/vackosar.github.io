@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Software, Machine Learning, & Business Blog
+title: Vaclav Kosar's Software, Machine Learning, & Business Blog
 ---
 <h2>{{ page.title }}</h2>
 
