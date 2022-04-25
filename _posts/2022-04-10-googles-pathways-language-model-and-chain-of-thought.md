@@ -1,10 +1,10 @@
 ---
-title: "Google's Pathways Language Model and Chain-of-Thought"
-description: "Pathways Language Model (PaLM), the largest model as of early 2022, outperforms average human on grade school logic and math (BIG-bench) by simulating reasoning steps."
+title: "Google's Pathways Language Model and Chain-of-Thought Prompting"
+description: "PaLM, the largest model as of early 2022, outperforms average human on grade school logic and math (BIG-bench) by simulating reasoning steps."
 layout: post
 categories: ml
 date: 2022-04-10
-last_modified_at: 2022-04-24
+last_modified_at: 2022-04-25
 image: /images/palm-thumb.png
 video: oi86r-2Bh64
 permalink: /:categories/:title
@@ -204,7 +204,8 @@ GPT-3: No, because an airplane typically travels around 500-600 miles per hour, 
 
 ## Appendix
 
-### GPT-3 Explanations Full Prompts
+### GPT-3 Chain-of-Thought Prompting Experiment Full Inputs
+Full prompt inputs for chain-of-thought prompting for joke explanations and logical inference.
 
 #### Logical Inference 1
 ```

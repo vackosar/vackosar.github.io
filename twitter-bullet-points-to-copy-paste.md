@@ -2,9 +2,9 @@
 layout: post
 title: "Twitter Bullet Points to Copy & Paste"
 date: 2022-02-06
-description: Get a nice bullet point character to copy and paste in a second, and other Twitter tips.
+description: "Copy-paste your bullet point symbol and other tweeting tips and emojis."
 image: /images/twitter-bullet-points.png
-last_modified_at: 2022-04-23
+last_modified_at: 2022-04-25
 ---
 
 ![Twitter Bullet Points How To](/images/twitter-bullet-points.png)
@@ -12,10 +12,10 @@ last_modified_at: 2022-04-23
 Twitter posting requires summarization and lists are often used in that. 
 Bullet points are crucial to create visually appealing lists.
 You can make your list stand out with non-standard bullet points.
-Copy-paste your favorite symbol from below and get bullet points onto you Twitter as well.
+Copy-paste your favorite character from below and get bullet points onto you Twitter as well.
 
 
-### Standard Bullet Points
+### Standard Bullet Points Symbols
 
 • Classic bullet
 
@@ -24,7 +24,7 @@ Copy-paste your favorite symbol from below and get bullet points onto you Twitte
 ∙ Middle dot bullet
 
 
-### Special Bullet Points
+### Special Bullet Points Symbols
 ‣ Triangular bullet
 
 ⁃ Dash bullet
