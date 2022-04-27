@@ -16,7 +16,7 @@ last_modified_at: 2022-04-24
 
 Have you forgotten about Transformer's feed-forward layer? [It eats 2/3 of the model params](https://arxiv.org/pdf/2012.14913v1.pdf)!
 
-[The last post on LambdaNetwork sketches self-attention as a differentiable query of a key-value store](/ml/Lamda-Networks-Transform-Self-Attention).
+[The last post on LambdaNetwork sketches self-attention as a differentiable query of a key-value store](/ml/Lambda-Networks-Transform-Self-Attention).
 The [Transformer](/ml/transformers-self-attention-mechanism-simplified)'s feed-forward sublayer is similar to the  [cross-attention](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) attending to a separate sequence via key and value input.
 So, it is a bit like differentiable key-value memory.
 

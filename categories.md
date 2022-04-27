@@ -2,8 +2,10 @@
 layout: default
 permalink: /categories/
 title: Categories
+description: By category.
 ---
 
+# Categories
 
 <div id="archives">
 {% for category in site.categories %}

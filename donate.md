@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Donate
+description: Encourage me to write more content with a positive feedback.
 ---
-<h2>{{ page.title }}</h2>
+<h1>{{ page.title }}</h1>
 
 <br>
 For now, you can donate via:

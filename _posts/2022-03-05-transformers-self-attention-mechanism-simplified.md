@@ -157,7 +157,7 @@ to run bigger models, or deploy your models to production, you will need to a bi
 - [Expire-Span uses attention with forgetting](/ml/expire-span-scaling-transformer-by-forgetting)
 - [SRU++ fuses of RNN and Self-attention](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN)
 - [Performer uses random kernel features to speedup attention](/ml/Performers-FAVOR+-Faster-Transformer-Attention)
-- [Lambda Networks introduce self-attention modification](/ml/Lamda-Networks-Transform-Self-Attention)
+- [Lambda Networks introduce self-attention modification](/ml/Lambda-Networks-Transform-Self-Attention)
 - For similarity task, you may also consider [lightweight approximation of word movers distance - WM embedding](/ml/Word-Movers-Embedding-Cheap-WMD-For-Documents)
 
 
