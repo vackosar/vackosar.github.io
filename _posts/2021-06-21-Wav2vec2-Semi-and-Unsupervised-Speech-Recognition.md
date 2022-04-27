@@ -20,7 +20,7 @@ quantization, and GAN training.
 I bet you'll enjoy this guide through Wav2vec papers solving the problem of speech to text.
 
 
-# There are many languages
+## There are many languages
 - want to convert audio to text
 - 7000 languages spoken today
   - 195 sovereign states
@@ -29,7 +29,7 @@ I bet you'll enjoy this guide through Wav2vec papers solving the problem of spee
 - humans learn without labels
 
 
-# Wav2vec 2.0
+## Wav2vec 2.0
 - ["A Framework for Self-Supervised Learning of Speech Representations"](https://arxiv.org/pdf/2006.11477.pdf)
 - Facebook AI
 - On Arxiv 22 Oct 2020
@@ -55,13 +55,13 @@ I bet you'll enjoy this guide through Wav2vec papers solving the problem of spee
 </figure>
 
 
-# Phoneme
+## Phoneme
 - a unit of sound in spoken languages
 - for example in IPA: /sɪn/ (sin) and /sɪŋ/ (sing)
 - English ~40 phonemes
 
 
-# Quantization
+## Quantization
 - replaces with vector from a finite set
 - the set of vectors is "codebook"
 - forward pass selects single quantization vector
@@ -70,7 +70,7 @@ I bet you'll enjoy this guide through Wav2vec papers solving the problem of spee
   - concatenation of several quantizations
   - then linear transformation
 
-# Wav2vec Quantization works
+## Wav2vec Quantization works
 - codewords = product of 2 codebooks of 320 gives 100k
 - codewords dimension of 256 (128 for both sub-codebooks)
 
@@ -88,7 +88,7 @@ I bet you'll enjoy this guide through Wav2vec papers solving the problem of spee
 
 
 
-## Wav2vec 2.0 Architecture
+### Wav2vec 2.0 Architecture
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded lazyload"
@@ -101,7 +101,7 @@ I bet you'll enjoy this guide through Wav2vec papers solving the problem of spee
 </figure>
 
 
-## Wav2vec 2.0 Implementation
+### Wav2vec 2.0 Implementation
 - 7-layer convolution to raw audio
 - mask spans of the latents
 - contextualize via 12-block [transformer](/ml/transformers-self-attention-mechanism-simplified)
@@ -116,7 +116,7 @@ I bet you'll enjoy this guide through Wav2vec papers solving the problem of spee
 - [HuggingFace (pretraining not possible as of 2021-06)](https://huggingface.co/transformers/model_doc/wav2vec2.html#overview)
 
 
-## Connectionist Temporal Classification (CTC) Loss
+### Connectionist Temporal Classification (CTC) Loss
 - between a unsegmented time series and a target sequence
 - CTCLoss sums probability of all possible alignments of input to target
 - differentiable with respect to each input node
@@ -131,7 +131,7 @@ I bet you'll enjoy this guide through Wav2vec papers solving the problem of spee
   - efficiently calculated with [dynamic programming (Forward–backward algorithm)](https://en.wikipedia.org/wiki/Forward%E2%80%93backward_algorithm)
 
 
-## Wav2vec 2.0 vs previous version
+### Wav2vec 2.0 vs previous version
 - previous version vq-wav2vec
 - jointly learn quantizations instead of separately
 - contrastive loss:
@@ -145,7 +145,7 @@ I bet you'll enjoy this guide through Wav2vec papers solving the problem of spee
 - reduced [word error rate (WER)](https://en.wikipedia.org/wiki/Word_error_rate) ~33% compared to vq-wav2vec
 
 
-# Wav2vec-U
+## Wav2vec-U
 - ["Unsupervised Speech Recognition"](https://arxiv.org/pdf/2105.11084.pdf)
 - On Arxiv on 24 May 2021
 - trains without any labeled data
@@ -155,7 +155,7 @@ I bet you'll enjoy this guide through Wav2vec papers solving the problem of spee
   - perhaps with models from 2018
 
 
-## Wav2vec-U Architecture
+### Wav2vec-U Architecture
 
 <figure class="figure">
     <img
@@ -177,7 +177,7 @@ I bet you'll enjoy this guide through Wav2vec papers solving the problem of spee
 - discriminator is also an CNN
 
 
-## Wav2vec-U Training
+### Wav2vec-U Training
 - amazing! no-labels needed
 - discriminator
   - fed phonemized natural text and generator output
@@ -186,10 +186,10 @@ I bet you'll enjoy this guide through Wav2vec papers solving the problem of spee
   - easier to generate correct transcription
   - compared to hallucinating incorrect transcription
 
-# Discussions
+## Discussions
 - [Hackernews](https://news.ycombinator.com/item?id=27722333)
 
 
-# Still not sure how [the transformer model](/ml/transformers-self-attention-mechanism-simplified) really works?
+## Still not sure how [the transformer model](/ml/transformers-self-attention-mechanism-simplified) really works?
 The [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) stormed the ML world including computer vision thanks to its generality and GPU parallizability on shorter sequences.
 [Finally understand it over here](/ml/transformers-self-attention-mechanism-simplified), and if you still don't get it, ask me a question!

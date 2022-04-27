@@ -126,6 +126,6 @@ last_modified_at: 2022-04-25
 - see "Retro-fitting baseline models" section
 - Retro source code not published yet
 
-# Read Next: Melting the Recurrence with Attention
+## Read Next: Melting the Recurrence with Attention
 
 [SRU++ Model Speeds Up Transformer with Simple Recurrent Unit](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN)

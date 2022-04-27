@@ -19,7 +19,7 @@ The Kalman filter allows incorporation of known state space behaviour (e.g. mome
 
 Kalman filter can be used in to keep a system in a state of control. Read more about [application of Kalman filter in PID Controller](/ml/PID-controller-control-loop-mechanism).
 
-# Kalman Filter vs Exponential Average vs Cumulative Average
+## Kalman Filter vs Exponential Average vs Cumulative Average
 This blog post proves that [Kalman filter](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf) in 1D with constant measurement uncertainty and process noise asymptotically behaves as:
 
  - cumulative average in case of zero process noise
@@ -28,7 +28,7 @@ This blog post proves that [Kalman filter](https://www.cs.unc.edu/~welch/kalman/
 The proof relies on Kalman filter asymptotically doesn't depend on initial state. In general since Kalman filter equations are differentiable, it is reasonable to expect that above could be generalized to nearly-constant uncertainty and process noise.
 
 
-## Constant Measurement Uncertainty, No Process Noise
+### Constant Measurement Uncertainty, No Process Noise
 
 Below is the proof relies on good choice of initial value of Kalman variance `P0` to simplify recursive equation to match cumulative average equation.
 
@@ -39,7 +39,7 @@ Plot of the convergence.
 <img alt="Proof Kalman 1d with constant measurement uncertainty and no process noise plot" style="width: 80%; max-width: 900px" src="/images/2019-08-28-kalman-1d-without-process-noise-plot.png">
 
 
-## Constant Measurement Uncertainty, Constant Process Noise
+### Constant Measurement Uncertainty, Constant Process Noise
 
 Below is the proof relies on setting initial value of Kalman variance `P0` such that `Pk` becomes constant for recursive equation to match exponential moving average equation.
 
@@ -50,9 +50,7 @@ Plot of the convergence.
 <img alt="Proof Kalman 1d with constant measurement uncertainty and constant process noise plot" style="width: 80%; max-width: 900px" src="/images/2019-08-28-kalman-1d-with-process-noise-plot.png">
 
 
-# Appendix
-
-## Example Implementation
+### Example Implementation
 
 Below is simplistic implementation of Kalman filter in one dimension in Python used to generate plots presented above.
 

@@ -18,7 +18,7 @@ which capable to locally compete with Google in the Czech Republic.
 ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/model_doc/electra.html) including a model for pre-training.
 
 
-# Why Is BERT Training Inefficient?
+## Why Is BERT Training Inefficient?
 - [BERT is transformer model](/ml/transformers-self-attention-mechanism-simplified)
 - Uses unsupervised pre-training
 - Encodes text into WordPiece tokens 
@@ -31,7 +31,7 @@ ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/m
 ![BERT model pre-training and fine-tuning](/images/electra-bert.png)
 
 
-# BERT vs ELECTRA Training
+## BERT vs ELECTRA Training
 How to get difficult enough task for all tokens instead of just the tokens masked?
 - enter [ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators ](https://openreview.net/pdf?id=r1xMH1BtvB)
   - ELECTRA = Efficiently Learning an Encoder that Classifies Token Replacements Accurately
@@ -49,7 +49,7 @@ How to get difficult enough task for all tokens instead of just the tokens maske
 ![ELECTRA model generator discriminator pre-training diagram](/images/electra-generator-discriminator.png) 
 
 
-# ELECTRA Model Architecture and Methods
+## ELECTRA Model Architecture and Methods
 - Generator and discriminator same architecture
   - only embeddings or tokens and positional are shared
   - sharing more was not helping
@@ -68,7 +68,7 @@ How to get difficult enough task for all tokens instead of just the tokens maske
 ![ELECTRA model generator size and GLUE benchmark performance](/images/electra-generator-size.png)
 
 
-# ELECTRA vs BERT vs RoBERTA vs XLNext Performance Results
+## ELECTRA vs BERT vs RoBERTA vs XLNext Performance Results
 - Datasets:
   - GLUE: natural understanding benchmark
   - SQuAD: questions answering benchmark
@@ -88,7 +88,7 @@ How to get difficult enough task for all tokens instead of just the tokens maske
 ![ELECTRA model performance on SQuAD benchmark](/images/electra-results-squad.png)
 
 
-# ELECTRA Source of The Improvement
+## ELECTRA Source of The Improvement
 - compared alternative tasks on GLUE score
 - results:
   - loss over all inputs is important
@@ -108,26 +108,26 @@ How to get difficult enough task for all tokens instead of just the tokens maske
 </table>
 
 
-# Personal Speculations:
+## Personal Speculations:
 - ELECTRA could be suitable for low-resource settings
   - Since ELECTRA converges faster
   - perhaps [less data is needed](https://arxiv.org/pdf/2010.08127.pdf)
 - ELECTRA training is like augmentation:
   - samples again from generator on each epoch
 
-# Follow up - MC-BERT
+## Follow up - MC-BERT
 - [MC-BERT Paper](https://arxiv.org/pdf/2006.05744.pdf)
 - Contrastive instead of discriminative
  
 ![MC-BERT model extension of ELECTRA diagram](../images/electra-mcbert.png)
 
 
-# Follow Up - TEAMS
+## Follow Up - TEAMS
 - also contrastive
 - shares more weights
 
 ![TEAMS model extension of ELECTRA diagram](../images/electra-teams.png)
 
 
-# Read More About BERT
+## Read More About BERT
 Read more about [BERT, transformer architecture, self-attention, training, and deployment](/ml/transformers-self-attention-mechanism-simplified)

@@ -22,7 +22,7 @@ redirect_from:
   - Entangled representation = hard to preserve some attributes and change others
   - Disentangled = Attributes have separate dimensions
 
-# Unsupervised Disentangling Methods
+## Unsupervised Disentangling Methods
 - Below methods are generative
   - so instead of search, can manipulate the image
 - Variational Auto-encoders
@@ -39,7 +39,7 @@ redirect_from:
 
 ![Glow model smiling vector](../images/disentangle-smiling.png)
 
-# Unsupervised Disentangled Representations
+## Unsupervised Disentangled Representations
 - Google ICML 2019 [Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations](https://ai.googleblog.com/2019/04/evaluating-unsupervised-learning-of.html)
 - A large-scale evaluation of various unsupervised methods (12k models)
 - On dataset [Shape3D](https://github.com/deepmind/3d-shapes) try to separate all attributes of the scene  
@@ -53,7 +53,7 @@ redirect_from:
  
 ![Shape3D dataset for disentagling factors: floor color, wall color, object color, object size, camera angle](../images/disentangle-3dshapes.gif)
 
-# Multi-Task Learning
+## Multi-Task Learning
 - [Multi-task learning may improve performance](https://ai.googleblog.com/2021/10/deciding-which-tasks-should-train.html)
   - Google NeurIPS 2021 paper on a method for grouping tasks
   - meta-learning
@@ -65,7 +65,7 @@ redirect_from:
 
 ![inter-task affinity for multi-task learning task grouping](/images/disentangle-multi-task.png)
 
-# Supervised-Disentangling: Attribute-driven Disentangled Representations
+## Supervised-Disentangling: Attribute-driven Disentangled Representations
 
 - Amazon 2021 paper [Learning Attribute-driven Disentangled Representations for Interactive Fashion Retrieval](https://openaccess.thecvf.com/content/ICCV2021/papers/Hou_Learning_Attribute-Driven_Disentangled_Representations_for_Interactive_Fashion_Retrieval_ICCV_2021_paper.pdf)
 - SoTA on the fashion tasks (Attribute manipulation retrieval, Conditional similarity retrieval, Outfit completion)
@@ -79,7 +79,7 @@ redirect_from:
 ![disentangled representation using attribute-specific encoder](../images/disentangled-encoder.png)
 
 
-## Architecture
+### Architecture
 
 - image representation (AlexNet, Resnet18)
 - per attribute:
@@ -96,7 +96,7 @@ redirect_from:
 
 ![Attribute-Driven Disentangled Encoder (ADDE)](../images/disentangle-architecture.png)
 
-## Loss Function
+### Loss Function
 - Label triplet loss
   - representations with same labels to have same vectors
 - Consistency triplet loss
@@ -110,16 +110,16 @@ redirect_from:
   - off-block-diagonal to zero
 
 
-## Experiments and Results
+### Experiments and Results
 
-### Datasets
+#### Datasets
 - Shopping100k: 100k samples, 12 attributes
 - DeepFashion: 100k samples, 3 attributes: category, texture, shape
 
 ![Attribute manipulation retrieval examples on Shopping100k and DeepFashion](../images/disentangle-retrival-examples.png)
 
 
-### Attribute Manipulation Retrieval
+#### Attribute Manipulation Retrieval
 
 - Previous approaches
   - AMNet: [Memory-Augmented Attribute Manipulation Networks for Interactive Fashion Search](https://openaccess.thecvf.com/content_cvpr_2017/papers/Zhao_Memory-Augmented_Attribute_Manipulation_CVPR_2017_paper.pdf)
@@ -136,14 +136,14 @@ redirect_from:
 ![Attribute manipulation top-k retrival on Shopping100k and DeepFashion](../images/disentangle-retrival-results.png)
 
 
-### Outfit Completion
+#### Outfit Completion
 - backbone network Resnet18
 - previous Amazon paper 2020 [Fashion Outfit Complementary Item Retrieval](https://openaccess.thecvf.com/content_CVPR_2020/papers/Lin_Fashion_Outfit_Complementary_Item_Retrieval_CVPR_2020_paper.pdf)
   - introduced CSA-Net with similar architecture without disentanglement
 
 ![ADDE outfit complementary retrieval](../images/disentangle-outfit-retrieval.png)
 
-#### Outfit Ranking Loss
+##### Outfit Ranking Loss
   - operates on entire outfit
   - calculates average distance from all members in the outfit to the proposed addition
   - input these distances into a triplet loss
