@@ -20,12 +20,12 @@ Have you forgotten about Transformer's feed-forward layer? [It eats 2/3 of the m
 The [Transformer](/ml/transformers-self-attention-mechanism-simplified)'s feed-forward sublayer is similar to the  [cross-attention](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) attending to a separate sequence via key and value input.
 So, it is a bit like differentiable key-value memory.
 
-Can we gain more understanding of [Transformer model](/ml/transformers-self-attention-mechanism-simplified) operation by looking at the FF?
+Can we gain more understanding of [Transformer model](/ml/transformers-self-attention-mechanism-simplified) operation by looking at the feed-forward layer?
 
 ## Where is Feed-Forward Layer?
 
 Where is Feed-Forward layer within the architecture exactly?
-FF camps within encoder and decoder layers as a sublayer just behind the self-attention sub-layer.
+Feed-forward layer camps within encoder and decoder layers as a sublayer just behind the self-attention sub-layer.
 
 <figure class="figure">
     <img
@@ -44,7 +44,7 @@ FF camps within encoder and decoder layers as a sublayer just behind the self-at
 
 - formula: \\( \mathrm{ffLayer} = \sum_i \mathrm{relu}(q_i k_i^\intercal + b_i) v_i + c\\)
 
-- Don't forget the residual connections and their addition and normalization to outputs of both FF and self-attention.
+- Don't forget the residual connections and their addition and normalization to outputs of both feed-forward and self-attention.
 
 <figure class="figure">
     <img
@@ -62,7 +62,7 @@ FF camps within encoder and decoder layers as a sublayer just behind the self-at
 
 ## Feed-Forward Layer vs Cross-Attention
 
-Have you noticed that the FF sublayer is akin to key-value memory of the self-attention except for non-linearity is ReLU and bias-terms \\( b, c \\)?
+Have you noticed that the feed-forward sublayer is akin to key-value memory of the self-attention except for non-linearity is ReLU and bias-terms \\( b, c \\)?
 
 \\( \mathrm{keyValMemory} = \sum_i \mathrm{softmax}(q_i k_i^\intercal) v \\)
 
@@ -73,20 +73,20 @@ And they reportedly slightly outperformed the vanilla model on the next token pr
 
 ![All-attention: feed-forward layer restated as self-attention](/images/all-attention-feed-forward-as-self-attention.png)
 
-Something mildly similar was also done in the [Google's PaLM model](/ml/googles-pathways-language-model-and-chain-of-thought):
+[Google's PaLM model](/ml/googles-pathways-language-model-and-chain-of-thought) authors adopted gated linear unit (GLU) based modification to their feed-forward layer, which is midly similar to cross-attention:
 
 {% include shared_slides/swiglu-modified-feed-forward-layer.md %}
 
 But does the feed-forward sublayer really behave like key-value memory not only talk a talk?
 
 
-## The Memory of The Feed-Forward
+## Feed-Forward Key-Value Memories - Empirical Study
 
-In [Transformer Feed-Forward Layers Are Key-Value Memories](https://arxiv.org/pdf/2012.14913v1.pdf) authors show that FF does walk the walk of a key-value store.
+In [Transformer Feed-Forward Layers Are Key-Value Memories](https://arxiv.org/pdf/2012.14913v1.pdf) authors show that feed-forward layer does walk the walk of a key-value store.
 
-The paper studies activation of FF keys for the last position of the input sequence.
-The activated keys are  keys with top-n ReLU outputs for given FF sublayer.
-For most of the keys in the feed-forward sublayers the authors found one or more human-interpretable input text patterns for which the key in FF was being activated.
+The paper studies activation of feed-forward keys for the last position of the input sequence.
+The activated keys are  keys with top-n ReLU outputs for given feed-forward sublayer.
+For most of the keys in the feed-forward sublayers the authors found one or more human-interpretable input text patterns for which the key in feed-forward was being activated.
 Text patterns ranged from simple exact word matches (e.g. last word is "substitutes") to more complex topics (e.g. "one of", "part of", "among").
 Authors also observed that the upper layers memorize more abstract patterns.
 
@@ -95,26 +95,26 @@ Furthermore, they report they found more than one pattern per key.
 Were those patterns referencing a single topic or disparate topics?
 If single key was associated with multiple topics, can we still look at it as a memory cell?
 
-Activated FF-values predicted model's next output tokens in higher layers only, but not in lower layers.
+Activated feed-forward values predicted model's next output tokens in higher layers only, but not in lower layers.
 Typical example activated tens of memories which were then aggregated (non-zero coef mems).
 The model output vector differed from all single memory predictions (single value vectors) 68% of the time.
 Remaining 32% are perhaps stop words and a like.
-The FF-residual connections predicted next output token increasingly in the higher layers.
+The feed-forward residual connections predicted next output token increasingly in the higher layers.
 Could be that the internal embedding space is changes between layers?
 Is the model refining its prediction from layer to layer?
 
-They additionally observed that top-1 predictions of sublayer residuals mostly not match FF.
+They additionally observed that top-1 predictions of sublayer residuals mostly not match feed-forward.
 These sublayer-outputs seem to not agree but rather compose.
-Does FF dampen or "veto" residual vectors towards other candidates?
-In 66% adding FF to residuals changed prediction is to a semantically unrelated word.
+Does feed-forward dampen or "veto" residual vectors towards other candidates?
+In 66% adding feed-forward to residuals changed prediction is to a semantically unrelated word.
 Is this used by the model for predicted sequence re-arrangements?
 
 ## LambdaNet Positional Embeddings vs Feed-Forward Layer
 
 [LambdaNet layer positional embeddings](/ml/Lambda-Networks-Transform-Self-Attention) are something between self-attention and feed-forward layer in transformer, but neither.
 They are about querying pattern-values store.
-The keys are constants like in FF, but queries and values are derived from the input.
-Whereas in the FF the values are constants as well.
+The keys are constants like in feed-forward, but queries and values are derived from the input.
+Whereas in the feed-forward the values are constants as well.
 
 
 ## Meet Other ML Enthusiasts One-on-One Online
