@@ -61,6 +61,7 @@ Other symbols are useful to emphasize call to action and add a spark of emotion 
 - 💪 Flexed Biceps
 - 🙏 Folded Hands (Thank you or pray)
 - 🤝 Handshake
+- ✔️ Checkmark
 
 ### Successful Tweet Templates
 Use templates below to cut through the noise.
