@@ -12,10 +12,11 @@ permalink: /:categories/:title
 - lossless means without loosing any information
 
 
-## Popular Data Compression
-- GZip uses Deflate compression format
-- Deflate uses 2 methods:
-  - encodes bytes into shorter sequence of bits represent 
-  - duplicate string elimination LZ77
-  - bit reduction via Huffman coding on bytes into bit-codes
-  - https://www.w3.org/Graphics/PNG/RFC-1951
+## GZip Data Compression
+- GZip uses [Deflate](https://datatracker.ietf.org/doc/html/rfc1951) compression format
+- a sliding widow of 32k bytes is used to detect duplicate strings
+  - duplicate strings are referenced back with length and distance symbols
+- this along with byte literals defines custom alphabet of symbols
+- [Huffman coding](http://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf) assigns to more frequent symbols shorter bit sequences
+- the Huffman tree used for the mapping to bit codes is stored as well, each time it is refreshed
+- the 
