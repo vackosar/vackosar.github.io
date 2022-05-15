@@ -40,7 +40,7 @@ permalink: /:categories/:title
 ## Compression by Predicting Next Symbol
 - Huffman coding predicts next symbol cheaply with symbol frequency
 - we can trade more memory and computation by using more complex machine learning models
-- arithmetic coding maps high probability symbols into shorter bit sequences of length \\( -log_2(p) \\)
+- [arithmetic coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/Rissanen__1976.pdf) maps high probability symbols into shorter bit sequences of length \\( -log_2(p) \\)
 - model can be retrained based on already compressed data stream
 - common benchmark is enwik8 dataset, but compression bpb metric is not comparable
 
