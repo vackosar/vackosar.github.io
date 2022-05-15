@@ -1,6 +1,6 @@
 ---
 title: "Neural Network-based Data Compression"
-description: "Lossless data compression data via deep-learning predictions"
+description: "Losslessly reducing bits via deep-learning predictions using NNCP and TRACE models"
 layout: post
 categories: ml
 date: 2022-05-14
