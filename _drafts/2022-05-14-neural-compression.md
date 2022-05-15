@@ -43,7 +43,7 @@ permalink: /:categories/:title
 - [arithmetic coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/Rissanen__1976.pdf) maps high probability symbols into shorter bit sequences of length \\( -log_2(p) \\)
 - model can be trained on already compressed data stream deterministically
 - common benchmarks are enwik8, and enwik9 dataset with modified compression bpb metric
-  - not comparable to language modelling results (single pass, extra overhead)
+  - not comparable to language modelling results (single-pass "epoch", extra overhead, compressing entire dataset)
 
 ![model predicting the next symbol from alphabet](/images/character-prediction-blabla.drawio.svg)
 
@@ -57,7 +57,7 @@ permalink: /:categories/:title
 ![NNCP result](/images/nncp-enwik8-results.png)
 
 
-## TRACE: A Fast Transformer-based General-Purpose Lossless Compressor Model
+## TRACE: Faster Data Compression Than NNCP
 - [TRACE](https://dl.acm.org/doi/pdf/10.1145/3485447.3511987) is 1-layer transformer compression
 - 3x speedup with competitive compression with NNCP, but still 1000x slower than GZip
 - vocabulary is 256 bytes, 4 consecutive embeddings concatenated before input
