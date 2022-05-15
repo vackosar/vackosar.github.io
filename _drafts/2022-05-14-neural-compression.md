@@ -20,7 +20,7 @@ permalink: /:categories/:title
 - compresses 26 characters of english alphabet, not compressing white space
 - each character is mapped to sequence of dots and dashes, space is mapped to space
 - more frequent characters mapped to fewer dots and dashes
-- this is done with static [Huffman coding](http://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf)
+- this called static [Huffman tree](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/10_04051119.pdf)
 - encoding and decoding require minimal compute (human operator)
 
 ![A part of Morse Huffman tree](/images/morse-huffman-tree.drawio.svg)
@@ -31,7 +31,7 @@ permalink: /:categories/:title
 - a sliding widow of 32k bytes is used to detect duplicate strings
   - duplicate strings are referenced back with length and distance symbols
 - this along with byte literals defines custom alphabet of symbols
-- [Huffman coding](http://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf) maps frequent symbols to shorter bit sequences
+- [Huffman coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/10_04051119.pdf) maps frequent symbols to shorter bit sequences
 - the Huffman trees used for bit-mapping stored in the output and sometimes refreshed
 
 ![Deflate algorithm illustration with LZ77 and Huffman coding](/images/deflate-algorithm-operation.drawio.svg) 
