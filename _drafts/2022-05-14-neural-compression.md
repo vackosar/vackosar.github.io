@@ -1,6 +1,6 @@
 ---
-title: "Neural Network-based Data Compression"
-description: "Losslessly reducing bits via deep-learning predictions using NNCP and TRACE models"
+title: "Neural Data Compression"
+description: "Losslessly reducing bits with deep-learning predictions with NNCP and TRACE models"
 layout: post
 categories: ml
 date: 2022-05-14
@@ -42,7 +42,8 @@ permalink: /:categories/:title
 - we can trade more memory and computation with more complex probability modeling - machine learning
 - [arithmetic coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/Rissanen__1976.pdf) maps high probability symbols into shorter bit sequences of length \\( -log_2(p) \\)
 - model can be trained on already compressed data stream deterministically
-- common benchmarks are enwik8, and enwik9 dataset with modified compression bpb metric (LM not comparable)
+- common benchmarks are enwik8, and enwik9 dataset with modified compression bpb metric
+  - not comparable to language modelling results (single pass, extra overhead)
 
 ![model predicting the next symbol from alphabet](/images/character-prediction-blabla.drawio.svg)
 
