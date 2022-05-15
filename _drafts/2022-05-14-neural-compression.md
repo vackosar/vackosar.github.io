@@ -16,12 +16,14 @@ permalink: /:categories/:title
 - tradeoff between communication throughput, computation, and memory
 
 
-## Morse Code Compression
+## Morse Code Uses Huffman Coding Compression
 - compresses 26 characters of english alphabet, not compressing white space
 - each character is mapped to sequence of dots and dashes, space is mapped to space
 - more frequent characters mapped to fewer dots and dashes
 - this is done with static [Huffman coding](http://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf)
 - encoding and decoding require minimal compute (human operator)
+
+![A part of Morse Huffman tree](/images/morse-huffman-tree.drawio.svg)
 
 
 ## GZip's Deflate Data Compression
