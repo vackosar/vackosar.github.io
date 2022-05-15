@@ -18,5 +18,7 @@ permalink: /:categories/:title
   - duplicate strings are referenced back with length and distance symbols
 - this along with byte literals defines custom alphabet of symbols
 - [Huffman coding](http://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf) assigns to more frequent symbols shorter bit sequences
-- the Huffman tree used for the mapping to bit codes is stored as well, each time it is refreshed
-- the 
+- the Huffman tree used for the mapping to bit codes is stored with the compressed output
+- multiple Huffman trees can be used during compression
+
+
