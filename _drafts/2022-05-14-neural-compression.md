@@ -34,13 +34,17 @@ permalink: /:categories/:title
 - [Huffman coding](http://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf) maps frequent symbols to shorter bit sequences
 - the Huffman trees used for bit-mapping stored in the output and sometimes refreshed
 
+![Deflate algorithm illustration with LZ77 and Huffman coding](/images/deflate-algorithm-operation.drawio.svg) 
+
 
 ## Compression by Predicting Next Symbol
 - Huffman coding predicts next symbol cheaply with symbol frequency
 - we can trade more memory and computation by using more complex machine learning models
 - arithmetic coding maps high probability symbols into shorter bit sequences of length \\( -log_2(p) \\)
 - model can be retrained based on already compressed data stream
-- common benchmark is enwik8 dataset
+- common benchmark is enwik8 dataset, but compression bpb metric is not comparable
+
+![model predicting the next symbol from alphabet](/images/character-prediction-blabla.drawio.svg)
 
 
 ## NNCP: Lossless Data Compression with Neural Networks
