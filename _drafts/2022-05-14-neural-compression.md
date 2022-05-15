@@ -7,6 +7,9 @@ date: 2022-05-14
 permalink: /:categories/:title
 ---
 
+{% include mathjax.html %}
+
+
 - data compression means encoding into less bits
 - lossless means without loosing any information
 - compression is possible if some symbols are more likely than others given all previous symbols
@@ -18,7 +21,7 @@ permalink: /:categories/:title
 - each character is mapped to sequence of dots and dashes, space is mapped to space
 - more frequent characters mapped to fewer dots and dashes
 - this is done with static [Huffman coding](http://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf)
-- human can encode and decode
+- encoding and decoding require minimal compute (human operator)
 
 
 ## GZip's Deflate Data Compression
@@ -33,15 +36,26 @@ permalink: /:categories/:title
 ## Compression by Predicting Next Symbol
 - Huffman coding predicts next symbol cheaply with symbol frequency
 - we can trade more memory and computation by using more complex machine learning models
-- arithmetic coding maps high probability symbols into shorter bit sequences 
+- arithmetic coding maps high probability symbols into shorter bit sequences of length \\( -log_2(p) \\)
 - model can be retrained based on already compressed data stream
 - common benchmark is enwik8 dataset
 
 
-## Lossless Data Compression with Neural Networks
+## NNCP: Lossless Data Compression with Neural Networks
 - [NNCP](https://bellard.org/nncp/nncp.pdf) uses LSTM to predict next byte
-  - model is not stored in the output, is deterministically derived based on decompressed output
+  - model is not stored in the output - deterministically derived based on decompressed output
 - newer [TRACE](https://dl.acm.org/doi/pdf/10.1145/3485447.3511987) uses faster Transformer
   - single layer transformer retrained less often 
-- both still too expensive
-- TODO comparison
+  - regularly retrained during compression
+- LSTM (large2) 10,000 times slower than GZip for 2.17x less bits per byte
+
+![NNCP result](/images/nncp-enwik8-results.png)
+
+
+## TRACE: A Fast Transformer-based General-Purpose Lossless Compressor Model
+- [TRACE](https://dl.acm.org/doi/pdf/10.1145/3485447.3511987) is 1-layer transformer compression
+- 3x speedup with competitive compression with NNCP, but still 1000x slower than GZip
+- vocabulary is 256 bytes, 4 consecutive embeddings concatenated before input
+- result below achieved on GPU 
+
+![TRACE NNCP compression performance](/images/trace-nncp-compression-ratio-and-speed-comparison.png)
