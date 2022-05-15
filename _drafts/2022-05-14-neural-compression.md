@@ -20,7 +20,7 @@ permalink: /:categories/:title
 - compresses 26 characters of english alphabet, not compressing white space
 - each character is mapped to sequence of dots and dashes, space is mapped to space
 - more frequent characters mapped to fewer dots and dashes
-- this called static [Huffman tree](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/10_04051119.pdf)
+- method is called [Huffman coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/10_04051119.pdf), here with a static tree
 - encoding and decoding require minimal compute (human operator)
 
 ![A part of Morse Huffman tree](/images/morse-huffman-tree.drawio.svg)
@@ -39,10 +39,10 @@ permalink: /:categories/:title
 
 ## Compression by Predicting Next Symbol
 - Huffman coding predicts next symbol cheaply with symbol frequency
-- we can trade more memory and computation by using more complex machine learning models
+- we can trade more memory and computation with more complex probability modeling - machine learning
 - [arithmetic coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/Rissanen__1976.pdf) maps high probability symbols into shorter bit sequences of length \\( -log_2(p) \\)
-- model can be retrained based on already compressed data stream
-- common benchmark is enwik8 dataset, but compression bpb metric is not comparable
+- model can be trained on already compressed data stream deterministically
+- common benchmarks are enwik8, and enwik9 dataset with modified compression bpb metric (LM not comparable)
 
 ![model predicting the next symbol from alphabet](/images/character-prediction-blabla.drawio.svg)
 
@@ -50,9 +50,7 @@ permalink: /:categories/:title
 ## NNCP: Lossless Data Compression with Neural Networks
 - [NNCP](https://bellard.org/nncp/nncp.pdf) uses LSTM to predict next byte
   - model is not stored in the output - deterministically derived based on decompressed output
-- newer [TRACE](https://dl.acm.org/doi/pdf/10.1145/3485447.3511987) uses faster Transformer
-  - single layer transformer retrained less often 
-  - regularly retrained during compression
+  - model regularly retrained during compression
 - LSTM (large2) 10,000 times slower than GZip for 2.17x less bits per byte
 
 ![NNCP result](/images/nncp-enwik8-results.png)
@@ -62,6 +60,7 @@ permalink: /:categories/:title
 - [TRACE](https://dl.acm.org/doi/pdf/10.1145/3485447.3511987) is 1-layer transformer compression
 - 3x speedup with competitive compression with NNCP, but still 1000x slower than GZip
 - vocabulary is 256 bytes, 4 consecutive embeddings concatenated before input
+- retrained less often than NNCP
 - result below achieved on GPU - not practical for most applications 
 
 ![TRACE NNCP compression performance](/images/trace-nncp-compression-ratio-and-speed-comparison.png)
@@ -71,4 +70,4 @@ permalink: /:categories/:title
 - as of 2022-05 seems unpractical - slow, small compression improvement 
   - could be practical as a side effect of other computation
 - note that lossy compression of images and video seem more likely applied
-- you can get more overview of the field [this paper](https://arxiv.org/pdf/2202.06533.pdf)
+- more overview of the field in [this paper](https://arxiv.org/pdf/2202.06533.pdf)
