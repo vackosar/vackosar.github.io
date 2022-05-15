@@ -61,7 +61,7 @@ permalink: /:categories/:title
 - [TRACE](https://dl.acm.org/doi/pdf/10.1145/3485447.3511987) is 1-layer transformer compression
 - 3x speedup with competitive compression with NNCP, but still 1000x slower than GZip
 - vocabulary is 256 bytes, 4 consecutive embeddings concatenated before input
-- retrained less often than NNCP
+- retrained less often than NNCP, but starts randomly initialized
 - result below achieved on GPU - not practical for most applications 
 
 ![TRACE NNCP compression performance](/images/trace-nncp-compression-ratio-and-speed-comparison.png)
