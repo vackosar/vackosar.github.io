@@ -1,6 +1,6 @@
 ---
 title: "Neural Network-based Data Compression"
-description: "How to losslessly compress data with deep-learning predictions."
+description: "Lossless data compression data via deep-learning predictions"
 layout: post
 categories: ml
 date: 2022-05-14
@@ -62,6 +62,13 @@ permalink: /:categories/:title
 - [TRACE](https://dl.acm.org/doi/pdf/10.1145/3485447.3511987) is 1-layer transformer compression
 - 3x speedup with competitive compression with NNCP, but still 1000x slower than GZip
 - vocabulary is 256 bytes, 4 consecutive embeddings concatenated before input
-- result below achieved on GPU 
+- result below achieved on GPU - not practical for most applications 
 
 ![TRACE NNCP compression performance](/images/trace-nncp-compression-ratio-and-speed-comparison.png)
+
+
+## Deep Neural Network Lossless Compression Applications
+- as of 2022-05 seems unpractical - slow, small compression improvement 
+  - could be practical as a side effect of other computation
+- note that lossy compression of images and video seem more likely applied
+- you can get more overview of the field [this paper](https://arxiv.org/pdf/2202.06533.pdf)
