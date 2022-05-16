@@ -1,6 +1,6 @@
 ---
 title: "Neural Data Compression"
-description: "Losslessly reducing bits with deep-learning predictions with NNCP and TRACE models"
+description: "Losslessly reducing bits with deep-learning predictions with NNCP and TRACE models."
 layout: post
 categories: ml
 image: /images/neural-data-compression-thumb.png
@@ -13,37 +13,37 @@ permalink: /:categories/:title
 
 - data compression means encoding into less bits
 - lossless means without loosing any information
-- compression is possible if some symbols are more likely than others given all previous symbols
-- higher accuracy and confidence => higher compression
 - tradeoff between communication throughput, computation, and memory
+- can compress if some symbols are more likely than others 
+- higher accuracy and confidence => higher compression
 
 ![neural data compression](/images/neural-data-compression-thumb.png)
 
 
 ## Morse Code Uses Huffman Coding Compression
 - compresses 26 characters of english alphabet, not compressing white space
-- each character is mapped to sequence of dots and dashes, space is mapped to space
+- character mapped to sequence of dots and dashes, space mapped to space
 - more frequent characters mapped to fewer dots and dashes
-- method is called [Huffman coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/10_04051119.pdf), here with a static tree
-- encoding and decoding require minimal compute (human operator)
+- this is [Huffman coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/10_04051119.pdf) with a static tree
+- encoding and decoding requires minimal compute and memory
 
 ![A part of Morse Huffman tree](/images/morse-huffman-tree.drawio.svg)
 
 
 ## GZip's Deflate Data Compression
 - GZip uses [Deflate](https://datatracker.ietf.org/doc/html/rfc1951) compression format
-- a sliding widow of 32k bytes is used to detect duplicate strings
-  - duplicate strings are referenced back with length and distance symbols
-- this along with byte literals defines custom alphabet of symbols
-- [Huffman coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/10_04051119.pdf) maps frequent symbols to shorter bit sequences
-- the Huffman trees used for bit-mapping stored in the output and sometimes refreshed
+  1. a sliding widow of 32k bytes is used to detect duplicate strings
+    - duplicate strings are referenced back with length and distance symbols
+    - this along with byte literals defines custom alphabet of symbols
+  2. [Huffman coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/10_04051119.pdf) maps frequent symbols to shorter bit sequences
+    - bit-mapping trees stored in the output and sometimes refreshed
 
 ![Deflate algorithm illustration with LZ77 and Huffman coding](/images/deflate-algorithm-operation.drawio.svg) 
 
 
 ## Compression by Predicting Next Symbol
 - Huffman coding predicts next symbol cheaply with symbol frequency
-- we can trade more memory and computation with more complex probability modeling - machine learning
+- can trade more memory and computation with complex probability modeling - machine learning
 - [arithmetic coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/Rissanen__1976.pdf) maps high probability symbols into shorter bit sequences of length \\( -log_2(p) \\)
 - model can be trained on already compressed data stream deterministically
 - common benchmarks are enwik8, and enwik9 dataset with modified compression bpb metric
