@@ -3,6 +3,7 @@ title: "Neural Data Compression"
 description: "Losslessly reducing bits with deep-learning predictions with NNCP and TRACE models"
 layout: post
 categories: ml
+image: /images/neural-data-compression-thumb.png
 date: 2022-05-14
 permalink: /:categories/:title
 ---
@@ -13,7 +14,10 @@ permalink: /:categories/:title
 - data compression means encoding into less bits
 - lossless means without loosing any information
 - compression is possible if some symbols are more likely than others given all previous symbols
+- higher accuracy and confidence => higher compression
 - tradeoff between communication throughput, computation, and memory
+
+![neural data compression](/images/neural-data-compression-thumb.png)
 
 
 ## Morse Code Uses Huffman Coding Compression
