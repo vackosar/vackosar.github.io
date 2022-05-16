@@ -15,7 +15,7 @@ permalink: /:categories/:title
 - lossless means without loosing any information
 - tradeoff between communication throughput, computation, and memory
 - can compress if some symbols are more likely than others 
-- higher accuracy and confidence => higher compression
+- lower cross-entropy => higher compression
 
 ![neural data compression](/images/neural-data-compression-thumb.png)
 
@@ -41,13 +41,25 @@ permalink: /:categories/:title
 ![Deflate algorithm illustration with LZ77 and Huffman coding](/images/deflate-algorithm-operation.drawio.svg) 
 
 
+## Aritmetic Coding in Compresion
+- [arithmetic coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/Rissanen__1976.pdf) has higher compression ratio than Huffman, but bit slower
+- symbol of probability \\( p \\) mapped to length \\( -log_2(p) \\) more accurately than Huffman
+ 
+
+## Entropy and Cross-Entropy in Compression
+- given compressing algorithm using arithmetic coding
+- true next symbol probability given previous symbols: \\( p(x | x_i, x_{i-1}, ...) \\)
+- predicted next symbol probability given previous symbols \\( q(x | x_i ,... ))
+- then average true minimum bits for next symbol is entropy \\( - \sum p(x) \log_2 p(x) \\)
+- and average compressed
+
+
 ## Compression by Predicting Next Symbol
 - Huffman coding predicts next symbol cheaply with symbol frequency
-- can trade more memory and computation with complex probability modeling - machine learning
-- [arithmetic coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/Rissanen__1976.pdf) maps high probability symbols into shorter bit sequences of length \\( -log_2(p) \\)
+- can trade more memory and computation with complex probability modeling
 - model can be trained on already compressed data stream deterministically
-- common benchmarks are enwik8, and enwik9 dataset with modified compression bpb metric
-  - not comparable to language modelling results (single-pass "epoch", extra overhead, compressing entire dataset)
+- common benchmarks are enwik8, and enwik9 dataset with bits-per-byte (bpb)
+- bpb not comparable to language modeling results: single-pass, extra overhead, compressing entire dataset
 
 ![model predicting the next symbol from alphabet](/images/character-prediction-blabla.drawio.svg)
 
