@@ -41,16 +41,17 @@ permalink: /:categories/:title
 ![Deflate algorithm illustration with LZ77 and Huffman coding](/images/deflate-algorithm-operation.drawio.svg) 
 
 
-## Aritmetic Coding in Compresion
+## Arithmetic Coding vs Huffman Coding
 - [arithmetic coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/Rissanen__1976.pdf) has higher compression ratio than Huffman, but bit slower
 - symbol of probability \\( p \\) mapped to length \\( -log_2(p) \\) more accurately than Huffman
+- TODO
  
 
 ## Entropy and Cross-Entropy in Compression
 - given compressing algorithm using arithmetic coding
 - true next symbol probability given previous symbols: \\( p(x | x_i, x_{i-1}, ...) \\)
-- predicted next symbol probability given previous symbols \\( q(x | x_i ,... ))
-- then average true minimum bits for next symbol is entropy \\( - \sum p(x) \log_2 p(x) \\)
+- predicted next symbol probability given previous symbols: \\( q(x | x_i ,... ))
+- then average true minimum bits for next symbol is entropy: \\( - \sum p(x) \log_2 p(x) \\)
 - and average compressed
 
 
