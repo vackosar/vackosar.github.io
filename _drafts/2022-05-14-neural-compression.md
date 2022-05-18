@@ -1,6 +1,6 @@
 ---
 title: "Neural Data Compression"
-description: "Losslessly reducing bits with deep-learning predictions with NNCP and TRACE models."
+description: "Losslessly reducing bits with deep-learning predictions of NNCP and TRACE models."
 layout: post
 categories: ml
 image: /images/neural-data-compression-thumb.png
