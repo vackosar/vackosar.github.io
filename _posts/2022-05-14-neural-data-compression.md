@@ -14,7 +14,7 @@ permalink: /:categories/:title
 
 - data compression means encoding into less bits
 - lossless means without loosing any information
-- tradeoff between communication throughput, computation, and memory
+- trade-off between communication throughput, computation, and memory
 - can compress if some symbols are more likely than others 
 - better symbol prediction => lower cross-entropy => higher compression
 
