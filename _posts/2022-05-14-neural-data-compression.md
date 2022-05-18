@@ -15,7 +15,7 @@ permalink: /:categories/:title
 - lossless means without loosing any information
 - tradeoff between communication throughput, computation, and memory
 - can compress if some symbols are more likely than others 
-- lower cross-entropy => higher compression
+- better symbol prediction => lower cross-entropy => higher compression
 
 ![neural data compression](/images/neural-data-compression-thumb.png)
 
@@ -81,7 +81,7 @@ permalink: /:categories/:title
 ## TRACE: Faster Data Compression Than NNCP
 - [TRACE](https://dl.acm.org/doi/pdf/10.1145/3485447.3511987) is 1-layer transformer compression
 - 3x speedup with competitive compression with NNCP, but still 1000x slower than GZip
-- vocabulary is 256 bytes, 4 consecutive embeddings concatenated before input
+- vocabulary size 256, 4 consecutive embeddings concatenated before input
 - retrained less often than NNCP, but starts randomly initialized
 - result below achieved on GPU - not practical for most applications 
 
