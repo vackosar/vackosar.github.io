@@ -1,10 +1,11 @@
 ---
 title: "Neural Data Compression"
-description: "Losslessly reducing bits with deep-learning predictions of NNCP and TRACE models."
+description: "Losslessly reducing bits with deep-learning by minimizing cross-entropy of NNCP and TRACE models."
 layout: post
 categories: ml
 image: /images/neural-data-compression-thumb.png
 date: 2022-05-14
+video: hRvhG4GWAhE
 permalink: /:categories/:title
 ---
 
@@ -17,8 +18,7 @@ permalink: /:categories/:title
 - can compress if some symbols are more likely than others 
 - better symbol prediction => lower cross-entropy => higher compression
 
-![neural data compression](/images/neural-data-compression-thumb.png)
-
+{% include load_video.html %}
 
 ## Morse Code Uses Huffman Coding Compression
 - compresses 26 characters of english alphabet, not compressing white space
