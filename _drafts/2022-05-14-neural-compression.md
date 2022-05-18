@@ -46,15 +46,17 @@ permalink: /:categories/:title
 - maps symbol of probability \\( q \\) to length \\( -log_2 q \\) in contrast to Huffman
 - defined by split of \\( (0, 1) \\) into subintervals of the probability size, sorted by the size.
 - encodings are numbers within the subintervals in binary format
-- TODO read https://www.cs.cmu.edu/~aarti/Class/10704/Intro_Arith_coding.pdf
+- transmit enough digits so all fractions that fall within interval (prefix code)
+
+![aritmetic coding interval visualization](/images/aritmetic-coding-intervals-visualization.drawio.svg)
  
 
 ## Entropy and Cross-Entropy in Compression
-- given compressing algorithm using arithmetic coding
 - true next symbol probability given previous symbols: \\( p(x \mid x_i, x_{i-1}, ...) \\)
-- estimated probability next symbol probability given previous symbols: \\( q(x \mid x_i ,... ) \\)
-- then average true minimum bits for next symbol is entropy: \\( - \sum p(x) \log_2 p(x) \\)
-- and average compressed message length is cross-entropy: \\( - \sum p(x) \log_2 q(x) \\)
+- estimated next symbol probability given previous symbols: \\( q(x \mid x_i ,... ) \\)
+- arithmetic coding encodes to length \\( \log_2 q(x) \\)
+- then average compressed message length is cross-entropy: \\( - \sum_x p(x) \log_2 q(x) \\)
+- and optimal minimum bits for next symbol is entropy: \\( - \sum_x p(x) \log_2 p(x) \\)
 
 
 ## Compression by Predicting Next Symbol
