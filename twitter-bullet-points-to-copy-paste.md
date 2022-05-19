@@ -2,7 +2,7 @@
 layout: post
 title: "Twitter Bullet Points to Copy & Paste"
 date: 2022-02-06
-description: "Copy-paste your bullet point symbol and other tweeting tips and emojis."
+description: "Copy-paste your bullet point symbol and other tweeting tips and emojis. Usable also for LinkedIn, Meta, ..."
 image: /images/twitter-bullet-points.png
 last_modified_at: 2022-04-25
 ---
