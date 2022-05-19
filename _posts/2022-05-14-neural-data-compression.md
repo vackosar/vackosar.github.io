@@ -52,11 +52,18 @@ permalink: /:categories/:title
  
 
 ## Entropy and Cross-Entropy in Compression
-- true next symbol probability given previous symbols: \\( p(x \mid x_i, x_{i-1}, ...) \\)
-- estimated next symbol probability given previous symbols: \\( q(x \mid x_i ,... ) \\)
-- arithmetic coding encodes to length \\( \log_2 q(x) \\)
-- then average compressed message length is cross-entropy: \\( - \sum_x p(x) \log_2 q(x) \\)
-- and optimal minimum bits for next symbol is entropy: \\( - \sum_x p(x) \log_2 p(x) \\)
+- Let true next symbol probability given previous symbols: \\( p(x \mid x_i, x_{i-1}, ...) \\)
+  - estimated next symbol probability given previous symbols: \\( q(x \mid x_i ,... ) \\)
+  - arithmetic coding encodes to length \\( \log_2 q(x) \\)
+- then average compressed message bit-length is cross-entropy: \\( - \sum_x p(x) \log_2 q(x) \\)
+  - and optimal minimum bits for next symbol is entropy: \\( - \sum_x p(x) \log_2 p(x) \\)
+
+
+## Bits-per-byte (bpb) and Bits-per-Character (bpc)
+- Cross-entropy loss using log2 for a character-level language model averaged over a dataset equals bpc.
+- Bits-per-byte (bpb) is inverse compression ratio divided by 8: \\( 1 bpb = 1 / (8 c_ratio)  \\).
+- Bits-per-character (bpc) for ASCII characters equals bits-per-byte (bpb).
+- [SRU++](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) model achieves 1.02 bpc, approximately compression ratio of 8
 
 
 ## Compression by Predicting Next Symbol
