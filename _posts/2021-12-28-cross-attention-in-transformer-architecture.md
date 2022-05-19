@@ -22,7 +22,7 @@ Cross attention is:
 ## Cross-attention vs Self-attention
 ![cross-attention perceiver io detail](/images/cross-attention-detail-perceiver-io.png)
 
-Except for inputs, cross-attention calculation is the same as [self-attention](/ml/transformers-self-attention-mechanism-simplified) but the calculation inputs are different.
+Except for inputs, cross-attention calculation is the same as [self-attention](/ml/transformers-self-attention-mechanism-simplified).
 Cross-attention combines asymmetrically two separate embedding sequences of same dimension, in contrast self-attention input is a single embedding sequence.
 One of the sequences serves as a query input, while the other as a key and value inputs.
 Alternative [cross-attention in SelfDoc](#cross-attention-in-selfdoc), uses query and value from one sequence, and key from the other.
