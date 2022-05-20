@@ -175,7 +175,7 @@ int main()
 #### ENWIK8 (Hutter, 2006)
 - is a character-level language modeling dataset consisting of 100M tokens taken from Wikipedia.
 - The vocabulary size of this dataset about 200k.
-- BPC is bits per character
+- [BPC is bits-per-character](/ml/bits-per-byte-and-bits-per-character)
 
 #### WIKI-103 (Merity et al., 2017)
 - is a wordlevel language modeling dataset.

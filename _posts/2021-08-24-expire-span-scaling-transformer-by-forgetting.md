@@ -152,7 +152,7 @@ If you need to recap transformer read: [Transformer's Self-Attention Mechanism S
         data-src="/images/expire-span-results-enwik8-summary.png"
         style="max-width: 500px">
     <figcaption class="figure-caption">
-        Expire-span, Trans-XL, Adapt-Span, Compressive transformer bpb, memory, speed on Enwik8
+        Expire-span, Trans-XL, Adapt-Span, Compressive transformer <a href="/ml/bits-per-byte-and-bits-per-character">bpb</a>, memory, speed on Enwik8
         (<a href="https://arxiv.org/abs/2105.06548">source</a>)
     </figcaption>
 </figure>
