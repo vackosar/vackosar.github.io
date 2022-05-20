@@ -60,10 +60,7 @@ permalink: /:categories/:title
 
 
 ## Bits-per-byte (bpb) and Bits-per-Character (bpc)
-- Cross-entropy loss using log2 for a character-level language model averaged over a dataset equals bpc.
-- Bits-per-byte (bpb) is inverse compression ratio divided by 8: \\( 1 bpb = 1 / (8 c_ratio)  \\).
-- Bits-per-character (bpc) for ASCII Extended characters equals bits-per-byte (bpb).
-- [SRU++](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) model achieves 1.02 bpc, approximately compression ratio of 8
+{% include shared_slides/bits-per-byte.md %}
 
 
 ## Compression by Predicting Next Symbol
