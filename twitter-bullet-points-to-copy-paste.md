@@ -47,6 +47,7 @@ Apart from copy-pasting, you can also produce standard bullet points using below
 - Mac: hold option key & press 8
 - Windows: hold alt key & press Numpad 7
 
+
 ### Eye Catching Emoji Symbols
 Other symbols are useful to emphasize call to action and add a spark of emotion to your tweet.
 
@@ -62,6 +63,9 @@ Other symbols are useful to emphasize call to action and add a spark of emotion 
 - 🙏 Folded Hands (Thank you or pray)
 - 🤝 Handshake
 - ✔️ Checkmark
+- 📌 Pushpin
+- 👍 Thumbs Up
+
 
 ### Successful Tweet Templates
 Use templates below to cut through the noise.
