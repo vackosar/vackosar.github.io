@@ -2,7 +2,7 @@
 layout: default
 title: "Google Product Taxonomy Viewer"
 date: 2021-04-16
-description: Interactively explore Google's shopping categories to configure products in your feed.
+description: Interactively explore Google Shopping's and Shopify's categories to configure products in your feed.
 image: /images/google-shopping-taxonomy-viewer-graphic.png
 permalink: /:categories/:title
 categories: software
@@ -31,7 +31,7 @@ Explore Google Product Taxonomy below to understand where to place products in y
 
 
 Google Product Taxonomy is a product categorization tree for e-commerce.
-Google classifies e-shop articles into this structure.
+Google and [Shopify classify e-shop articles into this structure.
 The taxonomy purpose to departmentalize products from the merchant feed into 5583 sections.
 This partitioning of the shopping feed improves article discovery for customers.
 The automatic categorization is performed [based on product input fields](https://support.google.com/merchants/answer/6324436?hl=en) provided by the merchant.
