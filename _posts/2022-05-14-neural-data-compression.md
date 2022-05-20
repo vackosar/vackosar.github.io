@@ -54,7 +54,7 @@ permalink: /:categories/:title
 ## Entropy and Cross-Entropy in Compression
 - Let true next symbol probability given previous symbols: \\( p(x \mid x_i, x_{i-1}, ...) \\)
   - estimated next symbol probability given previous symbols: \\( q(x \mid x_i ,... ) \\)
-  - arithmetic coding encodes to length \\( \log_2 q(x) \\)
+  - arithmetic coding encodes to length \\( - \log_2 q(x) \\)
 - then average compressed message bit-length is cross-entropy: \\( - \sum_x p(x) \log_2 q(x) \\)
   - and optimal minimum bits for next symbol is entropy: \\( - \sum_x p(x) \log_2 p(x) \\)
 
@@ -67,7 +67,7 @@ permalink: /:categories/:title
 - Huffman coding predicts next symbol cheaply with symbol frequency
 - can trade more memory and computation with complex probability modeling
 - model can be trained on already compressed data stream deterministically
-- common benchmarks are enwik8, and enwik9 dataset with bits-per-byte (bpb)
+- common benchmarks are enwik8, and enwik9 dataset with [bits-per-byte (bpb)](/ml/bits-per-byte-and-bits-per-character)
 - bpb not comparable to language modeling results: single-pass, extra overhead, compressing entire dataset
 
 ![model predicting the next symbol from alphabet](/images/character-prediction-blabla.drawio.svg)
@@ -77,22 +77,24 @@ permalink: /:categories/:title
 - [NNCP](https://bellard.org/nncp/nncp.pdf) uses LSTM to predict next byte
   - model is not stored in the output - deterministically derived based on decompressed output
   - model regularly retrained during compression
-- LSTM (large2) 10,000 times slower than GZip for 2.17x less bits per byte
+- LSTM (large2) 10,000 times slower than GZip for 2.17x less bits-per-byte
+- results on enwik9 below for Gzip, [Cmix](http://www.byronknoll.com/cmix.html)
 
-![NNCP result](/images/nncp-enwik8-results.png)
+![NNCP, CMIX, LSTM compression performance](/images/nncp-enwik8-results.png)
 
 
 ## TRACE: Faster Data Compression Than NNCP
 - [TRACE](https://dl.acm.org/doi/pdf/10.1145/3485447.3511987) is 1-layer transformer compression
 - 3x speedup with competitive compression with NNCP, but still 1000x slower than GZip
-- vocabulary size 256, 4 consecutive embeddings concatenated before input
+- vocabulary size is 256, so 4 consecutive embeddings concatenated before input
 - retrained less often than NNCP, but starts randomly initialized
-- result below achieved on GPU - not practical for most applications 
+- result below for Cmix, NNCP, [Dzip](https://arxiv.org/pdf/1911.03572.pdf) required GPU
 
-![TRACE NNCP compression performance](/images/trace-nncp-compression-ratio-and-speed-comparison.png)
+![TRACE, NNCP, CMIX, Dzip compression performance](/images/trace-nncp-compression-ratio-and-speed-comparison.png)
 
 
 ## Deep Neural Network Lossless Compression Applications
+- other compression algos: Cmix, Dzip, 
 - as of 2022-05 seems unpractical - slow, small compression improvement 
   - could be practical as a side effect of other computation
 - note that lossy compression of images and video seem more likely applied
