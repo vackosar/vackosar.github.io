@@ -7,6 +7,7 @@ image: /images/neural-data-compression-thumb.png
 date: 2022-05-14
 video: hRvhG4GWAhE
 permalink: /:categories/:title
+last_modified_at: 2022-05-21
 ---
 
 {% include mathjax.html %}
@@ -19,6 +20,7 @@ permalink: /:categories/:title
 - better symbol prediction => lower cross-entropy => higher compression
 
 {% include load_video.html %}
+
 
 ## Morse Code Uses Huffman Coding Compression
 - compresses 26 characters of english alphabet, not compressing white space
@@ -100,8 +102,15 @@ permalink: /:categories/:title
 - note that lossy compression of images and video seem more likely applied
 - more overview of the field in [this paper](https://arxiv.org/pdf/2202.06533.pdf)
 
-## Abstraction is Compression
+
+## Abstraction is Lossy Compression
 - abstraction is general rules and concepts derived from the usage and classification
 - transformation from concrete to abstract is lossy compression - [taxonomy](/ml/Automatically-Expanding-Taxonomy)
 - from properties of the abstract, can derive properties for all concrete
 - not have to repeat this for each concrete - compression
+
+
+## Autoencoders and Variational Autoencoders are Lossy Compressors
+- if finite precision encoding into less latent dimensions
+- compressed representations may be used for interpolation
+- interpretable features may be [disentangled](/ml/manipulate-item-attributes-via-disentangled-representation)
