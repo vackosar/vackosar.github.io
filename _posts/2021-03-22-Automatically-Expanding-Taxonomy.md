@@ -9,6 +9,7 @@ image: /images/automatic-taxonomy.png
 video: jve806iUHVo
 redirect_from:
 - /ml/Automatically-Expanding-Taxanomy
+last_modified_at: 2022-05-21
 ---
 
 {% include load_video.html %}

@@ -6,7 +6,7 @@ categories: ml
 image: /images/how-computers-understood-humans-thumb.png
 date: 2022-04-18
 permalink: /:categories/:title
-last_modified_at: 2022-04-23
+last_modified_at: 2022-05-21
 video: Jo-IQjdFfnw
 ---
 
