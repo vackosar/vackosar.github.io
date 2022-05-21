@@ -99,3 +99,9 @@ permalink: /:categories/:title
   - could be practical as a side effect of other computation
 - note that lossy compression of images and video seem more likely applied
 - more overview of the field in [this paper](https://arxiv.org/pdf/2202.06533.pdf)
+
+## Abstraction is Compression
+- abstraction is general rules and concepts derived from the usage and classification
+- transformation from concrete to abstract is lossy compression - [taxonomy](/ml/Automatically-Expanding-Taxonomy)
+- from properties of the abstract, can derive properties for all concrete
+- not have to repeat this for each concrete - compression

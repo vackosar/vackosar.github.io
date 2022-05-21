@@ -15,14 +15,12 @@ redirect_from:
 {% include mathjax.html %}
 
 ### Why Taxonomies?
-
-Concepts into a hierarchy where parents are:
-- related to
-- more general
-
-Properties
-- Usually a tree
+- map concepts into a hierarchy, usually tree
+- parents are related but more general or more abstract
 - multiple relation types possible
+- abstraction is information [compression](/ml/neural-data-compression)
+- simplifies user navigation via categorization
+
 
 #### [Google Product Taxonomy (Viewer)](/software/google-product-taxonomy-viewer)
 
@@ -42,7 +40,7 @@ Examples:
 - Sporting Goods > Outdoor Recreation > Outdoor Games > Platform & Paddle Tennis > Platform & Paddle Tennis Paddles
 
 #### Shopify Taxonomy
-- [used Google Product Taxonomy](https://shopify.engineering/categorizing-products-at-scale)
+- [uses Google Product Taxonomy](https://shopify.engineering/categorizing-products-at-scale)
 - published scalable product categorization
 
 #### [Pinterest Taxonomy](https://arxiv.org/pdf/1907.02106.pdf)
@@ -88,13 +86,13 @@ Examples:
 - Data: no new published
 - Name: Arborist
 
-## Problem
-Problem = parent retrieval
-- Given taxanomy & query node 
+## Building Taxonomy
+- is parent retrieval problem
+- Given taxonomy and a query node 
 - Rank true parents high
-- Rank short-path to true high as well
+- Rank short-path to true parent high as well
 
-Examples
+## Parental Retrieval Examples
 - luxor: **africa travel**, european travel, asia travel, greece
 - 2nd month baby: **baby stage**, baby, baby names, preparing for baby
 - depression: mental illness, **stress**, mental wellbeing, disease

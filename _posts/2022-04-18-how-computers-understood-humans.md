@@ -46,7 +46,7 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 - document -> sentence or small running window of 10 words
 - vector is point in a multidimensional space - an array of numbers
 - each of 10k words gets one general vector in 300 dimensional space
-- each vector has to fit in "only" 300 dimensions - much less than 10k words
+- each vector is [compressed](/ml/neural-data-compression) in only 300 dimensions - much less than 10k words
 - global (non) contextual word vectors - no disambiguation (flowering) vs fruit (food)
 
 ![word2vec](/images/word2vec-10k-tensorflow-projector.png)
