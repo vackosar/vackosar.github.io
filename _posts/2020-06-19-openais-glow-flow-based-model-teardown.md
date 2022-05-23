@@ -3,7 +3,7 @@ layout: post
 title: "OpenAI's Glow - Flow-Based Model Teardown"
 date: 2020-06-19
 categories: ml
-description: Get interpretable latent representations by composing non-linear invertible functions and maximizing the exact log-likelihood.
+description: Interpretable latent representations by composing non-linear invertible functions and maximizing the exact log-likelihood.
 image: /images/glow-drawing.png
 video: oJNUZzXE7n4
 permalink: /:categories/:title
@@ -20,6 +20,7 @@ Flow-based (normalizing flow) models are the odd machines in the corner of the n
 Discover their arcane qualities on a representative example of [OpenAI's Glow](https://d4mucfpksywv.cloudfront.net/research-covers/glow/paper/glow.pdf) and its ability to [unveil secrets of visual illusions](https://arxiv.org/pdf/2005.08772v1.pdf).
 Note that you can create [interpretable latent representations also using disentangled representation training](/ml/manipulate-item-attributes-via-disentangled-representation).
 
+
 ## Flow-Based Model vs VAE and GAN
 Advantages of flow-based models are:
 1. Exact latent-variable inference and log-likelihood (invertible) compared to approximate VAE (compressed) and absent GAN representations (discriminated). (Excluding [potential numerical problems](https://arxiv.org/abs/2006.09347)).
@@ -29,7 +30,19 @@ Advantages of flow-based models are:
 
 Flow based models have similarities to diffusion models like [DALL-E 2 or GLIDE](/ml/openai-dall-e-2-and-dall-e-1).
 
+
+## Normalizing Flow Models
+- flow-based models are more general than [normalizing flow](https://arxiv.org/abs/1505.05770)
+- flow-based stands for invertible transformation 
+- normalizing stands for desired normal distribution on the output
+- use-cases thanks to mapping to simple normal distribution:
+  - anomaly or defect detection as low probability samples
+  - sample generation and sample interpolation and representation manipulation
+
+
 ## The Glow Model Architecture
+- Glow model is Normalizing flow
+
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded lazyload"
