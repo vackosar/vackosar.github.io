@@ -33,7 +33,7 @@ Flow based models have similarities to diffusion models like [DALL-E 2 or GLIDE]
 
 ## Normalizing Flow Models
 - flow-based models are more general than [normalizing flow](https://arxiv.org/abs/1505.05770)
-- flow-based stands for invertible transformation 
+- flow-based stands for invertible (bijective) transformation 
 - normalizing stands for desired normal distribution on the output
 - use-cases thanks to mapping to simple normal distribution:
   - anomaly or defect detection as low probability samples
