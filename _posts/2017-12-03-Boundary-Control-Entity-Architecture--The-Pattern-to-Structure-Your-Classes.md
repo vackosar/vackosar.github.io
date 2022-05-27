@@ -11,7 +11,10 @@ redirect_from:
   - /software/Boundary-Control-Entity-Architecture
 ---
 
-Boundary-Control-Entity (BCE), or Entity-Control-Boundary (ECB), or Entity-Boundary-Control (EBC) architecture is a directory (package) structure pattern for sorting classes. It is an alternative to layered architecture. It is very simple and natural way to structure classes, which goes well with modularized architecture. One creates one BCE package structure per a microservice, feature or module having ideally between 9 to 30 classes.  
+Boundary-Control-Entity (BCE) is also called Entity-Control-Boundary (ECB), Entity-Boundary-Control (EBC), Hexagonal, Onion, or The Clean Architecture (Clean Code book).
+Boundary-Control-Entity architecture is effectively directory (package) structure pattern for sorting classes.
+It is an alternative to Three-tier architecture. It is very simple and natural way to structure classes, which goes well with modularized architecture. 
+ne creates one BCE package structure per a microservice, feature or module having ideally between 9 to 30 classes.  
 
 <p><img src="/images/bce.svg" alt="Boundary Control Entity architecture"/></p>
 
@@ -67,6 +70,17 @@ For an overview of boundary control entity architecture folder structure:
 Retain what you have just read by taking training quiz generated from this article.<br>
 <br>
 <a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=dc985c9e-6812-41d3-a020-33c4a0340c16">Boundary-Control-Entity Quiz</a>
+
+
+## Three-tier vs Boundary Control Entity Architecture
+Three-tier architecture the much more common than Boundary Control Entity architecture.
+Three-tier architecture is recommended by Marin Fowler under name of [Presentation, Domain, Data](https://martinfowler.com/bliki/PresentationDomainDataLayering.html).
+Three-tier architecture is composed of presentation layer, application layer, data access layer.
+BCE splits domain objects from the data access layer and merges the rest with presentation layer:
+- BCE Domain = domain objects (from the data access layer)
+- BCE Boundary = presentation - data access without domain objects
+- BCE Control = application layer
+
 
 ## Continue: The Cuts Across Your Architecture
 Localize Related, Inline over Extract, Specific over Generic
