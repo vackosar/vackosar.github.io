@@ -31,7 +31,7 @@ Explore Google Product Taxonomy below to understand where to place products in y
 
 
 Google Product Taxonomy is a product categorization tree for e-commerce.
-Google and [Shopify classify e-shop articles into this structure.
+Google and [Shopify classify e-shop articles into this structure](https://help.shopify.com/en/manual/online-sales-channels/facebook/checkout-on-instagram-and-facebook/product-categories).
 The taxonomy purpose to departmentalize products from the merchant feed into 5583 sections.
 This partitioning of the shopping feed improves article discovery for customers.
 The automatic categorization is performed [based on product input fields](https://support.google.com/merchants/answer/6324436?hl=en) provided by the merchant.
@@ -46,6 +46,11 @@ Open and download [full taxonomy directly from Google](http://google.com/basepag
 
 ## Google Guidelines
 Read more in [official guidelines](https://support.google.com/merchants/answer/6324436?hl=en#zippy=%2Cshopping-ads-campaigns%2Capparel-products).
+
+
+## Pinterest's Auto Expanding Taxonomy
+Pinterest's [Arborist model](/ml/Automatically-Expanding-Taxonomy) finds parents for unseen textual nodes using triplet-loss, StarSpace embeddings, & shortest path.
+
 
 <br>
 {% include subscribe.html %}
