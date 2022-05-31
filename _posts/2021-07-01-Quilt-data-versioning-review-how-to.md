@@ -9,6 +9,7 @@ video: RZxnSBw2xR0
 permalink: /:categories/:title
 redirect_from:
   - /ml/Quilt-data-review-how-to
+last_modified_at: 2022-05-31
 ---
 
 {% include load_video.html %}
@@ -16,9 +17,10 @@ redirect_from:
 
 
 Same as You are used to versioning your source code, you can now version data.
-The adoption of machine learning and AI is boosting data versioning trend.
-Because in machine learning, outputs are not defined only by the code but also by the training data.
-Also, the resulting models are comparatively much larger than the source code of their architecture, and training loop
+The adoption of machine learning and AI is boosting the data versioning trend.
+In machine learning, outputs are defined not only by the code but also by the training data, so we also need to version the data.
+Machine learning model files often take hundreds of megabytes of space - a hundred times their source code.
+
 
 
 ## Why To Version Data
