@@ -33,6 +33,11 @@ So the problem above can be restated into following question. How to transform t
 Earth mover distance computational complexity is super-cubic as can be found in [Network Flows: Theory, Algorithms, and Applications](https://www.amazon.com/Network-Flows-Theory-Algorithms-Applications/dp/013617549X).
 There are papers on approximating EMD with [quadratic complexity](http://proceedings.mlr.press/v37/kusnerb15.pdf) in general case and [linear complexity](http://proceedings.mlr.press/v97/atasu19a/atasu19a.pdf) in document search if pre-computation is allowed.
 
+### Earth Movers Distance vs Optimal Transport
+
+Earth movers distance differs from optimal transport in that optimal transport disallows splitting and summing of the transported amount at each point.
+So optimal transport can be defined by only transforming the support of the distribution and often may not match the target distribution.
+
 
 ### What is Word Mover's Distance (WMD)?
 Word Mover's Distance is like [Earth Movers Distance](#what-is-earth-movers-distance) but between text documents.
@@ -164,7 +169,7 @@ For example Transformer language model's [attention matrix was approximated rand
 Read the linked post to get more context on this method.
 
 
-#### WME vs KNN-WMD
+#### Word Movers Embedding vs KNN-WMD
 
 The method complexity is \\( O(NRL \log(L)) \\) when the random documents size (topic count) is constant. That stands in contrast to KNN-WMD variant \\( O(N^2L^3log(L)) \\).
 Additionally, [WME slightly outperformed KNN-WMD in classification accuracy](https://arxiv.org/abs/1811.01713).
