@@ -1,6 +1,6 @@
 ---
 title: "Transformer's Self-Attention Mechanism Simplified"
-description: "Understand quickly successful architecture used in GPT, BERT, and other famous transformer models."
+description: "How do transformer models like BERT and GPT work?"
 layout: post
 image: /images/transformer-full-model.png
 categories: ml
@@ -11,16 +11,21 @@ permalink: /:categories/:title
 
 {% include mathjax.html %}
 
-![BERT full model diagram](/images/transformer-full-model.png)
 
-The prototypical example of the Transformer architecture is the Bidirectional Encoder Representations from Transformers (BERT) model. The BERT Transformer model was introduced in a [Attention Is All You Need paper](https://arxiv.org/abs/1706.03762).
+- self-attention layer is central mechanism in transformer architecture
+- prototypical example is Bidirectional Encoder Representations from Transformers (BERT) model introduced in a [Attention Is All You Need paper](https://arxiv.org/abs/1706.03762).
+- models based on transformer are often state of the art across various domains (vision, speech, ...)
+- compared to LSTM (RNN), Transformer is more parallelizable
 
-While [self-attention](#self-attention-in-transformer) is the central part of the Transformer architecture, it is not the whole picture.
+## Transformer Architecture vs Self-Attention Layer
+While [self-attention layer](#self-attention-in-transformer) is the central mechanism of the Transformer architecture, it is not the whole picture.
 Transformer architecture is a composite of following parts:
 - [Positional encodings inject input word-position information](#positional-embeddings)
-- [Self-attention contextually encodes the input sequence information](#self-attention-in-transformer)
+- [Self-attention layer contextually encodes the input sequence information](#self-attention-in-transformer)
 - [Feed forward layer which operates bit like a static key-value memory](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory). FF layer is similar to self-attention except it does not use softmax and one of the input sequences is a constant.
 - [Cross-attention decodes output sequence](/ml/cross-attention-in-transformer-architecture) of different inputs and modalities.
+ 
+![BERT full model diagram](/images/transformer-full-model.png)
 
 ## Self-Attention in Transformer
 <figure class="figure">
@@ -47,8 +52,11 @@ Transformer's self-attention layer computes differentiable key-value search and 
   - in equation: \\( Y = \mathbf{softmax}(QK^\intercal)V \\)
 - More details in [Attention Is All You Need paper](https://arxiv.org/abs/1706.03762) e.g.: dot-product is "scaled", residual connection, layer normalization
 
-## Word Embeddings
 
+{% include shared_slides/attention-vs-recurrence.md %}
+
+
+## Word Embeddings
 Input text is split into character chunks called tokens.
 Tokens are mostly words around 4 characters long with prepended whitespace, but can represent special characters.
 Embedding layers map tokens to vectors in other words to sequence of numbers.
@@ -104,6 +112,7 @@ Addition of multiple heads serves [more as a computation parallelization trick r
         Attention Complexity (<a href="https://arxiv.org/pdf/2009.14794.pdf">source</a>).
     </figcaption>
 </figure>
+
 
 ## Positional Embeddings
 
