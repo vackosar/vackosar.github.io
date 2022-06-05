@@ -13,14 +13,15 @@ permalink: /:categories/:title
 
 
 - self-attention layer is central mechanism in transformer architecture
-- prototypical example is Bidirectional Encoder Representations from Transformers (BERT) model introduced in a [Attention Is All You Need paper](https://arxiv.org/abs/1706.03762).
+- an example is Bidirectional Encoder Representations from Transformers (BERT) model introduced in a [Attention Is All You Need paper](https://arxiv.org/abs/1706.03762).
 - models based on transformer are often state of the art across various domains (vision, speech, ...)
 - compared to LSTM (RNN), Transformer is more parallelizable
 
 ## Transformer Architecture vs Self-Attention Layer
 While [self-attention layer](#self-attention-in-transformer) is the central mechanism of the Transformer architecture, it is not the whole picture.
 Transformer architecture is a composite of following parts:
-- [Positional encodings inject input word-position information](#positional-embeddings)
+- [Tokenizers convert text to tokens and tokens are mapped to embeddings](/ml/transformer-embeddings-and-tokenization)
+- [Positional encodings inject input word-position information](/ml/transformer-positional-encodings)
 - [Self-attention layer contextually encodes the input sequence information](#self-attention-in-transformer)
 - [Feed forward layer which operates bit like a static key-value memory](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory). FF layer is similar to self-attention except it does not use softmax and one of the input sequences is a constant.
 - [Cross-attention decodes output sequence](/ml/cross-attention-in-transformer-architecture) of different inputs and modalities.
@@ -108,25 +109,6 @@ Addition of multiple heads serves [more as a computation parallelization trick r
     </figcaption>
 </figure>
 
-
-## Positional Embeddings
-
-![positional embeddings in BERT architecture](/images/transformer-positional-embeddings.png)
-
-In BERT, positional embeddings give first few tens of dimensions of the token embeddings meaning of relative positional closeness within the input sequence.
-In [Perceiver IO](/ml/cross-attention-in-transformer-architecture#cross-attention-in-perceiver-io) positional embeddings are concatenated to the input embedding sequence instead.
-In [SRU++](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) the positional embeddings are learned feature of the RNN.
-
-
-### Fourier Positional Encodings in BERT
-- Positional embeddings are added to the word embeddings once before the first layer.
-- Each position \\( t \\) within the sequence gets different embedding
-  - if \\( t = 2i \\) is even then \\( P_{t, j} := \sin (p / 10^{\frac{8i}{d}})  \\)
-  - if \\( t = 2i + 1 \\) is odd then \\( P_{t, j} := \cos (p / 10^{\frac{8i}{d}})  \\)
-- This is similar to fourier expansion of Diracs delta
-- dot product of any two positional encodings decays fast after first 2 nearby words
-- average sentence has around 15 words, thus only first dimensions carry information
-- the rest of the embeddings can thus function as word embeddings
 
 
 ## Training a Transformer

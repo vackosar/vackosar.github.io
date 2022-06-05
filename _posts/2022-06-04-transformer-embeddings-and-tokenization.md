@@ -3,18 +3,18 @@ title: "Transformer Embeddings and Tokenization"
 description: "How transformers convert words and other objects to vectors and back."
 layout: post
 categories: ml
-image: /images/transformer-tokenization-and-embeddings.drawio.svg
+image: /images/transformer-architecture-embeddings.drawio.svg
 date: 2022-06-05
 permalink: /:categories/:title
 ---
 
-- [transformer](/ml/transformers-self-attention-mechanism-simplified) is sequence to sequence neural network architecture
+- [transformer (e.g. BERT)](/ml/transformers-self-attention-mechanism-simplified) is sequence to sequence neural network architecture
 - input text is encoded with tokenizers to sequence of integers
 - input tokens are mapped to sequence of embeddings via embeddings layer 
 - output embeddings can be classified to a sequence of tokens
 - output tokens can then be converted back to the text
 
-![tokenization and embedding layer for transformer](/images/transformer-tokenization-and-embeddings.drawio.svg)
+![embeddings in transformer architecture](/images/transformer-architecture-embeddings.drawio.svg)
 
 
 ## Tokenizers
@@ -25,6 +25,8 @@ permalink: /:categories/:title
 - Input and output embeddings layer often share the same token-vector mapping.
 - common tokenization algorithms are [WordPiece](https://static.googleusercontent.com/media/research.google.com/ja//pubs/archive/37842.pdf), [SentencePiece](https://arxiv.org/pdf/1808.06226.pdf)
 
+![tokenization and embedding layer for transformer](/images/transformer-tokenization-and-embeddings.drawio.svg)
+
 
 ## Tokenizers vs Encoders 
 - Tokenizers are not suitable for modalities like image or speech.
@@ -33,10 +35,9 @@ permalink: /:categories/:title
 - Output of the encoding layer has to be a sequence of embeddings for the transformer.
 
 
-## Positional Encodings
-- transformer architecture is symmetrical
-- have to add positional information to the embeddings sequence
-- this is done via positional embeddings
+## [Positional Encodings](/ml/transformer-positional-encodings) add Token Order Information
+
+{% include shared_slides/positional-encodings-summary.md %}
 
 
 ## Explore Yourself
