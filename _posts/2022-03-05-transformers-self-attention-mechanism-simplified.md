@@ -1,6 +1,6 @@
 ---
 title: "Transformer's Self-Attention Mechanism Simplified"
-description: "How do transformer models like BERT and GPT work?"
+description: "How transformer models like BERT and GPT work?"
 layout: post
 image: /images/transformer-full-model.png
 categories: ml
