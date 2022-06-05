@@ -56,11 +56,6 @@ Transformer's self-attention layer computes differentiable key-value search and 
 {% include shared_slides/attention-vs-recurrence.md %}
 
 
-## Word Embeddings
-Input text is split into character chunks called tokens.
-Tokens are mostly words around 4 characters long with prepended whitespace, but can represent special characters.
-Embedding layers map tokens to vectors in other words to sequence of numbers.
-Input and output embeddings layer share the same mapping.
   
 ### Multi-Head Attention
 Instead of basic self-attention above, BERT implements special more complicated layer:
