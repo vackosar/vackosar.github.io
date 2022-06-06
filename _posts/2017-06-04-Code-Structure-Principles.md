@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "How to Structure Code: Localize Related, Inline over Extract, Specific over Generic"
+title: "How to Structure Code"
 date: 2017-06-04
+last_modified_at: 2022-06-06
 category: software
-description: A short alternative view on code structure principles based on several years of personal experience, Carmack, Jonathan Blow, and Adam Bien's posts.
+description: Localize Related, Inline over Extract, Specific over Generic. My view partially based on Carmack, Jonathan Blow, and Adam Bien's posts.
 permalink: /:categories/:title
 redirect_from:
   - /2017/06/04/Code-Structure-Principles.html
@@ -11,7 +12,7 @@ redirect_from:
 
 {% include highlight-rouge-friendly.css.html %}
 
-However, as with all the rules, do not put the horse before the caret.
+However, as with all the rules, do not put the horse before the cart.
 Don't optimize code structure too early, and don't be too stringent.
 Focus more on the specifics of your problem than on generics offered by the ivory tower books.
 

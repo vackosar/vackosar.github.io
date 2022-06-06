@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Boundary Control Entity Architecture: The Pattern to Structure Your Classes"
+title: "Boundary Control Entity Architecture Pattern"
 image: /images/bce.svg
 categories: software
-description: BCE is a file structure for source code files sometimes with additional dependency restrictions. Example included!
+description: "BCE is a source code structure pattern sometimes called ECB, EBC, Hexagonal, Onion, or Clean architecture."
 date: 2017-12-03
+last_modified_at: 2022-06-06
 permalink: /:categories/:title
 redirect_from:
   - /2017/12/03/Boundary-Control-Entity-Architecture.html
@@ -14,7 +15,7 @@ redirect_from:
 Boundary-Control-Entity (BCE) is also called Entity-Control-Boundary (ECB), Entity-Boundary-Control (EBC), Hexagonal, Onion, or The Clean Architecture (Clean Code book).
 Boundary-Control-Entity architecture is effectively directory (package) structure pattern for sorting classes.
 It is an alternative to Three-tier architecture. It is very simple and natural way to structure classes, which goes well with modularized architecture. 
-ne creates one BCE package structure per a microservice, feature or module having ideally between 9 to 30 classes.  
+One creates one BCE package structure per a microservice, feature or module having ideally between 9 and 30 classes.  
 
 <p><img src="/images/bce.svg" alt="Boundary Control Entity architecture"/></p>
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Spline: Data Lineage For Spark Structure Streaming At Spark N AI Summit 2018"
+title: "Spline: Data Lineage For Spark Structure Streaming (2018)"
 date: 2018-10-04
-last_modified_at: 2022-04-23
-description: Vaclav Kosar and Marek Novotny had opportunity to present a POC of Spark Structured Streaming data lineage visualization tool.
+last_modified_at: 2022-06-06
+description: Vaclav Kosar and Marek Novotny presentation at Spark N AI Summit 2018 of a POC of Structured Streaming data lineage tool.
 image: /images/2018-10-04-spark-summit-1.JPG
 category: software
 permalink: /:categories/:title
