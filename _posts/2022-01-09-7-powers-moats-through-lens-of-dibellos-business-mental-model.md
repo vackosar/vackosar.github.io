@@ -115,7 +115,7 @@ Hysteresis: (optimization, trust, stability):
 	- low cost of capital thanks to optimization and trust of investors
 	- example: [Blue chip stocks](https://en.wikipedia.org/wiki/Blue_chip_(stock_market))
 		
-# Acknowledgments
+## Acknowledgments
 I only found about topics above thanks to Cedric's blog posts over at [Common Place Blog](https://commoncog.com/blog/).
 I am personally a paying subscriber of the Commonplace blog to have access to member's only posts and the community.
 Also thanks to Cedric explaining that I originally modified the definition of the DiBello's model and a lots of other good comments.

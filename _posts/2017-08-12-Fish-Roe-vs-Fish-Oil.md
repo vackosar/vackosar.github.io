@@ -18,7 +18,7 @@ Fish oil is popular supplement. It's production was optimized for maximum conten
 Fish roe is food of salty taste produced from egg masses of fish known to be good source of omega-3 fatty acids.
 This is a comparison of fish oil vs fish roe in terms of price and health improvement.
 
-# Fish ROE EPA Gram Price
+## Fish ROE EPA Gram Price
 
 Fish ROE EPA estimates are based on fatty acid composition in following studies:
 - [1] [Comparison of Proximate, Fatty Acid and Amino Acid Compositions of Various Types of Fish Roes](http://www.tandfonline.com/doi/abs/10.1080/10942910701611170?journalCode=ljfp20)
