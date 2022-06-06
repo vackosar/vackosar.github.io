@@ -22,7 +22,7 @@ Sections:
 - [2. Inline over Extract](#2-inline-over-extract)
 - [3. Specific over Generic](#3-specific-over-generic)
 
-Code structure cuts across the architecture. Learn about dead-simple architecture called [Boundary-Control-Entity here](https://vaclavkosar.com/software/Boundary-Control-Entity-Architecture).
+Code structure cuts across the architecture. Learn about dead-simple architecture called [Boundary-Control-Entity here](/software/Boundary-Control-Entity-Architecture-The-Pattern-to-Structure-Your-Classes).
 
 ## Code Containers
 Code Containers is a term used in this post to refer to a instance of a level of hierarchy into which code can be sorted.
@@ -130,4 +130,4 @@ Try to finish on time and make it work robustly for the specific case you are so
 
 
 ## Continue: The Dead-Simple Architecture
-Code structure cuts across the architecture. [Learn about a dead-simple architecture called Boundary-Control-Entity here](/software/Boundary-Control-Entity-Architecture).
+Code structure cuts across the architecture. [Learn about a dead-simple architecture called Boundary-Control-Entity here](/software/Boundary-Control-Entity-Architecture-The-Pattern-to-Structure-Your-Classes).
