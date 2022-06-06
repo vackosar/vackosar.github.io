@@ -2,7 +2,7 @@
 layout: default
 title: Vaclav Kosar's Software, Machine Learning, & Business Blog
 ---
-<h2>{{ page.title }}</h2>
+<h1 class="h2">{{ page.title }}</h1>
 
 <br>
 {% include subscribe.html %}
