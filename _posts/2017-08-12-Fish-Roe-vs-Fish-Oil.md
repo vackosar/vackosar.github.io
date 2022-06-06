@@ -2,6 +2,7 @@
 layout: post
 title: "Fish Roe vs Fish Oil"
 date: 2017-08-12
+last_modified_at: 2022-06-06
 categories: health
 description: Healthiness and price of a salty delicacy versus oily softgels. EPA, DHA, Neu5Gc.
 permalink: /:categories/:title

@@ -2,6 +2,7 @@
 layout: post
 title: "To What Python Number Types Does json.loads Parse?"
 date: 2020-08-25
+last_modified_at: 2022-06-06
 categories: software
 description: JSON specifies only a number value, so how to infer the correct type between int and float? How are NaN and Infinity handled?
 image: /images/json.loads-and-numbers.png

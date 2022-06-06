@@ -2,8 +2,9 @@
 layout: post
 title: "Performers FAVOR+ Faster Transformer Attention"
 date: 2020-10-25
+last_modified_at: 2022-06-06
 categories: ml
-description: The Performer model attention approximation has linear time & space complexity in input token count in contrast to vanilla Transformer's square complexity and outperforms Linformer.
+description: The Performer model attention approximation has linear complexity in contrast to square and outperforms Linformer.
 image: /images/performer-thumb.png
 video: xpys_xqB6qY
 permalink: /:categories/:title

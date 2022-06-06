@@ -6,6 +6,7 @@ layout: post
 categories: book
 tag: business
 date: 2022-01-09
+last_modified_at: 2022-06-06
 permalink: /:categories/:title
 redirect_from:
 - /book/7-powers-moats-through-lens-of-modified-dibellos-business-mental-model
