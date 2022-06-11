@@ -25,7 +25,7 @@ permalink: /:categories/:title
 
 
 ## Query Reformulations for Web Search Diversification
-- [Exploiting Query Reformulations for Web Search Result Diversification (2010, Uni of Glasgow)](https://www.ra.ethz.ch/cdstore/www2010/www/p881.pdf)
+- [xQuAD: Exploiting Query Reformulations for Web Search Result Diversification (2010, Uni of Glasgow)](https://www.ra.ethz.ch/cdstore/www2010/www/p881.pdf)
 - Diversify results and hope that at least one will satisfy the user
 - query is underspecified, we can find more specific query reformulation
 - Various aspects are covered by more query reformulations
@@ -38,6 +38,7 @@ permalink: /:categories/:title
 - Previous methods: similarity between docs using [maximal marginal relevance](/ml/submodularity-in-ranking-summarization-and-self-attention)
 - Paper contribution: similarity between sub-queries
 
+
 ## Sub-Query Generation
 - query reformulations provided by three major Web search engines
 - Created probably via query log mining 
@@ -47,14 +48,11 @@ permalink: /:categories/:title
 
 ## Personalized Re-Ranking
 - [Managing Popularity Bias in Recommender Systems with Personalized Re-ranking (2019, Uni of Colorado Boulder)](https://arxiv.org/pdf/1901.07555.pdf)
-- Document → Item, Query → User, Sub-query → Item Category
-- Prevents duplicate items
-- Indicator function: 1 when item i in list S
-- already covers category d and 0 otherwise
-- ratio of items in the user profile which belong to category d
-- Ratio of how many long tail / short head items user consumes
-- The re-ranking method for diversification across aspects or popularity categories
-- Small diversification additive can improve NDCG
+- Document → Item, Query → User, Aspect → long-tail vs short-head
+- Goal: Relevant but cover both long-tail (rare) and short-head (popular)
+- Use "Smooth" xQuAD - maintain some ratio of long tail items
+- personalize based on how much user interacted with long-tail vs short-head items (ratio)
+- Adding small diversification can improve NDCG
 
 
 ## Coverage and Submodularity
