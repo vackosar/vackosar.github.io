@@ -17,7 +17,7 @@ permalink: /:categories/:title
 - models based on transformer are often state of the art across various domains (vision, speech, ...)
 - compared to LSTM (RNN), Transformer is more parallelizable
 
-## Transformer Architecture vs Self-Attention Layer
+## Transformer Architecture Explained
 While [self-attention layer](#self-attention-in-transformer) is the central mechanism of the Transformer architecture, it is not the whole picture.
 Transformer architecture is a composite of following parts:
 - [Tokenizers convert text to tokens and tokens are mapped to embeddings](/ml/transformer-embeddings-and-tokenization)
@@ -28,17 +28,21 @@ Transformer architecture is a composite of following parts:
  
 ![BERT full model diagram](/images/transformer-full-model.png)
 
-## Self-Attention in Transformer
+
+## Self-Attention in Transformer Visualized
+Self-Attention compares all input sequence members with each other, and modifies the corresponding output sequence positions.
+In other words, self-attention layer differentiably key-value searches the input sequence for each inputs, and adds results to the output sequence.
+
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded lazyload"
         data-src="/images/self-attention-calculation-visualisation.png"
-        alt="self-attention calculation visualization"/>
+        alt="transformer self-attention calculation visualization"/>
     <figcaption class="figure-caption">Output and input have the same sequence length and dimension. Weight each value by similarity of the corresponding query and key. For each sequence position output sum up the weighted values.</figcaption>
 </figure>
 
-Transformer's self-attention layer computes differentiable key-value search and summation on the input sequence.
 
+## Self-Attention Explained in Detail
 - input \\( X \in \mathbf{R}^{L \times d} \\) is a sequence of embeddings of dimension \\( d \\) of length \\( L \\)
 - output \\( Y \in \mathbf{R}^{L \times d} \\) has the same shape as input
 - project \\( X \\) into 3 matrices of the same shape
@@ -51,11 +55,11 @@ Transformer's self-attention layer computes differentiable key-value search and 
   - this is done by weighting the value with a softmax of a dot-product and summing the values
   - in pseudo-code: \\( Y = \mathrm{matmul}_L(\mathrm{softmax}_L(\mathrm{matmul_d}(X_q, X_k^\intercal)), X_v) \\)
   - in equation: \\( Y = \mathbf{softmax}(QK^\intercal)V \\)
+- results are added to the residual connection and normalized
 - More details in [Attention Is All You Need paper](https://arxiv.org/abs/1706.03762) e.g.: dot-product is "scaled", residual connection, layer normalization
 
 
 {% include shared_slides/attention-vs-recurrence.md %}
-
 
   
 ### Multi-Head Attention
