@@ -31,6 +31,7 @@ permalink: /:categories/:title
 - dot product of any two positional encodings decays fast after first 2 nearby words
 - average sentence has around 15 words, thus only first dimensions carry information
 - the rest of the embeddings can thus function as word embeddings
+- not translational invariant, only the [self-attention](/ml/transformers-self-attention-mechanism-simplified) key-query comparison is
 
 
 {% include shared_slides/rope-embeddings.md %}
