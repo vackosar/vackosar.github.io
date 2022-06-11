@@ -6,5 +6,6 @@
 - RRNs not parallelizable in time dimension as future steps depend on the past
 - RRNs have difficulty accessing long time ago information 
 - RNNs handle repetition better, can use CTC Loss e.g. for OCR
+- [SRU++](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) uses both attention and recurrence
 
 ![Dependency parse tree example from Spacy](/images/dependency-parse-tree.png)
