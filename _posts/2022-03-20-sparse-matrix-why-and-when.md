@@ -59,7 +59,7 @@ There are several types of sparse matrix representations, where each has an adva
 
 
 ### CSC: Compressed Sparse Column format
-  - similar to CSR except columns and rows switch their role
+- similar to CSR except columns and rows switch their role
  
 ### Other formats
 Block Sparse Row format, Diagonal, ...
