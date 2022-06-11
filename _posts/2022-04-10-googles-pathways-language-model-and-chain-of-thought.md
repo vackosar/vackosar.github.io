@@ -4,7 +4,7 @@ description: "PaLM, the largest model as of early 2022, outperforms average huma
 layout: post
 categories: ml
 date: 2022-04-10
-last_modified_at: 2022-04-25
+last_modified_at: 2022-06-11
 image: /images/palm-thumb.png
 video: oi86r-2Bh64
 permalink: /:categories/:title
@@ -128,13 +128,12 @@ GPT-3: No, because an airplane typically travels around 500-600 miles per hour, 
 - [multi-query attention](https://arxiv.org/pdf/1911.02150.pdf):
   - block-shared key and value projections, different query projections
   - speeds up autoregressive decoding where queries 
-- [RoPE Embeddings](https://arxiv.org/pdf/2104.09864.pdf):
-  - want relative position info in query-value dot-product
-  - use multiplicative rotational matrix mixing pairwise neighboring dimensions
-  - improves performance on long sequences
 - reversible lossless tokenization: 256k tokens vocabulary
   - whitespace also preserved, OOV UTF-8 split into bytes, digits of numbers tokenized separately
 - [modified feedforward layer SwiGLU](#swiglu-modified-feed-forward-layer)
+
+
+{% include shared_slides/rope-embeddings.md %}
 
 
 {% include shared_slides/swiglu-modified-feed-forward-layer.md %}

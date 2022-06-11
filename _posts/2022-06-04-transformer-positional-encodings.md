@@ -5,6 +5,7 @@ layout: post
 categories: ml
 image: /images/transformer-positional-embeddings.png
 date: 2022-06-05
+last_modified_at: 2022-06-11
 permalink: /:categories/:title
 ---
 
@@ -30,3 +31,6 @@ permalink: /:categories/:title
 - dot product of any two positional encodings decays fast after first 2 nearby words
 - average sentence has around 15 words, thus only first dimensions carry information
 - the rest of the embeddings can thus function as word embeddings
+
+
+{% include shared_slides/rope-embeddings.md %}
