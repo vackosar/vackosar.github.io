@@ -21,7 +21,7 @@ permalink: /:categories/:title
 While [self-attention layer](#self-attention-in-transformer) is the central mechanism of the Transformer architecture, it is not the whole picture.
 Transformer architecture is a composite of following parts:
 - [Tokenizers convert text to tokens and tokens are mapped to embeddings](/ml/transformer-embeddings-and-tokenization)
-- [Positional encodings inject input word-position information](/ml/transformer-positional-encodings)
+- [Positional encodings inject input word-position information](/ml/transformer-positional-embeddings-and-encodings)
 - [Self-attention layer contextually encodes the input sequence information](#self-attention-in-transformer)
 - [Feed forward layer which operates bit like a static key-value memory](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory). FF layer is similar to self-attention except it does not use softmax and one of the input sequences is a constant.
 - [Cross-attention decodes output sequence](/ml/cross-attention-in-transformer-architecture) of different inputs and modalities.

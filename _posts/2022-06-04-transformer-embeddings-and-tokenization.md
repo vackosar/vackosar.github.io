@@ -35,7 +35,7 @@ permalink: /:categories/:title
 - Output of the encoding layer has to be a sequence of embeddings for the transformer.
 
 
-## [Positional Encodings](/ml/transformer-positional-encodings) add Token Order Information
+## [Positional Encodings](/ml/transformer-positional-embeddings-and-encodings) add Token Order Information
 
 {% include shared_slides/positional-encodings-summary.md %}
 
