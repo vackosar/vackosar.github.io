@@ -3,7 +3,7 @@ title: "Result Diversification in Web Search and Recommenders"
 description: "Increase coverage in web search and recommendation via re-ranking diversification factor"
 layout: post
 categories: ml
-date: 2022-03-05
+date: 2020-03-05
 image: /images/long-tail-popularity-rank.drawio.svg
 video: 35-xa9IOsnw
 last_modified_at: 2022-06-11
