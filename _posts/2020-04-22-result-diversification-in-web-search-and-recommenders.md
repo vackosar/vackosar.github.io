@@ -52,6 +52,7 @@ permalink: /:categories/:title
 - Goal: Relevant but cover both long-tail (rare) and short-head (popular)
 - Use "Smooth" xQuAD - maintain some ratio of long tail items
 - personalize based on how much user interacted with long-tail vs short-head items (ratio)
+- Vaclav's opinion: why not make item popularity more continuous instead of using 2 categories?
 - Adding small diversification can improve NDCG
 
 
