@@ -12,16 +12,12 @@ permalink: /:categories/:title
 {% include load_video.html %}
 {% include mathjax.html %}
 
-### Why coding?
-
-Neural Networks are missing [System 2](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow):
-- regression is not enough
-- humans can also:
-  - think algorithmically
-  - accumulate "knowledge"
-  - from small amount of samples
-- symbolic + neural?
-- more in [Francois Chollet - Intelligence and Generalisation](https://youtu.be/J0p_thJJnoo)
+## Why Code with Neural Networks?
+- Regression is not enough. Neural Networks are missing [System 2](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow):
+- humans can
+  - think algorithmically using symbols
+  - accumulate "knowledge" from small amount of samples
+- GAI via symbolic + neural? ([Francois Chollet](https://youtu.be/J0p_thJJnoo))
 
 
 <img
@@ -31,30 +27,38 @@ Neural Networks are missing [System 2](https://en.wikipedia.org/wiki/Thinking,_F
     style="max-width: 200px">
 
 
-### How DreamCoder works?
-
+## How DreamCoder Works?
 - [DreamCoder](https://www.cs.cornell.edu/~ellisk/documents/dreamcoder_with_supplement.pdf) uses:
   - learned library of functions
-  - learned neural search on program space
-- To:
+  - learned neural search on the program space
+- Such that:
   - given inputs-output examples
-  - produce the best solution  
-    
-    
-The best program:
-- short
-- in based on experience
-- too large program search space
-- DreamCoder  
-  - learn functions that _compress_ solved examples
-  - learn neural guided search
+  - produces the best solution
+  - and learns from that
 
 
+### Why DreamCoder?
+- builds on RobustFill and DeepCoder
+- DeepCoder does not predict the probability of a program
+- DeepCoder predicts DSL primitive will be used in the program at least once
+- DeepCoder & DreamCoder libraries are
+  - modestly-sized set
+  - generally useful routines
+  - interpretable routines
+ 
+
+## DreamCoder's The Best Program Definition
+- program search space is too large
+- short program given previously useful functions is the best
+- So, DreamCoder
+  - growths library of functions that _compress_ valid solutions
+  - learns neural guided search
+ 
+
+## DreamCoder vs AlphaZero
 Similarities to [AlphaZero](https://arxiv.org/pdf/1712.01815.pdf):
 - also trains a neural search
 - also does "self-play" (Dream phase)
-
-Example solved tasks:
 
 <figure class="figure">
     <img
@@ -68,26 +72,26 @@ Example solved tasks:
 </figure>
 
 
-### How DreamCoder learns?
-
-Training:
+## How is DreamCoder Trained?
 1. provide program primitives (map, fold, if, cons, >)
-1. loop
-    1. wake phase:
-        1. search for the best solution given the library
-        1. store successful solutions
-    1. sleep phase
-        1. abstract
-            1. replay successful solutions
-            1. compress them by adding to library
-        1. dream:
-            1. generate & replay programs
-            1. train neural search
+2. wake phase:
+    1. search for the best solution given the library
+    1. store successful solutions
+3. sleep phase
+    1. abstract
+        1. replay successful solutions
+        1. compress them by adding to library
+    1. dream:
+        1. generate & replay programs
+        2. train neural search
+4. Loop to wake phase
 
+
+## Visualization of DreamCoder Training
 <figure class="figure">
     <img
         class="figure-img img-fluid rounded lazyload"
-        alt="Training phases"
+        alt="DreamCoder Training phases"
         data-src="/images/dreamcoder-phases.png"
         style="max-width: 900px">
     <figcaption class="figure-caption">
@@ -96,7 +100,7 @@ Training:
 </figure>
 
 
-#### Wake Phase
+### Wake Phase
 - neural network \\( Q \\) ranks potential solutions
   - given input-outputs and programs returns probability
   - called recognition model
@@ -106,7 +110,7 @@ Training:
     - use for next sleep
     
 
-##### Abstraction phase:
+#### Abstraction phase:
 - propose new library functions 
 - minimizing the new functions
 - minimizing the length of solutions
@@ -118,12 +122,11 @@ Training:
     - lead to improvement \\( \sim 10^6 \\)
     
     
-#### Dream phase:
+### Dream Phase:
 - replay programs ~100s
 - 50/50 mixing generated and replay programs
 - to augment data but stay representative
 - train Q function for search
-
 
 <figure class="figure">
     <img
@@ -137,7 +140,7 @@ Training:
 </figure>
 
 
-### Results
+## DreamCoder's Results
 - list processing
     - primitives: map, fold, cons (pre-pend), ...
     - 109 training tasks
@@ -157,45 +160,32 @@ Training:
 - Ablations:
     - abstraction & dreaming are important
     
-    
-### Why DreamCoder?
-- builds on RobustFill and DeepCoder
-- DeepCoder does not predict the probability of a program
-- DeepCoder predicts DSL primitive will be used in the program at least once
-- DeepCoder & DreamCoder libraries are 
-  - modestly-sized set
-  - generally useful routines
-  - interpretable routines
 
 
-### Bonus Paper: Inference of Regular Expressions
-- [2016 Paper for Text Extraction from Examples](https://www.human-competitive.org/sites/default/files/bartoli-delorenzo-medvet-tarlao-tkde-paper.pdf)
+## Bonus Paper: Regex Generator++
+- [Inference of Regular Expressions for Text Extraction from Examples (2016)](https://www.human-competitive.org/sites/default/files/bartoli-delorenzo-medvet-tarlao-tkde-paper.pdf)
 - given texts and extractions
 - Genetic Programming search for regular expressions
-- based on fitness
 - [try demo](http://regex.inginf.units.it/)
 
-Solution search
+
+### Regex Generator++ Solution search
 - regex is represented by a tree
 - nodes are
   - sub-node placeholder `*`
   - primitives (`\d`, `\w`, `[*]`, `[^*]`, look-around, ...)
-- tree structure presentents DNA of the candidates
-- keep only performing candidates
-  - (~ library in DreamCoder)
-- crossover swaps candidates' sub-trees
-- mutation replaces a subtree with random subtree
-- fitness is:
-  - "Character Precision"
-  - "Character Accuracy"
-  - length of the expression
-    - ~ DreamCoder's code length
+- tree structure is DNA of the candidates
+- keep only performing candidates ~ library in DreamCoder
+- genetic crossover via swap of candidates' sub-trees
+- genetic mutation via replacement of a subtree with random subtree
+- fitness is "Character Precision", "Character Accuracy", length of the expression (~ DreamCoder's code length)
 
-Comparison
+
+### Regex Generator++ vs GP-Regex and Others
 - the method outperforms, but not on all datasets
-- time is human comparable ~10mins
+- solution time is human comparable ~10 minutes
 
 
-### Continue
+## Continue
 - [DreamCoder's author video](https://youtu.be/NYIeP1hns6A)
 - [Expire-Span solves reinforcement-learning-like problems with a transformer memory](/ml/expire-span-scaling-transformer-by-forgetting)
