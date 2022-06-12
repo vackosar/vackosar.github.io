@@ -3,7 +3,7 @@ layout: post
 title: "StarSpace - Embeddings For Documents, Users, and Words"
 date: 2020-05-08
 categories: ml
-description: Create vectors of various entities in a single space with this general-purpose embedding model.
+description: Create vectors of various entities in a single space with this general-purpose embedding model from Facebook AI.
 image: https://raw.githubusercontent.com/facebookresearch/StarSpace/master/examples/starspace.png 
 video: 0bSsAeT-N6w
 permalink: /:categories/:title
@@ -15,22 +15,17 @@ redirect_from:
 {% include mathjax.html %}
 
 ## Summary
-1. Is general-purpose method to embed multi-class entities into single vector space e.g. words, documents, and users can be embedded into single space.
-1. Requires discrete features e.g. user's features are docs that he liked.
-1. Trains by summing bag-of-features and contrasting with k-negative samples.
-1. In terms of quality the method performs competitively.
-1. In terms of speed the method is on par with [FastText](/ml/FastText-Vector-Norms-And-OOV-Words).
-
-
-## Source
-"[StarSpace: Embed All The Things!](https://arxiv.org/abs/1709.03856)" with publication date 2017-11-21.
-Authors are Ledell Wu, Adam Fisch, Sumit Chopra, Keith Adams, Antoine Bordes and Jason Weston.
-Funding comes from Facebook AI Research.
+"[StarSpace: Embed All The Things!](https://arxiv.org/abs/1709.03856)" with publication date 2017-11-21 from Facebook AI Research
+2. Is general-purpose method to embed multi-class entities into single vector space e.g. words, documents, and users can be embedded into single space.
+3. Requires discrete features e.g. user's features are docs that he liked.
+4. Trains by summing bag-of-features and contrasting with k-negative samples.
+5. In terms of quality the method performs competitively.
+6. In terms of speed the method is on par with [FastText](/ml/FastText-Vector-Norms-And-OOV-Words).
 
 
 ## Method
 
-![starspace model method - sum](/images/starspace-sum.svg)
+![facebook starspace model method - sum](/images/starspace-sum.svg)
 
 We train only the vectors directly without any other parameters.
 In contrast to Word2vec and [FastText](/ml/FastText-Vector-Norms-And-OOV-Words) there is no word (input) vector concept, but only context (output) vector concept.
@@ -68,13 +63,15 @@ Content based document recommendation, each user is described by the bag-of-docu
 - content-based recommendation
 - word, sentence, document, graph embedding
 
+
+## Beyond StarSpace
+While StarSpace is computationally and memory-wise cheap, post 2017 the state of the art usually involves [Transfomer models](/ml/transformers-self-attention-mechanism-simplified).
+If you don't understand [transformer or self-attention](/ml/transformers-self-attention-mechanism-simplified) yet, then [read more about it here](/ml/transformers-self-attention-mechanism-simplified).
+
+
 ## Quiz
 
 Retain what you have just read by taking training quiz generated from this article.<br>
 <br>
 <a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=d0dfd88a-4712-42a6-bec3-68c86133d1ce">StarSpace Quiz</a>
-
-## Beyond StarSpace
-While StarSpace is computationally and memory-wise cheap, post 2017 the state of the art usually involves [Transfomer models](/ml/transformers-self-attention-mechanism-simplified).
-If you don't understand [transformer or self-attention](/ml/transformers-self-attention-mechanism-simplified) yet, then [read more about it here](/ml/transformers-self-attention-mechanism-simplified).
 

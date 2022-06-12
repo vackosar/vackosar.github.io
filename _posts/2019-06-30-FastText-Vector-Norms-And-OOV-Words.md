@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "FastText Vector Norms And OOV Words Visualizations"
+title: "FastText Word Embeddings"
 date: 2019-06-30
-description: Understand how FastText works, OOV words, and visualize FastText embedding norms.
+last_modified_at: 2022-06-12
+description: How FastText works, word embeddings, ngrams, OOV words, and visualize embedding norms.
 categories: ml
 permalink: /:categories/:title
 image: https://raw.githubusercontent.com/vackosar/fasttext-vector-norms-and-oov-words/master/results/ng_norm-tf.png
@@ -12,11 +13,11 @@ redirect_from:
 
 {% include mathjax.html %}
 
-Word embeddings, trained on large unlabeled corpora are useful for many natural language processing tasks. [FastText (Bojanowski et al., 2016)](https://arxiv.org/abs/1607.04606) in contrast to Word2vec model accounts for sub-word information by also embedding sub-word n-grams.
+Word embeddings, trained on large unlabeled corpora are useful for many natural language processing tasks. [FastText](https://arxiv.org/abs/1607.04606) (Facebook AI) in contrast to Word2vec model accounts for sub-word information by also embedding sub-word n-grams.
 FastText word representation is the word embedding vector plus sum of n-grams contained in it.
 
 
-## How FastText Works
+## How FastText Works?
 
 ![fastText model visualization subword diagram](/images/fastText-subword-sum.svg)
 
@@ -32,9 +33,20 @@ FastText embedding vectors can then be used for word analogy tasks, text classif
 
 ![fasttext classification results comparison glove](../images/fasttext-classification-results-comparison-glove.png)
 
-[StarSpace a general-purpose embeddings](/ml/starspace-embedding) inspired by FastText can be also used for content recommendation.
 
-## Word2vec Vector Norms
+## StarSpace vs FastText
+
+[StarSpace a general-purpose embeddings](/ml/starspace-embedding) is generalization of FastText to objects with some hierarchy e.g. user-content for content recommendation.
+
+
+## Word2vec vs FastText
+
+Word2vec has single word embedding for each word, while FastText has also embeddings for sub-word n-grams and performs the summation above to get the final word embedding.
+
+
+## Embedding Norms
+
+### Word2vec Embedding Norms
 
 [Word2vec](https://arxiv.org/pdf/1301.3781.pdf) vector norms have been shown [(Schakel & Wilson, 2015)](http://arxiv.org/abs/1508.02297) to be correlated to word significance.
 Speculation:
@@ -46,7 +58,7 @@ For this reason when using [Word Movers Distance with TF-IDF weights, Word Rotat
 ![word2vec norm vs frequency](/images/word2vec-norm-vs-tf.png)
 
 
-## Experimenting with FastText Norms
+### FastText Embedding Norms
 
 How above chart looks in case of [FastText](#how-fasttext-works)?
 For purpose of studying OOV words this asymmetry between vocabulary and out of vocabulary words is removed by only utilizing word's n-grams regardless if the word is OOV or not.
@@ -57,7 +69,7 @@ In order to study contrast between common english words e.g. "apple" and noise-w
 Entire code for this post in available in [this repository in file "main.py"](https://github.com/vackosar/fasttext-vector-norms-and-oov-words/blob/master/main.py). FastText model used is [5-gram English 2M "cc.en.300.bin"](https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.en.300.bin.gz).
 
 
-### Standard Vector Norm
+#### Standard Vector Norm
 
 Standard vector norm as defined in Gensim implementation is used in this section. Common words are located mostly on the right in the term-frequency spectrum and clustered in three different areas in the norm spectrum. On both axis common words are clustered approximatelly in 4 areas.
 
@@ -72,7 +84,7 @@ From below samples it is not clear what clusters correspond to:
 - top right cluster: position, wonderful, shooting, switch, â, Atlantic, ladies, vegetables, tourist, HERE, prescription, upgraded, Evil
 
 
-### No N-Gram Norm
+#### No N-Gram Norm
 
 As mentioned above each FastText vocab word has its vector representation regardless its size. Norms of those vectors are plotted in this section. The shape of the distribution seems to match closely the shape of the same plot for Word2Vec [(Schakel & Wilson, 2015)](http://arxiv.org/abs/1508.02297). The vector norm as measure of word significance seems to hold even for FastText in terms of this norm as can be seen from labeled samples in the scatter plot (same frequency bin with increasing vector norm: authors, Alfine, numbertel).
 ![no_ngram_norm-tf](https://raw.githubusercontent.com/vackosar/fasttext-vector-norms-and-oov-words/master/results/no_ngram_norm-tf.png)
@@ -92,7 +104,7 @@ Probability distribution of given FastText vocabulary word being common word is 
 ![ng_norm-common-density](https://raw.githubusercontent.com/vackosar/fasttext-vector-norms-and-oov-words/master/results/ng_norm-common-density.png)
 
 
-### Norms of Hyponyms vs Hypernyms
+#### Norms of Hyponyms vs Hypernyms
 
 To evaluate thesis of (Shakel 2015) that word specificity in given term-frequency norm is correlated with vector norm for FastText 67 pairs of hyponyms and hypernyms are used. From just these few examples we see that No-NGram norm with 77% accuracy predicts which word is hyponym and which hypernym disregarding their term-frequencies. Below is the data used. The norm colums contain relative percent differences i.e. ```(hypo-hyper) / hyper * 100```.
 
@@ -175,7 +187,7 @@ To evaluate thesis of (Shakel 2015) that word specificity in given term-frequenc
 </table>
 
 
-### Detecting non-english words using NG_Norm
+#### Detecting non-english words using NG_Norm
 
 Ability to detect noisy-words is evaluated on simple task of splitting two concatenated words back apart below. For example let's split back concatenation 'inflationlithium':
 
@@ -203,7 +215,7 @@ Ability to detect noisy-words is evaluated on simple task of splitting two conca
 Above approach yielded around 48% accuracy on 3000 random two-word samples from MIT 10k common words. A more efficient method in this specific case would be to search vocabulary instead of calculating vector norms. More appropriate comparison however would be for more general task involving OOV words e.g. using Edit Distance performed also on OOV words and words with typos.
  
 
-### Conclusion
+#### Conclusion
 
 FastText vector norms and their term-frequency were visualized and investigated in this post.
 
