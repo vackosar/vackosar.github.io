@@ -8,7 +8,7 @@ permalink: /:categories/:title
 categories: software
 redirect_from:
 - /google-product-taxonomy-viewer.html
-last_modified_at: 2022-04-23
+last_modified_at: 2022-06-12
 ---
 
 # {{ page.title }}
