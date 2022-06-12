@@ -40,11 +40,17 @@ The automatic categorization is performed [based on product input fields](https:
 The merchants have an option to override categorization using _google_product_category_ attribute.
 Only one category per product is allowed.
 
-## Download Full Google Taxanomy
-Open and download [full taxonomy directly from Google](http://google.com/basepages/producttype/taxonomy.en-US.txt)
-- Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Cage Accessories > Bird Cage Bird Baths
-- Home & Garden > Kitchen & Dining > Tableware > Serveware Accessories > Punch Bowl Stands
-- Sporting Goods > Outdoor Recreation > Outdoor Games > Platform & Paddle Tennis > Platform & Paddle Tennis Paddles
+## Download Google Taxonomy
+[Download](http://google.com/basepages/producttype/taxonomy.en-US.txt) the Google product category tree directly from the Google. The taxonomy list file has the following format:
+
+{% include highlight-rouge-friendly.css.html %}
+
+```text
+Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Cage Accessories > Bird Cage Bird Baths
+Home & Garden > Kitchen & Dining > Tableware > Serveware Accessories > Punch Bowl Stands
+Sporting Goods > Outdoor Recreation > Outdoor Games > Platform & Paddle Tennis > Platform & Paddle Tennis Paddles
+...
+```
 
 ## Google Guidelines
 Read more in [official guidelines](https://support.google.com/merchants/answer/6324436?hl=en#zippy=%2Cshopping-ads-campaigns%2Capparel-products).
