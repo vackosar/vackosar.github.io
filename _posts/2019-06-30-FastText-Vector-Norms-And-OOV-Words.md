@@ -42,6 +42,7 @@ FastText embedding vectors can then be used for word analogy tasks, text classif
 ## Word2vec vs FastText
 
 Word2vec has single word embedding for each word, while FastText has also embeddings for sub-word n-grams and performs the summation above to get the final word embedding.
+FastText generally outpeforms Word2vec, while having similar requirements.
 
 
 ## Embedding Norms
