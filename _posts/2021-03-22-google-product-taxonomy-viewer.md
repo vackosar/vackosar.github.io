@@ -30,6 +30,8 @@ Explore Google Product Taxonomy below to understand where to place products in y
 <svg id="d3view" style="width: 90%; height: auto; overflow: auto !important;"></svg>
 
 
+## What is Google Product Taxonomy?
+
 Google Product Taxonomy is a product categorization tree for e-commerce.
 Google and [Shopify classify e-shop articles into this structure](https://help.shopify.com/en/manual/online-sales-channels/facebook/checkout-on-instagram-and-facebook/product-categories).
 The taxonomy purpose to departmentalize products from the merchant feed into 5583 sections.
