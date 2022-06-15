@@ -7,7 +7,7 @@ image: /images/neural-data-compression-thumb.png
 date: 2022-05-14
 video: hRvhG4GWAhE
 permalink: /:categories/:title
-last_modified_at: 2022-05-21
+last_modified_at: 2022-06-15
 ---
 
 {% include mathjax.html %}
