@@ -67,8 +67,8 @@ last_modified_at: 2022-05-21
 
 ## Compression by Predicting Next Symbol
 - Huffman coding predicts next symbol cheaply with symbol frequency
-- can trade more memory and computation with complex probability modeling
-- model can be trained on already compressed data stream deterministically
+- can trade more memory and computation with complex probability modeling with ML
+- ML model can be trained on already compressed data stream deterministically
 - common benchmarks are enwik8, and enwik9 dataset with [bits-per-byte (bpb)](/ml/bits-per-byte-and-bits-per-character)
 - bpb not comparable to language modeling results: single-pass, extra overhead, compressing entire dataset
 
