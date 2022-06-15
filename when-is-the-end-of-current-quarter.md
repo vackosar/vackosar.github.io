@@ -19,7 +19,7 @@ last_modified_at: 2022-04-23
 The current quarter <b class='quarterName'>Q1</b>, ends on <b id='quarterEnd'>Mar 31</b> in <b class="daysLeft">45</b> days (<b id="bizDaysLeft">20</b> business days).
 <br>
 
-How many days are left in this quarter? There are <b class="daysLeft2">45</b> days left in this quarter.<br>
+How many days are left in this quarter? There are <b class="daysLeft">45</b> days left in this quarter.<br>
 How many business days till the end of this quarter? There are <b id="bizDaysLeft2">45</b> business days till the end of the current quarter <b class='quarterName'>Q1</b>.
 There are <b id="daysYearLeft">183</b> days left in this year.
 
