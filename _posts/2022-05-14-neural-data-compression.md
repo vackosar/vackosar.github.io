@@ -1,6 +1,6 @@
 ---
 title: "Neural Data Compression"
-description: "Losslessly reducing bits with machine learning by minimizing cross-entropy. Examples: NNCP and TRACE models."
+description: "Lossless bit reduction with machine learning by minimizing cross-entropy. Examples: NNCP and TRACE models."
 layout: post
 categories: ml
 image: /images/neural-data-compression-thumb.png
