@@ -28,6 +28,33 @@ permalink: /:categories/:title
 ![tokenization and embedding layer for transformer](/images/transformer-tokenization-and-embeddings.drawio.svg)
 
 
+### BPE Tokenizer
+BPE algorithm:
+1. [BPE](https://arxiv.org/abs/1508.07909) pre-tokenizes text by splitting on spaces
+2. start with only characters as token
+3. merge the highest frequency token pair from the text
+4. stop if max vocabulary size reached, otherwise loop to previous step
+
+
+### WordPiece vs BPE
+- [WordPiece](https://static.googleusercontent.com/media/research.google.com/ja//pubs/archive/37842.pdf) merges token pair with highest `count(ab) / count(a)count(b)`
+- Used for [BERT](/ml/transformers-self-attention-mechanism-simplified), DistilBERT, [Electra](/ml/electra-4x-cheaper-bert-training)
+
+
+### Unigram Tokenizer
+- [Unigram](https://arxiv.org/pdf/1804.10959.pdf) instead of merging and adding like BPE, it removes
+- starts with a very large vocabulary and removes fixed number symbols such that a vocabulary loss increase minimally 
+- stop if vocabulary size reached, otherwise loop to previous step
+- to disambiguate tokenization a probability of token occurrence is used, and packaged with the tokenizer
+
+
+### SentencePiece vs WordPiece Tokenizer
+- Japanese, Korean, or Chinese languages don't separate words with a space
+- [SentencePiece](https://arxiv.org/pdf/1808.06226.pdf) removes pre-tokenization (splitting on spaces)
+- instead tokenizes text stream with usually with [Unigram](#unigram-tokenizer) or alternatively with [BPE](#bpe-tokenizer)
+- T5, ALBERT, XLNet, MarianMT use SentencePiece with [Unigram](#unigram-tokenizer)
+
+
 ## Tokenizers vs Encoders 
 - Tokenizers are not suitable for modalities like image or speech.
 - Architectures like [Vision Transformer (ViT)](https://arxiv.org/pdf/1909.02950.pdf) or [MMBT](https://arxiv.org/pdf/1909.02950.pdf) encode input without a tokenizer.
@@ -41,6 +68,7 @@ permalink: /:categories/:title
 
 
 ## Explore Yourself
+Try out BERT BPE tokenizer and its embeddings using Transformers package.
 
 {% include highlight-rouge-friendly.css.html %}
 
