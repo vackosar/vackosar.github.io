@@ -5,6 +5,7 @@ layout: post
 categories: ml
 image: /images/transformer-architecture-embeddings.drawio.svg
 date: 2022-06-05
+last_modified_at: 2022-06-18
 permalink: /:categories/:title
 ---
 
@@ -29,14 +30,14 @@ permalink: /:categories/:title
 
 
 ### BPE Tokenizer
-BPE algorithm:
+Byte-Pair-Encoding (BPE) algorithm:
 1. [BPE](https://arxiv.org/abs/1508.07909) pre-tokenizes text by splitting on spaces
 2. start with only characters as token
 3. merge the highest frequency token pair from the text
 4. stop if max vocabulary size reached, otherwise loop to previous step
 
 
-### WordPiece vs BPE
+### WordPiece vs BPE Tokenizer
 - [WordPiece](https://static.googleusercontent.com/media/research.google.com/ja//pubs/archive/37842.pdf) merges token pair with highest `count(ab) / count(a)count(b)`
 - Used for [BERT](/ml/transformers-self-attention-mechanism-simplified), DistilBERT, [Electra](/ml/electra-4x-cheaper-bert-training)
 
