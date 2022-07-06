@@ -11,7 +11,7 @@ redirect_from:
 
 
 
-## Text 2 Speech on Android (Update)
+## Text 2 Speech on Android and Web (Update)
 
 I love audiobooks, because they can utilize brain-time, which would otherwise be lost e.g. time when walking, running or hiking.
 Problem of audiobooks however used to be their scarcity, which I always struggled with especially in case of technical books.
