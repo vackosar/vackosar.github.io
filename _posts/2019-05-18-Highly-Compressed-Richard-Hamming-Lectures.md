@@ -84,3 +84,7 @@ Thanks to another HN commenter: apparently it is possible to achive even lower b
 ### HN Discussion
 
 [https://news.ycombinator.com/item?id=19946711](https://news.ycombinator.com/item?id=19946711)
+
+
+### Read Next
+Do you like utilizing time when you cannot read with eyes for [listening to books? Read more on ways how to do it here](/software/Flite-Vs-Festival-Vs-Pico2Wave)
