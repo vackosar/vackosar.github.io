@@ -44,5 +44,6 @@ I mostly play text I need either via:
 ### Audiobook Generation
 I've put together [a simplistic tool for generating audiobooks from plain text](https://github.com/vackosar/text2gsm) that works!
 I call it [text2gsm](https://github.com/vackosar/text2gsm) as it converts plain text file into GSM WAV compression format optimal for voice.
-So next time I want to read book, but have no time to sit down and read with you eyes, I'll generate myself a audiobook and listen to it during otherwise lost time. Neat!
+
+I used above scripts to compress [Hammings lectures for download - read more here](/software/Highly-Compressed-Richard-Hamming-Lectures).
 
