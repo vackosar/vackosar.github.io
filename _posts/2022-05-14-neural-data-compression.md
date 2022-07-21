@@ -79,8 +79,8 @@ last_modified_at: 2022-07-21
 ## NNCP: Lossless Data Compression with Neural Networks
 - [NNCP 1](https://bellard.org/nncp/nncp.pdf) uses multi-layer LSTM to predict next symbol
   - model is not stored in the output - deterministically derived based on decompressed output
+  - creates tokenization dictionary (16k symbols like Cmix) during the first pass
   - model regularly retrained during compression
-  - tokenization dictionary of 16k symbols based on Cmix
 - [NNCP v2](https://bellard.org/nncp/nncp_v2.1.pdf) Transformer beats Cmix on enwik9
 
 
