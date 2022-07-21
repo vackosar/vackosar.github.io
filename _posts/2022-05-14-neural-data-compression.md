@@ -70,7 +70,7 @@ last_modified_at: 2022-06-15
 - Huffman coding predicts next symbol cheaply with symbol frequency
 - can trade more memory and computation with complex probability modeling with ML
 - ML model can be trained on already compressed data stream deterministically
-- common benchmarks are enwik8, and enwik9 dataset with [bits-per-byte (bpb)](/ml/bits-per-byte-and-bits-per-character)
+- common benchmarks are enwik8, and enwik9 datasets with [bits-per-byte (bpb)](/ml/bits-per-byte-and-bits-per-character)
 - bpb not comparable to language modeling results: single-pass, extra overhead, compressing entire dataset
 
 ![model predicting the next symbol from alphabet](/images/character-prediction-blabla.drawio.svg)
@@ -97,7 +97,7 @@ last_modified_at: 2022-06-15
 
 
 ## Deep Neural Network Lossless Compression Applications
-- other compression algos: Cmix, Dzip, 
+- other compression algos: Cmix ([HutterPrice](http://prize.hutter1.net/) 2021 SoTA), Dzip
 - as of 2022-05 seems unpractical - slow, small compression improvement 
   - could be practical as a side effect of other computation
 - note that lossy compression of images and video seem more likely applied
