@@ -77,27 +77,28 @@ last_modified_at: 2022-06-15
 
 
 ## NNCP: Lossless Data Compression with Neural Networks
-- [NNCP](https://bellard.org/nncp/nncp.pdf) uses LSTM to predict next byte
+- [NNCP](https://bellard.org/nncp/nncp.pdf) uses multi-layer LSTM to predict next byte
   - model is not stored in the output - deterministically derived based on decompressed output
   - model regularly retrained during compression
-- LSTM (large2) 10,000 times slower than GZip for 2.17x less bits-per-byte
-- results on enwik9 below for Gzip, [Cmix](http://www.byronknoll.com/cmix.html)
+- results on enwik8 below. LSTM (large2) is ...
+  - 10,000 times slower than GZip for 2.17x less bits-per-byte
+  - faster, simpler but worse than [Cmix](http://www.byronknoll.com/cmix.html) (also contains LSTM)
 
 ![NNCP, CMIX, LSTM compression performance](/images/nncp-enwik8-results.png)
 
 
 ## TRACE: Faster Data Compression Than NNCP
-- [TRACE](https://dl.acm.org/doi/pdf/10.1145/3485447.3511987) is 1-layer transformer compression
-- 3x speedup with competitive compression with NNCP, but still 1000x slower than GZip
+- [TRACE](https://arxiv.org/abs/2203.16114) is 1-layer transformer compression
 - vocabulary size is 256, so 4 consecutive embeddings concatenated before input
+- 3x speedup with competitive compression with NNCP, but still 1000x slower than GZip
 - retrained less often than NNCP, but starts randomly initialized
-- result below for Cmix, NNCP, [Dzip](https://arxiv.org/pdf/1911.03572.pdf) required GPU
+- result on enwik9 below for Cmix, NNCP, [Dzip](https://arxiv.org/pdf/1911.03572.pdf) required GPU
 
 ![TRACE, NNCP, CMIX, Dzip compression performance](/images/trace-nncp-compression-ratio-and-speed-comparison.png)
 
 
 ## Deep Neural Network Lossless Compression Applications
-- other compression algos: Cmix ([HutterPrice](http://prize.hutter1.net/) 2021 SoTA), Dzip
+- other compression algos: Cmix ([HutterPrice](http://prize.hutter1.net/) 2021 SoTA), [Dzip](https://arxiv.org/pdf/1911.03572.pdf)
 - as of 2022-05 seems unpractical - slow, small compression improvement 
   - could be practical as a side effect of other computation
 - note that lossy compression of images and video seem more likely applied
