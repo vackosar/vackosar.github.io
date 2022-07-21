@@ -84,7 +84,7 @@ last_modified_at: 2022-07-21
 - [NNCP v2](https://bellard.org/nncp/nncp_v2.1.pdf) Transformer beats Cmix on enwik9
 
 
-## NNCP Results
+## NNCP v2 Results vs Cmix
 - results of NNCP v2 on enwik9 below. LSTM (large2) is ...
 - 10,000 times slower than GZip for 2.8x less bits-per-byte
 - faster, simpler, better than [Cmix](http://www.byronknoll.com/cmix.html) (complex w/ LSTM) on enwik9
