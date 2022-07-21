@@ -95,9 +95,10 @@ last_modified_at: 2022-07-21
 
 ## TRACE Model 1-layer Transformer 
 - [TRACE](https://arxiv.org/abs/2203.16114) is 1-layer transformer compression
-- does not use dictionary, but predicts the next byte instead
-- vocabulary size is 256, so 4 consecutive embeddings concatenated before input
-- retrained less often than NNCP, but starts randomly initialized
+- predicts the next byte instead of dictionary symbol (token)
+- vocabulary size is 256 too little compared to the hidden dimension
+  - so 4 consecutive embeddings concatenated before input
+- retrained less often (adaptive) than NNCP, but starts randomly initialized
 
 ![TRACE model architecture](/images/trace-model-architecture.png)
 
