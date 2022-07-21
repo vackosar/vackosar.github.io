@@ -77,21 +77,33 @@ last_modified_at: 2022-06-15
 
 
 ## NNCP: Lossless Data Compression with Neural Networks
-- [NNCP](https://bellard.org/nncp/nncp.pdf) uses multi-layer LSTM to predict next byte
+- [NNCP 1](https://bellard.org/nncp/nncp.pdf) uses multi-layer LSTM to predict next symbol
   - model is not stored in the output - deterministically derived based on decompressed output
   - model regularly retrained during compression
-- results on enwik8 below. LSTM (large2) is ...
-  - 10,000 times slower than GZip for 2.17x less bits-per-byte
-  - faster, simpler but worse than [Cmix](http://www.byronknoll.com/cmix.html) (also contains LSTM)
-
-![NNCP, CMIX, LSTM compression performance](/images/nncp-enwik8-results.png)
+  - tokenization dictionary of 16k symbols based on Cmix
+- [NNCP v2](https://bellard.org/nncp/nncp_v2.1.pdf) Transformer beats Cmix on enwik9
 
 
-## TRACE: Faster Data Compression Than NNCP
+## NNCP Results
+- results of NNCP v2 on enwik9 below. LSTM (large2) is ...
+- 10,000 times slower than GZip for 2.8x less bits-per-byte
+- faster, simpler, better than [Cmix](http://www.byronknoll.com/cmix.html) (complex w/ LSTM) on enwik9
+- worse than Cmix on enwik8
+
+![NNCP v2, CMIX, LSTM compression performance](/images/nncpv2-enwik9.png)
+
+
+## TRACE Model 1-layer Transformer 
 - [TRACE](https://arxiv.org/abs/2203.16114) is 1-layer transformer compression
+- does not use dictionary, but predicts the next byte instead
 - vocabulary size is 256, so 4 consecutive embeddings concatenated before input
-- 3x speedup with competitive compression with NNCP, but still 1000x slower than GZip
 - retrained less often than NNCP, but starts randomly initialized
+
+![TRACE model architecture](/images/trace-model-architecture.png)
+
+
+## TRACE Model Results Faster Data Compression Than NNCP
+- 3x speedup with competitive compression with NNCP, but still 1000x slower than GZip
 - result on enwik9 below for Cmix, NNCP, [Dzip](https://arxiv.org/pdf/1911.03572.pdf) required GPU
 
 ![TRACE, NNCP, CMIX, Dzip compression performance](/images/trace-nncp-compression-ratio-and-speed-comparison.png)
