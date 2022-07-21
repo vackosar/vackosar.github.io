@@ -105,6 +105,7 @@ last_modified_at: 2022-07-21
 
 ## TRACE Model Results Faster Data Compression Than NNCP
 - 3x speedup with competitive compression with NNCP, but still 1000x slower than GZip
+- worse on text but on-par on other due to not using tokenization dictionary
 - result on enwik9 below for Cmix, NNCP, [Dzip](https://arxiv.org/pdf/1911.03572.pdf) required GPU
 
 ![TRACE, NNCP, CMIX, Dzip compression performance](/images/trace-nncp-compression-ratio-and-speed-comparison.png)
