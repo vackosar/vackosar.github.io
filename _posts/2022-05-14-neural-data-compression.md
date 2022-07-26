@@ -33,7 +33,7 @@ last_modified_at: 2022-07-21
 
 
 ## GZip's Deflate Data Compression
-- GZip uses [Deflate](https://datatracker.ietf.org/doc/html/rfc1951) compression format (ZIP also)
+- [GZip](https://datatracker.ietf.org/doc/html/rfc1952) uses [Deflate](https://datatracker.ietf.org/doc/html/rfc1951) compression format ([ZIP](https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT) also)
   1. a sliding widow of 32k bytes is used to detect duplicate strings
     - duplicate strings are referenced back with length and distance symbols
     - this along with byte literals defines custom alphabet of symbols
