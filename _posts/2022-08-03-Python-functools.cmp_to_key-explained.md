@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python functools.cmp_to_key Explained"
-date: 2020-08-03
+date: 2022-08-03
 last_modified_at: 2022-08-03
 categories: software
 description: Understand internals of the comparison to key function quickly.
