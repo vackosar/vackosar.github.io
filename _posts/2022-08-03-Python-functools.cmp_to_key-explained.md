@@ -12,7 +12,9 @@ permalink: /:categories/:title
 
 
 Function [functools.cmp_to_key documentation](https://docs.python.org/3/library/functools.html#functools.cmp_to_key
-) is a bit mysterious. Let's look at a snippet to quickly understand. 
+) is a bit mysterious.
+In short, function cmp_to_key creates a class that implements comparison methods is then used by Python to compare any two values. 
+Let's look at a following snippet to quickly understand more. 
   
 
 ```python
