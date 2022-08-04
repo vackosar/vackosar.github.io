@@ -4,7 +4,7 @@ title: "Python functools.cmp_to_key Explained"
 date: 2022-08-03
 last_modified_at: 2022-08-03
 categories: software
-description: Understand internals of the functools' comparison to key function quickly.
+description: Understand the functools' comparison function to key function conversion quickly.
 permalink: /:categories/:title
 ---
 
@@ -14,7 +14,8 @@ permalink: /:categories/:title
 Function [functools.cmp_to_key documentation](https://docs.python.org/3/library/functools.html#functools.cmp_to_key
 ) is a bit mysterious.
 In short, function cmp_to_key returns a class that implements comparison methods, which Python then uses to compare any two values. 
-Let's look at a following snippet to quickly understand more. 
+Let's look at the following snippet to quickly more quickly. 
+
   
 
 ```python
@@ -36,7 +37,7 @@ Execution of above prints below.
 true
 ```
 
-If you go to [the source code](https://github.com/python/cpython/blob/f9433fff476aa13af9cb314fcc6962055faa4085/Lib/functools.py#L206) you'll find out that you are getting just a class that implements comparison in a new way.
+If you go to [the source code](https://github.com/python/cpython/blob/f9433fff476aa13af9cb314fcc6962055faa4085/Lib/functools.py#L206), you'll find that you are getting just a class that implements comparison in a new way.
 
 ```python
 def cmp_to_key(mycmp):
