@@ -42,11 +42,11 @@ Alternative [cross-attention in SelfDoc](#cross-attention-in-selfdoc), uses quer
 In an equation: \\( \mathbf{softmax}((W_Q S_2) (W_K S_1)^\intercal) W_V S_1 \\)
 
 ## Cross-Attention in Transformer Decoder
-Cross-attention was described in the [Attention Is All You Need decoder](/ml/transformers-self-attention-mechanism-simplified), but it was not given this name yet.
-Transformer decoding starts with full sized input sequence, but empty decoding sequence.
-Cross-attention introduces information from the input sequence to the decoding layers,
-such that the decoder can predict the next sequence token.
-Decoder then adds predicted token the output sequence, and predict the next token.
+Cross-attention was described in the [Transformer](/ml/transformers-self-attention-mechanism-simplified) paper, but it was not given this name yet.
+Transformer decoding starts with full input sequence, but empty decoding sequence.
+Cross-attention introduces information from the input sequence to the layers of the decoder,
+such that it can predict the next output sequence token.
+The decoder then adds the token to the output sequence, and repeats this autoregressive process until the EOS token is generated.
  
 ![Cross-Attention in the Transformer decoder of Attention is All You Need paper](/images/cross-attention-in-transformer-decoder.png)
 
