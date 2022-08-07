@@ -26,7 +26,7 @@ Transformer architecture is a composite of following parts:
 - [Feed forward layer which operates bit like a static key-value memory](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory). FF layer is similar to self-attention except it does not use softmax and one of the input sequences is a constant.
 - [Cross-attention decodes output sequence](/ml/cross-attention-in-transformer-architecture) of different inputs and modalities.
  
-![BERT full model diagram](/images/transformer-full-model.png)
+![Transformer full model diagram](/images/transformer-full-model.png)
 
 
 ## Self-Attention in Transformer Visualized
@@ -63,7 +63,7 @@ In other words, self-attention layer differentiably key-value searches the input
 
   
 ### Multi-Head Attention
-Instead of basic self-attention above, BERT implements special more complicated layer:
+Instead of basic self-attention above, Transformer implements special more complicated layer:
 1. for each key, value, and query multiplies by additional projection weight matrix
 2. then splits each resulting embedding into 8 equal sized vectors,
 3. applies separate 1/8th dimensional self-attention mechanism to each of them,
