@@ -13,9 +13,9 @@ permalink: /:categories/:title
 
 
 - self-attention layer is central mechanism in [transformer architecture introduced in Attention Is All You Need paper](https://arxiv.org/pdf/1706.03762.pdf)
-- an example is [BERT: Bidirectional Encoder Representations from Transformers ](https://aclanthology.org/N19-1423/).
-- models based on transformer are often state of the art across various domains (vision, speech, ...)
-- compared to LSTM (RNN), Transformer is more parallelizable
+- an example of architecture based on Transformer is [BERT](https://aclanthology.org/N19-1423/), which contains only Transformer's encoder.
+- models based on transformer are often state-of-the-art in various domains (vision, speech, ...) as of 2022
+- compared to LSTM (RNN), Transformer is more parallelizable, thus faster to train
 
 ## Transformer Architecture Explained
 While [self-attention layer](#self-attention-in-transformer) is the central mechanism of the Transformer architecture, it is not the whole picture.
