@@ -6,6 +6,7 @@ categories: ml
 image: /images/cross-attention-in-transformer-architecture.png
 video: NXjvcNVkX9o
 date: 2021-12-28
+last_modified_at: 2022-08-07
 permalink: /:categories/:title
 ---
 
@@ -40,14 +41,14 @@ Alternative [cross-attention in SelfDoc](#cross-attention-in-selfdoc), uses quer
 
 In an equation: \\( \mathbf{softmax}((W_Q S_2) (W_K S_1)^\intercal) W_V S_1 \\)
 
-## Cross-Attention in BERT Decoder
-Cross-attention was described in the [Attention is All You Need (BERT) decoder](/ml/transformers-self-attention-mechanism-simplified), but not named yet.
-BERT decoding starts with full sized input sequence, but empty decoding sequence.
+## Cross-Attention in Transformer Decoder
+Cross-attention was described in the [Attention Is All You Need decoder](/ml/transformers-self-attention-mechanism-simplified), but it was not given this name yet.
+Transformer decoding starts with full sized input sequence, but empty decoding sequence.
 Cross-attention introduces information from the input sequence to the decoding layers,
 such that the decoder can predict the next sequence token.
-The next token is added to the output sequence and we repeat the decoding process.
+Decoder then adds predicted token the output sequence, and predict the next token.
  
-![Cross-Attention in the decoder of Attention is All You Need (BERT) paper](/images/cross-attention-in-bert-decoder.png)
+![Cross-Attention in the Transformer decoder of Attention is All You Need paper](/images/cross-attention-in-transformer-decoder.png)
 
 
 ## Cross-Attention Examples

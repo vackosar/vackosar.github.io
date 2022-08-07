@@ -5,7 +5,7 @@ layout: post
 image: /images/transformer-full-model.png
 categories: ml
 date: 2022-03-05
-last_modified_at: 2022-04-19
+last_modified_at: 2022-08-07
 permalink: /:categories/:title
 ---
 
