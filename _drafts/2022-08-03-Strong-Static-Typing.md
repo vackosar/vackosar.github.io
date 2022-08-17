@@ -13,7 +13,7 @@ permalink: /:categories/:title
 - Martin Flower:  "[the lack of type information on parameters made life difficult](https://martinfowler.com/bliki/DynamicTyping.html)"
 
 
-## Clarity Of Object Type 
+## Clarity Of Typed Code
 
 <blockquote style="font-style: italic" class="blockquote">
 I found the lack of type information on parameters made life difficult - I kept saying to myself 'what exactly do I have here?' I didn't find this so much of an issue in Smalltalk for two reasons: the excellent environment makes it easy to fire up a debugger and see what you have, and secondly the common convention is to name the arguments after the type.
@@ -32,7 +32,7 @@ Everything that is syntactically legal that the compiler will accept will eventu
 </blockquote>
 
 
-## Static Type Linting vs Tests
+## Type Linting vs Tests
 
 <blockquote style="font-style: italic" class="blockquote">
 the success that we have had with code analysis has been clear enough that I will say plainly it is irresponsible to not use it.
@@ -45,7 +45,7 @@ But I discovered that in the presence of SelfTestingCode, most bugs that static 
 </blockquote>
 
 
-## IDE Completion
+## IDE Completion with Static Typing
 
 <blockquote style="font-style: italic" class="blockquote">
 Another area where static typing is useful is that it allows programming environments to be much more helpful. The revelation here (as in so many things) was IntelliJ. With an IDE like this I really felt the type system was helping me. Even simple things like auto-completion are greatly helped by static types, and leading IDEs can do much more than that.
@@ -53,7 +53,7 @@ Another area where static typing is useful is that it allows programming environ
 </blockquote>
 
 
-## Is Strong Static Typing Slow?
+## Is Strong Static Typing Fun?
 
 <blockquote style="font-style: italic" class="blockquote">
 I see the lure the enticement of having just throw random types onto anything about not having to you know have sort of template typing arrangements and things you're there's a there's an appeal to that, but I think that it bites you in the end. If the code lives a long time, and it grows enough. I think that the value of types is just super, super important and that's something that's good. 
