@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Strong Static Typing Used By The Masters"
+title: "Strong Static Typing"
 date: 2022-08-17
 last_modified_at: 2022-08-17
 categories: software
