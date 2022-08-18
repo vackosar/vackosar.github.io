@@ -43,7 +43,7 @@ Static typed language apply type checking at compile time, while dynamic typing 
         <tr>
           <td>Strong</td>
           <td>Python, Ruby, Closure, Erlang</td>
-          <td>Java, C#, C++, Haskell, Scala</td>
+          <td>Java, C#, C++, Scala, TypeScript, Haskell</td>
         </tr>
         <tr>
           <td>Weak</td>
