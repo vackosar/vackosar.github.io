@@ -147,3 +147,6 @@ Whatever the reason, this better flow leads to more fun programming - even with 
 At the beginning it seems really easy because you just type some stuff, and it works.
 <footer class="blockquote-footer"><a href="https://youtu.be/y2Wmz15aXk0?t=139">Jonathan Blow on scripting languages</a></footer>
 </blockquote>
+
+
+This last line is dedicated to Bash, which has no types whatsoever.
