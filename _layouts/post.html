@@ -22,6 +22,23 @@ layout: default
 
 
 {% include subscribe.html %}
+<br>
+
+
+<h2>Continue Reading ...</h2>
+{% capture category %}{{ page.categories | first }}{% endcapture %}
+<ul>
+{% for post in site.categories[category] limit: 5 %}
+    {% if post.title != page.title %}
+    <li>
+            <a href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+            </a>
+    </li>
+    {% endif %}
+{% endfor %}
+</ul>
+
 <br><br><br><br>
 
 <!--<div id="disqus_thread"></div>-->
