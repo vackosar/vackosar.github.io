@@ -4,7 +4,7 @@ title: "Strong Static Typing vs Weak Dynamic Typing"
 date: 2022-08-17
 last_modified_at: 2022-08-17
 categories: software
-description: Master programmers Carmack, Fowler, and Blow on strong static typing in contrast to dynamic typing.
+description: Master programmers Carmack, Blow, Fowler, and Uncle Bob on strong static typing in contrast to dynamic typing.
 image: /images/strong-static-vs-weak-dynamic-typing-table.png
 permalink: /:categories/:title
 ---
@@ -17,7 +17,7 @@ permalink: /:categories/:title
 
 ## Summary
 Game developers Blow and Carmack, as opposed to more enterprise developers like Fowler and Bob, favor strong static typing for bug prevention and increasing readability.
-Martin thinks unit testing can replace static typing.
+Uncle Bob (Robert C. Martin) thinks unit testing can replace static typing.
 Blow counters with that it brings the additional cost of extra code, which makes refactoring more expensive, in contrast to static typing combined with larger granularity test.
 All recognize the cost of typing, so tools like [type inference](https://en.wikipedia.org/wiki/Type_inference) or at least [gradual typing](https://en.wikipedia.org/wiki/Gradual_typing) have a merit.
 
@@ -112,7 +112,7 @@ But I discovered that in the presence of SelfTestingCode, most bugs that static 
 
 <blockquote style="font-style: italic" class="blockquote">
 Whether you use static, or dynamic typing, you must still demonstrate correctness by executing tests.  Static typing does not reduce that number of tests, because those tests are behavioral and empirical.
-<footer class="blockquote-footer"><a href="https://blog.cleancoder.com/uncle-bob/2019/06/08/TestsAndTypes.html">Martin's Types and Tests</a></footer>
+<footer class="blockquote-footer"><a href="https://blog.cleancoder.com/uncle-bob/2019/06/08/TestsAndTypes.html">Uncle Bob's Types and Tests</a></footer>
 </blockquote>
 
 
