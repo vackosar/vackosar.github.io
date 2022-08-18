@@ -5,6 +5,7 @@ date: 2022-08-17
 last_modified_at: 2022-08-17
 categories: software
 description: Master programmers Carmack, Fowler, and Blow on strong static typing in contrast dynamic typing.
+image: /images/strong-static-vs-weak-dynamic-typing-table.png
 permalink: /:categories/:title
 ---
 

@@ -4,6 +4,7 @@ title: "Python functools.cmp_to_key Explained"
 date: 2022-08-03
 last_modified_at: 2022-08-03
 categories: software
+image: /images/python-functools-cmp_to_key-function.png
 description: Understand the functools' comparison function to key function conversion quickly.
 permalink: /:categories/:title
 ---
