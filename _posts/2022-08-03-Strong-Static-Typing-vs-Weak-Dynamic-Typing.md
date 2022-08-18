@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Strong Static Typing vs Dynamic Typing"
+title: "Strong Static Typing vs Weak Dynamic Typing"
 date: 2022-08-17
 last_modified_at: 2022-08-17
 categories: software
@@ -9,7 +9,6 @@ permalink: /:categories/:title
 ---
 
 - John Carmack: "[strong static typing has really significant benefits](https://youtu.be/1PhArSujR_A?t=808)"
-- Jonathan Blow's [Jai is static/strongly typed C-style language](https://github.com/BSVino/JaiPrimer/blob/master/JaiPrimer.md)
 - Martin Flower:  "[the lack of type information on parameters made life difficult](https://martinfowler.com/bliki/DynamicTyping.html)"
 - Jonathan Blow's [The type safety part of Python or the lack thereof is huge.](https://youtu.be/2J-HIh3kXCQ?t=287)
 - Jonathan Blow's [Jai is static/strongly typed C-style language](https://github.com/BSVino/JaiPrimer/blob/master/JaiPrimer.md)
