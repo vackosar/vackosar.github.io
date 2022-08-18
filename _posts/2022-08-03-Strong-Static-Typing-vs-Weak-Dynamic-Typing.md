@@ -4,7 +4,7 @@ title: "Strong Static Typing vs Weak Dynamic Typing"
 date: 2022-08-17
 last_modified_at: 2022-08-17
 categories: software
-description: Master programmers Carmack, Fowler, and Blow on strong static typing in contrast dynamic typing.
+description: Master programmers Carmack, Fowler, and Blow on strong static typing in contrast to dynamic typing.
 image: /images/strong-static-vs-weak-dynamic-typing-table.png
 permalink: /:categories/:title
 ---
@@ -16,9 +16,9 @@ permalink: /:categories/:title
 
 
 ## Summary
-The most productive developers Blow and Carmack, as opposed to more enterprise developers like Fowler and Bob, favor strong static typing for bug prevention and increasing quality.
-They recognize the cost of the typing, which can be reduced with type inference.
-While unit testing can replace static typing, Blow mentions that it brings additional cost of extra code, which make refactoring harder, while with static typing and larger granularity test this less of a problem.
+Highly productive game developers Blow and Carmack, as opposed to more enterprise developers like Fowler and Bob, favor strong static typing for bug prevention and increasing quality.
+All recognize the cost of typing, which can be reduced with type inference.
+While unit testing can replace static typing, Blow mentions that it brings the additional cost of extra code, which make refactoring harder, while with static typing and larger granularity test this is less of a problem.
 
 
 ## Strong, Weak, Static, Dynamic Definitions
