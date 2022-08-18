@@ -55,7 +55,7 @@ Static typed language apply type checking at compile time, while dynamic typing 
 
 
 ## Clarity Of Typed Code
-Most agree that strong static typing increases clarity.
+Most agree that strong static typing increases code readability and clarity.
 
 <blockquote style="font-style: italic" class="blockquote">
 I found the lack of type information on parameters made life difficult - I kept saying to myself 'what exactly do I have here?' I didn't find this so much of an issue in Smalltalk for two reasons: the excellent environment makes it easy to fire up a debugger and see what you have, and secondly the common convention is to name the arguments after the type.
