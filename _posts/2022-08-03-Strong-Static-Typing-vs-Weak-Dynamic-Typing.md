@@ -10,9 +10,15 @@ permalink: /:categories/:title
 ---
 
 - John Carmack: "[strong static typing has really significant benefits](https://youtu.be/1PhArSujR_A?t=808)"
-- Martin Flower:  "[the lack of type information on parameters made life difficult](https://martinfowler.com/bliki/DynamicTyping.html)"
-- Jonathan Blow's [The type safety part of Python or the lack thereof is huge.](https://youtu.be/2J-HIh3kXCQ?t=287)
+- Jonathan Blow: ["The type safety part of Python or the lack thereof is huge."](https://youtu.be/2J-HIh3kXCQ?t=287)
 - Jonathan Blow's [Jai is static/strongly typed C-style language](https://github.com/BSVino/JaiPrimer/blob/master/JaiPrimer.md)
+- Martin Fowler:  "[the lack of type information on parameters made life difficult](https://martinfowler.com/bliki/DynamicTyping.html)"
+
+
+## Summary
+The most productive developers Blow and Carmack, as opposed to more enterprise developers like Fowler and Bob, favor strong static typing for bug prevention and increasing quality.
+They recognize the cost of the typing, which can be reduced with type inference.
+While unit testing can replace static typing, Blow mentions that it brings additional cost of extra code, which make refactoring harder, while with static typing and larger granularity test this less of a problem.
 
 
 ## Strong, Weak, Static, Dynamic Definitions
@@ -49,6 +55,7 @@ Static typed language apply type checking at compile time, while dynamic typing 
 
 
 ## Clarity Of Typed Code
+Most agree that strong static typing increases clarity.
 
 <blockquote style="font-style: italic" class="blockquote">
 I found the lack of type information on parameters made life difficult - I kept saying to myself 'what exactly do I have here?' I didn't find this so much of an issue in Smalltalk for two reasons: the excellent environment makes it easy to fire up a debugger and see what you have, and secondly the common convention is to name the arguments after the type.
@@ -71,8 +78,16 @@ If you don't have like serious static type checking like you have in a language 
 <footer class="blockquote-footer"><a href="https://youtu.be/y2Wmz15aXk0?t=139">Jonathan Blow on scripting languages</a></footer>
 </blockquote>
 
+<blockquote style="font-style: italic" class="blockquote">
+Another area where static typing is useful is that it allows programming environments to be much more helpful. The revelation here (as in so many things) was IntelliJ. With an IDE like this I really felt the type system was helping me. Even simple things like auto-completion are greatly helped by static types, and leading IDEs can do much more than that.
+<footer class="blockquote-footer"><a href="`https://martinfowler.com/bliki/DynamicTyping.html`">Martin Fowler's Dynamic Typing </a></footer>
+</blockquote>
+
+
 
 ## Type Checks: Compilation, Type Linting, versus Tests
+There is a disagreement, about the cost of unit tests compared to flexibility with fewer tests with static typing.
+
 
 <blockquote style="font-style: italic" class="blockquote">
 the success that we have had with code analysis has been clear enough that I will say plainly it is irresponsible to not use it.
@@ -94,16 +109,28 @@ But I discovered that in the presence of SelfTestingCode, most bugs that static 
 <footer class="blockquote-footer"><a href="https://martinfowler.com/bliki/DynamicTyping.html">Martin Fowler's Dynamic Typing </a></footer>
 </blockquote>
 
-
-## IDE Completion with Static Typing
-
 <blockquote style="font-style: italic" class="blockquote">
-Another area where static typing is useful is that it allows programming environments to be much more helpful. The revelation here (as in so many things) was IntelliJ. With an IDE like this I really felt the type system was helping me. Even simple things like auto-completion are greatly helped by static types, and leading IDEs can do much more than that.
-<footer class="blockquote-footer"><a href="`https://martinfowler.com/bliki/DynamicTyping.html`">Martin Fowler's Dynamic Typing </a></footer>
+Whether you use static, or dynamic typing, you must still demonstrate correctness by executing tests.  Static typing does not reduce that number of tests, because those tests are behavioral and empirical.
+<footer class="blockquote-footer"><a href="https://blog.cleancoder.com/uncle-bob/2019/06/08/TestsAndTypes.html">Martin's Types and Tests</a></footer>
 </blockquote>
 
 
+<blockquote style="font-style: italic" class="blockquote">
+this whole thing about TDD about writing the test before you write the code is nonsense because you don't exactly know what you're building yet if you're doing anything interesting
+...
+The more code you have, the less agile you are, and unit tests add a great deal of code. So changing things it's like tar. It's keeping you stuck and keeping you from changing things.
+...
+if you can test the thing not as a unit for example as an entire game that might be a much more efficient way of testing in terms of the number of hours you put into programming
+...
+testing is very important right if you don't test your software then your software doesn't work what I'm saying is I don't think that this obsessive unit testing
+<footer class="blockquote-footer"><a href="https://www.youtube.com/watch?v=21JlBOxgGwY">Jonathan Blow on unit testing and TDD</a></footer>
+</blockquote>
+
+
+
 ## Is Strong Static Typing Fun?
+Most note that static typing is less fun.
+
 
 <blockquote style="font-style: italic" class="blockquote">
 I see the lure the enticement of having just throw random types onto anything about not having to you know have sort of template typing arrangements and things you're there's a there's an appeal to that, but I think that it bites you in the end. If the code lives a long time, and it grows enough. I think that the value of types is just super, super important and that's something that's good. 
