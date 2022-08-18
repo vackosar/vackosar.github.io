@@ -1,16 +1,18 @@
 ---
 layout: post
-title: "Strong Static Typing"
+title: "Strong Static Typing vs Dynamic Typing"
 date: 2022-08-17
 last_modified_at: 2022-08-17
 categories: software
-description: Master programmers Carmack, Fowler, and Blow on strong static typing.
+description: Master programmers Carmack, Fowler, and Blow on strong static typing in contrast dynamic typing.
 permalink: /:categories/:title
 ---
 
 - John Carmack: "[strong static typing has really significant benefits](https://youtu.be/1PhArSujR_A?t=808)"
 - Jonathan Blow's [Jai is static/strongly typed C-style language](https://github.com/BSVino/JaiPrimer/blob/master/JaiPrimer.md)
 - Martin Flower:  "[the lack of type information on parameters made life difficult](https://martinfowler.com/bliki/DynamicTyping.html)"
+- Jonathan Blow's [The type safety part of Python or the lack thereof is huge.](https://youtu.be/2J-HIh3kXCQ?t=287)
+- Jonathan Blow's [Jai is static/strongly typed C-style language](https://github.com/BSVino/JaiPrimer/blob/master/JaiPrimer.md)
 
 
 ## Clarity Of Typed Code
@@ -31,8 +33,13 @@ Everything that is syntactically legal that the compiler will accept will eventu
 <footer class="blockquote-footer"><a href="https://youtu.be/1PhArSujR_A?t=808">John Carmack's keynote at Quakecon 2013</a></footer>
 </blockquote>
 
+<blockquote style="font-style: italic" class="blockquote">
+If you don't have like serious static type checking like you have in a language like C++ then once you start doing a non-trivial amount of stuff it becomes very easy to make mistakes. And it becomes very hard to find the mistakes easy to make mistakes.
+<footer class="blockquote-footer"><a href="https://youtu.be/y2Wmz15aXk0?t=139">Jonathan Blow on scripting languages</a></footer>
+</blockquote>
 
-## Type Linting vs Tests
+
+## Type Checks: Compilation, Type Linting, versus Tests
 
 <blockquote style="font-style: italic" class="blockquote">
 the success that we have had with code analysis has been clear enough that I will say plainly it is irresponsible to not use it.
@@ -40,8 +47,18 @@ the success that we have had with code analysis has been clear enough that I wil
 </blockquote>
 
 <blockquote style="font-style: italic" class="blockquote">
+Statically typed strongly statically typed programming languages let you do this thing, that things like Lua for example don't let you do, or you just break your program.
+Very useful technique that you can't do in Python or Javascript or any of this other stuff.
+...
+The type safety part of Python or the lack thereof is huge.
+A lot of the stuff that we did today these grunt work refactors that I'm doing would be a lot scarier in Python.
+Because you'd be like: I don't know if I just broke something. We've done 10 things today at least where you'd be like yeah I don't know if that broke something. We're in c plus you're like yeah i know i didn't break something.
+<footer class="blockquote-footer"><a href="https://www.youtube.com/watch?v=2J-HIh3kXCQ">Jonathan Blow on strong static typing in refactoring</a></footer>
+</blockquote>
+
+<blockquote style="font-style: italic" class="blockquote">
 But I discovered that in the presence of SelfTestingCode, most bugs that static types would have were found just as easily by the tests. Since the tests found much more than type errors, you needed them in either a static or dynamically typed language, so having the static typing gave you little gain.
-<footer class="blockquote-footer"><a href="`https://martinfowler.com/bliki/DynamicTyping.html`">Martin Fowler's Dynamic Typing </a></footer>
+<footer class="blockquote-footer"><a href="https://martinfowler.com/bliki/DynamicTyping.html">Martin Fowler's Dynamic Typing </a></footer>
 </blockquote>
 
 
@@ -62,5 +79,10 @@ I see the lure the enticement of having just throw random types onto anything ab
 
 <blockquote style="font-style: italic" class="blockquote">
 Whatever the reason, this better flow leads to more fun programming - even with an inferior environment. This may not seem to matter much, who cares if programmers have fun?
-<footer class="blockquote-footer"><a href="`https://martinfowler.com/bliki/DynamicTyping.html`">Martin Fowler's Dynamic Typing </a></footer>
+<footer class="blockquote-footer"><a href="https://martinfowler.com/bliki/DynamicTyping.html">Martin Fowler's Dynamic Typing </a></footer>
+</blockquote>
+
+<blockquote style="font-style: italic" class="blockquote">
+At the beginning it seems really easy because you just type some stuff, and it works.
+<footer class="blockquote-footer"><a href="https://youtu.be/y2Wmz15aXk0?t=139">Jonathan Blow on scripting languages</a></footer>
 </blockquote>
