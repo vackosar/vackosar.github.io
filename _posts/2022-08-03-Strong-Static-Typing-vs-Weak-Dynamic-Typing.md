@@ -16,7 +16,7 @@ permalink: /:categories/:title
 
 
 ## Summary
-Highly productive game developers Blow and Carmack, as opposed to more enterprise developers like Fowler and Bob, favor strong static typing for bug prevention and increasing readability.
+Game developers Blow and Carmack, as opposed to more enterprise developers like Fowler and Bob, favor strong static typing for bug prevention and increasing readability.
 Martin thinks unit testing can replace static typing.
 Blow counters with that it brings the additional cost of extra code, which makes refactoring more expensive, in contrast to static typing combined with larger granularity test.
 All recognize the cost of typing, so tools like [type inference](https://en.wikipedia.org/wiki/Type_inference) or at least [gradual typing](https://en.wikipedia.org/wiki/Gradual_typing) have a merit.
