@@ -15,6 +15,13 @@ permalink: /:categories/:title
 - Jonathan Blow's [Jai is static/strongly typed C-style language](https://github.com/BSVino/JaiPrimer/blob/master/JaiPrimer.md)
 
 
+## Strong vs Weak Typing
+Strongly typed languages apply strict type checking at compile time, while weak typing does not.
+
+## Static vs Dynamic Typing
+Static typed language apply type checking at compile time, while dynamic typing languages apply them at runtime and use automatic type conversion.
+
+
 ## Clarity Of Typed Code
 
 <blockquote style="font-style: italic" class="blockquote">
