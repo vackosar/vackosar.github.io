@@ -101,7 +101,7 @@ Very useful technique that you can't do in Python or Javascript or any of this o
 ...
 The type safety part of Python or the lack thereof is huge.
 A lot of the stuff that we did today these grunt work refactors that I'm doing would be a lot scarier in Python.
-Because you'd be like: I don't know if I just broke something. We've done 10 things today at least where you'd be like yeah I don't know if that broke something. We're in c plus you're like yeah i know i didn't break something.
+Because you'd be like: I don't know if I just broke something. We've done 10 things today at least where you'd be like yeah I don't know if that broke something. We're in C++ you're like: Yeah, I know, I didn't break something.
 <footer class="blockquote-footer"><a href="https://www.youtube.com/watch?v=2J-HIh3kXCQ">Jonathan Blow on strong static typing in refactoring</a></footer>
 </blockquote>
 
@@ -121,9 +121,9 @@ this whole thing about TDD about writing the test before you write the code is n
 ...
 The more code you have, the less agile you are, and unit tests add a great deal of code. So changing things it's like tar. It's keeping you stuck and keeping you from changing things.
 ...
-if you can test the thing not as a unit for example as an entire game that might be a much more efficient way of testing in terms of the number of hours you put into programming
+If you can test the thing not as a unit - for example as an entire game. That might be a much more efficient way of testing in terms of the number of hours you put into programming.
 ...
-testing is very important right if you don't test your software then your software doesn't work what I'm saying is I don't think that this obsessive unit testing
+Testing is very important. If you don't test your software then your software doesn't work. What I'm saying is I don't think that this obsessive unit testing is the right way to test.
 <footer class="blockquote-footer"><a href="https://www.youtube.com/watch?v=21JlBOxgGwY">Jonathan Blow on unit testing and TDD</a></footer>
 </blockquote>
 
