@@ -14,6 +14,7 @@ permalink: /:categories/:title
 .blockquote {
    background-color: #fff1cf;
   border-radius: 5px;
+  padding: 10px;
 }
 </style>
 
