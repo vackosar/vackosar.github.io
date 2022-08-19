@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Strong Static Typing vs Weak Dynamic Typing"
-date: 2022-08-17
+date: 2022-08-19
 last_modified_at: 2022-08-17
 categories: software
 description: Master programmers Carmack, Blow, Fowler, and Uncle Bob on strong static typing in contrast to dynamic typing.
