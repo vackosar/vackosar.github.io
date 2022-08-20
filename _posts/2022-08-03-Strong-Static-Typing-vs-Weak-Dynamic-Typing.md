@@ -18,23 +18,21 @@ permalink: /:categories/:title
 }
 </style>
 
-
-- John Carmack: "[strong static typing has really significant benefits](https://youtu.be/1PhArSujR_A?t=808)"
-- Jonathan Blow: ["The type safety part of Python or the lack thereof is huge."](https://youtu.be/2J-HIh3kXCQ?t=287)
-- Jonathan Blow's [Jai is static/strongly typed C-style language](https://github.com/BSVino/JaiPrimer/blob/master/JaiPrimer.md)
-- Martin Fowler:  "[the lack of type information on parameters made life difficult](https://martinfowler.com/bliki/DynamicTyping.html)"
-
-
-## Summary
 Game developers Blow and Carmack, as opposed to more enterprise developers like Fowler and Bob, favor strong static typing for bug prevention and increasing readability.
 Uncle Bob (Robert C. Martin) thinks unit testing can replace static typing.
 Blow counters with that it brings the additional cost of extra code, which makes refactoring more expensive, in contrast to static typing combined with larger granularity test.
 All recognize the cost of typing, so tools like [type inference](https://en.wikipedia.org/wiki/Type_inference) or at least [gradual typing](https://en.wikipedia.org/wiki/Gradual_typing) have a merit.
 
+- John Carmack: "[strong static typing has really significant benefits](https://youtu.be/1PhArSujR_A?t=808)"
+- Jonathan Blow: ["The type safety part of Python or the lack thereof is huge."](https://youtu.be/2J-HIh3kXCQ?t=287)
+- Martin Fowler:  "[the lack of type information on parameters made life difficult](https://martinfowler.com/bliki/DynamicTyping.html)"
+- Uncle Bob: "[I prefer the flexibility of dynamic typing](https://blog.cleancoder.com/uncle-bob/2021/06/25/OnTypes.html)"
+
 
 ## Strong, Weak, Static, Dynamic Definitions
 Strongly typed languages apply strict type checking at compile time, while weak typing does not.
 Static typed language apply type checking at compile time, while dynamic typing languages apply them at runtime and use automatic type conversion.
+For example, Jonathan Blow's [Jai is static/strongly typed C-style language](https://github.com/BSVino/JaiPrimer/blob/master/JaiPrimer.md).
 
 <table class="table table-striped">
     <thead>
