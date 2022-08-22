@@ -59,6 +59,7 @@ last_modified_at: 2022-07-21
   - arithmetic coding encodes to length \\( - \log_2 q(x) \\)
 - then average compressed message bit-length is cross-entropy: \\( - \sum_x p(x) \log_2 q(x) \\)
   - and optimal minimum bits for next symbol is entropy: \\( - \sum_x p(x) \log_2 p(x) \\)
+  - [optimal due to "Shanon's 1948 source coding theorem"](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)
 - Cross-Entropy minimization equals likelihood maximization: \\( \frac{1}{N} \log ( \prod_k q_k^{N_k p_k} ) \\)
 
 
