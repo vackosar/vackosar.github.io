@@ -34,9 +34,9 @@ The model has the following components:
 - These two give us the observation estimate: \\( z_k = H_k x_{k-1} + v_k \\)
 
 The equations are rather complicated, please read the sources, but for short:
-- Both estimates are combined into \\( \hat{ x_{k \| k} } \\) with variance  \\( P_{k\|k} \\).
-- Matrix called Kalman gain \\( K_k = P_{k\|k-1} H_k^{\intercal} (H_k P_{k\|k-1} H_k^\intercal + R_k)^{-1}  \\)
-- Updated variance: \\( P_{k \| k} = (1 - K_k H_k) P_{k \| k-1}
+- Both estimates are combined: \\( \hat{ x_{k \| k} } = (1 - K_k H_k) \hat{x_{k \| k-1}} + K_k (H_k x_k + v_k) \\)
+- With a variance: \\( P_{k \| k} = (1 - K_k H_k) P_{k \| k-1} \\)
+- A matrix called Kalman gain: \\( K_k = P_{k\|k-1} H_k^{\intercal} (H_k P_{k\|k-1} H_k^\intercal + R_k)^{-1}  \\)
 
 
 
