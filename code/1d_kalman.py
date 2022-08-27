@@ -12,8 +12,8 @@ def next_p(p: float, k: float) -> float:
     return (1 - k) * (p + q)
 
 
-def next_m(m, x, k: float) -> float:
-    return m + k * (x - m)
+def next_m(m, z, k: float) -> float:
+    return m + k * (z - m)
 
 
 # configuration of the Kalman filter
@@ -22,8 +22,8 @@ q = 0
 p = 1
 m = 1
 
-# xs is the measure input with noise
-xs = []
+# zs is the measured with noise
+zs = []
 
 # variables of the Kalman filter
 # variance estimate
@@ -39,22 +39,22 @@ exponential_avg = []
 count = 50
 
 for i in range(count):
-    xs.append(random.gauss(0, 1))
+    zs.append(random.gauss(0, 1))
 
 
-m = xs[0]
+m = zs[0]
 
 for i in range(count):
     k = current_k(p)
     ks.append(k)
     p = next_p(p, k)
     ps.append(p)
-    m = next_m(m, xs[i], k)
+    m = next_m(m, zs[i], k)
     ms.append(m)
-    cumulative_avg.append(mean(xs[:i+1]))
+    cumulative_avg.append(mean(zs[:i + 1]))
 
 
-exponential_avg = pd.Series(xs).ewm(alpha=ks[-1]).mean()
+exponential_avg = pd.Series(zs).ewm(alpha=ks[-1]).mean()
 
 
 plt.plot(ks, label='ks')

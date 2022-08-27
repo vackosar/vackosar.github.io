@@ -21,7 +21,6 @@ In other words, we use the knowledge of the "physics" of the process to predict 
 The Kalman filter, also known as linear quadratic estimation (LQE), is an iterative algorithm, that uses both knowledge of the state motion and noisy measurements to estimate values and variance of unknown variables.
 
 
-
 ### Kalman Filter's Hidden State, Observation, and State Estimate
 
 At the time \\( k \\), let:
@@ -32,11 +31,13 @@ At the time \\( k \\), let:
 
 The model has the following components:
 
+
 ### Kalman Filter's State Transition Model
 - the state-transition model (motion model), which maps from the previous step to the current estimate: \\( F_k \\)
 - the process noise normal variance, which adds the noise of the transition model \\(Q_k \\)
  
 These two give us the motion estimate: \\( m_k = F_k x_{k-1} + \mathcal{N}(0, Q_k) \\)
+
  
 ### Kalman Filter's Observation Model
 - the observation model, which maps from the current sensor outputs to the estimate: \\( H_k \\)
@@ -44,18 +45,30 @@ These two give us the motion estimate: \\( m_k = F_k x_{k-1} + \mathcal{N}(0, Q_
 
 These two give us the observation estimate: \\( z_k = H_k x_{k-1} + \mathcal{N}(0, R_k) \\)
 
+
 ### Kalman Filter's Estimate
 [Read other sources for details](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf), but in short:
-- Both estimates are combined: \\( m_k = F_k m_{k-1} + K_k (z_k - H_k F_k m_{k-1}) \\)
+- the state estimate: \\( m_k = F_k m_{k-1} + K_k (z_k - H_k F_k m_{k-1}) \\)
 - with a covariance: \\( P_k = (1 - K_k H_k) (F_k P_{k-1} F_k^\intercal + Q_k) \\)
 - and Kalman gain: \\( K_k := (F_k P_{k-1} F_k^\intercal + Q_k) H_k^\intercal \\) \\( \left( H_k (F_k P_{k-1} F^\intercal_k + Q_k) H_k^\intercal + R_k \right)^{-1}  \\)
 
 
-## Kalman Filter vs Exponential Average vs Cumulative Average
+### Kalman Filter Simplified
+In some applications, we can often set measure the state directly \\( H_k = 1 \\), and the transition model, noise, and measurement error are nearly constant.
+Then we get simpler equations:
+
+- the state estimate: \\( m_k = F m_{k-1} + K_k (z_k - F m_{k-1}) \\) \\( = (1 - K_k) F m_{k-1} + K_k z_k \\)
+- with a covariance: \\( P_k = (1 - K_k) (F P_{k-1} F^\intercal + Q) \\)
+- and Kalman gain: \\( K_k := (F P_{k-1} F^\intercal + Q) \\) \\( \left( (F P_{k-1} F^\intercal + Q)+ R \right)^{-1}  \\)
+
+In above, we can see that the Kalman gain balances between measurement and process estimates based on comparison of the variances of the two sources.
+
+
+## One-dimensional Kalman Filter
 We can see that the Kalman filter is fairly complex.
 So it is interesting to understand, what the Kalman filter reduces to in trivial cases.
 
-Find below proof that in 1D (\\(  F_k = 1, H_k = 1 \\)) with constant measurement uncertainty \\( R_k = R \\) and process noise \\( Qk = Q \\) asymptotically behaves as:
+Find below proof that in 1D (\\(  F_k = 1, H_k = 1 \\)) with constant measurement uncertainty \\( R_k = R \\) and process noise \\( Q_k = Q \\) asymptotically behaves as:
 
  - cumulative average in case of zero process noise \\( Q = 0\\)
  - exponential average in case of non zero process noise \\( Q > 0 \\)
@@ -64,7 +77,7 @@ Additionally, since the Kalman filter equations are differentiable, it is reason
 The proofs rely on the fact that the Kalman filter asymptotically doesn't depend on initial state. 
 
 
-### Kalman Filter with Constant Measurement Uncertainty, and No Process Noise
+### 1D Kalman Filter vs Cumulative Average 
 For the case where \\( Q = 0 \\), the proof relies on a choice of initial value of the Kalman variance \\( P_1 = R \\). 
 
 - \\( m_{k+1} = m_k + K_{k+1} (z_{k+1} - m_k) \\)
@@ -86,7 +99,7 @@ We can double-check above proof by plotting the convergence.
 <img alt="Proof Kalman 1d with constant measurement uncertainty and no process noise plot" style="width: 80%; max-width: 900px" src="/images/2019-08-28-kalman-1d-without-process-noise-plot.png">
 
 
-### Kalman Filter with Constant Measurement Uncertainty, Constant Process Noise
+### 1D Kalman Filter vs Exponential Average
 
 Now we approach the case where \\( Q > 0 \\).
 Below is the proof relies on setting initial value of Kalman variance \\( P_0 \\) such that \\( P_k \\) becomes constant for recursive equation to match exponential moving average equation.
@@ -144,8 +157,8 @@ def next_p(p: float, k: float) -> float:
     return (1 - k) * (p + q)
 
 
-def next_m(m, x, k: float) -> float:
-    return m + k * (x - m)
+def next_m(m, z, k: float) -> float:
+    return m + k * (z - m)
 
 
 # configuration of the Kalman filter
@@ -154,8 +167,8 @@ q = 0
 p = 1
 m = 1
 
-# xs is the measure input with noise
-xs = []
+# zs is the measured with noise
+zs = []
 
 # variables of the Kalman filter
 # variance estimate
@@ -171,22 +184,22 @@ exponential_avg = []
 count = 50
 
 for i in range(count):
-    xs.append(random.gauss(0, 1))
+    zs.append(random.gauss(0, 1))
 
 
-m = xs[0]
+m = zs[0]
 
 for i in range(count):
     k = current_k(p)
     ks.append(k)
     p = next_p(p, k)
     ps.append(p)
-    m = next_m(m, xs[i], k)
+    m = next_m(m, zs[i], k)
     ms.append(m)
-    cumulative_avg.append(mean(xs[:i+1]))
+    cumulative_avg.append(mean(zs[:i + 1]))
 
 
-exponential_avg = pd.Series(xs).ewm(alpha=ks[-1]).mean()
+exponential_avg = pd.Series(zs).ewm(alpha=ks[-1]).mean()
 
 
 plt.plot(ks, label='ks')
@@ -194,9 +207,11 @@ plt.plot(ps, label='ps')
 plt.legend()
 plt.show()
 
-plt.plot(ms, label='kalman filter')
-plt.plot(cumulative_avg, label='cumulative avg')
-plt.plot(exponential_avg, label='exponential moving avg')
+plt.plot(ms, label='kalman filter', linewidth=1)
+plt.plot(cumulative_avg, label='cumulative avg', linestyle='dashed')
+plt.plot(exponential_avg, label='exponential moving avg', linewidth=3, linestyle='dashed')
 plt.legend()
+
+plt.savefig('../images/test.png')
 plt.show()
 ```
