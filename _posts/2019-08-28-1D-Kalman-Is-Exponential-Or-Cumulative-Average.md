@@ -4,7 +4,7 @@ title: "Constant 1D Kalman Filter Is Exponential Or Cumulative Average"
 date: 2019-08-28
 last_modified_at: 2022-08-27
 categories: ml
-description: Understand the Kalman filter with simple example in one dimension with constant measurement uncertainty and process noise. It converges to cumulative average or exponential average.
+description: Understand the Kalman filter with a simple one-dimensional example. It converges to cumulative or exponential average in case of constant measurement uncertainty and process noise.
 permalink: /:categories/:title
 image: /images/2019-08-28-kalman-1d-without-process-noise-proof.jpg
 redirect_from:
