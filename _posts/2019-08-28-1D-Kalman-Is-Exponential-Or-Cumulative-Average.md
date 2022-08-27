@@ -50,7 +50,7 @@ These two give us the observation estimate: \\( z_k = H_k x_{k-1} + \mathcal{N}(
 [Read other sources for details](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf), but in short:
 - the state estimate: \\( m_k = F_k m_{k-1} + K_k (z_k - H_k F_k m_{k-1}) \\)
 - with a covariance: \\( P_k = (1 - K_k H_k) (F_k P_{k-1} F_k^\intercal + Q_k) \\)
-- and Kalman gain: \\( K_k := (F_k P_{k-1} F_k^\intercal + Q_k) H_k^\intercal \\) \\( \left( H_k (F_k P_{k-1} F^\intercal_k + Q_k) H_k^\intercal + R_k \right)^{-1}  \\)
+- and Kalman gain: \\( K_k := (F_k P_{k-1} F_k^\intercal + Q_k) H_k^\intercal \\) \\( \bigl( H_k (F_k P_{k-1} F^\intercal_k + Q_k) H_k^\intercal + R_k \bigr)^{-1}  \\)
 
 
 ### Kalman Filter Simplified
@@ -59,7 +59,7 @@ Then we get simpler equations:
 
 - the state estimate: \\( m_k = F m_{k-1} + K_k (z_k - F m_{k-1}) \\) \\( = (1 - K_k) F m_{k-1} + K_k z_k \\)
 - with a covariance: \\( P_k = (1 - K_k) (F P_{k-1} F^\intercal + Q) \\)
-- and Kalman gain: \\( K_k := (F P_{k-1} F^\intercal + Q) \\) \\( \left( (F P_{k-1} F^\intercal + Q)+ R \right)^{-1}  \\)
+- and Kalman gain: \\( K_k := (F P_{k-1} F^\intercal + Q) \\) \\( \bigl( (F P_{k-1} F^\intercal + Q)+ R \bigr)^{-1}  \\)
 
 In above, we can see that the Kalman gain balances between measurement and process estimates based on comparison of the variances of the two sources.
 
