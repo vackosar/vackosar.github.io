@@ -16,37 +16,44 @@ note: https://www.kalmanfilter.net/kalman1d.html
 {% include highlight-rouge-friendly.css.html %}
 {% include mathjax.html %}
 
-Kalman filter [(Kalman 1960 paper)](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf) also known as linear quadratic estimation (LQE) is an iterative algorithm that uses noisy measurements to estimate values and variance of unknown variables.
-The Kalman filter allows combination of two estimates for a variable: the transition model (e.g. momentum of physical particle) and estimated variance of sensor measurement (outside-the-model measurement uncertainty) to achieve better precision.
+Kalman filter [(Kalman 1960 paper)](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf) allows combination of two estimates for a variable: the transition model (e.g. momentum of physical particle) and estimated variance of sensor measurement (outside-the-model measurement uncertainty) to achieve better precision.
 In other words, we use the knowledge of the "physics" of the process to predict the future position and then combine that with actual sensor measurement. This gives us higher precision. Additionally, the model can incorporate "control-input", but that will be omitted from below.
+Kalman filter, also known as linear quadratic estimation (LQE), is an iterative algorithm, that uses both knowledge of the state motion and noisy measurements to estimate values and variance of unknown variables.
 
 
-The state estimate for time \\( k \\) is: \\( x_{k} \\).
+### State, Measurement, and State Estimate
+
+At the time \\( k \\), let:
+- the true hidden state be \\( x_k \\),
+- the observed measurement be \\( z_k \\),
+- the hidden state estimate be \\( m_k \\).
+
 
 The model has the following components:
 
+### State Transition Model
 - the state-transition model (motion model), which maps from previous step to the current estimate: \\( F_k \\)
 - the process noise normal variance, which adds the noise of the transition model \\(Q_k \\)
-- These two give us the motion estimate: \\( x_k = F_k x_{k-1} + w_k \\)
  
+These two give us the motion estimate: \\( m_k = F_k x_{k-1} + \mathcal{N}(0, Q_k) \\)
+ 
+### Observation Model
 - the observation model, which maps from the current sensor outputs to the estimate: \\( H_k \\)
 - the observation noise normal variance, which adds the noise of the sensor outputs: \\( R_k \\)
-- These two give us the observation estimate: \\( z_k = H_k x_{k-1} + v_k \\)
 
-The equations are rather complicated, please read the sources, but for short:
-- Both estimates are combined: \\( \hat{ x_{k \| k} } = (1 - K_k H_k) \hat{x_{k \| k-1}} + K_k (H_k x_k + v_k) \\)
-- With a variance: \\( P_{k \| k} = (1 - K_k H_k) P_{k \| k-1} \\)
-- A matrix called Kalman gain: \\( K_k = P_{k\|k-1} H_k^{\intercal} (H_k P_{k\|k-1} H_k^\intercal + R_k)^{-1}  \\)
+These two give us the observation estimate: \\( m_k = H_k x_{k-1} + \mathcal{N}(0, R_k) \\)
 
-
-
-Kalman filter can be used in to keep a system in a state of control. Read more about [application of Kalman filter in PID Controller](/ml/PID-controller-control-loop-mechanism).
-
-To what Kalman Filter reduces in a single dimension? Let's find out.
+### Kalman Estimate
+[Read other sources for details](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf), but in short:
+- Both estimates are combined: \\( m_k = F_k m_{k-1} + K_k (z_k - H_k F_k m_{k-1}) \\)
+- with a variance: \\( P_k = (1 - K_k H_k) (F_k P_{k-1} F_k^\intercal + Q_k) \\)
+- and Kalman gain: \\( K_k := (F_k P_{k-1} F_k^\intercal + Q_k) H_k^\intercal \left( H_k (F_k P_{k-1} F^\intercal_k + Q_k) H_k^\intercal + R_k \right)^{-1}  \\)
 
 
 ## Kalman Filter vs Exponential Average vs Cumulative Average
-This blog post proves that [Kalman filter](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf) in 1D with constant measurement uncertainty and process noise asymptotically behaves as:
+To what Kalman Filter reduces in a dimension 1, when \\( F_k = 1, H_k = 1, R_k = R \\), such that \\( z_k = x_k + N(0, Q_k) \\), and either no process noise ( \\( Q_k = 0 \\) ) or constant process noise ( \\( Q_k = Q \\) )?
+
+This blog post proves that  in 1D with constant measurement uncertainty and process noise asymptotically behaves as:
 
  - cumulative average in case of zero process noise
  - exponential average in case of non zero process noise
@@ -56,17 +63,30 @@ The proof relies on Kalman filter asymptotically doesn't depend on initial state
 
 ### Constant Measurement Uncertainty, No Process Noise
 
-Below is the proof relies on good choice of initial value of Kalman variance `P0` to simplify recursive equation to match cumulative average equation.
+Below is the proof relies on a choice of initial value of Kalman variance \\( P_1 = R \\). 
 
-<img alt="Proof Kalman 1d with constant measurement uncertainty and no process noise proof" style="width: 80%; max-width: 900px" src="/images/2019-08-28-kalman-1d-without-process-noise-proof.jpg">
+- \\( m_{k+1} = m_k + K_{k+1} (x_{k+1} - m_k) \\)
+- \\( P_{k+1} = (1-K_{k+1}) P_k \\)
+- \\( K_{k+1} = \frac{P_k}{P_k + R} \\)
 
-Plot of the convergence.
+\\( P_{k+1} = (1 - K_{k+1}) P_k = \frac{R P_k}{P_k + R} \\)
+
+\\( P_1 := R \\), \\( P_2 = R / 2 \\), \\( P_3 = R / 3 \\), ..., \\( P_k = R / k \\)
+
+\\( K_{k+1} = \frac{R}{k (R / k + R)} = \frac{1}{k+1} \\)
+
+Which gives us recursive equation that match cumulative average equation:
+\\( m_{k+1} = m_k + \frac{x_{k+1} - m_k}{k + 1} \\)
+
+
+We can double-check above proof by plotting the convergence.
 
 <img alt="Proof Kalman 1d with constant measurement uncertainty and no process noise plot" style="width: 80%; max-width: 900px" src="/images/2019-08-28-kalman-1d-without-process-noise-plot.png">
 
 
 ### Constant Measurement Uncertainty, Constant Process Noise
 
+Now we approach more general case.
 Below is the proof relies on setting initial value of Kalman variance `P0` such that `Pk` becomes constant for recursive equation to match exponential moving average equation.
 
 <img alt="Proof Kalman 1d with constant measurement uncertainty and constant process noise proof" style="width: 80%; max-width: 900px" src="/images/2019-08-28-kalman-1d-with-process-noise-proof.jpg">
@@ -74,6 +94,11 @@ Below is the proof relies on setting initial value of Kalman variance `P0` such 
 Plot of the convergence.
 
 <img alt="Proof Kalman 1d with constant measurement uncertainty and constant process noise plot" style="width: 80%; max-width: 900px" src="/images/2019-08-28-kalman-1d-with-process-noise-plot.png">
+
+
+## Kalman Filter Applications
+Kalman filter can be used in to keep a system in a state of control.
+Read more about [application of Kalman filter in PID Controller](/ml/PID-controller-control-loop-mechanism).
 
 
 ### Example Implementation
