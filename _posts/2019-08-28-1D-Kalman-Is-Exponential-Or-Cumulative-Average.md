@@ -21,7 +21,7 @@ In other words, we use the knowledge of the "physics" of the process to predict 
 The Kalman filter, also known as linear quadratic estimation (LQE), is an iterative algorithm, that uses both knowledge of the state motion and noisy measurements to estimate values and variance of unknown variables.
 
 
-### Kalman Filter's Hidden State, Observation, and State Estimate
+### Kalman Filter's State, Observation, and State Estimate
 
 At the time \\( k \\), let:
 - the true hidden state be \\( x_k \\),
@@ -43,7 +43,7 @@ These two give us the motion estimate: \\( m_k = F_k x_{k-1} + \mathcal{N}(0, Q_
 - the observation model, which maps from the current sensor outputs to the estimate: \\( H_k \\)
 - the observation noise normal variance, which adds the noise of the sensor outputs: \\( R_k \\)
 
-These two give us the observation estimate: \\( z_k = H_k x_{k-1} + \mathcal{N}(0, R_k) \\)
+These two give us the observation estimate: \\( z_k = H_k x_{k} + \mathcal{N}(0, R_k) \\)
 
 
 ### Kalman Filter's Estimate
