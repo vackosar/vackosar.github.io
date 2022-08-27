@@ -16,13 +16,23 @@ def next_m(m, x, k: float) -> float:
     return m + k * (x - m)
 
 
-r = 5
-q = 2
-p = 5
-m = 0
-ps = []
-ks = []
+# configuration of the Kalman filter
+r = 1
+q = 0
+p = 1
+m = 1
+
+# xs is the measure input with noise
 xs = []
+
+# variables of the Kalman filter
+# variance estimate
+ps = []
+# kalman gain
+ks = []
+
+
+# m is the smoothed output
 ms = []
 cumulative_avg = []
 exponential_avg = []

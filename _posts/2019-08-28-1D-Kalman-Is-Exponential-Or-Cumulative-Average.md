@@ -47,13 +47,15 @@ These two give us the observation estimate: \\( m_k = H_k x_{k-1} + \mathcal{N}(
 [Read other sources for details](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf), but in short:
 - Both estimates are combined: \\( m_k = F_k m_{k-1} + K_k (z_k - H_k F_k m_{k-1}) \\)
 - with a covariance: \\( P_k = (1 - K_k H_k) (F_k P_{k-1} F_k^\intercal + Q_k) \\)
-- and Kalman gain: \\( K_k := (F_k P_{k-1} F_k^\intercal + Q_k) H_k^\intercal \left( H_k (F_k P_{k-1} F^\intercal_k + Q_k) H_k^\intercal + R_k \right)^{-1}  \\)
+- and Kalman gain: \\( K_k := (F_k P_{k-1} F_k^\intercal + Q_k) H_k^\intercal \\) \\( \left( H_k (F_k P_{k-1} F^\intercal_k + Q_k) H_k^\intercal + R_k \right)^{-1}  \\)
 
 
 ## Kalman Filter vs Exponential Average vs Cumulative Average
-To what Kalman Filter reduces in a dimension 1, when \\( F_k = 1, H_k = 1, R_k = R \\), such that \\( z_k = x_k + N(0, Q_k) \\), and either no process noise ( \\( Q_k = 0 \\) ) or constant process noise ( \\( Q_k = Q \\) )?
+To what Kalman Filter reduces in a dimension 1, when \\( F_k = 1, H_k = 1, R_k = R \\), such that \\( z_k = x_k + N(0, R_k) \\), and either
+- no process noise ( \\( Q_k = 0 \\) )
+- or constant process noise ( \\( Q_k = Q \\) )?
 
-This blog post proves that  in 1D with constant measurement uncertainty and process noise asymptotically behaves as:
+This blog post proves that in 1D with constant measurement uncertainty and process noise asymptotically behaves as:
 
  - cumulative average in case of zero process noise
  - exponential average in case of non zero process noise
@@ -98,7 +100,7 @@ Below is the proof relies on setting initial value of Kalman variance \\( P_0 \\
 
 Let's select \\( P_0 \\), such that following holds true:
 
-\\( P_0 = \frac{R (P_k + Q)}{P_k + Q + R} \\) \\( \iff P_0^2 + (Q+R) P_0 - RP_0 - QR = 0 \\)
+\\( P_0 = \frac{R (P_k + Q)}{P_k + Q + R} \\) \\( P_0^2 + (Q+R) P_0 - RP_0 - QR = 0 \\)
 
 Since  \\( P_0 > 0 \\) and \\( Q > 0 \\), then
 
@@ -122,7 +124,7 @@ Kalman filter can be used in to keep a system in a state of control.
 Read more about [application of Kalman filter in PID Controller](/ml/PID-controller-control-loop-mechanism).
 
 
-### Example Implementation
+### Example Python Implementation
 
 Below is simplistic implementation of Kalman filter in one dimension in Python used to generate plots presented above.
 
