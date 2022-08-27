@@ -46,7 +46,7 @@ These two give us the observation estimate: \\( m_k = H_k x_{k-1} + \mathcal{N}(
 ### Kalman Estimate
 [Read other sources for details](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf), but in short:
 - Both estimates are combined: \\( m_k = F_k m_{k-1} + K_k (z_k - H_k F_k m_{k-1}) \\)
-- with a variance: \\( P_k = (1 - K_k H_k) (F_k P_{k-1} F_k^\intercal + Q_k) \\)
+- with a covariance: \\( P_k = (1 - K_k H_k) (F_k P_{k-1} F_k^\intercal + Q_k) \\)
 - and Kalman gain: \\( K_k := (F_k P_{k-1} F_k^\intercal + Q_k) H_k^\intercal \left( H_k (F_k P_{k-1} F^\intercal_k + Q_k) H_k^\intercal + R_k \right)^{-1}  \\)
 
 
@@ -62,10 +62,9 @@ The proof relies on Kalman filter asymptotically doesn't depend on initial state
 
 
 ### Constant Measurement Uncertainty, No Process Noise
+For the case where \\( Q = 0 \\), the proof relies on a choice of initial value of Kalman variance \\( P_1 = R \\). 
 
-Below is the proof relies on a choice of initial value of Kalman variance \\( P_1 = R \\). 
-
-- \\( m_{k+1} = m_k + K_{k+1} (x_{k+1} - m_k) \\)
+- \\( m_{k+1} = m_k + K_{k+1} (z_{k+1} - m_k) \\)
 - \\( P_{k+1} = (1-K_{k+1}) P_k \\)
 - \\( K_{k+1} = \frac{P_k}{P_k + R} \\)
 
@@ -76,7 +75,7 @@ Below is the proof relies on a choice of initial value of Kalman variance \\( P_
 \\( K_{k+1} = \frac{R}{k (R / k + R)} = \frac{1}{k+1} \\)
 
 Which gives us recursive equation that match cumulative average equation:
-\\( m_{k+1} = m_k + \frac{x_{k+1} - m_k}{k + 1} \\)
+\\( m_{k+1} = m_k + \frac{z_{k+1} - m_k}{k + 1} \\)
 
 
 We can double-check above proof by plotting the convergence.
@@ -86,12 +85,34 @@ We can double-check above proof by plotting the convergence.
 
 ### Constant Measurement Uncertainty, Constant Process Noise
 
-Now we approach more general case.
-Below is the proof relies on setting initial value of Kalman variance `P0` such that `Pk` becomes constant for recursive equation to match exponential moving average equation.
+Now we approach the case where \\( Q > 0 \\).
+Below is the proof relies on setting initial value of Kalman variance \\( P_0 \\) such that \\( P_k \\) becomes constant for recursive equation to match exponential moving average equation.
 
-<img alt="Proof Kalman 1d with constant measurement uncertainty and constant process noise proof" style="width: 80%; max-width: 900px" src="/images/2019-08-28-kalman-1d-with-process-noise-proof.jpg">
 
-Plot of the convergence.
+- \\( m_{k+1} = m_k + K_{k+1} (z_{k+1} - m_k) \\)
+- \\( P_{k+1} = (1-K_{k+1}) (P_k + Q) \\)
+- \\( K_{k+1} = \frac{P_k + Q}{P_k + Q + R} \\)
+
+
+\\( P_{k+1} = (1 - \frac{P_k + Q}{P_k + Q + R}) (P_k + Q) \\) \\( = \frac{P_k + Q + R - P_k - Q}{P_k + Q + R} (P_k + Q) = \frac{R (P_k + Q)}{P_k + Q + R} \\)
+
+Let's select \\( P_0 \\), such that following holds true:
+
+\\( P_0 = \frac{R (P_k + Q)}{P_k + Q + R} \\) \\( \iff P_0^2 + (Q+R) P_0 - RP_0 - QR = 0 \\)
+
+Since  \\( P_0 > 0 \\) and \\( Q > 0 \\), then
+
+\\( \implies P_0 = \frac{-Q + \sqrt{Q^2 + 4 QR}}{2} \\)
+
+Which also leads to constant covariance and Kalman gain:
+
+\\( P_k = P_0 \\), \\( K_{k+1} = K_1 \\)
+
+So we get recursive equation for exponential moving average:
+
+\\( m_{k+1} = K_1 z_{k+1} + (1-K_1) m_k \\)
+
+Plot of the convergence to exponential moving average:
 
 <img alt="Proof Kalman 1d with constant measurement uncertainty and constant process noise plot" style="width: 80%; max-width: 900px" src="/images/2019-08-28-kalman-1d-with-process-noise-plot.png">
 
