@@ -2,7 +2,7 @@
 layout: post
 title: "Constant 1D Kalman Filter Is Exponential Or Cumulative Average"
 date: 2019-08-28
-last_modified_at: 2022-06-06
+last_modified_at: 2022-08-27
 categories: ml
 description: In one dimension and with constant measurement uncertainty and process noise, the filter converges to cumulative average or exponential average.
 permalink: /:categories/:title
@@ -14,11 +14,36 @@ note: https://www.kalmanfilter.net/kalman1d.html
 ---
 
 {% include highlight-rouge-friendly.css.html %}
+{% include mathjax.html %}
 
 Kalman filter [(Kalman 1960 paper)](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf) also known as linear quadratic estimation (LQE) is an iterative algorithm that uses noisy measurements to estimate values and variance of unknown variables.
-The Kalman filter allows incorporation of known state space behaviour (e.g. momentum of physical particle) and outside-the-model estimated variance of sensor measurement (measurement uncertainty) and unknown factors (process noise).
+The Kalman filter allows combination of two estimates for a variable: the transition model (e.g. momentum of physical particle) and estimated variance of sensor measurement (outside-the-model measurement uncertainty) to achieve better precision.
+In other words, we use the knowledge of the "physics" of the process to predict the future position and then combine that with actual sensor measurement. This gives us higher precision. Additionally, the model can incorporate "control-input", but that will be omitted from below.
+
+
+The state estimate for time \\( k \\) is: \\( x_{k} \\).
+
+The model has the following components:
+
+- the state-transition model (motion model), which maps from previous step to the current estimate: \\( F_k \\)
+- the process noise normal variance, which adds the noise of the transition model \\(Q_k \\)
+- These two give us the motion estimate: \\( x_k = F_k x_{k-1} + w_k \\)
+ 
+- the observation model, which maps from the current sensor outputs to the estimate: \\( H_k \\)
+- the observation noise normal variance, which adds the noise of the sensor outputs: \\( R_k \\)
+- These two give us the observation estimate: \\( z_k = H_k x_{k-1} + v_k \\)
+
+The equations are rather complicated, please read the sources, but for short:
+- Both estimates are combined into \\( \hat{ x_{k \| k} } \\) with variance  \\( P_{k\|k} \\).
+- Matrix called Kalman gain \\( K_k = P_{k\|k-1} H_k^{\intercal} (H_k P_{k\|k-1} H_k^\intercal + R_k)^{-1}  \\)
+- Updated variance: \\( P_{k \| k} = (1 - K_k H_k) P_{k \| k-1}
+
+
 
 Kalman filter can be used in to keep a system in a state of control. Read more about [application of Kalman filter in PID Controller](/ml/PID-controller-control-loop-mechanism).
+
+To what Kalman Filter reduces in a single dimension? Let's find out.
+
 
 ## Kalman Filter vs Exponential Average vs Cumulative Average
 This blog post proves that [Kalman filter](https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf) in 1D with constant measurement uncertainty and process noise asymptotically behaves as:
