@@ -27,17 +27,27 @@ layout: default
 
 {% capture category %}{{ page.categories | first }}{% endcapture %}
 <h2>Continue Reading in {{ category }} ...</h2>
-<ul>
+
+<div class="container posts">
 {% for post in site.categories[category] %}
     {% if post.title != page.title %}
-    <li>
-            <a href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
+    <div class="row">
+        <div style="width: 80%; min-width: 300px; margin-top: 15px;">
+            <a href="{{ post.url | relative_url }}" title="{{ post.title }}" style="text-decoration: none">
+                <div class="lead">{{ post.title| escape }}</div>
+                <small>{{ post.description | escape}}</small>
             </a>
-    </li>
+        </div>
+        <div class="">
+            <a href="{{ post.url }}" title="{{ post.title | escape }}" style="text-decoration: none">
+                <div class="index-post-image lazyload" data-bg="{{ post.image | default: '/images/white-noise.jpeg' }}"></div>
+            </a>
+        </div>
+    </div>
+    <br>
     {% endif %}
 {% endfor %}
-</ul>
+</div>
 
 <br><br><br><br>
 

@@ -32,12 +32,3 @@ title: Vaclav Kosar's Software, Machine Learning, & Business Blog
 
 <a class="small" href="/categories">Sort by category</a>
 
-<script src="/js/lazysizes.min.js" async></script>
-<script defer>
-    document.addEventListener('lazybeforeunveil', function(e){
-        var bg = e.target.getAttribute('data-bg');
-        if(bg){
-            e.target.style.backgroundImage = 'url(' + bg + ')';
-        }
-    });
-</script>
