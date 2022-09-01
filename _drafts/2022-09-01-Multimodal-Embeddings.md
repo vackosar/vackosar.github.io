@@ -72,15 +72,18 @@ permalink: /:categories/:title
 
 
 ### CMA-CLIP Datasets
+- Amazon's proprietary MRWPA dataset contains labels for Color, Pattern, and Style
 
 ![CMA-CLIP datasets](/images/cma-clip-datasets.png)
 
 ### CMA-CLIP Results
+- modality wise attention helps the most on Style labels , then Pattern, then Color
+- likely because (the text feature is irrelevant to relevant in this order)
 
 ![CMA-CLIP results](/images/cma-clip-results.png)
 
 
-
+![CMA-CLIP results](/images/cma-clip-ablation-modality-wise-attention-sequence-wise-attention.png)
 
 
 
