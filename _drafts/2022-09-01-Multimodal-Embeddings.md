@@ -43,15 +43,18 @@ permalink: /:categories/:title
 - in image classification:
   - create for each class a text -> embedding
   - cosine similarity between image and text embeddings
+- in image text classification
 
 
 ## Amazon's CMA-CLIP Model
 - image-text classification task model
 - [CMA-CLIP: Cross-Modality Attention CLIP for Image-Text Classification](https://arxiv.org/pdf/2112.03562v2.pdf) from Amazon on Dec 2021
-  - image and text modalities fuses with task-wise attention for multi-task classification
-  - beats CLIP on Amazon's proprietary MRWPA dataset, and KaleidoBERT on Fashion-Gen dataset, and MMBT on Food101.
-- previously: one-stream e.g. [KaleidoBERT](https://arxiv.org/abs/2103.16110) pretrains with aligning image tokens with text tokens, then [transformer](/ml/transformers-self-attention-mechanism-simplified)
-  - or two-stream e.g. CLIP keeps modalities separate and only shallow head is used
+- image and text modalities fuses with task-wise attention for multi-task classification
+- beats two stream (global image embedding):
+  - CLIP (keeps modalities separate and only shallow head is used) on Amazon's proprietary MRWPA dataset,
+  - [MMBT](https://arxiv.org/pdf/1909.02950.pdf) (concat Resnet linear projections and BERT token embeddings) on Food101.
+- beats one-stream (local fine-grained selected image patches)
+  - [KaleidoBERT](https://arxiv.org/abs/2103.16110) (pretrains with aligning image tokens with text tokens, then [transformer](/ml/transformers-self-attention-mechanism-simplified)) on Fashion-Gen dataset
 
 ![CMA-CLIP architecture](/images/cma-clip-architecture.png)
 
@@ -63,9 +66,14 @@ permalink: /:categories/:title
 - the transformer outputs aggregate (global) image and text embedding
 - modality-wise attention per task: learned weighted sum of the two embeddings
   - the weight is a softmax of a dot product to a learned vector \\( w \\)
+  - speculation: it helps to avoid noise
 
 ![CMA-CLIP](/images/cma-clip-architecture.png)
 
+
+### CMA-CLIP Datasets
+
+![CMA-CLIP datasets](/images/cma-clip-datasets.png)
 
 ### CMA-CLIP Results
 
