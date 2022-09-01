@@ -98,8 +98,9 @@ permalink: /:categories/:title
 
 
 ## Google's CoCa Model
-- state-of-the-art model on ImageNet’s image classification reported on is image-text model CoCa
-- [CoCa](https://arxiv.org/abs/2205.01917)
+- [CoCa: Contrastive Captioners are Image-Text Foundation Models](https://arxiv.org/abs/2205.01917)
+- State-of-the-art model many image and image-text tasks
+- Combines a contrastive loss (similar to CLIP) with captioning task
 
 ![CoCa model pretraining](/images/coca-pretraining.png)
 
