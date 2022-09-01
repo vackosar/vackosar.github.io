@@ -1,6 +1,6 @@
 ---
-title: "Multimodal embeddings"
-description: "Multimodal embeddings as seen in CMA-CLIP and CoCa models"
+title: "Amazon's CMA-CLIP and Multimodal embeddings"
+description: "Multimodal embeddings as seen in CMA-CLIP"
 layout: post
 categories: ml
 date: 2022-09-01
@@ -15,7 +15,8 @@ permalink: /:categories/:title
 
 ## OpenAI's CLIP
 - [paper](https://openai.com/blog/clip/): encodes image, and text to similar embeddings
-- trained on a 400M various images with a caption text from the internet
+- trained on a proprietary WebImageText (WIT don't confuse with Wikipedia-based Image Text Dataset (WIT))
+  - 400M of various images with a caption text from the internet
 - trained with contrastive learning, maximizing cosine similarity of corresponding image and text
 - image representations contain both style and semantics
 - zero-shot classification, but fails on abstract or systematic tasks like counting
@@ -70,7 +71,7 @@ permalink: /:categories/:title
   - the weight is a softmax of a dot product to a learned vector \\( w \\)
   - speculation: it helps to avoid noise
 
-![CMA-CLIP](/images/cma-clip-architecture.png)
+![CMA-CLIP architecture](/images/cma-clip-architecture.png)
 
 
 ### CMA-CLIP Datasets
@@ -79,13 +80,17 @@ permalink: /:categories/:title
 ![CMA-CLIP datasets](/images/cma-clip-datasets.png)
 
 ### CMA-CLIP Results
-- modality wise attention helps the most on Style labels , then Pattern, then Color
-- likely because (the text feature is irrelevant to relevant in this order)
-
+- WIT in below is proprietary WebImageText
+ 
 ![CMA-CLIP results](/images/cma-clip-results.png)
 
 
-![CMA-CLIP results](/images/cma-clip-ablation-modality-wise-attention-sequence-wise-attention.png)
+### CMA-CLIP Ablation Results
+- modality wise attention helps the most on Style labels, then Pattern, then Color
+- likely because (the text feature is irrelevant to relevant in this order)
+
+
+![CMA-CLIP ablation results](/images/cma-clip-ablation-modality-wise-attention-sequence-wise-attention.png)
 
 
 
