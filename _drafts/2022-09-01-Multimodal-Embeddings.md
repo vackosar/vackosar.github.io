@@ -65,6 +65,7 @@ permalink: /:categories/:title
 - concatenate both embeddings into single sequence into a transformer
 - the transformer outputs aggregate (global) image and text embedding
 - modality-wise attention per task: learned weighted sum of the two embeddings
+  - asks: is this input relevant?
   - the weight is a softmax of a dot product to a learned vector \\( w \\)
   - speculation: it helps to avoid noise
 
