@@ -68,7 +68,7 @@ permalink: /:categories/:title
 - the transformer outputs aggregate (global) image and text embedding
 - modality-wise attention per task: learned weighted sum of the two embeddings
   - asks: is this input relevant?
-  - the weight is a softmax of a dot product to a learned vector \\( w \\)
+  - the weight is a softmax of a dot product to a learned vector
   - speculation: it helps to avoid noise
 
 ![CMA-CLIP architecture](/images/cma-clip-architecture.png)
@@ -76,6 +76,8 @@ permalink: /:categories/:title
 
 ### CMA-CLIP Datasets
 - Amazon's proprietary MRWPA dataset contains labels for Color, Pattern, and Style
+- [Fashion-Gen Dataset](https://arxiv.org/pdf/1806.08317v2.pdf) with 325k images, 78k texts, single-label, and 41 categories.
+- [Food101 Dataset](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/static/bossard_eccv14_food-101.pdf) with 100k images, 100k texts, 101 categories.
 
 ![CMA-CLIP datasets](/images/cma-clip-datasets.png)
 
