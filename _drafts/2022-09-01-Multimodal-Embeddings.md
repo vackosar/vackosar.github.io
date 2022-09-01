@@ -97,6 +97,12 @@ permalink: /:categories/:title
 
 
 
-## CoCa Model
+## Google's CoCa Model
 - state-of-the-art model on ImageNet’s image classification reported on is image-text model CoCa
 - [CoCa](https://arxiv.org/abs/2205.01917)
+
+![CoCa model pretraining](/images/coca-pretraining.png)
+
+
+### CoCa Results
+![CoCa results](/images/coca-results.png)
