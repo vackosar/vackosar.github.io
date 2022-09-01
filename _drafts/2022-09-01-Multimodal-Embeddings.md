@@ -27,7 +27,8 @@ permalink: /:categories/:title
 - text and image have separate [transformer](/ml/transformers-self-attention-mechanism-simplified) encoders
 - visual encoder is [ViT](https://arxiv.org/pdf/2010.11929.pdf) (vision [transformer](/ml/transformers-self-attention-mechanism-simplified))
 - text encoder is [GPT-2](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) [transformer](/ml/transformers-self-attention-mechanism-simplified)
-- the fixed-length text embedding is extracted from \[EOS\] token position, token embeddings also available
+- the fixed-length text embedding is extracted from \[EOS\] token position,
+- text token embeddings and image patch embeddings also available
 - trained on 256 GPUs for 2 weeks
 
 ![CLIP architecture](/images/clip-architecture.png)
@@ -50,10 +51,10 @@ permalink: /:categories/:title
 - image-text classification task model
 - [CMA-CLIP: Cross-Modality Attention CLIP for Image-Text Classification](https://arxiv.org/pdf/2112.03562v2.pdf) from Amazon on Dec 2021
 - image and text modalities fuses with task-wise attention for multi-task classification
-- beats two stream (global image embedding):
+- strongly beats two stream (global image embedding):
   - CLIP (keeps modalities separate and only shallow head is used) on Amazon's proprietary MRWPA dataset,
   - [MMBT](https://arxiv.org/pdf/1909.02950.pdf) (concat Resnet linear projections and BERT token embeddings) on Food101.
-- beats one-stream (local fine-grained selected image patches)
+- strongly beats one-stream (local fine-grained selected image patches)
   - [KaleidoBERT](https://arxiv.org/abs/2103.16110) (pretrains with aligning image tokens with text tokens, then [transformer](/ml/transformers-self-attention-mechanism-simplified)) on Fashion-Gen dataset
 
 ![CMA-CLIP architecture](/images/cma-clip-architecture.png)
