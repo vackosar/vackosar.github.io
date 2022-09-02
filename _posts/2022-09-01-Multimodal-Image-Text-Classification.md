@@ -123,6 +123,6 @@ permalink: /:categories/:title
 
 ## EmbraceNet Model
 - [EmbraceNet: A robust deep learning architecture for multimodal classification](https://arxiv.org/pdf/1904.09078.pdf) 2019
-- feature fusion via a simple summation with "feature dropout" within the Embracement layer 
+- feature fusion via a weighted summation with a "feature dropout"
 
 ![EmbraceNet model architecture](/images/embracenet-architecture.png)
