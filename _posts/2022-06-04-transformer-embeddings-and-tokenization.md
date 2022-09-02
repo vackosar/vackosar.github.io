@@ -58,7 +58,7 @@ Byte-Pair-Encoding (BPE) algorithm:
 
 ## Tokenizers vs Encoders 
 - Tokenizers are not suitable for modalities like image or speech.
-- Architectures like [Vision Transformer (ViT)](https://arxiv.org/pdf/1909.02950.pdf) or [MMBT](https://arxiv.org/pdf/1909.02950.pdf) encode input without a tokenizer.
+- Image architectures like [Vision Transformer (ViT)](https://arxiv.org/pdf/1909.02950.pdf) or [MMBT](/ml/Multimodal-Image-Text-Classification#facebooks-mmbt-model) encode input without a tokenizer.
 - Inputs to transformer can be encoded with a another neural network.
 - Output of the encoding layer has to be a sequence of embeddings for the transformer.
 

@@ -55,13 +55,14 @@ permalink: /:categories/:title
 - image-text classification task model
 - [CMA-CLIP: Cross-Modality Attention CLIP for Image-Text Classification](https://arxiv.org/pdf/2112.03562v2.pdf) from Amazon on Dec 2021
 - image and text modalities fuses with task-wise attention for multi-task classification
-- strongly beats two stream (global image embedding):
+- beats two stream (global image embedding):
   - CLIP (keeps modalities separate and only shallow head is used) on Amazon's proprietary MRWPA dataset,
-  - [MMBT](https://arxiv.org/pdf/1909.02950.pdf) (concat Resnet linear projections and BERT token embeddings) on Food101.
+  - [MMBT model (see below)](#facebooks-mmbt-model) on Food101 by +1%
+  - no comparison with [EmbraceNet (see below)](#embracenet-model)
 - strongly beats one-stream (local fine-grained selected image patches)
   - [KaleidoBERT](https://arxiv.org/abs/2103.16110) (pretrains with aligning image tokens with text tokens, then [transformer](/ml/transformers-self-attention-mechanism-simplified)) on Fashion-Gen dataset
 
-![CMA-CLIP architecture](/images/cma-clip-architecture.png)
+![CMA-CLIP model architecture](/images/cma-clip-architecture.png)
 
 
 ### CMA-CLIP Architecture
@@ -74,7 +75,7 @@ permalink: /:categories/:title
   - the weight is a softmax of a dot product to a learned vector
   - speculation: it helps to avoid noise
 
-![CMA-CLIP architecture](/images/cma-clip-architecture.png)
+![CMA-CLIP model architecture](/images/cma-clip-architecture.png)
 
 
 ### CMA-CLIP Datasets
@@ -84,11 +85,12 @@ permalink: /:categories/:title
 
 ![CMA-CLIP datasets](/images/cma-clip-datasets.png)
 
+
 ### CMA-CLIP Results
 - WIT in below is proprietary WebImageText
 - Vaclav: Parameter count comparison is missing
  
-![CMA-CLIP results](/images/cma-clip-results.png)
+![CMA-CLIP model results](/images/cma-clip-results.png)
 
 
 ### CMA-CLIP Ablation Results
@@ -96,8 +98,6 @@ permalink: /:categories/:title
 - likely because (the text feature is irrelevant to relevant in this order)
 
 ![CMA-CLIP ablation results](/images/cma-clip-ablation-modality-wise-attention-sequence-wise-attention.png)
-
-
 
 
 ## Google's CoCa Model
@@ -112,3 +112,17 @@ permalink: /:categories/:title
 - achieved SoTA on ImageNet!
 
 ![CoCa results](/images/coca-results.png)
+
+
+## Facebook's MMBT Model
+- [Supervised Multimodal Bitransformers for Classifying Images and Text](https://arxiv.org/pdf/1909.02950.pdf)
+- concatenate linear projections of Resnet output with BERT token embeddings into a sequence as Transformer input
+
+![MMBT model architecture](/images/mmbt-architecture.png)
+
+
+## EmbraceNet Model
+- [EmbraceNet: A robust deep learning architecture for multimodal classification](https://arxiv.org/pdf/1904.09078.pdf) 2019
+- feature fusion via a simple summation with "feature dropout" within the Embracement layer 
+
+![EmbraceNet model architecture](/images/embracenet-architecture.png)
