@@ -73,7 +73,7 @@ permalink: /:categories/:title
 - modality-wise attention per task: learned weighted sum of the two embeddings
   - asks: is this input relevant?
   - the weight is a softmax of a dot product to a learned vector
-  - speculation: it helps to avoid noise
+  - resists noise and missing data better similar to [EmbraceNet feature dropout](#embracenet-model)
 
 ![CMA-CLIP model architecture](/images/cma-clip-architecture.png)
 
@@ -130,5 +130,6 @@ permalink: /:categories/:title
 ## EmbraceNet Model
 - [EmbraceNet: A robust deep learning architecture for multimodal classification](https://arxiv.org/pdf/1904.09078.pdf) 2019
 - feature fusion via a weighted summation with a normalizatin and "feature dropout"
+- model has similar performance to concatenation, but performs better when some modalities are missing in noisy data
 
 ![EmbraceNet model architecture](/images/embracenet-architecture.png)
