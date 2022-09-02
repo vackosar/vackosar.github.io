@@ -1,20 +1,23 @@
 ---
-title: "Amazon's CMA-CLIP and Multimodal embeddings"
-description: "Multimodal embeddings as seen in CMA-CLIP"
+title: "Multimodal Image-text Classification"
+description: "Understand the top deep learning image and text classification models CMA-CLIP, CLIP, CoCa, and MMBT used in e-commerce."
 layout: post
 categories: ml
 date: 2022-09-01
-last_modified_at: 2022-09-01 
+image: /images/multimodal-image-text-classification.png
+last_modified_at: 2022-09-02 
 permalink: /:categories/:title
 ---
 
-- extracting information from multiple-modalities
+- input is image and text pair (multiple modalities) and output a class or embedding vector
+- used in product classification to [product taxonomies](/ml/Automatically-Expanding-Taxonomy) e.g. [Google product taxonomy](https://vaclavkosar.com/software/google-product-taxonomy-viewer)
+- multi-modal models are increasingly important e.g. [CoCa achieved SoTA on ImageNet](#coca-results)
 
+![mutlimodal image-text classification](/images/multimodal-image-text-classification.png)
 
-[//]: # (TODO change CLIP into reusable slides)
 
 ## OpenAI's CLIP
-- [paper](https://openai.com/blog/clip/): encodes image, and text to similar embeddings
+- [CLIP: Connecting Text and Images (Jan 2021)](https://openai.com/blog/clip/): encodes image, and text to similar embeddings
 - trained on a proprietary WebImageText (WIT don't confuse with Wikipedia-based Image Text Dataset (WIT))
   - 400M of various images with a caption text from the internet
 - trained with contrastive learning, maximizing cosine similarity of corresponding image and text
@@ -42,10 +45,10 @@ permalink: /:categories/:title
 - [DALL-E 2](/ml/openai-dall-e-2-and-dall-e-1#openais-dall-e-2)
   - uses CLIP embedding directly,
   - and decodes images via diffusion similar to [GLIDE](/ml/openai-dall-e-2-and-dall-e-1#openais-glide).
-- in image classification:
+- zero-shot image classification:
   - create for each class a text -> embedding
   - cosine similarity between image and text embeddings
-- in image text classification
+- supervised image-text classification training on the embeddings
 
 
 ## Amazon's CMA-CLIP Model
@@ -77,12 +80,13 @@ permalink: /:categories/:title
 ### CMA-CLIP Datasets
 - Amazon's proprietary MRWPA dataset contains labels for Color, Pattern, and Style
 - [Fashion-Gen Dataset](https://arxiv.org/pdf/1806.08317v2.pdf) with 325k images, 78k texts, single-label, and 41 categories.
-- [Food101 Dataset](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/static/bossard_eccv14_food-101.pdf) with 100k images, 100k texts, 101 categories.
+- [UPMC-Food101 Dataset](https://hal.archives-ouvertes.fr/hal-01196959/file/CEA_ICME2015.pdf) with 90k images, 86k texts, 101 categories.
 
 ![CMA-CLIP datasets](/images/cma-clip-datasets.png)
 
 ### CMA-CLIP Results
 - WIT in below is proprietary WebImageText
+- Vaclav: Parameter count comparison is missing
  
 ![CMA-CLIP results](/images/cma-clip-results.png)
 
@@ -90,7 +94,6 @@ permalink: /:categories/:title
 ### CMA-CLIP Ablation Results
 - modality wise attention helps the most on Style labels, then Pattern, then Color
 - likely because (the text feature is irrelevant to relevant in this order)
-
 
 ![CMA-CLIP ablation results](/images/cma-clip-ablation-modality-wise-attention-sequence-wise-attention.png)
 
@@ -106,4 +109,5 @@ permalink: /:categories/:title
 
 
 ### CoCa Results
+- achieved SoTA on ImageNet!
 ![CoCa results](/images/coca-results.png)
