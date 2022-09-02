@@ -110,4 +110,5 @@ permalink: /:categories/:title
 
 ### CoCa Results
 - achieved SoTA on ImageNet!
+
 ![CoCa results](/images/coca-results.png)
