@@ -86,6 +86,12 @@ permalink: /:categories/:title
 ![CMA-CLIP datasets](/images/cma-clip-datasets.png)
 
 
+### CMA-CLIP
+- on MRWPA dataset text-to-image attention map alignment makes suggest CMA-CLIP can find cross-modality correlations 
+
+![CMA-CLIP text-image token attention map](/images/cma-clip-text-token-image-token-attention-map.png)
+
+
 ### CMA-CLIP Results
 - WIT in below is proprietary WebImageText
 - Vaclav: Parameter count comparison is missing
