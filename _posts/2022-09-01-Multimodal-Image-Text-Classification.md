@@ -99,6 +99,14 @@ permalink: /:categories/:title
 ![CMA-CLIP model results](/images/cma-clip-results.png)
 
 
+#### CMA-CLIP vs MMBT vs CLIP on Food101
+- CMA-CLIP outperforms MMBT and CLIP
+- MMBT significantly outperforms CLIP likely due to the tuned transformer head
+- BERT does better than ViT on this dataset
+
+![cma-clip vs mmbt vs clip vs bert vs vit on Food101](/images/cma-clip-vs-mmbt-vs-clip-vs-bert-vs-vit.png)
+
+
 ### CMA-CLIP Ablation Results
 - modality wise attention helps the most on Style labels, then Pattern, then Color
 - likely because (the text feature is irrelevant to relevant in this order)
