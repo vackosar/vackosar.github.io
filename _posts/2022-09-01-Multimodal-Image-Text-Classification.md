@@ -48,7 +48,9 @@ permalink: /:categories/:title
 - zero-shot image classification:
   - create for each class a text -> embedding
   - cosine similarity between image and text embeddings
-- supervised image-text classification training on the embeddings
+- supervised image-text classification
+  - the two output class embeddings fed in to a shallow MLP classification head
+  - or the two output sequences fed into a transformer with classification head
 
 
 ## Amazon's CMA-CLIP Model
