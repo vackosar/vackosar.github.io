@@ -6,7 +6,7 @@ categories: ml
 date: 2022-09-01
 video: Oj3OqUgYL3Y
 image: /images/multimodal-image-text-classification.png
-last_modified_at: 2022-09-02 
+last_modified_at: 2022-09-07 
 permalink: /:categories/:title
 ---
 
