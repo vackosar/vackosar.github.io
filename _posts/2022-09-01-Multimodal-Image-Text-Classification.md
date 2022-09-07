@@ -4,6 +4,7 @@ description: "Understand the top deep learning image and text classification mod
 layout: post
 categories: ml
 date: 2022-09-01
+video: Oj3OqUgYL3Y
 image: /images/multimodal-image-text-classification.png
 last_modified_at: 2022-09-02 
 permalink: /:categories/:title
@@ -18,8 +19,8 @@ permalink: /:categories/:title
 
 ## OpenAI's CLIP
 - [CLIP: Connecting Text and Images (Jan 2021)](https://openai.com/blog/clip/): encodes image, and text to similar embeddings
-- trained on a proprietary WebImageText (WIT don't confuse with Wikipedia-based Image Text Dataset (WIT))
-  - 400M of various images with a caption text from the internet
+- dataset was proprietary WebImageText (WIT is not Wikipedia-based Image Text Dataset (WIT)) 400M of various images with a caption text from the internet
+- now [open-source image-text datasets like LAION-400M available](https://laion.ai/blog/laion-400-open-dataset/), [open source CLIP models](https://github.com/mlfoundations/open_clip) as well
 - trained with contrastive learning, maximizing cosine similarity of corresponding image and text
 - image representations contain both style and semantics
 - zero-shot classification, but fails on abstract or systematic tasks like counting
