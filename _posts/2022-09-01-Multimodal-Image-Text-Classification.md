@@ -14,7 +14,7 @@ permalink: /:categories/:title
 - used in product classification to [product taxonomies](/ml/Automatically-Expanding-Taxonomy) e.g. [Google product taxonomy](https://vaclavkosar.com/software/google-product-taxonomy-viewer)
 - multi-modal models are increasingly important e.g. [CoCa achieved SoTA on ImageNet](#coca-results)
 
-![mutlimodal image-text classification](/images/multimodal-image-text-classification.png)
+{% include load_video.html %}
 
 
 ## OpenAI's CLIP
