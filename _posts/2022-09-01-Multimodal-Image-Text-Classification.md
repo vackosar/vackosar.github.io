@@ -161,3 +161,9 @@ Text-to-image attention map alignment suggest CMA-CLIP can find cross-modality c
 - model has similar performance to concatenation, but performs better when some modalities are missing in noisy data
 
 ![EmbraceNet model architecture](/images/embracenet-architecture.png)
+
+
+## DeepMind's Perceiver Model
+Perceiver is general multimodal architecture that uses cross-
+
+{% include shared_slides/perceiver-io.md %}
