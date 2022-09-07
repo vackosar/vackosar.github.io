@@ -20,6 +20,10 @@ Cross attention is:
 - one of the sequences defines the output length as it plays a role of a query input
 - the other sequence then produces key and value input
 
+## Cross-attention Applications
+- [image-text classification](/ml/Multimodal-Image-Text-Classification) with Perceiver
+- machine translation: [cross-attention helps decoder predict next token](#cross-attention-in-transformer-decoder) of the translated text
+
 ## Cross-attention vs Self-attention
 ![cross-attention perceiver io detail](/images/cross-attention-detail-perceiver-io.png)
 
@@ -41,17 +45,17 @@ Alternative [cross-attention in SelfDoc](#cross-attention-in-selfdoc), uses quer
 
 In an equation: \\( \mathbf{softmax}((W_Q S_2) (W_K S_1)^\intercal) W_V S_1 \\)
 
-## Cross-Attention in Transformer Decoder
+
+## Cross-Attention in Popular Architectures
+
+### Cross-Attention in Transformer Decoder
 Cross-attention was described in the [Transformer](/ml/transformers-self-attention-mechanism-simplified) paper, but it was not given this name yet.
 Transformer decoding starts with full input sequence, but empty decoding sequence.
 Cross-attention introduces information from the input sequence to the layers of the decoder,
 such that it can predict the next output sequence token.
 The decoder then adds the token to the output sequence, and repeats this autoregressive process until the EOS token is generated.
- 
+
 ![Cross-Attention in the Transformer decoder of Attention is All You Need paper](/images/cross-attention-in-transformer-decoder.png)
-
-
-## Cross-Attention Examples
 
 ### Cross-Attention in Perceiver IO
 
