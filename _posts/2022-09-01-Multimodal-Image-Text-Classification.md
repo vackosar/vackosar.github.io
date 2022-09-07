@@ -88,17 +88,19 @@ permalink: /:categories/:title
 ![CMA-CLIP datasets](/images/cma-clip-datasets.png)
 
 
-### CMA-CLIP
-- on MRWPA dataset text-to-image attention map alignment makes suggest CMA-CLIP can find cross-modality correlations 
-
-![CMA-CLIP text-image token attention map](/images/cma-clip-text-token-image-token-attention-map.png)
-
 
 ### CMA-CLIP Results
-- WIT in below is proprietary WebImageText
-- Vaclav: Parameter count comparison is missing
+- Overall CMA-CLIP slightly better than MMBT, but speculatively could outperform on multitasking
+- Parameter count comparison is missing
  
 ![CMA-CLIP model results](/images/cma-clip-results.png)
+
+
+#### CMA-CLIP vs KaleidoBERT vs ImageBERT on Fashion-Gen 
+- CMA-CLIP outperforms KaleidoBERT vs ImageBERT, and other models.
+- There is no benchmark avaiabale for MMBT or CLIP on Fashion-Gen 
+
+![CMA-CLIP vs KaleidoBERT vs ImageBERT on Fashion-Gen](/images/cma-clip-vs-kaleidobert-vs-imagebert-on-fashion-gen.png)
 
 
 #### CMA-CLIP vs MMBT vs CLIP on Food101
@@ -107,6 +109,20 @@ permalink: /:categories/:title
 - BERT does better than ViT on this dataset
 
 ![cma-clip vs mmbt vs clip vs bert vs vit on Food101](/images/cma-clip-vs-mmbt-vs-clip-vs-bert-vs-vit.png)
+
+
+#### CMA-CLIP Results on MRWPA dataset
+- WIT in below is proprietary WebImageText
+- Since CMA-CLIP has more parameters, the performance is expected
+
+![CMA-CLIP vs CLIP Results on MRWPA dataset](/images/cma-clip-vs-clip-on-MRWPA.png)
+
+
+#### CMA-CLIP Image-text Alignment on MRWPA dataset
+Text-to-image attention map alignment suggest CMA-CLIP can find cross-modality correlations.
+
+![CMA-CLIP text-image token attention map](/images/cma-clip-text-token-image-token-attention-map.png)
+
 
 
 ### CMA-CLIP Ablation Results
@@ -133,6 +149,7 @@ permalink: /:categories/:title
 ## Facebook's MMBT Model
 - [Supervised Multimodal Bitransformers for Classifying Images and Text](https://arxiv.org/pdf/1909.02950.pdf)
 - concatenate linear projections of Resnet output with BERT token embeddings into a sequence as Transformer input
+- MMBT has similar architecture to [CMA-CLIP](#cma-clip-architecture) except for the CLIP backbone and modality-wise attention useful in multitasking
 
 ![MMBT model architecture](/images/mmbt-architecture.png)
 
