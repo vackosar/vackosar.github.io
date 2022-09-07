@@ -3,7 +3,7 @@ layout: post
 title: "Manipulate Item Attributes via Disentangled Representation"
 date: 2021-10-25
 categories: ml
-description: Using attribute-specific subspaces for image manipulation retrieval, outfit completion, conditional similarity retrieval.
+description: Using attribute-specific embedding subspaces for image manipulation retrieval, outfit completion, conditional similarity retrieval.
 permalink: /:categories/:title
 image: /images/disentangled-representation-thumb.png
 video: _cOhvtcSY4w
@@ -55,13 +55,12 @@ redirect_from:
 
 ## Multi-Task Learning
 - [Multi-task learning may improve performance](https://ai.googleblog.com/2021/10/deciding-which-tasks-should-train.html)
-  - Google NeurIPS 2021 paper on a method for grouping tasks
-  - meta-learning
-  - usually the tasks have to be related
-  - inter-task affinity:
-    - measure one task's gradient affects the other tasks loss
-    - correlates overall model performance
-- in below outfit recommendation improved on disentangled
+- Google NeurIPS 2021 paper on a method for grouping tasks
+- meta-learning
+- usually the tasks have to be related
+- inter-task affinity:
+  - measure one task's gradient affects the other tasks loss
+  - correlates overall model performance
 
 ![inter-task affinity for multi-task learning task grouping](/images/disentangle-multi-task.png)
 
@@ -72,9 +71,10 @@ redirect_from:
 - supervised disentangled representation learning
   - all attribute multiple values
   - split embedding into sections corresponding to attributes
-  - multi-task training
+  - multi-task learning allows disentangling
   - store prototype embeddings of each attribute value in memory module
   - prototypes can then be swapped for items attribute vector
+- Read more about related research in [image-text classfication](/ml/Multimodal-Image-Text-Classification)
 
 ![disentangled representation using attribute-specific encoder](../images/disentangled-encoder.png)
 

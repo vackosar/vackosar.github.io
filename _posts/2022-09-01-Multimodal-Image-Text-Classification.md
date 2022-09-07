@@ -115,6 +115,7 @@ permalink: /:categories/:title
 #### CMA-CLIP Results on MRWPA dataset
 - WIT in below is proprietary WebImageText
 - Since CMA-CLIP has more parameters, the performance is expected
+- Multitask learning classification usable for [learning disentangled representations](/ml/manipulate-item-attributes-via-disentangled-representation)
 
 ![CMA-CLIP vs CLIP Results on MRWPA dataset](/images/cma-clip-vs-clip-on-MRWPA.png)
 
