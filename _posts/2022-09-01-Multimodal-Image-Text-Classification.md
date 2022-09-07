@@ -164,6 +164,5 @@ Text-to-image attention map alignment suggest CMA-CLIP can find cross-modality c
 
 
 ## DeepMind's Perceiver Model
-Perceiver is general multimodal architecture that uses cross-
 
 {% include shared_slides/perceiver-io.md %}
