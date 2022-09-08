@@ -6,7 +6,7 @@ categories: ml
 image: /images/cross-attention-in-transformer-architecture.png
 video: NXjvcNVkX9o
 date: 2021-12-28
-last_modified_at: 2022-08-07
+last_modified_at: 2022-09-08
 permalink: /:categories/:title
 ---
 
