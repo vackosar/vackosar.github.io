@@ -8,9 +8,10 @@
 
 ## Non-Contextual Words Vectors
 - document split into sentence sized running window of 10 words
-- each of 10k vocabulary words gets one general vector "embedded" in a 300 dimensional space
-- vectors are densely [compressed](/ml/neural-data-compression) as only 300 dimensions much less than 10k vocabulary feature vectors
-- global (non-contextual) word vectors mean disambiguation not supported e.g. (flowering) vs fruit (food) treated as the same
+- each of 10k sparsely coded vocabulary words is mapped (embedded) to a vector into a 300 dimensional space
+- the embeddings are [compressed](/ml/neural-data-compression) as only 300 dimensions much less than 10k vocabulary feature vectors
+- the embeddings are dense as the vector norm is not allowed to grow too large
+- these word vectors are non-contextual (global), so we cannot disambiguate fruit (flowering) from fruit (food)
 
 ![word2vec](/images/word2vec-10k-tensorflow-projector.png)
 
