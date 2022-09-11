@@ -1,5 +1,5 @@
 ## OpenAI's CLIP
-- [CLIP: Connecting Text and Images (Jan 2021)](https://openai.com/blog/clip/): encodes image, and text to similar embeddings
+- [CLIP: Connecting Text and Images (Jan 2021)](https://openai.com/blog/clip/): encodes image, and text to similar [embeddings](/ml/Embeddings-in-Machine-Learning-Explained)
 - dataset was proprietary WebImageText (WIT is not Wikipedia-based Image Text Dataset (WIT)) 400M of various images with a caption text from the internet
 - now [open-source image-text datasets like LAION-400M available](https://laion.ai/blog/laion-400-open-dataset/), [open source CLIP models](https://github.com/mlfoundations/open_clip) as well
 - trained with contrastive learning, maximizing cosine similarity of corresponding image and text

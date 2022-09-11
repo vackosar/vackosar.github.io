@@ -1,6 +1,5 @@
 ## The Simplest Document Representations
-- Once paper library replaced with textual documents in a databases,
-- new tasks became cheaper: search by list of words (query) ~1970s, finding document topics ~1980
+- Once were paper archives replaced with databases of textual documents some tasks became cheaper: search by list of words (query) ~1970s, finding document topics ~1980
 - simplest methods: counting word occurrences on documents level into [sparce matrices](/ml/sparse-matrix-why-and-when) as feature vectors in methods TF*IDF, Latent semantic analysis
 - this co-occurrence of words in documents later used to embed words
 
