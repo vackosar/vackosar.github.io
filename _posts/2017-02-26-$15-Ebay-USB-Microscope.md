@@ -1,15 +1,21 @@
 ---
 layout: post
-title: "Is $15 USB Microscope Enough For You?"
+title: Is $15 USB Microscope Enough For You?
 date: 2017-02-26
-categories: electronics 
+categories: electronics
 description: See yeast cells and pond water critters paying just $15 for an USB microscope.
 image: https://i.ytimg.com/vi/eDrts252LsA/sddefault.jpg
 video: eDrts252LsA
 permalink: /:categories/:title
 redirect_from:
 - /2017/02/26/15$-Ebay-USB-Microscope.html
+my_related_post_paths:
+- _posts/2019-03-03-Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.md
+- _posts/2020-05-03-P52-disassembly.md
+- _posts/2019-11-02-Thinkpad-P53-vs-P52-Thermals.md
 ---
+
+
 
 {% include load_video.html %}
 

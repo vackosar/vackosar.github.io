@@ -1,13 +1,25 @@
 ---
 layout: post
-title: "Strong Static Typing vs Weak Dynamic Typing"
+title: Strong Static Typing vs Weak Dynamic Typing
 date: 2022-08-19
 last_modified_at: 2022-08-17
 categories: software
 description: Master programmers Carmack, Blow, Fowler, and Uncle Bob on strong static typing in contrast to weak dynamic typing.
 image: /images/strong-static-vs-weak-dynamic-typing-table.png
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
+- _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2016-07-28-Functional-Foreach-In-Bash.md
+- _posts/2017-10-28-Spring-Integration-Highlights.md
+- _posts/2022-08-03-Python-functools.cmp_to_key-explained.md
+- _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
+- _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
 ---
+
+
 
 
 <style>

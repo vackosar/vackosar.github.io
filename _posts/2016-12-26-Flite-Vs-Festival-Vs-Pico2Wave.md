@@ -1,13 +1,25 @@
 ---
 layout: post
-title: "Linux Text To Speech Comparison: Flite Vs Pico2Wave Vs Festival"
+title: 'Linux Text To Speech Comparison: Flite Vs Pico2Wave Vs Festival'
 categories: software
 description: Comparison of open-source text to speech (TTS) software in terms of pleasantness, comprehensibility, and modularity.
 date: 2016-12-26
 permalink: /:categories/:title
 redirect_from:
 - /2016/12/26/Flite-Vs-Festival
+my_related_post_paths:
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
+- _posts/2017-07-15-Restore-Missing-Punctuation-with-Keras-Convolutional-Text-Punctuator.md
+- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
+- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
+- _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
+- _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
+- _posts/2017-10-28-Spring-Integration-Highlights.md
+- _posts/2016-07-28-Functional-Foreach-In-Bash.md
 ---
+
+
 
 
 

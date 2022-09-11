@@ -1,6 +1,6 @@
 ---
-title: "7 Powers' Moats Through the Lens of DiBello's Business Mental Model"
-description: "An insight into Helmer's enterprise moats via dimensions of demand, supply, and capital."
+title: 7 Powers' Moats Through the Lens of DiBello's Business Mental Model
+description: An insight into Helmer's enterprise moats via dimensions of demand, supply, and capital.
 image: /images/7-powers-dibello-mental-model.png
 layout: post
 categories: book
@@ -10,7 +10,12 @@ last_modified_at: 2022-06-06
 permalink: /:categories/:title
 redirect_from:
 - /book/7-powers-moats-through-lens-of-modified-dibellos-business-mental-model
+my_related_post_paths:
+- _posts/2021-12-12-Ten-Commandments-for-business-failure.md
+- _posts/2021-07-14-Scout-Mindset-Book-Summary.md
 ---
+
+
 
 <img id="video-img-img" style="max-width: 560px; width: 100%" src="{{ page.image }}" alt="{{ page.title }}" />
 

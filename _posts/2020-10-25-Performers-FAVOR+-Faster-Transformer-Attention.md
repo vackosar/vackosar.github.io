@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Performers FAVOR+ Faster Transformer Attention"
+title: Performers FAVOR+ Faster Transformer Attention
 date: 2020-10-25
 last_modified_at: 2022-06-06
 categories: ml
@@ -8,7 +8,19 @@ description: The Performer model attention approximation has linear complexity i
 image: /images/performer-thumb.png
 video: xpys_xqB6qY
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
+- _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
+- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
+- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
+- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
+- _posts/2020-11-29-Lambda-Networks-Transform-Self-Attention.md
+- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
+- _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 ---
+
+
 
 {% include mathjax.html %}
 

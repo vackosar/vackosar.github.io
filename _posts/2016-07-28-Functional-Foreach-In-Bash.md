@@ -1,13 +1,25 @@
 ---
 layout: post
-title: "Functional ForEach In Bash"
+title: Functional ForEach In Bash
 date: 2016-07-28
 description: Don't you hate verbosity of Bash's while-do statements when writing in-line scripts? No worries, you can improve on that!
 categories: software
 permalink: /:categories/:title
 redirect_from:
-- /2016/07/28/Functional-Foreach-In-Bash.html 
+- /2016/07/28/Functional-Foreach-In-Bash.html
+my_related_post_paths:
+- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
+- _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
+- _posts/2022-08-03-Python-functools.cmp_to_key-explained.md
+- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
+- _posts/2016-07-03-GitFlow-Incremental-Builder.md
+- _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
+- _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2021-03-22-google-product-taxonomy-viewer.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 ---
+
+
 
 Instead of writing long-winded
 

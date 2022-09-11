@@ -1,15 +1,27 @@
 ---
 layout: post
-title: "PID Controller: A Simple Control Loop Mechanism"
+title: 'PID Controller: A Simple Control Loop Mechanism'
 date: 2021-05-21
 categories: ml
 video: x6sxKHrPA2A
 image: /images/pid-controller.webp
-description: Proportional–integral–derivative controller calculates feedback to reduce the error in the next step.
+description: "Proportional\u2013integral\u2013derivative controller calculates feedback to reduce the error in the next step."
 permalink: /:categories/:title
 redirect_from:
 - /ml/PID-controller
+my_related_post_paths:
+- _posts/2019-08-28-1D-Kalman-Is-Exponential-Or-Cumulative-Average.md
+- _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
+- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2016-11-04-Drone-Hackathoning.md
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
+- _posts/2020-10-25-Performers-FAVOR+-Faster-Transformer-Attention.md
+- _posts/2022-05-20-bits-per-byte-and-bits-per-character.md
+- _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
 ---
+
+
 
 {% include load_video.html %}
 {% include mathjax.html %}

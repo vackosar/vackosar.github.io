@@ -1,15 +1,27 @@
 ---
 layout: post
-title: "StarSpace - Embeddings For Documents, Users, and Words"
+title: StarSpace - Embeddings For Documents, Users, and Words
 date: 2020-05-08
 categories: ml
 description: Create vectors of various entities in a single space with this general-purpose embedding model from Facebook AI.
-image: https://raw.githubusercontent.com/facebookresearch/StarSpace/master/examples/starspace.png 
+image: https://raw.githubusercontent.com/facebookresearch/StarSpace/master/examples/starspace.png
 video: 0bSsAeT-N6w
 permalink: /:categories/:title
 redirect_from:
-  - /papers/2020/05/08/starspace-embedding.html 
+- /papers/2020/05/08/starspace-embedding.html
+my_related_post_paths:
+- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
+- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
+- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
+- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
+- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 ---
+
+
 
 {% include load_video.html %}
 {% include mathjax.html %}

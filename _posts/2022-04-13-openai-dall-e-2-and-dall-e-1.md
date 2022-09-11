@@ -1,6 +1,6 @@
 ---
-title: "OpenAI's DALL-E 2 and DALL-E 1 Explained"
-description: "Compare of text-to-image generation models DALL-E 1, 2, and understand related models VQ-VAE, CLIP, and GLIDE"
+title: OpenAI's DALL-E 2 and DALL-E 1 Explained
+description: Compare of text-to-image generation models DALL-E 1, 2, and understand related models VQ-VAE, CLIP, and GLIDE
 layout: post
 categories: ml
 image: /images/dalle-2-1-thumb.png
@@ -8,7 +8,19 @@ date: 2022-04-13
 permalink: /:categories/:title
 last_modified_at: 2022-04-22
 video: cYeH45VOI3w
+my_related_post_paths:
+- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
+- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
+- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
+- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
+- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
 ---
+
+
 
 {% include mathjax.html %}
 {% include load_video.html %}

@@ -1,17 +1,21 @@
 ---
 layout: post
-title: "Walking Desk: Cheap And Tiny "
-date: 2017-12-25
+title: 'Walking Desk: Cheap And Tiny '
+date: 2017-12-03
 categories: health
 description: A review of my motor-less walking desk setup.
 image: https://i.ytimg.com/vi/EnPrXfrZAeo/sddefault.jpg
-date: 2017-12-03
 permalink: /:categories/:title
 redirect_from:
-  - /2017/12/25/Cheap-And-Tiny-Walking-Desk.html 
+- /2017/12/25/Cheap-And-Tiny-Walking-Desk.html
 video: EnPrXfrZAeo
 last_modified_at: 2022-04-16
+my_related_post_paths:
+- _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
+- _posts/2017-08-12-Fish-Roe-vs-Fish-Oil.md
 ---
+
+
 
 {% include load_video.html %}
 

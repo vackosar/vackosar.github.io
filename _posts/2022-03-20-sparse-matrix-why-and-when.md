@@ -1,12 +1,24 @@
 ---
-title: "Sparse Matrix Why and When?"
-description: "Sparce matrix formats like CSR, LOL, COO compress and speed up certain operations on mostly zero matrices"
+title: Sparse Matrix Why and When?
+description: Sparce matrix formats like CSR, LOL, COO compress and speed up certain operations on mostly zero matrices
 layout: post
 categories: ml
 image: /images/sparse-matrix-csr.png
 date: 2022-03-20
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2022-05-14-neural-data-compression.md
+- _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
+- _posts/2022-05-20-bits-per-byte-and-bits-per-character.md
+- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2020-05-08-starspace-embedding.md
+- _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
+- _posts/2020-04-22-result-diversification-in-web-search-and-recommenders.md
 ---
+
+
 
 Hi, this is a draft of a post, but it could be already useful.
 

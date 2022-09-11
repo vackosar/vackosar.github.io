@@ -1,13 +1,25 @@
 ---
 layout: post
-title: "Obsolete Git Branch Remover Maven Plugin"
+title: Obsolete Git Branch Remover Maven Plugin
 date: 2016-07-22
 categories: software
 description: Having many branches left behind, abandoned, never deleted? How do you deal with them? We had same problem and I developed a automated DevOps solution.
 permalink: /:categories/:title
 redirect_from:
 - /2016/07/22/Obsolete-Branch-Remover.html
+my_related_post_paths:
+- _posts/2016-07-03-GitFlow-Incremental-Builder.md
+- _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
+- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
+- _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
+- _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
+- _posts/2017-10-28-Spring-Integration-Highlights.md
+- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
+- _posts/2016-07-28-Functional-Foreach-In-Bash.md
+- _posts/2017-06-04-Code-Structure-Principles.md
 ---
+
+
 
 Obsolete branch occurs, when dev doesn't delete branch and forgets about it. Obviously simplest obsolete branches to remove are the merged branches. Those doesn't contain any commits, that would be missing on develop or master branch. Unmerged branches contain extra commits both in repository and on author's local. If author doesn't care about a branch for long then the commits are probably not very valuable. Thus repository should not be burdened with such obsolete branches.
 

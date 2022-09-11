@@ -1,14 +1,26 @@
 ---
 layout: post
-title: "Generic Class Name Signals Low Cohesion"
+title: Generic Class Name Signals Low Cohesion
 date: 2017-06-06
 category: software
 description: Why and how to avoid non-specific class names like util, utils, or helper?
 permalink: /:categories/:title
 redirect_from:
- - /2017/06/06/Generic-Class-Name-Signals-Low-Cohesion.html
+- /2017/06/06/Generic-Class-Name-Signals-Low-Cohesion.html
 last_modified_at: 2022-05-08
+my_related_post_paths:
+- _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
+- _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
+- _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
+- _posts/2017-10-28-Spring-Integration-Highlights.md
+- _posts/2020-04-08-Python-Context-Manager-With-Statement-Exception-Handling.md
+- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
+- _posts/2016-07-03-GitFlow-Incremental-Builder.md
+- _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
 ---
+
+
 
 I think the best way to explain why util classes are suboptimal is using concept of **cohesion**. 
 Cohesion is an important concept, which I also used in my previous post [Code Structure Principles](/software/Code-Structure-Principles).

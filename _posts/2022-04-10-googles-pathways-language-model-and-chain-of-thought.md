@@ -1,6 +1,6 @@
 ---
-title: "Google's Pathways Language Model and Chain-of-Thought Prompting"
-description: "PaLM, the largest model as of early 2022, outperforms average human on grade school logic and math (BIG-bench) by simulating reasoning steps."
+title: Google's Pathways Language Model and Chain-of-Thought Prompting
+description: PaLM, the largest model as of early 2022, outperforms average human on grade school logic and math (BIG-bench) by simulating reasoning steps.
 layout: post
 categories: ml
 date: 2022-04-10
@@ -8,7 +8,19 @@ last_modified_at: 2022-06-11
 image: /images/palm-thumb.png
 video: oi86r-2Bh64
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
+- _posts/2020-05-08-starspace-embedding.md
+- _posts/2020-10-25-Performers-FAVOR+-Faster-Transformer-Attention.md
+- _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
+- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
+- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 ---
+
+
 {% include mathjax.html %}
 {% include load_video.html %}
 

@@ -1,6 +1,6 @@
 ---
-title: "Transformer Positional Embeddings and Encodings"
-description: "How transformers encode information about token positions?"
+title: Transformer Positional Embeddings and Encodings
+description: How transformers encode information about token positions?
 layout: post
 categories: ml
 image: /images/transformer-positional-embeddings.png
@@ -9,7 +9,19 @@ last_modified_at: 2022-06-11
 permalink: /:categories/:title
 redirect_from:
 - /ml/transformer-positional-encodings
+my_related_post_paths:
+- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
+- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
+- _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
+- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
+- _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
+- _posts/2020-10-25-Performers-FAVOR+-Faster-Transformer-Attention.md
+- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 ---
+
+
 
 {% include mathjax.html %}
 

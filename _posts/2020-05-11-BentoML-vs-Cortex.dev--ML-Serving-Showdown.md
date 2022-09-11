@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "BentoML vs Cortex - ML Serving Showdown"
+title: BentoML vs Cortex - ML Serving Showdown
 categories: ml
 date: 2020-05-11
 image: /images/bentoml-cortex-logos.webp
@@ -8,9 +8,21 @@ description: To find the best model serving tool, compare open-source MLOps plat
 permalink: /:categories/:title
 video: aU95dBAspr0
 redirect_from:
-  - /ml/2020/05/11/BentoML-vs-Cortex.html
-  - /ml/BentoML-vs-Cortex
+- /ml/2020/05/11/BentoML-vs-Cortex.html
+- /ml/BentoML-vs-Cortex
+my_related_post_paths:
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
+- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
+- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
+- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 ---
+
+
 
 
 <p><img src="/images/bentoml-cortex-logos.webp" alt="BentoML and Cortex logo" style="width: 200px"/></p>

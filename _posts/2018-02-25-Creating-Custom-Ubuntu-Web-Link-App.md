@@ -1,14 +1,26 @@
 ---
 layout: post
-title: "How To Create Custom Ubuntu Web Link App"
+title: How To Create Custom Ubuntu Web Link App
 date: 2018-02-25
 description: Turn any web page into an Ubuntu application and prevent the web owner from tracking you around the web.
 categories: software
 permalink: /:categories/:title
-image: /images/2018-02-25-ubuntu-search-whatsapp.png 
+image: /images/2018-02-25-ubuntu-search-whatsapp.png
 redirect_from:
-  - /2018/02/25/Creating-Custom-Ubuntu-Web-Link-App.html 
+- /2018/02/25/Creating-Custom-Ubuntu-Web-Link-App.html
+my_related_post_paths:
+- _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
+- _posts/2021-03-22-google-product-taxonomy-viewer.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2016-07-28-Functional-Foreach-In-Bash.md
+- _posts/2017-10-28-Spring-Integration-Highlights.md
+- _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
+- _posts/2017-07-15-Restore-Missing-Punctuation-with-Keras-Convolutional-Text-Punctuator.md
+- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
+- _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
 ---
+
+
 
 Say you would like to have WhatsApp on Ubuntu as a **sandboxed application**, but you cannot find any package for that.
 WhatsApp has a **web page**, but how to make sure that the page opens as separate application and its provider **cannot track you** on other pages or hack access to your login or history?

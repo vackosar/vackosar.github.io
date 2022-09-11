@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Learn faster with a generated quiz"
+title: Learn faster with a generated quiz
 date: 2019-11-02
 categories: productivity
 description: Reduce your effort of creating and revising learning material using a free AI-powered tool.
@@ -8,9 +8,14 @@ image: https://quizrecall.com/static/quiz-recall-logo.webp
 video: LaJqH0GE_cQ
 permalink: /:categories/:title
 redirect_from:
-- /2019/11/02/Quizrecall-Learn-any-text-with-automatically-generated-quiz.html 
+- /2019/11/02/Quizrecall-Learn-any-text-with-automatically-generated-quiz.html
 - /2020/04/19/Converting-knowledge-base-to-training.html
+my_related_post_paths:
+- _posts/2020-02-25-I-read-papers-on-a-podcast.md
+- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
 ---
+
+
 
 ### Update 2021-03-07
 

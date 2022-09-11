@@ -1,14 +1,26 @@
 ---
 layout: post
-title: "GitFlow Incremental Builder - Speed up your multi-module Maven build"
+title: GitFlow Incremental Builder - Speed up your multi-module Maven build
 date: 2016-07-03
 categories: software
 description: Incrementally build only those modules that changed compared to a reference Git branch and all their dependents with this open-source Maven plugin.
 permalink: /:categories/:title
 image: /images/eclipse-modules.png
 redirect_from:
-- /2016/07/03/GitFlow-Incremental-Builder.html 
+- /2016/07/03/GitFlow-Incremental-Builder.html
+my_related_post_paths:
+- _posts/2016-07-22-Obsolete-Branch-Remover.md
+- _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
+- _posts/2017-10-28-Spring-Integration-Highlights.md
+- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
+- _posts/2016-07-28-Functional-Foreach-In-Bash.md
+- _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
 ---
+
+
 
 <img title="An example of a multi-module project Eclipse JDT" alt="An example of a multi-module project Eclipse JDT" style="width: 80%; max-width: 900px" src="/images/eclipse-modules.png">
 

@@ -1,14 +1,20 @@
 ---
 layout: post
-title: "Feynman summation in finite-dimensional quantum mechanics"
+title: Feynman summation in finite-dimensional quantum mechanics
 date: 2011-09-24
-description: A summary and enhancement of existing literature regarding finite-dimensional quantum mechanics. In the later parts Feynman’s path summation is discussed.
+description: "A summary and enhancement of existing literature regarding finite-dimensional quantum mechanics. In the later parts Feynman\u2019s path summation is discussed."
 image: /images/feynman-summation-in-finite-dim.png
 categories: physics
 permalink: /:categories/:title
 redirect_from:
 - /2011/09/24/Feynman-summation-in-finite-dimensional-quantum-mechanics.html
+my_related_post_paths:
+- _posts/2012-06-11-Hamiltonians-with-constant-spectral-intervals-and-time-dependent-perturbation.md
+- _posts/2010-09-05-Transverse-momentum-spectra-and-correlations-in-the-blast-wave-model-with-resonances.md
+- _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
 ---
+
+
 
 ### Introduction
 This paper is summary and enhancement of existing rather scattered literature regarding finite-dimensional quantum mechanics. In the later parts Feynman’s path summation is discussed.

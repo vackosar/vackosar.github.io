@@ -1,13 +1,25 @@
 ---
 layout: post
-title: "Debounce In Bash To Fix Lenovo Touchpad And Trackpoint Lost Sync"
+title: Debounce In Bash To Fix Lenovo Touchpad And Trackpoint Lost Sync
 date: 2018-09-23
 categories: software
 description: Another functional programming tip for Bash.
 permalink: /:categories/:title
 redirect_from:
-  - /2018/09/23/Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.html
+- /2018/09/23/Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.html
+my_related_post_paths:
+- _posts/2016-07-28-Functional-Foreach-In-Bash.md
+- _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
+- _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
+- _posts/2020-04-08-Python-Context-Manager-With-Statement-Exception-Handling.md
+- _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
+- _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
+- _posts/2016-07-22-Obsolete-Branch-Remover.md
+- _posts/2022-08-03-Python-functools.cmp_to_key-explained.md
+- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
 ---
+
+
 
 ## Functional Debounce In Bash
 

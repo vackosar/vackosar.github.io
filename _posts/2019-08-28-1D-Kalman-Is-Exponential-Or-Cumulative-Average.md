@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Constant 1D Kalman Filter Is Exponential Or Cumulative Average"
+title: Constant 1D Kalman Filter Is Exponential Or Cumulative Average
 date: 2019-08-28
 last_modified_at: 2022-08-27
 categories: ml
@@ -8,10 +8,22 @@ description: Understand the Kalman filter with a simple one-dimensional example.
 permalink: /:categories/:title
 image: /images/2019-08-28-kalman-1d-without-process-noise-proof.jpg
 redirect_from:
-  - /2019/08/28/1D-Kalman-Is-Exponential-Or-Cumulative-Average.html
-todo: "example implementation"
+- /2019/08/28/1D-Kalman-Is-Exponential-Or-Cumulative-Average.html
+todo: example implementation
 note: https://www.kalmanfilter.net/kalman1d.html
+my_related_post_paths:
+- _posts/2021-05-21-PID-controller-control-loop-mechanism.md
+- _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
+- _posts/2022-05-14-neural-data-compression.md
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
+- _posts/2020-11-29-Lambda-Networks-Transform-Self-Attention.md
+- _posts/2022-05-20-bits-per-byte-and-bits-per-character.md
+- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
+- _posts/2016-11-04-Drone-Hackathoning.md
+- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 ---
+
+
 
 {% include highlight-rouge-friendly.css.html %}
 {% include mathjax.html %}

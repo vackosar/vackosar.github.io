@@ -1,15 +1,27 @@
 ---
 layout: post
-title: "Spring Integration Highlights - message driven architecture"
+title: Spring Integration Highlights - message driven architecture
 date: 2017-10-28
 categories: software
 description: Get familiar with Spring Integration implementation of Enterprise Integration Patterns and compare it to Java 8 Streams and RxJS.
 image: /images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg
 permalink: /:categories/:title
 redirect_from:
-- /2017/10/28/Spring-Integration-Highlights.html 
+- /2017/10/28/Spring-Integration-Highlights.html
 - /2017/11/05/RxJS-And-Spring-Integration-Similarities.html
+my_related_post_paths:
+- _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
+- _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
+- _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
+- _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
+- _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
+- _posts/2020-04-08-Python-Context-Manager-With-Statement-Exception-Handling.md
+- _posts/2016-07-03-GitFlow-Incremental-Builder.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
 ---
+
+
 
 Spring integration is intended for enterprise message-driven architectures. It implements patterns described in the Enterprise Integration Patterns book. This document consists of highlights of interesting parts of [Spring Integration documentation](https://docs.spring.io/spring-integration/docs/current/reference/html/index.html).
  

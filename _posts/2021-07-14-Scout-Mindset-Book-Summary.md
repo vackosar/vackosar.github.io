@@ -1,11 +1,16 @@
 ---
 layout: post
-title: "Scout Mindset Book Summary"
+title: Scout Mindset Book Summary
 date: 2021-07-01
 categories: book
 description: Short summary of a book from Julia Galef on clear thinking.
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2021-12-12-Ten-Commandments-for-business-failure.md
+- _posts/2022-01-09-7-powers-moats-through-lens-of-dibellos-business-mental-model.md
 ---
+
+
 
 [The Scout Mindset](https://www.goodreads.com/book/show/42041926-the-scout-mindset) is book from [Julia Galef](https://juliagalef.com/) on topic of rationality and decision-making.
 

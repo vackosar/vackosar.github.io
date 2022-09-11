@@ -1,6 +1,6 @@
 ---
-title: "How Computers Understood Humans"
-description: "Catch on with this 7-slide introduction to deep natural language processing of 2022, featuring TF-IDF, Word2vec, knowledge graphs, and transformers."
+title: How Computers Understood Humans
+description: Catch on with this 7-slide introduction to deep natural language processing of 2022, featuring TF-IDF, Word2vec, knowledge graphs, and transformers.
 layout: post
 categories: ml
 image: /images/how-computers-understood-humans-thumb.png
@@ -8,7 +8,19 @@ date: 2022-04-18
 permalink: /:categories/:title
 last_modified_at: 2022-05-21
 video: Jo-IQjdFfnw
+my_related_post_paths:
+- _posts/2020-05-08-starspace-embedding.md
+- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
+- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
+- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
+- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 ---
+
+
 
 {% include load_video.html %}
 

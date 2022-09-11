@@ -1,16 +1,28 @@
 ---
 layout: post
-title: "Boundary Control Entity Architecture Pattern"
+title: Boundary Control Entity Architecture Pattern
 image: /images/bce.svg
 categories: software
-description: "BCE is a source code structure pattern sometimes called ECB, EBC, Hexagonal, Onion, or Clean architecture."
+description: BCE is a source code structure pattern sometimes called ECB, EBC, Hexagonal, Onion, or Clean architecture.
 date: 2017-12-03
 last_modified_at: 2022-06-06
 permalink: /:categories/:title
 redirect_from:
-  - /2017/12/03/Boundary-Control-Entity-Architecture.html
-  - /software/Boundary-Control-Entity-Architecture
+- /2017/12/03/Boundary-Control-Entity-Architecture.html
+- /software/Boundary-Control-Entity-Architecture
+my_related_post_paths:
+- _posts/2017-10-28-Spring-Integration-Highlights.md
+- _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
+- _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
+- _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2020-04-08-Python-Context-Manager-With-Statement-Exception-Handling.md
+- _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
+- _posts/2016-07-03-GitFlow-Incremental-Builder.md
 ---
+
+
 
 Boundary-Control-Entity (BCE) is also called Entity-Control-Boundary (ECB), Entity-Boundary-Control (EBC), Hexagonal, Onion, or The Clean Architecture (Clean Code book).
 Boundary-Control-Entity architecture is effectively directory (package) structure pattern for sorting classes.

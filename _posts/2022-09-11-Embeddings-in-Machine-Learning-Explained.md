@@ -1,13 +1,25 @@
 ---
-title: "Embeddings in Machine Learning Explained"
-description: "Embedding is a task specific lower dimensional vector representation of data like a word, image, document, or an user."
+title: Embeddings in Machine Learning Explained
+description: Embedding is a task specific lower dimensional vector representation of data like a word, image, document, or an user.
 layout: post
 categories: ml
 date: 2022-09-11
 image: /images/word2vec-10k-tensorflow-projector.png
-last_modified_at: 2022-09-11 
+last_modified_at: 2022-09-11
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2020-05-08-starspace-embedding.md
+- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
+- _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
+- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
+- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
+- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 ---
+
+
 
 - We want to represent data as numbers to compute our tasks.
 - We start with simple high dimensional feature vectors created from input data e.g. vocabulary word index.

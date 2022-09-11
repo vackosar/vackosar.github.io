@@ -1,14 +1,26 @@
 ---
-title: "DeepMind's RETRO Retrieval-Enhanced Transformer"
-description: "Retrieval-Enhanced Language Model cross-attends trillions of tokens for SoTA on Wikitext103 and The Pile with 25x fewer parameters."
-image: /images/retrieval-transformer-thumb.png 
+title: DeepMind's RETRO Retrieval-Enhanced Transformer
+description: Retrieval-Enhanced Language Model cross-attends trillions of tokens for SoTA on Wikitext103 and The Pile with 25x fewer parameters.
+image: /images/retrieval-transformer-thumb.png
 video: -93KBOg77Sg
 layout: post
 categories: ml
 date: 2021-12-29
 permalink: /:categories/:title
 last_modified_at: 2022-04-25
+my_related_post_paths:
+- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
+- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
+- _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
+- _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
+- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
+- _posts/2020-05-08-starspace-embedding.md
+- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 ---
+
+
 
 {% include load_video.html %}
 

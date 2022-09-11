@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Transfigure Stress into Energy by Drawing on Research"
+title: Transfigure Stress into Energy by Drawing on Research
 date: 2020-06-19
 categories: productivity
 description: Your pounding heart and blush will announce a flashing opportunity instead of an impending fight or flight after applying research from this post.
@@ -9,7 +9,12 @@ permalink: /:categories/:title
 video: RcGyVTAoXEU
 video_start: 301
 last_modified_at: 2022-04-15
+my_related_post_paths:
+- _posts/2020-02-25-I-read-papers-on-a-podcast.md
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
 ---
+
+
 
 <img alt="Trasfigure Stress Into Energy" style="width: 90%; max-width: 900px" src="/images/transfigurate-stress-to-energy-2.jpeg">
 

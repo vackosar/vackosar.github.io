@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Google Product Taxonomy Viewer"
+title: Google Product Taxonomy Viewer
 date: 2021-04-16
 description: Interactively explore Google Shopping's and Shopify's categories to configure products in your feed.
 image: /images/google-shopping-taxonomy-viewer-graphic.png
@@ -9,7 +9,19 @@ categories: software
 redirect_from:
 - /google-product-taxonomy-viewer.html
 last_modified_at: 2022-06-12
+my_related_post_paths:
+- _posts/2018-02-25-Creating-Custom-Ubuntu-Web-Link-App.md
+- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
+- _posts/2017-07-15-Restore-Missing-Punctuation-with-Keras-Convolutional-Text-Punctuator.md
+- _posts/2016-07-28-Functional-Foreach-In-Bash.md
+- _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2017-10-28-Spring-Integration-Highlights.md
+- _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
 ---
+
+
 
 # {{ page.title }}
 

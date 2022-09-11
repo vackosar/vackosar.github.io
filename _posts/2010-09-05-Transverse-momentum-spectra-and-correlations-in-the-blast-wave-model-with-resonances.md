@@ -1,13 +1,19 @@
 ---
 layout: post
-title: "Transverse momentum spectra and correlations in the blast wave model with resonances"
+title: Transverse momentum spectra and correlations in the blast wave model with resonances
 date: 2010-09-05
 categories: physics
-description: This work provides a review of theories of properties of high energy density matter originating in heavy-ion high energy collisions (GeV/nucleus). 
+description: This work provides a review of theories of properties of high energy density matter originating in heavy-ion high energy collisions (GeV/nucleus).
 permalink: /:categories/:title
 redirect_from:
-- /2010/09/05/Transverse-momentum-spectra-and-correlations-in-the-blast-wave-model-with-resonances.html 
+- /2010/09/05/Transverse-momentum-spectra-and-correlations-in-the-blast-wave-model-with-resonances.html
+my_related_post_paths:
+- _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
+- _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
+- _posts/2012-06-11-Hamiltonians-with-constant-spectral-intervals-and-time-dependent-perturbation.md
 ---
+
+
 
 ### Author
 Vaclav Kosar

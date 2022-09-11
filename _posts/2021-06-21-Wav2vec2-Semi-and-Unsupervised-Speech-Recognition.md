@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Wav2vec: Semi and Unsupervised Speech Recognition"
+title: 'Wav2vec: Semi and Unsupervised Speech Recognition'
 date: 2021-06-21
 categories: ml
 description: Audio Word2vec Guide - Quantizes phonemes, transforms, GAN trains on text and audio.
@@ -9,7 +9,19 @@ video: PHIKbgMJq4c
 image: /images/wav2vec-thumb.png
 redirect_from:
 - /ml/PID-controller
+my_related_post_paths:
+- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
+- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
+- _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
+- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
+- _posts/2020-05-08-starspace-embedding.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 ---
+
+
 
 {% include mathjax.html %}
 {% include load_video.html %}

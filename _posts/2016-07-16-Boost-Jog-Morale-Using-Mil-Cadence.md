@@ -1,18 +1,24 @@
 ---
 layout: post
-title: "How To Boost Your Jog Morale Using Military Cadence And Run Farther"
+title: How To Boost Your Jog Morale Using Military Cadence And Run Farther
 date: 2016-07-16
 categories: health
 description: Run beyond your max with this professional mind hack.
 permalink: /:categories/:title
 image: /images/mil-cadence-pexels.jpg
-video: IxA-_MWT_24 
+video: IxA-_MWT_24
 video_start: 662
 last_modified_at: 2022-04-16
 redirect_from:
-  - /2016/07/16/Boost-Jog-Morale-Using-Mil-Cadence.html 
-  - /2017/05/01/Running-Triples-Speed-For-Extra-One-Third-Of-Calories.html
+- /2016/07/16/Boost-Jog-Morale-Using-Mil-Cadence.html
+- /2017/05/01/Running-Triples-Speed-For-Extra-One-Third-Of-Calories.html
+my_related_post_paths:
+- _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
+- _posts/2017-08-12-Fish-Roe-vs-Fish-Oil.md
 ---
+
+
+
 
 <img alt="Running with military cadence" style="width: 80%; max-width: 900px" src="/images/mil-cadence-pexels.jpg">
 

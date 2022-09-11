@@ -1,13 +1,25 @@
 ---
 layout: post
-title: "Python functools.cmp_to_key Explained"
+title: Python functools.cmp_to_key Explained
 date: 2022-08-03
 last_modified_at: 2022-08-03
 categories: software
 image: /images/python-functools-cmp_to_key-function.png
 description: Understand the functools' comparison function to key function conversion quickly.
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2020-08-25-to-what-python-number-types-does-json.loads-parse.md
+- _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
+- _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2016-07-28-Functional-Foreach-In-Bash.md
+- _posts/2020-04-08-Python-Context-Manager-With-Statement-Exception-Handling.md
+- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
+- _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
+- _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
+- _posts/2016-07-03-GitFlow-Incremental-Builder.md
 ---
+
+
 
 {% include highlight-rouge-friendly.css.html %}
 

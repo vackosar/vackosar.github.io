@@ -1,6 +1,6 @@
 ---
-title: "Result Diversification in Web Search and Recommenders"
-description: "Increase coverage in web search and recommendation via re-ranking diversification factor"
+title: Result Diversification in Web Search and Recommenders
+description: Increase coverage in web search and recommendation via re-ranking diversification factor
 layout: post
 categories: ml
 date: 2020-03-05
@@ -8,7 +8,19 @@ image: /images/long-tail-popularity-rank.drawio.svg
 video: 35-xa9IOsnw
 last_modified_at: 2022-06-11
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
+- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
+- _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
+- _posts/2020-05-08-starspace-embedding.md
+- _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
+- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2022-04-02-monolingual-word-alignment-for-sentence-similarity.md
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 ---
+
+
 
 - Since user already seen results above, and they haven't clicked and continue reading
 - What next the results should be?

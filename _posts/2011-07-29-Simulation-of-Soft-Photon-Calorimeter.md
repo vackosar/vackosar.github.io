@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Simulation of Soft Photon Calorimeter"
+title: Simulation of Soft Photon Calorimeter
 date: 2011-07-29
 description: Understand how an electromagnetic calorimeter works presented at Dubna JINR 2011.
 image: /images/sim-of-soft-photon-calorimeter.png
@@ -10,7 +10,13 @@ redirect_from:
 - /2011/07/29/Simulation-of-Soft-Photon-Calorimeter.html
 slides: WT4Pkb7QSug6N
 last_modified_at: 2022-04-16
+my_related_post_paths:
+- _posts/2010-09-05-Transverse-momentum-spectra-and-correlations-in-the-blast-wave-model-with-resonances.md
+- _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
+- _posts/2012-06-11-Hamiltonians-with-constant-spectral-intervals-and-time-dependent-perturbation.md
 ---
+
+
 
 {% include load_slides.html %}
 

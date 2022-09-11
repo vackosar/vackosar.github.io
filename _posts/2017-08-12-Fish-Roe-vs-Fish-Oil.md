@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fish Roe vs Fish Oil"
+title: Fish Roe vs Fish Oil
 date: 2017-08-12
 last_modified_at: 2022-06-06
 categories: health
@@ -8,8 +8,14 @@ description: Healthiness and price of a salty delicacy versus oily softgels. EPA
 permalink: /:categories/:title
 image: /images/fishes-sardines.jpeg
 redirect_from:
-  - /2017/08/12/Fish-Roe-vs-Fish-Oil.html
+- /2017/08/12/Fish-Roe-vs-Fish-Oil.html
+my_related_post_paths:
+- _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
+- _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
 ---
+
+
+
 
 
 <img alt="fishes" style="width: 80%; max-width: 900px" src="/images/fishes-sardines.jpeg">

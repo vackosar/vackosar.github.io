@@ -1,14 +1,26 @@
 ---
-title: "Multimodal Image-text Classification"
-description: "Understand the top deep learning image and text classification models CMA-CLIP, CLIP, CoCa, and MMBT used in e-commerce."
+title: Multimodal Image-text Classification
+description: Understand the top deep learning image and text classification models CMA-CLIP, CLIP, CoCa, and MMBT used in e-commerce.
 layout: post
 categories: ml
 date: 2022-09-01
 video: Oj3OqUgYL3Y
 image: /images/multimodal-image-text-classification.png
-last_modified_at: 2022-09-07 
+last_modified_at: 2022-09-07
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
+- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
+- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
+- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2020-05-08-starspace-embedding.md
+- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
+- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 ---
+
+
 
 - input is image and text pair (multiple modalities) and output a class or embedding vector
 - used in product classification to [product taxonomies](/ml/Automatically-Expanding-Taxonomy) e.g. [Google product taxonomy](https://vaclavkosar.com/software/google-product-taxonomy-viewer)

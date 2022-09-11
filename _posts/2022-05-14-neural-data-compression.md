@@ -1,6 +1,6 @@
 ---
-title: "Neural Data Compression"
-description: "Lossless bit reduction with machine learning by minimizing cross-entropy. Examples: NNCP and TRACE models."
+title: Neural Data Compression
+description: 'Lossless bit reduction with machine learning by minimizing cross-entropy. Examples: NNCP and TRACE models.'
 layout: post
 categories: ml
 image: /images/neural-data-compression-thumb.png
@@ -8,7 +8,19 @@ date: 2022-05-14
 video: hRvhG4GWAhE
 permalink: /:categories/:title
 last_modified_at: 2022-07-21
+my_related_post_paths:
+- _posts/2022-05-20-bits-per-byte-and-bits-per-character.md
+- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
+- _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
+- _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
+- _posts/2022-03-20-sparse-matrix-why-and-when.md
+- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
+- _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
 ---
+
+
 
 {% include mathjax.html %}
 

@@ -1,14 +1,19 @@
 ---
 layout: post
-title: "I read papers on a podcast"
+title: I read papers on a podcast
 date: 2020-02-25
 categories: productivity
 description: To improve my pronunciation and speech, I read mostly Machine Learning scientific papers on a podcast.
 permalink: /:categories/:title
 image: /images/2020-02-25-my-photo-table-map-cal-rot-fix.jpg
 redirect_from:
-  - /2020/02/25/I-read-papers-on-a-podcast.html
+- /2020/02/25/I-read-papers-on-a-podcast.html
+my_related_post_paths:
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
+- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
 ---
+
+
 
 <img class="lazyload" data-src="/images/2020-02-25-my-photo-table-map-cal-rot-fix.jpg" alt="microphone, map, and Vaclav" style="width: 80%; max-width: 900px"/><br>
 
