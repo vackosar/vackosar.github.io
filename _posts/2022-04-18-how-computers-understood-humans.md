@@ -33,50 +33,7 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 ![2001 A Space Odyssey HAL-9000 Interface](/images/2001-A-Space-Odyssey-HAL-9000-Interface-3.png)
 
 
-## How To Represent Knowledge
-- library ~> textual documents in a database
-- search by list of words (query) ~1970s, find topics ~1980
-- counting word occurrences on documents level into [sparce matrices](/ml/sparse-matrix-why-and-when)
-- methods: TF*IDF, Latent semantic analysis
-
-![Latent semantic analysis - CC BY-SA 4.0 Christoph Carl Kling](/images/latent-semantic-analysis-wiki.png)
-
-
-## Non-Contextual Words Vectors
-- document -> sentence or small running window of 10 words
-- vector is point in a multidimensional space - an array of numbers
-- each of 10k words gets one general vector in 300 dimensional space
-- each vector is [compressed](/ml/neural-data-compression) in only 300 dimensions - much less than 10k words
-- global (non) contextual word vectors - no disambiguation (flowering) vs fruit (food)
-
-![word2vec](/images/word2vec-10k-tensorflow-projector.png)
-
-
-## Word2vec: Word To a Global Vector
-- count co-occurrence in a 10 word window [GloVe (Pennington 2014)](https://nlp.stanford.edu/pubs/glove.pdf)
-- [word2vec (Mikolov 2013)](https://arxiv.org/pdf/1301.3781.pdf): 10 surrounding words sum close to the middle word vector
-- words appearing in similar context are close in the 300 dimensional space
-- disambiguation - word strings should be just name not an id!
-
-![word2vec operation](/images/word2vec.jpg)
-
-
-## Knowledge Graph's Nodes Are Disambiguated
-- knowledge graph e.g. Wikidata: each node is specific fruit (flowering) vs fruit (food)
-- imperfect tradeoff between database and training data samples
-- Wikipedia and internet is between knowledge graph and set of documents
-- random walk ~ valid "sentences", link prediction ~ generating text
-
-![knowledge graph visualization from wikipedia](/images/knowledge-graph.jpg)
-
-
-## Transformer: Contextual Word Vectors
-- word meaning based on context of 100s of words.
-- [recurrent neural networks (LSTM, GRU)](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) - sequential with memory
-- [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) (Vaswani 2017)
-  - calculates on entire input sequence
-
-![transformer from word2vec](/images/transformer-from-word2vec.jpg)
+{% include shared_slides/representations.md %}
 
 
 ## Big Transformer Models
