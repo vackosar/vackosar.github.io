@@ -27,24 +27,47 @@ layout: default
 <h2>Continue Reading in {{ category }} ...</h2>
 
 <div class="container posts">
-{% for post in site.categories[category] %}
-    {% if post.title != page.title %}
-    <div class="row">
-        <div style="width: 80%; min-width: 300px; margin-top: 15px;">
-            <a href="{{ post.url | relative_url }}" title="{{ post.title }}" style="text-decoration: none">
-                <div class="lead">{{ post.title| escape }}</div>
-                <small>{{ post.description | escape}}</small>
-            </a>
+{% if page.my_related_post_paths %}
+    {% for related_post_path in page.my_related_post_paths %}
+        {% for post in site.categories[category] %}
+            {% if post.path == related_post_path %}
+            <div class="row">
+                <div style="width: 80%; min-width: 300px; margin-top: 15px;">
+                    <a href="{{ post.url | relative_url }}" title="{{ post.title }}" style="text-decoration: none">
+                        <div class="lead">{{ post.title| escape }}</div>
+                        <small>{{ post.description | escape}}</small>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="{{ post.url }}" title="{{ post.title | escape }}" style="text-decoration: none">
+                        <div class="index-post-image lazyload" data-bg="{{ post.image | default: '/images/white-noise.jpeg' }}"></div>
+                    </a>
+                </div>
+            </div>
+            <br>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% else %}
+    {% for post in site.categories[category] %}
+        {% if post.title != page.title %}
+        <div class="row">
+            <div style="width: 80%; min-width: 300px; margin-top: 15px;">
+                <a href="{{ post.url | relative_url }}" title="{{ post.title }}" style="text-decoration: none">
+                    <div class="lead">{{ post.title| escape }}</div>
+                    <small>{{ post.description | escape}}</small>
+                </a>
+            </div>
+            <div class="">
+                <a href="{{ post.url }}" title="{{ post.title | escape }}" style="text-decoration: none">
+                    <div class="index-post-image lazyload" data-bg="{{ post.image | default: '/images/white-noise.jpeg' }}"></div>
+                </a>
+            </div>
         </div>
-        <div class="">
-            <a href="{{ post.url }}" title="{{ post.title | escape }}" style="text-decoration: none">
-                <div class="index-post-image lazyload" data-bg="{{ post.image | default: '/images/white-noise.jpeg' }}"></div>
-            </a>
-        </div>
-    </div>
-    <br>
-    {% endif %}
-{% endfor %}
+        <br>
+        {% endif %}
+    {% endfor %}
+{% endif %}
 </div>
 
 <br><br><br><br>
