@@ -15,21 +15,21 @@ redirect_from:
 {% include load_video.html %}
 
 - Tasks:
-  - For an image give me find the same but with different color from the dataset.
-  - Generate a image of the item but with this attribute modified
-  - Downstream task: complete fashion outfit can benefit from better representation
-- What is disentangled representation?
+  - Given a product's image, find the product's different color variant within a dataset.
+  - Generate an image of the product but with a flower pattern.
+  - Complete this fashion outfit with an additional product.
+- What is disentangled representation ([embedding](/ml/Embeddings-in-Machine-Learning-Explained))?
   - Entangled representation = hard to preserve some attributes and change others
-  - Disentangled = Attributes have separate dimensions
+  - Disentangled = object's attributes have separate dimensions
 
 ## Unsupervised Disentangling Methods
 - Below methods are generative
   - so instead of search, can manipulate the image
 - Variational Auto-encoders
   - speculation: some disentanglement thanks to the architecture
-    - compressing into low-dimension and small-space (reg. term)
-    - high-level factors only
-    - similar in high level factors are encoded close to each other
+    - compressing into low-dimension and space close around the zero (regularization term)
+    - only high-level factors get through the compression
+    - products with similar high level factors are encoded close in the [embedding space](/ml/Embeddings-in-Machine-Learning-Explained)
   - methods: mutual information between latents, total correlation e.g. unsupervised [Relevance factors VAE](https://arxiv.org/pdf/1902.01568v1.pdf)
 - GANs (has encoder and decoder) e.g. [DNA-GAN: Learning Disentangled Representations from Multi-Attribute Images](https://arxiv.org/pdf/1711.05415.pdf),
 - Flow-Based models e.g. [OpenAI's Glow - Flow-Based Model Teardown](/ml/openais-glow-flow-based-model-teardown)
