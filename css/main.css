@@ -13,14 +13,18 @@ nav ul li, footer ul li {
     display: inline;
 }
 a {
-    text-decoration: underline;
-    color: #838383;
+    /*text-decoration: underline;*/
+    /*font-weight: bold;*/
+    color: #00607c;
+    text-shadow: 1px 1px 1px #ddf4ff;
+
 }
 .social-icon {
-    color: #207994;
+    color: #004a5b;
 }
 a:hover {
     text-decoration: underline;
+    color: #00a3cb;
 }
 h1 {
     font-size: 2.4em;
