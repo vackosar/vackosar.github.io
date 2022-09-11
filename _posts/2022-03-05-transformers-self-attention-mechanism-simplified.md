@@ -162,7 +162,7 @@ It was gradually replaced by more advanced variants like [FastText](/ml/FastText
 2. finding maximum a dot-product with all output embeddings
  
 Note average sentence length is about 15 words.
-Word2vec uses 2 sets of embeddings: input and output (context) embeddings.
+Word2vec uses 2 sets of [embeddings](/ml/Embeddings-in-Machine-Learning-Explained): input and output (context) embeddings.
 Word2vec CBOW (w2v CBOW) model is similar to an extremely simplified a single layer transformer.
 
 If we use:

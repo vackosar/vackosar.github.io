@@ -20,7 +20,7 @@ redirect_from:
 
 ## Learned Positional Embeddings
 - [Hierarchical Perceiver](https://arxiv.org/pdf/2202.10890.pdf) for high resolution inputs
-  - learns low-dimensional positional embeddings 
+  - learns low-dimensional positional [embeddings](/ml/Embeddings-in-Machine-Learning-Explained) 
   - objective function is masked token prediction
   - embeddings are concatenated to input and used as a query for masked prediction
 - [What Do Position Embeddings Learn?](https://arxiv.org/abs/2010.04903)

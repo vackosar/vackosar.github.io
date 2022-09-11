@@ -77,7 +77,7 @@ Examples:
   - 8 curators added 6000 new taxonomy nodes in a month
   - compared to 100M of new pins every month
   - Interests = textual phrases describing concepts (mid-century architecture)
-  - textual embeddings available
+  - textual [embeddings](/ml/Embeddings-in-Machine-Learning-Explained) available
 - automatically find new node parent
 - handles multiple relationships: is-type-of, is-in
 - construct embeddings for unseen nodes

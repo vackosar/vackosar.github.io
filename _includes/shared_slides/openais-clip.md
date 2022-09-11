@@ -3,7 +3,7 @@
 - dataset was proprietary WebImageText (WIT is not Wikipedia-based Image Text Dataset (WIT)) 400M of various images with a caption text from the internet
 - now [open-source image-text datasets like LAION-400M available](https://laion.ai/blog/laion-400-open-dataset/), [open source CLIP models](https://github.com/mlfoundations/open_clip) as well
 - trained with contrastive learning, maximizing cosine similarity of corresponding image and text
-- image representations contain both style and semantics
+- CLIP's output image [embeddings](/ml/Embeddings-in-Machine-Learning-Explained) contain both style and semantics
 - zero-shot classification, but fails on abstract or systematic tasks like counting
 
 ![CLIP contrastive pretraining](/images/clip-contrastive-pretraining.png)

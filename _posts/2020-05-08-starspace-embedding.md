@@ -16,7 +16,7 @@ redirect_from:
 
 ## Summary
 "[StarSpace: Embed All The Things!](https://arxiv.org/abs/1709.03856)" with publication date 2017-11-21 from Facebook AI Research
-2. Is general-purpose method to embed multi-class entities into single vector space e.g. words, documents, and users can be embedded into single space.
+2. Is general-purpose method to [embed](/ml/Embeddings-in-Machine-Learning-Explained) multi-class entities into single vector space e.g. words, documents, and users can be embedded into single space.
 3. Requires discrete features e.g. user's features are docs that he liked.
 4. Trains by summing bag-of-features and contrasting with k-negative samples.
 5. In terms of quality the method performs competitively.

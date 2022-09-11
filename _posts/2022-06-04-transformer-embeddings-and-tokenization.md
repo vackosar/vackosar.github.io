@@ -12,7 +12,7 @@ permalink: /:categories/:title
 - [transformer (e.g. BERT)](/ml/transformers-self-attention-mechanism-simplified) is sequence to sequence neural network architecture
 - input text is encoded with tokenizers to sequence of integers
 - input tokens are mapped to sequence of embeddings via embeddings layer 
-- output embeddings can be classified to a sequence of tokens
+- output [embeddings](/ml/Embeddings-in-Machine-Learning-Explained) can be classified to a sequence of tokens
 - output tokens can then be converted back to the text
 
 ![embeddings in transformer architecture](/images/transformer-architecture-embeddings.drawio.svg)
