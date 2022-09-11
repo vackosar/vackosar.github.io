@@ -6,7 +6,7 @@
 ![Latent semantic analysis - CC BY-SA 4.0 Christoph Carl Kling](/images/latent-semantic-analysis-wiki.png)
 
 
-## Non-Contextual (Global) Words Vectors
+## Non-Contextual Words Vectors
 - document split into sentence sized running window of 10 words
 - each of 10k vocabulary words gets one general vector "embedded" in a 300 dimensional space
 - vectors are densely [compressed](/ml/neural-data-compression) as only 300 dimensions much less than 10k vocabulary feature vectors
