@@ -17,24 +17,7 @@ video: cYeH45VOI3w
 while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes images via diffusion similar to [GLIDE](#openais-glide).
 
 
-## OpenAI's CLIP
-- [paper](https://openai.com/blog/clip/): encodes image, and text to similar embeddings
-- trained on a 400M various images with a caption text from the internet
-- trained with contrastive learning, maximizing cosine similarity of corresponding image and text
-- image representations contain both style and semantics
-- zero-shot classification, but fails on abstract or systematic tasks like counting
-
-![CLIP contrastive pretraining](/images/clip-contrastive-pretraining.png)
-
-
-### CLIP Architecture
-- text and image have separate [transformer](/ml/transformers-self-attention-mechanism-simplified) encoders
-- visual encoder is [ViT](https://arxiv.org/pdf/2010.11929.pdf) (vision [transformer](/ml/transformers-self-attention-mechanism-simplified))
-- text encoder is [GPT-2](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) [transformer](/ml/transformers-self-attention-mechanism-simplified)
-- the fix length text embedding is extracted from \[EOS\] token position
-- trained on 256 GPUs for 2 weeks
-
-![CLIP architecture](/images/clip-architecture.png)
+{% include shared_slides/openais-clip.md %}
 
 <br>
 
