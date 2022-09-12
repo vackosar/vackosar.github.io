@@ -12,11 +12,6 @@ my_related_post_paths:
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
 - _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
-- _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
-- _posts/2022-04-18-how-computers-understood-humans.md
-- _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
-- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
-- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 ---
 
 

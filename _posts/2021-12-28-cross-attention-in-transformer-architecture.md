@@ -9,15 +9,10 @@ date: 2021-12-28
 last_modified_at: 2022-09-08
 permalink: /:categories/:title
 my_related_post_paths:
-- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
-- _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
-- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
-- _posts/2020-10-25-Performers-FAVOR+-Faster-Transformer-Attention.md
-- _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
-- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
-- _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
+- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
+- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 ---
 
 

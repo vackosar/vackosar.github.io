@@ -15,6 +15,7 @@ my_related_post_paths:
 
 
 
+
 ### Author
 Vaclav Kosar
 

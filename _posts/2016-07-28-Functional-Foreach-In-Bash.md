@@ -12,11 +12,6 @@ my_related_post_paths:
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 - _posts/2022-08-03-Python-functools.cmp_to_key-explained.md
 - _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
-- _posts/2016-07-03-GitFlow-Incremental-Builder.md
-- _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
-- _posts/2017-06-04-Code-Structure-Principles.md
-- _posts/2021-03-22-google-product-taxonomy-viewer.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 ---
 
 

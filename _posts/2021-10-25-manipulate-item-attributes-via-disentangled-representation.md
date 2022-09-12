@@ -12,14 +12,9 @@ redirect_from:
 - /ml/disentagled-representations-and-attribute-manipulation-in-fashion
 my_related_post_paths:
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
+- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 - _posts/2020-05-08-starspace-embedding.md
-- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
-- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
-- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
-- _posts/2022-05-14-neural-data-compression.md
-- _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
-- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
 ---
 
 

@@ -14,11 +14,6 @@ my_related_post_paths:
 - _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
-- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
-- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
-- _posts/2022-04-18-how-computers-understood-humans.md
-- _posts/2022-04-02-monolingual-word-alignment-for-sentence-similarity.md
-- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
 ---
 
 

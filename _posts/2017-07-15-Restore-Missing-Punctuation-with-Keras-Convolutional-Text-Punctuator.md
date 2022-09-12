@@ -15,11 +15,6 @@ my_related_post_paths:
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 - _posts/2021-03-22-google-product-taxonomy-viewer.md
-- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
-- _posts/2017-10-28-Spring-Integration-Highlights.md
-- _posts/2018-02-25-Creating-Custom-Ubuntu-Web-Link-App.md
-- _posts/2016-07-03-GitFlow-Incremental-Builder.md
-- _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
 ---
 
 

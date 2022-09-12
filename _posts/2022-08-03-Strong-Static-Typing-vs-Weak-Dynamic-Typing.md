@@ -12,11 +12,6 @@ my_related_post_paths:
 - _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
 - _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
-- _posts/2016-07-28-Functional-Foreach-In-Bash.md
-- _posts/2017-10-28-Spring-Integration-Highlights.md
-- _posts/2022-08-03-Python-functools.cmp_to_key-explained.md
-- _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
-- _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
 ---
 
 

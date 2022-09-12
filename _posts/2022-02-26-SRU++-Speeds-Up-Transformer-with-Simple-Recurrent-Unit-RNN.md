@@ -14,12 +14,7 @@ my_related_post_paths:
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
 - _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 - _posts/2020-10-25-Performers-FAVOR+-Faster-Transformer-Attention.md
-- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2021-12-28-cross-attention-in-transformer-architecture.md
-- _posts/2020-11-29-Lambda-Networks-Transform-Self-Attention.md
-- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
-- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
-- _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
 ---
 
 

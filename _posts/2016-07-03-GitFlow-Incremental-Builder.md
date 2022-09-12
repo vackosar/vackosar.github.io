@@ -13,11 +13,6 @@ my_related_post_paths:
 - _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
 - _posts/2017-10-28-Spring-Integration-Highlights.md
 - _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
-- _posts/2017-06-04-Code-Structure-Principles.md
-- _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
-- _posts/2016-07-28-Functional-Foreach-In-Bash.md
-- _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
 ---
 
 

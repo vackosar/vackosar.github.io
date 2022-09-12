@@ -16,11 +16,6 @@ my_related_post_paths:
 - _posts/2016-07-22-Obsolete-Branch-Remover.md
 - _posts/2017-06-04-Code-Structure-Principles.md
 - _posts/2016-07-03-GitFlow-Incremental-Builder.md
-- _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
-- _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
-- _posts/2017-10-28-Spring-Integration-Highlights.md
-- _posts/2021-03-22-google-product-taxonomy-viewer.md
 ---
 
 

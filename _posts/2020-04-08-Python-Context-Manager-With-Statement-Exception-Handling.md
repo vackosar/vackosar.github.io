@@ -15,11 +15,6 @@ my_related_post_paths:
 - _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
 - _posts/2022-08-03-Python-functools.cmp_to_key-explained.md
 - _posts/2020-08-25-to-what-python-number-types-does-json.loads-parse.md
-- _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
-- _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
-- _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
-- _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 ---
 
 

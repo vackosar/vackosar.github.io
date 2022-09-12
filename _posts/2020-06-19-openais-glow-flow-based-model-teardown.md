@@ -14,12 +14,7 @@ my_related_post_paths:
 - _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
 - _posts/2020-10-25-Performers-FAVOR+-Faster-Transformer-Attention.md
-- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
-- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
-- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
-- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
-- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
-- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
+- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
 ---
 
 

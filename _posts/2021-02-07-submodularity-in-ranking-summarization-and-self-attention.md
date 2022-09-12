@@ -12,11 +12,6 @@ my_related_post_paths:
 - _posts/2020-10-25-Performers-FAVOR+-Faster-Transformer-Attention.md
 - _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
-- _posts/2022-04-02-monolingual-word-alignment-for-sentence-similarity.md
-- _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
-- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
-- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
-- _posts/2020-05-08-starspace-embedding.md
 ---
 
 

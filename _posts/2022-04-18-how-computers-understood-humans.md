@@ -13,11 +13,6 @@ my_related_post_paths:
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
-- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
-- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
-- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
-- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
-- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 ---
 
 

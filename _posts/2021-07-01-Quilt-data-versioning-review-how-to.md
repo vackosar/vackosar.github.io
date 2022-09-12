@@ -15,11 +15,6 @@ my_related_post_paths:
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 - _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
 - _posts/2020-05-08-starspace-embedding.md
-- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
-- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
-- _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
-- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
-- _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
 ---
 
 

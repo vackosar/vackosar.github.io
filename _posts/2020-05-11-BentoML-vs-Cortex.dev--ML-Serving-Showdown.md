@@ -15,11 +15,6 @@ my_related_post_paths:
 - _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 - _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
-- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
-- _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
-- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
-- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
-- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 ---
 
 
