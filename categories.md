@@ -20,13 +20,13 @@ description: By category.
     {% for post in site.categories[category_name] %}
       <article class="row">
         <div style="width: 80%; min-width: 300px; margin-top: 15px;">
-            <a href="{{ post.url }}" title="{{ post.title }}" style="text-decoration: none">
+            <a href="{{ post.url | relative_url }}" title="{{ post.title }}" style="text-decoration: none">
                 <div class="lead">{{ post.title }}</div>
                 <small>{{ post.description }}</small>
             </a>
         </div>
         <div class="">
-            <a href="{{ post.url }}" title="{{ post.title }}" style="text-decoration: none">
+            <a href="{{ post.url | relative_url }}" title="{{ post.title }}" style="text-decoration: none">
                 <div class="index-post-image lazyload" data-bg="{{ post.image | default: '/images/white-noise.jpeg' }}"></div>
             </a>
         </div>

@@ -39,7 +39,7 @@ layout: default
                     </a>
                 </div>
                 <div class="">
-                    <a href="{{ post.url }}" title="{{ post.title | escape }}" style="text-decoration: none">
+                    <a href="{{ post.url | relative_url }}" title="{{ post.title | escape }}" style="text-decoration: none">
                         <div class="index-post-image lazyload" data-bg="{{ post.image | default: '/images/white-noise.jpeg' }}"></div>
                     </a>
                 </div>
@@ -59,7 +59,7 @@ layout: default
                 </a>
             </div>
             <div class="">
-                <a href="{{ post.url }}" title="{{ post.title | escape }}" style="text-decoration: none">
+                <a href="{{ post.url | relative_url }}" title="{{ post.title | escape }}" style="text-decoration: none">
                     <div class="index-post-image lazyload" data-bg="{{ post.image | default: '/images/white-noise.jpeg' }}"></div>
                 </a>
             </div>
