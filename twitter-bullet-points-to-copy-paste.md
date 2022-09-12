@@ -9,69 +9,70 @@ last_modified_at: 2022-04-25
 
 ![Twitter Bullet Points How To](/images/twitter-bullet-points.png)
 
-Twitter posting requires summarization and lists are often used in that. 
+You have only 280 characters to make your point in a tweet.
+That requires summarization, for which lists are super helpful. 
 Bullet points are crucial to create visually appealing lists.
-You can make your list stand out with non-standard bullet points.
-Copy-paste your favorite character from below and get bullet points onto you Twitter as well.
+Make your list stand out with non-standard bullet points below.
+Copy-paste your favorite character from below and get bullet points onto your Twitter.
 
 
 ### Standard Bullet Points Symbols
 
-• Classic bullet
-
-◦ White bullet
-
-∙ Middle dot bullet
+• Classic bullet<br/>
+◦ White bullet<br/>
+∙ Middle dot bullet<br/>
 
 
 ### Special Bullet Points Symbols
-‣ Triangular bullet
 
-⁃ Dash bullet
-
-▪ Square bullet
-
-▫ White Small Square
-
-♦ Diamond bullet
-
-⬨ White diamond bullet
-
-⬩ Small diamond bullet
-
-💎 Gem stone bullet
+‣ Triangular bullet<br/>
+⁃ Dash bullet<br/>
+▪ Square bullet<br/>
+▫ White Small Square<br/>
+♦ Diamond bullet<br/>
+⬨ White diamond bullet<br/>
+⬩ Small diamond bullet<br/>
+💎 Gem stone bullet<br/>
 
 
 ### Keyboard Tips
-Apart from copy-pasting, you can also produce standard bullet points using below:
-- Mac: hold option key & press 8
-- Windows: hold alt key & press Numpad 7
+Apart from copy-pasting, you can also produce standard bullet points using below:<br/>
+• Mac: hold option key & press 8<br/>
+• Windows: hold alt key & press Numpad 7<br/>
 
 
 ### Eye Catching Emoji Symbols
-Other symbols are useful to emphasize call to action and add a spark of emotion to your tweet.
+Other cute symbols useful to emphasize call to action and add a spark of emotion to your tweet.
 
-- 🧵 Thread
-- 👆 👇 👈 👉 Pointing hands
-- ⚠️ Warning
-- 🚫 Prohibited
-- 🏆 Trophy
-- ❤️ Red Heart
-- ✨  Sparkles
-- 🔥 Fire
-- 💪 Flexed Biceps
-- 🙏 Folded Hands (Thank you or pray)
-- 🤝 Handshake
-- ✔️ Checkmark
-- 📌 Pushpin
-- 👍 Thumbs Up
+🧵 Thread <br/>
+👆 👇 👈 👉 Pointing hands<br/>
+⚠️ Warning<br/>
+🚫 Prohibited<br/>
+🏆 Trophy<br/>
+❤️ Red Heart<br/>
+✨  Sparkles<br/>
+🔥 Fire<br/>
+💪 Flexed Biceps<br/>
+🙏 Folded Hands (Thank you or pray)<br/>
+🤝 Handshake<br/>
+✔️ Checkmark<br/>
+📌 Pushpin<br/>
+👍 Thumbs Up<br/>
 
 
 ### Successful Tweet Templates
-Use templates below to cut through the noise.
-- The problem, hint of solution, call to action.
-- Agreeable fact, surprising or contrarian fact, explain the why.
-- Exclamation or emotion, hint of information, call to action.
+Use templates below to cut through the noise.<br/>
+• The problem, hint of solution, call to action.<br/>
+• Agreeable fact, surprising or contrarian fact, explain the why.<br/>
+• Exclamation or emotion, hint of information, call to action.<br/>
 
 ### Other Super Helpful Tools
 [When is the end of this quarter? Get overview and look at the "Quarter Clock"](/when-is-the-end-of-current-quarter.html)
+
+
+## What is a bullet point?
+
+A bullet point is a dot-like symbol or a glyph vertically positioned in the middle of the line of text.
+It is a graphical element used as a visual guide to the beginning of items on lists.
+Each element usually distills the essential information in separate sentence fragments.
+Professionals use bullet points in presentations, notes, and technical writing.
