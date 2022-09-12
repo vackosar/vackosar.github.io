@@ -13,7 +13,7 @@ You have only 280 characters to make your point in a tweet.
 That requires summarization, for which lists are super helpful. 
 Bullet points are crucial to create visually appealing lists.
 Make your list stand out with non-standard bullet points below.
-Copy-paste your favorite character from below and get bullet points onto your Twitter.
+Copy-paste your favorite character from below and get bullet points into your Tweet, Twitter bio, LinkedIn post, or Meta post.
 
 
 ### Standard Bullet Points Symbols
