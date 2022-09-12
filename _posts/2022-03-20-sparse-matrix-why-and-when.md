@@ -11,6 +11,7 @@ my_related_post_paths:
 - _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
 - _posts/2022-05-20-bits-per-byte-and-bits-per-character.md
 - _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2020-05-08-starspace-embedding.md
 ---
 
 

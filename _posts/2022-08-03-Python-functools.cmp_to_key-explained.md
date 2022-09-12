@@ -12,6 +12,7 @@ my_related_post_paths:
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 - _posts/2017-06-04-Code-Structure-Principles.md
 - _posts/2016-07-28-Functional-Foreach-In-Bash.md
+- _posts/2020-04-08-Python-Context-Manager-With-Statement-Exception-Handling.md
 ---
 
 

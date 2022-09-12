@@ -14,6 +14,7 @@ my_related_post_paths:
 - _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 - _posts/2021-12-28-cross-attention-in-transformer-architecture.md
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
+- _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
 ---
 
 

@@ -11,6 +11,7 @@ my_related_post_paths:
 - _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
 - _posts/2022-03-20-sparse-matrix-why-and-when.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
+- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
 ---
 
 

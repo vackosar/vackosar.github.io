@@ -13,6 +13,7 @@ my_related_post_paths:
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
+- _posts/2022-04-18-how-computers-understood-humans.md
 ---
 
 

@@ -12,6 +12,7 @@ my_related_post_paths:
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
+- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 ---
 
 

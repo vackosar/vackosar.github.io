@@ -13,6 +13,7 @@ my_related_post_paths:
 - _posts/2021-05-21-PID-controller-control-loop-mechanism.md
 - _posts/2021-12-28-cross-attention-in-transformer-architecture.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
 ---
 
 

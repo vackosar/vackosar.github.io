@@ -15,6 +15,7 @@ my_related_post_paths:
 - _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
 - _posts/2022-08-03-Python-functools.cmp_to_key-explained.md
 - _posts/2020-08-25-to-what-python-number-types-does-json.loads-parse.md
+- _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
 ---
 
 

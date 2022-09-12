@@ -12,6 +12,7 @@ my_related_post_paths:
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2020-05-08-starspace-embedding.md
 - _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 ---
 
 

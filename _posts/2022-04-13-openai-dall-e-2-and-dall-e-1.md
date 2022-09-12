@@ -13,6 +13,7 @@ my_related_post_paths:
 - _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 ---
 
 

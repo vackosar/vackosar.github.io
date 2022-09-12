@@ -14,6 +14,7 @@ my_related_post_paths:
 - _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
 - _posts/2022-04-18-how-computers-understood-humans.md
 - _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
+- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 ---
 
 

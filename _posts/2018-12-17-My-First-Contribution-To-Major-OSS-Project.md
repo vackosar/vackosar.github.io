@@ -12,6 +12,7 @@ my_related_post_paths:
 - _posts/2017-10-28-Spring-Integration-Highlights.md
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 - _posts/2016-07-22-Obsolete-Branch-Remover.md
+- _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 ---
 
 

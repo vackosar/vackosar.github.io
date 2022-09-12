@@ -12,6 +12,7 @@ my_related_post_paths:
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
+- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 ---
 
 

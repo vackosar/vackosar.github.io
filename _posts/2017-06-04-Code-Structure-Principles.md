@@ -13,6 +13,7 @@ my_related_post_paths:
 - _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
 - _posts/2022-08-03-Python-functools.cmp_to_key-explained.md
 - _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
+- _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
 ---
 
 

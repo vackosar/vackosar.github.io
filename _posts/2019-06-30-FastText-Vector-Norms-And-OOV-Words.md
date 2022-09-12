@@ -14,6 +14,7 @@ my_related_post_paths:
 - _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 ---
 
 

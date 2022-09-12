@@ -13,6 +13,7 @@ my_related_post_paths:
 - _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 - _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
 ---
 
 

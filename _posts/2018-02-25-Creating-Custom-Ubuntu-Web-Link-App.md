@@ -13,6 +13,7 @@ my_related_post_paths:
 - _posts/2021-03-22-google-product-taxonomy-viewer.md
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 - _posts/2016-07-28-Functional-Foreach-In-Bash.md
+- _posts/2017-10-28-Spring-Integration-Highlights.md
 ---
 
 

@@ -15,6 +15,7 @@ my_related_post_paths:
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
+- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
 ---
 
 
