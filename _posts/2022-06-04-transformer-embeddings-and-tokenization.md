@@ -17,24 +17,31 @@ my_related_post_paths:
 
 
 
-- [transformer (e.g. BERT)](/ml/transformers-self-attention-mechanism-simplified) is sequence to sequence neural network architecture
-- input text is encoded with tokenizers to sequence of integers
-- input tokens are mapped to sequence of embeddings via embeddings layer 
-- output [embeddings](/ml/Embeddings-in-Machine-Learning-Explained) can be classified to a sequence of tokens
-- output tokens can then be converted back to the text
+- [Transformer](/ml/transformers-self-attention-mechanism-simplified) is sequence to sequence neural network architecture
+- input text is encoded with tokenizers to sequence of integers called input tokens
+- input tokens are mapped to sequence of vectors (word [embeddings](/ml/Embeddings-in-Machine-Learning-Explained)) via embeddings layer 
+- output vectors ([embeddings](/ml/Embeddings-in-Machine-Learning-Explained)) can be classified to a sequence of tokens
+- output tokens can then be decoded back to a text
 
-![embeddings in transformer architecture](/images/transformer-architecture-embeddings.drawio.svg)
+![embeddings in transformer architecture](/images/transformer-architecture-tokens-vs-embeddings.drawio.svg)
 
 
-## Tokenizers
-- Input text is split into character chunks called tokens present in a dictionary.
-- Vocabulary of the token dictionaries contain around 100k most common sequences from the training text
+## Tokenization and Tokenizers
+- Input text is split using a dictionary into character chunks called tokens
+- The vocabulary contains around 100k most common sequences from the training text.
 - Tokens often correspond to words of 4 characters long with prepended whitespace or special characters.
-- Embedding layers map tokens to vectors in other words to sequence of numbers.
-- Input and output embeddings layer often share the same token-vector mapping.
-- common tokenization algorithms are [WordPiece](https://static.googleusercontent.com/media/research.google.com/ja//pubs/archive/37842.pdf), [SentencePiece](https://arxiv.org/pdf/1808.06226.pdf)
+- common tokenization algorithms are [BPE](#bpe-tokenizer), [WordPiece](#wordpiece-vs-bpe-tokenizer), [SentencePiece](#sentencepiece-vs-wordpiece-tokenizer)
 
 ![tokenization and embedding layer for transformer](/images/transformer-tokenization-and-embeddings.drawio.svg)
+
+
+### FastText Tokenizer
+Older models like Word2vec, or [FastText](/ml/FastText-Vector-Norms-And-OOV-Words) used simple tokenizers, that after some preprocessing simply split the text on whitespace characters.
+These chunks are often words of a natural language.
+Then, if the character sequence chunk is present in a dictionary of most common chunks, we treat it as a token.
+Otherwise, most tokenizers before FastText returned an unknown token.
+FastText solved this problem by additional split on the word level into fixed size "subwords", but to find out [more details about FastText read this post](/ml/FastText-Vector-Norms-And-OOV-Words).
+Other tokenizers, continued to have these issues until [SentencePiece](#sentencepiece-vs-wordpiece-tokenizer), which keep a dictionary including single characters and almost never returns unknown token.
 
 
 ### BPE Tokenizer
@@ -65,15 +72,21 @@ Byte-Pair-Encoding (BPE) algorithm:
 
 
 ## Tokenizers vs Encoders 
-- Tokenizers are not suitable for modalities like image or speech.
-- Image architectures like [Vision Transformer (ViT)](https://arxiv.org/pdf/1909.02950.pdf) or [MMBT](/ml/Multimodal-Image-Text-Classification#facebooks-mmbt-model) encode input without a tokenizer.
-- Inputs to transformer can be encoded with a another neural network.
-- Output of the encoding layer has to be a sequence of embeddings for the transformer.
+- Tokenizers are not quite present in modalities like image or speech.
+- Instead, the images or audio is split into a matrix of patches without dictionary equivalent as in case of the text.
+- Image architectures [Vision Transformer (ViT)](https://arxiv.org/pdf/1909.02950.pdf), Resnets split image into overlapping patches and then encode these.
+- Outputs [embeddings](/ml/Embeddings-in-Machine-Learning-Explained) of these can then be passed to a transformer e.g. in [CMA-CLIP or MMBT](/ml/Multimodal-Image-Text-Classification#amazons-cma-clip-model)
 
 
 ## [Positional Encodings](/ml/transformer-positional-embeddings-and-encodings) add Token Order Information
 
 {% include shared_slides/positional-encodings-summary.md %}
+
+
+## Word Embeddings
+- Embedding layers map tokens to word vectors (sequence of numbers) called word [embeddings](/ml/Embeddings-in-Machine-Learning-Explained).
+- Input and output embeddings layer often share the same token-vector mapping.
+- Embeddings contain semantic information about the word.
 
 
 ## Explore Yourself
@@ -88,12 +101,12 @@ from transformers import DistilBertTokenizerFast, DistilBertModel
 
 tokenizer = DistilBertTokenizerFast.from_pretrained("distilbert-base-uncased")
 tokens = tokenizer.encode('This is a input.', return_tensors='pt')
-print(tokens)
+print("These are tokens!", tokens)
 for token in tokens[0]:
-    print(tokenizer.decode([token]))
+    print("This are decoded tokens!", tokenizer.decode([token]))
 
 model = DistilBertModel.from_pretrained("distilbert-base-uncased")
 print(model.embeddings.word_embeddings(tokens))
 for e in model.embeddings.word_embeddings(tokens)[0]:
-    print(e)
+    print("This is an embedding!", e)
 ```
