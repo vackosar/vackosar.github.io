@@ -23,17 +23,17 @@ my_related_post_paths:
 - Common training tasks:
   - How similar are these two product images? (similarity e.g. student-teacher)
   - How similar is this image to this abstract product image class? (classification)
+- Before representing the full data we often split data into meaningful parts called tokens
 
 
 ## Input Tokenization
-- before representing the full data we often split data into meaningful parts
-  - images are split into patches
-  - text split into tokens (words) e.g. [transformer tokenization](/ml/transformer-embeddings-and-tokenization)
-- these parts (tokens) have representations of their own e.g. word (token) embeddings, image patch (token) embeddings.
-- progressively we pool the embeddings into full contextual data representation
-- Common training task: predict the masked word (de-noising)
 
-![tokenization and embeddings](/images/transformer-tokenization-and-embeddings.drawio.svg)
+{% include shared_slides/tokenization-summary.md %}
+
+
+## Embedding Tokens
+- tokens are then mapped to their representations e.g. word (token) embeddings, image patch (token) embeddings.
+- progressively we pool the sequences of embeddings into full contextual data representation
 
 
 {% include shared_slides/representations.md %}

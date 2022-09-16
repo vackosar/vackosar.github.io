@@ -70,13 +70,9 @@ I bet you'll enjoy this guide through Wav2vec papers solving the problem of spee
 
 
 ## Quantization
-- replaces with vector from a finite set
-- the set of vectors is "codebook"
-- forward pass selects single quantization vector
-- backward pass uses Gumbal softmax over the codebook
-- product quantization:
-  - concatenation of several quantizations
-  - then linear transformation
+
+{% include  shared_slides/quantization.md %}
+
 
 ## Wav2vec Quantization works
 - codewords = product of 2 codebooks of 320 gives 100k

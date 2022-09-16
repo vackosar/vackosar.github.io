@@ -1,9 +1,9 @@
 ---
 title: Transformer Embeddings and Tokenization
-description: How transformers convert words and other objects to vectors and back.
+description: How transformers convert words and other objects to vectors and back using tokenizers, positional encoders, embedders.
 layout: post
 categories: ml
-image: /images/transformer-architecture-embeddings.drawio.svg
+image: /images/transformer-architecture-tokens-vs-embeddings.drawio.svg
 date: 2022-06-05
 last_modified_at: 2022-06-18
 permalink: /:categories/:title
@@ -14,7 +14,6 @@ my_related_post_paths:
 - _posts/2021-12-28-cross-attention-in-transformer-architecture.md
 - _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
 ---
-
 
 
 - [Transformer](/ml/transformers-self-attention-mechanism-simplified) is sequence to sequence neural network architecture
@@ -30,57 +29,11 @@ my_related_post_paths:
 - input is tokenized before [embedding](/ml/Embeddings-in-Machine-Learning-Explained)
 - tokenization converts a text into a list of integers
 - embedding converts the list of integers into a list of vectors (list of [embeddings](/ml/Embeddings-in-Machine-Learning-Explained))
-
+- positional information about each token is added to embeddings using [positional encodings or embeddings](/ml/transformer-positional-embeddings-and-encodings)
 
 ## Tokenization
-- Input text is split using a dictionary into character chunks called tokens
-- The vocabulary contains around 100k most common sequences from the training text.
-- Tokens often correspond to words of 4 characters long with prepended whitespace or special characters.
-- common tokenization algorithms are [BPE](#bpe-tokenizer), [WordPiece](#wordpiece-vs-bpe-tokenizer), [SentencePiece](#sentencepiece-vs-wordpiece-tokenizer)
 
-![tokenization and embedding layer for transformer](/images/transformer-tokenization-and-embeddings.drawio.svg)
-
-
-### FastText Tokenizer
-- Older models like Word2vec, or [FastText](/ml/FastText-Vector-Norms-And-OOV-Words) used simple tokenizers, that after some preprocessing simply split the text on whitespace characters.
-These chunks are often words of a natural language.
-- Then, if the character sequence chunk is present in a dictionary of most common chunks, and return an index in the dictionary.
-- If not found, most tokenizers before FastText returned a special token called the unknown token. FastText solved this problem by additional split on the word level into fixed size "subwords", but to find out [more details about FastText read this post](/ml/FastText-Vector-Norms-And-OOV-Words).
-- Other tokenizers, continued to return the unknown token until [SentencePiece](#sentencepiece-vs-wordpiece-tokenizer), which includes all single characters and almost never returns the unknown token.
-
-
-### BPE Tokenizer
-Byte-Pair-Encoding (BPE) algorithm:
-1. [BPE](https://arxiv.org/abs/1508.07909) pre-tokenizes text by splitting on spaces
-2. start with only characters as token
-3. merge the highest frequency token pair from the text
-4. stop if max vocabulary size reached, otherwise loop to previous step
-
-
-### WordPiece vs BPE Tokenizer
-- [WordPiece](https://static.googleusercontent.com/media/research.google.com/ja//pubs/archive/37842.pdf) merges token pair with highest `count(ab) / count(a)count(b)`
-- Used for [BERT](/ml/transformers-self-attention-mechanism-simplified), DistilBERT, [Electra](/ml/electra-4x-cheaper-bert-training)
-
-
-### Unigram Tokenizer
-- [Unigram](https://arxiv.org/pdf/1804.10959.pdf) instead of merging and adding like BPE, it removes
-- starts with a very large vocabulary and removes fixed number symbols such that a vocabulary loss increase minimally 
-- stop if vocabulary size reached, otherwise loop to previous step
-- to disambiguate tokenization a probability of token occurrence is used, and packaged with the tokenizer
-
-
-### SentencePiece vs WordPiece Tokenizer
-- Japanese, Korean, or Chinese languages don't separate words with a space
-- [SentencePiece](https://arxiv.org/pdf/1808.06226.pdf) removes pre-tokenization (splitting on spaces)
-- instead tokenizes text stream with usually with [Unigram](#unigram-tokenizer) or alternatively with [BPE](#bpe-tokenizer)
-- T5, ALBERT, XLNet, MarianMT use SentencePiece with [Unigram](#unigram-tokenizer)
-
-
-## Tokenization In Non-Text Modalities
-- Tokenizers are not quite present in modalities like image or speech.
-- Instead, the images or audio is split into a matrix of patches without dictionary equivalent as in case of the text.
-- Image architectures [Vision Transformer (ViT)](https://arxiv.org/pdf/1909.02950.pdf), Resnets split image into overlapping patches and then encode these.
-- Outputs [embeddings](/ml/Embeddings-in-Machine-Learning-Explained) of these can then be passed to a transformer e.g. in [CMA-CLIP or MMBT](/ml/Multimodal-Image-Text-Classification#amazons-cma-clip-model)
+{% include shared_slides/tokenization-summary.md %}
 
 
 ## [Positional Encodings](/ml/transformer-positional-embeddings-and-encodings) add Token Order Information

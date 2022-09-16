@@ -40,6 +40,10 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes im
 ![variational autoencoder](/images/variational-autoencoder.drawio.svg)
 
 
+## Quantization
+{% include shared_slides/quantization.md %}
+
+
 ## Discreet Variational Auto-Encoder (dVAE)
 - introduced in [VQ-VAE 1](https://arxiv.org/pdf/1711.00937.pdf) and [VQ-VAE-2](https://proceedings.neurips.cc/paper/2019/file/5f8e2fa1718d1bbcadf1cd9c7a54fb8c-Paper.pdf) (dVAE, up-scaling)
 - image encoder maps to latent 32x32 grid of [embeddings](/ml/Embeddings-in-Machine-Learning-Explained)

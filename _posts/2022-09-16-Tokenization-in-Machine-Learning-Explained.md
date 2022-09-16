@@ -1,0 +1,54 @@
+---
+title: Tokenization in Machine Learning Explained
+description: Tokenization is splitting the input data into a sequence of meaningful parts e.g. pice data like a word, image patch, document sentence.
+layout: post
+categories: ml
+date: 2022-09-16
+image: /images/transformer-tokenization-and-embeddings.drawio.svg
+last_modified_at: 2022-09-16
+permalink: /:categories/:title
+---
+
+
+{% include shared_slides/tokenization-summary.md %}
+
+
+## The Most Common Tokenizers in NLP
+
+A list of commonly used tokenizers sorted by their date of introduction.
+
+
+### FastText Tokenizer
+- Older models like Word2vec, or [FastText](/ml/FastText-Vector-Norms-And-OOV-Words) used simple tokenizers, that after some preprocessing simply split the text on whitespace characters.
+  These chunks are often words of a natural language.
+- Then, if the character sequence chunk is present in a dictionary of most common chunks, and return an index in the dictionary.
+- If not found, most tokenizers before FastText returned a special token called the unknown token. FastText solved this problem by additional split on the word level into fixed size "subwords", but to find out [more details about FastText read this post](/ml/FastText-Vector-Norms-And-OOV-Words).
+- Other tokenizers, continued to return the unknown token until [SentencePiece](#sentencepiece-vs-wordpiece-tokenizer), which includes all single characters and almost never returns the unknown token.
+
+
+### BPE Tokenizer
+Byte-Pair-Encoding (BPE) algorithm:
+1. [BPE](https://arxiv.org/abs/1508.07909) pre-tokenizes text by splitting on spaces
+2. start with only characters as token
+3. merge the highest frequency token pair from the text
+4. stop if max vocabulary size reached, otherwise loop to previous step
+
+
+### WordPiece vs BPE Tokenizer
+- [WordPiece](https://static.googleusercontent.com/media/research.google.com/ja//pubs/archive/37842.pdf) merges token pair with highest `count(ab) / count(a)count(b)`
+- Used for [BERT](/ml/transformers-self-attention-mechanism-simplified), DistilBERT, [Electra](/ml/electra-4x-cheaper-bert-training)
+
+
+### Unigram Tokenizer
+- [Unigram](https://arxiv.org/pdf/1804.10959.pdf) instead of merging and adding like BPE, it removes
+- starts with a very large vocabulary and removes fixed number symbols such that a vocabulary loss increase minimally
+- stop if vocabulary size reached, otherwise loop to previous step
+- to disambiguate tokenization a probability of token occurrence is used, and packaged with the tokenizer
+
+
+### SentencePiece vs WordPiece Tokenizer
+- Japanese, Korean, or Chinese languages don't separate words with a space
+- [SentencePiece](https://arxiv.org/pdf/1808.06226.pdf) removes pre-tokenization (splitting on spaces)
+- instead tokenizes text stream with usually with [Unigram](#unigram-tokenizer) or alternatively with [BPE](#bpe-tokenizer)
+- T5, ALBERT, XLNet, MarianMT use SentencePiece with [Unigram](#unigram-tokenizer)
+
