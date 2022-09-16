@@ -1,4 +1,4 @@
-- same as [tokenization](/ml/Tokenization-in-Machine-Learning-Explained) in text outputs finite number of items from a dictionary
+- related to [tokenization](/ml/Tokenization-in-Machine-Learning-Explained) in that it outputs finite number of items from a dictionary
 - is used in [Wav2vec](/ml/Wav2vec2-Semi-and-Unsupervised-Speech-Recognition#quantization) and [DALL-E 1 and VQ-VAE](/ml/openai-dall-e-2-and-dall-e-1) 
 - replaces the input vector with the closest vector from a finite dictionary of vectors called codebook
 - during training, backward pass uses Gumbal softmax over the codebook to propagate gradient
