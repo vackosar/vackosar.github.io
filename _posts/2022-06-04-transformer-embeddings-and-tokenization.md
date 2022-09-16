@@ -26,7 +26,8 @@ my_related_post_paths:
 
 
 ## Tokenization vs Embedding
-- input is tokenized before [embedding](/ml/Embeddings-in-Machine-Learning-Explained)
+- input is [tokenized](/ml/Tokenization-in-Machine-Learning-Explained), the tokens then are [embedded](/ml/Embeddings-in-Machine-Learning-Explained)
+- output text embeddings are classified back into tokens, which then can be decoded into text
 - tokenization converts a text into a list of integers
 - embedding converts the list of integers into a list of vectors (list of [embeddings](/ml/Embeddings-in-Machine-Learning-Explained))
 - positional information about each token is added to embeddings using [positional encodings or embeddings](/ml/transformer-positional-embeddings-and-encodings)
