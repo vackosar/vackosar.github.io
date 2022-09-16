@@ -25,6 +25,7 @@ my_related_post_paths:
 - Tokens often correspond to words of 4 characters long with prepended whitespace or special characters.
 - common tokenization algorithms are [BPE](/ml/Tokenization-in-Machine-Learning-Explained#bpe-tokenizer), [WordPiece](/ml/Tokenization-in-Machine-Learning-Explained#wordpiece-vs-bpe-tokenizer), [SentencePiece](/ml/Tokenization-in-Machine-Learning-Explained#sentencepiece-vs-wordpiece-tokenizer)
 - Text tokens can be converted back to text, but sometimes there is a loss of information.
+- Tokenization in NLP is a form of [compression - dictionary coding](/ml/neural-data-compression).
 
 ![tokenization and embedding layer for transformer](/images/transformer-tokenization-and-embeddings.drawio.svg)
 
