@@ -1,6 +1,6 @@
 ---
 title: Transformer Embeddings and Tokenization
-description: How transformers convert words and other objects to vectors and back using tokenizers, positional encoders, embedders.
+description: How transformers convert text and other data to vectors and back using tokenization, positional encoding, embedding layers.
 layout: post
 categories: ml
 image: /images/transformer-architecture-tokens-vs-embeddings.drawio.svg
@@ -9,10 +9,10 @@ last_modified_at: 2022-06-18
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
-- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
-- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 - _posts/2021-12-28-cross-attention-in-transformer-architecture.md
-- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
+- _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
+- _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
 ---
 
 
