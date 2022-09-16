@@ -82,6 +82,8 @@
 
                 gtag('js', new Date());
                 gtag('config', ga_id);
+                // dual tagging as GA4 does not have all the data
+                gtag('config', 'UA-165114534-1');
 
             });
             <!-- end of Google Analytics-->
