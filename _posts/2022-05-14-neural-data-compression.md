@@ -48,11 +48,11 @@ my_related_post_paths:
 
 ## GZip's Deflate Data Compression
 - [GZip](https://datatracker.ietf.org/doc/html/rfc1952) uses [Deflate](https://datatracker.ietf.org/doc/html/rfc1951) compression format ([ZIP](https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT) also)
-1. a sliding widow of 32k bytes is used to detect duplicate strings
-  - duplicate strings are referenced back with length and distance symbols (similar to [dictionary coding](#dictionary-coder))
-  - this along with byte literals defines custom alphabet of symbols
-2. [Huffman coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/10_04051119.pdf) maps frequent symbols to shorter bit sequences
-  - bit-mapping trees stored in the output and sometimes refreshed
+  1. a sliding widow of 32k bytes is used to detect duplicate strings
+    - duplicate strings are referenced back with length and distance symbols (similar to [dictionary coding](#dictionary-coder))
+    - this along with byte literals defines custom alphabet of symbols
+  2. [Huffman coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/10_04051119.pdf) maps frequent symbols to shorter bit sequences
+    - bit-mapping trees stored in the output and sometimes refreshed
 
 ![Deflate algorithm illustration with LZ77 and Huffman coding](/images/deflate-algorithm-operation.drawio.svg) 
 
