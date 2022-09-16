@@ -26,7 +26,13 @@ my_related_post_paths:
 ![embeddings in transformer architecture](/images/transformer-architecture-tokens-vs-embeddings.drawio.svg)
 
 
-## Tokenization and Tokenizers
+## Tokenization vs Embedding
+- input is tokenized before [embedding](/ml/Embeddings-in-Machine-Learning-Explained)
+- tokenization converts a text into a list of integers
+- embedding converts the list of integers into a list of vectors (list of [embeddings](/ml/Embeddings-in-Machine-Learning-Explained))
+
+
+## Tokenization
 - Input text is split using a dictionary into character chunks called tokens
 - The vocabulary contains around 100k most common sequences from the training text.
 - Tokens often correspond to words of 4 characters long with prepended whitespace or special characters.
@@ -36,12 +42,11 @@ my_related_post_paths:
 
 
 ### FastText Tokenizer
-Older models like Word2vec, or [FastText](/ml/FastText-Vector-Norms-And-OOV-Words) used simple tokenizers, that after some preprocessing simply split the text on whitespace characters.
+- Older models like Word2vec, or [FastText](/ml/FastText-Vector-Norms-And-OOV-Words) used simple tokenizers, that after some preprocessing simply split the text on whitespace characters.
 These chunks are often words of a natural language.
-Then, if the character sequence chunk is present in a dictionary of most common chunks, we treat it as a token.
-Otherwise, most tokenizers before FastText returned an unknown token.
-FastText solved this problem by additional split on the word level into fixed size "subwords", but to find out [more details about FastText read this post](/ml/FastText-Vector-Norms-And-OOV-Words).
-Other tokenizers, continued to have these issues until [SentencePiece](#sentencepiece-vs-wordpiece-tokenizer), which keep a dictionary including single characters and almost never returns unknown token.
+- Then, if the character sequence chunk is present in a dictionary of most common chunks, and return an index in the dictionary.
+- If not found, most tokenizers before FastText returned a special token called the unknown token. FastText solved this problem by additional split on the word level into fixed size "subwords", but to find out [more details about FastText read this post](/ml/FastText-Vector-Norms-And-OOV-Words).
+- Other tokenizers, continued to return the unknown token until [SentencePiece](#sentencepiece-vs-wordpiece-tokenizer), which includes all single characters and almost never returns the unknown token.
 
 
 ### BPE Tokenizer
@@ -71,7 +76,7 @@ Byte-Pair-Encoding (BPE) algorithm:
 - T5, ALBERT, XLNet, MarianMT use SentencePiece with [Unigram](#unigram-tokenizer)
 
 
-## Tokenizers vs Encoders 
+## Tokenization In Non-Text Modalities
 - Tokenizers are not quite present in modalities like image or speech.
 - Instead, the images or audio is split into a matrix of patches without dictionary equivalent as in case of the text.
 - Image architectures [Vision Transformer (ViT)](https://arxiv.org/pdf/1909.02950.pdf), Resnets split image into overlapping patches and then encode these.
