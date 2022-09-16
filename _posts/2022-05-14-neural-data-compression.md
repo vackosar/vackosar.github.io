@@ -42,11 +42,11 @@ my_related_post_paths:
 
 ## GZip's Deflate Data Compression
 - [GZip](https://datatracker.ietf.org/doc/html/rfc1952) uses [Deflate](https://datatracker.ietf.org/doc/html/rfc1951) compression format ([ZIP](https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT) also)
-  1. a sliding widow of 32k bytes is used to detect duplicate strings
-    - duplicate strings are referenced back with length and distance symbols
-    - this along with byte literals defines custom alphabet of symbols
-  2. [Huffman coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/10_04051119.pdf) maps frequent symbols to shorter bit sequences
-    - bit-mapping trees stored in the output and sometimes refreshed
+1. a sliding widow of 32k bytes is used to detect duplicate strings
+  - duplicate strings are referenced back with length and distance symbols
+  - this along with byte literals defines custom alphabet of symbols
+2. [Huffman coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/10_04051119.pdf) maps frequent symbols to shorter bit sequences
+  - bit-mapping trees stored in the output and sometimes refreshed
 
 ![Deflate algorithm illustration with LZ77 and Huffman coding](/images/deflate-algorithm-operation.drawio.svg) 
 
@@ -86,10 +86,11 @@ my_related_post_paths:
 
 
 ## NNCP: Lossless Data Compression with Neural Networks
+- model is not stored in the output. It is deterministically derived based on decompressed output
+- model is regularly retrained during compression
+- creates a [tokenization](/ml/Tokenization-in-Machine-Learning-Explained) dictionary (16k symbols like Cmix) during the first pass
+- the tokenization is similar to [Gzip](#gzips-deflate-data-compression)'s deduplication
 - [NNCP 1](https://bellard.org/nncp/nncp.pdf) uses multi-layer LSTM to predict next symbol
-  - model is not stored in the output - deterministically derived based on decompressed output
-  - creates tokenization dictionary (16k symbols like Cmix) during the first pass
-  - model regularly retrained during compression
 - [NNCP v2](https://bellard.org/nncp/nncp_v2.1.pdf) Transformer beats Cmix on enwik9
 
 
