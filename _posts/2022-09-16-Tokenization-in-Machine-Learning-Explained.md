@@ -34,7 +34,7 @@ my_related_post_paths:
 - Tokenizers are not quite present in modalities like image or speech.
 - Instead, the images or audio is split into a matrix of patches without dictionary equivalent as in case of the text.
 - Image architectures [Vision Transformer (ViT)](https://arxiv.org/pdf/1909.02950.pdf), Resnets split image into overlapping patches and then encode these.
-- Outputs [embeddings](/ml/Embeddings-in-Machine-Learning-Explained) of these can then be passed to a transformer e.g. in [CMA-CLIP or MMBT](/ml/Multimodal-Image-Text-Classification#amazons-cma-clip-model)
+- Outputs [embeddings](/ml/Embeddings-in-Machine-Learning-Explained) of these can then be passed to ,e.g., [transformer](/ml/transformers-self-attention-mechanism-simplified) ([CMA-CLIP or MMBT](/ml/Multimodal-Image-Text-Classification#amazons-cma-clip-model))
 
 ![tokenization and embedding in Vision Transformer ViT](/images/vision-transformer-vit-architecture.png)
 
@@ -71,7 +71,7 @@ Byte-Pair-Encoding (BPE) algorithm:
 
 
 ### Unigram Tokenizer
-- [Unigram](https://arxiv.org/pdf/1804.10959.pdf) instead of merging and adding like BPE, it removes
+- [Unigram](https://arxiv.org/pdf/1804.10959.pdf) instead of merging and adding like [BPE](#bpe-tokenizer), it removes
 - starts with a very large vocabulary and removes fixed number symbols such that a vocabulary loss increase minimally
 - stop if vocabulary size reached, otherwise loop to previous step
 - to disambiguate tokenization a probability of token occurrence is used, and packaged with the tokenizer

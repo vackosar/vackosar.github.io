@@ -5,7 +5,7 @@ image: /images/retrieval-transformer-thumb.png
 video: -93KBOg77Sg
 layout: post
 categories: ml
-date: 2021-12-29
+date: 2022-09-17
 permalink: /:categories/:title
 last_modified_at: 2022-04-25
 my_related_post_paths:
@@ -20,7 +20,7 @@ my_related_post_paths:
 
 {% include load_video.html %}
 
-- next token (~word) prediction = autoregressive language model
+- next [token (~word)](/ml/Tokenization-in-Machine-Learning-Explained) prediction = autoregressive language model
 - full name = Retrieval-Enhanced [Transformer](/ml/transformers-self-attention-mechanism-simplified) (RETRO) 
 - introduced in DeepMind's [Improving Language Models by Retrieving from Trillions of Tokens (2021)](https://arxiv.org/pdf/2112.04426v1.pdf), [Deep Mind Blog](https://deepmind.com/research/publications/2021/improving-language-models-by-retrieving-from-trillions-of-tokens)
 - retrieves from [kNN](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) database [BERT](/ml/transformers-self-attention-mechanism-simplified)-similar to the current text-chunk
@@ -53,9 +53,9 @@ my_related_post_paths:
 
 ## RETRO's Training Dataset
 - 10-lingual [MassiveText dataset](/ml/massivetext-dataset-pretraining-deepminds-gopher)
-- SentencePiece tokenizer vocabulary of 128k tokens
+- [SentencePiece tokenizer](/ml/Tokenization-in-Machine-Learning-Explained#sentencepiece-vs-wordpiece-tokenizer) vocabulary of 128k tokens
 - Retrieval database 1.75T tokens
-- 1 token ~ 4 characters ~ 1 word
+- [1 token ~ 4 characters ~ 1 word](/ml/Tokenization-in-Machine-Learning-Explained)
 - Chucks are 64 token sequences
 - database ~13B records? 
 - not retrieval from the same document during training
@@ -88,7 +88,7 @@ my_related_post_paths:
 
 ## RETRO's Encoding Retrieved Neighbours
 - all retrieved values: 128 consecutive tokens
-- are first passed through a bi-directional transformer encoder
+- are first passed through a bi-directional [transformer](/ml/transformers-self-attention-mechanism-simplified) encoder
 - differentiably modulates retrieved chunks
 - conditioning on query-chunks via [cross-attention](/ml/cross-attention-in-transformer-architecture) 
   - query-chunks hidden representations serves as key and value
@@ -117,7 +117,7 @@ my_related_post_paths:
 - generates on-topic and coherent text likely thanks to long memories
 - underperforms specialized QA models
 
-![RETRO on Pile](../images/retrieval-transformer-results-on-pile.png)
+![RETRO on Pile](/images/retrieval-transformer-results-on-pile.png)
 
 ![RETRO generated text keeps on topic thanks to longer sequences](/images/retrieval-transformer-generated-text.png)
 
@@ -127,8 +127,8 @@ my_related_post_paths:
 
 
 ## How You can Use RETRO Ideas?
-- freeze any pre-trained transformer
-- add and train chunked cross-attention and the encoder
+- freeze any pre-trained [transformer](/ml/transformers-self-attention-mechanism-simplified)
+- add and train chunked [cross-attention](/ml/cross-attention-in-transformer-architecture) and the encoder
 - tune number of neighbours between 2 and 40 to your model size
 - results should get close to training whole from scratch
 - see "Retro-fitting baseline models" section
