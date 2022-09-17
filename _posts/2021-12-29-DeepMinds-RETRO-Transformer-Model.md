@@ -64,7 +64,7 @@ my_related_post_paths:
 
  
 ## RETRO's Architecture
-- Frozen BERT retriever on chunk level
+- Frozen BERT kNN retriever on chunk level
 - differentiable encoder conditioned on query
 - chunked [cross-attention](/ml/cross-attention-in-transformer-architecture) with previous chunk retrieval set 
 - ablations show retrieval helps
@@ -77,7 +77,7 @@ my_related_post_paths:
 - each value is two consecutive chunks (128 tokens)
 - each key is the first chunk from its value (first 64 tokens)
 - each key is time-averaged BERT embedding of the first chunk
-- key-vectors stored in k-nearest neighbors (similarity) [ScaNN db](https://github.com/google-research/google-research/tree/master/scann)
+- key-vectors stored in k-nearest neighbors (kNN using similarity) [ScaNN db](https://github.com/google-research/google-research/tree/master/scann)
 - db stores entire MassiveText train set during evaluation
   - training on 600B train subset
   - test set leakage into train set is controlled via a 13-gram Jaccard similarity
