@@ -31,9 +31,9 @@ my_related_post_paths:
 
 
 ## Dictionary Coder
-- Replaces long frequently occuring strings with a shorter references in a dictionary.
-- used in [Gzip](#gzips-deflate-data-compression) and in deep-learning compression [tokenization](/ml/Tokenization-in-Machine-Learning-Explained).
-- sometimes it is called substitution coder
+- Also called Substitution coder
+- Replaces long frequently occurring strings with a shorter references in a dictionary.
+- Applied in [Gzip](#gzips-deflate-data-compression) and in [natural language processing tokenization (e.g. BPE)](/ml/Tokenization-in-Machine-Learning-Explained) compression
 
 
 ## Morse Code Uses Huffman Coding Compression
