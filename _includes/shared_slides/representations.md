@@ -1,6 +1,6 @@
 ## The Simplest Document Representations
 - Once were paper archives replaced with databases of textual documents some tasks became cheaper: search by list of words (query) ~1970s, finding document topics ~1980
-- simplest methods: counting word occurrences on documents level into [sparce matrices](/ml/sparse-matrix-why-and-when) as feature vectors in methods term frequency–inverse document frequency (TF-IDF), [Latent semantic analysis (LSA)](https://www.cs.bham.ac.uk/~pxt/IDA/lsa_ind.pdf)
+- simplest methods: counting word occurrences on documents level into [sparce matrices](/ml/sparse-matrix-why-and-when) as feature vectors in methods [term frequency–inverse document frequency (TF-IDF)](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.115.8343&rep=rep1&type=pdf), [Latent semantic analysis (LSA)](https://www.cs.bham.ac.uk/~pxt/IDA/lsa_ind.pdf)
 - this co-occurrence of words in documents later used to embed words
 
 ![Latent semantic analysis (LSA) - CC BY-SA 4.0 Christoph Carl Kling](/images/latent-semantic-analysis-wiki.png)
