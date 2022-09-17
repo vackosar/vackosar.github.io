@@ -5,9 +5,9 @@ image: /images/retrieval-transformer-thumb.png
 video: -93KBOg77Sg
 layout: post
 categories: ml
-date: 2022-09-17
+date: 2021-12-29
 permalink: /:categories/:title
-last_modified_at: 2022-04-25
+last_modified_at: 2022-09-17
 my_related_post_paths:
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
