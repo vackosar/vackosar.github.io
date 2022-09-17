@@ -9,6 +9,7 @@ video: PHIKbgMJq4c
 image: /images/wav2vec-thumb.png
 redirect_from:
 - /ml/PID-controller
+last_modified_at: 2022-09-17
 my_related_post_paths:
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2022-04-18-how-computers-understood-humans.md
@@ -123,8 +124,7 @@ I bet you'll enjoy this guide through Wav2vec papers solving the problem of spee
 - between a unsegmented time series and a target sequence
 - CTCLoss sums probability of all possible alignments of input to target
 - differentiable with respect to each input node
-- [pytorch docs](https://pytorch.org/docs/master/generated/torch.nn.CTCLoss.html#torch.nn.CTCLoss)
-- [Original CTC paper (Graves 2016)](https://www.cs.toronto.edu/~graves/icml_2006.pdf)
+- [Original CTC paper (Graves 2016)](https://www.cs.toronto.edu/~graves/icml_2006.pdf), [pytorch docs](https://pytorch.org/docs/master/generated/torch.nn.CTCLoss.html#torch.nn.CTCLoss)
   - network returns probabilities of phonemes and blanks for each position
   - **remove all blanks** and **repeated labels** from the possible sequences
   - for example \\( B(a − ab−) = B(−aa − −abb) = aab \\)
