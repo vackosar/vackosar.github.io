@@ -3,7 +3,7 @@ layout: post
 title: FastText Word Embeddings
 date: 2019-06-30
 last_modified_at: 2022-06-12
-description: How FastText works, word embeddings, ngrams, OOV words, and visualize embedding norms.
+description: How FastText works, word embeddings, n-grams, OOV words, and visualize embedding norms.
 categories: ml
 permalink: /:categories/:title
 image: https://raw.githubusercontent.com/vackosar/fasttext-vector-norms-and-oov-words/master/results/ng_norm-tf.png
@@ -103,7 +103,7 @@ As mentioned above each FastText vocab word has its vector representation regard
 
 ### NG_Norm (N-Grams Times Count Norm)
 
-As mentioned above FastText uses average of word vectors used. However for detection of noise-words number of ngrams seems to useful. For that purpose NG_Norm is defined <b>ng_norm(word)= || &Sigma;<sub>g &isin; ngrams(word)</sub>v<sub>g</sub> ||</b>. Using this norm common words are clustered in narrower band on ng_norm axis.
+As mentioned above FastText uses average of word vectors used. However for detection of noise-words number of n-grams seems to useful. For that purpose NG_Norm is defined <b>ng_norm(word)= || &Sigma;<sub>g &isin; ngrams(word)</sub>v<sub>g</sub> ||</b>. Using this norm common words are clustered in narrower band on ng_norm axis.
 
 ![ng_norm-tf](https://raw.githubusercontent.com/vackosar/fasttext-vector-norms-and-oov-words/master/results/ng_norm-tf.png)
 
