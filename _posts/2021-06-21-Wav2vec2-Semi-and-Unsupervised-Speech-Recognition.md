@@ -135,7 +135,7 @@ I bet you'll enjoy this guide through Wav2vec papers solving the problem of spee
 
 
 ### Wav2vec 2.0 vs vq-wav2vec
-- jointly learn quantizations instead of separately
+- jointly learn quantizations instead of separately in constrat to [vq-wav2vec](https://arxiv.org/pdf/1910.05453.pdf)
 - contrastive loss for quantizations:
   - [transformer](/ml/transformers-self-attention-mechanism-simplified) output compared to the embeddings in the codebook
   - contractive distractors are other masked time steps

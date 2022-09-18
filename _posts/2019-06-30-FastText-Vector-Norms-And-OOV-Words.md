@@ -21,7 +21,9 @@ my_related_post_paths:
 
 {% include mathjax.html %}
 
-Word [embeddings](/ml/Embeddings-in-Machine-Learning-Explained), trained on large unlabeled corpora are useful for many natural language processing tasks. [FastText](https://arxiv.org/abs/1607.04606) (Facebook AI) in contrast to Word2vec model accounts for sub-word information by also embedding sub-word n-grams.
+Word [embeddings](/ml/Embeddings-in-Machine-Learning-Explained), trained on large unlabeled corpora are useful for many natural language processing tasks. [FastText  (Facebook AI)](https://arxiv.org/pdf/1607.04606.pdf) in contrast to Word2vec model accounts for sub-word information.
+FastText trains embeddings for sub-word sequences of length n (n-grams).
+For example, instead of only embedding entire sequence "where", FastText also embed 3-grams: wh, whe, her, ere, re.
 FastText word representation is the word embedding vector plus sum of n-grams contained in it.
 
 
