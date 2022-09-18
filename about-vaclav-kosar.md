@@ -6,10 +6,12 @@ categories: ml
 date: 2022-09-18
 ---
 
-## Summary
+
 I am machine learning engineer with 3 years experience, and senior software and big data engineer with 6 years experience.
 
 I love understanding and solving the business problems, developing robust machine learning and software solutions quickly, while staying up-to-date reading research papers.I am machine learning engineer with 3 years experience, and senior software and big data engineer with 6 years experience. I love understanding and solving the business problems, developing robust machine learning and software solutions quickly, while staying up-to-date reading research papers.
+
+![Vaclav Kosar](/images/vaclav-kosar.png)
 
 
 ## Experience
