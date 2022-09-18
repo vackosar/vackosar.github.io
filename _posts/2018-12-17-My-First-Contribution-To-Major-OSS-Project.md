@@ -2,7 +2,7 @@
 layout: post
 title: My First Contribution To A Major OSS Project Apache Spark
 date: 2018-05-28
-category: software
+categories: software
 description: Finally my rather small pull request was merged into master of Apache Spark!
 permalink: /:categories/:title
 redirect_from:

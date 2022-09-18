@@ -5,7 +5,7 @@ date: 2018-10-04
 last_modified_at: 2022-06-06
 description: Vaclav Kosar and Marek Novotny presentation at Spark N AI Summit 2018 of a POC of Structured Streaming data lineage tool.
 image: /images/2018-10-04-spark-summit-1.JPG
-category: software
+categories: software
 permalink: /:categories/:title
 video: 953PcioD6tk
 slides: 31FGNIgkML7hdk

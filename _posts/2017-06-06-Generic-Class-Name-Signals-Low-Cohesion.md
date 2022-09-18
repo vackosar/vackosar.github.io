@@ -2,7 +2,7 @@
 layout: post
 title: Generic Class Name Signals Low Cohesion
 date: 2017-06-06
-category: software
+categories: software
 description: Why and how to avoid non-specific class names like util, utils, or helper?
 permalink: /:categories/:title
 redirect_from:

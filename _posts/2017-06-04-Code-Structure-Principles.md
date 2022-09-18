@@ -3,7 +3,7 @@ layout: post
 title: How to Structure Code
 date: 2017-06-04
 last_modified_at: 2022-06-06
-category: software
+categories: software
 description: Localize Related, Inline over Extract, Specific over Generic. My view partially based on Carmack, Jonathan Blow, and Adam Bien's posts.
 permalink: /:categories/:title
 redirect_from:
