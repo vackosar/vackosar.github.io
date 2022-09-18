@@ -2,8 +2,11 @@
 layout: post
 title: About Vaclav Kosar
 description: ML engineer, physics masters, builder-explorer
-categories: ml
+category: ml
 date: 2022-09-18
+image: /images/vaclav-kosar.png
+post_list_text: Read one of my latest posts
+limit_post_list: 5
 ---
 
 

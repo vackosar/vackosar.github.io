@@ -23,8 +23,17 @@ layout: default
 {% include subscribe.html %}
 <br><br>
 
+{% if page.category %}
+    {% assign category = page.category %}
+{% else %}
+    {% capture category %}{{ page.categories | first }}{% endcapture %}
+{% endif %}
 
-{% capture category %}{{ page.categories | first }}{% endcapture %}
+{% assign limit_post_list = 1000 %}
+{% if page.limit_post_list %}
+    {% assign limit_post_list = page.limit_post_list %}
+{% endif %}
+
 
 {% if page.post_list_text %}
 <h2>{{ page.post_list_text }}</h2>
@@ -34,7 +43,7 @@ layout: default
 
 <div class="container posts">
 {% if page.my_related_post_paths.size > 0 %}
-    {% for related_post_path in page.my_related_post_paths %}
+    {% for related_post_path in page.my_related_post_paths limit:limit_post_list %}
         {% for post in site.categories[category] %}
             {% if post.path == related_post_path %}
             <div class="row">
@@ -55,9 +64,9 @@ layout: default
         {% endfor %}
     {% endfor %}
 {% else %}
-    {% if category %}
+    {% if category.size > 0 %}
 <!--        {% assign posts = site.categories[category] %}-->
-        {% for post in site.posts %}
+        {% for post in site.categories[category] limit:limit_post_list %}
             {% if post.title != page.title %}
             <div class="row">
                 <div style="width: 80%; min-width: 300px; margin-top: 15px;">
@@ -76,7 +85,7 @@ layout: default
             {% endif %}
         {% endfor %}
     {% else %}
-        {% for post in site.posts %}
+        {% for post in site.posts limit:limit_post_list %}
             {% if post.title != page.title %}
             <div class="row">
                 <div style="width: 80%; min-width: 300px; margin-top: 15px;">
