@@ -3,8 +3,8 @@ layout: default
 title: Vaclav Kosar's Software & Machine Learning Blog
 ---
 <h1 class="h2">{{ page.title }}</h1>
+Find more <a href="/about-vaclav-kosar"> about me, Vaclav Kosar, over here</a>.
 
-<br>
 {% include subscribe.html %}
 <br>
 
