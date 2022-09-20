@@ -42,7 +42,7 @@ Checkout also AWS App Runner option at the end.
             Feature
         </th>
         <th scope="col">
-            <a href="https://www.bentoml.org">BentoML.org</a> 
+            <a href="https://www.bentoml.com/">BentoML.com</a> 
         </th>
         <th scope="col">
             <a href="https://www.cortex.dev/">Cortex.dev</a> 
