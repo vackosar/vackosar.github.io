@@ -17,12 +17,12 @@ my_related_post_paths:
 
 
 
-- We want to represent data as numbers to compute our tasks.
-- We start with simple high dimensional feature vectors created from input data e.g. vocabulary word index.
-- Then we find lower dimensional vectors optimized for our task called embeddings.
-- Common training tasks:
+- Want to represent data as numbers to compute our tasks.
+- Start with simple high dimensional feature vectors created from input data e.g. vocabulary word index.
+- Then find lower dimensional vectors optimized for our task called embeddings.
+- Can train with both unsupervised, and supervised tasks:
   - How similar are these two product images? (similarity e.g. student-teacher)
-  - How similar is this image to this abstract product image class? (classification)
+  - How similar is this image to this abstract image class? (classification)
 - Before representing the full data we often split data into meaningful parts called tokens
 
 
@@ -32,8 +32,9 @@ my_related_post_paths:
 
 
 ## Embedding Tokens
-- tokens are then mapped to their representations e.g. word (token) embeddings, image patch (token) embeddings.
-- progressively we pool the sequences of embeddings into full contextual data representation
+- Map Tokens to their representations e.g. word (token) embeddings, image patch (token) embeddings.
+- Step by step pool the sequences of embeddings into shorter sequences, until we get a single full contextual data representation for the output.
+- Can pool via averaging, summation, segmentation, or just take a single sequence position output embedding (class token).
 
 
 {% include shared_slides/representations.md %}
