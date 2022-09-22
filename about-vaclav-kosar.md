@@ -9,10 +9,14 @@ post_list_text: Read one of my latest posts
 limit_post_list: 5
 ---
 
+Strong multi-domain experience in solving challenging problems from 9 years of software, 3 years of machine learning, and big data engineering.
 
-I am machine learning engineer with 3 years experience, and senior software and big data engineer with 6 years experience.
+Expertise:
+- Software engineering, Python, Java, Scala backend, and frontend
+- Natural language processing, Machine translation, Image-text classification, Transformers
+- Big data, BigQuery, Spark, Scala, RDBMS
 
-I love understanding and solving the business problems, developing robust machine learning and software solutions quickly, while staying up-to-date reading research papers.I am machine learning engineer with 3 years experience, and senior software and big data engineer with 6 years experience. I love understanding and solving the business problems, developing robust machine learning and software solutions quickly, while staying up-to-date reading research papers.
+I love understanding and solving business problems and delivering robust machine learning and software solutions quickly while staying up to date, reading research papers, and practicing by building side projects.
 
 ![Vaclav Kosar](/images/vaclav-kosar.png)
 
@@ -22,33 +26,29 @@ I love understanding and solving the business problems, developing robust machin
 ### Machine Learning Engineer @ GLAMI
 Mar 2020 - Present (2 years 7 months +)
 
-Modernized fashion product categorization and feature detection multi-modal multi-lingual text-image model.
-Organized cross-department collaboration to ensure the project success.
-Additionally contributed to recommendation systems, Devops, and MLOps.
+Researched and implemented major modernization of a large-scale fashion product categorizer and feature detector, applying a multi-lingual image-text deep learning model. Collaborated and coordinated cross-department team to ensure the project's success. The project involved the redesign of Devops and MLOps infrastructure. Additionally contributed to a recommendation system and other ML projects, learning a lot from the domain experts on the team. Gained a good understanding of the business model of e-commerce platforms.
 
-PyTorch, TensorFlow, AWS, Docker, Pandas, NLP, Transformer, CNN, Numpy, e-commerce bidding systems
+PyTorch, TensorFlow, AWS, Docker, Pandas, NLP, Transformer, CNN, Numpy, e-commerce, Terraform, EKS, Kubernetes
 
 ### Software & ML Developer @ Time is Ltd.
 May 2019 - Mar 2020 (11 months)
 
-Development of data pipeline for analytics of calendar meetings, message metadata, and organization structure.
-Researched and proposed options joint analysis of organisational structure and meeting frequency.
+Developed a data processing pipeline from ingestion to analysis heavily using BigQuery for a productivity people analytics startup integrating calendar meetings, message metadata, and organization structure. Researched and prototyped a joint analysis of the organizational structure and meeting frequency to offer a novel view of the problem. Ultimately, interesting deep learning problems at GLAMI outweighed the opportunity to explore this underdeveloped analytics domain.
 
-Python, Pandas, Flask, NetworkX, Numpy, Google Cloud, BigQuery, AppEngine
+Pandas, NetworkX, Numpy, Google Cloud, BigQuery, AppEngine, Python, NodeJS, JavaScript
+
 
 ### Senior Software Developer (AVP) @ Barclays Investment Bank
 Feb 2018 - Apr 2019 (1 year 3 months)
 
-Collaborated on development of on a Apache Spark big data lineage tracking tool Spline.
-Researched and developed lineage tracking for Apache Spark Structured Streaming. Contributed to Apache Spark open source project to enable required integration.
+Collaborated on development of an Apache Spark big data lineage tracking tool called Spline. Researched and designed lineage tracking for Apache Spark Structured Streaming. Contributed to Apache Spark open source project to enable required integration.
 
 Big Data, Spark, Scala, TypeScript, RxJS, AngularJS, ArangoDB, graph db, data lineage, data provenance, streaming
 
 ### Senior Software Developer (AVP) @ Barclays Corporate & Investment Bank
 May 2015 - Jan 2018 (2 years 9 months)
 
-Collaborated on development of event-driven microservice JMS messaging platform "Latitude", including web UI for monitoring, reporting and managing liquidity and credit obligations that allowed Barclays to significantly reduce costs and meet regulatory requirements for Basel III.
-Additionally implemented one of the first simplified Docker deployment devops tools for Java to OpenShift.
+Collaborated on development of event-driven micro-service JMS messaging platform "Latitude", including web UI for monitoring, reporting and managing liquidity and credit obligations that allowed Barclays to significantly reduce costs and meet regulatory requirements for Basel III. Additionally implemented one of the first simplified Docker deployment devops tools for Java to OpenShift.
 
 Agile Scrum, Angular 2, TypeScript, Docker, OpenShift v3, Spring Framework, Spring Integration, Solace JMS, SQL, Git, Maven, JBehave, Teamcity, Enterprise Integration Patterns
 
