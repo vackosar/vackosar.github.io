@@ -46,3 +46,12 @@ my_related_post_paths:
 - [Vision Transformer (ViT)](https://arxiv.org/pdf/2010.11929.pdf) uses [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) and the output class token embedding is used as an image embedding
 
 ![vision transformer (ViT) architecture](/images/vision-transformer-vit-architecture.png)
+
+
+## Reusing Embeddings
+- Embeddings are trained to represent data such that it makes a specific task easy
+- Embeddings perform often better than feature vectors on at least related tasks
+- for example Word2vec or BERT embeddings are trained on a word prediction tasks, but embeddings are still useful in other contexts
+- some tasks are more related than others see [multi-task learning](https://ai.googleblog.com/2021/10/deciding-which-tasks-should-train.html)
+ 
+![inter-task affinity for multi-task learning task grouping](/images/disentangle-multi-task.png)
