@@ -49,9 +49,11 @@ my_related_post_paths:
 
 
 ## Reusing Embeddings
-- Embeddings are trained to represent data such that it makes a specific task easy
-- Embeddings perform often better than feature vectors on at least related tasks
-- for example Word2vec or BERT embeddings are trained on a word prediction tasks, but embeddings are still useful in other contexts
-- some tasks are more related than others see [multi-task learning](https://ai.googleblog.com/2021/10/deciding-which-tasks-should-train.html)
+- Embeddings are trained to represent data such that it makes the training task easy
+- Embeddings perform often better than the input feature vectors on at least related tasks
+- some tasks are more related than others: [multi-task learning](https://ai.googleblog.com/2021/10/deciding-which-tasks-should-train.html)
+- speculation: Because of high number precision, smoothness of the neural network layers, and random weight initialization, most input information is preserved within the output embeddings
+  - that would explain why neural networks can improve by training
+- for example Word2vec or BERT embeddings are trained on a word prediction tasks, but their embeddings are useful for e.g. text classification tasks
  
 ![inter-task affinity for multi-task learning task grouping](/images/disentangle-multi-task.png)
