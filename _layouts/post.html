@@ -17,8 +17,14 @@ layout: default
     <small>Updated on: {{ page.last_modified_at | date_to_string }}.</small>
 {% endif %}
     <br>
-    <a href="/about-vaclav-kosar"><img src="/images/thank-you.svg"  alt="Thank you" style="width: 200px"/></a>
+    <a href="/about-vaclav-kosar"><img src="/images/thank-you.svg"  alt="Thank you" style="width: 200px"/></a><br>
 </p>
+
+<a class="btn btn-success m-1" style="text-decoration: none; display: inline-block;" href="{{ site.feedback_url }}">
+    Ask or Report A Mistake</a>
+<br>
+<br>
+<br>
 
 {% include subscribe.html %}
 <br><br>

@@ -33,7 +33,6 @@ Cross attention is:
 - machine translation: [cross-attention helps decoder predict next token](#cross-attention-in-transformer-decoder) of the translated text
 
 ## Cross-attention vs Self-attention
-![cross-attention perceiver io detail](/images/cross-attention-detail-perceiver-io.png)
 
 Except for inputs, cross-attention calculation is the same as [self-attention](/ml/transformers-self-attention-mechanism-simplified).
 Cross-attention combines asymmetrically two separate embedding sequences of same dimension, in contrast self-attention input is a single embedding sequence.
@@ -42,6 +41,8 @@ Alternative [cross-attention in SelfDoc](#cross-attention-in-selfdoc), uses quer
 
 [The feed forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) is related to cross-attention, except the feed forward layer does use softmax and one of the input sequences is static.
 [Augmenting Self-attention with Persistent Memory paper](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) shows that Feed Forward layer calculation made the same as self-attention.
+
+![cross-attention perceiver io detail](/images/cross-attention-detail-perceiver-io.png)
 
 ## Cross-attention Algorithm
 - Let us have embeddings (token) sequences S1 and S2

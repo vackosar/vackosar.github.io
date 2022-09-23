@@ -78,8 +78,8 @@ img {
 }
 
 svg {
-    width: 22px;
-    color: #207994;
+    width: 25px;
+    color: #207994 !important;
     margin-right: 10px;
 }
 
