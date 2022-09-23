@@ -71,10 +71,11 @@ Byte-Pair-Encoding (BPE) algorithm:
 
 
 ### Unigram Tokenizer
-- [Unigram](https://arxiv.org/pdf/1804.10959.pdf) instead of merging and adding like [BPE](#bpe-tokenizer), it removes
-- starts with a very large vocabulary and removes fixed number symbols such that a vocabulary loss increase minimally
-- stop if vocabulary size reached, otherwise loop to previous step
-- to disambiguate tokenization a probability of token occurrence is used, and packaged with the tokenizer
+- [Unigram](https://arxiv.org/pdf/1804.10959.pdf) construction instead of merging and adding to a vocabulary like [BPE](#bpe-tokenizer), it removes tokens
+- A vocabulary loss is constructed as expectation maximization loss summing over all tokenizations of all corpus' subsequences.
+  - The probability of each token is approximated as independent of other tokens.
+- Starts with a very large vocabulary and removes fixed number symbols such that the vocabulary loss increase minimally
+- Stop if vocabulary size reached, otherwise loop to previous step
 
 
 ### SentencePiece vs WordPiece Tokenizer
