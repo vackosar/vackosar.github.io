@@ -9,6 +9,7 @@
     <script src="/js/lazysizes.min.js" async></script>
     {% feed_meta %}
     {% seo %}
+    {% if page.extra_meta %}{{ page.extra_meta }}{% endif %}
 
     <!-- icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">

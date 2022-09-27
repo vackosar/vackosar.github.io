@@ -1,22 +1,33 @@
 url: https://vaclavkosar.com
 name: Vaclav Kosar's Blog
 title: ""
-author: Vaclav Kosar
 description: Software & Machine Learning Blog
 tagline: a ML developer on tech
 keywords: blog, personal page, software development, machine learning, software, technology, tips, cv, Vaclav Kosar, Kosar, Vaclav, Václav Košař,Václav Košař, Václav, portfolio
 
 markdown: kramdown
-twitter: vackosar
 logo: /vaclav_face_circle.png
 feedback_url: https://us3.list-manage.com/contact-form?u=289873d7958b1bdc1c6dc93b7&form_id=3b80462ee1d82c5a36e447efbfdbe72a
 
+twitter:
+  username: vackosar
+  card: summary
+  url: https://vaclavkosar.com/about-vaclav-kosar
+
+author:
+  name: Vaclav Kosar
+  twitter: vackosar
+  site: https://vaclavkosar.com/about-vaclav-kosar
+  url: https://vaclavkosar.com/about-vaclav-kosar
+
 twitter_username: vackosar
+
 future: true
 show_downloads: true
 theme: jekyll-theme-minimal
 social:
   name: Vaclav Kosar
+  url: https://vaclavkosar.com/about-vaclav-kosar
   links:
     - https://www.facebook.com/vackosar
     - https://twitter.com/vackosar

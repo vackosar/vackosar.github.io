@@ -7,6 +7,27 @@ date: 2022-09-18
 image: /images/vaclav-kosar.png
 post_list_text: Read one of my latest posts
 limit_post_list: 5
+extra_meta: |
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Vaclav Kosar",
+      "image": "/images/vaclav-kosar.png",
+      "jobTitle": "Machine Learning Engineer",
+      "alumniOf": "CTU, Prague",
+      "url": "https://vaclavkosar.com",
+      "sameAs" : [
+        "https://www.facebook.com/vackosar",
+        "https://twitter.com/vackosar",
+        "https://www.linkedin.com/in/vaclav-kosar/",
+        "https://www.youtube.com/c/VaclavKosar",
+        "https://github.com/vackosar",
+        "https://www.quora.com/profile/Vaclav-Kosar",
+        "https://vaclavkosar.com/feed.xml"
+      ]
+    }
+    </script>
 ---
 
 Strong multi-domain experience in solving challenging problems from 9 years of software, 3 years of machine learning, and big data engineering.
