@@ -39,7 +39,7 @@ Expertise:
 
 I love understanding and solving business problems and delivering robust machine learning and software solutions quickly while staying up to date, reading research papers, and practicing by building side projects.
 
-![Vaclav Kosar](/images/vaclav-kosar.png)
+![Vaclav Kosar](/images/me/vaclav-kosar-2022-mirror-edited-removebg.png)
 
 
 ## Experience
