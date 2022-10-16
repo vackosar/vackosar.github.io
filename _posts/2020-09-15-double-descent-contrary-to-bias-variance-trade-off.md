@@ -3,7 +3,7 @@ layout: post
 title: Double Descent Contrary to Bias-Variance Trade-Off
 date: 2020-09-15
 categories: ml
-description: Increasing model's parameter count leads to multiple test loss peaks and achieving global minima in the overparameterized regime.
+description: Increasing parameter count leads to multiple test loss peaks and a global minima in the overparameterized regime.
 image: /images/double-descent-nn-mnist.webp
 video: 4Qgt4nXgJ10
 permalink: /:categories/:title
@@ -26,7 +26,7 @@ my_related_post_paths:
 The bias-variance trade-off hypothesis implies that lowering train loss by increasing model size will lead to higher test loss.
 Empirically this can be observed for example in case of decision tree, which beyond some size will achieve zero train loss, while test loss (generalization error) will rise.
 
-But in general, bias-variance trade-off is not applicable.
+But in general, bias-variance trade-off is not applicable in terms of parameter count (See [model norm definition below](#model-norm-vs-parameter-count-and-double-descent)).
 Any kind of regularization of the optimizer, which is part of the model, will force model to look for "simple" solution (Occam's razor), despite having capacity to fully fit the training data.
 Behaviour of the optimiser can have an impact on the resulting test loss (generalization error). For example early stopping is a regularization.
 Not having any explicit regularization, doesn't imply that bias-variance tradeoff will be applicable.
@@ -44,10 +44,27 @@ The paper refers to empirical evidence that an implicit regularization is repres
 
 More general work on double descent and large datasets from [OpenAI here](https://arxiv.org/pdf/1912.02292.pdf).
 
+## Model Norm vs Parameter Count and Double Descent
+But is measuring the model capacity in terms of parameter count the best?
+What if the model's optimizer thanks to the regularization learns to just zero out some weights?
+We should be able to see this in terms of model norm, which is a norm of all model's parameters.
+[Machine Learning CS229 lecture notes](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf) plot a case where, the double descent disappears, when we use norm of the model's parameters instead of their count.
+
+![double descent and weights norm model norm  Ng 2022](/images/double-descent-and-weights-norm-model-norm--ng-2022.png)
+
+
+## Grokking
 [Open AI also observed double descent](https://mathai-iclr.github.io/papers/papers/MATHAI_29_paper.pdf?utm_campaign=The%20Batch&utm_medium=email&_hsmi=209230924&utm_content=209231304&utm_source=hs_email) in [Transformers](/ml/transformers-self-attention-mechanism-simplified),
-which they called "grokking". In the grokking setup, OpenAi trained on a binary operations datasets, and observed sudden jumps in accuracy far in the overfitting regime.
+which they called "grokking". In the grokking setup, OpenAi trained on a binary operations datasets, and observed sudden jumps in accuracy (inverse of error), as if the model suddenly found the right algorithm far in the overfitting regime despite prolonged error stagnation.
 
 ![OpenAI grokking](/images/opean-ai-grokking.png)
+
+
+Additionally, [OmniGrok 2022 paper](https://arxiv.org/pdf/2210.01117.pdf) connects grokking to norm of the model's weights and the tasks dependency on good representations.
+<blockquote style="font-style: italic" class="blockquote">
+Our conclusions are: (i) grokking originates from the mismatch between training and test losses ("LU" mechanism). (ii) grokking can happen in various models for a wide range of datasets, although the grokking signature is usually most dramatic for algorithmic datasets. (iii) The dramaticness of grokking depends on how much the task relies on learning representations. This work not only reveals the mechanism of grokking, but also shows that reduced landscape analysis is a useful tool for characterizing data-model interaction and representation learning.
+</blockquote>
+
 
 
 ## Bias–variance decomposition of mean squared error 
