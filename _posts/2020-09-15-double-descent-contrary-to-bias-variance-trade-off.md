@@ -2,6 +2,7 @@
 layout: post
 title: Double Descent Contrary to Bias-Variance Trade-Off
 date: 2020-09-15
+last_modified_at: 2022-10-16
 categories: ml
 description: Increasing parameter count leads to multiple test loss peaks and a global minima in the overparameterized regime.
 image: /images/double-descent-nn-mnist.webp
