@@ -24,15 +24,19 @@ my_related_post_paths:
 {% include load_video.html %}
 
 
-The bias-variance trade-off hypothesis implies that lowering train loss by increasing model size will lead to higher test loss.
-Empirically this can be observed for example in case of decision tree, which beyond some size will achieve zero train loss, while test loss (generalization error) will rise.
+The **bias-variance trade-off hypothesis** implies that lowering train loss by **increasing model size will lead to higher test loss**.
+Empirically this can be **observed in decision trees**, which beyond some size will achieve zero train loss, while test loss (generalization error) will rise.
+See the bias-variance trade-off case of decision tree pruning controlled by alpha in below.
+
+![decision tree cost complexity pruning improves test accuracy until a maximum, scikit docs](/images/decision_tree_cost_complexity_pruning__improves_test_accuracy_until_a_maximum__scikit_docs.png) 
+
 
 But in general, bias-variance trade-off is not applicable in terms of parameter count (See [model norm definition below](#model-norm-vs-parameter-count-and-double-descent)).
 Any kind of regularization of the optimizer, which is part of the model, will force model to look for "simple" solution (Occam's razor), despite having capacity to fully fit the training data.
 Behaviour of the optimiser can have an impact on the resulting test loss (generalization error). For example early stopping is a regularization.
 Not having any explicit regularization, doesn't imply that bias-variance tradeoff will be applicable.
 [Belkin 2019 paper](https://arxiv.org/abs/1812.11118) has an image, displayed also below, which shows that bias-variance trade-off is not applicable to fully connected NN on MNIST without regularization and early stopping.
-The paper refers to empirical evidence that an implicit regularization is represent in the SGD algorithm.
+The paper refers to empirical evidence that an implicit regularization is present in the SGD algorithm.
 
 <figure class="figure">
     <img
