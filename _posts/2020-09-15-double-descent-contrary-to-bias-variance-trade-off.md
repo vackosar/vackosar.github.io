@@ -33,7 +33,7 @@ See the bias-variance trade-off case of decision tree pruning controlled by alph
 
 But in general, bias-variance trade-off is not applicable in terms of parameter count (See [model norm definition below](#model-norm-vs-parameter-count-and-double-descent)).
 Any kind of regularization of the optimizer, which is part of the model, will force model to look for "simple" solution (Occam's razor), despite having capacity to fully fit the training data.
-Behaviour of the optimiser can have an impact on the resulting test loss (generalization error). For example early stopping is a regularization.
+Behaviour of the optimizer can have an impact on the resulting test loss (generalization error). For example early stopping is a regularization.
 Not having any explicit regularization, doesn't imply that bias-variance tradeoff will be applicable.
 [Belkin 2019 paper](https://arxiv.org/abs/1812.11118) has an image, displayed also below, which shows that bias-variance trade-off is not applicable to fully connected NN on MNIST without regularization and early stopping.
 The paper refers to empirical evidence that an implicit regularization is present in the SGD algorithm.
@@ -181,7 +181,7 @@ Authors prove:
 The problem is linear regression without regularization with true linear model of zero.
 Where all labels contain an error \\( y_i = 0 + \varepsilon_i \\), which is normally distributed around zero.
 
-However the features have all different distribution.
+However, the features have all different distribution.
 The authors select them, such that they can control the generalization curve.
 Each feature \\( x_i \\) is distributed either as a Gaussian mixture \\( N^{mix}_{\sigma_1, 1} \\) or as a standard Gaussian \\( N(0, \sigma) \\) .
 The data dimension is the feature count.
