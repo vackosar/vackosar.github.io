@@ -1,10 +1,11 @@
 ---
 title: Neural Network Pruning Explained
-description: Lower on-CPU prediction and model storage costs.
+description: Lower on-CPU prediction and model storage costs by zeroing-out weight not impacting the loss.
 layout: post
 categories: ml
-date: 2022-09-16
-last_modified_at: 2022-09-16
+image: /images/neural-network-pruning-thumb.png
+date: 2022-20-23
+last_modified_at: 2022-10-23
 permalink: /:categories/:title
 ---
 
@@ -15,7 +16,7 @@ Neural networks use various regularization allowing [high over-parametrization w
 ![decision tree cost complexity pruning improves test accuracy until a maximum, scikit docs](/images/decision_tree_cost_complexity_pruning__improves_test_accuracy_until_a_maximum__scikit_docs.png) 
 
 
-## Pruning Steps
+## General Pruning Steps
 In the first step we find or pre-select some initial network.
 Then we iteratively **train, prune, and repeat**.
 We **end after the training step**, as the weights are optimized for the pruned network, which has **a different architecture** in which pruned weight are **fixed to zero**.
@@ -34,7 +35,7 @@ Popular algorithms available:
 ![decision tree regression with data points and two maximum depths](/images/decision_tree_regression_with_data_points_and_two_maximum_depths.png)
 
 
-## Minimal Cost-Complexity Pruning in CART Decision Trees
+### Minimal Cost-Complexity Pruning in CART Decision Trees
 Minimal Cost-Complexity Pruning is **a greedy algorithm, which iteratively removes the best to prune subtrees** until reaching a specified limit.
 
 For each non-terminal node `t` and we can calculate cost complexity of its subtree:
@@ -54,20 +55,29 @@ Note that `cost_complexity` above has similarities to [lasso regularization](htt
 ![neural network as a multivariate decision tree for a parabola dataset](/images/neural_networks_are_decision_trees__aytekin_2022.png)
 
 
-## Pruning Methods in Neural Networks
+## Pruning in Neural Networks
 In general, we start with a random initialization or a pretrained model of a certain architecture and then prune the model, producing sparser architecture, and train again. Various methods exists:
+- **Unstructured Pruning** prunes individual neurons. **Structured Pruning** prunes entire architectural blocs (layers, heads). **Semi-structured Pruning** prunes square blocks of weights.
+- **[Magnitude Pruning](https://arxiv.org/pdf/1506.02626.pdf) prunes the smallest weights**, the most obvious idea.
+
+### Pruning Neural Networks Using Loss Change Estimates
+Similar to decision trees, we can zero-out weights that don't change the loss.
+**First-order Pruning prunes based on training loss gradients**.
+For example [Movement Pruning](https://aclanthology.org/2021.emnlp-main.829.pdf) removes those weights with gradient pointing towards zero during fine-tuning on a downstream task.
+
+If the network weights are optimized and the first order gradient is zero, we need to use the second order derivative.
+**Second-order Pruning prunes based on loss gradient and Hessian** minimizing the approximation of loss change e.g., [M-FAC method](https://arxiv.org/pdf/2107.03356.pdf). 
+
+### Pruning Methods in Neural Networks
 - [Learning both Weights and Connections for Efficient Neural Networks paper](https://arxiv.org/pdf/1506.02626.pdf), starts with random initialization, trains, prunes the smallest weights (small magnitude), and then crucially trains again the new network, and repeat. [Tensorflow pruning API](https://blog.tensorflow.org/2019/05/tf-model-optimization-toolkit-pruning-API.html) uses this method and sparsifies the layer's weights during training.
 - [The Lottery Ticket Hypothesis paper](https://arxiv.org/pdf/1803.03635.pdf) prunes 90% its [smallest weights](https://arxiv.org/pdf/1506.02626.pdf), and **finds a subnetworks in the random initialization**, that trains to near optima.
-- **Unstructured pruning** gradually prunes individual neurons, while **structured pruning** prunes entire logical blocs.
-- **First-order Pruning prunes based on training loss gradients**, e.g., [Movement Pruning](https://aclanthology.org/2021.emnlp-main.829.pdf) removes those weights with gradient pointing towards zero during fine-tuning on a downstream task.
-- **Second-order Pruning prunes based on loss gradient and Hessian** minimizing the approximation of loss change e.g., [M-FAC method](https://arxiv.org/pdf/2107.03356.pdf). Since optimized, the first order gradient is zero, and so we need the second order derivative.
 - A notable oBERT method of 2022 is described below.
 
 
 ![pruning synapses, neurons, layers](/images/pruning_both_synapses_and_neuron_nodes_han_2015.png)
 
 
-## Optimal BERT Surgeon Pruning Method
+### Optimal BERT Surgeon Pruning Method
 [oBERT paper](https://arxiv.org/pdf/2203.07259.pdf) from [Neural Magic](https://neuralmagic.com/blog/obert/) achieves **the same latency on [4-Core CPU as on A100 GPU](https://neuralmagic.com/wp-content/uploads/2022/09/Conference-Slides-Graphs-18.png)** with batch size 1, metrics within 1% difference, and 10x smaller [BERT model](/ml/transformers-self-attention-mechanism-simplified).
 oBERT extends **Second-order to Structured Pruning**, reusing Fisher Information Matrix **approximation of the Hessian**, speeds ups inversion with WSM inversion formula and block-wise approximation, and fine-tunes with **Knowledge Distillation**.
 With **increasing layer count seems to reduce speedup** of the oBERT method.
@@ -78,7 +88,7 @@ oBERT optimized for CPU achieves 8.4x speed up, while when tuned for GPU only 2.
 ![optimal bert surgeon evaluation  comparission of compression methods  obert paper](/images/optimal-bert-surgeon-evaluation--comparission-of-compression-methods--obert-paper.png)
 
 
-## Neural Magic Engine
+### Neural Magic Engine
 Neural Magic Engine is a closed source inference software for sparse models optimized for CPU.
 Popular models like BERT and Resnet50 in vision and text available for experimentation on their [website](https://sparsezoo.neuralmagic.com/).
 
@@ -96,7 +106,7 @@ Popular models like BERT and Resnet50 in vision and text available for experimen
 
 
 
-### Neural Magic Engine CPU vs GPU Costs Estimate
+#### Neural Magic Engine CPU vs GPU Costs Estimate
 **In my experiment**, oBERT outperformed Distilbert latency 2.3x on my CPU with 12 cores with batch size 1, while oBERT should have higher accuracy.
 **Predicting on 4-Core CPU should save 2x to 4x costs** with more device availability in contrast to T4 GPU on Ohio.
 See below table for AWS Ohio pricing.
@@ -106,24 +116,24 @@ See below table for AWS Ohio pricing.
 | t4g.xlarge  (4 core CPU) |   $0.1344  |   4  |   16 GiB  |  
 
 
-### Licence and Patents
+#### Licence and Patents
 Sparsification libraries SparseML are Apache 2 licenced.
 The inference engine is
-  - patented technology: [Patents Assigned to Neuralmagic Inc. - Justia Patents Search](https://patents.justia.com/assignee/neuralmagic-inc): "to execute in parallel involve computations from multiple layers"
-  - restrictive licence for production use: "solely for evaluation  use in development and testing environments, and not for production use."
+- patented technology (["to execute in parallel involve computations from multiple layers"](https://patents.justia.com/assignee/neuralmagic-inc))
+- restrictive licence not for production use (["solely for evaluation  use in development and testing environments, and not for production use."](https://github.com/neuralmagic/deepsparse/blob/main/LICENSE-NEURALMAGIC))
 
 
-### Neural Magic Management
+#### Neural Magic Management
 **Nir Shavit won Dijkstra price and Godel price** for research in computer science, mainly in memory and parallel computation.
 Other [ML Performance Research Papers on Neural Magic](https://neuralmagic.com/resources/technical-papers/)
 
 
-### Neural Magic Summary
+#### Neural Magic Solution Summary
+- could save 2x money minus pricing of NeuralMagic by inferring on commodity CPU with similar time cost as on GPU.
+  - the next best thing would be just use similar methods without their specific technology
+  - How much they charge?
+- training still requires GPU (often not important)
 - vendor lock in - probably want to avoid or be ready to switch.
-- no clear alternative now to me know ([Vertigo Applied Intelligence - Vertigo.ai](https://vertigo.ai/) ?)
-- not sure what patent means in practice as the wording seems overly broad
-- but could save 2x money minus pricing of NeuralMagic by inferring on commodity CPU with similar time cost as on GPU. 
-	- the next best thing would be just use similar methods without their specific technology
-	- How much they charge?
-- still need to train on GPU
+- no clear alternative (maybe [Vertigo Applied Intelligence - Vertigo.ai](https://vertigo.ai/) ?)
+- not sure what their patent means in practice as the wording seems overly broad
  
