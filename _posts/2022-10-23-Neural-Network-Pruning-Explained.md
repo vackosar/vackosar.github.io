@@ -4,16 +4,18 @@ description: Lower on-CPU prediction and model storage costs by zeroing-out weig
 layout: post
 categories: ml
 image: /images/neural-network-pruning-thumb.png
-date: 2022-20-23
+date: 2022-10-23
 last_modified_at: 2022-10-23
 permalink: /:categories/:title
 ---
 
 Pruning performs **lossy compression** of the model during repeated training steps to **reduce prediction costs, and model size**.
 In decision trees, pruning **at first improves test accuracy (generalization)**, until a maximum is reached, after which it decreases accuracy, which corresponds to [bias-variance trade-off](/ml/double-descent-contrary-to-bias-variance-trade-off).
-Neural networks use various regularization allowing [high over-parametrization without overfitting](/ml/double-descent-contrary-to-bias-variance-trade-off) but are computationally costly, which is where pruning helps.
+Neural networks use various regularization **allowing [high over-parametrization without overfitting](/ml/double-descent-contrary-to-bias-variance-trade-off)**, but we can still cut computation cost with pruning.
 
-![decision tree cost complexity pruning improves test accuracy until a maximum, scikit docs](/images/decision_tree_cost_complexity_pruning__improves_test_accuracy_until_a_maximum__scikit_docs.png) 
+
+![neural network pruning](/images/neural-network-pruning-thumb.png)
+
 
 
 ## General Pruning Steps
@@ -36,8 +38,12 @@ Popular algorithms available:
 
 
 ### Minimal Cost-Complexity Pruning in CART Decision Trees
-Minimal Cost-Complexity Pruning is **a greedy algorithm, which iteratively removes the best to prune subtrees** until reaching a specified limit.
+Minimal Cost-Complexity Pruning is **a greedy algorithm, which iteratively removes the best to prune subtrees** until reaching a specified limit `alpha`.
+Increasing the pruning intensity by increasing alpha, improves generalization up to a point and then leads to decrease in generalization.
 
+![decision tree cost complexity pruning improves test accuracy until a maximum, scikit docs](/images/decision_tree_cost_complexity_pruning__improves_test_accuracy_until_a_maximum__scikit_docs.png) 
+
+#### Minimal Cost-Complexity Pruning Algorithm
 For each non-terminal node `t` and we can calculate cost complexity of its subtree:
 `def cost_complexity(t): misclassification_rate(t) + alpha * n_terminal_nodes(t)`
 
@@ -60,13 +66,13 @@ In general, we start with a random initialization or a pretrained model of a cer
 - **Unstructured Pruning** prunes individual neurons. **Structured Pruning** prunes entire architectural blocs (layers, heads). **Semi-structured Pruning** prunes square blocks of weights.
 - **[Magnitude Pruning](https://arxiv.org/pdf/1506.02626.pdf) prunes the smallest weights**, the most obvious idea.
 
-### Pruning Neural Networks Using Loss Change Estimates
-Similar to decision trees, we can zero-out weights that don't change the loss.
+### Pruning Neural Networks by Estimating Loss Change
+Similar to decision trees, we can zero-out weights that don't change the loss based on [Taylor series](https://en.wikipedia.org/wiki/Taylor_series) approximation.
 **First-order Pruning prunes based on training loss gradients**.
 For example [Movement Pruning](https://aclanthology.org/2021.emnlp-main.829.pdf) removes those weights with gradient pointing towards zero during fine-tuning on a downstream task.
 
 If the network weights are optimized and the first order gradient is zero, we need to use the second order derivative.
-**Second-order Pruning prunes based on loss gradient and Hessian** minimizing the approximation of loss change e.g., [M-FAC method](https://arxiv.org/pdf/2107.03356.pdf). 
+**Second-order Pruning prunes based on Hessian** prunes by minimization of the second-order loss change approximation e.g., [M-FAC method](https://arxiv.org/pdf/2107.03356.pdf). 
 
 ### Pruning Methods in Neural Networks
 - [Learning both Weights and Connections for Efficient Neural Networks paper](https://arxiv.org/pdf/1506.02626.pdf), starts with random initialization, trains, prunes the smallest weights (small magnitude), and then crucially trains again the new network, and repeat. [Tensorflow pruning API](https://blog.tensorflow.org/2019/05/tf-model-optimization-toolkit-pruning-API.html) uses this method and sparsifies the layer's weights during training.
