@@ -139,7 +139,7 @@ Other [ML Performance Research Papers on Neural Magic](https://neuralmagic.com/r
   - the next best thing would be just use similar methods without their specific technology
   - How much they charge?
 - training still requires GPU (often not important)
-- vendor lock in - probably want to avoid or be ready to switch.
-- no clear alternative (maybe [Vertigo Applied Intelligence - Vertigo.ai](https://vertigo.ai/) ?)
-- not sure what their patent means in practice as the wording seems overly broad
+- vendor lock in
+  - switching cost?
+  - no clear alternative to me now (maybe [Vertigo Applied Intelligence - Vertigo.ai](https://vertigo.ai/) ?)
  
