@@ -142,4 +142,4 @@ Other [ML Performance Research Papers on Neural Magic](https://neuralmagic.com/r
 - vendor lock in
   - switching cost?
   - no clear alternative to me now (maybe [Vertigo Applied Intelligence - Vertigo.ai](https://vertigo.ai/) ?)
- 
+- pricing?
