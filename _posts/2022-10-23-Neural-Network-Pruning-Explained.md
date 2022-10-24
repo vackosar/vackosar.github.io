@@ -5,7 +5,7 @@ layout: post
 categories: ml
 image: /images/neural-network-pruning-thumb.png
 date: 2022-10-23
-last_modified_at: 2022-10-23
+last_modified_at: 2022-10-24
 permalink: /:categories/:title
 ---
 
@@ -27,6 +27,7 @@ We **end after the training step**, as the weights are optimized for the pruned 
 
 ## Decision Trees
 Decision trees are composed of **a tree of if-else statements of the input variables** only without use of any [internal representations (embeddings)](/ml/Embeddings-in-Machine-Learning-Explained), and consequently they are highly **interpretable**.
+The if-else condition are of type: **input variable x is greater than value z**.
 They **overfit without regularization** is applied by encoding entire dataset.
 Commonly **regularization methods are pruning, minimum samples per leaf node, or maximum tree depth**.
 Popular algorithms available:
