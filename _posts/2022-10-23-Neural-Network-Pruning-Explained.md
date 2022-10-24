@@ -87,7 +87,6 @@ If the network weights are optimized and the first order gradient is zero, we ne
 ### Optimal BERT Surgeon Pruning Method
 [oBERT paper](https://arxiv.org/pdf/2203.07259.pdf) from [Neural Magic](https://neuralmagic.com/blog/obert/) achieves **the same latency on [4-Core CPU as on A100 GPU](https://neuralmagic.com/wp-content/uploads/2022/09/Conference-Slides-Graphs-18.png)** with batch size 1, metrics within 1% difference, and 10x smaller [BERT model](/ml/transformers-self-attention-mechanism-simplified).
 oBERT extends **Second-order to Structured Pruning**, reusing Fisher Information Matrix **approximation of the Hessian**, speeds ups inversion with WSM inversion formula and block-wise approximation, and fine-tunes with **Knowledge Distillation**.
-With **increasing layer count seems to reduce speedup** of the oBERT method.
 **Fine-tuning for another task on pruned models is possible**, but requires distillation to preserve the accuracy.
 **Initial training stays dense** and there is additional step of pruning fine-tune, so pruning helps only with **prediction and not training**.
 oBERT optimized for CPU achieves 8.4x speed up, while when tuned for GPU only 2.3x speed up.
