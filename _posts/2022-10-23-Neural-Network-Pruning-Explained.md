@@ -4,7 +4,6 @@ description: Reduce on-CPU prediction and model storage costs by zeroing-out wei
 layout: post
 categories: ml
 image: /images/neural-network-pruning-thumb.png
-video: cS3nNYo46yU
 date: 2022-10-23
 last_modified_at: 2022-10-24
 permalink: /:categories/:title
@@ -15,7 +14,7 @@ In decision trees, pruning **at first improves test accuracy (generalization)**,
 Neural networks use various regularization **allowing [high over-parametrization without overfitting](/ml/double-descent-contrary-to-bias-variance-trade-off)**, but we can still cut computation cost with pruning.
 
 
-{% include load_video.html %}
+![neural network pruning](/images/neural-network-pruning-thumb.png)
 
 
 ## General Pruning Steps
