@@ -1,6 +1,6 @@
 ---
 title: Neural Network Pruning Explained
-description: Lower on-CPU prediction and model storage costs by zeroing-out weight not impacting the loss.
+description: Reduce on-CPU prediction and model storage costs by zeroing-out weights while minimally increasing the loss.
 layout: post
 categories: ml
 image: /images/neural-network-pruning-thumb.png
