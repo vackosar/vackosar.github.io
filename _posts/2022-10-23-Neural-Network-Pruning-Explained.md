@@ -65,11 +65,12 @@ Note that `cost_complexity` above has similarities to [lasso regularization](htt
 In general, we start with a random initialization or a pretrained model of a certain architecture and then prune the model, producing sparser architecture, and train again. Various methods exists:
 - **Unstructured Pruning** prunes individual neurons. **Structured Pruning** prunes entire architectural blocs (layers, heads). **Semi-structured Pruning** prunes square blocks of weights.
 - **[Magnitude Pruning](https://arxiv.org/pdf/1506.02626.pdf) prunes the smallest weights**, the most obvious idea.
+- Pruning based on estimating change of loss corrensponding to a task are detailed below.
 
 ### Pruning Neural Networks by Estimating Loss Change
 Similar to decision trees, we can zero-out weights that don't change the loss based on [Taylor series](https://en.wikipedia.org/wiki/Taylor_series) approximation.
 **First-order Pruning prunes based on training loss gradients**.
-For example [Movement Pruning](https://aclanthology.org/2021.emnlp-main.829.pdf) removes those weights with gradient pointing towards zero during fine-tuning on a downstream task.
+For example [Movement Pruning](https://arxiv.org/pdf/2005.07683.pdf) removes those weights with gradient pointing towards zero during fine-tuning on a downstream task.
 
 If the network weights are optimized and the first order gradient is zero, we need to use the second order derivative.
 **Second-order Pruning prunes based on Hessian** prunes by minimization of the second-order loss change approximation e.g., [M-FAC method](https://arxiv.org/pdf/2107.03356.pdf). 
