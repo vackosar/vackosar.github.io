@@ -4,6 +4,7 @@ description: Reduce on-CPU prediction and model storage costs by zeroing-out wei
 layout: post
 categories: ml
 image: /images/neural-network-pruning-thumb.png
+video: cS3nNYo46yU
 date: 2022-10-23
 last_modified_at: 2022-10-24
 permalink: /:categories/:title
@@ -14,8 +15,7 @@ In decision trees, pruning **at first improves test accuracy (generalization)**,
 Neural networks use various regularization **allowing [high over-parametrization without overfitting](/ml/double-descent-contrary-to-bias-variance-trade-off)**, but we can still cut computation cost with pruning.
 
 
-![neural network pruning](/images/neural-network-pruning-thumb.png)
-
+{% include load_video.html %}
 
 
 ## General Pruning Steps
@@ -64,7 +64,7 @@ Note that `cost_complexity` above has similarities to [lasso regularization](htt
 
 ## Pruning in Neural Networks
 In general, we start with a random initialization or a pretrained model of a certain architecture and then prune the model, producing sparser architecture, and train again. Various methods exists:
-- **Unstructured Pruning** prunes individual neurons. **Structured Pruning** prunes entire architectural blocs (layers, heads). **Semi-structured Pruning** prunes square blocks of weights.
+- **Unstructured Pruning** prunes individual weights. **Structured Pruning** prunes entire architectural blocs (layers, heads). **Semi-structured Pruning** prunes square blocks of weights.
 - **[Magnitude Pruning](https://arxiv.org/pdf/1506.02626.pdf) prunes the smallest weights**, the most obvious idea.
 - Pruning based on estimating change of loss corrensponding to a task are detailed below.
 
