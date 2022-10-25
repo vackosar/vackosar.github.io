@@ -55,7 +55,7 @@ Note that `cost_complexity` above has similarities to [lasso regularization](htt
 
 
 ## Decision Tree vs Neural Network
-- Vanilla **decision trees split on the input variables only** and have no embeddings, while neural networks also train linear transformations of the values and thus create embeddings.
+- Vanilla **decision trees split on the input variables only** and have no [embeddings](/ml/Embeddings-in-Machine-Learning-Explained), while neural networks also train linear transformations of the values and thus create embeddings.
 - [Neural networks with piecewise activation functions (e.g. ReLU) are equivalent to extension of a decision tree](https://arxiv.org/pdf/2210.05189.pdf) with linear manifold decision boundaries called [Multivariate Decision Trees](https://link.springer.com/content/pdf/10.1023/A:1022607123649.pdf).
 
 ![neural network as a multivariate decision tree for a parabola dataset](/images/neural_networks_are_decision_trees__aytekin_2022.png)
@@ -95,7 +95,7 @@ oBERT optimized for CPU achieves 8.4x speed up, while when tuned for GPU only 2.
 
 
 ### Neural Magic Engine
-Neural Magic Engine is a closed source inference software for sparse models optimized for CPU.
+Neural Magic Engine is a **closed source patented inference software** for sparse models optimized for CPU.
 Popular models like BERT and Resnet50 in vision and text available for experimentation on their [website](https://sparsezoo.neuralmagic.com/).
 
 <blockquote class="blockquote text-right">
@@ -123,8 +123,7 @@ See below table for AWS Ohio pricing.
 
 
 #### Licence and Patents
-Sparsification libraries SparseML are Apache 2 licenced.
-The inference engine is
+Sparsification libraries SparseML are Apache 2 licenced. But **the inference engine** is
 - patented technology (["to execute in parallel involve computations from multiple layers"](https://patents.justia.com/assignee/neuralmagic-inc))
 - restrictive licence not for production use (["solely for evaluation  use in development and testing environments, and not for production use."](https://github.com/neuralmagic/deepsparse/blob/main/LICENSE-NEURALMAGIC))
 
