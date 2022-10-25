@@ -12,8 +12,8 @@ my_related_post_paths:
 - _posts/2020-05-08-starspace-embedding.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
-- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 ---
 
 

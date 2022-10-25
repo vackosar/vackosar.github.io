@@ -8,6 +8,12 @@ video: x57mjP37c7o
 date: 2022-10-23
 last_modified_at: 2022-10-24
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2022-05-14-neural-data-compression.md
+- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
+- _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
+- _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
 ---
 
 Pruning performs **lossy compression** of the model during repeated training steps to **reduce prediction costs, and model size**.

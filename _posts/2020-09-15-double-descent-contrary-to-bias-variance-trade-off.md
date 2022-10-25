@@ -11,11 +11,11 @@ permalink: /:categories/:title
 redirect_from:
 - /ml/double-descent-for-neural-network-and-multiple-descent
 my_related_post_paths:
+- _posts/2022-10-23-Neural-Network-Pruning-Explained.md
 - _posts/2022-05-14-neural-data-compression.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 - _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
-- _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
 ---
 
 
