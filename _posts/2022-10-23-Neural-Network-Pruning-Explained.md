@@ -4,6 +4,7 @@ description: Reduce on-CPU prediction and model storage costs by zeroing-out wei
 layout: post
 categories: ml
 image: /images/neural-network-pruning-thumb.png
+video: x57mjP37c7o
 date: 2022-10-23
 last_modified_at: 2022-10-24
 permalink: /:categories/:title
@@ -13,8 +14,7 @@ Pruning performs **lossy compression** of the model during repeated training ste
 In decision trees, pruning **at first improves test accuracy (generalization)**, until a maximum is reached, after which it decreases accuracy, which corresponds to [bias-variance trade-off](/ml/double-descent-contrary-to-bias-variance-trade-off).
 Neural networks use various regularization **allowing [high over-parametrization without overfitting](/ml/double-descent-contrary-to-bias-variance-trade-off)**, but we can still cut computation cost with pruning.
 
-
-![neural network pruning](/images/neural-network-pruning-thumb.png)
+{% include load_video.html %}
 
 
 ## General Pruning Steps
