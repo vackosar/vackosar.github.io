@@ -101,7 +101,7 @@ Popular models like BERT and Resnet50 in vision and text available for experimen
 <blockquote class="blockquote text-right">
   <i class="mb-0">
     But once FLOPs are reduced, the computation becomes more “memory bound”, that is, there is less compute per data item, so the cost of data movement in and out of memory becomes crucially important. ...
-    rather than execute the network layer after layer, we are able to execute the neural network in depth-wise stripes we call Tensor Columns. ... Each Tensor Column stays completely in the CPU’s large fast caches along the full execution length of the neural network, ... In this way, we almost completely avoid moving data in and out of memory.
+    rather than execute the network layer after layer, we are able to <b>execute the neural network in depth-wise stripes we call Tensor Columns. ... Each Tensor Column stays completely in the CPU’s large fast caches</b> along the full execution length of the neural network, ... In this way, we almost completely avoid moving data in and out of memory.
   </i>
   <footer class="blockquote-footer">
 	  <a href="https://neuralmagic.com/technology/">A Software Architecture for the Future of ML - Neural Magic</a>
