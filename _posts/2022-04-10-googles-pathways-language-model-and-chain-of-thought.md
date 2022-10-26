@@ -205,7 +205,7 @@ GPT-3: No, because an airplane typically travels around 500-600 miles per hour, 
 - [DeepMind's RETRO Transformer Model](/ml/DeepMinds-RETRO-Transformer-Model)
 
 <br>
-{% include subscribe.html %}
+{% include lets-connect.html %}
 <br>
 
 

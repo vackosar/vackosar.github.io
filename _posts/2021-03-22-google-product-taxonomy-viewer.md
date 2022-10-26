@@ -69,4 +69,4 @@ Pinterest's [Arborist model](/ml/Automatically-Expanding-Taxonomy) finds parents
 
 
 <br>
-{% include subscribe.html %}
+{% include lets-connect.html %}
