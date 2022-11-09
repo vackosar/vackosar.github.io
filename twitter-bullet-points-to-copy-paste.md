@@ -2,7 +2,7 @@
 layout: post
 title: "Twitter Bullet Points to Copy & Paste"
 date: 2022-02-06
-description: "Copy-paste your bullet point symbol and other tweeting tips and emojis. Usable also for LinkedIn, Meta, ..."
+description: "Copy-paste your bullet point symbol and other tweeting tips and emojis. Usable also for LinkedIn, Meta, Inkscape ..."
 image: /images/twitter-bullet-points.png
 last_modified_at: 2022-04-25
 ---
@@ -13,7 +13,7 @@ You have only 280 characters to make your point in a tweet.
 That requires summarization, for which lists are super helpful. 
 Bullet points are crucial to create visually appealing lists.
 Make your list stand out with non-standard bullet points below.
-Copy-paste your favorite character from below and get bullet points into your Tweet, Twitter bio, LinkedIn post, or Meta post.
+Copy-paste your favorite character from below and get bullet points into your Tweet, Twitter bio, LinkedIn post, Meta post, or Inkscape poster.
 
 
 ### Standard Bullet Points Symbols
