@@ -5,7 +5,7 @@ date: 2021-01-02
 categories: ml
 image: /images/transformer-feed-forward.png
 video: NI7vFV_iOOA
-description: Feed-forward layer is similar to cross-attention as observed in SwiGLU and All-attention.
+description: Feed-forward (MLP) layer is similar to cross-attention as observed in SwiGLU and All-attention.
 permalink: /:categories/:title
 last_modified_at: 2022-04-24
 my_related_post_paths:
@@ -23,6 +23,7 @@ my_related_post_paths:
 
 
 Have you forgotten about Transformer's feed-forward layer? [It eats 2/3 of the model params](https://arxiv.org/pdf/2012.14913v1.pdf)!
+Feed-forward layer is sometimes also called MLP layer. 
 
 [The last post on LambdaNetwork sketches self-attention as a differentiable query of a key-value store](/ml/Lambda-Networks-Transform-Self-Attention).
 The [Transformer](/ml/transformers-self-attention-mechanism-simplified)'s feed-forward sublayer is similar to the  [cross-attention](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) attending to a separate sequence via key and value input.
@@ -84,6 +85,13 @@ And they reportedly slightly outperformed the vanilla model on the next token pr
 [Google's PaLM model](/ml/googles-pathways-language-model-and-chain-of-thought) authors adopted gated linear unit (GLU) based modification to their feed-forward layer, which is midly similar to cross-attention:
 
 {% include shared_slides/swiglu-modified-feed-forward-layer.md %}
+
+
+## Feed-Forward vs Softmax Linear Unit (SoLU)
+- the definition is \\( x * \mathrm{softmax}(x) \\)
+- SoLU uses Softmax instead of the ReLU
+- SoLU reminds a gating mechanism similar to SwiGLU
+- [learn more interpretable results with the same performance](https://transformer-circuits.pub/2022/solu/index.html)
 
 But does the feed-forward sublayer really behave like key-value memory not only talk a talk?
 
