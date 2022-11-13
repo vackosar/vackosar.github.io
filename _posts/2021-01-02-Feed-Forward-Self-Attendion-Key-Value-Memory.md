@@ -125,6 +125,10 @@ Does feed-forward dampen or "veto" residual vectors towards other candidates?
 In 66% adding feed-forward to residuals changed prediction is to a semantically unrelated word.
 Is this used by the model for predicted sequence re-arrangements?
 
+## ROME method Feed-Forward Layers as Editable Memories
+The [ROME paper](This) develops a technique for locating memories and associative rules in [GPT transformer](/ml/transformers-self-attention-mechanism-simplified) for specific facts ,e.g. Eiffel tower is in Paris.
+Additionally, they introduce a technique for editing these memories without rest of the model.
+
 ## LambdaNet Positional Embeddings vs Feed-Forward Layer
 
 [LambdaNet layer positional embeddings](/ml/Lambda-Networks-Transform-Self-Attention) are something between self-attention and feed-forward layer in transformer, but neither.
