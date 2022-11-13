@@ -91,7 +91,7 @@ And they reportedly slightly outperformed the vanilla model on the next token pr
 - the definition is \\( x * \mathrm{softmax}(x) \\)
 - SoLU uses Softmax instead of the ReLU
 - SoLU reminds a gating mechanism similar to SwiGLU
-- [learn more interpretable results with the same performance](https://transformer-circuits.pub/2022/solu/index.html)
+- SoLU [learns more interpretable memories, the same metrics and speed (Layer norm not needed.)](https://transformer-circuits.pub/2022/solu/index.html)
 
 But does the feed-forward sublayer really behave like key-value memory not only talk a talk?
 
