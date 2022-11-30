@@ -132,7 +132,8 @@ Text-to-image attention map alignment suggest CMA-CLIP can find cross-modality c
 ## EmbraceNet Model
 - [EmbraceNet: A robust deep learning architecture for multimodal classification](https://arxiv.org/pdf/1904.09078.pdf) 2019
 - feature fusion via a weighted summation with a normalizatin and "feature dropout"
-- model has similar performance to concatenation, but performs better when some modalities are missing in noisy data
+- model has similar performance to concatenation, but performs better when some modalities are missing due to noisy data
+- We used it in [GLAMI-1M dataset](https://github.com/glami/glami-1m)
 
 ![EmbraceNet model architecture](/images/embracenet-architecture.png)
 
@@ -140,3 +141,9 @@ Text-to-image attention map alignment suggest CMA-CLIP can find cross-modality c
 ## DeepMind's Perceiver Model
 
 {% include shared_slides/perceiver-io.md %}
+
+
+## Multilingual Image-Text Classification
+A lot of **room for research left** our new [13-lingual dataset GLAMI-1M](https://github.com/glami/glami-1m).
+The task requires a **multilingual language encoder**, while images usually are international by default.
+Language distribution requires additional consideration.
