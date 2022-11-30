@@ -6,7 +6,7 @@ categories: ml
 date: 2022-09-01
 video: Oj3OqUgYL3Y
 image: /images/multimodal-image-text-classification.png
-last_modified_at: 2022-09-07
+last_modified_at: 2022-11-30
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2021-12-28-cross-attention-in-transformer-architecture.md
