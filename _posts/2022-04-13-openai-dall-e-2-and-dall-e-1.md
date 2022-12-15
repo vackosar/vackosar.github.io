@@ -99,10 +99,12 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes im
 <br>
 
 ## Diffusion Models
-- [diffusion models](https://arxiv.org/pdf/2006.11239.pdf) reverse addition of gaussian noise to an image
-- an image arises from iterative denoising e.g. after 100 steps
-- training task is to predict the added noise with mean-squared error loss
-- similar to [normalizing flow models like OpenAI's Glow](/ml/openais-glow-flow-based-model-teardown) which are additionally single step and invertible
+- [Diffusion models](https://arxiv.org/pdf/2006.11239.pdf) reverse addition of gaussian noise to an image.
+- An image arises from iterative denoising e.g. after 100 steps.
+- Training task is to predict the added noise with mean-squared error loss.
+- Similar to [normalizing flow models like OpenAI's Glow](/ml/openais-glow-flow-based-model-teardown) which are additionally single step and invertible.
+- Diffusion model can formulated as [an ODE solution](https://arxiv.org/pdf/2011.13456.pdf) where de-noising step plays role of a time dimension.
+The real **image data form a manifold**. **Adding noise to images expands** the manifold volume. **Direction and size of the expansion define the ODE**.
 
 ![diffusion model - progressive denoising examples steps (Denoising Diffusion Probabilistic Models)](/images/diffusion-model-example-steps.png)
 
