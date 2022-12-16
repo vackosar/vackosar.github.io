@@ -103,8 +103,10 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes im
 - An image arises from iterative denoising e.g. after 100 steps.
 - Training task is to predict the added noise with mean-squared error loss.
 - Similar to [normalizing flow models like OpenAI's Glow](/ml/openais-glow-flow-based-model-teardown) which are additionally single step and invertible.
-- Diffusion model can formulated as [an ODE solution](https://arxiv.org/pdf/2011.13456.pdf) where de-noising step plays role of a time dimension.
-The real **image data form a manifold**. **Adding noise to images expands** the manifold volume. **Direction and size of the expansion define the ODE**.
+- Diffusion model can be formulated as [an ODE solution](https://arxiv.org/pdf/2011.13456.pdf), where de-noising step represents time dimension step.
+The **training image data form a manifold**. **Adding noise to the images expands** the manifold volume. **The expansion direction and step size of the expansion define the ODE**.
+The ODE's solution is the probability density function. We link gradient of the density function to the L2 loss of denoising function.
+The step size is scaled with a function dependent on the noise level.
 
 ![diffusion model - progressive denoising examples steps (Denoising Diffusion Probabilistic Models)](/images/diffusion-model-example-steps.png)
 
