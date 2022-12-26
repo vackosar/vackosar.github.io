@@ -13,9 +13,9 @@ redirect_from:
 my_related_post_paths:
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
+- _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
 - _posts/2022-10-23-Neural-Network-Pruning-Explained.md
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
-- _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
 ---
 
 

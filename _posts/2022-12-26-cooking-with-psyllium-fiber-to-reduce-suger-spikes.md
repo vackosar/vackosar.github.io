@@ -6,6 +6,10 @@ date: 2022-12-26
 last_modified_at: 2022-12-26
 layout: post
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2017-08-12-Fish-Roe-vs-Fish-Oil.md
+- _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
+- _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
 ---
 
 Psyllium is a **plant-based fiber** that is believed to have numerous health benefits. It is often used as a dietary supplement in the form of capsules, powders, and fiber supplements, and can be added to foods like cereals, breads, and protein bars to increase their fiber content.

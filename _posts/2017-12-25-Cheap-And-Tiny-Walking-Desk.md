@@ -12,6 +12,7 @@ video: EnPrXfrZAeo
 last_modified_at: 2022-04-16
 my_related_post_paths:
 - _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
+- _posts/2022-12-26-cooking-with-psyllium-fiber-to-reduce-suger-spikes.md
 - _posts/2017-08-12-Fish-Roe-vs-Fish-Oil.md
 ---
 

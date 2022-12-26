@@ -14,6 +14,7 @@ redirect_from:
 - /2017/05/01/Running-Triples-Speed-For-Extra-One-Third-Of-Calories.html
 my_related_post_paths:
 - _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
+- _posts/2022-12-26-cooking-with-psyllium-fiber-to-reduce-suger-spikes.md
 - _posts/2017-08-12-Fish-Roe-vs-Fish-Oil.md
 ---
 
