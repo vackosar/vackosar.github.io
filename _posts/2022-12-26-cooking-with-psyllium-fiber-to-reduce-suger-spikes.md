@@ -1,13 +1,12 @@
 ---
-layout: post
 title: Cooking with Psyllium Fiber to Reduce Sugar Spikes
+description: My month-long experience using this plant-based fiber ingredient.
+categories: health
 date: 2022-12-26
 last_modified_at: 2022-12-26
-categories: health
-description: My month-long experience using this plant-based fiber ingredient.
+layout: post
 permalink: /:categories/:title
 ---
-
 
 Psyllium is a **plant-based fiber** that is believed to have numerous health benefits. It is often used as a dietary supplement in the form of capsules, powders, and fiber supplements, and can be added to foods like cereals, breads, and protein bars to increase their fiber content.
 
