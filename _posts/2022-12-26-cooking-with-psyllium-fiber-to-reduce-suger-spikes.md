@@ -13,6 +13,7 @@ my_related_post_paths:
 ---
 
 Psyllium is a **plant-based fiber** that is believed to have numerous health benefits. It is often used as a dietary supplement in the form of capsules, powders, and fiber supplements, and can be added to foods like cereals, breads, and protein bars to increase their fiber content.
+For example Psyllium is on the [Dr Stanfield’s Supplement Stack](https://drstanfield.com/my-supplements/), and [Rhonda also is mentioning it](https://twitter.com/foundmyfitness/status/544561113321328640?lang=en).
 
 But psyllium can also be used **in cooking to add a healthy dose of fiber to your meals**. In addition to its digestive benefits, psyllium has been [reported to lower cholesterol levels, regulate blood sugar levels, and aid in weight loss](https://en.wikipedia.org/wiki/Psyllium).
 
