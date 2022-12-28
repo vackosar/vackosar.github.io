@@ -13,7 +13,7 @@ my_related_post_paths:
 - _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
 ---
 
-![psyllium husk sprinkled onto cooked black beans in a pot](/images/psyllium-husk.jpg)
+![psyllium husk sprinkled onto cooked black beans in a pot](/images/psyllium-husk-black-beans.png)
 
 Psyllium is a **plant-based fiber** that is believed to have numerous health benefits. It is often used as a dietary supplement in the form of capsules, powders, and fiber supplements, and can be added to foods like cereals, breads, and protein bars to increase their fiber content.
 For example Psyllium is on the [Dr Stanfield’s Supplement Stack](https://drstanfield.com/my-supplements/), and [Rhonda also is mentioning it](https://twitter.com/foundmyfitness/status/544561113321328640?lang=en).
