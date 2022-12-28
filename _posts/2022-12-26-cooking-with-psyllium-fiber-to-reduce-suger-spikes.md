@@ -5,7 +5,7 @@ categories: health
 date: 2022-12-26
 last_modified_at: 2022-12-26
 layout: post
-image: /images/psyllium-husk.jpg
+image: /images/psyllium-husk-black-beans.png
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2017-08-12-Fish-Roe-vs-Fish-Oil.md
