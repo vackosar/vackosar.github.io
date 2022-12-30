@@ -57,8 +57,9 @@ In an equation: \\( \mathbf{softmax}((W_Q S_2) (W_K S_1)^\intercal) W_V S_1 \\)
 
 
 ## Cross-attention Implmentation
-Have a look at [CrossAttention implementation](https://github.com/huggingface/diffusers/blob/4125756e88e82370c197fecf28e9f0b4d7eee6c3/src/diffusers/models/cross_attention.py) in Diffusers library.
-The constructor shows, how we can also have different dimensions between the two modalities. 
+Have a look at [CrossAttention implementation](https://github.com/huggingface/diffusers/blob/4125756e88e82370c197fecf28e9f0b4d7eee6c3/src/diffusers/models/cross_attention.py) in Diffusers library, which can generate images with **Stable Diffusion**.
+In this case the cross-attention is used to **condition a transformers inside a UNet layer** for image generation.
+The constructor shows, how we can also have **different dimensions** and if you step through with a debugger, you will also see the **different sequence length between the two modalities** . 
 
 ```python
 class CrossAttention(nn.Module):
