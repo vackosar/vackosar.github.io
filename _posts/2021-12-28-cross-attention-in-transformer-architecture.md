@@ -58,7 +58,7 @@ In an equation: \\( \mathbf{softmax}((W_Q S_2) (W_K S_1)^\intercal) W_V S_1 \\)
 
 ## Cross-attention Implmentation
 Have a look at [CrossAttention implementation](https://github.com/huggingface/diffusers/blob/4125756e88e82370c197fecf28e9f0b4d7eee6c3/src/diffusers/models/cross_attention.py) in Diffusers library, which can generate images with **Stable Diffusion**.
-In this case the cross-attention is used to **condition a transformers inside a UNet layer** for image generation.
+In this case the cross-attention is used to **condition transformers inside a UNet layer with a text prompt for image generation**.
 The constructor shows, how we can also have **different dimensions** and if you step through with a debugger, you will also see the **different sequence length between the two modalities** . 
 
 ```python
@@ -105,6 +105,12 @@ such that it can predict the next output sequence token.
 The decoder then adds the token to the output sequence, and repeats this autoregressive process until the EOS token is generated.
 
 ![Cross-Attention in the Transformer decoder of Attention is All You Need paper](/images/cross-attention-in-transformer-decoder.png)
+
+
+### Cross-Attention in Stable Diffusion
+Stable diffusion uses cross-attention **for image generation to condition transformers with a text prompt** inside the denoising U-Net layer.
+
+![stable diffusion architecture with cross-attention](/images/stable-diffusion-architecture.png)
 
 ### Cross-Attention in Perceiver IO
 
