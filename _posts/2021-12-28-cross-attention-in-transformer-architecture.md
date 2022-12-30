@@ -6,7 +6,7 @@ categories: ml
 image: /images/cross-attention-in-transformer-architecture.png
 video: NXjvcNVkX9o
 date: 2021-12-28
-last_modified_at: 2022-09-08
+last_modified_at: 2022-12-30
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
@@ -18,8 +18,9 @@ my_related_post_paths:
 
 
 
-{% include mathjax.html %}
 {% include load_video.html %}
+{% include mathjax.html %}
+{% include highlight-rouge-friendly.css.html %}
 
 Cross attention is:
 - an [attention mechanism in Transformer architecture](/ml/transformers-self-attention-mechanism-simplified) that mixes two different embedding sequences
@@ -55,7 +56,45 @@ Alternative [cross-attention in SelfDoc](#cross-attention-in-selfdoc), uses quer
 In an equation: \\( \mathbf{softmax}((W_Q S_2) (W_K S_1)^\intercal) W_V S_1 \\)
 
 
+## Cross-attention Implmentation
+Have a look at [CrossAttention implementation](https://github.com/huggingface/diffusers/blob/4125756e88e82370c197fecf28e9f0b4d7eee6c3/src/diffusers/models/cross_attention.py) in Diffusers library.
+The constructor shows, how we can also have different dimensions between the two modalities. 
+
+```python
+class CrossAttention(nn.Module):
+    r"""
+    A cross attention layer.
+
+    Parameters:
+        query_dim (`int`): The number of channels in the query.
+        cross_attention_dim (`int`, *optional*):
+            The number of channels in the encoder_hidden_states. If not given, defaults to `query_dim`.
+        heads (`int`,  *optional*, defaults to 8): The number of heads to use for multi-head attention.
+        dim_head (`int`,  *optional*, defaults to 64): The number of channels in each head.
+        dropout (`float`, *optional*, defaults to 0.0): The dropout probability to use.
+        bias (`bool`, *optional*, defaults to False):
+            Set to `True` for the query, key, and value linear layers to contain a bias parameter.
+    """
+```
+
+In particular at this part, where you can see how query, key, and value interact. This is encoder-decoder architecture, so query is created from encoder hidden states.
+
+```python
+        query = attn.to_q(hidden_states)
+        query = attn.head_to_batch_dim(query)
+
+        encoder_hidden_states = encoder_hidden_states if encoder_hidden_states is not None else hidden_states
+        key = attn.to_k(encoder_hidden_states)
+        value = attn.to_v(encoder_hidden_states)
+        key = attn.head_to_batch_dim(key)
+        value = attn.head_to_batch_dim(value)
+
+        attention_probs = attn.get_attention_scores(query, key, attention_mask)
+        hidden_states = torch.bmm(attention_probs, value)
+```
+
 ## Cross-Attention in Popular Architectures
+Cross-attention is widely used in encoder-decoder or multi-modality use cases.
 
 ### Cross-Attention in Transformer Decoder
 Cross-attention was described in the [Transformer](/ml/transformers-self-attention-mechanism-simplified) paper, but it was not given this name yet.
