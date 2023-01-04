@@ -25,3 +25,8 @@ Despite limited evidence in the literature, I personally have observed that addi
 Just be sure to be careful about dosage and mix it with plenty of water to prevent constipation. And when disposing of psyllium, be sure to **throw it in the trash rather than flushing it down the sink or toilet** to avoid any plumbing issues. I learned this lesson the hard way when it clogged my washing machine filter (although fortunately, there was no lasting damage).
 
 Overall, psyllium is a helpful plant-based fiber that can improve digestive health and contribute to overall well-being. Just be sure to follow dosage instructions and dispose of it properly to avoid any issues.
+
+
+### Psyllium and Histamin Intolerance
+
+Psyllium does not seem to commonly cause any HIT issues. [SIGHI List](https://www.mastzellaktivierung.info/downloads/foodlist/61_FoodList_CZ_alphabetic_withCateg.pdf) displays them as safe and [people on this Reddit forum](https://www.reddit.com/r/HistamineIntolerance/comments/t7xxh7/is_psyllium_husk_high_in_histamine_or_fiber/) don't report them as an issue.
