@@ -147,3 +147,5 @@ Text-to-image attention map alignment suggest CMA-CLIP can find cross-modality c
 A lot of **room for research left** our new [13-lingual dataset GLAMI-1M](https://github.com/glami/glami-1m).
 The task requires a **multilingual language encoder**, while images usually are international by default.
 Language distribution requires additional consideration.
+
+[![GLAMI-1M: A Multilingual Image-Text Fashion Dataset examples](/images/glami-1m-multilingual-image-text-dataset-examples.png)](https://github.com/glami/glami-1m)
