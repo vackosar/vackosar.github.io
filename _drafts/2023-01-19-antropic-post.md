@@ -41,3 +41,6 @@ Below increasing the training set size.
 
 - from memorization to rule memorization
 - embeddings change from crystals into noise into clusters of discovered rules
+
+
+"Another interesting property is that ReLU makes negative interference free in the 1-sparse case. This explains why the solutions we've seen prefer to only have negative interference when possible. Further, using a negative bias can convert small positive interferences into essentially being negative interferences."
