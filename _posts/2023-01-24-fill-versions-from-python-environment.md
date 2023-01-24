@@ -4,6 +4,7 @@ description: Script that fills in versions into your requirements file
 categories: health
 date: 2023-01-24
 last_modified_at: 2023-01-24
+image: /images/fill-versions-from-python-environment.png
 layout: post
 permalink: /:categories/:title
 ---
