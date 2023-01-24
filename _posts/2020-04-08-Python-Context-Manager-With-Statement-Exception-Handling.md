@@ -11,6 +11,7 @@ redirect_from:
 - /2020/04/08/Python-with-statement-exception-handling.html
 - /software/Python-with-statement-exception-handling
 my_related_post_paths:
+- _posts/2023-01-24-fill-versions-from-python-environment.md
 - _posts/2017-10-28-Spring-Integration-Highlights.md
 - _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
 - _posts/2022-08-03-Python-functools.cmp_to_key-explained.md

@@ -16,6 +16,7 @@ my_related_post_paths:
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 - _posts/2020-05-08-starspace-embedding.md
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 ---
 
 

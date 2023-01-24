@@ -9,11 +9,12 @@ permalink: /:categories/:title
 last_modified_at: 2022-04-22
 video: cYeH45VOI3w
 my_related_post_paths:
-- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
 - _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
+- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 ---
 
 

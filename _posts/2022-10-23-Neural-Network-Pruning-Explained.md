@@ -14,6 +14,7 @@ my_related_post_paths:
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
 - _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 ---
 
 Pruning performs **lossy compression** of the model during repeated training steps to **reduce prediction costs, and model size**.

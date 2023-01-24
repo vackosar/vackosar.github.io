@@ -15,6 +15,7 @@ my_related_post_paths:
 - _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
 - _posts/2016-11-04-Drone-Hackathoning.md
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 ---
 
 

@@ -9,10 +9,11 @@ last_modified_at: 2022-06-18
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
-- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
 - _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 - _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
 - _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
+- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
 ---
 
 

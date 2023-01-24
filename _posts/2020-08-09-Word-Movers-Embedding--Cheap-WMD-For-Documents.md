@@ -15,6 +15,7 @@ my_related_post_paths:
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
+- _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
 ---
 
 

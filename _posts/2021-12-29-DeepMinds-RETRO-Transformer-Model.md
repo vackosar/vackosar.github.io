@@ -14,6 +14,7 @@ my_related_post_paths:
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
 - _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 ---
 
 

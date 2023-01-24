@@ -13,6 +13,7 @@ my_related_post_paths:
 - _posts/2017-06-04-Code-Structure-Principles.md
 - _posts/2016-07-28-Functional-Foreach-In-Bash.md
 - _posts/2020-04-08-Python-Context-Manager-With-Statement-Exception-Handling.md
+- _posts/2023-01-24-fill-versions-from-python-environment.md
 ---
 
 

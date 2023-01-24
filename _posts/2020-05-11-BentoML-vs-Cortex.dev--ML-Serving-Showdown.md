@@ -16,6 +16,7 @@ my_related_post_paths:
 - _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
 - _posts/2022-10-23-Neural-Network-Pruning-Explained.md
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
 ---
 
 

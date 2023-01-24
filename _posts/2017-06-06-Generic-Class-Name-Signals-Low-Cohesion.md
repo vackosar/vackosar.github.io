@@ -14,6 +14,7 @@ my_related_post_paths:
 - _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
 - _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
 - _posts/2017-10-28-Spring-Integration-Highlights.md
+- _posts/2020-04-08-Python-Context-Manager-With-Statement-Exception-Handling.md
 ---
 
 

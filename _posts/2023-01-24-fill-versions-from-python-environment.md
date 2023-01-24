@@ -7,6 +7,13 @@ last_modified_at: 2023-01-24
 image: /images/fill-versions-from-python-environment.png
 layout: post
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2016-07-03-GitFlow-Incremental-Builder.md
+- _posts/2020-04-08-Python-Context-Manager-With-Statement-Exception-Handling.md
+- _posts/2016-07-22-Obsolete-Branch-Remover.md
+- _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
+- _posts/2022-08-03-Python-functools.cmp_to_key-explained.md
+- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
 ---
 
 {% include highlight-rouge-friendly.css.html %}

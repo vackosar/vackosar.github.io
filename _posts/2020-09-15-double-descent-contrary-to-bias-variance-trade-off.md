@@ -16,6 +16,7 @@ my_related_post_paths:
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 - _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
+- _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
 ---
 
 

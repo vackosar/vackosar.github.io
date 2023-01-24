@@ -16,6 +16,7 @@ my_related_post_paths:
 - _posts/2017-06-04-Code-Structure-Principles.md
 - _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
 - _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 ---
 
 

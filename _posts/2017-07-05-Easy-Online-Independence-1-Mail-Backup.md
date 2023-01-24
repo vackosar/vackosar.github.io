@@ -13,6 +13,7 @@ my_related_post_paths:
 - _posts/2018-02-25-Creating-Custom-Ubuntu-Web-Link-App.md
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 - _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
+- _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
 ---
 
 
