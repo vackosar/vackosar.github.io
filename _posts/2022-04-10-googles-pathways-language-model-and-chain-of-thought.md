@@ -149,7 +149,7 @@ GPT-3: No, because an airplane typically travels around 500-600 miles per hour, 
 
 
 ## PaLM Training Dataset
-- 780B tokens of high-quality text (~100B human days), ([5T token MassiveText](/ml/massivetext-dataset-pretraining-deepminds-gopher), GPT-3 300B tokens, MT-NLG 339B)
+- 780B tokens of high-quality text (~2M human days at 200 wpm), ([5T token MassiveText](/ml/massivetext-dataset-pretraining-deepminds-gopher), GPT-3 300B tokens, MT-NLG 339B)
 - social media 50%, webpages 27%, books 13%, wikipedia 4%, code 5%, news 1%
 - based on dataset used for LaMBDA, GLaM
 - private non-reproducible dataset, while MT-NLG 339B is reproducible but non-hosted
