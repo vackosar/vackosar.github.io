@@ -24,7 +24,13 @@ my_related_post_paths:
 
 <p><img src="/images/bentoml-cortex-logos.webp" alt="BentoML and Cortex logo" style="width: 200px"/></p>
 
-Updated 2021-02-21.
+## Update 2022-02-02 - Cortex.dev bought by Databricks
+Consider migrating away from the Cortex.dev as [it was bought by Databricks](https://www.databricks.com/blog/2022/04/25/cortex-labs-databricks-model-serving-mlops.html) and is only maintained but not developed at the moment.
+Consider other options.
+You can do clusterless with directly EC2 wiht AWS cli scripsts, or Fargate. Or with cluster maintanance you can think about popular choice Terraform.
+For deploying consider using e.g. Kubernetes Python client.
+
+# Original Post
 Do you need a simple way to train and host your machine learning AI models in the cloud?
 Here is my experience with Cortex Labs's Cortex.
 My view on BentoML is based on cursory overview of their documentation.
