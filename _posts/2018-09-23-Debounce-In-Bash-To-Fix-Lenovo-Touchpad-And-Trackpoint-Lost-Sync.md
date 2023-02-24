@@ -91,3 +91,6 @@ Using debounce function above I implemented a script to do just that automagical
 
 
 Learn more [about the foreach method above in this post](/software/Functional-Foreach-In-Bash).
+
+## Update 2023
+This `sudo modprobe -r psmouse; sudo modprobe psmouse` was now useful also on [my P52](/electronics/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530) to restart trackpoint and buttons. What a black from the past!
