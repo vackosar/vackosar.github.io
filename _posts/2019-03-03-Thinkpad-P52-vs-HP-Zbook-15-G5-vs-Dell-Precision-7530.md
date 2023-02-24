@@ -21,7 +21,7 @@ my_related_post_paths:
 I wanted at least __15inch display__ processor __i7-8750H__, reasonable graphics __P1000__, at least __max 64GB RAM__, __RJ45__, __trackpoint__, physical __resilience__. I first decided to buy ZBook 15 G5 over Thinkpad P52 and Precision 7530, but ended up using Thinkpad P52.
 
 I also shortly considered a wild card _14inch Latitude 5491_ as it had attractive price, but it missed too many of the requirements (poor cooling, low max ram, poor physical resilience, low graphics).
-With P52 graphics card I can [train neural networks like DistilBERT](/ml/transformers-self-attention-mechanism-simplified) on my local machine.
+With [P52 Quardro P1000 4GB VRAM graphics card I can train neural networks like DistilBERT](/ml/transformers-self-attention-mechanism-simplified) on my local machine.
 
 {% include load_video.html %}
 
