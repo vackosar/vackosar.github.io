@@ -141,7 +141,7 @@ Beware of possibility of the [double descent of test accuracy contrary to bias-v
 
 ## Serving Transformer in Kubernetes Cluster in Cloud
 
-While you can train and predict with small transformers on for example [Thinkpad P52 graphics card (see my review)](/electronics/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530),
+While you can train and predict with small transformers on for example [Thinkpad P52 graphics card Quadro P1000 4GB VRAM (see my review)](/electronics/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530),
 to run bigger models, or deploy your models to production, you will need to a bit of MLOps and DevOps, so read:
 - [store your trained models e.g. using Quilt Data in S3 (read more here)](/ml/Quilt-data-versioning-review-how-to)
 - [deploy to Kubernetes (read more here on Cortex, BentoML, and Helm)](/ml/BentoML-vs-Cortex.dev-ML-Serving-Showdown)

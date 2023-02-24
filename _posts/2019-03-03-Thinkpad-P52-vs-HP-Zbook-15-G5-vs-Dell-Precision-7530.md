@@ -3,7 +3,7 @@ layout: post
 title: Thinkpad P52 vs ZBook 15 G5 vs Precision 7530
 date: 2019-03-03
 categories: electronics
-description: This is my experience working on the best mobile workstation of 2019 with specs matching Thinkpad P52 and ZBook 15 G5.
+description: My experience with the best mobile workstation of 2019 with specs matching Thinkpad P52 and ZBook 15 G5 and P1000 GPU.
 image: /images/2019-03-thinkpad-p52-vs-zbook-15-G5.png
 video: sRnKbLtE21k
 permalink: /:categories/:title
