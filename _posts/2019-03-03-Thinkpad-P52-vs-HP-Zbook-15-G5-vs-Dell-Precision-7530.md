@@ -7,6 +7,7 @@ description: My experience with the best mobile workstation of 2019 with specs m
 image: /images/2019-03-thinkpad-p52-vs-zbook-15-G5.png
 video: sRnKbLtE21k
 permalink: /:categories/:title
+last_modified_at: 2023-02-24
 redirect_from:
 - /2019/03/03/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.html
 - /review/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530
