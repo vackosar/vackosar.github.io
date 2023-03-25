@@ -21,6 +21,8 @@ my_related_post_paths:
 Today I would like to tell you what is **increasingly becoming popular in large language models**. What I think will be a future of this field that could potentially provide some things I think are missing for us perhaps to get to the **artificial general intelligence**. As defined, maybe as a system that can do as many things as, for example, an average person in 2022.
 
 
+## Large Language Model's Hallucinations and Poor-Reasoning
+
 ![large-language-models-hallucinations-and-poor-reasoning](/images/large-language-models-hallucinations-and-poor-reasoning.png)
 
 What are the **missing things in current systems**? So now we burn through a gajillion, it’s like trillions of floating point operations with all these multiplications and we still get **hallucinations** and we still get quite **poor reasoning capabilities**. And there are approaches reducing this, but something still seems to be missing.
@@ -90,7 +92,7 @@ The **language models** already use the symbols. They use symbols as their input
 
 One of the simplest ways how you can simulate **reasoning inside of the language models** is when you guide it with a prompt. It always tries to tell you the next word, then go to the next word. So you can guide it by writing it to the prompt. So before deciding this, let's think step by step. And with this, you will actually get improvement immediately. So you are already giving it this multistep process where it can iterate in some algorithmic way and you will get better results.
 
-And of course you language models to fill in templates. You can ask questions and then predict what words from these words can be here? It just gives me some words and often it gives you the right answer.
+You can use language models to **fill in templates**. You can ask questions and then predict what word from these allowed words should be here? It just gives me some words and often it gives you the right answer.
 
 **Self-consistency prompting** is another method. You combine again this language model and you request multiple results. In the paper **AlphaCode**, they produce many code samples and then they look, they sample from such samples that cluster together. They are very similar. And from the places where there are lots of similar samples, those actually, it works great if you sample from the biggest cluster the most.
 
@@ -110,7 +112,7 @@ I wanted to mention **[DreamCoder](/ml/dreamcoder-ai-wake-sleep-program-learning
 
 You may be asking about [integrating images with text models](/ml/Multimodal-Image-Text-Classification)? You can do that as well. The image can be broken down into patches, detect things in the patches, and there is this paper, **ViperGPT**, which can reason on images by getting questions, generating Python code to answer the questions about the image, and then doing a course on the image using this code. It can count how many muffins there are in the image. It synthesizes code, which then calls detection of muffins, and then it just sums how many there are. The summation is simple; it's a couple of instructions, not trillions of matrix multiplications.
 
-**Yann Lecun** was big on connectionist approaches, while recently he published **Augmented Language Model**, which is an interesting survey of these approaches. People are also asking, how exactly is the GPT bad? Can we find some set of problems on which the GPT completely fails while humans do great? If you want AGI, you want to be looking for something like this. You don't want to have hundreds of tasks, that's not interesting. For AGI, you have to have something like this. **Francois Chollet** developed a dataset on which GPT-3 got zero. GPT-4 is not evaluated yet, but they are developing further models, and we can read about that as well.
+**Yann Lecun** was big on connectionist approaches, while recently he published a survey paper called **[Augmented Language Models](https://openreview.net/forum?id=jh7wH2AzKK)**. People are also asking, how exactly is the GPT bad? Can we find some set of problems on which the GPT completely fails while humans do great? If you want AGI, you want to be looking for something like this. You don't want to have hundreds of tasks, that's not interesting. For AGI, you have to have something like this. [**Francois Chollet** developed a dataset ARC](https://twitter.com/fchollet/status/1636054491480088823?s=20) on which GPT-3 got zero. GPT-4 is not evaluated yet, but they are developing further models, and we can read about that as well.
 
 
 ## OpenAI and Symbolics
@@ -130,7 +132,7 @@ If you wanted to learn more about this, there are companies and people which pub
 
 I think we will get to the **AGI** and what impact it will have on society. I'm not sure if we can get there. We are obviously improving the results, and this will have a huge impact. Can there be another **AI winter**? I wouldn't dismiss that completely. It's very easy to live in the bubble that everything is working great. What will be the **impact on society**? So here I think that people are now working on so many easy problems and they are not that challenged. I think people have huge abilities that they can achieve much greater things if they are required to.
 
-\
+
 ## Questions and Answers
 
 - Q: What specifically do you use or do in life? This was theoretical, so I would like to know what's involved. This is theoretical.
