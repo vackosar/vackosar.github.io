@@ -14,9 +14,9 @@ Today I would like to tell you what is **increasingly becoming popular in large 
 
 What are the **missing things in current systems**? So now we burn through a gajillion, it’s like trillions of floating point operations with all these multiplications and we still get **hallucinations** and we still get quite **poor reasoning capabilities**. And there are approaches reducing this, but something still seems to be missing.
 
-Yes, it’s true that humans as well hallucinate. For example, you may have a **false memory**, so maybe you don’t remember everything perfectly. For example, if there is a crime, oftentimes the people have actually different accounts of the death of the victim.
+Yes, it’s true that humans as well hallucinate. For example, you may have a **false memory**, so maybe you don’t remember everything perfectly. For example, if there is a crime, oftentimes the people have actually different accounts.
 
-We already developed approaches how to deal with these issues. We write down **symbols** and into the symbols we can even encode **rules**. And the rules can operate on the symbols and it’s like a perfect system. It was super successful in understanding the world because we used it to create mathematics, which was used for **accounting, physics, and engineering**.
+We already developed approaches how to deal with these issues. We write down **symbols** and into the symbols we can even encode **rules**. And the rules can operate on the symbols and it’s like a perfect system. It was super successful in understanding the world because we used it to create **mathematics**, which was used for **accounting, physics, and engineering**.
 
 Because we can write things down and they don’t disappear, they stay the same. It’s an **immutable storage**. We can also think about the things multiple times. And another thing that perhaps is also important is that we can **act in the world** and so we can **sample new data** and learn new things from experience.
 
