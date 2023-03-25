@@ -1,9 +1,9 @@
 ---
 title: Symbolic vs Connectionist Machine Learning
-description: Reasoning and reducing hallucinations with hybridizing algorithms with neural network models.
+description: Reasoning and reducing hallucinations in large language models by hybridizing with algorithms.
 categories: ml
 date: 2023-03-23
-last_modified_at: 2023-01-25
+last_modified_at: 2023-03-25
 image: /images/symbols-patterns-hybrids.png
 layout: post
 permalink: /:categories/:title
