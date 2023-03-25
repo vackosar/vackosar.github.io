@@ -90,7 +90,7 @@ These very scalable **symbolic approaches** of the algorithms and code that's so
 
 The **language models** already use the symbols. They use symbols as their input and as their output. So they are a combination a little bit in this sense. But you can go much further. We can, because the inputs are symbols and outputs are symbols, we can plug in the systems, we can plug in the algorithms.
 
-One of the simplest ways how you can simulate **reasoning inside of the language models** is when you guide it with a prompt. It always tries to tell you the next word, then go to the next word. So you can guide it by writing it to the prompt. So before deciding this, let's **think step by step**. And with this, you will actually get improvement immediately. So you are already giving it this multistep process where it can iterate in some algorithmic way and you will get better results.
+One of the simplest ways how you can simulate **reasoning inside of the language models** is when you guide it with a prompt. It always tries to tell you the next word, then go to the next word. So you can guide it by writing it to the prompt. So before deciding this, let's **think step by step**. And with this, you will get an improvement in accuracy of the final answer. So you are already giving it this multistep process, a [chain of though](https://vaclavkosar.com/ml/googles-pathways-language-model-and-chain-of-thought), where it can iterate in some algorithmic way and you will get better results.
 
 You can **fill in templates** with language models. You just ask what word from these allowed words should be here? It just gives me some words and often it gives you the right answer.
 
