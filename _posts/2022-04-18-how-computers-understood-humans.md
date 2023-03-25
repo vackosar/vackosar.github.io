@@ -49,6 +49,6 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 - generate by predicting input text continuation
 - $10M transformers trained on large amount of text from the internet in 2022
 - can solve wide variety of problems like explaining jokes, sometimes with human level performance
-- examples: [PaLM (2022)](/ml/googles-pathways-language-model-and-chain-of-thought), [RETRO (2021)](/ml/DeepMinds-RETRO-Transformer-Model), [GPT-3](https://arxiv.org/pdf/2005.14165.pdf), ...
+- examples: [PaLM (2022)](/ml/googles-pathways-language-model-and-chain-of-thought), [RETRO (2021)](/ml/DeepMinds-RETRO-Transformer-Model), [hybrids with algorithms](/ml/Symbolic-vs-Connectionist-Machine-Learning) ...
 
 ![transformer next token prediction](/images/transformer-from-word2vec-next-token.jpg)
