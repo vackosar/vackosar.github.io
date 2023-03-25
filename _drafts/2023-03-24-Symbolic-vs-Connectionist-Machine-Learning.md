@@ -7,39 +7,46 @@ last_modified_at: 2023-01-24
 image: /images/fill-versions-from-python-environment.png
 layout: post
 permalink: /:categories/:title
+instruction: Given the transcription. Highlight key phrases with bold font. Remove repetitive or overused words. Remove grammatical mistakes. Don't change meaning of any sentence or paragraph. Don't remove sentences
 ---
 
-Today I would like to tell you what is increasingly becoming popular in the large language models. What I think will be a future of this field that could potentially provide some things I think are missing for us perhaps to get to the artificial general intelligence. As defined, maybe as a system that can do as many things as, for example, an average person in 2022.
+Today I would like to tell you what is **increasingly becoming popular in large language models**. What I think will be a future of this field that could potentially provide some things I think are missing for us perhaps to get to the **artificial general intelligence**. As defined, maybe as a system that can do as many things as, for example, an average person in 2022.
 
-What are the missing things in current systems? So now we burn through a gajillion, it's like trillions of floating point operations with all these multiplications and we still get hallucinations and we still get quite poor reasoning capabilities. And there are approaches reducing this, but something still seems to be missing.
+What are the **missing things in current systems**? So now we burn through a gajillion, it’s like trillions of floating point operations with all these multiplications and we still get **hallucinations** and we still get quite **poor reasoning capabilities**. And there are approaches reducing this, but something still seems to be missing.
 
-Yes, it's true that humans as well hallucinate. For example, you may have a false memory, so maybe you don't remember everything perfectly. For example, if there is a crime, oftentimes the people have actually different accounts of the death of the victim.
+Yes, it’s true that humans as well hallucinate. For example, you may have a **false memory**, so maybe you don’t remember everything perfectly. For example, if there is a crime, oftentimes the people have actually different accounts of the death of the victim.
 
-We already developed approaches how to deal with these issues. We write down symbols and into the symbols we can even encode rules. And the rules can operate on the symbols and it's like a perfect system. It was super successful in understanding the world because we used it in mathematics, we used it to do accounting. And as well, because we can write things down and they don't disappear, they stay the same. It's an immutable storage. We can also think about the things multiple times. And another thing that perhaps is also important is that we can act in the world and so we can sample new data and learn new things from experience.
+We already developed approaches how to deal with these issues. We write down **symbols** and into the symbols we can even encode **rules**. And the rules can operate on the symbols and it’s like a perfect system. It was super successful in understanding the world because we used it to create mathematics, which was used for **accounting, physics, and engineering**.
 
-These successful approaches were then later used to develop computer programs which are also rules, which operate also on some symbols. So the same way we actually built these computers which take something that's crystal perfect and it can produce something that's still crystal perfect. And while all at the same time this seems to be missing in the language model, this sort of aspect is not quite there.
+Because we can write things down and they don’t disappear, they stay the same. It’s an **immutable storage**. We can also think about the things multiple times. And another thing that perhaps is also important is that we can **act in the world** and so we can **sample new data** and learn new things from experience.
 
-What are the differences between the systems that we have? The current large language models have great capabilities, we can use it for many things, but they have also issues. And so if we can compare what I'm talking about, these symbolic approaches, that use these symbols and rules, with what we have, which is like dominant results in current times.
 
-So on one hand we have these symbols and rules, and on the other hand we almost have something like feelings and intuitions.
+These **successful symbolic tools** were then later used to develop computer programs which are also rules, which operate on symbols. So the same way we actually built these computers which take something that's **crystal perfect** and it can produce something that's still crystal perfect. And while all at the same time this seems to be missing in the **language model**, this sort of aspect is not quite there.
 
-On one hand we have something that is able to find patterns in huge amounts of data. And on the other hand, we have something where we can put in put in a great rule set that will work. And it will work so well that it doesn't matter how big is the input.
+What are the differences between the systems that we have? The **current large language models** have great capabilities, we can use it for many things, but they have also issues. And so if we can compare what I'm talking about, these **symbolic approaches**, that use these symbols and rules, with what we have, which is like dominant results in current times.
 
-Mathematics is a symbolic method. In maths, you can take equations and you can input an x and the x can go to infinity. And the equation will still work. It will still be great. While in the neural networks, this is not quite possible. You have always some kind of rotation. So always you are somewhere between minus one and one. And so you can’t really do something like this.
+So on one hand we have these **symbols and rules**, and on the other hand we almost have something like **feelings and intuitions**.
 
-Large language models are neural networks. So these neural networks just take some floating point numbers, and they do some matrix operations, maybe a couple of extra operations on top of that. And they produce vectors, like these arrays of numbers. And that’s what is the inner representation of the model. That’s sort of what it feels. And if it changes just a little bit, then it repeats what it thinks about. It’s a very similar thing. While on the other hand, in the computations, we have the hard symbols. And that’s a very different thing.
+On one hand we have something that is able to find **patterns in huge amounts of data**. And on the other hand, we have something where we can put in a great rule set that will work. And it will work so well that it doesn't matter how big is the input.
 
-On the connectionist side, we have neural networks and gradient boosting, on the symbolic side, we have decision trees. For example, you can see one on the top right. Decisioin trees operate only in the inputs, which is very interpretable and simple. And they have different capabilities and are used in specific type of situations.
+**Mathematics is a symbolic method**. In maths, you can take equations and you can input an x and the x can go to infinity. And the equation will still work. It will still be great. While in the **neural networks**, this is not quite possible. You have always some kind of rotation. So always you are somewhere between minus one and one. And so you can’t really do something like this.
 
-These algorithms, these computer programs, these rules, were actually used to be, it was a dominant approach in machine learning, in artificial intelligence in 1980s. And it seemed like if this is going to work, if we are just, you know, AGI is just around the corner, right? We are going to have it, like, tomorrow. And suddenly there started to be issues. It wasn't progressing anymore. And so what these systems were doing, what was the approach back then? And why it collapsed?
 
-Back then, the approach was that you would have even, like, dedicated hardware, like the one on the right, and you would write for your problem. You would collect a group of experts that would understand the domain. You would also have the programmers that would be able to actually write the rules. And over some time, you would build up the system, and it would actually work in some case. But it was expensive. It was very hard to update. If something changed, it was kind of a brittle.
+Large language models are **neural networks**. These neural networks take some floating point numbers, and they do some matrix operations, maybe a couple of extra operations on top of that. They produce vectors, like arrays of numbers, which form the inner representation of the model. On the other hand, in computations, we have **hard symbols**, which are very different.
 
-In some domains, if you think about it, the experts don't actually really know what they are doing. They don't really know how to describe what they are doing. There is sort of this tacit knowledge, which is more, sometimes maybe like beyond words, or you would have to construct some new words, and maybe you would have to have something soft in between the words, between the symbols.
+On the connectionist side, we have **neural networks and gradient boosting**, while on the **symbolic side**, we have **decision trees**. For example, you can see one on the top right. Decisioin trees operate only in the inputs, which is very interpretable and simple. And they have different capabilities and are used in specific type of situations.
 
-While everything seemed great, the solutions were not able to get to the AGI. The dedicated hardware companies got into big issues where the hardware changed because there were new, more general systems. And also the different sort of approach that was leveraging neural networks, relying on more general hardware, more pop hardware, with more data, was starting to get traction. And so this was mostly an abandoned approach.
+These algorithms, these computer programs, these rules, were actually used to be, it was a dominant approach in machine learning, in **artificial intelligence in 1980s**. And it seemed like if this is going to work, if we are just, you know, **AGI is just around the corner**, right? We are going to have it, like, tomorrow. And suddenly there started to be issues. It wasn't progressing anymore. And so what these systems were doing, what was the approach back then? And why it collapsed?
+
+Back then, the approach was that you would have even, like, dedicated hardware, like the one on the right, and you would write for your problem. You would **collect a group of experts** that would understand the domain. You would also have the **programmers that would be able to actually write the rules**. And over some time, you would build up the system, and it would actually work in some case. But it was expensive. It was very hard to update. If something changed, it was kind of a brittle.
+
+In some domains, if you think about it, the experts don't actually really know what they are doing. They don't really know how to describe what they are doing. They a **tacit knowledge**, which is beyond words, or you would require to construct some new words, or have something **soft in between the words, between the symbols**.
+
+While everything seemed great, the solutions were not able to get to the AGI. The dedicated hardware companies got into big issues where the hardware changed because there were new, more general systems. And also the different sort of approach that was leveraging neural networks, relying on more general hardware, more pop hardware, with more data, was starting to get traction. And so symbolics became mostly an abandoned approach.
 
 Then here came the neural networks. And there, researchers Hinton, Lecun, Bengio, led the neural network revolution in 2010. And this approach became so pervasive that, for example, people were saying, deep learning is just going to solve everything. This is it. We don't need symbolics. This is going to just solve everything.
+
+
 
 People started to use neural networks, they were using supervised learning where you have labels, so you know what is the target. And in that case, there was this breakthrough in development of AlexNet, where suddenly it was possible to classify images with very good accuracy on this popular dataset, which, you know, before, how would you actually describe rules for images? Like how would you recognize what's in the image by using rules? It seems rather difficult. And it is. It was possible, it would have been not. But it's very difficult and very brittle.
 
@@ -54,6 +61,8 @@ Reinforcement learning from human feedback, that's a very interesting approach n
 These very scalable symbolic approaches of the algorithms and code that's so useful, and it seems to be so missing. It's definitely going to be applied. So what I think is necessary and what's increasingly being applied is hybridizing both of these approaches. So using both neural networks and symbolic approaches at the same time.
 
 The language models already use the symbols. They use symbols as their input and as their output. So they are a combination a little bit in this sense. But you can go much further. We can, because the inputs are symbols and outputs are symbols, we can plug in the systems, we can plug in the algorithms.
+
+
 
 For example, one of the simplest ways where you can start doing some sort of thinking inside of the language models is when you guide it with a prompt. It always tries to tell you the next word, then go to the next word. So you can guide it by writing it to the prompt. So before deciding this, let's think step by step. And with this, you will actually get improvement immediately. So you are already giving it this multistep process where it can iterate in some algorithmic way and you will get better results.
 
