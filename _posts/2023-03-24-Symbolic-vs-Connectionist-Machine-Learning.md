@@ -144,4 +144,4 @@ I think we will get to the **AGI** and what impact it will have on society. I'm 
 
 ## Update 2023-03-25
 
-This talk was given on a Cleevio OpenAI meetup just a day before OpenAI announced ChatGPT plugins.
+This talk was given on a [Cleevio OpenAI meetup on 2023-03-22](https://www.eventbrite.com/e/openai-meetup-tickets-558782081247) just a day before OpenAI announced ChatGPT plugins.
