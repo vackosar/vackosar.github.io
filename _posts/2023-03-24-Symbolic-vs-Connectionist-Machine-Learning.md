@@ -43,7 +43,7 @@ What are the differences between the systems that we have? The **current large l
 
 So on one hand we have these **symbols and rules**, and on the other hand we almost have something like **feelings and intuitions**.
 
-On one hand we have something that is able to find **patterns in huge amounts of data**. And on the other hand, we have something where we can put in a great rule set that will work. And it will work so well that it doesn't matter how big is the input.
+On one hand we have something that is able to find **patterns in huge amounts of data**. And on the other hand, we have something where we **can put in a great rule set** that will work not matter how big is the input.
 
 **Mathematics is a symbolic method**. In maths, you can take equations and you can input an x and the x can go to infinity. And the equation will still work. It will still be great. While in the **neural networks**, this is not quite possible. You have always some kind of rotation. So always you are somewhere between minus one and one. And so you can’t really do something like this.
 
