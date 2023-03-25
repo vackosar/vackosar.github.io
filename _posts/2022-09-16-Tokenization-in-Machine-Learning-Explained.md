@@ -3,7 +3,7 @@ title: Tokenization in Machine Learning Explained
 description: Tokenization is splitting the input data into a sequence of meaningful parts e.g. pice data like a word, image patch, document sentence.
 layout: post
 categories: ml
-date: 2023-03-24
+date: 2022-09-16
 image: /images/transformer-tokenization-and-embeddings.drawio.svg
 last_modified_at: 2022-09-16
 permalink: /:categories/:title
