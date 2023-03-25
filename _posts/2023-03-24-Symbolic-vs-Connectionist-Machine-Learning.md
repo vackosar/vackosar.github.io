@@ -7,6 +7,13 @@ last_modified_at: 2023-03-25
 image: /images/symbols-patterns-hybrids.png
 layout: post
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
+- _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
 ---
 
 ![symbols patterns hybrids](/images/symbols-patterns-hybrids.png)

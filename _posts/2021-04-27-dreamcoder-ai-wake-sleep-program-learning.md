@@ -8,12 +8,12 @@ image: /images/dreamcoder-thumb.png
 description: Learning to code by growing function library, fantasising coding tasks, and training neural search.
 permalink: /:categories/:title
 my_related_post_paths:
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
 - _posts/2022-10-23-Neural-Network-Pruning-Explained.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
-- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 ---
 
 
