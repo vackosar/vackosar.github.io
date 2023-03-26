@@ -10,12 +10,13 @@ permalink: /:categories/:title
 redirect_from:
 - /ml/Word-Movers-Embedding
 my_related_post_paths:
+- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 - _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
 - _posts/2020-05-08-starspace-embedding.md
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
-- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
-- _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
+- _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
+- _posts/2022-04-02-monolingual-word-alignment-for-sentence-similarity.md
 ---
 
 

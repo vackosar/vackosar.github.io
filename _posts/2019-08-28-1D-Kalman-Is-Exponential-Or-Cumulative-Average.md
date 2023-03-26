@@ -13,11 +13,12 @@ todo: example implementation
 note: https://www.kalmanfilter.net/kalman1d.html
 my_related_post_paths:
 - _posts/2021-05-21-PID-controller-control-loop-mechanism.md
-- _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
-- _posts/2022-05-14-neural-data-compression.md
-- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
-- _posts/2020-11-29-Lambda-Networks-Transform-Self-Attention.md
-- _posts/2022-05-20-bits-per-byte-and-bits-per-character.md
+- _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
+- _posts/2012-06-11-Hamiltonians-with-constant-spectral-intervals-and-time-dependent-perturbation.md
+- _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
+- _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
+- _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
+- _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
 ---
 
 

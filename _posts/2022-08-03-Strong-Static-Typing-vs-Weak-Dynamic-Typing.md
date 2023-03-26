@@ -9,11 +9,12 @@ image: /images/strong-static-vs-weak-dynamic-typing-table.png
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
-- _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
-- _posts/2016-07-28-Functional-Foreach-In-Bash.md
-- _posts/2017-10-28-Spring-Integration-Highlights.md
+- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 ---
 
 

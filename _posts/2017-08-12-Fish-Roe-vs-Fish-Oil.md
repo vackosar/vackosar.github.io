@@ -10,9 +10,13 @@ image: /images/fishes-sardines.jpeg
 redirect_from:
 - /2017/08/12/Fish-Roe-vs-Fish-Oil.html
 my_related_post_paths:
+- _posts/2017-02-26-$15-Ebay-USB-Microscope.md
 - _posts/2022-12-26-cooking-with-psyllium-fiber-to-reduce-suger-spikes.md
-- _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
-- _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
+- _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
+- _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
+- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
+- _posts/2021-03-22-google-product-taxonomy-viewer.md
+- _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 ---
 
 

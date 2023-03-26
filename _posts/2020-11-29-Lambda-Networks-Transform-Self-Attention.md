@@ -8,12 +8,13 @@ image: /images/lambda-layer-thumb.png
 video: SYxm3R5VAsw
 permalink: /:categories/:title
 my_related_post_paths:
-- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
+- _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
 - _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 - _posts/2020-10-25-Performers-FAVOR+-Faster-Transformer-Attention.md
-- _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
-- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
+- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
+- _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
+- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 ---
 
 

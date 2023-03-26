@@ -8,12 +8,13 @@ image: /images/transformer-tokenization-and-embeddings.drawio.svg
 last_modified_at: 2022-09-16
 permalink: /:categories/:title
 my_related_post_paths:
-- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
+- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
+- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
+- _posts/2022-05-14-neural-data-compression.md
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
-- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
-- _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
 ---
 
 

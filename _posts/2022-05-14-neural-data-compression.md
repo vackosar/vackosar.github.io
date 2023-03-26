@@ -10,11 +10,12 @@ permalink: /:categories/:title
 last_modified_at: 2022-07-21
 my_related_post_paths:
 - _posts/2022-10-23-Neural-Network-Pruning-Explained.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2022-05-20-bits-per-byte-and-bits-per-character.md
-- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 - _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
-- _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
-- _posts/2022-03-20-sparse-matrix-why-and-when.md
 ---
 
 

@@ -8,9 +8,13 @@ layout: post
 image: /images/psyllium-husk-black-beans.png
 permalink: /:categories/:title
 my_related_post_paths:
+- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
 - _posts/2017-08-12-Fish-Roe-vs-Fish-Oil.md
-- _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
-- _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
+- _posts/2020-02-25-I-read-papers-on-a-podcast.md
+- _posts/2016-11-04-Drone-Hackathoning.md
+- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
+- _posts/2021-07-14-Scout-Mindset-Book-Summary.md
+- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 ---
 
 ![psyllium husk sprinkled onto cooked black beans in a pot](/images/psyllium-husk-black-beans.png)

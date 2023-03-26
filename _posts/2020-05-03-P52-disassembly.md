@@ -12,7 +12,11 @@ redirect_from:
 my_related_post_paths:
 - _posts/2019-11-02-Thinkpad-P53-vs-P52-Thermals.md
 - _posts/2019-03-03-Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.md
-- _posts/2017-02-26-$15-Ebay-USB-Microscope.md
+- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
+- _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
+- _posts/2022-04-18-how-computers-understood-humans.md
 ---
 
 

@@ -10,12 +10,13 @@ redirect_from:
 - /google-product-taxonomy-viewer.html
 last_modified_at: 2022-06-12
 my_related_post_paths:
-- _posts/2018-02-25-Creating-Custom-Ubuntu-Web-Link-App.md
-- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
-- _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
-- _posts/2017-07-15-Restore-Missing-Punctuation-with-Keras-Convolutional-Text-Punctuator.md
-- _posts/2016-07-28-Functional-Foreach-In-Bash.md
+- _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
+- _posts/2020-04-22-result-diversification-in-web-search-and-recommenders.md
+- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2020-05-08-starspace-embedding.md
 ---
 
 

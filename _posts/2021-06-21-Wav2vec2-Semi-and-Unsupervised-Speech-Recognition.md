@@ -13,10 +13,11 @@ last_modified_at: 2022-09-17
 my_related_post_paths:
 - _posts/2022-04-18-how-computers-understood-humans.md
 - _posts/2020-05-08-starspace-embedding.md
-- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
 ---
 
 

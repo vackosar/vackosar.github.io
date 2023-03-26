@@ -12,14 +12,19 @@ redirect_from:
 - /book/7-powers-moats-through-lens-of-modified-dibellos-business-mental-model
 my_related_post_paths:
 - _posts/2021-12-12-Ten-Commandments-for-business-failure.md
+- _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
+- _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
 - _posts/2021-07-14-Scout-Mindset-Book-Summary.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2020-04-22-result-diversification-in-web-search-and-recommenders.md
 ---
 
 
 
 <img id="video-img-img" style="max-width: 560px; width: 100%" src="{{ page.image }}" alt="{{ page.title }}" />
 
-Most of the excess profits come from delivering more from less compared to the next best alternative including competition.
+In business, most of the excess profits come from delivering more from less compared to the next best alternative including competition.
 The [Helmer's 7 Powers book](https://www.goodreads.com/book/show/32816087-7-powers) lists 7 barriers that protect margins of businesses long term and how to attain them.
 [DiBello's research](https://wtri.com/wp-content/uploads/2015/06/Informed-By-Knowledge-Chapter-12.pdf) suggests that great business people understand interaction between following three aspects (dimensions) of a business: demand, supply, capital.
 The text below may provide additional insights into both through partial modification, followed by combination of the ideas above.

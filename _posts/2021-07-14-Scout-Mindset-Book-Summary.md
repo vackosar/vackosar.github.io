@@ -7,7 +7,12 @@ description: Short summary of a book from Julia Galef on clear thinking.
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2021-12-12-Ten-Commandments-for-business-failure.md
-- _posts/2022-01-09-7-powers-moats-through-lens-of-dibellos-business-mental-model.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
+- _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
+- _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
 ---
 
 

@@ -9,11 +9,12 @@ image: /images/eclipse-modules.png
 redirect_from:
 - /2016/07/03/GitFlow-Incremental-Builder.html
 my_related_post_paths:
-- _posts/2016-07-22-Obsolete-Branch-Remover.md
 - _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
-- _posts/2023-01-24-fill-versions-from-python-environment.md
+- _posts/2016-07-22-Obsolete-Branch-Remover.md
 - _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
 - _posts/2017-10-28-Spring-Integration-Highlights.md
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
+- _posts/2016-07-28-Functional-Foreach-In-Bash.md
 - _posts/2017-06-04-Code-Structure-Principles.md
 ---
 

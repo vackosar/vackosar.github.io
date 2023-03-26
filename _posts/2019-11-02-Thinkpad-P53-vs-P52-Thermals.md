@@ -10,9 +10,13 @@ redirect_from:
 - /2019/11/02/Thinkpad-P53-vs-P52-Thermals.html
 - /review/Thinkpad-P53-vs-P52-Thermals
 my_related_post_paths:
-- _posts/2020-05-03-P52-disassembly.md
 - _posts/2019-03-03-Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.md
-- _posts/2017-02-26-$15-Ebay-USB-Microscope.md
+- _posts/2020-05-03-P52-disassembly.md
+- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
+- _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
+- _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
+- _posts/2020-11-29-Lambda-Networks-Transform-Self-Attention.md
+- _posts/2022-04-18-how-computers-understood-humans.md
 ---
 
 

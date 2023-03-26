@@ -8,11 +8,12 @@ image: /images/deflate-algorithm-operation.drawio.svg
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2022-05-14-neural-data-compression.md
-- _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
+- _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 - _posts/2022-03-20-sparse-matrix-why-and-when.md
-- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
-- _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
-- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 ---
 
 

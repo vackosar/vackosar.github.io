@@ -8,12 +8,13 @@ image: /images/fill-versions-from-python-environment.png
 layout: post
 permalink: /:categories/:title
 my_related_post_paths:
+- _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
+- _posts/2016-07-28-Functional-Foreach-In-Bash.md
 - _posts/2016-07-03-GitFlow-Incremental-Builder.md
 - _posts/2020-04-08-Python-Context-Manager-With-Statement-Exception-Handling.md
-- _posts/2016-07-22-Obsolete-Branch-Remover.md
-- _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
-- _posts/2022-08-03-Python-functools.cmp_to_key-explained.md
-- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
+- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
+- _posts/2020-08-25-to-what-python-number-types-does-json.loads-parse.md
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
 ---
 
 {% include highlight-rouge-friendly.css.html %}

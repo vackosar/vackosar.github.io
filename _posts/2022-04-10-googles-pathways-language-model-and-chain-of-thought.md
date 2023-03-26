@@ -10,11 +10,12 @@ video: oi86r-2Bh64
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
-- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
-- _posts/2020-05-08-starspace-embedding.md
-- _posts/2020-10-25-Performers-FAVOR+-Faster-Transformer-Attention.md
+- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
+- _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
+- _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
 ---
 
 

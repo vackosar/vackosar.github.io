@@ -11,12 +11,13 @@ redirect_from:
 - /2020/04/08/Python-with-statement-exception-handling.html
 - /software/Python-with-statement-exception-handling
 my_related_post_paths:
-- _posts/2023-01-24-fill-versions-from-python-environment.md
-- _posts/2017-10-28-Spring-Integration-Highlights.md
+- _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
 - _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
-- _posts/2022-08-03-Python-functools.cmp_to_key-explained.md
-- _posts/2020-08-25-to-what-python-number-types-does-json.loads-parse.md
-- _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
+- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2017-07-15-Restore-Missing-Punctuation-with-Keras-Convolutional-Text-Punctuator.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2017-06-04-Code-Structure-Principles.md
 ---
 
 

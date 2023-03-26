@@ -8,12 +8,13 @@ video: sb8qJ5XVGP4
 date: 2022-04-02
 permalink: /:categories/:title
 my_related_post_paths:
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
+- _posts/2020-05-08-starspace-embedding.md
+- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
 - _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
 - _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
-- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
-- _posts/2022-04-18-how-computers-understood-humans.md
-- _posts/2020-05-08-starspace-embedding.md
-- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 ---
 
 

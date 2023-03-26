@@ -6,8 +6,13 @@ categories: book
 description: With a foreword from Warren Buffett, this short book is worthy of skimming.
 permalink: /:categories/:title
 my_related_post_paths:
+- _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
 - _posts/2022-01-09-7-powers-moats-through-lens-of-dibellos-business-mental-model.md
 - _posts/2021-07-14-Scout-Mindset-Book-Summary.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
+- _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
+- _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
 ---
 
 

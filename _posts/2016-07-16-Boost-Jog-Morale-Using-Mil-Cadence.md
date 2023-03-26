@@ -13,9 +13,13 @@ redirect_from:
 - /2016/07/16/Boost-Jog-Morale-Using-Mil-Cadence.html
 - /2017/05/01/Running-Triples-Speed-For-Extra-One-Third-Of-Calories.html
 my_related_post_paths:
-- _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
-- _posts/2022-12-26-cooking-with-psyllium-fiber-to-reduce-suger-spikes.md
-- _posts/2017-08-12-Fish-Roe-vs-Fish-Oil.md
+- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
+- _posts/2016-12-23-Sped-Up-Classic-For-Sped-Up-Age.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2021-07-14-Scout-Mindset-Book-Summary.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
+- _posts/2020-02-25-I-read-papers-on-a-podcast.md
 ---
 
 

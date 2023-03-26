@@ -9,12 +9,13 @@ permalink: /:categories/:title
 redirect_from:
 - /2016/11/04/Drone-Hackathoning.html
 my_related_post_paths:
-- _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
-- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
-- _posts/2021-05-21-PID-controller-control-loop-mechanism.md
-- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
-- _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
+- _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
+- _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2020-05-08-starspace-embedding.md
+- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
+- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 ---
 
 

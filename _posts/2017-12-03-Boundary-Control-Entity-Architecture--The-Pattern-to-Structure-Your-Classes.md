@@ -11,12 +11,13 @@ redirect_from:
 - /2017/12/03/Boundary-Control-Entity-Architecture.html
 - /software/Boundary-Control-Entity-Architecture
 my_related_post_paths:
+- _posts/2022-05-20-bits-per-byte-and-bits-per-character.md
 - _posts/2017-10-28-Spring-Integration-Highlights.md
-- _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 - _posts/2017-06-04-Code-Structure-Principles.md
-- _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
-- _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2022-05-14-neural-data-compression.md
+- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
+- _posts/2022-01-09-7-powers-moats-through-lens-of-dibellos-business-mental-model.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 ---
 
 

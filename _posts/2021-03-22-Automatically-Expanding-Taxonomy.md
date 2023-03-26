@@ -12,10 +12,11 @@ redirect_from:
 last_modified_at: 2022-05-21
 my_related_post_paths:
 - _posts/2020-05-08-starspace-embedding.md
+- _posts/2021-03-22-google-product-taxonomy-viewer.md
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
-- _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
-- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
-- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
+- _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2022-04-18-how-computers-understood-humans.md
 ---
 

@@ -8,12 +8,13 @@ permalink: /:categories/:title
 redirect_from:
 - /2019/03/03/Highly-Compressed-Richard-Hamming-Lectures.html
 my_related_post_paths:
+- _posts/2022-05-14-neural-data-compression.md
+- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
+- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2020-02-25-I-read-papers-on-a-podcast.md
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
 - _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
-- _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
-- _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
-- _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
-- _posts/2017-10-28-Spring-Integration-Highlights.md
-- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
 ---
 
 

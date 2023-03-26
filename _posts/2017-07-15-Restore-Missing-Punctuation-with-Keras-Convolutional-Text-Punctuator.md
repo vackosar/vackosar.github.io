@@ -11,12 +11,13 @@ redirect_from:
 video: w-w3QamQIKY
 image: http://i3.ytimg.com/vi/w-w3QamQIKY/hqdefault.jpg
 my_related_post_paths:
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
+- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
 - _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
-- _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
-- _posts/2021-03-22-google-product-taxonomy-viewer.md
-- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
-- _posts/2017-10-28-Spring-Integration-Highlights.md
+- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
 ---
 
 

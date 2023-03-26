@@ -10,10 +10,11 @@ redirect_from:
 my_related_post_paths:
 - _posts/2016-07-03-GitFlow-Incremental-Builder.md
 - _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
-- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
 - _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
-- _posts/2023-01-24-fill-versions-from-python-environment.md
-- _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
+- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
+- _posts/2016-11-04-Drone-Hackathoning.md
+- _posts/2016-07-28-Functional-Foreach-In-Bash.md
+- _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
 ---
 
 

@@ -11,10 +11,11 @@ redirect_from:
 my_related_post_paths:
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 - _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
-- _posts/2022-08-03-Python-functools.cmp_to_key-explained.md
-- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
+- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 - _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
-- _posts/2016-07-03-GitFlow-Incremental-Builder.md
+- _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
 ---
 
 

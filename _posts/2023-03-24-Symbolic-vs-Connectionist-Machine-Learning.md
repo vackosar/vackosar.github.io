@@ -1,6 +1,6 @@
 ---
 title: Symbolic vs Connectionist Machine Learning
-description: Reason without hallucinations in large language models by hybridizing neural networks with algorithms.
+description: Reason without hallucinations in large language models by hybridizing neural networks with code.
 categories: ml
 date: 2023-03-23
 last_modified_at: 2023-03-25
@@ -9,11 +9,12 @@ layout: post
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
-- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
-- _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
-- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
 - _posts/2022-04-18-how-computers-understood-humans.md
-- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2022-05-14-neural-data-compression.md
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2022-10-23-Neural-Network-Pruning-Explained.md
+- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
 ---
 
 ![symbols patterns hybrids](/images/symbols-patterns-hybrids.png)
