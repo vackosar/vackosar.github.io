@@ -88,7 +88,7 @@ Now we are just in the situation where we also implemented this **reinforcement 
 
 These very scalable **symbolic approaches** of the algorithms and code that's so useful, and it seems to be so missing. It's definitely going to be applied. So what I think is necessary and what's increasingly being applied is **hybridizing both of these approaches**. So using both neural networks and symbolic approaches at the same time.
 
-The **language models** already use the symbols. They use symbols as their input and as their output. So they are a combination a little bit in this sense. But you can go much further. We can, because the inputs are symbols and outputs are symbols, we can plug in the systems, we can plug in the algorithms.
+The **language models** already use the symbols. They use symbols as their input and as their output. So they are a combination a little bit in this sense. But you can go much further. We can, because the inputs are symbols and outputs are symbols, we can plug in the symbolic algorithms (heuristics).
 
 One of the simplest ways how you can simulate **reasoning inside of the language models** is when you guide it with a prompt. It always tries to tell you the next word, then go to the next word. So you can guide it by writing it to the prompt. So before deciding this, let's **think step by step**. And with this, you will get an improvement in accuracy of the final answer. So you are already giving it this multistep process, a [chain of though](https://vaclavkosar.com/ml/googles-pathways-language-model-and-chain-of-thought), where it can iterate in some algorithmic way and you will get better results.
 
