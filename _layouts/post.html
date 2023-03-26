@@ -48,7 +48,7 @@ layout: default
 <div class="container posts">
 {% if page.my_related_post_paths.size > 0 %}
     {% for related_post_path in page.my_related_post_paths limit:limit_post_list %}
-        {% for post in site.categories[category] %}
+        {% for post in site.posts %}
             {% if post.path == related_post_path %}
             <div class="row">
                 <div style="width: 80%; min-width: 300px; margin-top: 15px;">
