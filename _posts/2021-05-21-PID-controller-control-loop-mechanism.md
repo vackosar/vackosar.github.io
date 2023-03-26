@@ -83,7 +83,7 @@ Ki: <input type="number" id="configKi" /><br>
 ### [Self-tuning PID using Kalman filter](https://www.sciencedirect.com/science/article/pii/S2405896318304282)
   - [Kalman filter](/ml/1D-Kalman-Is-Exponential-Or-Cumulative-Average) uses linear relationship between measured values
   - to estimate true values and uncertainty
-  - in the paper relationship between the PID parameters defines the Kalman filter tuning
+  - in the paper relationship between the PID parameters defines the [Kalman filter](/ml/1D-Kalman-Is-Exponential-Or-Cumulative-Average) tuning
 
 ### Links to Related Sites
 - [HN Discussion](https://news.ycombinator.com/item?id=27318942) of this post
