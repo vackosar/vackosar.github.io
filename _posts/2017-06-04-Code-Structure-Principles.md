@@ -5,6 +5,7 @@ date: 2017-06-04
 last_modified_at: 2022-06-06
 categories: software
 description: Localize Related, Inline over Extract, Specific over Generic. My view partially based on Carmack, Jonathan Blow, and Adam Bien's posts.
+image: /images/How-to-Structure-Source-Code.png
 permalink: /:categories/:title
 redirect_from:
 - /2017/06/04/Code-Structure-Principles.html
@@ -18,6 +19,7 @@ my_related_post_paths:
 - _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
 ---
 
+![How-to-Structure-Source-Code](/images/How-to-Structure-Source-Code.png)
 
 
 {% include highlight-rouge-friendly.css.html %}

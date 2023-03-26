@@ -3,8 +3,9 @@ layout: post
 title: Scout Mindset Book Summary
 date: 2021-07-01
 categories: book
-description: Short summary of a book from Julia Galef on clear thinking.
+description: Galef on clear thinking by avoiding soldier mindset, self-awareness, no-illusions, changing mind.
 permalink: /:categories/:title
+image: "/images/Scout_Mindset_summary_book_xl-beta-v2-2-2.png"
 my_related_post_paths:
 - _posts/2021-12-12-Ten-Commandments-for-business-failure.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
@@ -15,6 +16,8 @@ my_related_post_paths:
 - _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
 ---
 
+
+![Scout Mindset Book Summary_Short summary of a book](/images/Scout_Mindset_summary_book_xl-beta-v2-2-2.png)
 
 
 [The Scout Mindset](https://www.goodreads.com/book/show/42041926-the-scout-mindset) is book from [Julia Galef](https://juliagalef.com/) on topic of rationality and decision-making.

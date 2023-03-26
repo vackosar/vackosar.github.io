@@ -5,6 +5,7 @@ categories: productivity
 date: 2023-03-26
 last_modified_at: 2023-03-26
 layout: post
+image: "/images/david_deutsch_principles_contract_xl-beta-v2-2-2.png"
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2021-12-12-Ten-Commandments-for-business-failure.md
@@ -16,6 +17,8 @@ my_related_post_paths:
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 ---
 
+![Applying David Deutsch's Principles in Life and Business](/images/david_deutsch_principles_contract_xl-beta-v2-2-2.png)
+
 *Note: this is a draft created with AI assistance, but it may be already helpful.*
 
 David Deutsch is an author of Beginning of Infinity and recorded several podcasts with Naval Ravikant discussing his insights on science and physics. This post is an attempt to bring his insights to daily problem solving.
@@ -26,29 +29,24 @@ David Deutsch is an author of Beginning of Infinity and recorded several podcast
 Here are the summarized and rewritten principles of David Deutsch's tools and concepts for thinking:
 
 1. Fallibilism: Embrace the idea that you could be wrong.
-
-- Always be open to criticism and new ideas, even if you feel confident in your current beliefs or solutions. This will help you make better decisions and adapt to new situations.
-- Example: When presenting your business plan, encourage your team members to challenge your assumptions and point out potential flaws, so you can improve your strategy.
+  - Always be open to criticism and new ideas, even if you feel confident in your current beliefs or solutions. This will help you make better decisions and adapt to new situations.
+  - Example: When presenting your business plan, encourage your team members to challenge your assumptions and point out potential flaws, so you can improve your strategy.
 
 2. Optimism: Believe in the power of human creativity to solve problems.
-
-- Cultivate a positive attitude towards challenges, and trust that you and others are capable of finding solutions to any problem you might face.
-- Example: When faced with a difficult client, maintain a positive mindset and brainstorm creative ways to address their needs and concerns.
+  - Cultivate a positive attitude towards challenges, and trust that you and others are capable of finding solutions to any problem you might face.
+  - Example: When faced with a difficult client, maintain a positive mindset and brainstorm creative ways to address their needs and concerns.
 
 3. Explanations: Seek deep, simple, and testable explanations for phenomena.
-
-- When trying to understand or solve a problem, look for explanations that are both simple and profound, and can be tested and verified.
-- Example: When analyzing a decrease in sales, look for clear and testable explanations (e.g., a new competitor, changes in customer preferences) rather than relying on vague or overly complex theories.
+  - When trying to understand or solve a problem, look for explanations that are both simple and profound, and can be tested and verified.
+  - Example: When analyzing a decrease in sales, look for clear and testable explanations (e.g., a new competitor, changes in customer preferences) rather than relying on vague or overly complex theories.
 
 4. Conjecture and Refutation: Generate bold hypotheses and then try to criticize and refute them.
-
-- Make bold predictions about the outcomes of your actions or the causes of problems, and then look for evidence and feedback that disproves or challenges them.
-- Example: If you believe that a marketing campaign will increase sales by 20%, actively seek data, feedback, and suggestions that might contradict this prediction to ensure that you're making informed decisions.
+  - Make bold predictions about the outcomes of your actions or the causes of problems, and then look for evidence and feedback that disproves or challenges them.
+  - Example: If you believe that a marketing campaign will increase sales by 20%, actively seek data, feedback, and suggestions that might contradict this prediction to ensure that you're making informed decisions.
 
 5. Evolution: Adapt and grow through continuous learning and experimentation.
-
-- Embrace change and continuously seek to learn and improve, both personally and professionally.
-- Example: Regularly review your business processes and practices to identify areas for improvement, and implement changes based on feedback and new insights.
+  - Embrace change and continuously seek to learn and improve, both personally and professionally.
+  - Example: Regularly review your business processes and practices to identify areas for improvement, and implement changes based on feedback and new insights.
 
 
 Suppose you want to increase your company's market share in a highly competitive industry. Here's how you can use Deutsch's principles:

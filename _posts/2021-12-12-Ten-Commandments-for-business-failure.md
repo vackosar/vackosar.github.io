@@ -5,6 +5,7 @@ date: 2021-12-12
 categories: book
 description: With a foreword from Warren Buffett, this short book is worthy of skimming.
 permalink: /:categories/:title
+image: /images/10-commandments-for-business-failure.png
 my_related_post_paths:
 - _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
 - _posts/2022-01-09-7-powers-moats-through-lens-of-dibellos-business-mental-model.md
@@ -15,9 +16,10 @@ my_related_post_paths:
 - _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
 ---
 
+![Ten Commandments for Business Failure Book Summary](/images/10-commandments-for-business-failure.png)
 
 
-You already read all the [Ten Commandments for Business Failure](https://www.goodreads.com/book/show/3828278-the-ten-commandments-for-business-failure) lessons elsewhere, yet you may still gain new perspective and even laugh a bit.
+Have a bit of fun and get an new insightful perspective with [Ten Commandments for Business Failure](https://www.goodreads.com/book/show/3828278-the-ten-commandments-for-business-failure) by Donald R. Keough lessons.
 
 ### The Commandments
 
