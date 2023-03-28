@@ -21,7 +21,7 @@ my_related_post_paths:
 
 *Note: this is a draft created with AI assistance, but it may be already helpful.*
 
-David Deutsch is an author of Beginning of Infinity and recorded several podcasts with Naval Ravikant discussing his insights on science and physics. This post is an attempt to bring his insights to daily problem solving.
+David Deutsch is an author of unusual book [Beginning of Infinity](https://www.amazon.com/Beginning-Infinity-Explanations-Transform-World/dp/0143121359) on scientific thinking and physics. His novel ideas can also be gleaned from podcasts for example this one with [Naval Ravikant and Tim Ferriss](https://youtu.be/FfWbcrObpUY). This post is an attempt to bring his insights to daily problem solving.
 
 
 ## David Deutsch's Principles
