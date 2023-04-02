@@ -26,7 +26,7 @@ Today I would like to tell you what is **increasingly becoming popular in large 
 
 ![large-language-models-hallucinations-and-poor-reasoning](/images/large-language-models-hallucinations-and-poor-reasoning.png)
 
-What are the **missing things in current systems**? So now we burn through a gajillion, it’s like trillions of floating point operations with all these multiplications and we still get **hallucinations** and we still get quite **poor reasoning capabilities**. And there are approaches reducing this, but something still seems to be missing.
+What are the **missing things in current systems**? So now we burn through a gajillion, it’s like trillions of floating point operations with all these multiplications and we still get **hallucinations** and we still get quite **poor reasoning capabilities**. And there are approaches reducing these judgement deficiencies, but something still seems to be missing.
 
 Yes, it’s true that humans as well hallucinate. For example, you may have a **false memory**, so maybe you don’t remember everything perfectly. For example, if there is a crime, oftentimes the people have actually different accounts.
 
