@@ -21,7 +21,7 @@ my_related_post_paths:
 
 
 
-<img alt="Trasfigure Stress Into Energy" style="width: 90%; max-width: 900px" src="/images/transfigurate-stress-to-energy-2.jpeg">
+<img alt="Transfigure Stress Into Energy" style="width: 90%; max-width: 900px" src="/images/transfigurate-stress-to-energy-2.jpeg">
 
 Research suggests that viewing stress as a positive experience can enhance performance, productivity, health, and vitality. By adopting a "stress-is-enhancing" mindset and getting excited, individuals can reappraise anxiety as excitement and improve their performance. Activating the sympathetic nervous system through exercise, cold exposure, rapid breathing exercises, and caffeine consumption can also help to transfigure stress into energy. The Yerkes-Dodson law highlights that an optimal level of stress, or eustress, can improve performance, particularly in easier tasks. Lastly, cortisol, a hormone produced by the adrenal glands, has been shown to have potential in helping manage stress and prevent PTSD and depression.
 
@@ -77,13 +77,15 @@ Stimulating the sympathetic nervous system can be achieved through various means
 
 2. Cold exposure: Taking a cold shower or immersing yourself in cold water can stimulate the sympathetic nervous system. Additionally, cold washing face, neck, or entire head will trigger mammalian diving relex, which also stimulates sympathetic nervous system.
 
-3. Rapid breathing exercises: Practicing deep, rapid breathing can activate the sympathetic nervous system. One method is the Wim Hof breathing technique, which involves taking 30 deep breaths, followed by holding your breath and exhaling slowly.
+3. Rapid breathing exercises: Practicing deep, rapid breathing can activate the sympathetic nervous system. One method is the [Wim Hof breathing technique](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4034215/), which involves taking 30 deep breaths, followed by holding your breath and exhaling slowly.
 
 4. Stressful situations: Visualizing a stressful situation such as public speaking, missing imposed deadline, facing your fear, or saying "I am excited", can activate your sympathetic nervous system by releasing stress hormones.
 
-5. Caffeine consumption: Drinking coffee or consuming caffeine-containing products can stimulate the sympathetic nervous system by increasing heart rate and blood pressure.
+5. Caffeine consumption: Drinking coffee or consuming caffeine can increase heart rate and blood pressure.
 
 6. Listening to fast-paced music: Although distracting, music with a fast tempo and high-energy beats may help.
+
+7. Bitter taste: [Bitter taste and to a lesser extent sour, and salty tastes](https://pubmed.ncbi.nlm.nih.gov/11114149/) tend to activate stress response.
 
 
 ### Optimal Stress Level
