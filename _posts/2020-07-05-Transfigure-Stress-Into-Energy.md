@@ -8,7 +8,7 @@ image: /images/transfigurate-stress-to-energy-2.jpeg
 permalink: /:categories/:title
 video: RcGyVTAoXEU
 video_start: 301
-last_modified_at: 2022-04-15
+last_modified_at: 2023-04-08
 my_related_post_paths:
 - _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
 - _posts/2021-07-14-Scout-Mindset-Book-Summary.md
@@ -22,6 +22,9 @@ my_related_post_paths:
 
 
 <img alt="Trasfigure Stress Into Energy" style="width: 90%; max-width: 900px" src="/images/transfigurate-stress-to-energy-2.jpeg">
+
+Research suggests that viewing stress as a positive experience can enhance performance, productivity, health, and vitality. By adopting a "stress-is-enhancing" mindset and getting excited, individuals can reappraise anxiety as excitement and improve their performance. Activating the sympathetic nervous system through exercise, cold exposure, rapid breathing exercises, and caffeine consumption can also help to transfigure stress into energy. The Yerkes-Dodson law highlights that an optimal level of stress, or eustress, can improve performance, particularly in easier tasks. Lastly, cortisol, a hormone produced by the adrenal glands, has been shown to have potential in helping manage stress and prevent PTSD and depression.
+
 
 ### Stress-Is-Enhancing Mindset
 Based on a study ["The role of stress mindset in shaping cognitive, emotional, and physiological responses to challenging and threatening stress"](https://mbl.stanford.edu/sites/g/files/sbiybj9941/f/crumetal_roleofstressmindset_0.pdf) the book [Upside Of Stress](https://www.goodreads.com/book/show/23281639-the-upside-of-stress) suggests following mindset: 
@@ -48,7 +51,6 @@ Try to make the best of the situation by viewing it in a more positive way or by
 Citing [Get Excited: Reappraising Pre-Performance Anxiety as Excitement](https://www.researchgate.net/publication/259454454_Get_Excited_Reappraising_Pre-Performance_Anxiety_as_Excitement):
 
 <blockquote class="blockquote" style="font-style: italic">
-
 Individuals can reappraise anxiety as excitement using minimal strategies such as self-talk (e.g., saying "I am excited" out loud) or simple messages (e.g., "get excited"), which lead them to feel more excited, adopt an opportunity mindset (as opposed to a threat mindset), and improve their subsequent performance.
 </blockquote>
 
@@ -60,21 +62,36 @@ Individuals can reappraise anxiety as excitement using minimal strategies such a
     <figcaption class="figure-caption"><a href="https://arxiv.org/pdf/1605.08803.pdf">"Get Excited" study</a> seen improvement after participants applied the self-talk.</figcaption>
 </figure>
 
+### Activate Your Sympathetic Nervous System
 
-### Cortisol Cures
-[The DHEA-S-cortisol ratios during stress were significantly higher in subjects who reported fewer symptoms of dissociation and exhibited superior military performance.](https://pubmed.ncbi.nlm.nih.gov/15289280/)
-Cortisol is a promising cure for PTSD in [2013](https://pubmed.ncbi.nlm.nih.gov/23557627/) and [2019 studies](https://www.nature.com/articles/s41398-019-0673-5).
+[The stress response is closely related to the activation of the sympathetic nervous system](https://www.ncbi.nlm.nih.gov/books/NBK541120/). When you experience stress, your body responds by activating the sympathetic nervous system, also known as the "fight or flight" response. This response prepares your body to deal with the perceived threat by increasing heart rate, blood pressure, and respiration, as well as releasing stress hormones like adrenaline and cortisol.
 
 <blockquote class="blockquote" style="font-style: italic">
-Hydrocortisone recipients reported fewer PTSD and depression symptoms, and had greater improvements in health-related quality of life during the first 3 months posttrauma than did placebo recipients.
+Stress generally affects all systems of the body including cardiovascular, respiratory, endocrine, gastrointestinal, nervous, muscular, and reproductive systems. With regards to the cardiovascular system, acute stress causes an increase in heart rate, stronger heart muscle contractions, dilation of the heart, and redirection of blood to large muscles. The respiratory system works with the cardiovascular system to supply cells of the body with oxygen while removing carbon dioxide waste. Acute stress constricts the airway which leads to shortness of breath and rapid breathing. The endocrine system increases its production of steroid hormones, which include cortisol, to activate the stress response of the body
 </blockquote>
 
-### Flow Is Eustress
+
+Stimulating the sympathetic nervous system can be achieved through various means, such as physical activities, mental exercises, and lifestyle changes. Here are ways to stimulate your sympathetic nervous system:
+
+1. Exercise: Engaging in regular physical activity like running, cycling, swimming, and other high intensity exercise stimulate the sympathetic nervous system. Intense workouts can increase the release of adrenaline and other stress hormones, which activate the sympathetic response.
+
+2. Cold exposure: Taking a cold shower or immersing yourself in cold water can stimulate the sympathetic nervous system. Additionally, cold washing face, neck, or entire head will trigger mammalian diving relex, which also stimulates sympathetic nervous system.
+
+3. Rapid breathing exercises: Practicing deep, rapid breathing can activate the sympathetic nervous system. One method is the Wim Hof breathing technique, which involves taking 30 deep breaths, followed by holding your breath and exhaling slowly.
+
+4. Stressful situations: Visualizing a stressful situation such as public speaking, missing imposed deadline, facing your fear, or saying "I am excited", can activate your sympathetic nervous system by releasing stress hormones.
+
+5. Caffeine consumption: Drinking coffee or consuming caffeine-containing products can stimulate the sympathetic nervous system by increasing heart rate and blood pressure.
+
+6. Listening to fast-paced music: Although distracting, music with a fast tempo and high-energy beats may help.
+
+
+### Optimal Stress Level
+
 <!-- [Generating eustress by challenging employees: Helping people savor their work](https://www.sciencedirect.com/science/article/abs/pii/S0090261612000964?via%3Dihub) -->
 
 Positive stress is called eustress. Flow state is an representative of eustress shown to be associated with <a href="https://www.researchgate.net/publication/241693102_Psychophysiological_correlates_of_flow_during_daily_activities">increased hearth rate</a>.
 
-### Optimal Stress Level
 
 Yerkes–Dodson "law" is an empirical relationship between stress level and performance. [Caffeine, impulsivity, and memory scanning (1989)](https://link.springer.com/article/10.1007/BF00995541) says:
 
@@ -86,6 +103,19 @@ I wonder if changing stress levels are also healthy similarly to a workout or a 
 Speaking of exercise, here is a tip to [boost your running morale](/health/Boost-Jog-Morale-Using-Mil-Cadence).
 
 ![from Deep Physiological Arousal Detection in a Driving Simulator Using Wearable Sensors](/images/stress-yerkes-dodson-law.png)
+
+
+### Cortisol Cures
+
+In recent years, researchers have been exploring the potential of using cortisol, a hormone produced by the adrenal glands, to help individuals manage stress and even prevent the development of posttraumatic stress disorder (PTSD) and depression. Stress can have detrimental effects on both mental and physical health, but not always.`
+
+<blockquote class="blockquote" style="font-style: italic">
+Hydrocortisone recipients reported fewer PTSD and depression symptoms, and had greater improvements in health-related quality of life during the first 3 months posttrauma than did placebo recipients.
+</blockquote>
+
+[The DHEA-S-cortisol ratios during stress were significantly higher in subjects who reported fewer symptoms of dissociation and exhibited superior military performance.](https://pubmed.ncbi.nlm.nih.gov/15289280/)
+Cortisol is a promising cure for PTSD in [2013](https://pubmed.ncbi.nlm.nih.gov/23557627/) and [2019 studies](https://www.nature.com/articles/s41398-019-0673-5).
+
 
 
 ### 1-Minute Training

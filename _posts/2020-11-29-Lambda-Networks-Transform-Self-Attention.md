@@ -137,7 +137,7 @@ Self-attention is defined as:
 Kernel function approximating softmax via a feature function \\( \phi \in \mathbb{R}^{n \times d} \rightarrow \mathbb{R}^{n \times k} \\),
 which maps to the smaller dimension \\( k \\).
 
-The [Peformer](http://localhost:4000/ml/Performers-FAVOR+-Faster-Transformer-Attention) self-attention approximation is defined as:
+The [Peformer](/ml/Performers-FAVOR+-Faster-Transformer-Attention) self-attention approximation is defined as:
 
 \\( \mathrm{performerAttention} = \phi(Q) \phi(K)^\intercal V \\)
 
@@ -178,7 +178,7 @@ but rather to a small neighborhood of each pixel due to time and space complexit
 </figure>
 
 Comparison of the Relu-Performer and Lambda Network is not available as of 2020-11-30.
-I think [Relu-Peformer](http://localhost:4000/ml/Performers-FAVOR+-Faster-Transformer-Attention) will likely outperform Lambda layer, although it needs to be tested first.
+I think [Relu-Peformer](/ml/Performers-FAVOR+-Faster-Transformer-Attention) will likely outperform Lambda layer, although it needs to be tested first.
 
 
 ## Are Lambda's Positional Embeddings Required?
