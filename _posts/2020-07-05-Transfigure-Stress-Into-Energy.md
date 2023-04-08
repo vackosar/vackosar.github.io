@@ -79,7 +79,7 @@ Stimulating the sympathetic nervous system can be achieved through various means
 
 3. Rapid breathing exercises: Practicing deep, rapid breathing can activate the sympathetic nervous system. One method is the [Wim Hof breathing technique](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4034215/), which involves taking 30 deep breaths, followed by holding your breath and exhaling slowly.
 
-4. Stressful situations: Visualizing a stressful situation such as public speaking, missing imposed deadline, facing your fear, or saying "I am excited", can activate your sympathetic nervous system by releasing stress hormones.
+4. Stressful situations: Visualizing a stressful situation with peer competitive pressure, time pressure, physical stress such as public speaking, missing imposed deadline, facing your fear, or saying "I am excited", can activate your sympathetic nervous system by releasing stress hormones.
 
 5. Caffeine consumption: Drinking coffee or consuming caffeine can increase heart rate and blood pressure.
 
