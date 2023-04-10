@@ -71,7 +71,10 @@ Individuals can reappraise anxiety as excitement using minimal strategies such a
 Stress generally affects all systems of the body including cardiovascular, respiratory, endocrine, gastrointestinal, nervous, muscular, and reproductive systems. With regards to the cardiovascular system, acute stress causes an increase in heart rate, stronger heart muscle contractions, dilation of the heart, and redirection of blood to large muscles. The respiratory system works with the cardiovascular system to supply cells of the body with oxygen while removing carbon dioxide waste. Acute stress constricts the airway which leads to shortness of breath and rapid breathing. The endocrine system increases its production of steroid hormones, which include cortisol, to activate the stress response of the body
 </blockquote>
 
-Stress and alertness are the opposite of [hypnosis, which has shown as increasing parasympathetic activity](https://pubmed.ncbi.nlm.nih.gov/28825157/). Since many of these body processes are stimulated bi-directionally, parasympathetic activity seems likely to be stimulated backwards by for example digestion, which in turn is probably increasing hypnotic-like states. People in hypnotic-like states are more prone to suggestion, that is uncritically accepting information and mindlessly going with the flow, which could be beneficial for resting in safety and connecting verified information, but here we aim to avoid that by stimulating eu-stress.
+Stress and alertness are the opposite of [hypnosis, which has shown as increasing parasympathetic activity](https://pubmed.ncbi.nlm.nih.gov/28825157/). Since many of these [body processes are stimulated bi-directionally](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3845678/), parasympathetic activity seems likely to be stimulated backwards by for example digestion, which in turn is probably increasing hypnotic-like states. People in hypnotic-like states are more prone to suggestion, that is uncritically accepting information and mindlessly going with the flow, which could be beneficial for resting in safety and connecting verified information, but here we aim to avoid that by stimulating eu-stress. For example,
+people with attention deficit (ADHD) experience [higher parasympathetic nervous system activity](https://www.sciencedirect.com/science/article/pii/S014976341930418X) than non-ADHD people.
+
+The sympathetic and parasympathetic nervous systems play a significant role in regulating various physiological processes and influencing behavior, including in the workplace. The sympathetic nervous system is responsible for the "fight or flight" response, which prepares the body for action, while the parasympathetic system is associated with the ["freeze" response](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5332864/), and "rest and digest" response, which promotes relaxation and recovery. It is possible that artists and managers may experience different levels of sympathetic and parasympathetic nervous system activation due to the nature of their work. Artists often engage in creative activities that require focus, patience, and relaxation, which may promote parasympathetic activation. In contrast, managers frequently deal with high-stress situations, decision-making, and problem-solving, which can trigger the sympathetic nervous system's response. I wonder if there is a third dimension here regarding attention, such that we would have stress activity, and
 
 Stimulating the sympathetic nervous system can be achieved through various means, such as physical activities, mental exercises, and lifestyle changes. Here are ways to stimulate your sympathetic nervous system:
 
@@ -83,11 +86,15 @@ Stimulating the sympathetic nervous system can be achieved through various means
 
 4. Stressful situations: Visualizing a stressful situation with peer competitive pressure, time pressure, physical stress such as public speaking, missing imposed deadline, facing your fear, or saying "I am excited", can activate your sympathetic nervous system by releasing stress hormones.
 
-5. Caffeine consumption: Drinking coffee or consuming caffeine can increase heart rate and blood pressure.
+5. Stimulants: Drinking coffee or consuming caffeine can increase heart rate and blood pressure.
 
 6. Listening to fast-paced music: Although distracting, music with a fast tempo and high-energy beats may help.
 
-7. Bitter taste: [Bitter taste and to a lesser extent sour, and salty tastes](https://pubmed.ncbi.nlm.nih.gov/11114149/) tend to activate stress response.
+7. Bitter taste: [Bitter taste and to a lesser extent sour, and salty tastes](https://pubmed.ncbi.nlm.nih.gov/11114149/) tend to activate stress response. Notice that coffee tastes bitter and vitamin C tastes sour, where both are mild stimulants.
+
+
+It is important to keep in mind that rapid changes in stimulation can be counter productive, and could lead to dopamine system adaptation, so probably one needs to find some consistent balance or counter-cycling approach for optimal output.
+
 
 
 ### Optimal Stress Level
