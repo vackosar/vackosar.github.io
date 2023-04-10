@@ -5,7 +5,7 @@ categories: productivity
 date: 2023-03-26
 last_modified_at: 2023-03-26
 layout: post
-image: "/images/david_deutsch_principles_contract_xl-beta-v2-2-2.png"
+image: /images/david_deutsch_principles_contract_xl-beta-v2-2-2.png
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2021-12-12-Ten-Commandments-for-business-failure.md

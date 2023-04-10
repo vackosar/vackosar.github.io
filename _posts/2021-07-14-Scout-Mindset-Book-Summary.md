@@ -6,15 +6,15 @@ last_modified_at: 2023-04-10
 categories: book
 description: Galef on clear thinking by avoiding tribal soldier mindset, self-awareness, no-illusions, changing mind, criticism.
 permalink: /:categories/:title
-image: "/images/Scout_Mindset_summary_book_xl-beta-v2-2-2.png"
+image: /images/Scout_Mindset_summary_book_xl-beta-v2-2-2.png
 my_related_post_paths:
-- _posts/2021-12-12-Ten-Commandments-for-business-failure.md
-- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
+- _posts/2021-12-12-Ten-Commandments-for-business-failure.md
 - _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
+- _posts/2022-01-09-7-powers-moats-through-lens-of-dibellos-business-mental-model.md
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
-- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
-- _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
 ---
 
 

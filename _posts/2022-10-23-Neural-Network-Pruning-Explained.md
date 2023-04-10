@@ -13,8 +13,8 @@ my_related_post_paths:
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
-- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 - _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
+- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 - _posts/2022-03-20-sparse-matrix-why-and-when.md
 ---
 
