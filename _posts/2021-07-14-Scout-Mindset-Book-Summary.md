@@ -52,5 +52,5 @@ It explores the concept of rationality and decision-making by advocating for cle
 ## Criticism of the Book
 In situations where people do not have the time or inclination to verify who is correct, it may be difficult for someone employing the scout mindset to effectively defend their positions or persuade others. This could potentially lead to their rational, well-thought-out ideas being dismissed or overshadowed by more emotionally charged or biased arguments.
 
-### Action Point
+## Action Point
 For better decision-making, improved judgments, and long-term success, consciously practice and adopt the scout mindset in daily life, focusing on self-awareness, evaluating new information objectively, embracing uncertainty, and detaching personal beliefs from one's identity.
