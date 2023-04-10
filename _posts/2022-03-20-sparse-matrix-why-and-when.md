@@ -18,7 +18,11 @@ my_related_post_paths:
 
 
 
-Hi, this is a draft of a post, but it could be already useful.
+*Hi, this is a draft of a post, but it could be already useful.*
+
+Sparse matrices are a special type of matrices that have a significant number of zero values. They are used in machine learning and other scientific computations due to their ability to reduce memory usage and computation time. For example, a dense matrix of size 1000x1000 with only 10% non-zero 8-bit values would require 8 MB of memory, while its sparse equivalent would require only a 10% of that. Sparse matrices also speed up certain operations, such as matrix multiplication, by skipping over the zero values. In fact, the performance gain can be dramatic: a sparse matrix multiplication can be up to 100x faster than its dense counterpart. Overall, using sparse matrices can greatly improve the efficiency and scalability of machine learning algorithms, especially when dealing with zero-valued data common for example in recommendation systems, adjacency matrices, word counting methods.
+
+
 
 ## Dense Matrix Multiplication Example
 The simplest the most common formats used.
