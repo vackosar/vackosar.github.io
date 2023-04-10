@@ -1,12 +1,12 @@
 ---
 title: 7 Powers' Moats Through the Lens of DiBello's Business Mental Model
-description: An insight into Helmer's enterprise moats via dimensions of demand, supply, and capital.
+description: Protect margins with Helmer's moats by understanding dimensions of demand, supply, and capital.
 image: /images/7-powers-dibello-mental-model.png
 layout: post
 categories: book
 tag: business
 date: 2022-01-09
-last_modified_at: 2022-06-06
+last_modified_at: 2023-04-10
 permalink: /:categories/:title
 redirect_from:
 - /book/7-powers-moats-through-lens-of-modified-dibellos-business-mental-model
@@ -19,7 +19,6 @@ my_related_post_paths:
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2020-04-22-result-diversification-in-web-search-and-recommenders.md
 ---
-
 
 
 <img id="video-img-img" style="max-width: 560px; width: 100%" src="{{ page.image }}" alt="{{ page.title }}" />
@@ -37,37 +36,39 @@ _I may have slightly modified some concepts to offer an interesting view._
 _For example for Cedric all the concepts fall into "Demand" dimension of DiBello's model._
 _This is my initial version of the post on this topic._
 
+
 ## DiBello Mental Model Dimensions
 DiBello's research suggests that there is a triad of crucial aspects of a business that great business people understand.
 Here I state the DiBello's dimensions of mental model of business, adding units, agents, and related terms.
 For details, I recommend reading [Mental Model of Business](https://commoncog.com/blog/business-mental-model/) or the [original paper](https://wtri.com/wp-content/uploads/2015/06/Informed-By-Knowledge-Chapter-12.pdf).
 
 The three core areas are:
-- Supply, or leadership: factors involved in effective operations
-  - related terms: incentives, systems, design blueprints, manufacturing, production, product development
-  - agents: employees, management, execution, human resources
-  - comment: This dimension deals with company-internal matters. Here the company transforms the inputs into outputs.
-- Demand, or strategy: forces influencing the market
-  - related terms: deal, sale, marketing, purchase, brand asset, positioning, exchange, trade, inputs, outputs ...
-  - agents: customers, suppliers, competition, government, prospect
-  - comment: This dimension represents exchange with the outside. Here the company inputs and outputs are connected.
-- Capital, or finance: driving business finance and economic climates
-  - related terms: financial performance, cost of goods sold, return on ads spend, fixed assets, receivables, R&D, cashflow, debt, equity receivables, cost of capital,  ...
-  - agents: investors, bondholders, CFO
-  - comment: I see this dimension as a mainly quantitative or performance measuring, because various inputs and outputs are already part of the demand. Capital is different (more liquidity, services), but not sure if enough different.
 
-#### Notes
+**Supply, or leadership: factors involved in effective operations**
+- topics: incentives, systems, design blueprints, manufacturing, production, product development
+- agents: employees, management, execution, human resources
+- comment: This dimension deals with company-internal matters. Here the company transforms the inputs into outputs.
 
-Note 0: I am not 100% clear on the definition. For example can we really include CFO role in to the capital leg or does it go to the supply?
+**Demand, or strategy: forces influencing the market**
+- topics: deal, sale, marketing, purchase, brand asset, positioning, exchange, trade, inputs, outputs ...
+- agents: customers, suppliers, competition, government, prospect
+- comment: This dimension represents exchange with the outside. Here the company inputs and outputs are connected.
 
-Note 1: Finance above plays a role of monitoring of quantitative attributes of the exchanges, the Demand is the exchange itself, the Supply is involved with the processes and algorithms used to achieve the value transformation.
+**Capital, or finance: driving business finance and economic climates**
+- topics: financial performance, cost of goods sold, return on ads spend, fixed assets, receivables, R&D, cashflow, debt, equity receivables, cost of capital,  ...
+- agents: investors, bondholders, CFO
+- comment: I see this dimension as a mainly quantitative or performance measuring, because various inputs and outputs are already part of the demand. Capital is different (more liquidity, services), but not sure if enough different.
 
-Note 2: Nick Huber of Sweaty Startup seems to be thinking along the two of the main dimensions describes "[Every company has a customer or a employee problem](https://www.youtube.com/watch?v=OJmT9n0XbIU)".
+Some topics or agents operate across the dimensions. Do we include **CFO in to the capital dimension or the supply**?
+Nick Huber of Sweaty Startup seems to be thinking along the two of the main dimensions describes "[Every company has a customer or a employee problem](https://www.youtube.com/watch?v=OJmT9n0XbIU)".
 
-Note 3: Every company seems have to involve some transformation between two types of goods (input, output or bi-directional) and exchange of them in the market.
-Even annuity is transformation of a lump sum into a contract of time-distributed payments (capital over time). It may be useful to separate inputs and outputs into two dimensions, but in general they are part of the Demand.
+Organisation and often split into departments that specialize in some of the dimensions.
+The patter structure is then nested or fractal, as departments themselves then again deal with at least some aspect of each dimension.
 
-Note 4: Suppliers are distinguished from customers by the direction of flow of money. In case of Google users and webpage owners are suppliers and advertisers are customers. If the flow is bidirectional suppliers may be indistinguishable from customers, which seems rare.
+Every company seems have to involve some transformation between two types of goods (input, output or bi-directional) and exchange of them in the market.
+Finance plays a role of monitoring of quantitative attributes of the exchanges, the Demand is the exchange itself, the Supply is involved with the processes and algorithms used to achieve the value transformation. For example, annuity is transformation of a lump sum into a contract of time-distributed payments (capital over time). It may be useful to separate inputs and outputs into two dimensions, but in general they are part of the Demand.
+
+Suppliers are distinguished from customers by the direction of flow of money. In case of Google users and webpage owners are suppliers and advertisers are customers. If the flow is bidirectional suppliers may be indistinguishable from customers, which seems rare.
 
 
 ## 7 Powers From Perspective of DiBello's 
@@ -109,7 +110,8 @@ I split them according to company stage to which they become accessible.
 	- benefited dimensions: supply, demand, capital
 	- barrier: competitor has to pay switching costs
 	- examples: deep integration with systems, data and configuration stored in the systems, habits, [Non-compete clause](https://en.wikipedia.org/wiki/Non-compete_clause)
-		
+
+
 ### Corp-up Stage Powers
 Hysteresis: (optimization, trust, stability):
 
@@ -125,7 +127,15 @@ Hysteresis: (optimization, trust, stability):
 	- benefited dimension: capital
 	- low cost of capital thanks to optimization and trust of investors
 	- example: [Blue chip stocks](https://en.wikipedia.org/wiki/Blue_chip_(stock_market))
-		
+
+
+## Next Steps
+
+1. Categorize roles and departments in your organization into the supply, demand, and capital dimensions. This will help you identify the key areas and individuals that contribute to building and maintaining your competitive edge.
+
+2. Assess the current moats available in each dimension and identify potential opportunities for strengthening or acquiring new moats. For example, consider investing in process optimization or improving brand equity to create barriers against competition.
+
+
 ## Acknowledgments
 I only found about topics above thanks to Cedric's blog posts over at [Common Place Blog](https://commoncog.com/blog/).
 I am personally a paying subscriber of the Commonplace blog to have access to member's only posts and the community.
