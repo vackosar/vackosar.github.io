@@ -4,7 +4,7 @@ title: Scout Mindset Book Summary
 date: 2021-07-01
 last_modified_at: 2023-04-10
 categories: book
-description: Galef on clear thinking by avoiding soldier mindset, self-awareness, no-illusions, changing mind.
+description: Galef on clear thinking by avoiding tribal soldier mindset, self-awareness, no-illusions, changing mind, criticism.
 permalink: /:categories/:title
 image: "/images/Scout_Mindset_summary_book_xl-beta-v2-2-2.png"
 my_related_post_paths:
@@ -31,7 +31,7 @@ It explores the concept of rationality and decision-making by advocating for cle
 
 ###  Developing Self-Awareness
 - ScM is not about intelligence. On certain questions, higher the IQ leads to higher divergence in opinions between groups on the same topic.
-- ScM is about updating probability of believes, understanding counter hypotheses, and  valueing new information.
+- ScM is about updating probability of believes, understanding counter hypotheses, and valuing new information.
 
 ###  Thriving Without Illusions
 - Avoid desperation by doing the best.
