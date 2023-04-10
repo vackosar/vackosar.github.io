@@ -36,7 +36,7 @@ It has single category of outside systems. Sometimes BCE is being compared to MV
 ![actor entity boundary control example](/images/actor-boundary-control-entity.svg)
 
 The package structure is often visualized as tree onion layers, or as a hexagonal layers, where the most outer layer is Boundary, central is Control and inner is Entity.
-- Boundary is an interface to the outside world. It contains classes responsible for all communications with systems outside application runtime. It contains configuration, and establishing external connections.
+- Boundary is an interface to the outside world. It contains classes responsible for all communications with systems outside application runtime. It contains configuration, and establishing external connections. You may choose to place all API objects here as well and separate internal domain objects into entity package to avoid accidentally changing the API.
 - Control represents all logic that doesn't fit well into Boundary. It contains algorithms, SQL Queries.
 - Entity contains data structures which are allowed to have some behaviour. It contains domain objects with basic functionalities.
 
