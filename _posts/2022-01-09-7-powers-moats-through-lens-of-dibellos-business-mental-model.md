@@ -80,53 +80,56 @@ I split them according to company stage to which they become accessible.
 
 
 ### Startup Stage Powers
-- Counter-positioning - Where big players cannot follow?
-	- benefited dimensions: supply, demand, capital
-	- barrier: big players optimized in local maximum with lots of trust cannot follow 
-	- examples: specialized production, niche market, business model
-- Cornered-Resource - What can you own exclusively almost all of?
-	- benefited dimensions: supply, demand, capital
-	- barrier: external force of contracts, laws
-	- examples: exclusive contract, patent, regulation, property, employee, exclusive funding
-	
+#### Counter-positioning - Where big players cannot follow?
+- benefited dimensions: supply, demand, capital
+- barrier: big players optimized in local maximum with lots of trust cannot follow
+- examples: specialized production, niche market, business model
+
+#### Cornered-Resource - What can you own exclusively almost all of?
+- benefited dimensions: supply, demand, capital
+- barrier: external force of contracts, laws
+- examples: exclusive contract, patent, regulation, property, employee, exclusive funding
+
 ### Scaleup Stage Powers
-- Scale - How to pay fixed-cost or network the agents?
-    - Scale Economies (Supply side-scale) - production fixed-costs or networking employees
-        - benefited dimensions: supply
-        - barrier: market share
-        - examples: shooting movies to distribute across many subscribers ([Netflix](https://en.wikipedia.org/wiki/Netflix))
-    - Demand-side Scale Economy (Network) - Demand fixed-costs or networking customers
-        - benefited dimensions: demand
-        - barrier: market share
-        - examples: social networks (Facebook), marketing fixed-costs ([Red Bull](https://en.wikipedia.org/wiki/Red_Bull)), recommender systems, Google ranking
-    - "Capital Scale Economies" - Capital fixed-costs or networking investors
-        - benefited dimensions: capital
-        - barrier: market share
-        - examples:
-          - IPO has high fixed-costs of regulatory reporting
-		  - Investor network effects perhaps exist as [reflexivity](https://en.wikipedia.org/wiki/Reflexivity_(social_theory)#In_economics) (the more people want the Mona Lisa the higher it is priced)
-		  - [Web3](https://en.wikipedia.org/wiki/Web3) brings in new possibilities, so perhaps we see more in future? 
-- Switching costs - Why customers, investors, employees cannot switch to competition without a friction?
-	- benefited dimensions: supply, demand, capital
-	- barrier: competitor has to pay switching costs
-	- examples: deep integration with systems, data and configuration stored in the systems, habits, [Non-compete clause](https://en.wikipedia.org/wiki/Non-compete_clause)
+#### Scale - How to pay fixed-cost or network the agents?
+- Scale Economies (Supply side-scale) - production fixed-costs or networking employees
+    - benefited dimensions: supply
+    - barrier: market share
+    - examples: shooting movies to distribute across many subscribers ([Netflix](https://en.wikipedia.org/wiki/Netflix))
+- Demand-side Scale Economy (Network) - Demand fixed-costs or networking customers
+    - benefited dimensions: demand
+    - barrier: market share
+    - examples: social networks (Facebook), marketing fixed-costs ([Red Bull](https://en.wikipedia.org/wiki/Red_Bull)), recommender systems, Google ranking
+- "Capital Scale Economies" - Capital fixed-costs or networking investors
+  - benefited dimensions: capital
+  - barrier: market share
+  - examples: IPO has high fixed-costs of regulatory reporting
+  - Investor network effects perhaps exist as [reflexivity](https://en.wikipedia.org/wiki/Reflexivity_(social_theory)#In_economics) (the more people want the Mona Lisa the higher it is priced)
+  - [Web3](https://en.wikipedia.org/wiki/Web3) brings in new possibilities, so perhaps we see more in future?
+
+#### Switching costs - Why customers, investors, employees cannot switch to competition without a friction?
+- benefited dimensions: supply, demand, capital
+- barrier: competitor has to pay switching costs
+- examples: deep integration with systems, data and configuration stored in the systems, habits, [Non-compete clause](https://en.wikipedia.org/wiki/Non-compete_clause)
 
 
 ### Corp-up Stage Powers
 Hysteresis: (optimization, trust, stability):
 
-- Process Power - What creates non-replicable and stable organizational capability?
-	- benefited dimensions: supply
-	- lower costs per unit of supply due to optimization and trust of employees
-	- barrier: time in production
-- Branding - What accrues trust and nostalgia with users and markets optimally?
-	- benefited dimension: demand
-	- lower costs per unit of demand due to optimization and trust of customers
-	- barrier: time in market
-- "Lindy Effect" - What accrues trust and optimizes capital operations?
-	- benefited dimension: capital
-	- low cost of capital thanks to optimization and trust of investors
-	- example: [Blue chip stocks](https://en.wikipedia.org/wiki/Blue_chip_(stock_market))
+#### Process Power - What creates non-replicable and stable organizational capability?
+- benefited dimensions: supply
+- lower costs per unit of supply due to optimization and trust of employees
+- barrier: time in production
+
+#### Branding - What accrues trust and nostalgia with users and markets optimally?
+- benefited dimension: demand
+- lower costs per unit of demand due to optimization and trust of customers
+- barrier: time in market
+
+#### "Lindy Effect" - What accrues trust and optimizes capital operations?
+- benefited dimension: capital
+- low cost of capital thanks to optimization and trust of investors
+- example: [Blue chip stocks](https://en.wikipedia.org/wiki/Blue_chip_(stock_market))
 
 
 ## Next Steps
