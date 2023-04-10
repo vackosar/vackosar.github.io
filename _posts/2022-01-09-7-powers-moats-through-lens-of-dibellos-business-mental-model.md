@@ -131,6 +131,8 @@ Hysteresis: (optimization, trust, stability):
 
 ## Next Steps
 
+Here is how you can use the above text:
+
 1. Categorize roles and departments in your organization into the supply, demand, and capital dimensions. This will help you identify the key areas and individuals that contribute to building and maintaining your competitive edge.
 
 2. Assess the current moats available in each dimension and identify potential opportunities for strengthening or acquiring new moats. For example, consider investing in process optimization or improving brand equity to create barriers against competition.
