@@ -60,7 +60,10 @@ Suppose you want to increase your company's market share in a highly competitive
 
 ## What is Missing?
 
-David Deutsch's work primarily focuses on the philosophy of science, epistemology, and quantum computing, rather than specific business topics. As a result, there are several important business concepts that his work does not directly address. Some examples include:
+My primary criticism of the Deutsch is that if only one side can be criticized publicly, that side can improve from that only if the criticism is valid and also for casual observers that side is also perceived more wrong.
+David Deutsch's work primarily focuses on the philosophy of science, epistemology, and quantum computing, rather than specific business topics. As a result, there are several important business concepts that his work does not directly address.
+
+Some examples include:
 
 1. Competition: The importance of understanding and analyzing competitors, their strategies, and their impact on your business.
 
