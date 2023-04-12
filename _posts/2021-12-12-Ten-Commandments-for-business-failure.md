@@ -2,6 +2,7 @@
 layout: post
 title: Ten Commandments for Business Failure Book Summary
 date: 2021-12-12
+last_modified_at: 2023-04-12
 categories: book
 description: On inflexibility, infallibility, fouls, and more from D. R. Keough with foreword by Warren Buffett.
 permalink: /:categories/:title
