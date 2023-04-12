@@ -3,7 +3,7 @@ layout: post
 title: Ten Commandments for Business Failure Book Summary
 date: 2021-12-12
 categories: book
-description: With a foreword from Warren Buffett, this short book is worthy of skimming.
+description: On inflexibility, infallibility, fouls, and more from D. R. Keough with foreword by Warren Buffett.
 permalink: /:categories/:title
 image: /images/10-commandments-for-business-failure.png
 my_related_post_paths:
@@ -18,8 +18,7 @@ my_related_post_paths:
 
 ![Ten Commandments for Business Failure Book Summary](/images/10-commandments-for-business-failure.png)
 
-
-Have a bit of fun and get an new insightful perspective with [Ten Commandments for Business Failure](https://www.goodreads.com/book/show/3828278-the-ten-commandments-for-business-failure) by Donald R. Keough lessons.
+In [Ten Commandments for Business Failure](https://www.goodreads.com/book/show/3828278-the-ten-commandments-for-business-failure), Donald R. Keough offers valuable lessons on what not to do in order to succeed in business. Drawing from his experiences as a former Coca-Cola president, Keough provides readers with a humorous yet insightful guide on the common pitfalls that often plague organizations. These "commandments" serve as a roadmap for business leaders to learn from others' mistakes and avoid making their own, covering topics such as the importance of risk-taking, flexibility, clear communication, and maintaining passion for work and life.
 
 ### The Commandments
 
