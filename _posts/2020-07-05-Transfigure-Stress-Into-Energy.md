@@ -63,7 +63,7 @@ Individuals can reappraise anxiety as excitement using minimal strategies such a
 </figure>
 
 
-### Activate Your Sympathetic Nervous System
+### Stress and Sympathetic Nervous System
 
 [The stress response is closely related to the activation of the sympathetic nervous system](https://www.ncbi.nlm.nih.gov/books/NBK541120/). When you experience stress, your body responds by activating the sympathetic nervous system, also known as the "fight or flight" response. This response prepares your body to deal with the perceived threat by increasing heart rate, blood pressure, and respiration, as well as releasing stress hormones like **adrenaline and cortisol**.
 
@@ -75,6 +75,9 @@ Stress and alertness are the opposite of [hypnosis, which has shown as increasin
 people with attention deficit (ADHD) experience [higher parasympathetic nervous system activity](https://www.sciencedirect.com/science/article/pii/S014976341930418X) than non-ADHD people.
 
 The sympathetic and parasympathetic nervous systems play a significant role in regulating various physiological processes and influencing behavior, including in the workplace. The sympathetic nervous system is responsible for the "fight or flight" response, which prepares the body for action, while the parasympathetic system is associated with the ["freeze" response](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5332864/), and "rest and digest" response, which promotes relaxation and recovery. It is possible that artists and managers may experience different levels of sympathetic and parasympathetic nervous system activation due to the nature of their work. Artists often engage in creative activities that require focus, patience, and relaxation, which may promote parasympathetic activation. In contrast, managers frequently deal with high-stress situations, decision-making, and problem-solving, which can trigger the sympathetic nervous system's response.
+
+
+### Activate Your Sympathetic Nervous System
 
 Stimulating the sympathetic nervous system can be achieved through various means, such as physical activities, mental exercises, and lifestyle changes. Here are ways to stimulate your sympathetic nervous system:
 
