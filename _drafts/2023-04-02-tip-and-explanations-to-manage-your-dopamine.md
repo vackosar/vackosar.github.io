@@ -8,6 +8,13 @@ layout: post
 permalink: /:categories/:title
 ---
 
+# Notes
+
+- When disengaging difficult activity, remind yourself reengaging back is improving your dopamine management system, and return to the activity, instead of giving in.
+
+
+# Summaries
+
 Brief overview:
 Understanding dopamine dynamics can help regulate emotions, overcome obstacles, and develop confidence. Managing dopamine peaks, troughs, and baselines is crucial for motivation, procrastination, and reward sensation. Engaging in dopamine-boosting activities, such as exercise or social interactions, aids in maintaining optimal motivation levels. Overcoming procrastination and boosting motivation requires a balance between meaningful pursuits and dopamine-releasing activities. Embracing effort and perseverance is essential for sustained motivation and goal achievement.
 
