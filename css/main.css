@@ -88,3 +88,48 @@ svg {
 figure {
     max-width: 600px;
 }
+
+.speech-baloon-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.speech-baloon-head .image-container img {
+    border-radius: 50%;
+    width: 56px;
+    height: 61px;
+    position: relative;
+
+}
+
+.speech-baloon-head .text-container {
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.speech-baloon-head .text-container::before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 30px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent #eaeaea transparent transparent;
+}
+
+.speech-baloon-head .text-container a {
+    text-decoration: none;
+    color: #333;
+}
+
+.speech-baloon-head .text-container h5 {
+    margin: 1px;
+    font-weight: bold;
+}
