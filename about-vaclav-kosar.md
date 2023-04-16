@@ -30,9 +30,10 @@ extra_meta: |
     </script>
 ---
 
-Strong multi-domain experience in solving challenging problems from 9 years of software, 3 years of machine learning, and big data engineering.
+I reduce costs and increase revenues with software and machine learning systems. For GLAMI, I am optimizing a product feature detection system performing 40 million predictions (e.g. [product category](/software/google-product-taxonomy-viewer)) each month, so that the customers can find what they are looking for quickly. I also publish resources which you for machine learning research and education. For example, with GLAMI we recently published a [GLAMI-1M dataset](https://github.com/glami/glami-1m) together with a [practise notebook combining of texts which are in multiple languages and images](https://colab.research.google.com/drive/16gMqVqUpleacU5z9Y_7f3c-7I0C45esy?usp=sharing).
 
-Expertise:
+I have strong multi-domain experience in solving challenging problems from 9 years of software, 3 years of machine learning, and big data engineering:
+
 - Software engineering, Python, Java, Scala backend, and frontend
 - Natural language processing, Machine translation, Image-text classification, Transformers
 - Big data, BigQuery, Spark, Scala, RDBMS
