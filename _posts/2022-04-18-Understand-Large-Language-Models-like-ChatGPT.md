@@ -1,6 +1,6 @@
 ---
 title: Understand Large Language Models like ChatGPT
-description: In 7 slides from TF-IDF, Word2vec, knowledge graphs, and transformers to LLMs and ChatGPT basics explained.
+description: In 9 slides from TF-IDF, Word2vec, knowledge graphs, and transformers to LLMs and ChatGPT basics explained.
 layout: post
 categories: ml
 image: /images/how-computers-understood-humans-thumb.png
