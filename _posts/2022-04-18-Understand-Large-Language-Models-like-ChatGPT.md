@@ -27,7 +27,7 @@ my_related_post_paths:
 
 
 ## Dream of a Talking Machine
-- Idea of a talking machine since 1700s, but not enough compute and computer science
+- Idea of a talking machine since 1700s, but weak computers and computer science
 - ChatGPT does almost what was predicted, but how?
 - How to instruct large language model to perform tasks?
 - How represent knowledge in computers?
