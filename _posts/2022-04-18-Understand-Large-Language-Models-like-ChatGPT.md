@@ -1,6 +1,6 @@
 ---
-title: How Computers Understood Humans
-description: Catch on with this 7-slide introduction to deep natural language processing of 2022, featuring TF-IDF, Word2vec, knowledge graphs, and transformers.
+title: Understand Large Language Models like ChatGPT
+description: In 7 slides from TF-IDF, Word2vec, knowledge graphs, and transformers to LLMs and ChatGPT.
 layout: post
 categories: ml
 image: /images/how-computers-understood-humans-thumb.png
@@ -8,6 +8,8 @@ date: 2022-04-18
 permalink: /:categories/:title
 last_modified_at: 2022-05-21
 video: Jo-IQjdFfnw
+redirect_from:
+- /ml/how-computers-understood-humans
 my_related_post_paths:
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
@@ -22,9 +24,12 @@ my_related_post_paths:
 
 {% include load_video.html %}
 
-- ideas existed at least since 1700s, but not enough compute and computer science
-- Current computers do almost what was predicted, but how?
-- How to instruct computer to perform tasks?
+
+
+## Dream of a Talking Machine
+- Idea of a talking machine since 1700s, but not enough compute and computer science
+- ChatGPT does almost what was predicted, but how?
+- How to instruct large language model to perform tasks?
 - How represent knowledge in computers?
 - How to generate the answers?
 
@@ -35,7 +40,7 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 </p>
 
 
-## Prompt as an Interface
+## Text Prompt as an Interface
 - 2001: A Space Odyssey HAL 9000
 - input textual instructions e.g. explain a riddle
 - based on its knowledge computer generates the answer text 
@@ -46,10 +51,20 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 {% include shared_slides/representations.md %}
 
 
-## Big Transformer Models
+## Large Language Models
 - generate by predicting input text continuation
 - $10M transformers trained on large amount of text from the internet in 2022
 - can solve wide variety of problems like explaining jokes, sometimes with human level performance
-- examples: [PaLM (2022)](/ml/googles-pathways-language-model-and-chain-of-thought), [RETRO (2021)](/ml/DeepMinds-RETRO-Transformer-Model), [hybrids with algorithms](/ml/Symbolic-vs-Connectionist-Machine-Learning) ...
+- examples: [PaLM (2022)](/ml/googles-pathways-language-model-and-chain-of-thought), [RETRO (2021)](/ml/DeepMinds-RETRO-Transformer-Model), [hybrids with algorithms](/ml/Symbolic-vs-Connectionist-Machine-Learning), ChatGPT ...
 
 ![transformer next token prediction](/images/transformer-from-word2vec-next-token.jpg)
+
+
+## Future: Hybridizing Text with Algorithms
+- ChatGPT and other Large Language Models hallucinate.
+- If neural network has a intuition, what is repetition, search, self-reflection?
+- Read more about [reasoning without hallucinations hybridizing neural networks with code](/ml/Symbolic-vs-Connectionist-Machine-Learning)
+- Also: [understanding image and text regardless of a language](/ml/Multimodal-Image-Text-Classification)
+
+
+![hybridizing neural networks with code](/images/hybrid-symbolic-connectionist-papers.png)
