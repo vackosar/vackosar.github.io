@@ -24,6 +24,8 @@ my_related_post_paths:
 
 {% include load_video.html %}
 
+The presentation explains the development of **large language models like ChatGPT**, which can generate text by predicting input text continuation. The idea of a talking machine has been around since the 1700s, but it wasn't until the development of **powerful computers and computer science** that it became a reality. Simple document representations, such as **counting word occurrences**, were used to create [sparse matrices](/ml/sparse-matrix-why-and-when) as feature vectors in methods like **term frequency–inverse document frequency and latent semantic analysis**. Non-contextual word vectors were created using **word2vec**, which trained embeddings to sum up close to the middle word vector. Later, **contextual word vectors** were created using [transformer architecture](/ml/transformers-self-attention-mechanism-simplified), which consumes the entire input sequence and is state-of-the-art in 2022.
+
 
 
 ## Dream of a Talking Machine
