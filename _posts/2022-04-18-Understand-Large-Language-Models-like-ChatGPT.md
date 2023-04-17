@@ -55,13 +55,14 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 - generate by predicting input text continuation
 - $10M transformers trained on large amount of text from the internet in 2022
 - can solve wide variety of problems like explaining jokes, sometimes with human level performance
-- examples: [PaLM (2022)](/ml/googles-pathways-language-model-and-chain-of-thought), [RETRO (2021)](/ml/DeepMinds-RETRO-Transformer-Model), [hybrids with algorithms](/ml/Symbolic-vs-Connectionist-Machine-Learning), ChatGPT ...
+- examples: [PaLM (2022)](/ml/googles-pathways-language-model-and-chain-of-thought), [RETRO (2021)](/ml/DeepMinds-RETRO-Transformer-Model), [hybrids with algorithms](/ml/Symbolic-vs-Connectionist-Machine-Learning)
+- ChatGPT additionally trained to chat using [RLHF alignment method](https://arxiv.org/abs/2009.01325)
 
 ![transformer next token prediction](/images/transformer-from-word2vec-next-token.jpg)
 
 
 ## Future: Hybridizing Text with Algorithms
-- ChatGPT and other Large Language Models hallucinate.
+- ChatGPT and other Large Language Models hallucinate despite alignment with [RLHF](https://arxiv.org/abs/2009.01325)
 - If neural network has a intuition, what is repetition, search, self-reflection?
 - Read more about [reasoning without hallucinations hybridizing neural networks with code](/ml/Symbolic-vs-Connectionist-Machine-Learning)
 - Also: [understanding image and text regardless of a language](/ml/Multimodal-Image-Text-Classification)
