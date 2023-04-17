@@ -1,6 +1,6 @@
 ---
 title: Understand Large Language Models like ChatGPT
-description: In 7 slides from TF-IDF, Word2vec, knowledge graphs, and transformers to LLMs and ChatGPT.
+description: In 7 slides from TF-IDF, Word2vec, knowledge graphs, and transformers to LLMs and ChatGPT basics explained.
 layout: post
 categories: ml
 image: /images/how-computers-understood-humans-thumb.png
@@ -41,7 +41,7 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 
 
 ## Text Prompt as an Interface
-- 2001: A Space Odyssey HAL 9000
+- For example 2001: A Space Odyssey HAL 9000
 - input textual instructions e.g. explain a riddle
 - based on its knowledge computer generates the answer text 
 
