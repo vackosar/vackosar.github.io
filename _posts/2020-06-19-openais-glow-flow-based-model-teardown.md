@@ -12,12 +12,12 @@ redirect_from:
 - /ml/glow-the-representations-must-flow
 my_related_post_paths:
 - _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
 - _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
-- _posts/2022-05-14-neural-data-compression.md
 ---
 
 

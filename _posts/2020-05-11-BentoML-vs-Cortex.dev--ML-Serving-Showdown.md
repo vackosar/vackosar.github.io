@@ -15,9 +15,9 @@ my_related_post_paths:
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 - _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
-- _posts/2022-04-18-how-computers-understood-humans.md
 ---
 
 

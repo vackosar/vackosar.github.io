@@ -14,9 +14,9 @@ my_related_post_paths:
 - _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
 - _posts/2016-07-03-GitFlow-Incremental-Builder.md
 - _posts/2017-06-04-Code-Structure-Principles.md
-- _posts/2022-04-18-how-computers-understood-humans.md
 - _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
 - _posts/2020-05-11-BentoML-vs-Cortex.dev--ML-Serving-Showdown.md
+- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
 ---
 
 

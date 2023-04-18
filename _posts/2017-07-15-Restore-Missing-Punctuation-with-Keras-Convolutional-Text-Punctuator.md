@@ -12,12 +12,12 @@ video: w-w3QamQIKY
 image: http://i3.ytimg.com/vi/w-w3QamQIKY/hqdefault.jpg
 my_related_post_paths:
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
-- _posts/2022-04-18-how-computers-understood-humans.md
 - _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
 - _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
 - _posts/2021-12-28-cross-attention-in-transformer-architecture.md
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 - _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
+- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 ---
 
 

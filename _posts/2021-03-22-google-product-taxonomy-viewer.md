@@ -15,7 +15,7 @@ my_related_post_paths:
 - _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
 - _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
 - _posts/2020-04-22-result-diversification-in-web-search-and-recommenders.md
-- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2020-05-08-starspace-embedding.md
 ---
 

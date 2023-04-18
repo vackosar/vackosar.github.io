@@ -12,12 +12,12 @@ redirect_from:
 - /2020/04/19/Converting-knowledge-base-to-training.html
 my_related_post_paths:
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
-- _posts/2022-04-18-how-computers-understood-humans.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2020-02-25-I-read-papers-on-a-podcast.md
-- _posts/2021-03-22-google-product-taxonomy-viewer.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2021-03-22-google-product-taxonomy-viewer.md
 ---
 
 

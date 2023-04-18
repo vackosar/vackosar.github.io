@@ -10,7 +10,7 @@ permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
-- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
 - _posts/2022-05-14-neural-data-compression.md

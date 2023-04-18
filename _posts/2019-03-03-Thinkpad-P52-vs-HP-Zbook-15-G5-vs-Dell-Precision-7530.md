@@ -16,9 +16,9 @@ my_related_post_paths:
 - _posts/2020-05-03-P52-disassembly.md
 - _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
 - _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
-- _posts/2022-04-18-how-computers-understood-humans.md
 - _posts/2020-05-11-BentoML-vs-Cortex.dev--ML-Serving-Showdown.md
 - _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 ---
 
 

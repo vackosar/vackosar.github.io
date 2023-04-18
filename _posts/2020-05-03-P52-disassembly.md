@@ -16,7 +16,7 @@ my_related_post_paths:
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 - _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
 - _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
-- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 ---
 
 

@@ -14,7 +14,7 @@ my_related_post_paths:
 - _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 - _posts/2020-10-25-Performers-FAVOR+-Faster-Transformer-Attention.md
 - _posts/2022-10-23-Neural-Network-Pruning-Explained.md
-- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 ---
 
 

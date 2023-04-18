@@ -9,11 +9,11 @@ layout: post
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
-- _posts/2022-04-18-how-computers-understood-humans.md
 - _posts/2022-05-14-neural-data-compression.md
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
 - _posts/2022-10-23-Neural-Network-Pruning-Explained.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
 ---
 

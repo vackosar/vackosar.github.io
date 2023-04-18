@@ -15,7 +15,7 @@ my_related_post_paths:
 - _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
 - _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
-- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2019-08-28-1D-Kalman-Is-Exponential-Or-Cumulative-Average.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 ---

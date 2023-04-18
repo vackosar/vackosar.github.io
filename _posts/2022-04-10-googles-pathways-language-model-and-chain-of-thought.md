@@ -9,7 +9,7 @@ image: /images/palm-thumb.png
 video: oi86r-2Bh64
 permalink: /:categories/:title
 my_related_post_paths:
-- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md

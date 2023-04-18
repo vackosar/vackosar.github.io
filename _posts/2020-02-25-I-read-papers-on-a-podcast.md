@@ -9,7 +9,7 @@ image: /images/2020-02-25-my-photo-table-map-cal-rot-fix.jpg
 redirect_from:
 - /2020/02/25/I-read-papers-on-a-podcast.html
 my_related_post_paths:
-- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md

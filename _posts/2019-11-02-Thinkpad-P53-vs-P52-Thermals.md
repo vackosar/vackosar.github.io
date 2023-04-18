@@ -16,7 +16,7 @@ my_related_post_paths:
 - _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
 - _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
 - _posts/2020-11-29-Lambda-Networks-Transform-Self-Attention.md
-- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 ---
 
 

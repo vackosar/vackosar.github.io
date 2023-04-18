@@ -13,8 +13,8 @@ my_related_post_paths:
 - _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
-- _posts/2022-04-18-how-computers-understood-humans.md
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
 ---
 
 

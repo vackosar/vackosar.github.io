@@ -16,7 +16,7 @@ my_related_post_paths:
 - _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
 - _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
 - _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
-- _posts/2022-04-18-how-computers-understood-humans.md
+- _posts/2022-05-20-bits-per-byte-and-bits-per-character.md
 ---
 
 
