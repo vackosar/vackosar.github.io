@@ -3,7 +3,7 @@ layout: post
 title: Debounce In Bash To Fix Lenovo Touchpad And Trackpoint Lost Sync
 date: 2018-09-23
 categories: software
-description: Another functional programming tip for Bash.
+description: Functional programming in Bash for Yoga X260 and P52.
 permalink: /:categories/:title
 redirect_from:
 - /2018/09/23/Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.html
@@ -94,4 +94,4 @@ Using debounce function above I implemented a script to do just that automagical
 Learn more [about the foreach method above in this post](/software/Functional-Foreach-In-Bash).
 
 ## Update 2023
-This `sudo modprobe -r psmouse; sudo modprobe psmouse` was now useful also on [my P52](/electronics/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530) to restart trackpoint and buttons. What a black from the past!
+This `sudo modprobe -r psmouse; sudo modprobe psmouse` turned out to be useful on [my P52 also](/electronics/Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530) to restart trackpoint and buttons. What a blast from the past!
