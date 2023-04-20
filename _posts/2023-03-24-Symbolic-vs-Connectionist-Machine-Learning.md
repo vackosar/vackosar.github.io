@@ -3,7 +3,7 @@ title: Symbolic vs Connectionist Machine Learning
 description: Reason without hallucinations in large language models by hybridizing neural networks with code.
 categories: ml
 date: 2023-03-23
-last_modified_at: 2023-03-25
+last_modified_at: 2023-04-20
 image: /images/symbols-patterns-hybrids.png
 layout: post
 permalink: /:categories/:title
@@ -30,6 +30,9 @@ What are the **missing things in current systems**? So now we burn through a gaj
 
 Yes, it’s true that humans as well hallucinate. For example, you may have a **false memory**, so maybe you don’t remember everything perfectly. For example, if there is a crime, oftentimes the people have actually different accounts.
 
+
+### How Humans Reduce Hallucinations and Improve Reasoning
+
 We already developed approaches how to deal with these issues. We write down **symbols** and into the symbols we can even encode **rules**. And the rules can operate on the symbols and it’s like a perfect system. It was super successful in understanding the world because we used it to create **mathematics**, which was used for **accounting, physics, and engineering**.
 
 Because we can write things down and they don’t disappear, they stay the same. It’s an **immutable storage**. We can also think about the things multiple times. And another thing that perhaps is also important is that we can **act in the world** and so we can **sample new data** and learn new things from experience.
@@ -37,7 +40,7 @@ Because we can write things down and they don’t disappear, they stay the same.
 
 These **successful symbolic tools** were then later used to develop computer programs which are also rules, which operate on symbols. So the same way we actually built these computers which take something that's **crystal perfect** and it can produce something that's still crystal perfect. And while all at the same time this seems to be missing in the **language model**, this sort of aspect is not quite there.
 
-## Symbolic vs Connectionist Comparison
+## Symbolic vs Connectionist Methods Comparison
 ![intuition-symbolic-vs-connectionist](/images/intuition-symbolic-vs-connectionist.png)
 
 What are the differences between the systems that we have? The **current large language models** have great capabilities, we can use it for many things, but they have also issues. And so if we can compare what I'm talking about, these **symbolic approaches**, that use these symbols and rules, with what we have, which is like dominant results in current times.
@@ -63,7 +66,7 @@ Back then, the approach was that you would have even, like, dedicated hardware, 
 
 In some domains, if you think about it, the experts don't actually really know what they are doing. They don't really know how to describe what they are doing. They have a **tacit knowledge**, which is beyond words, or you would require to construct some new words, or have something **soft in between the words, between the symbols**.
 
-While everything seemed great, the solutions were not able to get to the AGI. The dedicated hardware companies got into big issues where the hardware changed because there were new, more general systems. And also the different sort of approach that was leveraging neural networks, relying on more general hardware, more pop hardware, with more data, was starting to get traction. And so symbolics became mostly an abandoned approach.
+While everything seemed great, the solutions were not able to get to the AGI. The dedicated hardware companies got into big issues where the hardware changed because there were new, more general systems. And also the different sort of approach that was leveraging neural networks, relying on more general hardware, more pop hardware, with more data, was starting to get traction. And **symbolics were mostly abandoned**.
 
 
 ## Connectionist Approaches After 1990s
@@ -72,13 +75,13 @@ While everything seemed great, the solutions were not able to get to the AGI. Th
 Then here came the neural networks. And there, researchers Hinton, Lecun, Bengio, led the neural network revolution in 2010. And this approach became so pervasive that, for example, people were saying, deep learning is just going to solve everything. This is it. We don't need symbolics. This is going to just solve everything.
 
 
-People started to use **neural networks**, they were using **supervised learning** where you have labels, so you know what is the target. And in that case, there was this breakthrough in development of **AlexNet**, where suddenly it was possible to [classify images](/ml/Multimodal-Image-Text-Classification) with very good accuracy on this popular dataset ImageNet. Before this, how would you recognize what's in **the image by using rules?** It seems rather difficult. And it is. It is possible, but it's very difficult and very brittle. On the other hand, **neural networks can statistically find the patterns**.
+People started to use **neural networks**, they were using **supervised learning** where you have labels - you know what is the target. And in that case, there was this breakthrough in development of **AlexNet**, where suddenly it was possible to [classify images](/ml/Multimodal-Image-Text-Classification) with very good accuracy on this popular dataset ImageNet. Before this, how would you recognize what's in **the image by using rules?** It seems rather difficult. And it is. It is possible, but it's very difficult and very brittle. On the other hand, **neural networks can statistically find the patterns**.
 
 There were also studies of **language**, and people started to build these **statistical models** of [representing words as these vectors](/ml/how-computers-understood-humans), as this array of floating point numbers.
 
 For example, in 2013, Czech researcher **Mikolov** co-published Word2Vec paper (later also [FastText](/ml/FastText-Vector-Norms-And-OOV-Words)). Word2vec is a method to represent each word as one vector. Then in 2017, **[transformer architecture](/ml/transformers-self-attention-mechanism-simplified)** was able to accept multiple words. These models are able to [represent entire paragraphs of text in context](/ml/how-computers-understood-humans), and not only each word individually. They represent the text in sequence of many dimensional vector. It is possible to get good results with these. In particular, people started predicting next word in web-scale datasets and getting high accuracies and high [text compression](/ml/neural-data-compression).
 
-Now we are just in the situation where we also implemented this **reinforcement learning from human feedback (RLHF)**, where we started hiring experts, and we getting dedicated hardware, and **AGI is just behind the corner**, right? **Suddenly it sounds similar to something we heard before**. I mean, are we in 2023 just before another AI winter? Is this really the winning approach, is this the final answer, or do we need to add something more?
+Now we are just in the situation where we also implemented this **reinforcement learning from human feedback (RLHF)**, where we started hiring experts, and we getting dedicated hardware, and **AGI is just behind the corner**, right? **Suddenly it sounds similar to what we already heard**. I mean, are we in 2023 just before another AI winter? Is this really the winning approach, is this the final answer, or do we need to add something more?
 
 **Reinforcement learning from human feedback**, that's a very interesting approach not the same as use of expert before the second AI winter. Now the **experts don't have to actually write super complicated rules, instead they just compare a texts**, and say this text is better than this text. While the experts get **a bigger lever**, and they have a much bigger impact. So this is a much **more cost-effective approach**. We are in a much better situation than before. **Hallucinations** are also reduced with this reinforcement learning from human feedback method. But we will see that you can get much more, like these other approaches that are using symbols.
 
@@ -87,17 +90,19 @@ Now we are just in the situation where we also implemented this **reinforcement 
 
 ![hybridizing-neural-networks-and-symbolics](/images/hybridizing-neural-networks-and-symbolics.png)
 
-These very scalable **symbolic approaches** of the algorithms and code that's so useful, and it seems to be so missing. It's definitely going to be applied. So what I think is necessary and what's increasingly being applied is **hybridizing both of these approaches**. So using both neural networks and symbolic approaches at the same time.
+These very scalable **symbolic approaches** of the algorithms and code that's so useful, and it seems to be so missing. It's definitely going to be applied. So what I think is necessary and what's increasingly being applied is **hybridizing both of these approaches** - using both neural networks and symbolic approaches at the same time.
 
-The **language models** already use the symbols. They use symbols as their input and as their output. So they are a combination a little bit in this sense. But you can go much further. We can, because the inputs are symbols and outputs are symbols, we can plug in the symbolic algorithms (heuristics).
+The **language models** already use the symbols. They use symbols as their input and as their output. They are a combination a little bit in this sense. But you can go much further. We can, because the inputs are symbols and outputs are symbols, we can plug in the symbolic algorithms (heuristics).
 
-One of the simplest ways how you can simulate **reasoning inside of the language models** is when you guide it with a prompt. It always tries to tell you the next word, then go to the next word. So you can guide it by writing it to the prompt. So before deciding this, let's **think step by step**. And with this, you will get an improvement in accuracy of the final answer. So you are already giving it this multistep process, a [chain of though](https://vaclavkosar.com/ml/googles-pathways-language-model-and-chain-of-thought), where it can iterate in some algorithmic way and you will get better results.
+One of the simplest ways how you can simulate **reasoning inside of the language models** is when you guide it with a prompt. It always tries to tell you the next word, then go to the next word. So you can guide it by writing it to the prompt. Before deciding this, let's **think step by step**. And with this, you will get an improvement in accuracy of the final answer. So you are already giving it this multistep process, a [chain of though](https://vaclavkosar.com/ml/googles-pathways-language-model-and-chain-of-thought), where it can iterate in some algorithmic way and you will get better results.
 
 You can **fill in templates** with language models. You just ask what word from these allowed words should be here? It just gives me some words and often it gives you the right answer.
 
 **Self-consistency prompting** is another method. You combine again this language model and you request multiple results. In the paper **[AlphaCode](https://arxiv.org/abs/2203.07814)**, they produce many code samples and then they look, they sample from such samples that cluster together. They are very similar. And from the places where there are lots of similar samples, those actually, it works great if you sample from the biggest cluster the most.
 
 **[Toolformer](https://arxiv.org/abs/2302.04761)** is another approach, released very recently. Here the language model sees the past, and it can predict the next token. What if it learned to exactly call something outside, but not in some template way? But instead here you can have it freely learn to ask a external function, an API. For example, if there is a question for some sort of calculation, and it sort of writes down some continuation, some text, and you can put a lot of small training sets, you can teach it to call a **calculate function**, which it can use to do the calculation for it. If it's not so good in doing some task, it can learn to call some external tool. It will get the results as into the text and instead of predicting the function output, it would get the output from the tool. It would sort of stop predicting for a couple tokens and get the result. With this you can improve actual performance on dedicated tasks for, you can do some question answering for you, to speed it up and so on.
+
+Also [AutoGPT](https://github.com/Significant-Gravitas/Auto-GPT) which recursively plans tasks, and performs them, is gaining traction.
 
 
 
@@ -107,7 +112,7 @@ You can **fill in templates** with language models. You just ask what word from 
 
 **[AlphaZero](https://arxiv.org/pdf/1712.01815.pdf)**, where you have this chess playing engine, which gets superhuman. How does it do that? So it does learn from playing against itself. That's a very important part. But also the space of all the possible actions in chess. It's too big. It cannot go through everything. It has to go somewhere where it's interesting. How can you do that? You use **neural guided search**, where the network serves as an intuition. And it can sort of think about, okay, now I'm in this position, and I think I could do this. This sounds good, I could play this. And then it can, with self play, sort of go further into the direction, it can [evaluate and learn](https://www.inference.vc/alphago-zero-policy-improvement-and-vector-fields/), using this approach very effectively, and it becomes superhuman.
 
-Then there is this **[RETRO transformer](/ml/DeepMinds-RETRO-Transformer-Model)**. So that one, instead of just having everything stored in its parameters, it actually stores as well the database of the training set, and it can retrieve on demand everything it saw during training. And of course, you know, it can generate queries on the internet and can give you the right summary of what you are asking.
+Then there is this **[RETRO transformer](/ml/DeepMinds-RETRO-Transformer-Model)**, which instead of just having everything stored in its parameters, it actually stores as well the database of the training set, and it can retrieve on demand everything it saw during training. And of course, you know, it can generate queries on the internet and can give you the right summary of what you are asking.
 
 I wanted to mention **[DreamCoder](/ml/dreamcoder-ai-wake-sleep-program-learning)**. This is a super intuitive idea of solving complicated coding problems by using libraries. This approach learns to build its own function library. In the first iteration, it solves simpler coding problems, stores the programs it found, and analyzes them using algorithms. It then finds the most interesting functions to remember and stores them in the library. This one combines the search and memory of building this library to solve coding problems.
 
@@ -146,3 +151,8 @@ I think we will get to the **AGI** and what impact it will have on society. I'm 
 ## Update 2023-03-25
 
 This talk was given on a [Cleevio OpenAI meetup on 2023-03-22](https://www.eventbrite.com/e/openai-meetup-tickets-558782081247) just a day before OpenAI announced ChatGPT plugins.
+
+
+## Update 2023-04-20
+
+AutoGPT became extremely popular Github project.
