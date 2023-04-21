@@ -7,6 +7,7 @@ last_modified_at: 2023-04-20
 image: /images/symbols-patterns-hybrids.png
 layout: post
 permalink: /:categories/:title
+video: aByQezRCJUE
 my_related_post_paths:
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2022-05-14-neural-data-compression.md
@@ -17,7 +18,7 @@ my_related_post_paths:
 - _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
 ---
 
-![symbols patterns hybrids](/images/symbols-patterns-hybrids.png)
+{% include load_video.html %}
 
 Today I would like to tell you what is **increasingly becoming popular in large language models**. What I think will be a future of this field that could potentially provide some things I think are missing for us perhaps to get to the **artificial general intelligence**. As defined, maybe as a system that can do as many things as, for example, an average person in 2022.
 
@@ -150,7 +151,7 @@ I think we will get to the **AGI** and what impact it will have on society. I'm 
 
 ## Update 2023-03-25
 
-This talk was given on a [Cleevio OpenAI meetup on 2023-03-22](https://www.eventbrite.com/e/openai-meetup-tickets-558782081247) just a day before OpenAI announced ChatGPT plugins.
+This talk was given on a [Cleevio OpenAI meetup on 2023-03-22](https://youtu.be/9TdvsdFX0O0?t=5348) just a day before OpenAI announced ChatGPT plugins.
 
 
 ## Update 2023-04-20
