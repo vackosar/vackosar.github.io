@@ -103,7 +103,7 @@ oBERT optimized for CPU achieves 8.4x speed up, while when tuned for GPU only 2.
 
 
 ### Neural Magic Engine
-Neural Magic Engine is a **closed source patented inference software** for sparse models optimized for CPU.
+Neural Magic Engine is a **closed source inference software** for sparse models optimized for CPU.
 Popular models like BERT and Resnet50 in vision and text available for experimentation on their [website](https://sparsezoo.neuralmagic.com/).
 
 <blockquote class="blockquote text-right">
@@ -130,10 +130,8 @@ See below table for AWS Ohio pricing.
 | t4g.xlarge  (4 core CPU) |   $0.1344  |   4  |   16 GiB  |  
 
 
-#### Licence and Patents
-Sparsification libraries SparseML are Apache 2 licenced. But **the inference engine** is
-- patented technology (["to execute in parallel involve computations from multiple layers"](https://patents.justia.com/assignee/neuralmagic-inc))
-- restrictive licence not for production use (["solely for evaluation  use in development and testing environments, and not for production use."](https://github.com/neuralmagic/deepsparse/blob/main/LICENSE-NEURALMAGIC))
+#### Licence
+Sparsification libraries SparseML are Apache 2 licenced. But **the inference engine** has restrictive licence not for production use (["solely for evaluation  use in development and testing environments, and not for production use."](https://github.com/neuralmagic/deepsparse/blob/main/LICENSE-NEURALMAGIC))
 
 
 #### Neural Magic Management
