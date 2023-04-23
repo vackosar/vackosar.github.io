@@ -62,6 +62,8 @@ Individuals can reappraise anxiety as excitement using minimal strategies such a
     <figcaption class="figure-caption"><a href="https://arxiv.org/pdf/1605.08803.pdf">"Get Excited" study</a> seen improvement after participants applied the self-talk.</figcaption>
 </figure>
 
+This seems to be an effective [a cognitive reframing method](https://en.wikipedia.org/wiki/Cognitive_reframing).
+
 
 ### Stress and Sympathetic Nervous System
 
