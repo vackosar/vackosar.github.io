@@ -3,7 +3,7 @@ layout: post
 title: How To Boost Your Jog Morale Using Military Cadence And Run Farther
 date: 2016-07-16
 categories: health
-description: Run beyond your max with this professional mind hack.
+description: Run beyond your max with this professional mind hack, and burn calories.
 permalink: /:categories/:title
 image: /images/mil-cadence-pexels.jpg
 video: IxA-_MWT_24
@@ -50,6 +50,11 @@ Read more about [psychologically positive stress and optimal stress level here](
 ## Running Triples Your Speed For Extra One Third Of Calories
 Based on [1](https://www.researchgate.net/publication/221975400_Energy_Expenditure_Comparison_Between_Walking_and_Running_in_Average_Fitness_Individuals) and [2](https://www.verywell.com/does-running-burn-more-calories-than-walking-3435132)
 normal walking speed of 2.5 mph on average consumes around 87 calories per mile while running at speed of 7 mph will consume only 32 extra calories, which is 37% per mile extra.
+
+## Standing Burns
+
+[Standing burns only 10% more than sitting per hour](https://pubmed.ncbi.nlm.nih.gov/26693809/) (80kcal -> 88kcal), which is one carrot of energy per 3 hours.
+
 
 ### Update 2020-07-06
 
