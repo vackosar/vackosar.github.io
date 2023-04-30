@@ -44,6 +44,34 @@ The package structure is often visualized as tree onion layers, or as a hexagona
 ![Onion of Actors, Boundary, Control, Entity](/images/onion-actors-boundary-control-entity.svg)
 
 
+## Three-tier vs Boundary Control Entity Architecture
+Three-tier architecture the much more common than Boundary Control Entity architecture.
+Three-tier architecture is recommended by Marin Fowler under name of [Presentation, Domain, Data](https://martinfowler.com/bliki/PresentationDomainDataLayering.html).
+Three-tier architecture is composed of presentation layer, application layer, data access layer.
+BCE splits domain objects from the data access layer and merges the rest with presentation layer:
+- BCE Domain = domain objects (from the data access layer)
+- BCE Boundary = presentation - data access without domain objects
+- BCE Control = application layer
+
+
+## BCE vs MVC
+Boundary-Control-Entity (BCE) can be compared to Model-View-Controller (MVC) architecture.
+
+MVC is composed of:
+- Model: Represents the data and business logic of the system, similar to the Entity component in BCE.
+- View: Represents the presentation layer, responsible for displaying the data from the model to the user. It is similar to the Boundary component in BCE, focusing on user interfaces.
+- Controller: Acts as an intermediary between the model and the view, handling user input and updating the model and view accordingly. It is similar to the Control component in BCE.
+
+Key concepts have analogous function:
+- Model ~ Entity
+- View ~ Boundary
+- Controller ~ Control
+
+View in MVC is specifically user web view in the presentation layer.
+MVC is more commonly used in web development and user interface design, while BCE can be applied more broadly to various types of software systems, including those without a user interface.
+BCE focuses more on the system-actor interactions and MVC emphasizing the separation between the presentation layer and the underlying data and logic.
+
+
 ## Functionality Folders vs BCE Structure
 
 I am very much for structuring, modularization and encapsulation according to end result features. However, often after separation per major features on sub 30 classes level, I think it is more practical to structure according to technical behaviour. Thus I suggest to use BCE architecture which represents that.
@@ -83,34 +111,6 @@ For an overview of boundary control entity architecture folder structure:
 Retain what you have just read by taking training quiz generated from this article.<br>
 <br>
 <a class="btn btn-warning" style="text-decoration: none;" href="https://quizrecall.com/study/public-test?store_id=dc985c9e-6812-41d3-a020-33c4a0340c16">Boundary-Control-Entity Quiz</a>
-
-
-## Three-tier vs Boundary Control Entity Architecture
-Three-tier architecture the much more common than Boundary Control Entity architecture.
-Three-tier architecture is recommended by Marin Fowler under name of [Presentation, Domain, Data](https://martinfowler.com/bliki/PresentationDomainDataLayering.html).
-Three-tier architecture is composed of presentation layer, application layer, data access layer.
-BCE splits domain objects from the data access layer and merges the rest with presentation layer:
-- BCE Domain = domain objects (from the data access layer)
-- BCE Boundary = presentation - data access without domain objects
-- BCE Control = application layer
-
-
-## BCE vs MVC
-Boundary-Control-Entity (BCE) can be compared to Model-View-Controller (MVC) architecture.
-
-MVC is composed of:
-- Model: Represents the data and business logic of the system, similar to the Entity component in BCE.
-- View: Represents the presentation layer, responsible for displaying the data from the model to the user. It is similar to the Boundary component in BCE, focusing on user interfaces.
-- Controller: Acts as an intermediary between the model and the view, handling user input and updating the model and view accordingly. It is similar to the Control component in BCE.
-
-Key concepts have analogous function:
-- Model ~ Entity
-- View ~ Boundary
-- Controller ~ Control
-
-View in MVC is specifically user web view in the presentation layer.
-MVC is more commonly used in web development and user interface design, while BCE can be applied more broadly to various types of software systems, including those without a user interface.
-BCE focuses more on the system-actor interactions and MVC emphasizing the separation between the presentation layer and the underlying data and logic.
 
 
 ## Continue: The Cuts Across Your Architecture
