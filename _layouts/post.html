@@ -43,6 +43,8 @@ layout: default
 <h2 id="other-posts">{{ page.post_list_text }}</h2>
 {% else %}
 <h2 id="other-posts">You'll love also...</h2>
+{% endif %}
+
 <div class="speech-baloon-head">
     <div class="image-container">
         <a href="/">
@@ -52,11 +54,10 @@ layout: default
     <div class="text-container">
         <a href="/">
             <h5>Vaclav Kosar</h5>
-            <i>Explore this area for additional insights to learn and apply tomorrow.</i>
+            <i>Explore this area for additional insights to learn and plug-in tomorrow.</i>
         </a>
     </div>
 </div>
-{% endif %}
 
 <div class="container posts">
 {% if page.my_related_post_paths.size > 0 %}
