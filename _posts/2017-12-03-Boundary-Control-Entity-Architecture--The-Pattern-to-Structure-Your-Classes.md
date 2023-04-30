@@ -3,7 +3,7 @@ layout: post
 title: Boundary Control Entity Architecture Pattern
 image: /images/bce.svg
 categories: software
-description: BCE is a source code structure pattern sometimes called ECB, EBC, Hexagonal, Onion, or Clean architecture.
+description: BCE is a source code structure pattern sometimes called ECB, EBC, Hexagonal, Onion, Clean architecture, or MVC.
 date: 2017-12-03
 last_modified_at: 2022-06-06
 permalink: /:categories/:title
@@ -29,9 +29,10 @@ One creates one BCE package structure per a microservice, feature or module havi
 
 <p><img src="/images/bce.svg" alt="Boundary Control Entity architecture"/></p>
 
-## BCE Overview
+
+## BCE Explained
 BCE is distinct from the multi-tier architecture in that it does not see some outside systems as backend and some as frontend.
-It has single category of outside systems. Sometimes BCE is being compared to MVC architecture where Model ~ Entity and View ~ Boundary. 
+It has single category of outside systems.
 
 ![actor entity boundary control example](/images/actor-boundary-control-entity.svg)
 
@@ -41,6 +42,7 @@ The package structure is often visualized as tree onion layers, or as a hexagona
 - Entity contains data structures which are allowed to have some behaviour. It contains domain objects with basic functionalities.
 
 ![Onion of Actors, Boundary, Control, Entity](/images/onion-actors-boundary-control-entity.svg)
+
 
 ## Functionality Folders vs BCE Structure
 
@@ -91,6 +93,24 @@ BCE splits domain objects from the data access layer and merges the rest with pr
 - BCE Domain = domain objects (from the data access layer)
 - BCE Boundary = presentation - data access without domain objects
 - BCE Control = application layer
+
+
+## BCE vs MVC
+Boundary-Control-Entity (BCE) can be compared to Model-View-Controller (MVC) architecture.
+
+MVC is composed of:
+- Model: Represents the data and business logic of the system, similar to the Entity component in BCE.
+- View: Represents the presentation layer, responsible for displaying the data from the model to the user. It is similar to the Boundary component in BCE, focusing on user interfaces.
+- Controller: Acts as an intermediary between the model and the view, handling user input and updating the model and view accordingly. It is similar to the Control component in BCE.
+
+Key concepts have analogous function:
+- Model ~ Entity
+- View ~ Boundary
+- Controller ~ Control
+
+View in MVC is specifically user web view in the presentation layer.
+MVC is more commonly used in web development and user interface design, while BCE can be applied more broadly to various types of software systems, including those without a user interface.
+BCE focuses more on the system-actor interactions and MVC emphasizing the separation between the presentation layer and the underlying data and logic.
 
 
 ## Continue: The Cuts Across Your Architecture
