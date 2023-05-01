@@ -47,14 +47,14 @@ You can try this [YouTube video](https://www.youtube.com/watch?v=IxA-_MWT_24&sta
 Any other reason to run? Well, temporarily increased stress or optimal level stress in general seems to be good for health.
 Read more about [psychologically positive stress and optimal stress level here](/productivity/Transfigure-Stress-Into-Energy)
 
-## Running Triples Your Speed For Extra One Third Of Calories
-Based on [1](https://www.researchgate.net/publication/221975400_Energy_Expenditure_Comparison_Between_Walking_and_Running_in_Average_Fitness_Individuals) and [2](https://www.verywell.com/does-running-burn-more-calories-than-walking-3435132)
+## Running Triples Your Speed For Extra One Third Of Calories per Mile
+Based on [1](https://www.researchgate.net/publication/221975400_Energy_Expenditure_Comparison_Between_Walking_and_Running_in_Average_Fitness_Individuals) (18 minutes walking ~ 110 kcal, 10 min run 158 kcal both for 1.6km) and [2](https://www.verywell.com/does-running-burn-more-calories-than-walking-3435132)
 normal walking speed of 2.5 mph on average consumes around 87 calories per mile while running at speed of 7 mph will consume only 32 extra calories, which is 37% per mile extra.
 
-## Standing vs Sitting
+## Sitting vs Standing vs Walking vs Running per Hour
 
-[Standing burns only 10% more than sitting per hour](https://pubmed.ncbi.nlm.nih.gov/26693809/) (80kcal -> 88kcal), which is one carrot of energy per 3 hours.
-While walking will burn off +167% kcals.
+Sitting burns around 80 kcals per hour meaning around 1920 kcals per day based on [\[3\]](https://pubmed.ncbi.nlm.nih.gov/26693809/). Standing burns only 10% more than sitting per hour (88kcal/ h), which is one carrot of energy per 3 hours.
+While walking 1h will burn off +175% (2-3x) kcals (80 -> 220 to 366 /h) and running 1h will burn off approximately 10x kcals (~958 kcal) compared to sitting based on [1](https://www.researchgate.net/publication/221975400_Energy_Expenditure_Comparison_Between_Walking_and_Running_in_Average_Fitness_Individuals).
 
 
 ### Update 2020-07-06
