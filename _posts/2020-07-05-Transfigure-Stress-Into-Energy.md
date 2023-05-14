@@ -3,12 +3,12 @@ layout: post
 title: Transfigure Stress into Energy by Drawing on Research
 date: 2020-06-19
 categories: productivity
-description: Your pounding heart and blush will announce a flashing opportunity instead of an impending fight or flight after applying research from this post.
+description: Apply research and Bezos' advice and your pounding heart will flash opportunity instead of doom.
 image: /images/transfigurate-stress-to-energy-2.jpeg
 permalink: /:categories/:title
 video: RcGyVTAoXEU
 video_start: 301
-last_modified_at: 2023-04-08
+last_modified_at: 2023-05-14
 my_related_post_paths:
 - _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
 - _posts/2022-12-26-cooking-with-psyllium-fiber-to-reduce-suger-spikes.md
@@ -23,7 +23,21 @@ my_related_post_paths:
 
 <img alt="Transfigure Stress Into Energy" style="width: 90%; max-width: 900px" src="/images/transfigurate-stress-to-energy-2.jpeg">
 
-Research suggests that viewing stress as a positive experience can enhance performance, productivity, health, and vitality. By adopting a "stress-is-enhancing" mindset and getting excited, individuals can reappraise anxiety as excitement and improve their performance. Activating the sympathetic nervous system through exercise, cold exposure, rapid breathing exercises, and caffeine consumption can also help to transfigure stress into energy. The Yerkes-Dodson law highlights that an optimal level of stress, or eustress, can improve performance, particularly in easier tasks. Lastly, cortisol, a hormone produced by the adrenal glands, has been shown to have potential in helping manage stress and prevent PTSD and depression.
+Research and businessmen suggests that viewing stress as a positive experience can enhance performance, productivity, health, and vitality. By adopting a "stress-is-enhancing" mindset and getting excited, individuals can reappraise anxiety as excitement and improve their performance. Activating the sympathetic nervous system through exercise, cold exposure, rapid breathing exercises, and caffeine consumption can also help to transfigure stress into energy. The Yerkes-Dodson law highlights that an optimal level of stress, or eustress, can improve performance, particularly in easier tasks. Lastly, cortisol, a hormone produced by the adrenal glands, has been shown to have potential in helping manage stress and prevent PTSD and depression.
+
+### CEOs on Stress Emotions of Fear, Anger, Frozenness
+
+Former Intel CEO Andy Grove in Only Paranoid Survive:
+<blockquote class="blockquote" style="font-style: italic">
+The quality guru W. Edwards Deming advocated stamping out fear in corportations. I have trouble with the simplemindedness of this dictum. The most important role of managers is to create an environment where people are <b>passionately dedicated to winning</b> in the marketplace. <b>Fear plays a major role</b> in creating and maintaining such passion. Fear of competition, fear of bankruptcy, fear of being wrong and fear of losing can all be <b>powerful motivators</b>.
+</blockquote>
+
+[Jeff Bezos](https://media.corporate-ir.net/media_files/irol/97/97664/reports/Shareholderletter98.pdf) in 1998 shareholder letter:
+<blockquote class="blockquote" style="font-style: italic">
+We plan to invest <b>aggressively</b> to build the foundation for a multi-billion-dollar revenue company serving tens of millions of customers with operational excellence and high efficiency.
+... But there is no rest for the weary. I constantly remind our employees to be <b>afraid</b>, to wake up every morning terrified. Not of our competition, but of our customers.
+... We remain optimistic, but we also know we must remain vigilant and maintain a <b>sense of urgency</b>.
+</blockquote>
 
 
 ### Stress-Is-Enhancing Mindset
@@ -67,10 +81,10 @@ This seems to be an effective [a cognitive reframing method](https://en.wikipedi
 
 ### Stress and Sympathetic Nervous System
 
-[The stress response is closely related to the activation of the sympathetic nervous system](https://www.ncbi.nlm.nih.gov/books/NBK541120/). When you experience stress, your body responds by activating the sympathetic nervous system, also known as the "fight or flight" response. This response prepares your body to deal with the perceived threat by increasing heart rate, blood pressure, and respiration, as well as releasing stress hormones like **adrenaline and cortisol**.
+[The stress response is closely related to the activation of the sympathetic nervous system](https://www.ncbi.nlm.nih.gov/books/NBK541120/). When you experience stress, your body responds by activating the sympathetic nervous system, also known as the "fight or flight" response. This response prepares your body to deal with the perceived threat by increasing heart rate, blood pressure, and respiration, as well as releasing stress hormones like <b>adrenaline and cortisol</b>.
 
 <blockquote class="blockquote" style="font-style: italic">
-Stress generally affects all systems of the body including **cardiovascular, respiratory, endocrine, gastrointestinal, nervous, muscular, and reproductive systems**. With regards to the cardiovascular system, acute stress causes an increase in **heart rate**, **stronger** heart muscle contractions, dilation of the heart, and redirection of blood to large muscles. The respiratory system works with the cardiovascular system to supply cells of the body with oxygen while removing carbon dioxide waste. Acute stress constricts the airway which leads to shortness of breath and rapid breathing. The endocrine system increases its **production of steroid hormones**, which include cortisol, to activate the stress response of the body
+Stress generally affects all systems of the body including <b>cardiovascular, respiratory, endocrine, gastrointestinal, nervous, muscular, and reproductive systems</b>. With regards to the cardiovascular system, acute stress causes an increase in <b>heart rate, stronger heart muscle</b> contractions, dilation of the heart, and redirection of blood to large muscles. The respiratory system works with the cardiovascular system to supply cells of the body with oxygen while removing carbon dioxide waste. Acute stress constricts the airway which leads to shortness of breath and rapid breathing. The endocrine system increases its <b>production of steroid hormones</b>, which include cortisol, to activate the stress response of the body
 </blockquote>
 
 Stress and alertness are the opposite of [hypnosis, which has shown as increasing parasympathetic activity](https://pubmed.ncbi.nlm.nih.gov/28825157/). Since many of these [body processes are stimulated bi-directionally](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3845678/), parasympathetic activity seems likely to be stimulated backwards by for example digestion, which in turn is probably increasing hypnotic-like states. People in hypnotic-like states are more prone to suggestion, that is uncritically accepting information and mindlessly going with the flow, which could be beneficial for resting in safety and connecting verified information, but here we aim to avoid that by stimulating eu-stress. For example,
