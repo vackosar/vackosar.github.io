@@ -149,6 +149,12 @@ I think we will get to the **AGI** and what impact it will have on society. I'm 
 - A: Yes. Well, in the industry, it's a lot about the cost. You have to think about, is it, how fast can I develop this? How expensive is it going to be? And I think it's great. In the previous presentations, it was very much mentioned. So it usually doesn't work in many scenarios. It's a lot about the cost. Like, you can get a huge, super-performance model, but if you cannot pay for it with what it's doing, then you cannot use it. But, yeah, like, hardware is getting cheaper, so, like, it's going to be more and more, like, moving forward.
 
 
+## A Warning from Socrates
+
+"Their trust in writing, produced by external characters which are no part of themselves, will discourage the use of their own memory within them. You have invented an elixir not of memory, but of reminding; and you offer your pupils the appearance of wisdom, not true wisdom, for they will read many things without instruction and will therefore seem [275b] to know many things, when they are for the most part ignorant and hard to get along with, since they are not wise, but only appear wise."
+(source: [Plato, Phaedrus](https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0174%3Atext%3DPhaedrus%3Apage%3D275#:~:text=For%20this%20invention%20will%20produce,their%20own%20memory%20within%20them.))
+
+
 ## Update 2023-03-25
 
 This talk was given on a [Cleevio OpenAI meetup on 2023-03-22](https://youtu.be/9TdvsdFX0O0?t=5348) just a day before OpenAI announced ChatGPT plugins.
