@@ -48,7 +48,7 @@ Provide examples such that
 
 
 ## Reasoning in Steps
-(Chain-of-Thought (CoT) Prompting)
+([Chain-of-Thought (CoT) Prompting](https://arxiv.org/pdf/2201.11903.pdf))
 
 Steer the model to generate text that will guide it towards the correct answer.
 The reasoning steps increase interpretability.
@@ -82,7 +82,7 @@ Designed problem-specific prompts thought-prompt. Propose or sample generate dep
 
 
 ### Evaluation-prompt
-Designed problem-specific prompt.
+Designed problem-specific prompt for reflecting on the thoughts "state".
 Either
 - Value of state: Generate value of a specific step or "chain".
 - Vote: across states: Based on all steps, the model compares and select the most promising.
@@ -103,6 +103,18 @@ Explore the most promising paths until solution, bad state, or depth limit:
 
 ![](/images/tree-of-thought-tot-game-of-24-results.png)
 
+
+##### Creative Writing
+
+![](/images/tree-of-thought-tot-creative-writing-results.png)
+
+
+## Generating Optimal Prompts
+- TODO
+
+
+## Tool Use
+- TODO
 
 
 ## Fine-Tuning Training
