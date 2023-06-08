@@ -71,6 +71,7 @@ Generate multiple reasoning paths (chains of thought), then return the most comm
 Also called [Tree of Thoughts Problem Solving (ToT)](https://arxiv.org/pdf/2305.10601.pdf).
 
 Generate explicitly decomposable thoughts, evaluate progress of each unfinished thought chain, and efficiency explore with an search algorithm.
+This has analogies to [AlphaZero](https://arxiv.org/pdf/1712.01815.pdf) for playing chess.
 
 My criticism is that the evidence is low with only 3 toy examples and the technique requires additional problem specific edits.
 
