@@ -123,7 +123,7 @@ Explore the most promising paths until solution, bad state, or depth limit:
 ![](/images/tree-of-thought-tot-game-of-24-results.png)
 
 
-##### Creative Writing
+#### Creative Writing
 
 ![](/images/tree-of-thought-tot-creative-writing-results.png)
 
