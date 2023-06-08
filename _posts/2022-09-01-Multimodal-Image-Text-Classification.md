@@ -151,3 +151,8 @@ The task requires a **multilingual language encoder**, while images usually are 
 Language distribution requires additional consideration.
 
 [![GLAMI-1M: A Multilingual Image-Text Fashion Dataset examples](/images/glami-1m-multilingual-image-text-dataset-examples.png)](https://github.com/glami/glami-1m)
+
+
+### GLAMI-1M Colab Notebook
+Try hands-on exercise with the dataset in this [Google Colab notebook](https://colab.research.google.com/drive/16gMqVqUpleacU5z9Y_7f3c-7I0C45esy?usp=sharing).
+[![glami-1m-multilingual-image-text-dataset-text-vs-image-similarity](media/glami-1m-multilingual-image-text-dataset-text-vs-image-similarity.png)](https://colab.research.google.com/drive/16gMqVqUpleacU5z9Y_7f3c-7I0C45esy?usp=sharing)
