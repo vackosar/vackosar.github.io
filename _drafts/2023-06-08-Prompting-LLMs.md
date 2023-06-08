@@ -16,8 +16,10 @@ We steer the model with a small additional textual context, such that it **learn
 This additional context is called prompt.
 Systematic development of the prompt is called prompt engineering.
 
-If the model changes the prompt may stop being optimal, in that case there is little point over-optimizing it.
-For example, ChatGPT or GPT-4 is changed often by OpenAI.
+
+## Trade-offs in Prompting
+- Longer the prompt the more expensive in terms of time and compute. For example, more examples provided, the longer prompt.
+- If the model changes the prompt may stop being optimal, in that case there is little point over-optimizing it. For example, ChatGPT or GPT-4 is changed often by OpenAI.
 
 
 ## Task Instruction (Zero-Shot Prompting)
@@ -58,6 +60,38 @@ Generate multiple reasoning paths (chains of thought), then return the most comm
 Generate explicitly decomposable thoughts, evaluate progress of each unfinished thought chain, and efficiency explore with an search algorithm.
 
 
+### Thought Decomposition
+
+Designed problem-specific meaningful thought size and separation. For example a paragraph, or an equation.
+
+![three of thought input, output, thoughts](/images/three-of-thought-input-output-thoughts-steps.png)
+
+
+### Thought and Value Generation
+Designed problem-specific prompts thought-prompt. Propose or sample generate depending on the output size.
+
+
+### Evaluation-prompt
+Designed problem-specific prompt.
+Either
+- Value of state: Generate value of a specific step or "chain".
+- Vote: across states: Based on all steps, the model compares and select the most promising.
+
+
+### Search Algorithm
+Explore the most promising paths until solution, bad state, or depth limit:
+- Breadth-first search (BFS): Keep only most promising states, then generate to deeper the level for all, prune. Iterate.
+- Depth-first search (DFS): Keep going deeper until solution, bad state, or depth limit. Then backtrack, exclude already visited.
+
+
+### Examples
+
+#### Game of 24
+- Game of 24 is a mathematical reasoning challenge, where the goal is to use 4 numbers and basic arithmetic operations (+-*/) to obtain 24. For example, given input “4 9 10 13”, a solution output could be “(10 - 4) * (13 - 9) = 24”. We decompose by choosing the numbers from the left to the right.
+
+![](/images/tree-of-thought-tot-game-of-24.png)
+
+![](/images/tree-of-thought-tot-game-of-24-results.png)
 
 
 
