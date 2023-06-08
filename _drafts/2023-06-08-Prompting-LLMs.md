@@ -8,22 +8,19 @@ layout: post
 permalink: /:categories/:title
 ---
 
-- recording!
-
 When **given input**, we want the model to correctly **generate output**.
 Large language models (LLMs) like ChatGPT ([GPT-3](https://arxiv.org/pdf/2005.14165.pdf)), Claude, Bard are trained to predict text continuation with extra tuning for following conversations and instructions (RLHF).
 We steer the model with a small additional textual context, such that it **learns in context** without large amount of training data.
 This additional context is called prompt.
-Systematic development of the prompt is called prompt engineering.
+Systematic development and evaluation of the prompt is called prompt engineering.
 
 
 ## Trade-offs in Prompting
-- Longer the prompt the more expensive in terms of time and compute. For example, more examples provided, the longer prompt.
-- If the model changes the prompt may stop being optimal, in that case there is little point over-optimizing it. For example, ChatGPT or GPT-4 is changed often by OpenAI.
-
+- Longer the prompt the more expensive in terms of time and compute. For example, more examples provided, the longer prompt. Training a specific model may be
+- If the model changes the prompt may stop being optimal, in that case there is little point over-optimizing it. For example, ChatGPT or GPT-4 is changed often by OpenAI. The models are meant to be general not specific to your problem.
 
 ## Task Instruction
-(Zero-Shot Prompting)
+Also called Zero-Shot Prompting.
 
 Describe the task:
 - intent (detect product review sentiment)
@@ -35,7 +32,7 @@ Describe the task:
 
 
 ## Input-Output Examples
-(One-shot, Few-Shot prompting)
+Also called One-shot, Few-Shot prompting.
 
 Provide examples such that
 - Changing order of examples can change results. Recent examples are more likely to be reproduced.
@@ -48,7 +45,7 @@ Provide examples such that
 
 
 ## Reasoning in Steps
-([Chain-of-Thought (CoT) Prompting](https://arxiv.org/pdf/2201.11903.pdf))
+Also called [Chain-of-Thought (CoT) Prompting](https://arxiv.org/pdf/2201.11903.pdf).
 
 Steer the model to generate text that will guide it towards the correct answer.
 The reasoning steps increase interpretability.
@@ -59,19 +56,20 @@ For example: multi-step arithmetic, commonsense logical reasoning.
 
 
 ## Majority Vote Reasoning Steps
-(Self-consistency with Chain-of-Thought (CoT-SC))
+Also called Self-consistency with Chain-of-Thought (CoT-SC).
 
 Generate multiple reasoning paths (chains of thought), then return the most common answer.
 
 
 ## Self-evaluated Reasoning Search
-([Tree of Thoughts Problem Solving (ToT)](https://arxiv.org/pdf/2305.10601.pdf))
+Also called [Tree of Thoughts Problem Solving (ToT)](https://arxiv.org/pdf/2305.10601.pdf).
 
 Generate explicitly decomposable thoughts, evaluate progress of each unfinished thought chain, and efficiency explore with an search algorithm.
 
+My criticism is that the evidence is low with only 3 toy examples and the technique requires additional problem specific edits.
+
 
 ### Thought Decomposition
-
 Designed problem-specific meaningful thought size and separation. For example a paragraph, or an equation.
 
 ![three of thought input, output, thoughts](/images/three-of-thought-input-output-thoughts-steps.png)
@@ -83,7 +81,7 @@ Designed problem-specific prompts thought-prompt. Propose or sample generate dep
 
 ### Evaluation-prompt
 Designed problem-specific prompt for reflecting on the thoughts "state".
-Either
+Either:
 - Value of state: Generate value of a specific step or "chain".
 - Vote: across states: Based on all steps, the model compares and select the most promising.
 
