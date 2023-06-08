@@ -3,7 +3,8 @@ title: Bits-Per-Byte and Bits-Per-Character
 description: BPB and BPC are metrics used in compression and language modelling related to compression ratio.
 layout: post
 categories: ml
-date: 2023-05-25
+date: 2022-05-20
+last_modified_at: 2023-05-25
 image: /images/deflate-algorithm-operation.drawio.svg
 permalink: /:categories/:title
 my_related_post_paths:

@@ -24,7 +24,7 @@ For **given input**, you want the model to correctly **generate output**.
 There is natural path from the simplest to the most advanced approaches, up to final tuning of the model.
 This post guides your through these techniques in a simple way.
 
-Large language models (LLMs) like ChatGPT ([GPT-3](https://arxiv.org/pdf/2005.14165.pdf)), Claude, Bard are trained to predict text continuation with extra tuning for following conversations and instructions (RLHF).
+[Large language models (LLMs)](/ml/Understand-Large-Language-Models-like-ChatGPT) like ChatGPT ([GPT-3](https://arxiv.org/pdf/2005.14165.pdf)), Claude, Bard are trained to predict text continuation with extra tuning for following conversations and instructions (RLHF).
 We steer the model with a small additional textual context, such that it **learns in context** without large amount of training data.
 This additional context is called prompt.
 Systematic development of prompts using metric evaluation is called prompt engineering.
@@ -34,6 +34,7 @@ Systematic development of prompts using metric evaluation is called prompt engin
 - Longer the prompt the more expensive in terms of time and compute. For example, more examples provided, the longer prompt. Training a specific model may be
 - If the model changes the prompt may stop being optimal, in that case there is little point over-optimizing it. For example, ChatGPT or GPT-4 is changed often by OpenAI. The models are meant to be general not specific to your problem.
 - Control guardrails vs creative hallucinations. Certain prompts may be prone to more hallucinations over others.
+
 
 ## Task Instruction
 Also called Zero-Shot Prompting.
@@ -63,11 +64,11 @@ Provide examples such that
 ## Reasoning in Steps
 Also called [Chain-of-Thought (CoT) Prompting](https://arxiv.org/pdf/2201.11903.pdf).
 
-Steer the model to generate text that will guide it towards the correct answer.
+Your step-by-step instruction creates a momentum such that the model generates a text that guides it towards the correct answer.
 The reasoning steps increase interpretability.
 Append instruction "Let's think step by step." or provide reasoning examples.
 For example: multi-step arithmetic, commonsense logical reasoning.
-Model's ability to use [CoT increases with model size (see PaLM)](/ml/googles-pathways-language-model-and-chain-of-thought).
+Model's ability to use [CoT increases with model size (see PaLM and its ability to explain jokes)](/ml/googles-pathways-language-model-and-chain-of-thought).
 
 ![Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/images/palm-chain-of-though-prompting.png)
 

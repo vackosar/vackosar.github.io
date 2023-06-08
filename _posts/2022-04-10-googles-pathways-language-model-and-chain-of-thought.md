@@ -44,7 +44,7 @@ my_related_post_paths:
 ![PaLM vs GPT vs MT-NLG computation cost FLOPs AI training](/images/palm-chart-computation-used-in-training.png)
 
 
-## Zero-Shot vs Few-Shot Prompting vs Fine-Tuning
+## [Zero-Shot vs Few-Shot Prompting](/ml/Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM) vs Fine-Tuning
 - prompting: instructing via addition of textual context
 - zero-shot: task described, but demonstrations not given
 - few-shot: task described and random demonstrations provided
@@ -65,7 +65,7 @@ my_related_post_paths:
 
 
 
-## Chain-of-Thought Prompting
+## [Chain-of-Thought Prompting](/ml/Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM)
 - inserts reasoning steps between for each demonstration in the prompt
 - multi-step arithmetic
   - grade-school level math problems
@@ -79,7 +79,7 @@ my_related_post_paths:
 
 
 
-## PaLM Chain-of-Thought Prompting Results
+## PaLM [Chain-of-Thought Prompting](/ml/Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM) Results
 - reasoning tasks datasets: GSM8K, SVAMP, MAWPS, AQuA, CommonsenseQA, StrategyQA
 - humans allowed calculators and search engines too
 - the model triggers [a calculator by generating special annotation text](https://arxiv.org/pdf/2110.14168.pdf) (+~5% acc)
