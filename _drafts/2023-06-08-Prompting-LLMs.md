@@ -11,7 +11,7 @@ permalink: /:categories/:title
 - recording!
 
 When **given input**, we want the model to correctly **generate output**.
-Large language models (LLMs) like ChatGPT, Claude, Bard are trained to predict text continuation with extra tuning for following conversations and instructions (RLHF).
+Large language models (LLMs) like ChatGPT ([GPT-3](https://arxiv.org/pdf/2005.14165.pdf)), Claude, Bard are trained to predict text continuation with extra tuning for following conversations and instructions (RLHF).
 We steer the model with a small additional textual context, such that it **learns in context** without large amount of training data.
 This additional context is called prompt.
 Systematic development of the prompt is called prompt engineering.
@@ -50,8 +50,12 @@ For example: multi-step arithmetic, commonsense logical reasoning.
 ![Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/images/palm-chain-of-though-prompting.png)
 
 
-## Self-evaluated Reasoning Search (Tree of Thoughts Problem Solving (ToT))
+## Majority Vote Reasoning Steps (Self-consistency with Chain-of-Thought (CoT-SC))
+Generate multiple reasoning paths (chains of thought), then return the most common answer.
 
+
+## Self-evaluated Reasoning Search (Tree of Thoughts Problem Solving (ToT))
+Generate explicitly decomposable thoughts, evaluate progress of each unfinished thought chain, and efficiency explore with an search algorithm.
 
 
 
