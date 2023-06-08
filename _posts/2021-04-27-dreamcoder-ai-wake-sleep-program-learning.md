@@ -25,7 +25,7 @@ my_related_post_paths:
 ## Why Code with Neural Networks?
 - Regression is not enough. Neural Networks are missing [the deliberate thinking System 2](/ml/Symbolic-vs-Connectionist-Machine-Learning):
 - humans can
-  - think algorithmically using symbols
+  - [think algorithmically using symbols](/ml/Symbolic-vs-Connectionist-Machine-Learning)
   - accumulate "knowledge" from small amount of samples
 - GAI via [symbolic + neural](/ml/Symbolic-vs-Connectionist-Machine-Learning)? ([Francois Chollet](https://youtu.be/J0p_thJJnoo))
 
