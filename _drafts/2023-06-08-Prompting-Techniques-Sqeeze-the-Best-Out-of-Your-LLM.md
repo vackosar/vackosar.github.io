@@ -1,6 +1,6 @@
 ---
-title: Prompt Engineering for Large Language Models
-description: Instantly instruct your GPT to generate the best tokens on the first shot.
+title: "Prompting Techniques: Squeeze the Best Out of Your LLM"
+description: From the simplest to the most advanced, instruct your GPT for the best generation.
 categories: ml
 date: 2023-06-08
 last_modified_at: 2023-06-08
@@ -12,7 +12,7 @@ When **given input**, we want the model to correctly **generate output**.
 Large language models (LLMs) like ChatGPT ([GPT-3](https://arxiv.org/pdf/2005.14165.pdf)), Claude, Bard are trained to predict text continuation with extra tuning for following conversations and instructions (RLHF).
 We steer the model with a small additional textual context, such that it **learns in context** without large amount of training data.
 This additional context is called prompt.
-Systematic development and evaluation of the prompt is called prompt engineering.
+Systematic development of prompts using metric evaluation is called prompt engineering.
 
 
 ## Trade-offs in Prompting
