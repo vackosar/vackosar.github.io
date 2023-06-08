@@ -85,7 +85,7 @@ Also called [Tree of Thoughts Problem Solving (ToT)](https://arxiv.org/pdf/2305.
 Generate explicitly decomposable thoughts, evaluate progress of each unfinished thought chain, and efficiency explore with an search algorithm.
 This has analogies to [AlphaZero](https://arxiv.org/pdf/1712.01815.pdf) for playing chess.
 
-My criticism is that the evidence is low with only 3 toy examples and the technique requires additional problem specific edits.
+Criticism is that the evidence is low with only 3 toy examples, additional model generation is required for evaluation operations, and the technique requires additional problem-specific human inputs.
 
 ![Tree of Thoughts Problem Solving comparison with Chain-of-Thought](/images/tree-of-thought-tot-comparison-cot.png)
 
