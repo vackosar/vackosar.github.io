@@ -1,6 +1,6 @@
 ---
-title: Instant Prompt Engineering for Large Language Models
-description: Instruct your GPT to generate the best tokens on the first shot.
+title: Prompt Engineering for Large Language Models
+description: Instantly instruct your GPT to generate the best tokens on the first shot.
 categories: ml
 date: 2023-06-08
 last_modified_at: 2023-06-08
@@ -22,7 +22,9 @@ Systematic development of the prompt is called prompt engineering.
 - If the model changes the prompt may stop being optimal, in that case there is little point over-optimizing it. For example, ChatGPT or GPT-4 is changed often by OpenAI.
 
 
-## Task Instruction (Zero-Shot Prompting)
+## Task Instruction
+(Zero-Shot Prompting)
+
 Describe the task:
 - intent (detect product review sentiment)
 - audience (5 year old)
@@ -32,7 +34,9 @@ Describe the task:
 ![GPT-3 Zero-shot](/images/gpt-3-zero-shot-prompting.png)
 
 
-## Input-Output Examples (One-shot, Few-Shot prompting)
+## Input-Output Examples
+(One-shot, Few-Shot prompting)
+
 Provide examples such that
 - Changing order of examples can change results. Recent examples are more likely to be reproduced.
 - Representative ordered examples at least random - For multiple choice outputs you may want to debias the model to prevent repeating the last answer.
@@ -43,7 +47,9 @@ Provide examples such that
 ![Language Models are Few-Shot Learners](/images/gpt-3-few-shot-prompting.png)
 
 
-## Reasoning in Steps (Chain-of-Thought (CoT) Prompting)
+## Reasoning in Steps
+(Chain-of-Thought (CoT) Prompting)
+
 Steer the model to generate text that will guide it towards the correct answer.
 The reasoning steps increase interpretability.
 Append instruction "Let's think step by step." or provide reasoning examples.
@@ -52,11 +58,15 @@ For example: multi-step arithmetic, commonsense logical reasoning.
 ![Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/images/palm-chain-of-though-prompting.png)
 
 
-## Majority Vote Reasoning Steps (Self-consistency with Chain-of-Thought (CoT-SC))
+## Majority Vote Reasoning Steps
+(Self-consistency with Chain-of-Thought (CoT-SC))
+
 Generate multiple reasoning paths (chains of thought), then return the most common answer.
 
 
-## Self-evaluated Reasoning Search ([Tree of Thoughts Problem Solving (ToT)](https://arxiv.org/pdf/2305.10601.pdf))
+## Self-evaluated Reasoning Search
+([Tree of Thoughts Problem Solving (ToT)](https://arxiv.org/pdf/2305.10601.pdf))
+
 Generate explicitly decomposable thoughts, evaluate progress of each unfinished thought chain, and efficiency explore with an search algorithm.
 
 
@@ -98,3 +108,4 @@ Explore the most promising paths until solution, bad state, or depth limit:
 ## Fine-Tuning Training
 
 When we have enough data, we can fine-tune the model weights to increase performance.
+There are some cheaper methods like LoRA and more expensive methods.
