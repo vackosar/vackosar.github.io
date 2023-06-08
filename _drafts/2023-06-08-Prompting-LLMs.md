@@ -51,6 +51,7 @@ Steer the model to generate text that will guide it towards the correct answer.
 The reasoning steps increase interpretability.
 Append instruction "Let's think step by step." or provide reasoning examples.
 For example: multi-step arithmetic, commonsense logical reasoning.
+Model's ability to use [CoT increases with model size (see PaLM)](/ml/googles-pathways-language-model-and-chain-of-thought).
 
 ![Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/images/palm-chain-of-though-prompting.png)
 
