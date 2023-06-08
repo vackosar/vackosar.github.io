@@ -13,11 +13,11 @@ redirect_from:
 my_related_post_paths:
 - _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
 - _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
-- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
+- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
 - _posts/2017-07-15-Restore-Missing-Punctuation-with-Keras-Convolutional-Text-Punctuator.md
+- _posts/2023-06-08-Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
 - _posts/2017-06-04-Code-Structure-Principles.md
-- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 ---
 
 

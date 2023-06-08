@@ -15,7 +15,7 @@ my_related_post_paths:
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2016-07-03-GitFlow-Incremental-Builder.md
 - _posts/2017-10-28-Spring-Integration-Highlights.md
-- _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
+- _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
 ---
 
 

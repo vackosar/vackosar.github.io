@@ -9,10 +9,10 @@ image: /images/david_deutsch_principles_contract_xl-beta-v2-2-2.png
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2021-12-12-Ten-Commandments-for-business-failure.md
+- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
 - _posts/2021-07-14-Scout-Mindset-Book-Summary.md
 - _posts/2017-06-04-Code-Structure-Principles.md
 - _posts/2022-01-09-7-powers-moats-through-lens-of-dibellos-business-mental-model.md
-- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 - _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
 ---

@@ -1,12 +1,23 @@
 ---
-title: "Prompting Techniques That Squeeze the Best Out of Your LLM"
+title: Prompting Techniques That Squeeze the Best Out of Your LLM
 description: From the simplest to the most advanced, instruct your GPT for the best generation.
 categories: ml
+image: /images/squeeze-robot-hand-orange.png
 date: 2023-06-08
 last_modified_at: 2023-06-08
 layout: post
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
+- _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 ---
+
+![squeeze-robot-hand-orange](/images/squeeze-robot-hand-orange.png)
 
 
 For **given input**, you want the model to correctly **generate output**.

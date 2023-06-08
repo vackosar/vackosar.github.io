@@ -11,10 +11,10 @@ my_related_post_paths:
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 - _posts/2020-08-25-to-what-python-number-types-does-json.loads-parse.md
 - _posts/2017-06-04-Code-Structure-Principles.md
-- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
 - _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
-- _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 ---
 
 

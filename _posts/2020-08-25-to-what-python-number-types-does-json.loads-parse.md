@@ -12,8 +12,8 @@ my_related_post_paths:
 - _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
-- _posts/2017-06-04-Code-Structure-Principles.md
 - _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2017-06-04-Code-Structure-Principles.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
 ---
 

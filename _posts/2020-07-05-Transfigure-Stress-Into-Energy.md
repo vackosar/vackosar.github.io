@@ -11,12 +11,12 @@ video_start: 301
 last_modified_at: 2023-05-14
 my_related_post_paths:
 - _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
-- _posts/2022-12-26-cooking-with-psyllium-fiber-to-reduce-suger-spikes.md
-- _posts/2016-12-23-Sped-Up-Classic-For-Sped-Up-Age.md
 - _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
-- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
 - _posts/2021-07-14-Scout-Mindset-Book-Summary.md
-- _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
+- _posts/2023-06-08-Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM.md
+- _posts/2016-12-23-Sped-Up-Classic-For-Sped-Up-Age.md
+- _posts/2021-12-12-Ten-Commandments-for-business-failure.md
 ---
 
 

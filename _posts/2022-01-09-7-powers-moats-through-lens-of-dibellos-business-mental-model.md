@@ -16,8 +16,8 @@ my_related_post_paths:
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 - _posts/2021-07-14-Scout-Mindset-Book-Summary.md
 - _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
+- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
-- _posts/2020-04-22-result-diversification-in-web-search-and-recommenders.md
 ---
 
 

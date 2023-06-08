@@ -17,7 +17,7 @@ my_related_post_paths:
 - _posts/2021-12-28-cross-attention-in-transformer-architecture.md
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 - _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
-- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
+- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
 ---
 
 
