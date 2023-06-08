@@ -32,7 +32,7 @@ my_related_post_paths:
 - Competitive on QA same perf [GPT-3](https://arxiv.org/pdf/2005.14165.pdf) with 25x less params
 - model performs even when low train-test overlap
 - retrieval reduces hallucinations and increases interpretability
-- merges symbolic with deep learning similar to [Dream Coder program learning](/ml/dreamcoder-ai-wake-sleep-program-learning)
+- [merges symbolic with deep learning](/ml/Symbolic-vs-Connectionist-Machine-Learning) similar to [Dream Coder program learning](/ml/dreamcoder-ai-wake-sleep-program-learning)
 
 
 ## Other Retrieval Architectures

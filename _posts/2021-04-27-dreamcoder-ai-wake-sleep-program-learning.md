@@ -23,11 +23,11 @@ my_related_post_paths:
 {% include mathjax.html %}
 
 ## Why Code with Neural Networks?
-- Regression is not enough. Neural Networks are missing [System 2](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow):
+- Regression is not enough. Neural Networks are missing [the deliberate thinking System 2](/ml/Symbolic-vs-Connectionist-Machine-Learning):
 - humans can
   - think algorithmically using symbols
   - accumulate "knowledge" from small amount of samples
-- GAI via symbolic + neural? ([Francois Chollet](https://youtu.be/J0p_thJJnoo))
+- GAI via [symbolic + neural](/ml/Symbolic-vs-Connectionist-Machine-Learning)? ([Francois Chollet](https://youtu.be/J0p_thJJnoo))
 
 
 <img
