@@ -11,10 +11,13 @@ permalink: /:categories/:title
 - recording!
 
 When **given input**, we want the model to correctly **generate output**.
-Language models are trained to predict text continuation with extract tuning for conversations and instruction following.
+Large language models (LLMs) like ChatGPT, Claude, Bard are trained to predict text continuation with extra tuning for following conversations and instructions (RLHF).
 We steer the model with a small additional textual context, such that it **learns in context** without large amount of training data.
 This additional context is called prompt.
 Systematic development of the prompt is called prompt engineering.
+
+If the model changes the prompt may stop being optimal, in that case there is little point over-optimizing it.
+For example, ChatGPT or GPT-4 is changed often by OpenAI.
 
 
 ## Task Instruction (Zero-Shot Prompting)
@@ -23,6 +26,8 @@ Describe the task:
 - audience (5 year old)
 - persona (expert marketer)
 - specific and precise terms, e.g., avoiding generic word "not".
+
+![GPT-3 Zero-shot](/images/gpt-3-zero-shot-prompting.png)
 
 
 ## Input-Output Examples (One-shot, Few-Shot prompting)
@@ -33,15 +38,25 @@ Provide examples such that
 - Diverse examples between each other - If you have static prompt, instead select diverse examples with clustering.
 - Difficult to answer examples - select most difficult questions for prompt based on difficulty to answer by the model.
 
+![Language Models are Few-Shot Learners](/images/gpt-3-few-shot-prompting.png)
 
 
 ## Reasoning in Steps (Chain-of-Thought (CoT) Prompting)
 Steer the model to generate text that will guide it towards the correct answer.
-Append instruction "Let's think step by step."
+The reasoning steps increase interpretability.
+Append instruction "Let's think step by step." or provide reasoning examples.
+For example: multi-step arithmetic, commonsense logical reasoning.
 
+![Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/images/palm-chain-of-though-prompting.png)
 
 
 ## Self-evaluated Reasoning Search (Tree of Thoughts Problem Solving (ToT))
 
 
 
+
+
+
+## Fine-Tuning Training
+
+When we have enough data, we can fine-tune the model weights to increase performance.
