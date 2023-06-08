@@ -87,6 +87,8 @@ This has analogies to [AlphaZero](https://arxiv.org/pdf/1712.01815.pdf) for play
 
 My criticism is that the evidence is low with only 3 toy examples and the technique requires additional problem specific edits.
 
+![Tree of Thoughts Problem Solving comparison with Chain-of-Thought](/images/tree-of-thought-tot-comparison-cot.png)
+
 
 ### Thought Decomposition in ToT
 Designed problem-specific meaningful thought size and separation. For example a paragraph, or an equation.
