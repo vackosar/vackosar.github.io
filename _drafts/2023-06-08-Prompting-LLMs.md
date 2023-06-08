@@ -56,7 +56,7 @@ For example: multi-step arithmetic, commonsense logical reasoning.
 Generate multiple reasoning paths (chains of thought), then return the most common answer.
 
 
-## Self-evaluated Reasoning Search (Tree of Thoughts Problem Solving (ToT))
+## Self-evaluated Reasoning Search ([Tree of Thoughts Problem Solving (ToT)](https://arxiv.org/pdf/2305.10601.pdf))
 Generate explicitly decomposable thoughts, evaluate progress of each unfinished thought chain, and efficiency explore with an search algorithm.
 
 
