@@ -63,6 +63,7 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 ![transformer next token prediction](/images/transformer-from-word2vec-next-token.jpg)
 
 
+
 ## Future: Hybridizing Text with Algorithms
 - ChatGPT and other Large Language Models hallucinate despite alignment with [RLHF](https://arxiv.org/abs/2009.01325)
 - If neural network has a intuition, what is repetition, search, self-reflection?
@@ -71,3 +72,12 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 
 
 ![hybridizing neural networks with code](/images/hybrid-symbolic-connectionist-papers.png)
+
+
+
+## Instructing ChatGPT and Large Language Models
+- [Prompting is asking the LLMs right questions](/ml/Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM)
+- [Common prompting techniques](/ml/Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM): being specific, provide examples, allow thinking step by step, self-reflecting
+- Use cases: question answering, coding, form filling, data schema extraction, knowledge graph construction 
+
+![chain-of-thought prompting technique](/images/palm-chain-of-though-prompting.png)
