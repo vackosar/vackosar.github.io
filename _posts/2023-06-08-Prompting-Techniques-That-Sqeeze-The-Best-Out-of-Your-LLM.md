@@ -143,3 +143,9 @@ For example, if there is a question for some sort of calculation. [Toolformer me
 
 When we have enough data, we can fine-tune the model weights to increase performance.
 There are some cheaper methods like LoRA and more expensive methods.
+
+
+## Other Resources
+Get more information from leading model providers:
+- [OpenAI's GPT best practices](https://platform.openai.com/docs/guides/gpt-best-practices/strategy-split-complex-tasks-into-simpler-subtasks?utm_source=vaclavkosar.com)
+- [Anthropic's Prompt Design](https://docs.anthropic.com/claude/docs/introduction-to-prompt-design?utm_source=vaclavkosar.com)
