@@ -1,6 +1,6 @@
 ---
 title: Google's Pathways Language Model and Chain-of-Thought Prompting
-description: PaLM, the largest model as of early 2022, outperforms average human on grade school logic and math (BIG-bench) by simulating reasoning steps.
+description: PaLM, the largest language model of early 2022, outperformed average human on grade school logic and math (BIG-bench) by simulating reasoning steps.
 layout: post
 categories: ml
 date: 2022-04-10
