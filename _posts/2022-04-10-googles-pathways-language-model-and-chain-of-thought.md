@@ -45,7 +45,7 @@ my_related_post_paths:
 
 
 ## [Zero-Shot vs Few-Shot Prompting](/ml/Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM) vs Fine-Tuning
-- prompting: instructing via addition of textual context
+- [prompting](/ml/Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM): instructing via addition of textual context
 - zero-shot: task described, but demonstrations not given
 - few-shot: task described and random demonstrations provided
 - fine-tuning: model parameters are updated with correct answers

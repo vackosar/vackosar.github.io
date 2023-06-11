@@ -15,8 +15,8 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 
 ## Prompt as an Interface
 - 2001: A Space Odyssey HAL 9000
-- input textual instructions e.g. explain a riddle
-- based on its knowledge computer generates the answer text 
+- input textual instructions e.g. explain a riddle as [a prompt](/ml/Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM)
+- based on its knowledge computer generates the answer text
 
 ![2001 A Space Odyssey HAL-9000 Interface](/images/2001-A-Space-Odyssey-HAL-9000-Interface-3.png)
 
