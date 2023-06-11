@@ -56,6 +56,8 @@ On one hand we have something that is able to find **patterns in huge amounts of
 
 On the connectionist side, we have **neural networks and gradient boosting**, while on the **symbolic side**, we have **[decision trees](/ml/Neural-Network-Pruning-Explained)**. For example, you can see one on the top right. Decision trees operate only in the inputs, which is very interpretable and simple. And they have different capabilities and are used in specific type of situations.
 
+The analogy can be extended also to: **Statistical models** on the connectionist side vs **computational models** on the symbolic side. And parametric vs non-parametric models.
+
 
 ## Problems with Symbolic Rule-based Expert Systems
 
