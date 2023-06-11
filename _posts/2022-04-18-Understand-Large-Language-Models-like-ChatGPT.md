@@ -6,7 +6,7 @@ categories: ml
 image: /images/man-talking-to-a-big-robot-head-small.png
 date: 2022-04-18
 permalink: /:categories/:title
-last_modified_at: 2023-04-17
+last_modified_at: 2023-06-11
 video: Jo-IQjdFfnw
 redirect_from:
 - /ml/how-computers-understood-humans
