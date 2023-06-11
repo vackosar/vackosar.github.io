@@ -63,7 +63,7 @@ The analogy can be extended also to: **Statistical models** on the connectionist
 
 ![problems-with-symbolic-rule-based-expert-systems](/images/problems-with-symbolic-rule-based-expert-systems.png)
 
-These algorithms, these computer programs, these rules, were actually used to be, it was a dominant approach in machine learning, in **artificial intelligence in 1980s**. And it seemed like if this is going to work, if we are just, you know, **AGI is just around the corner**, right? We are going to have it, like, tomorrow. And then there started to be issues. It wasn't progressing anymore. And so what these systems were doing, what was the approach back then? And why it collapsed?
+These algorithms, these computer programs, these rules, were actually used to be, it was a dominant approach in machine learning, in **artificial intelligence in the 1980s**. And it seemed like if this is going to work, if we are just, you know, **AGI is just around the corner**, right? We are going to have it, like, tomorrow. And then there started to be issues. It wasn't progressing anymore. And so what these systems were doing, what was the approach back then? And why it collapsed?
 
 Back then, the approach was that you would have even, like, dedicated hardware, like the one on the right, and you would write for your problem. You would **collect a group of experts** that would understand the domain. You would also have the **programmers that would be able to actually write the rules**. And after enough effort, you would build up the experts system, which would be acceptable in some cases. But it was expensive. It was very difficult to update. If something changed, it would fall apart.
 
