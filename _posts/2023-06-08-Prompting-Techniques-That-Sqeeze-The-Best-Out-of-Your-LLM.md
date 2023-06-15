@@ -27,12 +27,12 @@ This post guides your through these techniques in a simple way.
 [Large language models (LLMs)](/ml/Understand-Large-Language-Models-like-ChatGPT) like ChatGPT ([GPT-3](https://arxiv.org/pdf/2005.14165.pdf)), Claude, Bard are trained to predict text continuation with extra tuning for following conversations and instructions (RLHF).
 We steer the model with a small additional textual context, such that it **learns in context** without large amount of training data.
 This additional context is called prompt.
-Systematic development of prompts using metric evaluation is called prompt engineering.
+Systematic development of prompts using **metric evaluation is called prompt engineering**.
 
 
 ## Trade-offs in Prompting
-- Longer the prompt the more expensive in terms of time and compute. For example, more examples provided, the longer prompt. Training a specific model may be
-- If the model changes the prompt may stop being optimal, in that case there is little point over-optimizing it. For example, ChatGPT or GPT-4 is changed often by OpenAI. The models are meant to be general not specific to your problem.
+- Longer the prompt the more expensive in terms of **latency and compute**. For example, more examples provided, the longer prompt. Training a specific model or selecting samples intelligently are possible solutions.
+- If the **model changes** the prompt may stop being optimal, in that case there is little point **over-optimizing** it. For example, ChatGPT or GPT-4 is changed often by OpenAI. The models are meant to be general not specific to your problem.
 - Control guardrails vs creative hallucinations. Certain prompts may be prone to more hallucinations over others.
 
 
@@ -118,14 +118,14 @@ Explore the most promising paths until solution, bad state, or depth limit:
 #### Game of 24
 - Game of 24 is a mathematical reasoning challenge, where the goal is to use 4 numbers and basic arithmetic operations (+-*/) to obtain 24. For example, given input “4 9 10 13”, a solution output could be “(10 - 4) * (13 - 9) = 24”. We decompose by choosing the numbers from the left to the right.
 
-![](/images/tree-of-thought-tot-game-of-24.png)
+![Tree of Thought ToT: Game of 24 results](/images/tree-of-thought-tot-game-of-24.png)
 
-![](/images/tree-of-thought-tot-game-of-24-results.png)
+![Tree of Thought ToT: Game of 24 results](/images/tree-of-thought-tot-game-of-24-results.png)
 
 
 #### Creative Writing
 
-![](/images/tree-of-thought-tot-creative-writing-results.png)
+![Tree of Thought ToT: Creative Writing](/images/tree-of-thought-tot-creative-writing-results.png)
 
 
 ## Generating Optimal Prompts
