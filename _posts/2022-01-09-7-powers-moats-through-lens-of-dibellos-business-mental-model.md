@@ -44,18 +44,18 @@ For details, I recommend reading [Mental Model of Business](https://commoncog.co
 
 The three core areas are:
 
-**Supply, or leadership: factors involved in effective operations**
-- topics: incentives, systems, design blueprints, manufacturing, production, product development
-- agents: employees, management, execution, human resources
+**Supply, leadership, operations**
+- factors: management, incentives, systems, design blueprints, manufacturing, production, product development
+- agents: employees, managers, executives, human resources
 - comment: This dimension deals with company-internal matters. Here the company transforms the inputs into outputs.
 
-**Demand, or strategy: forces influencing the market**
-- topics: deal, sale, marketing, purchase, brand asset, positioning, exchange, trade, inputs, outputs ...
+**Demand, strategy, market**
+- factors: deal, sale, law, marketing, purchase, brand asset, positioning, exchange, trade, inputs, outputs ...
 - agents: customers, suppliers, competition, government, prospect
 - comment: This dimension represents exchange with the outside. Here the company inputs and outputs are connected.
 
-**Capital, or finance: driving business finance and economic climates**
-- topics: financial performance, cost of goods sold, return on ads spend, fixed assets, receivables, R&D, cashflow, debt, equity receivables, cost of capital,  ...
+**Capital, finance, economic climate**
+- factors: financial metrics and performance, cost of capital and goods sold, return on ads spend, fixed assets, receivables, R&D, cashflow, debt, equity receivables, cost of capital,  ...
 - agents: investors, bondholders, CFO
 - comment: I see this dimension as a mainly quantitative or performance measuring, because various inputs and outputs are already part of the demand. Capital is different (more liquidity, services), but not sure if enough different.
 
