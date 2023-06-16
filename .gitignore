@@ -3,3 +3,4 @@ _site/
 *.iml
 *.swp
 Gemfile.lock
+/.sass-cache
