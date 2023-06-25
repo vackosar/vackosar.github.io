@@ -20,8 +20,14 @@ a {
 
 }
 .social-icon {
-    color: #004a5b;
+    fill: #207994;
 }
+
+.social-icon:hover {
+    fill: #00a3cb !important;
+}
+
+
 a:hover {
     text-decoration: underline;
     color: #00a3cb;
@@ -79,7 +85,6 @@ img {
 
 svg {
     width: 30px;
-    color: #207994 !important;
     margin-right: 10px;
 }
 
