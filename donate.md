@@ -5,9 +5,10 @@ description: Gift me a coffee with a question or a message and contribute feedba
 date: 2022-02-14
 ---
 
-Contribute via:
+Motivate me via:
 
-- <a href="https://www.paypal.me/vackosar"><img alt="donate paypal" style="width: 110px" src="https://img.shields.io/badge/Donate-PayPal-pink.svg"></a>
+- <a href="https://www.paypal.me/vackosar" target="_blank" rel="nofollow"><img alt="donate paypal" style="width: 110px" src="https://img.shields.io/badge/Donate-PayPal-pink.svg"></a>
+- <a href="https://getalby.com/p/floralmorning528" target="_blank" rel="nofollow">🗲 Lightning: floralmorning528@getalby.com</a>
 - Brave Browser tips (DAO tokens).
 - Request other methods messaging me.
 
