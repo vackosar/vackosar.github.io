@@ -13,8 +13,8 @@ my_related_post_paths:
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 - _posts/2022-03-20-sparse-matrix-why-and-when.md
-- _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
 ---
 
 

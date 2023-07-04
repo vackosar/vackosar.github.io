@@ -8,8 +8,8 @@ last_modified_at: 2023-06-08
 layout: post
 permalink: /:categories/:title
 my_related_post_paths:
-- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
 - _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md

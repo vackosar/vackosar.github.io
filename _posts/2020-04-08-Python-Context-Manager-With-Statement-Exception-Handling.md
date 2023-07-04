@@ -17,7 +17,7 @@ my_related_post_paths:
 - _posts/2017-07-15-Restore-Missing-Punctuation-with-Keras-Convolutional-Text-Punctuator.md
 - _posts/2023-06-08-Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
-- _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
 ---
 
 

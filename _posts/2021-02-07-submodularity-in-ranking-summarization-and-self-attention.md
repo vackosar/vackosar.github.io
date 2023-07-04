@@ -13,8 +13,8 @@ my_related_post_paths:
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
 - _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
 - _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
-- _posts/2020-11-29-Lambda-Networks-Transform-Self-Attention.md
 - _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
+- _posts/2020-11-29-Lambda-Networks-Transform-Self-Attention.md
 ---
 
 

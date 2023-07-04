@@ -7,6 +7,14 @@ last_modified_at: 2023-07-04
 image: /images/glami-1m-multilingual-image-text-dataset-text-vs-image-similarity.png
 layout: post
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
+- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
+- _posts/2022-05-14-neural-data-compression.md
+- _posts/2020-05-11-BentoML-vs-Cortex.dev--ML-Serving-Showdown.md
+- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 ---
 
 ![GLAMI-1M](/images/glami-1m-multilingual-image-text-dataset-text-vs-image-similarity.png)

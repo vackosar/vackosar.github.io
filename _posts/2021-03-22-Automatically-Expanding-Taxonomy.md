@@ -15,8 +15,8 @@ my_related_post_paths:
 - _posts/2021-03-22-google-product-taxonomy-viewer.md
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
+- _posts/2023-07-03-OpenAIs-Image-Text-Model-CLIP.md
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
-- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2022-10-23-Neural-Network-Pruning-Explained.md
 ---
 

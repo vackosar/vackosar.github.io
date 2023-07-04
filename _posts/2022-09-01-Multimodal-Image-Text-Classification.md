@@ -9,13 +9,13 @@ image: /images/multimodal-image-text-classification.png
 last_modified_at: 2022-11-30
 permalink: /:categories/:title
 my_related_post_paths:
+- _posts/2023-07-03-OpenAIs-Image-Text-Model-CLIP.md
 - _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2020-05-11-BentoML-vs-Cortex.dev--ML-Serving-Showdown.md
 - _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
 - _posts/2021-03-22-google-product-taxonomy-viewer.md
-- _posts/2022-05-14-neural-data-compression.md
 ---
 
 

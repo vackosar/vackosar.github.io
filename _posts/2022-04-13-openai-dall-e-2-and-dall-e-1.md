@@ -9,13 +9,13 @@ permalink: /:categories/:title
 last_modified_at: 2022-04-22
 video: cYeH45VOI3w
 my_related_post_paths:
+- _posts/2023-07-03-OpenAIs-Image-Text-Model-CLIP.md
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
-- _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
 ---
 
 

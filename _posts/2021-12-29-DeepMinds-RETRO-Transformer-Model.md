@@ -13,9 +13,9 @@ my_related_post_paths:
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2023-07-03-OpenAIs-Image-Text-Model-CLIP.md
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
-- _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
-- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 ---
 
 
