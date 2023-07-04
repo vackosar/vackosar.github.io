@@ -9,9 +9,11 @@ layout: post
 permalink: /:categories/:title
 ---
 
+![GLAMI-1M](/images/glami-1m-multilingual-image-text-dataset-text-vs-image-similarity.png)
+
 Dataset papers can serve as an advertising, authority, and reputation building for the releasing company.
 Datasets are critical for reproducible research.
-In heavily participated in creating [multilingual image-text dataset GLAMI-1M](https://github.com/glami/glami-1m) and writing the corresponding paper.
+In heavily participated in creating [multilingual image-text classification dataset GLAMI-1M](https://github.com/glami/glami-1m) and writing the corresponding paper.
 Here are my learning points:
 
 
@@ -36,7 +38,7 @@ The dataset itself was relatively easy to create. But lots of time was spent on:
 
 - Statistics about the dataset. Answer the most common questions that people will have. For example diversity, duplication, and richness of the samples.
 
-- Training baseline models for the dataset and demonstrations, publishable code and Jupyter notebooks.
+- Training baseline models for the dataset and demonstrations, publishable code and Jupyter notebooks. In GLAMI-1M for example, I used [OpenAI's CLIP](/ml/OpenAIs-Image-Text-Model-CLIP) to show correlations between the [image and text features and for classification](/ml/Multimodal-Image-Text-Classification).
 
 - Researching existing research. What is special about your dataset and why are people interested? You may have something special, but you need to read what is already out there and what is missing and highlight that.
 
