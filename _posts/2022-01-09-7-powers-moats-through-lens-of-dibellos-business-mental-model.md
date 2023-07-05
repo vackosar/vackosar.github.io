@@ -70,6 +70,8 @@ Finance plays a role of monitoring of quantitative attributes of the exchanges, 
 
 Suppliers are distinguished from customers by the direction of flow of money. In case of Google users and webpage owners are suppliers and advertisers are customers. If the flow is bidirectional suppliers may be indistinguishable from customers, which seems rare.
 
+The type of investors that a business attracts is heavily influenced by the characteristics of the business. There are **kickstarter project investors, small initial investors** (e.g. Amazon early on got lots of small investor calls), **real-estate investors**. Investors can be sizable group of people with differing levels of influence and relationship with the business.
+
 
 ## 7 Powers From Perspective of DiBello's 
 Helmer's book defines Power as "the set of conditions creating the potential for persistent differential returns".
