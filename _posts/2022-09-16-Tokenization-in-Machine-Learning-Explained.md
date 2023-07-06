@@ -56,8 +56,7 @@ A list of commonly used tokenizers sorted by their date of introduction.
   These chunks are often words of a natural language.
 - Then, if the character sequence chunk is present in a dictionary of most common chunks, and return an index in the dictionary.
 - If not found, most tokenizers before FastText returned a special token called the unknown token. FastText solved this problem by additional split on the word level into fixed size "subwords", but to find out [more details about FastText read this post](/ml/FastText-Vector-Norms-And-OOV-Words).
-- Other tokenizers, continued to return the unknown token until [SentencePiece](#sentencepiece-vs-wordpiece-tokenizer), which includes all single characters and almost never returns the unknown token.
-
+- BPE never returns unknown token, and instead composes the out-of-vocab words from parts up to individual characters.
 
 ### BPE Tokenizer
 Byte-Pair-Encoding (BPE) algorithm:
