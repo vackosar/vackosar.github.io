@@ -4,6 +4,7 @@ title: About Vaclav Kosar
 description: ML engineer, physics masters, builder-explorer
 category: ml
 date: 2022-09-18
+last_modified_at: 2023-07-08
 image: /images/vaclav-kosar.png
 post_list_text: Read one of my latest posts
 limit_post_list: 5
@@ -30,7 +31,11 @@ extra_meta: |
     </script>
 ---
 
-I reduce costs and increase revenues with software and machine learning systems. For [GLAMI](https://medium.com/@glami-engineering), I am optimizing a product feature detection system performing 40 million predictions (e.g. [product category](/software/google-product-taxonomy-viewer)) each month, so that the customers can find what they are looking for quickly. I also publish resources which you for machine learning research and education. For example, with GLAMI we recently published a [GLAMI-1M dataset](https://github.com/glami/glami-1m) together with a [practise notebook combining of texts which are in multiple languages and images](https://colab.research.google.com/drive/16gMqVqUpleacU5z9Y_7f3c-7I0C45esy?usp=sharing).
+<img alt="Running with military cadence" style="width: 50%; max-width: 250px; background-color: lightgreen;" src="/vaclav-kosar-face-editted-removebg-preview-flip.png">
+
+I can help you reduce costs and increase revenues with software and machine learning (AI) systems. For example for [GLAMI](https://medium.com/@glami-engineering), I am optimizing a product feature detection system performing 40 million predictions (e.g. [product category](/software/google-product-taxonomy-viewer)) each month, so that the customers can find what they are looking for quickly.
+
+I also publish resources which you can use for machine learning research and education. For example, with GLAMI we recently published a [GLAMI-1M dataset](https://github.com/glami/glami-1m) together with a [practise notebook combining of texts which are in multiple languages and images](https://colab.research.google.com/drive/16gMqVqUpleacU5z9Y_7f3c-7I0C45esy?usp=sharing).
 
 I have strong multi-domain experience in solving challenging problems from 9 years of software, 3 years of machine learning, and big data engineering:
 
@@ -40,10 +45,10 @@ I have strong multi-domain experience in solving challenging problems from 9 yea
 
 I love understanding and solving business problems and delivering robust machine learning and software solutions quickly while staying up to date, reading research papers, and practicing by building side projects.
 
-![Vaclav Kosar](/vaclav-kosar-face-editted-removebg-preview-flip.png)
 
 
-## Experience
+
+## Vaclav's Experience
 
 ### Machine Learning Engineer @ GLAMI
 Mar 2020 - Present (2 years 7 months +)
@@ -83,7 +88,7 @@ Participated in multiple backend and middleware Java projects as a Junior Softwa
 
 Java, Java EE, JBoss 7.2, EJB 3, Hybernate, CMP, Tomcat, Spring, Ant, PGAdmin, PL/SQL, Eclipse, CVS, Jenkins, SOAP UI, Bash
 
-## Education
+## Vaclav's Education
 
 ### Czech Technical University in Prague
 Master's degree, Mathematical Physics
@@ -97,7 +102,7 @@ Bachelor's degree, Experimental Nuclear Physics
 maturita, Digital telecommunication engineering
 2003 - 2007
 
-### Licenses & Certifications
+### Vaclav's Licenses & Certifications
 - FCE - University of Cambridge
 - Java SE 6 Programmer Certified Professional - Oracle 1Z0-851
 - Functional Programming Principles in Scala - Coursera XWRHG8U2P5R4
