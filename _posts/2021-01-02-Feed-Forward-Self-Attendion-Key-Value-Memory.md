@@ -8,6 +8,8 @@ video: NI7vFV_iOOA
 description: Feed-forward (MLP) layer is similar to cross-attention as observed in SwiGLU and All-attention.
 permalink: /:categories/:title
 last_modified_at: 2022-04-24
+redirect_from:
+- /ml/Feed-Forward-Self-Attention-Key-Value-Memory
 my_related_post_paths:
 - _posts/2020-11-29-Lambda-Networks-Transform-Self-Attention.md
 - _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
