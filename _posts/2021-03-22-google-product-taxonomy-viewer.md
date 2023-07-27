@@ -8,7 +8,7 @@ permalink: /:categories/:title
 categories: software
 redirect_from:
 - /google-product-taxonomy-viewer.html
-last_modified_at: 2022-06-12
+last_modified_at: 2023-07-27
 my_related_post_paths:
 - _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
