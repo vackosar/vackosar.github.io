@@ -66,6 +66,12 @@ Sporting Goods > Outdoor Recreation > Outdoor Games > Platform & Paddle Tennis >
 Read more in [official guidelines](https://support.google.com/merchants/answer/6324436?hl=en#zippy=%2Cshopping-ads-campaigns%2Capparel-products).
 
 
+## How to Automatically Classify Products Into Taxonomies?
+Product information usually includes image and text. Both of these need to be utilized to correctly place the product into the taxonomy.
+Automatized classficiation can substatially reduce costs of catalogue maintanance and curation.
+Read more about automation of [image-text product classification using machine learning here](/ml/Multimodal-Image-Text-Classification).
+
+
 ## Pinterest's Auto Expanding Taxonomy
 Pinterest's [Arborist model](/ml/Automatically-Expanding-Taxonomy) finds parents for unseen textual nodes using triplet-loss, StarSpace embeddings, & shortest path.
 
