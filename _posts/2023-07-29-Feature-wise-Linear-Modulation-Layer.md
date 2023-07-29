@@ -27,7 +27,7 @@ Example FiLM applied to U-Net [implementation is here](https://github.com/gabols
   - But to avoid loss of generality conditioning with addition and multiplication (affine transformation) is used.
 - This affine conditioning is called Feature-wise Linear Modulation (FiLM) layer.
 - Conditioning is often applied across multiple layers.
-- [Cross-attention](/ml/cross-attention-in-transformer-architecture) is more complex feature-wise transformation.
+- [Cross-attention](/ml/cross-attention-in-transformer-architecture) is more complex feature-wise transformation, where the feature is an input sequence.
 
 
 ## Application
