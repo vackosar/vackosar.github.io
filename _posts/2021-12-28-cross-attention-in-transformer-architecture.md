@@ -58,6 +58,9 @@ Alternative [cross-attention in SelfDoc](#cross-attention-in-selfdoc), uses quer
 In an equation: \\( \mathbf{softmax}((W_Q S_2) (W_K S_1)^\intercal) W_V S_1 \\)
 
 
+## Cross-attention Alternatives
+[Feature-wise Linear Modulation Layer](/ml/Feature-wise-Linear-Modulation-Layer) is simpler alternative, which does not require the input to be a sequence and is linear complexity to to calculate.
+
 ## Cross-attention Implementation
 Have a look at [CrossAttention implementation](https://github.com/huggingface/diffusers/blob/4125756e88e82370c197fecf28e9f0b4d7eee6c3/src/diffusers/models/cross_attention.py) in Diffusers library, which can generate images with **Stable Diffusion**.
 In this case the cross-attention is used to **condition transformers inside a UNet layer with a text prompt for image generation**.
