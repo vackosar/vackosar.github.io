@@ -34,7 +34,7 @@ my_related_post_paths:
 
 ## Unsupervised Disentangling Methods
 - Below methods are generative
-  - so instead of search, can manipulate the image
+  - so instead of search, can manipulate the image ([condition](/ml/Feature-wise-Linear-Modulation-Layer))
 - Variational Auto-encoders
   - speculation: some disentanglement thanks to the architecture
     - compressing into low-dimension and space close around the zero (regularization term)
@@ -159,3 +159,9 @@ my_related_post_paths:
   - input these distances into a triplet loss
 
 ![Outfit Ranking Loss](../images/disentange-outfit-ranking-loss.png)
+
+
+### Output Conditioning
+In [diffusion models](/ml/openai-dall-e-2-and-dall-e-1), we manipulate the output image with [conditioning input](/ml/Feature-wise-Linear-Modulation-Layer) e.g. conditioning text.
+This relies on certain disentangling of the representations for the model to be able to manipulate them.
+For example, [feature-wise linear modulation layer](/ml/Feature-wise-Linear-Modulation-Layer) can be used for this purpose.

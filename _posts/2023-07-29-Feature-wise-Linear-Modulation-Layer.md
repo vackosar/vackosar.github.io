@@ -16,7 +16,7 @@ permalink: /:categories/:title
 
 FiLM input is one input feature and a conditioning feature.
 The conditioning is trained to **change model's behavior on demand** (changes output probability distribution).
-For example you **condition diffusion model with words** "brown cat" to generate images of brown cats.
+For example you **condition [diffusion model](/ml/openai-dall-e-2-and-dall-e-1) with words** "brown cat" to generate images of brown cats.
 The conditioning has smaller impact than the input feature and overall model training, but is very important for the model application.
 
 ## FiLM Implementation
