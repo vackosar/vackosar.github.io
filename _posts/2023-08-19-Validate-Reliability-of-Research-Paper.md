@@ -20,12 +20,16 @@ Primary questions for each research to ask is:
 3. What are the unknowns and open questions? What does not fit well?
 
 
-## Doomberg's 5 Question Framework
-The most interesting set of questions, I came across were Doomberg's 5 questions that this independently thinking industry research group shared on a podcast. There is also a paywalled article [Conducting Diligence](https://doomberg.substack.com/p/conducting-diligence).
+## Doomberg's 5 Question Framework (Expanded)
+This is a expansion of the questions mentioned in a podcast.
+The most interesting set of questions, I came across were Doomberg's 5 questions that this independently thinking industry research group shared on a podcast. There is also a paywalled article [Conducting Diligence](https://doomberg.substack.com/p/conducting-diligence). I don't have full access to the text as of now.
 
 1. Credibility: What is the reputation of the researchers and the institutions they are affiliated with?
+  - Follow the money: Are researches biased, e.g. do their livelihoods, views, or identities tied to any of the results? For example, some research is funded by a for profit company, which they introduces goal-oriented bias into the research. (Try investing in a company and then tell me what it does to your views.)
+  - This could also re-enforce validity, if the results come from outsiders, without interest in any view. At the same time, they would have lower authority on the subject.
 2. Publication Source: Where were these results published? Were they peer-reviewed or self-published as preprints? Who is further republishing it and what are their biases?
 3. Scientific Process: At what stage is this research in the scientific process of validation and publishing? How often are similar results retracted?
+  - Is this Randomized double blind placebo control (RDBPC) trial? Or could have the researchers changed the results?
 4. Scientific Context: What does existing research and the history of this field suggest about these findings?
 5. Future Expectations: What should we expect next? When and how will these results be reproduced successfully?
 
