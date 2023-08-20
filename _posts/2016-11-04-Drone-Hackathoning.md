@@ -9,13 +9,13 @@ permalink: /:categories/:title
 redirect_from:
 - /2016/11/04/Drone-Hackathoning.html
 my_related_post_paths:
+- _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
 - _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
 - _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
 - _posts/2020-05-08-starspace-embedding.md
 - _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
 - _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
-- _posts/2021-05-21-PID-controller-control-loop-mechanism.md
 ---
 
 

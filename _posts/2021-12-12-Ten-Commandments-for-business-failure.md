@@ -12,9 +12,9 @@ my_related_post_paths:
 - _posts/2022-01-09-7-powers-moats-through-lens-of-dibellos-business-mental-model.md
 - _posts/2021-07-14-Scout-Mindset-Book-Summary.md
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
+- _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
 - _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
-- _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
 ---
 
 ![Ten Commandments for Business Failure Book Summary](/images/10-commandments-for-business-failure.png)

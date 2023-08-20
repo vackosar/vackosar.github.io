@@ -14,8 +14,8 @@ my_related_post_paths:
 - _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
+- _posts/2023-07-29-Feature-wise-Linear-Modulation-Layer.md
 - _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
-- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 ---
 
 

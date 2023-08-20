@@ -1,11 +1,19 @@
 ---
-title: "Validate Reliability of a Research Paper"
-description: "Safe time with diligence using Doomberg's 5 questions, TRAAP Test, CRAAP Test, and RADAR."
+title: Validate Reliability of a Research Paper
+description: Safe time with diligence using Doomberg's 5 questions, TRAAP Test, CRAAP Test, and RADAR.
 categories: ml
 date: 2023-08-19
 last_modified_at: 2023-08-19
 layout: post
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
+- _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
+- _posts/2020-04-22-result-diversification-in-web-search-and-recommenders.md
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
+- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
+- _posts/2016-11-04-Drone-Hackathoning.md
+- _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
 ---
 
 Research is a large extent a media endeavour,

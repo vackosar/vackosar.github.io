@@ -1,12 +1,20 @@
 ---
-title: "Feature-wise Linear Modulation Layer"
-description: "Guide models with FiLM layers via a simple linear transformation conditioning."
+title: Feature-wise Linear Modulation Layer
+description: Guide models with FiLM layers via a simple linear transformation conditioning.
 categories: ml
 date: 2023-07-27
 image: /images/film-layer-feature-wise-linear-transformation-layer-cnn.png
 last_modified_at: 2023-07-27
 layout: post
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
+- _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
+- _posts/2020-10-25-Performers-FAVOR+-Faster-Transformer-Attention.md
+- _posts/2023-07-03-OpenAIs-Image-Text-Model-CLIP.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 ---
 
 

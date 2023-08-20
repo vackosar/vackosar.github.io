@@ -14,7 +14,7 @@ my_related_post_paths:
 - _posts/2020-02-25-I-read-papers-on-a-podcast.md
 - _posts/2016-11-04-Drone-Hackathoning.md
 - _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
-- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
+- _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
 ---
 
 ![psyllium husk sprinkled onto cooked black beans in a pot](/images/psyllium-husk-black-beans.png)

@@ -18,7 +18,7 @@ my_related_post_paths:
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
 - _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
 - _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
-- _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
+- _posts/2023-07-29-Feature-wise-Linear-Modulation-Layer.md
 ---
 
 

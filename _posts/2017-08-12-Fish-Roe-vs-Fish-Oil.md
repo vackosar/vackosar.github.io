@@ -15,8 +15,8 @@ my_related_post_paths:
 - _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
 - _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
+- _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
 - _posts/2021-03-22-google-product-taxonomy-viewer.md
-- _posts/2022-01-09-7-powers-moats-through-lens-of-dibellos-business-mental-model.md
 ---
 
 

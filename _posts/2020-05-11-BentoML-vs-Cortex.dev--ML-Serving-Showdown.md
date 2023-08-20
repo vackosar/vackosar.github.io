@@ -14,8 +14,8 @@ my_related_post_paths:
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
-- _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
 - _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
+- _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
 - _posts/2023-07-03-OpenAIs-Image-Text-Model-CLIP.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 ---
