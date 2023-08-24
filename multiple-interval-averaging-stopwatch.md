@@ -2,10 +2,11 @@
 layout: default
 title: Multiple Interval Averaging Stopwatch
 description: Measure multiple time intervals and get average calculated and copy data from a table.
-image: /images/quarters.svg
-last_modified_at: 2022-04-23
+last_modified_at: 2023-08-24
 ---
-  <!--
+
+
+<!--
 # Averaging Stopwatch
 
 Measure multiple time intervals and get average calculated and copy data from a table.
@@ -13,22 +14,40 @@ Measure multiple time intervals and get average calculated and copy data from a 
 Write HTML with inlined JS script for stop watch file.
 It has a current measured millisecond time, one toggle button for start and stop, one clear button.
 It has a table for the time intervals in miliseconds that were measured, where each row can be editted and deleted, and average result output that is updated when the values in the table change by addition, edit, or deletion.
-  -->
-</head>
-<body>
-	<h1>Averaging Stopwatch</h1>
-	<h2 id="time">0</h2>
-	<button id="start" onclick="toggleStopwatch()">Start</button>
-	<button id="clear" onclick="clearStopwatch()">Clear</button>
+-->
 
-	<table id="timeList">
-		<tr>
-			<th>Interval</th>
-			<th>Action</th>
-		</tr>
-	</table>
 
-	<h2>Average: <span id="average">0</span></h2>
+
+
+<h1>Multiple Interval Averaging Stopwatch</h1>
+<p>
+Need to measure an average time of a event, that may be different every time, but you need to get approximate mean period? Use this tool.
+</p>
+<p>
+This tool has a current measured millisecond time, one toggle button for start and stop, one clear button.
+It has a table for the time intervals in miliseconds that were measured, where each row can be editted and deleted, and average result output that is updated when the values in the table change by addition, edit, or deletion.
+</p>
+
+
+<h2>
+  Current:
+  <span id="time">0</span>
+  ms
+</h2>
+<button id="start" onclick="toggleStopwatch()">Start</button>
+<button id="clear" onclick="clearStopwatch()">Clear</button>
+
+<table id="timeList">
+  <tr>
+    <th>Interval [ms]</th>
+    <th>Action</th>
+  </tr>
+</table>
+
+<h2>Average:
+  <span id="average">0</span>
+  ms
+</h2>
 
 <script type="text/javascript">
 	let running = false;
@@ -91,5 +110,3 @@ It has a table for the time intervals in miliseconds that were measured, where e
 		document.getElementById('average').innerText = timeList.length ? sum / timeList.length : '0';
 	}
 </script>
-</body>
-</html>
