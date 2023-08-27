@@ -1,6 +1,6 @@
 ---
 title: Validate Reliability of a Research Paper
-description: Safe time with diligence using Doomberg's 5 questions, TRAAP Test, CRAAP Test, and RADAR.
+description: Save time with diligence using Doomberg's 5 questions, TRAAP Test, CRAAP Test, and RADAR.
 categories: ml
 date: 2023-08-19
 last_modified_at: 2023-08-19
