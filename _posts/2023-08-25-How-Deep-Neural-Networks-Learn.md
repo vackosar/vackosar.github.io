@@ -8,40 +8,56 @@ layout: post
 permalink: /:categories/:title
 ---
 
-## What is overfitting?
+
+Deep neural networks have multi-layer structure.
+Gradient descent is used to propagate corrections backwards through the layers.
+
+
+
+## What is Overfitting and Memorization?
 
 Overfitting refers to when model has **low training set loss, but high testing set loss**.
 For example, if a model has sufficient capacity and "insufficient regularization", it may memorize training data.
+Read more about it [here](/ml/double-descent-contrary-to-bias-variance-trade-off).
 
 **A decision tree is an if-else look up table** and with sufficient size without [pruning regularization](/ml/Neural-Network-Pruning-Explained) can **memorize training set**.
-ReLU neuron can also "memorize", since each neuron represents a dot-product of input vector with weights vector.
+That is because the tree can create a individual bin for each dataset input, and then recover desired training set label.
+
+If ReLU neuron activates, we can say that it memorized to respond.
+Each neuron represents a dot-product of input vector with weights vector, and the dot-product is positively valued, the neuron outputs non-zero.
+Because we can have a bias values, this is not only direction but a hyperplane.
+In this way, we can see that a neural network of sufficient size can also learn to split hyperspace into planes, such that for each input there is a bin into which a hidden representation will fall and which will activate a neuron corresponding to a label.
+
 
 ## Superposition - Memorization in Neural Networks
 
+*This part is work in progress*
+
 A set of ReLU neurons can memorize more vectors than their count, which is called [superposition (Antropic)](https://transformer-circuits.pub/2022/toy_model/index.html).
 ReLU network **can embed and recover more vectors than its dimension** (neurons), thanks to superposition.
-ReLU network memory is greater than sum of its neurons or hidden dimension.
+ReLU network memory is greater than sum of its neurons or hidden dimension because of the non-linearity.
+Non-linear activation function ReLU gives negative value because of the inputs. This explains why the solutions we've seen prefer to only have negative interference when possible. Further, using a negative bias can convert small positive interferences into essentially being negative interferences."
+
 A similar effect was observed in [Transformers (Hopfield Networks is All You Need)](https://ml-jku.github.io/hopfield-layers/).
 During stored vector reconstruction, hidden activations form vectors with maximally different directions (polytopes) from when it reconstructs other stored vectors.
 
 
-## Generalization - Hidden Features
+## Generalization is Finding Hidden Rules
 Instead of embeddings, we can look at weight vectors.
 In [Superposition, Memorization, and Double Descent](https://transformer-circuits.pub/2023/toy-double-descent/index.html)
 **generalization was observed when weight vectors instead formed polytopes, while embeddings did not**.
 
-## Frequency Leads to Memorization
+
+### Frequency Leads to Memorization
 In the toy model they observed that those often repeated patterns where memorized, instead of generalized.
 
-## Phase Change
+
+### Phase Change from Memorization to Abstraction
 When memorization is no longer possible, generalization will happen.
 The [testing set error may get worse for some time (double descent)](/ml/double-descent-contrary-to-bias-variance-trade-off).
 
-- from memorization to rule memorization
+- from data memorization to rule memorization
 - embeddings change from crystals into noise into clusters of discovered rules
-
-"Another interesting property is that ReLU makes negative interference free in the 1-sparse case. This explains why the solutions we've seen prefer to only have negative interference when possible. Further, using a negative bias can convert small positive interferences into essentially being negative interferences."
-
 
 
 ## Individually Trained Networks Overfit on First Discovered Features
