@@ -3,7 +3,7 @@ title: How Deep Neural Networks Learn
 description: Notes that pull together Superposition, Memorization, Double Descent, Ensembling to get insights.
 categories: ml
 date: 2023-08-25
-last_modified_at: 2023-08-25
+last_modified_at: 2023-08-27
 layout: post
 permalink: /:categories/:title
 ---
@@ -29,14 +29,16 @@ Because we can have a bias values, this is not only direction but a hyperplane.
 In this way, we can see that a neural network of sufficient size can also learn to split hyperspace into planes, such that for each input there is a bin into which a hidden representation will fall and which will activate a neuron corresponding to a label.
 
 
-## Superposition - Memorization in Neural Networks
+## Memorization in Neural Networks via Superposition
 
-*This part is work in progress*
+Let's consider a fully connected neural network with a lower internal dimension than input and output. In a way this is auto-encoder configuration.
 
-A set of ReLU neurons can memorize more vectors than their count, which is called [superposition (Antropic)](https://transformer-circuits.pub/2022/toy_model/index.html).
-ReLU network **can embed and recover more vectors than its dimension** (neurons), thanks to superposition.
-ReLU network memory is greater than sum of its neurons or hidden dimension because of the non-linearity.
-Non-linear activation function ReLU gives negative value because of the inputs. This explains why the solutions we've seen prefer to only have negative interference when possible. Further, using a negative bias can convert small positive interferences into essentially being negative interferences."
+This set of ReLU neurons can memorize more vectors than their count, which is called [superposition (Anthropic)](https://transformer-circuits.pub/2022/toy_model/index.html).
+In another words, ReLU network **can embed and recover more vectors than its dimension** (neurons), thanks to superposition.
+Or, ReLU network memory is greater than sum of its neurons or hidden dimension because of the non-linearity.
+
+This means that internal embeddings of features are not fully orthogonal and have a small non-zero dot product
+During reconstruction, ReLU will only activate for the original feature to be reconstructed, thanks to bias weights preventing activation.
 
 A similar effect was observed in [Transformers (Hopfield Networks is All You Need)](https://ml-jku.github.io/hopfield-layers/).
 During stored vector reconstruction, hidden activations form vectors with maximally different directions (polytopes) from when it reconstructs other stored vectors.
@@ -62,7 +64,7 @@ The [testing set error may get worse for some time (double descent)](/ml/double-
 
 ## Individually Trained Networks Overfit on First Discovered Features
 
-From paper: [Towards Understanding Ensemble, Knowledge Distillation and Self-Distillation in Deep Learning | OpenReview](https://openreview.net/forum?id=Uuf2q9TfXGA),
+From paper: [Towards Understanding Ensemble, Knowledge Distillation and Self-Distillation in Deep Learning](https://openreview.net/forum?id=Uuf2q9TfXGA),
 which compares average ensembling, emsamble knowledge distillation, training averaged models, and individual models on classification problems.
 
 
@@ -73,7 +75,7 @@ Random feature maps in machine learning are techniques used for dimensionality r
 RFM is based on sampling random matrices, which have been found to often preserve dot product well.
 For example Gaussian Random Projections a simple element wise matrix sampling.
 After these random features are sampled, then we can employ for example gradient boosting on them.
-This method of approximation was also used in [Performer Transformer](/ml/Performers-FAVOR+-Faster-Transformer-Attention) and [word mover's embedding](/ml/Word-Movers-Embedding-Cheap-WMD-For-Documents).
+Similar methods are used by [Performer Transformer](/ml/Performers-FAVOR+-Faster-Transformer-Attention) and [word mover's embedding](/ml/Word-Movers-Embedding-Cheap-WMD-For-Documents).
 
 
 ### Ensemble Distillation
