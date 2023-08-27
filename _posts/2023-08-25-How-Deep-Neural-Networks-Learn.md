@@ -19,7 +19,7 @@ ReLU neuron can also "memorize", since each neuron represents a dot-product of i
 ## Superposition - Memorization in Neural Networks
 
 A set of ReLU neurons can memorize more vectors than their count, which is called [superposition (Antropic)](https://transformer-circuits.pub/2022/toy_model/index.html).
-We observe superposition when a ReLU network **can embed and recover more vectors than its dimension** (neurons).
+ReLU network **can embed and recover more vectors than its dimension** (neurons), thanks to superposition.
 ReLU network memory is greater than sum of its neurons or hidden dimension.
 A similar effect was observed in [Transformers (Hopfield Networks is All You Need)](https://ml-jku.github.io/hopfield-layers/).
 During stored vector reconstruction, hidden activations form vectors with maximally different directions (polytopes) from when it reconstructs other stored vectors.
@@ -29,14 +29,13 @@ During stored vector reconstruction, hidden activations form vectors with maxima
 Instead of embeddings, we can look at weight vectors.
 In [Superposition, Memorization, and Double Descent](https://transformer-circuits.pub/2023/toy-double-descent/index.html)
 **generalization was observed when weight vectors instead formed polytopes, while embeddings did not**.
-Below increasing the training set size.
 
 ## Frequency Leads to Memorization
 In the toy model they observed that those often repeated patterns where memorized, instead of generalized.
 
-
 ## Phase Change
-Seems to happen when memorization is no longer possible. The test set error may get worse for some time first.
+When memorization is no longer possible, generalization will happen.
+The [testing set error may get worse for some time (double descent)](/ml/double-descent-contrary-to-bias-variance-trade-off).
 
 - from memorization to rule memorization
 - embeddings change from crystals into noise into clusters of discovered rules
@@ -50,6 +49,7 @@ Seems to happen when memorization is no longer possible. The test set error may 
 From paper: [Towards Understanding Ensemble, Knowledge Distillation and Self-Distillation in Deep Learning | OpenReview](https://openreview.net/forum?id=Uuf2q9TfXGA),
 which compares average ensembling, emsamble knowledge distillation, training averaged models, and individual models on classification problems.
 
+
 ### Random Feature Mapping
 Theory of random feature mapping (RFM) cannot explain deep learning neural network ensembling behaviour as these are too different models. They also behave different.
 
@@ -57,11 +57,14 @@ Random feature maps in machine learning are techniques used for dimensionality r
 RFM is based on sampling random matrices, which have been found to often preserve dot product well.
 For example Gaussian Random Projections a simple element wise matrix sampling.
 After these random features are sampled, then we can employ for example gradient boosting on them.
+This method of approximation was also used in [Performer Transformer](/ml/Performers-FAVOR+-Faster-Transformer-Attention) and [word mover's embedding](/ml/Word-Movers-Embedding-Cheap-WMD-For-Documents).
+
 
 ### Ensemble Distillation
 Ensemble distillation is much better for DL and performs similar to ensemble, in contrary to random feature mapping.
 Training of average of 10 models does not work for DL, because once a simple solution is found in one of the models, the gradients will prevent futher exploration in the other models
 On the other hand in RFM this does not seem to be problem, because gradient descent is not used?
+
 
 ### Input Data Distribution
 Note that, input distribution matters for the results.
@@ -70,6 +73,7 @@ Test variance can go down, despite not test accuracy.
 
 They define multi-view assumption as compositional of the samples with smaller features, which if they appear together they trigger classification.
 They indicate this as possible because of explainability visualizations.
+
 
 ### Neural Networks with Gradient Descent Find Only Some Features
 Then they show that each model learns these local features differently and at different speed.
@@ -84,10 +88,10 @@ I wonder if:
 - deduplication and right sampling of the training data helps by preventing overfitting.
 - dropout, which randomly prevents usage of specific features and helps with overfitting, but is turned off in inference mode.
 
+
 ### Ensemble Distillation Allows To Learn Multiple Features
 Distillation works for DL because the network has a signal that there must be feature that it has to find it.
 The model has the capacity and with the additional signal, it can learn to detect all the features.
-
 
 
 ## Capsule Networks
