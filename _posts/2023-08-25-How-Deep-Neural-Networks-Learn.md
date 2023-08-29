@@ -12,6 +12,11 @@ permalink: /:categories/:title
 Deep neural networks have multi-layer structure.
 Gradient descent is used to propagate corrections backwards through the layers.
 
+## Gradient Descent Intuition
+Gradient descent calculates weight corrections (gradients) with backpropagation algorithm.
+Backpropagation takes the distance from the correct results, and calculates gradients (derivatives) starting from the results and iterating through neural network layers back.
+Because deep neural networks have layered structure, backpropagation uses chain-rule and analytical derivatives for known functions.
+Backpropagation increases or decreases reliance on neuron outputs in proportion to their influence on pointing towards the true label.
 
 
 ## What is Overfitting and Memorization?
@@ -79,22 +84,23 @@ Similar methods are used by [Performer Transformer](/ml/Performers-FAVOR+-Faster
 
 
 ### Ensemble Distillation
+Ensemble is a combination of several models to make a prediction.
 Ensemble distillation is much better for DL and performs similar to ensemble, in contrary to random feature mapping.
 Training of average of 10 models does not work for DL, because once a simple solution is found in one of the models, the gradients will prevent futher exploration in the other models
 On the other hand in RFM this does not seem to be problem, because gradient descent is not used?
 
 
 ### Input Data Distribution
-Note that, input distribution matters for the results.
-For Gaussian mixture ensemble for DL does not help.
-Test variance can go down, despite not test accuracy.
+Note that, input statistical distribution matters for the results of every machine learning algorithm.
+Fortunately, most real world problems deal with a similar class of distributions.
+In case of Gaussian mixture, deep learning ensembling does not help, because test variance tends to go down, despite not test accuracy.
 
 They define multi-view assumption as compositional of the samples with smaller features, which if they appear together they trigger classification.
-They indicate this as possible because of explainability visualizations.
+Authors indicate this as possible because of explainable visualizations.
 
 
 ### Neural Networks with Gradient Descent Find Only Some Features
-Then they show that each model learns these local features differently and at different speed.
+Then authors show that each model learns these local features differently and at different speed.
 And because they get the simplest features first, it becomes difficult to find the other features.
 Then the model overfits and is not able to learn the other feature and rather learns a noise in the small amount of samples.
 
