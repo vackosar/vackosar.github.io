@@ -23,7 +23,7 @@ Backpropagation increases or decreases reliance on neuron outputs in proportion 
 
 Overfitting refers to when model has **low training set loss, but high testing set loss**.
 For example, if a model has sufficient capacity and "insufficient regularization", it may memorize training data.
-Read more about it [here](/ml/double-descent-contrary-to-bias-variance-trade-off).
+Read more about [overfitting and double descent here](/ml/double-descent-contrary-to-bias-variance-trade-off).
 
 **A decision tree is an if-else look up table** and with sufficient size without [pruning regularization](/ml/Neural-Network-Pruning-Explained) can **memorize training set**.
 That is because the tree can create a individual bin for each dataset input, and then recover desired training set label.
