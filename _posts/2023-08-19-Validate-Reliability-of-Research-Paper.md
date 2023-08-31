@@ -35,12 +35,21 @@ The most interesting set of questions, I came across were Doomberg's 5 questions
 1. Author Credibility: What is the reputation and history of the researchers and the institutions they are affiliated with? Who funded them?
   - Follow the money: Are researches biased, e.g. do their livelihoods, views, or identities tied to any of the results? For example, some research is funded by a for profit company, which they introduces goal-oriented bias into the research. (Try investing in a company and then tell me what it does to your views.)
   - If the results come from outsiders, without interest in any usual views, it may shed new light, but with less authority on the subject.
-2. Publisher Credibility: Who published these results? Who peer-reviewed or self-published as preprints? Who is further republishing it and what are their biases, intentions, and incentives? What is history and reputation of this publisher?
-3. Scientific Process: At what stage is this research in the scientific process of validation and publishing? How often are similar results retracted?
-  - Is this Randomized double blind placebo control (RDBPC) trial? Or could have the researchers changed the results?
+2. Publisher Credibility: Who published these results in their publication? What is history and reputation of this publisher?
+  - Who peer-reviewed or is it a self-published preprint?
+  - Who is further republishing it and what are their biases, intentions, and incentives?
+3. Scientific Process: At what stage is this research in the scientific process of validation and publishing?
+  - How often are similar results retracted?
+  - Are the comparisons valid? Is this Randomized double blind placebo control (RDBPC) trial? Or are there hidden effects?
   - What is the specific evidence for the claims?
-4. Scientific Context: What does existing research and the history of this field suggest about these findings? Why was this published now? What previous research this paper stands on?
-5. Future Expectations: How large are implications of the findings? When and how will these results be reproduced (replicated)?
+  - Is the explanation for the claims correct?
+  - Are the numbers published and do they show reasonable statistical distribution?
+4. Scientific Context: What does existing research and the history of this field suggest about these findings?
+  - Why was this published now?
+  - What previous research this paper stands on? How does it compare to similar research?
+5. Future Expectations and Implications:
+   - How large are implications of the findings?
+   - When and how will these results be reproduced (replicated)?
 
 
 ## Other tests
