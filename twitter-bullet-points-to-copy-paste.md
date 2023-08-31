@@ -18,21 +18,21 @@ Copy-paste your favorite character from below and get bullet points into your Tw
 
 ### Standard Bullet Points Symbols
 
-• Classic bullet<br/>
-◦ White bullet<br/>
-∙ Middle dot bullet<br/>
+• Classic bullet <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('•')">📋 Copy</button><br/>
+◦ White bullet <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('◦')">📋 Copy</button><br/>
+∙ Middle dot bullet <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('∙')">📋 Copy</button><br/>
 
 
 ### Special Bullet Points Symbols
 
-‣ Triangular bullet<br/>
-⁃ Dash bullet<br/>
-▪ Square bullet<br/>
-▫ White Small Square<br/>
-♦ Diamond bullet<br/>
-⬨ White diamond bullet<br/>
-⬩ Small diamond bullet<br/>
-💎 Gem stone bullet<br/>
+‣ Triangular bullet <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('‣')">📋 Copy</button><br/>
+⁃ Dash bullet <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('⁃')">📋 Copy</button><br/>
+▪ Square bullet <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('▪')">📋 Copy</button><br/>
+▫ White Small Square <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('▫')">📋 Copy</button><br/>
+♦ Diamond bullet <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('♦')">📋 Copy</button><br/>
+⬨ White diamond bullet <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('⬨')">📋 Copy</button><br/>
+⬩ Small diamond bullet <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('⬩')">📋 Copy</button><br/>
+💎 Gem stone bullet <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('💎')">📋 Copy</button><br/>
 
 
 ### Keyboard Tips
@@ -44,20 +44,20 @@ Apart from copy-pasting, you can also produce standard bullet points using below
 ### Eye Catching Emoji Symbols
 Other cute symbols useful to emphasize call to action and add a spark of emotion to your tweet.
 
-🧵 Thread <br/>
-👆 👇 👈 👉 Pointing hands<br/>
-⚠️ Warning<br/>
-🚫 Prohibited<br/>
-🏆 Trophy<br/>
-❤️ Red Heart<br/>
-✨  Sparkles<br/>
-🔥 Fire<br/>
-💪 Flexed Biceps<br/>
-🙏 Folded Hands (Thank you or pray)<br/>
-🤝 Handshake<br/>
-✔️ Checkmark<br/>
-📌 Pushpin<br/>
-👍 Thumbs Up<br/>
+🧵 Thread <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('🧵')">📋 Copy</button><br/>
+👆 👇 👈 👉 Pointing hands <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('👆 👇 👈 👉')">📋 Copy</button><br/>
+⚠️ Warning <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('⚠️')">📋 Copy</button><br/>
+🚫 Prohibited <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('🚫')">📋 Copy</button><br/>
+🏆 Trophy <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('🏆')">📋 Copy</button><br/>
+❤️ Red Heart <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('❤️')">📋 Copy</button><br/>
+✨ Sparkles <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('✨')">📋 Copy</button><br/>
+🔥 Fire <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('🔥')">📋 Copy</button><br/>
+💪 Flexed Biceps <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('💪')">📋 Copy</button><br/>
+🙏 Folded Hands (Thank you or pray) <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('🙏')">📋 Copy</button><br/>
+🤝 Handshake <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('🤝')">📋 Copy</button><br/>
+✔️ Checkmark <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('✔️')">📋 Copy</button><br/>
+📌 Pushpin <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('📌')">📋 Copy</button><br/>
+👍 Thumbs Up <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('👍')">📋 Copy</button><br/>
 
 
 ### Successful Tweet Templates
@@ -76,3 +76,15 @@ A bullet point is a dot-like symbol or a glyph vertically positioned in the midd
 It is a graphical element used as a visual guide to the beginning of items on lists.
 Each element usually distills the essential information in separate sentence fragments.
 Professionals use bullet points in presentations, notes, and technical writing.
+
+
+<script>
+async function copyToClipboard(text) {
+    try {
+        await navigator.clipboard.writeText(text);
+        console.log('Text copied to clipboard');
+    } catch (err) {
+        console.log('Error in copying text: ', err);
+    }
+}
+</script>
