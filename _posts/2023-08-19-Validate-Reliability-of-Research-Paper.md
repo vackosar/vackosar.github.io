@@ -46,10 +46,11 @@ The most interesting set of questions, I came across were Doomberg's 5 questions
   - Are the numbers published and do they show reasonable statistical distribution?
 4. Scientific Context: What does existing research and the history of this field suggest about these findings?
   - Why was this published now?
-  - What previous research this paper stands on? How does it compare to similar research?
+  - What are the unproven assumptions? What previous research this paper stands on?
+  - How does it compare to similar research?
 5. Future Expectations and Implications:
-   - How large are implications of the findings?
-   - When and how will these results be reproduced (replicated)?
+  - How large are implications of the findings?
+  - When and how will these results be reproduced (replicated)?
 
 
 ## Other tests
