@@ -1,6 +1,6 @@
 ---
 title: Validate Reliability of a Research Paper
-description: Save time on diligence using 5 questions on authority, bias, evidence, comparison, impact based on Doomberg's framework, TRAAP Test, CRAAP Test, and RADAR.
+description: Save time on diligence using 5 questions on authority, bias, evidence, comparison, impact based on Doomberg's framework, TRAAP Test, CRAAP Test, RADAR, Ray Dalio.
 categories: ml
 date: 2023-08-19
 last_modified_at: 2023-09-02
@@ -71,6 +71,8 @@ There are various tests:
 4. RADAR Framework: This stands for Rationale, Authority, Date, Accuracy, and Relevance. It essentially helps users to assess the quality, reliability, and usefulness of a resource.
 
 5. PICO Framework: Used in evidence based practice to formulate a searchable clinical question. It stands for Patient problem or Population, Intervention, Comparison, and Outcome.
+
+6. Ray Dalio's Believability: "People who have repeatedly and successfully accomplished the thing in question and have great explanations when probed are most believable."
 
 
 ## Common Problems in Machine Learning Research
