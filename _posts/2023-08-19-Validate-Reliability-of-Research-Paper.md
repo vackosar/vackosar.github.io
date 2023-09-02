@@ -83,7 +83,7 @@ In machine learning, these are common problems that may be present in nice sound
 - Testing set leak: Evaluating generalization, but having evaluation set samples leaking into the training set. This is difficult problem with web-scale datasets, which may be hard to filter out testing set.
 - Different preprocessing or training set: Preprocessing, or filtering and training set may have much bigger impact than any model.
 - Not reproducible: Not providing code and not providing all details about the path towards the results.
-
+- Not citing research: Potential bias not to cite research from competing companies to avoid advertising them. However ignoring previous research may also exist because of limited research resources.
 
 
 {% comment %}
