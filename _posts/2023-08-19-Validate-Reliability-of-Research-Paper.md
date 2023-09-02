@@ -34,12 +34,12 @@ The most interesting set of questions, I came across were Doomberg's 5 questions
 
 1. Author Credibility: What is the reputation and history of the researchers and the institutions they are affiliated with?
   - Follow the money (Who benefits?):  Who funded it? Are researches biased, e.g. do their livelihoods, views, or identities tied to any of the results? For example, some research is funded by a for profit company, which they introduces goal-oriented bias into the research. (Try investing in a company and then tell me what it does to your views.). Is this disgruntled employee powered by resentment (Axe to grind)?
-  - Timing: Why was this published or surfaced now? Is current environment related to the results?
+  - Connections: Who the author is connected to and who helped them in the past?
   - Outsider: Outsiders may shed new light, but with less authority on the subject.
 2. Publisher Credibility: Who published these results in their publication? What is history and reputation of this publisher?
   - Reviewers and Critics: Who peer-reviewed or is it a self-published pre-print? Was the peer reviewer familiar with the domain to judge the research?
-  - Republishers: Who is republishing the research and what are their biases, intentions, and incentives?
-  - Audience bias: Is there an existing bias in the audience that may have be preventing wider publication?
+  - Republishers: Who is republishing the research and what are their biases, intentions, and incentives? Is this published by people from multiple sides?
+  - Audience bias: Is there an existing bias in the audience that may have be preventing wider publication? Why was this published or surfaced now? Is the current environment related to the results?
 3. Scientific Process: At what stage is this research in the scientific process of validation and publishing?
   - How often are similar results invalid and retracted?
   - Burden of Evidence: What is the specific evidence for the claims? Are the comparisons valid? Or are there hidden effects? Is this Randomized double blind placebo control (RDBPC) trial?
