@@ -55,7 +55,7 @@ The most interesting set of questions, I came across were Doomberg's 5 questions
   - Cross check: Is the explanation for the claims correct? How does it compare to similar related research? Are the existing trends and order of magnitude estimates matching the results?
 5. Future Expectations and Impact:
   - How large is the impact of the finding? Extraordinary claims require extraordinary proof.
-  - When and how will these results be reproduced (replicated)? What industries are interested in applying this?
+  - When and how will these results be reproduced (replicated)? What industries are interested in applying this? Who wants to put this into production?
   - What are the risks, unknowns, and hidden problems that may invalidate the results or the impact?
 
 
@@ -84,6 +84,12 @@ In machine learning, these are common problems that may be present in nice sound
 - Different preprocessing or training set: Preprocessing, or filtering and training set may have much bigger impact than any model.
 - Not reproducible: Not providing code and not providing all details about the path towards the results.
 - Not citing research: Potential bias not to cite research from competing companies to avoid advertising them. However ignoring previous research may also exist because of limited research resources.
+
+
+## Conclusion
+It is great to have a handy set of questions to ask to quickly assess the credibility.
+But you won't know the usefulness until you apply the method correctly and completely yourself in your particular problem.
+This may or may not be worth your time.
 
 
 {% comment %}
