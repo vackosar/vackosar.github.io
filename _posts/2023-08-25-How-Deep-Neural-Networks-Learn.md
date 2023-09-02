@@ -2,12 +2,14 @@
 title: How Deep Neural Networks Learn
 description: Notes that pull together Superposition, Memorization, Double Descent, Ensembling to get insights.
 categories: ml
+image: /images/classroom-neural-network-training.png
 date: 2023-08-25
 last_modified_at: 2023-08-27
 layout: post
 permalink: /:categories/:title
 ---
 
+![](/images/classroom-neural-network-training.png)
 
 Deep neural networks have multi-layer structure.
 Gradient descent is used to propagate corrections backwards through the layers.
