@@ -73,6 +73,17 @@ There are various tests:
 5. PICO Framework: Used in evidence based practice to formulate a searchable clinical question. It stands for Patient problem or Population, Intervention, Comparison, and Outcome.
 
 
+## Common Problems in Machine Learning Research
+In machine learning, these are common problems that may be present in nice sounding research papers, which however will prove to offer no useful insights on how to improve the production systems in the industry.
+
+- Evaluating architecture, but based on models with different parameter count. Bigger models will tend to outperform smaller models.
+- Outperforming on unknown or invalid benchmarks: Evaluating general architecture ability, but using obscure benchmark dataset with only irrelevant competing architectures. Recommendation systems often lack large scale datasets to compare results on.
+- Production-irrelevant metrics: Commonly in recommendation systems mean squared error was used for comparison, where as metrics like recall, NDCG, and precision are more useful for production deployments.
+- Seed tuning, hyperparameters tuning or training more: Comparing with previous results, but spending more on finding the right random neural network initialization. This will inflate the results creating invalid comparison. Training time is part of the cost calculation for deployment.
+- Testing set leak: Evaluating generalization, but having evaluation set samples leaking into the training set. This is difficult problem with web-scale datasets, which may be hard to filter out testing set.
+- Different preprocessing or training set: Preprocessing, or filtering and training set may have much bigger impact than any model.
+- Not reproducible: Not providing code and not providing all details about the path towards the results.
+
 
 
 {% comment %}
