@@ -71,3 +71,30 @@ There are various tests:
 4. RADAR Framework: This stands for Rationale, Authority, Date, Accuracy, and Relevance. It essentially helps users to assess the quality, reliability, and usefulness of a resource.
 
 5. PICO Framework: Used in evidence based practice to formulate a searchable clinical question. It stands for Patient problem or Population, Intervention, Comparison, and Outcome.
+
+
+
+
+{% comment %}
+
+This blog post, "Validate Reliability of a Research Paper," provides a valuable framework to critically evaluate research papers. However, a few areas could be improved or are missing:
+
+1. Definition of terms: The blog jumps straight into detailed advice without providing a layman-friendly introduction to key concepts like Doomberg's framework, TRAAP Test, CRAAP Test, and RADAR.
+
+2. Source credibility: Although the blog provides advice on checking the credibility of authors and publishers, there's no information about the credibility of the blog post author, which may undermine the trustworthiness of the advice given.
+
+3. More detail on other tests: The five tests mentioned at the end are only briefly introduced without much explanation or practical advice on how to use them. More information or examples would help make the post more informative and useful.
+
+4. Use of jargon: There are several instances of technical terms and jargon that might confuse readers who are not familiar with the subject matter. For instance, the term "Randomized double blind placebo control (RDBPC) trial" is casually dropped in without explanation. The author should either give a brief explanation or replace these terms with simpler alternatives.
+
+5. Practical example: The guide would greatly benefit from a practical application or case study of these tests. This provides the reader with a concrete understanding of how they can apply these tests.
+
+6. The structure of the content could be improved: The subsections tend to merge into one another and don't feel cohesive. Using clear, well-differentiated headers could aid in readability.
+
+7. Argumentation: The post could present more robust arguments for why and when these different tests should be employed.
+
+8. Tone and style: The blog post maintains a rather formal tone throughout, when it could be more conversational and engaging to fit the blog format and draw readers in. Adding a personal touch or opinions could add to the overall experience.
+
+9. Conclusion: The post ends abruptly without summarizing the main points or giving a conclusion. A well-rounded conclusion could reinforce all the key takeaways for the readers.
+
+{% endcomment %}
