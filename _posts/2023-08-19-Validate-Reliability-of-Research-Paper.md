@@ -1,6 +1,6 @@
 ---
 title: Validate Reliability of a Research Paper
-description: Save time on diligence using 5 questions of authority, bias, evidence, comparison, impact based on Doomberg's framework, TRAAP Test, CRAAP Test, and RADAR.
+description: Save time on diligence using 5 questions on authority, bias, evidence, comparison, impact based on Doomberg's framework, TRAAP Test, CRAAP Test, and RADAR.
 categories: ml
 date: 2023-08-19
 last_modified_at: 2023-09-02
@@ -59,7 +59,7 @@ The most interesting set of questions, I came across were Doomberg's 5 questions
   - What are the risks, unknowns, and hidden problems that may invalidate the results or the impact?
 
 
-## Other tests
+## Other Claim Evaluation Tests
 
 There are various tests:
 1. The CRAAP Test: This easy to remember acronym stands for Currency, Relevance, Authority, Accuracy, and Purpose, and it guides users to assess the quality and relevance of information sources.
