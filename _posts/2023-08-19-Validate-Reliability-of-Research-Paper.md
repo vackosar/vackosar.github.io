@@ -23,7 +23,7 @@ To avoid wasting time on unlikely results, consider diligence methods below to a
 
 ## The Main Contribution's Relevance and Importance
 Primary questions for each research to ask is:
-1. What is the main idea in one sentence? Usually there is just one main idea, that can be summarized into one sentence even if you are not an expert in the research area.
+1. What is the main idea in one sentence? Usually there is just one main idea, that can be summarized into one sentence even if you are not an expert in the research area. Lack of central point is suspicious.
 2. What impact this may have and why is this important and relevant?
 3. What are the unknowns and open questions? What does not fit well?
 
@@ -33,23 +33,25 @@ This is a expansion of the questions mentioned in a podcast.
 The most interesting set of questions, I came across were Doomberg's 5 questions that this independently thinking industry research group shared on a podcast. There is also a paywalled article [Conducting Diligence](https://doomberg.substack.com/p/conducting-diligence). I don't have full access to the text as of now.
 
 1. Author Credibility: What is the reputation and history of the researchers and the institutions they are affiliated with?
-  - Follow the money (Who benefits?):  Who funded it? Are researches biased, e.g. do their livelihoods, views, or identities tied to any of the results? For example, some research is funded by a for profit company, which they introduces goal-oriented bias into the research. (Try investing in a company and then tell me what it does to your views.)
-  - Disgruntled employee: Is this powered by resentment (Axe to grind).
-  - Timing: Why was this published or surfaced now?
+  - Follow the money (Who benefits?):  Who funded it? Are researches biased, e.g. do their livelihoods, views, or identities tied to any of the results? For example, some research is funded by a for profit company, which they introduces goal-oriented bias into the research. (Try investing in a company and then tell me what it does to your views.). Is this disgruntled employee powered by resentment (Axe to grind)?
+  - Timing: Why was this published or surfaced now? Is current environment related to the results?
   - Outsider: Outsiders may shed new light, but with less authority on the subject.
 2. Publisher Credibility: Who published these results in their publication? What is history and reputation of this publisher?
-  - Who peer-reviewed or is it a self-published pre-print?
-  - Who is further republishing it and what are their biases, intentions, and incentives?
+  - Reviewers and Critics: Who peer-reviewed or is it a self-published pre-print? Was the peer reviewer familiar with the domain to judge the research?
+  - Republishers: Who is republishing the research and what are their biases, intentions, and incentives?
+  - Audience bias: Is there an existing bias in the audience that may have an effect?
 3. Scientific Process: At what stage is this research in the scientific process of validation and publishing?
   - How often are similar results invalid and retracted?
-  - Burden of Evidence: What is the specific evidence for the claims? Are the comparisons valid? Is this Randomized double blind placebo control (RDBPC) trial? Or are there hidden effects?
-  - Transparent: Is the process published and reliable? Are the numbers published and do they show reasonable statistical distribution?
+  - Burden of Evidence: What is the specific evidence for the claims? Are the comparisons valid? Or are there hidden effects? Is this Randomized double blind placebo control (RDBPC) trial?
+  - Transparent: Is the process published and reliable? Are the numbers published and do they show reasonable statistical distribution? If you wanted to hide something, where it would you hide it?
 4. Scientific Context: What does existing research and the history of this field suggest about these findings?
-  - Shoulders of giants: What previous research this paper cities and stands on? What are the unproven assumptions?
-  - Cross check: Is the explanation for the claims correct? How does it compare to similar related research?
+  - The idea: Is there clear main finding or an attempt to create confusion by adding unnecessary instead?
+  - Shoulders of giants: What previous research this paper cites and stands on? What the assumptions and were they proven?
+  - Cross check: Is the explanation for the claims correct? How does it compare to similar related research? Are the existing trends and order of magnitude estimates matching the results?
 5. Future Expectations and Impact:
-  - How large are implications of the findings?
-  - When and how will these results be reproduced (replicated)?
+  - How large is the impact of the finding? Extraordinary claims require extraordinary proof.
+  - When and how will these results be reproduced (replicated)? What industries are interested in applying this?
+  - What are the risks, unknowns, and hidden problems that may invalidate the results or the impact?
 
 
 ## Other tests
