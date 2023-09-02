@@ -19,7 +19,7 @@ my_related_post_paths:
 Research is a large extent a media endeavour,
 and so there is a large incentive to reach out for the fame by surprise breakthrough or confirmation the most extraordinary dreams and biases.
 Common problems are unfair or irrelevant comparisons, or misunderstanding of what is measured.
-To avoid wasting time on unlikely results, consider diligence methods below to analyze claim's validity.
+To avoid wasting time on unlikely or irrelevant results, consider diligence methods below to analyze claim's validity.
 
 ## The Main Contribution's Relevance and Importance
 Primary questions for each research to ask is:
