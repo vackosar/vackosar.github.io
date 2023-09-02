@@ -29,7 +29,7 @@ Primary questions for each research to ask is:
 
 
 ## Doomberg's 5 Question Framework (Expanded)
-This is a expansion of the questions mentioned in a podcast.
+This is a expansion (ideas collected widely) of the questions mentioned in a podcast with Doomberg.
 The most interesting set of questions, I came across were Doomberg's 5 questions that this independently thinking industry research group shared on a podcast. There is also a paywalled article [Conducting Diligence](https://doomberg.substack.com/p/conducting-diligence). I don't have full access to the text as of now.
 
 1. Author Credibility: What is the reputation and history of the researchers and the institutions they are affiliated with?
