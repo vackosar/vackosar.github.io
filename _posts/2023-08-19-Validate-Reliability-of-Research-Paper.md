@@ -1,6 +1,6 @@
 ---
 title: Validate Reliability of a Research Paper
-description: Save time with diligence using Doomberg's 5 questions, TRAAP Test, CRAAP Test, and RADAR.
+description: Save time on diligence using 5 questions of authority, bias, evidence, comparison, impact based on Doomberg's framework, TRAAP Test, CRAAP Test, and RADAR.
 categories: ml
 date: 2023-08-19
 last_modified_at: 2023-09-02
@@ -17,13 +17,14 @@ my_related_post_paths:
 - _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
 ---
 
-
 ![symbols-of-truth](/images/symbols-of-truth.png)
+
 
 Research is a large extent a media endeavour,
 and so there is a large incentive to reach out for the fame by surprise breakthrough or confirmation the most extraordinary dreams and biases.
 Common problems are unfair or irrelevant comparisons, or misunderstanding of what is measured.
 To avoid wasting time on unlikely or irrelevant results, consider diligence methods below to analyze claim's validity.
+
 
 ## The Main Contribution's Relevance and Importance
 Primary questions for each research to ask is:
@@ -32,7 +33,7 @@ Primary questions for each research to ask is:
 3. What are the unknowns and open questions? What does not fit well?
 
 
-## Doomberg's 5 Question Framework (Expanded)
+## Expanded Doomberg's 5 Question Framework
 This is a expansion (ideas collected widely) of the questions mentioned in a podcast with Doomberg.
 The most interesting set of questions, I came across were Doomberg's 5 questions that this independently thinking industry research group shared on a podcast. There is also a paywalled article [Conducting Diligence](https://doomberg.substack.com/p/conducting-diligence). I don't have full access to the text as of now.
 
