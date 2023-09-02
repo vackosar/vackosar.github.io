@@ -23,10 +23,10 @@ my_related_post_paths:
 Research is a large extent a media endeavour,
 and so there is a large incentive to reach out for the fame by surprise breakthrough or confirmation the most extraordinary dreams and biases.
 Common problems are unfair or irrelevant comparisons, or misunderstanding of what is measured.
-To avoid wasting time on unlikely or irrelevant results, consider diligence methods below to analyze claim's validity.
+To avoid wasting time on unlikely or irrelevant results, consider diligence methods below to analyze claim's credibility or believability meaning correctness, completeness, and importance.
 
 
-## The Main Contribution's Relevance and Importance
+## The Main Contribution Relevance, Impact, and Open Questions
 Primary questions for each research to ask is:
 1. What is the main idea in one sentence? Usually there is just one main idea, that can be summarized into one sentence even if you are not an expert in the research area. Lack of central point is suspicious.
 2. What impact this may have and why is this important and relevant?
@@ -37,7 +37,7 @@ Primary questions for each research to ask is:
 This is a expansion (ideas collected widely) of the questions mentioned in a podcast with Doomberg.
 The most interesting set of questions, I came across were Doomberg's 5 questions that this independently thinking industry research group shared on a podcast. There is also a paywalled article [Conducting Diligence](https://doomberg.substack.com/p/conducting-diligence). I don't have full access to the text as of now.
 
-1. Author Credibility: What is the reputation and history of the researchers and the institutions they are affiliated with?
+1. Author Credibility: What is the reputation and history of the researchers and the institutions they are affiliated with? Do they have at least 3 successes within the domain?
   - Follow the money (Who benefits?):  Who funded it? Are researches biased, e.g. do their livelihoods, views, or identities tied to any of the results? For example, some research is funded by a for profit company, which they introduces goal-oriented bias into the research. (Try investing in a company and then tell me what it does to your views.). Is this disgruntled employee powered by resentment (Axe to grind)?
   - Connections: Who the author is connected to and who helped them in the past?
   - Outsider: Outsiders may shed new light, but with less authority on the subject.
@@ -50,7 +50,7 @@ The most interesting set of questions, I came across were Doomberg's 5 questions
   - Burden of Evidence: What is the specific evidence for the claims? Are the comparisons valid? Or are there hidden effects? Is this Randomized double blind placebo control (RDBPC) trial?
   - Transparent: Is the process published and reliable? Are the numbers published and do they show reasonable statistical distribution? If you wanted to hide something, where it would you hide it?
 4. Scientific Context: What does existing research and the history of this field suggest about these findings?
-  - The idea: Is there clear main finding or an attempt to create confusion by adding unnecessary instead?
+  - The idea: Is there clear main finding or an attempt to create confusion by adding unnecessary instead? Is the main message coherent?
   - Shoulders of giants: What previous research this paper cites and stands on? What the assumptions and were they proven?
   - Cross check: Is the explanation for the claims correct? How does it compare to similar related research? Are the existing trends and order of magnitude estimates matching the results?
 5. Future Expectations and Impact:
