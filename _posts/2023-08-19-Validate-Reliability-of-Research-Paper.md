@@ -39,7 +39,7 @@ The most interesting set of questions, I came across were Doomberg's 5 questions
 2. Publisher Credibility: Who published these results in their publication? What is history and reputation of this publisher?
   - Reviewers and Critics: Who peer-reviewed or is it a self-published pre-print? Was the peer reviewer familiar with the domain to judge the research?
   - Republishers: Who is republishing the research and what are their biases, intentions, and incentives?
-  - Audience bias: Is there an existing bias in the audience that may have an effect?
+  - Audience bias: Is there an existing bias in the audience that may have be preventing wider publication?
 3. Scientific Process: At what stage is this research in the scientific process of validation and publishing?
   - How often are similar results invalid and retracted?
   - Burden of Evidence: What is the specific evidence for the claims? Are the comparisons valid? Or are there hidden effects? Is this Randomized double blind placebo control (RDBPC) trial?
