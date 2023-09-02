@@ -4,6 +4,7 @@ description: Save time with diligence using Doomberg's 5 questions, TRAAP Test, 
 categories: ml
 date: 2023-08-19
 last_modified_at: 2023-08-19
+image: /images/symbols-of-truth.png
 layout: post
 permalink: /:categories/:title
 my_related_post_paths:
@@ -15,6 +16,9 @@ my_related_post_paths:
 - _posts/2016-11-04-Drone-Hackathoning.md
 - _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
 ---
+
+
+![symbols-of-truth](/images/symbols-of-truth.png)
 
 Research is a large extent a media endeavour,
 and so there is a large incentive to reach out for the fame by surprise breakthrough or confirmation the most extraordinary dreams and biases.
