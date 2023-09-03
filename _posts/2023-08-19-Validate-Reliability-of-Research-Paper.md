@@ -22,8 +22,9 @@ my_related_post_paths:
 
 Research is a large extent a media endeavour,
 and so there is a large incentive to reach out for the fame by surprise breakthrough or confirmation the most extraordinary dreams and biases.
-Common problems are unfair or irrelevant comparisons, or misunderstanding of what is measured.
+However common problems such as unfair or irrelevant comparisons, or misunderstanding of what is measured riddle the writings.
 To avoid wasting time on unlikely or irrelevant results, consider diligence methods below to analyze claim's credibility or believability meaning correctness, completeness, and importance.
+Because even valid results may take you nowhere in your business territory.
 
 
 ## The Main Contribution Relevance, Impact, and Open Questions
@@ -89,10 +90,10 @@ In machine learning, these are common problems that may be present in nice sound
 - Not citing research: Potential bias not to cite research from competing companies to avoid advertising them. However ignoring previous research may also exist because of limited research resources.
 
 
-## Conclusion
+## Battle Testing the Method
 It is great to have a handy set of questions to ask to quickly assess the credibility.
-But you won't know the usefulness until you apply the method correctly and completely yourself in your particular problem.
-This may or may not be worth your time.
+But you won't know the usefulness until you apply the method correctly and completely yourself in your particular problem terrain.
+This may or may not be worth your time depending on your business territory.
 
 
 {% comment %}
