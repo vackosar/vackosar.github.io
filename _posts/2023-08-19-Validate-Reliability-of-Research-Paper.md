@@ -43,7 +43,7 @@ The most interesting set of questions, I came across were Doomberg's 5 questions
   - Outsider: Outsiders may shed new light, but with less authority on the subject.
 2. Publisher Credibility: Who published these results in their publication? What is history and reputation of this publisher?
   - Reviewers and Critics: Who peer-reviewed or is it a self-published pre-print? Was the peer reviewer familiar with the domain to judge the research?
-  - Republishers: Who is republishing the research and what are their biases, intentions, and incentives? Is this published by people from multiple sides?
+  - Republishers: Who is the original primary source? Who is republishing the research and what are their biases, intentions, and incentives? Is this published by people from multiple sides?
   - Audience bias: Is there an existing bias in the audience that may have be preventing wider publication? Why was this published or surfaced now? Is the current environment related to the results?
 3. Scientific Process and Evidence: At what stage is this research in the scientific process of validation and publishing?
   - How often are similar results invalid and retracted?
@@ -62,17 +62,18 @@ The most interesting set of questions, I came across were Doomberg's 5 questions
 ## Other Claim Evaluation Tests
 
 There are various tests:
-1. The CRAAP Test: This easy to remember acronym stands for Currency, Relevance, Authority, Accuracy, and Purpose, and it guides users to assess the quality and relevance of information sources.
 
-2. SIFT Method: The SIFT (Stop, Investigate the source, Find better coverage, Trace claims) method, is a simple four-step process for evaluating information online.
+1. Ray Dalio's Believability: "People who have repeatedly and successfully accomplished the thing in question and have great explanations when probed are most believable."
 
-3. TRAAP Test: Similar to the CRAAP test, the TRAAP (Timeliness, Relevance, Authority, Audience and Purpose) test is used to assess the reliability of a source and the information it provides.
+2. The CRAAP Test: This easy to remember acronym stands for Currency, Relevance, Authority, Accuracy, and Purpose, and it guides users to assess the quality and relevance of information sources.
 
-4. RADAR Framework: This stands for Rationale, Authority, Date, Accuracy, and Relevance. It essentially helps users to assess the quality, reliability, and usefulness of a resource.
+3. SIFT Method: The SIFT (Stop, Investigate the source, Find better coverage, Trace claims) method, is a simple four-step process for evaluating information online.
 
-5. PICO Framework: Used in evidence based practice to formulate a searchable clinical question. It stands for Patient problem or Population, Intervention, Comparison, and Outcome.
+4. TRAAP Test: Similar to the CRAAP test, the TRAAP (Timeliness, Relevance, Authority, Audience and Purpose) test is used to assess the reliability of a source and the information it provides.
 
-6. Ray Dalio's Believability: "People who have repeatedly and successfully accomplished the thing in question and have great explanations when probed are most believable."
+5. RADAR Framework: This stands for Rationale, Authority, Date, Accuracy, and Relevance. It essentially helps users to assess the quality, reliability, and usefulness of a resource.
+
+6. PICO Framework: Used in evidence based practice to formulate a searchable clinical question. It stands for Patient problem or Population, Intervention, Comparison, and Outcome.
 
 
 ## Common Problems in Machine Learning Research
