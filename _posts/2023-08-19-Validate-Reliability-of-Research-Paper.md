@@ -47,16 +47,16 @@ The most interesting set of questions, I came across were Doomberg's 5 questions
   - Audience bias: Is there an existing bias in the audience that may have be preventing wider publication? Why was this published or surfaced now? Is the current environment related to the results?
 3. Scientific Process and Evidence: At what stage is this research in the scientific process of validation and publishing?
   - How often are similar results invalid and retracted?
-  - Burden of Evidence: What is the specific evidence for the claims? Are the comparisons valid? Or are there hidden effects? Is this Randomized double blind placebo control (RDBPC) trial?
+  - Burden of Evidence: What is the specific evidence for the claims? Are the metrics and their comparisons valid and relevant? Or are there hidden effects? Is this Randomized double blind placebo control (RDBPC) trial?
   - Transparent: Is the process published and reliable? Are the numbers published and do they show reasonable statistical distribution? If you wanted to hide something, where it would you hide it?
 4. Scientific Context: What does existing research and the history of this field suggest about these findings?
   - The idea: Is there clear main finding or an attempt to create confusion by adding unnecessary instead? Is the main message coherent?
   - Shoulders of giants: What previous research this paper cites and stands on? What the assumptions and were they proven?
   - Cross check: Is the explanation for the claims correct? How does it compare to similar related research? Are the existing trends and order of magnitude estimates matching the results?
-5. Future Expectations and Impact:
-  - How large is the impact of the finding? Extraordinary claims require extraordinary proof.
+5. Future Expectations and Impact: What is the outlook for this finding
+  - How large is the impact of the finding? Extraordinary claims require extraordinary proof. How large are the rewards for successful implementation of this method?
   - When and how will these results be reproduced (replicated)? What industries are interested in applying this? Who wants to put this into production?
-  - What are the risks, unknowns, and hidden problems that may invalidate the results or the impact?
+  - What are the risks, unknowns, and hidden problems that may invalidate the results or the impact and how likely they are? What is the downside if you experiment with this method?
 
 
 ## Other Claim Evaluation Tests
