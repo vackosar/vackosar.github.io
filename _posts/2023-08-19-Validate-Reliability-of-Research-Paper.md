@@ -20,40 +20,39 @@ my_related_post_paths:
 ![symbols-of-truth](/images/symbols-of-truth.png)
 
 
-Research is a large extent a media endeavour,
-and so there is a large incentive to reach out for fame by surprise breakthrough or confirmation of the most extraordinary dreams and biases.
-However common problems such as unfair or irrelevant comparisons, or misunderstanding of what is measured riddle the writings.
-To avoid wasting time on unlikely or irrelevant results, consider the diligence methods below to analyze the claim's credibility or believability meaning correctness, completeness, and importance.
-Because even valid results may take you nowhere in your business territory.
+Research is, to a large extent, a media endeavor,
+and so there is a significant incentive to reach out for fame by surprise breakthrough or confirmation of the most extraordinary dreams and biases.
+However, common problems such as unfair or irrelevant comparisons or misunderstanding of what is measured riddle the writings.
+To avoid wasting time on unlikely or irrelevant results, consider the diligence methods below to analyze the claim's credibility or believability, meaning correctness, completeness, and importance, because even valid results may take you nowhere in your business territory.
 
 
 ## The Main Contribution Relevance, Impact, and Open Questions
 The primary questions for each research to ask are:
-1. What is the main idea in one sentence? Usually, there is just one main idea, that can be summarized into one sentence even if you are not an expert in the research area. The lack of a central point is suspicious.
-2. What impact this may have and why is this important and relevant?
+1. What is the main idea in one sentence? Usually, there is just one main idea that can be summarized into one sentence, even if you are not an expert in the research area. The lack of a central point is suspicious.
+2. What impact this may have, and why is this important and relevant?
 3. What are the unknowns and open questions? What does not fit well?
 
 
 ## Expanded Doomberg's 5 Question Framework
-This is an expansion (ideas collected widely) of the questions mentioned in a podcast with Doomberg.
-The most interesting set of questions, I came across were Doomberg's 5 questions that this independently thinking industry research group shared on a podcast. There is also a paywalled article [Conducting Diligence](https://doomberg.substack.com/p/conducting-diligence). I don't have full access to the text as of now.
+This post is an expansion (ideas collected widely) of the questions mentioned in a podcast with Doomberg.
+The most exciting questions I came across were Doomberg's 5 questions that this independently thinking industry research group shared on a podcast. There is also a paywalled article [Conducting Diligence](https://doomberg.substack.com/p/conducting-diligence). I don't have full access to the text as of now.
 
 1. Author Credibility: What is the reputation and history of the researchers and the institutions they are affiliated with? Do they have at least 3 successes within the domain?
-  - Follow the money (Who benefits?):  Who funded it? Are researchers biased, e.g. are their livelihoods, views, or identities tied to any of the results? For example, some research is funded by a for-profit company, which they goal-oriented bias into the research. (Try investing in a company and then tell me what it does to your views.). Is this disgruntled employee powered by resentment (Axe to grind)?
-  - Connections: Who the author is connected to and who helped them in the past?
-  - Outsider: Outsiders may shed new light but with less authority on the subject.
+  - Follow the money (Who benefits?):  Who funded it? Are researchers biased, e.g., are their livelihoods, views, or identities tied to any results? For example, some research is funded by a for-profit company, which they a goal-oriented bias into the study. (Try investing in a company and then tell me what it does to your views.). Is this disgruntled employee powered by resentment (Axe to grind)?
+  - Connections: Who is the author connected to, and who helped them in the past?
+  - Outsider: Outsiders may shed new light with less authority on the subject.
 2. Publisher Credibility: Who published these results in their publication? What is the history and reputation of this publisher?
-  - Reviewers and Critics: Who peer-reviewed or is it a self-published pre-print? Was the peer reviewer familiar with the domain to judge the research?
-  - Republishers: Who is the original primary source? Who is republishing the research and what are their biases, intentions, and incentives? Is this published by people from multiple sides?
+  - Reviewers and Critics: Who peer-reviewed, or is it a self-published pre-print? Was the peer reviewer familiar with the domain to judge the research?
+  - Republishers: Who is the original primary source? Who is republishing the research, and what are their biases, intentions, and incentives? Do people from multiple sides publish this?
   - Audience bias: Is there an existing bias in the audience that may have been preventing wider publication? Why was this published or surfaced now? Is the current environment related to the results?
 3. Scientific Process and Evidence: At what stage is this research in the scientific process of validation and publishing?
   - How often are similar results invalid and retracted?
   - Burden of Evidence: What is the specific evidence for the claims? Are the metrics and their comparisons valid and relevant? Or are there hidden effects? Is this a randomized double-blind placebo control (RDBPC) trial?
-  - Transparent: Is the process published and reliable? Are the numbers published and do they show reasonable statistical distribution? If you wanted to hide something, where would you hide it?
+  - Transparent: Is the process published and reliable? Are the numbers published, and do they show reasonable statistical distribution? If you wanted to hide something, where would you hide it?
 4. Scientific Context: What do existing research and the history of this field suggest about these findings?
   - The idea: Is there a clear main finding or an attempt to create confusion by adding unnecessary instead? Is the main message coherent?
-  - Shoulders of Giants: What previous research does this paper cite and stand on? What are the assumptions and were they proven?
-  - Cross-check: Is the explanation for the claims correct? How does it compare to similar related research? Are the existing trends and order of magnitude estimates matching the results?
+  - Shoulders of Giants: What previous research does this paper cite and stand on? What are the assumptions, and were they proven?
+  - Cross-check: Is the explanation for the claims correct? How does it compare to similar related research? Do the existing trends and order of magnitude estimates match the results?
 5. Future Expectations and Impact: What is the outlook for this finding
   - How large is the impact of the finding? Extraordinary claims require extraordinary proof. How large are the rewards for the successful implementation of this method?
   - When and how will these results be reproduced (replicated)? What industries are interested in applying this? Who wants to put this into production?
@@ -68,7 +67,7 @@ There are various tests:
 
 2. The CRAAP Test: This easy-to-remember acronym stands for Currency, Relevance, Authority, Accuracy, and Purpose, and it guides users to assess the quality and relevance of information sources.
 
-3. SIFT Method: The SIFT (Stop, Investigate the source, Find better coverage, Trace claims) method, is a simple four-step process for evaluating information online.
+3. SIFT Method: The SIFT (Stop, Investigate the source, Find better coverage, Trace claims) method is a simple four-step process for evaluating information online.
 
 4. TRAAP Test: Similar to the CRAAP test, the TRAAP (Timeliness, Relevance, Authority, Audience, and Purpose) test is used to assess the reliability of a source and the information it provides.
 
@@ -78,22 +77,23 @@ There are various tests:
 
 
 ## Common Problems in Machine Learning Research
-In machine learning, these are common problems that may be present in nice-sounding research papers, which however will prove to offer no useful insights on how to improve the production systems in the industry.
+In machine learning, these are common problems that may be present in nice-sounding research papers, which, however, will prove to offer no valuable insights on how to improve the production systems in the industry.
 
 - Evaluating architecture, but based on models with different parameter counts. Bigger models will tend to outperform smaller models.
-- Outperforming on unknown or invalid benchmarks: Evaluating general architecture ability, but using obscure benchmark datasets with only irrelevant competing architectures. Recommendation systems often lack large-scale datasets to compare results on.
-- Production-irrelevant metrics: Commonly in recommendation systems mean squared error was used for comparison, whereas metrics like recall, NDCG, and precision are more useful for production deployments.
-- Seed tuning, hyperparameters tuning, or training more: Comparing with previous results, but spending more on finding the right random neural network initialization. This will inflate the results creating invalid comparison. Training time is part of the cost calculation for deployment.
-- Testing set leak: Evaluating generalization, but having evaluation set samples leaking into the training set. This is a difficult problem with web-scale datasets, which make it hard to filter out testing sets.
-- Different preprocessing or training sets: Preprocessing and filtering of the training set may have a much bigger impact than any model.
+- Outperforming on unknown or invalid benchmarks: Evaluating general architecture ability but using obscure benchmark datasets with only irrelevant competing architectures. Recommendation systems often lack large-scale datasets to compare results on.
+- Production-irrelevant metrics: Commonly, in recommendation systems mean squared error was used for comparison, whereas metrics like recall, NDCG, and precision are more useful for production deployments.
+- Seed tuning, hyperparameters tuning, or training more: Comparing with previous results, but spending more on finding the best random neural network initialization. This will inflate the results, creating invalid comparisons. Training time is part of the cost calculation for deployment.
+- Testing set leak: Evaluating generalization but having evaluation set samples leaking into the training set. This is a difficult problem with web-scale datasets, which makes it hard to filter out testing sets.
+- Different preprocessing or training sets: Preprocessing and filtering of the training set may have a much more significant impact than any model.
 - Not reproducible: Not providing code and not providing all details about the path towards the results.
 - Not citing research: Potential bias not to cite research from competing companies to avoid advertising them. However, ignoring previous research may also exist because of limited research resources.
 
 
 ## Battle Testing the Method
-It is great to have a handy set of questions to ask to quickly assess the credibility.
-But you won't know the usefulness until you apply the method correctly and completely yourself in your particular problem terrain.
-This may or may not be worth your time depending on your business territory.
+It is great to have a handy set of questions to ask to assess credibility quickly.
+But you will only know the usefulness once you apply the method correctly and completely yourself in your particular problem terrain.
+Depending on your business territory, this may or may not be worth your time.
+
 
 
 {% comment %}
