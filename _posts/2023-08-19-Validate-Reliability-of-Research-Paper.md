@@ -21,24 +21,26 @@ my_related_post_paths:
 
 
 Research is, to a large extent, a media endeavor,
-and so there is a significant incentive to reach out for fame by surprise breakthrough or confirmation of the most extraordinary dreams and biases.
-However, common problems such as unfair or irrelevant comparisons or misunderstanding of what is measured riddle the writings.
-To avoid wasting time on unlikely or irrelevant results, consider the diligence methods below to analyze the claim's credibility or believability, meaning correctness, completeness, and importance, because even valid results may take you nowhere in your business territory.
+and so there is a significant incentive to reach out for fame with a surprise breakthrough or confirmation of the most extraordinary dreams and biases.
+However, common problems, such as unfair or irrelevant comparisons or misunderstandings regarding what is measured riddle the writings.
+To avoid wasting time on unlikely or irrelevant results, consider using the diligence methods below to analyze a claim's credibility or believability (correctness, completeness, and importance), because even valid results may take you nowhere in your business territory.
 
 
 ## The Main Contribution Relevance, Impact, and Open Questions
-The primary questions for each research to ask are:
+The primary questions to ask when looing at a piece of research to ask are:
 1. What is the main idea in one sentence? Usually, there is just one main idea that can be summarized into one sentence, even if you are not an expert in the research area. The lack of a central point is suspicious.
-2. What impact this may have, and why is this important and relevant?
+2. What impact could this may have, and why is this important and relevant?
 3. What are the unknowns and open questions? What does not fit well?
 
 
-## Expanded Doomberg's 5 Question Framework
-This post is an expansion (ideas collected widely) of the questions mentioned in a podcast with Doomberg.
-The most exciting questions I came across were Doomberg's 5 questions that this independently thinking industry research group shared on a podcast. There is also a paywalled article [Conducting Diligence](https://doomberg.substack.com/p/conducting-diligence). I don't have full access to the text as of now.
+## Expanding on Doomberg's 5 Question Framework
+The most exciting questions I came across were Doomberg's 5 questions shared on [a podcast](https://www.youtube.com/watch?v=2hCu2eRRGUI).
+Doomberg is independently thinking industry research group.
+This post is an expansion of the 5 questions.
+There is a paywalled article called [Conducting Diligence](https://doomberg.substack.com/p/conducting-diligence) with all the details, but I don't have full access to the text as of now.
 
 1. Author Credibility: What is the reputation and history of the researchers and the institutions they are affiliated with? Do they have at least 3 successes within the domain?
-  - Follow the money (Who benefits?):  Who funded it? Are researchers biased, e.g., are their livelihoods, views, or identities tied to any results? For example, some research is funded by a for-profit company, which they a goal-oriented bias into the study. (Try investing in a company and then tell me what it does to your views.). Is this disgruntled employee powered by resentment (Axe to grind)?
+  - Follow the money (Who benefits?):  Who funded it? Are researchers biased, e.g., are their livelihoods, views, or identities tied to any results? For example, some research is funded by a for-profit company, which they a goal-oriented bias into the study. (Try investing in a company and then tell me what it does to your views.). Is this a disgruntled employee powered by resentment (Axe to grind)?
   - Connections: Who is the author connected to, and who helped them in the past?
   - Outsider: Outsiders may shed new light with less authority on the subject.
 2. Publisher Credibility: Who published these results in their publication? What is the history and reputation of this publisher?
