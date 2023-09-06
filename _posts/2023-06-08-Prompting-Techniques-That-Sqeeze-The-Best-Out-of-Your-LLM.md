@@ -34,7 +34,7 @@ Systematic development of prompts using **metric evaluation is called prompt eng
 - Longer prompts are the more expensive in terms of **latency and compute**. For example, more examples provided, the longer prompt. Training a specific model or selecting samples intelligently are possible solutions.
 - If the **model changes** the prompt may stop being optimal, in that case, there is little point **over-optimizing** it. For example, ChatGPT or GPT-4 is often changed by OpenAI. The models are meant to be general not specific to your problem.
 - Control guardrails vs creative hallucinations. Certain prompts may be prone to more hallucinations over others.
-- Prompts are a crude tool without nuance and can be "over prompted" (prompt injection) with user's own instructions, whereas fine-tuning is more expensive and complicated. 
+- Prompts are a crude tool without nuance and can be "over prompted" (prompt injection) with user's own instructions, whereas fine-tuning requires more initial investment, data, and is complicated. 
 
 
 ## Task Instruction
