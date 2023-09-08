@@ -131,7 +131,8 @@ Explore the most promising paths until solution, bad state, or depth limit:
 
 ## Generating Optimal Prompts
 Models can be used to generate their own optimal prompts.
-- TODO
+For example, [Large Language Models as Optimizers](https://arxiv.org/abs/2309.03409).
+
 
 
 ## Tool Use
@@ -144,7 +145,19 @@ For example, if there is a question for some sort of calculation. [Toolformer me
 
 Nuanced behavior and stronger prompt injection protection can be only trained via fine-tuning. 
 When we have enough data and compute, we can fine-tune the model weights to increase performance.
-There are some cheaper methods like LoRA and more expensive methods.
+
+
+### Parameter Efficient Methods
+Cheaper to train, and switch between, and help to prevent catastrophic forgetting. 
+Can help against catastrophic forgetting also.
+
+Additive:
+- Soft prompts: training a section of input sequence embeddings.
+- Adapters
+
+Re-parametrization:
+- LoRA: Low-Rank Adaptation
+
 
 
 ## Other Resources
