@@ -129,7 +129,7 @@ The model has the capacity, and with the additional signal, it can learn to dete
 I wonder if:
 - deduplication and better sampling of the training data help by preventing overfitting, because deduplication reduces repetition.
 - regularization like Dropout, which randomly prevents usage of specific features and helps with overfitting, but is turned off in inference mode.
-- more data increase diversity and thus again reduce repetition and encourage generalization
+- more data increase diversity and thus again reduce repetition and encourage generalization, e.g., [Chinchilla: Training Compute-Optimal Large Language Models](https://arxiv.org/pdf/2203.15556.pdf)
 
 This post is related to capsule networks, which explicitly looks for find specific configurations of discovered features.
 
