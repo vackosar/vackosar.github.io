@@ -5,6 +5,7 @@ categories: ml
 date: 2023-08-19
 last_modified_at: 2023-09-02
 image: /images/symbols-of-truth.png
+video: O9fxWCaDM4o
 layout: post
 permalink: /:categories/:title
 my_related_post_paths:
@@ -17,7 +18,8 @@ my_related_post_paths:
 - _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
 ---
 
-![symbols-of-truth](/images/symbols-of-truth.png)
+
+{% include load_video.html %}
 
 
 Research is, to a large extent, a media endeavor,
