@@ -115,8 +115,9 @@ This is what multiple separate training helps to prevent.
 Random feature mapping and boosting as it is more shallow and has access to all the features, but then fails to optimize very well.
 
 I wonder if:
-- deduplication and right sampling of the training data help by preventing overfitting.
+- deduplication and better sampling of the training data help by preventing overfitting, because deduplication reduces repetition.
 - dropout, which randomly prevents usage of specific features and helps with overfitting, but is turned off in inference mode.
+- more data increase diversity and thus again reduce repetition and encourage generalization
 
 
 ### Ensemble Distillation Allows Learning More Features
