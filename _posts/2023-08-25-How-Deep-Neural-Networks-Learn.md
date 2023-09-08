@@ -125,7 +125,16 @@ Distillation works for DL because the network has a signal that there must be fe
 The model has the capacity, and with the additional signal, it can learn to detect all the features.
 
 
-## Capsule Networks
-Above is related to capsule networks, which explicitly looks for find specific configurations of discovered features.
+## My Questions
+I wonder if:
+- deduplication and better sampling of the training data help by preventing overfitting, because deduplication reduces repetition.
+- regularization like Dropout, which randomly prevents usage of specific features and helps with overfitting, but is turned off in inference mode.
+- more data increase diversity and thus again reduce repetition and encourage generalization
 
+This post is related to capsule networks, which explicitly looks for find specific configurations of discovered features.
 
+## Other topics
+
+Other topics in training neural networks:
+- optimization algorithms (SGD, Adam) and their parameters like learning rate
+- initialization, e.g., [Tensor Programs V: Tuning Large Neural Networks via Zero-Shot Hyperparameter Transfer](https://arxiv.org/abs/2203.03466)
