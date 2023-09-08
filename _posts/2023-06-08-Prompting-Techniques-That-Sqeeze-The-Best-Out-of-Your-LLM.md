@@ -128,6 +128,10 @@ Explore the most promising paths until solution, bad state, or depth limit:
 
 ![Tree of Thought ToT: Creative Writing](/images/tree-of-thought-tot-creative-writing-results.png)
 
+## [Graph of Thoughts](https://arxiv.org/pdf/2308.09687.pdf)
+Tree of Thoughts with the human-specified ability to combine thoughts on top of Scoring & Ranking Thoughts.
+Core idea in both methods is reusing the already generated thoughts, but graph of thoughts has aggregation ability.
+
 
 ## Generating Optimal Prompts
 Models can be used to generate their own optimal prompts.
