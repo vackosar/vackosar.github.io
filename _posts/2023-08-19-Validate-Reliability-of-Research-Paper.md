@@ -1,6 +1,6 @@
 ---
 title: Validate Reliability of a Research Paper
-description: Save time on diligence using 5 questions on authority, bias, evidence, comparison, impact based on Doomberg's framework, TRAAP Test, CRAAP Test, RADAR, Ray Dalio.
+description: Save time on diligence using 5 questions on authority, bias, evidence, comparison, impact based on Doomberg's framework, common Ray Dalio's believability, TRAAP Test, CRAAP Test, RADAR.
 categories: ml
 date: 2023-08-19
 last_modified_at: 2023-09-02
@@ -42,7 +42,7 @@ This post is an expansion of the 5 questions.
 There is a paywalled article called [Conducting Diligence](https://doomberg.substack.com/p/conducting-diligence) with all the details, but I don't have full access to the text as of now.
 
 1. Author Credibility: What is the reputation and history of the researchers and the institutions they are affiliated with? Do they have at least 3 successes within the domain?
-  - Follow the money (Who benefits?):  Who funded it? Are researchers biased, e.g., are their livelihoods, views, or identities tied to any results? For example, some research is funded by a for-profit company, which they a goal-oriented bias into the study. (Try investing in a company and then tell me what it does to your views.). Is this a disgruntled employee powered by resentment (Axe to grind)?
+  - Follow the money (Who benefits?): Who funded it? Are researchers biased, e.g., are their livelihoods, views, or identities tied to any results? For example, some research is funded by a for-profit company, which they a goal-oriented bias into the study. (Try investing in a company and then tell me what it does to your views.). Is this a disgruntled employee powered by resentment (Axe to grind)?
   - Connections: Who is the author connected to, and who helped them in the past?
   - Outsider: Outsiders may shed new light with less authority on the subject.
 2. Publisher Credibility: Who published these results in their publication? What is the history and reputation of this publisher?
@@ -50,7 +50,7 @@ There is a paywalled article called [Conducting Diligence](https://doomberg.subs
   - Republishers: Who is the original primary source? Who is republishing the research, and what are their biases, intentions, and incentives? Do people from multiple sides publish this?
   - Audience bias: Is there an existing bias in the audience that may have been preventing wider publication? Why was this published or surfaced now? Is the current environment related to the results?
 3. Scientific Process and Evidence: At what stage is this research in the scientific process of validation and publishing?
-  - How often are similar results invalid and retracted?
+  - How often are similar results invalid and retracted? Does the title match the article?
   - Burden of Evidence: What is the specific evidence for the claims? Are the metrics and their comparisons valid and relevant? Or are there hidden effects? Is this a randomized double-blind placebo control (RDBPC) trial?
   - Transparent: Is the process published and reliable? Are the numbers published, and do they show reasonable statistical distribution? If you wanted to hide something, where would you hide it?
 4. Scientific Context: What do existing research and the history of this field suggest about these findings?
@@ -62,6 +62,19 @@ There is a paywalled article called [Conducting Diligence](https://doomberg.subs
   - When and how will these results be reproduced (replicated)? What industries are interested in applying this? Who wants to put this into production?
   - What are the risks, unknowns, and hidden problems that may invalidate the results or the impact, and how likely they are? What is the downside if you experiment with this method?
 
+
+## Common Problems in Machine Learning Research
+In machine learning, these are common problems that may be present in nice-sounding research papers, which, however, will prove to offer no valuable insights on how to improve the production systems in the industry.
+
+- Evaluating architecture, but based on models with different parameter counts. Bigger models will tend to outperform smaller models.
+- Outperforming on unknown or invalid benchmarks: Evaluating general architecture ability but using obscure benchmark datasets with only irrelevant competing architectures. Recommendation systems often lack large-scale datasets to compare results on.
+- Production-irrelevant metrics: Commonly, in recommendation systems mean squared error was used for comparison, whereas metrics like recall, NDCG, and precision are more useful for production deployments.
+- Seed tuning, hyperparameter tuning, or training longer: Comparing with previous results, but spending more on finding the best random neural network initialization. This will inflate the results, creating invalid comparisons. Training time is part of the cost calculation for deployment.
+- Testing set leak: Evaluating generalization but having evaluation set samples leaking into the training set. This is a difficult problem with web-scale datasets, which makes it hard to filter out testing sets.
+- Different preprocessing or training sets: Preprocessing and filtering of the training set may have a much more significant impact than any model.
+- Not reproducible: Not providing code and not providing all details about the path towards the results.
+- Not citing research: Potential bias not to cite research from competing companies to avoid advertising them. However, ignoring previous research may also exist because of limited research resources.
+- Authors that had large impact on ML in the past (incomplete): Schmidhuber, Hinton, Karpathy, Bengio, Lecun 
 
 ## Other Claim Evaluation Tests
 
@@ -78,19 +91,6 @@ There are various tests:
 5. RADAR Framework: This stands for Rationale, Authority, Date, Accuracy, and Relevance. It essentially helps users to assess the quality, reliability, and usefulness of a resource.
 
 6. PICO Framework: Used in evidence-based practice to formulate a searchable clinical question. It stands for Patient problem or Population, Intervention, Comparison, and Outcome.
-
-
-## Common Problems in Machine Learning Research
-In machine learning, these are common problems that may be present in nice-sounding research papers, which, however, will prove to offer no valuable insights on how to improve the production systems in the industry.
-
-- Evaluating architecture, but based on models with different parameter counts. Bigger models will tend to outperform smaller models.
-- Outperforming on unknown or invalid benchmarks: Evaluating general architecture ability but using obscure benchmark datasets with only irrelevant competing architectures. Recommendation systems often lack large-scale datasets to compare results on.
-- Production-irrelevant metrics: Commonly, in recommendation systems mean squared error was used for comparison, whereas metrics like recall, NDCG, and precision are more useful for production deployments.
-- Seed tuning, hyperparameters tuning, or training more: Comparing with previous results, but spending more on finding the best random neural network initialization. This will inflate the results, creating invalid comparisons. Training time is part of the cost calculation for deployment.
-- Testing set leak: Evaluating generalization but having evaluation set samples leaking into the training set. This is a difficult problem with web-scale datasets, which makes it hard to filter out testing sets.
-- Different preprocessing or training sets: Preprocessing and filtering of the training set may have a much more significant impact than any model.
-- Not reproducible: Not providing code and not providing all details about the path towards the results.
-- Not citing research: Potential bias not to cite research from competing companies to avoid advertising them. However, ignoring previous research may also exist because of limited research resources.
 
 
 ## Battle Testing the Method
