@@ -8,13 +8,13 @@ last_modified_at: 2023-07-27
 layout: post
 permalink: /:categories/:title
 my_related_post_paths:
-- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 - _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
-- _posts/2020-10-25-Performers-FAVOR+-Faster-Transformer-Attention.md
-- _posts/2023-07-03-OpenAIs-Image-Text-Model-CLIP.md
-- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
-- _posts/2021-12-28-cross-attention-in-transformer-architecture.md
+- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
+- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
+- _posts/2020-11-29-Lambda-Networks-Transform-Self-Attention.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 ---
 
 

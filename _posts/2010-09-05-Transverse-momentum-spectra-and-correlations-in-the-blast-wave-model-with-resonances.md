@@ -11,10 +11,10 @@ my_related_post_paths:
 - _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
 - _posts/2012-06-11-Hamiltonians-with-constant-spectral-intervals-and-time-dependent-perturbation.md
 - _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
-- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
-- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
+- _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 ---
 
 

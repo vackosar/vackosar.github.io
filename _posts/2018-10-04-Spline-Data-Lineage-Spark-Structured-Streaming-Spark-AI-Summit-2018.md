@@ -12,13 +12,13 @@ slides: 31FGNIgkML7hdk
 redirect_from:
 - /2018/10/04/Our-Presentation-At-Spark-N-AI-Summit.html
 my_related_post_paths:
-- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
-- _posts/2020-05-08-starspace-embedding.md
-- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
-- _posts/2022-05-14-neural-data-compression.md
 - _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
 - _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
-- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
+- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2010-09-05-Transverse-momentum-spectra-and-correlations-in-the-blast-wave-model-with-resonances.md
 ---
 
 

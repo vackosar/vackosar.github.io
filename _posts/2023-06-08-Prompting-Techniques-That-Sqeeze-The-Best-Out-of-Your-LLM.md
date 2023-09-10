@@ -10,11 +10,11 @@ permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
-- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
-- _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
-- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
+- _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
 - _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
+- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
 ---
 
 ![squeeze-robot-hand-orange](/images/squeeze-robot-hand-orange.png)

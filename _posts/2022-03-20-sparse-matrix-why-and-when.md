@@ -10,10 +10,10 @@ my_related_post_paths:
 - _posts/2022-05-14-neural-data-compression.md
 - _posts/2022-10-23-Neural-Network-Pruning-Explained.md
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
-- _posts/2020-05-08-starspace-embedding.md
-- _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
-- _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
 - _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
+- _posts/2023-08-25-How-Deep-Neural-Networks-Learn.md
+- _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
 ---
 
 

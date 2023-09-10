@@ -9,12 +9,12 @@ layout: post
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
-- _posts/2016-07-28-Functional-Foreach-In-Bash.md
-- _posts/2016-07-03-GitFlow-Incremental-Builder.md
-- _posts/2020-04-08-Python-Context-Manager-With-Statement-Exception-Handling.md
-- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
+- _posts/2018-02-25-Creating-Custom-Ubuntu-Web-Link-App.md
 - _posts/2020-08-25-to-what-python-number-types-does-json.loads-parse.md
 - _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
+- _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2017-07-15-Restore-Missing-Punctuation-with-Keras-Convolutional-Text-Punctuator.md
 ---
 
 {% include highlight-rouge-friendly.css.html %}

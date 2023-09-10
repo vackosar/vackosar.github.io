@@ -10,13 +10,13 @@ permalink: /:categories/:title
 redirect_from:
 - /ml/Brutalist-and-Modernist-Architectures-Collide-at-Sunshine-Plaza-in-Prague
 my_related_post_paths:
-- _posts/2017-06-04-Code-Structure-Principles.md
-- _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
-- _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 - _posts/2017-10-28-Spring-Integration-Highlights.md
-- _posts/2016-12-23-Sped-Up-Classic-For-Sped-Up-Age.md
+- _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
+- _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
+- _posts/2017-06-04-Code-Structure-Principles.md
 - _posts/2022-01-09-7-powers-moats-through-lens-of-dibellos-business-mental-model.md
-- _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
+- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
 ---
 
 

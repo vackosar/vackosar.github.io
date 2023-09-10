@@ -8,12 +8,12 @@ description: JSON specifies only a number value, so how to infer the correct typ
 image: /images/json.loads-and-numbers.png
 permalink: /:categories/:title
 my_related_post_paths:
-- _posts/2022-08-03-Python-functools.cmp_to_key-explained.md
-- _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
-- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
+- _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 - _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
-- _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
+- _posts/2022-08-03-Python-functools.cmp_to_key-explained.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
 ---
 

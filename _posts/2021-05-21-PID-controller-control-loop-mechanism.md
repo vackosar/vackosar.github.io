@@ -11,12 +11,12 @@ redirect_from:
 - /ml/PID-controller
 my_related_post_paths:
 - _posts/2019-08-28-1D-Kalman-Is-Exponential-Or-Cumulative-Average.md
-- _posts/2016-11-04-Drone-Hackathoning.md
-- _posts/2022-10-23-Neural-Network-Pruning-Explained.md
-- _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
-- _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
-- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
-- _posts/2022-05-20-bits-per-byte-and-bits-per-character.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
+- _posts/2022-05-14-neural-data-compression.md
+- _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
 ---
 
 

@@ -11,11 +11,11 @@ redirect_from:
 my_related_post_paths:
 - _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
 - _posts/2016-07-22-Obsolete-Branch-Remover.md
-- _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
-- _posts/2017-10-28-Spring-Integration-Highlights.md
-- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
-- _posts/2016-07-28-Functional-Foreach-In-Bash.md
 - _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2017-10-28-Spring-Integration-Highlights.md
+- _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
+- _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
+- _posts/2016-11-04-Drone-Hackathoning.md
 ---
 
 <img title="An example of a multi-module project Eclipse JDT" alt="An example of a multi-module project Eclipse JDT" style="width: 80%; max-width: 900px" src="/images/eclipse-modules.png">

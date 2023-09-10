@@ -11,13 +11,13 @@ permalink: /:categories/:title
 redirect_from:
 - /book/7-powers-moats-through-lens-of-modified-dibellos-business-mental-model
 my_related_post_paths:
+- _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
+- _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
 - _posts/2021-12-12-Ten-Commandments-for-business-failure.md
 - _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
-- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
-- _posts/2021-07-14-Scout-Mindset-Book-Summary.md
-- _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
+- _posts/2023-08-25-How-Deep-Neural-Networks-Learn.md
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
-- _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 ---
 
 

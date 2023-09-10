@@ -11,10 +11,10 @@ my_related_post_paths:
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
-- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2022-05-14-neural-data-compression.md
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
+- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
-- _posts/2023-07-03-OpenAIs-Image-Text-Model-CLIP.md
-- _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
 ---
 
 

@@ -12,9 +12,9 @@ my_related_post_paths:
 - _posts/2010-09-05-Transverse-momentum-spectra-and-correlations-in-the-blast-wave-model-with-resonances.md
 - _posts/2019-08-28-1D-Kalman-Is-Exponential-Or-Cumulative-Average.md
 - _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
-- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
-- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
+- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
+- _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
+- _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
 ---
 
 

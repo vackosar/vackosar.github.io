@@ -11,12 +11,12 @@ redirect_from:
 video: EnPrXfrZAeo
 last_modified_at: 2022-04-16
 my_related_post_paths:
+- _posts/2020-02-25-I-read-papers-on-a-podcast.md
 - _posts/2017-02-26-$15-Ebay-USB-Microscope.md
+- _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
 - _posts/2019-03-03-Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.md
 - _posts/2016-11-04-Drone-Hackathoning.md
-- _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
-- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
+- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
 ---
 

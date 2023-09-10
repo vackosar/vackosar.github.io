@@ -8,13 +8,13 @@ layout: post
 image: /images/psyllium-husk-black-beans.png
 permalink: /:categories/:title
 my_related_post_paths:
-- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
-- _posts/2017-08-12-Fish-Roe-vs-Fish-Oil.md
-- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
 - _posts/2020-02-25-I-read-papers-on-a-podcast.md
+- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
 - _posts/2016-11-04-Drone-Hackathoning.md
-- _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
-- _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
+- _posts/2017-08-12-Fish-Roe-vs-Fish-Oil.md
+- _posts/2022-03-20-sparse-matrix-why-and-when.md
+- _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 ---
 
 ![psyllium husk sprinkled onto cooked black beans in a pot](/images/psyllium-husk-black-beans.png)

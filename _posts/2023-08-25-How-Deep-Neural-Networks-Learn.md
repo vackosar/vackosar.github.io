@@ -8,13 +8,13 @@ last_modified_at: 2023-08-27
 layout: post
 permalink: /:categories/:title
 my_related_post_paths:
-- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
-- _posts/2022-05-14-neural-data-compression.md
 - _posts/2022-10-23-Neural-Network-Pruning-Explained.md
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
+- _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
+- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 - _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
-- _posts/2020-11-29-Lambda-Networks-Transform-Self-Attention.md
-- _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
-- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 ---
 
 ![neural network drawn on a blackboard in a class room](/images/classroom-neural-network-training.png)

@@ -11,13 +11,13 @@ redirect_from:
 - /ml/2020/05/11/BentoML-vs-Cortex.html
 - /ml/BentoML-vs-Cortex
 my_related_post_paths:
-- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
-- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
-- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
-- _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
 - _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
-- _posts/2023-07-03-OpenAIs-Image-Text-Model-CLIP.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
+- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 ---
 
 

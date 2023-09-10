@@ -11,10 +11,10 @@ my_related_post_paths:
 - _posts/2020-04-22-result-diversification-in-web-search-and-recommenders.md
 - _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
-- _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
-- _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
-- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
-- _posts/2020-11-29-Lambda-Networks-Transform-Self-Attention.md
+- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
+- _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
+- _posts/2023-08-25-How-Deep-Neural-Networks-Learn.md
+- _posts/2022-05-14-neural-data-compression.md
 ---
 
 

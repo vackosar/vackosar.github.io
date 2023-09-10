@@ -11,10 +11,10 @@ my_related_post_paths:
 - _posts/2016-07-03-GitFlow-Incremental-Builder.md
 - _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
 - _posts/2018-12-17-My-First-Contribution-To-Major-OSS-Project.md
-- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
 - _posts/2016-11-04-Drone-Hackathoning.md
-- _posts/2016-07-28-Functional-Foreach-In-Bash.md
-- _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
+- _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
+- _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
 ---
 
 

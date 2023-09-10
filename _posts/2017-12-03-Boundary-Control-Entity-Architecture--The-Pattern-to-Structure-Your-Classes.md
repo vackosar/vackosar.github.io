@@ -11,13 +11,13 @@ redirect_from:
 - /2017/12/03/Boundary-Control-Entity-Architecture.html
 - /software/Boundary-Control-Entity-Architecture
 my_related_post_paths:
-- _posts/2017-10-28-Spring-Integration-Highlights.md
 - _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2016-07-03-GitFlow-Incremental-Builder.md
+- _posts/2017-10-28-Spring-Integration-Highlights.md
+- _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
 - _posts/2022-05-20-bits-per-byte-and-bits-per-character.md
-- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 - _posts/2022-01-09-7-powers-moats-through-lens-of-dibellos-business-mental-model.md
-- _posts/2022-05-14-neural-data-compression.md
-- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
 ---
 
 

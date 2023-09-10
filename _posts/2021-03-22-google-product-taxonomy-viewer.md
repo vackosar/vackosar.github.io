@@ -11,12 +11,12 @@ redirect_from:
 last_modified_at: 2023-07-27
 my_related_post_paths:
 - _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
-- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 - _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
-- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
-- _posts/2020-04-22-result-diversification-in-web-search-and-recommenders.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 - _posts/2020-05-08-starspace-embedding.md
+- _posts/2020-04-22-result-diversification-in-web-search-and-recommenders.md
+- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
 ---
 
 

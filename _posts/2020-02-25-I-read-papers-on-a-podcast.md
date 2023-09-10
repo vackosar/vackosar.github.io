@@ -9,13 +9,13 @@ image: /images/2020-02-25-my-photo-table-map-cal-rot-fix.jpg
 redirect_from:
 - /2020/02/25/I-read-papers-on-a-podcast.html
 my_related_post_paths:
-- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
-- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
-- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
-- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
-- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
+- _posts/2017-02-26-$15-Ebay-USB-Microscope.md
 - _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
+- _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
+- _posts/2019-03-03-Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.md
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
 ---
 
 

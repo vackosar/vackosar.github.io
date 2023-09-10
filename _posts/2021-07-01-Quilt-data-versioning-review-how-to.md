@@ -11,13 +11,13 @@ redirect_from:
 - /ml/Quilt-data-review-how-to
 last_modified_at: 2022-05-31
 my_related_post_paths:
-- _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
-- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 - _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
-- _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
+- _posts/2020-05-11-BentoML-vs-Cortex.dev--ML-Serving-Showdown.md
+- _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
+- _posts/2023-01-24-fill-versions-from-python-environment.md
 - _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
-- _posts/2022-05-14-neural-data-compression.md
-- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
+- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 ---
 
 

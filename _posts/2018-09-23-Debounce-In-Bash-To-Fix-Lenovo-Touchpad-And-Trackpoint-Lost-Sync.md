@@ -10,11 +10,11 @@ redirect_from:
 my_related_post_paths:
 - _posts/2016-07-28-Functional-Foreach-In-Bash.md
 - _posts/2019-11-02-Thinkpad-P53-vs-P52-Thermals.md
-- _posts/2020-05-03-P52-disassembly.md
 - _posts/2019-03-03-Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.md
-- _posts/2017-07-15-Restore-Missing-Punctuation-with-Keras-Convolutional-Text-Punctuator.md
-- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
-- _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
+- _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
+- _posts/2020-02-25-I-read-papers-on-a-podcast.md
+- _posts/2020-05-03-P52-disassembly.md
+- _posts/2016-11-04-Drone-Hackathoning.md
 ---
 
 

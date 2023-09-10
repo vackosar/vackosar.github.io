@@ -10,12 +10,12 @@ video: oi86r-2Bh64
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
-- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
-- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
-- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 - _posts/2023-06-08-Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM.md
-- _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
-- _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
+- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 ---
 
 

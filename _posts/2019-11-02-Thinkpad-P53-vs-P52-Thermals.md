@@ -12,11 +12,11 @@ redirect_from:
 my_related_post_paths:
 - _posts/2019-03-03-Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.md
 - _posts/2020-05-03-P52-disassembly.md
+- _posts/2020-02-25-I-read-papers-on-a-podcast.md
+- _posts/2020-05-11-BentoML-vs-Cortex.dev--ML-Serving-Showdown.md
 - _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
-- _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
-- _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
-- _posts/2020-11-29-Lambda-Networks-Transform-Self-Attention.md
-- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 ---
 
 

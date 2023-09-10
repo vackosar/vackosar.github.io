@@ -12,12 +12,12 @@ redirect_from:
 - /ml/how-computers-understood-humans
 my_related_post_paths:
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
-- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
-- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
-- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2023-06-08-Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM.md
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
+- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
+- _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
+- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
 - _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
-- _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
-- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 ---
 
 

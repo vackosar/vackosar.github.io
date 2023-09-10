@@ -9,13 +9,13 @@ video: O9fxWCaDM4o
 layout: post
 permalink: /:categories/:title
 my_related_post_paths:
-- _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
 - _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
 - _posts/2020-04-22-result-diversification-in-web-search-and-recommenders.md
-- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
+- _posts/2022-01-09-7-powers-moats-through-lens-of-dibellos-business-mental-model.md
+- _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
+- _posts/2021-12-12-Ten-Commandments-for-business-failure.md
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
-- _posts/2016-11-04-Drone-Hackathoning.md
-- _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
 ---
 
 
