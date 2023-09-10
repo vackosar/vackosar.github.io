@@ -1,27 +1,38 @@
 ---
 title: How Deep Neural Networks Learn
-description: Notes that pull together Superposition, Memorization, Double Descent, Ensembling to get insights.
+description: Notes on Superposition, Memorization, Regularization, Double Descent, Model Ensembling to get insights.
 categories: ml
 image: /images/classroom-neural-network-training.png
 date: 2023-08-25
 last_modified_at: 2023-08-27
 layout: post
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2022-05-14-neural-data-compression.md
+- _posts/2022-10-23-Neural-Network-Pruning-Explained.md
+- _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
+- _posts/2020-11-29-Lambda-Networks-Transform-Self-Attention.md
+- _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 ---
 
 ![neural network drawn on a blackboard in a class room](/images/classroom-neural-network-training.png)
 
-Deep neural networks have multi-layer structure.
-Gradient descent is used to propagate corrections backwards through the layers.
+Deep neural network consumes input numbers, passes them through multi-layer neural network calculation, and produces a prediction.
+The loss function provides error how each sample differs from the desired prediction target.
+Gradient descent calculates corrections to the network backwards through the layers.
+The actions in between the layers before the output, which form arrays of numbers (vectors), are called [embeddings (representations)](/ml/Embeddings-in-Machine-Learning-Explained).
 
 ## Gradient Descent Intuition
 Gradient descent calculates weight corrections (gradients) with backpropagation algorithm.
-Backpropagation takes the distance from the correct results, and calculates gradients (derivatives) starting from the results and iterating through neural network layers back.
+Backpropagation takes the distance from the correct results, and calculates gradients (derivatives) starting from the output results and iterating through neural network layers back to the input.
 Because deep neural networks have layered structure, backpropagation uses chain-rule and analytical derivatives for known functions.
-Backpropagation increases or decreases reliance on neuron outputs in proportion to their influence on pointing towards the true label.
+Backpropagation changes the neural weights in the opposite direction of the gradient with a small learning step.
+In this way, backpropagation increases or decreases reliance on neuron outputs in proportion to their influence on pointing towards the false label.
 
 
-## What is Overfitting and Memorization?
+## What is Overfitting and Memorization and Regularization?
 
 Overfitting refers to when model has **low training set loss, but high testing-set loss**.
 For example, if a model has sufficient capacity and "insufficient regularization", it may memorize training data.
@@ -34,6 +45,8 @@ If ReLU neuron activates, we can say that the neuron memorized to respond.
 Each neuron represents a dot-product of input vector with weight vector, and the dot-product is positively valued, the neuron outputs non-zero.
 Because we can have a bias values, this is not only direction but a hyperplane.
 In this way, we can see that a neural network of sufficient size can also learn to split hyperspace into planes, such that for each input there is a bin into which a hidden representation will fall and which will activate a neuron corresponding to a label.
+
+There are various regularization methods for neural networks to prevent overfitting and increase generalization. For example, see Dropout below.
 
 
 ## Memorization in Neural Networks via Superposition
@@ -114,22 +127,30 @@ Perhaps the layered nature of deep neural networks explains why some features ar
 This is what multiple separate training helps to prevent.
 Random feature mapping and boosting as it is more shallow and has access to all the features, but then fails to optimize very well.
 
-I wonder if:
-- deduplication and better sampling of the training data help by preventing overfitting, because deduplication reduces repetition.
-- dropout, which randomly prevents usage of specific features and helps with overfitting, but is turned off in inference mode.
-- more data increase diversity and thus again reduce repetition and encourage generalization
-
 
 ### Ensemble Distillation Allows Learning More Features
 Distillation works for DL because the network has a signal that there must be feature that it has to find it.
 The model has the capacity, and with the additional signal, it can learn to detect all the features.
 
+### Dropout as Feature Hiding
+
+Dropout regularization randomly prevents usage of neurons or entire input features from the previous layer.
+Dropout is turned off during inference (prediction) time.
+Dropout helps to reduce overfitting during training, probably because it is prevening the network to rely too much on small set of features.
+
+
+## Training Data Selection and Active Learning
+Deduplication and better sampling of the training data help by preventing overfitting, because deduplication reduces repetition, which reduces memorization.
+
+Active learning is one of the methods to create more training samples minimizing the labeling cost.
+For example, in confidence-based active learning (Pool-Based Sampling) we select samples where is the network is the least confident.
+
+More data increase diversity and thus again reduce repetition and encourage generalization, e.g., [Chinchilla: Training Compute-Optimal Large Language Models](https://arxiv.org/pdf/2203.15556.pdf)
 
 ## My Questions
-I wonder if:
-- deduplication and better sampling of the training data help by preventing overfitting, because deduplication reduces repetition.
-- regularization like Dropout, which randomly prevents usage of specific features and helps with overfitting, but is turned off in inference mode.
-- more data increase diversity and thus again reduce repetition and encourage generalization, e.g., [Chinchilla: Training Compute-Optimal Large Language Models](https://arxiv.org/pdf/2203.15556.pdf)
+I wonder if: 
+- 
+
 
 This post is related to capsule networks, which explicitly looks for find specific configurations of discovered features.
 
