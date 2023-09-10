@@ -22,7 +22,7 @@ my_related_post_paths:
 Deep neural network consumes input numbers, passes them through multi-layer neural network calculation, and produces a prediction.
 The loss function provides error how each sample differs from the desired prediction target.
 Gradient descent calculates corrections to the network backwards through the layers.
-The actions in between the layers before the output, which form arrays of numbers (vectors), are called [embeddings (representations)](/ml/Embeddings-in-Machine-Learning-Explained).
+The neuron activation values in between the layers before the output, which form arrays of numbers (vectors), are called [embeddings (representations)](/ml/Embeddings-in-Machine-Learning-Explained).
 
 ## Gradient Descent Intuition
 Gradient descent calculates weight corrections (gradients) with backpropagation algorithm.
