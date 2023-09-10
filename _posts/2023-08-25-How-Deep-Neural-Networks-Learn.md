@@ -147,15 +147,9 @@ For example, in confidence-based active learning (Pool-Based Sampling) we select
 
 More data increase diversity and thus again reduce repetition and encourage generalization, e.g., [Chinchilla: Training Compute-Optimal Large Language Models](https://arxiv.org/pdf/2203.15556.pdf)
 
-## My Questions
-I wonder if: 
-- 
-
-
-This post is related to capsule networks, which explicitly looks for find specific configurations of discovered features.
-
 ## Other topics
 
 Other topics in training neural networks:
 - optimization algorithms (SGD, Adam) and their parameters like learning rate
 - initialization, e.g., [Tensor Programs V: Tuning Large Neural Networks via Zero-Shot Hyperparameter Transfer](https://arxiv.org/abs/2203.03466)
+- This post is related to capsule networks, which explicitly looks for find specific configurations of discovered features.
