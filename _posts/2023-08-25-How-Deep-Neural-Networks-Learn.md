@@ -24,6 +24,8 @@ The loss function provides error how each sample differs from the desired predic
 Gradient descent calculates corrections to the network backwards through the layers.
 The neuron activation values in between the layers before the output, which form arrays of numbers (vectors), are called [embeddings (representations)](/ml/Embeddings-in-Machine-Learning-Explained).
 
+![neural network relu, sum, input, output](/images/neural-network.drawio.png)
+
 ## Gradient Descent Intuition
 Gradient descent calculates weight corrections (gradients) with backpropagation algorithm.
 Backpropagation takes the distance from the correct results, and calculates gradients (derivatives) starting from the output results and iterating through neural network layers back to the input.
