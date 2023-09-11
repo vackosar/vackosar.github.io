@@ -152,6 +152,6 @@ More data increase diversity and thus again reduce repetition and encourage gene
 ## Other topics
 
 Other topics in training neural networks:
-- optimization algorithms (SGD, Adam) and their parameters like learning rate
-- initialization, e.g., [Tensor Programs V: Tuning Large Neural Networks via Zero-Shot Hyperparameter Transfer](https://arxiv.org/abs/2203.03466)
-- This post is related to capsule networks, which explicitly looks for find specific configurations of discovered features.
+- Gradient descent optimization algorithms (SGD, Adam) and their parameters like learning rate
+- Initializing weight parameters, e.g., [Tensor Programs V: Tuning Large Neural Networks via Zero-Shot Hyperparameter Transfer](https://arxiv.org/abs/2203.03466)
+- capsule networks, which explicitly looks for find specific configurations of discovered features.
