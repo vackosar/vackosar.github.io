@@ -47,10 +47,10 @@ There is a paywalled article called [Conducting Diligence](https://doomberg.subs
   - Outsider: Outsiders may shed new light with less authority on the subject.
 2. Publisher Credibility: Who published these results in their publication? What is the history and reputation of this publisher?
   - Reviewers and Critics: Who peer-reviewed, or is it a self-published pre-print? Was the peer reviewer familiar with the domain to judge the research?
-  - Republishers: Who is the original primary source? Who is republishing the research, and what are their biases, intentions, and incentives? Do people from multiple sides publish this?
+  - Republishers: Who are the original primary sources, and are they publicly accessible? Who is republishing the research, and what are their biases, intentions, and incentives? Do people from multiple sides publish this?
   - Audience bias: Is there an existing bias in the audience that may have been preventing wider publication? Why was this published or surfaced now? Is the current environment related to the results?
 3. Scientific Process and Evidence: At what stage is this research in the scientific process of validation and publishing?
-  - How often are similar results invalid and retracted?
+  - How often are similar papers invalid and retracted?
   - Burden of Evidence: What is the specific evidence for the claims? Are the metrics and their comparisons valid and relevant? Or are there hidden effects? Is this a randomized double-blind placebo control (RDBPC) trial?
   - Transparent: Is the process published and reliable? Are the numbers published, and do they show reasonable statistical distribution? If you wanted to hide something, where would you hide it?
 4. Scientific Context: What do existing research and the history of this field suggest about these findings?
