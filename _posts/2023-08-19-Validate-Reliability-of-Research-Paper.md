@@ -43,11 +43,11 @@ There is a paywalled article called [Conducting Diligence](https://doomberg.subs
 
 1. Author Credibility: What is the reputation and history of the researchers and the institutions they are affiliated with? Do they have at least 3 successes within the domain?
   - Follow the money (Who benefits?): Who funded it? Are researchers biased, e.g., are their livelihoods, views, or identities tied to any results? For example, some research is funded by a for-profit company, which they a goal-oriented bias into the study. (Try investing in a company and then tell me what it does to your views.). Is this a disgruntled employee powered by resentment (Axe to grind)?
-  - Connections: Who is the author connected to, and who helped them in the past?
+  - Connections: Are they known, accessible, or anonymous? Who is the author connected to, and who helped them in the past?
   - Outsider: Outsiders may shed new light with less authority on the subject.
 2. Publisher Credibility: Who published these results in their publication? What is the history and reputation of this publisher?
   - Reviewers and Critics: Who peer-reviewed, or is it a self-published pre-print? Was the peer reviewer familiar with the domain to judge the research?
-  - Republishers: Who are the original primary sources, and are they publicly accessible? Who is republishing the research, and what are their biases, intentions, and incentives? Do people from multiple sides publish this?
+  - Republishers: Who are the original primary sources, and are they publicly accessible and non-anonymous? Who is republishing the research, and what are their biases, intentions, and incentives? Do people from multiple sides publish this?
   - Audience bias: Is there an existing bias in the audience that may have been preventing wider publication? Why was this published or surfaced now? Is the current environment related to the results?
 3. Scientific Process and Evidence: At what stage is this research in the scientific process of validation and publishing?
   - How often are similar papers invalid and retracted?
