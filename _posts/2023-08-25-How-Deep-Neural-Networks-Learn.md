@@ -46,7 +46,9 @@ That is because the tree can create an individual bin for each dataset input, an
 If ReLU neuron activates, we can say that the neuron memorized to respond.
 Each neuron represents a dot-product of input vector with weight vector, and the dot-product is positively valued, the neuron outputs non-zero.
 Because we can have a bias values, this is not only direction but a hyperplane.
-In this way, we can see that a neural network of sufficient size can also learn to **split hyperspace into planes**, such that for each input there is a bin into which a hidden representation will fall and which will activate a neuron corresponding to a label.
+In this way, we can see that a neural network of sufficient size can also learn to **split hyperspace into planes**,
+such that for each dataset input there is a bin into which a hidden representation will fall and which will activate a neuron corresponding to a label,
+so it can also overfit.
 
 There are various regularization methods for neural networks to prevent overfitting and increase generalization. For example, see Dropout below.
 
