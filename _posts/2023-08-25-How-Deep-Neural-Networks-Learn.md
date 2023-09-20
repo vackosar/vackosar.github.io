@@ -139,19 +139,20 @@ The model has the capacity, and with the additional signal, it can learn to dete
 Dropout regularization randomly prevents usage of neurons or entire input features from the previous layer.
 Dropout is turned off during inference (prediction) time.
 Dropout helps to reduce overfitting during training, probably because it is prevening the network to rely too much on small set of features.
+You can see Dropout also as [a random pruning](/ml/Neural-Network-Pruning-Explained). 
 
 
 ## Training Data Selection and Active Learning
 Deduplication and better sampling of the training data help by preventing overfitting, because deduplication reduces repetition, which reduces memorization.
 
 Active learning is one of the methods to create more training samples minimizing the labeling cost.
-For example, in confidence-based active learning (Pool-Based Sampling) we select samples where is the network is the least confident.
+For example, in confidence-based active learning (Pool-Based Sampling), we select samples where the network is the least confident.
 
 More data increase diversity and thus again reduce repetition and encourage generalization, e.g., [Chinchilla: Training Compute-Optimal Large Language Models](https://arxiv.org/pdf/2203.15556.pdf)
 
 ## Other topics
 
 Other topics in training neural networks:
-- Gradient descent optimization algorithms (SGD, Adam) and their parameters like learning rate
-- Initializing weight parameters, e.g., [Tensor Programs V: Tuning Large Neural Networks via Zero-Shot Hyperparameter Transfer](https://arxiv.org/abs/2203.03466)
+- Gradient descent optimization algorithms (SGD, Adam) and their parameters like learning rate.
+- Initializing weight parameters, e.g., [Tensor Programs V: Tuning Large Neural Networks via Zero-Shot Hyperparameter Transfer](https://arxiv.org/abs/2203.03466).
 - capsule networks, which explicitly looks for find specific configurations of discovered features.
