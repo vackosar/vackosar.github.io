@@ -19,19 +19,19 @@ my_related_post_paths:
 
 ![neural network drawn on a blackboard in a class room](/images/classroom-neural-network-training.png)
 
-Deep neural network consumes input numbers, passes them through multi-layer neural network calculation, and produces a prediction.
-The loss function provides error how each sample differs from the desired prediction target.
-Gradient descent calculates corrections to the network backwards through the layers.
+Deep neural network consumes input numbers, passes them through **multi-layer** neural network calculation, and produces a prediction.
+The loss function provides **error how each prediction differs** from the desired prediction target.
+**Gradient descent calculates corrections** to the network backwards through the layers.
 The neuron activation values in between the layers before the output, which form arrays of numbers (vectors), are called [embeddings (representations)](/ml/Embeddings-in-Machine-Learning-Explained).
 
 ![neural network relu, sum, input, output](/images/neural-network.drawio.png)
 
 ## Gradient Descent Intuition
 Gradient descent calculates weight corrections (gradients) with backpropagation algorithm.
-Backpropagation takes the distance from the correct results, and calculates gradients (derivatives) starting from the output results and iterating through neural network layers back to the input.
-Because deep neural networks have layered structure, backpropagation uses chain-rule and analytical derivatives for known functions.
+Backpropagation takes **the distance from the correct results**, and calculates gradients (derivatives) starting from the output results and iterating through neural network layers back to the input.
+Because deep neural networks have layered structure, backpropagation uses **chain-rule** and analytical derivatives for known functions.
 Backpropagation changes the neural weights in the opposite direction of the gradient with a small learning step.
-In this way, backpropagation increases or decreases reliance on neuron outputs in proportion to their influence on pointing towards the false label.
+In this way, backpropagation increases or decreases reliance on neuron outputs in proportion to their **influence on pointing towards the false** label.
 
 
 ## What is Overfitting and Memorization and Regularization?
@@ -46,7 +46,7 @@ That is because the tree can create an individual bin for each dataset input, an
 If ReLU neuron activates, we can say that the neuron memorized to respond.
 Each neuron represents a dot-product of input vector with weight vector, and the dot-product is positively valued, the neuron outputs non-zero.
 Because we can have a bias values, this is not only direction but a hyperplane.
-In this way, we can see that a neural network of sufficient size can also learn to split hyperspace into planes, such that for each input there is a bin into which a hidden representation will fall and which will activate a neuron corresponding to a label.
+In this way, we can see that a neural network of sufficient size can also learn to **split hyperspace into planes**, such that for each input there is a bin into which a hidden representation will fall and which will activate a neuron corresponding to a label.
 
 There are various regularization methods for neural networks to prevent overfitting and increase generalization. For example, see Dropout below.
 
@@ -60,7 +60,7 @@ This set of ReLU neurons can memorize more vectors than their count, which is ca
 In other words, ReLU network **can embed and recover more vectors than its dimension** (neurons), thanks to superposition.
 Or, ReLU network memory is greater than a sum of its neurons or hidden dimension because of the non-linearity.
 
-This means that internal embeddings of features are not fully orthogonal and have a small non-zero dot-product
+This means that [internal embeddings of features](/ml/Embeddings-in-Machine-Learning-Explained) are not fully orthogonal and have a small non-zero dot-product
 During reconstruction ReLU will only activate for the original feature to be reconstructed, thanks to bias weights preventing activation.
 
 A similar effect was observed in [Transformers (Hopfield Networks is All You Need)](https://ml-jku.github.io/hopfield-layers/).
@@ -68,7 +68,7 @@ During stored vector reconstruction, hidden activations form vectors with maxima
 
 
 ## Generalization is Finding Hidden Rules
-Instead of embeddings, we can look at weight vectors.
+Instead of [embeddings](/ml/Embeddings-in-Machine-Learning-Explained), we can look at weight vectors.
 In [Superposition, Memorization, and Double Descent](https://transformer-circuits.pub/2023/toy-double-descent/index.html)
 **generalization was observed when weight vectors instead formed polytopes, while embeddings did not**.
 
@@ -103,17 +103,17 @@ Similar methods are used by [Performer Transformer](/ml/Performers-FAVOR+-Faster
 
 
 ### Ensemble Distillation
-Ensemble is a combination of several models to make a prediction.
-Ensemble distillation is much better for DL and performs similar to ensemble, contrary to random feature mapping.
+Ensemble is **a combination of several models** to make a prediction.
+Ensemble distillation works much better in deep learning and performs similar to ensemble, contrary to random feature mapping.
 Training a model that is average of output of 10 models does not improve results in case of deep learning,
-because once a simple solution is found in one of the models, the gradients will prevent further exploration in the other models. 
+because once **a simple solution is found in one of the models, the gradients will prevent further exploration** in the other models. 
 On the other hand, in RFM this does not seem to be a problem, because gradient descent is not used?
 
 
 ### Input Data Distribution
 Note that, input statistical distribution matters for the results of every machine learning algorithm.
 Fortunately, most real world problems deal with a similar class of distributions.
-In the case of Gaussian mixture, deep learning ensembling does not help, because test variance tends to go down, despite not test accuracy.
+In the case of Gaussian mixture, deep learning ensembling does not help because test variance tends to go down, despite not test accuracy.
 
 They define a multi-view assumption as compositional of the samples with smaller features.
 If these features appear together, they trigger classification class.
