@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>Create Google Calendar Event Link</h2>
+
+<form id="calendarEvent">
+  <label for="event_name">Event Name:</label><br>
+  <input type="text" id="event_name" name="event_name"><br>
+
+  <label for="date_time_from">Start Date & Time:</label><br>
+  <input type="datetime-local" id="date_time_from" name="date_time_from" value=""><br>
+
+  <label for="date_time_to">End Date & Time:</label><br>
+  <input type="datetime-local" id="date_time_to" name="date_time_to" value=""><br><br>
+
+  <input type="submit" value="Create Link">
+</form>
+
+<p>Click the "Create Link" after you have filled out the event details to generate a Google Calendar Link!</p>
+
+<script>
+document.getElementById("calendarEvent").addEventListener("submit", function(event){
+  event.preventDefault();
+
+  var name = document.getElementById('event_name').value;
+  var startTime = document.getElementById('date_time_from').value;
+  var endTime = document.getElementById('date_time_to').value;
+
+  // Convert datetime-local input value to RFC 3339
+  var st = new Date(startTime);
+  var et = new Date(endTime);
+
+  var formattedStart = st.toISOString();
+  var formattedEnd = et.toISOString();
+
+  var calendar_url = 'https://calendar.google.com/calendar/u/0/r/eventedit?';
+  calendar_url += 'text='+encodeURIComponent(name);
+
+  formattedStart = formattedStart.replace(/-|:|\.\d\d\d/g,"");
+  formattedEnd = formattedEnd.replace(/-|:|\.\d\d\d/g,"");
+  calendar_url += '&dates=' + formattedStart + '/' + formattedEnd;
+
+  window.open(calendar_url, '_blank');
+});
+</script>
+
+</body>
+</html>
