@@ -7,42 +7,84 @@
 
 <form id="calendarEvent">
   <label for="event_name">Event Name:</label><br>
-  <input type="text" id="event_name" name="event_name"><br>
+  <input type="text" id="event_name" name="event_name" value="My Event"><br>
 
   <label for="date_time_from">Start Date & Time:</label><br>
-  <input type="datetime-local" id="date_time_from" name="date_time_from" value=""><br>
+  <input type="datetime-local" id="date_time_from" name="date_time_from"><br>
 
   <label for="date_time_to">End Date & Time:</label><br>
-  <input type="datetime-local" id="date_time_to" name="date_time_to" value=""><br><br>
+  <input type="datetime-local" id="date_time_to" name="date_time_to"><br><br>
 
-  <input type="submit" value="Create Link">
+    <label for="time_zone">Time Zone:</label><br>
+  <select id="timezone">
+  </select><br><br>
+
+  <label for="url">Google Calendar URL:</label><br>
+  <input type="text" id="url" name="url" value="" disabled><br>
+  <button onclick="copyText()">Copy 🔗</button><br><br>
+
+  <input type="submit" value="Go to link">
 </form>
 
-<p>Click the "Create Link" after you have filled out the event details to generate a Google Calendar Link!</p>
+<p>Click the "Go to link" after you have filled out the event details to navigate to the google calendar page, or click the copy button to copy the URL!</p>
 
 <script>
+// Populate timezone dropdown
+var tzSelect = document.getElementById('timezone');
+for (var i in Intl.DateTimeFormat().resolvedOptions().timeZone) {
+    var opt = document.createElement('option');
+    opt.value = i;
+    opt.innerHTML = i;
+    tzSelect.appendChild(opt);
+}
+
+// Pre-fill date and time fields
+var currentDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000); // tomorrow
+currentDate.setHours(8,0,0,0);
+
+document.getElementById('date_time_from').valueAsDate = currentDate;
+document.getElementById('date_time_to').valueAsDate = new Date(currentDate.getTime() + 2 * 60 * 60 * 1000); // +2 hours
+
+// Set default timezone
+tzSelect.value = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
 document.getElementById("calendarEvent").addEventListener("submit", function(event){
   event.preventDefault();
 
+  var calendar_url = createLink()
+
+  window.open(calendar_url, '_blank');
+});
+
+function createLink(){
   var name = document.getElementById('event_name').value;
-  var startTime = document.getElementById('date_time_from').value;
-  var endTime = document.getElementById('date_time_to').value;
-
-  // Convert datetime-local input value to RFC 3339
-  var st = new Date(startTime);
-  var et = new Date(endTime);
-
-  var formattedStart = st.toISOString();
-  var formattedEnd = et.toISOString();
+  var startTime = document.getElementById('date_time_from').valueAsNumber;
+  var endTime = document.getElementById('date_time_to').valueAsNumber;
 
   var calendar_url = 'https://calendar.google.com/calendar/u/0/r/eventedit?';
   calendar_url += 'text='+encodeURIComponent(name);
 
+  formattedStart = (new Date(startTime)).toISOString();
+  formattedEnd = (new Date(endTime)).toISOString();
   formattedStart = formattedStart.replace(/-|:|\.\d\d\d/g,"");
   formattedEnd = formattedEnd.replace(/-|:|\.\d\d\d/g,"");
   calendar_url += '&dates=' + formattedStart + '/' + formattedEnd;
 
-  window.open(calendar_url, '_blank');
+  document.getElementById('url').value = calendar_url;
+
+  return calendar_url;
+}
+
+function copyText() {
+  var copyText = document.getElementById("url");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+
+  document.execCommand("copy");
+}
+
+document.getElementById('calendarEvent').addEventListener('input', function () {
+    createLink();
 });
 </script>
 
