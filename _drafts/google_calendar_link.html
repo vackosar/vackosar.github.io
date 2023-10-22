@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-with-data.min.js"></script>
+</head>
 
 <body>
 
@@ -7,7 +11,7 @@
 
 <form id="calendarEvent">
   <label for="event_name">Event Name:</label><br>
-  <input type="text" id="event_name" name="event_name" value="My Event"><br>
+  <input type="text" id="event_name" name="event_name" value=""><br>
 
   <label for="date_time_from">Start Date & Time:</label><br>
   <input type="datetime-local" id="date_time_from" name="date_time_from"><br>
@@ -15,7 +19,7 @@
   <label for="date_time_to">End Date & Time:</label><br>
   <input type="datetime-local" id="date_time_to" name="date_time_to"><br><br>
 
-    <label for="time_zone">Time Zone:</label><br>
+    <label for="timezone">Time Zone:</label><br>
   <select id="timezone">
   </select><br><br>
 
@@ -42,11 +46,29 @@ for (var i in Intl.DateTimeFormat().resolvedOptions().timeZone) {
 var currentDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000); // tomorrow
 currentDate.setHours(8,0,0,0);
 
-document.getElementById('date_time_from').valueAsDate = currentDate;
-document.getElementById('date_time_to').valueAsDate = new Date(currentDate.getTime() + 2 * 60 * 60 * 1000); // +2 hours
+// convert Date objects into strings
+var iso = currentDate.toISOString();
+var isoEnd = new Date(currentDate.getTime() + 2 * 60 * 60 * 1000).toISOString();
+
+// get date and time in the format "YYYY-MM-DDTHH:mm"
+var formattedStart = iso.slice(0,16);
+var formattedEnd = isoEnd.slice(0,16);
+
+document.getElementById('date_time_from').value = formattedStart;
+document.getElementById('date_time_to').value = formattedEnd;
+
+// Populate timezone dropdown with IANA time zones and their standard text labels
+var tzSelect = document.getElementById('timezone');
+var timeZones = moment.tz.names();
+for (var i = 0; i < timeZones.length; i++) {
+    var opt = document.createElement('option');
+    opt.value = timeZones[i];
+    opt.innerHTML = timeZones[i];
+    tzSelect.appendChild(opt);
+}
 
 // Set default timezone
-tzSelect.value = Intl.DateTimeFormat().resolvedOptions().timeZone;
+tzSelect.value = moment.tz.guess();
 
 document.getElementById("calendarEvent").addEventListener("submit", function(event){
   event.preventDefault();
@@ -64,13 +86,14 @@ function createLink(){
   var calendar_url = 'https://calendar.google.com/calendar/u/0/r/eventedit?';
   calendar_url += 'text='+encodeURIComponent(name);
 
-  formattedStart = (new Date(startTime)).toISOString();
-  formattedEnd = (new Date(endTime)).toISOString();
-  formattedStart = formattedStart.replace(/-|:|\.\d\d\d/g,"");
-  formattedEnd = formattedEnd.replace(/-|:|\.\d\d\d/g,"");
+  var timezone = document.getElementById('timezone').value;
+  formattedStart = moment.tz(new Date(startTime), timezone).format('YYYYMMDD[T]HHmmss[Z]');
+  formattedEnd = moment.tz(new Date(endTime), timezone).format('YYYYMMDD[T]HHmmss[Z]');
   calendar_url += '&dates=' + formattedStart + '/' + formattedEnd;
 
   document.getElementById('url').value = calendar_url;
+
+
 
   return calendar_url;
 }
