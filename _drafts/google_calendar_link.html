@@ -33,33 +33,13 @@
 <p>Click the "Go to link" after you have filled out the event details to navigate to the google calendar page, or click the copy button to copy the URL!</p>
 
 <script>
-// Populate timezone dropdown
-var tzSelect = document.getElementById('timezone');
-for (var i in Intl.DateTimeFormat().resolvedOptions().timeZone) {
-    var opt = document.createElement('option');
-    opt.value = i;
-    opt.innerHTML = i;
-    tzSelect.appendChild(opt);
-}
 
 // Pre-fill date and time fields
-var currentDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000); // tomorrow
-currentDate.setHours(8, 0, 0, 0);
+var currentDate = moment().add(1, 'days').startOf('day').add(8, 'hours'); // set time to 8am tomorrow
 
-// Build a timestamp that aligns with the user's local timezone
-var tzOffset = currentDate.getTimezoneOffset() * 60; // offset in seconds
-var localISOTime = (new Date(currentDate.getTime() - tzOffset)).toISOString().slice(0, -1);
-
-var formattedStart = localISOTime.slice(0, 16);
-var formattedEnd = new Date(new Date(formattedStart).getTime() + 2 * 60 * 60 * 1000).toISOString().slice(0, 16);
-
-<!--// convert Date objects into strings-->
-<!--var iso = currentDate.toISOString();-->
-<!--var isoEnd = new Date(currentDate.getTime() + 2 * 60 * 60 * 1000).toISOString();-->
-
-<!--// get date and time in the format "YYYY-MM-DDTHH:mm"-->
-<!--var formattedStart = iso.slice(0,16);-->
-<!--var formattedEnd = isoEnd.slice(0,16);-->
+// Format the date & time according to HTML datetime-local input requirements and users local time zone
+var formattedStart = currentDate.format("YYYY-MM-DDTHH:mm");
+var formattedEnd = currentDate.add(2, 'hours').format("YYYY-MM-DDTHH:mm");
 
 document.getElementById('date_time_from').value = formattedStart;
 document.getElementById('date_time_to').value = formattedEnd;
@@ -87,15 +67,15 @@ document.getElementById("calendarEvent").addEventListener("submit", function(eve
 
 function createLink(){
   var name = document.getElementById('event_name').value;
-  var startTime = document.getElementById('date_time_from').valueAsNumber;
-  var endTime = document.getElementById('date_time_to').valueAsNumber;
+  var startTime = document.getElementById('date_time_from').value;
+  var endTime = document.getElementById('date_time_to').value;
 
   var calendar_url = 'https://calendar.google.com/calendar/u/0/r/eventedit?';
   calendar_url += 'text='+encodeURIComponent(name);
 
   var timezone = document.getElementById('timezone').value;
-  formattedStart = moment.tz(new Date(startTime), timezone).format('YYYYMMDD[T]HHmmss');
-  formattedEnd = moment.tz(new Date(endTime), timezone).format('YYYYMMDD[T]HHmmss');
+  formattedStart = moment.tz(startTime, timezone).format('YYYYMMDD[T]HHmmssZ');
+  formattedEnd = moment.tz(endTime, timezone).format('YYYYMMDD[T]HHmmssZ');
   calendar_url += '&dates=' + formattedStart + '/' + formattedEnd;
   calendar_url += '&ctz=' + timezone;
 
