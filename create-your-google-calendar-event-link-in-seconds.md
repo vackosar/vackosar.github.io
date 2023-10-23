@@ -25,6 +25,10 @@ All you need to do is fill out the given form, which comprises fields for the ev
 
 You can also copy the event URL or go directly to the link by clicking on the respective buttons. 
 
+Double-check your timezone settings and test the URL with someone.
+
+Message me to request more features or report bugs. 
+
 Get started now, and save your time, as well as that of your participants, with our Google Calendar Event Link Creator. Share events and schedules quickly and efficiently, and make sure that all your attendees mark their calendars without fail. Happy event planning!
 
 <form id="calendarEvent">
@@ -41,7 +45,7 @@ Get started now, and save your time, as well as that of your participants, with 
   <select id="timezone">
   </select><br><br>
 
-  <label for="url">Google Calendar URL:</label><br>
+  <label for="url">Your Google Calendar URL Link:</label><br>
   <input type="text" id="url" name="url" value="" disabled><br>
 
 </form>
