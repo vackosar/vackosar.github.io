@@ -2,16 +2,31 @@
 layout: post
 title: "Create Google Calendar Event URL"
 date: 2023-10-23
-description: "Share your event to GCal users in seconds without using it yourself."
+description: "Share events with Your participants seamlessly without using Google Calendar yourself."
 image: /images/twitter-bullet-points.png
 last_modified_at: 2022-04-25
 ---
 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-with-data.min.js"></script>
 
-<h2>Create Google Calendar Event Link</h2>
+Create and share a Google Calendar event link in no time, irrespective of whether or not you have a Google Calendar account. With this tool, you can seamlessly generate a URL for your event and share it with participants. All they need to do after that is to click on the link to add the event to their respective Google Calendars. 
+
+Key Features:
+
+- No Google Calendar Account Required: With our tool, there’s no need for you to have a Google Calendar account yourself. Simply fill up the form and generate a URL for your event in seconds. 
+
+- Streamlined Calendar Addition for Participants: Once you share the link with your participants, they can add the event to their calendars with just a click. 
+
+- Better Event Recall for Attendees: With the event securely added to their calendars, attendees can keep track of it easily, reducing the risk of forgetting about it.
+
+How to Use the Event Link Creator?
+
+All you need to do is fill out the given form, which comprises fields for the event name, start and end times, and time zone.
+
+You can also copy the event URL or go directly to the link by clicking on the respective buttons. 
+
+Get started now, and save your time, as well as that of your participants, with our Google Calendar Event Link Creator. Share events and schedules quickly and efficiently, and make sure that all your attendees mark their calendars without fail. Happy event planning!
 
 <form id="calendarEvent">
   <label for="event_name">Event Name:</label><br>
