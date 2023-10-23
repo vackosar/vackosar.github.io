@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Create Google Calendar Event URL"
+title: "Create Your Google Calendar Event Link in Seconds"
 date: 2023-10-23
 description: "Share events with Your participants seamlessly without using Google Calendar yourself."
 image: /images/twitter-bullet-points.png
