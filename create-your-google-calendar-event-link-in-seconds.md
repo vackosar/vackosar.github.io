@@ -11,7 +11,7 @@ last_modified_at: 2023-10-23
 
 Create and share a Google Calendar event link in no time, irrespective of whether or not you have a Google Calendar account. With this tool, you can seamlessly generate a URL for your event and share it with participants. All they need to do after that is to click on the link to add the event to their respective Google Calendars. 
 
-Key Features:
+### Key Features:
 
 - No Google Calendar Account Required: With our tool, there’s no need for you to have a Google Calendar account yourself. Simply fill up the form and generate a URL for your event in seconds. 
 
@@ -19,16 +19,17 @@ Key Features:
 
 - Better Event Recall for Attendees: With the event securely added to their calendars, attendees can keep track of it easily, reducing the risk of forgetting about it.
 
-How to Use the Event Link Creator?
+### How to Use the Event Link Creator?
 
-All you need to do is fill out the given form, which comprises fields for the event name, start and end times, and time zone.
+1. All you need to do is fill out the given form, which comprises fields for the event name, start and end times, and time zone.
 
-You can also copy the event URL or go directly to the link by clicking on the respective buttons. 
+2. Then copy the event URL or go directly to the link by clicking on the respective buttons. 
 
-Double-check your timezone settings and test the URL with someone.
+3. Double-check your timezone settings and test the URL with someone.
 
-Message me to request more features or report bugs. 
+4. Message me to request more features or report bugs. 
 
+### Start Now
 Get started now, and save your time, as well as that of your participants, with our Google Calendar Event Link Creator. Share events and schedules quickly and efficiently, and make sure that all your attendees mark their calendars without fail. Happy event planning!
 
 <form id="calendarEvent">
