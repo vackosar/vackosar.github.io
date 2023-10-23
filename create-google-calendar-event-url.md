@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-with-data.min.js"></script>
-</head>
+---
+layout: post
+title: "Create Google Calendar Event URL"
+date: 2023-10-23
+description: "Share your event to GCal users in seconds without using it yourself."
+image: /images/twitter-bullet-points.png
+last_modified_at: 2022-04-25
+---
 
-<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-with-data.min.js"></script>
 
 <h2>Create Google Calendar Event Link</h2>
 
@@ -19,16 +23,17 @@
   <label for="date_time_to">End Date & Time:</label><br>
   <input type="datetime-local" id="date_time_to" name="date_time_to"><br><br>
 
-    <label for="timezone">Time Zone:</label><br>
+  <label for="timezone">Time Zone:</label><br>
   <select id="timezone">
   </select><br><br>
 
   <label for="url">Google Calendar URL:</label><br>
   <input type="text" id="url" name="url" value="" disabled><br>
-  <button onclick="copyText()">Copy 🔗</button><br><br>
 
-  <input type="submit" value="Go to link">
 </form>
+
+<button type="button" onclick="copyTextUrl()">Copy 🔗</button><br><br>
+<button type="button" id="goToLink">Go to link</button>
 
 <p>Click the "Go to link" after you have filled out the event details to navigate to the google calendar page, or click the copy button to copy the URL!</p>
 
@@ -57,7 +62,7 @@ for (var i = 0; i < timeZones.length; i++) {
 // Set default timezone
 tzSelect.value = moment.tz.guess();
 
-document.getElementById("calendarEvent").addEventListener("submit", function(event){
+document.getElementById("goToLink").addEventListener("submit", function(event){
   event.preventDefault();
 
   var calendar_url = createLink()
@@ -81,23 +86,24 @@ function createLink(){
 
   document.getElementById('url').value = calendar_url;
 
-
-
   return calendar_url;
 }
 
-function copyText() {
-  var copyText = document.getElementById("url");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
+async function copyTextUrl() {
+  var copyText = document.getElementById("url").value;
+  await copyToClipboard(copyText);
+}
 
-  document.execCommand("copy");
+async function copyToClipboard(text) {
+    try {
+        await navigator.clipboard.writeText(text);
+        console.log('Text copied to clipboard');
+    } catch (err) {
+        console.log('Error in copying text: ', err);
+    }
 }
 
 document.getElementById('calendarEvent').addEventListener('input', function () {
     createLink();
 });
 </script>
-
-</body>
-</html>
