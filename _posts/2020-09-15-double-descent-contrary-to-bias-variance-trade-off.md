@@ -15,8 +15,8 @@ my_related_post_paths:
 - _posts/2023-08-25-How-Deep-Neural-Networks-Learn.md
 - _posts/2022-05-14-neural-data-compression.md
 - _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
-- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
+- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 ---
 

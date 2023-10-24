@@ -9,8 +9,8 @@ date: 2022-10-23
 last_modified_at: 2022-10-24
 permalink: /:categories/:title
 my_related_post_paths:
-- _posts/2023-08-25-How-Deep-Neural-Networks-Learn.md
 - _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
+- _posts/2023-08-25-How-Deep-Neural-Networks-Learn.md
 - _posts/2022-05-14-neural-data-compression.md
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md

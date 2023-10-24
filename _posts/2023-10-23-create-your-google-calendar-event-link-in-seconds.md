@@ -1,14 +1,22 @@
 ---
 layout: post
-title: "Create Your Google Calendar Event Link in Seconds"
+title: Create Your Google Calendar Event Link in Seconds
 date: 2023-10-23
-description: "Share events with Your participants seamlessly without using Google Calendar yourself."
+description: Share events with Your participants seamlessly without using Google Calendar yourself.
 permalink: create-your-google-calendar-event-link-in-seconds
 categories: tool
-redirect_from: 
-  - tool/create-your-google-calendar-event-link-in-seconds
-  - create-your-google-calendar-event-link-in-seconds.html
+redirect_from:
+- tool/create-your-google-calendar-event-link-in-seconds
+- create-your-google-calendar-event-link-in-seconds.html
 last_modified_at: 2023-10-23
+my_related_post_paths:
+- _posts/2023-08-24-multiple-interval-averaging-stopwatch.md
+- _posts/2022-02-06-twitter-bullet-points-to-copy-paste.md
+- _posts/2020-05-03-when-is-the-end-of-current-quarter.md
+- _posts/2018-02-25-Creating-Custom-Ubuntu-Web-Link-App.md
+- _posts/2020-07-12-vr-holiday-in-nature.md
+- _posts/2021-03-22-google-product-taxonomy-viewer.md
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
 ---
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

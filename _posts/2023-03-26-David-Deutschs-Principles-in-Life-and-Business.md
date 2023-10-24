@@ -14,7 +14,7 @@ my_related_post_paths:
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
 - _posts/2021-07-14-Scout-Mindset-Book-Summary.md
 - _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
-- _posts/2023-08-25-How-Deep-Neural-Networks-Learn.md
+- _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
 ---
 
 ![Applying David Deutsch's Principles in Life and Business](/images/david_deutsch_principles_contract_xl-beta-v2-2-2.png)

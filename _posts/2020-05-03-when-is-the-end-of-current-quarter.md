@@ -4,12 +4,20 @@ title: When is the end of this quarter?
 description: How many days are left in the quarter? What is the current calendar quarter-end date? What is the current quarter?
 permalink: /when-is-the-end-of-current-quarter.html
 categories: tool
-redirect_from: 
-  - tool/when-is-the-end-of-current-quarter
-  - when-is-the-end-of-current-quarter
+redirect_from:
+- tool/when-is-the-end-of-current-quarter
+- when-is-the-end-of-current-quarter
 image: /images/quarters.svg
 date: 2020-05-03
 last_modified_at: 2022-04-23
+my_related_post_paths:
+- _posts/2023-10-23-create-your-google-calendar-event-link-in-seconds.md
+- _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
+- _posts/2019-08-28-1D-Kalman-Is-Exponential-Or-Cumulative-Average.md
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
+- _posts/2023-08-24-multiple-interval-averaging-stopwatch.md
+- _posts/2022-02-06-twitter-bullet-points-to-copy-paste.md
+- _posts/2021-03-22-google-product-taxonomy-viewer.md
 ---
 
 [comment]: <> (permalink: /when-is-the-end-of-current-quarter)

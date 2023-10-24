@@ -10,12 +10,12 @@ redirect_from:
 - /2018/02/25/Creating-Custom-Ubuntu-Web-Link-App.html
 my_related_post_paths:
 - _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
+- _posts/2023-10-23-create-your-google-calendar-event-link-in-seconds.md
 - _posts/2016-11-04-Drone-Hackathoning.md
 - _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
+- _posts/2022-02-06-twitter-bullet-points-to-copy-paste.md
 - _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
 - _posts/2023-01-24-fill-versions-from-python-environment.md
-- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
-- _posts/2017-07-15-Restore-Missing-Punctuation-with-Keras-Convolutional-Text-Punctuator.md
 ---
 
 

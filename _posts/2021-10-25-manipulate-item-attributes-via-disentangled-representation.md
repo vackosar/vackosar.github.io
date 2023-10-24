@@ -17,7 +17,7 @@ my_related_post_paths:
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
-- _posts/2023-08-25-How-Deep-Neural-Networks-Learn.md
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 ---
 
 

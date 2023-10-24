@@ -16,8 +16,8 @@ my_related_post_paths:
 - _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
+- _posts/2012-06-11-Hamiltonians-with-constant-spectral-intervals-and-time-dependent-perturbation.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
-- _posts/2020-08-21-Brutalist-and-Modernist-Architectures-Collide-at-Sunshine-Plaza-in-Prague.md
 ---
 
 

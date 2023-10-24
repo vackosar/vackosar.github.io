@@ -18,7 +18,7 @@ my_related_post_paths:
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 - _posts/2017-06-04-Code-Structure-Principles.md
-- _posts/2010-09-05-Transverse-momentum-spectra-and-correlations-in-the-blast-wave-model-with-resonances.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 ---
 
 

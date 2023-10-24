@@ -11,9 +11,9 @@ my_related_post_paths:
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 - _posts/2020-05-11-BentoML-vs-Cortex.dev--ML-Serving-Showdown.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
-- _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
+- _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
 - _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
 ---
 
