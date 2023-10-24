@@ -3,6 +3,11 @@ layout: post
 title: "VR Holiday In Nature: Relax In Nature While Trapped In Your City"
 date: 2020-07-12
 description: Escape the cityscape into the wild through your VR headset. Subscribe and download VR180 3D holiday.
+permalink: vr-holiday-in-nature.html
+categories: tool
+redirect_from: 
+  - tool/vr-holiday-in-nature
+  - vr-holiday-in-nature
 image: /images/vr-holiday.png
 ---
 

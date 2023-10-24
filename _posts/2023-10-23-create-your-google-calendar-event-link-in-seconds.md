@@ -3,6 +3,11 @@ layout: post
 title: "Create Your Google Calendar Event Link in Seconds"
 date: 2023-10-23
 description: "Share events with Your participants seamlessly without using Google Calendar yourself."
+permalink: create-your-google-calendar-event-link-in-seconds
+categories: tool
+redirect_from: 
+  - tool/create-your-google-calendar-event-link-in-seconds
+  - create-your-google-calendar-event-link-in-seconds.html
 last_modified_at: 2023-10-23
 ---
 

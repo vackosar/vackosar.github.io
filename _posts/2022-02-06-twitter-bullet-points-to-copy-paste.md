@@ -1,6 +1,11 @@
 ---
 layout: post
 title: "Twitter Bullet Points to Copy & Paste"
+permalink: /twitter-bullet-points-to-copy-paste.html
+categories: tool
+redirect_from: 
+  - tool/twitter-bullet-points-to-copy-paste.html
+  - twitter-bullet-points-to-copy-paste
 date: 2022-02-06
 description: "Copy-paste your bullet point symbol and other tweeting tips and emojis. Usable also for LinkedIn, Meta, Inkscape ..."
 image: /images/twitter-bullet-points.png

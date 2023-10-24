@@ -2,7 +2,13 @@
 layout: default
 title: Multiple Interval Averaging Stopwatch
 description: Measure multiple time intervals and get average calculated and copy data from a table.
+permalink: /multi_interval_stopwatch.html
+categories: tool
+redirect_from: 
+  - tool/multi_interval_stopwatch
+  - multi_interval_stopwatch
 last_modified_at: 2023-08-24
+date: 2023-08-24
 ---
 
 
