@@ -50,8 +50,8 @@ There is a paywalled article called [Conducting Diligence](https://doomberg.subs
   - Republishers: Who are the original primary sources, and are they publicly accessible and non-anonymous? Who is republishing the research, and what are their biases, intentions, and incentives? Do people from multiple sides publish this?
   - Audience bias: Is there an existing bias in the audience that may have been preventing wider publication? Why was this published or surfaced now? Is the current environment related to the results?
 3. Scientific Process and Evidence: At what stage is this research in the scientific process of validation and publishing?
-  - How often are similar papers invalid and retracted?
-  - Burden of Evidence: What is the specific evidence for the claims? Are the metrics and their comparisons valid and relevant? Or are there hidden effects? Is this a randomized double-blind placebo control (RDBPC) trial?
+  - How often are similar papers at similar stage invalid and retracted?
+  - Burden of Evidence: What is the specific evidence for the claims and does it really imply the conclusion (non sequitur)? Are the metrics and their comparisons valid and relevant? Or are there hidden effects? Is this a randomized double-blind placebo control (RDBPC) trial?
   - Transparent: Is the process published and reliable? Are the numbers published, and do they show reasonable statistical distribution? If you wanted to hide something, where would you hide it?
 4. Scientific Context: What do existing research and the history of this field suggest about these findings?
   - The idea: Is there a clear main finding or an attempt to create confusion by adding unnecessary instead? Is the main message coherent? Does the title match the content?
