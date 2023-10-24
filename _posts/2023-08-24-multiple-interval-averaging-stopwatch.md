@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Multiple Interval Averaging Stopwatch
 description: Measure multiple time intervals and get average calculated and copy data from a table.
 permalink: /multi_interval_stopwatch.html
@@ -9,6 +9,7 @@ redirect_from:
 - multi_interval_stopwatch
 last_modified_at: 2023-08-24
 date: 2023-08-24
+image: /images/multi-interval-averaging-stopwatch.png
 my_related_post_paths:
 - _posts/2023-10-23-create-your-google-calendar-event-link-in-seconds.md
 - _posts/2021-05-21-PID-controller-control-loop-mechanism.md
@@ -19,6 +20,8 @@ my_related_post_paths:
 - _posts/2020-05-03-when-is-the-end-of-current-quarter.md
 ---
 
+
+![Multiple Interval Averaging Stopwatch](/images/multi-interval-averaging-stopwatch.png)
 
 <!--
 # Averaging Stopwatch
@@ -31,9 +34,6 @@ It has a table for the time intervals in miliseconds that were measured, where e
 -->
 
 
-
-
-<h1>Multiple Interval Averaging Stopwatch</h1>
 <p>
 Need to measure an average time of a event, that may be different every time, but you need to get approximate mean period? Use this tool.
 </p>

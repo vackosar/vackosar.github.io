@@ -8,6 +8,7 @@ categories: tool
 redirect_from:
 - tool/create-your-google-calendar-event-link-in-seconds
 - create-your-google-calendar-event-link-in-seconds.html
+image: /images/create-google-calendar-event-link.png
 last_modified_at: 2023-10-23
 my_related_post_paths:
 - _posts/2023-08-24-multiple-interval-averaging-stopwatch.md
@@ -21,6 +22,9 @@ my_related_post_paths:
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-with-data.min.js"></script>
+
+
+![Create Your Google Calendar Event Link in Seconds](/images/create-google-calendar-event-link.png)
 
 Create and share a Google Calendar event link in no time, irrespective of whether or not you have a Google Calendar account. With this tool, you can seamlessly generate a URL for your event and share it with participants. All they need to do after that is to click on the link to add the event to their respective Google Calendars. 
 
