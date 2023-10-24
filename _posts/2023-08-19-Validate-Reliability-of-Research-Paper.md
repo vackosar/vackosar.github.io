@@ -55,7 +55,7 @@ There is a paywalled article called [Conducting Diligence](https://doomberg.subs
   - Transparent: Is the process published and reliable? Are the numbers published, and do they show reasonable statistical distribution? If you wanted to hide something, where would you hide it?
 4. Scientific Context: What do existing research and the history of this field suggest about these findings?
   - The idea: Is there a clear main finding or an attempt to create confusion by adding unnecessary instead? Is the main message coherent? Does the title match the content?
-  - Shoulders of Giants: What previous research does this paper cite and stand on? What are the assumptions, and were they proven?
+  - Shoulders of Giants: What previous research does this paper cite and stand on? Are the cited sources saying what is claimed this paper? What are the assumptions, and were they proven?
   - Cross-check: Is the explanation for the claims correct? How does it compare to similar related research? Do the existing trends and order of magnitude estimates match the results?
 5. Future Expectations and Impact: What is the outlook for this finding
   - How large is the impact of the finding? Extraordinary claims require extraordinary proof. How large are the rewards for the successful implementation of this method?
