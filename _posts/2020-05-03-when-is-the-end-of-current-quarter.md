@@ -2,9 +2,13 @@
 layout: default
 title: When is the end of this quarter?
 description: How many days are left in the quarter? What is the current calendar quarter-end date? What is the current quarter?
+permalink: /when-is-the-end-of-current-quarter.html
+categories: tool
 redirect_from: 
-  - independent/when-is-the-end-of-current-quarter.html
+  - tool/when-is-the-end-of-current-quarter
+  - when-is-the-end-of-current-quarter
 image: /images/quarters.svg
+date: 2020-05-03
 last_modified_at: 2022-04-23
 ---
 
@@ -183,7 +187,7 @@ Contact me with the button below.
 
 <a class="btn btn-success m-1" style="text-decoration: none;" href="https://us3.list-manage.com/contact-form?u=289873d7958b1bdc1c6dc93b7&form_id=3b80462ee1d82c5a36e447efbfdbe72a">Consult with Vaclav</a>
 
-Do you need [copy and paste bullet points to your Tweets or other places? Grab some here.](twitter-bullet-points-to-copy-paste.md)
+Do you need [copy and paste bullet points to your Tweets or other places? Grab some here.](../twitter-bullet-points-to-copy-paste.md)
 
 Learn about [defense of margins in my insights from Helmer's 7 Powers' book](/book/7-powers-moats-through-lens-of-dibellos-business-mental-model).
 
