@@ -80,10 +80,6 @@ Use templates below to cut through the noise.<br/>
 • Agreeable fact, surprising or contrarian fact, explain the why.<br/>
 • Exclamation or emotion, hint of information, call to action.<br/>
 
-### Other Super Helpful Tools
-[When is the end of this quarter? Get overview and look at the "Quarter Clock"](/when-is-the-end-of-current-quarter.html)
-
-
 ## What is a bullet point?
 
 A bullet point is a dot-like symbol or a glyph vertically positioned in the middle of the line of text.
@@ -95,6 +91,12 @@ Professionals use bullet points in presentations, notes, and technical writing.
 ## Use This Right Now To:
 
 Increase the impact and readability of your tweets and other social media posts. Instead of struggling to express your point in a limited character count, use bullet points to break down your message into digestible parts that are easy to overview. Use these resources to create more effective and engaging online posts.
+
+
+### Other Super Helpful Tools
+[When is the end of this quarter? Get overview and look at the "Quarter Clock"](/when-is-the-end-of-current-quarter.html)
+
+
 
 
 <script>
