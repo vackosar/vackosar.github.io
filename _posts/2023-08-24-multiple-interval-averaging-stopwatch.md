@@ -30,16 +30,30 @@ Measure multiple time intervals and get average calculated and copy data from a 
 
 Write HTML with inlined JS script for stop watch file.
 It has a current measured millisecond time, one toggle button for start and stop, one clear button.
-It has a table for the time intervals in miliseconds that were measured, where each row can be editted and deleted, and average result output that is updated when the values in the table change by addition, edit, or deletion.
+It has a table for the time intervals in milliseconds that were measured, where each row can be edited and deleted, and average result output that is updated when the values in the table change by addition, edit, or deletion.
 -->
 
 
 <p>
-Need to measure an average time of a event, that may be different every time, but you need to get approximate mean period? Use this tool.
+Need to measure an average time of an event, that may be different every time, but you need to get approximate mean period? Use this tool.
 </p>
 <p>
 This tool has a current measured millisecond time, one toggle button for start and stop, one clear button.
-It has a table for the time intervals in miliseconds that were measured, where each row can be editted and deleted, and average result output that is updated when the values in the table change by addition, edit, or deletion.
+It has a table for the time intervals in milliseconds that were measured, where each row can be edited and deleted, and average result output that is updated when the values in the table change by addition, edit, or deletion.
+</p>
+
+<p>
+<ul>
+  <li>
+Performance Testing: Software engineers can utilize this tool to conduct performance testing on different functions of a program by recording the execution time over multiple intervals to find average execution time.
+</li>
+<li>
+Scientific Experiments: The stopwatch can be useful in repeated scientific experiments to measure average time taken in chemical reactions, speed of certain phenomena or other time-based observations.
+</li>
+<li>
+Athlete Training: Coaches could use it to track and measure the average time interval an athlete takes to complete certain drills or exercises over various sessions.
+</li>
+</ul>
 </p>
 
 
