@@ -22,11 +22,12 @@ my_related_post_paths:
 
 ![Twitter Bullet Points How To](/images/twitter-bullet-points.png)
 
-You have only 280 characters to make your point in a tweet.
-That requires summarization, for which lists are super helpful. 
-Bullet points are crucial to create visually appealing lists.
-Make your list stand out with non-standard bullet points below.
-Copy-paste your favorite character from below and get bullet points into your Tweet, Twitter bio, LinkedIn post, Meta post, or Inkscape poster.
+You have only 280 characters to make your point in a tweet.<br/>
+‣ That requires summarization, for which lists are super helpful. <br/>
+⁃ Bullet points are crucial to create visually appealing lists.<br/>
+♦ Break down your message into digestible parts.<br/>
+👉 Make your list stand out with non-standard bullet points below.<br/>
+👉 Copy-paste your favorite character from below and get bullet points into your Tweet, Twitter bio, LinkedIn post, Meta post, or Inkscape poster.
 
 
 ### Standard Bullet Points Symbols
@@ -89,6 +90,11 @@ A bullet point is a dot-like symbol or a glyph vertically positioned in the midd
 It is a graphical element used as a visual guide to the beginning of items on lists.
 Each element usually distills the essential information in separate sentence fragments.
 Professionals use bullet points in presentations, notes, and technical writing.
+
+
+## Use This Right Now To:
+
+Increase the impact and readability of your tweets and other social media posts. Instead of struggling to express your point in a limited character count, use bullet points to break down your message into digestible parts that are easy to overview. Use these resources to create more effective and engaging online posts.
 
 
 <script>
