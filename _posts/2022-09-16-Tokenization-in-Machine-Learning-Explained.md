@@ -32,6 +32,17 @@ my_related_post_paths:
 ![tokenization and embedding layer for transformer](/images/transformer-tokenization-and-embeddings.drawio.svg)
 
 
+### Is NLP Tokenization Slow?
+Does tokenization take up resources?
+
+Tokenization is low resource CPU operation.
+It is a much lower resource intensive than the model inference, which on contrary is performed on the GPU and involves large matrix multiplications.
+Tokenization can be around 1% of the BERT model inference time.
+
+Tokenization is mostly splitting text on space characters and sometimes further using a dictionary lookup.
+For example, [tiktoken library](https://github.com/openai/tiktoken) can process (throughput) Mega Bytes per second of text with a single CPU core.
+
+
 ### Tokenization In Continuous Modalities Vision or Speech
 - Tokenizers are not quite present in modalities like image or speech.
 - Instead, the images or audio is split into a matrix of patches without dictionary equivalent as in case of the text.
