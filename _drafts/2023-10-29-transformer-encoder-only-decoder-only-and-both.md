@@ -41,11 +41,14 @@ https://arxiv.org/pdf/2304.04052.pdf
 
 
 ### Decoder-Only vs Encoder-Decoder
-The intuition is that, the decoder model just appends textt, so if we have significant distribution difference between the input and the output, for example completely different set of tokens, we can expect that encoder-decoder would work better. And the decoder (prefix model) and sees only the past, and so any task that involves seeing entire text context and addressing specific tokens is bit more complex for it. 
+The intuition is that, the decoder model just appends text, so if we have significant distribution difference between the input and the output, for example completely different set of tokens, we can expect that encoder-decoder would work better. And the decoder (prefix model) and sees only the past, and so any task that involves seeing entire text context and addressing specific tokens is a bit more complex for it. However, decoder-only is simpler architecture than Encoder-decoder, and it is already [Turing-complete](https://arxiv.org/pdf/2305.17026.pdf) and size of the model and training is likely the biggest factor in most cases ([The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)). 
 
 To make relevant apples to apples comparison, we can compare these in compute-matched or parameter-match way, but it is hard to get rid of major differences in training objectives, which likely play the decisive role.
 
-In the [Flan-UL2 paper](https://arxiv.org/abs/2205.05131), authors attempted to reduce training differences by reformulating fill-in-the-blank task (denoising) into generative (autoregressive or prefix-language modelling setting). Furthermore, they seem to use the same encoder-decoder model in both generative way (autoregressive) and encoder-decoder way. Also in [Flan-UL2 paper](https://arxiv.org/abs/2205.05131), their best model was 20b parameter encoder-decoder.
+In the [Flan-UL2 paper](https://arxiv.org/abs/2205.05131), authors attempted to reduce training differences by reformulating fill-in-the-blank task (denoising) into generative (autoregressive or prefix-language modelling setting) - this is called Mixture of Denoisers. Furthermore, they seem to use the same encoder-decoder model in both generative way (autoregressive) and encoder-decoder way. Also in [Flan-UL2 paper](https://arxiv.org/abs/2205.05131), their best model was 20b parameter encoder-decoder.
+
+
+![](/images/mixture-of-denoisers-for-UL2-formulated-auto-regressively.png)
 
 
 Overall:
@@ -53,5 +56,8 @@ Overall:
 - encoder-decoder: strong for natural language understanding (NLU). For example translation, question answering, summarization.
 
 
-- In this older pre-RLHF paper, [Encoder-decoder models trained with masked language modeling achieve the best zero-shot performance after multitask finetuning](https://arxiv.org/pdf/2204.05832.pdf).
-- https://arxiv.org/abs/2205.05131
+In this older pre-RLHF paper, [Encoder-decoder models trained with masked language modeling achieve the best zero-shot performance after multitask finetuning](https://arxiv.org/pdf/2204.05832.pdf).
+
+
+For details, there is [a difference between decoder-only causal and prefix LM](https://arxiv.org/pdf/1910.10683.pdf):
+![encoder-decoder-language-model-prefix-lm.png](/images/encoder-decoder-language-model-prefix-lm.png)
