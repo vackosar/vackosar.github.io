@@ -195,7 +195,7 @@ function onLoad() {
   // Set default timezone
   tzSelect.value = moment.tz.guess();
   
-  document.getElementById("goToLink").addEventListener("submit", function(event){
+  document.getElementById("goToLink").addEventListener("click", function(event){
     event.preventDefault();
   
     var calendar_url = createLink()
