@@ -9,7 +9,7 @@ last_modified_at: 2023-10-29
 permalink: /:categories/:title
 ---
 
-![Transformer encoder-decoder model diagram](/images/transformer-encoder-decoder.png)
+![Transformer encoder-decoder model diagram (Attention is all you need)](/images/transformer-encoder-decoder.png)
 
 
 People keep asking me about, what is the difference between encoder, decoder, and normal [transformer (with self-attention)](/ml/transformers-self-attention-mechanism-simplified).
@@ -21,7 +21,7 @@ Input is text and output is sequence of [embeddings](/ml/Embeddings-in-Machine-L
 Use cases are sequence classification (class token), token classification.
 It uses bidirectional attention, so the model can see forwards and backwards.
 
-![](/images/bert-vs-GPT.png)
+![bidirectional attention in BERT vs unidirectional (causal) attention in GPT](/images/bert-vs-GPT.png)
 
 
 ### Decoder-only (GPT4)
@@ -33,7 +33,7 @@ The attention is almost always causal (unidirectional), so the model can see onl
 
 
 ### Encoder-Decoder T5
-![](/images/t5-text-to-text.png)
+![T5 encoder-decoder multi-task visualization](/images/t5-text-to-text.png)
 
 [T5](https://arxiv.org/abs/1910.10683) has [Encoder-Decoder or Full-Transformer](https://arxiv.org/abs/1706.03762).
 Input is text and output is the next word (token), which is then appended to the decoder-input.
@@ -52,7 +52,7 @@ To make relevant apples to apples comparison, we can compare these in compute-ma
 In the [Flan-UL2 paper](https://arxiv.org/abs/2205.05131), authors attempted to reduce training differences by reformulating fill-in-the-blank task (denoising) into generative (autoregressive or prefix-language modelling setting) - this is called Mixture of Denoisers. Furthermore, they seem to use the same encoder-decoder model in both generative way (autoregressive) and encoder-decoder way. Also in [Flan-UL2 paper](https://arxiv.org/abs/2205.05131), their best model was 20b parameter encoder-decoder.
 
 
-![](/images/mixture-of-denoisers-for-UL2-formulated-auto-regressively.png)
+![UL2 formulation of masking tasks in a autoregressive way](/images/mixture-of-denoisers-for-UL2-formulated-auto-regressively.png)
 
 
 In this older pre-RLHF paper, [Encoder-decoder models trained with masked language modeling achieve the best zero-shot performance after multitask finetuning](https://arxiv.org/pdf/2204.05832.pdf).
