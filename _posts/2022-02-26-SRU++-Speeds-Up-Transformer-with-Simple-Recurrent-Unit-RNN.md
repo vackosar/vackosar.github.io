@@ -16,8 +16,8 @@ my_related_post_paths:
 - _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2020-11-29-Lambda-Networks-Transform-Self-Attention.md
+- _posts/2023-10-29-Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer.md
 - _posts/2020-10-25-Performers-FAVOR+-Faster-Transformer-Attention.md
-- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 ---
 
 

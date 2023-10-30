@@ -13,8 +13,8 @@ last_modified_at: 2022-04-25
 my_related_post_paths:
 - _posts/2023-10-23-create-your-google-calendar-event-link-in-seconds.md
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
-- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
 - _posts/2022-05-20-bits-per-byte-and-bits-per-character.md
+- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
 - _posts/2017-07-15-Restore-Missing-Punctuation-with-Keras-Convolutional-Text-Punctuator.md
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
 - _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md

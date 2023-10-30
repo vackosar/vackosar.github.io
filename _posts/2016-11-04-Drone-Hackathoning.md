@@ -15,7 +15,7 @@ my_related_post_paths:
 - _posts/2016-07-03-GitFlow-Incremental-Builder.md
 - _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
 - _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
-- _posts/2017-02-26-$15-Ebay-USB-Microscope.md
+- _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
 ---
 
 

@@ -15,8 +15,8 @@ my_related_post_paths:
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 - _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
-- _posts/2022-05-14-neural-data-compression.md
 ---
 
 

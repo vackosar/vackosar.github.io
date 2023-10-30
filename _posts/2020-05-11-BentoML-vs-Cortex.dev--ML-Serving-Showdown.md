@@ -17,7 +17,7 @@ my_related_post_paths:
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
-- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
+- _posts/2023-10-29-Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer.md
 ---
 
 

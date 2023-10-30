@@ -15,9 +15,9 @@ my_related_post_paths:
 - _posts/2016-07-03-GitFlow-Incremental-Builder.md
 - _posts/2017-10-28-Spring-Integration-Highlights.md
 - _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
+- _posts/2023-10-29-Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer.md
 - _posts/2022-05-20-bits-per-byte-and-bits-per-character.md
 - _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
-- _posts/2022-01-09-7-powers-moats-through-lens-of-dibellos-business-mental-model.md
 ---
 
 

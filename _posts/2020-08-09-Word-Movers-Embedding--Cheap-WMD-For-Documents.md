@@ -16,7 +16,7 @@ my_related_post_paths:
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
 - _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
-- _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 ---
 
 

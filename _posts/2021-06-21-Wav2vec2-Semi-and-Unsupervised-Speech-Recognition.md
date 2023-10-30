@@ -16,8 +16,8 @@ my_related_post_paths:
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
-- _posts/2023-07-03-OpenAIs-Image-Text-Model-CLIP.md
 ---
 
 

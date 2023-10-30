@@ -12,10 +12,10 @@ my_related_post_paths:
 - _posts/2023-07-03-OpenAIs-Image-Text-Model-CLIP.md
 - _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2023-10-29-Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer.md
 - _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
-- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 ---
 
 
