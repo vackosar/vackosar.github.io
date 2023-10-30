@@ -31,6 +31,8 @@ The attention is almost always causal (unidirectional), so the model can see onl
 
 
 ### Encoder-Decoder T5
+![](/images/t5-text-to-text.png)
+
 [T5](https://arxiv.org/abs/1910.10683) has [Encoder-Decoder or Full-Transformer](https://arxiv.org/abs/1706.03762).
 Input is text and output is the next word (token), which is then appended to the decoder-input.
 Encoder decoder uses cross-attention to introduce information from the encoder into the decoder.
