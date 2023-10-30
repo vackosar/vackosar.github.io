@@ -23,7 +23,7 @@ my_related_post_paths:
 
 
 - self-attention (sometimes KQV-attention) layer is central mechanism in [transformer architecture introduced in Attention Is All You Need paper](https://arxiv.org/pdf/1706.03762.pdf)
-- an example of architecture based on Transformer is [BERT](https://aclanthology.org/N19-1423/), which contains only Transformer's encoder.
+- an example of architecture based on Transformer is [BERT](https://aclanthology.org/N19-1423/), which [contains only Transformer's encoder (it is encoder-only)](/ml/Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer).
 - models based on transformer are often state-of-the-art in various domains (vision, speech, ...) as of 2022
 - compared to LSTM (RNN), Transformer is more parallelizable, thus faster to train
 

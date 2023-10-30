@@ -12,7 +12,7 @@ permalink: /:categories/:title
 ![Transformer encoder-decoder model diagram](/images/transformer-encoder-decoder.png)
 
 
-People keep asking me about, what is the difference between encoder, decoder, and normal transformer.
+People keep asking me about, what is the difference between encoder, decoder, and normal [transformer (with self-attention)](/ml/transformers-self-attention-mechanism-simplified).
 It is a simple thing, you can master quickly.
 
 ### Encoder-only (BERT)
@@ -20,6 +20,8 @@ It is a simple thing, you can master quickly.
 Input is text and output is sequence of [embeddings](/ml/Embeddings-in-Machine-Learning-Explained).
 Use cases are sequence classification (class token), token classification.
 It uses bidirectional attention, so the model can see forwards and backwards.
+
+![](/images/bert-vs-GPT.png)
 
 
 ### Decoder-only (GPT4)
