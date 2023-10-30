@@ -2,14 +2,14 @@
 title: Encoder-Only vs Decoder-Only vs Encoder-Decoder Transformer
 description: Wrap your head around the main Transformer variants in 5 minutes.
 layout: post
-image: /images/transformer-full-model.png
+image: /images/transformer-encoder-decoder.png
 categories: ml
 date: 2023-10-29
 last_modified_at: 2023-10-29
 permalink: /:categories/:title
 ---
 
-![Transformer full model diagram](/images/transformer-full-model.png)
+![Transformer encoder-decoder model diagram](/images/transformer-encoder-decoder.png)
 
 
 People keep asking me about, what is the difference between encoder, decoder, and normal transformer.
