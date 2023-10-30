@@ -19,13 +19,14 @@ It is a simple thing, you can master quickly.
 [BERT](https://aclanthology.org/N19-1423/) has Encoder-only architecture.
 Input is text and output is sequence of [embeddings](/ml/Embeddings-in-Machine-Learning-Explained).
 Use cases are sequence classification (class token), token classification.
-It uses bidirectional attention.
+It uses bidirectional attention, so the model can see forwards and backwards.
 
 
 ### Decoder-only (GPT4)
 [GPT-2](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) has Decoder-only architecture.
 Input is text and output is the next word (token), which is then appended to the input.
-Use cases are mostly text generation, but with [prompting](/ml/Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM) we can do many things including sequence classification.
+Use cases are mostly text generation (autoregressive), but with [prompting](/ml/Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM) we can do many things including sequence classification.
+The attention is almost always causal (unidirectional), so the model can see only previous tokens (prefix). 
 
 
 
@@ -39,14 +40,18 @@ https://arxiv.org/pdf/2304.04052.pdf
 
 
 
-### Which to Choose When?
-The decoder model just appends text, so if we have significant distribution difference between the input and the output, for example completely different set of tokens, we can expect that encoder-decoder would work better.
+### Decoder-Only vs Encoder-Decoder
+The intuition is that, the decoder model just appends textt, so if we have significant distribution difference between the input and the output, for example completely different set of tokens, we can expect that encoder-decoder would work better. And the decoder (prefix model) and sees only the past, and so any task that involves seeing entire text context and addressing specific tokens is bit more complex for it. 
+
+To make relevant apples to apples comparison, we can compare these in compute-matched or parameter-match way, but it is hard to get rid of major differences in training objectives, which likely play the decisive role.
+
+In the [Flan-UL2 paper](https://arxiv.org/abs/2205.05131), authors attempted to reduce training differences by reformulating fill-in-the-blank task (denoising) into generative (autoregressive or prefix-language modelling setting). Furthermore, they seem to use the same encoder-decoder model in both generative way (autoregressive) and encoder-decoder way. Also in [Flan-UL2 paper](https://arxiv.org/abs/2205.05131), their best model was 20b parameter encoder-decoder.
 
 
+Overall:
 - decoder-only: strong at text generation tasks (models for prompting, chatting)
-- encoder-decoder: strong for NLU. For example translation, question answering, summarization.
-  - In this older pre-RLHF paper,  
+- encoder-decoder: strong for natural language understanding (NLU). For example translation, question answering, summarization.
 
 
-[We find that pretrained non-causal decoder models can be adapted into performant generative causal decoder models, using autoregressive language modeling as a downstream task. Furthermore, we find that pretrained causal decoder models can be efficiently adapted into non-causal decoder models, ultimately achieving competitive performance after multitask finetuning.](https://arxiv.org/abs/2204.05832)
-
+- In this older pre-RLHF paper, [Encoder-decoder models trained with masked language modeling achieve the best zero-shot performance after multitask finetuning](https://arxiv.org/pdf/2204.05832.pdf).
+- https://arxiv.org/abs/2205.05131
