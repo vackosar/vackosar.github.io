@@ -1,5 +1,5 @@
 ---
-title: Transformer Encoder-Only vs Decoder-Only vs Full Transformer
+title: Encoder-Only vs Decoder-Only vs Encoder-Decoder Transformer
 description: Wrap your head around the main Transformer variants in 5 minutes.
 layout: post
 image: /images/transformer-full-model.png
@@ -53,13 +53,17 @@ In the [Flan-UL2 paper](https://arxiv.org/abs/2205.05131), authors attempted to 
 ![](/images/mixture-of-denoisers-for-UL2-formulated-auto-regressively.png)
 
 
-Overall:
-- decoder-only: strong at text generation tasks (models for prompting, chatting)
-- encoder-decoder: strong for natural language understanding (NLU). For example translation, question answering, summarization.
-
-
 In this older pre-RLHF paper, [Encoder-decoder models trained with masked language modeling achieve the best zero-shot performance after multitask finetuning](https://arxiv.org/pdf/2204.05832.pdf).
 
 
 For details, there is [a difference between decoder-only causal and prefix LM](https://arxiv.org/pdf/1910.10683.pdf):
 ![encoder-decoder-language-model-prefix-lm.png](/images/encoder-decoder-language-model-prefix-lm.png)
+
+
+### How to Choose?
+Personally, I will choose based on what pretrained model is available and howeasy is it to adopt it for the task at hand.
+It is unclear what architecture may be the best from the start. Perhaps minor consideration could be following:
+
+- decoder-only: strong at text generation tasks (models for prompting, chatting)
+- encoder-decoder: strong for natural language understanding (NLU). For example translation, question answering, summarization.
+
