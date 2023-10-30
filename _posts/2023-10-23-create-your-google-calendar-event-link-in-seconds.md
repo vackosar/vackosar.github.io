@@ -20,8 +20,10 @@ my_related_post_paths:
 - _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
 ---
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-with-data.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-with-data.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ical.js/1.5.0/ical.min.js" defer></script>
+
 
 
 ![Create Your Google Calendar Event Link in Seconds](/images/create-google-calendar-event-link.png)
@@ -59,7 +61,7 @@ Create and share a Google Calendar event link in no time, irrespective of whethe
 ### Start Now
 Get started now, and save your time, as well as that of your participants, with our Google Calendar Event Link Creator. Share events and schedules quickly and efficiently, and make sure that all your attendees mark their calendars without fail. Happy event planning!
 
-<form id="calendarEvent">
+<form id="calendarEvent" oninput="createLink()">
   <label for="event_name">Event Name:</label><br>
   <input type="text" id="event_name" name="event_name" value=""><br>
 
@@ -83,38 +85,14 @@ Get started now, and save your time, as well as that of your participants, with 
 
 <p>Click the "Go to link" after you have filled out the event details to navigate to the google calendar page, or click the copy button to copy the URL!</p>
 
+<h3>Create Event Link From iCalendar ICS File</h3>
+<input type="file" id="fileUpload" onchange="parseIcs()">
+<div id ="output"></div>
+
 <script>
 
-// Pre-fill date and time fields
-var currentDate = moment().add(1, 'days').startOf('day').add(8, 'hours'); // set time to 8am tomorrow
 
-// Format the date & time according to HTML datetime-local input requirements and users local time zone
-var formattedStart = currentDate.format("YYYY-MM-DDTHH:mm");
-var formattedEnd = currentDate.add(2, 'hours').format("YYYY-MM-DDTHH:mm");
 
-document.getElementById('date_time_from').value = formattedStart;
-document.getElementById('date_time_to').value = formattedEnd;
-
-// Populate timezone dropdown with IANA time zones and their standard text labels
-var tzSelect = document.getElementById('timezone');
-var timeZones = moment.tz.names();
-for (var i = 0; i < timeZones.length; i++) {
-    var opt = document.createElement('option');
-    opt.value = timeZones[i];
-    opt.innerHTML = timeZones[i];
-    tzSelect.appendChild(opt);
-}
-
-// Set default timezone
-tzSelect.value = moment.tz.guess();
-
-document.getElementById("goToLink").addEventListener("submit", function(event){
-  event.preventDefault();
-
-  var calendar_url = createLink()
-
-  window.open(calendar_url, '_blank');
-});
 
 function createLink(){
   var name = document.getElementById('event_name').value;
@@ -149,7 +127,84 @@ async function copyToClipboard(text) {
     }
 }
 
-document.getElementById('calendarEvent').addEventListener('input', function () {
-    createLink();
-});
+
+function parseIcs() {
+    var fileInput = document.getElementById('fileUpload');
+    var file = fileInput.files[0];
+    var reader = new FileReader();
+
+    reader.onload = function(event) {
+        // Parse ICS file
+        var icsFile = ICAL.parse(event.target.result.trim());
+        var comp = new ICAL.Component(icsFile);
+        var events = comp.getAllSubcomponents('vevent');
+
+        // Output events to HTML
+        var outputContainer = document.getElementById('output');
+        outputContainer.innerHTML = '';
+        var timezone = document.getElementById('timezone').value;
+        index = 0;
+        events.forEach(function(event) {
+            var eventComp = new ICAL.Event(event);
+            var listItem = document.createElement('li');
+
+            if (index === 0) { // sets the first event to form inputs
+                document.getElementById('event_name').value = eventComp.summary;
+                document.getElementById('date_time_from').value = moment.tz(eventComp.startDate.toJSDate(), timezone).format('YYYY-MM-DDTHH:mm');
+                document.getElementById('date_time_to').value = moment.tz(eventComp.endDate.toJSDate(), timezone).format('YYYY-MM-DDTHH:mm');
+                createLink(); // we need to create the link again with the new values.
+            }
+
+            listItem.textContent = 'Event Name: ' + eventComp.summary +
+                                  ', Start Time: ' + moment.tz(eventComp.startDate.toJSDate(), timezone).format() +
+                                  ', End Time: ' + moment.tz(eventComp.endDate.toJSDate(), timezone).format();
+            outputContainer.appendChild(listItem);
+            index = index + 1;
+        });
+    };
+    reader.onerror = function(event) {
+        console.error("File could not be read! Code " + event.target.error.code);
+    };
+
+    reader.readAsText(file);
+}
+
+
+
+function onLoad() {
+  // Pre-fill date and time fields
+  var currentDate = moment().add(1, 'days').startOf('day').add(8, 'hours'); // set time to 8am tomorrow
+  
+  // Format the date & time according to HTML datetime-local input requirements and users local time zone
+  var formattedStart = currentDate.format("YYYY-MM-DDTHH:mm");
+  var formattedEnd = currentDate.add(2, 'hours').format("YYYY-MM-DDTHH:mm");
+  
+  document.getElementById('date_time_from').value = formattedStart;
+  document.getElementById('date_time_to').value = formattedEnd;
+  
+  // Populate timezone dropdown with IANA time zones and their standard text labels
+  var tzSelect = document.getElementById('timezone');
+  var timeZones = moment.tz.names();
+  for (var i = 0; i < timeZones.length; i++) {
+      var opt = document.createElement('option');
+      opt.value = timeZones[i];
+      opt.innerHTML = timeZones[i];
+      tzSelect.appendChild(opt);
+  }
+  
+  // Set default timezone
+  tzSelect.value = moment.tz.guess();
+  
+  document.getElementById("goToLink").addEventListener("submit", function(event){
+    event.preventDefault();
+  
+    var calendar_url = createLink()
+  
+    window.open(calendar_url, '_blank');
+  });
+
+}
+window.addEventListener("load", onLoad);
+
+
 </script>
