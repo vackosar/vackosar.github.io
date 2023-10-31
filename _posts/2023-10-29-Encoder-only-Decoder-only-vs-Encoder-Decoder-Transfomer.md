@@ -47,10 +47,6 @@ The attention is almost always causal (unidirectional), so the model can see onl
 Input is text and output is the next word (token), which is then appended to the decoder-input.
 Encoder decoder uses cross-attention to introduce information from the encoder into the decoder.
 
-Cross-attention is unidirectional information flow  both the source sequence and the target sequence simultaneously, less and less attention will be focused on the source sequence as the target sequence length grows. This is the attention degeneration problem.
-https://arxiv.org/pdf/2304.04052.pdf
-
-
 
 ### Decoder-Only vs Encoder-Decoder
 The intuition is that, the decoder model just appends text, so if we have significant distribution difference between the input and the output, for example completely different set of tokens, we can expect that encoder-decoder would work better. And the decoder (prefix model) and sees only the past, and so any task that involves seeing entire text context and addressing specific tokens is a bit more complex for it. However, decoder-only is simpler architecture than Encoder-decoder, and it is already [Turing-complete](https://arxiv.org/pdf/2305.17026.pdf) and size of the model and training is likely the biggest factor in most cases ([The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)). 
