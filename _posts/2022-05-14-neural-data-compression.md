@@ -7,7 +7,7 @@ image: /images/neural-data-compression-thumb.png
 date: 2022-05-14
 video: hRvhG4GWAhE
 permalink: /:categories/:title
-last_modified_at: 2022-07-21
+last_modified_at: 2023-11-03
 my_related_post_paths:
 - _posts/2022-05-20-bits-per-byte-and-bits-per-character.md
 - _posts/2022-10-23-Neural-Network-Pruning-Explained.md
@@ -93,6 +93,11 @@ my_related_post_paths:
 ![model predicting the next symbol from alphabet](/images/character-prediction-blabla.drawio.svg)
 
 
+## Language Modelling is Compression
+- [Language model's training objective](/ml/How-Deep-Neural-Networks-Learn) is to predict the next symbol
+- Any [text compressor can be used for text generation including GZIP](https://arxiv.org/pdf/2309.10668.pdf)
+
+
 ## NNCP: Lossless Data Compression with Neural Networks
 - model is not stored in the output. It is deterministically derived based on decompressed output
 - model is regularly retrained during compression
@@ -138,7 +143,7 @@ my_related_post_paths:
 
 
 ## Abstraction is Lossy Compression
-- abstraction is general rules and concepts derived from the usage and classification
+- [abstraction is a set of generalization rules and concepts](/ml/How-Deep-Neural-Networks-Learn) derived from the usage and classification
 - transformation from concrete to abstract is lossy compression - [taxonomy](/ml/Automatically-Expanding-Taxonomy)
 - from properties of the abstract, can derive properties for all concrete
 - not have to repeat this for each concrete - compression

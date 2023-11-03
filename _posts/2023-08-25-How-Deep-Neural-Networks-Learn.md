@@ -4,7 +4,7 @@ description: Notes on Superposition, Memorization, Regularization, Double Descen
 categories: ml
 image: /images/classroom-neural-network-training.png
 date: 2023-08-25
-last_modified_at: 2023-08-27
+last_modified_at: 2023-11-03
 layout: post
 permalink: /:categories/:title
 my_related_post_paths:
@@ -74,12 +74,13 @@ Instead of [embeddings](/ml/Embeddings-in-Machine-Learning-Explained), we can lo
 In [Superposition, Memorization, and Double Descent](https://transformer-circuits.pub/2023/toy-double-descent/index.html)
 **generalization was observed when weight vectors instead formed polytopes, while embeddings did not**.
 
+Note that, we [can see language modeling as a compression problem](/ml/neural-data-compression),
+so memorization is legitimate solution for the model. On the other hand, it is just generalization may be want we want.
+Thus, we push the model training to instead [find the generalization, that will compress even more](/ml/neural-data-compression). 
+
 
 ### Frequency Leads to Memorization
 In the toy model, they observed that those often repeated patterns where memorized, instead of generalized.
-Note that, we [can see language modeling as a compression problem](/ml/neural-data-compression),
-so memorization is legitimate solution for the model, it is just generalization may be want we want,
-so we want to push the model training to instead [find the generalization, that will compress even more](/ml/neural-data-compression). 
 
 
 ### Phase Change from Memorization to Abstraction
