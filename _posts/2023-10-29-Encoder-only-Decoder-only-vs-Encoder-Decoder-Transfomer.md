@@ -51,9 +51,11 @@ Encoder decoder uses cross-attention to introduce information from the encoder i
 ### Decoder-Only vs Encoder-Decoder
 The intuition is that, the decoder model just appends text, so if we have significant distribution difference between the input and the output, for example completely different set of tokens, we can expect that encoder-decoder would work better. And the decoder (prefix model) and sees only the past, and so any task that involves seeing entire text context and addressing specific tokens is a bit more complex for it. However, decoder-only is simpler architecture than Encoder-decoder, and it is already [Turing-complete](https://arxiv.org/pdf/2305.17026.pdf) and size of the model and training is likely the biggest factor in most cases ([The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)). 
 
-To make relevant apples to apples comparison, we can compare these in compute-matched or parameter-match way, but it is hard to get rid of major differences in training objectives, which likely play the decisive role.
+To make relevant apples to apples comparison, we can compare these in latency or compute-matched or parameter-match way, but it is hard to get rid of major differences in training objectives, which likely play the decisive role.
 
-In the [Flan-UL2 paper](https://arxiv.org/abs/2205.05131), authors attempted to reduce training differences by reformulating fill-in-the-blank task (denoising) into generative (autoregressive or prefix-language modelling setting) - this is called Mixture of Denoisers. Furthermore, they seem to use the same encoder-decoder model in both generative way (autoregressive) and encoder-decoder way. Also in [Flan-UL2 paper](https://arxiv.org/abs/2205.05131), their best model was 20b parameter encoder-decoder.
+In the [Flan-UL2 paper](https://arxiv.org/abs/2205.05131), authors attempted to reduce training differences by reformulating fill-in-the-blank task (denoising) into generative (autoregressive or prefix-language modelling setting) - this is called Mixture of Denoisers. Furthermore, they seem to use the same encoder-decoder model in both decoder-only way and encoder-decoder way. Also in [Flan-UL2 paper](https://arxiv.org/abs/2205.05131), their best model was 20b parameter encoder-decoder.
+
+Futhermore, Compute matched encoder-decoder models in UL2 paper have approximately twice the number of parameters as the decoder models but similar speeds and accuracy. This indicates that encoder-decoder may have [more sparsity that may be taken out with some pruning](/ml/Neural-Network-Pruning-Explained) or distillation techniques to eventually outperform.
 
 
 ![UL2 formulation of masking tasks in a autoregressive way](/images/mixture-of-denoisers-for-UL2-formulated-auto-regressively.png)
@@ -62,12 +64,12 @@ In the [Flan-UL2 paper](https://arxiv.org/abs/2205.05131), authors attempted to 
 In this older pre-RLHF paper, [Encoder-decoder models trained with masked language modeling achieve the best zero-shot performance after multitask finetuning](https://arxiv.org/pdf/2204.05832.pdf).
 
 
-For details, there is [a difference between decoder-only causal and prefix LM](https://arxiv.org/pdf/1910.10683.pdf):
+For details, there is [a difference between decoder-only causal and prefix LM](https://arxiv.org/pdf/1910.10683.pdf). Prefix-LM has a section that has non-causal (bidirectional attention) token dependencies like BERT:
 ![encoder-decoder-language-model-prefix-lm.png](/images/encoder-decoder-language-model-prefix-lm.png)
 
 
 ### How to Choose?
-Personally, I will choose based on what pretrained model is available and howeasy is it to adopt it for the task at hand.
+Personally, I will choose based on what pretrained model is available and how easy is it to adopt it for the task at hand.
 It is unclear what architecture may be the best from the start. Perhaps minor consideration could be following:
 
 - decoder-only: strong at text generation tasks (models for prompting, chatting)
