@@ -77,6 +77,9 @@ In [Superposition, Memorization, and Double Descent](https://transformer-circuit
 
 ### Frequency Leads to Memorization
 In the toy model, they observed that those often repeated patterns where memorized, instead of generalized.
+Note that, we [can see language modeling as a compression problem](/ml/neural-data-compression),
+so memorization is legitimate solution for the model, it is just generalization may be want we want,
+so we want to push the model training to instead [find the generalization, that will compress even more](/ml/neural-data-compression). 
 
 
 ### Phase Change from Memorization to Abstraction
