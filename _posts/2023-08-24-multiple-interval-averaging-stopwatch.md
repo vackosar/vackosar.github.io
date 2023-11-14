@@ -7,7 +7,7 @@ categories: tool
 redirect_from:
 - tool/multi_interval_stopwatch
 - multi_interval_stopwatch
-last_modified_at: 2023-08-24
+last_modified_at: 2023-11-14
 date: 2023-08-24
 image: /images/multi-interval-averaging-stopwatch.png
 my_related_post_paths:
@@ -92,6 +92,7 @@ Athlete Training: Coaches could use it to track and measure the average time int
 		} else {
 			document.getElementById('start').innerText = 'Start';
 			let interval = Date.now() - startTime;
+            document.getElementById('time').innerText = interval;
 			timeList.push(interval);
 			addInterval(interval);
 			calculateAverage();
@@ -113,20 +114,38 @@ Athlete Training: Coaches could use it to track and measure the average time int
 		setTimeout(updateStopwatch, 10);
 	}
 
-	function addInterval(time) {
-		let table = document.getElementById('timeList');
-		let row = table.insertRow(-1);
-		let cell1 = row.insertCell(0);
-		let cell2 = row.insertCell(1);
-		cell1.innerHTML = '<input type="number" value="' + time + '" onchange="updateInterval(this, ' + (table.rows.length - 2) + ')">';
-		cell2.innerHTML = '<button onclick="deleteInterval(' + (table.rows.length - 2) + ')">Delete</button>';
-	}
-
-	function deleteInterval(index) {
-		document.getElementById('timeList').deleteRow(index + 1);
-		timeList.splice(index, 1);
-		calculateAverage();
-	}
+    function addInterval(time) {
+        let table = document.getElementById('timeList');
+        let index = timeList.length - 1; // Get the current index of the new time interval.
+        let row = table.insertRow(-1);
+        let cell1 = row.insertCell(0);
+        let cell2 = row.insertCell(1);
+        cell1.innerHTML = `<input type="number" data-interval-index="${index}" value="${time}" onchange="updateInterval(this)" />`;
+        cell2.innerHTML = `<button onclick="deleteInterval(this)">Delete</button>`;
+    }
+    
+    function deleteInterval(button) {
+        let input = button.closest('tr').querySelector('input[type=number]');
+        let index = input.getAttribute('data-interval-index'); // Get the current index from data attribute.
+        timeList.splice(index, 1); // Remove from timeList using the correct index.
+        button.closest('tr').remove(); // Remove the row from the table.
+        recalculateIndices(); // Recalculate indices for all remaining inputs.
+        calculateAverage();
+    }
+    
+    function updateInterval(input) {
+        let index = input.getAttribute('data-interval-index'); // Get the current index from data attribute.
+        timeList[index] = parseInt(input.value) || 0; // Update the timeList at the correct index.
+        calculateAverage();
+    }
+    
+    function recalculateIndices() {
+        let inputs = document.querySelectorAll('#timeList input[type=number]');
+        inputs.forEach((input, index) => {
+            input.setAttribute('data-interval-index', index); // Reset the index in the data attribute.
+            timeList[index] = parseInt(input.value) || 0; // Update the timeList in case the input values have changed.
+        });
+    }
 
 	function updateInterval(input, index) {
 		timeList[index] = parseInt(input.value);
