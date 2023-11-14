@@ -77,6 +77,10 @@ Athlete Training: Coaches could use it to track and measure the average time int
   ms
 </h2>
 
+<br>
+<button id="copy" onclick="copyTableToClipboard()">Copy Table</button>
+
+
 <script type="text/javascript">
 	let running = false;
 	let startTime;
@@ -156,4 +160,27 @@ Athlete Training: Coaches could use it to track and measure the average time int
 		let sum = timeList.reduce((a, b) => a + b, 0);
 		document.getElementById('average').innerText = timeList.length ? sum / timeList.length : '0';
 	}
+
+    function copyTableToClipboard() {
+        let table = document.getElementById('timeList');
+        let rows = table.querySelectorAll('tr');
+        let csvLines = [];
+        for (let row of rows) {
+            let cells = row.querySelectorAll('th, td');
+            let csvLine = [];
+            for (let cell of cells) {
+                let text = cell.innerText || cell.querySelector('input')?.value || '';
+                csvLine.push(text);
+            }
+            csvLines.push(csvLine.join('\t'));
+        }
+        let csvText = csvLines.join('\n');
+        
+        navigator.clipboard.writeText(csvText).then(function() {
+            console.log('Table copied to clipboard');
+        })
+        .catch(function(err) {
+            console.error('Could not copy table to clipboard: ', err);
+        });
+    }
 </script>
