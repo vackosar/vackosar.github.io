@@ -163,17 +163,16 @@ Athlete Training: Coaches could use it to track and measure the average time int
 
     function copyTableToClipboard() {
         let table = document.getElementById('timeList');
-        let rows = table.querySelectorAll('tr');
+        let bodyRows = table.querySelectorAll('tr:not(:first-child)'); // Exclude the header row
         let csvLines = [];
-        for (let row of rows) {
-            let cells = row.querySelectorAll('th, td');
-            let csvLine = [];
+        for (let row of bodyRows) {
+            let cells = row.querySelectorAll('td:first-child'); // Only select the first cell in each row
             for (let cell of cells) {
-                let text = cell.innerText || cell.querySelector('input')?.value || '';
-                csvLine.push(text);
+                let text = cell.querySelector('input')?.value || ''; // Copy the input value
+                csvLines.push(text);
             }
-            csvLines.push(csvLine.join('\t'));
         }
+        // Join each line with a newline character to paste as rows in Excel
         let csvText = csvLines.join('\n');
         
         navigator.clipboard.writeText(csvText).then(function() {
