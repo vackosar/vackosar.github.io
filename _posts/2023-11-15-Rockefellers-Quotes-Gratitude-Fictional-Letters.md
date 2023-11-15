@@ -22,7 +22,8 @@ The real letters from the archiver collected in "Dear Father, Dear Son" are comp
 "The 38 Letters from J.D. Rockefeller to his son" are a fictional letters: The signs are:
 - Why the author has only one book on Amazon?
 - Why there are no letters like this published before publication on 2020? Why was the book published first in Chinese?
-- Why the style of the text is so modern, and the letters end with "Love, Father" where the letters I found end mostly "Affectionately, Father", who is publisher OS?
+- Why the style of the text is so modern, and the letters end with "Love, Father" where the letters I found end mostly "Affectionately, Father"
+- Who is publisher "OS"?
 
 This is a reminder why you have to be skeptical. Read more on how to spot fakes here: [Validate Reliability of a Research Paper](/ml/Validate-Reliability-of-Research-Paper)
 
