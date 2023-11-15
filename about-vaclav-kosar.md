@@ -25,7 +25,8 @@ extra_meta: |
         "https://www.youtube.com/c/VaclavKosar",
         "https://github.com/vackosar",
         "https://www.quora.com/profile/Vaclav-Kosar",
-        "https://vaclavkosar.com/feed.xml"
+        "https://vaclavkosar.com/feed.xml",
+        "https://www.kaggle.com/vackosar"
       ]
     }
     </script>
@@ -33,7 +34,7 @@ extra_meta: |
 
 <img alt="Running with military cadence" style="width: 50%; max-width: 250px; background-color: lightgreen;" src="/vaclav-kosar-face-editted-removebg-preview-flip.png">
 
-I can help you reduce costs and increase revenues with software and machine learning (AI) systems. For example for [GLAMI](https://medium.com/@glami-engineering), I am optimizing a product feature detection system performing 40 million predictions (e.g. [product category](/software/google-product-taxonomy-viewer)) each month, so that the customers can find what they are looking for quickly.
+I can help you reduce costs and increase revenues with software and machine learning (AI) systems. For example for [GLAMI](https://medium.com/@glami-engineering), I am optimizing a product feature detection system performing 40 million predictions (e.g. [product category](/software/google-product-taxonomy-viewer)) each month, so that the customers can find what they are looking for quickly. For GLAMI, I also participate in development of a shopping assistant. 
 
 I also publish resources which you can use for machine learning research and education. For example, with GLAMI we recently published a [GLAMI-1M dataset](https://github.com/glami/glami-1m) together with a [practise notebook combining of texts which are in multiple languages and images](https://colab.research.google.com/drive/16gMqVqUpleacU5z9Y_7f3c-7I0C45esy?usp=sharing).
 
@@ -43,7 +44,9 @@ I have strong multi-domain experience in solving challenging problems from 9 yea
 - Natural language processing, Machine translation, Image-text classification, Transformers
 - Big data, BigQuery, Spark, Scala, RDBMS
 
-I love understanding and solving business problems and delivering robust machine learning and software solutions quickly while staying up to date, reading research papers, and practicing by building side projects.
+I love understanding and solving business problems and delivering robust machine learning and software solutions quickly while staying up to date, reading research papers, and practicing by building side-projects.
+
+You can also review my [GitHub](https://github.com/vackosar) and newly also [Kaggle](https://www.kaggle.com/vackosar).
 
 
 
