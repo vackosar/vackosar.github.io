@@ -55,7 +55,7 @@ To make relevant apples to apples comparison, we can compare these in latency or
 
 In the [Flan-UL2 paper](https://arxiv.org/abs/2205.05131), authors attempted to reduce training differences by reformulating fill-in-the-blank task (denoising) into generative (autoregressive or prefix-language modelling setting) - this is called Mixture of Denoisers. Furthermore, they seem to use the same encoder-decoder model in both decoder-only way and encoder-decoder way. Also in [Flan-UL2 paper](https://arxiv.org/abs/2205.05131), their best model was 20b parameter encoder-decoder.
 
-Futhermore, Compute matched encoder-decoder models in UL2 paper have approximately twice the number of parameters as the decoder models but similar speeds and accuracy. This indicates that encoder-decoder may have [more sparsity that may be taken out with some pruning](/ml/Neural-Network-Pruning-Explained) or distillation techniques to eventually outperform.
+Furthermore, Compute matched encoder-decoder models in UL2 paper have approximately twice the number of parameters as the decoder models but similar speeds and accuracy. This indicates that encoder-decoder may have [more sparsity that may be taken out with some pruning](/ml/Neural-Network-Pruning-Explained) or distillation techniques to eventually outperform.
 
 
 ![UL2 formulation of masking tasks in a autoregressive way](/images/mixture-of-denoisers-for-UL2-formulated-auto-regressively.png)
@@ -65,6 +65,7 @@ In this older pre-RLHF paper, [Encoder-decoder models trained with masked langua
 
 
 For details, there is [a difference between decoder-only causal and prefix LM](https://arxiv.org/pdf/1910.10683.pdf). Prefix-LM has a section that has non-causal (bidirectional attention) token dependencies like BERT:
+
 ![encoder-decoder-language-model-prefix-lm.png](/images/encoder-decoder-language-model-prefix-lm.png)
 
 
