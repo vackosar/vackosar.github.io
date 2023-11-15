@@ -17,11 +17,11 @@
 
 
 ## Word2vec Method for Non-contextual Word Vectors
-- [word2vec (Mikolov 2013)](https://arxiv.org/pdf/1301.3781.pdf): 10 surrounding words embeddings trained to sum up close to the middle word vector
-- even simpler method: [GloVe (Pennington 2014)](https://nlp.stanford.edu/pubs/glove.pdf): just counting co-occurrence in a 10 word window 
-- other similar methods: [FastText](/ml/FastText-Vector-Norms-And-OOV-Words), [StarSpace](/ml/starspace-embedding) 
-- words appearing in similar context have similar embedding vectors 
-- word disambiguation is not supported
+- [Word2vec (Mikolov 2013)](https://arxiv.org/pdf/1301.3781.pdf) trains the middle-word vector to be close to sum of 10 surrounding words embeddings. 
+- Even simpler method is [GloVe (Pennington 2014)](https://nlp.stanford.edu/pubs/glove.pdf), which counts co-occurrences in a 10 word window, then reduces dimensionality with SVD.
+- Other similar methods are [FastText](/ml/FastText-Vector-Norms-And-OOV-Words), [StarSpace](/ml/starspace-embedding).
+- Words appearing in similar contexts have similar Word2vec embedding vectors. Word meaning disambiguation is not possible.
+- [Vector manipulation leads to meaning manipulation](/ml/manipulate-item-attributes-via-disentangled-representation), e.g., vector operation `v(king) – v(man) + v(woman)` returns a vector close to `v(queen)`.
 
 ![word2vec operation](/images/word2vec.jpg)
 

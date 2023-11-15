@@ -69,10 +69,11 @@ For details, there is [a difference between decoder-only causal and prefix LM](h
 ![encoder-decoder-language-model-prefix-lm.png](/images/encoder-decoder-language-model-prefix-lm.png)
 
 
-### How to Choose?
+### Which To Choose From Encoder, Decoder, or Encoder-Decoder Transformer?
 Personally, I will choose based on what pretrained model is available and how easy is it to adopt it for the task at hand.
 It is unclear what architecture may be the best from the start. Perhaps minor consideration could be following:
 
+- encoder-only: [vector embeddings](/ml/Embeddings-in-Machine-Learning-Explained) for classification, clustering, search
 - decoder-only: strong at text generation tasks (models for prompting, chatting)
 - encoder-decoder: strong for natural language understanding (NLU). For example translation, question answering, summarization.
 
