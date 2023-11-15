@@ -11,10 +11,10 @@ my_related_post_paths:
 - _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
-- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
-- _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
-- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
+- _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
 ---
 
 ![Transformer encoder-decoder model diagram (Attention is all you need)](/images/transformer-encoder-decoder.png)

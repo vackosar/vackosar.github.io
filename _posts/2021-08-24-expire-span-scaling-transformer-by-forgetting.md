@@ -16,7 +16,7 @@ my_related_post_paths:
 - _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
 - _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 - _posts/2021-12-28-cross-attention-in-transformer-architecture.md
-- _posts/2023-10-29-Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer.md
+- _posts/2020-05-08-starspace-embedding.md
 ---
 
 

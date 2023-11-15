@@ -17,7 +17,7 @@ my_related_post_paths:
 - _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
 - _posts/2017-07-15-Restore-Missing-Punctuation-with-Keras-Convolutional-Text-Punctuator.md
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
-- _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
+- _posts/2023-08-24-multiple-interval-averaging-stopwatch.md
 ---
 
 ![Twitter Bullet Points How To](/images/twitter-bullet-points.png)

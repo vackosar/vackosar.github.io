@@ -15,7 +15,7 @@ my_related_post_paths:
 - _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 - _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
-- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
+- _posts/2023-10-29-Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer.md
 ---
 
 

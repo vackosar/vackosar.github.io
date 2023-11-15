@@ -13,8 +13,8 @@ my_related_post_paths:
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
-- _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
 ---
 
 
