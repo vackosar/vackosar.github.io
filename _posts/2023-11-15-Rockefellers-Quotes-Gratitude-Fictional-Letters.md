@@ -22,18 +22,18 @@ my_related_post_paths:
 
 I read a book about 38 Letters Rockefeller's to his son. I really enjoyed it at first, but then it started to sound suspicious to me. The language was somehow too modern, like from a self-help book from 2010. I read online reviews, I found similar complaints that referred to the archives of the letters, about how the book was first published in China, and that the content is completely different in the original sources.
 
-I studied the online archive, bought another book of Rockefeller quotes, and ordered physically book called "Dear Father, Dear Son" and skimmed through it in one evening. And I have a completely different feeling from it. Those 38 letters are fictional partially based on various quotes and historical events, but mostly fictional and sometimes completely made up (e.g. the car chase).
+I studied the online archive, bought another book of Rockefeller quotes, and ordered physically book called "[Dear Father, Dear Son](https://a.co/d/4rsZQsv)" and skimmed through it in one evening. And I have a completely different feeling from it. Those 38 letters are fictional partially based on various quotes and historical events, but mostly fictional and sometimes completely made up (e.g. the car chase).
 
-The real letters from the archiver collected in "Dear Father, Dear Son" are completely different. Less instructive in the self-help direction, but beautiful. They are full of familial love, which I think is also a productivity enhancing mental technology based on my other recent readings. The archived letters reveal deep family love, a father's guidance to his son, the son's acceptance of that wisdom, the weight of a near-billion-dollar legacy, and an unshakable belief in a benevolent God.
+The real letters from the archive collected by J.W. Ernst in "[Dear Father, Dear Son](https://a.co/d/4rsZQsv)" are completely different. Less instructive in the self-help direction, but beautiful. They are full of familial love and gratitude, which I think is also a productivity enhancing mental technology based on my other recent readings. The archived letters reveal deep family love, a father's guidance to his son, the son's acceptance of that wisdom, the weight of a near-billion-dollar legacy, and an unshakable belief in a benevolent God.
 
 # Why are The 38 Letters Fiction?
 "The 38 Letters from J.D. Rockefeller to his son" are a fictional letters: The signs are:
-- Why the author has only one book on Amazon?
-- Why there are no letters like this published before publication on 2020? Why was the book published first in Chinese?
-- Why the style of the text is so modern, and the letters end with "Love, Father" where the letters I found end mostly "Affectionately, Father"
-- Who is publisher "OS"?
+- Why the author has only one book on Amazon and who they are?
+- Why there was no book like this published before publication on 2020? Why was the book published first in Chinese in 2015?
+- Who is the books publisher "OS"? Another version specifies "Independently published" (August 5, 2021). Does it mean, the book didn't pass any filter?
+- Why the style of the text is so modern, and the letters end with "Love, Father" where the letters I found end mostly "Affectionately, Father" (See more below).
 
-This is a reminder why you have to be skeptical. Read more on how to spot fakes here: [Validate Reliability of a Research Paper](/ml/Validate-Reliability-of-Research-Paper)
+This is a reminder why you have to be skeptical. Read more on how to spot fakes here: [Validate Reliability of a Research Paper](/ml/Validate-Reliability-of-Research-Paper).
 
 
 # The Best Quotes From The Real Letters
@@ -91,6 +91,8 @@ I verified sources for a couple of these, but not all yet.
 - He was engaged in different enterprises; he used to tell me about these things, explaining their significance; and he taught me the principles and methods of business. From early boyhood I kept a little book which I remember I called Ledger A—and this little volume is still preserved—containing my receipts and expenditures as well as an account of the small sums that I was taught to give away regularly.
 - It is for Americans to see that foreign investors are well and honestly treated, so that they will never regret purchases of our securities.
 - I can think of nothing less pleasurable than a life devoted to pleasure.
+- I am convinced that we want to study more and more not to enslave ourselves to things and get down more nearly to the Benjamin Franklin idea of living, and take our bowl of porridge on a table without any table cloth.
+- Going back . . . to my early business days and boyhood, the Baptists I knew listened to their consciences and their religious instructions, not only did not dance in public places but did not dance anywhere and did not even concede the reputability of dancing. . . . The theater was considered a source of depravity, to be shunned by conscientious Christians.
 - As I study wealthy men, I can see but one way in which they can secure a real equivalent for money spent, and that is to cultivate a taste for giving where the money may produce an effect which will be a lasting gratification.
 - Good management consists of showing average people how to do the work of superior people.
 - The whole system of proper relations, whether it be in commerce, or in the Church, or in the sciences, rests on honor. Able business men seek to confine their dealings to people who tell the truth and keep their promises; and the representatives of the Church, who are often prone to attack business men as a type of what is selfish and mean, have some great lessons to learn, and they will gladly learn them as these two types of workers grow closer together.
