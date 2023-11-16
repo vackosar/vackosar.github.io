@@ -37,7 +37,7 @@ This is a reminder why you have to be skeptical. Read more on how to spot fakes 
 
 
 ## Another Caution
-Regardless above, any quotes, or books is in a risk of not being useful to You the reader. You are unique, or you can become unique, living in a unique time and place. Books are mere words, that gain meaning when acted on.
+Regardless above, any quotes, or books is in a risk of not being useful to You the reader. You are unique, or you can become unique, living in a unique time and place. Books are mere words, that gain meaning when acted on. You may find more useful describing the world in your own words from experience of interacting with it. 
 
 
 ## The Best Quotes From The Real Letters
