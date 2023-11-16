@@ -26,17 +26,21 @@ I studied the online archive, bought another book of Rockefeller quotes, and ord
 
 The real letters from the archive collected by J.W. Ernst in "[Dear Father, Dear Son](https://a.co/d/4rsZQsv)" are completely different. Less instructive in the self-help direction, but beautiful. They are full of familial love and gratitude, which I think is also a productivity enhancing mental technology based on my other recent readings. The archived letters reveal deep family love, a father's guidance to his son, the son's acceptance of that wisdom, the weight of a near-billion-dollar legacy, and an unshakable belief in a benevolent God.
 
-# Why are The 38 Letters Fiction?
+## Why is The 38 Letters Book a Fiction?
 "The 38 Letters from J.D. Rockefeller to his son" are a fictional letters: The signs are:
 - Why the author has only one book on Amazon and who they are?
-- Why there was no book like this published before publication on 2020? Why was the book published first in Chinese in 2015?
+- Why there was no book like this one published before 2020? Why was the book published first in Chinese in 2015?
 - Who is the books publisher "OS"? Another version specifies "Independently published" (August 5, 2021). Does it mean, the book didn't pass any filter?
-- Why the style of the text is so modern, and the letters end with "Love, Father" where the letters I found end mostly "Affectionately, Father" (See more below).
+- Why the style of the text is so modern, and the letters end with "Love, Father" where the letters I found end mostly "Affectionately, Father". Why does the writer's character does not match the other books? 
 
 This is a reminder why you have to be skeptical. Read more on how to spot fakes here: [Validate Reliability of a Research Paper](/ml/Validate-Reliability-of-Research-Paper).
 
 
-# The Best Quotes From The Real Letters
+## Another Caution
+Regardless above, any quotes, or books is in a risk of not being useful to You the reader. You are unique, or you can become unique, living in a unique time and place. Books are mere words, that gain meaning when acted on.
+
+
+## The Best Quotes From The Real Letters
 These are extractions from letters in book "Dear Father, Dear Son", that captured my attention.
 
 - not the whim of any small individual stockholder, or a desire to make a market to sell this stock, the prime factor is, as I state, to keep the concern strong, prosperous, vigorous, aggressive, on its own feet and on its own merits. Then it can borrow money. Then it can sell stock. But the tail must not wag the dog, and the business must be conducted primarily for the good of the concern itself
@@ -60,7 +64,7 @@ These are extractions from letters in book "Dear Father, Dear Son", that capture
 - I advise carefully to consider going to some quiet place in Switzerland, the air is so bracing and stimulating
 
 
-# Other Rockefeller Quotes
+## Other Rockefeller Quotes
 I verified sources for a couple of these, but not all yet. 
 
 - I investigated and worked myself almost to a nervous breakdown, in groping my way through the ever-widening field of philanthropic endeavor.
