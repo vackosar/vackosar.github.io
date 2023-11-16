@@ -32,8 +32,9 @@ Systematic development of prompts using **metric evaluation is called prompt eng
 
 ## Trade-offs in Prompting
 - Longer prompts are the more expensive in terms of **latency and compute**. For example, more examples provided, the longer prompt. Training a specific model or selecting samples intelligently are possible solutions.
+- More complex and longer the prompt, less likely the model will be able to follow all the rules. Try to break the problem to simpler problems with simpler instructions.
 - If the **model changes** the prompt may stop being optimal, in that case, there is little point **over-optimizing** it. For example, ChatGPT or GPT-4 is often changed by OpenAI. The models are meant to be general not specific to your problem.
-- Control guardrails vs creative hallucinations. Certain prompts may be prone to more hallucinations over others.
+- Control guardrails vs creative hallucinations. Certain prompts may be prone to more hallucinations over others. Can you verify the results? Can you measure performance of the model?
 - Prompts are a crude tool without nuance and can be "over prompted" (prompt injection) with user's own instructions, whereas fine-tuning requires more initial investment, data, and is complicated. 
 
 
