@@ -65,7 +65,7 @@ These are extractions from letters in book "Dear Father, Dear Son", that capture
 
 
 ## Other Rockefeller Quotes
-I verified sources for a couple of these, but not all yet. 
+I verified sources for a couple of these, but not all yet. You can consider reading books [Titan: The Life of John D. Rockefeller, Sr. ](https://www.amazon.com/Titan-Life-John-Rockefeller-Sr/dp/1400077303) and [John D. Rockefeller on Making Money: Advice and Words of Wisdom on Building and Sharing Wealth](https://a.co/d/i4pUfEJ).
 
 - I investigated and worked myself almost to a nervous breakdown, in groping my way through the ever-widening field of philanthropic endeavor.
 - A great number of scientific men every year give up everything to arrive at some helpful contribution to the sum of human knowledge, and I have sometimes thought that good people who lightly and freely criticize their actions scarcely realize just what such criticism means. It is one thing to stand on the comfortable ground of placid inaction and put forth words of cynical wisdom, and another to plunge into the work itself and through strenuous experience earn the right to express strong conclusions.
