@@ -100,4 +100,5 @@ I verified sources for a couple of these, but not all yet.
 - Charity is injurious unless it helps the recipient to become independent of it.
 - I believe the power to make money is a gift of God ... to be developed and used to the best of our ability for the good of mankind. Having been endowed with the gift I possess, I believe it is my duty to make money and still more money and to use the money I make for the good of my fellow man according to the dictates of my conscience.
 - I believe it is a religious duty to get all the money you can, fairly and honestly; to keep all you can, and to give away all you can.
+- I hope you will take good care of your health, This is a religious duty, and you can accomplish so much for the world if you keep well and strong.
 
