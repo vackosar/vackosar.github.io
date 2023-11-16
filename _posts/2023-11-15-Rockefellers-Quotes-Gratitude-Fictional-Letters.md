@@ -41,7 +41,9 @@ Regardless above, any quotes, or books is in a risk of not being useful to You t
 
 
 ## The Best Quotes From The Real Letters
-These are extractions from letters in book "Dear Father, Dear Son", that captured my attention.
+These are extractions from letters in book "[Dear Father, Dear Son](https://a.co/d/4rsZQsv)", that captured my attention.
+
+![rockefeller letter](/images/rockefeller-letter.png)
 
 - not the whim of any small individual stockholder, or a desire to make a market to sell this stock, the prime factor is, as I state, to keep the concern strong, prosperous, vigorous, aggressive, on its own feet and on its own merits. Then it can borrow money. Then it can sell stock. But the tail must not wag the dog, and the business must be conducted primarily for the good of the concern itself
 - Go carefully. Be conservative. Be sure you are right - and then do not be afraid to give out, as your heart prompts you, and as the Lord inspires you.
