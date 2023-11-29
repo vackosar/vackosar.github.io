@@ -31,7 +31,7 @@ Consider other options.
 You can do clusterless with directly EC2 wiht AWS cli scripsts, or Fargate. Or with cluster maintanance you can think about popular choice Terraform.
 For deploying consider using e.g. Kubernetes Python client.
 
-# Original Post
+## Original Post:
 Do you need a simple way to train and host your machine learning AI models in the cloud?
 Here is my experience with Cortex Labs's Cortex.
 My view on BentoML is based on cursory overview of their documentation.

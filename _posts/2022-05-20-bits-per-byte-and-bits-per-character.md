@@ -28,7 +28,7 @@ Or, if it the worst possible, it needs to be given the exact next symbol from th
 
 
 
-# How BPB relates to compression ratio or cross-entropy?
+## How BPB relates to compression ratio or cross-entropy?
 
 Bits-per-Byte (BPB) and Bits-per-Character (BPC) are metrics related to compression ratio and cross-entropy, used in compression and language modeling, with BPC equaling BPB for ASCII Extended characters, and cross-entropy loss using log2 in character-level models equating to BPC.
 
