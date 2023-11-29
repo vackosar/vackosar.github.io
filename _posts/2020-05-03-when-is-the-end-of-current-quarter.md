@@ -195,7 +195,7 @@ Contact me with the button below.
 
 <a class="btn btn-success m-1" style="text-decoration: none;" href="https://us3.list-manage.com/contact-form?u=289873d7958b1bdc1c6dc93b7&form_id=3b80462ee1d82c5a36e447efbfdbe72a">Consult with Vaclav</a>
 
-Do you need [copy and paste bullet points to your Tweets or other places? Grab some here.](../twitter-bullet-points-to-copy-paste.md)
+Do you need [copy and paste bullet points to your Tweets or other places? Grab some here.](/twitter-bullet-points-to-copy-paste)
 
 Learn about [defense of margins in my insights from Helmer's 7 Powers' book](/book/7-powers-moats-through-lens-of-dibellos-business-mental-model).
 
