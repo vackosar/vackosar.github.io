@@ -29,7 +29,6 @@ We steer the model with a small additional textual context, such that it **learn
 This additional context is called prompt.
 Systematic development of prompts using **metric evaluation is called prompt engineering**.
 
-
 ## Trade-offs in Prompting
 - Longer prompts are the more expensive in terms of **latency and compute**. For example, more examples provided, the longer prompt. Training a specific model or selecting samples intelligently are possible solutions.
 - More complex and longer the prompt, less likely the model will be able to follow all the rules. Try to break the problem to simpler problems with simpler instructions.
@@ -61,6 +60,30 @@ Provide examples such that
 - Difficult to answer examples - select most difficult questions for prompt based on difficulty to answer by the model.
 
 ![Language Models are Few-Shot Learners](/images/gpt-3-few-shot-prompting.png)
+
+
+## TELeR Prompting Taxonomy
+![TELeR paper prompt-taxonomy-levels-turn-expression-level-of-details-role](/images/TELeR-prompt-taxonomy-levels-turn-expression-level-of-details-role.png)
+
+
+### Key Dimensions in Prompting
+1. Turn: Single or multi-turn based on interaction length.
+2. Expression: Question-style or instruction-style based on directive form.
+3. Role: System-role defined or undefined before prompting.
+4. Level of Details: Seven levels (0-6) indicating directive specificity and clarity.
+
+
+## Key Factors in Prompting
+1. Clear Goals: Define precise objectives to guide the model's understanding.
+2. Associated Data: Clarify if the prompt includes data and distinguish it from instructions.
+3. Distinct Sub-Tasks: Outline multiple steps as separate items for clarity and organization.
+4. Evaluation Criteria/Few-Shot Examples: Provide examples of input-output pairs for learning.
+5. Additional Information Retrieval: Use real-time data to enhance model responses.
+6. Explanation Seeking: Request explicit explanations for model outputs when necessary.
+7. Context Definition: Supply background information for more accurate model responses.
+8. Expression Style: Decide between question or instruction format for directives.
+9. Interaction Style: Choose between single-turn or multi-turn interactions for prompt delivery.
+
 
 
 ## Reasoning in Steps
