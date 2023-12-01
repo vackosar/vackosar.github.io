@@ -65,6 +65,14 @@ Provide examples such that
 ## TELeR Prompting Taxonomy
 ![TELeR paper prompt-taxonomy-levels-turn-expression-level-of-details-role](/images/TELeR-prompt-taxonomy-levels-turn-expression-level-of-details-role.png)
 
+## Level 5 prompt
+Level 5 prompt is a complex directive prompt that includes the following:
+1. Description of high-level goal
+2. A detailed bulleted list of sub-tasks
+3. An explicit statement asking LLM to explain its own output
+4. A guideline on how LLM output will be evaluated
+5. Few-shot examples
+
 
 ### Key Dimensions in Prompting
 1. Turn: Single or multi-turn based on interaction length.
