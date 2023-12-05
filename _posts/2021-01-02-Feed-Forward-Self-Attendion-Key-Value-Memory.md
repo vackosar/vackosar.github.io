@@ -38,7 +38,7 @@ Can we gain more understanding of [Transformer model](/ml/transformers-self-atte
 ## Where is Feed-Forward Layer?
 
 Where is Feed-Forward layer within the architecture exactly?
-Feed-forward layer camps within encoder and decoder layers as a sublayer just behind the self-attention sub-layer.
+Feed-forward layer camps within [encoder and decoder layers](/ml/Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer) as a sublayer just behind the self-attention sub-layer.
 
 <figure class="figure">
     <img
@@ -86,7 +86,7 @@ And they reportedly slightly outperformed the vanilla model on the next token pr
 
 ![All-attention: feed-forward layer restated as self-attention](/images/all-attention-feed-forward-as-self-attention.png)
 
-[Google's PaLM model](/ml/googles-pathways-language-model-and-chain-of-thought) authors adopted gated linear unit (GLU) based modification to their feed-forward layer, which is midly similar to cross-attention:
+[Google's PaLM model](/ml/googles-pathways-language-model-and-chain-of-thought) authors adopted gated linear unit (GLU) based modification to their feed-forward layer, which is mildly similar to cross-attention:
 
 {% include shared_slides/swiglu-modified-feed-forward-layer.md %}
 

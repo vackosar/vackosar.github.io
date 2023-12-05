@@ -83,7 +83,7 @@ class CrossAttention(nn.Module):
     """
 ```
 
-In particular at this part, where you can see how query, key, and value interact. This is encoder-decoder architecture, so query is created from encoder hidden states.
+In particular at this part, where you can see how query, key, and value interact. This is [encoder-decoder](/ml/Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer) architecture, so query is created from [encoder](/ml/Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer) hidden states.
 
 ```python
         query = attn.to_q(hidden_states)
@@ -100,22 +100,23 @@ In particular at this part, where you can see how query, key, and value interact
 ```
 
 ## Cross-Attention in Popular Architectures
-Cross-attention is widely used in encoder-decoder or multi-modality use cases.
+Cross-attention is widely used in [encoder-decoder](/ml/Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer) or multi-modality use cases.
 
 ### Cross-Attention in Transformer Decoder
 Cross-attention was described in the [Transformer](/ml/transformers-self-attention-mechanism-simplified) paper, but it was not given this name yet.
 Transformer decoding starts with full input sequence, but empty decoding sequence.
 Cross-attention introduces information from the input sequence to the layers of the decoder,
 such that it can predict the next output sequence token.
-The decoder then adds the token to the output sequence, and repeats this autoregressive process until the EOS token is generated.
+The [decoder](/ml/Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer) then adds the token to the output sequence, and repeats this autoregressive process until the EOS token is generated.
 
 ![Cross-Attention in the Transformer decoder of Attention is All You Need paper](/images/cross-attention-in-transformer-decoder.png)
 
 
 ### Cross-Attention in Stable Diffusion
-Stable diffusion uses cross-attention **for image generation to condition transformers with a text prompt** inside the denoising U-Net layer.
+Stable Diffusion uses cross-attention **for image generation to condition transformers with a text prompt** inside the denoising U-Net layer.
 
 ![stable diffusion architecture with cross-attention](/images/stable-diffusion-architecture.png)
+
 
 ### Cross-Attention in Perceiver IO
 

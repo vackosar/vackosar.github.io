@@ -23,7 +23,7 @@ my_related_post_paths:
 People keep asking me about, what is the difference between encoder, decoder, and normal [transformer (with self-attention)](/ml/transformers-self-attention-mechanism-simplified).
 It is a simple thing, you can master quickly.
 
-### Encoder-only (BERT)
+### Encoder-only (BERT model)
 [BERT](https://aclanthology.org/N19-1423/) has Encoder-only architecture.
 Input is text and output is sequence of [embeddings](/ml/Embeddings-in-Machine-Learning-Explained).
 Use cases are sequence classification (class token), token classification.
@@ -32,7 +32,7 @@ It uses bidirectional attention, so the model can see forwards and backwards.
 ![bidirectional attention in BERT vs unidirectional (causal) attention in GPT](/images/bert-vs-GPT.png)
 
 
-### Decoder-only (GPT4)
+### Decoder-only (GPT2 model)
 [GPT-2](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) has Decoder-only architecture.
 Input is text and output is the next word (token), which is then appended to the input.
 Use cases are mostly text generation (autoregressive), but with [prompting](/ml/Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM) we can do many things including sequence classification.
@@ -40,12 +40,12 @@ The attention is almost always causal (unidirectional), so the model can see onl
 
 
 
-### Encoder-Decoder T5
+### Encoder-Decoder (T5 model)
 ![T5 encoder-decoder multi-task visualization](/images/t5-text-to-text.png)
 
 [T5](https://arxiv.org/abs/1910.10683) has [Encoder-Decoder or Full-Transformer](https://arxiv.org/abs/1706.03762).
 Input is text and output is the next word (token), which is then appended to the decoder-input.
-Encoder decoder uses cross-attention to introduce information from the encoder into the decoder.
+Encoder decoder uses [cross-attention](/ml/cross-attention-in-transformer-architecture) to introduce information from the encoder into the decoder.
 
 
 ### Decoder-Only vs Encoder-Decoder
