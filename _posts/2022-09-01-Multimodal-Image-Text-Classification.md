@@ -82,7 +82,7 @@ my_related_post_paths:
 #### CMA-CLIP vs MMBT vs CLIP on Food101
 - CMA-CLIP outperforms MMBT and CLIP
 - MMBT significantly outperforms CLIP likely due to the tuned transformer head
-- BERT does better than ViT on this dataset
+- BERT does better than [ViT](https://arxiv.org/pdf/2010.11929.pdf) on this dataset
 
 ![cma-clip vs mmbt vs clip vs bert vs vit on Food101](/images/cma-clip-vs-mmbt-vs-clip-vs-bert-vs-vit.png)
 

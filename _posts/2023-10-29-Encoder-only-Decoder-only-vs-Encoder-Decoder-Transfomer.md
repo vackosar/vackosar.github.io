@@ -32,6 +32,9 @@ It uses bidirectional attention, so the model can see forwards and backwards.
 ![bidirectional attention in BERT vs unidirectional (causal) attention in GPT](/images/bert-vs-GPT.png)
 
 
+Another encoder-only model example is [ViT (Vision Transformer)](https://arxiv.org/pdf/2010.11929.pdf) for image classification.
+
+
 ### Decoder-only (GPT2 model)
 [GPT-2](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) has Decoder-only architecture.
 Input is text and output is the next word (token), which is then appended to the input.
