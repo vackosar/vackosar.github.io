@@ -29,7 +29,7 @@ The commandments in the book do that for you.
 Munger's inversion has more meanings that people usually explain it. Based on the quote below it is about:
 - thinking about directions leading to not achieving the goal, or getting to the worst case
 - working backwards as in Amazonian Way
-- inverting some problem's symmetry opposite direction along
+- inverting along the problem's symmetry or anti-symmetry axis
 
 Quoting Charlie Munger's Almanack:
 
