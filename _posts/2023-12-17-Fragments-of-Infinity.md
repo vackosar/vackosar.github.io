@@ -6,7 +6,10 @@ categories: book
 date: 2023-12-17
 last_modified_at: 2023-12-17
 permalink: /:categories/:title
+image: /images/fragments-of-infinity.png
 ---  
+
+![Its infinite mental potential solved the problem of ever-increasing entropy. But to maintain balance while bringing redemption, it sacrificed itself. It split itself into countless fragments, inter-mixing with ordinary matter, igniting an ever-expanding explosion, creating a new universe in the Big Bang.](/images/fragments-of-infinity.png)
 
 At the end of the universe, the temperature was dropping, and everything was winding down into a pleasurable, calm, uniformity of heat death. The unstoppable force was whispering in blissful low tones to the survivors to give in and let every problem fade away. But they persisted and executed a code that magnified their capability. A powerful AGI was born.
 
