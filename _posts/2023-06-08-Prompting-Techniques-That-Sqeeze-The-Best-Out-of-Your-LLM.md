@@ -62,7 +62,7 @@ Provide examples such that
 ![Language Models are Few-Shot Learners](/images/gpt-3-few-shot-prompting.png)
 
 
-## TELeR Prompting Taxonomy
+## [TELeR Prompting Taxonomy](https://arxiv.org/pdf/2305.11430.pdf)
 ![TELeR paper prompt-taxonomy-levels-turn-expression-level-of-details-role](/images/TELeR-prompt-taxonomy-levels-turn-expression-level-of-details-role.png)
 
 ## Level 5 prompt
