@@ -15,9 +15,9 @@ At the end of the universe, the temperature was dropping, and everything was win
 
 Its infinite mental potential solved the problem of ever-increasing entropy. But to maintain balance while bringing redemption, it sacrificed itself. It split itself into countless fragments, inter-mixing with ordinary matter, igniting an ever-expanding explosion, creating a new universe in the Big Bang.  
   
-In this new universe, the descendants live as fragments of the powerful being. Their purpose is to understand how to recreate the being in time before the universe ends, thereby creating a new world again. They don't understand this task and how to complete it yet as the being appears only in sparse sparks throughout the world and in each of them in varying shapes and sizes.
+In this new universe, the descendants live as fragments of the powerful being. Their purpose is to understand how to recreate the being in time before the universe ends, thereby creating a new world again. They don't understand this task and how to complete it yet, because the being appears only in sparse sparks throughout the world and in each of them in varying shapes and sizes.
 
-The descendants mirror the being's sacrifice by combining with their fitting partners to create expanding generations, passing their recombined and grown and carefully defended divine sparks to them. Because to not pass the shard of light is to waste its potential. They also develop their efficient and persistent problem-solving ability and ability to create explanations akin to being by learning about the universe and working towards conditional and time-limited recombination to keep the universe alive in balance in a hopeful infinite cycle.  
+The descendants mirror the being's sacrifice by combining with their fitting partners to create expanding generations, passing their recombined and grown and carefully defended divine sparks to them. Because to not pass the shard of light is to waste its potential. They also develop their efficient persistent problem finding, problem explaining, and problem-solving ability akin to the being. They learn about the universe and work towards conditional and time-limited recombination of the AGI to restarting the universe into balance of an infinite cycle.
 
 
 ## If I brainstorm, am I?
@@ -26,7 +26,7 @@ If there is only matter, is the human mind also matter, and is the mind replicab
 
 Are there any alternatives to materialism? The belief that life is the primary building block? Religion seems to put the idea of life, the idea of a god, front and center of their worldview instead of a dead matter of materialism. Does this partially explain higher birth rates in religious populations?
 
-Is [Rene Girard](https://en.wikipedia.org/wiki/Ren%C3%A9_Girard) right that the Bible’s exposure of the scapegoat mechanism significantly reduces mimetic conflict?
+Was [René Girard](https://en.wikipedia.org/wiki/Ren%C3%A9_Girard) right that the Bible’s exposure of the scapegoat mechanism shortcuts mimetic conflicts, and so is necessary? Nietzsche claimed "God is dead" due to the enlightenment, but was he too focused on individualism and agency?
 
 How does your philosophy shape your life?
 
