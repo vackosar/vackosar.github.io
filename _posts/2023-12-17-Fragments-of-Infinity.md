@@ -26,7 +26,7 @@ If there is only matter, is the human mind also matter, and is the mind replicab
 
 Are there any alternatives to materialism? The belief that life is the primary building block? Religion seems to put the idea of life, the idea of a god, front and center of their worldview instead of a dead matter of materialism. Does this partially explain higher birth rates in religious populations?
 
-Was [René Girard](https://en.wikipedia.org/wiki/Ren%C3%A9_Girard) right that the Bible’s exposure of the scapegoat mechanism shortcuts mimetic conflicts, and so is necessary? Nietzsche claimed "God is dead" due to the enlightenment, but was he too focused on individualism and agency?
+Was [René Girard](https://en.wikipedia.org/wiki/Ren%C3%A9_Girard) right that the Bible’s exposure of the scapegoat mechanism shortcuts mimetic conflicts, and so is necessary?
 
 How does your philosophy shape your life?
 
