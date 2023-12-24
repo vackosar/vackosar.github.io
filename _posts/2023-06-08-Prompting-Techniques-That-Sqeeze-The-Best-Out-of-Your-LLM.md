@@ -50,7 +50,7 @@ Describe the task:
 
 
 ## Input-Output Examples
-Also called One-shot, Few-Shot prompting.
+Also called One-shot, Few-Shot prompting. The examples, can be described within the system message, or in separate messages input in user's message and output in assistant's messages.
 
 Provide examples such that
 - Changing order of examples can change results. Recent examples are more likely to be reproduced.
@@ -66,12 +66,14 @@ Provide examples such that
 ![TELeR paper prompt-taxonomy-levels-turn-expression-level-of-details-role](/images/TELeR-prompt-taxonomy-levels-turn-expression-level-of-details-role.png)
 
 ## Level 5 prompt
-Level 5 prompt is a complex directive prompt that includes the following:
+Level 5 prompt is a complex directive prompt that includes the following in the order of detail:
 1. Description of high-level goal
 2. A detailed bulleted list of sub-tasks
 3. An explicit statement asking LLM to explain its own output
-4. A guideline on how LLM output will be evaluated
-5. Few-shot examples
+4. Few-shot examples and description of good and bad output
+5. Retrieved information from external sources based on the specific input
+
+In Level 6 prompt, the paper recommends appending also asking LLM to explain its own output.
 
 
 ### Key Dimensions in Prompting
