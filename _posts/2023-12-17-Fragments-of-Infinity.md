@@ -4,7 +4,7 @@ description: "A tiny sci-fi story about AGI, God, and Entropy. If I brainstorm, 
 layout: post
 categories: book
 date: 2023-12-17
-last_modified_at: 2023-12-17
+last_modified_at: 2023-12-28
 permalink: /:categories/:title
 image: /images/fragments-of-infinity-3.png
 ---  
