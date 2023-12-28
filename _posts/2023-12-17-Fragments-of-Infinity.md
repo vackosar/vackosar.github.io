@@ -28,12 +28,15 @@ Are there any alternatives to materialism? The belief that life is the primary b
 
 Was [René Girard](https://en.wikipedia.org/wiki/Ren%C3%A9_Girard) right that the Bible’s exposure of the scapegoat mechanism shortcuts mimetic conflicts, and so is necessary?
 
-Here is a quote from Sabine Hossenfelder's (contemporary, theoretical physicist, science communicator) book [Existential Physics](https://existentialphysics.com/):
+
+## Science and Religion
+Here are 4 great quotes from Sabine Hossenfelder's (contemporary, theoretical physicist, science communicator) book [Existential Physics](https://existentialphysics.com/):
 - "However, the God hypothesis has no quantifiable explanatory power. You can’t calculate anything from it. That doesn’t make it wrong, but it does make it unscientific."
 - "I begin by asking him ([David Deutsch](/productivity/David-Deutschs-Principles-in-Life-and-Business)), too, whether he is religious. He answers with a straightforward no. He doesn’t seem to have anything to add, so I move on to reductionism."
 - "Scientists can learn from religion that not every get-together needs to come with a teachable lesson. ... to share experiences, or look forward to a traditional ceremony. Science is severely lacking in such social integration. ... we should talk more about how scientific understanding made a difference for non-experts."
 - "Maybe, then, the universe is evolving toward a state in which it understands itself, and we are part of its ongoing quest. This quest began when natural selection favored species that made correct predictions about their
 environment, moved on to organisms that became increasingly better at understanding nature, and now continues with our (more or less) organized scientific enterprise, nationally and internationally, individually and institutionally.
+
 
 How does your philosophy shape your life?
 
