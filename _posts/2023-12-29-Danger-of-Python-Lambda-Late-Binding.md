@@ -1,6 +1,6 @@
 ---  
 title: "Dangers of Python Lambda: Repeated Values due to Late Binding"
-description: "Always assign all variables that you are using the lambda to avoid hidden bugs due to unexpected values in loops."
+description: "Avoid hidden bugs due to unexpected values in loops with AsyncIO or Multi-threading Python."
 layout: post
 categories: software
 date: 2023-12-29
@@ -10,8 +10,10 @@ permalink: /:categories/:title
 
 {% include highlight-rouge-friendly.css.html %}
 
+There may be a scary secret problem in your use of lambda in Python, when used with AsyncIO or Multi-threading. It is called Late Binding.
+
 ## The Question
-Always assign all variables that you are using the lambda. Can you see what is unexpected about below results of the [DocTest](https://docs.python.org/3/library/doctest.html)?
+Can you see what is unexpected about below results of the [DocTest](https://docs.python.org/3/library/doctest.html)?
 
 ```
 async def process(i):
@@ -38,7 +40,8 @@ async def process_all():
 ```
 
 ## The Answer
-The output values are all stuck on final value of `19`!
+The output values are all stuck on final value of `19`! Always assign all variables that you are using the lambda with AsyncIO or threading.
+
 
 ## Fix for unexpected final values in my Python loop with a lambda
 The repeated `19` in the results is due to the late binding behavior of closures in Python. The lambda function captures the variable `i` by reference, not by value. By the time the lambda is executed, the for loop has completed and `i` has its final value of `9`. When `i + 10` is evaluated inside the lambda, it always equals `19`.
