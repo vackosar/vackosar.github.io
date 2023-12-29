@@ -32,7 +32,7 @@ async def process_all():
     for i in range(10):
         task = asyncio.create_task(process(i))
         # will this lambda change value?
-        task.add_done_callback(lambda task: asyncio.create_task(process(i + 10)))
+        task.add_done_callback(lambda _task: asyncio.create_task(process(i + 10)))
         tasks.append(task)
         await asyncio.sleep(0.1)
 
@@ -68,7 +68,7 @@ async def process_all():
         # will this lambda change value?
         # task.add_done_callback(lambda task: asyncio.create_task(process(i + 10)))
         # Instead of above, capture the current value of i by passing it to the lambda.
-        task.add_done_callback(lambda task, i = i: asyncio.create_task(process(i + 10)))
+        task.add_done_callback(lambda _task, _i = i: asyncio.create_task(process(_i + 10)))
         tasks.append(task)
         await asyncio.sleep(0.1)
 
