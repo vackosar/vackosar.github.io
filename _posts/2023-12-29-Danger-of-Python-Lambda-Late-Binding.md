@@ -6,6 +6,7 @@ categories: software
 date: 2023-12-29
 last_modified_at: 2023-12-29
 permalink: /:categories/:title
+image: /images/python-lambda-late-binding-repeated-final-value-bug-error.png
 ---
 
 {% include highlight-rouge-friendly.css.html %}
