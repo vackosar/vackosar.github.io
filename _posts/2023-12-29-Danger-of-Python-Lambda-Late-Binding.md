@@ -40,7 +40,9 @@ async def process_all():
 ```
 
 ## The Answer
-The output values are all stuck on final value of `19`! Always assign all variables that you are using the lambda with AsyncIO or threading.
+The output values are all stuck on final value of `19`!
+Always assign all variables that you are using the lambda with AsyncIO or threading.
+Or create an object that will carry the specific values intended to be used during later execution of the function preventing them to change.
 
 
 ## Fix for unexpected final values in my Python loop with a lambda
