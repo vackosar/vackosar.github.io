@@ -15,6 +15,7 @@ There may be a scary secret problem in your use of lambda in Python, when used w
 
 ## The Question
 Can you see what is unexpected about below results of the [DocTest](https://docs.python.org/3/library/doctest.html)?
+By the way, you are familiar with `add_done_callback` method, right?
 
 ```
 async def process(i):
