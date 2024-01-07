@@ -9,7 +9,7 @@ redirect_from:
 date: 2022-02-06
 description: Copy-paste your bullet point symbol and other tweeting tips and emojis. Usable also for LinkedIn, Meta, Inkscape ...
 image: /images/twitter-bullet-points.png
-last_modified_at: 2022-04-25
+last_modified_at: 2024-01-07
 my_related_post_paths:
 - _posts/2023-10-23-create-your-google-calendar-event-link-in-seconds.md
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
@@ -31,13 +31,23 @@ You have only 280 characters to make your point in a tweet.<br/>
 
 
 ### Standard Bullet Points Symbols
+Nothing beats the classical bullets.
 
 • Classic bullet <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('•')">📋 Copy</button><br/>
 ◦ White bullet <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('◦')">📋 Copy</button><br/>
 ∙ Middle dot bullet <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('∙')">📋 Copy</button><br/>
 
 
+### Keyboard Shortcut for Classical Bullets
+You don't always have to come here
+Apart from copy-pasting, you can also produce standard bullet points using below:<br/>
+• Mac: hold option key & press 8<br/>
+• Windows: hold alt key & press Numpad 7<br/>
+• Linux: `Ctrl+Shift+U`, then type `2022`. Or `Ctrl+.` then `Ctrl+[space]`, then search your bullet.<br/>
+
+
 ### Special Bullet Points Symbols
+Are you looking for something extra?
 
 ‣ Triangular bullet <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('‣')">📋 Copy</button><br/>
 ⁃ Dash bullet <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('⁃')">📋 Copy</button><br/>
@@ -49,11 +59,12 @@ You have only 280 characters to make your point in a tweet.<br/>
 💎 Gem stone bullet <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('💎')">📋 Copy</button><br/>
 
 
-### Keyboard Tips
-Apart from copy-pasting, you can also produce standard bullet points using below:<br/>
-• Mac: hold option key & press 8<br/>
-• Windows: hold alt key & press Numpad 7<br/>
+## Checkboxes and Tick Marks
+These are great for actionable lists or status reports.
 
+☐ Unchecked checkbox <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('☐')">📋 Copy</button><br/>
+☑ Checked checkbox <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('☑')">📋 Copy</button><br/>
+☒ Crossed checkbox <button class="btn btn-outline-secondary btn-sm" type="button" onclick="copyToClipboard('☒')">📋 Copy</button><br/>
 
 ### Eye Catching Emoji Symbols
 Other cute symbols useful to emphasize call to action and add a spark of emotion to your tweet.
