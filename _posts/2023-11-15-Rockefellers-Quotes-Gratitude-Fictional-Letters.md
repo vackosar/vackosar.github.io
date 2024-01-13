@@ -18,7 +18,7 @@ my_related_post_paths:
 ---
 
 
-[//]: # (![rockefeller-and-letters]&#40;/images/rockefeller-and-letters.png&#41;)
+![rockefeller-and-letters](/images/rockefeller-and-letters.png)
 
 {% include image.html src="/images/rockefeller-and-letters.png" alt="J.D. Rockefeller letters illustration" %}
 
