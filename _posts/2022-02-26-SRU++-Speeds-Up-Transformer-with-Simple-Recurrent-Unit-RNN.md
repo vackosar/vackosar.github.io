@@ -157,7 +157,7 @@ int main()
 - 3x - 10x faster training than Transformer-XL
   - 1.6 days on 8-GPU machine
 
-{% include image.html src="/images/sru++-bits-per-character-on-enwik8.png" alt="SRU++ Simple Recurrent Unit on Enwik8 bits per character" />
+{% include image.html src="/images/sru++-bits-per-character-on-enwik8.png" alt="SRU++ Simple Recurrent Unit on Enwik8 bits per character" %}
 
 
 

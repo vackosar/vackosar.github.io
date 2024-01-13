@@ -21,7 +21,7 @@ my_related_post_paths:
 ---
 
 
-{% include image.html src="{{ page.image }}" alt="{{ page.title }}" %}
+{% include image.html src="/images/7-powers-dibello-mental-model.png" alt="Helmer's 7 Powers business moats and DiBello's Business key dimensions of business expertise" %}
 
 In business, most of the excess profits come from delivering more from less compared to the next best alternative including competition.
 The [Helmer's 7 Powers book](https://www.goodreads.com/book/show/32816087-7-powers) lists 7 barriers that protect margins of businesses long term and how to attain them.
