@@ -4,7 +4,7 @@
         class="figure-img img-fluid rounded lazyload"
         alt="{{ include.alt }}"
         data-src="{{ include.src }}"
-        style="{% if include.width %}width: {{ include.width }}{% endif %}"
+        style="{% if include.style %}{{ include.style }}{% endif %}"
     >
     <figcaption class="figure-caption">
         {{ include.alt }}

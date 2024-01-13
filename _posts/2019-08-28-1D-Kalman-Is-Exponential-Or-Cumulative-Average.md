@@ -106,8 +106,7 @@ Which gives us recursive equation that match cumulative average equation:
 
 We can double-check above proof by plotting the convergence.
 
-<img alt="Proof Kalman 1d with constant measurement uncertainty and no process noise plot" style="width: 80%; max-width: 900px" src="/images/2019-08-28-kalman-1d-without-process-noise-plot.png">
-
+{% include image.html alt="Proof Kalman 1d with constant measurement uncertainty and no process noise plot" style="width: 80%; max-width: 900px" src="/images/2019-08-28-kalman-1d-without-process-noise-plot.png" %}
 
 ### 1D Kalman Filter vs Exponential Average
 
@@ -140,7 +139,8 @@ So we get recursive equation for exponential moving average:
 
 Plot of the convergence to exponential moving average:
 
-<img alt="Proof Kalman 1d with constant measurement uncertainty and constant process noise plot" style="width: 80%; max-width: 900px" src="/images/2019-08-28-kalman-1d-with-process-noise-plot.png">
+{% include image.html alt="Proof Kalman 1d with constant measurement uncertainty and constant process noise plot" style="width: 80%; max-width: 900px" src="/images/2019-08-28-kalman-1d-with-process-noise-plot.png"  %}
+
 
 
 ## Kalman Filter Applications
