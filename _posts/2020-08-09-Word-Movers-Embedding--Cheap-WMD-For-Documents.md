@@ -32,7 +32,7 @@ However, vanilla WMD has cubic computational complexity, which makes it impracti
 
 It is minimum amount of dirt multiplied by distance needed to transform one pile of dirt into another pile of dirt.
 
-<img alt="Earth Mover's Distance is amount multiplied by distance." style="width: 90%; max-width: 500px" src="/images/earth-movers-distance.png">
+{% include image.html alt="Earth Mover's Distance is amount multiplied by distance." style="width: 90%; max-width: 500px" src="/images/earth-movers-distance.png" %}
 
 Despite the earth in the name, better analogy is that of a transportation problem. 
 Good example of transportation problem is cost optimization of transportation of gold ore from mines to refineries, where each refinery can accept only certain percentage of the ore.
@@ -72,7 +72,7 @@ In natural language processing, the cosine similarity can we used to compare emb
 Word Embedding Weighted Average Embedding is a document vector calculated as frequency weighted average of word vectors (embeddings) in the document.
 Using the resulting WEWA document vectors can be compared using cosine similarity.
 
-<img alt="Average of two vectors." style="width: 90%; max-width: 300px" src="/images/vector-average.png">
+{% include image.html alt="Average of two vectors." style="width: 90%; max-width: 300px" src="/images/vector-average.png" %}
 
 We can compare Word Mover's Distance vs Cosine similarity of WEWA vectors 
 - WMD uses more detailed information and captures move semantics than WEWA.
@@ -115,7 +115,7 @@ Note that the random document can only be close to the shortest path between the
 \\( \approx \frac{1}{R} exp[ - \gamma (WMD(x, \omega_k) + WMD(y, \omega_k)) ] \\)
 \\( \approx \frac{1}{R} \exp [- \gamma \mathit{WMD}(x, y) ] \\)
 
-<img alt="Word Mover's Distance dominated by single common random document distance." style="width: 90%; max-width: 900px" src="/images/word-movers-distance-vs-embedding.png">
+{% include image.html alt="Word Mover's Distance dominated by single common random document distance." style="width: 90%; max-width: 900px" src="/images/word-movers-distance-vs-embedding.png" %}
 
 
 ### Rich Random Documents

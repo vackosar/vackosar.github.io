@@ -21,7 +21,7 @@ my_related_post_paths:
 
 
 
-<img alt="Transfigure Stress Into Energy" style="width: 90%; max-width: 900px" src="/images/transfigurate-stress-to-energy-2.jpeg">
+{% include image.html alt="Transfigure Stress Into Energy" style="width: 90%; max-width: 900px" src="/images/transfigurate-stress-to-energy-2.jpeg" %}
 
 Research and businessmen suggests that viewing stress as a positive experience can enhance performance, productivity, health, and vitality. By adopting a "stress-is-enhancing" mindset and getting excited, individuals can reappraise anxiety as excitement and improve their performance. Activating the sympathetic nervous system through exercise, cold exposure, rapid breathing exercises, and caffeine consumption can also help to transfigure stress into energy. The Yerkes-Dodson law highlights that an optimal level of stress, or eustress, can improve performance, particularly in easier tasks. Lastly, cortisol, a hormone produced by the adrenal glands, has been shown to have potential in helping manage stress and prevent PTSD and depression.
 

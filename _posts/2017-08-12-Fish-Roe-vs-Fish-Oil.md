@@ -23,7 +23,7 @@ my_related_post_paths:
 
 
 
-<img alt="fishes" style="width: 80%; max-width: 900px" src="/images/fishes-sardines.jpeg">
+{% include image.html alt="fishes" style="width: 80%; max-width: 900px" src="/images/fishes-sardines.jpeg" %}
 
 
 Fish oil is popular supplement. It's production was optimized for maximum content of popular fatty acids DHA and EPA.

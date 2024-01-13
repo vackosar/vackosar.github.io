@@ -19,7 +19,7 @@ my_related_post_paths:
 - _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
 ---
 
-<img alt="VR Holiday In Nature" style="width: 150px" src="/images/vr-holiday.png">
+{% include image.html alt="VR Holiday In Nature" style="width: 150px" src="/images/vr-holiday.png" %}
 
 
 - Relax in VR Nature

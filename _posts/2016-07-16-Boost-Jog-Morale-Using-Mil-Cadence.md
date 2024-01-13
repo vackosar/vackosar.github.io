@@ -25,7 +25,7 @@ my_related_post_paths:
 
 
 
-<img alt="Running with military cadence" style="width: 80%; max-width: 900px" src="/images/mil-cadence-pexels.jpg">
+{% include image.html alt="Running with military cadence" style="width: 80%; max-width: 900px" src="/images/mil-cadence-pexels.jpg" %}
 
 <br>
 
