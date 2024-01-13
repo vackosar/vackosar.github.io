@@ -95,6 +95,30 @@ In Level 6 prompt, the paper recommends appending also asking LLM to explain its
 9. Interaction Style: Choose between single-turn or multi-turn interactions for prompt delivery.
 
 
+## The Top Principles for Improving Prompts
+From paper: [Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4](https://browse.arxiv.org/html/2312.16171v1).
+
+
+### Principle 14 Allow Asking Back
+Allow the model to ask for specific details or requirements until there is enough information to generate the response.
+Example: “From now on, I would like you to ask me questions to…”
+
+
+### Principle 17 Use Delimiters
+Use delimiters to separate the examples, instructions, or relevant information from each other. For example, one or more line breaks to separate instructions, examples, questions, context, and input data.
+
+Example prompt:
+- `###Instruction###`
+- `###Example###` or `###Question###`.
+- present your content.
+
+### Principle 25 Keywords, Regulations, Hint, or Instructions
+Provide directly and clearly keywords, regulations, hint, or instructions to follow.
+
+
+### Principle 3, 12, 19
+Reduce task complexity with a sequence of simple prompts, “think step by step”, combine reasoning in steps (Chain-of-thought) with examples (few-Shot). 
+
 
 ## Reasoning in Steps
 Also called [Chain-of-Thought (CoT) Prompting](https://arxiv.org/pdf/2201.11903.pdf).
