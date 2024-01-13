@@ -14,9 +14,9 @@ my_related_post_paths:
 - _posts/2019-11-02-Thinkpad-P53-vs-P52-Thermals.md
 - _posts/2020-02-25-I-read-papers-on-a-podcast.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
-- _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
 ---
 
 

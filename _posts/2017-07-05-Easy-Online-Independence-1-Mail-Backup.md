@@ -9,12 +9,12 @@ redirect_from:
 - /2017/07/05/Easy-Online-Independence-1-Mail-Backup.html
 my_related_post_paths:
 - _posts/2018-02-25-Creating-Custom-Ubuntu-Web-Link-App.md
-- _posts/2016-07-03-GitFlow-Incremental-Builder.md
 - _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
 - _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
+- _posts/2016-07-03-GitFlow-Incremental-Builder.md
 - _posts/2020-02-25-I-read-papers-on-a-podcast.md
-- _posts/2023-10-23-create-your-google-calendar-event-link-in-seconds.md
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
 ---
 
 

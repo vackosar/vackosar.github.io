@@ -10,8 +10,8 @@ redirect_from:
 - /2017/10/28/Spring-Integration-Highlights.html
 - /2017/11/05/RxJS-And-Spring-Integration-Similarities.html
 my_related_post_paths:
-- _posts/2016-07-03-GitFlow-Incremental-Builder.md
 - _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
+- _posts/2016-07-03-GitFlow-Incremental-Builder.md
 - _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
 - _posts/2017-06-04-Code-Structure-Principles.md
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md

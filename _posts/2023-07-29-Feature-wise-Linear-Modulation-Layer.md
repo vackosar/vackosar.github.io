@@ -11,10 +11,10 @@ my_related_post_paths:
 - _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
 - _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 - _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
+- _posts/2023-10-29-Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer.md
 - _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
-- _posts/2020-11-29-Lambda-Networks-Transform-Self-Attention.md
+- _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
-- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 ---
 
 

@@ -9,8 +9,8 @@ layout: post
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2022-10-23-Neural-Network-Pruning-Explained.md
-- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
 - _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md

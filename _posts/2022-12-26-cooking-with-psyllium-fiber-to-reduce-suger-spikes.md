@@ -14,7 +14,7 @@ my_related_post_paths:
 - _posts/2017-08-12-Fish-Roe-vs-Fish-Oil.md
 - _posts/2022-03-20-sparse-matrix-why-and-when.md
 - _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
 ---
 
 {% include image.html src="/images/psyllium-husk-black-beans.png" alt="psyllium husk sprinkled onto cooked black beans in a pot" %}

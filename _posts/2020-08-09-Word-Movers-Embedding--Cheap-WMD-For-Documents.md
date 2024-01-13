@@ -11,12 +11,12 @@ redirect_from:
 - /ml/Word-Movers-Embedding
 my_related_post_paths:
 - _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
-- _posts/2020-05-08-starspace-embedding.md
 - _posts/2022-04-02-monolingual-word-alignment-for-sentence-similarity.md
+- _posts/2020-05-08-starspace-embedding.md
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
 - _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
-- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
+- _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
 ---
 
 

@@ -13,11 +13,11 @@ image: /images/multi-interval-averaging-stopwatch.png
 my_related_post_paths:
 - _posts/2023-10-23-create-your-google-calendar-event-link-in-seconds.md
 - _posts/2021-05-21-PID-controller-control-loop-mechanism.md
-- _posts/2022-02-06-twitter-bullet-points-to-copy-paste.md
 - _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
-- _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
 - _posts/2019-08-28-1D-Kalman-Is-Exponential-Or-Cumulative-Average.md
 - _posts/2020-05-03-when-is-the-end-of-current-quarter.md
+- _posts/2016-07-16-Boost-Jog-Morale-Using-Mil-Cadence.md
+- _posts/2022-02-06-twitter-bullet-points-to-copy-paste.md
 ---
 
 

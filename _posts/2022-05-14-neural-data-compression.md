@@ -13,9 +13,9 @@ my_related_post_paths:
 - _posts/2022-10-23-Neural-Network-Pruning-Explained.md
 - _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
-- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 ---
 
 

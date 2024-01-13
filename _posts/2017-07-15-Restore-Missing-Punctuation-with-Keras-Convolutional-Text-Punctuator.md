@@ -14,10 +14,10 @@ my_related_post_paths:
 - _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
-- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
-- _posts/2016-11-04-Drone-Hackathoning.md
-- _posts/2020-02-25-I-read-papers-on-a-podcast.md
 - _posts/2023-07-03-OpenAIs-Image-Text-Model-CLIP.md
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
+- _posts/2022-09-01-Multimodal-Image-Text-Classification.md
+- _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 ---
 
 

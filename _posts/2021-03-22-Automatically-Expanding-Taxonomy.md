@@ -13,11 +13,11 @@ last_modified_at: 2022-05-21
 my_related_post_paths:
 - _posts/2021-03-22-google-product-taxonomy-viewer.md
 - _posts/2020-05-08-starspace-embedding.md
-- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
-- _posts/2022-05-14-neural-data-compression.md
 - _posts/2022-10-23-Neural-Network-Pruning-Explained.md
+- _posts/2022-05-14-neural-data-compression.md
 ---
 
 

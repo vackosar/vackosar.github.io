@@ -12,12 +12,12 @@ redirect_from:
 - /software/Python-with-statement-exception-handling
 my_related_post_paths:
 - _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
+- _posts/2017-06-04-Code-Structure-Principles.md
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
-- _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
+- _posts/2023-12-29-Danger-of-Python-Lambda-Late-Binding.md
 - _posts/2020-05-11-BentoML-vs-Cortex.dev--ML-Serving-Showdown.md
-- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
-- _posts/2022-08-03-Python-functools.cmp_to_key-explained.md
-- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
+- _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
+- _posts/2021-12-12-Ten-Commandments-for-business-failure.md
 ---
 
 

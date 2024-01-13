@@ -13,8 +13,8 @@ my_related_post_paths:
 - _posts/2020-10-25-Performers-FAVOR+-Faster-Transformer-Attention.md
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
-- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 - _posts/2023-08-25-How-Deep-Neural-Networks-Learn.md
+- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 ---
 
 

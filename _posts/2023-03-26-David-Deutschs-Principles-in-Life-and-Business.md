@@ -10,10 +10,10 @@ permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2021-12-12-Ten-Commandments-for-business-failure.md
 - _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
-- _posts/2022-01-09-7-powers-moats-through-lens-of-dibellos-business-mental-model.md
+- _posts/2023-12-17-Fragments-of-Infinity.md
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
+- _posts/2022-01-09-7-powers-moats-through-lens-of-dibellos-business-mental-model.md
 - _posts/2021-07-14-Scout-Mindset-Book-Summary.md
-- _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
 - _posts/2023-11-15-Rockefellers-Quotes-Gratitude-Fictional-Letters.md
 ---
 

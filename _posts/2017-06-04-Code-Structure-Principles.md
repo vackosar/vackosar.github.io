@@ -10,13 +10,13 @@ permalink: /:categories/:title
 redirect_from:
 - /2017/06/04/Code-Structure-Principles.html
 my_related_post_paths:
-- _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
 - _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
+- _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
+- _posts/2022-02-06-twitter-bullet-points-to-copy-paste.md
 - _posts/2016-07-03-GitFlow-Incremental-Builder.md
-- _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
-- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
 ---
 
 {% include image.html src="/images/How-to-Structure-Source-Code.png" alt="How-to-Structure-Source-Code" %}

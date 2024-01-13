@@ -14,9 +14,9 @@ my_related_post_paths:
 - _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
+- _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2020-07-12-vr-holiday-in-nature.md
 - _posts/2020-05-08-starspace-embedding.md
-- _posts/2020-04-22-result-diversification-in-web-search-and-recommenders.md
-- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
 ---
 
 

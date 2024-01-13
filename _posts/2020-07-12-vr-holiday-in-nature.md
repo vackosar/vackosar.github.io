@@ -11,11 +11,11 @@ redirect_from:
 image: /images/vr-holiday.png
 my_related_post_paths:
 - _posts/2020-08-21-Brutalist-and-Modernist-Architectures-Collide-at-Sunshine-Plaza-in-Prague.md
-- _posts/2017-02-26-$15-Ebay-USB-Microscope.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
-- _posts/2023-10-23-create-your-google-calendar-event-link-in-seconds.md
 - _posts/2021-03-22-google-product-taxonomy-viewer.md
+- _posts/2017-02-26-$15-Ebay-USB-Microscope.md
+- _posts/2023-10-23-create-your-google-calendar-event-link-in-seconds.md
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 - _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
 ---
 
