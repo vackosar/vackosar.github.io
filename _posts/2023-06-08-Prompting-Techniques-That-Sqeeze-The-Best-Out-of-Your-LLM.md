@@ -17,7 +17,7 @@ my_related_post_paths:
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
 ---
 
-![squeeze-robot-hand-orange](/images/squeeze-robot-hand-orange.png)
+{% include image.html src="/images/squeeze-robot-hand-orange.png" alt="squeeze-robot-hand-orange" %}
 
 
 For **given input**, you want the model to correctly **generate output**.
@@ -46,7 +46,7 @@ Describe the task:
 - persona (expert marketer)
 - specific and precise terms, e.g., avoiding generic word "not".
 
-![GPT-3 Zero-shot](/images/gpt-3-zero-shot-prompting.png)
+{% include image.html src="/images/gpt-3-zero-shot-prompting.png" alt="GPT-3 Zero-shot" %}
 
 
 ## Input-Output Examples
@@ -59,11 +59,11 @@ Provide examples such that
 - Diverse examples between each other - If you have static prompt, instead select diverse examples with clustering.
 - Difficult to answer examples - select most difficult questions for prompt based on difficulty to answer by the model.
 
-![Language Models are Few-Shot Learners](/images/gpt-3-few-shot-prompting.png)
+{% include image.html src="/images/gpt-3-few-shot-prompting.png" alt="Language Models are Few-Shot Learners" %}
 
 
 ## [TELeR Prompting Taxonomy](https://arxiv.org/pdf/2305.11430.pdf)
-![TELeR paper prompt-taxonomy-levels-turn-expression-level-of-details-role](/images/TELeR-prompt-taxonomy-levels-turn-expression-level-of-details-role.png)
+{% include image.html src="/images/TELeR-prompt-taxonomy-levels-turn-expression-level-of-details-role.png" alt="TELeR paper prompt-taxonomy-levels-turn-expression-level-of-details-role" %}
 
 ## Level 5 prompt
 Level 5 prompt is a complex directive prompt that includes the following in the order of detail:
@@ -105,7 +105,7 @@ Append instruction "Let's think step by step." or provide reasoning examples.
 For example, multistep arithmetic, commonsense logical reasoning.
 Model's ability to use [CoT increases with model size (see PaLM and its ability to explain jokes)](/ml/googles-pathways-language-model-and-chain-of-thought).
 
-![Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/images/palm-chain-of-though-prompting.png)
+{% include image.html src="/images/palm-chain-of-though-prompting.png" alt="Chain-of-Thought Prompting Elicits Reasoning in Large Language Models" %}
 
 
 ## Majority Vote Reasoning Steps
@@ -122,13 +122,13 @@ This has analogies to [AlphaZero](https://arxiv.org/pdf/1712.01815.pdf) for play
 
 Criticism is that the evidence is low with only 3 toy examples, additional model generation is required for evaluation operations, and the technique requires additional problem-specific human inputs.
 
-![Tree of Thoughts Problem Solving comparison with Chain-of-Thought](/images/tree-of-thought-tot-comparison-cot.png)
+{% include image.html src="/images/tree-of-thought-tot-comparison-cot.png" alt="Tree of Thoughts Problem Solving comparison with Chain-of-Thought" %}
 
 
 ### Thought Decomposition in ToT
 Designed problem-specific meaningful thought size and separation. For example a paragraph, or an equation.
 
-![three of thought input, output, thoughts](/images/three-of-thought-input-output-thoughts-steps.png)
+{% include image.html src="/images/three-of-thought-input-output-thoughts-steps.png" alt="three of thought input, output, thoughts" %}
 
 
 ### Thought and Value Generation in ToT
@@ -153,14 +153,14 @@ Explore the most promising paths until solution, bad state, or depth limit:
 #### Game of 24
 - Game of 24 is a mathematical reasoning challenge, where the goal is to use 4 numbers and basic arithmetic operations (+-*/) to obtain 24. For example, given input “4 9 10 13”, a solution output could be “(10 - 4) * (13 - 9) = 24”. We decompose by choosing the numbers from the left to the right.
 
-![Tree of Thought ToT: Game of 24 results](/images/tree-of-thought-tot-game-of-24.png)
+{% include image.html src="/images/tree-of-thought-tot-game-of-24.png" alt="Tree of Thought ToT: Game of 24 results" %}
 
-![Tree of Thought ToT: Game of 24 results](/images/tree-of-thought-tot-game-of-24-results.png)
+{% include image.html src="/images/tree-of-thought-tot-game-of-24-results.png" alt="Tree of Thought ToT: Game of 24 results" %}
 
 
 #### Creative Writing
 
-![Tree of Thought ToT: Creative Writing](/images/tree-of-thought-tot-creative-writing-results.png)
+{% include image.html src="/images/tree-of-thought-tot-creative-writing-results.png" alt="Tree of Thought ToT: Creative Writing" %}
 
 ## [Graph of Thoughts](https://arxiv.org/pdf/2308.09687.pdf)
 Tree of Thoughts with the human-specified ability to combine thoughts on top of Scoring & Ranking Thoughts.

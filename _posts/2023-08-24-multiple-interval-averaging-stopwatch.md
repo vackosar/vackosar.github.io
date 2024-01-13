@@ -21,7 +21,7 @@ my_related_post_paths:
 ---
 
 
-![Multiple Interval Averaging Stopwatch](/images/multi-interval-averaging-stopwatch.png)
+{% include image.html src="/images/multi-interval-averaging-stopwatch.png" alt="Multiple Interval Averaging Stopwatch" %}
 
 <!--
 # Averaging Stopwatch

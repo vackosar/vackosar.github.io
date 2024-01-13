@@ -18,7 +18,7 @@ my_related_post_paths:
 ---
 
 
-![Feature-wise Linear Modulation (sourced from paper)](/images/film-layer-feature-wise-linear-transformation-layer-cnn.png)
+{% include image.html src="/images/film-layer-feature-wise-linear-transformation-layer-cnn.png" alt="Feature-wise Linear Modulation (sourced from paper)" %}
 
 [Feature-wise Linear Modulation](https://arxiv.org/pdf/1709.07871.pdf) (FiLM) layer is used to change outputs of a general model with some specific conditioning input.
 
@@ -40,7 +40,7 @@ Example FiLM applied to U-Net [implementation is here](https://github.com/gabols
 
 ## FiLM Application
 
-![FiLM layer in U-Net in TryOnDiffusion for virtual try on clothes](/images/film-layer-u-net-virtual-try-on-tryondiffusion.png)
+{% include image.html src="/images/film-layer-u-net-virtual-try-on-tryondiffusion.png" alt="FiLM layer in U-Net in TryOnDiffusion for virtual try on clothes" %}
 
 [TryOnDiffusion: A Tale of Two UNets](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhu_TryOnDiffusion_A_Tale_of_Two_UNets_CVPR_2023_paper.pdf) is using FiLM layers to condition U-Net to generate new image given an input person image but wearing a shirt from another conditioning image.
 

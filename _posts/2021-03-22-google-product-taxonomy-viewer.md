@@ -25,7 +25,7 @@ my_related_post_paths:
 
 <i>{{ page.description }}</i>
 
-![Google Product Taxonomy Interactive Viewer ](/images/google-shopping-taxonomy-viewer-graphic.png)
+{% include image.html src="/images/google-shopping-taxonomy-viewer-graphic.png" alt="Google Product Taxonomy Interactive Viewer " %}
 
 Explore Google Product Taxonomy below to understand where to place products in your feed.
 <span style="color: green">Click on the green nodes</span> to expand product category tree. The second click collapses the children in the diagram.

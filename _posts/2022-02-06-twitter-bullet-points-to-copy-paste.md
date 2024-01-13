@@ -20,7 +20,7 @@ my_related_post_paths:
 - _posts/2023-08-24-multiple-interval-averaging-stopwatch.md
 ---
 
-![Twitter Bullet Points How To](/images/twitter-bullet-points.png)
+{% include image.html src="/images/twitter-bullet-points.png" alt="Twitter Bullet Points How To" %}
 
 You have only 280 characters to make your point in a tweet.<br/>
 ‣ That requires summarization, for which lists are super helpful. <br/>

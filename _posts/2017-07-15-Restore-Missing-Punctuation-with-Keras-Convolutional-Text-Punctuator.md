@@ -41,4 +41,4 @@ I couldn't publish it to Google Play as it was not up to guidelines.
 Then I wanted to publish it to F-Droid, but the build process was complicated to reproduce for others than to the Tensorflow binary libraries, so focused on other ventures.
 [Source code for YouTube Reader is here](https://github.com/vackosar/youtube-reader).
 
-![Youtube reader Screen shot](/images/youtube-reader-screenshot.png)
+{% include image.html src="/images/youtube-reader-screenshot.png" alt="Youtube reader Screen shot" %}

@@ -41,7 +41,7 @@ To evaluate this task we need to have labelled corpus.
 Word alignment task is related to [word movers distance (read more)](/ml/Word-Movers-Embedding-Cheap-WMD-For-Documents),
 in that both first map between the words, but alignment has to be zero-or-one while in case of WMD we can distribute the word weights in a fuzzy way.
 
-![word alignment example](/images/dataset-MSR-Brockett-2007.png)
+{% include image.html src="/images/dataset-MSR-Brockett-2007.png" alt="word alignment example" %}
 
 ## Word Alignment vs Semantic Similarity
 In 2015, top positions in sentence similarity task were occupied by corpus-based word-alignment models that used simple algorithms together with word databases or word embeddings e.g. word2vec.
@@ -57,7 +57,7 @@ But, how to align the words?
 
  
 ## The Sultan 2014 Aligner Algorithm
-![alignment pipeline diagram](/images/word-alignment.png)
+{% include image.html src="/images/word-alignment.png" alt="alignment pipeline diagram" %}
 
 In each step below we increasingly align more words: 
 1. align identical word sequences (high precision)
@@ -82,7 +82,7 @@ The algorithm uses GNU licenced [Stanford Named Entity Recognizer (Finkel et al.
 
 ### Dependency-based Alignment Process
 
-![Dependency-based Alignment Process](/images/syntactic-dependencies-for-similarity.png)
+{% include image.html src="/images/syntactic-dependencies-for-similarity.png" alt="Dependency-based Alignment Process" %}
 
 Dependency context alignment is limited by accuracy of the dependency parser.
 Without the dependency alignment the model performed almost the same (see ablations).
@@ -105,21 +105,21 @@ Operation:
 
 - [MSR Brockett 2007 Corpus (aligned sentences)](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2007-77.pdf):
  
-![MSR Brockett 2007 Corpus example](/images/dataset-MSR-Brockett-2007-2.png)
+{% include image.html src="/images/dataset-MSR-Brockett-2007-2.png" alt="MSR Brockett 2007 Corpus example" %}
 
 - SemEval 2014 STS [SemEval 2014 STS (sentence similarity)](https://aclanthology.org/S14-2010.pdf):
  
-![semeval 2014 sts task 10 dataset examples](/images/semeval-2014-sts-task-10-dataset-examples.png)
+{% include image.html src="/images/semeval-2014-sts-task-10-dataset-examples.png" alt="semeval 2014 sts task 10 dataset examples" %}
 
 ## Results
 - state-of-the-art 2014 on word alignment
  
-![Monolingual Word Alignment for Sentence Similarity results](/images/word-alignment-for-sentence-similarity-results.png)
+{% include image.html src="/images/word-alignment-for-sentence-similarity-results.png" alt="Monolingual Word Alignment for Sentence Similarity results" %}
 
 
 Winner of SemEval 2014 STS [SemEval 2014 STS (sentence similarity)](https://aclanthology.org/S14-2010.pdf):
 
-![SemEval 2014 STS (sentence similarity) results](/images/semeval-2014-sts-results.png)
+{% include image.html src="/images/semeval-2014-sts-results.png" alt="SemEval 2014 STS (sentence similarity) results" %}
 
 Winner of [SemEval 2015 STS](https://aclanthology.org/S15-2045.pdf) (DLS@CU-S1) with pearson mean result of 0.8015.
 While Word Mover's Embeddings paper gets 64.2. 

@@ -47,7 +47,7 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 - input textual instructions e.g. explain a riddle
 - based on its knowledge computer generates the answer text 
 
-![2001 A Space Odyssey HAL-9000 Interface](/images/2001-A-Space-Odyssey-HAL-9000-Interface-3.png)
+{% include image.html src="/images/2001-A-Space-Odyssey-HAL-9000-Interface-3.png" alt="2001 A Space Odyssey HAL-9000 Interface" %}
 
 
 {% include shared_slides/representations.md %}
@@ -60,7 +60,7 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 - examples: [PaLM (2022)](/ml/googles-pathways-language-model-and-chain-of-thought), [RETRO (2021)](/ml/DeepMinds-RETRO-Transformer-Model), [hybrids with algorithms](/ml/Symbolic-vs-Connectionist-Machine-Learning)
 - ChatGPT additionally trained to chat using [RLHF alignment method](https://arxiv.org/abs/2009.01325)
 
-![transformer next token prediction](/images/transformer-from-word2vec-next-token.jpg)
+{% include image.html src="/images/transformer-from-word2vec-next-token.jpg" alt="transformer next token prediction" %}
 
 
 
@@ -71,7 +71,7 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 - Also: [understanding image and text regardless of a language](/ml/Multimodal-Image-Text-Classification)
 
 
-![hybridizing neural networks with code](/images/hybrid-symbolic-connectionist-papers.png)
+{% include image.html src="/images/hybrid-symbolic-connectionist-papers.png" alt="hybridizing neural networks with code" %}
 
 
 
@@ -80,4 +80,4 @@ by his contrivance, the most ignorant person, at a reasonable charge, and with a
 - [Common prompting techniques](/ml/Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM): being specific, provide examples, allow thinking step by step, self-reflecting
 - Use cases: question answering, coding, form filling, data schema extraction, knowledge graph construction 
 
-![chain-of-thought prompting technique](/images/palm-chain-of-though-prompting.png)
+{% include image.html src="/images/palm-chain-of-though-prompting.png" alt="chain-of-thought prompting technique" %}

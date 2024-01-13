@@ -17,7 +17,7 @@ my_related_post_paths:
 - _posts/2023-11-15-Rockefellers-Quotes-Gratitude-Fictional-Letters.md
 ---
 
-![Applying David Deutsch's Principles in Life and Business](/images/david_deutsch_principles_contract_xl-beta-v2-2-2.png)
+{% include image.html src="/images/david_deutsch_principles_contract_xl-beta-v2-2-2.png" alt="Applying David Deutsch's Principles in Life and Business" %}
 
 *Note: this is a draft created with AI assistance, but it may be already helpful.*
 

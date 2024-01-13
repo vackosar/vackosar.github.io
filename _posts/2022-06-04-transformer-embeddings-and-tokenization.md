@@ -24,7 +24,7 @@ my_related_post_paths:
 - output vectors ([embeddings](/ml/Embeddings-in-Machine-Learning-Explained)) can be classified to a sequence of tokens
 - output tokens can then be decoded back to a text
 
-![embeddings in transformer architecture](/images/transformer-architecture-tokens-vs-embeddings.drawio.svg)
+{% include image.html src="/images/transformer-architecture-tokens-vs-embeddings.drawio.svg" alt="embeddings in transformer architecture" %}
 
 
 ## Tokenization vs Embedding

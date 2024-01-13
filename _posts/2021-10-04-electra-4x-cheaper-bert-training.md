@@ -38,7 +38,7 @@ ELECTRA is also available on [HuggingFace](https://huggingface.co/transformers/m
 - __Every step costs me__,
 - But __only a few tokens are masked in each step__!
 
-![BERT model pre-training and fine-tuning](/images/electra-bert.png)
+{% include image.html src="/images/electra-bert.png" alt="BERT model pre-training and fine-tuning" %}
 
 
 ## BERT vs ELECTRA Training
@@ -56,7 +56,7 @@ How to get difficult enough task for all tokens instead of just the tokens maske
 - The big model discriminates true or fake token
 - Not exactly GAN setup: Generator is trained for MLM
  
-![ELECTRA model generator discriminator pre-training diagram](/images/electra-generator-discriminator.png) 
+{% include image.html src="/images/electra-generator-discriminator.png" alt="ELECTRA model generator discriminator pre-training diagram" %} 
 
 
 ## ELECTRA Model Architecture and Methods
@@ -75,7 +75,7 @@ How to get difficult enough task for all tokens instead of just the tokens maske
   
 ![ELECTRA model loss is sum of generator masked language modeling and discriminator loss](../images/electra-loss.png)
 
-![ELECTRA model generator size and GLUE benchmark performance](/images/electra-generator-size.png)
+{% include image.html src="/images/electra-generator-size.png" alt="ELECTRA model generator size and GLUE benchmark performance" %}
 
 
 ## ELECTRA vs BERT vs RoBERTA vs XLNext Performance Results
@@ -93,9 +93,9 @@ How to get difficult enough task for all tokens instead of just the tokens maske
   - next-token prediction task
 - ELECTRA-400K on par with RoBERTa-500K with 4x less FLOPs
 
-![ELECTRA model performance on GLUE benchmark](/images/electra-results-glue.png)
+{% include image.html src="/images/electra-results-glue.png" alt="ELECTRA model performance on GLUE benchmark" %}
 
-![ELECTRA model performance on SQuAD benchmark](/images/electra-results-squad.png)
+{% include image.html src="/images/electra-results-squad.png" alt="ELECTRA model performance on SQuAD benchmark" %}
 
 
 ## ELECTRA Source of The Improvement

@@ -29,7 +29,7 @@ my_related_post_paths:
 - Text tokens can be converted back to text, but sometimes there is a loss of information.
 - Tokenization in NLP is a form of [compression - dictionary coding](/ml/neural-data-compression).
 
-![tokenization and embedding layer for transformer](/images/transformer-tokenization-and-embeddings.drawio.svg)
+{% include image.html src="/images/transformer-tokenization-and-embeddings.drawio.svg" alt="tokenization and embedding layer for transformer" %}
 
 
 ### Is NLP Tokenization Slow?
@@ -49,7 +49,7 @@ For example, [tiktoken library](https://github.com/openai/tiktoken) can process 
 - Image architectures [Vision Transformer (ViT)](https://arxiv.org/pdf/1909.02950.pdf), Resnets split image into overlapping patches and then encode these.
 - Outputs [embeddings](/ml/Embeddings-in-Machine-Learning-Explained) of these can then be passed to ,e.g., [transformer](/ml/transformers-self-attention-mechanism-simplified) ([CMA-CLIP or MMBT](/ml/Multimodal-Image-Text-Classification#amazons-cma-clip-model))
 
-![tokenization and embedding in Vision Transformer ViT](/images/vision-transformer-vit-architecture.png)
+{% include image.html src="/images/vision-transformer-vit-architecture.png" alt="tokenization and embedding in Vision Transformer ViT" %}
 
 
 #### Quantization

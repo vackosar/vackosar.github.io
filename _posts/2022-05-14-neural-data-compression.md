@@ -45,7 +45,7 @@ my_related_post_paths:
 - this is [Huffman coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/10_04051119.pdf) with a static tree
 - encoding and decoding requires minimal compute and memory
 
-![A part of Morse Huffman tree](/images/morse-huffman-tree.drawio.svg)
+{% include image.html src="/images/morse-huffman-tree.drawio.svg" alt="A part of Morse Huffman tree" %}
 
 
 ## GZip's Deflate Data Compression
@@ -56,7 +56,7 @@ my_related_post_paths:
   2. [Huffman coding](https://www.ic.tu-berlin.de/fileadmin/fg121/Source-Coding_WS12/selected-readings/10_04051119.pdf) maps frequent symbols to shorter bit sequences
     - bit-mapping trees stored in the output and sometimes refreshed
 
-![Deflate algorithm illustration with LZ77 and Huffman coding](/images/deflate-algorithm-operation.drawio.svg) 
+{% include image.html src="/images/deflate-algorithm-operation.drawio.svg" alt="Deflate algorithm illustration with LZ77 and Huffman coding" %} 
 
 
 ## Arithmetic Coding vs Huffman Coding
@@ -66,7 +66,7 @@ my_related_post_paths:
 - encodings are numbers within the subintervals in binary format
 - transmit enough digits so all fractions that fall within interval (prefix code)
 
-![aritmetic coding interval visualization](/images/aritmetic-coding-intervals-visualization.drawio.svg)
+{% include image.html src="/images/aritmetic-coding-intervals-visualization.drawio.svg" alt="aritmetic coding interval visualization" %}
  
 
 ## Entropy and Cross-Entropy in Compression
@@ -90,7 +90,7 @@ my_related_post_paths:
 - common benchmarks are enwik8, and enwik9 datasets with [bits-per-byte (bpb)](/ml/bits-per-byte-and-bits-per-character)
 - bpb not comparable to language modeling results: single-pass, extra overhead, compressing entire dataset
 
-![model predicting the next symbol from alphabet](/images/character-prediction-blabla.drawio.svg)
+{% include image.html src="/images/character-prediction-blabla.drawio.svg" alt="model predicting the next symbol from alphabet" %}
 
 
 ## Language Modelling is Compression
@@ -113,7 +113,7 @@ my_related_post_paths:
 - faster, simpler, better than [Cmix](http://www.byronknoll.com/cmix.html) (complex w/ LSTM) on enwik9
 - worse than Cmix on enwik8
 
-![NNCP v2, CMIX, LSTM compression performance](/images/nncpv2-enwik9.png)
+{% include image.html src="/images/nncpv2-enwik9.png" alt="NNCP v2, CMIX, LSTM compression performance" %}
 
 
 ## TRACE Model 1-layer Transformer 
@@ -123,7 +123,7 @@ my_related_post_paths:
   - so 4 consecutive embeddings concatenated before input
 - retrained less often (adaptive) than NNCP, but starts randomly initialized
 
-![TRACE model architecture](/images/trace-model-architecture.png)
+{% include image.html src="/images/trace-model-architecture.png" alt="TRACE model architecture" %}
 
 
 ## TRACE Model Results Faster Data Compression Than NNCP
@@ -131,7 +131,7 @@ my_related_post_paths:
 - worse on text but on-par on other due to not using tokenization dictionary
 - result on enwik9 below for Cmix, NNCP, [Dzip](https://arxiv.org/pdf/1911.03572.pdf) required GPU
 
-![TRACE, NNCP, CMIX, Dzip compression performance](/images/trace-nncp-compression-ratio-and-speed-comparison.png)
+{% include image.html src="/images/trace-nncp-compression-ratio-and-speed-comparison.png" alt="TRACE, NNCP, CMIX, Dzip compression performance" %}
 
 
 ## Deep Neural Network Lossless Compression Applications

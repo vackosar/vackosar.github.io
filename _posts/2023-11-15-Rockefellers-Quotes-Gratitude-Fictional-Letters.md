@@ -18,7 +18,7 @@ my_related_post_paths:
 ---
 
 
-![rockefeller-and-letters](/images/rockefeller-and-letters.png)
+{% include image.html src="/images/rockefeller-and-letters.png" alt="rockefeller-and-letters" %}
 
 {% include image.html src="/images/rockefeller-and-letters.png" alt="J.D. Rockefeller letters illustration" %}
 
@@ -44,7 +44,7 @@ Regardless of the above, any quotes or books are at risk of not being useful to 
 ## The Best Quotes From The Real Letters
 These are extractions from letters in book "[Dear Father, Dear Son](https://a.co/d/4rsZQsv)", that captured my attention.
 
-![rockefeller letter](/images/rockefeller-letter.png)
+{% include image.html src="/images/rockefeller-letter.png" alt="rockefeller letter" %}
 
 - not the whim of any small individual stockholder, or a desire to make a market to sell this stock, the prime factor is, as I state, to keep the concern strong, prosperous, vigorous, aggressive, on its own feet and on its own merits. Then it can borrow money. Then it can sell stock. But the tail must not wag the dog, and the business must be conducted primarily for the good of the concern itself
 - Go carefully. Be conservative. Be sure you are right - and then do not be afraid to give out, as your heart prompts you, and as the Lord inspires you.

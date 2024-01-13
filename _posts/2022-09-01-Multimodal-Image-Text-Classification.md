@@ -40,7 +40,7 @@ my_related_post_paths:
 - strongly beats one-stream (local fine-grained selected image patches)
   - [KaleidoBERT](https://arxiv.org/abs/2103.16110) (pretrains with aligning image tokens with text tokens, then [transformer](/ml/transformers-self-attention-mechanism-simplified)) on Fashion-Gen dataset
 
-![CMA-CLIP model architecture](/images/cma-clip-architecture.png)
+{% include image.html src="/images/cma-clip-architecture.png" alt="CMA-CLIP model architecture" %}
 
 
 ### CMA-CLIP Architecture
@@ -53,7 +53,7 @@ my_related_post_paths:
   - the weight is a softmax of a dot product to a learned vector
   - resists noise and missing data better similar to [EmbraceNet feature dropout](#embracenet-model)
 
-![CMA-CLIP model architecture](/images/cma-clip-architecture.png)
+{% include image.html src="/images/cma-clip-architecture.png" alt="CMA-CLIP model architecture" %}
 
 
 ### CMA-CLIP Datasets
@@ -61,7 +61,7 @@ my_related_post_paths:
 - [Fashion-Gen Dataset](https://arxiv.org/pdf/1806.08317v2.pdf) with 325k images, 78k texts, single-label, and 41 categories.
 - [UPMC-Food101 Dataset](https://hal.archives-ouvertes.fr/hal-01196959/file/CEA_ICME2015.pdf) with 90k images, 86k texts, 101 categories.
 
-![CMA-CLIP datasets](/images/cma-clip-datasets.png)
+{% include image.html src="/images/cma-clip-datasets.png" alt="CMA-CLIP datasets" %}
 
 
 
@@ -69,14 +69,14 @@ my_related_post_paths:
 - Overall CMA-CLIP slightly better than MMBT, but speculatively could outperform on multitasking
 - Parameter count comparison is missing
  
-![CMA-CLIP model results](/images/cma-clip-results.png)
+{% include image.html src="/images/cma-clip-results.png" alt="CMA-CLIP model results" %}
 
 
 #### CMA-CLIP vs KaleidoBERT vs ImageBERT on Fashion-Gen 
 - CMA-CLIP outperforms KaleidoBERT vs ImageBERT, and other models.
 - There is no benchmark avaiabale for MMBT or CLIP on Fashion-Gen 
 
-![CMA-CLIP vs KaleidoBERT vs ImageBERT on Fashion-Gen](/images/cma-clip-vs-kaleidobert-vs-imagebert-on-fashion-gen.png)
+{% include image.html src="/images/cma-clip-vs-kaleidobert-vs-imagebert-on-fashion-gen.png" alt="CMA-CLIP vs KaleidoBERT vs ImageBERT on Fashion-Gen" %}
 
 
 #### CMA-CLIP vs MMBT vs CLIP on Food101
@@ -84,7 +84,7 @@ my_related_post_paths:
 - MMBT significantly outperforms CLIP likely due to the tuned transformer head
 - BERT does better than [ViT](https://arxiv.org/pdf/2010.11929.pdf) on this dataset
 
-![cma-clip vs mmbt vs clip vs bert vs vit on Food101](/images/cma-clip-vs-mmbt-vs-clip-vs-bert-vs-vit.png)
+{% include image.html src="/images/cma-clip-vs-mmbt-vs-clip-vs-bert-vs-vit.png" alt="cma-clip vs mmbt vs clip vs bert vs vit on Food101" %}
 
 
 #### CMA-CLIP Results on MRWPA dataset
@@ -92,13 +92,13 @@ my_related_post_paths:
 - Since CMA-CLIP has more parameters, the performance is expected
 - Multitask learning classification usable for [learning disentangled representations](/ml/manipulate-item-attributes-via-disentangled-representation)
 
-![CMA-CLIP vs CLIP Results on MRWPA dataset](/images/cma-clip-vs-clip-on-MRWPA.png)
+{% include image.html src="/images/cma-clip-vs-clip-on-MRWPA.png" alt="CMA-CLIP vs CLIP Results on MRWPA dataset" %}
 
 
 #### CMA-CLIP Image-text Alignment on MRWPA dataset
 Text-to-image attention map alignment suggest CMA-CLIP can find cross-modality correlations.
 
-![CMA-CLIP text-image token attention map](/images/cma-clip-text-token-image-token-attention-map.png)
+{% include image.html src="/images/cma-clip-text-token-image-token-attention-map.png" alt="CMA-CLIP text-image token attention map" %}
 
 
 
@@ -106,7 +106,7 @@ Text-to-image attention map alignment suggest CMA-CLIP can find cross-modality c
 - modality wise attention helps the most on Style labels, then Pattern, then Color
 - likely because (the text feature is irrelevant to relevant in this order)
 
-![CMA-CLIP ablation results](/images/cma-clip-ablation-modality-wise-attention-sequence-wise-attention.png)
+{% include image.html src="/images/cma-clip-ablation-modality-wise-attention-sequence-wise-attention.png" alt="CMA-CLIP ablation results" %}
 
 
 ## Google's CoCa Model
@@ -114,13 +114,13 @@ Text-to-image attention map alignment suggest CMA-CLIP can find cross-modality c
 - State-of-the-art model many image and image-text tasks
 - Combines a contrastive loss (similar to CLIP) with captioning task
 
-![CoCa model pretraining](/images/coca-pretraining.png)
+{% include image.html src="/images/coca-pretraining.png" alt="CoCa model pretraining" %}
 
 
 ### CoCa Results
 - achieved SoTA on ImageNet!
 
-![CoCa results](/images/coca-results.png)
+{% include image.html src="/images/coca-results.png" alt="CoCa results" %}
 
 
 ## Facebook's MMBT Model
@@ -128,7 +128,7 @@ Text-to-image attention map alignment suggest CMA-CLIP can find cross-modality c
 - concatenate linear projections of Resnet output with BERT token embeddings into a sequence as Transformer input
 - MMBT has similar architecture to [CMA-CLIP](#cma-clip-architecture) except for the CLIP backbone and modality-wise attention useful in multitasking
 
-![MMBT model architecture](/images/mmbt-architecture.png)
+{% include image.html src="/images/mmbt-architecture.png" alt="MMBT model architecture" %}
 
 
 ## EmbraceNet Model
@@ -137,7 +137,7 @@ Text-to-image attention map alignment suggest CMA-CLIP can find cross-modality c
 - model has similar performance to concatenation, but performs better when some modalities are missing due to noisy data
 - We used it in [GLAMI-1M dataset](https://github.com/glami/glami-1m)
 
-![EmbraceNet model architecture](/images/embracenet-architecture.png)
+{% include image.html src="/images/embracenet-architecture.png" alt="EmbraceNet model architecture" %}
 
 
 ## DeepMind's Perceiver Model
@@ -150,12 +150,12 @@ A lot of **room for research left** our new [13-lingual dataset GLAMI-1M](https:
 The task requires a **multilingual language encoder**, while images usually are international by default.
 Language distribution requires additional consideration.
 
-[![GLAMI-1M: A Multilingual Image-Text Fashion Dataset examples](/images/glami-1m-multilingual-image-text-dataset-examples.png)](https://github.com/glami/glami-1m)
+[{% include image.html src="/images/glami-1m-multilingual-image-text-dataset-examples.png)](https://github.com/glami/glami-1m" alt="GLAMI-1M: A Multilingual Image-Text Fashion Dataset examples" %}
 
 
 ### GLAMI-1M Colab Notebook
 Try hands-on exercise with the dataset in this [Google Colab notebook](https://colab.research.google.com/drive/16gMqVqUpleacU5z9Y_7f3c-7I0C45esy?usp=sharing).
-[![glami-1m-multilingual-image-text-dataset-text-vs-image-similarity](/images/glami-1m-multilingual-image-text-dataset-text-vs-image-similarity.png)](https://colab.research.google.com/drive/16gMqVqUpleacU5z9Y_7f3c-7I0C45esy?usp=sharing)
+[{% include image.html src="/images/glami-1m-multilingual-image-text-dataset-text-vs-image-similarity.png)](https://colab.research.google.com/drive/16gMqVqUpleacU5z9Y_7f3c-7I0C45esy?usp=sharing" alt="glami-1m-multilingual-image-text-dataset-text-vs-image-similarity" %}
 
 See also [image classification notebook with ResNet vision model fine-tuning - NEU-DET Surface Defect Image Classification
  at Kaggle](https://www.kaggle.com/code/vackosar/neu-det-surface-defect-image-classification).

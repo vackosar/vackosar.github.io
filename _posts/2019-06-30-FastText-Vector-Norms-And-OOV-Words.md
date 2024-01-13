@@ -31,7 +31,7 @@ FastText word representation is the word embedding vector plus sum of n-grams co
 
 ## How FastText Works?
 
-![fastText model visualization subword diagram](/images/fastText-subword-sum.svg)
+{% include image.html src="/images/fastText-subword-sum.svg" alt="fastText model visualization subword diagram" %}
 
 FastText embeds words by adding word's n-grams to the word embedding and then normalizes by total token count:
 
@@ -68,7 +68,7 @@ The very frequent words cannot add much as their appear in too ambiguous context
 We can think about the word norms a bit like analogous to TF-IDF, where the IDF is defined on the word2vec window of size 10 words.
 For this reason when using [Word Movers Distance with TF-IDF weights, Word Rotator paper suggests to use consine instead of euclidean distance](/ml/Word-Movers-Embedding-Cheap-WMD-For-Documents#word-movers-distance-vs-bert-similarity).
 
-![word2vec norm vs frequency](/images/word2vec-norm-vs-tf.png)
+{% include image.html src="/images/word2vec-norm-vs-tf.png" alt="word2vec norm vs frequency" %}
 
 
 ### FastText Embedding Norms

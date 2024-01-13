@@ -39,7 +39,7 @@ my_related_post_paths:
 - Google SafeSearch filter
 - Dataset is composed of subsets: web, Github, news, Wikipedia, Books, [C4 (web-text)](https://arxiv.org/abs/1910.10683)
 
-![MassiveText non-english composition](/images/massivetext-non-english-composition.png)
+{% include image.html src="/images/massivetext-non-english-composition.png" alt="MassiveText non-english composition" %}
 
 
 ## Papers Using MassiveText

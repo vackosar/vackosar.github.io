@@ -29,8 +29,8 @@ Two step solution below uses Chromium browser.
 
 ## Results
 
-![Search](/images/2018-02-25-ubuntu-search-whatsapp.png)
-![Taskbar](/images/2018-02-25-ubuntu-taskbar-whatsapp.png)
+{% include image.html src="/images/2018-02-25-ubuntu-search-whatsapp.png" alt="Search" %}
+{% include image.html src="/images/2018-02-25-ubuntu-taskbar-whatsapp.png" alt="Taskbar" %}
 
 ## Instructions
 

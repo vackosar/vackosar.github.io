@@ -36,7 +36,7 @@ Transformer architecture is a composite of following parts:
 - [Feed forward layer which operates bit like a static key-value memory](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory). FF layer is similar to self-attention except it does not use softmax and one of the input sequences is a constant.
 - [Cross-attention decodes output sequence](/ml/cross-attention-in-transformer-architecture) of different inputs and modalities.
  
-![Transformer full model diagram](/images/transformer-full-model.png)
+{% include image.html src="/images/transformer-full-model.png" alt="Transformer full model diagram" %}
 
 
 ## Self-Attention in Transformer Visualized
@@ -163,7 +163,7 @@ to run bigger models, or deploy your models to production, you will need to a bi
 
 ## Transformer vs Word2vec Continuous Bag-of-Words
 
-![Word2vec CBOW](/images/transformer-and-word2vec-cbow.png)
+{% include image.html src="/images/transformer-and-word2vec-cbow.png" alt="Word2vec CBOW" %}
 
 Word2vec was used in many state-of-the-art models between 2013-2015.
 It was gradually replaced by more advanced variants like [FastText](/ml/FastText-Vector-Norms-And-OOV-Words), and [StarSpace a general-purpose embeddings](/ml/starspace-embedding), and more sophisticated models like LSTM and transformers. 

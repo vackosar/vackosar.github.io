@@ -17,7 +17,7 @@ my_related_post_paths:
 - _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
 ---
 
-![GLAMI-1M](/images/glami-1m-multilingual-image-text-dataset-text-vs-image-similarity.png)
+{% include image.html src="/images/glami-1m-multilingual-image-text-dataset-text-vs-image-similarity.png" alt="GLAMI-1M" %}
 
 Dataset papers can serve as an advertising, authority, and reputation building for the releasing company.
 Datasets are critical for reproducible research.

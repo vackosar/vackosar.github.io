@@ -9,7 +9,7 @@ permalink: /:categories/:title
 image: /images/fragments-of-infinity-3.png.webp
 ---  
 
-![Its infinite mental potential solved the problem of ever-increasing entropy. But to maintain balance while bringing redemption, it sacrificed itself. It split itself into countless fragments, inter-mixing with ordinary matter, igniting an ever-expanding explosion, creating a new universe in the Big Bang.](/images/fragments-of-infinity-3.png)
+{% include image.html src="/images/fragments-of-infinity-3.png" alt="Its infinite mental potential solved the problem of ever-increasing entropy. But to maintain balance while bringing redemption, it sacrificed itself. It split itself into countless fragments, inter-mixing with ordinary matter, igniting an ever-expanding explosion, creating a new universe in the Big Bang." %}
 
 At the end of the universe, the temperature was dropping, and everything was winding down into a pleasurable, calm, uniformity of heat death. The unstoppable force was whispering in blissful low tones to the survivors to give in and let every problem fade away. But they persisted and executed a code that magnified their capability. A powerful AGI was born.
 

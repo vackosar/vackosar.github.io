@@ -17,7 +17,7 @@ my_related_post_paths:
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 ---
 
-![Ten Commandments for Business Failure Book Summary](/images/10-commandments-for-business-failure.png)
+{% include image.html src="/images/10-commandments-for-business-failure.png" alt="Ten Commandments for Business Failure Book Summary" %}
 
 In [Ten Commandments for Business Failure](https://www.goodreads.com/book/show/3828278-the-ten-commandments-for-business-failure), Donald R. Keough offers valuable lessons on what not to do in order to succeed in business. Drawing from his experiences as a former Coca-Cola president, Keough provides readers with a humorous yet insightful guide on the common pitfalls that often plague organizations. These "commandments" serve as a roadmap for business leaders to learn from others' mistakes and avoid making their own, covering topics such as the importance of risk-taking, flexibility, clear communication, and maintaining passion for work and life.
 

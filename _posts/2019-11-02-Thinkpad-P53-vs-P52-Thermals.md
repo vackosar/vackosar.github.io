@@ -28,10 +28,10 @@ In general people complain about bad thermal design on latest Thinkpad including
 Had this improved with Thinkpad P53?
 
 ### P52 Cooling
-![P52 Cooling](/images/2019-11-02-p52-vs-p53-thermals-p52.png)
+{% include image.html src="/images/2019-11-02-p52-vs-p53-thermals-p52.png" alt="P52 Cooling" %}
 
 ### P53 Cooling
-![P53 Cooling](/images/2019-11-02-p52-vs-p53-thermals-p53.png)
+{% include image.html src="/images/2019-11-02-p52-vs-p53-thermals-p53.png" alt="P53 Cooling" %}
 
 
 ## Verdict

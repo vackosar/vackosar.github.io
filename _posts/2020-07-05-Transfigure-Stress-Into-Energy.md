@@ -133,7 +133,7 @@ I wonder if changing stress levels are also healthy similarly to a workout or a 
 Speaking of exercise, here is a tip to [boost your running morale](/health/Boost-Jog-Morale-Using-Mil-Cadence).
 Regarding "easier the task, the higher the optimal arousal level", I wonder if this explain why successful people, which often perform the most difficult tasks, are always so calm, or is it related to the stresses they encounter daily being more assertive, which is useful for CEO roles?
 
-![from Deep Physiological Arousal Detection in a Driving Simulator Using Wearable Sensors](/images/stress-yerkes-dodson-law.png)
+{% include image.html src="/images/stress-yerkes-dodson-law.png" alt="from Deep Physiological Arousal Detection in a Driving Simulator Using Wearable Sensors" %}
 
 
 ### Cortisol Cures

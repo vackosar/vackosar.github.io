@@ -35,7 +35,7 @@ my_related_post_paths:
 
 ## Method
 
-![facebook starspace model method - sum](/images/starspace-sum.svg)
+{% include image.html src="/images/starspace-sum.svg" alt="facebook starspace model method - sum" %}
 
 We train only the vectors directly without any other parameters.
 In contrast to Word2vec and [FastText](/ml/FastText-Vector-Norms-And-OOV-Words) there is no word (input) vector concept, but only context (output) vector concept.
@@ -59,11 +59,11 @@ Embeddings for classes of entities higher in hierarchy are calculated by summing
 
 Text classification comparison with [FastText](/ml/FastText-Vector-Norms-And-OOV-Words):
 
-![StarSpace text classification results comparison with fastText](/images/starspace-text-classification-results.png)
+{% include image.html src="/images/starspace-text-classification-results.png" alt="StarSpace text classification results comparison with fastText" %}
 
 Content based document recommendation, each user is described by the bag-of-documents they like, while each document is described by its bag-of-words.
 
-![StarSpace content-based recommendation results comparison with TF-IDF, word2vec, fastText](/images/starspace-content-based-recommendation-results.png)
+{% include image.html src="/images/starspace-content-based-recommendation-results.png" alt="StarSpace content-based recommendation results comparison with TF-IDF, word2vec, fastText" %}
 
 
 ## Applications

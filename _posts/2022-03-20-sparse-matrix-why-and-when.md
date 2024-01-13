@@ -33,7 +33,7 @@ The simplest the most common formats used.
 ## CSR Sparse Matrix Multiplication Example
 A very common sparse format that is useful in situations described in below.
 
-![Compressed Sparce Row sparse matrix matrix multiplication](/images/sparse-matrix-csr.png)
+{% include image.html src="/images/sparse-matrix-csr.png" alt="Compressed Sparce Row sparse matrix matrix multiplication" %}
 
 
 ## Sparse Matrix Formats

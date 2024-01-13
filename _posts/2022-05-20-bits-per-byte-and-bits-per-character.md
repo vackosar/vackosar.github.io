@@ -36,7 +36,7 @@ Bits-per-Byte (BPB) and Bits-per-Character (BPC) are metrics related to compress
 
 BPC corresponds to BPB for extended ASCII characters, and when using log2 in character-level models, the cross-entropy loss is equivalent to BPB.
 
-![Deflate algorithm illustration with LZ77 and Huffman coding](/images/deflate-algorithm-operation.drawio.svg)
+{% include image.html src="/images/deflate-algorithm-operation.drawio.svg" alt="Deflate algorithm illustration with LZ77 and Huffman coding" %}
 
 
 ## Neural Data Compression

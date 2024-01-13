@@ -83,7 +83,7 @@ Can also decompose into primitives:
 - \\( \mathrm{Way}(a, b, g, W) := g \odot a + (1 - g) \odot (W b) \\)
 - \\( \mathrm{Gate}(a, b, W, v, w) := \sigma(W b + v \odot a + w) \\)
 
-![Simple Recurrent Unit diagram](/images/sru-op-diagram.png)
+{% include image.html src="/images/sru-op-diagram.png" alt="Simple Recurrent Unit diagram" %}
 
 
 ### Similarity to LSTM
@@ -110,7 +110,7 @@ Can also decompose into primitives:
 - [NVIDIA V100 Tensor Core has 640 tensor cores (specialized AI cores)](https://www.nvidia.com/en-us/data-center/v100/)
 - Comparison of GPU and CPU from Nvidia documentation.
 
-![From Nvidia: GPU vs CPU in CUDA documentation](/images/sru-cpu-vs-gpu.png)
+{% include image.html src="/images/sru-cpu-vs-gpu.png" alt="From Nvidia: GPU vs CPU in CUDA documentation" %}
 
 ### CUDA kernels
 - [CUDA kernels](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html) are C++ functions executed N times by N CUDA threads
@@ -146,7 +146,7 @@ int main()
 - both SRU and QRNN similar speed
 - 5 - 9x speed-up over cuDNN-optimized LSTM on classification and question answering datasets
 
-![SRU results on enwik8](/images/sru_sru_results.png)
+{% include image.html src="/images/sru_sru_results.png" alt="SRU results on enwik8" %}
 
 
 ## SRU++: Attention with SRU
@@ -170,7 +170,7 @@ int main()
 - attention help significantly
   - but needed only in every k-th layer e.g. every 5th
 
-![SRU++ diagram - Simple Recurrent Unit with attention](/images/sru++-layer-diagram.png)
+{% include image.html src="/images/sru++-layer-diagram.png" alt="SRU++ diagram - Simple Recurrent Unit with attention" %}
  
 
 ### Datasets
@@ -194,12 +194,12 @@ int main()
 - if larger context, then even lower BPC
 
 #### Fair Comparison to Transformer-XL
-![SRU++ comparison to Trans-XL](/images/sru++-trasformer-xl-enwik8-dataset.png)
+{% include image.html src="/images/sru++-trasformer-xl-enwik8-dataset.png" alt="SRU++ comparison to Trans-XL" %}
 
 #### How Often To Include Attention?
 - 1 attention-SRU every 10 layers
 
-![SRU++ attention every k layers](/images/sru++-attention-every-k-layers.png)
+{% include image.html src="/images/sru++-attention-every-k-layers.png" alt="SRU++ attention every k layers" %}
 
 #### Max Performance Enwik8
 - maximum performance comparison
@@ -207,16 +207,16 @@ int main()
 - context length train = 1024, eval 3072 
 - SoTA enwik8, but not on Wiki-103
 
-![Comparison with top-performing modesl on enwik8 dataset](/images/sru++-results.png)
+{% include image.html src="/images/sru++-results.png" alt="Comparison with top-performing modesl on enwik8 dataset" %}
 
 #### Max Performance Wiki-103
 - On par with Compressive memory, worse than kNN-LM, Routing Transformer
 
-![SRU++ WIKI-103 results Routing Transformer](/images/sru++-results-wiki103.png)
+{% include image.html src="/images/sru++-results-wiki103.png" alt="SRU++ WIKI-103 results Routing Transformer" %}
 
 
 #### Speed Comparison
-![SRU++ inference speed](/images/sru++-inference-speed.png)
+{% include image.html src="/images/sru++-inference-speed.png" alt="SRU++ inference speed" %}
 
 
 ## Terraformer

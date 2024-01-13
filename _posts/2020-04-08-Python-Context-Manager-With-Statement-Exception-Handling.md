@@ -24,7 +24,7 @@ my_related_post_paths:
 
 {% include highlight-rouge-friendly.css.html %}
   
-![python close resource with context manager on exception](/images/python-context-manager-close-resource-on-exception.png)
+{% include image.html src="/images/python-context-manager-close-resource-on-exception.png" alt="python close resource with context manager on exception" %}
 
 One case use context manager to handle exceptions during execution of the with statement as can be seen in the snippet below. This is useful for example for rolling back database transactions in case of an exception, where the database connections can be retrieved from and returned to a connection pool.
 

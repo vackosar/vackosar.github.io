@@ -19,7 +19,7 @@ my_related_post_paths:
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 ---
 
-![How-to-Structure-Source-Code](/images/How-to-Structure-Source-Code.png)
+{% include image.html src="/images/How-to-Structure-Source-Code.png" alt="How-to-Structure-Source-Code" %}
 
 
 {% include highlight-rouge-friendly.css.html %}

@@ -25,7 +25,7 @@ my_related_post_paths:
 
 {% include shared_slides/positional-encodings-summary.md %}
 
-![positional embeddings in BERT architecture](/images/transformer-positional-embeddings.png)
+{% include image.html src="/images/transformer-positional-embeddings.png" alt="positional embeddings in BERT architecture" %}
 
 
 ## Learned Positional Embeddings
@@ -40,7 +40,7 @@ my_related_post_paths:
   - BERT trained embeddings, up to position 128, are very similar to sinusoidal, but not elsewhere - likely training artefact
   - sinusoidal and GPT-2 were the best for classification
 
-![Visualization of position-wise cosine similarity of different position embeddings](/images/visualization-of-cosine-similarity-of-position-embeddings.png)
+{% include image.html src="/images/visualization-of-cosine-similarity-of-position-embeddings.png" alt="Visualization of position-wise cosine similarity of different position embeddings" %}
 
 ## Positional Embeddings in Popular Models
 - In [BERT](/ml/transformers-self-attention-mechanism-simplified), positional embeddings give first few tens of dimensions of the token embeddings meaning of relative positional closeness within the input sequence.
@@ -60,6 +60,6 @@ my_related_post_paths:
 - not translational invariant, only the [self-attention](/ml/transformers-self-attention-mechanism-simplified) key-query comparison is
 - [in-practical work for high-resolution inputs](https://arxiv.org/pdf/2202.10890.pdf)
 
-![Fourier (Sinusoid) Positional Encodings in BERT](/images/position-embeddings-sinusoid.png)
+{% include image.html src="/images/position-embeddings-sinusoid.png" alt="Fourier (Sinusoid) Positional Encodings in BERT" %}
 
 {% include shared_slides/rope-embeddings.md %}

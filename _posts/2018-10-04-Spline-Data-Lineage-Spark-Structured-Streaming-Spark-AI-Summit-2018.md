@@ -45,13 +45,13 @@ Session hashtag: #SAISExp18
 
 [//]: # ({% include load_slides.html %})
 
-![Vaclav Kosar and Marek Novotny at Spark Summit 2018](/images/2018-10-04-spark-summit-2.JPG)
+{% include image.html src="/images/2018-10-04-spark-summit-2.JPG" alt="Vaclav Kosar and Marek Novotny at Spark Summit 2018" %}
 
 
 ## About Authors
 
 ### About Vaclav Kosar
-![Vaclav Kosar](/images/vaclav-kosar-spark-ai-summit.png)
+{% include image.html src="/images/vaclav-kosar-spark-ai-summit.png" alt="Vaclav Kosar" %}
 
 Vaclav is a programming and analytics enthusiast. He currently forges big data software for ABSA R&D focusing on cruicial data lineage project Spline. He studied electronics, physics and mathematics.
 
@@ -59,7 +59,7 @@ Vaclav is a programming and analytics enthusiast. He currently forges big data s
 ### About Marek Novotny
 Marek obtained bachelor and master degree in computer science at Charles University in Prague. His master studies were mainly focused on development of distributed and dependable systems. In 2013, Marek joined ABSA Capital in Prague to develop a scalable data integration platform and a framework for calculating regulatory reports. During the work on those two projects, he gained experience with many NoSQL and distributed technologies (e.g. Kafka, Zookeper, Spark). Nowadays, he is a member of Big Data Engineering team and primarily focused on development of the Spline project.
 
-![Marek Novotny](/images/marek-novotny-spark-ai-summit.png)
+{% include image.html src="/images/marek-novotny-spark-ai-summit.png" alt="Marek Novotny" %}
 
 {% include lets-connect.html %}
 

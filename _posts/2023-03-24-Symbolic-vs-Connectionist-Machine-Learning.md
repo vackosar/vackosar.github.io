@@ -25,7 +25,7 @@ Today I would like to tell you what is **increasingly becoming popular in large 
 
 ## Large Language Model's Hallucinations and Poor-Reasoning
 
-![large-language-models-hallucinations-and-poor-reasoning](/images/large-language-models-hallucinations-and-poor-reasoning.png)
+{% include image.html src="/images/large-language-models-hallucinations-and-poor-reasoning.png" alt="large-language-models-hallucinations-and-poor-reasoning" %}
 
 What are the **missing things in current systems**? So now we burn through a gajillion, it’s like trillions of floating point operations with all these multiplications and we still get **hallucinations** and we still get quite **poor reasoning capabilities**. And there are approaches reducing these judgement deficiencies, but something still seems to be missing.
 
@@ -42,7 +42,7 @@ Because we can write things down and they don’t disappear, they stay the same.
 These **successful symbolic tools** were then later used to develop computer programs which are also rules, which operate on symbols. So the same way we actually built these computers which take something that's **crystal perfect** and it can produce something that's still crystal perfect. And while all at the same time this seems to be missing in the **language model**, this sort of aspect is not quite there.
 
 ## Symbolic vs Connectionist Methods Comparison
-![intuition-symbolic-vs-connectionist](/images/intuition-symbolic-vs-connectionist.png)
+{% include image.html src="/images/intuition-symbolic-vs-connectionist.png" alt="intuition-symbolic-vs-connectionist" %}
 
 What are the differences between the systems that we have? The **current large language models** have great capabilities, we can use it for many things, but they have also issues. And so if we can compare what I'm talking about, these **symbolic approaches**, that use these symbols and rules, with what we have, which is like dominant results in current times.
 
@@ -61,7 +61,7 @@ The analogy can be extended also to: **Statistical models** on the connectionist
 
 ## Problems with Symbolic Rule-based Expert Systems
 
-![problems-with-symbolic-rule-based-expert-systems](/images/problems-with-symbolic-rule-based-expert-systems.png)
+{% include image.html src="/images/problems-with-symbolic-rule-based-expert-systems.png" alt="problems-with-symbolic-rule-based-expert-systems" %}
 
 These algorithms, these computer programs, these rules, were actually used to be, it was a dominant approach in machine learning, in **artificial intelligence in the 1980s**. And it seemed like if this is going to work, if we are just, you know, **AGI is just around the corner**, right? We are going to have it, like, tomorrow. And then there started to be issues. It wasn't progressing anymore. And so what these systems were doing, what was the approach back then? And why it collapsed?
 
@@ -73,7 +73,7 @@ While everything seemed great, the solutions were not able to get to the AGI. Th
 
 
 ## Connectionist Approaches After 1990s
-![connectionist-approaches-1990-2020](/images/connectionist-approaches-1990-2020.png)
+{% include image.html src="/images/connectionist-approaches-1990-2020.png" alt="connectionist-approaches-1990-2020" %}
 
 Then here came the neural networks. And there, researchers Hinton, Lecun, Bengio, led the neural network revolution in 2010. And this approach became so pervasive that, for example, people were saying, deep learning is just going to solve everything. This is it. We don't need symbolics. This is going to just solve everything.
 
@@ -91,7 +91,7 @@ Now we are just in the situation where we also implemented this **reinforcement 
 
 ## Hybridizing Neural Networks with Algorithms
 
-![hybridizing-neural-networks-and-symbolics](/images/hybridizing-neural-networks-and-symbolics.png)
+{% include image.html src="/images/hybridizing-neural-networks-and-symbolics.png" alt="hybridizing-neural-networks-and-symbolics" %}
 
 These very scalable **symbolic approaches** of the algorithms and code that's so useful, and it seems to be so missing. It's definitely going to be applied. So what I think is necessary and what's increasingly being applied is **hybridizing both of these approaches** - using both neural networks and symbolic approaches at the same time.
 
@@ -111,7 +111,7 @@ Also [AutoGPT](https://github.com/Significant-Gravitas/Auto-GPT) which recursive
 
 ## Hybrid Symbolic Connectionist Papers
 
-![hybrid-symbolic-connectionist-papers](/images/hybrid-symbolic-connectionist-papers.png)
+{% include image.html src="/images/hybrid-symbolic-connectionist-papers.png" alt="hybrid-symbolic-connectionist-papers" %}
 
 **[AlphaZero](https://arxiv.org/pdf/1712.01815.pdf)**, where you have this chess playing engine, which gets superhuman. How does it do that? So it does learn from playing against itself. That's a very important part. But also the space of all the possible actions in chess. It's too big. It cannot go through everything. It has to go somewhere where it's interesting. How can you do that? You use **neural guided search**, where the network serves as an intuition. And it can sort of think about, okay, now I'm in this position, and I think I could do this. This sounds good, I could play this. And then it can, with self play, sort of go further into the direction, it can [evaluate and learn](https://www.inference.vc/alphago-zero-policy-improvement-and-vector-fields/), using this approach very effectively, and it becomes superhuman.
 
@@ -126,7 +126,7 @@ You may be asking about [integrating images with text models](/ml/Multimodal-Ima
 
 ## OpenAI and Symbolics
 
-![openai-and-symbolics](/images/openai-and-symbolics.png)
+{% include image.html src="/images/openai-and-symbolics.png" alt="openai-and-symbolics" %}
 
 OpenAI as an organization are very good at listening and **quickly improving based on feedback**. What are the problems with their system? And right now, what seems to be their view is that this **reinforcement learning from human feedback** will solve most of the problems and will get them to **AGI**. They have **smart researchers** and know these arguments, but they think providing these **expert comparisons with RLHF** will get them to AGI. But at the same time, they cannot scale this infinitely, because this solution requires to **expert labelling**.
 
@@ -135,7 +135,7 @@ The **cost for the labelling** is still not as high as the model training right 
 
 ## People and Companies Working on Symbolics
 
-![symbolics-companies-and-people](/images/symbolics-companies-and-people.png)
+{% include image.html src="/images/symbolics-companies-and-people.png" alt="symbolics-companies-and-people" %}
 
 If you wanted to learn more about this, there are companies and people which publish things in this domain. For example, on Twitter, you can follow **[Gary Marcus](https://twitter.com/GaryMarcus)**, you can follow **[Francois Chollet](https://twitter.com/fchollet)**, and other authors of the papers. Also, what I found interesting is that here in Prague, Czechia, there is also this startup called **[Filuta AI](https://filuta.ai/)**, which they are even explicitly thinking about composing AI, they want to use planning combined with that, with algorithms that can detect, provide these converts from this soft input into some hard symbols, and then do planning for companies. There is this company, **Replit**, which does coding tools. They want to iterate with programmers to have minimal input in creating software. There is also a **[Equilibre technologies](https://www.equilibretechnologies.com/)**, they use reinforcement learning, but I think it's a little bit related. So you can find resources using the papers, and so on.
 

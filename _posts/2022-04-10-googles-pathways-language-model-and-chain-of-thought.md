@@ -41,7 +41,7 @@ my_related_post_paths:
 - likely the most expensive model [~$10M](https://blog.heim.xyz/palm-training-cost/) (2.5 yottaFLOPS) vs GPT-3 [~$5M](https://lambdalabs.com/blog/demystifying-gpt-3/#1)
 - PaLM and GPT-3 fascinating, but likely not economical now
 
-![PaLM vs GPT vs MT-NLG computation cost FLOPs AI training](/images/palm-chart-computation-used-in-training.png)
+{% include image.html src="/images/palm-chart-computation-used-in-training.png" alt="PaLM vs GPT vs MT-NLG computation cost FLOPs AI training" %}
 
 
 ## [Zero-Shot vs Few-Shot Prompting](/ml/Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM) vs Fine-Tuning
@@ -50,7 +50,7 @@ my_related_post_paths:
 - few-shot: task described and random demonstrations provided
 - fine-tuning: model parameters are updated with correct answers
 
-![zero-shot vs one-shot vs fine-tuning (GPT-3 paper)](/images/gpt-3-zero-shot-one-shot-fine-tuning.png)
+{% include image.html src="/images/gpt-3-zero-shot-one-shot-fine-tuning.png" alt="zero-shot vs one-shot vs fine-tuning (GPT-3 paper)" %}
 
 
 ## PaLM's Breakthrough Capabilities on BIG-bench
@@ -61,7 +61,7 @@ my_related_post_paths:
 - certain capabilities emerge when a scale is reached (not log-linear)
   - english proverbs and logical sequence at 62B to 540B vs 8B to 62B
 
-![PaLM discontinuous improvements with scale](/images/palm-discontinuous-improvement-with-scale.png)
+{% include image.html src="/images/palm-discontinuous-improvement-with-scale.png" alt="PaLM discontinuous improvements with scale" %}
 
 
 
@@ -75,7 +75,7 @@ my_related_post_paths:
   - chaining logical inferences
 - thoughts are useful for interpretation
 
-![Chain of Thought Prompting](/images/palm-chain-of-though-prompting.png)
+{% include image.html src="/images/palm-chain-of-though-prompting.png" alt="Chain of Thought Prompting" %}
 
 
 
@@ -87,7 +87,7 @@ my_related_post_paths:
   - outperforms with a calculator, but GPT-3+chain-of-thought?
 - generating explicit inference chains drastically increase the quality of the predictions
 
-![PaLM chain of thought prompting new SOTA on GSM8K, MAWPS, SVAMP, and StrategyQA](/images/palm-chain-of-though-prompting-results.png)
+{% include image.html src="/images/palm-chain-of-though-prompting-results.png" alt="PaLM chain of thought prompting new SOTA on GSM8K, MAWPS, SVAMP, and StrategyQA" %}
 
 
 
@@ -115,7 +115,7 @@ GPT-3: No, because an airplane typically travels around 500-600 miles per hour, 
 - achieves similar results to specialized OpenAI's Codex 12B with 3% of the code training data
 - after fine-tuning outperforms OpenAI's Davinci Codex
 
-![PaLM and PaLM-Coder models scales 8B, 62B and 540B](/images/palm-coding-tasks-results.png)
+{% include image.html src="/images/palm-coding-tasks-results.png" alt="PaLM and PaLM-Coder models scales 8B, 62B and 540B" %}
 
 
 ## PaLM on Other Tasks
@@ -126,7 +126,7 @@ GPT-3: No, because an airplane typically travels around 500-600 miles per hour, 
 - summarization: fine-tuned results competitive, few-shot largely underperforms the fine-tuned
 - multilingual question answering: fine-tuned results competitive, few-shot largely underperformed of fine-tuned 
 
-![palm multilingual question answering results](/images/palm-multilingual-question-answering-results.png)
+{% include image.html src="/images/palm-multilingual-question-answering-results.png" alt="palm multilingual question answering results" %}
 
 
 ## PaLM Architecture:
@@ -155,7 +155,7 @@ GPT-3: No, because an airplane typically travels around 500-600 miles per hour, 
 - based on dataset used for LaMBDA, GLaM
 - private non-reproducible dataset, while MT-NLG 339B is reproducible but non-hosted
 
-![PaLM dataset hierarchical topics](/images/PaLM-dataset-hierarchical-topics.png)
+{% include image.html src="/images/PaLM-dataset-hierarchical-topics.png" alt="PaLM dataset hierarchical topics" %}
 
 
 ## PaLM Training Requirements
@@ -165,7 +165,7 @@ GPT-3: No, because an airplane typically travels around 500-600 miles per hour, 
 - each Pod ~1 exaflop/s: 768 hosts, 3072 TPU v4 chips
 - but how to split the work and communicate?
 
-![Pathways system datacenter network, tpu ](/images/palm-pathways-system-datacenter-pods-hosts-TPU-chips.png)
+{% include image.html src="/images/palm-pathways-system-datacenter-pods-hosts-TPU-chips.png" alt="Pathways system datacenter network, tpu " %}
 
 
 ## Parallel Training of Large Scale Models
@@ -178,7 +178,7 @@ GPT-3: No, because an airplane typically travels around 500-600 miles per hour, 
   - stages exchange forward and backward propagation information (micro-batches)
   - step by step passing causes "bubbles" - idling
 
-![NVIDIA data center DGX AI](/images/nvidia-data-center-dgx-ai.jpg)
+{% include image.html src="/images/nvidia-data-center-dgx-ai.jpg" alt="NVIDIA data center DGX AI" %}
 
 
 ## PaLM Training Infrastructure
@@ -191,7 +191,7 @@ GPT-3: No, because an airplane typically travels around 500-600 miles per hour, 
 - each batch triggers update between clusters to identical models
   - each host exchanges 1.3GB with its counterpart
 
-![Pathways system datacenter network, tpu ](/images/palm-pathways-system-datacenter-pods-hosts-TPU-chips.png)
+{% include image.html src="/images/palm-pathways-system-datacenter-pods-hosts-TPU-chips.png" alt="Pathways system datacenter network, tpu " %}
 
 
 ## Training Efficiency
@@ -199,7 +199,7 @@ GPT-3: No, because an airplane typically travels around 500-600 miles per hour, 
 - price for parallelization of PaLM is 50%
 - in case of PaLM throughput is tokens-per-second
 
-![Model FLOPs utilization of PaLM vs Megatron-Turing NLG vs Gopher vs GPT-3](/images/PaLM-model-flop-utilization-vs-megatron-vs-gopher-gpt-3.png)
+{% include image.html src="/images/PaLM-model-flop-utilization-vs-megatron-vs-gopher-gpt-3.png" alt="Model FLOPs utilization of PaLM vs Megatron-Turing NLG vs Gopher vs GPT-3" %}
 
 
 ## More Posts Like This 

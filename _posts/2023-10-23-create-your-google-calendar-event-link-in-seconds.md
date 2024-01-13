@@ -26,7 +26,7 @@ my_related_post_paths:
 
 
 
-![Create Your Google Calendar Event Link in Seconds](/images/create-google-calendar-event-link.png)
+{% include image.html src="/images/create-google-calendar-event-link.png" alt="Create Your Google Calendar Event Link in Seconds" %}
 
 Create and share a Google Calendar event link in no time, irrespective of whether you have a Google Calendar account or not. With this tool, you can seamlessly generate a URL for your event and share it with participants. All they need to do after that is to click on the link to add the event to their respective Google Calendars. 
 

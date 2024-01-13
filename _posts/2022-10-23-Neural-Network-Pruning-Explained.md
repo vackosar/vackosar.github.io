@@ -30,7 +30,7 @@ In the first step we find or pre-select some initial network.
 Then we iteratively **train, prune, and repeat**.
 We **end after the training step**, as the weights are optimized for the pruned network, which has **a different architecture** in which pruned weight are **fixed to zero**.
 
-![pruning steps](/images/pruning_steps__han_2015.png)
+{% include image.html src="/images/pruning_steps__han_2015.png" alt="pruning steps" %}
 
 ## Decision Trees
 Decision trees are composed of **a tree of if-else statements of the input variables** only without use of any [internal representations (embeddings)](/ml/Embeddings-in-Machine-Learning-Explained), and consequently they are highly **interpretable**.
@@ -42,14 +42,14 @@ Popular algorithms available:
 - [CART](https://www.amazon.com/Classification-Regression-Wadsworth-Statistics-Probability/dp/0412048418/) another popular similar approach. Used by [Scikit-learn](https://scikit-learn.org/stable/modules/tree.html#classification).
 
 [//]: # (![decision tree Iris dataset, Scikit documentation]&#40;/images/decision_tree_iris_dataset__scikit_docs.png&#41;)
-![decision tree regression with data points and two maximum depths](/images/decision_tree_regression_with_data_points_and_two_maximum_depths.png)
+{% include image.html src="/images/decision_tree_regression_with_data_points_and_two_maximum_depths.png" alt="decision tree regression with data points and two maximum depths" %}
 
 
 ### Minimal Cost-Complexity Pruning in CART Decision Trees
 Minimal Cost-Complexity Pruning is **a greedy algorithm, which iteratively removes the best to prune subtrees** until reaching a specified limit `alpha`.
 Increasing the pruning intensity by increasing alpha, improves generalization up to a point and then leads to decrease in generalization.
 
-![decision tree cost complexity pruning improves test accuracy until a maximum, scikit docs](/images/decision_tree_cost_complexity_pruning__improves_test_accuracy_until_a_maximum__scikit_docs.png) 
+{% include image.html src="/images/decision_tree_cost_complexity_pruning__improves_test_accuracy_until_a_maximum__scikit_docs.png" alt="decision tree cost complexity pruning improves test accuracy until a maximum, scikit docs" %} 
 
 #### Minimal Cost-Complexity Pruning Algorithm
 For each non-terminal node `t` and we can calculate cost complexity of its subtree:
@@ -59,14 +59,14 @@ We start with `alpha_j` of `0` and increase it until we find a node, **for which
 We repeat this until we reach a specified limit `alpha`.
 Note that `cost_complexity` above has similarities to [lasso regularization](https://en.wikipedia.org/wiki/Lasso_(statistics)).
 
-![decision tree pruning example (Kijsirikul 2001)](/images/decision_tree_pruning__kijsirikul_2001.png)
+{% include image.html src="/images/decision_tree_pruning__kijsirikul_2001.png" alt="decision tree pruning example (Kijsirikul 2001)" %}
 
 
 ## Decision Tree vs Neural Network
 - Vanilla **decision trees split on the input variables only** and have no [embeddings](/ml/Embeddings-in-Machine-Learning-Explained), while neural networks also train linear transformations of the values and thus create embeddings.
 - [Neural networks with piecewise activation functions (e.g. ReLU) are equivalent to extension of a decision tree](https://arxiv.org/pdf/2210.05189.pdf) with linear manifold decision boundaries called [Multivariate Decision Trees](https://link.springer.com/content/pdf/10.1023/A:1022607123649.pdf).
 
-![neural network as a multivariate decision tree for a parabola dataset](/images/neural_networks_are_decision_trees__aytekin_2022.png)
+{% include image.html src="/images/neural_networks_are_decision_trees__aytekin_2022.png" alt="neural network as a multivariate decision tree for a parabola dataset" %}
 
 
 ## Pruning in Neural Networks
@@ -89,7 +89,7 @@ If the network weights are optimized and the first order gradient is zero, we ne
 - A notable oBERT method of 2022 is described below.
 
 
-![pruning synapses, neurons, layers](/images/pruning_both_synapses_and_neuron_nodes_han_2015.png)
+{% include image.html src="/images/pruning_both_synapses_and_neuron_nodes_han_2015.png" alt="pruning synapses, neurons, layers" %}
 
 
 ### Optimal BERT Surgeon Pruning Method
@@ -99,7 +99,7 @@ oBERT extends **Second-order to Structured Pruning**, reusing Fisher Information
 **Initial training stays dense** and there is additional step of pruning fine-tune, so pruning helps only with **prediction and not training**.
 oBERT optimized for CPU achieves 8.4x speed up, while when tuned for GPU only 2.3x speed up.
 
-![optimal bert surgeon evaluation  comparission of compression methods  obert paper](/images/optimal-bert-surgeon-evaluation--comparission-of-compression-methods--obert-paper.png)
+{% include image.html src="/images/optimal-bert-surgeon-evaluation--comparission-of-compression-methods--obert-paper.png" alt="optimal bert surgeon evaluation  comparission of compression methods  obert paper" %}
 
 
 ### Neural Magic Engine
@@ -116,7 +116,7 @@ Popular models like BERT and Resnet50 in vision and text available for experimen
   </footer>
 </blockquote>
 
-![From Nvidia: GPU vs CPU in CUDA documentation](/images/sru-cpu-vs-gpu.png)
+{% include image.html src="/images/sru-cpu-vs-gpu.png" alt="From Nvidia: GPU vs CPU in CUDA documentation" %}
 
 
 

@@ -45,7 +45,7 @@ Alternative [cross-attention in SelfDoc](#cross-attention-in-selfdoc), uses quer
 [The feed forward layer](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) is related to cross-attention, except the feed forward layer does use softmax and one of the input sequences is static.
 [Augmenting Self-attention with Persistent Memory paper](/ml/Feed-Forward-Self-Attendion-Key-Value-Memory) shows that Feed Forward layer calculation made the same as self-attention.
 
-![cross-attention perceiver io detail](/images/cross-attention-detail-perceiver-io.png)
+{% include image.html src="/images/cross-attention-detail-perceiver-io.png" alt="cross-attention perceiver io detail" %}
 
 ## Cross-attention Algorithm
 - Let us have embeddings (token) sequences S1 and S2
@@ -109,13 +109,13 @@ Cross-attention introduces information from the input sequence to the layers of 
 such that it can predict the next output sequence token.
 The [decoder](/ml/Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer) then adds the token to the output sequence, and repeats this autoregressive process until the EOS token is generated.
 
-![Cross-Attention in the Transformer decoder of Attention is All You Need paper](/images/cross-attention-in-transformer-decoder.png)
+{% include image.html src="/images/cross-attention-in-transformer-decoder.png" alt="Cross-Attention in the Transformer decoder of Attention is All You Need paper" %}
 
 
 ### Cross-Attention in Stable Diffusion
 Stable Diffusion uses cross-attention **for image generation to condition transformers with a text prompt** inside the denoising U-Net layer.
 
-![stable diffusion architecture with cross-attention](/images/stable-diffusion-architecture.png)
+{% include image.html src="/images/stable-diffusion-architecture.png" alt="stable diffusion architecture with cross-attention" %}
 
 
 ### Cross-Attention in Perceiver IO
@@ -125,7 +125,7 @@ Stable Diffusion uses cross-attention **for image generation to condition transf
 
 ### Cross-Attention in SelfDoc
 
-![selfdoc cross-attention](/images/selfdoc-cross-attention.png)
+{% include image.html src="/images/selfdoc-cross-attention.png" alt="selfdoc cross-attention" %}
 
 In [Selfdoc](https://arxiv.org/pdf/2106.03331.pdf), cross-attention is integrated in a special way.
 First step of their Cross-Modality Encoder, instead uses value and query from sequence A and then key from the sequence B.

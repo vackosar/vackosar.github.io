@@ -72,7 +72,7 @@ my_related_post_paths:
   - measure one task's gradient affects the other tasks loss
   - correlates overall model performance
 
-![inter-task affinity for multi-task learning task grouping](/images/disentangle-multi-task.png)
+{% include image.html src="/images/disentangle-multi-task.png" alt="inter-task affinity for multi-task learning task grouping" %}
 
 ## Supervised-Disentangling: Attribute-driven Disentangled Representations
 

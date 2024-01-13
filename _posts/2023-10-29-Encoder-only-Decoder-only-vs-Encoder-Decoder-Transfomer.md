@@ -17,7 +17,7 @@ my_related_post_paths:
 - _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
 ---
 
-![Transformer encoder-decoder model diagram (Attention is all you need)](/images/transformer-encoder-decoder.png)
+{% include image.html src="/images/transformer-encoder-decoder.png" alt="Transformer encoder-decoder model diagram (Attention is all you need)" %}
 
 
 People keep asking me about, what is the difference between encoder, decoder, and normal [transformer (with self-attention)](/ml/transformers-self-attention-mechanism-simplified).
@@ -29,7 +29,7 @@ Input is text and output is sequence of [embeddings](/ml/Embeddings-in-Machine-L
 Use cases are sequence classification (class token), token classification.
 It uses bidirectional attention, so the model can see forwards and backwards.
 
-![bidirectional attention in BERT vs unidirectional (causal) attention in GPT](/images/bert-vs-GPT.png)
+{% include image.html src="/images/bert-vs-GPT.png" alt="bidirectional attention in BERT vs unidirectional (causal) attention in GPT" %}
 
 
 Another encoder-only model example is [ViT (Vision Transformer)](https://arxiv.org/pdf/2010.11929.pdf) for image classification.
@@ -44,7 +44,7 @@ The attention is almost always causal (unidirectional), so the model can see onl
 
 
 ### Encoder-Decoder (T5 model)
-![T5 encoder-decoder multi-task visualization](/images/t5-text-to-text.png)
+{% include image.html src="/images/t5-text-to-text.png" alt="T5 encoder-decoder multi-task visualization" %}
 
 [T5](https://arxiv.org/abs/1910.10683) has [Encoder-Decoder or Full-Transformer](https://arxiv.org/abs/1706.03762).
 Input is text and output is the next word (token), which is then appended to the decoder-input.
@@ -61,7 +61,7 @@ In the [Flan-UL2 paper](https://arxiv.org/abs/2205.05131), authors attempted to 
 Furthermore, Compute matched encoder-decoder models in UL2 paper have approximately twice the number of parameters as the decoder models but similar speeds and accuracy. This indicates that encoder-decoder may have [more sparsity that may be taken out with some pruning](/ml/Neural-Network-Pruning-Explained) or distillation techniques to eventually outperform.
 
 
-![UL2 formulation of masking tasks in a autoregressive way](/images/mixture-of-denoisers-for-UL2-formulated-auto-regressively.png)
+{% include image.html src="/images/mixture-of-denoisers-for-UL2-formulated-auto-regressively.png" alt="UL2 formulation of masking tasks in a autoregressive way" %}
 
 
 In this older pre-RLHF paper, [Encoder-decoder models trained with masked language modeling achieve the best zero-shot performance after multitask finetuning](https://arxiv.org/pdf/2204.05832.pdf).
@@ -69,7 +69,7 @@ In this older pre-RLHF paper, [Encoder-decoder models trained with masked langua
 
 For details, there is [a difference between decoder-only causal and prefix LM](https://arxiv.org/pdf/1910.10683.pdf). Prefix-LM has a section that has non-causal (bidirectional attention) token dependencies like BERT:
 
-![encoder-decoder-language-model-prefix-lm.png](/images/encoder-decoder-language-model-prefix-lm.png)
+{% include image.html src="/images/encoder-decoder-language-model-prefix-lm.png" alt="encoder-decoder-language-model-prefix-lm.png" %}
 
 
 ### Which To Choose From Encoder, Decoder, or Encoder-Decoder Transformer?

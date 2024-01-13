@@ -50,7 +50,7 @@ my_related_post_paths:
   - [cross-attention](/ml/cross-attention-in-transformer-architecture) allowing for multiple retrievals
   - bigger database
 
-![retrieval transformer comparison](/images/retrieval-transformer-comparison.png)
+{% include image.html src="/images/retrieval-transformer-comparison.png" alt="retrieval transformer comparison" %}
 
 
 ## RETRO's Training Dataset
@@ -62,7 +62,7 @@ my_related_post_paths:
 - database ~13B records? 
 - not retrieval from the same document during training
 
-![MassiveText dataset composition table](/images/retrieval-transformer-massive-text.png)
+{% include image.html src="/images/retrieval-transformer-massive-text.png" alt="MassiveText dataset composition table" %}
 
  
 ## RETRO's Architecture
@@ -71,7 +71,7 @@ my_related_post_paths:
 - chunked [cross-attention](/ml/cross-attention-in-transformer-architecture) with previous chunk retrieval set 
 - ablations show retrieval helps
 
-![retriever transformer achitecture](/images/retriever-transformer-architecture.png)
+{% include image.html src="/images/retriever-transformer-architecture.png" alt="retriever transformer achitecture" %}
 
 
 ## RETRO's Retriever
@@ -106,7 +106,7 @@ my_related_post_paths:
 - use hidden representation at the layer as query
 - [cross-attend](/ml/cross-attention-in-transformer-architecture)
 
-![retrieval transformer](/images/retrieval-transformer-cross-attention.png)
+{% include image.html src="/images/retrieval-transformer-cross-attention.png" alt="retrieval transformer" %}
 
 
 ## RETRO's Results
@@ -119,13 +119,13 @@ my_related_post_paths:
 - generates on-topic and coherent text likely thanks to long memories
 - underperforms specialized QA models
 
-![RETRO on Pile](/images/retrieval-transformer-results-on-pile.png)
+{% include image.html src="/images/retrieval-transformer-results-on-pile.png" alt="RETRO on Pile" %}
 
-![RETRO generated text keeps on topic thanks to longer sequences](/images/retrieval-transformer-generated-text.png)
+{% include image.html src="/images/retrieval-transformer-generated-text.png" alt="RETRO generated text keeps on topic thanks to longer sequences" %}
 
-![RETRO question answering results](/images/retrieval-transformer-qa-results.png)
+{% include image.html src="/images/retrieval-transformer-qa-results.png" alt="RETRO question answering results" %}
 
-![RETRO Wikitext103](/images/retrieval-transformer-wikitext103-results.png)
+{% include image.html src="/images/retrieval-transformer-wikitext103-results.png" alt="RETRO Wikitext103" %}
 
 
 ## How You can Use RETRO Ideas?

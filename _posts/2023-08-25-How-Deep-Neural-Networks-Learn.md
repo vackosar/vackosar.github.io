@@ -17,14 +17,14 @@ my_related_post_paths:
 - _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 ---
 
-![neural network drawn on a blackboard in a class room](/images/classroom-neural-network-training.png)
+{% include image.html src="/images/classroom-neural-network-training.png" alt="neural network drawn on a blackboard in a class room" %}
 
 Deep neural network consumes input numbers, passes them through **multi-layer** neural network calculation, and produces a prediction.
 The loss function provides **error how each prediction differs** from the desired prediction target.
 **Gradient descent calculates corrections** to the network backwards through the layers.
 The neuron activation values in between the layers before the output, which form arrays of numbers (vectors), are called [embeddings (representations)](/ml/Embeddings-in-Machine-Learning-Explained).
 
-![neural network relu, sum, input, output](/images/neural-network.drawio.png)
+{% include image.html src="/images/neural-network.drawio.png" alt="neural network relu, sum, input, output" %}
 
 ## Gradient Descent Intuition
 Gradient descent calculates weight corrections (gradients) with backpropagation algorithm.

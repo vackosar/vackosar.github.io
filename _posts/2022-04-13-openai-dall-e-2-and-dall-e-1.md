@@ -39,7 +39,7 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes im
 - loss is to reconstruct (L2) the image and latents to have normal distribution (KL)
 - sample, or interpolate from the latent normal distribution and generate images - may find [disentangled representations](/ml/manipulate-item-attributes-via-disentangled-representation)
 
-![variational autoencoder](/images/variational-autoencoder.drawio.svg)
+{% include image.html src="/images/variational-autoencoder.drawio.svg" alt="variational autoencoder" %}
 
 
 ## Quantization
@@ -53,7 +53,7 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes im
 - decoder maps from quantized grid to the image
 - copy gradients from decoder input z to the encoder output
 
-![Discreet Variational Auto-Encoder VQ-VAE 1](/images/vq-vae-encoding-decoding.png)
+{% include image.html src="/images/vq-vae-encoding-decoding.png" alt="Discreet Variational Auto-Encoder VQ-VAE 1" %}
 
 
 <br>
@@ -78,7 +78,7 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes im
 3. decode the image tokens using [dVAE](#discreet-variational-auto-encoder-dvae) decoder
 4. select the best image using [CLIP model](#openais-clip) ranker
 
-![DALL-E-1 generates tokens](/images/dall-e-1-generate.drawio.svg)
+{% include image.html src="/images/dall-e-1-generate.drawio.svg" alt="DALL-E-1 generates tokens" %}
 
 	
 ### DALL-E 1 Discreet Variational Auto-Encoder (dVAE)
@@ -91,12 +91,12 @@ while [DALL-E 2](#openais-dall-e-2) uses CLIP embedding directly, and decodes im
 - competitive in zero-shot fashion, preferred 90% time by humans
 - Human evaluation which is preferred DALL-E vs DF-GAN, zero-shot
  
-![DALL-E 1 results](/images/dall-e-1-results.png)
+{% include image.html src="/images/dall-e-1-results.png" alt="DALL-E 1 results" %}
 
 
 ### DALL-E 1 Examples
 
-![dall-e 1 examples](/images/dall-e-1-examples.png)
+{% include image.html src="/images/dall-e-1-examples.png" alt="dall-e 1 examples" %}
 
 <br>
 
@@ -110,7 +110,7 @@ The **training image data form a manifold**. **Adding noise to the images expand
 The ODE's solution is the probability density function. We link gradient of the density function to the L2 loss of denoising function.
 The step size is scaled with a function dependent on the noise level.
 
-![diffusion model - progressive denoising examples steps (Denoising Diffusion Probabilistic Models)](/images/diffusion-model-example-steps.png)
+{% include image.html src="/images/diffusion-model-example-steps.png" alt="diffusion model - progressive denoising examples steps (Denoising Diffusion Probabilistic Models)" %}
 
 
 ## OpenAI's GLIDE
@@ -147,7 +147,7 @@ The step size is scaled with a function dependent on the noise level.
 
 ### DALL-E 2 Image Generation
 
-![DALL-E 2 decoder](/images/dall-e-2-decoder.png)
+{% include image.html src="/images/dall-e-2-decoder.png" alt="DALL-E 2 decoder" %}
 
 #### DALL-E 2 "Prior" Network
 - Prior decoder generates CLIP image embedding from text
@@ -166,15 +166,15 @@ The step size is scaled with a function dependent on the noise level.
 ## DALL-E 2 Evaluation Results 
 DALL-E 2 competitive photo-realism while more diverse images than GLIDE
 
-![dall-e 2 human eval results preference](/images/dall-e-2-results.png)
+{% include image.html src="/images/dall-e-2-results.png" alt="dall-e 2 human eval results preference" %}
 
 
 ### DALL-E 2 Examples
 
 Comparison:
 
-![DALL-E 2 vs DALL-E 1 vs GLIDE](/images/dall-e-2-vs-dall-e-1-vs-GLIDE.png)
+{% include image.html src="/images/dall-e-2-vs-dall-e-1-vs-GLIDE.png" alt="DALL-E 2 vs DALL-E 1 vs GLIDE" %}
 
 Sample ("A teddybear on a skateboard in Times Square."):
 
-![samples from DALL-E “A teddybear on a skateboard in Times Square.”](/images/dall-e-2-random-images.png)
+{% include image.html src="/images/dall-e-2-random-images.png" alt="samples from DALL-E “A teddybear on a skateboard in Times Square.”" %}

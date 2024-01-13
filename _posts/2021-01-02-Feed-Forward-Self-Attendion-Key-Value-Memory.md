@@ -84,7 +84,7 @@ More specifically feed-forward layer is a bit like a [cross-attention](/ml/cross
 They restated the feed-forward layer, incorporated it into the self-attention sublayer, and named the new block "All-attention".
 And they reportedly slightly outperformed the vanilla model on the next token prediction task.
 
-![All-attention: feed-forward layer restated as self-attention](/images/all-attention-feed-forward-as-self-attention.png)
+{% include image.html src="/images/all-attention-feed-forward-as-self-attention.png" alt="All-attention: feed-forward layer restated as self-attention" %}
 
 [Google's PaLM model](/ml/googles-pathways-language-model-and-chain-of-thought) authors adopted gated linear unit (GLU) based modification to their feed-forward layer, which is mildly similar to cross-attention:
 

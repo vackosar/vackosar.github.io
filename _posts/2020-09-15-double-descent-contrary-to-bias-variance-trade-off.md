@@ -30,7 +30,7 @@ The **bias-variance trade-off hypothesis** implies that lowering train loss by *
 Empirically this can be **observed in decision trees**, which beyond some size will achieve zero train loss, while test loss (generalization error) will rise.
 See the bias-variance trade-off case of decision tree pruning controlled by alpha in below.
 
-![decision tree cost complexity pruning improves test accuracy until a maximum, scikit docs](/images/decision_tree_cost_complexity_pruning__improves_test_accuracy_until_a_maximum__scikit_docs.png) 
+{% include image.html src="/images/decision_tree_cost_complexity_pruning__improves_test_accuracy_until_a_maximum__scikit_docs.png" alt="decision tree cost complexity pruning improves test accuracy until a maximum, scikit docs" %} 
 
 
 But in general, bias-variance trade-off is not applicable in terms of parameter count (See [model norm definition below](#model-norm-vs-parameter-count-and-double-descent)).
@@ -57,14 +57,14 @@ What if the model's optimizer thanks to the regularization learns to just zero o
 We should be able to see this in terms of model norm, which is a norm of all model's parameters.
 [Machine Learning CS229 lecture notes](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf) plot a case where, the double descent disappears, when we use norm of the model's parameters instead of their count.
 
-![double descent and weights norm model norm  Ng 2022](/images/double-descent-and-weights-norm-model-norm--ng-2022.png)
+{% include image.html src="/images/double-descent-and-weights-norm-model-norm--ng-2022.png" alt="double descent and weights norm model norm  Ng 2022" %}
 
 
 ## Grokking
 [Open AI also observed double descent](https://mathai-iclr.github.io/papers/papers/MATHAI_29_paper.pdf?utm_campaign=The%20Batch&utm_medium=email&_hsmi=209230924&utm_content=209231304&utm_source=hs_email) in [Transformers](/ml/transformers-self-attention-mechanism-simplified),
 which they called "grokking". In the grokking setup, OpenAi trained on a binary operations datasets, and observed sudden jumps in accuracy (inverse of error), as if the model suddenly found the right algorithm far in the overfitting regime despite prolonged error stagnation.
 
-![OpenAI grokking](/images/opean-ai-grokking.png)
+{% include image.html src="/images/opean-ai-grokking.png" alt="OpenAI grokking" %}
 
 
 Additionally, [OmniGrok 2022 paper](https://arxiv.org/pdf/2210.01117.pdf) connects grokking to norm of the model's weights and the tasks dependency on good representations.

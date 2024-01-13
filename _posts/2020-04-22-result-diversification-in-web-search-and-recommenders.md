@@ -31,7 +31,7 @@ my_related_post_paths:
 - word apple can mean a company or a fruit
 - web search should cover both of these meanings (aspects)
 
-![diverse web results for word apple - a company and a fruit](/images/diverse-web-search-results-apple.png)
+{% include image.html src="/images/diverse-web-search-results-apple.png" alt="diverse web results for word apple - a company and a fruit" %}
 
 
 ## Query Reformulations for Web Search Diversification

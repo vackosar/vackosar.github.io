@@ -18,7 +18,7 @@ my_related_post_paths:
 ---
 
 
-![Scout Mindset Book Summary_Short summary of a book](/images/Scout_Mindset_summary_book_xl-beta-v2-2-2.png)
+{% include image.html src="/images/Scout_Mindset_summary_book_xl-beta-v2-2-2.png" alt="Scout Mindset Book Summary_Short summary of a book" %}
 
 
 [The Scout Mindset](https://www.goodreads.com/book/show/42041926-the-scout-mindset) is book from [Julia Galef](https://juliagalef.com/) on topic of rationality and decision-making.

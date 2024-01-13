@@ -47,7 +47,7 @@ my_related_post_paths:
 - convolutional networks embed overlapping patches and progressively pool them into a single image embedding
 - [Vision Transformer (ViT)](https://arxiv.org/pdf/2010.11929.pdf) uses [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) and the output class token embedding is used as an image embedding
 
-![vision transformer (ViT) architecture](/images/vision-transformer-vit-architecture.png)
+{% include image.html src="/images/vision-transformer-vit-architecture.png" alt="vision transformer (ViT) architecture" %}
 
 
 ## Reusing Embeddings
@@ -58,4 +58,4 @@ my_related_post_paths:
   - that would explain why neural networks can improve by training
 - for example Word2vec or BERT embeddings are trained on a word prediction tasks, but their embeddings are useful for e.g. text classification tasks
  
-![inter-task affinity for multi-task learning task grouping](/images/disentangle-multi-task.png)
+{% include image.html src="/images/disentangle-multi-task.png" alt="inter-task affinity for multi-task learning task grouping" %}
