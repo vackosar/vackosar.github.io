@@ -1,0 +1,13 @@
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        alt="{{ include.alt }}"
+        data-src="{{ include.src }}"
+        style="{% if include.width %}width: {{ include.width }}{% endif %}"
+    >
+    <figcaption class="figure-caption">
+        {{ include.alt }}
+        {% if include.source_url %}(<a href="{{ include.source_url }}">source</a>){% endif %}
+        {% if include.source_text %}{{ include.source_text }}{% endif %}
+    </figcaption>
+</figure>

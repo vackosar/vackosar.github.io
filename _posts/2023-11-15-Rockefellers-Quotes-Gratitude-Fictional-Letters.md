@@ -18,7 +18,9 @@ my_related_post_paths:
 ---
 
 
-![rockefeller-and-letters](/images/rockefeller-and-letters.png)
+[//]: # (![rockefeller-and-letters]&#40;/images/rockefeller-and-letters.png&#41;)
+
+{% include image.html src="/images/rockefeller-and-letters.png" alt="J.D. Rockefeller letters illustration" %}
 
 I read a book about 38 Letters Rockefeller's to his son. I really enjoyed it at first, but then it started to sound suspicious to me. The language was somehow too modern, like from a self-help book from 2010. I read online reviews, I found similar complaints that referred to the archives of the letters, about how the book was first published in China, and that the content is completely different in the original sources.
 
@@ -37,8 +39,7 @@ This is a reminder why you have to be skeptical. Read more on how to spot fakes 
 
 
 ## Another Caution
-Regardless above, any quotes, or books is in a risk of not being useful to You the reader. You are unique, or you can become unique, living in a unique time and place. Books are mere words, that gain meaning when acted on. You may find more useful describing the world in your own words from experience of interacting with it. 
-
+Regardless of the above, any quotes or books are at risk of not being useful to You, the reader. You are unique or can become unique, living in a unique time and place. Books are mere words that gain meaning when acted on. You may find it more beneficial to describe the world in your own words from the experience of interacting with it.
 
 ## The Best Quotes From The Real Letters
 These are extractions from letters in book "[Dear Father, Dear Son](https://a.co/d/4rsZQsv)", that captured my attention.
