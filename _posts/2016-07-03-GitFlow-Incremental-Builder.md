@@ -18,7 +18,7 @@ my_related_post_paths:
 - _posts/2016-11-04-Drone-Hackathoning.md
 ---
 
-<img title="An example of a multi-module project Eclipse JDT" alt="An example of a multi-module project Eclipse JDT" style="width: 80%; max-width: 900px" src="/images/eclipse-modules.png">
+{% include image.html alt="An example of a multi-module project Eclipse JDT" style="width: 80%; max-width: 900px" src="/images/eclipse-modules.png" %}
 
 We had issues with our builds taking too long on a project with messaging microservice architecture.
 After we adopted [git feature branch model called GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) and setting up pre-merge testing policy, it dawned on me that by having develop branch stability guarantee, we could speed up our builds.

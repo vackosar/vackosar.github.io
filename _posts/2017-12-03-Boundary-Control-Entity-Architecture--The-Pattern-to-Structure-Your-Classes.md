@@ -27,7 +27,7 @@ Boundary-Control-Entity architecture is effectively directory (package) structur
 It is an alternative to Three-tier architecture. It is very simple and natural way to structure classes, which goes well with modularized architecture. 
 One creates one BCE package structure per a microservice, feature or module having ideally between 9 and 30 classes.  
 
-<p><img src="/images/bce.svg" alt="Boundary Control Entity architecture"/></p>
+{% include image.html src="/images/bce.svg" alt="Boundary Control Entity architecture" %}
 
 
 ## BCE Explained

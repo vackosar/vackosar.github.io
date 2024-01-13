@@ -21,7 +21,7 @@ my_related_post_paths:
 ---
 
 
-<img id="video-img-img" style="max-width: 560px; width: 100%" src="{{ page.image }}" alt="{{ page.title }}" />
+{% include image.html src="{{ page.image }}" alt="{{ page.title }}" %}
 
 In business, most of the excess profits come from delivering more from less compared to the next best alternative including competition.
 The [Helmer's 7 Powers book](https://www.goodreads.com/book/show/32816087-7-powers) lists 7 barriers that protect margins of businesses long term and how to attain them.

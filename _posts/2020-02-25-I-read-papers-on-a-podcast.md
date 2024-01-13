@@ -19,8 +19,7 @@ my_related_post_paths:
 ---
 
 
-
-<img class="lazyload" data-src="/images/2020-02-25-my-photo-table-map-cal-rot-fix.jpg" alt="microphone, map, and Vaclav" style="width: 80%; max-width: 900px"/><br>
+{% include image.html src="/images/2020-02-25-my-photo-table-map-cal-rot-fix.jpg" alt="microphone, map, and Vaclav" style="width: 80%; max-width: 900px" %}
 
 And it does work.
 I think I am able to speak faster and with more precision than I did before I started.

@@ -23,7 +23,8 @@ my_related_post_paths:
 
 
 
-<p><img src="/images/bentoml-cortex-logos.webp" alt="BentoML and Cortex logo" style="width: 200px"/></p>
+{% include image.html src="/images/bentoml-cortex-logos.webp" alt="BentoML and Cortex logo" style="width: 200px" %}
+
 
 ## Update 2022-02-02 - Cortex.dev bought by Databricks
 Consider migrating away from the Cortex.dev as [it was bought by Databricks](https://www.databricks.com/blog/2022/04/25/cortex-labs-databricks-model-serving-mlops.html) and is only maintained but not developed at the moment.
