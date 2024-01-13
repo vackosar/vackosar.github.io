@@ -42,7 +42,7 @@ Also called Zero-Shot Prompting.
 
 Describe the task:
 - intent (detect product review sentiment)
-- audience (5 year old)
+- audience (5-year-old)
 - persona (expert marketer)
 - specific and precise terms, e.g., avoiding generic word "not".
 
