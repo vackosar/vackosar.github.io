@@ -8,4 +8,4 @@
 - RNNs handle repetition better, can use CTC Loss e.g. for OCR
 - [SRU++](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) uses both attention and recurrence
 
-![Dependency parse tree example from Spacy](/images/dependency-parse-tree.png)
+{% include image.html src="/images/dependency-parse-tree.png" alt="Dependency parse tree example from Spacy" %}

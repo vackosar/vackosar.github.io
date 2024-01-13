@@ -3,7 +3,7 @@
 - simplest methods: counting word occurrences on documents level into [sparce matrices](/ml/sparse-matrix-why-and-when) as feature vectors in methods [term frequency–inverse document frequency (TF-IDF)](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.115.8343&rep=rep1&type=pdf), [Latent semantic analysis (LSA)](https://www.cs.bham.ac.uk/~pxt/IDA/lsa_ind.pdf)
 - this co-occurrence of words in documents later used to [embed words](/ml/Embeddings-in-Machine-Learning-Explained)
 
-![Latent semantic analysis (LSA) - CC BY-SA 4.0 Christoph Carl Kling](/images/latent-semantic-analysis-wiki.png)
+{% include image.html src="/images/latent-semantic-analysis-wiki.png" alt="Latent semantic analysis (LSA) - CC BY-SA 4.0 Christoph Carl Kling" %}
 
 
 ## Non-Contextual Words Vectors
@@ -13,7 +13,7 @@
 - the embeddings are dense as the vector norm is not allowed to grow too large
 - these word vectors are non-contextual (global), so we cannot disambiguate fruit (flowering) from fruit (food)
 
-![word2vec](/images/word2vec-10k-tensorflow-projector.png)
+{% include image.html src="/images/word2vec-10k-tensorflow-projector.png" alt="word2vec" %}
 
 
 ## Word2vec Method for Non-contextual Word Vectors
@@ -23,7 +23,7 @@
 - Words appearing in similar contexts have similar Word2vec embedding vectors. Word meaning disambiguation is not possible.
 - [Vector manipulation leads to meaning manipulation](/ml/manipulate-item-attributes-via-disentangled-representation), e.g., vector operation `v(king) – v(man) + v(woman)` returns a vector close to `v(queen)`.
 
-![word2vec operation](/images/word2vec.jpg)
+{% include image.html src="/images/word2vec.jpg" alt="word2vec operation" %}
 
 
 ## Knowledge Graph's Nodes Are Disambiguated
@@ -32,7 +32,7 @@
 - Wikipedia and the internet are something between knowledge graph and set of documents
 - random walks over KG are valid "sentences", which can be used to train node embeddings e.g. with Word2vec (see "link prediction")
 
-![knowledge graph visualization from wikipedia](/images/knowledge-graph.jpg)
+{% include image.html src="/images/knowledge-graph.jpg" alt="knowledge graph visualization from wikipedia" %}
 
 
 ## Contextual Word Vectors with Transformer
@@ -42,5 +42,5 @@
   - [recurrent neural networks (LSTM, GRU)](/ml/SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN) are sequential models with memory units
   - [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) consumes the entire input sequence is State-of-the-art 2022
 
-![transformer from word2vec](/images/transformer-from-word2vec.jpg)
+{% include image.html src="/images/transformer-from-word2vec.jpg" alt="transformer from word2vec" %}
 

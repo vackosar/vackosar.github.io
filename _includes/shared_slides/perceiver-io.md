@@ -5,7 +5,7 @@ Perceiver IO uses [cross-attention](/ml/cross-attention-in-transformer-architect
 - multimodal input sequences (e.g. image, text, audio) into a low dimensional latent sequence
 - "output query" or "command" to decode the output value e.g. predict this masked word
 
-![Perceiver IO architecture](/images/cross-attention-perceiver-io.png)
+{% include image.html src="/images/cross-attention-perceiver-io.png" alt="Perceiver IO architecture" %}
 
 Advantage of the Perceiver architecture is that in general you can work with very large inputs.
 Architecture [Hierarchical Perceiver](https://arxiv.org/pdf/2202.10890.pdf) has ability to process even longer input sequences by splitting into subsequences and then merging them.

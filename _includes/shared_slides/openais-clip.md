@@ -6,7 +6,7 @@
 - CLIP's output image [embeddings](/ml/Embeddings-in-Machine-Learning-Explained) contain both style and semantics
 - zero-shot classification, but fails on abstract or systematic tasks like counting
 
-![CLIP contrastive pretraining](/images/clip-contrastive-pretraining.png)
+{% include image.html src="/images/clip-contrastive-pretraining.png" alt="CLIP contrastive pretraining" %}
 
 
 ### CLIP Architecture
@@ -17,7 +17,7 @@
 - text token embeddings and image patch embeddings also available
 - trained on 256 GPUs for 2 weeks
 
-![CLIP architecture](/images/clip-architecture.png)
+{% include image.html src="/images/clip-architecture.png" alt="CLIP architecture" %}
 
 
 ### CLIP Applications

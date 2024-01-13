@@ -1,7 +1,7 @@
 ---
 title: Forward Deployed Engineer
 description: Technical Account Manager, Solutions Architect, Professional Services Consultant.
-categories: business
+categories: software
 image: /images/satisfactory-engineer-flying.png
 date: 2023-06-16
 last_modified_at: 2023-06-16
@@ -9,7 +9,7 @@ layout: post
 permalink: /:categories/:title
 ---
 
-![satisfactory-engineer](/images/satisfactory-engineer-flying.png)
+{% include image.html src="/images/satisfactory-engineer-flying.png" alt="satisfactory-engineer" %}
 
 
 Here is one interesting position called Forward Deployed Engineer:
@@ -31,7 +31,7 @@ A Forward Deployed Engineer is a consultant who works closely with clients to in
 
 6. Oracle - Customer Success Engineer or Solution Engineer
 
-7. Splunk - Professional Services Consultant or Sales Engineer
+7. Splunk - Sales Engineer or Professional Services Consultant
 
 8. VMWare - Technical Account Manager (TAM)
 
