@@ -4,7 +4,7 @@ description: No need for Deadsnakes nor Apt, use pyenv or conda instead!
 layout: post
 categories: software
 date: 2024-01-24
-last_modified_at: 2023-12-29
+last_modified_at: 2024-01-24
 permalink: /:categories/:title
 image: /images/ubuntu-install-python-pyenv-conda-thumb.png
 ---
