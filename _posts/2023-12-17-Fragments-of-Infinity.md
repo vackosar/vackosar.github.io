@@ -3,8 +3,8 @@ title: 'Fragments of Infinity: The Cycle of Life Story'
 description: A tiny sci-fi story about AGI, God, and Entropy. If I brainstorm, am I?
 layout: post
 categories: book
-date: 2024-01-27
-last_modified_at: 2023-12-28
+date: 2023-12-17
+last_modified_at: 2024-01-27
 permalink: /:categories/:title
 image: /images/fragments-of-infinity-3.png.webp
 my_related_post_paths:
