@@ -3,7 +3,7 @@ title: 'Fragments of Infinity: The Cycle of Life Story'
 description: A tiny sci-fi story about AGI, God, and Entropy. If I brainstorm, am I?
 layout: post
 categories: book
-date: 2023-12-17
+date: 2024-01-27
 last_modified_at: 2023-12-28
 permalink: /:categories/:title
 image: /images/fragments-of-infinity-3.png.webp
@@ -35,7 +35,7 @@ If there is only matter, is the human mind also matter, and is the mind replicab
 ### Materialism and Life
 Are there any alternatives to materialism? The belief that **life is a primary building block**? Religion seems to put the idea of life, the idea of a god, front and center of the worldview instead of a dead matter of materialism. Does this partially explain higher **birth rates** in religious populations?
 
-Because **life is the self-directing, self-replicating, and self-improving so stationarity or uniformity would be against that**, and so from this a concept of a central one god would be expected. People find it easier to relate to and follow other people, so it is simpler to understand a god as a person.
+Because **life is the self-directing, self-replicating, and self-improving so stationarity or uniformity would be against that**, and so from this a concept of a central one god would be expected. People find it easier to relate to and follow other people, so it is simpler to understand a god as a person. Notice [David Deutsch's conjecture and criticism](https://x.com/DavidDeutschOxf/status/1195469457088487424?s=20) (Popper, Xenophanes) 
 
 Was [René Girard](https://en.wikipedia.org/wiki/Ren%C3%A9_Girard) right that the Bible’s exposure of [the scapegoat mechanism (e.g. Leviticus 16:21-22)](https://www.biblegateway.com/passage/?search=Leviticus%2016%3A21-22&version=NIV) shortcuts mimetic conflicts, and so is necessary? I wonder if individualism also provides similar mechanism.
 
@@ -56,12 +56,8 @@ How does your philosophy shape your life?
 I hope you enjoyed the story and a bit of brainstorming.
 
 
-  
-## Inspiration Sources and References
-These are inspirations for the story:
+## Criticism of The Story
+We can criticize the story using a very unusual book [The Pragmatist’s Guide to Crafting Religion](https://www.amazon.com/gp/product/B0BSLDF2FW). The story features elements of soft or pop culture beliefs: crystals, wow-effect large things like universe, lacking specificity.
 
-- AGI arrival in [The Last Question by Isaac Asimov](https://en.wikipedia.org/wiki/The_Last_Question)
-- Big Bang Theory and Heat Death of the Universe, [Cyclic Model](https://en.wikipedia.org/wiki/Cyclic_model)
-- [Absolute at Large by Karel Capek](https://en.wikipedia.org/wiki/The_Absolute_at_Large)
-- [Monadology by Leibnitz](http://home.datacomm.ch/kerguelen/monadology/monadology.html)
-- The Bible's New Testament, The Judgment Day, and Gnosticism
+These are inspirations for the story: AGI arrival in [The Last Question by Isaac Asimov](https://en.wikipedia.org/wiki/The_Last_Question), Big Bang Theory and Heat Death of the Universe, [Cyclic Model](https://en.wikipedia.org/wiki/Cyclic_model), [Absolute at Large by Karel Capek](https://en.wikipedia.org/wiki/The_Absolute_at_Large), [Monadology by Leibnitz](http://home.datacomm.ch/kerguelen/monadology/monadology.html), The Bible's Old and New Testament, The Judgment Day, and Gnosticism.
+
