@@ -34,13 +34,13 @@ If there is only matter, is the human mind also matter, and is the mind replicab
 
 
 ### Materialism and Life
-Are there any alternatives to materialism? The belief that **life is a primary building block**? Religion seems to put the idea of life, the idea of a god, front and center of the worldview instead of a dead matter of materialism. Does this partially explain higher **birth rates** in religious populations?
+Are there any alternatives to materialism? The belief that **life is a primary building block**? Religion seems to put the idea of life, the idea of a god, front and center of the worldview instead of a dead matter of materialism. Does this partially explain [higher **birth rates** in religious populations](https://religionunplugged.com/news/2021/10/4/the-future-of-american-religion-birth-rates-show-whos-having-more-kids)?
 
 Because **life is the self-directing, self-replicating, and self-improving so stationarity or uniformity would be against that**, and so from this a concept of a central one god would be expected. People find it easier to relate to and follow other people, so it is simpler to understand a god as a person. Notice [David Deutsch's conjecture and criticism](https://x.com/DavidDeutschOxf/status/1195469457088487424?s=20) (Popper, Xenophanes) 
 
 Was [René Girard](https://en.wikipedia.org/wiki/Ren%C3%A9_Girard) right that the Bible’s exposure of [the scapegoat mechanism (e.g. Leviticus 16:21-22)](https://www.biblegateway.com/passage/?search=Leviticus%2016%3A21-22&version=NIV) shortcuts mimetic conflicts, and so is necessary? I wonder if individualism also provides similar mechanism.
 
-Have **Soviet Russia collapsed**, because ruling communism attempted to remove religion with their materialist view, but itself had lower birthrates, and so the demographics eventually shifted towards people who grew up in non-communist communities, which eventually rejected communism causing the union to collapse? Note that Lenin had no children, Stalin had 3, Khrushchev (de-Stalinization) had 5, Brezhnev (neo-Stalinist) had 2.
+Had **Soviet Russia collapsed**, because ruling communism attempted to remove religion with their materialist view, but itself had lower birthrates, and so the demographics eventually shifted towards people who grew up in non-communist communities, which eventually rejected communism causing the union to collapse? Look at [the chart of the Russian birthrates plummeting after 1910](https://www.statista.com/statistics/1033851/fertility-rate-russia-1840-2020/), which coincides with the Russian Revolution. Note that Lenin had no children, Stalin had 3, Khrushchev (de-Stalinization) had 5, Brezhnev (neo-Stalinist) had 2.
 
 
 ### Science and Religion
