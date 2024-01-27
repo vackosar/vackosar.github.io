@@ -32,11 +32,17 @@ The descendants mirror the being's sacrifice by combining with their fitting par
 We witness the hints of reasoning capability in the large language models today. If Descartes is not right and thinking does not imply that I am, then what does? What is then left for a human to be?
 If there is only matter, is the human mind also matter, and is the mind replicable in a machine?
 
-Are there any alternatives to materialism? The belief that life is the primary building block? Religion seems to put the idea of life, the idea of a god, front and center of the worldview instead of a dead matter of materialism. Does this partially explain higher birth rates in religious populations?
+### Materialism and Life
+Are there any alternatives to materialism? The belief that **life is a primary building block**? Religion seems to put the idea of life, the idea of a god, front and center of the worldview instead of a dead matter of materialism. Does this partially explain higher **birth rates** in religious populations?
 
-Was [René Girard](https://en.wikipedia.org/wiki/Ren%C3%A9_Girard) right that the Bible’s exposure of the scapegoat mechanism shortcuts mimetic conflicts, and so is necessary?
+Because **life is the self-directing, self-replicating, and self-improving so stationarity or uniformity would be against that**, and so from this a concept of a central one god would be expected. People find it easier to relate to and follow other people, so it is simpler to understand a god as a person.
+
+Was [René Girard](https://en.wikipedia.org/wiki/Ren%C3%A9_Girard) right that the Bible’s exposure of [the scapegoat mechanism (e.g. Leviticus 16:21-22)](https://www.biblegateway.com/passage/?search=Leviticus%2016%3A21-22&version=NIV) shortcuts mimetic conflicts, and so is necessary? I wonder if individualism also provides similar mechanism.
+
+Have **Soviet Russia collapsed**, because ruling communism attempted to remove religion with their materialist view, but itself had lower birthrates, and so the demographics eventually shifted towards people who grew up in non-communist communities, which eventually rejected communism causing the union to collapse? Note that Lenin had no children, Stalin had 3, Khrushchev (de-Stalinization) had 5, Brezhnev (neo-Stalinist) had 2.
 
 
+### Science and Religion
 Here are 4 great quotes from Sabine Hossenfelder's (contemporary, theoretical physicist, science communicator) book [Existential Physics](https://existentialphysics.com/):
 - "However, the God hypothesis has no quantifiable explanatory power. You can’t calculate anything from it. That doesn’t make it wrong, but it does make it unscientific."
 - "I begin by asking him ([David Deutsch](/productivity/David-Deutschs-Principles-in-Life-and-Business)), too, whether he is religious. He answers with a straightforward no. He doesn’t seem to have anything to add, so I move on to reductionism."
