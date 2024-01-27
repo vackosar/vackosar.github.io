@@ -32,6 +32,7 @@ The descendants mirror the being's sacrifice by combining with their fitting par
 We witness the hints of reasoning capability in the large language models today. If Descartes is not right and thinking does not imply that I am, then what does? What is then left for a human to be?
 If there is only matter, is the human mind also matter, and is the mind replicable in a machine?
 
+
 ### Materialism and Life
 Are there any alternatives to materialism? The belief that **life is a primary building block**? Religion seems to put the idea of life, the idea of a god, front and center of the worldview instead of a dead matter of materialism. Does this partially explain higher **birth rates** in religious populations?
 
@@ -51,13 +52,15 @@ Here are 4 great quotes from Sabine Hossenfelder's (contemporary, theoretical ph
 environment, moved on to organisms that became increasingly better at understanding nature, and now continues with our (more or less) organized scientific enterprise, nationally and internationally, individually and institutionally.
 
 
-How does your philosophy shape your life?
-
-I hope you enjoyed the story and a bit of brainstorming.
-
 
 ## Criticism of The Story
 We can criticize the story using a very unusual book [The Pragmatist’s Guide to Crafting Religion](https://www.amazon.com/gp/product/B0BSLDF2FW). The story features elements of soft or pop culture beliefs: crystals, wow-effect large things like universe, lacking specificity.
 
 These are inspirations for the story: AGI arrival in [The Last Question by Isaac Asimov](https://en.wikipedia.org/wiki/The_Last_Question), Big Bang Theory and Heat Death of the Universe, [Cyclic Model](https://en.wikipedia.org/wiki/Cyclic_model), [Absolute at Large by Karel Capek](https://en.wikipedia.org/wiki/The_Absolute_at_Large), [Monadology by Leibnitz](http://home.datacomm.ch/kerguelen/monadology/monadology.html), The Bible's Old and New Testament, The Judgment Day, and Gnosticism.
 
+
+
+
+How does your philosophy shape your life?
+
+I hope you enjoyed the story and a bit of brainstorming.
