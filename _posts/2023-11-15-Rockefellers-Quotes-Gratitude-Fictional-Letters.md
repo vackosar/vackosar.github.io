@@ -18,8 +18,6 @@ my_related_post_paths:
 ---
 
 
-{% include image.html src="/images/rockefeller-and-letters.png" alt="rockefeller-and-letters" %}
-
 {% include image.html src="/images/rockefeller-and-letters.png" alt="J.D. Rockefeller letters illustration" %}
 
 I read a book about 38 Letters Rockefeller's to his son. I really enjoyed it at first, but then it started to sound suspicious to me. The language was somehow too modern, like from a self-help book from 2010. I read online reviews, I found similar complaints that referred to the archives of the letters, about how the book was first published in China, and that the content is completely different in the original sources.
