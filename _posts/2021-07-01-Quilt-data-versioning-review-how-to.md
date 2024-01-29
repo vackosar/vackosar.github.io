@@ -11,13 +11,13 @@ redirect_from:
 - /ml/Quilt-data-review-how-to
 last_modified_at: 2022-05-31
 my_related_post_paths:
+- _posts/2024-01-24-How-To-Install-Your-Python-On-Ubuntu.md
 - _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
 - _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
 - _posts/2020-05-11-BentoML-vs-Cortex.dev--ML-Serving-Showdown.md
 - _posts/2023-01-24-fill-versions-from-python-environment.md
 - _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
 - _posts/2017-06-04-Code-Structure-Principles.md
-- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 ---
 
 

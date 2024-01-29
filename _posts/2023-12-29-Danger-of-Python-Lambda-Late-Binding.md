@@ -11,10 +11,10 @@ my_related_post_paths:
 - _posts/2020-08-25-to-what-python-number-types-does-json.loads-parse.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
 - _posts/2020-04-08-Python-Context-Manager-With-Statement-Exception-Handling.md
+- _posts/2024-01-24-How-To-Install-Your-Python-On-Ubuntu.md
 - _posts/2019-08-28-1D-Kalman-Is-Exponential-Or-Cumulative-Average.md
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 - _posts/2020-11-29-Lambda-Networks-Transform-Self-Attention.md
-- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
 ---
 
 {% include highlight-rouge-friendly.css.html %}

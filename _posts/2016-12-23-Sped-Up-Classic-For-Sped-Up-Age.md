@@ -16,8 +16,8 @@ my_related_post_paths:
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 - _posts/2020-02-25-I-read-papers-on-a-podcast.md
-- _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
 - _posts/2023-12-17-Fragments-of-Infinity.md
+- _posts/2017-12-25-Cheap-And-Tiny-Walking-Desk.md
 - _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
 ---
 

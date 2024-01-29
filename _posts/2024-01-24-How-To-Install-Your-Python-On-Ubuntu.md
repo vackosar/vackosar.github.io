@@ -1,12 +1,20 @@
 ---
-title: 'How to Install Your Python Version on Ubuntu'
-description: No need for Deadsnakes nor Apt, use pyenv or conda instead! 
+title: How to Install Your Python Version on Ubuntu
+description: No need for Deadsnakes nor Apt, use pyenv or conda instead!
 layout: post
 categories: software
 date: 2024-01-24
 last_modified_at: 2024-01-24
 permalink: /:categories/:title
 image: /images/ubuntu-install-python-pyenv-conda-thumb.png
+my_related_post_paths:
+- _posts/2023-01-24-fill-versions-from-python-environment.md
+- _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
+- _posts/2018-02-25-Creating-Custom-Ubuntu-Web-Link-App.md
+- _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2020-04-08-Python-Context-Manager-With-Statement-Exception-Handling.md
+- _posts/2020-05-11-BentoML-vs-Cortex.dev--ML-Serving-Showdown.md
+- _posts/2020-02-25-I-read-papers-on-a-podcast.md
 ---
 
 ![How to Install Your Python Version on Ubuntu](/images/ubuntu-install-python-pyenv-conda-thumb.png)

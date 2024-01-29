@@ -11,10 +11,10 @@ my_related_post_paths:
 - _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
-- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
-- _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
-- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
 ---
 
 {% include image.html src="/images/fragments-of-infinity-3.png" alt="Its infinite mental potential solved the problem of ever-increasing entropy. But to maintain balance while bringing redemption, it sacrificed itself. It split itself into countless fragments, inter-mixing with ordinary matter, igniting an ever-expanding explosion, creating a new universe in the Big Bang." %}
