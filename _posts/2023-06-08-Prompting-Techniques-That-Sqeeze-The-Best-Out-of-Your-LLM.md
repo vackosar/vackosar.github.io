@@ -4,7 +4,7 @@ description: From the simplest to the most advanced, instruct your GPT for the b
 categories: ml
 image: /images/squeeze-robot-hand-orange.png
 date: 2023-06-08
-last_modified_at: 2023-06-08
+last_modified_at: 2024-02-01
 layout: post
 permalink: /:categories/:title
 my_related_post_paths:
