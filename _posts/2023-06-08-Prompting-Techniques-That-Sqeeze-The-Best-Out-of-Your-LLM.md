@@ -29,12 +29,21 @@ We steer the model with a small additional textual context, such that it **learn
 This additional context is called prompt.
 Systematic development of prompts using **metric evaluation is called prompt engineering**.
 
+
 ## Trade-offs in Prompting
 - Longer prompts are the more expensive in terms of **latency and compute**. For example, more examples provided, the longer prompt. Training a specific model or selecting samples intelligently are possible solutions.
 - More complex and longer the prompt, less likely the model will be able to follow all the rules. Try to break the problem to simpler problems with simpler instructions.
 - If the **model changes** the prompt may stop being optimal, in that case, there is little point **over-optimizing** it. For example, ChatGPT or GPT-4 is often changed by OpenAI. The models are meant to be general not specific to your problem.
 - Control guardrails vs creative hallucinations. Certain prompts may be prone to more hallucinations over others. Can you verify the results? Can you measure performance of the model?
 - Prompts are a crude tool without nuance and can be "over prompted" (prompt injection) with user's own instructions, whereas fine-tuning requires more initial investment, data, and is complicated. 
+
+
+## The Most Common Problems in Prompting
+Go through below and check if you are making any of these mistakes:
+- Instructions of multiple-meanings: Are any of your instruction ambiguous or can be interpreted in multiple ways? Is there missing context? Can you choose more specific words?
+- Contradicting instructions: Is any of your instructions in contradiction with another? 
+- Suboptimal formatting: Are you using the most common formatting for numbers, dates, and other entities? 
+- Flawed evaluation: Can you evaluate your prompts performance to be able to compare and improve?
 
 
 ## Task Instruction
@@ -64,6 +73,7 @@ Provide examples such that
 
 ## [TELeR Prompting Taxonomy](https://arxiv.org/pdf/2305.11430.pdf)
 {% include image.html src="/images/TELeR-prompt-taxonomy-levels-turn-expression-level-of-details-role.png" alt="TELeR paper prompt-taxonomy-levels-turn-expression-level-of-details-role" %}
+
 
 ## Level 5 prompt
 Level 5 prompt is a complex directive prompt that includes the following in the order of detail:
