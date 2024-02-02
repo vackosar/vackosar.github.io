@@ -13,10 +13,10 @@ my_related_post_paths:
 - _posts/2019-08-28-1D-Kalman-Is-Exponential-Or-Cumulative-Average.md
 - _posts/2023-08-24-multiple-interval-averaging-stopwatch.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2023-06-08-Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM.md
 - _posts/2021-03-22-google-product-taxonomy-viewer.md
 - _posts/2022-10-23-Neural-Network-Pruning-Explained.md
 - _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
-- _posts/2023-08-25-How-Deep-Neural-Networks-Learn.md
 ---
 
 

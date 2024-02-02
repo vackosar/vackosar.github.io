@@ -15,8 +15,8 @@ my_related_post_paths:
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 - _posts/2017-10-28-Spring-Integration-Highlights.md
 - _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
-- _posts/2023-12-17-Fragments-of-Infinity.md
 - _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
+- _posts/2018-10-04-Spline-Data-Lineage-Spark-Structured-Streaming-Spark-AI-Summit-2018.md
 ---
 
 

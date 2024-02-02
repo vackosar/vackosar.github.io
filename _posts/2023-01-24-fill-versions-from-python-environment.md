@@ -14,7 +14,7 @@ my_related_post_paths:
 - _posts/2022-02-06-twitter-bullet-points-to-copy-paste.md
 - _posts/2020-08-25-to-what-python-number-types-does-json.loads-parse.md
 - _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
-- _posts/2023-12-29-Danger-of-Python-Lambda-Late-Binding.md
+- _posts/2023-06-08-Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM.md
 ---
 
 {% include highlight-rouge-friendly.css.html %}

@@ -17,7 +17,7 @@ my_related_post_paths:
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2023-10-29-Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
-- _posts/2023-07-03-OpenAIs-Image-Text-Model-CLIP.md
+- _posts/2023-06-08-Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM.md
 ---
 
 

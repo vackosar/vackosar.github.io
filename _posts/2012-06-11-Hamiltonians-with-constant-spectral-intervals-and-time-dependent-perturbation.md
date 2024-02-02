@@ -12,9 +12,9 @@ my_related_post_paths:
 - _posts/2010-09-05-Transverse-momentum-spectra-and-correlations-in-the-blast-wave-model-with-resonances.md
 - _posts/2019-08-28-1D-Kalman-Is-Exponential-Or-Cumulative-Average.md
 - _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
-- _posts/2023-12-17-Fragments-of-Infinity.md
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
+- _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
 ---
 
 

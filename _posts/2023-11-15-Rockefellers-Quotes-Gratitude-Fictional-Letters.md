@@ -11,7 +11,7 @@ my_related_post_paths:
 - _posts/2021-12-12-Ten-Commandments-for-business-failure.md
 - _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
-- _posts/2023-12-17-Fragments-of-Infinity.md
+- _posts/2023-12-17-If-I-Brainstorm-Am-I.md
 - _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
 - _posts/2021-07-14-Scout-Mindset-Book-Summary.md
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md

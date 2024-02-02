@@ -11,10 +11,10 @@ my_related_post_paths:
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2023-10-29-Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer.md
-- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 - _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
-- _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
+- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
+- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 ---
 
 {% include image.html src="/images/squeeze-robot-hand-orange.png" alt="squeeze-robot-hand-orange" %}

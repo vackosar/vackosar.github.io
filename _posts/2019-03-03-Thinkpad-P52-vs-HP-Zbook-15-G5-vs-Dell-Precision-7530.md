@@ -18,7 +18,7 @@ my_related_post_paths:
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2020-05-11-BentoML-vs-Cortex.dev--ML-Serving-Showdown.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
-- _posts/2023-06-08-Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM.md
+- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
 ---
 
 
