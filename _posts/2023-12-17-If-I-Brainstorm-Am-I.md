@@ -42,10 +42,17 @@ Here are 4 great quotes from Sabine Hossenfelder's (contemporary, theoretical ph
 - "Maybe, then, the universe is evolving toward a state in which it understands itself, and we are part of its ongoing quest. This quest began when natural selection favored species that made correct predictions about their environment, moved on to organisms that became increasingly better at understanding nature, and now continues with our (more or less) organized scientific enterprise, nationally and internationally, individually and institutionally.
 
 
+## Conjecture and Criticism
+Science progresses through conjecture and criticism if we follow Popper's ideas. David Deutsch explained these ideas and popularized them in [The Beginning of Infinity](https://www.amazon.com/Beginning-Infinity-Explanations-Transform-World/dp/0143121359).
+Bible proverbs often praise criticism: "A wise man listens to advice" and "Better is open rebuke". Regarding the conjectures, the bible verses promote understanding and wisdom. We have a biblical proverb: "The heart of the discerning acquires knowledge, for the ears of the wise seek it out."
+
+
+## Prayer from a Secular Perspective
+Prayer may also be a problem-solving method by working backward from the end goal (e.g., Amazon) or inversion of Charlie Munger. Sometimes, it is a method of [practicing gratitude, which has positive psychological effects](https://en.wikipedia.org/wiki/Gratitude#Association_with_well-being). From another point of view, prayer can be akin to meditation, which also seems to have positive psychological effects.
+
+
 ## Criticism of Mystical Pop Cultures
-A very unusual book [The Pragmatist’s Guide to Crafting Religion](https://www.amazon.com/gp/product/B0BSLDF2FW) is a compilation on cultures, religions, and traditions. It identifies  elements of soft or pop culture or soft culture beliefs: wishing thinking, crystals, wow-effect large things like universe, lacking specificity or containing unknowable. While these seem to be similar to intuitive early religions, in wealthy societies these are associated with very low birth rates.
+A very unusual book [The Pragmatist’s Guide to Crafting Religion](https://www.amazon.com/gp/product/B0BSLDF2FW) is a compilation information on cultures, religions, and traditions. It identifies elements of soft or pop culture or soft culture beliefs: wishing thinking, crystals, wow-effect large things like universe, lacking specificity or containing unknowable. While these seem to be similar to intuitive early religions, in wealthy societies these are associated with very low birth rates.
 
 
-How does your philosophy shape your life?
-
-I hope you enjoyed a bit of brainstorming.
+How does your philosophy shape your life? I hope you became more by brainstorming today with me.
