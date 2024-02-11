@@ -1,14 +1,18 @@
 ---
-title: Synthetic Data and Bellman Update in Q-Transformer 
+title: Bellman Update and Synthetic Data in Q-Transformer 
 description: Notes on Q-learning, temporal difference, Monte Carlo, and others methods related to Q-Transformer.
 categories: ml
 date: 2024-02-11
 last_modified_at: 2024-02-11
+image: /images/bellman-update-q-transformer-thumb.png
 layout: post
 permalink: /:categories/:title
 ---
 
 {% include highlight-rouge-friendly.css.html %}
+
+{% include image.html alt="Bellman Update and Synthetic Data in Q-Transformer" src="/images/bellman-update-q-transformer-thumb.png" %}
+
 
 
 Here are my notes on Q-learning and Q-transformer. Take it with grain of salt, as I am new in this area.
@@ -18,7 +22,7 @@ The [Q-transformer](https://qtransformer.github.io/assets/qtransformer.pdf) is i
 Before Q-transformer let's first talk about a bigger topic: Bellman Update in Reinforcement Learning.
 
 
-## Bellman Equation, Bellman Update, and Q-function
+## Bellman Equation
 Let's suppose we have a game with game states and actions we can take (a finite-state Markov decision process (MDP)). For example, in chess this is a state of the chessboard and actions are allowed moves we can make.
 
 The Principle of Optimality means that for the best decision maker (policy), no matter where you start or what your first step is, the next steps should always form the best plan for the situation after that first step.
@@ -30,10 +34,11 @@ This principle is captured by the Bellman Equation, which is a necessary conditi
 value(current_state) == reward(current_state, the_best_action) + discount * value(the_best_next_state)
 ```
 
+## Bellman Update and Q-function
 We can apply the principle above to refine our decision-making, which using is Bellman Update in Value Iteration method.
 We do that by converting the equation into an update rule and iterate until we reach the best solution.
 
-To do that we can to brute-force exhaustively explore all actions at all states across paths.
+To do that we can brute-force exhaustively explore all actions at all states across paths.
 Always updating corresponding value function values with the action that leads along the path that leads to the highest reward.
 We brute-force the solution because we have no model of the environment, we only evaluate the best options.
 
@@ -44,12 +49,12 @@ Since we are brute-forcing the solution evaluating everything without a model of
 value[current_state] == reward[current_state, the_best_action] + discount * value[the_best_next_state]
 ```
 
-
 Instead of a value function, it is easier to work with a Q-function:
 ```
 # Bellman Equation with q_function
-q_function[current_state, the_best_action] == reward[current_state, the_best_action] + discount * max(q_function[the_best_next_state, the_next_action] for the_next_action actions[the_best_next_state])
+q_function[current_state, the_best_action] = reward[current_state, the_best_action] + discount * max(q_function[the_best_next_state, the_next_action] for the_next_action actions[the_best_next_state])
 ```
+
 
 With that we can describe the Bellman update rule in more detail:
 
