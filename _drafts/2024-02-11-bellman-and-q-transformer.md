@@ -10,11 +10,17 @@ permalink: /:categories/:title
 
 {% include highlight-rouge-friendly.css.html %}
 
-Here are my notes on Q-learning and Q-transformer.
 
-Let's suppose we have a game with game states and actions we can take. For example, in chess this is a state of the chessboard and actions are allowed moves we can make.
+Here are my notes on Q-learning and Q-transformer. Take it with grain of salt, as I am new in this area.
 
-## Bellman Equation
+The Q-transformer is important paper, because it successfully applied suboptimal synthetic (autonomously collected) data and transformer architecture in a robotic reinforcement learning problem. 
+
+Before Q-transformer let's first talk about a bigger topic: Bellman Update in Reinforcement Learning.
+
+
+## Bellman Equation, Bellman Update, and Q-function
+Let's suppose we have a game with game states and actions we can take (a finite-state Markov decision process (MDP)). For example, in chess this is a state of the chessboard and actions are allowed moves we can make.
+
 The Principle of Optimality means that for the best decision maker (policy), no matter where you start or what your first step is, the next steps should always form the best plan for the situation after that first step.
 
 This principle is captured by the Bellman Equation, which is a necessary condition for optimality.
@@ -70,13 +76,15 @@ def optimal_policy(q_function, state):
 ```
 
 
-## Modelling Q-Function
+## Modelling Q-Function and Training It
 Instead of model-free tabulation, that is very data-intensive, we can model the Q-function to interpolate the table using less than full data.
-For example, in the Q-transformer a multi-modal neural network with [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) and is used.
+Temporal difference learning (TD-learning) is related to Q-learning, but instead of just updating the Q-value of a single state, we also update the previous ancestral states.
+
+For example, in the Q-transformer a multi-modal neural network with [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) is used for modeling the Q-function and TD-learning is used for offline training.
 
 More specifically the input camera image goes to instruction-conditioned convolutional network for images. The text instruction is converted into text and the text goes to condition [FiLM-conditioned](/ml/Feature-wise-Linear-Modulation-Layer) EfficientNet convolutional network. The conditioned network outputs then combined information into a [transformer](/ml/transformers-self-attention-mechanism-simplified), which then outputs Q-function value predictions. 
 
-{% include image.html src="/images/q-transformer-universal-sentence-encoder-film-efficientnet-transformer.png" alt="Q-transformer encoders camera image Film EfficientNet, text instruction with Universal Sentence Encoder both combined into a Transformer (from the paper)" %}
+{% include image.html src="/images/q-transformer-universal-sentence-encoder-film-efficientnet-transformer.png" alt="Q-transformer encodes camera image Film EfficientNet, text instruction with Universal Sentence Encoder both are combined into a Transformer (from the paper)" %}
 
 
 ## Q-Function Learning Speedup by Monte Carlo Return
@@ -87,11 +95,18 @@ At start, model has a **cold-start** problem meaning that the model is very bad 
 
 Above the most foundational ideas applied in Q-transformer paper. There is a summary of other contributions in this paper:
 
-
 1. **Autoregressive Discretization of Actions**: To accommodate the high-capacity Transformer architecture, the Q-Transformer discretizes each dimension of the continuous action space separately and treats each dimension as a different timestep in the learning process. This allows the model to learn Q-values for each action dimension separately, enabling efficient scaling of the method to high-dimensional action spaces without encountering the curse of dimensionality.
 
 2. **Conservative Q-Function Regularization**: The Q-Transformer uses a modified version of Conservative Q-learning (CQL) that introduces a **regularizer to minimize Q-values for actions not present in the dataset explicitly**. This conservative approach **biases the model towards in-distribution actions**, i.e., those seen during training, and serves to mitigate overestimation of Q-values for unseen or suboptimal actions. This approach ensures that during training, the estimated Q-values are kept closer to the minimal possible cumulative reward, which is consistent with the non-negative nature of the rewards in the tasks targeted by the Q-Transformer.
 
 3. **Loss Function**: The loss function for the Q-Transformer combines both the temporal difference error (between the current and target Q-values) and the **conservative regularization term**. In practice, the action space dimensionality is expanded to include the discrete bins of action values, and the update rule is applied separately for each action dimension.
+
+
+## Q-Transformer Results
+
+Q-Transformer outperforms QT-OPT and Decision Transformer in a reinforcement learning task, where suboptimal data is available for offline training.
+QT-OPT, also performs TD-learning in contrast to Decision Transformer, which seems to be the biggest factor here for good performance with suboptimal data.
+
+{% include image.html alt="Performance on picking task q-transformer, qt-opt-cql, decision-transformer, aw-opt, iql, rt-1-bc.png" src="/images/performance-on-picking-task--q-transformer--qt-opt-cql--decision-transformer--aw-opt--iql--rt-1-bc.png" %}
 
 
