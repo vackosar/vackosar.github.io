@@ -1,6 +1,6 @@
 ---
-title: Bellman and Q-Transformer
-description: Notes on Q-learning, Monte Carlo, and others.
+title: Synthetic Data and Bellman Update in Q-Transformer 
+description: Notes on Q-learning, temporal difference, Monte Carlo, and others methods related to Q-Transformer.
 categories: ml
 date: 2024-02-11
 last_modified_at: 2024-02-11
@@ -13,7 +13,7 @@ permalink: /:categories/:title
 
 Here are my notes on Q-learning and Q-transformer. Take it with grain of salt, as I am new in this area.
 
-The Q-transformer is important paper, because it successfully applied suboptimal synthetic (autonomously collected) data and transformer architecture in a robotic reinforcement learning problem. 
+The [Q-transformer](https://qtransformer.github.io/assets/qtransformer.pdf) is important paper, because it describes successful application of **suboptimal synthetic (autonomously collected) data** and [**transformer architecture**](/ml/transformers-self-attention-mechanism-simplified) in a robotic reinforcement learning problem.
 
 Before Q-transformer let's first talk about a bigger topic: Bellman Update in Reinforcement Learning.
 
