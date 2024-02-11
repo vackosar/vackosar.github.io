@@ -40,8 +40,15 @@ Example FiLM applied to U-Net [implementation is here](https://github.com/gabols
 
 ## FiLM Application
 
+### Reinforcement Learning
+
+[Q-Transformer](/ml/Bellman-Update-and-Synthetic-Data-in-Q-Transformer) applies FiLM to a visual EfficientNet to condition with embeddings of textual instructions to predict Q-values.
+
+
+### Try-on in Fashion 
 {% include image.html src="/images/film-layer-u-net-virtual-try-on-tryondiffusion.png" alt="FiLM layer in U-Net in TryOnDiffusion for virtual try on clothes" %}
 
 [TryOnDiffusion: A Tale of Two UNets](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhu_TryOnDiffusion_A_Tale_of_Two_UNets_CVPR_2023_paper.pdf) is using FiLM layers to condition U-Net to generate new image given an input person image but wearing a shirt from another conditioning image.
 
 FiLM layer relies on the ability to [disentangle attributes](/ml/manipulate-item-attributes-via-disentangled-representation) about the input features and change them using the conditioning.
+
