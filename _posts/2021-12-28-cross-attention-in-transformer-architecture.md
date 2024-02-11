@@ -59,7 +59,9 @@ In an equation: \\( \mathbf{softmax}((W_Q S_2) (W_K S_1)^\intercal) W_V S_1 \\)
 
 
 ## Cross-attention Alternatives
-[Feature-wise Linear Modulation Layer](/ml/Feature-wise-Linear-Modulation-Layer) is simpler alternative, which does not require the input to be a sequence and is linear complexity to to calculate.
+[Feature-wise Linear Modulation Layer (FiLM](/ml/Feature-wise-Linear-Modulation-Layer) is simpler alternative, which does not require the input to be a sequence and is linear complexity to calculate.
+[Q-Transformer](/ml/Bellman-Update-and-Synthetic-Data-in-Q-Transformer) applies FiLM to a visual EfficientNet to condition with embeddings of textual instructions to predict Q-values.
+
 
 ## Cross-attention Implementation
 Have a look at [CrossAttention implementation](https://github.com/huggingface/diffusers/blob/4125756e88e82370c197fecf28e9f0b4d7eee6c3/src/diffusers/models/cross_attention.py) in Diffusers library, which can generate images with **Stable Diffusion**.
