@@ -7,6 +7,7 @@ description: Why and how to avoid non-specific class names like util, utils, or 
 permalink: /:categories/:title
 redirect_from:
 - /2017/06/06/Generic-Class-Name-Signals-Low-Cohesion.html
+image: /images/generic-class-name-signals-low-cohesion.webp
 last_modified_at: 2022-05-08
 my_related_post_paths:
 - _posts/2017-06-04-Code-Structure-Principles.md
@@ -17,6 +18,9 @@ my_related_post_paths:
 - _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
 - _posts/2017-10-28-Spring-Integration-Highlights.md
 ---
+
+
+{% include image.html src="/images/generic-class-name-signals-low-cohesion.webp" alt="Generic Class Name Signals Low Cohesion" %}
 
 
 

@@ -27,7 +27,7 @@ description: By category.
         </div>
         <div class="">
             <a href="{{ post.url | relative_url }}" title="{{ post.title }}" style="text-decoration: none">
-                <div class="index-post-image lazyload" data-bg="{{ post.image | default: '/images/white-noise.jpeg' }}"></div>
+                <div class="index-post-image lazyload" data-bg="{{ post.image | default: '/images/sphere-with-writtings-on-it.webp' }}"></div>
             </a>
         </div>
       </article>
