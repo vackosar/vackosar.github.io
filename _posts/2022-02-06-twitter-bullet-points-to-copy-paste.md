@@ -16,8 +16,8 @@ my_related_post_paths:
 - _posts/2021-03-22-google-product-taxonomy-viewer.md
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
-- _posts/2017-07-15-Restore-Missing-Punctuation-with-Keras-Convolutional-Text-Punctuator.md
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
+- _posts/2017-07-15-Restore-Missing-Punctuation-with-Keras-Convolutional-Text-Punctuator.md
 ---
 
 {% include image.html src="/images/twitter-bullet-points.png" alt="Twitter Bullet Points How To" %}

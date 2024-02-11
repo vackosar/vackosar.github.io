@@ -12,8 +12,8 @@ redirect_from:
 my_related_post_paths:
 - _posts/2020-05-08-starspace-embedding.md
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
-- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
+- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md

@@ -11,11 +11,11 @@ redirect_from:
 my_related_post_paths:
 - _posts/2012-06-11-Hamiltonians-with-constant-spectral-intervals-and-time-dependent-perturbation.md
 - _posts/2010-09-05-Transverse-momentum-spectra-and-correlations-in-the-blast-wave-model-with-resonances.md
+- _posts/2024-02-11-Bellman-Update-and-Synthetic-Data-in-Q-Transformer.md
 - _posts/2019-08-28-1D-Kalman-Is-Exponential-Or-Cumulative-Average.md
 - _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 - _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
-- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 ---
 
 

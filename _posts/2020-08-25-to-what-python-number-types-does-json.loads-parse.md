@@ -8,8 +8,8 @@ description: JSON specifies only a number value, so how to infer the correct typ
 image: /images/json.loads-and-numbers.png
 permalink: /:categories/:title
 my_related_post_paths:
-- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2024-01-24-How-To-Install-Your-Python-On-Ubuntu.md
+- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2017-06-04-Code-Structure-Principles.md
 - _posts/2023-12-29-Danger-of-Python-Lambda-Late-Binding.md

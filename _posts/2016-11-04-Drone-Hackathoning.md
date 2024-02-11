@@ -11,11 +11,11 @@ redirect_from:
 my_related_post_paths:
 - _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
 - _posts/2020-02-25-I-read-papers-on-a-podcast.md
+- _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
 - _posts/2017-07-15-Restore-Missing-Punctuation-with-Keras-Convolutional-Text-Punctuator.md
 - _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
-- _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
-- _posts/2017-06-04-Code-Structure-Principles.md
 - _posts/2016-07-03-GitFlow-Incremental-Builder.md
+- _posts/2017-06-04-Code-Structure-Principles.md
 ---
 
 

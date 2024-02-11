@@ -13,10 +13,10 @@ my_related_post_paths:
 - _posts/2017-06-04-Code-Structure-Principles.md
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
-- _posts/2016-11-04-Drone-Hackathoning.md
 - _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
-- _posts/2018-01-24-Modern-Config-Injection-In-Maven-Plugins.md
-- _posts/2017-10-28-Spring-Integration-Highlights.md
+- _posts/2016-11-04-Drone-Hackathoning.md
+- _posts/2022-05-14-neural-data-compression.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 ---
 
 

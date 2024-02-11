@@ -13,8 +13,8 @@ my_related_post_paths:
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
 - _posts/2023-08-25-How-Deep-Neural-Networks-Learn.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
-- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 - _posts/2023-12-17-If-I-Brainstorm-Am-I.md
+- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 - _posts/2022-10-23-Neural-Network-Pruning-Explained.md
 ---
 

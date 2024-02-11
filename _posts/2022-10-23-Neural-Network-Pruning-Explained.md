@@ -14,8 +14,8 @@ my_related_post_paths:
 - _posts/2022-05-14-neural-data-compression.md
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
-- _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
 ---
 
 Pruning performs **lossy compression** of the model during repeated training steps to **reduce prediction costs, and model size**.

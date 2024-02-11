@@ -10,8 +10,8 @@ permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
-- _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
+- _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
 - _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
 - _posts/2023-08-25-How-Deep-Neural-Networks-Learn.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md

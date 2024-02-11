@@ -12,11 +12,11 @@ redirect_from:
 - /ml/disentagled-representations-and-attribute-manipulation-in-fashion
 my_related_post_paths:
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
-- _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
 - _posts/2020-05-08-starspace-embedding.md
-- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2023-10-29-Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer.md
+- _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
+- _posts/2022-06-04-transformer-embeddings-and-tokenization.md
 - _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
 ---
 

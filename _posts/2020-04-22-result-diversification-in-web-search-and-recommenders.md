@@ -10,8 +10,8 @@ last_modified_at: 2022-06-11
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
-- _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
 - _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
+- _posts/2021-10-25-manipulate-item-attributes-via-disentangled-representation.md
 - _posts/2021-03-22-Automatically-Expanding-Taxonomy.md
 - _posts/2022-04-02-monolingual-word-alignment-for-sentence-similarity.md
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md

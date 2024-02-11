@@ -10,10 +10,10 @@ my_related_post_paths:
 - _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2021-07-14-Scout-Mindset-Book-Summary.md
-- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
-- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
 redirect_from:
 - /book/Fragments-of-Infinity
 ---

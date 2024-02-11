@@ -17,7 +17,7 @@ my_related_post_paths:
 - _posts/2019-03-03-Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.md
 - _posts/2016-11-04-Drone-Hackathoning.md
 - _posts/2020-07-12-vr-holiday-in-nature.md
-- _posts/2020-08-09-Word-Movers-Embedding--Cheap-WMD-For-Documents.md
+- _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 ---
 
 

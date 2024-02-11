@@ -16,8 +16,8 @@ my_related_post_paths:
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
 - _posts/2023-08-25-How-Deep-Neural-Networks-Learn.md
 - _posts/2023-10-29-Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer.md
-- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 - _posts/2023-07-29-Feature-wise-Linear-Modulation-Layer.md
+- _posts/2022-02-26-SRU++-Speeds-Up-Transformer-with-Simple-Recurrent-Unit-RNN.md
 ---
 
 

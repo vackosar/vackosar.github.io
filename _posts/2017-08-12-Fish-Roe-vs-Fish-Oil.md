@@ -15,8 +15,8 @@ my_related_post_paths:
 - _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
 - _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
 - _posts/2022-12-26-cooking-with-psyllium-fiber-to-reduce-suger-spikes.md
-- _posts/2017-10-28-Spring-Integration-Highlights.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
+- _posts/2017-10-28-Spring-Integration-Highlights.md
 ---
 
 

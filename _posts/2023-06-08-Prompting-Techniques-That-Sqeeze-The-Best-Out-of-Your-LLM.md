@@ -14,7 +14,7 @@ my_related_post_paths:
 - _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
 - _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
-- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
+- _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
 ---
 
 {% include image.html src="/images/squeeze-robot-hand-orange.png" alt="squeeze-robot-hand-orange" %}

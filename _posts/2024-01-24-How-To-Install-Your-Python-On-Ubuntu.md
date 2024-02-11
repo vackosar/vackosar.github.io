@@ -12,9 +12,9 @@ my_related_post_paths:
 - _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
 - _posts/2018-02-25-Creating-Custom-Ubuntu-Web-Link-App.md
 - _posts/2017-06-04-Code-Structure-Principles.md
-- _posts/2020-04-08-Python-Context-Manager-With-Statement-Exception-Handling.md
 - _posts/2020-05-11-BentoML-vs-Cortex.dev--ML-Serving-Showdown.md
-- _posts/2020-02-25-I-read-papers-on-a-podcast.md
+- _posts/2020-04-08-Python-Context-Manager-With-Statement-Exception-Handling.md
+- _posts/2022-02-06-twitter-bullet-points-to-copy-paste.md
 ---
 
 {% include image.html src="/images/ubuntu-install-python-pyenv-conda-thumb.png" alt="How to Install Your Python Version on Ubuntu" %}

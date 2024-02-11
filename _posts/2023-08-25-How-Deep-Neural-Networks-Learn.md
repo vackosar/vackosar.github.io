@@ -14,7 +14,7 @@ my_related_post_paths:
 - _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
 - _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
-- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
+- _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
 ---
 
 {% include image.html src="/images/classroom-neural-network-training.png" alt="neural network drawn on a blackboard in a class room" %}
