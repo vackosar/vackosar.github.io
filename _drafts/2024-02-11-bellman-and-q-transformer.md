@@ -2,6 +2,7 @@ Here are my notes on Q-learning and Q-transformer.
 
 Let's suppose we have a game with game states and actions we can take. For example, in chess this is a state of the chessboard and actions are allowed moves we can make.
 
+## Bellman Equation
 The Principle of Optimality means that for the best decision maker (policy), no matter where you start or what your first step is, the next steps should always form the best plan for the situation after that first step.
 
 This principle is captured by the Bellman Equation, which is a necessary condition for optimality.
@@ -56,3 +57,14 @@ def optimal_policy(q_function, state):
     # optimal policy is defined by action maximizing the q_function
     return argmax(lambda a: q_function[a, state], all_actions(state))
 ```
+
+## Modelling Q-Function
+
+Instead of model-free tabulation, that is very data-intensive, we can model the Q-function to interpolate the table using less than full data.
+For example, in the Q-transformer a multi-modal neural network with [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) and is used.
+
+More specifically the input camera image goes to instruction-conditioned convolutional network for images. The text instruction is converted into text and the text goes to condition [FiLM-conditioned](/ml/Feature-wise-Linear-Modulation-Layer) EfficientNet convolutional network. The conditioned network outputs then combined information into a [transformer](/ml/transformers-self-attention-mechanism-simplified), which then outputs Q-function value predictions. 
+
+![Q-transformer encoders camera image Film EfficientNet, text instruction with Universal Sentence Encoder both combined into a Transformer (from the paper)](/images/q-transformer-universal-sentence-encoder-film-efficientnet-transformer.png)
+
+
