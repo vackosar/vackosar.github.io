@@ -1,3 +1,15 @@
+---
+title: Bellman and Q-Transformer
+description: Notes on Q-learning, Monte Carlo, and others.
+categories: ml
+date: 2024-02-11
+last_modified_at: 2024-02-11
+layout: post
+permalink: /:categories/:title
+---
+
+{% include highlight-rouge-friendly.css.html %}
+
 Here are my notes on Q-learning and Q-transformer.
 
 Let's suppose we have a game with game states and actions we can take. For example, in chess this is a state of the chessboard and actions are allowed moves we can make.
@@ -64,8 +76,7 @@ For example, in the Q-transformer a multi-modal neural network with [transformer
 
 More specifically the input camera image goes to instruction-conditioned convolutional network for images. The text instruction is converted into text and the text goes to condition [FiLM-conditioned](/ml/Feature-wise-Linear-Modulation-Layer) EfficientNet convolutional network. The conditioned network outputs then combined information into a [transformer](/ml/transformers-self-attention-mechanism-simplified), which then outputs Q-function value predictions. 
 
-![Q-transformer encoders camera image Film EfficientNet, text instruction with Universal Sentence Encoder both combined into a Transformer (from the paper)](/images/q-transformer-universal-sentence-encoder-film-efficientnet-transformer.png)
-
+{% include image.html src="/images/q-transformer-universal-sentence-encoder-film-efficientnet-transformer.png" alt="Q-transformer encoders camera image Film EfficientNet, text instruction with Universal Sentence Encoder both combined into a Transformer (from the paper)" %}
 
 
 ## Q-Function Learning Speedup by Monte Carlo Return

@@ -43,7 +43,7 @@ If the word is not present in the dictionary, is out of vocabulary (OOV), then \
 
 FastText embedding vectors can then be used for word analogy tasks, text classification, or ranking.
 
-![fasttext classification results comparison glove](../images/fasttext-classification-results-comparison-glove.png)
+{% include image.html src="/images/fasttext-classification-results-comparison-glove.png" alt="fasttext classification results comparison glove" %}
 
 
 ## StarSpace vs FastText

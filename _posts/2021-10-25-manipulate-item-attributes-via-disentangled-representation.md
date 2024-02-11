@@ -47,7 +47,7 @@ my_related_post_paths:
   - reversibly encodes into independent gaussian factors
   - the attribute vectors are found using labeled data
 
-![Glow model smiling vector](../images/disentangle-smiling.png)
+{% include image.html src="../images/disentangle-smiling.png" alt="Glow model smiling vector" %}
 
 ## Unsupervised Disentangled Representations
 - Google ICML 2019 [Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations](https://ai.googleblog.com/2019/04/evaluating-unsupervised-learning-of.html)
@@ -61,7 +61,7 @@ my_related_post_paths:
 - Assumptions about the data have to be incorporated into the model (inductive bias)
 - Each unsupervised model has to be specialized
  
-![Shape3D dataset for disentagling factors: floor color, wall color, object color, object size, camera angle](../images/disentangle-3dshapes.gif)
+{% include image.html src="../images/disentangle-3dshapes.gif" alt="Shape3D dataset for disentagling factors: floor color, wall color, object color, object size, camera angle" %}
 
 ## Multi-Task Learning
 - [Multi-task learning may improve performance](https://ai.googleblog.com/2021/10/deciding-which-tasks-should-train.html)
@@ -86,7 +86,7 @@ my_related_post_paths:
   - prototypes can then be swapped for items attribute vector
 - Read more about related research in [image-text classfication](/ml/Multimodal-Image-Text-Classification)
 
-![disentangled representation using attribute-specific encoder](../images/disentangled-encoder.png)
+{% include image.html src="../images/disentangled-encoder.png" alt="disentangled representation using attribute-specific encoder" %}
 
 
 ### Architecture
@@ -104,7 +104,7 @@ my_related_post_paths:
   - stored in a matrix that forces small non-block diagonal elements
   - trained via triplet loss
 
-![Attribute-Driven Disentangled Encoder (ADDE)](../images/disentangle-architecture.png)
+{% include image.html src="../images/disentangle-architecture.png" alt="Attribute-Driven Disentangled Encoder (ADDE)" %}
 
 ### Loss Function
 - Label triplet loss
@@ -126,7 +126,7 @@ my_related_post_paths:
 - Shopping100k: 100k samples, 12 attributes
 - DeepFashion: 100k samples, 3 attributes: category, texture, shape
 
-![Attribute manipulation retrieval examples on Shopping100k and DeepFashion](../images/disentangle-retrival-examples.png)
+{% include image.html src="../images/disentangle-retrival-examples.png" alt="Attribute manipulation retrieval examples on Shopping100k and DeepFashion" %}
 
 
 #### Attribute Manipulation Retrieval
@@ -143,7 +143,7 @@ my_related_post_paths:
 - AlexNet backbone network for comparable results
 - Loss function ablations included
 
-![Attribute manipulation top-k retrival on Shopping100k and DeepFashion](../images/disentangle-retrival-results.png)
+{% include image.html src="../images/disentangle-retrival-results.png" alt="Attribute manipulation top-k retrival on Shopping100k and DeepFashion" %}
 
 
 #### Outfit Completion
@@ -151,14 +151,14 @@ my_related_post_paths:
 - previous Amazon paper 2020 [Fashion Outfit Complementary Item Retrieval](https://openaccess.thecvf.com/content_CVPR_2020/papers/Lin_Fashion_Outfit_Complementary_Item_Retrieval_CVPR_2020_paper.pdf)
   - introduced CSA-Net with similar architecture without disentanglement
 
-![ADDE outfit complementary retrieval](../images/disentangle-outfit-retrieval.png)
+{% include image.html src="../images/disentangle-outfit-retrieval.png" alt="ADDE outfit complementary retrieval" %}
 
 ##### Outfit Ranking Loss
   - operates on entire outfit
   - calculates average distance from all members in the outfit to the proposed addition
   - input these distances into a triplet loss
 
-![Outfit Ranking Loss](../images/disentange-outfit-ranking-loss.png)
+{% include image.html src="../images/disentange-outfit-ranking-loss.png" alt="Outfit Ranking Loss" %}
 
 
 ### Output Conditioning

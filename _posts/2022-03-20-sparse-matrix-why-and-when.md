@@ -27,7 +27,7 @@ Sparse matrices are a special type of matrices that have a significant number of
 ## Dense Matrix Multiplication Example
 The simplest the most common formats used.
 
-![Dense matrix multiplication example](../images/sparse-matrix-dense-example.png)
+{% include image.html src="../images/sparse-matrix-dense-example.png" alt="Dense matrix multiplication example" %}
 
 
 ## CSR Sparse Matrix Multiplication Example

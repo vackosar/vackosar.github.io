@@ -17,8 +17,7 @@ my_related_post_paths:
 - _posts/2020-02-25-I-read-papers-on-a-podcast.md
 ---
 
-![How to Install Your Python Version on Ubuntu](/images/ubuntu-install-python-pyenv-conda-thumb.png)
-
+{% include image.html src="/images/ubuntu-install-python-pyenv-conda-thumb.png" alt="How to Install Your Python Version on Ubuntu" %}
 
 {% include highlight-rouge-friendly.css.html %}
 

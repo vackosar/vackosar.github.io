@@ -73,7 +73,9 @@ How to get difficult enough task for all tokens instead of just the tokens maske
   - but must not be too much better than discriminator
 - mildly resembles [DINO's momentum teacher-student](https://ai.facebook.com/blog/dino-paws-computer-vision-with-self-supervised-transformers-and-10x-more-efficient-training)
   
-![ELECTRA model loss is sum of generator masked language modeling and discriminator loss](../images/electra-loss.png)
+
+{% include image.html src="/images/electra-loss.png" alt="ELECTRA model loss is sum of generator masked language modeling and discriminator loss" %}
+
 
 {% include image.html src="/images/electra-generator-size.png" alt="ELECTRA model generator size and GLUE benchmark performance" %}
 
@@ -128,15 +130,17 @@ How to get difficult enough task for all tokens instead of just the tokens maske
 ## Follow up - MC-BERT
 - [MC-BERT Paper](https://arxiv.org/pdf/2006.05744.pdf)
 - Contrastive instead of discriminative
- 
-![MC-BERT model extension of ELECTRA diagram](../images/electra-mcbert.png)
+
+
+{% include image.html src="/images/electra-mcbert.png" alt="MC-BERT model extension of ELECTRA diagram" %}
+
 
 
 ## Follow Up - TEAMS
 - also contrastive
 - shares more weights
 
-![TEAMS model extension of ELECTRA diagram](../images/electra-teams.png)
+{% include image.html src="/images/electra-teams.png" alt="MC-BERT model extension of ELECTRA diagramTEAMS model extension of ELECTRA diagram" %}
 
 
 ## Read More About BERT

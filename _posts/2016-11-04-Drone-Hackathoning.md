@@ -44,9 +44,9 @@ Blurred:
 
 ![Blurred](https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/master/output/androidTest/blured.jpg)
 
-Treshholded:
+Thresholded:
 
-![Treshholded](https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/master/output/androidTest/treshholded.jpg)
+![black and white image with a threshold applied](https://raw.githubusercontent.com/vackosar/triv-white-spot-locator/master/output/androidTest/treshholded.jpg)
 
 Marked:
 
