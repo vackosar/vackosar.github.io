@@ -17,11 +17,12 @@ my_related_post_paths:
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 ---
 
+{% include mermaidjs.html %}
 {% include highlight-rouge-friendly.css.html %}
 
 {% include image.html alt="Bellman Update and Synthetic Data in Q-Transformer" src="/images/bellman-update-q-transformer-thumb.png" %}
 
-{% include mermaidjs.html %}
+
 
 Here are my notes on Q-learning and Q-transformer. Take it with grain of salt, as I am new in this area.
 
