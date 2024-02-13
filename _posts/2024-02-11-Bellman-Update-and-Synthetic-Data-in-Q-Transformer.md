@@ -34,7 +34,7 @@ Let's suppose we have a game with game states and actions we can take (a finite-
 
 <div class="mermaid">
     flowchart TD
-    State -- reward=1 --> State
+    State1 -- "Action1 with reward=1" --> State1
 </div>
 
 In this diagram if we keep looping, we will keep stacking rewards.
@@ -45,12 +45,12 @@ More interesting examples is where we have 2 possible actions:
 
 <div class="mermaid">
     flowchart TD
-    State -- reward=1 --> State
-    State -- reward=0.1 --> State
+    State1 -- reward=1 --> State1
+    State1 -- reward=0.1 --> State1
 </div>
 
 In this case, we if we're making the right decision, 
-we still get reward 2, so the value of the state is still 2 
+we still get reward 2, so the value of the state is still 2.
 
 
 ## Bellman Equation
@@ -61,7 +61,10 @@ This principle is captured by the Bellman Equation, which is a necessary conditi
 
 ```
 # Bellman Equation
-value(current_state) == reward(current_state, the_best_action) + discount * value(the_best_next_state)
+value(current_state) == (
+  reward(current_state, the_best_action)
+  + discount * value(the_best_next_state)
+)
 ```
 
 ## Bellman Update and Q-function
@@ -76,13 +79,22 @@ Since we are brute-forcing the solution evaluating everything without a model of
 
 ```
 # Bellman Equation
-value[current_state] == reward[current_state, the_best_action] + discount * value[the_best_next_state]
+value[current_state] == (
+  reward[current_state, the_best_action]
+  + discount * value[the_best_next_state]
+)
 ```
 
 Instead of a value function, it is easier to work with a Q-function:
 ```
 # Bellman Equation with q_function
-q_function[current_state, the_best_action] = reward[current_state, the_best_action] + discount * max(q_function[the_best_next_state, the_next_action] for the_next_action actions[the_best_next_state])
+q_function[current_state, the_best_action] = (
+  reward[current_state, the_best_action]
+  + discount * max(
+    q_function[the_best_next_state, the_next_action]
+    for the_next_action actions[the_best_next_state]
+  )
+)
 ```
 
 
