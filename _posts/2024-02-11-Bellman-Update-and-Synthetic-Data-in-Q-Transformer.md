@@ -3,7 +3,7 @@ title: Bellman Update and Synthetic Data in Q-Transformer
 description: Notes on Q-learning, temporal difference, Monte Carlo, and others methods related to Q-Transformer.
 categories: ml
 date: 2024-02-11
-last_modified_at: 2024-02-11
+last_modified_at: 2024-02-13
 image: /images/bellman-update-q-transformer-thumb.png
 layout: post
 permalink: /:categories/:title
