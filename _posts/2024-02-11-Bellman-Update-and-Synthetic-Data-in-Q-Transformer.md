@@ -21,7 +21,7 @@ my_related_post_paths:
 
 {% include image.html alt="Bellman Update and Synthetic Data in Q-Transformer" src="/images/bellman-update-q-transformer-thumb.png" %}
 
-
+{% include mermaidjs.html %}
 
 Here are my notes on Q-learning and Q-transformer. Take it with grain of salt, as I am new in this area.
 
@@ -29,9 +29,31 @@ The [Q-transformer](https://qtransformer.github.io/assets/qtransformer.pdf) is i
 
 Before Q-transformer let's first talk about a bigger topic: Bellman Update in Reinforcement Learning.
 
+## States, Actions, and Rewards
+Let's suppose we have a game with game states and actions we can take (a finite-state Markov decision process (MDP)). For example, in chess this is a state of the chessboard and actions are allowed moves we can make. Or even simpler example is below, where we have just a single state, single possible action, and single reward for that action.
+
+<div class="mermaid">
+    flowchart TD
+    State -- reward=1 --> State
+</div>
+
+In this diagram if we keep looping, we will keep stacking rewards.
+If we discount future rewards with 0.5 discount factor the total reward will be 2,
+so value of the state is 2.
+
+More interesting examples is where we have 2 possible actions:
+
+<div class="mermaid">
+    flowchart TD
+    State -- reward=1 --> State
+    State -- reward=0.1 --> State
+</div>
+
+In this case, we if we're making the right decision, 
+we still get reward 2, so the value of the state is still 2 
+
 
 ## Bellman Equation
-Let's suppose we have a game with game states and actions we can take (a finite-state Markov decision process (MDP)). For example, in chess this is a state of the chessboard and actions are allowed moves we can make.
 
 The Principle of Optimality means that for the best decision maker (policy), no matter where you start or what your first step is, the next steps should always form the best plan for the situation after that first step.
 

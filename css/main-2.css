@@ -84,12 +84,18 @@ img {
     height: 100px;
 }
 
-svg {
+.icons svg {
     width: 30px;
     margin-right: 10px;
 }
 
-.MathJax { font-size: 0.9em !important; }
+#mermaid {
+    /*width: auto; !important;*/
+}
+
+.MathJax {
+    font-size: 0.9em !important;
+}
 
 figure {
     max-width: 600px;
