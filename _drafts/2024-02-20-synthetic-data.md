@@ -61,7 +61,19 @@ Here is a spectrum of increasingly less human involvement in the process or huma
 ## Examples of Synthetic Data Uses
 
 ### [DSPy](https://github.com/stanfordnlp/dspy?tab=readme-ov-file) (Python Library)
-Fine-tune smaller models on using small amount of labelled examples and prompting to generate synthetic fine-tuning data. 
+DSPy can fine-tune smaller models on using small amount of labelled examples and prompting to generate synthetic fine-tuning data.
+
+In general this library helps you to build prompt chains or pipelines where the LLMs have well-defined inputs and outputs, and various tools like RAG. 
+
+The library abstracts away fine changes to the prompt of prompt engineering and instead optimizes the prompts for you, such that you only focus on structured and documented inputs and outputs.
+In this it seems much more practical than LangChain.
+
+The library generates few-shot examples for you prompt-chain steps for you and call this step compiling.
+For example, it can generate reasoning examples and so on.
+Question for is, how good the examples are?
+Un-compiled chains use zero-shot prompting.
+
+Here is an example project in [a video](https://www.youtube.com/watch?v=41EfOY0Ldkc). 
 
 
 ### [Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision](https://arxiv.org/html/2312.09390v1)
