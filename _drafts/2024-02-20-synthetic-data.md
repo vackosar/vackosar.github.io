@@ -19,6 +19,15 @@ Here are my notes on synthetic data. Take it with grain of salt, as I am new in 
 Let's say you have a generative AI (generative machine learning) problem, so you have some input data, and some corresponding output data.
 But you have only a small quantity of this data.
 
+Synthetic data helps where you need to add missing hard to collect data needed for your predictions.
+This data could be something people never write down or say.
+For example human thoughts when problem-solving usually don't get written down.
+
+The rarer and more important the data the more important this data can be.
+
+If nothing like this data was present during the model pretraining, you won't be able to prompt-instruct the model to perform this.
+Few shot examples can help, but the more complex the problem, the more likely you will need more examples, which are costly to write by hand.
+
 
 ## Why synthetic data makes sense?
 Real data costs human time and synthetic data can be a way around that.
@@ -62,4 +71,4 @@ However, I think this approach is not generally proven for all situations and st
 
 
 ### [Let's Verify Step by Step](https://arxiv.org/abs/2305.20050)
-Reasoning data set.
+A math reasoning dataset.
