@@ -14,11 +14,32 @@ permalink: /:categories/:title
 [//]: # ({% include image.html alt="Bellman Update and Synthetic Data in Q-Transformer" src="/images/bellman-update-q-transformer-thumb.png" %})
 
 
-
 Here are my notes on synthetic data. Take it with grain of salt, as I am new in this area.
+
+Let's say you have a generative AI (generative machine learning) problem, so you have some input data, and some corresponding output data.
+But you have only a small quantity of this data.
 
 
 ## Why synthetic data makes sense?
+Real data costs human time and synthetic data can be a way around that.
+But you cannot create the required data out of thin air synthetically.
+
+You need:
+1. either more general model that was essentially trained one something similar to the target data needed,
+2. or you need a real data that is close to the required data, and perform only an easy modification to match the required data distribution.
+
+
+## Verification of Synthetic Data
+Garbage-in implies garbage-out.
+The more difficult data to generate or more distant to the real training data, the harder it is to synthesize correct data to train on.
+
+In some problems verification is easier that generation, so in these cases you can remove the invalid data out of the generated data.
+
+Fo example, the goal may be to solve simple addition problems given in a textual format, which is easily machine-extractable.
+In this case, it is very easy to verify that the generated summation is correct.
+
+
+## Levels of Synthetic Data
 Here is a spectrum of increasingly less human involvement in the process or human leverage in the process or model development.
 
 1. Fully manual: You would love to train on data from people that is fully manually written and verified.
@@ -28,6 +49,17 @@ Here is a spectrum of increasingly less human involvement in the process or huma
 5. Fully autonomous: The data is entirely generated, and rated by a machine. Trained model is evaluated on a machine generated data.
 
 
-## Papers
-[Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision](https://arxiv.org/html/2312.09390v1)
+## Examples of Synthetic Data Uses
 
+### [DSPy](https://github.com/stanfordnlp/dspy?tab=readme-ov-file) (Python Library)
+Fine-tune smaller models on using small amount of labelled examples and prompting to generate synthetic fine-tuning data. 
+
+
+### [Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision](https://arxiv.org/html/2312.09390v1)
+Smaller model teacher model, generates inputs, and labels.
+The bigger model can learn to outperform the smaller teacher, if allowed to be "over-confident".
+However, I think this approach is not generally proven for all situations and still seems to show upper performance limit.
+
+
+### [Let's Verify Step by Step](https://arxiv.org/abs/2305.20050)
+Reasoning data set.
