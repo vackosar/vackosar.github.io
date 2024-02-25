@@ -2,17 +2,11 @@
 title: Synthetic Data
 description: TBD.
 categories: ml
-date: 2024-02-11
-last_modified_at: 2024-02-13
+date: 2024-02-25
+last_modified_at: 2024-02-25
 layout: post
 permalink: /:categories/:title
 ---
-
-[//]: # ({% include mermaidjs.html %})
-{% include highlight-rouge-friendly.css.html %}
-
-[//]: # ({% include image.html alt="Bellman Update and Synthetic Data in Q-Transformer" src="/images/bellman-update-q-transformer-thumb.png" %})
-
 
 Here are my notes on synthetic data. Take it with grain of salt, as I am new in this area.
 
@@ -23,7 +17,7 @@ Synthetic data helps where you need to add missing hard to collect data needed f
 This data could be something people never write down or say.
 For example human thoughts when problem-solving usually don't get written down.
 
-The rarer and more important the data the more important this data can be.
+The rarer and more important the data the more important the synthetic data can be.
 
 If nothing like this data was present during the model pretraining, you won't be able to prompt-instruct the model to perform this.
 Few shot examples can help, but the more complex the problem, the more likely you will need more examples, which are costly to write by hand.
@@ -33,7 +27,7 @@ Few shot examples can help, but the more complex the problem, the more likely yo
 Real data costs human time and synthetic data can be a way around that.
 But you cannot create the required data out of thin air synthetically.
 
-You need:
+You may need:
 1. either more general model that was essentially trained one something similar to the target data needed,
 2. or you need a real data that is close to the required data, and perform only an easy modification to match the required data distribution.
 
@@ -43,9 +37,13 @@ Garbage-in implies garbage-out.
 The more difficult data to generate or more distant to the real training data, the harder it is to synthesize correct data to train on.
 
 In some problems verification is easier that generation, so in these cases you can remove the invalid data out of the generated data.
-
-Fo example, the goal may be to solve simple addition problems given in a textual format, which is easily machine-extractable.
+For example, the goal may be to generate a program function that passes an executable set or tests.
 In this case, it is very easy to verify that the generated summation is correct.
+
+In some cases, it is easy to generate the questions (inputs) given the answers (outputs).
+This inverted generation also allows you to control for the distribution of the labeled samples.
+For example, for text classification, it may be easier to generate a text that matches given category label.
+Another example of this method is [Self-Alignment with Instruction Backtranslation](https://arxiv.org/abs/2308.06259).
 
 
 ## Levels of Synthetic Data
@@ -55,11 +53,11 @@ Here is a spectrum of increasingly less human involvement in the process or huma
 2. Cleaned up manual data: The data is manually written, but rewritten, rephrased or cleaned by a machine, then verified.  
 3. The data is entirely generated, but manually verified and select each sample and labelled.
 4. The data is entirely generated, and rated by a machine. Trained model is evaluated on a small human labelled subset.
-5. Fully autonomous: The data is entirely generated, and rated by a machine. Trained model is evaluated on a machine generated data.
+5. Self-aligning or self-polishing: The data is entirely generated, and rated by a machine. Trained model is evaluated on a machine generated data.
+6. Autonomous: Self-improving from environment and from generated data. The [Q-transformer](/ml/Bellman-Update-and-Synthetic-Data-in-Q-Transformer) is a step towards that.
 
 
-## Examples of Synthetic Data Uses
-
+## Examples of Synthetic Data Applications
 
 ### [Teknium's Nous-Hermes-2-Mistral-7B-DPO](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO)
 
@@ -84,11 +82,28 @@ Un-compiled chains use zero-shot prompting.
 Here is an example project in [a video](https://www.youtube.com/watch?v=41EfOY0Ldkc). 
 
 
+## Research Papers Relevant to Synthetic Data
+This is not exhaustive list and I may expand on this in the future.
+
 ### [Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision](https://arxiv.org/html/2312.09390v1)
 Smaller model teacher model, generates inputs, and labels.
 The bigger model can learn to outperform the smaller teacher, if allowed to be "over-confident".
 However, I think this approach is not generally proven for all situations and still seems to show upper performance limit.
 
-
 ### [Let's Verify Step by Step](https://arxiv.org/abs/2305.20050)
 A math reasoning dataset.
+Contributions of this paper are: 
+
+1. process supervision can train much more reliable reward models than outcome supervision. State-of-the-art process-supervised reward model solves 78.2% of problems from a representative subset of the MATH test set.
+2. a large reward model can reliably approximate human supervision for smaller reward models, and that it can be used to efficiently conduct large-scale data collection ablations.
+3. active learning leads to a 2.6× improvement in the data efficiency of process supervision.
+4. full process supervision dataset, PRM800K, a dataset of 800K step-level labels across 75K solutions to 12K problems). Assign each step in the solution a label of positive, negative, or neutral.
+
+
+### [WizardLM Evol Instruct](https://github.com/nlpxucan/WizardLM)
+Use human written coding examples to generate more difficult (complex) examples with GPT-3.5.
+Use this sythetic dataset to fine-tune and improve performance on coding problems.
+
+
+### [Constitutional AI](https://arxiv.org/abs/2212.08073)
+Use LLM to label generated responses to follow certain rules (constitution about harm, bias, and more).
