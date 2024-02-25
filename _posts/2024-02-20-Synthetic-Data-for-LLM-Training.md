@@ -6,7 +6,10 @@ date: 2024-02-20
 last_modified_at: 2024-02-25
 layout: post
 permalink: /:categories/:title
+image: /images/robot-writing-synthetic-data-thumb.webp
 ---
+
+![Robot writting synthetic data for its children :D](/images/robot-writing-synthetic-data-thumb.webp)
 
 Here are my notes on synthetic data. Take it with grain of salt, as I am new in this area.
 
