@@ -26,7 +26,7 @@ my_related_post_paths:
 
 Here are my notes on Q-learning and Q-transformer. Take it with grain of salt, as I am new in this area.
 
-The [Q-transformer](https://qtransformer.github.io/assets/qtransformer.pdf) is important paper, because it describes successful application of **suboptimal synthetic (autonomously collected) data** and [**transformer architecture**](/ml/transformers-self-attention-mechanism-simplified) in a robotic reinforcement learning problem.
+The [Q-transformer](https://qtransformer.github.io/assets/qtransformer.pdf) is important paper, because it describes successful application of **suboptimal [synthetic (autonomously collected) data](/ml/Synthetic-Data-for-LLM-Training)** and [**transformer architecture**](/ml/transformers-self-attention-mechanism-simplified) in a robotic reinforcement learning problem.
 
 Before Q-transformer let's first talk about a bigger topic: Bellman Update in Reinforcement Learning.
 
@@ -153,7 +153,7 @@ The most foundational ideas applied in Q-transformer paper were described above.
 
 ## Q-Transformer Results
 
-Q-Transformer outperforms QT-OPT and Decision Transformer in a reinforcement learning task, where suboptimal data is available for offline training.
+Q-Transformer outperforms QT-OPT and Decision Transformer in a reinforcement learning task, where [suboptimal synthetic data](/ml/Synthetic-Data-for-LLM-Training) is available for offline training.
 QT-OPT, also performs TD-learning in contrast to Decision Transformer, which seems to be the biggest factor here for good performance with suboptimal data.
 
 {% include image.html alt="Performance on picking task q-transformer, qt-opt-cql, decision-transformer, aw-opt, iql, rt-1-bc.png" src="/images/performance-on-picking-task--q-transformer--qt-opt-cql--decision-transformer--aw-opt--iql--rt-1-bc.png" %}
