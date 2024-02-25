@@ -22,6 +22,7 @@ The rarer and more important the data the more important the synthetic data can 
 If nothing like this data was present during the model pretraining, you won't be able to prompt-instruct the model to perform this.
 Few shot examples can help, but the more complex the problem, the more likely you will need more examples, which are costly to write by hand.
 
+Another way of looking at this, is that you can use 
 
 ## Why synthetic data makes sense?
 Real data costs human time and synthetic data can be a way around that.
@@ -30,6 +31,11 @@ But you cannot create the required data out of thin air synthetically.
 You may need:
 1. either more general model that was essentially trained one something similar to the target data needed,
 2. or you need a real data that is close to the required data, and perform only an easy modification to match the required data distribution.
+
+Another way of looking at 2, is that you can use other data, which was trained into LLM to shift the output distribution the way you want.
+For example in a way polishing the LLM behaviour by making it consistent with selected good patterns in the other data,
+which are extracted and applied with instructions, which leads to generation of good synthetic data.
+
 
 
 ## Verification of Synthetic Data
