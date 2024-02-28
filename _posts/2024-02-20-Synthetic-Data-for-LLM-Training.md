@@ -79,6 +79,7 @@ Another example of this method is [Self-Alignment with Instruction Backtranslati
 
 
 ## Examples of Synthetic Data Applications
+What synthetic data tools can you use today?
 
 ### [Teknium's Nous-Hermes-2-Mistral-7B-DPO](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO)
 
@@ -89,16 +90,16 @@ Nous-Hermes-2-Mistral-7B-DPO was trained on:
 - Direct preference optimisation dataset, which likely is also GPT-4 generated (synthetic).
 
 
-### [DSPy](https://github.com/stanfordnlp/dspy?tab=readme-ov-file) (Python Library)
-DSPy can fine-tune smaller models on using small amount of labelled examples and prompting to generate synthetic fine-tuning data.
+### [DSPy Python Library](https://github.com/stanfordnlp/dspy?tab=readme-ov-file) 
+DSPy can take just tens of labelled examples, high-level LLM chain, and generate prompts to use, generate synthetic data, and fine-tune a smaller model.
 
 In general this library helps you to build prompt chains or pipelines where the LLMs have well-defined inputs and outputs, and various tools like RAG. 
 
-The library abstracts away fine changes to the prompt of prompt engineering and instead optimizes the prompts for you, such that you only focus on structured and documented inputs and outputs.
+The library abstracts away manual prompt engineering and instead optimizes the prompts for you, such that you only focus on structured and documented inputs and outputs.
 In this it seems much more practical than LangChain.
 
-The library generates few-shot examples for you prompt-chain steps for you and call this step compiling.
-For example, it can generate reasoning examples and so on.
+The library uses a selected larger model (GPT-3.5 or Llama2 13b) to generate prompts and few-shot examples for your smaller LLM like T5. Not only that, you can compose entire pipeline or prompt-chain. Generating and optimizing  the prompts within the prompt-chain is called compiling.
+For example, DSPy can generate reasoning examples and optionally fine-tune a smaller LLM on them.
 Question for is, how good the examples are?
 Un-compiled chains use zero-shot prompting.
 
