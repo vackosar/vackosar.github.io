@@ -16,7 +16,7 @@ my_related_post_paths:
 - _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
 - _posts/2016-11-04-Drone-Hackathoning.md
 - _posts/2022-05-14-neural-data-compression.md
-- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2024-02-20-Synthetic-Data-for-LLM-Training.md
 ---
 
 

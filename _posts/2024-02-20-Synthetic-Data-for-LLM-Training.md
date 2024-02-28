@@ -1,12 +1,20 @@
 ---
 title: Synthetic Data for LLM Training
-description: Applications, notes, and thoughts on large language model generated training data.
+description: Learn more about using generated training data in large language model training.
 categories: ml
 date: 2024-02-20
 last_modified_at: 2024-02-28
 layout: post
 permalink: /:categories/:title
 image: /images/robot-writing-synthetic-data-thumb.webp
+my_related_post_paths:
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
+- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2023-06-08-Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM.md
+- _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
+- _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
 ---
 
 ![Robot writting synthetic data for its children :D](/images/robot-writing-synthetic-data-thumb.webp)

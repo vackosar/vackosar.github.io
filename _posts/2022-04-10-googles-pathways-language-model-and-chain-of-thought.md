@@ -14,8 +14,8 @@ my_related_post_paths:
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
+- _posts/2024-02-20-Synthetic-Data-for-LLM-Training.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
-- _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 ---
 
 
