@@ -1,6 +1,6 @@
 ---
 title: Synthetic Data for LLM Training
-description: Learn more about using generated training data in large language model training.
+description: How I think about using generated training data for large language model training.
 categories: ml
 date: 2024-02-20
 last_modified_at: 2024-02-29
