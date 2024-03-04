@@ -53,8 +53,10 @@ Another advantage of synthetic data is that they can be cleaner than data collec
 
 
 ## Why synthetic data makes sense?
-Real data costs human time, it can contain private or copyrighted data, it can be noisy, incomplete, or irrelevant. Synthetic data can represent a way around these problem. But you cannot create the required data synthetically out of thin air.
+Real data costs human time, it can contain copyrighted data or personally identifiable information (PII privacy), it can be noisy, incomplete, or irrelevant. Synthetic data can represent a way around these problem. But you cannot create the required data synthetically out of thin air.
 
+
+## What Is Needed to Create Synthetic Data?
 You may need:
 1. Either a more general model that was essentially trained on something similar to the target data needed,
 2. Or you need some real data that is close to the required data and perform only an easy modification to match the required data distribution.
