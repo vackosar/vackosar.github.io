@@ -26,8 +26,10 @@ Fortune has it; you don't have to compile CPython from the source manually.
 And you don't have to change your Ubuntu to an LTS version, e.g., 23.04 or 24.04, where Deadsnakes PPA supports your version.
 
 You have these options:
-- pyenv
-- conda
+- pyenv (Simple Python Version Management)
+- conda (Anaconda or Miniconda)
+- asdf (tool version manager)
+- Docker (containerized Python possible but complex)
 
 
 ## Pyenv
@@ -44,6 +46,15 @@ In contrast to pyenv, conda is an environment manager and a package manager, so 
 - [Install conda from here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 - Then you can create an environment: `conda create -n my-python-3.9-environment python=3.9`
 - Then you need to activate the environment: `conda activate my-python-3.9-environment`
+
+
+## asdf
+Appears to be [popular](https://news.ycombinator.com/item?id=30917354), but I have no experience with it.
+Here is an [example](https://rednafi.com/python/install_python_with_asdf/).
+
+```
+asdf install python 3.7.4
+```
 
 
 ## I hope this helps
