@@ -3,7 +3,7 @@ title: Bellman Update and Synthetic Data in Q-Transformer
 description: Notes on Q-learning, temporal difference, Monte Carlo, and others methods related to Q-Transformer.
 categories: ml
 date: 2024-02-11
-last_modified_at: 2024-02-13
+last_modified_at: 2024-03-05
 image: /images/bellman-update-q-transformer-thumb.png
 layout: post
 permalink: /:categories/:title
@@ -56,8 +56,11 @@ we still get reward 2, so the value of the state is still 2.
 
 ## Bellman Equation
 
-The Principle of Optimality means that for the best decision maker (policy), no matter where you start or what your first step is, the next steps should always form the best plan for the situation after that first step.
+Optimal decision maker is always able to get the best in each situation in the total.
+Because the rewards are added to the total value, we can decompose the value of the state into the best reward and the value of the next state.
 
+The Principle of Optimality simply says that for the best decision maker (policy), no matter where you start or what your first step is, the next steps should always form the best plan for the situation after that first step.
+Where the best plan is the highest total reward.
 This principle is captured by the Bellman Equation, which is a necessary condition for optimality.
 
 ```
@@ -69,12 +72,15 @@ value(current_state) == (
 ```
 
 ## Bellman Update and Q-function
-We can apply the principle above to refine our decision-making, which using is Bellman Update in Value Iteration method.
-We do that by converting the equation into an update rule and iterate until we reach the best solution.
+If we can explore which actions gives us the highest rewards, and remember the best rewards,
+then every time we find out better path, we can use the Bellman equation above to update the state value.
+This was we iterate until we reach the best solution.
+So we can apply the principle of optimality above to refine our decision-making,
+and this using is Bellman Update in Value Iteration method.
 
-To do that we can brute-force exhaustively explore all actions at all states across paths.
+To do this we can brute-force exhaustively explore all actions at all states across paths.
 Always updating corresponding value function values with the action that leads along the path that leads to the highest reward.
-We brute-force the solution because we have no model of the environment, we only evaluate the best options.
+We must brute-force the solution if we have no model of the environment, we only evaluate the best options.
 
 Since we are brute-forcing the solution evaluating everything without a model of the environment, we can describe the value function as an array or python dictionary:
 
@@ -97,7 +103,6 @@ q_function[current_state, the_best_action] = (
   )
 )
 ```
-
 
 With that we can describe the Bellman update rule in more detail:
 
@@ -126,6 +131,7 @@ def optimal_policy(q_function, state):
 
 ## Modelling Q-Function and Training It
 Instead of model-free tabulation, that is very data-intensive, we can model the Q-function to interpolate the table using less than full data.
+
 Temporal difference learning (TD-learning) is related to Q-learning, but instead of just updating the Q-value of a single state, we also update the previous ancestral states.
 The method is called temporal difference because of the difference between current estimate, and one-lookahead estimate based on future state Q-function values.
 
