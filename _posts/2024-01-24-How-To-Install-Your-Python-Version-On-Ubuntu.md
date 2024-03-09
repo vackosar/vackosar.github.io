@@ -59,6 +59,13 @@ asdf install python 3.7.4
 ```
 
 
+## Docker
+This is the least practical but the most flexible and reliable approach.
+Dokcer is usually only used to run single version applications.
+Docker is not intended as a development environment.
+But there is a support for IDE's like [Pycharm to run a Python interpreter in Docker containers](https://www.jetbrains.com/help/pycharm/using-docker-as-a-remote-interpreter.html).
+
+
 ## I hope this helps
 This is a webpage I wanted to find, when a college was having this problem.
 I hope it helps you now.
