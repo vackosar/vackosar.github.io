@@ -76,11 +76,10 @@ If we can explore which actions gives us the highest rewards, and remember the b
 then every time we find out better path, we can use the Bellman equation above to update the state value.
 This was we iterate until we reach the best solution.
 So we can apply the principle of optimality above to refine our decision-making,
-and this using is Bellman Update in Value Iteration method.
+and this we do with Bellman Update in Value Iteration method.
 
 To do this we can brute-force exhaustively explore all actions at all states across paths.
-Always updating corresponding value function values with the action that leads along the path that leads to the highest reward.
-We must brute-force the solution if we have no model of the environment, we only evaluate the best options.
+We would always update corresponding value function values with the action that leads along the path that leads to the highest reward.
 
 Since we are brute-forcing the solution evaluating everything without a model of the environment, we can describe the value function as an array or python dictionary:
 
