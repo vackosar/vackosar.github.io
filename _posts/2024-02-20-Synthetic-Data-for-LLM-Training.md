@@ -3,7 +3,7 @@ title: Synthetic Data for LLM Training
 description: How I think about using generated training data for large language model training.
 categories: ml
 date: 2024-02-20
-last_modified_at: 2024-02-29
+last_modified_at: 2024-03-12
 layout: post
 permalink: /:categories/:title
 image: /images/robot-writing-synthetic-data-thumb.webp
@@ -62,6 +62,9 @@ You may need:
 2. Or you need some real data that is close to the required data and perform only an easy modification to match the required data distribution.
 
 Another way of looking at 2 is to use other data, which was trained into LLM, to shift the output distribution the way you want. For example, polishing the LLM behavior by making it consistent with selected good patterns in some parts of the training data, which are retrieved and applied with prompting instructions, leads to generating good synthetic data.
+
+Terms of service must be checked to comply with the provider's conditions.
+[Mistral.ai allows use of their GPT-4-level Large model for training LLMs](https://twitter.com/arthurmensch/status/1734470462451732839) on their output synthetic data.
 
 
 ## Levels of Synthetic Data
@@ -152,9 +155,17 @@ Contributions of this paper are:
 4. full process supervision dataset, PRM800K, a dataset of 800K step-level labels across 75K solutions to 12K problems). Assign each step in the solution a positive, negative, or neutral label.
 
 
+### [Chain-of-Abstraction Reasoning](https://arxiv.org/html/2401.17464v2)
+A LLM model is trained to generate reasoning steps (chains) that use general tools like calculator or search.
+The tools are then executed in order of given in the reasoning chain, where output of one tool call be an input of another.
+
+The abstraction word here is to express that the reasoning chains reduce amount of specifics effectively then using re-usable general problem-solving tools.
+
+
 ### [Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision](https://arxiv.org/html/2312.09390v1)
 The smaller model teacher model generates inputs and labels.
 The bigger model can learn to outperform a weaker teacher if allowed to be "over-confident."
 However, this approach is not generally proven for all situations and still shows an upper-performance limit.
 
+The situation where this may work seem to for now be limited to 
 
