@@ -65,7 +65,8 @@ Another way of looking at 2 is to use other data, which was trained into LLM, to
 For example, polishing the LLM behavior by making it consistent with selected good patterns in some parts of the training data, which are retrieved and applied with prompting instructions, leads to generating good synthetic data.
 
 Terms of service must be checked to comply with the provider's conditions.
-[Mistral.ai allows use of their GPT-4-level Large model for training LLMs](https://twitter.com/arthurmensch/status/1734470462451732839) on their output synthetic data.
+[Mistral.ai allows use of their GPT-4-level Large model for training LLMs](https://twitter.com/arthurmensch/status/1734470462451732839) on their output synthetic data,
+which is in contrast to OpenAI's policy which does not allow that.
 Another alternative are open-source models, e.g., Llama-70b which has some use-restrictions, or Mixtral which is much more open.
 
 
