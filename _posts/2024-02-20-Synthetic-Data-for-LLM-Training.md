@@ -175,6 +175,7 @@ The abstraction word here is to express that the reasoning chains reduce amount 
 
 Llama-70b was used to generate the synthetic data to train on.
 
+
 ### [Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision](https://arxiv.org/html/2312.09390v1)
 The smaller model teacher model generates inputs and labels.
 The bigger model can learn to outperform a weaker teacher if allowed to be "over-confident."
