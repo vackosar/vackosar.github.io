@@ -61,10 +61,12 @@ You may need:
 1. Either a more general model that was essentially trained on something similar to the target data needed,
 2. Or you need some real data that is close to the required data and perform only an easy modification to match the required data distribution.
 
-Another way of looking at 2 is to use other data, which was trained into LLM, to shift the output distribution the way you want. For example, polishing the LLM behavior by making it consistent with selected good patterns in some parts of the training data, which are retrieved and applied with prompting instructions, leads to generating good synthetic data.
+Another way of looking at 2 is to use other data, which was trained into LLM, to shift the output distribution the way you want.
+For example, polishing the LLM behavior by making it consistent with selected good patterns in some parts of the training data, which are retrieved and applied with prompting instructions, leads to generating good synthetic data.
 
 Terms of service must be checked to comply with the provider's conditions.
 [Mistral.ai allows use of their GPT-4-level Large model for training LLMs](https://twitter.com/arthurmensch/status/1734470462451732839) on their output synthetic data.
+Another alternative are open-source models, e.g., Llama-70b which has some use-restrictions, or Mixtral which is much more open.
 
 
 ## Levels of Synthetic Data
@@ -83,7 +85,11 @@ Here is a spectrum of increasingly less human involvement in the process or huma
 Garbage-in implies garbage-out.
 The more complex the data to generate or the more distant to the real training data, the harder it is to synthesize the correct data to train on.
 
-In some problems, verification is easier than generation, so you can remove the invalid data from the generated data. For example, the goal may be to generate a program function that passes an executable set of tests. In this case, verifying that the generated sum is correct is very easy.
+In some problems, verification is easier than generation, so you can remove the invalid data from the generated data.
+For example, the goal may be to generate a program function that passes an executable set of tests.
+In this case, verifying that the generated sum is correct is very easy.
+Another example could be playing chess.
+
 
 [Constitutional AI](https://arxiv.org/abs/2212.08073) uses an LLM to label synthetically generated responses to follow specific rules (constitution about harm, bias, and more).
 
@@ -113,8 +119,14 @@ In some cases, generating the questions (inputs) is easy given the answers (outp
 Another example of this method is [Self-Alignment with Instruction Backtranslation](https://arxiv.org/abs/2308.06259), which also involves self-curation.
 
 
+## Self-Improvement
+The model cannot learn out of thin air, but if you can reformulate or abstract the given problems into other problems, which the model was trained more on,
+you may be able to reapply the lessons and improve the model by polishing it in this way.
+
+
 ## Examples of Synthetic Data Applications
 What synthetic data tools can you use today?
+
 
 ### [Teknium's Nous-Hermes-2-Mistral-7B-DPO](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO)
 
@@ -161,11 +173,11 @@ The tools are then executed in order of given in the reasoning chain, where outp
 
 The abstraction word here is to express that the reasoning chains reduce amount of specifics effectively then using re-usable general problem-solving tools.
 
+Llama-70b was used to generate the synthetic data to train on.
 
 ### [Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision](https://arxiv.org/html/2312.09390v1)
 The smaller model teacher model generates inputs and labels.
 The bigger model can learn to outperform a weaker teacher if allowed to be "over-confident."
 However, this approach is not generally proven for all situations and still shows an upper-performance limit.
 
-The situation where this may work seem to for now be limited to 
 
