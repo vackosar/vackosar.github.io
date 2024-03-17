@@ -57,7 +57,7 @@ we still get reward 2, so the value of the state is still 2.
 ## Bellman Equation
 
 Optimal decision maker is always able to get the best in each situation in the total.
-Because the rewards are added to the total value, we can decompose the value of the state into the best reward and the value of the next state.
+Because the rewards are added to the total value, we can decompose the value of the state into the best action reward and the value of the next state.
 
 The Principle of Optimality simply says that for the best decision maker (policy), no matter where you start or what your first step is, the next steps should always form the best plan for the situation after that first step.
 Where the best plan is the highest total reward.
@@ -71,17 +71,18 @@ value(current_state) == (
 )
 ```
 
-## Bellman Update and Q-function
-If we can explore which actions gives us the highest rewards, and remember the best rewards,
-then every time we find out better path, we can use the Bellman equation above to update the state value.
-This was we iterate until we reach the best solution.
-So we can apply the principle of optimality above to refine our decision-making,
+## Bellman Update
+We can explore states and actions and remember the total path reward through that action.
+Every time we find a better path, we can use the Bellman equation above to update the state value.
+This we iterate until we learn the best decision for every starting state.
+
+From above we can see that we can apply the principle of optimality above as an update rule to refine our decision-making,
 and this we do with Bellman Update in Value Iteration method.
+We brute-force exhaustively explore all actions at all states across all paths,
+and update corresponding value function values with the action that leads along the path that leads to the highest reward.
 
-To do this we can brute-force exhaustively explore all actions at all states across paths.
-We would always update corresponding value function values with the action that leads along the path that leads to the highest reward.
-
-Since we are brute-forcing the solution evaluating everything without a model of the environment, we can describe the value function as an array or python dictionary:
+Since we are brute-forcing the solution evaluating everything without any model of the environment,
+we can describe the value function as an array or python dictionary:
 
 ```
 # Bellman Equation
@@ -91,7 +92,9 @@ value[current_state] == (
 )
 ```
 
-Instead of a value function, it is easier to work with a Q-function:
+## Q-function
+Instead of a **value function**, it is easier to work with a **Q-function**:
+
 ```
 # Bellman Equation with q_function
 q_function[current_state, the_best_action] = (
@@ -129,16 +132,16 @@ def optimal_policy(q_function, state):
 
 
 ## Modelling Q-Function and Training It
-Instead of model-free tabulation, that is very data-intensive, we can model the Q-function to interpolate the table using less than full data.
+Instead of model-free tabulation, which is very memory-intensive, we can **model the Q-function to interpolate** the table using less than full data.
 
-Temporal difference learning (TD-learning) is related to Q-learning, but instead of just updating the Q-value of a single state, we also update the previous ancestral states.
+**Temporal difference learning (TD-learning)** is related to Q-learning, but instead of just updating the Q-value of a single state, we also update the previous ancestral states.
 The method is called temporal difference because of the difference between current estimate, and one-lookahead estimate based on future state Q-function values.
 
 For example, in the Q-transformer a multi-modal neural network with [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) is used for modeling the Q-function and TD-learning is used for offline training.
 
 More specifically the input camera image goes to instruction-conditioned convolutional network for images. The text instruction conditions [FiLM-conditioned](/ml/Feature-wise-Linear-Modulation-Layer) visual-modality EfficientNet convolutional network. The conditioned network outputs a combined output information into a [transformer](/ml/transformers-self-attention-mechanism-simplified), which then outputs Q-function value predictions. 
 
-{% include image.html src="/images/q-transformer-universal-sentence-encoder-film-efficientnet-transformer.png" alt="Q-transformer encodes camera image Film EfficientNet, text instruction with Universal Sentence Encoder both are combined into a Transformer (from the paper)" %}
+{% include image.html src="/images/q-transformer-universal-sentence-encoder-film-efficientnet-transformer.png" alt="Q-transformer encodes camera image Film EfficientNet, text instruction is embedded with Universal Sentence Encoder and conditions EfficientNet with FiLM, the results goes into a Transformer (from the paper)" %}
 
 
 ## Q-Function Learning Speedup by Monte Carlo Return
@@ -153,7 +156,7 @@ The most foundational ideas applied in Q-transformer paper were described above.
 
 2. **Conservative Q-Function Regularization**: The Q-Transformer uses a modified version of Conservative Q-learning (CQL) that introduces a **regularizer to minimize Q-values for actions not present in the dataset explicitly**. This conservative approach **biases the model towards in-distribution actions**, i.e., those seen during training, and serves to mitigate overestimation of Q-values for unseen or suboptimal actions. This approach ensures that during training, the estimated Q-values are kept closer to the minimal possible cumulative reward, which is consistent with the non-negative nature of the rewards in the tasks targeted by the Q-Transformer. This method **differs from softmax method** of pushing Q-values down for unobserved actions and up for the observed actions, which may prevent keeping Q-values low for suboptimal in-distribution actions that fail to achieve high reward.
 
-3. **Loss Function**: The loss function for the Q-Transformer combines both the temporal difference error (between the current and target Q-values) and the **conservative regularization term**. In practice, the action space dimensionality is expanded to include the discrete bins of action values, and the update rule is applied separately for each action dimension.
+3. **Loss Function**: The loss function for the Q-Transformer combines both the temporal difference error (between the current and target Q-values) and the **conservative regularization term**. The action space dimensionality is expanded to include the discrete bins of action values, and the update rule is applied separately for each action dimension.
 
 
 ## Q-Transformer Results
