@@ -154,7 +154,9 @@ Value-iteration method can be high-level described as:
 3. Update the value of each state locally consistent with Bellman Update.
 4. Go to step 2.
 
-There is also, Policy-iteration method.
+There is also, Policy-iteration method, which focuses on finding policy rather than value function.
+
+I read that the Value-interation method is a Fixed-Point Method and is likely to converge under reasonable conditions.
 
 
 ## Q-function
