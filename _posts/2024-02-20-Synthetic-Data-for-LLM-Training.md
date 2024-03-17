@@ -20,7 +20,7 @@ my_related_post_paths:
 {% include highlight-rouge-friendly.css.html %}
 
 
-![Robot writting synthetic data for its children :D](/images/robot-writing-synthetic-data-thumb.webp)
+![Robot writing synthetic data for its children :D](/images/robot-writing-synthetic-data-thumb.webp)
 
 Here are my notes on synthetic data. Take it with a grain of salt, as I am new in this area.
 
