@@ -121,8 +121,9 @@ Another example of this method is [Self-Alignment with Instruction Backtranslati
 
 
 ## Self-Improvement
-The model cannot learn out of thin air, but if you can reformulate or abstract the given problems into other problems, which the model was trained more on,
-you may be able to reapply the lessons and improve the model by polishing it in this way.
+The model cannot learn out of thin air, but if you can reformulate or abstract the given problems into other problems, which the model trained more on, you can reapply the lessons and improve the model by polishing it this way.
+
+For example, verifying and rating the response quality may be easier than writing the reply so that the model can self-improve on the given task this way.
 
 
 ## Examples of Synthetic Data Applications
