@@ -3,7 +3,7 @@ title: Bellman Update and Synthetic Data in Q-Transformer
 description: Notes on Q-learning, temporal difference, Monte Carlo, and others methods related to Q-Transformer.
 categories: ml
 date: 2024-02-11
-last_modified_at: 2024-03-05
+last_modified_at: 2024-03-17
 image: /images/bellman-update-q-transformer-thumb.png
 layout: post
 permalink: /:categories/:title
@@ -23,15 +23,31 @@ my_related_post_paths:
 {% include image.html alt="Bellman Update and Synthetic Data in Q-Transformer" src="/images/bellman-update-q-transformer-thumb.png" %}
 
 
-
 Here are my notes on Q-learning and Q-transformer. Take it with grain of salt, as I am new in this area.
 
 The [Q-transformer](https://qtransformer.github.io/assets/qtransformer.pdf) is important paper, because it describes successful application of **suboptimal [synthetic (autonomously collected) data](/ml/Synthetic-Data-for-LLM-Training)** and [**transformer architecture**](/ml/transformers-self-attention-mechanism-simplified) in a robotic reinforcement learning problem.
 
 Before Q-transformer let's first talk about a bigger topic: Bellman Update in Reinforcement Learning.
 
+
 ## States, Actions, and Rewards
-Let's suppose we have a game with game states and actions we can take (a finite-state Markov decision process (MDP)). For example, in chess this is a state of the chessboard and actions are allowed moves we can make. Or even simpler example is below, where we have just a single state, single possible action, and single reward for that action.
+Let's suppose we have a game with game-states and rewarded actions we can take at each game-state.
+For example, in **chess** this is a state of the chessboard and actions are allowed moves we can make.
+Or for example, a **Mario and Luigi** computer game.
+
+In chess, the reward is served only at the end, and the opponent may behave randomly. 
+In Mario and Luigi instead, we collect coin rewards cumulatively throughout the game play, and the world is mostly rule-based.
+
+In cases where the game world  deterministic and the decision maker is in full control, we call the games **Deterministic Sequential Decision Problems** or **Optimal Control Problems**.
+In cases, where randomness impacts outcome of the decisions, and decision maker is not in a full control this problem called **Markov Decision Process**.
+
+**Let's focus on Deterministic Sequential Decision Problems.**
+
+![Mario and Luigi DOS game](/images/mario-and-luigi-dos.png)
+
+
+### Example 1
+Or even simpler example is below, where we have just a single state, single possible action, and single reward for that action.
 
 <div class="mermaid">
     flowchart TD
@@ -42,6 +58,8 @@ In this diagram if we keep looping, we will keep stacking rewards.
 If we discount future rewards with 0.5 discount factor the total reward will be 2,
 so value of the state is 2.
 
+
+### Example 2
 More interesting examples is where we have 2 possible actions:
 
 <div class="mermaid">
@@ -54,12 +72,41 @@ In this case, we if we're making the right decision,
 we still get reward 2, so the value of the state is still 2.
 
 
+### Example 3
+But the above example demonstrates the discount factor importance, but is still a bit confusing because of the infinite possible paths.
+Let's look at this 3 state example:
+
+<div class="mermaid">
+    flowchart TD
+    State1 -- reward=1 --> State2
+    State1 -- reward=0.1 --> State2
+    State2 -- reward=1 --> State3
+    State2 -- reward=0.1 --> State3
+</div>
+
+Can you see what is the best path in above?
+Again, the best path is always choosing the first action.
+With `discount_factor=0.5` the value of the state 1 is:
+
+```
+value[state1] = 1 + 0.5 * 1 = 1.5  
+```
+
+How do I know that?
+Well, working backwards from the last state.
+From State2 the best reward is through action1, and then again through action1.
+This solution approach is called **Backward induction**.
+Notice that Backward Induction has some similarities to **Dijkstra**'s shortest path algorithm in that we **memorize the best paths** to certain sub-set of states.
+
+
 ## Bellman Equation
 
 Optimal decision maker is always able to get the best in each situation in the total.
 Because the rewards are added to the total value, we can decompose the value of the state into the best action reward and the value of the next state.
 
-The Principle of Optimality simply says that for the best decision maker (policy), no matter where you start or what your first step is, the next steps should always form the best plan for the situation after that first step.
+The Principle of Optimality simply says that for the best decision maker (policy),
+no matter where you start or what your first step is,
+the next steps should always form the best plan for the situation after that first step.
 Where the best plan is the highest total reward.
 This principle is captured by the Bellman Equation, which is a necessary condition for optimality.
 
@@ -71,26 +118,44 @@ value(current_state) == (
 )
 ```
 
+We can see this decomposition in the Example 3.
+We can also see, how Backward Induction solves the equation.
+
+Notice the **best** next state, which is determined by maximizing the total value.
+We use maximum function here, which makes Bellman Equation non-linear.
+
+
 ## Bellman Update
-We can explore states and actions and remember the total path reward through that action.
+We can explore paths through states and actions and estimate minimal value as the total path reward starting from that state.
 Every time we find a better path, we can use the Bellman equation above to update the state value.
 This we iterate until we learn the best decision for every starting state.
 
-From above we can see that we can apply the principle of optimality above as an update rule to refine our decision-making,
-and this we do with Bellman Update in Value Iteration method.
-We brute-force exhaustively explore all actions at all states across all paths,
-and update corresponding value function values with the action that leads along the path that leads to the highest reward.
+From above, we can see that we can apply the principle of optimality above as an update rule to refine our decision-making, based on the trajectories we explored.
+We do this with Bellman Update.
 
-Since we are brute-forcing the solution evaluating everything without any model of the environment,
-we can describe the value function as an array or python dictionary:
+We explore a different path or different action state and update corresponding value function with the action that leads along the path that leads to the highest reward.
+In many scenarios we will over time get to (converge) to the accurate value function.
+
+Since we are storing values for each state, we represent the value function as an array or python dictionary:
 
 ```
-# Bellman Equation
-value[current_state] == (
+# Bellman Update
+value[current_state] = (
   reward[current_state, the_best_action]
   + discount * value[the_best_next_state]
 )
 ```
+
+## Value-iteration Method
+
+Value-iteration method can be high-level described as:
+1. Determine or estimate initial each state value and action rewards.
+2. Based on the current value estimates, select optimal action in each state.
+3. Update the value of each state locally consistent with Bellman Update.
+4. Go to step 2.
+
+There is also, Policy-iteration method.
+
 
 ## Q-function
 Instead of a **value function**, it is easier to work with a **Q-function**:
@@ -118,34 +183,41 @@ q_function = { (state, action): 0 for state in actions for action in actions }
 
 
 def bellman_optimal_operator_update(q_function, state, action):
-	# this defined by the environment
-	next_state = get_next_state(state, action)
-	# the next action of in the next step as defined by the optiomal policy maximizing the q_function
-	# we directly update the q_function
-	q_function[state, action] = reward(state, action) + gamma * max(q_function[next_state, next_action] for next_action in actions)
-	return q_function
+  # this defined by the environment
+  next_state = get_next_state(state, action)
+  # the next action of in the next step as defined by the optiomal policy maximizing the q_function
+  # we directly update the q_function
+  q_function[state, action] = (
+    reward(state, action)
+    + gamma * max(q_function[next_state, next_action] for next_action in actions)
+  )
+  return q_function
 	
 def optimal_policy(q_function, state):
-    # optimal policy is defined by action maximizing the q_function
-    return argmax(lambda a: q_function[a, state], all_actions(state))
+  # optimal policy is defined by action maximizing the q_function
+  return argmax(lambda a: q_function[a, state], all_actions(state))
 ```
 
 
 ## Modelling Q-Function and Training It
-Instead of model-free tabulation, which is very memory-intensive, we can **model the Q-function to interpolate** the table using less than full data.
+Instead of model-free tabulation of the q-function, which is very memory-intensive, we can **model the Q-function to interpolate** the table using less than full data.
 
-**Temporal difference learning (TD-learning)** is related to Q-learning, but instead of just updating the Q-value of a single state, we also update the previous ancestral states.
+**Temporal difference learning (TD-learning)** is related to value-iteration or Q-learning, but it makes fewer assumptions about the environment.
 The method is called temporal difference because of the difference between current estimate, and one-lookahead estimate based on future state Q-function values.
 
 For example, in the Q-transformer a multi-modal neural network with [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) is used for modeling the Q-function and TD-learning is used for offline training.
 
-More specifically the input camera image goes to instruction-conditioned convolutional network for images. The text instruction conditions [FiLM-conditioned](/ml/Feature-wise-Linear-Modulation-Layer) visual-modality EfficientNet convolutional network. The conditioned network outputs a combined output information into a [transformer](/ml/transformers-self-attention-mechanism-simplified), which then outputs Q-function value predictions. 
+More specifically the input camera image goes to instruction-conditioned convolutional network for images.
+The text instruction conditions [FiLM-conditioned](/ml/Feature-wise-Linear-Modulation-Layer) visual-modality EfficientNet convolutional network.
+The conditioned network outputs a combined output information into a [transformer](/ml/transformers-self-attention-mechanism-simplified), which then outputs Q-function value predictions. 
 
 {% include image.html src="/images/q-transformer-universal-sentence-encoder-film-efficientnet-transformer.png" alt="Q-transformer encodes camera image Film EfficientNet, text instruction is embedded with Universal Sentence Encoder and conditions EfficientNet with FiLM, the results goes into a Transformer (from the paper)" %}
 
 
 ## Q-Function Learning Speedup by Monte Carlo Return
-At initialization, the neural model has a **cold-start** problem and is very bad at estimating the state values. But if we **tabulate (memoize) rewards for successful trajectories**, we can immediately provide **a minimal reward** for any point on the successful pathway. This speeds up learning of the Q-function neural network. This tabulation method is called **Monte Carlo return**. In a way, we are combing brute-force with neural network interpolation.
+At initialization, the neural model has a **cold-start** problem and is very bad at estimating the state values.
+But if we **tabulate (memoize) rewards for successful trajectories**, we can immediately provide **a minimal reward** for any point on the successful pathway.
+This speeds up learning of the Q-function neural network. This tabulation method is called **Monte Carlo return**. In a way, we are combing brute-force with neural network interpolation.
 
 
 ## Other Tricks used in Q-Transformer
