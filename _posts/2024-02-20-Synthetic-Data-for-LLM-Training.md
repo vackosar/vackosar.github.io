@@ -3,7 +3,7 @@ title: Synthetic Data for LLM Training
 description: How I think about using generated training data for large language model training.
 categories: ml
 date: 2024-02-20
-last_modified_at: 2024-03-12
+last_modified_at: 2024-03-18
 layout: post
 permalink: /:categories/:title
 image: /images/robot-writing-synthetic-data-thumb.webp
@@ -67,7 +67,10 @@ For example, polishing the LLM behavior by making it consistent with selected go
 Terms of service must be checked to comply with the provider's conditions.
 [Mistral.ai allows use of their GPT-4-level Large model for training LLMs](https://twitter.com/arthurmensch/status/1734470462451732839) on their output synthetic data,
 which is in contrast to OpenAI's policy which does not allow that.
-Another alternative are open-source models, e.g., Llama-70b which has some use-restrictions, or Mixtral which is much more open.
+
+Another alternative are open-source models, e.g., Llama-70b which has some use-restrictions, or Mixtral which is much more open and requires only 12B active parameters.
+You can buy Mixtral inference from many providers for example [OpenRouter](https://openrouter.ai/) or [Fireworks.ai](https://fireworks.ai/).
+As of 2024-03-18, the prices for Mixtral are similar to GPT-3.5.
 
 
 ## Levels of Synthetic Data
