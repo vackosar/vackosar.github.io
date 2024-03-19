@@ -207,6 +207,18 @@ Instead of model-free tabulation of the q-function, which is very memory-intensi
 **Temporal difference learning (TD-learning)** is related to value-iteration or Q-learning, but it makes fewer assumptions about the environment.
 The method is called temporal difference because of the difference between current estimate, and one-lookahead estimate based on future state Q-function values.
 
+
+## Q-Transformer Paper Robotic State-Action-Reward Space
+
+States consists of textual instruction, 320 × 256 camera image, robot arm position, robot arm orientation, robot arm gripper.
+
+Actions consists of 8 dimensions: 3D position, 3D orientation, gripper closure command, and episode termination command.
+
+Reward is received only at the end and the termination command must be triggered for policy to receive a positive reward upon task completion.
+
+
+## Q-Transformer Q-Function Learning 
+
 For example, in the Q-transformer a multi-modal neural network with [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) is used for modeling the Q-function and TD-learning is used for offline training.
 
 More specifically the input camera image goes to instruction-conditioned convolutional network for images.
@@ -220,6 +232,8 @@ The conditioned network outputs a combined output information into a [transforme
 At initialization, the neural model has a **cold-start** problem and is very bad at estimating the state values.
 But if we **tabulate (memoize) rewards for successful trajectories**, we can immediately provide **a minimal reward** for any point on the successful pathway.
 This speeds up learning of the Q-function neural network. This tabulation method is called **Monte Carlo return**. In a way, we are combing brute-force with neural network interpolation.
+
+This is one of the tricks used in Q-Transformer.
 
 
 ## Other Tricks used in Q-Transformer
