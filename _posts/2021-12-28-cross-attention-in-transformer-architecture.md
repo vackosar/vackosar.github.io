@@ -52,7 +52,7 @@ Alternative [cross-attention in SelfDoc](#cross-attention-in-selfdoc), uses quer
 - Calculate Key and Value from sequence S1
 - Calculate Queries from sequence S2
 - Calculate [attention matrix](/ml/transformers-self-attention-mechanism-simplified) from Keys and Queries
-- Apply queries to the attention matrix
+- Apply values to the attention matrix
 - Output sequence has dimension and length of sequence S2
 
 In an equation: \\( \mathbf{softmax}((W_Q S_2) (W_K S_1)^\intercal) W_V S_1 \\)
