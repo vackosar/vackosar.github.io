@@ -3,7 +3,7 @@ title: Bellman Update and Synthetic Data in Q-Transformer
 description: Notes on Q-learning, temporal difference, Monte Carlo, and others methods related to Q-Transformer.
 categories: ml
 date: 2024-02-11
-last_modified_at: 2024-03-17
+last_modified_at: 2024-03-20
 image: /images/bellman-update-q-transformer-thumb.png
 layout: post
 permalink: /:categories/:title
@@ -160,7 +160,7 @@ I read that the Value-interation method is a Fixed-Point Method and is likely to
 
 
 ## Q-function
-Instead of a **value function**, it is easier to work with a **Q-function**:
+Instead of a **value function**, it is easier to work with a **Q-function**. It is defined as follows:
 
 ```
 # Bellman Equation with q_function
@@ -172,6 +172,8 @@ q_function[current_state, the_best_action] = (
   )
 )
 ```
+
+Q-function directly incorporates the total reward for each action we can take, so it informs us what is the best action.
 
 With that we can describe the Bellman update rule in more detail:
 
@@ -202,14 +204,21 @@ def optimal_policy(q_function, state):
 
 
 ## Modelling Q-Function and Training It
-Instead of model-free tabulation of the q-function, which is very memory-intensive, we can **model the Q-function to interpolate** the table using less than full data.
+Instead of model-free tabulation of the q-function, which is very memory-intensive, we can **approximate the Q-function to interpolate** the table using less than full data. In other words, we approximate the q-function with machine learning.
 
 **Temporal difference learning (TD-learning)** is related to value-iteration or Q-learning, but it makes fewer assumptions about the environment.
 The method is called temporal difference because of the difference between current estimate, and one-lookahead estimate based on future state Q-function values.
 
 
-## Q-Transformer Paper Robotic State-Action-Reward Space
+## Monte Carlo Return: A Q-Function Learning Speedup
+At initialization, the neural model has a **cold-start** problem and is very bad at estimating the state values.
+But if we **tabulate (memoize) rewards for successful trajectories**, we can immediately provide **a minimal reward** for any point on the successful pathway.
+This speeds up learning of the Q-function neural network. This tabulation method is called **Monte Carlo return**. In a way, we are combing brute-force with neural network interpolation.
 
+This is one of the tricks used in Q-Transformer.
+
+
+## Q-Transformer Paper Robotic State-Action-Reward Space
 States consists of textual instruction, 320 × 256 camera image, robot arm position, robot arm orientation, robot arm gripper.
 
 Actions consists of 8 dimensions: 3D position, 3D orientation, gripper closure command, and episode termination command.
@@ -217,8 +226,7 @@ Actions consists of 8 dimensions: 3D position, 3D orientation, gripper closure c
 Reward is received only at the end and the termination command must be triggered for policy to receive a positive reward upon task completion.
 
 
-## Q-Transformer Q-Function Learning 
-
+## Q-Transformer Q-Function Learning
 For example, in the Q-transformer a multi-modal neural network with [transformer architecture](/ml/transformers-self-attention-mechanism-simplified) is used for modeling the Q-function and TD-learning is used for offline training.
 
 More specifically the input camera image goes to instruction-conditioned convolutional network for images.
@@ -228,27 +236,19 @@ The conditioned network outputs a combined output information into a [transforme
 {% include image.html src="/images/q-transformer-universal-sentence-encoder-film-efficientnet-transformer.png" alt="Q-transformer encodes camera image Film EfficientNet, text instruction is embedded with Universal Sentence Encoder and conditions EfficientNet with FiLM, the results goes into a Transformer (from the paper)" %}
 
 
-## Q-Function Learning Speedup by Monte Carlo Return
-At initialization, the neural model has a **cold-start** problem and is very bad at estimating the state values.
-But if we **tabulate (memoize) rewards for successful trajectories**, we can immediately provide **a minimal reward** for any point on the successful pathway.
-This speeds up learning of the Q-function neural network. This tabulation method is called **Monte Carlo return**. In a way, we are combing brute-force with neural network interpolation.
-
-This is one of the tricks used in Q-Transformer.
-
-
-## Other Tricks used in Q-Transformer
-
+### Tricks used in Q-Transformer
 The most foundational ideas applied in Q-transformer paper were described above. Here is a summary of other contributions in this paper:
 
-1. **Autoregressive Discretization of Actions**: To accommodate the high-capacity Transformer architecture, the Q-Transformer discretizes each dimension of the continuous action space separately and treats each dimension as a different timestep in the learning process. This allows the model to learn Q-values for each action dimension separately, enabling efficient scaling of the method to high-dimensional action spaces without encountering the curse of dimensionality.
+1. **Monte Carlo return**: A method described above to reduce cold-start problem.
 
-2. **Conservative Q-Function Regularization**: The Q-Transformer uses a modified version of Conservative Q-learning (CQL) that introduces a **regularizer to minimize Q-values for actions not present in the dataset explicitly**. This conservative approach **biases the model towards in-distribution actions**, i.e., those seen during training, and serves to mitigate overestimation of Q-values for unseen or suboptimal actions. This approach ensures that during training, the estimated Q-values are kept closer to the minimal possible cumulative reward, which is consistent with the non-negative nature of the rewards in the tasks targeted by the Q-Transformer. This method **differs from softmax method** of pushing Q-values down for unobserved actions and up for the observed actions, which may prevent keeping Q-values low for suboptimal in-distribution actions that fail to achieve high reward.
+2. **Autoregressive Discretization of Actions**: To accommodate the high-capacity Transformer architecture, the Q-Transformer discretizes each dimension of the continuous action space separately and treats each dimension as a different timestep in the learning process. This allows the model to learn Q-values for each action dimension separately, enabling efficient scaling of the method to high-dimensional action spaces without encountering the curse of dimensionality.
 
-3. **Loss Function**: The loss function for the Q-Transformer combines both the temporal difference error (between the current and target Q-values) and the **conservative regularization term**. The action space dimensionality is expanded to include the discrete bins of action values, and the update rule is applied separately for each action dimension.
+3. **Conservative Q-Function Regularization**: The Q-Transformer uses a modified version of Conservative Q-learning (CQL) that introduces a **regularizer to minimize Q-values for actions not present in the dataset explicitly**. This conservative approach **biases the model towards in-distribution actions**, i.e., those seen during training, and serves to mitigate overestimation of Q-values for unseen or suboptimal actions. This approach ensures that during training, the estimated Q-values are kept closer to the minimal possible cumulative reward, which is consistent with the non-negative nature of the rewards in the tasks targeted by the Q-Transformer. This method **differs from softmax method** of pushing Q-values down for unobserved actions and up for the observed actions, which may prevent keeping Q-values low for suboptimal in-distribution actions that fail to achieve high reward.
+
+4. **Loss Function**: The loss function for the Q-Transformer combines both the temporal difference error (between the current and target Q-values) and the **conservative regularization term**. The action space dimensionality is expanded to include the discrete bins of action values, and the update rule is applied separately for each action dimension.
 
 
-## Q-Transformer Results
-
+### Q-Transformer Results
 Q-Transformer outperforms QT-OPT and Decision Transformer in a reinforcement learning task, where [suboptimal synthetic data](/ml/Synthetic-Data-for-LLM-Training) is available for offline training.
 QT-OPT, also performs TD-learning in contrast to Decision Transformer, which seems to be the biggest factor here for good performance with suboptimal data.
 
