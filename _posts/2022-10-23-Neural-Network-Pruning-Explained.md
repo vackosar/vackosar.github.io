@@ -6,7 +6,7 @@ categories: ml
 image: /images/neural-network-pruning-thumb.png
 video: x57mjP37c7o
 date: 2022-10-23
-last_modified_at: 2022-10-24
+last_modified_at: 2024-03-30
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
