@@ -27,7 +27,7 @@ Today I would like to tell you what is **increasingly becoming popular in large 
 
 {% include image.html src="/images/large-language-models-hallucinations-and-poor-reasoning.png" alt="large-language-models-hallucinations-and-poor-reasoning" %}
 
-What are the **missing things in current systems**? So now we burn through a gajillion, it’s like trillions of floating point operations with all these multiplications and we still get **hallucinations** and we still get quite **poor reasoning capabilities**. And there are approaches reducing these judgement deficiencies, but something still seems to be missing.
+What are the **missing things in current systems**? So now we burn through a gajillion, it’s like trillions of floating point operations with all these multiplications, and we still get **hallucinations,** and we still get quite **poor reasoning capabilities**. And there are approaches reducing these judgement deficiencies, but something still seems to be missing.
 
 Yes, it’s true that humans as well hallucinate. For example, you may have a **false memory**, so maybe you don’t remember everything perfectly. For example, if there is a crime, oftentimes the people have actually different accounts.
 
@@ -46,11 +46,11 @@ These **successful symbolic tools** were then later used to develop computer pro
 
 What are the differences between the systems that we have? The **current large language models** have great capabilities, we can use it for many things, but they have also issues. And so if we can compare what I'm talking about, these **symbolic approaches**, that use these symbols and rules, with what we have, which is like dominant results in current times.
 
-So on one hand we have these **symbols and rules**, and on the other hand we almost have something like **feelings and intuitions**.
+So on one hand we have these **symbols, rules, [sparse representations](/ml/sparse-matrix-why-and-when)**, and on the other hand we almost have something like **feelings, intuitions, dense representations**.
 
 On one hand we have something that is able to find **patterns in huge amounts of data**. And on the other hand, we have something where we **can put in a great rule set** that will work not matter how big is the input.
 
-**Mathematics is a symbolic method**. In maths, you can take equations and you can input an x and the **x can go to infinity**. And the equation will still work. It will still be great. While in the **neural networks**, this is not quite possible. You have always some kind of limitation. So always you are somewhere between **minus one and plus one**. And so you can’t really do something like this.
+**Mathematics is a symbolic method**. In maths, you can take equations, and you can input an x and the **x can go to infinity**. And the equation will still work. It will still be great. While in the **neural networks**, this is not quite possible. You have always some kind of limitation. So always you are somewhere between **minus one and plus one**. And so you can’t really do something like this.
 
 **Large language models are neural networks**. These neural networks take some floating point numbers, and they do some **matrix operations**, maybe a couple of extra operations on top of that. They produce vectors, like arrays of numbers, which form the [inner representation of the model (embeddings)](/ml/Embeddings-in-Machine-Learning-Explained). On the other hand, in **efficient algorithmic computations, we have hard (discreet) symbols**, which are very different.
 
@@ -84,7 +84,7 @@ There were also studies of **language**, and people started to build these **sta
 
 For example, in 2013, Czech researcher **Mikolov** co-published Word2Vec paper (later also [FastText](/ml/FastText-Vector-Norms-And-OOV-Words)). Word2vec is a method to represent each word as one vector. Then in 2017, **[transformer architecture](/ml/transformers-self-attention-mechanism-simplified)** was able to accept multiple words. These models are able to [represent entire paragraphs of text in context as a vector](/ml/how-computers-understood-humans), and not only each word individually. . In particular, people started predicting (inferring) next word in web-scale datasets and getting high accuracies and high [text compression](/ml/neural-data-compression).
 
-Now we are just in the situation where we also implemented this **reinforcement learning from human feedback (RLHF)**, where we started hiring experts, and we getting dedicated hardware, and **AGI is just behind the corner**, right? **Suddenly it sounds similar to what we already heard**. I mean, are we in 2023 just before another AI winter? Is this really the winning approach, is this the final answer, or do we need to add something more?
+Now we are just in the situation where we also implemented this **reinforcement learning from human feedback (RLHF)**, where we started hiring experts, and we're getting dedicated hardware, and **AGI is just behind the corner**, right? **Suddenly it sounds similar to what we already heard**. I mean, are we in 2023 just before another AI winter? Is this really the winning approach, is this the final answer, or do we need to add something more?
 
 **Reinforcement learning from human feedback**, that's a very interesting approach not the same as use of expert before the second AI winter. Now the **experts don't have to actually write super complicated rules, instead they just compare a texts**, and say this text is better than this text. While the experts get **a bigger lever**, and they have a much bigger impact. So this is a much **more cost-effective approach**. We are in a much better situation than before. **Hallucinations** are also reduced with this reinforcement learning from human feedback method. But we will see that you can get much more, like these other approaches that are using symbols.
 
@@ -99,7 +99,7 @@ The **language models** already use the symbols. They use symbols as their input
 
 One of the simplest ways how you can simulate **reasoning inside a language model** is by [guiding it with a prompt](/ml/Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM). The model always infers distribution over the next word, then it selects one, and go to the next word. You can create a sort of momentum towards a solution by writing [an instruction prompt](/ml/Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM) "let's **think step by step**". By allowing the model to generate and read its own "thoughts", you get an improvement in accuracy of the final answer. This is a multistep process, a [chain of though](/ml/Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM), where the model can review what it inferred in a bit of algorithmic computational model way to get better results.
 
-You can **fill in templates (forms)** with language models. You just ask what word from these allowed words should be here? It just gives me some words and often it gives you the right answer.
+You can **fill in templates (forms)** with language models. You just ask what word from these allowed words should be here? It just gives me some words, and often it gives you the right answer.
 
 [**Self-consistency prompting**](/ml/Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM) is another method in which request multiple results using the chain-of-thought method. In the paper **[AlphaCode](https://arxiv.org/abs/2203.07814)**, they produce many code samples, and they sample from the most common samples. From similar samples that cluster together. And from the places where there are lots of similar samples, those actually, it works great if you sample from the biggest cluster the most.
 
