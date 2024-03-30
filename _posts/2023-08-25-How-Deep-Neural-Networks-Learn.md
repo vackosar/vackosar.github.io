@@ -1,6 +1,6 @@
 ---
 title: How Deep Neural Networks Learn
-description: Notes on Superposition, Memorization, Regularization, Double Descent, Model Ensembling to get insights.
+description: Notes on Superposition, Memorization, Regularization, Double Descent, Model Ensembling in neural network training.
 categories: ml
 image: /images/classroom-neural-network-training.png
 date: 2023-08-25
