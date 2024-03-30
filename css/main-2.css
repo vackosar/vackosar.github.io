@@ -101,6 +101,10 @@ figure {
     max-width: 600px;
 }
 
+blockquote {
+    font-style: italic
+}
+
 .speech-baloon-head {
     display: flex;
     align-items: flex-start;

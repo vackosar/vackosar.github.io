@@ -16,10 +16,6 @@ my_related_post_paths:
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
 ---
 
-
-
-*Hi, this is a draft of a post, but it could be already useful.*
-
 Sparse matrices are a special type of matrices that have a significant number of zero values. They are used in machine learning and other scientific computations due to their ability to reduce memory usage and computation time.
 
 For example, a dense matrix of size 1000x1000 with only 10% non-zero 8-bit values would require 8 MB of memory, while its sparse equivalent would require only a 10% of that.
@@ -28,11 +24,16 @@ Apart from **saving memory, sparse matrices also speed up certain operations**, 
 
 Overall, using sparse matrices can greatly improve the efficiency and scalability of machine learning algorithms, especially when dealing with zero-valued data.
 
+
 ## Where Are Sparse Matrices Used?
-
-In area of neural networks, **dense representations** are common. For example, [word2vec or FastText](/ml/FastText-Vector-Norms-And-OOV-Words) are [dense representations (embeddings)](/ml/Embeddings-in-Machine-Learning-Explained) of words. Or in case of the [Transformer architecture](/ml/transformers-self-attention-mechanism-simplified).
-
 Sparse representations are more used in symbolic systems like recommendation systems (item-item or item-user matrix). Or examples are adjacency matrices, word counting methods.
+
+In area of neural networks, **dense representations** are the most common. For example, [word2vec or FastText](/ml/FastText-Vector-Norms-And-OOV-Words) are [dense representations (embeddings)](/ml/Embeddings-in-Machine-Learning-Explained) of words. Or in case of the [Transformer architecture](/ml/transformers-self-attention-mechanism-simplified). But recently, sparse representations also appeared in the **Sparse Mixture-of-Experts** deep-learning architecture exemplified by widely-used Mixtral model:
+
+<blockquote class="blockquote" style="font-style: italic">
+Mixtral is a sparse mixture-of-experts network. It is a decoder-only model where the feedforward block picks from a set of 8 distinct groups of parameters. At every layer, for every token, a router network chooses two of these groups (the “experts”) to process the token and combine their output additively.
+<footer class="blockquote-footer"><a href="https://mistral.ai/news/mixtral-of-experts/">Mistral.ai</a></footer>
+</blockquote>
 
 
 ## Dense Matrix Multiplication Example
