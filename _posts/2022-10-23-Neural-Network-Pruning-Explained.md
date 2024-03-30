@@ -84,7 +84,7 @@ If the network weights are optimized and the first order gradient is zero, we ne
 **Second-order Pruning prunes based on Hessian** prunes by minimization of the second-order loss change approximation e.g., [M-FAC method](https://arxiv.org/pdf/2107.03356.pdf). 
 
 ### Pruning Methods in Neural Networks
-- [Learning both Weights and Connections for Efficient Neural Networks paper](https://arxiv.org/pdf/1506.02626.pdf), starts with random initialization, trains, prunes the smallest weights (small magnitude), and then crucially trains again the new network, and repeat. [Tensorflow pruning API](https://blog.tensorflow.org/2019/05/tf-model-optimization-toolkit-pruning-API.html) uses this method and sparsifies the layer's weights during training.
+- [Learning both Weights and Connections for Efficient Neural Networks paper](https://arxiv.org/pdf/1506.02626.pdf), starts with random initialization, trains, prunes the smallest weights (small magnitude), and then crucially trains again the new network, and repeat until around 90% is pruned. This converse a dense, fully-connected layer to a sparse layer. However, activations (internal representaions) remain dense. [Tensorflow pruning API](https://blog.tensorflow.org/2019/05/tf-model-optimization-toolkit-pruning-API.html) uses this method and sparsifies the layer's weights during training.
 - [The Lottery Ticket Hypothesis paper](https://arxiv.org/pdf/1803.03635.pdf) prunes 90% its [smallest weights](https://arxiv.org/pdf/1506.02626.pdf), and **finds a subnetworks in the random initialization**, that trains to near optima.
 - A notable oBERT method of 2022 is described below.
 
