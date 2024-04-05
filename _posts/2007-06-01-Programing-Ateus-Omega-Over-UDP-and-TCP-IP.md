@@ -82,4 +82,5 @@ Professor Ing. T. Kubalík for his support and help
 at a time when the situation seemed unsolvable.
 
 
-[Full MATRICULATION EXAM Thesis](/docs/mat_prace_MEDEA_MODUL_en.pdf)
+- [Full MATRICULATION EXAM Thesis -  English Translations](/docs/mat_prace_MEDEA_MODUL_en.pdf)
+- [Full MATRICULATION EXAM Thesis -  Czech Original](/docs/mat_prace_MEDEA_MODUL.pdf)
