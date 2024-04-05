@@ -50,6 +50,10 @@ It is interesting that even though the spectra for the fitted values ​​corre
 A possible continuation of this work would be to add the results of the influence of symmetrization - HBT interferometry as additional data (see sub-chapter 3.6).
 
 
+- [Full Bachelor Thesis - English Translation](/docs/BP_Vaclav_Kosar_en.pdf)
+- [Full Bachelor Thesis - Czech](https://physics.fjfi.cvut.cz/publications/ejcf/BP_Vaclav_Kosar.pdf)
+
+
 
 ### Author
 Vaclav Kosar
@@ -58,4 +62,4 @@ Vaclav Kosar
 ### Key words
 ultrarelativistic  nuclear  collisions,  logitudinally  boost-invariat  expanding fireball, Blastwave model, transverse momentum spectra, DRAGON
 
-[Full Bachelor Thesis](https://physics.fjfi.cvut.cz/publications/ejcf/BP_Vaclav_Kosar.pdf)
+
