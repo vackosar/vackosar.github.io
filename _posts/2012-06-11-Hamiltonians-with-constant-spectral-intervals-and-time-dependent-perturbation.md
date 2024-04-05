@@ -18,10 +18,6 @@ my_related_post_paths:
 ---
 
 
-
-### Author
-Vaclav Kosar
-
 ### Abstract
 This work deals with quantum systems determined by time-dependent Hamilton operators. Family of quantum systems, whose Hamilton operators take form H(t) = H 0 + V (t), where V (t) is perturbation and H 0 is self-adjoint with pure-point spectrum and constant gaps between eigenvalues in spectrum σ(H 0 ). Existing theory dealing with the stability of quantum systems with Hamilton operators of the above form, where H 0 is self-adjoint with pure-point spectrum and growing or shrinking gaps between eigenvalues in spectrum σ(H 0 ) is given in the corresponding chapter. Because of non-applicability of existing theory to the studied cases, the author attempts to device a new approach based on the term “mean of Hamilton operator over infinite time interval.” Lemma 7 can be interpreted as quantum variant of ergodic theorem in a very nice form that the author has not encountered before. In the last chapter is devoted to the study of simple example and to the application of devised theory.
 
@@ -48,7 +44,12 @@ The author studied existing theory of time-dependent Hamiltonians, particularly 
 The author studied analytically and numerically a simple case of the system and used gathered knowledge attempted to enrich existing theory proposing a new approach based on time-mean of Hamilton operator using theory of positive operator measures and integration with respect to positive operator measure.
 The author then proposed a possible way for continuation of the research regarding the studied simple case
 
+
+[Full Master Thesis](http://physics.fjfi.cvut.cz/publications/mf/2009/kosar_thesis.pdf)
+
 ### Key words
 time-dependent Hamiltonians, stability of a quantum system
 
-[Full Master Thesis](http://physics.fjfi.cvut.cz/publications/mf/2009/kosar_thesis.pdf)
+
+### Author
+Vaclav Kosar

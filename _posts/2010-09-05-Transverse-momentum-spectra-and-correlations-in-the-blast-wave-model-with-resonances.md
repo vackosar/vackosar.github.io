@@ -20,9 +20,6 @@ my_related_post_paths:
 
 
 
-### Author
-Vaclav Kosar
-
 
 ### Abstract
 This work provides a review of theories of properties of high energy density matter originating in heavy-ion high energy collisions (GeV/nucleus). 
@@ -51,6 +48,11 @@ It is interesting that even though the spectra for the fitted values ​​corre
 - The choice of the freeze-out super-surface of the Blastwave model is not suitable. 
 
 A possible continuation of this work would be to add the results of the influence of symmetrization - HBT interferometry as additional data (see sub-chapter 3.6).
+
+
+
+### Author
+Vaclav Kosar
 
 
 ### Key words

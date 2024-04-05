@@ -11,10 +11,6 @@ permalink: /:categories/:title
 
 ![Ateus Omega via UART to dsPIC via SPI to ENC28J60 via IP](/images/Ateus-Omega-UART-dsPIC-SPI-ENC28J60-UDP-TCP-IP-Programing.png)
 
-### Authors
-Vaclav Kosar, Jan Kapic
-
-
 ### Abstract
 The aim of our work was to replace the Xapi server program, designed for remote
 programming of the Ateus Omega control panel via the Internet, with a module that will be
@@ -84,3 +80,8 @@ at a time when the situation seemed unsolvable.
 
 - [Full MATRICULATION EXAM Thesis -  English Translations](/docs/mat_prace_MEDEA_MODUL_en.pdf)
 - [Full MATRICULATION EXAM Thesis -  Czech Original](/docs/mat_prace_MEDEA_MODUL.pdf)
+
+
+
+### Authors
+Vaclav Kosar, Jan Kapic

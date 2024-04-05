@@ -26,11 +26,6 @@ my_related_post_paths:
 
 [Download PDF](/files/soft-photon-calorimeter-jinr-dubna-student-practice.pdf)
 
-### Authors
-
-- Vaclav Kosar @ CVUT
-- Viktor Burian @ CVUT
-- Andra-Georgia Ibanescu @ University of Bucharest
 
 ### Presented At
 2011 JINR, Dubna Student Practice
@@ -72,3 +67,11 @@ Generate total momentum of photons in CMS
 Generate the direction of photons in CMS
 Calculate the photons momentum in LS
 Calculate energy of photons in LS
+
+
+
+### Authors
+
+- Vaclav Kosar @ CVUT
+- Viktor Burian @ CVUT
+- Andra-Georgia Ibanescu @ University of Bucharest
