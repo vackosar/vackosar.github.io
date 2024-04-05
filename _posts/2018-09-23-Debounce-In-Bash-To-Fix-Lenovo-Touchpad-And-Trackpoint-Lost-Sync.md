@@ -7,6 +7,7 @@ description: Functional programming in Bash for Yoga X260 and P52.
 permalink: /:categories/:title
 redirect_from:
 - /2018/09/23/Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.html
+- /2018/09/23/Debounce-In-Bash-To-Fix-Lenovo-Touchpad-Lost-Sync.html
 my_related_post_paths:
 - _posts/2016-07-28-Functional-Foreach-In-Bash.md
 - _posts/2019-11-02-Thinkpad-P53-vs-P52-Thermals.md
