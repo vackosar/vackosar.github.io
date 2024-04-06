@@ -30,9 +30,9 @@ To avoid wasting time on unlikely or irrelevant results, consider using the dili
 
 ## The Main Contribution Relevance, Impact, and Open Questions
 The primary questions to ask when looking at a piece of research to ask are:
-1. What is the main idea in one sentence? Usually, there is just one main idea that can be summarized into one sentence, even if you are not an expert in the research area. The lack of a central point is suspicious.
-2. What impact could this have, and why is this important and relevant?
-3. What are the unknowns and open questions? What does not fit well?
+1. Insightful? What is the main idea in one sentence? Usually, there is just one main idea that can be summarized into one sentence, even if you are not an expert in the research area. The lack of a central point is suspicious.
+2. Actionable? What impact could this have, and why is this important and relevant?
+3. Trustworthy? What are the unknowns and open questions? What does not fit well?
 
 
 ## Expanding on Doomberg's 5 Question Framework
