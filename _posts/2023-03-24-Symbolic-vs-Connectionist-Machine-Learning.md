@@ -3,7 +3,7 @@ title: Symbolic vs Connectionist Machine Learning
 description: Reason without hallucinations in large language models by hybridizing neural networks with code.
 categories: ml
 date: 2023-03-23
-last_modified_at: 2023-06-11
+last_modified_at: 2024-04-06
 image: /images/symbols-patterns-hybrids.png
 layout: post
 permalink: /:categories/:title
