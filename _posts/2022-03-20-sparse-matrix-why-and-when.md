@@ -1,6 +1,6 @@
 ---
 title: Sparse Matrix Why and When?
-description: Sparce matrix formats like CSR, LOL, COO compress and speed up certain operations on mostly zero matrices
+description: Sparse representations and matrix formats like CSR, LOL, COO compress and speed up certain operations on mostly zero matrices.
 layout: post
 categories: ml
 image: /images/sparse-matrix-csr.png

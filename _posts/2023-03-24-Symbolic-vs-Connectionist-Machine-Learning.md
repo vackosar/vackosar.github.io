@@ -46,13 +46,13 @@ These **successful symbolic tools** were then later used to develop computer pro
 
 What are the differences between the systems that we have? The **current large language models** have great capabilities, we can use it for many things, but they have also issues. And so if we can compare what I'm talking about, these **symbolic approaches**, that use these symbols and rules, with what we have, which is like dominant results in current times.
 
-So on one hand we have these **symbols, rules, [sparse representations](/ml/sparse-matrix-why-and-when)**, and on the other hand we almost have something like **feelings, intuitions, dense representations**.
+So on one hand we have these **symbols, rules, [sparse representations](/ml/sparse-matrix-why-and-when)**, and on the other hand we almost have something like **feelings, intuitions, [dense representations (embeddings)](/ml/Embeddings-in-Machine-Learning-Explained)**.
 
 On one hand we have something that is able to find **patterns in huge amounts of data**. And on the other hand, we have something where we **can put in a great rule set** that will work not matter how big is the input.
 
 **Mathematics is a symbolic method**. In maths, you can take equations, and you can input an x and the **x can go to infinity**. And the equation will still work. It will still be great. While in the **neural networks**, this is not quite possible. You have always some kind of limitation. So always you are somewhere between **minus one and plus one**. And so you can’t really do something like this.
 
-**Large language models are neural networks**. These neural networks take some floating point numbers, and they do some **matrix operations**, maybe a couple of extra operations on top of that. They produce vectors, like arrays of numbers, which form the [inner representation of the model (embeddings)](/ml/Embeddings-in-Machine-Learning-Explained). On the other hand, in **efficient algorithmic computations, we have hard (discreet) symbols**, which are very different.
+**Large language models are neural networks**. These neural networks take some floating point numbers, and they do some **matrix operations**, maybe a couple of extra operations on top of that. They produce vectors, like arrays of numbers, which form the [inner representation of the model (embeddings)](/ml/Embeddings-in-Machine-Learning-Explained). On the other hand, in **efficient algorithmic computations, we have hard (discreet) symbols ([sparse representations](/ml/sparse-matrix-why-and-when))**, which are very different.
 
 On the connectionist side, we have **neural networks and gradient boosting**, while on the **symbolic side**, we have **[decision trees](/ml/Neural-Network-Pruning-Explained)**. For example, you can see one on the top right. Decision trees operate only in the inputs, which is very interpretable and simple. And they have different capabilities and are used in specific type of situations.
 
