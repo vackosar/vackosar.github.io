@@ -52,17 +52,20 @@ Bible proverbs often praise criticism: "A wise man listens to advice" and "Bette
 
 
 ## Capitalism and Calvinism Christianity 
-Max Weber describes [Calvinism in his book The Protestant Ethic and the Spirit of Capitalism](https://en.wikisource.org/wiki/The_Protestant_Ethic_and_the_Spirit_of_Capitalism/Chapter_IV).
+Max Weber describes [Calvinism (Puritanism) in his book The Protestant Ethic and the Spirit of Capitalism](https://en.wikisource.org/wiki/The_Protestant_Ethic_and_the_Spirit_of_Capitalism/Chapter_IV).
 Max Weber argued that doctrine of predestination placed God transcendentally outside the timeline (finitum non est capax infiniti),
 the removed all mystical, magical, and ritualistic elements in favor of wordly affairs (labour in a calling which serves the mundane life of the community),
 removed all feeling in favor of systematic self-control (God helps those who help themselves).
-Additionally, the faith alone doctrine removed simplistic "Good works" in favor of "worldly calling".
-This in turn he hypothesized caused increase in accumulation and reinvestment of capital.
-There are quantitative studies on this topic, and it seems that in some parts of the world the Calvinism faith had effects but not always and everywhere:
+
+Max Weber additionally argued that the faith alone doctrine removed simplistic "Good works" in favor of "worldly calling". This in turn he hypothesized caused increase in accumulation and reinvestment of capital. However, Calvinist secularized quickly without passing their religion to their descendants, and so over time the spirit started to disappear:
+> Medieval ethics not only tolerated begging but actually glorified it in the mendicant orders. Even secular beggars, since they gave the person of means opportunity for good works through giving alms, were sometimes considered an estate and treated as such. ...
+> One of the fundamental elements of the spirit of modern capitalism, and not only of that but of all modern culture: rational conduct on the basis of the idea of the calling, was born—that is what this discussion has sought to demonstrate—from the spirit of Christian asceticism. One has only to re-read the passage from Franklin, quoted at the beginning of this essay, in order to see that the essential elements of the attitude which was there called the spirit of capitalism are the same as what we have just shown to be the content of the Puritan worldly asceticism, only without the religious basis, which by Franklin's time had died away.
+
+While Max Weber thesis lacked quantitative data to prove his point, there are quantitative studies on The Protestant Ethic topic, which show that in some parts of the world the Calvinism faith had effects, but not always and everywhere:
 - [The Economic Effects of the Protestant Reformation Testing the Weber Hypothesis in the German Lands](http://www.davidecantoni.net/pdfs/maxweber_jeea_paper.pdf)
 - [Was Weber Wrong? A Human Capital Theory of Protestant Economic History](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=988031)
 - [Study: The Protestant work ethic is real. psmag.com](https://psmag.com/economics/protestant-worth-ethic-real-65544)
-> Tests the relation between Protestantism and work attitudes using a novel method, operationalizing work ethic as the effect of unemployment on individuals’ subjective well-being. Analyzing a sample of 150,000 individuals from 82 societies, we find strong support for a Protestant work ethic: unemployment hurts Protestants more and hurts more in Protestant societies. Whilst the results shed new light on the Protestant work ethic debate, the method has wider applicability in the analysis of attitudinal differences.
+> Tests the relation between Protestantism and work attitudes using a novel method, operationalizing work ethic as the effect of unemployment on individuals’ subjective well-being. Analyzing a sample of 150,000 individuals from 82 societies, we find strong support for a Protestant work ethic: unemployment hurts Protestants more and hurts more in Protestant societies. Whilst the results shed new light on the Protestant work ethic debate, the method has wider applicability in the analysis of attitudinal differences. ...
 > In other words, Protestantism may not make you rich, but it sure makes you unhappy when you’re not rich. 
 
 
