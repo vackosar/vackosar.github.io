@@ -35,12 +35,16 @@ Had **Soviet Russia collapsed**, partially because ruling communism attempted to
 
 
 ### Science and Religion
-Here are 4 great quotes from Sabine Hossenfelder's (contemporary, theoretical physicist, science communicator) book [Existential Physics](https://existentialphysics.com/):
+Here are 4 great quotes from **Sabine Hossenfelder**'s (contemporary, theoretical physicist, science communicator) book [Existential Physics](https://existentialphysics.com/):
 - "However, the God hypothesis has no quantifiable explanatory power. You can’t calculate anything from it. That doesn’t make it wrong, but it does make it unscientific."
 - "I begin by asking him ([David Deutsch](/productivity/David-Deutschs-Principles-in-Life-and-Business)), too, whether he is religious. He answers with a straightforward no. He doesn’t seem to have anything to add, so I move on to reductionism."
 - "Scientists can learn from religion that not every get-together needs to come with a teachable lesson. ... to share experiences, or look forward to a traditional ceremony. Science is severely lacking in such social integration. ... we should talk more about how scientific understanding made a difference for non-experts."
 - "Maybe, then, the universe is evolving toward a state in which it understands itself, and we are part of its ongoing quest. This quest began when natural selection favored species that made correct predictions about their environment, moved on to organisms that became increasingly better at understanding nature, and now continues with our (more or less) organized scientific enterprise, nationally and internationally, individually and institutionally.
 
+Here are quotes from **Linus Torvalds**:
+> It gives people the excuse to say, 'Oh, nature was just created,' and so the act of creation is seen to be something miraculous.
+
+> "There are like two golden rules in life. One is 'Do unto others as you would want them to do unto you.' For some reason, people associate this with Christianity. I'm not a Christian. I'm agnostic. The other rule is 'Be proud of what you do.'
 
 ## Conjecture and Criticism
 Science progresses through conjecture and criticism if we follow Popper's ideas. David Deutsch explained these ideas and popularized them in [The Beginning of Infinity](https://www.amazon.com/Beginning-Infinity-Explanations-Transform-World/dp/0143121359).
