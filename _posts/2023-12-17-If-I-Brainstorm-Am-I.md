@@ -49,7 +49,12 @@ Here are quotes from **Linus Torvalds**:
 
 ## Conjecture and Criticism
 Science progresses through conjecture and criticism if we follow Popper's ideas. David Deutsch explained these ideas and popularized them in [The Beginning of Infinity](https://www.amazon.com/Beginning-Infinity-Explanations-Transform-World/dp/0143121359).
-Bible proverbs often praise criticism: "A wise man listens to advice" and "Better is open rebuke". Regarding the conjectures, the bible verses promote understanding and wisdom. We have a biblical proverb: "The heart of the discerning acquires knowledge, for the ears of the wise seek it out."
+Bible proverbs often praise criticism: "A wise man listens to advice" and "Better is open rebuke". Regarding the conjectures, the bible verses promote understanding and wisdom.
+We have a biblical proverb:
+> The heart of the discerning acquires knowledge, for the ears of the wise seek it out."
+
+[Rockefeller was a baptist](/book/Rockefellers-Quotes-Gratitude-Fictional-Letters), and on the Rockefeller Center stands biblical quote:
+> And wisdom and knowledge shall be the stability of thy times
 
 
 ## Capitalism and Calvinism Christianity 
@@ -73,20 +78,24 @@ While Max Weber thesis lacked quantitative data to prove his point, there are qu
 > In other words, Protestantism may not make you rich, but it sure makes you unhappy when you’re not rich. 
 
 
+## Criticism of Mystical Pop Cultures
+Calvinist criticized all magical and mystical things, but what quantitative studies tell us about it?
+There is a very unusual book [The Pragmatist’s Guide to Crafting Religion](https://www.amazon.com/gp/product/B0BSLDF2FW), which is a compilation information on cultures, religions, and traditions.
+It identifies elements of soft or pop culture or soft culture beliefs: wishing thinking, crystals, wow-effect large things like universe, lacking specificity or containing unknowable.
+While these seem to be similar to intuitive early religions, in wealthy societies these are associated with very low birth rates.
+
+
 ## Prayer from a Secular Perspective
 Prayer may also be a problem-solving method by working backward from the end goal (e.g., Amazon), inversion of Charlie Munger, or Polya.
 We can interpret it as regarding the end goal first, which helps to create the plan:
 
 > Commit your work to the Lord, and your plans will be established.
 
-
 Prayer can also be considered as [practicing gratitude, which has positive psychological effects](https://en.wikipedia.org/wiki/Gratitude#Association_with_well-being).
 
 A prayer can also be akin to meditation, which also seems to have positive psychological effects.
 
 
-## Criticism of Mystical Pop Cultures
-A very unusual book [The Pragmatist’s Guide to Crafting Religion](https://www.amazon.com/gp/product/B0BSLDF2FW) is a compilation information on cultures, religions, and traditions. It identifies elements of soft or pop culture or soft culture beliefs: wishing thinking, crystals, wow-effect large things like universe, lacking specificity or containing unknowable. While these seem to be similar to intuitive early religions, in wealthy societies these are associated with very low birth rates.
 
-
+## The End
 How does your philosophy shape your life? I hope you became more by brainstorming today with me.
