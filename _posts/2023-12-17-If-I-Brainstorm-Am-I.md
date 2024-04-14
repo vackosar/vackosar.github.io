@@ -77,9 +77,9 @@ While Max Weber thesis lacked quantitative data to prove his point, there are qu
 - [Was Weber Wrong? A Human Capital Theory of Protestant Economic History](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=988031)
 - [Study: The Protestant work ethic is real. psmag.com](https://psmag.com/economics/protestant-worth-ethic-real-65544)
 
-> Tests the relation between Protestantism and work attitudes using a novel method, operationalizing work ethic as the effect of unemployment on individuals’ subjective well-being. Analyzing a sample of 150,000 individuals from 82 societies, we find strong support for a Protestant work ethic: unemployment hurts Protestants more and hurts more in Protestant societies. Whilst the results shed new light on the Protestant work ethic debate, the method has wider applicability in the analysis of attitudinal differences. ...
+The last one in particular, observed in simpliefied terms that Protestantism may not make you rich, but makes you unhappy when you’re not rich:
 
-> In other words, Protestantism may not make you rich, but it sure makes you unhappy when you’re not rich. 
+> Tests the relation between Protestantism and work attitudes using a novel method, operationalizing work ethic as the effect of unemployment on individuals’ subjective well-being. Analyzing a sample of 150,000 individuals from 82 societies, we find strong support for a Protestant work ethic: unemployment hurts Protestants more and hurts more in Protestant societies. Whilst the results shed new light on the Protestant work ethic debate, the method has wider applicability in the analysis of attitudinal differences. ...
 
 
 ## Criticism of Mystical Pop Cultures
