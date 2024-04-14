@@ -47,8 +47,25 @@ Science progresses through conjecture and criticism if we follow Popper's ideas.
 Bible proverbs often praise criticism: "A wise man listens to advice" and "Better is open rebuke". Regarding the conjectures, the bible verses promote understanding and wisdom. We have a biblical proverb: "The heart of the discerning acquires knowledge, for the ears of the wise seek it out."
 
 
+## Capitalism and Calvinism Christianity 
+Max Weber describes [Calvinism in his book The Protestant Ethic and the Spirit of Capitalism](https://en.wikisource.org/wiki/The_Protestant_Ethic_and_the_Spirit_of_Capitalism/Chapter_IV).
+Max Weber argued that doctrine of predestination placed God transcendentally outside the timeline (finitum non est capax infiniti),
+the removed all mystical, magical, and ritualistic elements in favor of wordly affairs (labour in a calling which serves the mundane life of the community),
+removed all feeling in favor of systematic self-control (God helps those who help themselves).
+Additionally, the faith alone doctrine removed simplistic "Good works" in favor of "worldly calling".
+This in turn he hypothesized caused increase in accumulation and reinvestment of capital.
+There are quantitative studies on this topic, and it seems that in some parts of the world the Calvinism faith had effects but not always and everywhere:
+- [The Economic Effects of the Protestant Reformation Testing the Weber Hypothesis in the German Lands](http://www.davidecantoni.net/pdfs/maxweber_jeea_paper.pdf)
+- [Was Weber Wrong? A Human Capital Theory of Protestant Economic History](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=988031)
+- [Study: The Protestant work ethic is real. psmag.com](https://psmag.com/economics/protestant-worth-ethic-real-65544)
+> Tests the relation between Protestantism and work attitudes using a novel method, operationalizing work ethic as the effect of unemployment on individuals’ subjective well-being. Analyzing a sample of 150,000 individuals from 82 societies, we find strong support for a Protestant work ethic: unemployment hurts Protestants more and hurts more in Protestant societies. Whilst the results shed new light on the Protestant work ethic debate, the method has wider applicability in the analysis of attitudinal differences.
+> In other words, Protestantism may not make you rich, but it sure makes you unhappy when you’re not rich. 
+
+
 ## Prayer from a Secular Perspective
-Prayer may also be a problem-solving method by working backward from the end goal (e.g., Amazon) or inversion of Charlie Munger. Sometimes, it is a method of [practicing gratitude, which has positive psychological effects](https://en.wikipedia.org/wiki/Gratitude#Association_with_well-being). From another point of view, prayer can be akin to meditation, which also seems to have positive psychological effects.
+Prayer may also be a problem-solving method by working backward from the end goal (e.g., Amazon) or inversion of Charlie Munger.
+Sometimes, it is a method of [practicing gratitude, which has positive psychological effects](https://en.wikipedia.org/wiki/Gratitude#Association_with_well-being).
+From another point of view, prayer can be akin to meditation, which also seems to have positive psychological effects.
 
 
 ## Criticism of Mystical Pop Cultures
