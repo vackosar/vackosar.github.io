@@ -4,7 +4,7 @@ description: Materialism, Science and Religion, and Mystical Pop Culture
 layout: post
 categories: book
 date: 2023-12-17
-last_modified_at: 2024-01-27
+last_modified_at: 2024-04-14
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
