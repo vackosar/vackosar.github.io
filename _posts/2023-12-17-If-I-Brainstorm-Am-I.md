@@ -46,6 +46,7 @@ Here are quotes from **Linus Torvalds**:
 
 > "There are like two golden rules in life. One is 'Do unto others as you would want them to do unto you.' For some reason, people associate this with Christianity. I'm not a Christian. I'm agnostic. The other rule is 'Be proud of what you do.'
 
+
 ## Conjecture and Criticism
 Science progresses through conjecture and criticism if we follow Popper's ideas. David Deutsch explained these ideas and popularized them in [The Beginning of Infinity](https://www.amazon.com/Beginning-Infinity-Explanations-Transform-World/dp/0143121359).
 Bible proverbs often praise criticism: "A wise man listens to advice" and "Better is open rebuke". Regarding the conjectures, the bible verses promote understanding and wisdom. We have a biblical proverb: "The heart of the discerning acquires knowledge, for the ears of the wise seek it out."
@@ -53,11 +54,11 @@ Bible proverbs often praise criticism: "A wise man listens to advice" and "Bette
 
 ## Capitalism and Calvinism Christianity 
 Max Weber describes [Calvinism (Puritanism) in his book The Protestant Ethic and the Spirit of Capitalism](https://en.wikisource.org/wiki/The_Protestant_Ethic_and_the_Spirit_of_Capitalism/Chapter_IV).
-Max Weber argued that doctrine of predestination placed God transcendentally outside the timeline (finitum non est capax infiniti),
-the removed all mystical, magical, and ritualistic elements in favor of wordly affairs (labour in a calling which serves the mundane life of the community),
-removed all feeling in favor of systematic self-control (God helps those who help themselves).
+Max Weber argued that doctrine of predestination **placed transcendental God outside the timeline** (finitum non est capax infiniti),
+the removed all mystical, magical, and ritualistic elements in **favor of wordly affairs** (labour in a calling which serves the mundane life of the community),
+removed all feeling in favor of **systematic self-control** (God helps those who help themselves).
 
-Max Weber additionally argued that the faith alone doctrine removed simplistic "Good works" in favor of "worldly calling". This in turn he hypothesized caused increase in accumulation and reinvestment of capital. However, Calvinist secularized quickly without passing their religion to their descendants, and so over time the spirit started to disappear:
+Max Weber additionally argued that the faith alone doctrine removed simplistic "Good works" in favor of "**worldly calling**". This in turn he hypothesized caused increase in accumulation and **reinvestment of capital**. However, Calvinist secularized quickly **without passing their religion to their descendants**, and so over time the spirit started to disappear:
 > Medieval ethics not only tolerated begging but actually glorified it in the mendicant orders. Even secular beggars, since they gave the person of means opportunity for good works through giving alms, were sometimes considered an estate and treated as such. ...
 > One of the fundamental elements of the spirit of modern capitalism, and not only of that but of all modern culture: rational conduct on the basis of the idea of the calling, was born—that is what this discussion has sought to demonstrate—from the spirit of Christian asceticism. One has only to re-read the passage from Franklin, quoted at the beginning of this essay, in order to see that the essential elements of the attitude which was there called the spirit of capitalism are the same as what we have just shown to be the content of the Puritan worldly asceticism, only without the religious basis, which by Franklin's time had died away.
 
