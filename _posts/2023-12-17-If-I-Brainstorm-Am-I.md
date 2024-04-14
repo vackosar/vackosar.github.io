@@ -64,17 +64,21 @@ the removed all mystical, magical, and ritualistic elements in **favor of wordly
 removed all feeling in favor of **systematic self-control and self-confidence** (God helps those who help themselves).
 
 >  On the one hand it is held to be an absolute duty to consider oneself chosen, and to **combat all doubts as temptations** of the devil, since lack of self-confidence is the result of insufficient faith, hence of imperfect grace. ...
+
 > On the other hand, in order to **attain that self-confidence intense worldly activity** is recommended as the most suitable means. It and it alone **disperses religious doubts and gives the certainty of grace**.
 
 Max Weber additionally argued that the faith alone doctrine removed simplistic "Good works" in favor of "**worldly calling**". This in turn he hypothesized caused increase in accumulation and **reinvestment of capital**. However, Calvinist secularized quickly **without passing their religion to their descendants**, and so over time the spirit started to disappear by the times of **Benjamin Franklin**:
 > Medieval ethics not only tolerated begging but actually glorified it in the mendicant orders. Even secular beggars, since they gave the person of means opportunity for good works through giving alms, were sometimes considered an estate and treated as such. ...
+
 > One of the fundamental elements of the spirit of modern capitalism, and not only of that but of all modern culture: **rational conduct on the basis of the idea of the calling**, was born—that is what this discussion has sought to demonstrate—from the **spirit of Christian asceticism**. One has only to re-read the passage from **(Benjamin) Franklin**, quoted at the beginning of this essay, in order to see that the essential elements of the attitude which was there called the **spirit of capitalism** are the same as what we have just shown to be the content of the **Puritan worldly asceticism**, only without the religious basis, which by Franklin's time had **died away**.
 
 While Max Weber thesis lacked quantitative data to prove his point, there are quantitative studies on The Protestant Ethic topic, which show that in some parts of the world the Calvinism faith had effects, but not always and everywhere:
 - [The Economic Effects of the Protestant Reformation Testing the Weber Hypothesis in the German Lands](http://www.davidecantoni.net/pdfs/maxweber_jeea_paper.pdf)
 - [Was Weber Wrong? A Human Capital Theory of Protestant Economic History](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=988031)
 - [Study: The Protestant work ethic is real. psmag.com](https://psmag.com/economics/protestant-worth-ethic-real-65544)
+
 > Tests the relation between Protestantism and work attitudes using a novel method, operationalizing work ethic as the effect of unemployment on individuals’ subjective well-being. Analyzing a sample of 150,000 individuals from 82 societies, we find strong support for a Protestant work ethic: unemployment hurts Protestants more and hurts more in Protestant societies. Whilst the results shed new light on the Protestant work ethic debate, the method has wider applicability in the analysis of attitudinal differences. ...
+
 > In other words, Protestantism may not make you rich, but it sure makes you unhappy when you’re not rich. 
 
 
@@ -95,6 +99,16 @@ Prayer can also be considered as [practicing gratitude, which has positive psych
 
 A prayer can also be akin to meditation, which also seems to have positive psychological effects.
 
+
+## The Bible Is Missing Modern Words
+Interesting how the Bible doesn't have words for things that hadn't been discovered at that time. For example, "heart" often seems to refer to "brain".
+Notice how using the word brain in the place of word heart changes meaning of some quotes:
+
+> The heart of the discerning acquires knowledge, for the ears of the wise seek it out.
+ 
+> The heart of the wise is in the house of mourning, but the heart of fools is in the house of pleasure.
+
+> Frustration is better than laughter, because a sad face is good for the heart.
 
 
 ## The End
