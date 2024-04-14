@@ -74,9 +74,15 @@ While Max Weber thesis lacked quantitative data to prove his point, there are qu
 
 
 ## Prayer from a Secular Perspective
-Prayer may also be a problem-solving method by working backward from the end goal (e.g., Amazon) or inversion of Charlie Munger.
-Sometimes, it is a method of [practicing gratitude, which has positive psychological effects](https://en.wikipedia.org/wiki/Gratitude#Association_with_well-being).
-From another point of view, prayer can be akin to meditation, which also seems to have positive psychological effects.
+Prayer may also be a problem-solving method by working backward from the end goal (e.g., Amazon), inversion of Charlie Munger, or Polya.
+We can interpret it as regarding the end goal first, which helps to create the plan:
+
+> Commit your work to the Lord, and your plans will be established.
+
+
+Prayer can also be considered as [practicing gratitude, which has positive psychological effects](https://en.wikipedia.org/wiki/Gratitude#Association_with_well-being).
+
+A prayer can also be akin to meditation, which also seems to have positive psychological effects.
 
 
 ## Criticism of Mystical Pop Cultures
