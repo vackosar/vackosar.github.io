@@ -151,7 +151,7 @@ This library generally helps you build prompt chains or pipelines where the LLMs
 The library abstracts away manual prompt engineering and instead optimizes the prompts for you, such that you only focus on structured and documented inputs and outputs.
 DSPy seems much more practical than LangChain.
 
-The library uses a selected larger model (GPT-3.5 or Llama2 13b) to generate prompts and few-shot examples for your smaller LLM like T5. Not only that, you can compose an entire pipeline or prompt chain. Generating and optimizing the prompts within the prompt chain is called compiling.
+The library uses a selected larger model (GPT-3.5 or Llama2 13b) to generate prompts and few-shot examples for your smaller LLM like T5. Not only that, you can compose an entire pipeline or prompt chain. Generating and [optimizing the prompts (MIPRO)](https://threadreaderapp.com/thread/1766166198079889737.html) within the prompt chain is called compiling.
 For example, DSPy can generate reasoning examples and optionally fine-tune a smaller LLM on them.
 The question is, how good are the examples?
 Un-compiled chains use zero-shot prompting.
