@@ -47,7 +47,7 @@ Here are quotes from **Linus Torvalds**:
 > "There are like two golden rules in life. One is 'Do unto others as you would want them to do unto you.' For some reason, people associate this with Christianity. I'm not a Christian. I'm agnostic. The other rule is 'Be proud of what you do.'
 
 
-## Conjecture and Criticism
+## Conjecture and Criticism in the Bible
 Science progresses through conjecture and criticism if we follow Popper's ideas. David Deutsch explained these ideas and popularized them in [The Beginning of Infinity](https://www.amazon.com/Beginning-Infinity-Explanations-Transform-World/dp/0143121359).
 Bible proverbs often praise criticism: "A wise man listens to advice" and "Better is open rebuke". Regarding the conjectures, the bible verses promote understanding and wisdom.
 We have a biblical proverb:
@@ -55,6 +55,13 @@ We have a biblical proverb:
 
 [Rockefeller was a baptist](/book/Rockefellers-Quotes-Gratitude-Fictional-Letters), and on the Rockefeller Center stands biblical quote:
 > And wisdom and knowledge shall be the stability of thy times
+
+
+# John Calvin and Science
+John Calvin's view on the sciences seems to be demonstrated in these quotes from the Institutes of the Christian Religion:
+> .. admiration of the Divine Architect. In disquisitions concerning the motions of the stars, in fixing their situations, measuring their distances, and distinguishing their peculiar properties, there is need of skill, exactness, and industry; and the **providence of God being more clearly revealed by these discoveries**, the mind ought to rise to a sublimer elevation for the contemplation of his glory.
+
+> Therefore, since it appears that those whom the Scripture styles “natural men,” ψυχικους, have discovered such **acuteness and perspicacity in the investigation of sublunary things, let us learn from such examples**, how many good qualities the Lord has left to the nature of man, since it has been despoiled of what is truly good.
 
 
 ## Capitalism and Calvinism Christianity 
