@@ -58,10 +58,14 @@ We have a biblical proverb:
 
 
 # John Calvin and Science
-John Calvin's view on the sciences seems to be demonstrated in these quotes from the Institutes of the Christian Religion:
+John Calvin's view on the sciences seems to be demonstrated in these quotes from the Institutes of the Christian Religion. They indicate that sciences are good, but not the most important:
 > .. admiration of the Divine Architect. In disquisitions concerning the motions of the stars, in fixing their situations, measuring their distances, and distinguishing their peculiar properties, there is need of skill, exactness, and industry; and the **providence of God being more clearly revealed by these discoveries**, the mind ought to rise to a sublimer elevation for the contemplation of his glory.
 
 > Therefore, since it appears that those whom the Scripture styles “natural men,” ψυχικους, have discovered such **acuteness and perspicacity in the investigation of sublunary things, let us learn from such examples**, how many good qualities the Lord has left to the nature of man, since it has been despoiled of what is truly good.
+
+Another view on this is the idea of vocational calling ([Commentary on 1 Corintians 1:20](https://www.studylight.org/commentaries/eng/cal/1-corinthians-7.html)):
+
+> ... that every one should be contented with his calling, and pursue it, instead of seeking to betake himself to anything else. A calling in Scripture means a lawful mode of life, for it has a relation to God as calling us...
 
 
 ## Capitalism and Calvinism Christianity 
@@ -84,10 +88,11 @@ While Max Weber thesis lacked quantitative data to prove his point, there are qu
 - [Was Weber Wrong? A Human Capital Theory of Protestant Economic History](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=988031)
 - [Study: The Protestant work ethic is real. psmag.com](https://psmag.com/economics/protestant-worth-ethic-real-65544)
 
-The last one in particular, observed in simpliefied terms that Protestantism may not make you rich, but makes you unhappy when you’re not rich:
+The last one in particular, observed in simplified terms that Protestantism may not make you rich, but makes you unhappy when you’re not rich:
 
 > Tests the relation between Protestantism and work attitudes using a novel method, operationalizing work ethic as the effect of unemployment on individuals’ subjective well-being. Analyzing a sample of 150,000 individuals from 82 societies, we find strong support for a Protestant work ethic: unemployment hurts Protestants more and hurts more in Protestant societies. Whilst the results shed new light on the Protestant work ethic debate, the method has wider applicability in the analysis of attitudinal differences. ...
 
+[Peter Thiel](https://www.youtube.com/watch?v=vfbndRTlsg4) criticizes that removal of free will causes scape goating of the God by removing personal responsibility and too much focus on insufficiencies of people may cause reduce conversations, thus both causing stagnation.
 
 ## Criticism of Mystical Pop Cultures
 Calvinist criticized all magical and mystical things, but what quantitative studies tell us about it?
