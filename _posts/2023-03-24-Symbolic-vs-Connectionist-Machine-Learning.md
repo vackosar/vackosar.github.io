@@ -1,6 +1,6 @@
 ---
 title: Symbolic vs Connectionist Machine Learning
-description: Reason without hallucinations in large language models by hybridizing neural networks with code.
+description: Reason without hallucinations in large language models by hybridizing neural networks with code in neural-symbolic systems.
 categories: ml
 date: 2023-03-23
 last_modified_at: 2024-04-06
@@ -95,7 +95,7 @@ Now we are just in the situation where we also implemented this **reinforcement 
 
 {% include image.html src="/images/hybridizing-neural-networks-and-symbolics.png" alt="hybridizing-neural-networks-and-symbolics" %}
 
-These very scalable **symbolic approaches** of the algorithms and code that's so useful, and it seems to be so missing. It's definitely going to be applied. So what I think is necessary and what's increasingly being applied is **hybridizing both of these approaches** - using both neural networks and symbolic approaches at the same time.
+Previously mentioned very scalable **symbolic approaches**, which use algorithms are super useful in their own domain while connectionist approaches are good in their own domain. So what I think is necessary (and it is increasingly being applied) is **hybridizing both of connectionist and symbolic approaches into neuro-symbolic systems**. Neuro-symbolic systems use both neural networks and symbolic approaches at the same time.
 
 The **language models** already use the symbols. They use symbols as their input and as their output. They are a combination a little bit in this sense. But you can go much further. We can, because the inputs are symbols and outputs are symbols, we can plug in the symbolic algorithms (heuristics).
 
