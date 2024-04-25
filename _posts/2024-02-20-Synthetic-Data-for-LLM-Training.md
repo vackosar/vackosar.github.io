@@ -134,7 +134,10 @@ For example, verifying and rating the response quality may be easier than writin
 What synthetic data tools can you use today?
 
 
-### [Teknium's Nous-Hermes-2-Mistral-7B-DPO](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO)
+### [Microsoft's Phi-3 Language Model](https://arxiv.org/abs/2404.14219)
+Phi-3 language model was trained on 3.3 trillion tokens of heavily filtered web data and synthetic data and is available under MIT license.   
+
+### [Teknium's Nous-Hermes-2-Mistral-7B-DPO Language Model](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO)
 
 Mistral 7B fine-tunes on open Hermes synthetic datasets from OpenAI  are one of the best OSS models in this weight count category. 
 
