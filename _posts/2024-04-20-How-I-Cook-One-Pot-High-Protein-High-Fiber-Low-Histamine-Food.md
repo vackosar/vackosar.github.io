@@ -8,11 +8,12 @@ layout: post
 permalink: /:categories/:title
 ---
 
-This recipe produces 5 simple meals in 35 minutes.
+Here is a recipe produces 5 simple meals in 35 minutes.
 
 I don't like restaurant foods and I don't feel well after eating them due to histamine content, 
 so I developed following recipe over the years.
-Some ingredients are accidentally inline with Bryan Johnsons recipes, but some things I got inspired from him.
+Some ingredients are accidentally inline with likely quite healthy Bryan Johnson's recipes, but some things I got inspired from him.
+You can cook this all-in-one pot, and that is how I cooked the original variant, but for the best results, I recommend splitting it as described below.
 
 - Prepare your large pressure cooking pot, e.g., from IKEA.
 - Soak 500g of black beans (or red beans) for 8 hours, e.g., overnight. Wash beans afterward. The beans should absorb the water and be a bit softer.
@@ -37,4 +38,4 @@ Some ingredients are accidentally inline with Bryan Johnsons recipes, but some t
 - Split portions into containers, cool and freeze them within 1 hour for later use.
 - I eat 1 meal for breakfast and 1 for lunch.
 
-I add photos later.
+If you have any suggestions, please let me know.

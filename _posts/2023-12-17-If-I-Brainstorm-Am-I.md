@@ -4,7 +4,7 @@ description: Materialism, Science and Religion, and Mystical Pop Culture
 layout: post
 categories: book
 date: 2023-12-17
-last_modified_at: 2024-04-14
+last_modified_at: 2024-04-25
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
@@ -122,6 +122,9 @@ Notice how using the word brain in the place of word heart changes meaning of so
 
 > Frustration is better than laughter, because a sad face is good for the heart.
 
+
+## Christian Themes in Gurren Lagann Anime
+Gurren Lagann, the only anime I could watch, kept me thinking after finishing it. Some parts seemed familiar. Then, I realized that the series' main themes have Christian analogs. The spiral energy is similar to the Holy Spirit; Kamina plays the role of Christ, and the LorgGenome is the Father. Kamina recommends to instead of trying to believe in yourself, to instead believe in God, that believes in you. He has sayings similar to "All things are possible for one who believes." Kamina also comes back from the dead once more at the end of the show. The team eventually forms a large body, "Super Tengen Toppa Gurren Lagann," similar to the body of the Church of the bible. You can find more similarities in [this link](https://www.iklone.org/post/christianity-in-gurren-lagann). Christianity permeates today's culture in unexpected places worldwide.
 
 ## The End
 How does your philosophy shape your life? I hope you became more by brainstorming today with me.
