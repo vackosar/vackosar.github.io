@@ -12,12 +12,12 @@ slides: WT4Pkb7QSug6N
 last_modified_at: 2022-04-16
 my_related_post_paths:
 - _posts/2010-09-05-Transverse-momentum-spectra-and-correlations-in-the-blast-wave-model-with-resonances.md
-- _posts/2019-08-28-1D-Kalman-Is-Exponential-Or-Cumulative-Average.md
 - _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
+- _posts/2019-08-28-1D-Kalman-Is-Exponential-Or-Cumulative-Average.md
 - _posts/2021-10-04-electra-4x-cheaper-bert-training.md
-- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
 - _posts/2023-10-23-create-your-google-calendar-event-link-in-seconds.md
-- _posts/2012-06-11-Hamiltonians-with-constant-spectral-intervals-and-time-dependent-perturbation.md
+- _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
+- _posts/2020-08-21-Brutalist-and-Modernist-Architectures-Collide-at-Sunshine-Plaza-in-Prague.md
 ---
 
 

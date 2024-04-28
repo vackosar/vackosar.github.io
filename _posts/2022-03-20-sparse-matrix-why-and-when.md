@@ -8,13 +8,13 @@ date: 2022-03-20
 last_modified_at: 2024-03-30
 permalink: /:categories/:title
 my_related_post_paths:
-- _posts/2022-05-14-neural-data-compression.md
-- _posts/2022-10-23-Neural-Network-Pruning-Explained.md
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2022-05-14-neural-data-compression.md
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
+- _posts/2022-10-23-Neural-Network-Pruning-Explained.md
+- _posts/2023-08-25-How-Deep-Neural-Networks-Learn.md
 - _posts/2021-08-24-expire-span-scaling-transformer-by-forgetting.md
-- _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
 ---
 
 Sparse matrices are a special type of matrices that have a significant number of zero values. They are used in machine learning and other scientific computations due to their ability to reduce memory usage and computation time.

@@ -12,8 +12,8 @@ redirect_from:
 todo: example implementation
 note: https://www.kalmanfilter.net/kalman1d.html
 my_related_post_paths:
-- _posts/2021-05-21-PID-controller-control-loop-mechanism.md
 - _posts/2024-02-11-Bellman-Update-and-Synthetic-Data-in-Q-Transformer.md
+- _posts/2021-05-21-PID-controller-control-loop-mechanism.md
 - _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
 - _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 - _posts/2012-06-11-Hamiltonians-with-constant-spectral-intervals-and-time-dependent-perturbation.md

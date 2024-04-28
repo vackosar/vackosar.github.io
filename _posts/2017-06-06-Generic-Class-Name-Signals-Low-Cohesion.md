@@ -14,9 +14,9 @@ my_related_post_paths:
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
+- _posts/2024-02-20-Synthetic-Data-for-LLM-Training.md
 - _posts/2016-11-04-Drone-Hackathoning.md
 - _posts/2022-05-14-neural-data-compression.md
-- _posts/2024-02-20-Synthetic-Data-for-LLM-Training.md
 ---
 
 

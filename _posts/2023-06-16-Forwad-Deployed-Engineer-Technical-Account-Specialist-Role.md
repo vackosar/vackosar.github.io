@@ -10,11 +10,11 @@ permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
+- _posts/2024-01-24-How-To-Install-Your-Python-Version-On-Ubuntu.md
 - _posts/2017-06-04-Code-Structure-Principles.md
 - _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
 - _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
 - _posts/2016-07-03-GitFlow-Incremental-Builder.md
-- _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 ---
 
 {% include image.html src="/images/satisfactory-engineer-flying.png" alt="satisfactory-engineer" %}

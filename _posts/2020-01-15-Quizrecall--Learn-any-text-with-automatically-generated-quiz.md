@@ -13,9 +13,9 @@ redirect_from:
 my_related_post_paths:
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2024-02-20-Synthetic-Data-for-LLM-Training.md
 - _posts/2020-02-25-I-read-papers-on-a-podcast.md
 - _posts/2020-05-08-starspace-embedding.md
-- _posts/2024-02-20-Synthetic-Data-for-LLM-Training.md
 - _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
 - _posts/2023-06-08-Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM.md
 ---

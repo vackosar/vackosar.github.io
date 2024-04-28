@@ -12,8 +12,8 @@ redirect_from:
 my_related_post_paths:
 - _posts/2023-01-24-fill-versions-from-python-environment.md
 - _posts/2021-07-01-Quilt-data-versioning-review-how-to.md
-- _posts/2018-02-25-Creating-Custom-Ubuntu-Web-Link-App.md
 - _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2018-02-25-Creating-Custom-Ubuntu-Web-Link-App.md
 - _posts/2020-05-11-BentoML-vs-Cortex.dev--ML-Serving-Showdown.md
 - _posts/2020-04-08-Python-Context-Manager-With-Statement-Exception-Handling.md
 - _posts/2022-02-06-twitter-bullet-points-to-copy-paste.md

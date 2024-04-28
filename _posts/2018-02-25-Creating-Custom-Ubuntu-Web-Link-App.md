@@ -9,7 +9,7 @@ image: /images/2018-02-25-ubuntu-search-whatsapp.png
 redirect_from:
 - /2018/02/25/Creating-Custom-Ubuntu-Web-Link-App.html
 my_related_post_paths:
-- _posts/2024-01-24-How-To-Install-Your-Python-On-Ubuntu.md
+- _posts/2024-01-24-How-To-Install-Your-Python-Version-On-Ubuntu.md
 - _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
 - _posts/2023-10-23-create-your-google-calendar-event-link-in-seconds.md
 - _posts/2016-11-04-Drone-Hackathoning.md

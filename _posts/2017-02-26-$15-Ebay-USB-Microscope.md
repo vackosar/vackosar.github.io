@@ -16,7 +16,7 @@ my_related_post_paths:
 - _posts/2016-11-04-Drone-Hackathoning.md
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 - _posts/2021-03-22-google-product-taxonomy-viewer.md
-- _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
+- _posts/2017-08-12-Fish-Roe-vs-Fish-Oil.md
 ---
 
 

@@ -8,13 +8,13 @@ layout: post
 image: /images/david_deutsch_principles_contract_xl-beta-v2-2-2.png
 permalink: /:categories/:title
 my_related_post_paths:
-- _posts/2023-12-17-If-I-Brainstorm-Am-I.md
 - _posts/2021-12-12-Ten-Commandments-for-business-failure.md
+- _posts/2023-12-17-If-I-Brainstorm-Am-I.md
 - _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
 - _posts/2022-01-09-7-powers-moats-through-lens-of-dibellos-business-mental-model.md
 - _posts/2021-07-14-Scout-Mindset-Book-Summary.md
-- _posts/2023-11-15-Rockefellers-Quotes-Gratitude-Fictional-Letters.md
+- _posts/2024-02-11-Bellman-Update-and-Synthetic-Data-in-Q-Transformer.md
 ---
 
 {% include image.html src="/images/david_deutsch_principles_contract_xl-beta-v2-2-2.png" alt="Applying David Deutsch's Principles in Life and Business" %}

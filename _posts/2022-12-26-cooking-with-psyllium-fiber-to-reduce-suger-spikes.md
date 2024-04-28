@@ -8,13 +8,13 @@ layout: post
 image: /images/psyllium-husk-black-beans.png
 permalink: /:categories/:title
 my_related_post_paths:
+- _posts/2024-04-20-How-I-Cook-One-Pot-High-Protein-High-Fiber-Low-Histamine-Food.md
 - _posts/2020-02-25-I-read-papers-on-a-podcast.md
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
 - _posts/2016-11-04-Drone-Hackathoning.md
 - _posts/2017-08-12-Fish-Roe-vs-Fish-Oil.md
-- _posts/2022-03-20-sparse-matrix-why-and-when.md
+- _posts/2024-02-20-Synthetic-Data-for-LLM-Training.md
 - _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
-- _posts/2023-12-17-If-I-Brainstorm-Am-I.md
 ---
 
 {% include image.html src="/images/psyllium-husk-black-beans.png" alt="psyllium husk sprinkled onto cooked black beans in a pot" %}

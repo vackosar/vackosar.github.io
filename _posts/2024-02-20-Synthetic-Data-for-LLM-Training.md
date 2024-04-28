@@ -8,13 +8,13 @@ layout: post
 permalink: /:categories/:title
 image: /images/robot-writing-synthetic-data-thumb.webp
 my_related_post_paths:
-- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2023-06-08-Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM.md
 - _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2024-02-11-Bellman-Update-and-Synthetic-Data-in-Q-Transformer.md
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
-- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
 ---
 
 {% include highlight-rouge-friendly.css.html %}

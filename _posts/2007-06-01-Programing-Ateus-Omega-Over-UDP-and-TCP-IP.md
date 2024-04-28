@@ -4,8 +4,16 @@ title: Programing Ateus Omega Over UDP and TCP/IP
 date: 2007-06-01
 image: /images/Ateus-Omega-UART-dsPIC-SPI-ENC28J60-UDP-TCP-IP-Programing.png
 categories: electronics
-description: Replacing Ateus Omega remote programming Xapi PC software with a built-in DsPIC module with ENC28J60. 
+description: Replacing Ateus Omega remote programming Xapi PC software with a built-in DsPIC module with ENC28J60.
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
+- _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
+- _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
+- _posts/2020-02-25-I-read-papers-on-a-podcast.md
+- _posts/2017-10-28-Spring-Integration-Highlights.md
 ---
 
 

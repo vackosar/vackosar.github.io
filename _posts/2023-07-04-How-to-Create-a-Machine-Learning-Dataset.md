@@ -8,8 +8,8 @@ image: /images/glami-1m-multilingual-image-text-dataset-text-vs-image-similarity
 layout: post
 permalink: /:categories/:title
 my_related_post_paths:
-- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 - _posts/2024-02-20-Synthetic-Data-for-LLM-Training.md
+- _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 - _posts/2020-05-11-BentoML-vs-Cortex.dev--ML-Serving-Showdown.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2023-06-08-Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM.md

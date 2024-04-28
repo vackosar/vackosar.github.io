@@ -14,7 +14,7 @@ my_related_post_paths:
 - _posts/2021-06-21-Wav2vec2-Semi-and-Unsupervised-Speech-Recognition.md
 - _posts/2022-05-14-neural-data-compression.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
-- _posts/2022-10-23-Neural-Network-Pruning-Explained.md
+- _posts/2024-02-20-Synthetic-Data-for-LLM-Training.md
 ---
 
 

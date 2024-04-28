@@ -13,11 +13,11 @@ last_modified_at: 2024-01-07
 my_related_post_paths:
 - _posts/2017-06-04-Code-Structure-Principles.md
 - _posts/2023-10-23-create-your-google-calendar-event-link-in-seconds.md
-- _posts/2021-03-22-google-product-taxonomy-viewer.md
 - _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
+- _posts/2021-03-22-google-product-taxonomy-viewer.md
+- _posts/2024-01-24-How-To-Install-Your-Python-Version-On-Ubuntu.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
-- _posts/2017-07-15-Restore-Missing-Punctuation-with-Keras-Convolutional-Text-Punctuator.md
 ---
 
 {% include image.html src="/images/twitter-bullet-points.png" alt="Twitter Bullet Points How To" %}

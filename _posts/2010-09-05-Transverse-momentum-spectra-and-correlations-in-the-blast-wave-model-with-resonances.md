@@ -9,12 +9,12 @@ redirect_from:
 - /2010/09/05/Transverse-momentum-spectra-and-correlations-in-the-blast-wave-model-with-resonances.html
 my_related_post_paths:
 - _posts/2011-07-29-Simulation-of-Soft-Photon-Calorimeter.md
-- _posts/2012-06-11-Hamiltonians-with-constant-spectral-intervals-and-time-dependent-perturbation.md
 - _posts/2011-09-24-Feynman-summation-in-finite-dimensional-quantum-mechanics.md
+- _posts/2012-06-11-Hamiltonians-with-constant-spectral-intervals-and-time-dependent-perturbation.md
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 - _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
-- _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 ---
 
 

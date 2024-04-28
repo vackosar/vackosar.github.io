@@ -6,6 +6,14 @@ date: 2024-04-20
 last_modified_at: 2024-04-20
 layout: post
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2022-12-26-cooking-with-psyllium-fiber-to-reduce-suger-spikes.md
+- _posts/2020-02-25-I-read-papers-on-a-podcast.md
+- _posts/2017-08-12-Fish-Roe-vs-Fish-Oil.md
+- _posts/2016-11-04-Drone-Hackathoning.md
+- _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
+- _posts/2007-06-01-Programing-Ateus-Omega-Over-UDP-and-TCP-IP.md
+- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 ---
 
 Here is a recipe produces 5 simple meals in 35 minutes.

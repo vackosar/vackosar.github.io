@@ -10,8 +10,8 @@ permalink: /:categories/:title
 video: aByQezRCJUE
 my_related_post_paths:
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
-- _posts/2024-02-20-Synthetic-Data-for-LLM-Training.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
+- _posts/2024-02-20-Synthetic-Data-for-LLM-Training.md
 - _posts/2023-08-25-How-Deep-Neural-Networks-Learn.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2023-12-17-If-I-Brainstorm-Am-I.md

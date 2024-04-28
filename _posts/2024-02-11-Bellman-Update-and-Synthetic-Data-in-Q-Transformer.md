@@ -11,10 +11,10 @@ my_related_post_paths:
 - _posts/2022-03-05-transformers-self-attention-mechanism-simplified.md
 - _posts/2024-02-20-Synthetic-Data-for-LLM-Training.md
 - _posts/2019-08-28-1D-Kalman-Is-Exponential-Or-Cumulative-Average.md
+- _posts/2023-10-29-Encoder-only-Decoder-only-vs-Encoder-Decoder-Transfomer.md
 - _posts/2021-04-27-dreamcoder-ai-wake-sleep-program-learning.md
-- _posts/2021-01-02-Feed-Forward-Self-Attendion-Key-Value-Memory.md
-- _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
+- _posts/2021-02-07-submodularity-in-ranking-summarization-and-self-attention.md
 ---
 
 {% include mermaidjs.html %}
