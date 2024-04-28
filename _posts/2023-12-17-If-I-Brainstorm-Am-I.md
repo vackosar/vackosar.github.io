@@ -94,6 +94,7 @@ The last one in particular, observed in simplified terms that Protestantism may 
 
 [Peter Thiel](https://www.youtube.com/watch?v=vfbndRTlsg4) criticizes that removal of free will causes scape goating of the God by removing personal responsibility and too much focus on insufficiencies of people may cause reduce conversations, thus both causing stagnation.
 
+
 ## Criticism of Mystical Pop Cultures
 Calvinist criticized all magical and mystical things, but what quantitative studies tell us about it?
 There is a very unusual book [The Pragmatist’s Guide to Crafting Religion](https://www.amazon.com/gp/product/B0BSLDF2FW), which is a compilation information on cultures, religions, and traditions.
@@ -125,6 +126,7 @@ Notice how using the word brain in the place of word heart changes meaning of so
 
 ## Christian Themes in Gurren Lagann Anime
 Gurren Lagann, the only anime I could watch, kept me thinking after finishing it. Some parts seemed familiar. Then, I realized that the series' main themes have Christian analogs. The spiral energy is similar to the Holy Spirit; Kamina plays the role of Christ, and the LorgGenome is the Father. Kamina recommends to instead of trying to believe in yourself, to instead believe in God, that believes in you. He has sayings similar to "All things are possible for one who believes." Kamina also comes back from the dead once more at the end of the show. The team eventually forms a large body, "Super Tengen Toppa Gurren Lagann," similar to the body of the Church of the bible. You can find more similarities in [this link](https://www.iklone.org/post/christianity-in-gurren-lagann). Christianity permeates today's culture in unexpected places worldwide.
+
 
 ## The End
 How does your philosophy shape your life? I hope you became more by brainstorming today with me.
