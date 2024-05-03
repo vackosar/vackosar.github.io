@@ -95,6 +95,17 @@ The last one in particular, observed in simplified terms that Protestantism may 
 [Peter Thiel](https://www.youtube.com/watch?v=vfbndRTlsg4) criticizes that removal of free will causes scape goating of the God by removing personal responsibility and too much focus on insufficiencies of people may cause reduce conversations, thus both causing stagnation.
 
 
+### Calvinist Founding of America?
+
+There is a common opinion that Benjamin Franklin was a deist. But based on his autobiography, I think he was briefly a deist and reverted to something between calvinism and deism:
+> appear’d now not so clever a Performance as I once thought it; and I doubted whether some Error had not insinuated itself unperceiv’d, into my Argument, so as to infect all that follow’d, as is common in **metaphysical Reasonings**. I grew convinc’d that **Truth, Sincerity & Integrity in Dealings between Man & Man, were of the utmost Importance to the Felicity of Life**, and I form’d written Resolutions, ... certain Actions might not be bad because they were forbidden by it, or good because it commanded them; yet probably those Actions might be **forbidden because they were bad for us, or commanded because they were beneficial to us**, in their own Natures, all the Circumstances of things considered. And this Persuasion, with **the kind hand of Providence, or some guardian Angel, or accidental favorable Circumstances & Situations, or all together**, preserved me
+
+Based on above, the thesis [Did America Have a Christian Founding?](https://www.heritage.org/political-process/report/did-america-have-christian-founding) may be right, that the United States were predominantly founded by Calvinists of Puritan variety.
+Which however over time declined in numbers.
+
+> between **55 percent and 75 percent** of white citizens in this era associated themselves with **Calvinist churches**, and members of the tradition were significantly overrepresented among American intellectual elites. King George himself reportedly referred to the **War for Independence as “a Presbyterian Rebellion.”**
+
+
 ## Criticism of Mystical Pop Cultures
 Calvinist criticized all magical and mystical things, but what quantitative studies tell us about it?
 There is a very unusual book [The Pragmatist’s Guide to Crafting Religion](https://www.amazon.com/gp/product/B0BSLDF2FW), which is a compilation information on cultures, religions, and traditions.
