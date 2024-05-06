@@ -149,3 +149,30 @@ blockquote {
     margin: 1px;
     font-weight: bold;
 }
+
+/*table*/
+
+table {
+    border-collapse: collapse;
+      margin: 20px; /* add some margin around the table */
+      border-radius: 10px; /* add a bit of rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a subtle shadow */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
