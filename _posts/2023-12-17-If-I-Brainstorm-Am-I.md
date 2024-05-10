@@ -57,7 +57,7 @@ We have a biblical proverb:
 > And wisdom and knowledge shall be the stability of thy times
 
 
-# John Calvin and Science
+## John Calvin and Science
 John Calvin's view on the sciences seems to be demonstrated in these quotes from the Institutes of the Christian Religion. They indicate that sciences are good, but not the most important:
 > .. admiration of the Divine Architect. In disquisitions concerning the motions of the stars, in fixing their situations, measuring their distances, and distinguishing their peculiar properties, there is need of skill, exactness, and industry; and the **providence of God being more clearly revealed by these discoveries**, the mind ought to rise to a sublimer elevation for the contemplation of his glory.
 
@@ -125,20 +125,20 @@ A prayer can also be akin to meditation, which also seems to have positive psych
 
 
 ## Not-Not Is What? Actionable Commandments?
-Here is an attempt to flip all Ten Commandments from the Bible from a negative or static form into more actionable, positive, secular perspective, focusing on what to do instead of what not to do.
+Here is an attempt to extrapolate from the Ten Commandments of the Bible and flip them from a prohibitive, static, and negative form into an actionable, positive, proactive, secular perspective form, focusing on what to do instead of what not to do.
 You will disagree because I cannot precisely invert negative into positive.
 Let me know if you spot an inaccuracy?
 
-**1. Worship only God** becomes **Focus on what increases the good and follow the best path towards that.**
-**2. Make no idols** becomes **Value and prioritize meaningful and lasting pursuits and focus. Submit only to carefully and mindfully selected matters.**
-**3. Do not take the name of God in vain** becomes **Be grateful for all blessings of your life and stay positive. Steer your emotions towards the meaningful and positive.**
-**4. Remember the Sabbath day** becomes **Weekly spend time with your family and community, and seek what is good.**
-**5. Honor your father and mother** becomes **Earn honor by becoming a father or a mother many times and teach children your good findings and beliefs.**
-**6. Do not murder** becomes **Protect and increase human life and evolve its capacity.**
-**7. Do not commit adultery** becomes **Nurture a healthy and loving marriage and society broadly.**
-**8. Do not steal** becomes **Respect and protect others and share fruits of your labor with wise generosity.**
-**9. Do not bear false witness** becomes **Seek and speak the truth and wisdom, and improve integrity of judgments.**
-**10. Do not covet** becomes **Wish other people well and learn to be more industrious yourself.**
+1. **Worship only God** becomes **Focus on what increases the good and follow the best path towards that.**
+2. **Make no idols** becomes **Value and prioritize meaningful and lasting pursuits and focus. Submit only to carefully and mindfully selected matters.**
+3. **Do not take the name of God in vain** becomes **Be grateful for all blessings of your life and stay positive. Steer your emotions towards the meaningful and positive.**
+4. **Remember the Sabbath day** becomes **Weekly spend time with your family and community, and seek what is good.**
+5. **Honor your father and mother** becomes **Earn honor by becoming a father or a mother many times and teach children your good findings and beliefs.**
+6. **Do not murder** becomes **Protect and increase human life and evolve its capacity.**
+7. **Do not commit adultery** becomes **Nurture a healthy and loving marriage and society broadly.**
+8. **Do not steal** becomes **Respect and protect others and share fruits of your labor with wise generosity.**
+9. **Do not bear false witness** becomes **Seek and speak the truth and wisdom, and improve integrity of judgments.**
+10. **Do not covet** becomes **Wish other people well and learn to be more industrious yourself.**
 
 
 ## The Bible Is Missing Modern Words
