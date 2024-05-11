@@ -117,33 +117,47 @@ While these seem to be similar to intuitive early religions, in wealthy societie
 Prayer may also be a problem-solving method by working backward from the end goal (e.g., Amazon), inversion of Charlie Munger, or Polya.
 We can interpret it as regarding the end goal first, which helps to create the plan:
 
-> Commit your work to the Lord, and your plans will be established.
+> Commit your work to the Lord, and your plans will be established. - Proverbs 16:3 (NIV)
 
 Prayer can also be considered as [practicing gratitude, which has positive psychological effects](https://en.wikipedia.org/wiki/Gratitude#Association_with_well-being).
 
+> Rejoice always, pray continually, give thanks in all circumstances; for this is God’s will for you in Christ Jesus. - 1 Thessalonians 5:16-18 (NIV)
+
 A prayer can also be akin to meditation, which also seems to have positive psychological effects.
 
+> therefore be self-controlled and sober-minded for the sake of your prayers. - 1 Peter 4:7 (ESV)
 
 ## Not-Not Is What? Actionable Commandments?
-Here is an attempt to extrapolate from the Ten Commandments of the Bible and flip them from a prohibitive, static, and negative form into an actionable, positive, proactive, secular perspective form, focusing on what to do instead of what not to do.
+Here is an attempt to extrapolate from the Ten Commandments of the Bible by flipping them from a prohibitive form into a proactive, dynamic secular form, focusing on what to do instead of what not to do.
 You will disagree because I cannot precisely invert negative into positive.
+I also provide supportive quotes from other parts of the Bible.
 Let me know if you spot an inaccuracy?
 
 1. **Worship only God** becomes **Focus on what increases the good and follow the best path towards that.**
+   - <span class="small">"Therefore everyone who hears these words of mine and puts them into practice is like a wise man who built his house on the rock." (Matthew 7:24)</span>
 2. **Make no idols** becomes **Value and prioritize meaningful and lasting pursuits and focus. Submit only to carefully and mindfully selected matters.**
+   - <span class="small">"Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect." (Romans 12:2)</span>
 3. **Do not take the name of God in vain** becomes **Be grateful for all blessings of your life and stay positive. Steer your emotions towards the meaningful and positive.**
+   - <span class="small">"Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God." (Philippians 4:6)</span>
 4. **Remember the Sabbath day** becomes **Weekly spend time with your family and community, and seek what is good.**
-5. **Honor your father and mother** becomes **Earn honor by becoming a father or a mother many times and teach children your good findings and beliefs.**
+   - <span class="small">"And let us not neglect our meeting together, as some people do, but encourage one another, especially now that the day of his return is drawing near." (Hebrews 10:25)</span>
+6. **Honor your father and mother** becomes **Earn honor by becoming a father or a mother many times and teach children your good findings and beliefs.**
+   - <span class="small">"Children are a heritage from the Lord, offspring a reward from him." (Psalm 127:3)</span>
 6. **Do not murder** becomes **Protect and increase human life and evolve its capacity.**
+   - <span class="small">"I came that they may have life, and have it abundantly." (John 10:10)</span>
 7. **Do not commit adultery** becomes **Nurture a healthy and loving marriage and society broadly.**
+   - <span class="small">"Husbands, love your wives, just as Christ loved the church and gave himself up for her." (Ephesians 5:25)</span>
 8. **Do not steal** becomes **Respect and protect others and share fruits of your labor with wise generosity.**
+   - <span class="small">"The thief must no longer steal, but rather he must labor, doing good with his own hands, so that he may have something to share with the one in need." (Ephesians 4:28)</span>
 9. **Do not bear false witness** becomes **Seek and speak the truth and wisdom, and improve integrity of judgments.**
+   - <span class="small">"The mouth of the righteous man utters wisdom, and his tongue speaks what is just." (Psalm 37:30)</span>
 10. **Do not covet** becomes **Wish other people well and learn to be more industrious yourself.**
+   - <span class="small">"Therefore encourage one another and build each other up, just as in fact you are doing." (1 Thessalonians 5:11)</span>
 
 
-## The Bible Is Missing Modern Words
+## The Bible's Missing Modern Words
 Interesting how the Bible doesn't have words for things that hadn't been discovered at that time. For example, "heart" often seems to refer to "brain".
-Notice how using the word brain in the place of word heart changes meaning of some quotes:
+Notice how using the word brain in the place of word heart sometimes changes meaning of some quotes:
 
 > have not asked for yourself long life, nor have you asked for riches for yourself, nor have you asked for the life of your enemies, but have asked for yourself understanding to discern justice; behold, I have done according to your word. Behold, I have given you a wise and understanding **heart**;
 
@@ -151,12 +165,20 @@ Notice how using the word brain in the place of word heart changes meaning of so
  
 > The **heart** of the wise is in the house of mourning, but the heart of fools is in the house of pleasure.
 
-> Frustration is better than laughter, because a sad face is good for the **heart**. 
+> Frustration is better than laughter, because a sad face is good for the **heart**.
+
+
+Similarly, there was no word for DNA, although the concept was also intuitively partially understood.
 
 
 ## Christian Themes in Gurren Lagann Anime
 Gurren Lagann, the only anime I could watch, kept me thinking after finishing it. Some parts seemed familiar. Then, I realized that the series' main themes have Christian analogs. The spiral energy is similar to the Holy Spirit; Kamina plays the role of Christ, and the LorgGenome is the Father. Kamina recommends to instead of trying to believe in yourself, to instead believe in God, that believes in you. He has sayings similar to "All things are possible for one who believes." Kamina also comes back from the dead once more at the end of the show. The team eventually forms a large body, "Super Tengen Toppa Gurren Lagann," similar to the body of the Church of the bible. You can find more similarities in [this link](https://www.iklone.org/post/christianity-in-gurren-lagann). Christianity permeates today's culture in unexpected places worldwide.
 
+There is also [a bible quote in Ghost in Shell](https://youtu.be/Y8fuP8VFm_I?si=faw2U5friB8kN7W3).
 
-## The End
-How does your philosophy shape your life? I hope you became more by brainstorming today with me.
+> when I was a child, my speech, feelings, and thinking were all those of a child. Now that I am a man, I have no more use for childish ways. - 1 Corinthians 13:11 (Ghost in The Shell translation)
+
+## The End is The New Beginning
+How does your philosophy shape your life?
+I hope you became more by brainstorming today with me.
+Where do go from here?
