@@ -145,11 +145,13 @@ Let me know if you spot an inaccuracy?
 Interesting how the Bible doesn't have words for things that hadn't been discovered at that time. For example, "heart" often seems to refer to "brain".
 Notice how using the word brain in the place of word heart changes meaning of some quotes:
 
-> The heart of the discerning acquires knowledge, for the ears of the wise seek it out.
- 
-> The heart of the wise is in the house of mourning, but the heart of fools is in the house of pleasure.
+> have not asked for yourself long life, nor have you asked for riches for yourself, nor have you asked for the life of your enemies, but have asked for yourself understanding to discern justice; behold, I have done according to your word. Behold, I have given you a wise and understanding **heart**;
 
-> Frustration is better than laughter, because a sad face is good for the heart.
+> The **heart** of the discerning acquires knowledge, for the ears of the wise seek it out.
+ 
+> The **heart** of the wise is in the house of mourning, but the heart of fools is in the house of pleasure.
+
+> Frustration is better than laughter, because a sad face is good for the **heart**. 
 
 
 ## Christian Themes in Gurren Lagann Anime
