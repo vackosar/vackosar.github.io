@@ -1,6 +1,6 @@
 ---
 title: If I brainstorm, am I?
-description: Materialism, Science and Religion, and Mystical Pop Culture
+description: Materialism, Science and Religion, Capitalism and Calvinism, Anime
 layout: post
 categories: book
 date: 2023-12-17
@@ -19,7 +19,6 @@ redirect_from:
 ---
 
 
-## If I brainstorm, am I?
 We witness the hints of reasoning capability in the large language models today. If Descartes is not right and thinking does not imply that I am, then what does? What is then left for a human to be?
 If there is only matter, is the human mind also matter, and is the mind replicable in a machine?
 
