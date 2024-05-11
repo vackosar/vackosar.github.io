@@ -137,6 +137,7 @@ Let me know if you spot an inaccuracy?
    - <span class="small">"Therefore everyone who hears these words of mine and puts them into practice is like a wise man who built his house on the rock." (Matthew 7:24)</span>
 2. **Make no idols** becomes **Value and prioritize meaningful and lasting pursuits and focus. Submit only to carefully and mindfully selected matters.**
    - <span class="small">"Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect." (Romans 12:2)</span>
+   - <span class="small">"Whatever you do, do your work heartily, as for the Lord rather than for men." - Colossians 3:23</span>
 3. **Do not take the name of God in vain** becomes **Be grateful for all blessings of your life and stay positive. Steer your emotions towards the meaningful and positive.**
    - <span class="small">"Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God." (Philippians 4:6)</span>
 4. **Remember the Sabbath day** becomes **Weekly spend time with your family and community, and seek what is good.**
@@ -149,10 +150,11 @@ Let me know if you spot an inaccuracy?
    - <span class="small">"Husbands, love your wives, just as Christ loved the church and gave himself up for her." (Ephesians 5:25)</span>
 8. **Do not steal** becomes **Respect and protect others and share fruits of your labor with wise generosity.**
    - <span class="small">"The thief must no longer steal, but rather he must labor, doing good with his own hands, so that he may have something to share with the one in need." (Ephesians 4:28)</span>
-9. **Do not bear false witness** becomes **Seek and speak the truth and wisdom, and improve integrity of judgments.**
+9. **Do not bear false witness** becomes **Seek and speak the truth and wisdom, and improve integrity and consequences of judgments.**
    - <span class="small">"The mouth of the righteous man utters wisdom, and his tongue speaks what is just." (Psalm 37:30)</span>
-10. **Do not covet** becomes **Wish other people well and learn to be more industrious yourself.**
+10. **Do not covet** becomes **Wish other people well, learn to be more industrious yourself, and take pride in your work.**
    - <span class="small">"Therefore encourage one another and build each other up, just as in fact you are doing." (1 Thessalonians 5:11)</span>
+   - <span class="small">"Do you see a man skilled in his work? He will stand before kings; he will not stand before officials of low rank." (Proverbs 22:29)</span>
 
 
 ## The Bible's Missing Modern Words
