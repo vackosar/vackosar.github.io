@@ -133,35 +133,37 @@ I also provide potentially supportive quotes from other parts of the Bible.
 Let me know if you spot an inaccuracy?
 
 1. **Worship only God** becomes **Focus on what increases the good and follow the best path towards that.**
-   - <span class="small">"Therefore everyone who hears these words of mine and puts them into practice is like a wise man who built his house on the rock." (Matthew 7:24)</span>
+   - <span class="small">"The path of life leads upward for the prudent, that he may turn away from Sheol beneath." (Proverbs 22:29 ESV)</span>
+   - <span class="small">"But the path of the righteous is like the light of dawn, which shines brighter and brighter until full day." (Proverbs 4:18 ESV)</span>
    - <span class="small">"And we know that for those who love God all things work together for good, for those who are called according to his purpose." (Romans 8:28 ESV)</span>
    - <span class="small">"For to set the mind on the flesh is death, but to set the mind on the Spirit is life and peace." (Romans 8:6 ESV)</span>
 2. **Make no idols** becomes **Value and prioritize meaningful and lasting pursuits and focus. Submit only to carefully and mindfully selected matters.**
-   - <span class="small">"Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect." (Romans 12:2)</span>
-   - <span class="small">"Whatever you do, do your work heartily, as for the Lord rather than for men." - Colossians 3:23</span>
-   - <span class="small">"And do not turn aside after empty things that cannot profit or deliver, for they are empty." - 1 Samuel 12:21 ESV</span>
+   - <span class="small">"Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect." (Romans 12:2 ESV)</span>
+   - <span class="small">"Whatever you do, work heartily, as for the Lord and not for men" (Colossians 3:23 ESV)</span>
+   - <span class="small">"And do not turn aside after empty things that cannot profit or deliver, for they are empty." (1 Samuel 12:21 ESV)</span>
 3. **Do not take the name of God in vain** becomes **Be grateful for all blessings of your life and stay positive. Steer your emotions towards the meaningful and positive.**
-   - <span class="small">"Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God." (Philippians 4:6)</span>
+   - <span class="small">"Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God." (Philippians 4:6 ESV)</span>
    - <span class="small">"For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, “Abba! Father!” (Romans 8:15 ESV)</span>
 4. **Remember the Sabbath day** becomes **Weekly spend time with your family and community, and seek what is good.**
-   - <span class="small">"And let us not neglect our meeting together, as some people do, but encourage one another, especially now that the day of his return is drawing near." (Hebrews 10:25)</span>
+   - <span class="small">"not neglecting to meet together, as is the habit of some, but encouraging one another," (Hebrews 10:25 ESV)</span>
    - <span class="small">"Without counsel plans fail, but with many advisers they succeed." (Proverbs 15:22 ESV)</span>
 6. **Honor your father and mother** becomes **Earn honor by becoming a father or a mother many times and teach children your good findings and beliefs.**
-   - <span class="small">"Children are a heritage from the Lord, offspring a reward from him." (Psalm 127:3)</span>
+   - <span class="small">"Behold, children are a heritage from the Lord, the fruit of the womb a reward." (Psalm 127:3 ESV)</span>
 6. **Do not murder** becomes **Protect and increase human life and evolve its capacity.**
-   - <span class="small">"I came that they may have life, and have it abundantly." (John 10:10)</span>
+   - <span class="small">"I came that they may have life and have it abundantly." (John 10:10 ESV)</span>
    - <span class="small">"Just as we have borne the image of the man of dust, we shall also bear the image of the man of heaven." (1 Corinthians 15:49 ESV)</span>
 7. **Do not commit adultery** becomes **Nurture a healthy and loving marriage and society broadly.**
-   - <span class="small">"Husbands, love your wives, just as Christ loved the church and gave himself up for her." (Ephesians 5:25)</span>
+   - <span class="small">"Husbands, love your wives, as Christ loved the church and gave himself up for her." (Ephesians 5:25 ESV)</span>
 8. **Do not steal** becomes **Respect and protect others and share fruits of your labor with wise generosity.**
-   - <span class="small">"The thief must no longer steal, but rather he must labor, doing good with his own hands, so that he may have something to share with the one in need." (Ephesians 4:28)</span>
+   - <span class="small">"Let the thief no longer steal, but rather let him labor, doing honest work with his own hands, so that he may have something to share with anyone in need." (Ephesians 4:28 ESV)</span>
 9. **Do not bear false witness** becomes **Seek and speak the truth and wisdom, and improve integrity and consequences of judgments.**
-   - <span class="small">"The mouth of the righteous man utters wisdom, and his tongue speaks what is just." (Psalm 37:30)</span>
+   - <span class="small">"The mouth of the righteous utters wisdom, and his tongue speaks justice." (Psalm 37:30 ESV)</span>
    - <span class="small">"for wisdom will come into your heart, and knowledge will be pleasant to your soul;" (Proverbs 2:10 ESV)</span>
+   - <span class="small">"The simple believes everything, but the prudent gives thought to his steps." (Proverbs 14:15 ESV)</span>
 10. **Do not covet** becomes **Wish other people well, learn to be more industrious yourself, and take pride in your work.**
-   - <span class="small">"Therefore encourage one another and build each other up, just as in fact you are doing." (1 Thessalonians 5:11)</span>
+   - <span class="small">"Therefore encourage one another and build one another up, just as you are doing." (1 Thessalonians 5:11 ESV)</span>
    - <span class="small">"For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope." (Jeremiah 29:11 ESV)</span>
-   - <span class="small">"Do you see a man skilled in his work? He will stand before kings; he will not stand before officials of low rank." (Proverbs 22:29)</span>
+   - <span class="small">"Do you see a man skillful in his work? He will stand before kings; he will not stand before obscure men." (Proverbs 22:29 ESV)</span>
 
 
 ## The Bible's Missing Modern Words
