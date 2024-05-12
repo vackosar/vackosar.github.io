@@ -129,7 +129,7 @@ A prayer can also be akin to meditation, which also seems to have positive psych
 ## Not-Not Is What? Actionable Commandments?
 Here is an attempt to extrapolate from the Ten Commandments of the Bible by flipping them from a prohibitive form into a proactive, dynamic secular form, focusing on what to do instead of what not to do.
 You will disagree because I cannot precisely invert negative into positive.
-I also provide supportive quotes from other parts of the Bible.
+I also provide potentially supportive quotes from other parts of the Bible.
 Let me know if you spot an inaccuracy?
 
 1. **Worship only God** becomes **Focus on what increases the good and follow the best path towards that.**
@@ -137,22 +137,27 @@ Let me know if you spot an inaccuracy?
 2. **Make no idols** becomes **Value and prioritize meaningful and lasting pursuits and focus. Submit only to carefully and mindfully selected matters.**
    - <span class="small">"Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect." (Romans 12:2)</span>
    - <span class="small">"Whatever you do, do your work heartily, as for the Lord rather than for men." - Colossians 3:23</span>
+   - <span class="small">"And do not turn aside after empty things that cannot profit or deliver, for they are empty." - 1 Samuel 12:21 ESV</span>
 3. **Do not take the name of God in vain** becomes **Be grateful for all blessings of your life and stay positive. Steer your emotions towards the meaningful and positive.**
    - <span class="small">"Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God." (Philippians 4:6)</span>
 4. **Remember the Sabbath day** becomes **Weekly spend time with your family and community, and seek what is good.**
    - <span class="small">"And let us not neglect our meeting together, as some people do, but encourage one another, especially now that the day of his return is drawing near." (Hebrews 10:25)</span>
+   - <span class="small">"Without counsel plans fail, but with many advisers they succeed." (Proverbs 15:22 ESV)</span>
 6. **Honor your father and mother** becomes **Earn honor by becoming a father or a mother many times and teach children your good findings and beliefs.**
    - <span class="small">"Children are a heritage from the Lord, offspring a reward from him." (Psalm 127:3)</span>
 6. **Do not murder** becomes **Protect and increase human life and evolve its capacity.**
    - <span class="small">"I came that they may have life, and have it abundantly." (John 10:10)</span>
+   - <span class="small">"Just as we have borne the image of the man of dust, we shall also bear the image of the man of heaven." (1 Corinthians 15:49 ESV)</span>
 7. **Do not commit adultery** becomes **Nurture a healthy and loving marriage and society broadly.**
    - <span class="small">"Husbands, love your wives, just as Christ loved the church and gave himself up for her." (Ephesians 5:25)</span>
 8. **Do not steal** becomes **Respect and protect others and share fruits of your labor with wise generosity.**
    - <span class="small">"The thief must no longer steal, but rather he must labor, doing good with his own hands, so that he may have something to share with the one in need." (Ephesians 4:28)</span>
 9. **Do not bear false witness** becomes **Seek and speak the truth and wisdom, and improve integrity and consequences of judgments.**
    - <span class="small">"The mouth of the righteous man utters wisdom, and his tongue speaks what is just." (Psalm 37:30)</span>
+   - <span class="small">"for wisdom will come into your heart, and knowledge will be pleasant to your soul;" (Proverbs 2:10 ESV)</span>
 10. **Do not covet** becomes **Wish other people well, learn to be more industrious yourself, and take pride in your work.**
    - <span class="small">"Therefore encourage one another and build each other up, just as in fact you are doing." (1 Thessalonians 5:11)</span>
+   - <span class="small">"For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope." (Jeremiah 29:11 ESV)</span>
    - <span class="small">"Do you see a man skilled in his work? He will stand before kings; he will not stand before officials of low rank." (Proverbs 22:29)</span>
 
 
