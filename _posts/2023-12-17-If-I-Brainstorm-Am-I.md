@@ -132,16 +132,19 @@ You will disagree because I cannot precisely invert negative into positive.
 I also provide potentially supportive quotes from other parts of the Bible.
 Let me know if you spot an inaccuracy?
 
-1. **Worship only God** becomes **Focus on what increases the good and follow the best path towards that.**
+1. **Worship only God** becomes **Focus on what increases the good and follow the best path towards that. Take the responsibility.**
    - <span class="small">"The path of life leads upward for the prudent, that he may turn away from Sheol beneath." (Proverbs 22:29 ESV)</span>
    - <span class="small">"But the path of the righteous is like the light of dawn, which shines brighter and brighter until full day." (Proverbs 4:18 ESV)</span>
    - <span class="small">"And we know that for those who love God all things work together for good, for those who are called according to his purpose." (Romans 8:28 ESV)</span>
    - <span class="small">"For to set the mind on the flesh is death, but to set the mind on the Spirit is life and peace." (Romans 8:6 ESV)</span>
+   - <span class="small">"So then each of us will give an account of himself to God." (Romans 14:12 ESV)</span>
 2. **Make no idols** becomes **Value and prioritize meaningful and lasting pursuits and focus. Submit only to carefully and mindfully selected matters.**
    - <span class="small">"Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect." (Romans 12:2 ESV)</span>
    - <span class="small">"Whatever you do, work heartily, as for the Lord and not for men" (Colossians 3:23 ESV)</span>
    - <span class="small">"And do not turn aside after empty things that cannot profit or deliver, for they are empty." (1 Samuel 12:21 ESV)</span>
 3. **Do not take the name of God in vain** becomes **Be grateful for all blessings of your life and stay positive. Steer your emotions towards the meaningful and positive.**
+   - <span class="small">"A man without self-control is like a city broken into and left without walls." (Galatians 6:5 ESV)</span>
+   - <span class="small">"Like a city whose walls are broken through is a person who lacks self-control." (Proverbs 25:28 ESV)</span>
    - <span class="small">"Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God." (Philippians 4:6 ESV)</span>
    - <span class="small">"For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, “Abba! Father!” (Romans 8:15 ESV)</span>
 4. **Remember the Sabbath day** becomes **Weekly spend time with your family and community, and seek what is good.**
@@ -164,6 +167,7 @@ Let me know if you spot an inaccuracy?
    - <span class="small">"Therefore encourage one another and build one another up, just as you are doing." (1 Thessalonians 5:11 ESV)</span>
    - <span class="small">"For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope." (Jeremiah 29:11 ESV)</span>
    - <span class="small">"Do you see a man skillful in his work? He will stand before kings; he will not stand before obscure men." (Proverbs 22:29 ESV)</span>
+   - <span class="small">"But let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor." (Galatians 6:4 ESV)</span>
 
 
 ## The Bible's Missing Modern Words
