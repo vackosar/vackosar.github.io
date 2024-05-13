@@ -132,7 +132,7 @@ You will disagree because I cannot precisely invert negative into positive.
 I also provide potentially supportive quotes from other parts of the Bible.
 Let me know if you spot an inaccuracy?
 
-1. **Worship only God** becomes **Focus on what increases the good and follow the best path towards that. You are responsible.**
+1. **Worship only God** becomes **Focus on what increases the good and follow the best path towards that. You are responsible for the future.**
    - <span class="small">"The path of life leads upward for the prudent, that he may turn away from Sheol beneath." (Proverbs 22:29 ESV)</span>
    - <span class="small">"But the path of the righteous is like the light of dawn, which shines brighter and brighter until full day." (Proverbs 4:18 ESV)</span>
    - <span class="small">"And we know that for those who love God all things work together for good, for those who are called according to his purpose." (Romans 8:28 ESV)</span>
