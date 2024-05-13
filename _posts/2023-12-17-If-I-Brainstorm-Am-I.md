@@ -147,7 +147,7 @@ Let me know if you spot an inaccuracy?
    - <span class="small">"Like a city whose walls are broken through is a person who lacks self-control." (Proverbs 25:28 ESV)</span>
    - <span class="small">"Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God." (Philippians 4:6 ESV)</span>
    - <span class="small">"For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, “Abba! Father!” (Romans 8:15 ESV)</span>
-4. **Remember the Sabbath day** becomes **Weekly spend time with your family and community. Meet new people. Seek and share what is good.**
+4. **Remember the Sabbath day** becomes **Regularly organize events to spend time with your family and community. Meet new people. Seek and share what is good.**
    - <span class="small">"not neglecting to meet together, as is the habit of some, but encouraging one another," (Hebrews 10:25 ESV)</span>
    - <span class="small">"Without counsel plans fail, but with many advisers they succeed." (Proverbs 15:22 ESV)</span>
 6. **Honor your father and mother** becomes **Earn honor by becoming a father or a mother many times and teach children your good findings and beliefs.**
