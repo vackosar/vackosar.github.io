@@ -142,11 +142,12 @@ Let me know if you spot an inaccuracy?
    - <span class="small">"Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect." (Romans 12:2 ESV)</span>
    - <span class="small">"Whatever you do, work heartily, as for the Lord and not for men" (Colossians 3:23 ESV)</span>
    - <span class="small">"And do not turn aside after empty things that cannot profit or deliver, for they are empty." (1 Samuel 12:21 ESV)</span>
-3. **Do not take the name of God in vain** becomes **Be grateful for all blessings of your life and stay positive. Steer your emotions and mind towards the meaningful and positive.**
+3. **Do not take the name of God in vain** becomes **Be grateful for all blessings of your life and stay positive. Steer your emotions and mind towards the meaningful and positive. Persist.**
    - <span class="small">"A man without self-control is like a city broken into and left without walls." (Galatians 6:5 ESV)</span>
    - <span class="small">"Like a city whose walls are broken through is a person who lacks self-control." (Proverbs 25:28 ESV)</span>
    - <span class="small">"Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God." (Philippians 4:6 ESV)</span>
    - <span class="small">"For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, “Abba! Father!” (Romans 8:15 ESV)</span>
+   - <span class="small">"there was a widow in that city who kept coming to him and saying, ‘Give me justice against my adversary.’ For a while he refused," (Luke 18:3 ESV)</span>
 4. **Remember the Sabbath day** becomes **Regularly organize events to spend time with your family and community. Meet new people. Seek and share what is good.**
    - <span class="small">"not neglecting to meet together, as is the habit of some, but encouraging one another," (Hebrews 10:25 ESV)</span>
    - <span class="small">"Without counsel plans fail, but with many advisers they succeed." (Proverbs 15:22 ESV)</span>
@@ -163,7 +164,7 @@ Let me know if you spot an inaccuracy?
    - <span class="small">"The mouth of the righteous utters wisdom, and his tongue speaks justice." (Psalm 37:30 ESV)</span>
    - <span class="small">"for wisdom will come into your heart, and knowledge will be pleasant to your soul;" (Proverbs 2:10 ESV)</span>
    - <span class="small">"The simple believes everything, but the prudent gives thought to his steps." (Proverbs 14:15 ESV)</span>
-10. **Do not covet** becomes **Wish other people well, learn to be more industrious yourself, and take pride in your work.**
+10. **Do not covet** becomes **Wish other people well, learn to be more industrious yourself, and take pride in your effective work.**
    - <span class="small">"Therefore encourage one another and build one another up, just as you are doing." (1 Thessalonians 5:11 ESV)</span>
    - <span class="small">"For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope." (Jeremiah 29:11 ESV)</span>
    - <span class="small">"Do you see a man skillful in his work? He will stand before kings; he will not stand before obscure men." (Proverbs 22:29 ESV)</span>
