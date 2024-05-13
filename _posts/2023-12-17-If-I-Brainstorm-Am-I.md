@@ -142,7 +142,7 @@ Let me know if you spot an inaccuracy?
    - <span class="small">"Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect." (Romans 12:2 ESV)</span>
    - <span class="small">"Whatever you do, work heartily, as for the Lord and not for men" (Colossians 3:23 ESV)</span>
    - <span class="small">"And do not turn aside after empty things that cannot profit or deliver, for they are empty." (1 Samuel 12:21 ESV)</span>
-3. **Do not take the name of God in vain** becomes **Be grateful for all blessings of your life and stay positive. Steer your emotions towards the meaningful and positive.**
+3. **Do not take the name of God in vain** becomes **Be grateful for all blessings of your life and stay positive. Steer your emotions and mind towards the meaningful and positive.**
    - <span class="small">"A man without self-control is like a city broken into and left without walls." (Galatians 6:5 ESV)</span>
    - <span class="small">"Like a city whose walls are broken through is a person who lacks self-control." (Proverbs 25:28 ESV)</span>
    - <span class="small">"Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God." (Philippians 4:6 ESV)</span>
@@ -186,7 +186,7 @@ Notice how using the word brain in the place of word heart sometimes changes mea
 Similarly, there was no word for DNA, although the concept was also intuitively partially understood.
 
 
-## Christian Themes in Gurren Lagann Anime
+## Christian Themes in Anime
 Gurren Lagann, the only anime I could watch, kept me thinking after finishing it. Some parts seemed familiar. Then, I realized that the series' main themes have Christian analogs. The spiral energy is similar to the Holy Spirit; Kamina plays the role of Christ, and the LorgGenome is the Father. Kamina recommends to instead of trying to believe in yourself, to instead [believe in God (him - Kamina), that believes in you](https://www.youtube.com/watch?v=kC6wdfk2M98). He has sayings similar to "All things are possible for one who believes." Kamina also comes back from the dead once more at the end of the show. The team eventually forms a large body, "Super Tengen Toppa Gurren Lagann," similar to the body of the Church of the bible. You can find more similarities in [this link](https://www.iklone.org/post/christianity-in-gurren-lagann). Christianity permeates today's culture in unexpected places worldwide.
 
 There is also [a bible quote in Ghost in Shell](https://youtu.be/Y8fuP8VFm_I?si=faw2U5friB8kN7W3).
