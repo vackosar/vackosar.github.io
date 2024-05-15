@@ -16,9 +16,9 @@ my_related_post_paths:
 - _posts/2020-05-03-P52-disassembly.md
 - _posts/2020-02-25-I-read-papers-on-a-podcast.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2024-05-06-Llama-3.md
 - _posts/2020-05-11-BentoML-vs-Cortex.dev--ML-Serving-Showdown.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
-- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
 ---
 
 
