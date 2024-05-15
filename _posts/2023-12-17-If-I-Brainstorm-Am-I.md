@@ -91,10 +91,9 @@ The last one in particular, observed in simplified terms that Protestantism may 
 
 > Tests the relation between Protestantism and work attitudes using a novel method, operationalizing work ethic as the effect of unemployment on individuals’ subjective well-being. Analyzing a sample of 150,000 individuals from 82 societies, we find strong support for a Protestant work ethic: unemployment hurts Protestants more and hurts more in Protestant societies. Whilst the results shed new light on the Protestant work ethic debate, the method has wider applicability in the analysis of attitudinal differences. ...
 
-[Peter Thiel](https://www.youtube.com/watch?v=vfbndRTlsg4) criticizes that predestination's removal of free will causes scapegoating of the God because of removal of personal responsibility.
+[Peter Thiel](https://www.youtube.com/watch?v=vfbndRTlsg4) criticizes that predestination's removal of free will causes removal of personal responsibility.
 Too much focus on insufficiencies of people of total depravity may cause reduction of conversations.
 Both causing stagnation.
-
 
 ### Calvinist Founding of America?
 
@@ -189,7 +188,7 @@ Similarly, there was no word for DNA, although the concept was also intuitively 
 
 
 ## Christian Themes in Anime
-Gurren Lagann, the only anime I could watch, kept me thinking after finishing it. Some parts seemed familiar. Then, I realized that the series' main themes have Christian analogs. The spiral energy is similar to the Holy Spirit; Kamina plays the role of Christ, and the LorgGenome is the Father. Kamina recommends to instead of trying to believe in yourself, to instead [believe in God (him - Kamina), that believes in you](https://www.youtube.com/watch?v=kC6wdfk2M98). He has sayings similar to "All things are possible for one who believes." Kamina also comes back from the dead once more at the end of the show. The team eventually forms a large body, "Super Tengen Toppa Gurren Lagann," similar to the body of the Church of the bible. You can find more similarities in [this link](https://www.iklone.org/post/christianity-in-gurren-lagann). Christianity permeates today's culture in unexpected places worldwide.
+Gurren Lagann, the only anime I could watch, kept me thinking after finishing it. Some parts seemed familiar. Then, I realized that the series' main themes have Christian analogs. The spiral energy is similar to the Holy Spirit; Kamina plays the role of Christ, and the LorgGenome is the Father. Kamina recommends to instead of trying to believe in yourself, to instead [believe in God (him - Kamina), that believes in you](https://www.youtube.com/watch?v=kC6wdfk2M98) (Isaiah 41:10, Proverbs 3:6, 1 Peter 5:7, John 15:5). He has sayings similar to "All things are possible for one who believes." (Mark 9:23 ESV) Kamina also comes back from the dead once more at the end of the show. The team eventually forms a large body, "Super Tengen Toppa Gurren Lagann," similar to the body of the Church of the bible. You can find more similarities in [this link](https://www.iklone.org/post/christianity-in-gurren-lagann). Christianity permeates today's culture in unexpected places worldwide.
 
 There is also [a bible quote in Ghost in Shell](https://youtu.be/Y8fuP8VFm_I?si=faw2U5friB8kN7W3).
 
