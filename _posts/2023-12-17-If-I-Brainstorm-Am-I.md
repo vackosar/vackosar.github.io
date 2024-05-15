@@ -91,7 +91,9 @@ The last one in particular, observed in simplified terms that Protestantism may 
 
 > Tests the relation between Protestantism and work attitudes using a novel method, operationalizing work ethic as the effect of unemployment on individuals’ subjective well-being. Analyzing a sample of 150,000 individuals from 82 societies, we find strong support for a Protestant work ethic: unemployment hurts Protestants more and hurts more in Protestant societies. Whilst the results shed new light on the Protestant work ethic debate, the method has wider applicability in the analysis of attitudinal differences. ...
 
-[Peter Thiel](https://www.youtube.com/watch?v=vfbndRTlsg4) criticizes that removal of free will causes scape goating of the God by removing personal responsibility and too much focus on insufficiencies of people may cause reduce conversations, thus both causing stagnation.
+[Peter Thiel](https://www.youtube.com/watch?v=vfbndRTlsg4) criticizes that predestination's removal of free will causes scapegoating of the God because of removal of personal responsibility.
+Too much focus on insufficiencies of people of total depravity may cause reduction of conversations.
+Both causing stagnation.
 
 
 ### Calvinist Founding of America?
@@ -143,7 +145,6 @@ Let me know if you spot an inaccuracy?
    - <span class="small">"Whatever you do, work heartily, as for the Lord and not for men" (Colossians 3:23 ESV)</span>
    - <span class="small">"And do not turn aside after empty things that cannot profit or deliver, for they are empty." (1 Samuel 12:21 ESV)</span>
 3. **Do not take the name of God in vain** becomes **Be grateful for all blessings of your life and stay positive. Steer your emotions and mind towards the meaningful and positive. Persist.**
-   - <span class="small">"A man without self-control is like a city broken into and left without walls." (Galatians 6:5 ESV)</span>
    - <span class="small">"Like a city whose walls are broken through is a person who lacks self-control." (Proverbs 25:28 ESV)</span>
    - <span class="small">"Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God." (Philippians 4:6 ESV)</span>
    - <span class="small">"For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, “Abba! Father!” (Romans 8:15 ESV)</span>

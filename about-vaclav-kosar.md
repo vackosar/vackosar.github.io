@@ -32,7 +32,7 @@ extra_meta: |
     </script>
 ---
 
-{% include image.html alt="Running with military cadence" style="width: 50%; max-width: 250px; background-color: lightgreen;" src="/vaclav-kosar-face-editted-removebg-preview-flip.png" %}
+{% include image.html alt="" style="width: 50%; max-width: 250px; background-color: lightgreen;" src="/vaclav-kosar-face-editted-removebg-preview-flip.png" %}
 
 I can help you reduce costs and increase revenues with software and machine learning (AI) systems. For example for [GLAMI](https://medium.com/@glami-engineering), I am optimizing a product feature detection system performing 40 million predictions (e.g. [product category](/software/google-product-taxonomy-viewer)) each month, so that the customers can find what they are looking for quickly. For GLAMI, I also participate in development of a shopping assistant. 
 
