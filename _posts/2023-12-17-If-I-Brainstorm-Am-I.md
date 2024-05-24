@@ -24,7 +24,7 @@ If Descartes is not right and thinking does not imply that I am, then what does?
 What is then left for a human to be?
 If there is only matter, is the human mind also matter, and is the mind replicable in a machine?
 
-> What we see now is like a dim image in a mirror. Then we shall see face to face. ([1 Corinthians 13:12 Ghost in the Shell](https://youtu.be/AzovpBgscGk?si=BMkpY4Miwyt6zm7L&t=190))
+> What we see now is like a dim image in a mirror. Then we shall see face to face. - [1 Corinthians 13:12 (Ghost in the Shell)](https://youtu.be/AzovpBgscGk?si=BMkpY4Miwyt6zm7L&t=190)
 
 What impact human cultural beliefs have on human societies for example in terms of birth rates?
 How important are religious frameworks for technological progress?
@@ -165,9 +165,9 @@ Notice how using the word brain in the place of word heart sometimes changes mea
 
 Similarly, there was no word for DNA, although the concept was also intuitively partially understood. Perhaps we could look at word "image" as sometimes referring to the DNA:
 
-> When Adam had lived 130 years, he fathered a son in his own likeness, after his image, and named him Seth. (Genesis 5:3)
+> When Adam had lived 130 years, he fathered a son in his own likeness, after his **image**, and named him Seth. (Genesis 5:3)
 
-> So God created man in his own image, in the image of God he created him; (Genesis 1:27)
+> So God created man in his own **image**, in the **image** of God he created him; (Genesis 1:27)
 
 
 ## Not-Not Is What? Actionable Commandments?
@@ -238,11 +238,11 @@ The 1800s was a rapid development period. There were 2 highly usual writers in t
 
 > “It is an easy thing for the shadow to lengthen ten steps. Rather let the shadow go back ten steps.” And Isaiah the prophet called to the Lord, and he brought the shadow back ten steps, by which it had gone down on the steps of Ahaz. (2 Kings 20:9 ESV)
 
-Nietzsche was over-focused on the individual and individual progress instead of understanding and contributing to society that would catalyze such a progress. That seems to me caused him to misunderstand the collective upside of specific religions or morals that grew about times in between Ancient Greece and his life. This lead him to relativism.
+Nietzsche was over-focused on the individual and individual progress instead of understanding and contributing to society that would catalyze such progress. That seems to me caused him to misunderstand the collective upside of specific religions or morals that grew in the times between Ancient Greece and his life. This lead him to relativism.
 
 I think Nietzsche was, for example, wrong in that [Socrates did not think of life as a sickness, instead Socrates he wanted to offer to a god of medicine and healing](http://www.minerva.mic.ul.ie/vol10/Jesus.html). Probably due a bad translation or too much imagination.
 
-Nietzsche wished to elevate human, but his vision was too much about a singular relativistic man lost high in the mountains like his Zarathustra. Still, there are some redeeming parts, and he probably suffered the poorer health than Reade.
+Nietzsche wished to elevate human, but his vision was too much about a singular relativistic man lost high in the mountains like his Zarathustra. His writing seems often emotional. Still, there are some redeeming parts, and he probably suffered the poorer health than Reade.
 
 
 **William Winwood Reade** (1838 - 1875), a different man - a pragmatist. He traveled much more, wrote more about human societies, history, and did more natural research than Nietzsche. Some passages of his work are controversial similar to Nietzsche's works. But the overall philosophical direction seem more interesting and more positive: to find minimum viable beliefs making them harder-to-vary (see notes on Deutsch above). Consequently, finding beliefs that do not conflict with new knowledge and keep the divine spark.
