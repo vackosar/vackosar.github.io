@@ -15,8 +15,6 @@ my_related_post_paths:
 - _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
-redirect_from:
-- /book/If-I-Brainstorm-Am-I
 ---
 
 {% include image.html src="/images/10-commandments-for-business-failure.png" alt="Ten Commandments for Business Failure Book Summary" %}
