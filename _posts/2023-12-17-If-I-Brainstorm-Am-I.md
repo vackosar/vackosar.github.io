@@ -207,7 +207,7 @@ Let me know if you spot an inaccuracy?
  - <span class="small">"Let the thief no longer steal, but rather let him labor, doing honest work with his own hands, so that he may have something to share with anyone in need." (Ephesians 4:28 ESV)</span>
 9. **Do not bear false witness** becomes **Seek, face, and speak the truth, wisdom, and innovation, and improve integrity of judgment, and administration.**
  - <span class="small">"The mouth of the righteous utters wisdom, and his tongue speaks justice." (Psalm 37:30 ESV)</span>
- - Desire without knowledge is not good—how much more will hasty feet miss the way!
+ - <span class="small">Desire without knowledge is not good—how much more will hasty feet miss the way! (Proverbs 19:2 ESV)</span>
  - <span class="small">"for wisdom will come into your heart, and knowledge will be pleasant to your soul;" (Proverbs 2:10 ESV)</span>
  - <span class="small">"The simple believes everything, but the prudent gives thought to his steps." (Proverbs 14:15 ESV)</span>
 10. **Do not covet** becomes **Wish other people well, learn to be more industrious yourself, and take pride in your effective work in the lands of the marketplace.**
