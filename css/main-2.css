@@ -13,8 +13,8 @@ nav ul li, footer ul li {
     display: inline;
 }
 a {
-    /*text-decoration: underline;*/
-    font-weight: bold;
+    text-decoration: underline;
+    /*font-weight: bold;*/
     color: #00607c;
     text-shadow: 1px 1px 1px #ddf4ff;
 
