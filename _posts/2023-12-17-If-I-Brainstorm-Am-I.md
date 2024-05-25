@@ -28,7 +28,8 @@ If there is only matter, is the human mind also matter, and is the mind replicab
 > What we see now is like a dim image in a mirror. Then we shall see face to face. - [1 Corinthians 13:12 (Ghost in the Shell)](https://youtu.be/AzovpBgscGk?si=BMkpY4Miwyt6zm7L&t=190)
 
 What impact human cultural beliefs have on human societies for example in terms of birth rates?
-How important are religious frameworks for technological progress?
+How important are cultural and religious frameworks for technological progress?
+What is the nature of consciousness?
 
 
 ## Materialism and Life
@@ -62,12 +63,15 @@ I think what would David Deutsch [would say](https://www.ted.com/talks/david_deu
 
 Note that Detsche's hard-to-vary principle is relates to more formalized principles in deep learning such as [the bias-variance trade-off](/ml/double-descent-contrary-to-bias-variance-trade-off) and Occam’s razor.
 
+
+## Linux Kernel Creator's Beliefs
 Here are quotes from **Linus Torvalds**:
 > It gives people the excuse to say, 'Oh, nature was just created,' and so the act of creation is seen to be something miraculous.
 
 Linus references the **Golden Rule** present in the New Testament (Matthew 7:12) and in a different form in the Old Testament (Leviticus 19:18).
+  The second Linus's personal rule is similar to Colossians 3:23 (ESV) "Whatever you do, work heartily" or Ecclesiastes 9:10 (ESV) "Whatever your hand finds to do, do it with your might".
 
-> "There are like two golden rules in life. One is 'Do unto others as you would want them to do unto you.' For some reason, people associate this with Christianity. I'm not a Christian. I'm agnostic. The other rule is 'Be proud of what you do.'
+> "There are like two golden rules in life. One is '_Do unto others as you would want them to do unto you._' For some reason, people associate this with Christianity. I'm not a Christian. I'm agnostic. The other rule is '_Be proud of what you do._'
 
 
 ## Conjecture and Criticism in the Bible
@@ -150,7 +154,7 @@ While these seem to be similar to intuitive early religions, in wealthy societie
 ## Prayer from a Secular Perspective
 Prayer puts locus of control externally, which is suboptimal from agency perspective, but let's look at other aspects of prayer.
 
-Prayer may also be a watered-down problem-solving method by working backward from the end goal (e.g., Amazon), inversion of Charlie Munger, or Polya.
+Prayer may also be a watered-down problem-solving or planning method by working backward from the end goal (e.g., Amazon), inversion of Charlie Munger, or Polya.
 We can interpret it as regarding the end goal first, which helps one to create the plan:
 
 > Commit your work to the Lord, and your plans will be established. - Proverbs 16:3 (NIV)
@@ -163,7 +167,7 @@ A prayer can also be akin to meditation, which also seems to have positive psych
 
 > therefore be self-controlled and sober-minded for the sake of your prayers. - 1 Peter 4:7 (ESV)
 
-Some calls for prayers are public, and in that case it can server as an goal alignment to be acted upon later.
+Some calls for prayers are public, and in that case it can serve as a goal alignment to be acted upon later.
 
 
 ## The Bible's Missing Modern Words
@@ -188,8 +192,8 @@ Similarly, there was no word for DNA, although the concept was also intuitively 
 
 
 ## Not-Not Is What? Actionable Commandments?
-Here an over-extrapolation from the Ten Commandments of the Bible by flipping them from a prohibitive form into a proactive, dynamic secular form, focusing on what to do instead of what not to do.
-For example, notice that the Golden Rule (Matthew 7:12, Leviticus 19:18) is also almost a positive proactive form of The Eye for an Eye law (Matthew 5:38, Leviticus 24:19). 
+Here an experimental over-extrapolation from the Ten Commandments of the Bible by flipping them from a prohibitive form into a proactive, dynamic secular form, focusing on what to do instead of what not to do.
+For example, notice that the Golden Rule "So whatever you wish that others would do to you, do also to them" (Matthew 7:12, Leviticus 19:18) is also almost a positive proactive form of The Eye for an eye law (Matthew 5:38, Leviticus 24:19). 
 
 You will disagree with these because I cannot precisely invert negative into positive.
 I also provide potentially supportive quotes from other parts of the Bible.
@@ -234,6 +238,7 @@ Let me know if you spot an inaccuracy?
  - <span class="small">"For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope." (Jeremiah 29:11 ESV)</span>
  - <span class="small">"Do you see a man skillful in his work? He will stand before kings; he will not stand before obscure men." (Proverbs 22:29 ESV)</span>
  - <span class="small">"But let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor." (Galatians 6:4 ESV)</span>
+ - <span class="small">"Whatever your hand finds to do, do it with your might." (Ecclesiastes 9:10 ESV)</span>
 
 
 ## Christian Themes in Anime
@@ -299,7 +304,12 @@ I hope [this writing is good for something (Civilization 6)](https://www.youtube
 
 
 ## The End is The New Beginning
+So I conclude:
+- Beliefs and religious structures significantly impact societies, including birth rates.
+- Cultural frameworks could have a significant impact on civilizational and technological development.
+- Nature of consciousness or soul remains undecidable.
+
 How does your philosophy shape your life?
 I hope you became more by brainstorming today with me.
 
-Where do go from here?
+Where do you go from here?
