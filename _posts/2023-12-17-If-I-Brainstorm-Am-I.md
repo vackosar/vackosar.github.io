@@ -56,7 +56,10 @@ Here are 4 great quotes from **Sabine Hossenfelder**'s (contemporary, theoretica
 
 
 ## Hard-to-Vary Explanations and Religion
-I think what would David Deutsch [would say](https://www.ted.com/talks/david_deutsch_a_new_way_to_explain_explanation/transcript?language=en) that **myths or religion are easy to vary explanation, because we can change the nature of Gods involved, so it is not a good explanation**.
+I think what would David Deutsch [would say that **myths or religion are easy to vary explanation, because we can change the nature of Gods involved, so it is not a good explanation**.
+
+[In this video](https://www.ted.com/talks/david_deutsch_a_new_way_to_explain_explanation/transcript?language=en) David Deutsch argues that **myths or religions are easy to vary explanations** because for example we can change the nature of the Gods involved, **so they are not good explanations**.
+
 > Greeks one jot closer to understanding seasons, because their explanation was bad -- easy to vary. And it's only when an explanation is good that it even matters whether it's testable.
 > And therefore, progress depended on learning how to reject the authority of learned men, the priests, traditions and rulers, which is why the scientific revolution had to have a wider context: the Enlightenment, a revolution in how people sought knowledge, trying not to rely on authority. "Take no one's word for it."
 > So, for the essence of what makes the difference to enable progress, seek good explanations, the ones that can't be easily varied, while still explaining the phenomena.
@@ -69,7 +72,7 @@ Here are quotes from **Linus Torvalds**:
 > It gives people the excuse to say, 'Oh, nature was just created,' and so the act of creation is seen to be something miraculous.
 
 Linus references the **Golden Rule** present in the New Testament (Matthew 7:12) and in a different form in the Old Testament (Leviticus 19:18).
-  The second Linus's personal rule is similar to Colossians 3:23 (ESV) "Whatever you do, work heartily" or Ecclesiastes 9:10 (ESV) "Whatever your hand finds to do, do it with your might".
+The second Linus's personal rule is similar to Colossians 3:23 (ESV) "Whatever you do, work heartily" or Ecclesiastes 9:10 (ESV) "Whatever your hand finds to do, do it with your might".
 
 > "There are like two golden rules in life. One is '_Do unto others as you would want them to do unto you._' For some reason, people associate this with Christianity. I'm not a Christian. I'm agnostic. The other rule is '_Be proud of what you do._'
 
