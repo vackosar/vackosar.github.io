@@ -20,6 +20,7 @@ redirect_from:
 
 
 We witness the hints of reasoning capability in the large language models today.
+LLMs most of the time sound more like a mirror, but with occasional surprise of almost reasoning.
 If Descartes is not right and thinking does not imply that I am, then what does?
 What is then left for a human to be?
 If there is only matter, is the human mind also matter, and is the mind replicable in a machine?
@@ -59,12 +60,21 @@ Note that Detsche's hard-to-vary principle is relates to more formalized princip
 Here are quotes from **Linus Torvalds**:
 > It gives people the excuse to say, 'Oh, nature was just created,' and so the act of creation is seen to be something miraculous.
 
+Linus references the **Golden Rule** present in the New Testament (Matthew 7:12) and in a different form in the Old Testament (Leviticus 19:18).
+
 > "There are like two golden rules in life. One is 'Do unto others as you would want them to do unto you.' For some reason, people associate this with Christianity. I'm not a Christian. I'm agnostic. The other rule is 'Be proud of what you do.'
 
 
 ## Conjecture and Criticism in the Bible
-Science progresses through conjecture and criticism if we follow Popper's ideas. David Deutsch explained these ideas and popularized them in [The Beginning of Infinity](https://www.amazon.com/Beginning-Infinity-Explanations-Transform-World/dp/0143121359).
-Bible proverbs often praise criticism: "A wise man listens to advice" and "Better is open rebuke". Regarding the conjectures, the bible verses promote understanding and wisdom.
+Science progresses through conjecture and criticism if we follow **Popper**'s ideas. **David Deutsch** explained these ideas and popularized them in [The Beginning of Infinity](https://www.amazon.com/Beginning-Infinity-Explanations-Transform-World/dp/0143121359).
+Bible proverbs often praise criticism:
+
+> A wise man listens to advice"
+
+> Better is open rebuke
+ 
+Regarding the conjectures, the bible verses promote understanding and wisdom.
+
 We have a biblical proverb:
 > The heart of the discerning acquires knowledge, for the ears of the wise seek it out."
 
@@ -172,7 +182,9 @@ Similarly, there was no word for DNA, although the concept was also intuitively 
 
 ## Not-Not Is What? Actionable Commandments?
 Here an over-extrapolation from the Ten Commandments of the Bible by flipping them from a prohibitive form into a proactive, dynamic secular form, focusing on what to do instead of what not to do.
-You will disagree because I cannot precisely invert negative into positive.
+For example, notice that the Golden Rule (Matthew 7:12, Leviticus 19:18) is also almost a positive proactive form of The Eye for an Eye law (Matthew 5:38, Leviticus 24:19). 
+
+You will disagree with these because I cannot precisely invert negative into positive.
 I also provide potentially supportive quotes from other parts of the Bible.
 Let me know if you spot an inaccuracy?
 
@@ -218,15 +230,15 @@ Let me know if you spot an inaccuracy?
 
 
 ## Christian Themes in Anime
-Gurren Lagann, the only anime I could watch, kept me thinking after finishing it. Some parts seemed familiar. Then, I realized that the series' main themes have Christian analogs. The spiral energy is similar to the Holy Spirit; Kamina plays the role of Christ, and the LorgGenome is the Father. Kamina recommends to instead of trying to believe in yourself, to instead [believe in God (him - Kamina), that believes in you](https://www.youtube.com/watch?v=kC6wdfk2M98) (Similar to but not the same - John 12:46, John 15:5, 1 Peter 5:7 and other similar passages: Isaiah 41:10, Proverbs 3:6). He has sayings similar to "All things are possible for one who believes." (Mark 9:23 ESV) Kamina also comes back from the dead once more at the end of the show. The team eventually forms a large body, "Super Tengen Toppa Gurren Lagann," similar to the body of the Church of the bible. You can find more similarities in [this link](https://www.iklone.org/post/christianity-in-gurren-lagann). Christianity permeates today's culture in unexpected places worldwide.
+**Gurren Lagann**, the only anime I could watch, kept me thinking after finishing it. Some parts seemed familiar. Then, I realized that the series' main themes have Christian analogs. The spiral energy is similar to the Holy Spirit; Kamina plays the role of Christ, and the LorgGenome is the Father. Kamina recommends to instead of trying to believe in yourself, to instead [believe in God (him - Kamina), that believes in you](https://www.youtube.com/watch?v=kC6wdfk2M98) (Similar to but not the same - John 12:46, John 15:5, 1 Peter 5:7 and other similar passages: Isaiah 41:10, Proverbs 3:6). He has sayings similar to "All things are possible for one who believes." (Mark 9:23 ESV) Kamina also comes back from the dead once more at the end of the show. The team eventually forms a large body, "Super Tengen Toppa Gurren Lagann," similar to the body of the Church of the bible. You can find more similarities in [this link](https://www.iklone.org/post/christianity-in-gurren-lagann). Christianity permeates today's culture in unexpected places worldwide.
 
 There is also [a bible quote in Ghost in Shell](https://youtu.be/Y8fuP8VFm_I?si=faw2U5friB8kN7W3).
 
 > when I was a child, my speech, feelings, and thinking were all those of a child. Now that I am a man, I have no more use for childish ways. - 1 Corinthians 13:11 (Ghost in The Shell translation)
 
 
-## Nietzsche and Reade
-The ninth commandment of not being a false witness contributed to a systematic inquiry into science. Scientific inquiry multiplied, aggregated, and executed knowledge. However, the knowledge snapped back and came to be perceived as superseding or disagreeing with parts of the scriptures.
+## Two Usual Philosophers of 1800s
+The ninth commandment of not being a false witness contributed to systematic inquiry into science. Scientific inquiry multiplied, aggregated, and executed knowledge. However, the knowledge snapped back and came to be perceived as superseding or disagreeing with parts of the scriptures.
 
 Yet a small light remained after the storm. Perhaps the implicit positive form of commandments pointed upward—towards growth. Also, can we look at the Tower of Babel story as less against ambition and technology and more about preferring diversity of solutions?
 
@@ -234,6 +246,8 @@ Yet a small light remained after the storm. Perhaps the implicit positive form o
 
 The 1800s was a rapid development period. There were 2 highly usual writers in the 1800s: Friedrich Nietzsche, and William Winwood Reade.
 
+
+### Friedrich Nietzsche
 **Friedrich Nietzsche** (1844 - 1900) I read long ago. Reflecting now on him, I think it is not positive despite some qualities. His writing is uplifting at times, but overthinking and living in his head. He had this idea of Eternal return. This cyclical universe, which is interesting idea in the context of astrophysics. For him, it was a motivator - the "heaviest burden" of being forced to repeat the same life. This motivator does not suggest a wish to improve the world. In the end, was he a nihilist, which he wanted to prevent? A mystic who was turning back the clock with Eternal return and with partial reversion to the Roman belief system?
 
 > “It is an easy thing for the shadow to lengthen ten steps. Rather let the shadow go back ten steps.” And Isaiah the prophet called to the Lord, and he brought the shadow back ten steps, by which it had gone down on the steps of Ahaz. (2 Kings 20:9 ESV)
@@ -245,6 +259,7 @@ I think Nietzsche was, for example, wrong in that [Socrates did not think of lif
 Nietzsche wished to elevate human, but his vision was too much about a singular relativistic man lost high in the mountains like his Zarathustra. His writing seems often emotional. Still, there are some redeeming parts, and he probably suffered the poorer health than Reade.
 
 
+### William Winwood Reade
 **William Winwood Reade** (1838 - 1875), a different man - a pragmatist. He traveled much more, wrote more about human societies, history, and did more natural research than Nietzsche. Some passages of his work are controversial similar to Nietzsche's works. But the overall philosophical direction seem more interesting and more positive: to find minimum viable beliefs making them harder-to-vary (see notes on Deutsch above). Consequently, finding beliefs that do not conflict with new knowledge and keep the divine spark.
 
 He wished to incorporate the sciences and good works:
