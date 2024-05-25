@@ -24,9 +24,6 @@ LLMs most of the time sound more like a mirror, but with occasional surprise of 
 If Descartes is not right and thinking does not imply that I am, then what does?
 What is then left for a human to be?
 If there is only matter, is the human mind also matter, and is the mind replicable in a machine?
-There is a fun quote an old Anime movie Ghost in the Shell (1995).
-
-> What we see now is like a dim image in a mirror. Then we shall see face to face. - [1 Corinthians 13:12 (Ghost in the Shell)](https://youtu.be/AzovpBgscGk?si=BMkpY4Miwyt6zm7L&t=190)
 
 What impact human cultural beliefs have on human societies for example in terms of birth rates?
 How important are cultural and religious frameworks for technological progress?
