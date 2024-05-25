@@ -154,7 +154,7 @@ While these seem to be similar to intuitive early religions, in wealthy societie
 ## Prayer from a Secular Perspective
 Prayer puts locus of control externally, which is suboptimal from agency perspective, but let's look at other aspects of prayer.
 
-Prayer may also be a watered-down problem-solving or planning method by working backward from the end goal (e.g., Amazon), inversion of Charlie Munger, or Polya.
+Prayer may also be a seen similar to a problem-solving method of working backward from the end goal (e.g., Amazon), inversion of Charlie Munger, or Polya.
 We can interpret it as regarding the end goal first, which helps one to create the plan:
 
 > Commit your work to the Lord, and your plans will be established. - Proverbs 16:3 (NIV)
