@@ -24,6 +24,7 @@ LLMs most of the time sound more like a mirror, but with occasional surprise of 
 If Descartes is not right and thinking does not imply that I am, then what does?
 What is then left for a human to be?
 If there is only matter, is the human mind also matter, and is the mind replicable in a machine?
+There is a fun quote an old Anime movie Ghost in the Shell (1995).
 
 > What we see now is like a dim image in a mirror. Then we shall see face to face. - [1 Corinthians 13:12 (Ghost in the Shell)](https://youtu.be/AzovpBgscGk?si=BMkpY4Miwyt6zm7L&t=190)
 
@@ -56,15 +57,13 @@ Here are 4 great quotes from **Sabine Hossenfelder**'s (contemporary, theoretica
 
 
 ## Hard-to-Vary Explanations and Religion
-I think what would David Deutsch [would say that **myths or religion are easy to vary explanation, because we can change the nature of Gods involved, so it is not a good explanation**.
-
 [In this video](https://www.ted.com/talks/david_deutsch_a_new_way_to_explain_explanation/transcript?language=en) David Deutsch argues that **myths or religions are easy to vary explanations** because for example we can change the nature of the Gods involved, **so they are not good explanations**.
 
 > Greeks one jot closer to understanding seasons, because their explanation was bad -- easy to vary. And it's only when an explanation is good that it even matters whether it's testable.
 > And therefore, progress depended on learning how to reject the authority of learned men, the priests, traditions and rulers, which is why the scientific revolution had to have a wider context: the Enlightenment, a revolution in how people sought knowledge, trying not to rely on authority. "Take no one's word for it."
 > So, for the essence of what makes the difference to enable progress, seek good explanations, the ones that can't be easily varied, while still explaining the phenomena.
 
-Note that Detsche's hard-to-vary principle is relates to more formalized principles in deep learning such as [the bias-variance trade-off](/ml/double-descent-contrary-to-bias-variance-trade-off) and Occam’s razor.
+Note that Deutsch's hard-to-vary principle is relates to more formalized principles in deep learning such as [the bias-variance trade-off](/ml/double-descent-contrary-to-bias-variance-trade-off) and Occam’s razor.
 
 
 ## Linux Kernel Creator's Beliefs
