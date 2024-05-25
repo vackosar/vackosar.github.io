@@ -229,7 +229,7 @@ Let me know if you spot an inaccuracy?
  - <span class="small">Desire without knowledge is not good—how much more will hasty feet miss the way! (Proverbs 19:2 ESV)</span>
  - <span class="small">"for wisdom will come into your heart, and knowledge will be pleasant to your soul;" (Proverbs 2:10 ESV)</span>
  - <span class="small">"The simple believes everything, but the prudent gives thought to his steps." (Proverbs 14:15 ESV)</span>
-10. **Do not covet** becomes **Wish other people well, learn to be more industrious yourself, and take pride in your effective work in the lands of the marketplace.**
+10. **Do not covet** becomes **Wish other people well, learn to be more industrious yourself, and take pride in your unique competitive work in the marketplace.**
  - <span class="small">"Therefore encourage one another and build one another up, just as you are doing." (1 Thessalonians 5:11 ESV)</span>
  - <span class="small">"For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope." (Jeremiah 29:11 ESV)</span>
  - <span class="small">"Do you see a man skillful in his work? He will stand before kings; he will not stand before obscure men." (Proverbs 22:29 ESV)</span>
