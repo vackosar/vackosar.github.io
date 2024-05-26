@@ -25,6 +25,8 @@ If Descartes is not right and thinking does not imply that I am, then what does?
 What is then left for a human to be?
 If there is only matter, is the human mind also matter, and is the mind replicable in a machine?
 
+> What we see now is like a dim image in a mirror. - [Ghost in the Shell anime from 1995: 1 Corinthians 13:12](https://youtu.be/AzovpBgscGk?si=BMkpY4Miwyt6zm7L&t=190)
+
 What impact human cultural beliefs have on human societies for example in terms of birth rates?
 How important are cultural and religious frameworks for technological progress?
 What is the nature of consciousness?
@@ -35,7 +37,7 @@ Are there any alternatives to materialism? The belief that **life is a primary b
 
 Because **life is the self-directing, self-replicating, and self-improving so stationarity or uniformity would be against that**, and so from this a concept of a central one god would be expected. People find it easier to relate to and follow other people, so it is simpler to understand a god as a person. Notice [David Deutsch's conjecture and criticism](https://x.com/DavidDeutschOxf/status/1195469457088487424?s=20) (Popper, Xenophanes) and points on disobedience necessity for creation of an AGI.
 
-Was [René Girard](https://en.wikipedia.org/wiki/Ren%C3%A9_Girard) right that the New Testament Bible’s exposure of [the scapegoat mechanism (e.g. Leviticus 16:21-22)](https://www.biblegateway.com/passage/?search=Leviticus%2016%3A21-22&version=NIV) in that Divinity takes side of the victim forcing self-reflection and thought independent of crowds? Does this shortcut mimetic conflicts, and so is necessary for complex societies?
+Was [René Girard](https://en.wikipedia.org/wiki/Ren%C3%A9_Girard) right that the New Testament Bible’s exposure of the scapegoat mechanism (e.g., Leviticus 16:21-22) in that Divinity takes the side of the victim, forcing self-reflection and independence though from the crowds? Does this shortcut mimetic conflicts, and so is necessary for complex societies?
 
 Had **Soviet Russia collapsed**, partially because ruling communism attempted to remove religion with their materialist view, but itself had lower birthrates, and so the demographics eventually shifted towards people who grew up in non-communist communities, which eventually rejected communism causing the union to collapse? Look at [the chart of the Russian birthrates plummeting after 1910](https://www.statista.com/statistics/1033851/fertility-rate-russia-1840-2020/), which coincides with the Russian Revolution. Note that Lenin had no children, Stalin had 3, Khrushchev (de-Stalinization) had 5, Brezhnev (neo-Stalinist) had 2. The problem with this theory is that if everything stayed the same and the higher birth rates were passed to the next generation, we would see an increase in fertility later. However, that is not what the chart shows. On the other hand, the culture has changed in the West at the same time, so I don't have an answer.
 
@@ -56,20 +58,27 @@ Here are 4 great quotes from **Sabine Hossenfelder**'s (contemporary, theoretica
 ## Hard-to-Vary Explanations and Religion
 [In this video](https://www.ted.com/talks/david_deutsch_a_new_way_to_explain_explanation/transcript?language=en) David Deutsch argues that **myths or religions are easy to vary explanations** because for example we can change the nature of the Gods involved, **so they are not good explanations**.
 
+> This easy variability is the sign of a bad explanation, because, without a functional reason to prefer one of countless variants, advocating one of them in preference to the others is irrational.
+
 > Greeks one jot closer to understanding seasons, because their explanation was bad -- easy to vary. And it's only when an explanation is good that it even matters whether it's testable.
 
-> And therefore, progress depended on learning how to reject the authority of learned men, the priests, traditions and rulers, which is why the scientific revolution had to have a wider context: the Enlightenment, a revolution in how people sought knowledge, trying not to rely on authority. "Take no one's word for it."
+> Now our current explanation of seasons is that the Earth's axis is tilted like that, so each hemisphere tilts towards the sun for half the year, and away for the other half.
+
+> If the ancient Greeks had found out about seasons in Australia, they could have easily varied their myth to predict that... So, being proved wrong by observation and changing their theory accordingly still wouldn't have got the ancient Greeks one jot closer to understanding seasons... If the axis-tilt theory had been refuted, its defenders would have had nowhere to go.
+
+> the Enlightenment, a revolution in how people sought knowledge, trying not to rely on authority. "Take no one's word for it."
 
 > So, for the essence of what makes the difference to enable progress, seek good explanations, the ones that can't be easily varied, while still explaining the phenomena.
 
 Note that Deutsch's hard-to-vary principle is relates to more formalized principles in deep learning such as [the bias-variance trade-off](/ml/double-descent-contrary-to-bias-variance-trade-off) and Occam’s razor.
+Hard-to-vary principle can be also viewed [in terms of Kolmogorov complexity (~ compressibility), and Rashomon set (~ multiple acceptable models)](https://arxiv.org/abs/2012.09318).
 
 
 ## Linux Kernel Creator's Beliefs
-Here are quotes from **Linus Torvalds**:
+Here are two quotes from **Linus Torvalds** on his personal beliefs:
 > It gives people the excuse to say, 'Oh, nature was just created,' and so the act of creation is seen to be something miraculous.
 
-Linus references the **Golden Rule** present in the New Testament (Matthew 7:12) and in a different form in the Old Testament (Leviticus 19:18).
+In the second quote, Linus references the **Golden Rule** present in the New Testament (Matthew 7:12) and in a different form in the Old Testament (Leviticus 19:18).
 The second Linus's personal rule is similar to Colossians 3:23 (ESV) "Whatever you do, work heartily" or Ecclesiastes 9:10 (ESV) "Whatever your hand finds to do, do it with your might".
 
 > "There are like two golden rules in life. One is '_Do unto others as you would want them to do unto you._' For some reason, people associate this with Christianity. I'm not a Christian. I'm agnostic. The other rule is '_Be proud of what you do._'
@@ -243,9 +252,9 @@ Let me know if you spot an inaccuracy?
 ## Christian Themes in Anime
 **Gurren Lagann**, the only anime I could watch, kept me thinking after finishing it. Some parts seemed familiar. Then, I realized that the series' main themes have Christian analogs. The spiral energy is similar to the Holy Spirit; Kamina plays the role of Christ, and the LorgGenome is the Father. Kamina recommends to instead of trying to believe in yourself, to instead [believe in God (him - Kamina), that believes in you](https://www.youtube.com/watch?v=kC6wdfk2M98) (Similar to but not the same - John 12:46, John 15:5, 1 Peter 5:7 and other similar passages: Isaiah 41:10, Proverbs 3:6). He has sayings similar to "All things are possible for one who believes." (Mark 9:23 ESV) Kamina also comes back from the dead once more at the end of the show. The team eventually forms a large body, "Super Tengen Toppa Gurren Lagann," similar to the body of the Church of the bible. You can find more similarities in [this link](https://www.iklone.org/post/christianity-in-gurren-lagann). Christianity permeates today's culture in unexpected places worldwide.
 
-There is also [a bible quote in Ghost in Shell](https://youtu.be/Y8fuP8VFm_I?si=faw2U5friB8kN7W3).
+There is also a bible quote in Ghost in Shell:
 
-> when I was a child, my speech, feelings, and thinking were all those of a child. Now that I am a man, I have no more use for childish ways. - 1 Corinthians 13:11 (Ghost in The Shell translation)
+> when I was a child, my speech, feelings, and thinking were all those of a child. Now that I am a man, I have no more use for childish ways. - [1 Corinthians 13:11 (Ghost in The Shell translation)](https://youtu.be/Y8fuP8VFm_I?si=CXYfLMc1u5MEUrKu&t=103)
 
 
 ## Two Usual Philosophers of 1800s
