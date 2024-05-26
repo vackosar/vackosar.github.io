@@ -1,6 +1,6 @@
 ---
 title: Cross-Attention in Transformer Architecture
-description: Merge two embedding sequences regardless of modality, e.g., image with text in Stable Diffusion U-Net.
+description: Merge two embedding sequences regardless of modality, e.g., image with text in Stable Diffusion U-Net with encoder-decoder attention.
 layout: post
 categories: ml
 image: /images/cross-attention-in-transformer-architecture.png
