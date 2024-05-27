@@ -114,6 +114,8 @@ The scientific method dates from the 17th century and is not mentioned in the Bi
 
 > Great are the works of the Lord, studied by all who delight in them. - Psalm 111:2 ESV
 
+> From where, then, does wisdom come? ... God understands the way to it, and he knows its place. - Job 28 ESV
+
 
 ## John Calvin and Science
 John Calvin's view on the sciences seems to be demonstrated in these quotes from the Institutes of the Christian Religion. They indicate that sciences are good, but not the most important:
