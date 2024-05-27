@@ -70,7 +70,7 @@ Here are 4 great quotes from **Sabine Hossenfelder**'s (contemporary, theoretica
 
 > So, for the essence of what makes the difference to enable progress, seek good explanations, the ones that can't be easily varied, while still explaining the phenomena.
 
-There are indeed many interpretations of the same scriptures. However, only so many mainstream religious frameworks have sustainable populations. From this perspective, religions are harder to vary and more of an explanation for staying together than an explanation of metaphysics.
+There are indeed many interpretations of the same scriptures. However, only so many mainstream religious frameworks have sustainable populations. But also from this perspective, religions are harder to vary and more of an explanation for staying together than an explanation of metaphysics.
 
 Note that Deutsch's hard-to-vary principle is relates to more formalized principles in deep learning such as [the bias-variance trade-off](/ml/double-descent-contrary-to-bias-variance-trade-off) and Occam’s razor.
 Hard-to-vary principle can be also viewed [in terms of Kolmogorov complexity (~ compressibility), and Rashomon set (~ multiple acceptable models)](https://arxiv.org/abs/2012.09318).
