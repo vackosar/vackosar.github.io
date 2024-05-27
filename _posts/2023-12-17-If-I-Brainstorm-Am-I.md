@@ -70,6 +70,8 @@ Here are 4 great quotes from **Sabine Hossenfelder**'s (contemporary, theoretica
 
 > So, for the essence of what makes the difference to enable progress, seek good explanations, the ones that can't be easily varied, while still explaining the phenomena.
 
+There are indeed many interpretations of the same scriptures. However, only so many mainstream religious frameworks have sustainable populations. From this perspective, religions are harder to vary and more of an explanation for staying together than an explanation of metaphysics.
+
 Note that Deutsch's hard-to-vary principle is relates to more formalized principles in deep learning such as [the bias-variance trade-off](/ml/double-descent-contrary-to-bias-variance-trade-off) and Occam’s razor.
 Hard-to-vary principle can be also viewed [in terms of Kolmogorov complexity (~ compressibility), and Rashomon set (~ multiple acceptable models)](https://arxiv.org/abs/2012.09318).
 
@@ -95,12 +97,22 @@ We have a biblical proverb:
 [Rockefeller was a baptist](/book/Rockefellers-Quotes-Gratitude-Fictional-Letters), and on the Rockefeller Center stands biblical quote:
 > And wisdom and knowledge shall be the stability of thy times
 
+> Do not forsake wisdom, and she will protect you; love her, and she will watch over you. - Proverbs 4:6 ESV
 
 Bible proverbs often praise criticism:
 
 > A wise man listens to advice
 
 > Better is open rebuke
+
+
+The scientific method dates from the 17th century and is not mentioned in the Bible, but there are some interesting although scattered quotes:
+
+> It is the glory of God to conceal things, but the glory of kings is to search things out. - Proverbs 25:2 ESV
+
+> Do not despise prophecies, but test everything; hold fast what is good. - 1 Thessalonians 5 ESV
+
+> Great are the works of the Lord, studied by all who delight in them. - Psalm 111:2 ESV
 
 
 ## John Calvin and Science
