@@ -278,6 +278,8 @@ Yet a small light remained after the storm. Perhaps the implicit positive form o
 
 The 1800s was a rapid development period. There were 2 highly usual writers in the 1800s: Friedrich Nietzsche, and William Winwood Reade.
 
+> Man puts an end to darkness and searches out to the farthest limit the ore in gloom and deep darkness. He opens shafts in a valley away from where anyone lives; they are forgotten by travelers; they hang in the air, far away from mankind; they swing to and fro. As for the earth, out of it comes bread, but underneath it is turned up as by fire. Its stones are the place of sapphires, and it has dust of gold. (Job 28:3-6 ESV)
+
 
 ### Friedrich Nietzsche
 **Friedrich Nietzsche** (1844 - 1900) I read long ago. Reflecting now on him, I think it is not positive despite some qualities. His writing is uplifting at times, but overthinking and living in his head. He had this idea of Eternal return. This cyclical universe, which is interesting idea in the context of astrophysics. For him, it was a motivator - the "heaviest burden" of being forced to repeat the same life. This motivator does not suggest a wish to improve the world. In the end, was he a nihilist, which he wanted to prevent? A mystic who was turning back the clock with Eternal return and with partial reversion to the Roman belief system?
