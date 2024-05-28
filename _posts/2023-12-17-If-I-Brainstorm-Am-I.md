@@ -286,7 +286,7 @@ The 1800s was a rapid development period. There were 2 highly usual writers in t
 ### Friedrich Nietzsche
 **Friedrich Nietzsche** (1844 - 1900) I read long ago. Reflecting now on him, I think it is not positive despite some qualities. His writing is uplifting at times, but overthinking and living in his head. He had this idea of Eternal return. This cyclical universe, which is interesting idea in the context of astrophysics. For him, it was a motivator - the "heaviest burden" of being forced to repeat the same life. This motivator does not suggest a wish to improve the world. In the end, was he a nihilist, which he wanted to prevent? A mystic who was turning back the clock with Eternal return and with partial reversion to the Roman belief system?
 
-> “It is an easy thing for the shadow to lengthen ten steps. Rather let the shadow go back ten steps.” And Isaiah the prophet called to the Lord, and he brought the shadow back ten steps, by which it had gone down on the steps of Ahaz. (2 Kings 20:9 ESV)
+> “Behold, I will make the shadow cast by the declining sun on the dial of Ahaz turn back ten steps.” So the sun turned back on the dial the ten steps by which it had declined. (Isaiah 38:8)
 
 Nietzsche was over-focused on the individual and individual progress instead of understanding and contributing to society that would catalyze such progress. That seems to me caused him to misunderstand the collective upside of specific religions or morals that grew in the times between Ancient Greece and his life. This lead him to relativism.
 
