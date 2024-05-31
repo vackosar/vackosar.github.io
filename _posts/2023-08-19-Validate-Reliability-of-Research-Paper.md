@@ -46,12 +46,12 @@ There is a paywalled article called [Conducting Diligence](https://doomberg.subs
   - Connections: Are they known, accessible, or anonymous? Who is the author connected to, and who helped them in the past?
   - Outsider: Outsiders may shed new light with less authority on the subject.
 2. Publisher Credibility: Who published these results in their publication? What is the history and reputation of this publisher?
-  - Reviewers and Critics: Who peer-reviewed, or is it a self-published pre-print? Was the peer reviewer familiar with the domain to judge the research?
+  - Reviewers and Critics: Who peer-reviewed, or is it a self-published pre-print? Was the peer reviewer familiar with the domain to judge the research? Who you can ask about this?
   - Republishers: Who are the original primary sources, and are they publicly accessible and non-anonymous? Who is republishing the research, and what are their biases, intentions, and incentives? Do people from multiple sides publish this?
   - Audience bias: Is there an existing bias in the audience that may have been preventing wider publication? Why was this published or surfaced now? Is the current environment related to the results?
 3. Scientific Process and Evidence: At what stage is this research in the scientific process of validation and publishing?
   - How often are similar papers at similar stage invalid and retracted?
-  - Burden of Evidence: What is the specific evidence for the claims and does it really imply the conclusion (non sequitur)? Are the metrics and their comparisons valid and relevant? Or are there hidden effects? Is this a randomized double-blind placebo control (RDBPC) trial?
+  - Burden of Evidence: What is the specific evidence for the claims and does it really imply the conclusion (non sequitur)? Are the metrics and their comparisons valid and relevant? Or are there hidden effects? Is this a randomized double-blind placebo control (RDBPC) trial? Who applied the results successfully?
   - Transparent: Is the process published and reliable? Are the numbers published, and do they show reasonable statistical distribution? If you wanted to hide something, where would you hide it?
 4. Scientific Context: What do existing research and the history of this field suggest about these findings?
   - The idea: Is there a clear main finding or an attempt to create confusion by adding unnecessary instead? Is the main message coherent? Does the title match the content?
