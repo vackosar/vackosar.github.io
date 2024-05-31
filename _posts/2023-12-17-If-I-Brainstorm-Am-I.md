@@ -248,8 +248,11 @@ Let me know if you spot an inaccuracy?
  - <span class="small">"Just as we have borne the image of the man of dust, we shall also bear the image of the man of heaven." (1 Corinthians 15:49 ESV)</span>
 7. **Do not commit adultery** becomes **Nurture a healthy and loving marriage and society broadly.**
  - <span class="small">"Husbands, love your wives, as Christ loved the church and gave himself up for her." (Ephesians 5:25 ESV)</span>
+ - <span class="small">"An excellent wife who can find? She is far more precious than jewels." (Proverbs 31:10 ESV)</span>
 8. **Do not steal** becomes **Respect and protect others and share fruits of your labor with wise generosity.**
  - <span class="small">"Let the thief no longer steal, but rather let him labor, doing honest work with his own hands, so that he may have something to share with anyone in need." (Ephesians 4:28 ESV)</span>
+ - <span class="small">"Moreover, it is required of stewards that they be found faithful." (1 Corinthians 4:2 ESV)</span>
+ - <span class="small">"Each one must give as he has decided in his heart, not reluctantly or under compulsion, for God loves a cheerful giver." (1 Corinthians 4:2 ESV)</span>
 9. **Do not bear false witness** becomes **Seek, face, and speak the truth, wisdom, and innovation, and improve integrity of judgment, and administration.**
  - <span class="small">"The mouth of the righteous utters wisdom, and his tongue speaks justice." (Psalm 37:30 ESV)</span>
  - <span class="small">Desire without knowledge is not good—how much more will hasty feet miss the way! (Proverbs 19:2 ESV)</span>
