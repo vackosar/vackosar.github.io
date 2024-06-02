@@ -11,8 +11,8 @@ my_related_post_paths:
 - _posts/2022-05-14-neural-data-compression.md
 - _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
 - _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
-- _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
+- _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
 - _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 ---
