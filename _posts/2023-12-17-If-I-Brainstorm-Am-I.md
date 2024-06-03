@@ -295,11 +295,21 @@ Nietzsche was over-focused on the individual and individual progress instead of 
 
 I think Nietzsche was, for example, wrong in that [Socrates did not think of life as a sickness, instead Socrates he wanted to offer to a god of medicine and healing](http://www.minerva.mic.ul.ie/vol10/Jesus.html). Probably due a bad translation or too much imagination.
 
+Nietzsche also did not have a good understanding of Darwin's Origin of Species (1859), or perhaps did not have full access to it:
+
+> First, he misidentifies the selective criterion in Darwinism, the standard by which natural selection selects: this is reproduction, not survival, and emphatically not the organism’s own coming-into-existence, as in the Zarathustra passage (John Richardson - Nietzsche's New Darwinism (2004))
+
 Nietzsche wished to elevate human, but his vision was too much about a singular relativistic man lost high in the mountains like his Zarathustra. His writing seems often emotional. Still, there are some redeeming parts, and he probably suffered the poorer health than Reade.
 
 
 ### William Winwood Reade
-**William Winwood Reade** (1838 - 1875), a different man - a pragmatist. He traveled much more, wrote more about human societies, history, and did more natural research than Nietzsche. Some passages of his work are controversial similar to Nietzsche's works. But the overall philosophical direction seem more interesting and more positive: to find minimum viable beliefs making them harder-to-vary (see notes on Deutsch above). Consequently, finding beliefs that do not conflict with new knowledge and keep the divine spark.
+**William Winwood Reade** (1838 - 1875), a different man - a pragmatist. He traveled much more, wrote more about human societies, history, and did more natural research than Nietzsche.
+
+For example, he helped Darwin's research doing on the ground research:
+
+> Indeed, upon his return to the coast of Africa after travelling in the interior for several months, Reade would find a now five-month-old letter waiting for him from Darwin describing in detail just how useful his observations had been. ([A good Darwinian? Winwood Reade and the making of a late Victorian evolutionary epic (2015)](https://ianhesketh.wordpress.com/wp-content/uploads/2015/08/heskethagooddarwinian.pdf))
+
+Some passages of his work are controversial similar to Nietzsche's works. But the overall philosophical direction seem more interesting and more positive: to find minimum viable beliefs making them harder-to-vary (see notes on Deutsch above). Consequently, finding beliefs that do not conflict with new knowledge and keep the divine spark.
 
 He wished to incorporate the sciences and good works:
 
