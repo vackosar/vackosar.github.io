@@ -5,7 +5,7 @@ date: 2020-08-22
 categories: art
 description: Take a tour of the surprising merge of a modern and soviet era design on a Prague's public square with this photo album.
 image: /images/sunshine-plaza/IMG_20200821_081140.jpg
-last_modified_at: 2022-06-06
+last_modified_at: 2024-06-05
 permalink: /:categories/:title
 redirect_from:
 - /ml/Brutalist-and-Modernist-Architectures-Collide-at-Sunshine-Plaza-in-Prague
@@ -198,8 +198,34 @@ Enjoy the journey documenting the current state of the synthesis of the stark wi
 Hopefully, the current generation won't allow the resource pie to stop growing by exploring, innovating, building, and enterprising.
 And thus, the next gallery will be from a new colony on Mars or an O'Neill cylinder in space.
 
-PS: Does anything here remind you game The Longest Journey Dreamfall Chapters by any chance?
 
+## How I am Trying to Improve Local Park
+
+In a nearby park, there are 1m above ground elevated concrete sewer manhole-pipes since the 1980s. I walked past them couple years until one day I am thinking: at least they could be painted to look like medieval castles. They would become a fun element in the park.
+
+<figure class="figure">
+    <img
+        class="figure-img img-fluid rounded lazyload"
+        data-src="/images/skruz_hrad_porovnani.jpg"
+        alt="Castle-like manhole cover design" />
+    <figcaption class="figure-caption">Castle-like manhole cover design.</figcaption>
+</figure>
+
+
+So, I wrote to the municipal property office. I followed up with them several times. Eventually, they rejected it because they are not the property administrators and advised against doing it.
+
+I thought it couldn't be done and that it was out of my hands, and I almost gave up.
+
+It came to my mind, however, that the property administrator must be the municipal sewage company. Which eventually replied:
+  
+
+> Based on your report, we inspected the situation on-site ... all above-ground parts of these shafts will be removed to ground level ...
+ 
+So there will be no castles in the park. That is what I should have requested in the first place. This was another reminder that more is possible. 🙂
+
+
+
+## Other Notes
 If you have a VR headset, try <a href="https://www.youtube.com/watch?v=cZWvjvv-3zw&list=PLmCqVhOYDc5yXFMzhj0wtxmoeyGO7yzwl">my VR180 channel "VR Holiday in Nature"</a>.
 
 <small>(Note that this place was likely an inspiration for game The Longest Journey Dreamfall Chapters).</small>
