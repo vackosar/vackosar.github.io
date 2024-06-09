@@ -23,15 +23,19 @@ But sometimes you will encounter bash.
 # I usually set these options.
 # The -e option causes bash to exit immediately if any command exits with a non-zero status.
 # The -x option prints every command before it is executed to simulate debugging.
-- The -u option causes bash to exit immediately if any unset variable is used.
+# The -u option causes bash to exit immediately if any unset variable is used.
 
 set -eux
 
 echo "before";
 {
   echo "inner";
+  
+  # This will cause exit from the function.
   false;
+  
   echo "we will never get here";
+  
 } || echo failed
 
 echo "continue here";
