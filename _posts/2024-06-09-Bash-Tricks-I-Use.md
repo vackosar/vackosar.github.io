@@ -73,7 +73,6 @@ set +o allexport
 
 ## Other Sources
 
-- [The bash book to rule them all](https://fabiensanglard.net/bash/index.html)
-
+- TODO 
 
 Good luck!
