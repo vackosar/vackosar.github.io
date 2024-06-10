@@ -49,11 +49,24 @@ echo "We will never get here :(";
 
 ## Careful with the Star Expansion!
 
-Remember `.*` expands to `..`, which is outer directory!
+Remember `.*` expands also to `..`, which is outer directory!
 
 
-## Listen to the Output of an Already Running Process
-You can access the output via the proc filesystem: ```cat /proc/<pid>/fd/1```
+## Listen to The Output of an Already Running Process
+The process needs not to have its output piped to a file or other pipe. 
+You can access the output via the proc filesystem:
+
+```cat /proc/<pid>/fd/1```.
+
+For stderr use `2` instead of `1`:
+```
+cat /proc/<pid>/fd/2
+```
+
+Because:
+- 0: stdin
+- 1: stdout
+- 2: stderr
 
 Other options are gdb, strace, screen: [Redirecting the Output of an Already Running Process on Linux](https://www.tutorialspoint.com/redirecting-the-output-of-an-already-running-process-on-linux)
 
