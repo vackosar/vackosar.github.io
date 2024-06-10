@@ -58,6 +58,14 @@ You can access the output via the proc filesystem:
 
 ```cat /proc/<pid>/fd/1```.
 
+Example:
+```
+echo "while true; do sleep 1;   echo here; done;" > test.sh;
+nohup bash test.sh &
+# prints: [1] 1020383
+cat /proc/1020383/fd/1;
+```
+
 For stderr use `2` instead of `1`:
 ```
 cat /proc/<pid>/fd/2
@@ -67,8 +75,6 @@ Because:
 - 0: stdin
 - 1: stdout
 - 2: stderr
-
-Other options are gdb, strace, screen: [Redirecting the Output of an Already Running Process on Linux](https://www.tutorialspoint.com/redirecting-the-output-of-an-already-running-process-on-linux)
 
 
 ## Avoid manual Exporting All Variables
