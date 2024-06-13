@@ -336,7 +336,7 @@ He also writes about scientific development.
 I may be wrong. Let me know if that is so. I only listened to the audiobooks, read things elsewhere, and re-read some-parts of the book.
 
 
-## Ego Is a Loop?
+## Ego Is a Wicked Loop?
 Let me define ego as an excessive inward focus or self-centered pride, overly emotional attachment to self instead of outward focus on the fruits of one's labor - contributions to forward progress-overestimation of one's impact, emotional attachment to one's past, present instead of perfecting and increasing confidence in action, or self-indulgence, focus internal experiences (immaterial and unreliable - mysticism), or identity.
 
 > The ego we see most commonly goes by a more casual definition: an unhealthy belief in our own importance. Arrogance. Self-centered ambition. (Ego is The Enemy)
