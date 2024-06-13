@@ -333,11 +333,29 @@ He also writes about scientific development.
 
 > Finally, men will master the forces of Nature; they will become themselves architects of systems, manufacturers of worlds.
 
-I may be wrong. Let me know if that is so. I only listened to the audiobook, read things elsewhere, and re-read some-parts of the book. Perhaps I will write later. I need to return to earthly matters.
+I may be wrong. Let me know if that is so. I only listened to the audiobooks, read things elsewhere, and re-read some-parts of the book.
 
-> He who observes the wind will not sow, and he who regards the clouds will not reap. (Ecclesiastes 11:4-6 ESV)
 
-I hope [this writing is good for something (Civilization 6)](https://www.youtube.com/watch?v=IOT9T15mkX0).
+## Ego Is a Loop?
+Let me define ego as an excessive inward focus or self-centered pride, overly emotional attachment to self instead of outward focus on the fruits of one's labor - contributions to forward progress-overestimation of one's impact, emotional attachment to one's past, present instead of perfecting and increasing confidence in action, or self-indulgence, focus internal experiences (immaterial and unreliable - mysticism), or identity.
+
+> The ego we see most commonly goes by a more casual definition: an unhealthy belief in our own importance. Arrogance. Self-centered ambition. (Ego is The Enemy)
+
+It is important to avoid excessive inward focus or excessive self-reflection. It easily turns into a self-reinforcing feedback loop vortex that eventually absorbs all capacity to act. Additionally, inward focus corrodes group communication.
+
+> Pride goes before destruction, and a haughty spirit before a fall. (Proverbs 29:23 ESV)
+
+> The heart is deceitful above all things, ... (Jeremiah 17 ESV)
+
+> But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (Philippians 3:13 ESV)
+
+So, this interesting conflict exists between self-self and self-interacting with the world. This conflict could be one of the reasons for the concept of God, which perhaps tilts the bias toward generally positive results. God could be introducing plurality and external perspective into individuals' perspective - self-conception as an aggregate (multitude) that pushes focus outwards. 
+
+> Do you not know that you are God's temple and that God's Spirit dwells in you? (1 Corinthians 3:16 ESV)
+
+I wonder if the greater capacity of an individual's neural system correlates with greater danger for these things.
+
+I also wonder if internal monologue - the ego's talk - comes with so many downsides, that it highly muted in some individuals. Once, I asked a colleague at university what physics explained then that I clearly sense that I exist. And he responded that he has no idea what I am talking about. Some people do report not having any internal monologue at all, but rather sensing shapes of ideas instead.
 
 
 ## The End is The New Beginning
@@ -350,3 +368,9 @@ How does your philosophy shape your life?
 I hope you became more by brainstorming today with me.
 
 Where do you go from here?
+
+Perhaps I will write later. I need to return to earthly matters.
+
+> He who observes the wind will not sow, and he who regards the clouds will not reap. (Ecclesiastes 11:4-6 ESV)
+
+I hope [this writing is good for something (Civilization 6)](https://www.youtube.com/watch?v=IOT9T15mkX0).
