@@ -357,6 +357,10 @@ I wonder if the greater capacity of an individual's neural system correlates wit
 
 I also wonder if internal monologue - the ego's talk - comes with so many downsides, that it highly muted in some individuals. Once, I asked a colleague at university what physics explained then that I clearly sense that I exist. And he responded that he has no idea what I am talking about. Some people do report not having any internal monologue at all, but rather sensing shapes of ideas instead.
 
+Focus on someone else's inner state or a status within a group can lead to similar vicious loops.
+
+Measurement is essential in the scientific method. Another person's word is unreliable, but data, if not tampered with, if measuring what was intended, are more reliable.
+
 
 ## The End is The New Beginning
 So I conclude:
