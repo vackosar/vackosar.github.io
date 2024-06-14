@@ -92,18 +92,18 @@ Science progresses through conjecture and criticism if we follow **Popper**'s id
 Regarding the conjectures, the bible verses promote understanding and wisdom.
 
 We have a biblical proverb:
-> The heart of the discerning acquires knowledge, for the ears of the wise seek it out."
+> An intelligent heart acquires knowledge, and the ear of the wise seeks knowledge. - Proverbs 18:15 ESV
 
 [Rockefeller was a baptist](/book/Rockefellers-Quotes-Gratitude-Fictional-Letters), and on the Rockefeller Center stands biblical quote:
-> And wisdom and knowledge shall be the stability of thy times
+> And wisdom and knowledge shall be the stability of thy times - Isaiah 33:6 KJV
 
 > Do not forsake wisdom, and she will protect you; love her, and she will watch over you. - Proverbs 4:6 ESV
 
 Bible proverbs often praise criticism:
 
-> A wise man listens to advice
+> The way of a fool is right in his own eyes, but a wise man listens to advice. - Proverbs 12:15 ESV
 
-> Better is open rebuke
+> Better is open rebuke than hidden love. - Proverbs 27:5 ESV
 
 
 The scientific method dates from the 17th century and is not mentioned in the Bible, but there are some interesting although scattered quotes:
@@ -200,17 +200,17 @@ Notice how using the word brain in the place of word heart sometimes changes mea
 
 > have not asked for yourself long life, nor have you asked for riches for yourself, nor have you asked for the life of your enemies, but have asked for yourself understanding to discern justice; behold, I have done according to your word. Behold, I have given you a wise and understanding **heart**;
 
-> Keep your **heart** with all vigilance, for from it flow the springs of life.
+> Keep your **heart** with all vigilance, for from it flow the springs of life. - Proverbs 4:23 ESV
  
-> The **heart** of the wise is in the house of mourning, but the heart of fools is in the house of pleasure.
+> The **heart** of the wise is in the house of mourning, but the heart of fools is in the house of pleasure. - Ecclesiastes 7:4 NIV
 
-> Frustration is better than laughter, because a sad face is good for the **heart**.
+> Sorrow is better than laughter, for by sadness of face the **heart** is made glad. - Ecclesiastes 7:3 
 
-> The **heart** of the discerning acquires knowledge, for the ears of the wise seek it out.
+> The **heart** of the discerning acquires knowledge, for the ears of the wise seek it out. - Proverbs 18:15 NIV
 
 Similarly, there was no word for DNA, although the concept was also intuitively partially understood. Perhaps we could look at word "image" as sometimes referring to the DNA:
 
-> When Adam had lived 130 years, he fathered a son in his own likeness, after his **image**, and named him Seth. (Genesis 5:3)
+> When Adam had lived 130 years, he fathered a son in his own likeness, after his **image**, and named him Seth. - Genesis 5:3 ESV
 
 
 ## Not-Not Is What? Actionable Commandments?
@@ -329,9 +329,9 @@ He seemed to be similar kind of semi-Deist like Benjamin Franklin:
 
 He also writes about scientific development.
 
-> And then, the earth being small, mankind will migrate into space, and will cross the airless Saharas which separate planet from planet, and sun from sun. 
+> And then, the earth being small, mankind will migrate into space, and will cross the airless Saharas which separate planet from planet, and sun from sun. (The Martyrdom Of Man)
 
-> Finally, men will master the forces of Nature; they will become themselves architects of systems, manufacturers of worlds.
+> Finally, men will master the forces of Nature; they will become themselves architects of systems, manufacturers of worlds. (The Martyrdom Of Man)
 
 I may be wrong. Let me know if that is so. I only listened to the audiobooks, read things elsewhere, and re-read some-parts of the book.
 
