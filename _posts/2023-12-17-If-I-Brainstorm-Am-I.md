@@ -359,12 +359,14 @@ I also wonder if internal monologue - the ego's talk - comes with so many downsi
 
 Focus on someone else's inner state or a status within a group can lead to similar vicious loops.
 
-Measurement is essential in the scientific method. Another person's word is unreliable, but data, if not tampered with, if measuring what was intended, are more reliable.
+Measurement is essential in the scientific method. Another person's word is unreliable, but data, if not tampered with, if measuring what was intended, are more reliable. ([notes on research reliability here](/ml/Validate-Reliability-of-Research-Paper))
 
 > A just balance and scales are the Lord's; all the weights in the bag are his work. (Proverbs 16:11 ESV)
 
-> take nobody's word for it (Royal Society - Nullius in verba) 
+> take nobody's word for it (Royal Society - Nullius in verba)
 
+> Persons with feeble and untrained intellects may live according to their conscience; but the conscience itself will be defective. (The Martyrdom Of Man)
+ 
 
 ## The End is The New Beginning
 So I conclude:
