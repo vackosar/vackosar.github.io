@@ -299,7 +299,7 @@ Nietzsche also did not have a good understanding of Darwin's Origin of Species (
 
 > First, he misidentifies the selective criterion in Darwinism, the standard by which natural selection selects: this is reproduction, not survival, and emphatically not the organism’s own coming-into-existence, as in the Zarathustra passage (John Richardson - Nietzsche's New Darwinism (2004))
 
-Nietzsche wished to elevate human, but his vision was too much about a singular relativistic man lost high in the mountains like his Zarathustra. His writing seems often emotional. Still, there are some redeeming parts, and he probably suffered the poorer health than Reade.
+Nietzsche wished to elevate human, but his vision was too much about a singular relativistic man lost high in the mountains like his Zarathustra. His writing seems often emotional and over-focused on aestheticism. Still, there are some redeeming parts, and he probably suffered the poorer health than Reade.
 
 
 ### William Winwood Reade
@@ -371,7 +371,7 @@ Measurement is essential in the scientific method. Another person's word is unre
 
 Excessive pessimism or self-criticism seems also indulgent. It is good to stay slightly more upbeat and slightly over-estimating output capacity to have something to live up to.
 
-> Then the Lord opened the mouth of the donkey, and she said to Balaam, “What have I done to you, that you have struck me these three times?” And Balaam said to the donkey, “Because you have made a fool of me. ... And the angel of the Lord said to him, “Why have you struck your donkey these three times? (Numbers 22:28 ESV)
+> Then the Lord opened the mouth of the donkey, and she said to Balaam, “What have I done to you, that you have struck me these three times?” And Balaam said to the donkey, “Because you have made a fool of me. ... And the angel of the Lord said to him, “Why have you struck your donkey these three times? (Numbers 22:28 ESV - Is this a standup comedy 😄?)
 
 
 ## The End is The New Beginning
