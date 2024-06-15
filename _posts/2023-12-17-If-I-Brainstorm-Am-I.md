@@ -337,7 +337,7 @@ I may be wrong. Let me know if that is so. I only listened to the audiobooks, re
 
 
 ## Ego Is a Vicious Loop?
-Let me define ego as an excessive inward focus or self-centered pride, overly emotional attachment to self instead of outward focus on the fruits of one's labor - contributions to forward progress-overestimation of one's impact, emotional attachment to one's past, present instead of perfecting and increasing confidence in action, or self-indulgence, focus internal experiences (immaterial and unreliable - mysticism), or identity.
+Let me define ego as an excessive inward focus or self-centered pride or anxiety, or overly emotional attachment to self instead of outward focus on the fruits of one's labor in contributions to forward progress. Emotional attachment to one's past, present instead of perfecting and increasing confidence in action, or self-indulgence, focus internal experiences (immaterial and unreliable - mysticism), or identity.
 
 > The ego we see most commonly goes by a more casual definition: an unhealthy belief in our own importance. Arrogance. Self-centered ambition. (Ego is The Enemy)
 
@@ -368,7 +368,11 @@ Measurement is essential in the scientific method. Another person's word is unre
 > take nobody's word for it (Royal Society - Nullius in verba)
 
 > Persons with feeble and untrained intellects may live according to their conscience; but the conscience itself will be defective. (The Martyrdom Of Man)
- 
+
+Excessive pessimism or self-criticism seems also indulgent. It is good to stay slightly more upbeat and slightly over-estimating.
+
+> Then the Lord opened the mouth of the donkey, and she said to Balaam, “What have I done to you, that you have struck me these three times?” And Balaam said to the donkey, “Because you have made a fool of me. ... And the angel of the Lord said to him, “Why have you struck your donkey these three times? (Numbers 22:28 ESV)
+
 
 ## The End is The New Beginning
 So I conclude:
