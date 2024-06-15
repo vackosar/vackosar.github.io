@@ -371,8 +371,6 @@ Measurement is essential in the scientific method. Another person's word is unre
 
 Excessive pessimism or self-criticism seems also indulgent. It is good to stay slightly more upbeat and slightly over-estimating output capacity to have something to live up to.
 
-> Then the Lord opened the mouth of the donkey, and she said to Balaam, “What have I done to you, that you have struck me these three times?” And Balaam said to the donkey, “Because you have made a fool of me. ... And the angel of the Lord said to him, “Why have you struck your donkey these three times? (Numbers 22:28 ESV - Is this a standup comedy 😄?)
-
 
 ## The End is The New Beginning
 So I conclude:
