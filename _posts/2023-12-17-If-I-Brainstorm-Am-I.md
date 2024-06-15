@@ -345,13 +345,15 @@ It is important to avoid excessive inward focus or excessive self-reflection. It
 
 > Pride goes before destruction, and a haughty spirit before a fall. (Proverbs 29:23 ESV)
 
-> The heart is deceitful above all things, ... (Jeremiah 17 ESV)
+> What fate can be more wretched than that of the man who resigns himself to them (passions)? (The Martyrdom Of Man)
 
-> But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (Philippians 3:13 ESV)
+> The heart is deceitful above all things, ... (Jeremiah 17 ESV)
 
 So, this interesting conflict exists between self-self and self-interacting with the world. This conflict could be one of the reasons for the concept of God, which perhaps tilts the bias toward generally positive results. God could be introducing plurality and external perspective into individuals' perspective - self-conception as an aggregate (multitude) that pushes focus outwards. 
 
 > Do you not know that you are God's temple and that God's Spirit dwells in you? (1 Corinthians 3:16 ESV)
+
+> But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (Philippians 3:13 ESV)
 
 I wonder if the greater capacity of an individual's neural system correlates with greater danger for these things.
 
