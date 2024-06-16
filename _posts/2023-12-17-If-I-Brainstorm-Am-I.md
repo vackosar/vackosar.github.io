@@ -355,6 +355,8 @@ So, this interesting conflict exists between self-self and self-interacting with
 
 > But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (Philippians 3:13 ESV)
 
+> Let your eyes look directly forward, and your gaze be straight before you. (Proverbs 4:25 ESV) 
+
 I wonder if the greater capacity of an individual's neural system correlates with greater danger for these things.
 
 I also wonder if internal monologue - the ego's talk - comes with so many downsides, that it highly muted in some individuals. Once, I asked a colleague at university what physics explained then that I clearly sense that I exist. And he responded that he has no idea what I am talking about. Some people do report not having any internal monologue at all, but rather sensing shapes of ideas instead.
@@ -369,7 +371,7 @@ Measurement is essential in the scientific method. Another person's word is unre
 
 > Persons with feeble and untrained intellects may live according to their conscience; but the conscience itself will be defective. (The Martyrdom Of Man)
 
-Excessive pessimism or self-criticism seems also indulgent. It is good to stay slightly more upbeat and slightly over-estimating output capacity to have something to live up to.
+Excessive pessimism or self-criticism seems also indulgent. It is good to stay slightly more upbeat and slightly over-estimating output capacity to have something to live up to. More is possible!
 
 > Then the Lord opened the mouth of the donkey, and she said to Balaam, “What have I done to you, that you have struck me these three times?” And Balaam said to the donkey, “Because you have made a fool of me. ... And the angel of the Lord said to him, “Why have you struck your donkey these three times? 😄??? (Numbers 22:28 ESV)
 
