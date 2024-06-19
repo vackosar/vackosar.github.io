@@ -103,8 +103,7 @@ Bible proverbs often praise criticism:
 
 > The way of a fool is right in his own eyes, but a wise man listens to advice. - Proverbs 12:15 ESV
 
-> Better is open rebuke than hidden love. - Proverbs 27:5 ESV
-
+> Better is open rebuke than hidden love. Faithful are the wounds of a friend; profuse are the kisses of an enemy. - Proverbs 27:5-6 ESV
 
 The scientific method dates from the 17th century and is not mentioned in the Bible, but there are some interesting although scattered quotes:
 
@@ -258,7 +257,7 @@ Let me know if you spot an inaccuracy?
  - <span class="small">Desire without knowledge is not good—how much more will hasty feet miss the way! (Proverbs 19:2 ESV)</span>
  - <span class="small">"for wisdom will come into your heart, and knowledge will be pleasant to your soul;" (Proverbs 2:10 ESV)</span>
  - <span class="small">"The simple believes everything, but the prudent gives thought to his steps." (Proverbs 14:15 ESV)</span>
-10. **Do not covet** becomes **Wish other people well, learn to be more industrious yourself, and take pride in your unique competitive work in the marketplace.**
+10. **Do not covet** becomes **Wish other people well, learn to be more industrious yourself, and take pride in your unique competitive work in the marketplace and beyond.**
  - <span class="small">"Therefore encourage one another and build one another up, just as you are doing." (1 Thessalonians 5:11 ESV)</span>
  - <span class="small">"For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope." (Jeremiah 29:11 ESV)</span>
  - <span class="small">"Do you see a man skillful in his work? He will stand before kings; he will not stand before obscure men." (Proverbs 22:29 ESV)</span>
@@ -349,17 +348,21 @@ It is important to avoid excessive inward focus or excessive self-reflection. It
 
 > The heart is deceitful above all things, ... (Jeremiah 17 ESV)
 
-So, this interesting conflict exists between self-self and self-interacting with the world. This conflict could be one of the reasons for the concept of God, which perhaps tilts the bias toward generally positive results. God could be introducing plurality and external perspective into individuals' perspective - self-conception as an aggregate (multitude) that pushes focus outwards. 
+So, this interesting conflict exists between self-self and self-interacting with the world. This conflict could be one of the reasons for the concept of God, which perhaps tilts the bias toward generally positive results. God could be introducing plurality and external perspective into individuals' perspective - self-conception as an aggregate (multitude) that pushes focus outwards.
 
 > Do you not know that you are God's temple and that God's Spirit dwells in you? (1 Corinthians 3:16 ESV)
 
 > But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (Philippians 3:13 ESV)
 
 > Let your eyes look directly forward, and your gaze be straight before you. (Proverbs 4:25 ESV) 
+ 
+It is not about you. It is not about now. Past immutable turns bring you here, but what you do now on is about a sunny future for others and a great path to get there.
 
-I wonder if the greater capacity of an individual's neural system correlates with greater danger for these things.
+> But seek the welfare of the city where I have sent you into exile, and pray to the Lord on its behalf, for in its welfare you will find your welfare. (Jeremiah 29:7 ESV)
 
-I also wonder if internal monologue - the ego's talk - comes with so many downsides, that it highly muted in some individuals. Once, I asked a colleague at university what physics explained then that I clearly sense that I exist. And he responded that he has no idea what I am talking about. Some people do report not having any internal monologue at all, but rather sensing shapes of ideas instead.
+> ... he who endeavours to better his condition, and to make his children wiser and happier than himself; whatever may be his motives, he will not have lived in vain. (The Martyrdom Of Man)
+
+I wonder if the greater capacity of an individual's neural system correlates with greater danger for ego loops. I also wonder if internal monologue - the ego's talk - comes with so many downsides, that it highly muted in some individuals. Once, I asked a colleague at university what physics explained then that I clearly sense that I exist. And he responded that he has no idea what I am talking about. Some people do report not having any internal monologue at all, but rather sensing shapes of ideas instead.
 
 Focus on someone else's inner state or a status within a group can lead to similar vicious loops.
 
@@ -371,9 +374,11 @@ Measurement is essential in the scientific method. Another person's word is unre
 
 > Persons with feeble and untrained intellects may live according to their conscience; but the conscience itself will be defective. (The Martyrdom Of Man)
 
-Excessive pessimism or self-criticism seems also indulgent. It is good to stay slightly more upbeat and slightly over-estimating output capacity to have something to live up to. More is possible!
+Excessive pessimism or self-criticism seems also indulgent. It is good to stay slightly more upbeat and slightly over-estimating output capacity to have something to live up to.
 
-> Then the Lord opened the mouth of the donkey, and she said to Balaam, “What have I done to you, that you have struck me these three times?” And Balaam said to the donkey, “Because you have made a fool of me. ... And the angel of the Lord said to him, “Why have you struck your donkey these three times? 😄??? (Numbers 22:28 ESV)
+> Then the Lord opened the mouth of the donkey, and she said to Balaam, “What have I done to you, that you have struck me these three times?” And Balaam said to the donkey, “Because you have made a fool of me. ... And the angel of the Lord said to him, “Why have you struck your donkey these three times? 😄? (Numbers 22:28 ESV)
+
+Time is limited, but more is possible!
 
 
 ## The End is The New Beginning
