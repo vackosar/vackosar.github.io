@@ -98,7 +98,7 @@ There are various tests:
 
 ## Compressing Knowledge
 
-Reality cannot be [losslessly compressed into a text](/ml/neural-data-compression). No book, no conversation, and no one is comprehensively usably true. Simplifications and empirical statistics about here and now have merit and utility in that, with less cognitive effort, you can pursue your goals. Our subconsciousness must operate in the face of an environment that is not fully known and not entirely understandable.
+Reality cannot be [losslessly compressed into a text](/ml/neural-data-compression). No book, no conversation, and no one is comprehensively usably true. Simplifications and empirical statistics about here and now have merit and utility in that, with less cognitive effort, you can pursue your goals. Our subconsciousness must operate in the face of a dynamic environment that is not fully known and not entirely understandable.
 
 
 ## Battle Testing the Method
