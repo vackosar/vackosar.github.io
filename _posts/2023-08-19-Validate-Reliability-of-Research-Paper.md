@@ -76,6 +76,7 @@ In machine learning, these are common problems that may be present in nice-sound
 - Not citing research: Potential bias not to cite research from competing companies to avoid advertising them. However, ignoring previous research may also exist because of limited research resources.
 - Authors that had large impact on ML in the past (incomplete): Schmidhuber, Hinton, Karpathy, Bengio, Lecun 
 
+
 ## Other Claim Evaluation Tests
 
 There are various tests:
@@ -91,6 +92,13 @@ There are various tests:
 5. RADAR Framework: This stands for Rationale, Authority, Date, Accuracy, and Relevance. It essentially helps users to assess the quality, reliability, and usefulness of a resource.
 
 6. PICO Framework: Used in evidence-based practice to formulate a searchable clinical question. It stands for Patient problem or Population, Intervention, Comparison, and Outcome.
+
+7. The Pragmatist’s Guide to Life Standards for Evidence: Logical Consistency, Personal Experience, Personal Emotional Experience, Cultural Consensus, Expert Consensus, Scientific Method, Doctrine
+
+
+## Compressing Knowledge
+
+Reality cannot be [losslessly compressed into a text](/ml/neural-data-compression). No book, no conversation, and no one is comprehensively usably true. Simplifications and empirical statistics about here and now have merit and utility in that, with less cognitive effort, you can pursue your goals. Our subconsciousness must operate in the face of an environment that is not fully known and not entirely understandable.
 
 
 ## Battle Testing the Method
