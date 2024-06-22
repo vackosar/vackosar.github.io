@@ -1,6 +1,6 @@
 ---
-title: Multilingual LLMs
-description: A list of good multilingual large language models.
+title: Multilingual Open LLMs
+description: A list of good open multilingual large language models.
 categories: ml
 date: 2024-06-22
 last_modified_at: 2024-06-22
