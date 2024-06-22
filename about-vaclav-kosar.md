@@ -34,7 +34,7 @@ extra_meta: |
 
 {% include image.html alt="" style="width: 50%; max-width: 250px; background-color: lightgreen;" src="/vaclav-kosar-face-editted-removebg-preview-flip.png" %}
 
-I can help you reduce costs and increase revenues with software and machine learning (AI) systems. For example for [GLAMI](https://medium.com/@glami-engineering), I am optimizing a product feature detection system performing 40 million predictions (e.g. [product category](/software/google-product-taxonomy-viewer)) each month, so that the customers can find what they are looking for quickly. For GLAMI, I also participate in development of a shopping assistant. 
+I can help you reduce costs and increase revenues with software and machine learning (AI) systems. For ScaleVoice I am developing on applications of LLMs in customer acquisition. For example for [GLAMI](https://medium.com/@glami-engineering), I optimized a product feature detection system performing 40 million predictions (e.g. [product category](/software/google-product-taxonomy-viewer)) each month, so that the customers can find what they are looking for quickly. For GLAMI, I also participate in development of a shopping assistant. 
 
 I also publish resources which you can use for machine learning research and education. For example, with GLAMI we recently published a [GLAMI-1M dataset](https://github.com/glami/glami-1m) together with a [practise notebook combining of texts which are in multiple languages and images](https://colab.research.google.com/drive/16gMqVqUpleacU5z9Y_7f3c-7I0C45esy?usp=sharing).
 
