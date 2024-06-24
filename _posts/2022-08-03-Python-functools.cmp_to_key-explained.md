@@ -14,7 +14,7 @@ my_related_post_paths:
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 - _posts/2017-06-06-Generic-Class-Name-Signals-Low-Cohesion.md
 - _posts/2021-12-12-Ten-Commandments-for-business-failure.md
-- _posts/2023-12-29-Danger-of-Python-Lambda-Late-Binding.md
+- _posts/2024-06-09-Bash-Tricks-I-Use.md
 ---
 
 

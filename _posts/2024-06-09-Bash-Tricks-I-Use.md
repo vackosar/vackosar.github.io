@@ -6,6 +6,14 @@ date: 2024-06-09
 last_modified_at: 2024-06-09
 layout: post
 permalink: /:categories/:title
+my_related_post_paths:
+- _posts/2016-07-28-Functional-Foreach-In-Bash.md
+- _posts/2017-06-04-Code-Structure-Principles.md
+- _posts/2024-01-24-How-To-Install-Your-Python-Version-On-Ubuntu.md
+- _posts/2022-02-06-twitter-bullet-points-to-copy-paste.md
+- _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
+- _posts/2020-04-08-Python-Context-Manager-With-Statement-Exception-Handling.md
+- _posts/2023-01-24-fill-versions-from-python-environment.md
 ---
 
 {% include highlight-rouge-friendly.css.html %}

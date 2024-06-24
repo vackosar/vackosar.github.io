@@ -13,9 +13,9 @@ my_related_post_paths:
 - _posts/2020-04-22-result-diversification-in-web-search-and-recommenders.md
 - _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
 - _posts/2022-01-09-7-powers-moats-through-lens-of-dibellos-business-mental-model.md
+- _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
 - _posts/2021-12-12-Ten-Commandments-for-business-failure.md
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
-- _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
 ---
 
 

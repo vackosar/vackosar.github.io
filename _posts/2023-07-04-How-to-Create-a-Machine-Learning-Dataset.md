@@ -14,7 +14,7 @@ my_related_post_paths:
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2023-06-08-Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM.md
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
-- _posts/2020-02-25-I-read-papers-on-a-podcast.md
+- _posts/2024-06-22-Multilingual-Open-LLMs.md
 ---
 
 {% include image.html src="/images/glami-1m-multilingual-image-text-dataset-text-vs-image-similarity.png" alt="GLAMI-1M" %}

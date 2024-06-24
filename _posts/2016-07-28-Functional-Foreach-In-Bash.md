@@ -9,12 +9,12 @@ redirect_from:
 - /2016/07/28/Functional-Foreach-In-Bash.html
 my_related_post_paths:
 - _posts/2018-09-23-Debounce-In-Bash-To-Fix-Lenovo-Touchpad-And-Trackpoint-Lost-Sync.md
+- _posts/2024-06-09-Bash-Tricks-I-Use.md
 - _posts/2016-12-26-Flite-Vs-Festival-Vs-Pico2Wave.md
 - _posts/2016-07-03-GitFlow-Incremental-Builder.md
 - _posts/2023-12-29-Danger-of-Python-Lambda-Late-Binding.md
 - _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
 - _posts/2017-06-04-Code-Structure-Principles.md
-- _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 ---
 
 

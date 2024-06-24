@@ -11,10 +11,10 @@ my_related_post_paths:
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2024-06-22-Multilingual-Open-LLMs.md
 - _posts/2024-02-20-Synthetic-Data-for-LLM-Training.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2022-09-01-Multimodal-Image-Text-Classification.md
-- _posts/2022-09-16-Tokenization-in-Machine-Learning-Explained.md
 ---
 
 

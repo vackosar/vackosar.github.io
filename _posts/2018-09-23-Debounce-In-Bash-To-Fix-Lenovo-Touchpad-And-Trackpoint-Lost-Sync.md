@@ -10,12 +10,12 @@ redirect_from:
 - /2018/09/23/Debounce-In-Bash-To-Fix-Lenovo-Touchpad-Lost-Sync.html
 my_related_post_paths:
 - _posts/2016-07-28-Functional-Foreach-In-Bash.md
+- _posts/2024-06-09-Bash-Tricks-I-Use.md
 - _posts/2019-11-02-Thinkpad-P53-vs-P52-Thermals.md
 - _posts/2019-03-03-Thinkpad-P52-vs-HP-Zbook-15-G5-vs-Dell-Precision-7530.md
 - _posts/2017-07-05-Easy-Online-Independence-1-Mail-Backup.md
 - _posts/2020-05-03-P52-disassembly.md
 - _posts/2016-11-04-Drone-Hackathoning.md
-- _posts/2020-02-25-I-read-papers-on-a-podcast.md
 ---
 
 
