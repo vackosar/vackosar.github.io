@@ -44,19 +44,19 @@ There is a paywalled article called [Conducting Diligence](https://doomberg.subs
 1. Author Credibility: What is the reputation and history of the researchers and the institutions they are affiliated with? Do they have at least 3 successes within the domain?
   - Follow the money (Who benefits?): Who funded it? Are researchers biased, e.g., are their livelihoods, views, or identities tied to any results? For example, some research is funded by a for-profit company, which they a goal-oriented bias into the study. (Try investing in a company and then tell me what it does to your views.). Is this a disgruntled employee powered by resentment (Axe to grind)?
   - Connections: Are they known, accessible, or anonymous? Who is the author connected to, and who helped them in the past?
-  - Outsider: Outsiders may shed new light with less authority on the subject.
+  - Outsider: Outsiders may shed new light with less authority on the subject. What potential critics stand to lose? (Follow the anti-money.) 
 2. Publisher Credibility: Who published these results in their publication? What is the history and reputation of this publisher?
   - Reviewers and Critics: Who peer-reviewed, or is it a self-published pre-print? Was the peer reviewer familiar with the domain to judge the research? Who you can ask about this?
   - Republishers: Who are the original primary sources, and are they publicly accessible and non-anonymous? Who is republishing the research, and what are their biases, intentions, and incentives? Do people from multiple sides publish this?
-  - Audience bias: Is there an existing bias in the audience that may have been preventing wider publication? Why was this published or surfaced now? Is the current environment related to the results?
+  - Audience bias: Too on the nose? Too aesthetic to be true? Too memetic (made to replicate)? Is there an existing bias in the audience that may have been encouraging or preventing wider publication? Why was this published or surfaced now? Is the current environment related to the results?
 3. Scientific Process and Evidence: At what stage is this research in the scientific process of validation and publishing?
-  - How often are similar papers at similar stage invalid and retracted?
-  - Burden of Evidence: What is the specific evidence for the claims and does it really imply the conclusion (non sequitur)? Are the metrics and their comparisons valid and relevant? Or are there hidden effects? Is this a randomized double-blind placebo control (RDBPC) trial? Who applied the results successfully?
-  - Transparent: Is the process published and reliable? Are the numbers published, and do they show reasonable statistical distribution? If you wanted to hide something, where would you hide it?
+  - How often are similar papers at similar stage invalid and retracted? Is it more similar to a valid or invalid past research? 
+  - Burden of Evidence: What is the specific evidence for the claims and does it really imply the conclusion (non sequitur)? Are the metrics and their comparisons valid and relevant? Or are there hidden effects? Is this a randomized double-blind placebo control (RDBPC) trial? Who else applied the results successfully?
+  - Transparent: Is the process published and reliable? Are the numbers published, and do they show reasonable statistical distribution? If you wanted to hide something, where would you hide it? Is it dogmatic?
 4. Scientific Context: What do existing research and the history of this field suggest about these findings?
   - The idea: Is there a clear main finding or an attempt to create confusion by adding unnecessary instead? Is the main message coherent? Does the title match the content?
   - Shoulders of Giants: What previous research does this paper cite and stand on? Are the cited sources saying what is claimed this paper? What are the assumptions, and were they proven?
-  - Cross-check: Are the findings logically consistent with other verified research results? Is the explanation for the claims correct? How does it compare to similar related research? Do the existing trends and order of magnitude estimates match the results?
+  - Cross-check: Are the findings logically consistent with other verified research results? Can it be derived from first principles (believed undeducatable axioms, postulates). Is the explanation for the claims correct? How does it compare to similar related research? Do the existing trends and order of magnitude estimates match the results?
 5. Future Expectations and Impact: What is the outlook for this finding
   - How large is the impact of the finding? Extraordinary claims require extraordinary proof. How large are the rewards for the successful implementation of this method?
   - When and how will these results be reproduced (replicated)? What industries are interested in applying this? Who wants to put this into production?
