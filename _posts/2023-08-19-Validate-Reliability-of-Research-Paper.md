@@ -3,7 +3,7 @@ title: Validate Reliability of a Research Paper
 description: Save time on diligence using 5 questions on authority, bias, evidence, comparison, impact based on Doomberg's framework, common Ray Dalio's believability, TRAAP Test, CRAAP Test, RADAR.
 categories: ml
 date: 2023-08-19
-last_modified_at: 2023-09-02
+last_modified_at: 2024-06-26
 image: /images/symbols-of-truth.png
 video: O9fxWCaDM4o
 layout: post
