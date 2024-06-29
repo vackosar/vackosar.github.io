@@ -2,7 +2,7 @@
 layout: post
 title: Fish Roe vs Fish Oil
 date: 2017-08-12
-last_modified_at: 2022-06-06
+last_modified_at: 2024-06-29
 categories: health
 description: Healthiness and price of a salty delicacy versus oily softgels. EPA, DHA, Neu5Gc.
 permalink: /:categories/:title
@@ -141,8 +141,8 @@ Fish roe contains higher amount of Neu5Gc than even meat while fish oil doesn't 
 Fish oil EPA is more than 20 times cheaper and contains 5 times less oxidized cholesterol products and doesn't contain very high amount of Neu5Gc.
 
 
-## To Stay Healthy Keep Moving!
-Read next:
-- [Transfigure Stress into Energy by Drawing on Research](/productivity/Transfigure-Stress-Into-Energy)
-- [How To Boost Your Jog Morale Using Military Cadence And Run Farther](/health/Boost-Jog-Morale-Using-Mil-Cadence)
-- [Walking Desk: Cheap And Tiny](/health/Cheap-And-Tiny-Walking-Desk)
+## A Good Fish Oil
+
+The only fish oil works for me without issues is WHC UnoCardio 1000+.
+It may be because it is high quality and non-rancid, but I cannot tell.
+It ranks well on Labdoor tests.
