@@ -47,3 +47,5 @@ You can cook this all-in-one pot, and that is how I cooked the original variant,
 - I eat 1 meal for breakfast and 1 for lunch.
 
 If you have any suggestions, please let me know.
+
+If you are reading this, you may have low on vitamin D. There are blood tests for that. I take [fish oil](/health/Fish-Roe-vs-Fish-Oil) and recently started supplementing more.
