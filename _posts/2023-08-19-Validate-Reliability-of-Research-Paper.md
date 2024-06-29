@@ -93,12 +93,7 @@ There are various tests:
 
 6. PICO Framework: Used in evidence-based practice to formulate a searchable clinical question. It stands for Patient problem or Population, Intervention, Comparison, and Outcome.
 
-7. The Pragmatist’s Guide to Life Standards for Evidence: Logical Consistency, Personal Experience, Personal Emotional Experience, Cultural Consensus, Expert Consensus, Scientific Method, Doctrine
-
-
-## Compressing Knowledge
-
-Reality cannot be [losslessly compressed into a text](/ml/neural-data-compression). No book, no conversation, and no one is comprehensively usably true. Simplifications and empirical statistics about here and now have merit and utility in that, with less cognitive effort, you can pursue your goals. Our subconsciousness must operate in the face of a dynamic environment that is not fully known and not entirely understandable.
+7. The Pragmatist’s Guide to Life - Standards for Evidence: Logical Consistency, Personal Experience, Personal Emotional Experience, Cultural Consensus, Expert Consensus, Scientific Method, Doctrine
 
 
 ## Battle Testing the Method
@@ -106,6 +101,13 @@ It is great to have a handy set of questions to ask to assess credibility quickl
 But you will only know the usefulness once you apply the method correctly and completely yourself in your particular problem terrain.
 Depending on your business territory, this may or may not be worth your time.
 
+
+
+## Compressing Knowledge
+
+Reality cannot be [losslessly compressed into a text](/ml/neural-data-compression). No book, no conversation, and no one is comprehensively usably true. Simplifications and empirical statistics about here and now have merit and utility in that, with less cognitive effort, you can pursue your goals. Our subconsciousness must operate in the face of a dynamic environment that is not fully known and not entirely understandable.
+
+Instead of theory-building immediately gather examples (stories, memes) first to build up problem statistics. A more general rule can be conjectured or verified afterward.
 
 
 {% comment %}

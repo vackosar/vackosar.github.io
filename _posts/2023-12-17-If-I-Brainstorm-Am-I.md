@@ -383,7 +383,7 @@ Time is limited, but more is possible!
 
 ## The End is The New Beginning
 So I conclude:
-- Beliefs and religious structures significantly impact societies, including birth rates.
+- Beliefs and religious structures significantly impact societies, including birth rates. More generally, stories and memes can form complex self-enforcing structures that contribute to underpinning of entire cultures and civilizations.
 - Cultural frameworks could have a significant impact on civilizational and technological development.
 - Nature of consciousness or soul remains undecidable.
 
