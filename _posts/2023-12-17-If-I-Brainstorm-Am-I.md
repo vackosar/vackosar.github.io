@@ -180,7 +180,7 @@ Prayer puts locus of control externally, which is suboptimal from agency perspec
 Prayer may also be a seen similar to a problem-solving method of working backward from the end goal (e.g., Amazon), inversion of Charlie Munger, or Polya.
 We can interpret it as regarding the end goal first, which helps one to create the plan:
 
-> Commit your work to the Lord, and your plans will be established. - Proverbs 16:3 (NIV)
+> Commit your work to the Lord, and your plans will be established. - Proverbs 16:3 (ESV)
 
 Prayer can also be considered as [practicing gratitude, which has positive psychological effects](https://en.wikipedia.org/wiki/Gratitude#Association_with_well-being).
 
@@ -374,26 +374,138 @@ Measurement is essential in the scientific method. Another person's word is unre
 
 > Persons with feeble and untrained intellects may live according to their conscience; but the conscience itself will be defective. (The Martyrdom Of Man)
 
-Excessive pessimism or self-criticism seems also indulgent. It is good to stay slightly more upbeat and slightly over-estimating output capacity to have something to live up to.
+Excessive pessimism or non-constructive self-criticism seems also self-indulgent and self-serving. It is good to stay slightly more upbeat and slightly over-estimating output capacity to have something to live up to.
 
 > Then the Lord opened the mouth of the donkey, and she said to Balaam, “What have I done to you, that you have struck me these three times?” And Balaam said to the donkey, “Because you have made a fool of me. ... And the angel of the Lord said to him, “Why have you struck your donkey these three times? 😄? (Numbers 22:28 ESV)
 
 Time is limited, but more is possible!
 
 
+## Engine of Agency
+What do you see?
+Where are you going?
+What do you do?
+What or who will help?
+
+> Go to the ant, O sluggard; consider her ways, and be wise. Without having any chief, officer, or ruler, she prepares her bread in summer and gathers her food in harvest (Proverbs 6:6-11 ESV)
+
+Personal agency is an individual's capacity to act according to their belief structure and ideally meaningfully maximize their values.
+There is also a group agency.
+A related term is Burja's Live Player which may be both group or individual (tight coordination and a living tradition of knowledge).
+
+Agency has the following features:
+- Autonomy with a feedback loop, e.g., OODA loop.
+- Understand the situation with respect to the agent's values and goals.
+- Planning and breaking down into steps.
+- Acting (action, delegation)
+- Observing and Reflecting
+
+
+### Autonomy
+Autonomy is a necessity and not an option for efficient organizations and ecosystems.
+Limited communication speed, throughput, and cost introduce a drag on centralized solutions.
+A certain amount of localized observation, computation, and decision-making must exist.
+These limitations encourage certain autonomy and pro-activity on some level of goals.
+At the same time, autonomy introduces goal inconsistency, conflict, and distrust.
+This argument also does not say on what level autonomy should exist,
+but at least it outlines the tradeoffs,
+which suggest that around individual level of autonomy are close to the optimum. 
+
+> Be not like a horse or a mule, without understanding, ... (Psalm 32:9 ESV)
+
+> and you will know the truth, and the truth will set you free. (John 8:32 ESV)
+
+> Jesus answered them, “Truly, truly, I say to you, everyone who practices sin is a slave to sin. (John 8:34 ESV)
+
+Autonomy itself is a feedback loop (OODA), but focused on work on the outside world.
+
+
+### Approximate Steps in The Agency Loop
+OODA loop and Polya describe approximately similar steps that could be called steps of an agency loop. Those are presented below with few inspirational quotes.
+
+
+#### Understand and Orient
+What should the future look like?
+How do you know which way?
+
+An autonomous agent must be capable of finding their direction wherever they find themselves.
+Because we live in a complex, dynamic environment, there is no fine-grained, faithful, and particular map out there just for you.
+There was no such map for most of the characters in the fantastic Bible stories.
+You have to find your values with respect to the current and path towards them from this point.
+
+> But solid food is for the mature, for those who have their powers of discernment trained by constant practice to distinguish good from evil. (Hebrews 5:14 ESV)
+
+> You shall not fall in with the many to do evil, nor shall you bear witness in a lawsuit, siding with the many, ..., (Exodus 23:2 ESV)
+
+> The discerning sets his face toward wisdom, but the eyes of a fool are on the ends of the earth. (Proverbs 17:24 ESV)
+
+When you will have your values, and orientation within the world, you may look for what to do.
+What are the unique problems not being solved?
+What is unknown, missing, or forgotten?
+What do you know and have?
+What consequences it will have?
+
+> Too little attention in economics to second order and even higher order effects. This defect is quite understandable, because the consequences have consequences, and the consequences of the consequences have consequences, and so on. It gets very complicated. When I was a meteorologist I found this stuff very irritating. And economics makes meteorology look like a tea party. (Charlie Munger’s Herb Kay Memorial Lecture)
+
+> No useful inventions can be introduced without some branch of industry being killed and hundreds of worthy men being cast, without an occupation, on the world (Martyrdom of Man)
+
+There are probably multiple helpful books on this topic, that I will mention in the future.
+Recently I read The Pragmatist’s Guide to Life, which focuses on finding your personal "objective function."
+
+Many of these notes are not inherently new, but the point is that one really needs to take action and do it. Perhaps this post, written in a different style, will be helpful in that regard.
+
+The good news is that the world has so many options (high-dimensional), such that many things that seem impossibly far are possible.
+
+
+#### Decide and Plan
+Strategic thinking, planning and scheduling, structuring and organizing.
+
+> Ponder the path of your feet; then all your ways will be sure. Do not swerve to the right or to the left; turn your foot away from evil. (Proverbs 4:26-27 ESV)
+
+> For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? (Luke 14:28 ESV)
+
+> Write the vision; make it plain on tablets, so he may run who reads it.  (Habakkuk 2:2 ESV)
+
+Here are related quotes from other sources:
+
+> Perhaps the most important Part of that Journal is the Plan to be found in it which I formed at Sea, for regulating my future Conduct in Life. It is the more remarkable, as being form’d when I was so young, and yet being pretty faithfully adhered to quite thro’ to old Age. (Benjamin Franklin, Autobiography)
+
+> He (Rockefeller) liked to know what he was going to do and in what order, with whom and how. Whether in the city or on vacation, the day would be planned out in advance, and deviations from the plan were not greeted with pleasure (David Rockefeller, Memoirs)
+
+
+#### Act on The Plan
+Carry out the plan. Act, problem-solve, delegate, escalate, use tools. Optimize for time and effect.
+
+> But all things should be done decently and in order. (1 Corinthians 14:40 ESV)
+
+> Do all things without grumbling or disputing, (Philippians 2:14)
+
+> He who observes the wind will not sow, and he who regards the clouds will not reap. (Ecclesiastes 11:4-6 ESV)
+
+> your ears shall hear a word behind you, saying, "This is the way, walk in it," (Isaiah 30:21 ESV)
+
+
+#### Observe and Reflect
+Measure, verify, analyze. What is the learning?
+
+> You shall eat the fruit of the labor of your hands; you shall be blessed, and it shall be well with you. (Psalm 128:2 ESV)
+
+> Each one should test their own actions. ... (Galatians 6:4)
+
+> For if you lay the foundation and are not able to finish it, everyone who sees it will ridicule you ,... (Luke 14:29 ESV)
+
+> Let us test and examine our ways, and return to the Lord! (Lamentations 3:40 ESV)
+
+
 ## The End is The New Beginning
 So I conclude:
-- Beliefs and religious structures significantly impact societies, including birth rates. More generally, stories and memes can form complex self-enforcing structures that contribute to underpinning of entire cultures and civilizations.
+- Beliefs and religious structures significantly impact societies, including birth rates. More generally, stories and memes can form complex self-enforcing structures that contribute to underpinning of entire cultures and civilizations. Can you say molecules of atomic memes?
 - Cultural frameworks could have a significant impact on civilizational and technological development.
-- Nature of consciousness or soul remains undecidable.
+- Nature of consciousness or soul remains undecidable. At the same time, if consciousness is not measurable, it may also not be so important? And if it exists, it may be mundane. For example, consciousness could be arising from much simpler parts, e.g., "You put this and this together, and this new fire lights up in it".
 
 How does your philosophy shape your life?
 I hope you became more by brainstorming today with me.
 
 Where do you go from here?
-
-Perhaps I will write later. I need to return to earthly matters.
-
-> He who observes the wind will not sow, and he who regards the clouds will not reap. (Ecclesiastes 11:4-6 ESV)
 
 I hope [this writing is good for something (Civilization 6)](https://www.youtube.com/watch?v=IOT9T15mkX0).
