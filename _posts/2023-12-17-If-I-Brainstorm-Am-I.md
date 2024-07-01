@@ -435,8 +435,6 @@ You have to find your values with respect to the current and path towards them f
 
 > But solid food is for the mature, for those who have their powers of discernment trained by constant practice to distinguish good from evil. (Hebrews 5:14 ESV)
 
-> You shall not fall in with the many to do evil, nor shall you bear witness in a lawsuit, siding with the many, ..., (Exodus 23:2 ESV)
-
 > The discerning sets his face toward wisdom, but the eyes of a fool are on the ends of the earth. (Proverbs 17:24 ESV)
 
 When you will have your values, and orientation within the world, you may look for what to do.
