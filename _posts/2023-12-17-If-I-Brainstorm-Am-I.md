@@ -4,7 +4,7 @@ description: Materialism, Science and Religion, Capitalism and Calvinism, Anime
 layout: post
 categories: book
 date: 2023-12-17
-last_modified_at: 2024-05-24
+last_modified_at: 2024-07-01
 permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
