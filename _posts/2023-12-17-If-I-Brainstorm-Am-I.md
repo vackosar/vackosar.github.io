@@ -421,12 +421,14 @@ Autonomy itself is a feedback loop (OODA), but focused on work on the outside wo
 
 
 ### Approximate Steps in The Agency Loop
-OODA loop and Polya describe approximately similar steps that could be called steps of an agency loop. Those are presented below with few inspirational quotes.
+OODA loop and Polya describe approximately similar steps that could be called steps of an agency loop. Those are presented below with few inspirational quotes. It is amusing that one can find a relevant quote for each step just in Proverbs 16.
 
 
 #### Understand and Orient
 What should the future look like?
 How do you know which way?
+
+> Commit your work to the Lord, and your plans will be established. (Proverbs 16:3)
 
 An autonomous agent must be capable of finding their direction wherever they find themselves.
 Because we live in a complex, dynamic environment, there is no fine-grained, faithful, and particular map out there just for you.
@@ -435,7 +437,7 @@ You have to find your values with respect to the current and path towards them f
 
 > But solid food is for the mature, for those who have their powers of discernment trained by constant practice to distinguish good from evil. (Hebrews 5:14 ESV)
 
-> The discerning sets his face toward wisdom, but the eyes of a fool are on the ends of the earth. (Proverbs 17:24 ESV)
+> The purpose in a man's heart is like deep water, but a man of understanding will draw it out. (Proverbs 20:5 ESV)
 
 When you will have your values, and orientation within the world, you may look for what to do.
 What are the unique problems not being solved?
@@ -458,6 +460,8 @@ The good news is that the world has so many options (high-dimensional), such tha
 #### Decide and Plan
 Strategic thinking, planning and scheduling, structuring and organizing.
 
+> The heart of man plans his way, but the Lord establishes his steps. (Proverbs 16:9)
+
 > Ponder the path of your feet; then all your ways will be sure. Do not swerve to the right or to the left; turn your foot away from evil. (Proverbs 4:26-27 ESV)
 
 > For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? (Luke 14:28 ESV)
@@ -474,6 +478,8 @@ Here are related quotes from other sources:
 #### Act on The Plan
 Carry out the plan. Act, problem-solve, delegate, escalate, use tools. Optimize for time and effect.
 
+> A worker's appetite works for him; his mouth urges him on. (Proverbs 16:26)
+
 > But all things should be done decently and in order. (1 Corinthians 14:40 ESV)
 
 > Do all things without grumbling or disputing, (Philippians 2:14)
@@ -485,6 +491,8 @@ Carry out the plan. Act, problem-solve, delegate, escalate, use tools. Optimize 
 
 #### Observe and Reflect
 Measure, verify, analyze. What is the learning?
+
+> A just balance and scales are the Lord's; all the weights in the bag are his work. (Proverbs 16:11)
 
 > You shall eat the fruit of the labor of your hands; you shall be blessed, and it shall be well with you. (Psalm 128:2 ESV)
 
