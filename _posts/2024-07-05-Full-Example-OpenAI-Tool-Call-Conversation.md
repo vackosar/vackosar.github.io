@@ -1,0 +1,125 @@
+---
+title: OpenAI Tool Call Messages Full Example
+description: Complete example of conversation with user, function call with arguments, function response messages.
+categories: ml
+date: 2024-07-05
+last_modified_at: 2024-07-05
+layout: post
+permalink: /:categories/:title
+---
+
+{% include highlight-rouge-friendly.css.html %}
+
+LLM can produce structured outputs (e.g., JSON), which can call functions from external libraries.
+This is a way [the LLM neural network can "interact" with computer programs (symbolic systems of algorithms)](/ml/Symbolic-vs-Connectionist-Machine-Learning).
+
+Note that OpenAI model were likely fine-tuned for structured output generation for tool calling of specific functions provided,
+but it is also possible to elicit this with system prompting.
+
+There was no straightforward example of how a tool call message list looks online, so I am posting it here in full, and
+with comments describing individual messages.
+
+```python
+full_example_conversation = [
+    # System message. Tools schema definition is not in this message. See code below. It goes into separate input of openai.ChatCompletion.create(tools=...).
+    {"role": "system", "content": "You are a helpful assistant that can access external functions."},
+    
+
+    # User message. A question that requires the tool call.
+    {"role": "user", "content": "Hello, I am looking for shirts."},
+
+    # Assistant tool call message. Notice there is an array of calls. Notice function argument is a JSON string of inputs.
+    {'role': 'assistant', 'content': None, 'tool_calls': [
+        {'id': 'call_BEGxtsoiM96M78Y97RFxPRYk', 'type': 'function', 'function': {'name': 'search', 'arguments': '{"query":"shirts"}'}}
+    ]},
+
+    # Tool result message. Notice content is a JSON string of the tool output.
+    {'tool_call_id': 'call_BEGxtsoiM96M78Y97RFxPRYk', 'role': 'tool', 'name': 'search', 'content': '["shirt1", "shirt2", "shirt3"]'},
+
+    # Assistant response based on the tool result
+    {'role': 'assistant', 'content': 'I found some options for shirts:\n\n1. Shirt 1\n2. Shirt 2\n3. Shirt 3\n\nWould you like more details on any of these?'},
+
+    # User response
+    {"role": "user", "content": "Yes, I was looking for this!"}
+]
+```
+
+
+How to produce this example:
+
+```python
+import json
+import openai
+
+
+tools = [
+    {
+        "type": "function",
+        "function": {
+            "name": "search",
+            "description": "Search for items",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "query": {
+                        "type": "string",
+                        "description": "Search query"
+                    }
+                }
+            }
+        }
+    }
+]
+
+messages = [
+    {"role": "system", "content": "You are a helpful assistant that can access external functions."},
+    {"role": "user", "content": "Hello, I am looking for shirts."},
+]
+
+
+response = openai.ChatCompletion.create(
+    model="gpt-4o",
+    messages=messages,
+    tools=tools,
+    tool_choice="auto",
+)
+
+tool_call = response.choices[0].message
+tool_call_dict = json.loads(json.dumps(tool_call))
+print(tool_call_dict)
+
+messages.append(tool_call_dict)
+
+
+def search(query: str):
+    # static response as an example
+    return ['shirt1', 'shirt2', 'shirt3']
+
+
+tool_call_result = {
+    "tool_call_id": tool_call.tool_calls[0].id,
+    "role": "tool",
+    "name": "search",
+    "content": json.dumps(search(**json.loads(tool_call.tool_calls[0].function.arguments))),
+}
+print(tool_call_result)
+
+messages.append(
+    tool_call_result
+)
+
+response = openai.ChatCompletion.create(
+    model="gpt-4o",
+    messages=messages,
+    tools=tools,
+    tool_choice="auto",
+)
+
+assistant_response = response.choices[0].message
+assistant_response_dict = json.loads(json.dumps(assistant_response))
+print(assistant_response_dict)
+
+messages.append(assistant_response_dict)
+```
+
+

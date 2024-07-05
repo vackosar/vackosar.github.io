@@ -486,8 +486,6 @@ Carry out the plan. Act, problem-solve, delegate, escalate, use tools. Optimize 
 
 > He who observes the wind will not sow, and he who regards the clouds will not reap. (Ecclesiastes 11:4-6 ESV)
 
-> your ears shall hear a word behind you, saying, "This is the way, walk in it," (Isaiah 30:21 ESV)
-
 
 #### Observe and Reflect
 Measure, verify, analyze. What is the learning?
