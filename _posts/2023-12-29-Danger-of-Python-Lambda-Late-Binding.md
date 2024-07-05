@@ -19,7 +19,7 @@ my_related_post_paths:
 
 {% include highlight-rouge-friendly.css.html %}
 
-There may be a scary secret problem in your use of lambda in Python, when used with AsyncIO or Multi-threading. It is called Late Binding.
+There may be a scary secret problem in your use of lambda in Python, when used with [AsyncIO or Multi-threading](https://medium.com/@glami-engineering/the-bridge-between-sync-and-async-world-23cb25e57182). It is called Late Binding.
 
 ## The Question
 Can you see what is unexpected about below results of the [DocTest](https://docs.python.org/3/library/doctest.html)?
@@ -87,3 +87,5 @@ async def process_all():
 
 
 Try for yourself, switch the lines above and see the difference in results. Can you run a [DocTest](https://docs.python.org/3/library/doctest.html)? It is also a useful tip for You.
+
+Is either [AsyncIO or multi-threading not so clear? Then read this as it could help](https://medium.com/@glami-engineering/the-bridge-between-sync-and-async-world-23cb25e57182).
