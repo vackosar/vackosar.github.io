@@ -6,7 +6,10 @@ date: 2024-07-06
 last_modified_at: 2024-07-06
 layout: post
 permalink: /:categories/:title
+image: /images/precision-recall-mnemonic.png
 ---
+
+{% include image.html alt="Precision and Recall Intuitive Mnemonic" style="width: 80%; max-width: 900px" src="/images/precision-recall-mnemonic.png" %}
 
 {% include highlight-rouge-friendly.css.html %}
 
@@ -57,3 +60,7 @@ recall = true_positives / (true_positives + n_false_negatives)
 ```
 
 Recall is the same as sensitivity and is related to completeness, quantity.
+
+
+
+![picking-apples, family, robot, rural](/images/precision-recall-mnemonic-picking-apples.png)
