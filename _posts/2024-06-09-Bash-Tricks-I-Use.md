@@ -1,6 +1,6 @@
 ---
 title: Bash Tricks I Use
-description: Treats for your Bash without bashing it too much!
+description: Error handling, star expansion, exporting variables from an env file.
 categories: software
 date: 2024-06-09
 last_modified_at: 2024-06-09
@@ -85,9 +85,10 @@ Because:
 - 2: stderr
 
 
-## Avoid manual Exporting All Variables
+## How to Export All Variables From an Env File
 
 Avoid manual exporting with `allexport` option.
+All variables that will be newly defined variables will be exported for use in executed commands. 
 
 Example:
 ```
