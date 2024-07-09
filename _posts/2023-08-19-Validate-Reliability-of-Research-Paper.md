@@ -93,7 +93,7 @@ There are various tests:
 
 6. PICO Framework: Used in evidence-based practice to formulate a searchable clinical question. It stands for Patient problem or Population, Intervention, Comparison, and Outcome.
 
-7. [The Pragmatist’s Guide to Life](https://www.amazon.com/Pragmatists-Guide-Life-Creating-Questions/dp/0999715410/) - Standards for Evidence: Logical Consistency, Personal Experience, Personal Emotional Experience, Cultural Consensus, Expert Consensus, Scientific Method, Doctrine
+7. [The Pragmatist’s Guide to Life](https://www.amazon.com/Pragmatists-Guide-Life-Creating-Questions/dp/0999715410/) - Standards for Evidence: Logical Consistency, Personal Experience, Personal Emotional Experience, Cultural Consensus, Expert Consensus, Scientific Method, Doctrine. This book talks about a lot more than just this topic. And there are other very unusual books in the series Pragmatist’s Guide.
 
 
 ## Battle Testing the Method
