@@ -14,7 +14,7 @@ my_related_post_paths:
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2022-06-04-transformer-positional-embeddings-and-encodings.md
 - _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2024-07-06-Precision-Recall-Intuitive-Mnemonic.md
 ---
 
 

@@ -11,12 +11,12 @@ redirect_from:
 - /2020/04/08/Python-with-statement-exception-handling.html
 - /software/Python-with-statement-exception-handling
 my_related_post_paths:
-- _posts/2024-06-09-Bash-Tricks-I-Use.md
 - _posts/2024-01-24-How-To-Install-Your-Python-Version-On-Ubuntu.md
+- _posts/2024-06-09-Bash-Tricks-I-Use.md
 - _posts/2017-12-03-Boundary-Control-Entity-Architecture--The-Pattern-to-Structure-Your-Classes.md
 - _posts/2017-06-04-Code-Structure-Principles.md
-- _posts/2023-12-29-Danger-of-Python-Lambda-Late-Binding.md
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
+- _posts/2023-12-29-Danger-of-Python-Lambda-Late-Binding.md
 - _posts/2020-05-11-BentoML-vs-Cortex.dev--ML-Serving-Showdown.md
 ---
 

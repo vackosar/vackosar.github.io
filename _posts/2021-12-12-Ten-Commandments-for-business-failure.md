@@ -14,7 +14,7 @@ my_related_post_paths:
 - _posts/2021-07-14-Scout-Mindset-Book-Summary.md
 - _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
 - _posts/2020-07-05-Transfigure-Stress-Into-Energy.md
-- _posts/2023-12-17-If-I-Brainstorm-Am-I.md
+- _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 ---
 
 {% include image.html src="/images/10-commandments-for-business-failure.png" alt="Ten Commandments for Business Failure Book Summary" %}

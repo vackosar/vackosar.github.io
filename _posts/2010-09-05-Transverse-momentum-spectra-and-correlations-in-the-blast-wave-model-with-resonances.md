@@ -14,7 +14,7 @@ my_related_post_paths:
 - _posts/2021-12-29-DeepMinds-RETRO-Transformer-Model.md
 - _posts/2020-06-19-openais-glow-flow-based-model-teardown.md
 - _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
-- _posts/2019-05-18-Highly-Compressed-Richard-Hamming-Lectures.md
+- _posts/2023-08-19-Validate-Reliability-of-Research-Paper.md
 ---
 
 

@@ -7,13 +7,13 @@ last_modified_at: 2024-06-22
 layout: post
 permalink: /:categories/:title
 my_related_post_paths:
-- _posts/2024-05-06-Llama-3.md
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
+- _posts/2024-05-06-Llama-3.md
 - _posts/2022-04-10-googles-pathways-language-model-and-chain-of-thought.md
 - _posts/2022-03-20-massivetext-dataset-pretraining-deepminds-gopher.md
 - _posts/2024-02-20-Synthetic-Data-for-LLM-Training.md
-- _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
 - _posts/2022-04-13-openai-dall-e-2-and-dall-e-1.md
+- _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
 ---
 
 {% include highlight-rouge-friendly.css.html %}

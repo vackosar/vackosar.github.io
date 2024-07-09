@@ -7,6 +7,14 @@ last_modified_at: 2024-07-06
 layout: post
 permalink: /:categories/:title
 image: /images/precision-recall-mnemonic.png
+my_related_post_paths:
+- _posts/2020-01-15-Quizrecall--Learn-any-text-with-automatically-generated-quiz.md
+- _posts/2023-07-04-How-to-Create-a-Machine-Learning-Dataset.md
+- _posts/2023-06-08-Prompting-Techniques-That-Sqeeze-The-Best-Out-of-Your-LLM.md
+- _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
+- _posts/2023-08-25-How-Deep-Neural-Networks-Learn.md
+- _posts/2022-10-23-Neural-Network-Pruning-Explained.md
+- _posts/2022-09-11-Embeddings-in-Machine-Learning-Explained.md
 ---
 
 {% include image.html alt="Precision and Recall Intuitive Mnemonic" style="width: 80%; max-width: 900px" src="/images/precision-recall-mnemonic.png" %}

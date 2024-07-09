@@ -14,7 +14,7 @@ my_related_post_paths:
 - _posts/2022-04-18-Understand-Large-Language-Models-like-ChatGPT.md
 - _posts/2020-09-15-double-descent-contrary-to-bias-variance-trade-off.md
 - _posts/2023-03-26-David-Deutschs-Principles-in-Life-and-Business.md
-- _posts/2024-06-09-Bash-Tricks-I-Use.md
+- _posts/2024-02-20-Synthetic-Data-for-LLM-Training.md
 ---
 
 

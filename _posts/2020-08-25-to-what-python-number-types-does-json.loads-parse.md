@@ -10,8 +10,8 @@ permalink: /:categories/:title
 my_related_post_paths:
 - _posts/2024-01-24-How-To-Install-Your-Python-Version-On-Ubuntu.md
 - _posts/2022-06-04-transformer-embeddings-and-tokenization.md
-- _posts/2017-06-04-Code-Structure-Principles.md
 - _posts/2023-12-29-Danger-of-Python-Lambda-Late-Binding.md
+- _posts/2017-06-04-Code-Structure-Principles.md
 - _posts/2023-03-24-Symbolic-vs-Connectionist-Machine-Learning.md
 - _posts/2022-08-03-Strong-Static-Typing-vs-Weak-Dynamic-Typing.md
 - _posts/2019-06-30-FastText-Vector-Norms-And-OOV-Words.md
