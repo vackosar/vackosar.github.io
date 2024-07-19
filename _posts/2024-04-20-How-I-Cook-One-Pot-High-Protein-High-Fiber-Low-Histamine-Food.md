@@ -24,11 +24,12 @@ Some ingredients are accidentally inline with likely quite healthy Bryan Johnson
 You can cook this all-in-one pot, and that is how I cooked the original variant, but for the best results, I recommend splitting it as described below.
 
 - Prepare your large pressure cooking pot, e.g., from IKEA.
-- Soak 500g of black beans (or red beans) for 8 hours, e.g., overnight. Wash beans afterward. The beans should absorb the water and be a bit softer.
+- Soak 500g of black beans (or red beans) for 8 hours, e.g., overnight. Wash beans afterward. The beans should absorb the water and be a bit softer. You can skip soaking, but you will have to cook longer.
 - Then pressure-cook the beans but add:
-  - frozen chicken breast
+  - 1 or 2 frozen chicken breasts
   - salt, 1g oregano, 1g potassium chloride salt.
-- Increase the pressure fast within 5 minutes. Then cook for 30 minutes in high pressure. The frozen breast should be done well. The beans should be soft and edible.
+- Increase the pressure fast within 5 minutes. Then cook for 30 minutes in high pressure. If you haven't soaked the beans, cook for 45min+.
+  - After this, the frozen breast should be done well. The beans should be soft almost like a paste, and must not be crunchy or sandy. Otherwise, restart cooking for 5+ minutes. Uncooked beans won't feed and can be partially toxic.
 - In parallel cook:
 	- 150g of quinoa (good protein spectrum) or semolina high fibre pasta cooked for 15 minutes. I prefer to under-cook to have less sugar.
 	- 300g of frozen mixed vegetables of cauliflower, brocolli, carrot, pepper to reduce the fibers a bit. Add 100g almonds. Cooked for 10 minutes.

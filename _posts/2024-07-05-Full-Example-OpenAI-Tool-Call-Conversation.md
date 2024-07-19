@@ -131,3 +131,7 @@ messages.append(assistant_response_dict)
 ```
 
 
+## Tool Call vs JSON Mode
+
+[JSON mode](https://platform.openai.com/docs/guides/json-mode) ensures LLM API will generate a valid JSON, but it may not have the right schema.
+JSON mode is useful in some simple or very general scenarios, but for outputting the right schema use tool call.
