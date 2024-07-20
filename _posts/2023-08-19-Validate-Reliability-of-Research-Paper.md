@@ -68,7 +68,7 @@ In machine learning, these are common problems that may be present in nice-sound
 
 - Evaluating architecture, but based on models with different parameter counts. Bigger models will tend to outperform smaller models.
 - Outperforming on unknown or invalid benchmarks: Evaluating general architecture ability but using obscure benchmark datasets with only irrelevant competing architectures. Recommendation systems often lack large-scale datasets to compare results on.
-- Production-irrelevant metrics: Commonly, in recommendation systems mean squared error was used for comparison, whereas metrics like recall, NDCG, and precision are more useful for production deployments.
+- Production-irrelevant metrics: Commonly, in recommendation systems mean squared error was used for comparison, whereas metrics like [precision, recall](/ml/Precision-Recall-Intuitive-Mnemonic), and NDCG are more useful for production deployments.
 - Seed tuning, hyperparameter tuning, or training longer: Comparing with previous results, but spending more on finding the best random neural network initialization. This will inflate the results, creating invalid comparisons. Training time is part of the cost calculation for deployment.
 - Testing set leak: Evaluating generalization but having evaluation set samples leaking into the training set. This is a difficult problem with web-scale datasets, which makes it hard to filter out testing sets.
 - Different preprocessing or training sets: Preprocessing and filtering of the training set may have a much more significant impact than any model.
